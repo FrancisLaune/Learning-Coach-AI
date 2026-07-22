@@ -1,0 +1,13 @@
+CREATE INDEX idx_exercises_subject_status_difficulty ON exercises(subject_id, status, difficulty);
+CREATE INDEX idx_questions_status ON questions(status);
+CREATE INDEX idx_learning_sessions_learner_started ON learning_sessions(learner_id, started_at);
+CREATE INDEX idx_attempts_learner_submitted ON attempts(learner_id, submitted_at);
+CREATE INDEX idx_attempts_question_submitted ON attempts(question_id, submitted_at);
+CREATE INDEX idx_mastery_current_learner_review ON mastery_current(learner_id, next_review_at);
+CREATE INDEX idx_mastery_events_learner_skill_event ON mastery_events(learner_id, skill_id, event_at);
+CREATE INDEX idx_decisions_learner_created ON learning_decisions(learner_id, created_at);
+CREATE INDEX idx_recommendations_learner_status_created ON recommendations(learner_id, status, created_at);
+CREATE INDEX idx_progress_learner_calculated ON progress_snapshots(learner_id, calculated_at);
+CREATE INDEX idx_calendar_learner_status_scheduled ON study_calendar(learner_id, status, scheduled_for);
+CREATE INDEX idx_revision_learner_skill_reviewed ON revision_history(learner_id, skill_id, reviewed_at);
+CREATE INDEX idx_metrics_learner_name_measured ON learning_metrics(learner_id, metric_name, measured_at);

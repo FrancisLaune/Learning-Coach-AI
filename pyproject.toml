@@ -46,6 +46,7 @@ files = [
     "core/logging_config.py",
     "domain",
     "infrastructure",
+    "migrations",
     "services",
     "tests",
     "scripts",

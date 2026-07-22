@@ -79,6 +79,7 @@ python -m pip install -r requirements-dev.txt
 The application requires no API key at present. It reads two optional environment variables:
 
 - `LCAI_DATABASE_PATH`: DuckDB path, relative to the project root by default;
+- `LCAI_V2_DATABASE_PATH`: DuckDB V2 path, separate from the V1 application database;
 - `LCAI_LOG_LEVEL`: one of `CRITICAL`, `ERROR`, `WARNING`, `INFO`, or `DEBUG`.
 
 See `.env.example` for fictitious values. The application does not load `.env` files automatically, so set variables in the process environment or in the launch environment. Never commit `.env` or `.streamlit/secrets.toml`; both are ignored.
@@ -109,6 +110,12 @@ python -m pytest --cov
 ```
 
 The full pre-commit check is `python scripts/check_quality.py`. It stops at the first failure and returns a non-zero exit code.
+
+Create or update a DuckDB V2 file without touching V1:
+
+```console
+python -m migrations --database data/learning_coach_v2.duckdb
+```
 
 MyPy currently enforces the typed infrastructure, analytics, tests, and scripts. Legacy database, exercise-engine, subject, and Streamlit modules remain outside the initial MyPy gate because typing them safely belongs to the architecture-refactoring work; the checked scope should expand as those boundaries are extracted.
 
