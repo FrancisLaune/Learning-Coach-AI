@@ -1,0 +1,579 @@
+
+from __future__ import annotations
+
+import hashlib
+from datetime import datetime, date
+from pathlib import Path
+from typing import Any
+
+import duckdb
+import pandas as pd
+
+DB_PATH = Path(__file__).resolve().parents[1] / "data" / "objectif_brevet_2027.duckdb"
+
+
+def connect() -> duckdb.DuckDBPyConnection:
+    DB_PATH.parent.mkdir(parents=True, exist_ok=True)
+    return duckdb.connect(str(DB_PATH))
+
+
+def pin_hash(pin: str) -> str:
+    return hashlib.sha256(pin.encode("utf-8")).hexdigest()
+
+
+def init_db() -> None:
+    con = connect()
+    con.execute("""
+        CREATE SEQUENCE IF NOT EXISTS seq_users START 1;
+        CREATE SEQUENCE IF NOT EXISTS seq_exam START 1;
+        CREATE SEQUENCE IF NOT EXISTS seq_exam_question START 1;
+        CREATE SEQUENCE IF NOT EXISTS seq_practice START 1;
+        CREATE SEQUENCE IF NOT EXISTS seq_session START 1;
+
+        CREATE TABLE IF NOT EXISTS users (
+            id BIGINT PRIMARY KEY DEFAULT nextval('seq_users'),
+            name VARCHAR UNIQUE NOT NULL,
+            pin_hash VARCHAR NOT NULL,
+            role VARCHAR NOT NULL,
+            created_at TIMESTAMP NOT NULL
+        );
+
+        CREATE TABLE IF NOT EXISTS exams (
+            id BIGINT PRIMARY KEY DEFAULT nextval('seq_exam'),
+            user_id BIGINT NOT NULL,
+            subject VARCHAR NOT NULL,
+            title VARCHAR NOT NULL,
+            mode VARCHAR NOT NULL,
+            duration_minutes INTEGER,
+            status VARCHAR NOT NULL,
+            started_at TIMESTAMP NOT NULL,
+            finished_at TIMESTAMP,
+            score DOUBLE,
+            percentage DOUBLE,
+            correct_count INTEGER DEFAULT 0,
+            question_count INTEGER DEFAULT 0,
+            difficulty VARCHAR DEFAULT 'Moyen',
+            target_seconds_per_question INTEGER DEFAULT 90,
+            elapsed_seconds DOUBLE DEFAULT 0
+        );
+
+        CREATE TABLE IF NOT EXISTS exam_questions (
+            id BIGINT PRIMARY KEY DEFAULT nextval('seq_exam_question'),
+            exam_id BIGINT NOT NULL,
+            position INTEGER NOT NULL,
+            chapter VARCHAR NOT NULL,
+            question VARCHAR NOT NULL,
+            answer_type VARCHAR NOT NULL,
+            expected_answer VARCHAR NOT NULL,
+            accepted_answers VARCHAR,
+            unit VARCHAR,
+            explanation VARCHAR NOT NULL,
+            student_answer VARCHAR,
+            is_correct BOOLEAN DEFAULT FALSE,
+            difficulty VARCHAR DEFAULT 'Moyen',
+            target_seconds INTEGER DEFAULT 90,
+            elapsed_seconds DOUBLE DEFAULT 0,
+            error_type VARCHAR
+        );
+
+        CREATE TABLE IF NOT EXISTS practice_attempts (
+            id BIGINT PRIMARY KEY DEFAULT nextval('seq_practice'),
+            user_id BIGINT NOT NULL,
+            subject VARCHAR NOT NULL,
+            chapter VARCHAR NOT NULL,
+            question VARCHAR NOT NULL,
+            expected_answer VARCHAR NOT NULL,
+            student_answer VARCHAR,
+            is_correct BOOLEAN NOT NULL,
+            difficulty VARCHAR DEFAULT 'Moyen',
+            created_at TIMESTAMP NOT NULL,
+            elapsed_seconds DOUBLE DEFAULT 0,
+            target_seconds INTEGER DEFAULT 90,
+            error_type VARCHAR
+        );
+
+        CREATE TABLE IF NOT EXISTS learning_sessions (
+            id BIGINT PRIMARY KEY DEFAULT nextval('seq_session'),
+            user_id BIGINT NOT NULL, subject VARCHAR NOT NULL, session_type VARCHAR NOT NULL,
+            difficulty VARCHAR, started_at TIMESTAMP NOT NULL, finished_at TIMESTAMP,
+            elapsed_seconds DOUBLE DEFAULT 0, question_count INTEGER DEFAULT 0,
+            correct_count INTEGER DEFAULT 0, percentage DOUBLE DEFAULT 0
+        );
+        ALTER TABLE exams ADD COLUMN IF NOT EXISTS difficulty VARCHAR DEFAULT 'Moyen';
+        ALTER TABLE exams ADD COLUMN IF NOT EXISTS target_seconds_per_question INTEGER DEFAULT 90;
+        ALTER TABLE exams ADD COLUMN IF NOT EXISTS elapsed_seconds DOUBLE DEFAULT 0;
+        ALTER TABLE exam_questions ADD COLUMN IF NOT EXISTS difficulty VARCHAR DEFAULT 'Moyen';
+        ALTER TABLE exam_questions ADD COLUMN IF NOT EXISTS target_seconds INTEGER DEFAULT 90;
+        ALTER TABLE exam_questions ADD COLUMN IF NOT EXISTS elapsed_seconds DOUBLE DEFAULT 0;
+        ALTER TABLE exam_questions ADD COLUMN IF NOT EXISTS error_type VARCHAR;
+        ALTER TABLE practice_attempts ADD COLUMN IF NOT EXISTS elapsed_seconds DOUBLE DEFAULT 0;
+        ALTER TABLE practice_attempts ADD COLUMN IF NOT EXISTS target_seconds INTEGER DEFAULT 90;
+        ALTER TABLE practice_attempts ADD COLUMN IF NOT EXISTS error_type VARCHAR;
+        ALTER TABLE practice_attempts ADD COLUMN IF NOT EXISTS difficulty VARCHAR DEFAULT 'Moyen';
+    """)
+    exists = con.execute("SELECT COUNT(*) FROM users WHERE name='Parent'").fetchone()[0]
+    if not exists:
+        con.execute(
+            "INSERT INTO users(name,pin_hash,role,created_at) VALUES (?,?,?,?)",
+            ["Parent", pin_hash("1234"), "parent", datetime.now()],
+        )
+    con.close()
+
+
+def create_user(name: str, pin: str) -> tuple[bool, str]:
+    name = name.strip()
+    if len(name) < 2:
+        return False, "Le prénom doit contenir au moins deux caractères."
+    if len(pin) < 4:
+        return False, "Le code PIN doit contenir au moins quatre caractères."
+    con = connect()
+    try:
+        con.execute(
+            "INSERT INTO users(name,pin_hash,role,created_at) VALUES (?,?,?,?)",
+            [name, pin_hash(pin), "student", datetime.now()],
+        )
+        return True, "Compte enfant créé."
+    except Exception:
+        return False, "Ce nom existe déjà."
+    finally:
+        con.close()
+
+
+def authenticate(name: str, pin: str) -> dict[str, Any] | None:
+    con = connect()
+    row = con.execute(
+        "SELECT id,name,pin_hash,role FROM users WHERE name=?",
+        [name.strip()],
+    ).fetchone()
+    con.close()
+    if row and row[2] == pin_hash(pin):
+        return {"id": row[0], "name": row[1], "role": row[3]}
+    return None
+
+
+def student_list() -> list[dict[str, Any]]:
+    con = connect()
+    rows = con.execute(
+        "SELECT id,name FROM users WHERE role='student' ORDER BY name"
+    ).fetchall()
+    con.close()
+    return [{"id": r[0], "name": r[1]} for r in rows]
+
+
+def create_exam(
+    user_id: int,
+    subject: str,
+    title: str,
+    mode: str,
+    duration_minutes: int | None,
+    questions: list[dict[str, Any]],
+    difficulty: str = 'Moyen',
+) -> int:
+    con = connect()
+    exam_id = con.execute("SELECT nextval('seq_exam')").fetchone()[0]
+    con.execute(
+        """
+        INSERT INTO exams(
+            id,user_id,subject,title,mode,duration_minutes,status,
+            started_at,question_count,difficulty,target_seconds_per_question
+        ) VALUES (?,?,?,?,?,?,'started',?,?,?,?)
+        """,
+        [exam_id, user_id, subject, title, mode, duration_minutes, datetime.now(), len(questions), difficulty, 90],
+    )
+    for pos, q in enumerate(questions, start=1):
+        qid = con.execute("SELECT nextval('seq_exam_question')").fetchone()[0]
+        con.execute(
+            """
+            INSERT INTO exam_questions(
+                id,exam_id,position,chapter,question,answer_type,
+                expected_answer,accepted_answers,unit,explanation,difficulty,target_seconds
+            ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)
+            """,
+            [
+                qid, exam_id, pos, q["chapter"], q["question"], q["answer_type"],
+                str(q["expected_answer"]), "||".join(q.get("accepted_answers", [])),
+                q.get("unit", ""), q["explanation"], q.get("difficulty", difficulty), int(q.get("target_seconds", 90)),
+            ],
+        )
+    con.close()
+    return int(exam_id)
+
+
+def get_exam(exam_id: int) -> tuple[dict[str, Any] | None, list[dict[str, Any]]]:
+    con = connect()
+    exam = con.execute("SELECT * FROM exams WHERE id=?", [exam_id]).df()
+    questions = con.execute(
+        "SELECT * FROM exam_questions WHERE exam_id=? ORDER BY position",
+        [exam_id],
+    ).df()
+    con.close()
+    if exam.empty:
+        return None, []
+    return exam.iloc[0].to_dict(), questions.to_dict("records")
+
+
+def save_exam_answers(exam_id: int, answers: dict[int, tuple]) -> None:
+    con = connect()
+    for question_id, payload in answers.items():
+        answer, correct = payload[0], payload[1]
+        elapsed = float(payload[2]) if len(payload) > 2 else 0.0
+        error_type = None if correct else ('Inattention ou méthode' if str(answer).strip() else 'Réponse absente')
+        con.execute(
+            """UPDATE exam_questions SET student_answer=?, is_correct=?, elapsed_seconds=?, error_type=? WHERE id=? AND exam_id=?""",
+            [answer, bool(correct), elapsed, error_type, int(question_id), int(exam_id)],
+        )
+    con.close()
+
+
+def finish_exam(exam_id: int, elapsed_seconds: float | None = None) -> tuple[float, float, int, int]:
+    con = connect()
+    row = con.execute(
+        """
+        SELECT COUNT(*) AS total,
+               SUM(CASE WHEN is_correct THEN 1 ELSE 0 END) AS good
+        FROM exam_questions WHERE exam_id=?
+        """,
+        [exam_id],
+    ).fetchone()
+    total = int(row[0] or 0)
+    good = int(row[1] or 0)
+    percentage = (good / total * 100.0) if total else 0.0
+    score = percentage / 5.0
+    con.execute(
+        """
+        UPDATE exams SET status='completed', finished_at=?, score=?,
+        percentage=?, correct_count=? WHERE id=?
+        """,
+        [datetime.now(), score, percentage, good, exam_id],
+    )
+    if elapsed_seconds is not None:
+        con.execute('UPDATE exams SET elapsed_seconds=? WHERE id=?', [float(elapsed_seconds), exam_id])
+    con.close()
+    return score, percentage, good, total
+
+
+def list_exams(user_id: int, status: str | None = None) -> pd.DataFrame:
+    con = connect()
+    if status:
+        df = con.execute(
+            "SELECT * FROM exams WHERE user_id=? AND status=? ORDER BY started_at DESC",
+            [user_id, status],
+        ).df()
+    else:
+        df = con.execute(
+            "SELECT * FROM exams WHERE user_id=? ORDER BY started_at DESC",
+            [user_id],
+        ).df()
+    con.close()
+    return df
+
+
+def save_practice_attempt(
+    user_id: int,
+    subject: str,
+    chapter: str,
+    question: str,
+    expected: str,
+    answer: str,
+    correct: bool,
+    difficulty: str = "Moyen",
+    elapsed_seconds: float = 0.0,
+    target_seconds: int = 90,
+) -> None:
+    con = connect()
+    attempt_id = con.execute("SELECT nextval('seq_practice')").fetchone()[0]
+    con.execute(
+        """
+        INSERT INTO practice_attempts(
+            id,user_id,subject,chapter,question,expected_answer,
+            student_answer,is_correct,difficulty,created_at,elapsed_seconds,target_seconds,error_type
+        ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)
+        """,
+        [
+            attempt_id, user_id, subject, chapter, question, expected,
+            answer, bool(correct), difficulty, datetime.now(), float(elapsed_seconds), int(target_seconds), None if correct else ('Inattention ou méthode' if str(answer).strip() else 'Réponse absente'),
+        ],
+    )
+    con.close()
+
+
+def dashboard_metrics(user_id: int) -> dict[str, Any]:
+    con = connect()
+    exam = con.execute(
+        """
+        SELECT
+            COUNT(*) FILTER (WHERE status='completed') AS completed_exams,
+            AVG(score) FILTER (WHERE status='completed') AS avg_score,
+            MAX(score) FILTER (WHERE status='completed') AS best_score
+        FROM exams WHERE user_id=?
+        """,
+        [user_id],
+    ).fetchone()
+    practice = con.execute(
+        """
+        SELECT COUNT(*) AS total,
+               AVG(CASE WHEN is_correct THEN 1.0 ELSE 0.0 END) * 100 AS success
+        FROM practice_attempts WHERE user_id=?
+        """,
+        [user_id],
+    ).fetchone()
+    con.close()
+    return {
+        "completed_exams": int(exam[0] or 0),
+        "avg_score": float(exam[1] or 0),
+        "best_score": float(exam[2] or 0),
+        "practice_total": int(practice[0] or 0),
+        "practice_success": float(practice[1] or 0),
+    }
+
+
+def subject_averages(user_id: int) -> pd.DataFrame:
+    con = connect()
+    df = con.execute(
+        """
+        SELECT subject,
+               ROUND(AVG(score),2) AS moyenne,
+               COUNT(*) AS devoirs
+        FROM exams
+        WHERE user_id=? AND status='completed'
+        GROUP BY subject
+        ORDER BY subject
+        """,
+        [user_id],
+    ).df()
+    con.close()
+    return df
+
+
+def note_history(user_id: int) -> pd.DataFrame:
+    con = connect()
+    df = con.execute(
+        """
+        SELECT started_at,subject,title,score,percentage
+        FROM exams
+        WHERE user_id=? AND status='completed'
+        ORDER BY started_at
+        """,
+        [user_id],
+    ).df()
+    con.close()
+    return df
+
+
+def chapter_performance(user_id: int) -> pd.DataFrame:
+    con = connect()
+    df = con.execute(
+        """
+        SELECT e.subject,q.chapter,
+               COUNT(*) AS questions,
+               ROUND(AVG(CASE WHEN q.is_correct THEN 1.0 ELSE 0.0 END)*100,1) AS reussite
+        FROM exam_questions q
+        JOIN exams e ON e.id=q.exam_id
+        WHERE e.user_id=? AND e.status='completed'
+        GROUP BY e.subject,q.chapter
+        ORDER BY e.subject,q.chapter
+        """,
+        [user_id],
+    ).df()
+    con.close()
+    return df
+
+
+def practice_chapter_stats(user_id: int, subject: str | None = None) -> pd.DataFrame:
+    con = connect()
+    if subject:
+        df = con.execute(
+            """
+            SELECT subject, chapter, COUNT(*) AS tentatives,
+                   ROUND(AVG(CASE WHEN is_correct THEN 1.0 ELSE 0.0 END)*100,1) AS reussite
+            FROM practice_attempts
+            WHERE user_id=? AND subject=?
+            GROUP BY subject, chapter
+            ORDER BY reussite ASC, tentatives DESC
+            """, [user_id, subject]
+        ).df()
+    else:
+        df = con.execute(
+            """
+            SELECT subject, chapter, COUNT(*) AS tentatives,
+                   ROUND(AVG(CASE WHEN is_correct THEN 1.0 ELSE 0.0 END)*100,1) AS reussite
+            FROM practice_attempts
+            WHERE user_id=?
+            GROUP BY subject, chapter
+            ORDER BY reussite ASC, tentatives DESC
+            """, [user_id]
+        ).df()
+    con.close()
+    return df
+
+
+def weakest_chapters(user_id: int, subject: str, available: list[str], limit: int = 5) -> list[str]:
+    stats = practice_chapter_stats(user_id, subject)
+    if stats.empty:
+        return available[:limit]
+    known = [str(x) for x in stats["chapter"].tolist() if str(x) in available]
+    unseen = [x for x in available if x not in known]
+    return (known + unseen)[:limit]
+
+
+def learning_overview(user_id: int, subject: str | None = None) -> pd.DataFrame:
+    """Résultats consolidés des devoirs et entraînements, par matière et chapitre."""
+    con = connect()
+    params: list[Any] = [user_id, user_id]
+    subject_filter_exam = ""
+    subject_filter_practice = ""
+    if subject:
+        subject_filter_exam = " AND e.subject=?"
+        subject_filter_practice = " AND p.subject=?"
+        params = [user_id, subject, user_id, subject]
+    df = con.execute(
+        f"""
+        WITH results AS (
+            SELECT e.subject, q.chapter, 'Devoir' AS source,
+                   CASE WHEN q.is_correct THEN 1.0 ELSE 0.0 END AS success,
+                   e.finished_at AS activity_date
+            FROM exam_questions q
+            JOIN exams e ON e.id=q.exam_id
+            WHERE e.user_id=? AND e.status='completed'{subject_filter_exam}
+            UNION ALL
+            SELECT p.subject, p.chapter, 'Entraînement' AS source,
+                   CASE WHEN p.is_correct THEN 1.0 ELSE 0.0 END AS success,
+                   p.created_at AS activity_date
+            FROM practice_attempts p
+            WHERE p.user_id=?{subject_filter_practice}
+        )
+        SELECT subject, chapter,
+               COUNT(*) AS questions,
+               SUM(CASE WHEN source='Devoir' THEN 1 ELSE 0 END) AS questions_devoirs,
+               SUM(CASE WHEN source='Entraînement' THEN 1 ELSE 0 END) AS questions_entrainements,
+               ROUND(AVG(success)*100,1) AS reussite,
+               MAX(activity_date) AS derniere_activite
+        FROM results
+        GROUP BY subject, chapter
+        ORDER BY subject, reussite ASC, questions DESC
+        """,
+        params,
+    ).df()
+    con.close()
+    return df
+
+
+def activity_progression(user_id: int) -> pd.DataFrame:
+    """Historique commun des devoirs et des séances d'entraînement."""
+    con = connect()
+    df = con.execute(
+        """
+        WITH practice_sessions AS (
+            SELECT CAST(created_at AS DATE) AS activity_date, subject,
+                   'Entraînement' AS activity_type,
+                   ROUND(AVG(CASE WHEN is_correct THEN 1.0 ELSE 0.0 END)*100,1) AS percentage,
+                   COUNT(*) AS questions
+            FROM practice_attempts
+            WHERE user_id=?
+            GROUP BY CAST(created_at AS DATE), subject
+        ), exam_sessions AS (
+            SELECT CAST(finished_at AS DATE) AS activity_date, subject,
+                   'Devoir' AS activity_type,
+                   ROUND(percentage,1) AS percentage,
+                   question_count AS questions
+            FROM exams
+            WHERE user_id=? AND status='completed'
+        )
+        SELECT * FROM practice_sessions
+        UNION ALL
+        SELECT * FROM exam_sessions
+        ORDER BY activity_date
+        """,
+        [user_id, user_id],
+    ).df()
+    con.close()
+    return df
+
+
+def exam_chapter_analysis(exam_id: int) -> pd.DataFrame:
+    con = connect()
+    df = con.execute(
+        """
+        SELECT chapter, COUNT(*) AS questions,
+               SUM(CASE WHEN is_correct THEN 1 ELSE 0 END) AS correctes,
+               ROUND(AVG(CASE WHEN is_correct THEN 1.0 ELSE 0.0 END)*100,1) AS reussite
+        FROM exam_questions
+        WHERE exam_id=?
+        GROUP BY chapter
+        ORDER BY reussite ASC, chapter
+        """,
+        [exam_id],
+    ).df()
+    con.close()
+    return df
+
+
+def practice_difficulty_stats(user_id: int) -> pd.DataFrame:
+    con = connect()
+    df = con.execute(
+        """
+        SELECT subject, difficulty, COUNT(*) AS questions,
+               ROUND(AVG(CASE WHEN is_correct THEN 1.0 ELSE 0.0 END)*100,1) AS reussite
+        FROM practice_attempts
+        WHERE user_id=?
+        GROUP BY subject, difficulty
+        ORDER BY subject, difficulty
+        """,
+        [user_id],
+    ).df()
+    con.close()
+    return df
+
+
+def advanced_learning_overview(user_id: int) -> pd.DataFrame:
+    con=connect()
+    df=con.execute("""
+    WITH all_results AS (
+      SELECT
+          e.subject AS subject,
+          q.chapter AS chapter,
+          q.difficulty AS difficulty,
+          CASE WHEN q.is_correct THEN 1.0 ELSE 0.0 END AS ok,
+          q.elapsed_seconds AS elapsed_value,
+          q.target_seconds AS target_value
+      FROM exam_questions q
+      JOIN exams e ON e.id = q.exam_id
+      WHERE e.user_id = ? AND e.status = 'completed'
+
+      UNION ALL
+
+      SELECT
+          subject,
+          chapter,
+          difficulty,
+          CASE WHEN is_correct THEN 1.0 ELSE 0.0 END AS ok,
+          elapsed_seconds AS elapsed_value,
+          target_seconds AS target_value
+      FROM practice_attempts
+      WHERE user_id = ?
+    )
+    SELECT
+        subject,
+        chapter,
+        difficulty,
+        COUNT(*) AS attempts,
+        ROUND(AVG(ok) * 100, 1) AS accuracy,
+        ROUND(AVG(NULLIF(elapsed_value, 0)), 1) AS avg_seconds,
+        ROUND(AVG(target_value), 1) AS target_seconds,
+        ROUND(AVG(CASE WHEN elapsed_value > 0 THEN target_value / elapsed_value ELSE 1 END), 2) AS speed_index
+    FROM all_results
+    GROUP BY subject, chapter, difficulty
+    ORDER BY subject, chapter, difficulty
+    """,[user_id,user_id]).df(); con.close(); return df
+
+def time_progression(user_id: int) -> pd.DataFrame:
+    con=connect(); df=con.execute("""
+      SELECT CAST(finished_at AS DATE) activity_date,subject,'Devoir' activity_type,
+             elapsed_seconds,question_count,ROUND(elapsed_seconds/NULLIF(question_count,0),1) seconds_per_question,percentage
+      FROM exams WHERE user_id=? AND status='completed'
+      UNION ALL
+      SELECT CAST(created_at AS DATE),subject,'Entraînement',SUM(elapsed_seconds),COUNT(*),
+             ROUND(AVG(NULLIF(elapsed_seconds,0)),1),ROUND(AVG(CASE WHEN is_correct THEN 100.0 ELSE 0 END),1)
+      FROM practice_attempts WHERE user_id=? GROUP BY CAST(created_at AS DATE),subject
+      ORDER BY activity_date
+    """,[user_id,user_id]).df(); con.close(); return df
