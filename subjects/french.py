@@ -1,9 +1,171 @@
 from __future__ import annotations
+
 from subjects._helpers import generate_from_bank
 
-SUBJECT_NAME = 'Français'
-CHAPTERS = {'Classes grammaticales': {'summary': 'Identifier la nature des mots.', 'method': 'Observer le rôle et les variations du mot.', 'example': '« rapidement » est un adverbe.', 'pitfalls': 'Ne pas confondre nature et fonction.', 'key_points': ['Nom', 'Déterminant', 'Adjectif', 'Pronom', 'Verbe', 'Adverbe']}, 'Fonctions grammaticales': {'summary': 'Identifier sujet, COD, COI et compléments circonstanciels.', 'method': 'Questionner le verbe : qui ? quoi ? à qui ? où ? quand ?', 'example': 'Léa mange une pomme : « une pomme » est COD.', 'pitfalls': 'La fonction dépend de la phrase.', 'key_points': ['Sujet', 'COD', 'COI', 'Attribut', 'Complément circonstanciel']}, 'Conjugaison': {'summary': 'Maîtriser les principaux temps et modes.', 'method': 'Repérer le sujet, le temps et le radical.', 'example': "Nous finissions à l'imparfait.", 'pitfalls': 'Attention aux verbes irréguliers.', 'key_points': ['Présent', 'Imparfait', 'Passé simple', 'Futur', 'Conditionnel', 'Subjonctif']}, 'Accords': {'summary': 'Accorder nom, adjectif, sujet et verbe.', 'method': "Identifier le donneur d'accord.", 'example': 'Les petites maisons blanches.', 'pitfalls': "Avec être, le participe passé s'accorde avec le sujet.", 'key_points': ['Accord dans le groupe nominal', 'Sujet-verbe', 'Participe passé']}, 'Homophones grammaticaux': {'summary': 'Distinguer les mots de même son.', 'method': 'Remplacer par une forme test.', 'example': 'a/à : remplacer « a » par « avait ».', 'pitfalls': 'Toujours tester dans la phrase complète.', 'key_points': ['a/à', 'et/est', 'son/sont', 'ces/ses', 'on/ont']}, 'Orthographe': {'summary': 'Écrire correctement les mots et les terminaisons.', 'method': "Relire par catégories d'erreurs.", 'example': 'Les enfants jouent dehors.', 'pitfalls': 'Ne pas relire seulement le sens.', 'key_points': ['Pluriels', 'Consonnes doubles', 'Accents', 'Terminaisons verbales']}, 'Vocabulaire': {'summary': 'Enrichir le lexique et comprendre les relations entre mots.', 'method': 'Utiliser le contexte, les familles de mots et les préfixes.', 'example': '« généreux » / « avare » sont antonymes.', 'pitfalls': 'Un mot peut avoir plusieurs sens.', 'key_points': ['Synonymes', 'Antonymes', 'Polysémie', 'Niveaux de langue']}, 'Phrases complexes': {'summary': 'Distinguer les propositions et leurs liens.', 'method': 'Repérer les verbes conjugués.', 'example': "Je pars parce qu'il est tard : deux propositions.", 'pitfalls': 'Ne pas compter les infinitifs comme verbes conjugués.', 'key_points': ['Coordination', 'Juxtaposition', 'Subordination']}, 'Figures de style': {'summary': "Identifier les procédés d'écriture.", 'method': 'Repérer comparaison, exagération, répétition ou opposition.', 'example': '« Cette femme est une étoile » : métaphore.', 'pitfalls': 'Justifier avec les mots du texte.', 'key_points': ['Comparaison', 'Métaphore', 'Personnification', 'Hyperbole', 'Anaphore']}, 'Compréhension': {'summary': "Comprendre l'explicite et l'implicite d'un texte.", 'method': 'Citer le texte et reformuler.', 'example': 'Le pronom « je » peut indiquer un narrateur interne.', 'pitfalls': 'Toujours appuyer la réponse par un indice.', 'key_points': ['Narrateur', 'Point de vue', 'Implicite', 'Thème', 'Registre']}, 'Expression écrite': {'summary': 'Construire un texte cohérent et correct.', 'method': 'Planifier, rédiger puis relire.', 'example': 'Introduction, développement, conclusion.', 'pitfalls': 'Respecter le sujet et le temps demandé.', 'key_points': ['Organisation', 'Connecteurs', 'Vocabulaire', 'Ponctuation', 'Relecture']}}
-BANK = {'Classes grammaticales': [('Dans « Il parle doucement », nature de « doucement » ?', 'adverbe', 'Le mot modifie le verbe.'), ('Dans « cette grande maison », nature de « grande » ?', 'adjectif', 'Le mot précise le nom maison.', ['adjectif qualificatif'])], 'Fonctions grammaticales': [('Dans « Léa mange une pomme », fonction de « une pomme » ?', 'cod', 'Le groupe complète directement le verbe.', ["complément d'objet direct"]), ('Dans « Paul parle à sa sœur », fonction de « à sa sœur » ?', 'coi', 'Le groupe est introduit par à.', ["complément d'objet indirect"])], 'Conjugaison': [("Conjugue « finir » à l'imparfait avec nous.", 'nous finissions', "À l'imparfait : nous finissions."), ('Conjugue « prendre » au futur avec ils.', 'ils prendront', 'Au futur : ils prendront.')], 'Accords': [('Complète : « Elles sont parti... tôt. »', 'parties', 'Avec être, accord avec le sujet.'), ('Corrige : « des robe bleu »', 'des robes bleues', "Nom et adjectif s'accordent au féminin pluriel.")], 'Homophones grammaticaux': [('Complète : « Il ... un vélo. » (a/à)', 'a', 'Il a : verbe avoir.'), ('Complète : « Paul ... Marie arrivent. » (et/est)', 'et', 'Et relie deux noms.')], 'Orthographe': [('Corrige : « Les enfant joue dehors. »', 'les enfants jouent dehors', 'Le sujet et le verbe sont au pluriel.'), ('Complète : « une adresse préc...se »', 'précise', "Le mot s'écrit précise.")], 'Vocabulaire': [('Donne un antonyme de « généreux ».', 'avare', 'Avare est un antonyme possible.', ['égoïste']), ('Quel est un synonyme de « heureux » ?', 'content', 'Content est un synonyme.', ['joyeux'])], 'Phrases complexes': [("Combien de propositions dans « Je pars parce qu'il est tard » ?", '2', 'Deux verbes conjugués : pars et est.'), ("« Je pense qu'il viendra » : « qu'il viendra » est une proposition...", 'subordonnée', 'Elle dépend de la principale.')], 'Figures de style': [('« Je meurs de faim » est une...', 'hyperbole', "C'est une exagération."), ('« Cette femme est une étoile » est une...', 'métaphore', 'Identification sans outil comparatif.')], 'Compréhension': [('Dans un récit à la première personne, quel pronom désigne souvent le narrateur ?', 'je', 'Le narrateur emploie je.'), ('Une information suggérée mais non dite est...', 'implicite', "Il s'agit de l'implicite.")], 'Expression écrite': [('Quel connecteur introduit une opposition ?', 'cependant', "Cependant marque l'opposition.", ['mais', 'pourtant']), ('Quel signe termine une phrase interrogative ?', "point d'interrogation", 'Une question se termine par ?.', ['?'])]}
+SUBJECT_NAME = "Français"
+CHAPTERS = {
+    "Classes grammaticales": {
+        "summary": "Identifier la nature des mots.",
+        "method": "Observer le rôle et les variations du mot.",
+        "example": "« rapidement » est un adverbe.",
+        "pitfalls": "Ne pas confondre nature et fonction.",
+        "key_points": ["Nom", "Déterminant", "Adjectif", "Pronom", "Verbe", "Adverbe"],
+    },
+    "Fonctions grammaticales": {
+        "summary": "Identifier sujet, COD, COI et compléments circonstanciels.",
+        "method": "Questionner le verbe : qui ? quoi ? à qui ? où ? quand ?",
+        "example": "Léa mange une pomme : « une pomme » est COD.",
+        "pitfalls": "La fonction dépend de la phrase.",
+        "key_points": ["Sujet", "COD", "COI", "Attribut", "Complément circonstanciel"],
+    },
+    "Conjugaison": {
+        "summary": "Maîtriser les principaux temps et modes.",
+        "method": "Repérer le sujet, le temps et le radical.",
+        "example": "Nous finissions à l'imparfait.",
+        "pitfalls": "Attention aux verbes irréguliers.",
+        "key_points": ["Présent", "Imparfait", "Passé simple", "Futur", "Conditionnel", "Subjonctif"],
+    },
+    "Accords": {
+        "summary": "Accorder nom, adjectif, sujet et verbe.",
+        "method": "Identifier le donneur d'accord.",
+        "example": "Les petites maisons blanches.",
+        "pitfalls": "Avec être, le participe passé s'accorde avec le sujet.",
+        "key_points": ["Accord dans le groupe nominal", "Sujet-verbe", "Participe passé"],
+    },
+    "Homophones grammaticaux": {
+        "summary": "Distinguer les mots de même son.",
+        "method": "Remplacer par une forme test.",
+        "example": "a/à : remplacer « a » par « avait ».",
+        "pitfalls": "Toujours tester dans la phrase complète.",
+        "key_points": ["a/à", "et/est", "son/sont", "ces/ses", "on/ont"],
+    },
+    "Orthographe": {
+        "summary": "Écrire correctement les mots et les terminaisons.",
+        "method": "Relire par catégories d'erreurs.",
+        "example": "Les enfants jouent dehors.",
+        "pitfalls": "Ne pas relire seulement le sens.",
+        "key_points": ["Pluriels", "Consonnes doubles", "Accents", "Terminaisons verbales"],
+    },
+    "Vocabulaire": {
+        "summary": "Enrichir le lexique et comprendre les relations entre mots.",
+        "method": "Utiliser le contexte, les familles de mots et les préfixes.",
+        "example": "« généreux » / « avare » sont antonymes.",
+        "pitfalls": "Un mot peut avoir plusieurs sens.",
+        "key_points": ["Synonymes", "Antonymes", "Polysémie", "Niveaux de langue"],
+    },
+    "Phrases complexes": {
+        "summary": "Distinguer les propositions et leurs liens.",
+        "method": "Repérer les verbes conjugués.",
+        "example": "Je pars parce qu'il est tard : deux propositions.",
+        "pitfalls": "Ne pas compter les infinitifs comme verbes conjugués.",
+        "key_points": ["Coordination", "Juxtaposition", "Subordination"],
+    },
+    "Figures de style": {
+        "summary": "Identifier les procédés d'écriture.",
+        "method": "Repérer comparaison, exagération, répétition ou opposition.",
+        "example": "« Cette femme est une étoile » : métaphore.",
+        "pitfalls": "Justifier avec les mots du texte.",
+        "key_points": ["Comparaison", "Métaphore", "Personnification", "Hyperbole", "Anaphore"],
+    },
+    "Compréhension": {
+        "summary": "Comprendre l'explicite et l'implicite d'un texte.",
+        "method": "Citer le texte et reformuler.",
+        "example": "Le pronom « je » peut indiquer un narrateur interne.",
+        "pitfalls": "Toujours appuyer la réponse par un indice.",
+        "key_points": ["Narrateur", "Point de vue", "Implicite", "Thème", "Registre"],
+    },
+    "Expression écrite": {
+        "summary": "Construire un texte cohérent et correct.",
+        "method": "Planifier, rédiger puis relire.",
+        "example": "Introduction, développement, conclusion.",
+        "pitfalls": "Respecter le sujet et le temps demandé.",
+        "key_points": ["Organisation", "Connecteurs", "Vocabulaire", "Ponctuation", "Relecture"],
+    },
+}
+BANK = {
+    "Classes grammaticales": [
+        ("Dans « Il parle doucement », nature de « doucement » ?", "adverbe", "Le mot modifie le verbe."),
+        (
+            "Dans « cette grande maison », nature de « grande » ?",
+            "adjectif",
+            "Le mot précise le nom maison.",
+            ["adjectif qualificatif"],
+        ),
+    ],
+    "Fonctions grammaticales": [
+        (
+            "Dans « Léa mange une pomme », fonction de « une pomme » ?",
+            "cod",
+            "Le groupe complète directement le verbe.",
+            ["complément d'objet direct"],
+        ),
+        (
+            "Dans « Paul parle à sa sœur », fonction de « à sa sœur » ?",
+            "coi",
+            "Le groupe est introduit par à.",
+            ["complément d'objet indirect"],
+        ),
+    ],
+    "Conjugaison": [
+        ("Conjugue « finir » à l'imparfait avec nous.", "nous finissions", "À l'imparfait : nous finissions."),
+        ("Conjugue « prendre » au futur avec ils.", "ils prendront", "Au futur : ils prendront."),
+    ],
+    "Accords": [
+        ("Complète : « Elles sont parti... tôt. »", "parties", "Avec être, accord avec le sujet."),
+        ("Corrige : « des robe bleu »", "des robes bleues", "Nom et adjectif s'accordent au féminin pluriel."),
+    ],
+    "Homophones grammaticaux": [
+        ("Complète : « Il ... un vélo. » (a/à)", "a", "Il a : verbe avoir."),
+        ("Complète : « Paul ... Marie arrivent. » (et/est)", "et", "Et relie deux noms."),
+    ],
+    "Orthographe": [
+        ("Corrige : « Les enfant joue dehors. »", "les enfants jouent dehors", "Le sujet et le verbe sont au pluriel."),
+        ("Complète : « une adresse préc...se »", "précise", "Le mot s'écrit précise."),
+    ],
+    "Vocabulaire": [
+        ("Donne un antonyme de « généreux ».", "avare", "Avare est un antonyme possible.", ["égoïste"]),
+        ("Quel est un synonyme de « heureux » ?", "content", "Content est un synonyme.", ["joyeux"]),
+    ],
+    "Phrases complexes": [
+        (
+            "Combien de propositions dans « Je pars parce qu'il est tard » ?",
+            "2",
+            "Deux verbes conjugués : pars et est.",
+        ),
+        (
+            "« Je pense qu'il viendra » : « qu'il viendra » est une proposition...",
+            "subordonnée",
+            "Elle dépend de la principale.",
+        ),
+    ],
+    "Figures de style": [
+        ("« Je meurs de faim » est une...", "hyperbole", "C'est une exagération."),
+        ("« Cette femme est une étoile » est une...", "métaphore", "Identification sans outil comparatif."),
+    ],
+    "Compréhension": [
+        (
+            "Dans un récit à la première personne, quel pronom désigne souvent le narrateur ?",
+            "je",
+            "Le narrateur emploie je.",
+        ),
+        ("Une information suggérée mais non dite est...", "implicite", "Il s'agit de l'implicite."),
+    ],
+    "Expression écrite": [
+        (
+            "Quel connecteur introduit une opposition ?",
+            "cependant",
+            "Cependant marque l'opposition.",
+            ["mais", "pourtant"],
+        ),
+        (
+            "Quel signe termine une phrase interrogative ?",
+            "point d'interrogation",
+            "Une question se termine par ?.",
+            ["?"],
+        ),
+    ],
+}
+
 
 def generate_question(chapter: str, difficulty: str = "Moyen") -> dict:
     return generate_from_bank(chapter, BANK, difficulty)

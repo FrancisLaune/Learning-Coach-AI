@@ -1,8 +1,4 @@
-
-from subjects import (
-    mathematics, french, english, spanish, history,
-    geography, svt, physics_chemistry, emc, technology
-)
+from subjects import emc, english, french, geography, history, mathematics, physics_chemistry, spanish, svt, technology
 
 SUBJECTS = {
     mathematics.SUBJECT_NAME: mathematics,

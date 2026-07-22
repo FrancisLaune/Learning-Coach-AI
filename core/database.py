@@ -1,15 +1,15 @@
-
 from __future__ import annotations
 
 import hashlib
-from datetime import datetime, date
-from pathlib import Path
+from datetime import datetime
 from typing import Any
 
 import duckdb
 import pandas as pd
 
-DB_PATH = Path(__file__).resolve().parents[1] / "data" / "objectif_brevet_2027.duckdb"
+from core.config import get_database_path
+
+DB_PATH = get_database_path()
 
 
 def connect() -> duckdb.DuckDBPyConnection:
@@ -153,9 +153,7 @@ def authenticate(name: str, pin: str) -> dict[str, Any] | None:
 
 def student_list() -> list[dict[str, Any]]:
     con = connect()
-    rows = con.execute(
-        "SELECT id,name FROM users WHERE role='student' ORDER BY name"
-    ).fetchall()
+    rows = con.execute("SELECT id,name FROM users WHERE role='student' ORDER BY name").fetchall()
     con.close()
     return [{"id": r[0], "name": r[1]} for r in rows]
 
@@ -167,7 +165,7 @@ def create_exam(
     mode: str,
     duration_minutes: int | None,
     questions: list[dict[str, Any]],
-    difficulty: str = 'Moyen',
+    difficulty: str = "Moyen",
 ) -> int:
     con = connect()
     exam_id = con.execute("SELECT nextval('seq_exam')").fetchone()[0]
@@ -190,9 +188,18 @@ def create_exam(
             ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)
             """,
             [
-                qid, exam_id, pos, q["chapter"], q["question"], q["answer_type"],
-                str(q["expected_answer"]), "||".join(q.get("accepted_answers", [])),
-                q.get("unit", ""), q["explanation"], q.get("difficulty", difficulty), int(q.get("target_seconds", 90)),
+                qid,
+                exam_id,
+                pos,
+                q["chapter"],
+                q["question"],
+                q["answer_type"],
+                str(q["expected_answer"]),
+                "||".join(q.get("accepted_answers", [])),
+                q.get("unit", ""),
+                q["explanation"],
+                q.get("difficulty", difficulty),
+                int(q.get("target_seconds", 90)),
             ],
         )
     con.close()
@@ -217,7 +224,7 @@ def save_exam_answers(exam_id: int, answers: dict[int, tuple]) -> None:
     for question_id, payload in answers.items():
         answer, correct = payload[0], payload[1]
         elapsed = float(payload[2]) if len(payload) > 2 else 0.0
-        error_type = None if correct else ('Inattention ou méthode' if str(answer).strip() else 'Réponse absente')
+        error_type = None if correct else ("Inattention ou méthode" if str(answer).strip() else "Réponse absente")
         con.execute(
             """UPDATE exam_questions SET student_answer=?, is_correct=?, elapsed_seconds=?, error_type=? WHERE id=? AND exam_id=?""",
             [answer, bool(correct), elapsed, error_type, int(question_id), int(exam_id)],
@@ -247,7 +254,7 @@ def finish_exam(exam_id: int, elapsed_seconds: float | None = None) -> tuple[flo
         [datetime.now(), score, percentage, good, exam_id],
     )
     if elapsed_seconds is not None:
-        con.execute('UPDATE exams SET elapsed_seconds=? WHERE id=?', [float(elapsed_seconds), exam_id])
+        con.execute("UPDATE exams SET elapsed_seconds=? WHERE id=?", [float(elapsed_seconds), exam_id])
     con.close()
     return score, percentage, good, total
 
@@ -290,8 +297,19 @@ def save_practice_attempt(
         ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)
         """,
         [
-            attempt_id, user_id, subject, chapter, question, expected,
-            answer, bool(correct), difficulty, datetime.now(), float(elapsed_seconds), int(target_seconds), None if correct else ('Inattention ou méthode' if str(answer).strip() else 'Réponse absente'),
+            attempt_id,
+            user_id,
+            subject,
+            chapter,
+            question,
+            expected,
+            answer,
+            bool(correct),
+            difficulty,
+            datetime.now(),
+            float(elapsed_seconds),
+            int(target_seconds),
+            None if correct else ("Inattention ou méthode" if str(answer).strip() else "Réponse absente"),
         ],
     )
     con.close()
@@ -390,7 +408,8 @@ def practice_chapter_stats(user_id: int, subject: str | None = None) -> pd.DataF
             WHERE user_id=? AND subject=?
             GROUP BY subject, chapter
             ORDER BY reussite ASC, tentatives DESC
-            """, [user_id, subject]
+            """,
+            [user_id, subject],
         ).df()
     else:
         df = con.execute(
@@ -401,7 +420,8 @@ def practice_chapter_stats(user_id: int, subject: str | None = None) -> pd.DataF
             WHERE user_id=?
             GROUP BY subject, chapter
             ORDER BY reussite ASC, tentatives DESC
-            """, [user_id]
+            """,
+            [user_id],
         ).df()
     con.close()
     return df
@@ -526,8 +546,9 @@ def practice_difficulty_stats(user_id: int) -> pd.DataFrame:
 
 
 def advanced_learning_overview(user_id: int) -> pd.DataFrame:
-    con=connect()
-    df=con.execute("""
+    con = connect()
+    df = con.execute(
+        """
     WITH all_results AS (
       SELECT
           e.subject AS subject,
@@ -564,10 +585,17 @@ def advanced_learning_overview(user_id: int) -> pd.DataFrame:
     FROM all_results
     GROUP BY subject, chapter, difficulty
     ORDER BY subject, chapter, difficulty
-    """,[user_id,user_id]).df(); con.close(); return df
+    """,
+        [user_id, user_id],
+    ).df()
+    con.close()
+    return df
+
 
 def time_progression(user_id: int) -> pd.DataFrame:
-    con=connect(); df=con.execute("""
+    con = connect()
+    df = con.execute(
+        """
       SELECT CAST(finished_at AS DATE) activity_date,subject,'Devoir' activity_type,
              elapsed_seconds,question_count,ROUND(elapsed_seconds/NULLIF(question_count,0),1) seconds_per_question,percentage
       FROM exams WHERE user_id=? AND status='completed'
@@ -576,4 +604,8 @@ def time_progression(user_id: int) -> pd.DataFrame:
              ROUND(AVG(NULLIF(elapsed_seconds,0)),1),ROUND(AVG(CASE WHEN is_correct THEN 100.0 ELSE 0 END),1)
       FROM practice_attempts WHERE user_id=? GROUP BY CAST(created_at AS DATE),subject
       ORDER BY activity_date
-    """,[user_id,user_id]).df(); con.close(); return df
+    """,
+        [user_id, user_id],
+    ).df()
+    con.close()
+    return df

@@ -1,9 +1,108 @@
 from __future__ import annotations
+
 from subjects._helpers import generate_from_bank
 
-SUBJECT_NAME = 'Physique-Chimie'
-CHAPTERS = {'Mouvement et vitesse': {'summary': 'Décrire un mouvement et calculer une vitesse.', 'method': 'Utiliser v=d/t avec unités cohérentes.', 'example': '100 m en 20 s donne 5 m/s.', 'pitfalls': 'Toujours convertir avant de calculer.', 'key_points': ['Distance', 'Durée', 'Vitesse']}, 'Forces': {'summary': 'Identifier les actions mécaniques.', 'method': 'Représenter une force par un vecteur.', 'example': 'Poids dirigé vers le centre de la Terre.', 'pitfalls': 'Ne pas confondre masse et poids.', 'key_points': ['Direction', 'Sens', 'Intensité', 'Newton']}, 'Énergie': {'summary': "Identifier formes et conversions d'énergie.", 'method': 'Construire une chaîne énergétique.', 'example': 'Énergie électrique vers lumineuse.', 'pitfalls': "L'énergie se conserve mais se dégrade.", 'key_points': ['Cinétique', 'Potentielle', 'Thermique']}, 'Électricité': {'summary': 'Comprendre tension, intensité, résistance et puissance.', 'method': 'Utiliser P=U×I et les lois des circuits.', 'example': '12 V × 2 A = 24 W.', 'pitfalls': 'Respecter les unités.', 'key_points': ['Volt', 'Ampère', 'Ohm', 'Watt']}, 'Lumière': {'summary': 'Comprendre propagation, réflexion et couleurs.', 'method': 'Tracer rayons et distinguer source/objet.', 'example': "Réflexion : angle d'incidence = angle de réflexion.", 'pitfalls': "Un objet n'émet pas toujours sa propre lumière.", 'key_points': ['Rayon', 'Réflexion', 'Spectre']}, 'Son': {'summary': 'Comprendre fréquence, amplitude et propagation.', 'method': 'Relier fréquence à hauteur et amplitude à intensité.', 'example': 'Fréquence élevée = son aigu.', 'pitfalls': 'Le son ne se propage pas dans le vide.', 'key_points': ['Hertz', 'Décibel', 'Vibration']}, 'Atomes et molécules': {'summary': 'Comprendre constitution de la matière.', 'method': 'Distinguer atome, ion et molécule.', 'example': 'Électron chargé négativement.', 'pitfalls': "Un ion n'est pas électriquement neutre.", 'key_points': ['Proton', 'Neutron', 'Électron']}, 'Réactions chimiques': {'summary': 'Identifier réactifs et produits.', 'method': "Conserver les atomes dans l'équation.", 'example': 'Combustion : combustible + dioxygène.', 'pitfalls': 'Équilibrer les coefficients, pas les formules.', 'key_points': ['Réactifs', 'Produits', 'Conservation']}, 'Masse volumique': {'summary': 'Relier masse et volume.', 'method': 'Utiliser ρ=m/V.', 'example': '200 g pour 100 cm³ donne 2 g/cm³.', 'pitfalls': 'Vérifier les unités.', 'key_points': ['Masse', 'Volume', 'Densité']}, 'Acides et bases': {'summary': 'Interpréter le pH.', 'method': 'pH<7 acide, 7 neutre, >7 basique.', 'example': 'pH 3 est acide.', 'pitfalls': 'Le pH est sans unité.', 'key_points': ['Acide', 'Neutre', 'Basique']}}
-BANK = {'Mouvement et vitesse': [('Un objet parcourt 100 m en 20 s. Vitesse moyenne en m/s ?', '5', 'v=100/20=5 m/s.')], 'Forces': [('Quelle unité mesure une force ?', 'newton', 'Le newton mesure une force.', ['n'])], 'Énergie': [("Quelle unité mesure l'énergie ?", 'joule', "L'énergie se mesure en joules.", ['j'])], 'Électricité': [('Quelle formule calcule la puissance électrique ?', 'p=u×i', 'P=U×I.', ['p=u*i', 'p=ui'])], 'Lumière': [('La lumière se propage-t-elle en ligne droite dans un milieu homogène ?', 'oui', 'Oui, en ligne droite.')], 'Son': [("Quelle grandeur distingue un son grave d'un son aigu ?", 'fréquence', 'La fréquence détermine la hauteur.')], 'Atomes et molécules': [('Quelle particule porte une charge négative ?', 'électron', "L'électron est négatif.", ['electron'])], 'Réactions chimiques': [("Les substances présentes au début d'une réaction sont les...", 'réactifs', 'Ce sont les réactifs.', ['reactifs'])], 'Masse volumique': [('Masse 200 g et volume 100 cm³ : masse volumique ?', '2', 'ρ=200/100=2 g/cm³.')], 'Acides et bases': [('Une solution de pH 3 est-elle acide, neutre ou basique ?', 'acide', 'pH inférieur à 7 : acide.')]}
+SUBJECT_NAME = "Physique-Chimie"
+CHAPTERS = {
+    "Mouvement et vitesse": {
+        "summary": "Décrire un mouvement et calculer une vitesse.",
+        "method": "Utiliser v=d/t avec unités cohérentes.",
+        "example": "100 m en 20 s donne 5 m/s.",
+        "pitfalls": "Toujours convertir avant de calculer.",
+        "key_points": ["Distance", "Durée", "Vitesse"],
+    },
+    "Forces": {
+        "summary": "Identifier les actions mécaniques.",
+        "method": "Représenter une force par un vecteur.",
+        "example": "Poids dirigé vers le centre de la Terre.",
+        "pitfalls": "Ne pas confondre masse et poids.",
+        "key_points": ["Direction", "Sens", "Intensité", "Newton"],
+    },
+    "Énergie": {
+        "summary": "Identifier formes et conversions d'énergie.",
+        "method": "Construire une chaîne énergétique.",
+        "example": "Énergie électrique vers lumineuse.",
+        "pitfalls": "L'énergie se conserve mais se dégrade.",
+        "key_points": ["Cinétique", "Potentielle", "Thermique"],
+    },
+    "Électricité": {
+        "summary": "Comprendre tension, intensité, résistance et puissance.",
+        "method": "Utiliser P=U×I et les lois des circuits.",
+        "example": "12 V × 2 A = 24 W.",
+        "pitfalls": "Respecter les unités.",
+        "key_points": ["Volt", "Ampère", "Ohm", "Watt"],
+    },
+    "Lumière": {
+        "summary": "Comprendre propagation, réflexion et couleurs.",
+        "method": "Tracer rayons et distinguer source/objet.",
+        "example": "Réflexion : angle d'incidence = angle de réflexion.",
+        "pitfalls": "Un objet n'émet pas toujours sa propre lumière.",
+        "key_points": ["Rayon", "Réflexion", "Spectre"],
+    },
+    "Son": {
+        "summary": "Comprendre fréquence, amplitude et propagation.",
+        "method": "Relier fréquence à hauteur et amplitude à intensité.",
+        "example": "Fréquence élevée = son aigu.",
+        "pitfalls": "Le son ne se propage pas dans le vide.",
+        "key_points": ["Hertz", "Décibel", "Vibration"],
+    },
+    "Atomes et molécules": {
+        "summary": "Comprendre constitution de la matière.",
+        "method": "Distinguer atome, ion et molécule.",
+        "example": "Électron chargé négativement.",
+        "pitfalls": "Un ion n'est pas électriquement neutre.",
+        "key_points": ["Proton", "Neutron", "Électron"],
+    },
+    "Réactions chimiques": {
+        "summary": "Identifier réactifs et produits.",
+        "method": "Conserver les atomes dans l'équation.",
+        "example": "Combustion : combustible + dioxygène.",
+        "pitfalls": "Équilibrer les coefficients, pas les formules.",
+        "key_points": ["Réactifs", "Produits", "Conservation"],
+    },
+    "Masse volumique": {
+        "summary": "Relier masse et volume.",
+        "method": "Utiliser ρ=m/V.",
+        "example": "200 g pour 100 cm³ donne 2 g/cm³.",
+        "pitfalls": "Vérifier les unités.",
+        "key_points": ["Masse", "Volume", "Densité"],
+    },
+    "Acides et bases": {
+        "summary": "Interpréter le pH.",
+        "method": "pH<7 acide, 7 neutre, >7 basique.",
+        "example": "pH 3 est acide.",
+        "pitfalls": "Le pH est sans unité.",
+        "key_points": ["Acide", "Neutre", "Basique"],
+    },
+}
+BANK = {
+    "Mouvement et vitesse": [("Un objet parcourt 100 m en 20 s. Vitesse moyenne en m/s ?", "5", "v=100/20=5 m/s.")],
+    "Forces": [("Quelle unité mesure une force ?", "newton", "Le newton mesure une force.", ["n"])],
+    "Énergie": [("Quelle unité mesure l'énergie ?", "joule", "L'énergie se mesure en joules.", ["j"])],
+    "Électricité": [("Quelle formule calcule la puissance électrique ?", "p=u×i", "P=U×I.", ["p=u*i", "p=ui"])],
+    "Lumière": [
+        ("La lumière se propage-t-elle en ligne droite dans un milieu homogène ?", "oui", "Oui, en ligne droite.")
+    ],
+    "Son": [
+        ("Quelle grandeur distingue un son grave d'un son aigu ?", "fréquence", "La fréquence détermine la hauteur.")
+    ],
+    "Atomes et molécules": [
+        ("Quelle particule porte une charge négative ?", "électron", "L'électron est négatif.", ["electron"])
+    ],
+    "Réactions chimiques": [
+        (
+            "Les substances présentes au début d'une réaction sont les...",
+            "réactifs",
+            "Ce sont les réactifs.",
+            ["reactifs"],
+        )
+    ],
+    "Masse volumique": [("Masse 200 g et volume 100 cm³ : masse volumique ?", "2", "ρ=200/100=2 g/cm³.")],
+    "Acides et bases": [
+        ("Une solution de pH 3 est-elle acide, neutre ou basique ?", "acide", "pH inférieur à 7 : acide.")
+    ],
+}
+
 
 def generate_question(chapter: str, difficulty: str = "Moyen") -> dict:
     return generate_from_bank(chapter, BANK, difficulty)

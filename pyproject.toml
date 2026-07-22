@@ -1,0 +1,61 @@
+[project]
+name = "learning-coach-ai"
+version = "0.1.0"
+description = "Local Streamlit learning coach for Brevet preparation"
+readme = "README.md"
+requires-python = ">=3.12,<3.15"
+
+[tool.ruff]
+target-version = "py312"
+line-length = 120
+extend-exclude = [".git", ".venv", "venv", "data", "docs"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+ignore = ["E501"]
+
+[tool.ruff.lint.per-file-ignores]
+"subjects/*.py" = ["E501"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+line-ending = "auto"
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+testpaths = ["tests"]
+addopts = "-ra --strict-config --strict-markers"
+
+[tool.coverage.run]
+branch = true
+source = ["analytics", "core", "subjects"]
+omit = ["tests/*"]
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = true
+fail_under = 0
+
+[tool.mypy]
+python_version = "3.12"
+files = [
+    "analytics",
+    "application",
+    "core/config.py",
+    "core/logging_config.py",
+    "domain",
+    "infrastructure",
+    "services",
+    "tests",
+    "scripts",
+]
+exclude = ['^data/', '^docs/', '^venv/', '^\.venv/']
+check_untyped_defs = true
+disallow_incomplete_defs = true
+no_implicit_optional = true
+warn_redundant_casts = true
+warn_unused_configs = true
+warn_unused_ignores = true
+ignore_missing_imports = true
+follow_imports = "skip"

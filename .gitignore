@@ -200,6 +200,28 @@ cython_debug/
 #   and can be added to the global gitignore or merged into this file. However, if you prefer, 
 #   you could uncomment the following to ignore the entire vscode folder
 # .vscode/
+.idea/
+.vscode/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Local application output
+*.log
+logs/
+exports/
+*.zip
+*.tar.gz
+
+# Local database copies and temporary files (reference databases remain tracked)
+*.db.backup
+*.duckdb.backup
+*.db.bak
+*.duckdb.bak
+*.db.tmp
+*.duckdb.tmp
 # Temporary file for partial code execution
 tempCodeRunnerFile.py
 
