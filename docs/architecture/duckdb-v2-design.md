@@ -22,7 +22,7 @@ Cette stratégie est adaptée à un fichier local. Une synchronisation multi-ins
 
 ## Inventaire du schéma
 
-Le schéma contient **34 tables**, **3 vues** et **13 index explicites**.
+Après LCAI-0005, le schéma contient **42 tables**, **3 vues** et **19 index explicites**.
 
 ### Versionnement et référentiels
 
@@ -39,6 +39,16 @@ Le schéma contient **34 tables**, **3 vues** et **13 index explicites**.
 | `program_skills` | Attentes d'un programme | PK programme/compétence, maîtrise `[0,1]`, priorité positive |
 | `skill_prerequisites` | Prérequis pondérés | deux FK vers `skills`, pas d'auto-prérequis |
 | `reference_translations` | Libellés multilingues | PK type/entité/langue; types d'entités contrôlés |
+
+### Gestion de contenu (LCAI-0005)
+
+| Table | Responsabilité |
+|---|---|
+| `content_versions` | Snapshots versionnés avec auteur et statut initial |
+| `content_status_events` | Historique append-only des transitions de statut |
+| `media_assets` | Métadonnées d'images, PDF, audio, vidéo et liens |
+| `tags` / `content_tags` | Taxonomie et associations de contenus |
+| `validation_runs` / `validation_issues` | Rapports qualité détaillés |
 
 ### Apprenant et objectifs
 
@@ -171,6 +181,8 @@ Les index automatiques associés aux PK/UNIQUE ne sont pas dupliqués. Ces index
 | 2 | `002_seed_reference.sql` | programme Brevet 2027, niveau, 10 matières, 21 domaines, 25 compétences, sous-compétences, prérequis et traductions |
 | 3 | `003_views.sql` | catalogue de compétences, progression, révisions dues |
 | 4 | `004_indexes.sql` | 13 index métier ciblés |
+| 5 | `005_content_management.sql` | Versionnement, médias, tags, validation et 5 index associés |
+| 6 | `006_content_media_links.sql` | Associations ordonnées entre contenus et médias |
 
 Le runner :
 
