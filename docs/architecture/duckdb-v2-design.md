@@ -22,7 +22,7 @@ Cette stratégie est adaptée à un fichier local. Une synchronisation multi-ins
 
 ## Inventaire du schéma
 
-Après LCAI-0007, le schéma contient **53 tables**, **3 vues** et **26 index explicites**.
+Après LCAI-0008, le schéma contient **61 tables**, **3 vues** et **32 index explicites**.
 
 ### Versionnement et référentiels
 
@@ -185,6 +185,7 @@ Les index automatiques associés aux PK/UNIQUE ne sont pas dupliqués. Ces index
 | 6 | `006_content_media_links.sql` | Associations ordonnées entre contenus et médias |
 | 7 | `007_longitudinal_learning.sql` | Parcours, idempotence, maîtrise longitudinale, événements et readiness |
 | 8 | `008_decision_engine.sql` | Journey détaillé, objectifs, plan ordonné et snapshots de décision |
+| 9 | `009_onboarding_content_recommendation.sql` | Onboarding, versions de Journey, candidats et séances personnalisées |
 
 Le runner :
 

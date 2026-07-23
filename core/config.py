@@ -29,6 +29,11 @@ def get_v2_database_path() -> Path:
     return path if path.is_absolute() else PROJECT_ROOT / path
 
 
+def is_v2_ui_enabled() -> bool:
+    """Require explicit opt-in before exposing the isolated V2 onboarding UI."""
+    return os.getenv("LCAI_ENABLE_V2_UI", "false").strip().lower() in {"1", "true", "yes"}
+
+
 def get_log_level() -> str:
     """Return a safe standard-library logging level name."""
     level = os.getenv("LCAI_LOG_LEVEL", "INFO").strip().upper()

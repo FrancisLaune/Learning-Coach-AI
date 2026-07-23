@@ -117,6 +117,15 @@ Create or update a DuckDB V2 file without touching V1:
 python -m migrations --database data/learning_coach_v2.duckdb
 ```
 
+L'interface d'onboarding V2 est isolée et désactivée par défaut :
+
+```powershell
+$env:LCAI_ENABLE_V2_UI='true'
+python -m streamlit run v2_app.py
+```
+
+Sans ce flag explicite, `v2_app.py` refuse d'exposer le parcours V2. `app.py` reste l'entrée V1 par défaut.
+
 MyPy currently enforces the typed infrastructure, analytics, tests, and scripts. Legacy database, exercise-engine, subject, and Streamlit modules remain outside the initial MyPy gate because typing them safely belongs to the architecture-refactoring work; the checked scope should expand as those boundaries are extracted.
 
 ### Documentation

@@ -26,3 +26,5 @@ preuves idempotentes, la maîtrise longitudinale, les événements et les projec
 de préparation aux transitions et examens.
 La migration `008_decision_engine.sql` ajoute les préférences du Journey, les objectifs
 pédagogiques, les plans ordonnés et les snapshots de décisions explicables.
+La migration `009_onboarding_content_recommendation.sql` ajoute les profils fonctionnels,
+versions de Journey, audits d'onboarding, snapshots de candidats et séances personnalisées.
