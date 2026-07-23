@@ -21,3 +21,8 @@ La migration `005_content_management.sql` ajoute de façon additive le versionne
 les médias, les tags et les rapports de validation de LCAI-0005.
 La migration `006_content_media_links.sql` ajoute les associations ordonnées entre
 les métadonnées média et les contenus, sans stockage de fichiers.
+La migration `007_longitudinal_learning.sql` ajoute les parcours scolaires, les
+preuves idempotentes, la maîtrise longitudinale, les événements et les projections
+de préparation aux transitions et examens.
+La migration `008_decision_engine.sql` ajoute les préférences du Journey, les objectifs
+pédagogiques, les plans ordonnés et les snapshots de décisions explicables.
