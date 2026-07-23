@@ -22,7 +22,7 @@ Cette stratégie est adaptée à un fichier local. Une synchronisation multi-ins
 
 ## Inventaire du schéma
 
-Après LCAI-0008, le schéma contient **61 tables**, **3 vues** et **32 index explicites**.
+Après LCAI-0009, le schéma contient **81 tables**, **4 vues** et **42 index explicites**.
 
 ### Versionnement et référentiels
 
@@ -186,6 +186,7 @@ Les index automatiques associés aux PK/UNIQUE ne sont pas dupliqués. Ces index
 | 7 | `007_longitudinal_learning.sql` | Parcours, idempotence, maîtrise longitudinale, événements et readiness |
 | 8 | `008_decision_engine.sql` | Journey détaillé, objectifs, plan ordonné et snapshots de décision |
 | 9 | `009_onboarding_content_recommendation.sql` | Onboarding, versions de Journey, candidats et séances personnalisées |
+| 10 | `010_curriculum_approved_content.sql` | Curriculum, graphe, catalogue éditorial, approbations et vue Approved |
 
 Le runner :
 
@@ -204,7 +205,11 @@ python -m migrations --database data/learning_coach_v2.duckdb
 
 ## Données de référence
 
-V2 contient uniquement des référentiels : Brevet 2027, Troisième, dix matières, domaines, compétences principales, six sous-compétences, cinq prérequis, traductions françaises/anglaises et quatre catégories d'erreurs. Les tables `learners` et toutes les tables d'activité restent vides dans le fichier livré.
+V2 contient les référentiels historiques et le lot éditorial ciblé LCAI-0009 :
+34 chapitres, 34 compétences détaillées, 34 sous-compétences, 38 relations et
+68 contenus Approved. Ce lot couvre partiellement la 4e, la transition vers la 3e,
+la 3e et la préparation au brevet ; il n'est pas présenté comme un programme complet.
+Les tables apprenant et les tables d'activité restent vides dans le fichier livré.
 
 ## Migration V1 ultérieure
 

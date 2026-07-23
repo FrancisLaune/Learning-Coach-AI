@@ -28,7 +28,10 @@ class PersonalizedSessionService:
         self, onboarding: OnboardingResult, contents: tuple[ApprovedContent, ...], now: datetime
     ) -> PersonalizedSessionProposal:
         mastery = self.learning_repository.load_all_mastery(onboarding.learner_id) if self.learning_repository else {}
-        candidate_set = self.candidate_service.build(onboarding.journey, contents, mastery, now)
+        allowed_subjects = set(onboarding.journey.preferred_subjects) or None
+        candidate_set = self.candidate_service.build(
+            onboarding.journey, contents, mastery, now, allowed_subject_ids=allowed_subjects
+        )
         budget = onboarding.summary.available_minutes
         stable = hashlib.sha256(
             f"{onboarding.context_hash}:{candidate_set.context_hash}:{now.isoformat()}".encode()

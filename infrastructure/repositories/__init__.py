@@ -13,6 +13,7 @@ from infrastructure.repositories.content import (
     ValidationRepository,
     VersionRepository,
 )
+from infrastructure.repositories.curriculum import DuckDBCurriculumRepository
 from infrastructure.repositories.decision import DuckDBDecisionRepository
 from infrastructure.repositories.learning import DuckDBLearningRepository
 from infrastructure.repositories.onboarding import DuckDBOnboardingRepository
@@ -36,6 +37,7 @@ __all__ = [
     "ContentUnitOfWork",
     "DecisionRepositoryV2",
     "DuckDBDecisionRepository",
+    "DuckDBCurriculumRepository",
     "DuckDBLearningRepository",
     "DuckDBOnboardingRepository",
     "DuckDBRecommendationRepository",

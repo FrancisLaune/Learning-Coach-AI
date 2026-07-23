@@ -28,3 +28,6 @@ La migration `008_decision_engine.sql` ajoute les préférences du Journey, les 
 pédagogiques, les plans ordonnés et les snapshots de décisions explicables.
 La migration `009_onboarding_content_recommendation.sql` ajoute les profils fonctionnels,
 versions de Journey, audits d'onboarding, snapshots de candidats et séances personnalisées.
+La migration `010_curriculum_approved_content.sql` ajoute chapitres, objectifs observables,
+graphe curriculaire, références examen, questions/corrigés/indices structurés, qualité,
+revues, approbations, imports et la vue stricte du catalogue Approved.

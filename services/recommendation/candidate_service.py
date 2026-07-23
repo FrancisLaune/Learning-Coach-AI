@@ -17,6 +17,7 @@ from services.recommendation.models import (
 )
 
 TRANSITION_MARKERS = {"transition_ready", "introductory", "prerequisite_bridge", "next_grade_preparation"}
+GRADE_SEQUENCE = {"FR-5E": -1, "FR-4E": 0, "FR-3E": 1, "FR-2NDE": 2, "FR-1ERE": 3, "FR-TERM": 4}
 
 
 class ContentCandidateService:
@@ -104,7 +105,12 @@ class ContentCandidateService:
             return (
                 None if TRANSITION_MARKERS & set(content.transition_markers) else "NEXT_GRADE_NOT_EXPLICITLY_COMPATIBLE"
             )
-        if "remediation" in content.tags or "prerequisite_bridge" in content.transition_markers:
+        content_position = GRADE_SEQUENCE.get(content.grade_code)
+        current_position = GRADE_SEQUENCE.get(journey.current_grade.code)
+        is_prior_grade = (
+            content_position is not None and current_position is not None and content_position < current_position
+        )
+        if is_prior_grade and ("remediation" in content.tags or "prerequisite_bridge" in content.transition_markers):
             return None
         return "NO_CONTENT_FOR_GRADE"
 

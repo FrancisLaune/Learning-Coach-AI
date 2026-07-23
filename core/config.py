@@ -34,6 +34,11 @@ def is_v2_ui_enabled() -> bool:
     return os.getenv("LCAI_ENABLE_V2_UI", "false").strip().lower() in {"1", "true", "yes"}
 
 
+def is_v2_admin_enabled() -> bool:
+    """Require a second explicit flag before exposing catalog administration."""
+    return is_v2_ui_enabled() and os.getenv("LCAI_ENABLE_V2_ADMIN", "false").strip().lower() in {"1", "true", "yes"}
+
+
 def get_log_level() -> str:
     """Return a safe standard-library logging level name."""
     level = os.getenv("LCAI_LOG_LEVEL", "INFO").strip().upper()

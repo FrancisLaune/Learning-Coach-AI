@@ -80,6 +80,8 @@ The application requires no API key at present. It reads two optional environmen
 
 - `LCAI_DATABASE_PATH`: DuckDB path, relative to the project root by default;
 - `LCAI_V2_DATABASE_PATH`: DuckDB V2 path, separate from the V1 application database;
+- `LCAI_ENABLE_V2_UI`: explicit opt-in for the isolated V2 application;
+- `LCAI_ENABLE_V2_ADMIN`: second explicit opt-in for V2 catalog administration;
 - `LCAI_LOG_LEVEL`: one of `CRITICAL`, `ERROR`, `WARNING`, `INFO`, or `DEBUG`.
 
 See `.env.example` for fictitious values. The application does not load `.env` files automatically, so set variables in the process environment or in the launch environment. Never commit `.env` or `.streamlit/secrets.toml`; both are ignored.
@@ -126,6 +128,18 @@ python -m streamlit run v2_app.py
 
 Sans ce flag explicite, `v2_app.py` refuse d'exposer le parcours V2. `app.py` reste l'entrée V1 par défaut.
 
+Pour reconstruire et contrôler le catalogue ciblé LCAI-0009 :
+
+```powershell
+python scripts/build_demo_catalog.py
+python scripts/import_catalog.py --source resources/catalog/lcai_0009_catalog.json --dry-run
+python scripts/import_catalog.py --source resources/catalog/lcai_0009_catalog.json
+```
+
+L'administration minimale nécessite en plus
+`$env:LCAI_ENABLE_V2_ADMIN='true'`. Le catalogue est documenté dans
+`docs/approved-content-catalog.md` et ne prétend pas couvrir un programme complet.
+
 MyPy currently enforces the typed infrastructure, analytics, tests, and scripts. Legacy database, exercise-engine, subject, and Streamlit modules remain outside the initial MyPy gate because typing them safely belongs to the architecture-refactoring work; the checked scope should expand as those boundaries are extracted.
 
 ### Documentation
@@ -138,6 +152,11 @@ The official technical reference is the [Architecture Blueprint v1.0](docs/archi
 - [Current-state audit](docs/architecture/current-state-audit.md)
 - [Target project structure](docs/architecture/target-project-structure.md)
 - [DuckDB V2 design](docs/architecture/duckdb-v2-design.md)
+- [Curriculum model](docs/curriculum-model.md)
+- [Approved content catalog](docs/approved-content-catalog.md)
+- [Editorial workflow](docs/editorial-workflow.md)
+- [Content import guide](docs/content-import-guide.md)
+- [Content authoring guide](docs/content-authoring-guide.md)
 - [Learning Engine design](docs/architecture/learning-engine-design.md)
 - [AI Coach design](docs/architecture/ai-coach-design.md)
 - [Release 1.0 roadmap](docs/architecture/release-1-roadmap.md)

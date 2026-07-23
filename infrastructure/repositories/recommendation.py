@@ -31,22 +31,10 @@ class DuckDBRecommendationRepository:
         try:
             rows = con.execute(
                 """
-                SELECT DISTINCT e.id,cv.id,e.title,e.subject_id,d.id,qs.skill_id,qss.subskill_id,
-                    ps.program_id,sl.code,e.difficulty,ceil(e.estimated_seconds/60.0),cv.payload
-                FROM exercises e
-                JOIN content_versions cv ON cv.entity_type='exercise' AND cv.entity_id=e.id
-                    AND cv.version_number=e.content_version
-                JOIN exercise_questions eq ON eq.exercise_id=e.id
-                JOIN question_skills qs ON qs.question_id=eq.question_id
-                JOIN skills sk ON sk.id=qs.skill_id JOIN domains d ON d.id=sk.domain_id
-                LEFT JOIN question_subskills qss ON qss.question_id=eq.question_id
-                JOIN program_subjects ps ON ps.subject_id=e.subject_id
-                JOIN school_levels sl ON sl.id=ps.school_level_id
-                WHERE e.status='active' AND e.archived_at IS NULL AND coalesce((
-                    SELECT new_status FROM content_status_events cse WHERE cse.content_version_id=cv.id
-                    ORDER BY changed_at DESC,id DESC LIMIT 1
-                ),cv.status)='approved'
-                ORDER BY e.id,qs.skill_id
+                SELECT content_id,content_version_id,title,subject_id,domain_id,skill_id,subskill_id,
+                       program_id,grade_code,difficulty,estimated_minutes,payload
+                FROM approved_learning_catalog
+                ORDER BY content_id,skill_id
                 """
             ).fetchall()
             result = []
