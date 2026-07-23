@@ -152,6 +152,7 @@ The official technical reference is the [Architecture Blueprint v1.0](docs/archi
 - [Current-state audit](docs/architecture/current-state-audit.md)
 - [Target project structure](docs/architecture/target-project-structure.md)
 - [DuckDB V2 design](docs/architecture/duckdb-v2-design.md)
+- [Learning Session foundation](docs/architecture/learning-session-foundation.md)
 - [Curriculum model](docs/curriculum-model.md)
 - [Approved content catalog](docs/approved-content-catalog.md)
 - [Editorial workflow](docs/editorial-workflow.md)
