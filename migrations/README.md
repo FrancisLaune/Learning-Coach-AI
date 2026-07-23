@@ -31,3 +31,17 @@ versions de Journey, audits d'onboarding, snapshots de candidats et séances per
 La migration `010_curriculum_approved_content.sql` ajoute chapitres, objectifs observables,
 graphe curriculaire, références examen, questions/corrigés/indices structurés, qualité,
 revues, approbations, imports et la vue stricte du catalogue Approved.
+La migration `011_learning_session_domain.sql` complète de façon additive les sessions
+historiques avec activités exécutables, réponses, évaluations déterministes, tentatives
+liées, indices utilisés, événements, checkpoints, résumés et audit de maîtrise.
+La migration `012_session_integration_security.sql` ajoute l'idempotence des commandes,
+les autorisations parentales, le gel des versions, l'état de concurrence, la reprise
+de rafraîchissement décisionnel et les vues de lecture des séances.
+La migration `013_learning_intelligence_layer.sql` ajoute uniquement les exécutions
+analytiques et résultats dérivés versionnés, explicables et reconstructibles.
+# Migration 014 — platform extensibility foundation
+
+`014_platform_extensibility_foundation.sql` adds only V2 platform runtime
+records: explicit plugin status, non-secret configuration snapshots, local
+event outbox and deliveries, append-only audit records, import/export run
+traces, and notification requests. It does not modify educational tables or V1.

@@ -9,6 +9,7 @@ import streamlit as st
 
 from analytics.adaptive import coaching_message, recommend_level
 from analytics.mastery import compute_mastery
+from core.config import is_v2_parent_dashboard_enabled, is_v2_ui_enabled
 from core.engine import LEVELS, build_exam, build_progressive_set, build_question_set, is_correct
 from core.registry import SUBJECTS
 from infrastructure.database.legacy_gateway import (
@@ -768,6 +769,16 @@ def run_app() -> None:
 
     if not st.session_state.user:
         login_screen()
+    elif is_v2_ui_enabled():
+        from ui.v2_experience import run_parent_experience, run_student_experience
+
+        if st.session_state.user["role"] == "parent":
+            if is_v2_parent_dashboard_enabled():
+                run_parent_experience(st.session_state.user)
+            else:
+                st.warning("Le tableau de bord parent V2 n'est pas activé.")
+        else:
+            run_student_experience(st.session_state.user)
     elif st.session_state.user["role"] == "parent":
         parent_app()
     else:

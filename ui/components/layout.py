@@ -17,6 +17,15 @@ GLOBAL_STYLES = """
   background:white;margin-bottom:.7rem;
 }
 .small {color:#64748b;font-size:.9rem}
+*:focus-visible {outline:3px solid #1d4ed8;outline-offset:3px;}
+@media (max-width: 900px) {
+  .block-container {padding-left:1rem;padding-right:1rem;}
+  [data-testid="stHorizontalBlock"] {flex-wrap:wrap;}
+  [data-testid="column"] {min-width:16rem;}
+}
+@media (prefers-contrast: more) {
+  .card,.hero {border:2px solid currentColor;background:white;}
+}
 </style>
 """
 

@@ -34,6 +34,56 @@ def is_v2_ui_enabled() -> bool:
     return os.getenv("LCAI_ENABLE_V2_UI", "false").strip().lower() in {"1", "true", "yes"}
 
 
+def is_v2_session_execution_enabled() -> bool:
+    """Require both V2 UI and an explicit session-execution opt-in."""
+    return is_v2_ui_enabled() and os.getenv("LCAI_V2_SESSION_EXECUTION_ENABLED", "false").strip().lower() in {
+        "1",
+        "true",
+        "yes",
+    }
+
+
+def is_v2_parent_dashboard_enabled() -> bool:
+    """Gate parent analytics independently while retaining the V2 master flag."""
+    return is_v2_ui_enabled() and os.getenv("LCAI_V2_PARENT_DASHBOARD_ENABLED", "false").strip().lower() in {
+        "1",
+        "true",
+        "yes",
+    }
+
+
+def get_session_autosave_interval_seconds() -> int:
+    return _bounded_int("LCAI_SESSION_AUTOSAVE_INTERVAL_SECONDS", 15, 5, 300)
+
+
+def get_session_heartbeat_interval_seconds() -> int:
+    return _bounded_int("LCAI_SESSION_HEARTBEAT_INTERVAL_SECONDS", 15, 5, 300)
+
+
+def get_session_inactivity_pause_seconds() -> int:
+    return _bounded_int("LCAI_SESSION_INACTIVITY_PAUSE_SECONDS", 900, 60, 86400)
+
+
+def is_session_recovery_enabled() -> bool:
+    return os.getenv("LCAI_SESSION_RECOVERY_ENABLED", "true").strip().lower() in {"1", "true", "yes"}
+
+
+def is_learning_analytics_enabled() -> bool:
+    return is_v2_ui_enabled() and os.getenv("LCAI_ANALYTICS_ENABLED", "false").strip().lower() in {
+        "1",
+        "true",
+        "yes",
+    }
+
+
+def _bounded_int(name: str, default: int, minimum: int, maximum: int) -> int:
+    try:
+        value = int(os.getenv(name, str(default)))
+    except ValueError:
+        return default
+    return min(maximum, max(minimum, value))
+
+
 def is_v2_admin_enabled() -> bool:
     """Require a second explicit flag before exposing catalog administration."""
     return is_v2_ui_enabled() and os.getenv("LCAI_ENABLE_V2_ADMIN", "false").strip().lower() in {"1", "true", "yes"}

@@ -83,6 +83,24 @@ Il ne possède pas :
 - l’authentification ;
 - les fonctionnalités V1.
 
+### Vocabulaire DDD conceptuel
+
+La Part 01 réserve le vocabulaire suivant pour décrire le contexte. Cette liste
+constitue une cartographie de responsabilités, pas une autorisation de créer les
+classes, ports ou objets de persistance correspondants avant la Part 02.
+
+| Catégorie | Concepts réservés |
+|---|---|
+| Entités | `LearningSession`, `SessionActivity`, `Attempt`, `HintUsage`, `Assessment`, `SessionSummary` |
+| Value Objects | `SessionTimer`, `Score`, `Duration`, `Difficulty`, `MasteryDelta` |
+| Frontières de repository | `LearningSessionRepository`, `AttemptRepository`, `AssessmentRepository`, `HintRepository` |
+| Services | `LearningSessionService`, `ActivityRunner`, `AssessmentService`, `MasteryUpdateService`, `SessionScheduler`, `ResumeService`, `AutoSaveService` |
+
+Avant toute implémentation, la Part 02 devra confronter chaque concept aux
+modèles, tables, repositories et services existants. Un concept couvert par une
+abstraction actuelle devra être étendu ou adapté progressivement plutôt que
+dupliqué.
+
 ## 4. Composants majeurs
 
 Les noms ci-dessous définissent les responsabilités architecturales demandées. Ils ne constituent pas des classes créées par la Part 01.
@@ -249,3 +267,24 @@ Les jalons ultérieurs ne sont pas détaillés ici afin de respecter l’interdi
 | Réutilisation avant création | Conforme |
 | Aucun code ou schéma spéculatif | Conforme |
 
+## 14. Attributs qualité
+
+| Attribut | Exigence architecturale |
+|---|---|
+| Fiabilité | Transitions explicites, sauvegardes idempotentes et reprise depuis l’état persistant |
+| Maintenabilité | Responsabilités réduites, ports explicites et dépendances orientées vers le domaine |
+| Déterminisme | Inputs, snapshots, versions de règles et horloge explicites |
+| Scalabilité | Requêtes ciblées, pagination des journaux et absence de chargement global des tables |
+| Explicabilité | Score, correction et décision associés à des raisons structurées |
+| Traçabilité | Corrélations immuables de la proposition jusqu’au résultat de maîtrise |
+| Observabilité | Événements techniques sans données scolaires brutes dans les logs |
+| Auditabilité | Historique append-only des actions et versions de règles |
+| Sécurité | Validation des commandes, contrôle du propriétaire et minimisation des données |
+| Testabilité | Domaine sans framework, horloge injectable et adapters remplaçables en mémoire |
+
+## 15. État d’implémentation
+
+La Part 02 implémente désormais le modèle et la persistance décrits dans
+[`learning-session-domain-persistence.md`](learning-session-domain-persistence.md).
+Les responsabilités d’orchestration, d’évaluation métier et d’interface restent
+hors de ce jalon.

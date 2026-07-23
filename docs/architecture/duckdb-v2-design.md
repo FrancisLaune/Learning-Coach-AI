@@ -22,7 +22,8 @@ Cette stratégie est adaptée à un fichier local. Une synchronisation multi-ins
 
 ## Inventaire du schéma
 
-Après LCAI-0009, le schéma contient **81 tables**, **4 vues** et **42 index explicites**.
+Après LCAI-0010 Part 07, le schéma contient **110 tables**, **7 vues** et
+**62 index explicites**.
 
 ### Versionnement et référentiels
 
@@ -187,6 +188,10 @@ Les index automatiques associés aux PK/UNIQUE ne sont pas dupliqués. Ces index
 | 8 | `008_decision_engine.sql` | Journey détaillé, objectifs, plan ordonné et snapshots de décision |
 | 9 | `009_onboarding_content_recommendation.sql` | Onboarding, versions de Journey, candidats et séances personnalisées |
 | 10 | `010_curriculum_approved_content.sql` | Curriculum, graphe, catalogue éditorial, approbations et vue Approved |
+| 11 | `011_learning_session_domain.sql` | Exécution de session, réponses, évaluations, tentatives liées, checkpoints et audit |
+| 12 | `012_session_integration_security.sql` | Idempotence, autorisations, versions gelées, concurrence, reprise décisionnelle et vues de session |
+| 13 | `013_learning_intelligence_layer.sql` | Calculs analytiques, snapshots, explications, erreurs récurrentes et insights parent versionnés |
+| 14 | `014_platform_extensibility_foundation.sql` | Statuts de plugins, snapshots non secrets, outbox locale, livraisons idempotentes, audit append-only et traces import/export/notification |
 
 Le runner :
 

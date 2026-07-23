@@ -26,7 +26,7 @@ from migrations.runner import DEFAULT_MIGRATIONS_PATH, MigrationError, apply_mig
 def v2_database(tmp_path: Path) -> Path:
     database_path = tmp_path / "learning_coach_v2.duckdb"
     applied = apply_migrations(database_path)
-    assert [migration.version for migration in applied] == [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    assert [migration.version for migration in applied] == [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
     return database_path
 
 
@@ -39,9 +39,9 @@ def test_migrations_rebuild_complete_empty_database(v2_database: Path) -> None:
         view_count = connection.execute(
             "SELECT COUNT(*) FROM information_schema.tables WHERE table_schema='main' AND table_type='VIEW'"
         ).fetchone()
-        assert table_count == (81,)
-        assert view_count == (4,)
-        assert connection.execute("SELECT COUNT(*) FROM duckdb_indexes()").fetchone() == (42,)
+        assert table_count == (110,)
+        assert view_count == (7,)
+        assert connection.execute("SELECT COUNT(*) FROM duckdb_indexes()").fetchone() == (62,)
         assert connection.execute("SELECT COUNT(*) FROM learners").fetchone() == (0,)
         assert connection.execute("SELECT COUNT(*) FROM programs").fetchone() == (1,)
         assert connection.execute("SELECT COUNT(*) FROM subjects").fetchone() == (10,)
@@ -55,7 +55,7 @@ def test_migrations_are_idempotent(v2_database: Path) -> None:
     assert apply_migrations(v2_database) == []
     connection = connect_v2(v2_database, read_only=True)
     try:
-        assert connection.execute("SELECT COUNT(*) FROM schema_versions").fetchone() == (10,)
+        assert connection.execute("SELECT COUNT(*) FROM schema_versions").fetchone() == (14,)
     finally:
         connection.close()
 
@@ -72,7 +72,7 @@ def test_changed_applied_migration_is_rejected(v2_database: Path, tmp_path: Path
 def test_failed_migration_is_rolled_back(tmp_path: Path) -> None:
     migrations_copy = tmp_path / "migrations"
     shutil.copytree(DEFAULT_MIGRATIONS_PATH, migrations_copy)
-    (migrations_copy / "011_invalid.sql").write_text(
+    (migrations_copy / "015_invalid.sql").write_text(
         "CREATE TABLE must_rollback(id INTEGER); INSERT INTO table_that_does_not_exist VALUES (1);",
         encoding="utf-8",
     )
@@ -84,7 +84,7 @@ def test_failed_migration_is_rolled_back(tmp_path: Path) -> None:
         assert connection.execute(
             "SELECT COUNT(*) FROM information_schema.tables WHERE table_name='must_rollback'"
         ).fetchone() == (0,)
-        assert connection.execute("SELECT COUNT(*) FROM schema_versions").fetchone() == (10,)
+        assert connection.execute("SELECT COUNT(*) FROM schema_versions").fetchone() == (14,)
     finally:
         connection.close()
 

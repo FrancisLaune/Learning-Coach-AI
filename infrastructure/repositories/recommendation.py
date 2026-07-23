@@ -6,6 +6,7 @@ from pathlib import Path
 
 from domain.decision.enums import ActivityKind
 from infrastructure.database.v2 import connect_v2
+from services.learning_session.models import ExecutableActivity, ExecutionProposal
 from services.recommendation.models import ApprovedContent, CandidateSet, PersonalizedSessionProposal
 
 
@@ -66,6 +67,71 @@ class DuckDBRecommendationRepository:
                     )
                 )
             return tuple(result)
+        finally:
+            con.close()
+
+    def load_execution_proposal(self, proposal_id: int) -> ExecutionProposal:
+        """Load one persisted recommendation through the strict Approved catalog."""
+        con = connect_v2(self.database_path, read_only=True)
+        try:
+            proposal = con.execute(
+                """SELECT p.id,p.learner_id,p.journey_version_id,p.stable_id,p.available_minutes,
+                p.objective_ref,p.recommendation_version,p.absence_code
+                FROM personalized_session_proposals p WHERE p.id=?""",
+                [proposal_id],
+            ).fetchone()
+            if proposal is None:
+                raise KeyError(f"Unknown recommendation {proposal_id}")
+            rows = con.execute(
+                """SELECT i.id,i.content_id,i.content_version_id,c.title,c.content_type,i.difficulty,
+                i.duration_minutes,i.position,i.skill_id,
+                cv.status='approved' AND ea.active AND e.archived_at IS NULL AS approved,
+                cv.version_number=e.content_version AS current_version,
+                list(q.id ORDER BY q.sequence_order) AS question_ids,
+                bool_and(q.is_evaluative=FALSE OR sol.id IS NOT NULL) AS has_assessment
+                FROM personalized_session_items i
+                JOIN approved_learning_catalog c ON c.content_id=i.content_id
+                    AND c.content_version_id=i.content_version_id
+                JOIN exercises e ON e.id=i.content_id
+                JOIN content_versions cv ON cv.id=i.content_version_id
+                JOIN editorial_approvals ea ON ea.content_version_id=cv.id AND ea.active
+                JOIN content_questions q ON q.exercise_id=e.id
+                LEFT JOIN content_solutions sol ON sol.question_id=q.id
+                WHERE i.proposal_id=?
+                GROUP BY i.id,i.content_id,i.content_version_id,c.title,c.content_type,i.difficulty,
+                i.duration_minutes,i.position,i.skill_id,cv.status,ea.active,e.archived_at,
+                cv.version_number,e.content_version ORDER BY i.position""",
+                [proposal_id],
+            ).fetchall()
+            activities = tuple(
+                ExecutableActivity(
+                    int(row[0]),
+                    int(row[1]),
+                    int(row[2]),
+                    str(row[3]),
+                    str(row[4]),
+                    int(row[5]),
+                    int(row[6]) * 60,
+                    int(row[7]),
+                    int(row[8]),
+                    bool(row[9]),
+                    bool(row[10]),
+                    tuple(int(item) for item in row[11]),
+                    bool(row[12]),
+                )
+                for row in rows
+            )
+            return ExecutionProposal(
+                int(proposal[0]),
+                int(proposal[1]),
+                int(proposal[2]),
+                str(proposal[3]),
+                int(proposal[4]) * 60,
+                str(proposal[5]),
+                str(proposal[6]),
+                activities,
+                proposal[7],
+            )
         finally:
             con.close()
 

@@ -1,0 +1,43 @@
+"""Typed contracts for the local-first platform extension boundary."""
+
+from domain.platform_runtime.models import (
+    AuditRecord,
+    Compatibility,
+    ConfigurationDefinition,
+    ConfigurationValue,
+    EventHandlerResult,
+    FeatureFlagDefinition,
+    HealthLevel,
+    NotificationDeliveryResult,
+    NotificationRequest,
+    PlatformEvent,
+    PluginContext,
+    PluginLifecycle,
+    PluginManifest,
+    PluginPermission,
+    PluginRequirement,
+    PluginType,
+    SafePlatformError,
+    SemanticVersion,
+)
+
+__all__ = [
+    "AuditRecord",
+    "Compatibility",
+    "ConfigurationDefinition",
+    "ConfigurationValue",
+    "EventHandlerResult",
+    "FeatureFlagDefinition",
+    "HealthLevel",
+    "NotificationDeliveryResult",
+    "NotificationRequest",
+    "PlatformEvent",
+    "PluginContext",
+    "PluginLifecycle",
+    "PluginManifest",
+    "PluginPermission",
+    "PluginRequirement",
+    "PluginType",
+    "SafePlatformError",
+    "SemanticVersion",
+]
