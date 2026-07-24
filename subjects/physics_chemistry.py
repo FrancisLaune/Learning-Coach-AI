@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+from typing import Any
+
 from subjects._helpers import generate_from_bank
 
 SUBJECT_NAME = "Physique-Chimie"
@@ -75,7 +77,7 @@ CHAPTERS = {
         "key_points": ["Acide", "Neutre", "Basique"],
     },
 }
-BANK = {
+BANK: dict[str, list[tuple[Any, ...]]] = {
     "Mouvement et vitesse": [("Un objet parcourt 100 m en 20 s. Vitesse moyenne en m/s ?", "5", "v=100/20=5 m/s.")],
     "Forces": [("Quelle unité mesure une force ?", "newton", "Le newton mesure une force.", ["n"])],
     "Énergie": [("Quelle unité mesure l'énergie ?", "joule", "L'énergie se mesure en joules.", ["j"])],

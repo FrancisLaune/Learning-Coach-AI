@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+from typing import Any
+
 from subjects._helpers import generate_from_bank
 
 SUBJECT_NAME = "Histoire"
@@ -75,7 +77,7 @@ CHAPTERS = {
         "key_points": ["1951", "1957", "1992"],
     },
 }
-BANK = {
+BANK: dict[str, list[tuple[Any, ...]]] = {
     "Révolution française": [("En quelle année débute la Révolution française ?", "1789", "Elle commence en 1789.")],
     "Empire napoléonien": [("En quelle année Napoléon devient-il empereur ?", "1804", "Il est sacré en 1804.")],
     "Industrialisation": [

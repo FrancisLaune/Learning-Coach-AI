@@ -4,6 +4,7 @@ import inspect
 import random
 import re
 import unicodedata
+from collections.abc import Sequence
 from typing import Any
 
 LEVELS = ["Facile", "Moyen", "Difficile", "Brevet", "Expert"]
@@ -24,20 +25,26 @@ def is_correct(question: dict[str, Any], answer: str) -> bool:
             if not match:
                 return False
             actual = float(match.group(0))
-            expected = float(question["expected_answer"])
-            return abs(actual - expected) <= max(0.001, abs(expected) * 0.001)
+            expected_value = float(question["expected_answer"])
+            return abs(actual - expected_value) <= max(0.001, abs(expected_value) * 0.001)
         except (TypeError, ValueError):
             return False
     candidates = [str(question["expected_answer"])]
     accepted = question.get("accepted_answers", "")
     candidates += [x for x in accepted.split("||") if x] if isinstance(accepted, str) else list(accepted or [])
-    actual = normalize_text(answer)
-    return any(actual == normalize_text(c) for c in candidates)
+    normalized_actual = normalize_text(answer)
+    return any(normalized_actual == normalize_text(c) for c in candidates)
 
 
 def create_question(
-    chapter, question, expected_answer, explanation, answer_type="text", unit="", accepted_answers=None
-):
+    chapter: str,
+    question: str,
+    expected_answer: Any,
+    explanation: str,
+    answer_type: str = "text",
+    unit: str = "",
+    accepted_answers: Sequence[Any] | None = None,
+) -> dict[str, Any]:
     return {
         "chapter": chapter,
         "question": question,
@@ -83,14 +90,17 @@ def _decorate_variant(q: dict[str, Any], difficulty: str, variant: int) -> dict[
 
 
 def build_question_set(
-    subject_module: Any, count: int, chapters=None, difficulty: str = "Moyen"
+    subject_module: Any,
+    count: int,
+    chapters: Sequence[str] | None = None,
+    difficulty: str = "Moyen",
 ) -> list[dict[str, Any]]:
     selected = list(chapters or subject_module.CHAPTERS.keys())
     if not selected:
         raise ValueError("Au moins un chapitre doit être sélectionné.")
-    result = []
-    signatures = set()
-    cycle = []
+    result: list[dict[str, Any]] = []
+    signatures: set[str] = set()
+    cycle: list[str] = []
     while len(cycle) < count:
         block = selected.copy()
         random.shuffle(block)
@@ -105,10 +115,14 @@ def build_question_set(
     return result
 
 
-def build_progressive_set(subject_module: Any, count: int, chapters=None) -> list[dict[str, Any]]:
+def build_progressive_set(
+    subject_module: Any,
+    count: int,
+    chapters: Sequence[str] | None = None,
+) -> list[dict[str, Any]]:
     selected = list(chapters or subject_module.CHAPTERS.keys())
     levels = LEVELS
-    result = []
+    result: list[dict[str, Any]] = []
     for i in range(count):
         level = levels[min(len(levels) - 1, int(i * len(levels) / max(1, count)))]
         chapter = selected[i % len(selected)]
@@ -119,5 +133,10 @@ def build_progressive_set(subject_module: Any, count: int, chapters=None) -> lis
     return result
 
 
-def build_exam(subject_module: Any, count: int, chapters=None, difficulty="Moyen"):
+def build_exam(
+    subject_module: Any,
+    count: int,
+    chapters: Sequence[str] | None = None,
+    difficulty: str = "Moyen",
+) -> list[dict[str, Any]]:
     return build_question_set(subject_module, count, chapters, difficulty)

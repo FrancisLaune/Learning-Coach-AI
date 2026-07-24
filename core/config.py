@@ -34,6 +34,22 @@ def is_v2_ui_enabled() -> bool:
     return os.getenv("LCAI_ENABLE_V2_UI", "false").strip().lower() in {"1", "true", "yes"}
 
 
+def is_legacy_ui_enabled() -> bool:
+    """Keep the former product reachable only through an explicit migration fallback."""
+    return os.getenv("LCAI_ENABLE_LEGACY_UI", "false").strip().lower() in {"1", "true", "yes"}
+
+
+def is_demo_credentials_enabled() -> bool:
+    return os.getenv("LCAI_ENABLE_DEMO_CREDENTIALS", "true").strip().lower() in {"1", "true", "yes"}
+
+
+def get_demo_parent_credentials() -> tuple[str, str]:
+    return (
+        os.getenv("LCAI_DEMO_PARENT_USERNAME", "Parent"),
+        os.getenv("LCAI_DEMO_PARENT_PASSWORD", "1234"),
+    )
+
+
 def is_v2_session_execution_enabled() -> bool:
     """Require both V2 UI and an explicit session-execution opt-in."""
     return is_v2_ui_enabled() and os.getenv("LCAI_V2_SESSION_EXECUTION_ENABLED", "false").strip().lower() in {

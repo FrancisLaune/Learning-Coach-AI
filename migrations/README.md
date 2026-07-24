@@ -45,3 +45,11 @@ analytiques et résultats dérivés versionnés, explicables et reconstructibles
 records: explicit plugin status, non-secret configuration snapshots, local
 event outbox and deliveries, append-only audit records, import/export run
 traces, and notification requests. It does not modify educational tables or V1.
+
+La migration `015_unified_learning_experience.sql` ajoute les profils
+d'expérience, devoirs assignables, synthèses de résultats, propositions de
+programme avec validation parentale et suivi d'efficacité. Elle est additive et
+ne modifie aucune table V1.
+La migration `016_supported_school_levels.sql` complète les niveaux de référence
+du CM1 à la 5e et ajoute l'adresse e-mail facultative au profil d'expérience.
+L'interface exige cette adresse lors de toute nouvelle création d'élève.

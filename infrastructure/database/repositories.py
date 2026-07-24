@@ -9,6 +9,14 @@ class UserRepository:
     """User operations backed by ``core.database`` during migration."""
 
     authenticate = staticmethod(legacy.authenticate)
+    create_parent = staticmethod(legacy.create_parent)
+    create_student_account = staticmethod(legacy.create_student_account)
+    deactivate_student_account = staticmethod(legacy.deactivate_student_account)
+    delete_student_account = staticmethod(legacy.delete_student_account)
+    has_active_student_account = staticmethod(legacy.has_active_student_account)
+    reactivate_student_account = staticmethod(legacy.reactivate_student_account)
+    reset_student_password = staticmethod(legacy.reset_student_password)
+    student_account_for_learner = staticmethod(legacy.student_account_for_learner)
     create_user = staticmethod(legacy.create_user)
     student_list = staticmethod(legacy.student_list)
 

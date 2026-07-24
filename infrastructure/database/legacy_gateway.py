@@ -15,6 +15,14 @@ _practice = PracticeRepository()
 _progress = ProgressRepository()
 
 authenticate = _users.authenticate
+create_parent = _users.create_parent
+create_student_account = _users.create_student_account
+deactivate_student_account = _users.deactivate_student_account
+delete_student_account = _users.delete_student_account
+has_active_student_account = _users.has_active_student_account
+reactivate_student_account = _users.reactivate_student_account
+reset_student_password = _users.reset_student_password
+student_account_for_learner = _users.student_account_for_learner
 create_user = _users.create_user
 student_list = _users.student_list
 

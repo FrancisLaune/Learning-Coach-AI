@@ -5,7 +5,16 @@ from domain.onboarding.enums import CompatibilityStatus, ValidationSeverity
 from domain.onboarding.models import OnboardingRequest, OnboardingValidationResult, ValidationIssue
 from domain.onboarding.policies import OnboardingConfiguration
 
-NEXT_GRADE = {"FR-4E": "FR-3E", "FR-3E": "FR-2NDE", "FR-2NDE": "FR-1ERE", "FR-1ERE": "FR-TERM"}
+NEXT_GRADE = {
+    "FR-CM1": "FR-CM2",
+    "FR-CM2": "FR-6E",
+    "FR-6E": "FR-5E",
+    "FR-5E": "FR-4E",
+    "FR-4E": "FR-3E",
+    "FR-3E": "FR-2NDE",
+    "FR-2NDE": "FR-1ERE",
+    "FR-1ERE": "FR-TERM",
+}
 
 
 def validate_onboarding(

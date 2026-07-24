@@ -29,6 +29,5 @@ def initialize_state() -> None:
 
 
 def logout() -> None:
-    """Clear the current Streamlit session and rerun the page."""
+    """Clear the current Streamlit session from a widget callback."""
     st.session_state.clear()
-    st.rerun()

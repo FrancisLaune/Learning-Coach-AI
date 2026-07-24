@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+from typing import Any
+
 from subjects._helpers import generate_from_bank
 
 SUBJECT_NAME = "EMC"
@@ -47,7 +49,7 @@ CHAPTERS = {
         "key_points": ["Source", "Désinformation", "Vérification"],
     },
 }
-BANK = {
+BANK: dict[str, list[tuple[Any, ...]]] = {
     "Valeurs de la République": [
         (
             "Quelle est la devise de la République française ?",

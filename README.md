@@ -80,7 +80,8 @@ The application requires no API key at present. It reads two optional environmen
 
 - `LCAI_DATABASE_PATH`: DuckDB path, relative to the project root by default;
 - `LCAI_V2_DATABASE_PATH`: DuckDB V2 path, separate from the V1 application database;
-- `LCAI_ENABLE_V2_UI`: explicit opt-in for the isolated V2 application;
+- `LCAI_ENABLE_V2_UI`: compatibility flag retained for the former isolated V2 entry;
+- `LCAI_ENABLE_LEGACY_UI`: explicit temporary opt-in for the former V1 interface;
 - `LCAI_ENABLE_V2_ADMIN`: second explicit opt-in for V2 catalog administration;
 - `LCAI_LOG_LEVEL`: one of `CRITICAL`, `ERROR`, `WARNING`, `INFO`, or `DEBUG`.
 
@@ -119,14 +120,21 @@ Create or update a DuckDB V2 file without touching V1:
 python -m migrations --database data/learning_coach_v2.duckdb
 ```
 
-L'interface d'onboarding V2 est isolée et désactivée par défaut :
+`app.py` lance désormais l'expérience unifiée V2 :
 
 ```powershell
-$env:LCAI_ENABLE_V2_UI='true'
-python -m streamlit run v2_app.py
+python -m streamlit run app.py
 ```
 
-Sans ce flag explicite, `v2_app.py` refuse d'exposer le parcours V2. `app.py` reste l'entrée V1 par défaut.
+L'ancienne interface reste disponible temporairement pendant la migration progressive :
+
+```powershell
+$env:LCAI_ENABLE_LEGACY_UI='true'
+python -m streamlit run app.py
+```
+
+`v2_app.py` est conservé comme ancien point d'entrée d'onboarding, mais n'est plus
+l'expérience produit principale.
 
 Pour reconstruire et contrôler le catalogue ciblé LCAI-0009 :
 

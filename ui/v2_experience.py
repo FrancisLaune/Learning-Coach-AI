@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import time
 from datetime import UTC, datetime
 
 import streamlit as st
@@ -14,6 +15,7 @@ from application.experience_controllers import (
 from application.experience_factory import (
     build_parent_experience_controller,
     build_student_experience_controller,
+    build_unified_session_execution_service,
 )
 from services.learning_session.experience import SessionListItem, StudentDashboard
 from ui.session import logout
@@ -111,6 +113,67 @@ def session_screen(controller: StudentExperienceController, learner_id: int) -> 
             st.write(f"Type : {activity.activity_type} · État : {_status_label(activity.status)}")
             if activity.status == "COMPLETED":
                 st.write(f"Score : {activity.score:.0f} %")
+    if result.session.status == "RUNNING":
+        execution = build_unified_session_execution_service()
+        question = execution.current(learner_id, result.session.session_id)
+        feedback_key = f"session_feedback_{result.session.session_id}"
+        feedback = st.session_state.get(feedback_key)
+        if feedback:
+            if feedback.correct:
+                st.success(f"Bonne réponse — {feedback.score:.0f} %")
+            else:
+                st.error(f"Réponse à consolider — {feedback.score:.0f} %")
+            st.write(f"**Méthode :** {feedback.method}")
+            st.write(feedback.explanation)
+            if feedback.advice:
+                st.info(feedback.advice)
+            st.caption(f"Maîtrise : {feedback.mastery_before * 100:.0f} % → {feedback.mastery_after * 100:.0f} %")
+            if st.button("Activité suivante", type="primary"):
+                del st.session_state[feedback_key]
+                st.rerun()
+        elif question:
+            st.divider()
+            st.caption(f"Question {question.position}/{question.total} · {question.activity_title}")
+            if question.instructions:
+                st.write(question.instructions)
+            if question.context:
+                st.info(question.context)
+            st.markdown(f"### {question.statement}")
+            answer_key = f"answer_{question.session_id}_{question.question_id}"
+            if question.options:
+                answer = st.radio(
+                    "Ta réponse",
+                    [item[0] for item in question.options],
+                    format_func=dict(question.options).__getitem__,
+                    key=answer_key,
+                )
+            else:
+                answer = st.text_input("Ta réponse", key=answer_key)
+            if question.hints:
+                with st.expander("Besoin d'un indice ?"):
+                    for hint_id, _, penalty in question.hints:
+                        if st.button(f"Afficher l'indice ({penalty:g} point de pénalité)", key=f"hint_{hint_id}"):
+                            text = execution.use_hint(learner_id, result.session.session_id, hint_id, datetime.now(UTC))
+                            st.session_state[f"shown_hint_{hint_id}"] = text
+                        if shown := st.session_state.get(f"shown_hint_{hint_id}"):
+                            st.info(shown)
+            started_key = f"question_started_{question.session_id}_{question.question_id}"
+            st.session_state.setdefault(started_key, time.monotonic())
+            if st.button("Valider ma réponse", type="primary", disabled=not str(answer).strip()):
+                elapsed = int((time.monotonic() - float(st.session_state[started_key])) * 1000)
+                try:
+                    st.session_state[feedback_key] = execution.submit(
+                        learner_id,
+                        result.session.session_id,
+                        answer,
+                        datetime.now(UTC),
+                        elapsed,
+                    )
+                    st.rerun()
+                except ValueError as exc:
+                    st.error(str(exc))
+        else:
+            st.info("Toutes les questions disponibles ont été traitées.")
     actions = st.columns(3)
     error = None
     action_taken = False

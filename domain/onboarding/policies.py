@@ -15,10 +15,14 @@ def _matrix() -> tuple[GoalCompatibility, ...]:
     )
     rows = [
         GoalCompatibility(grade, kind, CompatibilityStatus.ALLOWED)
-        for grade in ("FR-4E", "FR-3E", "FR-2NDE", "FR-1ERE", "FR-TERM")
+        for grade in ("FR-CM1", "FR-CM2", "FR-6E", "FR-5E", "FR-4E", "FR-3E", "FR-2NDE", "FR-1ERE", "FR-TERM")
         for kind in common
     ]
     rows += [
+        GoalCompatibility("FR-CM1", ObjectiveKind.PREPARATION_NEXT_GRADE, CompatibilityStatus.RECOMMENDED, True),
+        GoalCompatibility("FR-CM2", ObjectiveKind.PREPARATION_NEXT_GRADE, CompatibilityStatus.RECOMMENDED, True),
+        GoalCompatibility("FR-6E", ObjectiveKind.PREPARATION_NEXT_GRADE, CompatibilityStatus.RECOMMENDED, True),
+        GoalCompatibility("FR-5E", ObjectiveKind.PREPARATION_NEXT_GRADE, CompatibilityStatus.RECOMMENDED, True),
         GoalCompatibility("FR-4E", ObjectiveKind.PREPARATION_NEXT_GRADE, CompatibilityStatus.RECOMMENDED, True),
         GoalCompatibility("FR-4E", ObjectiveKind.PREPARATION_BREVET, CompatibilityStatus.ANTICIPATION, False, True),
         GoalCompatibility("FR-3E", ObjectiveKind.PREPARATION_BREVET, CompatibilityStatus.RECOMMENDED, False, True),

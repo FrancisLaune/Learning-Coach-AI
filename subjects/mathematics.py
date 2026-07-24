@@ -227,21 +227,25 @@ def generate_question(chapter: str, difficulty: str = "Moyen") -> dict:
         q = random.randint(2, 8)
         price = random.randint(5, 24)
         target = random.randint(9, 20)
-        answer = price / q * target
+        proportional_answer = price / q * target
         return create_question(
             chapter,
             f"{q} articles coûtent {price} €. Combien coûtent {target} articles ?",
-            answer,
-            f"Prix unitaire={price / q:g} €, total={answer:g} €.",
+            proportional_answer,
+            f"Prix unitaire={price / q:g} €, total={proportional_answer:g} €.",
             "number",
             "€",
         )
     if chapter == "Pourcentages":
         value = random.choice([80, 120, 150, 200, 240, 360])
         pct = random.choice([10, 15, 20, 25, 30])
-        answer = value * pct / 100
+        percentage_answer = value * pct / 100
         return create_question(
-            chapter, f"Calcule {pct} % de {value}.", answer, f"{value}×{pct}/100={answer:g}.", "number"
+            chapter,
+            f"Calcule {pct} % de {value}.",
+            percentage_answer,
+            f"{value}×{pct}/100={percentage_answer:g}.",
+            "number",
         )
     if chapter == "Conversions":
         km = random.choice([1.2, 2.5, 3.75, 6.4, 8.05])
@@ -272,23 +276,23 @@ def generate_question(chapter: str, difficulty: str = "Moyen") -> dict:
         )
     if chapter == "Aires et volumes":
         length, width, height = random.randint(4, 12), random.randint(3, 9), random.randint(2, 8)
-        answer = length * width * height
+        volume_answer = length * width * height
         return create_question(
             chapter,
             f"Volume d'un pavé droit de {length}×{width}×{height} cm ?",
-            answer,
-            f"V={length}×{width}×{height}={answer} cm³.",
+            volume_answer,
+            f"V={length}×{width}×{height}={volume_answer} cm³.",
             "number",
             "cm³",
         )
     if chapter == "Statistiques":
         values = [random.randint(5, 20) for _ in range(5)]
-        answer = sum(values) / 5
+        average_answer = sum(values) / 5
         return create_question(
             chapter,
             f"Calcule la moyenne de : {', '.join(map(str, values))}.",
-            answer,
-            f"Somme={sum(values)} puis division par 5 : {answer:g}.",
+            average_answer,
+            f"Somme={sum(values)} puis division par 5 : {average_answer:g}.",
             "number",
         )
     if chapter == "Probabilités":

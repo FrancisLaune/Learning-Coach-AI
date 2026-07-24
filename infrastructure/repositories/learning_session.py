@@ -24,6 +24,12 @@ from domain.learning_session.models import (
 from infrastructure.database.v2 import connect_v2
 
 
+def _json_datetime(value: object) -> str:
+    if isinstance(value, datetime):
+        return value.isoformat()
+    raise TypeError(f"Object of type {type(value).__name__} is not JSON serializable")
+
+
 class DuckDBLearningSessionRepository:
     def __init__(self, database_path: Path | None = None) -> None:
         self.database_path = database_path
@@ -357,7 +363,7 @@ class DuckDBLearningSessionRepository:
                     record_id,
                     attempt.mastery_before,
                     attempt.mastery_after,
-                    json.dumps(mastery_payload),
+                    json.dumps(mastery_payload, default=_json_datetime),
                     str(mastery_payload.get("learning_engine_version", "unknown")),
                 ],
             )

@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+from typing import Any
+
 from subjects._helpers import generate_from_bank
 
 SUBJECT_NAME = "Français"
@@ -82,7 +84,7 @@ CHAPTERS = {
         "key_points": ["Organisation", "Connecteurs", "Vocabulaire", "Ponctuation", "Relecture"],
     },
 }
-BANK = {
+BANK: dict[str, list[tuple[Any, ...]]] = {
     "Classes grammaticales": [
         ("Dans « Il parle doucement », nature de « doucement » ?", "adverbe", "Le mot modifie le verbe."),
         (

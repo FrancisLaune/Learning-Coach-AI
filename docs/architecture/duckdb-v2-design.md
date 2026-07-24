@@ -6,7 +6,9 @@ Migrations : `migrations/v2/`
 
 ## Principes
 
-DuckDB V2 est créé à côté de V1. L'application Streamlit continue d'utiliser `data/objectif_brevet_2027.duckdb`; aucune donnée utilisateur V1 n'est copiée dans V2 par ce ticket.
+DuckDB V2 reste séparé de V1. Depuis LCAI-0010B, le shell unifié utilise V1
+uniquement pour l'authentification historique pendant la migration progressive
+et conserve les données pédagogiques nouvelles dans V2.
 
 Le modèle suit la hiérarchie canonique `Program → Subject → Domain → Skill → SubSkill`, sépare `Exercise` et `Question`, conserve les événements d'apprentissage et prépare les futurs Learning Engine, Decision Engine et AI Coach sans les implémenter.
 
@@ -22,8 +24,8 @@ Cette stratégie est adaptée à un fichier local. Une synchronisation multi-ins
 
 ## Inventaire du schéma
 
-Après LCAI-0010 Part 07, le schéma contient **110 tables**, **7 vues** et
-**62 index explicites**.
+Après LCAI-0010B, le schéma contient **115 tables**, **7 vues** et
+**66 index explicites**.
 
 ### Versionnement et référentiels
 
@@ -192,6 +194,8 @@ Les index automatiques associés aux PK/UNIQUE ne sont pas dupliqués. Ces index
 | 12 | `012_session_integration_security.sql` | Idempotence, autorisations, versions gelées, concurrence, reprise décisionnelle et vues de session |
 | 13 | `013_learning_intelligence_layer.sql` | Calculs analytiques, snapshots, explications, erreurs récurrentes et insights parent versionnés |
 | 14 | `014_platform_extensibility_foundation.sql` | Statuts de plugins, snapshots non secrets, outbox locale, livraisons idempotentes, audit append-only et traces import/export/notification |
+| 15 | `015_unified_learning_experience.sql` | Profils d’expérience, devoirs, résultats, changements de programme et mesure d’efficacité |
+| 16 | `016_supported_school_levels.sql` | Niveaux CM1 à 5e et adresse e-mail du profil apprenant |
 
 Le runner :
 

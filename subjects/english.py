@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+from typing import Any
+
 from subjects._helpers import generate_from_bank
 
 SUBJECT_NAME = "Anglais"
@@ -82,7 +84,7 @@ CHAPTERS = {
         "key_points": ["Main idea", "Details", "Inference"],
     },
 }
-BANK = {
+BANK: dict[str, list[tuple[Any, ...]]] = {
     "Present simple": [
         ("Complete: He ___ football every Saturday. (play)", "plays", "Third person singular takes -s.")
     ],

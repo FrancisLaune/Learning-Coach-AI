@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+from typing import Any
+
 from subjects._helpers import generate_from_bank
 
 SUBJECT_NAME = "Géographie"
@@ -68,7 +70,7 @@ CHAPTERS = {
         "key_points": ["IDH", "PIB", "Développement"],
     },
 }
-BANK = {
+BANK: dict[str, list[tuple[Any, ...]]] = {
     "Urbanisation": [
         ("L'augmentation de la population vivant en ville s'appelle...", "urbanisation", "C'est l'urbanisation.")
     ],

@@ -33,6 +33,21 @@ class DuckDBOnboardingRepository:
             ).fetchone()
             if existing:
                 learner_id = int(existing[0])
+                con.execute(
+                    "UPDATE learners SET display_name=?,locale=?,timezone=? WHERE id=?",
+                    [
+                        request.profile.display_name,
+                        request.profile.locale,
+                        request.profile.timezone,
+                        learner_id,
+                    ],
+                )
+                con.execute(
+                    """UPDATE learner_functional_profiles
+                    SET birth_date=?,creator_role=?,profile_version=profile_version+1,updated_at=now()
+                    WHERE learner_id=?""",
+                    [request.profile.birth_date, request.profile.creator_role.value, learner_id],
+                )
             else:
                 row = con.execute(
                     "INSERT INTO learners(external_ref,display_name,locale,timezone) VALUES (?,?,?,?) RETURNING id",

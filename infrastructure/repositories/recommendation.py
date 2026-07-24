@@ -26,6 +26,19 @@ class DuckDBRecommendationRepository:
         finally:
             con.close()
 
+    def proposal_id_for_stable_id(self, stable_id: str) -> int:
+        con = connect_v2(self.database_path, read_only=True)
+        try:
+            row = con.execute(
+                "SELECT id FROM personalized_session_proposals WHERE stable_id=?",
+                [stable_id],
+            ).fetchone()
+            if row is None:
+                raise KeyError(f"Unknown recommendation {stable_id}")
+            return int(row[0])
+        finally:
+            con.close()
+
     def load_approved_contents(self) -> tuple[ApprovedContent, ...]:
         """Return only active exercises whose latest content status is approved."""
         con = connect_v2(self.database_path, read_only=True)

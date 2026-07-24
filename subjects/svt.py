@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+from typing import Any
+
 from subjects._helpers import generate_from_bank
 
 SUBJECT_NAME = "SVT"
@@ -75,7 +77,7 @@ CHAPTERS = {
         "key_points": ["Plaques", "Séisme", "Volcan"],
     },
 }
-BANK = {
+BANK: dict[str, list[tuple[Any, ...]]] = {
     "Cellule": [("Quel organite contient généralement l'information génétique ?", "noyau", "Le noyau contient l'ADN.")],
     "ADN et génétique": [
         ("Quel support porte l'information génétique ?", "adn", "L'ADN porte l'information génétique.")

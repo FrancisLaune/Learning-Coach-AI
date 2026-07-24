@@ -72,3 +72,42 @@ def test_text_normalization_and_answer_checking() -> None:
 def test_project_root_is_absolute() -> None:
     assert isinstance(PROJECT_ROOT, Path)
     assert PROJECT_ROOT.is_absolute()
+
+
+def test_runtime_initialization_runs_once_across_reruns(monkeypatch: pytest.MonkeyPatch) -> None:
+    import services.runtime as runtime
+
+    calls = {"logging": 0, "legacy": 0, "migrations": 0}
+    runtime._reset_runtime_for_tests()
+    monkeypatch.setattr(runtime, "configure_logging", lambda: calls.__setitem__("logging", calls["logging"] + 1))
+    monkeypatch.setattr(runtime, "init_db", lambda: calls.__setitem__("legacy", calls["legacy"] + 1))
+    monkeypatch.setattr(runtime, "apply_migrations", lambda: calls.__setitem__("migrations", calls["migrations"] + 1))
+
+    runtime.prepare_runtime()
+    runtime.prepare_runtime()
+    runtime.prepare_runtime()
+
+    assert calls == {"logging": 1, "legacy": 1, "migrations": 1}
+    runtime._reset_runtime_for_tests()
+
+
+def test_failed_runtime_initialization_is_not_cached(monkeypatch: pytest.MonkeyPatch) -> None:
+    import services.runtime as runtime
+
+    calls = 0
+    runtime._reset_runtime_for_tests()
+
+    def fail_once() -> None:
+        nonlocal calls
+        calls += 1
+        if calls == 1:
+            raise OSError("simulated lock")
+
+    monkeypatch.setattr(runtime, "configure_logging", lambda: None)
+    monkeypatch.setattr(runtime, "init_db", lambda: None)
+    monkeypatch.setattr(runtime, "apply_migrations", fail_once)
+    with pytest.raises(OSError, match="simulated lock"):
+        runtime.prepare_runtime()
+    runtime.prepare_runtime()
+    assert calls == 2
+    runtime._reset_runtime_for_tests()

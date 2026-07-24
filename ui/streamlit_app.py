@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import logging
 import time
 from datetime import datetime
 
@@ -9,7 +10,13 @@ import streamlit as st
 
 from analytics.adaptive import coaching_message, recommend_level
 from analytics.mastery import compute_mastery
-from core.config import is_v2_parent_dashboard_enabled, is_v2_ui_enabled
+from core.config import (
+    get_demo_parent_credentials,
+    is_demo_credentials_enabled,
+    is_legacy_ui_enabled,
+    is_v2_parent_dashboard_enabled,
+    is_v2_ui_enabled,
+)
 from core.engine import LEVELS, build_exam, build_progressive_set, build_question_set, is_correct
 from core.registry import SUBJECTS
 from infrastructure.database.legacy_gateway import (
@@ -18,7 +25,7 @@ from infrastructure.database.legacy_gateway import (
     authenticate,
     chapter_performance,
     create_exam,
-    create_user,
+    create_parent,
     dashboard_metrics,
     exam_chapter_analysis,
     finish_exam,
@@ -39,6 +46,8 @@ from services.runtime import prepare_runtime
 from ui.components.layout import configure_page, render_global_styles
 from ui.session import initialize_state, logout
 
+LOGGER = logging.getLogger(__name__)
+
 configure_page()
 render_global_styles()
 
@@ -47,32 +56,63 @@ def login_screen() -> None:
     st.markdown(
         """
     <div class="hero">
-      <h1>🎓 Objectif Brevet 2027 – V7.0</h1>
-      <div class="small">Plateforme multi-matières, devoirs, notes, fiches et progression.</div>
+      <h1>🎓 Learning Coach AI</h1>
+      <div class="small">Parcours personnalisé, devoirs, révisions et suivi familial.</div>
     </div>
     """,
         unsafe_allow_html=True,
     )
-    login_tab, create_tab = st.tabs(["Connexion", "Créer un compte enfant"])
-    with login_tab:
-        name = st.text_input("Nom")
-        pin = st.text_input("Code PIN", type="password")
-        if st.button("Se connecter", type="primary"):
-            user = authenticate(name, pin)
+    st.subheader("Connexion")
+    parent_tab, student_tab = st.tabs(["Parent", "Élève"])
+    with parent_tab:
+        with st.form("parent_login"):
+            name = st.text_input("Identifiant ou e-mail", key="parent_login_name")
+            pin = st.text_input("Mot de passe", type="password", key="parent_login_password")
+            login_parent = st.form_submit_button("Se connecter", type="primary")
+        if login_parent:
+            user = authenticate(name, pin, "parent")
             if user:
                 st.session_state.user = user
                 st.rerun()
-            st.error("Nom ou code PIN incorrect.")
-        st.caption("Compte parent initial : Parent / 1234")
-    with create_tab:
-        child_name = st.text_input("Prénom", key="new_child")
-        child_pin = st.text_input("Code PIN", type="password", key="new_pin")
-        if st.button("Créer le compte"):
-            ok, message = create_user(child_name, child_pin)
-            if ok:
-                st.success(message)
-            else:
-                st.error(message)
+            st.error("Identifiant, e-mail ou mot de passe incorrect.")
+        if is_demo_credentials_enabled():
+            demo_name, demo_password = get_demo_parent_credentials()
+            with st.popover("ℹ️ Compte de démonstration"):
+                st.write(f"Identifiant : **{demo_name}**")
+                st.write(f"Mot de passe : **{demo_password}**")
+        st.caption("Pas encore de compte ?")
+        with st.expander("Créer un compte Parent"):
+            with st.form("create_parent_account"):
+                names = st.columns(2)
+                first_name = names[0].text_input("Prénom")
+                last_name = names[1].text_input("Nom")
+                email = st.text_input("Adresse e-mail")
+                username = st.text_input("Identifiant")
+                password = st.text_input("Mot de passe", type="password")
+                confirmation = st.text_input("Confirmer le mot de passe", type="password")
+                submitted = st.form_submit_button("Créer le compte", type="primary")
+            if submitted:
+                ok, message = create_parent(first_name, last_name, email, username, password, confirmation)
+                if ok:
+                    st.success(message)
+                else:
+                    st.error(message)
+    with student_tab:
+        with st.form("student_login"):
+            student_name = st.text_input("Identifiant ou e-mail", key="student_login_name")
+            student_password = st.text_input(
+                "Mot de passe",
+                type="password",
+                key="student_login_password",
+            )
+            login_student = st.form_submit_button("Se connecter", type="primary")
+        if login_student:
+            user = authenticate(student_name, student_password, "student")
+            if user:
+                st.session_state.user = user
+                st.rerun()
+            st.error("Identifiant, e-mail ou mot de passe incorrect.")
+        st.caption("Le compte Élève est créé et géré depuis l’espace Parent.")
 
 
 def render_revision_sheet(subject: str, chapter: str) -> None:
@@ -354,6 +394,9 @@ def analysis_view(user_id: int, student_name: str) -> None:
                 key=f"analysis_exam_{user_id}",
             )
             exam, questions = get_exam(int(exam_id))
+            if exam is None:
+                st.error("Ce devoir n'est plus disponible.")
+                return
             chapters = exam_chapter_analysis(int(exam_id))
             c1, c2, c3, c4 = st.columns(4)
             c1.metric("Note", f"{float(exam['score']):.2f}/20")
@@ -763,9 +806,20 @@ def parent_app() -> None:
 
 
 def run_app() -> None:
-    """Start the existing Streamlit application through the new UI boundary."""
-    prepare_runtime()
+    """Start the unified product; legacy access requires explicit opt-in."""
+    try:
+        prepare_runtime()
+    except Exception:
+        LOGGER.exception("Application runtime initialization failed")
+        st.error("Nous ne pouvons pas initialiser l'application pour le moment. Veuillez réessayer.")
+        return
     initialize_state()
+
+    if not is_legacy_ui_enabled():
+        from ui.unified_app import run_unified_app
+
+        run_unified_app(login_screen)
+        return
 
     if not st.session_state.user:
         login_screen()
