@@ -1,0 +1,505 @@
+{
+  "catalog_version": "2026-2027.1",
+  "metadata": {
+    "phase2_curriculum": true,
+    "source_label": "MEN-DGESCO-programmes-2026-2027",
+    "language": "fr-FR",
+    "status": "reviewed_reference",
+    "import_version": "LCAI-0011B-1",
+    "effective_school_year": "2026-2027",
+    "scope_note": "Structure de navigation curriculaire traçable. Aucun contenu éducatif ou exercice n'est inclus.",
+    "mapping_note": "Au cycle 3, l'enseignement officiel intégré Sciences et technologie est réparti dans les référentiels existants SVT et PHYSICS_CHEMISTRY. L'espagnol n'est pas imposé comme combinaison artificielle en CM1, CM2 ou 6e.",
+    "sources": [
+      {
+        "title": "Programmes de français et de mathématiques du cycle 3",
+        "reference": "BO n°16 du 17 avril 2025",
+        "url": "https://www.education.gouv.fr/bo/2025/Hebdo16/MENE2504620A",
+        "applies_to": ["FR-CM1", "FR-CM2", "FR-6E"]
+      },
+      {
+        "title": "Programmes de français et de mathématiques du cycle 4",
+        "reference": "BO n°10 du 5 mars 2026 et calendrier progressif",
+        "url": "https://www.education.gouv.fr/bo/2026/Hebdo10/MENE2602912A",
+        "applies_to": ["FR-5E"]
+      },
+      {
+        "title": "Programme du cycle 4 encore applicable en 4e et 3e en 2026-2027",
+        "reference": "BOEN n°31 du 30 juillet 2020",
+        "url": "https://eduscol.education.gouv.fr/sites/default/files/document/programme-d-enseignement-du-cycle-4-67722.pdf",
+        "applies_to": ["FR-4E", "FR-3E"]
+      },
+      {
+        "title": "Programmes et calendrier du cycle 3",
+        "reference": "Éduscol, programmes en application à la rentrée 2026-2027",
+        "url": "https://eduscol.education.fr/4356/enseigner-au-cycle-3",
+        "applies_to": ["FR-CM1", "FR-CM2", "FR-6E"]
+      },
+      {
+        "title": "Programmes de langues vivantes étrangères au collège",
+        "reference": "BO n°22 du 29 mai 2025 et calendrier progressif",
+        "url": "https://www.education.gouv.fr/sites/default/files/bulletin-officiel-n-22-du-29-mai-2025-441441.pdf",
+        "applies_to": ["FR-6E", "FR-5E", "FR-4E", "FR-3E"]
+      },
+      {
+        "title": "Programme de langues vivantes au cours moyen",
+        "reference": "BO n°12 du 19 mars 2026",
+        "url": "https://www.education.gouv.fr/sites/default/files/document/Bulletin%20officiel%20n%C2%B0%2012%20du%2019%20mars%202026-481193.pdf",
+        "applies_to": ["FR-CM1", "FR-CM2"]
+      },
+      {
+        "title": "Programme d'histoire-géographie du cycle 3",
+        "reference": "BO n°22 du 28 mai 2026 et calendrier progressif",
+        "url": "https://www.education.gouv.fr/sites/default/files/document/boenjs22pdf-516809.pdf",
+        "applies_to": ["FR-CM1", "FR-CM2", "FR-6E"]
+      },
+      {
+        "title": "Programme de sciences et technologie du cycle 3",
+        "reference": "BO n°24 du 11 juin 2026 et calendrier progressif",
+        "url": "https://www.education.gouv.fr/bo/2026/Hebdo24/MENE2611650A",
+        "applies_to": ["FR-CM1", "FR-CM2", "FR-6E"]
+      },
+      {
+        "title": "Programme d'enseignement moral et civique",
+        "reference": "BO n°24 du 13 juin 2024, applicable à tous les niveaux en 2026-2027",
+        "url": "https://eduscol.education.fr/4752/ressources-d-accompagnement-pour-l-enseignement-moral-et-civique-au-college",
+        "applies_to": ["FR-CM1", "FR-CM2", "FR-6E", "FR-5E", "FR-4E", "FR-3E"]
+      }
+    ]
+  },
+  "curriculum_packages": [
+    {
+      "program": {
+        "code": "FR-CYCLE3-CM1-2026",
+        "version": "2026-2027-CM1",
+        "label": "Programme de référence CM1 2026-2027",
+        "grade_code": "FR-CM1",
+        "valid_from": "2026-09-01"
+      },
+      "subjects": [
+        {
+          "code": "MATHEMATICS",
+          "chapters": [
+            {"code": "CH-MATHEMATICS-CM1-INTEGERS", "domain_code": "NUMBERS", "title": "Nombres entiers", "skills": [{"code": "SK-MATHEMATICS-CM1-INTEGERS", "title": "Lire, écrire, comparer et ordonner les nombres entiers", "subskills": [{"code": "SUB-MATHEMATICS-CM1-INTEGERS-PLACE", "title": "Utiliser la valeur de position des chiffres"}]}]},
+            {"code": "CH-MATHEMATICS-CM1-FRACTIONS", "domain_code": "NUMBERS", "title": "Fractions simples", "skills": [{"code": "SK-MATHEMATICS-CM1-FRACTIONS", "title": "Représenter et comparer des fractions simples", "subskills": [{"code": "SUB-MATHEMATICS-CM1-FRACTIONS-UNIT", "title": "Repérer une fraction sur une demi-droite graduée"}]}]},
+            {"code": "CH-MATHEMATICS-CM1-CALCULATION", "domain_code": "NUMBERS", "title": "Calcul mental et posé", "skills": [{"code": "SK-MATHEMATICS-CM1-CALCULATION", "title": "Calculer avec les nombres entiers"}]},
+            {"code": "CH-MATHEMATICS-CM1-MEASURES", "domain_code": "GEOMETRY", "title": "Grandeurs et mesures", "skills": [{"code": "SK-MATHEMATICS-CM1-MEASURES", "title": "Mesurer et convertir des grandeurs usuelles"}]},
+            {"code": "CH-MATHEMATICS-CM1-GEOMETRY", "domain_code": "GEOMETRY", "title": "Figures et espace", "skills": [{"code": "SK-MATHEMATICS-CM1-GEOMETRY", "title": "Reconnaître, décrire et construire des figures"}]}
+          ]
+        },
+        {
+          "code": "FRENCH",
+          "chapters": [
+            {"code": "CH-FRENCH-CM1-ORAL", "domain_code": "READING", "title": "Comprendre et s'exprimer à l'oral", "skills": [{"code": "SK-FRENCH-CM1-ORAL", "title": "Écouter, comprendre et prendre la parole"}]},
+            {"code": "CH-FRENCH-CM1-READING", "domain_code": "READING", "title": "Lecture et compréhension", "skills": [{"code": "SK-FRENCH-CM1-READING", "title": "Lire avec fluidité et comprendre des textes variés"}]},
+            {"code": "CH-FRENCH-CM1-WRITING", "domain_code": "WRITING", "title": "Production d'écrits", "skills": [{"code": "SK-FRENCH-CM1-WRITING", "title": "Rédiger, réviser et améliorer un texte court"}]},
+            {"code": "CH-FRENCH-CM1-GRAMMAR", "domain_code": "LANGUAGE_STUDY", "title": "Grammaire et syntaxe", "skills": [{"code": "SK-FRENCH-CM1-GRAMMAR", "title": "Identifier les constituants de la phrase et leurs relations"}]},
+            {"code": "CH-FRENCH-CM1-SPELLING", "domain_code": "LANGUAGE_STUDY", "title": "Orthographe et lexique", "skills": [{"code": "SK-FRENCH-CM1-SPELLING", "title": "Mobiliser les régularités orthographiques et enrichir le lexique"}]}
+          ]
+        },
+        {
+          "code": "ENGLISH",
+          "chapters": [
+            {"code": "CH-ENGLISH-CM1-ORAL", "domain_code": "COMMUNICATION", "title": "Écouter, comprendre et parler", "skills": [{"code": "SK-ENGLISH-CM1-ORAL", "title": "Comprendre et produire des messages oraux simples"}]},
+            {"code": "CH-ENGLISH-CM1-WRITTEN", "domain_code": "LANGUAGE", "title": "Lire et écrire des énoncés simples", "skills": [{"code": "SK-ENGLISH-CM1-WRITTEN", "title": "Comprendre et produire de courts écrits familiers"}]}
+          ]
+        },
+        {
+          "code": "HISTORY",
+          "chapters": [
+            {"code": "CH-HISTORY-CM1-BEFORE-FRANCE", "domain_code": "MODERN_HISTORY", "title": "Avant la France", "skills": [{"code": "SK-HISTORY-CM1-BEFORE-FRANCE", "title": "Construire des repères sur les peuplements et héritages anciens"}]},
+            {"code": "CH-HISTORY-CM1-KINGS", "domain_code": "MODERN_HISTORY", "title": "Le temps des rois", "skills": [{"code": "SK-HISTORY-CM1-KINGS", "title": "Situer des pouvoirs et transformations de la monarchie"}]},
+            {"code": "CH-HISTORY-CM1-REVOLUTION", "domain_code": "MODERN_HISTORY", "title": "Révolution et Empire", "skills": [{"code": "SK-HISTORY-CM1-REVOLUTION", "title": "Identifier les ruptures politiques de la Révolution et de l'Empire"}]}
+          ]
+        },
+        {
+          "code": "GEOGRAPHY",
+          "chapters": [
+            {"code": "CH-GEOGRAPHY-CM1-PLACES", "domain_code": "TERRITORIES", "title": "Découvrir les lieux où j'habite", "skills": [{"code": "SK-GEOGRAPHY-CM1-PLACES", "title": "Localiser et caractériser son espace proche"}]},
+            {"code": "CH-GEOGRAPHY-CM1-HOUSING", "domain_code": "TERRITORIES", "title": "Se loger, travailler et se cultiver", "skills": [{"code": "SK-GEOGRAPHY-CM1-HOUSING", "title": "Décrire les fonctions et formes des espaces habités"}]},
+            {"code": "CH-GEOGRAPHY-CM1-CONSUME", "domain_code": "TERRITORIES", "title": "Consommer en France", "skills": [{"code": "SK-GEOGRAPHY-CM1-CONSUME", "title": "Comprendre l'origine et l'acheminement de ressources consommées"}]}
+          ]
+        },
+        {
+          "code": "EMC",
+          "chapters": [
+            {"code": "CH-EMC-CM1-DIGNITY", "domain_code": "CITIZENSHIP", "title": "Dignité et respect de la personne", "skills": [{"code": "SK-EMC-CM1-DIGNITY", "title": "Reconnaître et appliquer les principes de respect et d'égalité"}]},
+            {"code": "CH-EMC-CM1-COLLECTIVE", "domain_code": "CITIZENSHIP", "title": "Règles et vie collective", "skills": [{"code": "SK-EMC-CM1-COLLECTIVE", "title": "Comprendre la fonction des règles communes"}]}
+          ]
+        },
+        {
+          "code": "SVT",
+          "chapters": [
+            {"code": "CH-SVT-CM1-LIVING", "domain_code": "LIVING_WORLD", "title": "Diversité et besoins des êtres vivants", "skills": [{"code": "SK-SVT-CM1-LIVING", "title": "Observer, classer et relier les êtres vivants à leur milieu"}]},
+            {"code": "CH-SVT-CM1-ECOSYSTEMS", "domain_code": "EARTH", "title": "Écosystèmes et environnement", "skills": [{"code": "SK-SVT-CM1-ECOSYSTEMS", "title": "Identifier des interactions dans un écosystème"}]}
+          ]
+        },
+        {
+          "code": "PHYSICS_CHEMISTRY",
+          "chapters": [
+            {"code": "CH-PHYSICS_CHEMISTRY-CM1-MATTER", "domain_code": "MATTER", "title": "États et propriétés de la matière", "skills": [{"code": "SK-PHYSICS_CHEMISTRY-CM1-MATTER", "title": "Décrire des états et changements d'état observables"}]},
+            {"code": "CH-PHYSICS_CHEMISTRY-CM1-ENERGY", "domain_code": "ENERGY", "title": "Mouvements, énergie et objets techniques", "skills": [{"code": "SK-PHYSICS_CHEMISTRY-CM1-ENERGY", "title": "Observer un mouvement et identifier des formes d'énergie"}]}
+          ]
+        }
+      ]
+    },
+    {
+      "program": {
+        "code": "FR-CYCLE3-CM2-2026",
+        "version": "2026-2027-CM2",
+        "label": "Programme de référence CM2 2026-2027",
+        "grade_code": "FR-CM2",
+        "valid_from": "2026-09-01"
+      },
+      "subjects": [
+        {
+          "code": "MATHEMATICS",
+          "chapters": [
+            {"code": "CH-MATHEMATICS-CM2-NUMBERS", "domain_code": "NUMBERS", "title": "Nombres entiers et décimaux", "skills": [{"code": "SK-MATHEMATICS-CM2-NUMBERS", "title": "Lire, représenter, comparer et calculer avec les nombres", "prerequisites": ["SK-MATHEMATICS-CM1-INTEGERS"]}]},
+            {"code": "CH-MATHEMATICS-CM2-FRACTIONS", "domain_code": "NUMBERS", "title": "Fractions et nombres décimaux", "skills": [{"code": "SK-MATHEMATICS-CM2-FRACTIONS", "title": "Relier fractions, quotients et écritures décimales", "prerequisites": ["SK-MATHEMATICS-CM1-FRACTIONS"]}]},
+            {"code": "CH-MATHEMATICS-CM2-PROBLEMS", "domain_code": "ALGEBRA", "title": "Résolution de problèmes", "skills": [{"code": "SK-MATHEMATICS-CM2-PROBLEMS", "title": "Modéliser et résoudre des problèmes à plusieurs étapes"}]},
+            {"code": "CH-MATHEMATICS-CM2-MEASURES", "domain_code": "GEOMETRY", "title": "Grandeurs, mesures et proportionnalité", "skills": [{"code": "SK-MATHEMATICS-CM2-MEASURES", "title": "Choisir des unités et résoudre des problèmes de mesure", "prerequisites": ["SK-MATHEMATICS-CM1-MEASURES"]}]},
+            {"code": "CH-MATHEMATICS-CM2-GEOMETRY", "domain_code": "GEOMETRY", "title": "Géométrie plane et espace", "skills": [{"code": "SK-MATHEMATICS-CM2-GEOMETRY", "title": "Construire et raisonner sur des figures et solides", "prerequisites": ["SK-MATHEMATICS-CM1-GEOMETRY"]}]}
+          ]
+        },
+        {
+          "code": "FRENCH",
+          "chapters": [
+            {"code": "CH-FRENCH-CM2-ORAL", "domain_code": "READING", "title": "Oral et compréhension", "skills": [{"code": "SK-FRENCH-CM2-ORAL", "title": "Écouter, reformuler et présenter un propos organisé", "prerequisites": ["SK-FRENCH-CM1-ORAL"]}]},
+            {"code": "CH-FRENCH-CM2-READING", "domain_code": "READING", "title": "Lecture fluide et interprétation", "skills": [{"code": "SK-FRENCH-CM2-READING", "title": "Comprendre, interpréter et justifier une lecture", "prerequisites": ["SK-FRENCH-CM1-READING"]}]},
+            {"code": "CH-FRENCH-CM2-WRITING", "domain_code": "WRITING", "title": "Écriture organisée", "skills": [{"code": "SK-FRENCH-CM2-WRITING", "title": "Planifier, rédiger et réviser un texte cohérent", "prerequisites": ["SK-FRENCH-CM1-WRITING"]}]},
+            {"code": "CH-FRENCH-CM2-GRAMMAR", "domain_code": "LANGUAGE_STUDY", "title": "Grammaire, conjugaison et accords", "skills": [{"code": "SK-FRENCH-CM2-GRAMMAR", "title": "Analyser la phrase et maîtriser les accords essentiels", "prerequisites": ["SK-FRENCH-CM1-GRAMMAR"]}]},
+            {"code": "CH-FRENCH-CM2-LEXICON", "domain_code": "LANGUAGE_STUDY", "title": "Lexique et orthographe", "skills": [{"code": "SK-FRENCH-CM2-LEXICON", "title": "Développer le lexique et raisonner sur l'orthographe", "prerequisites": ["SK-FRENCH-CM1-SPELLING"]}]}
+          ]
+        },
+        {
+          "code": "ENGLISH",
+          "chapters": [
+            {"code": "CH-ENGLISH-CM2-COMMUNICATION", "domain_code": "COMMUNICATION", "title": "Communication sur des sujets familiers", "skills": [{"code": "SK-ENGLISH-CM2-COMMUNICATION", "title": "Comprendre, dialoguer et parler en continu", "prerequisites": ["SK-ENGLISH-CM1-ORAL"]}]},
+            {"code": "CH-ENGLISH-CM2-LANGUAGE", "domain_code": "LANGUAGE", "title": "Repères linguistiques et culturels", "skills": [{"code": "SK-ENGLISH-CM2-LANGUAGE", "title": "Lire et écrire des messages simples dans leur contexte culturel", "prerequisites": ["SK-ENGLISH-CM1-WRITTEN"]}]}
+          ]
+        },
+        {
+          "code": "HISTORY",
+          "chapters": [
+            {"code": "CH-HISTORY-CM2-REPUBLIC", "domain_code": "CONTEMPORARY_HISTORY", "title": "Le temps de la République", "skills": [{"code": "SK-HISTORY-CM2-REPUBLIC", "title": "Identifier des repères et principes de la République"}]},
+            {"code": "CH-HISTORY-CM2-INDUSTRIAL", "domain_code": "CONTEMPORARY_HISTORY", "title": "L'âge industriel en France", "skills": [{"code": "SK-HISTORY-CM2-INDUSTRIAL", "title": "Expliquer des transformations économiques et sociales"}]},
+            {"code": "CH-HISTORY-CM2-WARS", "domain_code": "CONTEMPORARY_HISTORY", "title": "La France des guerres mondiales à l'Union européenne", "skills": [{"code": "SK-HISTORY-CM2-WARS", "title": "Construire des repères du XXe siècle et de la construction européenne"}]}
+          ]
+        },
+        {
+          "code": "GEOGRAPHY",
+          "chapters": [
+            {"code": "CH-GEOGRAPHY-CM2-MOBILITY", "domain_code": "TERRITORIES", "title": "Se déplacer", "skills": [{"code": "SK-GEOGRAPHY-CM2-MOBILITY", "title": "Comparer des mobilités et leurs effets territoriaux"}]},
+            {"code": "CH-GEOGRAPHY-CM2-NETWORKS", "domain_code": "GLOBALIZATION", "title": "Communiquer grâce à Internet", "skills": [{"code": "SK-GEOGRAPHY-CM2-NETWORKS", "title": "Comprendre l'inscription spatiale des réseaux numériques"}]},
+            {"code": "CH-GEOGRAPHY-CM2-SUSTAINABLE", "domain_code": "TERRITORIES", "title": "Mieux habiter", "skills": [{"code": "SK-GEOGRAPHY-CM2-SUSTAINABLE", "title": "Proposer des pratiques d'aménagement plus durables"}]}
+          ]
+        },
+        {
+          "code": "EMC",
+          "chapters": [
+            {"code": "CH-EMC-CM2-REPUBLIC", "domain_code": "CITIZENSHIP", "title": "Valeurs et principes de la République", "skills": [{"code": "SK-EMC-CM2-REPUBLIC", "title": "Expliquer liberté, égalité, fraternité et laïcité"}]},
+            {"code": "CH-EMC-CM2-ENGAGEMENT", "domain_code": "CITIZENSHIP", "title": "Citoyenneté et engagement", "skills": [{"code": "SK-EMC-CM2-ENGAGEMENT", "title": "Participer à une action collective argumentée"}]}
+          ]
+        },
+        {
+          "code": "SVT",
+          "chapters": [
+            {"code": "CH-SVT-CM2-LIFE-CYCLES", "domain_code": "LIVING_WORLD", "title": "Cycles de vie et classification", "skills": [{"code": "SK-SVT-CM2-LIFE-CYCLES", "title": "Relier développement, reproduction et classification des êtres vivants", "prerequisites": ["SK-SVT-CM1-LIVING"]}]},
+            {"code": "CH-SVT-CM2-ENVIRONMENT", "domain_code": "EARTH", "title": "Environnement, risques et ressources", "skills": [{"code": "SK-SVT-CM2-ENVIRONMENT", "title": "Relier phénomènes naturels, ressources et actions humaines", "prerequisites": ["SK-SVT-CM1-ECOSYSTEMS"]}]}
+          ]
+        },
+        {
+          "code": "PHYSICS_CHEMISTRY",
+          "chapters": [
+            {"code": "CH-PHYSICS_CHEMISTRY-CM2-MIXTURES", "domain_code": "MATTER", "title": "Matière, mélanges et transformations", "skills": [{"code": "SK-PHYSICS_CHEMISTRY-CM2-MIXTURES", "title": "Décrire et expérimenter des transformations de la matière", "prerequisites": ["SK-PHYSICS_CHEMISTRY-CM1-MATTER"]}]},
+            {"code": "CH-PHYSICS_CHEMISTRY-CM2-SIGNALS", "domain_code": "ENERGY", "title": "Énergie, signaux et systèmes techniques", "skills": [{"code": "SK-PHYSICS_CHEMISTRY-CM2-SIGNALS", "title": "Identifier des transferts d'énergie et des signaux", "prerequisites": ["SK-PHYSICS_CHEMISTRY-CM1-ENERGY"]}]}
+          ]
+        }
+      ]
+    },
+    {
+      "program": {
+        "code": "FR-CYCLE3-6E-2026",
+        "version": "2026-2027-6E",
+        "label": "Programme de référence Sixième 2026-2027",
+        "grade_code": "FR-6E",
+        "valid_from": "2026-09-01"
+      },
+      "subjects": [
+        {
+          "code": "MATHEMATICS",
+          "chapters": [
+            {"code": "CH-MATHEMATICS-6E-NUMBERS", "domain_code": "NUMBERS", "title": "Nombres entiers, décimaux et fractions", "skills": [{"code": "SK-MATHEMATICS-6E-NUMBERS", "title": "Comparer, calculer et raisonner avec différentes écritures des nombres", "prerequisites": ["SK-MATHEMATICS-CM2-NUMBERS", "SK-MATHEMATICS-CM2-FRACTIONS"]}]},
+            {"code": "CH-MATHEMATICS-6E-RATIOS", "domain_code": "NUMBERS", "title": "Proportionnalité et pourcentages simples", "skills": [{"code": "SK-MATHEMATICS-6E-RATIOS", "title": "Reconnaître et traiter une situation de proportionnalité"}]},
+            {"code": "CH-MATHEMATICS-6E-DATA", "domain_code": "DATA", "title": "Données et probabilités élémentaires", "skills": [{"code": "SK-MATHEMATICS-6E-DATA", "title": "Lire, organiser et représenter des données"}]},
+            {"code": "CH-MATHEMATICS-6E-MEASURES", "domain_code": "GEOMETRY", "title": "Grandeurs et mesures", "skills": [{"code": "SK-MATHEMATICS-6E-MEASURES", "title": "Calculer des périmètres, aires, durées et volumes", "prerequisites": ["SK-MATHEMATICS-CM2-MEASURES"]}]},
+            {"code": "CH-MATHEMATICS-6E-GEOMETRY", "domain_code": "GEOMETRY", "title": "Géométrie plane et espace", "skills": [{"code": "SK-MATHEMATICS-6E-GEOMETRY", "title": "Construire, représenter et justifier des propriétés géométriques", "prerequisites": ["SK-MATHEMATICS-CM2-GEOMETRY"]}]}
+          ]
+        },
+        {
+          "code": "FRENCH",
+          "chapters": [
+            {"code": "CH-FRENCH-6E-ORAL", "domain_code": "READING", "title": "Compréhension et expression orales", "skills": [{"code": "SK-FRENCH-6E-ORAL", "title": "Écouter, interagir et présenter un propos structuré", "prerequisites": ["SK-FRENCH-CM2-ORAL"]}]},
+            {"code": "CH-FRENCH-6E-READING", "domain_code": "READING", "title": "Lecture, culture littéraire et interprétation", "skills": [{"code": "SK-FRENCH-6E-READING", "title": "Lire des œuvres et construire une interprétation justifiée", "prerequisites": ["SK-FRENCH-CM2-READING"]}]},
+            {"code": "CH-FRENCH-6E-WRITING", "domain_code": "WRITING", "title": "Écriture et réécriture", "skills": [{"code": "SK-FRENCH-6E-WRITING", "title": "Rédiger des textes cohérents adaptés à une intention", "prerequisites": ["SK-FRENCH-CM2-WRITING"]}]},
+            {"code": "CH-FRENCH-6E-LANGUAGE", "domain_code": "LANGUAGE_STUDY", "title": "Grammaire, orthographe et conjugaison", "skills": [{"code": "SK-FRENCH-6E-LANGUAGE", "title": "Analyser la phrase et maîtriser les principales régularités", "prerequisites": ["SK-FRENCH-CM2-GRAMMAR"]}]},
+            {"code": "CH-FRENCH-6E-LEXICON", "domain_code": "LANGUAGE_STUDY", "title": "Lexique", "skills": [{"code": "SK-FRENCH-6E-LEXICON", "title": "Comprendre la formation des mots et employer un lexique précis", "prerequisites": ["SK-FRENCH-CM2-LEXICON"]}]}
+          ]
+        },
+        {
+          "code": "ENGLISH",
+          "chapters": [
+            {"code": "CH-ENGLISH-6E-COMMUNICATION", "domain_code": "COMMUNICATION", "title": "Réception, production et interaction", "skills": [{"code": "SK-ENGLISH-6E-COMMUNICATION", "title": "Comprendre et communiquer dans des situations familières"}]},
+            {"code": "CH-ENGLISH-6E-LANGUAGE", "domain_code": "LANGUAGE", "title": "Repères linguistiques", "skills": [{"code": "SK-ENGLISH-6E-LANGUAGE", "title": "Mobiliser lexique, grammaire et phonologie de niveau A1-A2"}]},
+            {"code": "CH-ENGLISH-6E-CULTURE", "domain_code": "COMMUNICATION", "title": "Repères culturels du monde anglophone", "skills": [{"code": "SK-ENGLISH-6E-CULTURE", "title": "Relier documents et pratiques à leurs contextes culturels"}]}
+          ]
+        },
+        {
+          "code": "HISTORY",
+          "chapters": [
+            {"code": "CH-HISTORY-6E-PREHISTORY", "domain_code": "MODERN_HISTORY", "title": "La longue histoire de l'humanité et des migrations", "skills": [{"code": "SK-HISTORY-6E-PREHISTORY", "title": "Construire des repères de la préhistoire et des premiers peuplements"}]},
+            {"code": "CH-HISTORY-6E-ANCIENT", "domain_code": "MODERN_HISTORY", "title": "Récits fondateurs, croyances et citoyenneté dans la Méditerranée antique", "skills": [{"code": "SK-HISTORY-6E-ANCIENT", "title": "Comparer des sociétés et récits du monde antique"}]},
+            {"code": "CH-HISTORY-6E-ROME", "domain_code": "MODERN_HISTORY", "title": "L'Empire romain dans le monde antique", "skills": [{"code": "SK-HISTORY-6E-ROME", "title": "Expliquer l'organisation et les héritages du monde romain"}]}
+          ]
+        },
+        {
+          "code": "GEOGRAPHY",
+          "chapters": [
+            {"code": "CH-GEOGRAPHY-6E-METROPOLIS", "domain_code": "TERRITORIES", "title": "Habiter une métropole", "skills": [{"code": "SK-GEOGRAPHY-6E-METROPOLIS", "title": "Décrire et comparer des manières d'habiter les métropoles"}]},
+            {"code": "CH-GEOGRAPHY-6E-LOW-DENSITY", "domain_code": "TERRITORIES", "title": "Habiter un espace de faible densité", "skills": [{"code": "SK-GEOGRAPHY-6E-LOW-DENSITY", "title": "Caractériser contraintes, ressources et modes d'habiter"}]},
+            {"code": "CH-GEOGRAPHY-6E-COASTS", "domain_code": "TERRITORIES", "title": "Habiter les littoraux", "skills": [{"code": "SK-GEOGRAPHY-6E-COASTS", "title": "Analyser des usages et aménagements littoraux"}]},
+            {"code": "CH-GEOGRAPHY-6E-WORLD", "domain_code": "GLOBALIZATION", "title": "Le monde habité", "skills": [{"code": "SK-GEOGRAPHY-6E-WORLD", "title": "Expliquer la répartition de la population mondiale"}]}
+          ]
+        },
+        {
+          "code": "EMC",
+          "chapters": [
+            {"code": "CH-EMC-6E-COLLEGE", "domain_code": "CITIZENSHIP", "title": "Le collégien et la communauté scolaire", "skills": [{"code": "SK-EMC-6E-COLLEGE", "title": "Exercer ses droits et responsabilités au collège"}]},
+            {"code": "CH-EMC-6E-REPUBLIC", "domain_code": "CITIZENSHIP", "title": "Principes et symboles de la République", "skills": [{"code": "SK-EMC-6E-REPUBLIC", "title": "Identifier et expliquer des principes républicains"}]}
+          ]
+        },
+        {
+          "code": "SVT",
+          "chapters": [
+            {"code": "CH-SVT-6E-LIVING", "domain_code": "LIVING_WORLD", "title": "Unité, diversité et évolution du vivant", "skills": [{"code": "SK-SVT-6E-LIVING", "title": "Classer et relier les organismes à leur histoire"}]},
+            {"code": "CH-SVT-6E-ECOSYSTEMS", "domain_code": "EARTH", "title": "Écosystèmes, ressources et environnement", "skills": [{"code": "SK-SVT-6E-ECOSYSTEMS", "title": "Expliquer des interactions et impacts humains"}]}
+          ]
+        },
+        {
+          "code": "PHYSICS_CHEMISTRY",
+          "chapters": [
+            {"code": "CH-PHYSICS_CHEMISTRY-6E-MATTER", "domain_code": "MATTER", "title": "Matière, états et transformations", "skills": [{"code": "SK-PHYSICS_CHEMISTRY-6E-MATTER", "title": "Caractériser la matière et interpréter des transformations"}]},
+            {"code": "CH-PHYSICS_CHEMISTRY-6E-MOTION", "domain_code": "ENERGY", "title": "Mouvement, énergie et signaux", "skills": [{"code": "SK-PHYSICS_CHEMISTRY-6E-MOTION", "title": "Décrire un mouvement, une conversion d'énergie ou un signal"}]}
+          ]
+        }
+      ]
+    },
+    {
+      "program": {
+        "code": "FR-CYCLE4-5E-2026",
+        "version": "2026-2027-5E",
+        "label": "Programme de référence Cinquième 2026-2027",
+        "grade_code": "FR-5E",
+        "valid_from": "2026-09-01"
+      },
+      "subjects": [
+        {
+          "code": "MATHEMATICS",
+          "chapters": [
+            {"code": "CH-MATHEMATICS-5E-NUMBERS", "domain_code": "NUMBERS", "title": "Nombres relatifs et calcul", "skills": [{"code": "SK-MATHEMATICS-5E-NUMBERS", "title": "Comparer et calculer avec des nombres relatifs"}]},
+            {"code": "CH-MATHEMATICS-5E-FRACTIONS", "domain_code": "NUMBERS", "title": "Fractions et quotients", "skills": [{"code": "SK-MATHEMATICS-5E-FRACTIONS", "title": "Comparer et calculer avec des fractions", "prerequisites": ["SK-MATHEMATICS-6E-NUMBERS"]}]},
+            {"code": "CH-MATHEMATICS-5E-ALGEBRA", "domain_code": "ALGEBRA", "title": "Expressions littérales et équations simples", "skills": [{"code": "SK-MATHEMATICS-5E-ALGEBRA", "title": "Traduire une situation et transformer une expression"}]},
+            {"code": "CH-MATHEMATICS-5E-PROPORTIONALITY", "domain_code": "DATA", "title": "Proportionnalité, données et probabilités", "skills": [{"code": "SK-MATHEMATICS-5E-PROPORTIONALITY", "title": "Résoudre des problèmes de proportionnalité et interpréter des données", "prerequisites": ["SK-MATHEMATICS-6E-RATIOS"]}]},
+            {"code": "CH-MATHEMATICS-5E-GEOMETRY", "domain_code": "GEOMETRY", "title": "Géométrie, symétries et grandeurs", "skills": [{"code": "SK-MATHEMATICS-5E-GEOMETRY", "title": "Construire et raisonner sur des figures, aires et volumes"}]}
+          ]
+        },
+        {
+          "code": "FRENCH",
+          "chapters": [
+            {"code": "CH-FRENCH-5E-READING", "domain_code": "READING", "title": "Lire et interpréter des œuvres", "skills": [{"code": "SK-FRENCH-5E-READING", "title": "Construire une compréhension et une interprétation justifiées"}]},
+            {"code": "CH-FRENCH-5E-WRITING", "domain_code": "WRITING", "title": "Écrire pour raconter, décrire et expliquer", "skills": [{"code": "SK-FRENCH-5E-WRITING", "title": "Planifier, rédiger et réviser différents écrits"}]},
+            {"code": "CH-FRENCH-5E-ORAL", "domain_code": "READING", "title": "Oral et argumentation", "skills": [{"code": "SK-FRENCH-5E-ORAL", "title": "Présenter, écouter et participer à un échange organisé"}]},
+            {"code": "CH-FRENCH-5E-LANGUAGE", "domain_code": "LANGUAGE_STUDY", "title": "Grammaire, orthographe et conjugaison", "skills": [{"code": "SK-FRENCH-5E-LANGUAGE", "title": "Analyser la langue et maîtriser les accords et temps étudiés"}]},
+            {"code": "CH-FRENCH-5E-LEXICON", "domain_code": "LANGUAGE_STUDY", "title": "Lexique et formation des mots", "skills": [{"code": "SK-FRENCH-5E-LEXICON", "title": "Interpréter et employer un lexique précis"}]}
+          ]
+        },
+        {
+          "code": "ENGLISH",
+          "chapters": [
+            {"code": "CH-ENGLISH-5E-COMMUNICATION", "domain_code": "COMMUNICATION", "title": "Compréhension, expression et interaction", "skills": [{"code": "SK-ENGLISH-5E-COMMUNICATION", "title": "Communiquer dans des situations variées de niveau A2"}]},
+            {"code": "CH-ENGLISH-5E-LANGUAGE", "domain_code": "LANGUAGE", "title": "Lexique, grammaire et phonologie", "skills": [{"code": "SK-ENGLISH-5E-LANGUAGE", "title": "Mobiliser des repères linguistiques adaptés"}]},
+            {"code": "CH-ENGLISH-5E-CULTURE", "domain_code": "COMMUNICATION", "title": "Axes culturels du monde anglophone", "skills": [{"code": "SK-ENGLISH-5E-CULTURE", "title": "Analyser des documents dans leur contexte culturel"}]}
+          ]
+        },
+        {
+          "code": "SPANISH",
+          "chapters": [
+            {"code": "CH-SPANISH-5E-COMMUNICATION", "domain_code": "COMMUNICATION", "title": "Premiers échanges en espagnol", "skills": [{"code": "SK-SPANISH-5E-COMMUNICATION", "title": "Comprendre et produire des messages simples"}]},
+            {"code": "CH-SPANISH-5E-LANGUAGE", "domain_code": "LANGUAGE", "title": "Repères linguistiques de base", "skills": [{"code": "SK-SPANISH-5E-LANGUAGE", "title": "Mobiliser lexique, grammaire et phonologie élémentaires"}]},
+            {"code": "CH-SPANISH-5E-CULTURE", "domain_code": "COMMUNICATION", "title": "Repères des mondes hispanophones", "skills": [{"code": "SK-SPANISH-5E-CULTURE", "title": "Relier documents et pratiques à une aire culturelle"}]}
+          ]
+        },
+        {
+          "code": "HISTORY",
+          "chapters": [
+            {"code": "CH-HISTORY-5E-MEDIEVAL", "domain_code": "MODERN_HISTORY", "title": "Chrétientés et islam au Moyen Âge", "skills": [{"code": "SK-HISTORY-5E-MEDIEVAL", "title": "Comparer pouvoirs, sociétés et échanges médiévaux"}]},
+            {"code": "CH-HISTORY-5E-FEUDAL", "domain_code": "MODERN_HISTORY", "title": "Société, Église et pouvoir dans l'Occident féodal", "skills": [{"code": "SK-HISTORY-5E-FEUDAL", "title": "Expliquer l'organisation de la société féodale"}]},
+            {"code": "CH-HISTORY-5E-RENAISSANCE", "domain_code": "MODERN_HISTORY", "title": "Transformations de l'Europe et ouverture sur le monde", "skills": [{"code": "SK-HISTORY-5E-RENAISSANCE", "title": "Situer les transformations culturelles, religieuses et politiques"}]}
+          ]
+        },
+        {
+          "code": "GEOGRAPHY",
+          "chapters": [
+            {"code": "CH-GEOGRAPHY-5E-POPULATION", "domain_code": "TERRITORIES", "title": "Démographie et inégal développement", "skills": [{"code": "SK-GEOGRAPHY-5E-POPULATION", "title": "Comparer dynamiques démographiques et niveaux de développement"}]},
+            {"code": "CH-GEOGRAPHY-5E-RESOURCES", "domain_code": "GLOBALIZATION", "title": "Ressources limitées à gérer et renouveler", "skills": [{"code": "SK-GEOGRAPHY-5E-RESOURCES", "title": "Analyser des besoins, usages et tensions sur les ressources"}]},
+            {"code": "CH-GEOGRAPHY-5E-CHANGE", "domain_code": "TERRITORIES", "title": "Prévenir les risques et s'adapter au changement global", "skills": [{"code": "SK-GEOGRAPHY-5E-CHANGE", "title": "Expliquer vulnérabilités et stratégies d'adaptation"}]}
+          ]
+        },
+        {
+          "code": "EMC",
+          "chapters": [
+            {"code": "CH-EMC-5E-EQUALITY", "domain_code": "CITIZENSHIP", "title": "Égalité, fraternité et solidarité", "skills": [{"code": "SK-EMC-5E-EQUALITY", "title": "Identifier les discriminations et argumenter en faveur de l'égalité"}]},
+            {"code": "CH-EMC-5E-COLLECTIVE-ACTION", "domain_code": "CITIZENSHIP", "title": "Engagement et action collective", "skills": [{"code": "SK-EMC-5E-COLLECTIVE-ACTION", "title": "Concevoir et évaluer une action citoyenne"}]}
+          ]
+        },
+        {
+          "code": "SVT",
+          "chapters": [
+            {"code": "CH-SVT-5E-BODY", "domain_code": "LIVING_WORLD", "title": "Corps humain et santé", "skills": [{"code": "SK-SVT-5E-BODY", "title": "Relier fonctionnement de l'organisme et comportements responsables"}]},
+            {"code": "CH-SVT-5E-PLANET", "domain_code": "EARTH", "title": "Planète Terre, environnement et action humaine", "skills": [{"code": "SK-SVT-5E-PLANET", "title": "Expliquer des phénomènes terrestres et leurs enjeux"}]}
+          ]
+        },
+        {
+          "code": "PHYSICS_CHEMISTRY",
+          "chapters": [
+            {"code": "CH-PHYSICS_CHEMISTRY-5E-MATTER", "domain_code": "MATTER", "title": "Organisation et transformations de la matière", "skills": [{"code": "SK-PHYSICS_CHEMISTRY-5E-MATTER", "title": "Décrire des mélanges et transformations physiques ou chimiques"}]},
+            {"code": "CH-PHYSICS_CHEMISTRY-5E-MOTION", "domain_code": "ENERGY", "title": "Mouvements, interactions, énergie et signaux", "skills": [{"code": "SK-PHYSICS_CHEMISTRY-5E-MOTION", "title": "Caractériser un mouvement, une interaction ou un transfert"}]}
+          ]
+        }
+      ]
+    },
+    {
+      "program": {
+        "code": "FR-CYCLE4-4E",
+        "version": "2026-demo",
+        "label": "Parcours ciblé de révision de quatrième",
+        "grade_code": "FR-4E",
+        "valid_from": "2026-09-01"
+      },
+      "subjects": [
+        {
+          "code": "ENGLISH",
+          "chapters": [
+            {"code": "CH-ENGLISH-4E-COMMUNICATION", "domain_code": "COMMUNICATION", "title": "Compréhension, expression et interaction", "skills": [{"code": "SK-ENGLISH-4E-COMMUNICATION", "title": "Communiquer et argumenter dans des situations variées"}]},
+            {"code": "CH-ENGLISH-4E-LANGUAGE", "domain_code": "LANGUAGE", "title": "Système linguistique et médiation", "skills": [{"code": "SK-ENGLISH-4E-LANGUAGE", "title": "Mobiliser les formes linguistiques et reformuler un message"}]}
+          ]
+        },
+        {
+          "code": "SPANISH",
+          "chapters": [
+            {"code": "CH-SPANISH-4E-COMMUNICATION", "domain_code": "COMMUNICATION", "title": "Communication et interaction", "skills": [{"code": "SK-SPANISH-4E-COMMUNICATION", "title": "Comprendre, produire et interagir dans des situations variées"}]},
+            {"code": "CH-SPANISH-4E-LANGUAGE", "domain_code": "LANGUAGE", "title": "Repères linguistiques et culturels", "skills": [{"code": "SK-SPANISH-4E-LANGUAGE", "title": "Mobiliser la langue pour interpréter des documents culturels"}]}
+          ]
+        },
+        {
+          "code": "HISTORY",
+          "chapters": [
+            {"code": "CH-HISTORY-4E-18TH", "domain_code": "MODERN_HISTORY", "title": "Le XVIIIe siècle : expansions, Lumières et révolutions", "skills": [{"code": "SK-HISTORY-4E-18TH", "title": "Expliquer les transformations politiques et économiques du XVIIIe siècle"}]},
+            {"code": "CH-HISTORY-4E-19TH", "domain_code": "CONTEMPORARY_HISTORY", "title": "L'Europe et le monde au XIXe siècle", "skills": [{"code": "SK-HISTORY-4E-19TH", "title": "Analyser industrialisation, sociétés et colonisation"}]},
+            {"code": "CH-HISTORY-4E-FRANCE", "domain_code": "CONTEMPORARY_HISTORY", "title": "Société, culture et politique dans la France du XIXe siècle", "skills": [{"code": "SK-HISTORY-4E-FRANCE", "title": "Construire des repères politiques et sociaux de la France"}]}
+          ]
+        },
+        {
+          "code": "GEOGRAPHY",
+          "chapters": [
+            {"code": "CH-GEOGRAPHY-4E-URBANIZATION", "domain_code": "TERRITORIES", "title": "L'urbanisation du monde", "skills": [{"code": "SK-GEOGRAPHY-4E-URBANIZATION", "title": "Comparer des espaces et dynamiques urbaines"}]},
+            {"code": "CH-GEOGRAPHY-4E-MOBILITY", "domain_code": "GLOBALIZATION", "title": "Mobilités humaines transnationales", "skills": [{"code": "SK-GEOGRAPHY-4E-MOBILITY", "title": "Analyser des flux migratoires et touristiques"}]},
+            {"code": "CH-GEOGRAPHY-4E-GLOBALIZATION", "domain_code": "GLOBALIZATION", "title": "Des espaces transformés par la mondialisation", "skills": [{"code": "SK-GEOGRAPHY-4E-GLOBALIZATION", "title": "Expliquer l'intégration différenciée des territoires"}]}
+          ]
+        },
+        {
+          "code": "EMC",
+          "chapters": [
+            {"code": "CH-EMC-4E-LIBERTIES", "domain_code": "CITIZENSHIP", "title": "Libertés et État de droit", "skills": [{"code": "SK-EMC-4E-LIBERTIES", "title": "Confronter libertés, responsabilités et règles de droit"}]},
+            {"code": "CH-EMC-4E-INFORMATION", "domain_code": "CITIZENSHIP", "title": "Information, opinion et esprit critique", "skills": [{"code": "SK-EMC-4E-INFORMATION", "title": "Évaluer une information et argumenter de manière raisonnée"}]}
+          ]
+        },
+        {
+          "code": "SVT",
+          "chapters": [
+            {"code": "CH-SVT-4E-GENETICS", "domain_code": "LIVING_WORLD", "title": "Transmission et diversité du vivant", "skills": [{"code": "SK-SVT-4E-GENETICS", "title": "Relier reproduction, information héréditaire et diversité"}]},
+            {"code": "CH-SVT-4E-EARTH", "domain_code": "EARTH", "title": "Dynamique de la Terre et risques", "skills": [{"code": "SK-SVT-4E-EARTH", "title": "Expliquer des phénomènes géologiques et leurs risques"}]}
+          ]
+        },
+        {
+          "code": "PHYSICS_CHEMISTRY",
+          "chapters": [
+            {"code": "CH-PHYSICS_CHEMISTRY-4E-CHEMISTRY", "domain_code": "MATTER", "title": "Transformations chimiques et constitution de la matière", "skills": [{"code": "SK-PHYSICS_CHEMISTRY-4E-CHEMISTRY", "title": "Modéliser une transformation et conserver la matière"}]},
+            {"code": "CH-PHYSICS_CHEMISTRY-4E-ELECTRICITY", "domain_code": "ENERGY", "title": "Électricité, énergie et signaux", "skills": [{"code": "SK-PHYSICS_CHEMISTRY-4E-ELECTRICITY", "title": "Analyser un circuit et des transferts d'énergie"}]}
+          ]
+        }
+      ]
+    },
+    {
+      "program": {
+        "code": "FR-CYCLE4-3E",
+        "version": "2026-demo",
+        "label": "Parcours ciblé de troisième et préparation au brevet",
+        "grade_code": "FR-3E",
+        "valid_from": "2026-09-01",
+        "exam_type": "DNB"
+      },
+      "subjects": [
+        {
+          "code": "ENGLISH",
+          "chapters": [
+            {"code": "CH-ENGLISH-3E-COMMUNICATION", "domain_code": "COMMUNICATION", "title": "Communication autonome et médiation", "skills": [{"code": "SK-ENGLISH-3E-COMMUNICATION", "title": "Comprendre, argumenter, interagir et reformuler"}]}
+          ]
+        },
+        {
+          "code": "SPANISH",
+          "chapters": [
+            {"code": "CH-SPANISH-3E-COMMUNICATION", "domain_code": "COMMUNICATION", "title": "Communication et médiation", "skills": [{"code": "SK-SPANISH-3E-COMMUNICATION", "title": "Comprendre, produire et reformuler dans des contextes variés"}]}
+          ]
+        },
+        {
+          "code": "HISTORY",
+          "chapters": [
+            {"code": "CH-HISTORY-3E-WARS", "domain_code": "CONTEMPORARY_HISTORY", "title": "L'Europe, un théâtre majeur des guerres totales", "exam_relevant": true, "skills": [{"code": "SK-HISTORY-3E-WARS", "title": "Expliquer guerres mondiales, totalitarismes et génocides"}]},
+            {"code": "CH-HISTORY-3E-AFTER1945", "domain_code": "CONTEMPORARY_HISTORY", "title": "Le monde depuis 1945", "exam_relevant": true, "skills": [{"code": "SK-HISTORY-3E-AFTER1945", "title": "Analyser décolonisation, guerre froide et construction européenne"}]},
+            {"code": "CH-HISTORY-3E-FRANCE", "domain_code": "CONTEMPORARY_HISTORY", "title": "Françaises et Français dans une République repensée", "exam_relevant": true, "skills": [{"code": "SK-HISTORY-3E-FRANCE", "title": "Construire des repères politiques et sociaux depuis 1944"}]}
+          ]
+        },
+        {
+          "code": "GEOGRAPHY",
+          "chapters": [
+            {"code": "CH-GEOGRAPHY-3E-TERRITORY", "domain_code": "TERRITORIES", "title": "Dynamiques territoriales de la France contemporaine", "exam_relevant": true, "skills": [{"code": "SK-GEOGRAPHY-3E-TERRITORY", "title": "Analyser espaces urbains, productifs et de faible densité"}]},
+            {"code": "CH-GEOGRAPHY-3E-DEVELOPMENT", "domain_code": "TERRITORIES", "title": "Aménager pour répondre aux inégalités territoriales", "exam_relevant": true, "skills": [{"code": "SK-GEOGRAPHY-3E-DEVELOPMENT", "title": "Expliquer acteurs, objectifs et effets d'un aménagement"}]},
+            {"code": "CH-GEOGRAPHY-3E-EU", "domain_code": "GLOBALIZATION", "title": "La France et l'Union européenne", "exam_relevant": true, "skills": [{"code": "SK-GEOGRAPHY-3E-EU", "title": "Situer la France et l'Union européenne dans le monde"}]}
+          ]
+        },
+        {
+          "code": "EMC",
+          "chapters": [
+            {"code": "CH-EMC-3E-DEMOCRACY", "domain_code": "CITIZENSHIP", "title": "Démocratie, institutions et citoyenneté", "exam_relevant": true, "skills": [{"code": "SK-EMC-3E-DEMOCRACY", "title": "Expliquer le fonctionnement démocratique et la participation citoyenne"}]},
+            {"code": "CH-EMC-3E-ENGAGEMENT", "domain_code": "CITIZENSHIP", "title": "Engagement, défense et sécurité", "exam_relevant": true, "skills": [{"code": "SK-EMC-3E-ENGAGEMENT", "title": "Analyser différentes formes d'engagement et de responsabilité"}]}
+          ]
+        },
+        {
+          "code": "SVT",
+          "chapters": [
+            {"code": "CH-SVT-3E-GENETICS", "domain_code": "LIVING_WORLD", "title": "Diversité génétique et évolution", "exam_relevant": true, "skills": [{"code": "SK-SVT-3E-GENETICS", "title": "Relier information génétique, diversité et évolution"}]},
+            {"code": "CH-SVT-3E-HEALTH", "domain_code": "LIVING_WORLD", "title": "Corps humain, immunité et santé", "exam_relevant": true, "skills": [{"code": "SK-SVT-3E-HEALTH", "title": "Expliquer des réponses de l'organisme et des choix de santé"}]}
+          ]
+        },
+        {
+          "code": "PHYSICS_CHEMISTRY",
+          "chapters": [
+            {"code": "CH-PHYSICS_CHEMISTRY-3E-MATTER", "domain_code": "MATTER", "title": "Constitution et transformations de la matière", "exam_relevant": true, "skills": [{"code": "SK-PHYSICS_CHEMISTRY-3E-MATTER", "title": "Utiliser des modèles atomiques et chimiques"}]},
+            {"code": "CH-PHYSICS_CHEMISTRY-3E-MECHANICS", "domain_code": "ENERGY", "title": "Mouvement, forces et énergie", "exam_relevant": true, "skills": [{"code": "SK-PHYSICS_CHEMISTRY-3E-MECHANICS", "title": "Modéliser un mouvement, une interaction et une conversion d'énergie"}]}
+          ]
+        }
+      ]
+    }
+  ]
+}

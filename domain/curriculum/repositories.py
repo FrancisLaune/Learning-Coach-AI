@@ -15,6 +15,9 @@ class CurriculumRepository(Protocol):
 
     def catalog_counts(self) -> dict[str, int]: ...
     def catalog_preview(self, *, subject_code: str | None = None) -> list[dict[str, Any]]: ...
+    def curriculum_coverage(
+        self, *, grade_code: str | None = None, subject_code: str | None = None
+    ) -> list[dict[str, Any]]: ...
 
 
 ChapterRepository = CurriculumRepository

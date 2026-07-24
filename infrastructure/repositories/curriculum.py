@@ -32,17 +32,24 @@ class DuckDBCurriculumRepository:
                 if str(existing[0]) != checksum:
                     return CatalogImportReport(import_id, rows_read, 0, 0, 0, ("version_conflict",), (), False)
                 return CatalogImportReport(import_id, rows_read, 0, 0, rows_read, (), (), False)
+            ids = self._references(con)
+            reference_errors = self._reference_errors(document, ids)
+            if reference_errors:
+                return CatalogImportReport(import_id, rows_read, 0, 0, 0, reference_errors, (), False)
             con.execute("BEGIN")
             con.execute(
                 "INSERT INTO content_import_batches(import_identifier,source_path,source_checksum,dry_run,status,rows_read) VALUES (?,?,?,?,?,?)",
                 [import_id, source.as_posix(), checksum, False, "started", rows_read],
             )
-            ids = self._references(con)
             created = 0
             created += self._programs(con, document.get("programs", []), ids)
             created += self._chapters(con, document.get("chapters", []), ids)
             created += self._skills(con, document.get("skills", []), document.get("subskills", []), ids)
             created += self._relations(con, document.get("relations", []), ids)
+            if document.get("metadata", {}).get("phase2_curriculum"):
+                self._promote_legacy_prerequisites(con)
+                self._validate_merged_graph(con)
+                self._sync_prerequisite_compatibility(con)
             created += self._exam(con, document.get("exam_references", []), ids)
             created += self._contents(con, document.get("contents", []), ids)
             con.execute(
@@ -93,6 +100,22 @@ class DuckDBCurriculumRepository:
         }
 
     @staticmethod
+    def _reference_errors(document: dict[str, Any], ids: dict[str, dict[str, int]]) -> tuple[str, ...]:
+        errors: set[str] = set()
+        for program in document.get("programs", []):
+            if program.get("grade_code") not in ids["levels"]:
+                errors.add(f"unknown_grade:{program.get('grade_code')}")
+            for subject_code in program.get("subjects", []):
+                if subject_code not in ids["subjects"]:
+                    errors.add(f"unknown_subject:{subject_code}")
+        for chapter in document.get("chapters", []):
+            subject_code = chapter.get("subject_code")
+            domain_code = chapter.get("domain_code")
+            if f"{subject_code}:{domain_code}" not in ids["domains"]:
+                errors.add(f"unknown_domain:{subject_code}:{domain_code}")
+        return tuple(sorted(errors))
+
+    @staticmethod
     def _programs(con: Any, programs: list[dict[str, Any]], ids: dict[str, dict[str, int]]) -> int:
         created = 0
         for item in programs:
@@ -139,6 +162,22 @@ class DuckDBCurriculumRepository:
                 identifier = int(row[0])
             else:
                 subject_id = ids["subjects"][item["subject_code"]]
+                program_id = ids["programs"][item["program_code"]]
+                grade_level_id = ids["levels"][item["grade_code"]]
+                requested_order = int(item["sequence_order"])
+                occupied = con.execute(
+                    """SELECT 1 FROM curriculum_chapters
+                    WHERE program_id=? AND grade_level_id=? AND subject_id=? AND sequence_order=?""",
+                    [program_id, grade_level_id, subject_id, requested_order],
+                ).fetchone()
+                if occupied:
+                    last_order = con.execute(
+                        """SELECT sequence_order FROM curriculum_chapters
+                        WHERE program_id=? AND grade_level_id=? AND subject_id=?
+                        ORDER BY sequence_order DESC LIMIT 1""",
+                        [program_id, grade_level_id, subject_id],
+                    ).fetchone()
+                    requested_order = int(last_order[0]) + 1
                 identifier = int(
                     con.execute(
                         """INSERT INTO curriculum_chapters(stable_code,program_id,subject_id,domain_id,grade_level_id,title,
@@ -147,13 +186,13 @@ class DuckDBCurriculumRepository:
                         VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) RETURNING id""",
                         [
                             item["code"],
-                            ids["programs"][item["program_code"]],
+                            program_id,
                             subject_id,
                             ids["domains"][f"{item['subject_code']}:{item['domain_code']}"],
-                            ids["levels"][item["grade_code"]],
+                            grade_level_id,
                             item["title"],
                             item["description"],
-                            item["sequence_order"],
+                            requested_order,
                             item["expected_duration_minutes"],
                             item["difficulty_min"],
                             item["difficulty_max"],
@@ -243,6 +282,28 @@ class DuckDBCurriculumRepository:
                 "INSERT INTO skill_learning_objectives(skill_id,learning_objective_id,is_primary) VALUES (?,?,TRUE) ON CONFLICT DO NOTHING",
                 [identifier, objective_id],
             )
+            program_id = int(
+                con.execute(
+                    "SELECT program_id FROM curriculum_chapters WHERE id=?",
+                    [ids["chapters"][item["chapter_code"]]],
+                ).fetchone()[0]
+            )
+            existing_order = con.execute(
+                "SELECT display_order FROM program_skills WHERE program_id=? AND skill_id=?",
+                [program_id, identifier],
+            ).fetchone()
+            if existing_order is None:
+                last_order = con.execute(
+                    """SELECT display_order FROM program_skills
+                    WHERE program_id=? ORDER BY display_order DESC LIMIT 1""",
+                    [program_id],
+                ).fetchone()
+                display_order = 1 if last_order is None else int(last_order[0]) + 1
+                con.execute(
+                    """INSERT INTO program_skills(program_id,skill_id,expected_mastery,priority,display_order)
+                    VALUES (?,?,0.8,?,?)""",
+                    [program_id, identifier, max(0.1, float(item["importance"])), display_order],
+                )
         for item in subskills:
             if item["code"] not in ids["subskills"]:
                 identifier = int(
@@ -260,6 +321,53 @@ class DuckDBCurriculumRepository:
                 ids["subskills"][item["code"]] = identifier
                 created += 1
         return created
+
+    @staticmethod
+    def _promote_legacy_prerequisites(con: Any) -> None:
+        """Make every legacy edge explicit in the authoritative enriched graph."""
+        con.execute(
+            """INSERT INTO curriculum_skill_relations(
+                prerequisite_skill_id,target_skill_id,relation_type,progression_role,strength,mandatory,
+                minimum_mastery_threshold,rationale,source,version,active
+            )
+            SELECT sp.prerequisite_skill_id,sp.skill_id,'required','long_term_foundation',
+                least(1.0,sp.weight),TRUE,0.7,
+                'Relation historique conservée pendant la migration progressive.',
+                'legacy-skill-prerequisites-compatibility',1,TRUE
+            FROM skill_prerequisites sp
+            WHERE NOT EXISTS (
+                SELECT 1 FROM curriculum_skill_relations r
+                WHERE r.prerequisite_skill_id=sp.prerequisite_skill_id
+                  AND r.target_skill_id=sp.skill_id
+                  AND r.relation_type='required'
+                  AND r.version=1
+            )"""
+        )
+
+    @staticmethod
+    def _validate_merged_graph(con: Any) -> None:
+        relations = [
+            {"prerequisite": str(row[0]), "target": str(row[1])}
+            for row in con.execute(
+                """SELECT prerequisite_skill_id,target_skill_id
+                FROM curriculum_skill_relations WHERE active"""
+            ).fetchall()
+        ]
+        from domain.curriculum.validation import assert_acyclic
+
+        assert_acyclic(relations)
+
+    @staticmethod
+    def _sync_prerequisite_compatibility(con: Any) -> None:
+        """Project required enriched edges to the legacy Learning Engine table."""
+        con.execute(
+            """INSERT INTO skill_prerequisites(skill_id,prerequisite_skill_id,weight)
+            SELECT target_skill_id,prerequisite_skill_id,greatest(0.1,strength)
+            FROM curriculum_skill_relations
+            WHERE active AND relation_type='required' AND mandatory
+            ON CONFLICT (skill_id,prerequisite_skill_id)
+            DO UPDATE SET weight=excluded.weight"""
+        )
 
     @staticmethod
     def _relations(con: Any, relations: list[dict[str, Any]], ids: dict[str, dict[str, int]]) -> int:
@@ -564,6 +672,49 @@ class DuckDBCurriculumRepository:
                 c.difficulty,c.estimated_minutes FROM approved_learning_catalog c
                 JOIN subjects s ON s.id=c.subject_id {where}
                 ORDER BY s.code,c.grade_code,c.stable_code LIMIT 200""",
+                parameters,
+            )
+            columns = [item[0] for item in cursor.description]
+            return [dict(zip(columns, row, strict=True)) for row in cursor.fetchall()]
+        finally:
+            con.close()
+
+    def curriculum_coverage(
+        self, *, grade_code: str | None = None, subject_code: str | None = None
+    ) -> list[dict[str, Any]]:
+        con = connect_v2(self.database_path, read_only=True)
+        try:
+            clauses: list[str] = []
+            parameters: list[Any] = []
+            if grade_code:
+                clauses.append("sl.code=?")
+                parameters.append(grade_code)
+            if subject_code:
+                clauses.append("s.code=?")
+                parameters.append(subject_code)
+            where = f"WHERE {' AND '.join(clauses)}" if clauses else ""
+            cursor = con.execute(
+                f"""SELECT p.code AS program_code,sl.code AS grade_code,s.code AS subject_code,
+                    d.code AS domain_code,cc.stable_code AS chapter_code,cc.title AS chapter_label,
+                    sk.code AS skill_code,sk.default_label AS skill_label,
+                    ss.code AS subskill_code,ss.default_label AS subskill_label,
+                    count(DISTINCT alc.content_id) AS approved_content_count
+                FROM curriculum_chapters cc
+                JOIN programs p ON p.id=cc.program_id
+                JOIN school_levels sl ON sl.id=cc.grade_level_id
+                JOIN subjects s ON s.id=cc.subject_id
+                JOIN domains d ON d.id=cc.domain_id
+                LEFT JOIN curriculum_skill_details csd
+                    ON csd.chapter_id=cc.id AND csd.grade_level_id=cc.grade_level_id
+                    AND csd.status='approved'
+                LEFT JOIN skills sk ON sk.id=csd.skill_id
+                LEFT JOIN subskills ss ON ss.skill_id=sk.id
+                LEFT JOIN approved_learning_catalog alc
+                    ON alc.chapter_id=cc.id AND alc.skill_id=sk.id
+                {where}
+                GROUP BY p.code,sl.code,s.code,d.code,cc.stable_code,cc.title,
+                    sk.code,sk.default_label,ss.code,ss.default_label,cc.sequence_order,sl.rank
+                ORDER BY sl.rank DESC,s.code,cc.sequence_order,sk.code,ss.code""",
                 parameters,
             )
             columns = [item[0] for item in cursor.description]

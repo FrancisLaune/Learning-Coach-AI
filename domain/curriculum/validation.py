@@ -69,11 +69,19 @@ class CatalogValidator:
 
     def validate(self, document: dict[str, Any]) -> CatalogValidationReport:
         issues: list[CatalogValidationIssue] = []
+        programs = document.get("programs", [])
         chapters = document.get("chapters", [])
         skills = document.get("skills", [])
+        subskills = document.get("subskills", [])
         relations = document.get("relations", [])
         contents = document.get("contents", [])
-        for kind, items in (("chapter", chapters), ("skill", skills), ("content", contents)):
+        for kind, items in (
+            ("program", programs),
+            ("chapter", chapters),
+            ("skill", skills),
+            ("subskill", subskills),
+            ("content", contents),
+        ):
             counts = Counter(str(item.get("code", "")) for item in items)
             issues.extend(
                 CatalogValidationIssue("duplicate_code", f"Duplicate {kind} code", code)
@@ -82,9 +90,22 @@ class CatalogValidator:
             )
         chapter_codes = {str(item["code"]) for item in chapters}
         skill_codes = {str(item["code"]) for item in skills}
+        program_codes = {str(item["code"]) for item in programs}
         for skill in skills:
             if skill.get("chapter_code") not in chapter_codes:
                 issues.append(CatalogValidationIssue("unknown_chapter", "Skill chapter is unknown", skill.get("code")))
+        for chapter in chapters:
+            if chapter.get("program_code") not in program_codes:
+                issues.append(
+                    CatalogValidationIssue("unknown_program", "Chapter programme is unknown", chapter.get("code"))
+                )
+        for subskill in subskills:
+            if subskill.get("skill_code") not in skill_codes:
+                issues.append(
+                    CatalogValidationIssue(
+                        "unknown_subskill_parent", "Sub-skill parent is unknown", subskill.get("code")
+                    )
+                )
         try:
             assert_acyclic(relations)
         except PrerequisiteCycleError as exc:
