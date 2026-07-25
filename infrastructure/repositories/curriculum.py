@@ -45,6 +45,8 @@ class DuckDBCurriculumRepository:
             created += self._programs(con, document.get("programs", []), ids)
             created += self._chapters(con, document.get("chapters", []), ids)
             created += self._skills(con, document.get("skills", []), document.get("subskills", []), ids)
+            if document.get("metadata", {}).get("reconcile_unaccepted_enrichment"):
+                self._reconcile_unaccepted_enrichment(con, document)
             created += self._relations(con, document.get("relations", []), ids)
             if document.get("metadata", {}).get("phase2_curriculum"):
                 self._promote_legacy_prerequisites(con)
@@ -214,6 +216,12 @@ class DuckDBCurriculumRepository:
         con: Any, skills: list[dict[str, Any]], subskills: list[dict[str, Any]], ids: dict[str, dict[str, int]]
     ) -> int:
         created = 0
+        objective_orders = {
+            int(chapter_id): int(maximum) + 1
+            for chapter_id, maximum in con.execute(
+                "SELECT chapter_id,max(sequence_order) FROM learning_objectives GROUP BY chapter_id"
+            ).fetchall()
+        }
         for item in skills:
             row = con.execute("SELECT id FROM skills WHERE code=?", [item["code"]]).fetchone()
             if row:
@@ -265,6 +273,8 @@ class DuckDBCurriculumRepository:
             if objective:
                 objective_id = int(objective[0])
             else:
+                chapter_id = ids["chapters"][item["chapter_code"]]
+                objective_sequence = objective_orders.get(chapter_id, 1)
                 objective_id = int(
                     con.execute(
                         "INSERT INTO learning_objectives(stable_code,chapter_id,title,description,observable_outcome,sequence_order,status,version) VALUES (?,?,?,?,?,?,'approved',1) RETURNING id",
@@ -274,10 +284,11 @@ class DuckDBCurriculumRepository:
                             item["title"],
                             item["description"],
                             item["observable_outcome"],
-                            item["sequence_order"],
+                            objective_sequence,
                         ],
                     ).fetchone()[0]
                 )
+                objective_orders[chapter_id] = objective_sequence + 1
             con.execute(
                 "INSERT INTO skill_learning_objectives(skill_id,learning_objective_id,is_primary) VALUES (?,?,TRUE) ON CONFLICT DO NOTHING",
                 [identifier, objective_id],
@@ -367,6 +378,128 @@ class DuckDBCurriculumRepository:
             WHERE active AND relation_type='required' AND mandatory
             ON CONFLICT (skill_id,prerequisite_skill_id)
             DO UPDATE SET weight=excluded.weight"""
+        )
+
+    @staticmethod
+    def _reconcile_unaccepted_enrichment(con: Any, document: dict[str, Any]) -> None:
+        """Replace the unaccepted profile skills after proving they carry no evidence."""
+        evidence_tables = (
+            "attempt_skill_results",
+            "content_common_errors",
+            "decision_plan_items",
+            "exam_skill_references",
+            "learning_attempt_inputs",
+            "longitudinal_mastery_current",
+            "longitudinal_mastery_events",
+            "mastery_current",
+            "mastery_events",
+            "objective_skills",
+            "personalized_session_items",
+            "question_skills",
+            "recommendation_effectiveness",
+            "recurring_error_observations",
+            "revision_history",
+            "study_calendar",
+        )
+        for table in evidence_tables:
+            count = con.execute(
+                f"""SELECT count(*) FROM {table} evidence
+                JOIN skills skill ON skill.id=evidence.skill_id
+                WHERE skill.code LIKE 'SK-ENR-%'"""
+            ).fetchone()[0]
+            if count:
+                raise RuntimeError(f"enrichment_reconciliation_blocked:{table}:{count}")
+        recommendation_count = con.execute(
+            """SELECT count(*) FROM recommendations evidence
+            JOIN skills skill ON skill.id=evidence.target_skill_id
+            WHERE skill.code LIKE 'SK-ENR-%'"""
+        ).fetchone()[0]
+        if recommendation_count:
+            raise RuntimeError(f"enrichment_reconciliation_blocked:recommendations:{recommendation_count}")
+
+        desired_skills = {
+            item["code"]: item for item in document.get("skills", []) if item["code"].startswith("SK-ENR-")
+        }
+        desired_subskills = {
+            item["code"]: item for item in document.get("subskills", []) if item["skill_code"].startswith("SK-ENR-")
+        }
+        for code, item in desired_skills.items():
+            con.execute(
+                "UPDATE skills SET default_label=?,description=? WHERE code=?",
+                [item["title"], item["description"], code],
+            )
+            objective = con.execute(
+                "SELECT id FROM learning_objectives WHERE stable_code=?",
+                [f"OBJ-{code}"],
+            ).fetchone()
+            skill = con.execute("SELECT id FROM skills WHERE code=?", [code]).fetchone()
+            if objective and skill:
+                con.execute(
+                    "DELETE FROM skill_learning_objectives WHERE skill_id=? AND learning_objective_id=?",
+                    [skill[0], objective[0]],
+                )
+            con.execute(
+                """UPDATE learning_objectives
+                SET title=?,description=?,observable_outcome=?
+                WHERE stable_code=?""",
+                [
+                    item["title"],
+                    item["description"],
+                    item["observable_outcome"],
+                    f"OBJ-{code}",
+                ],
+            )
+            if objective and skill:
+                con.execute(
+                    """INSERT INTO skill_learning_objectives(
+                        skill_id,learning_objective_id,is_primary
+                    ) VALUES (?,?,TRUE)""",
+                    [skill[0], objective[0]],
+                )
+        for code, item in desired_subskills.items():
+            con.execute(
+                "UPDATE subskills SET default_label=?,description=?,display_order=? WHERE code=?",
+                [item["title"], item["description"], item["sequence_order"], code],
+            )
+
+        con.execute(
+            """DELETE FROM curriculum_skill_relations
+            WHERE prerequisite_skill_id IN (SELECT id FROM skills WHERE code LIKE 'SK-ENR-%')
+               OR target_skill_id IN (SELECT id FROM skills WHERE code LIKE 'SK-ENR-%')"""
+        )
+        con.execute(
+            """DELETE FROM skill_prerequisites
+            WHERE prerequisite_skill_id IN (SELECT id FROM skills WHERE code LIKE 'SK-ENR-%')
+               OR skill_id IN (SELECT id FROM skills WHERE code LIKE 'SK-ENR-%')"""
+        )
+        if desired_subskills:
+            placeholders = ",".join("?" for _ in desired_subskills)
+            con.execute(
+                f"""DELETE FROM subskills
+                WHERE skill_id IN (SELECT id FROM skills WHERE code LIKE 'SK-ENR-%')
+                  AND code NOT IN ({placeholders})""",
+                list(desired_subskills),
+            )
+
+        retired = con.execute(
+            f"""SELECT id,code FROM skills
+            WHERE code LIKE 'SK-ENR-%'
+              AND code NOT IN ({",".join("?" for _ in desired_skills)})""",
+            list(desired_skills),
+        ).fetchall()
+        if not retired:
+            return
+        retired_ids = [int(row[0]) for row in retired]
+        placeholders = ",".join("?" for _ in retired_ids)
+        con.execute(f"DELETE FROM subskills WHERE skill_id IN ({placeholders})", retired_ids)
+        con.execute(f"DELETE FROM program_skills WHERE skill_id IN ({placeholders})", retired_ids)
+        con.execute(f"DELETE FROM curriculum_skill_details WHERE skill_id IN ({placeholders})", retired_ids)
+        con.execute(f"DELETE FROM skill_learning_objectives WHERE skill_id IN ({placeholders})", retired_ids)
+        con.execute(
+            f"""UPDATE skills
+            SET description='Compétence LCAI-0011C générique retirée du curriculum actif après revue pédagogique.'
+            WHERE id IN ({placeholders})""",
+            retired_ids,
         )
 
     @staticmethod
@@ -719,6 +852,91 @@ class DuckDBCurriculumRepository:
             )
             columns = [item[0] for item in cursor.description]
             return [dict(zip(columns, row, strict=True)) for row in cursor.fetchall()]
+        finally:
+            con.close()
+
+    def curriculum_quality_metrics(self) -> dict[str, Any]:
+        con = connect_v2(self.database_path, read_only=True)
+        try:
+            overall = con.execute(
+                """WITH chapter_counts AS (
+                    SELECT chapter_id,count(*) AS skill_count
+                    FROM curriculum_skill_details GROUP BY chapter_id
+                )
+                SELECT
+                    (SELECT count(*) FROM curriculum_chapters),
+                    (SELECT count(*) FROM skills),
+                    (SELECT count(*) FROM curriculum_skill_details),
+                    (SELECT count(*) FROM subskills),
+                    (SELECT count(*) FROM curriculum_skill_relations WHERE active),
+                    avg(skill_count),median(skill_count),min(skill_count),max(skill_count),
+                    count(*) FILTER (WHERE skill_count=1),
+                    count(*) FILTER (WHERE skill_count>1),
+                    (SELECT count(DISTINCT skill_id) FROM subskills),
+                    (SELECT count(*) FROM skills s WHERE NOT EXISTS (
+                        SELECT 1 FROM subskills ss WHERE ss.skill_id=s.id
+                    )),
+                    (SELECT count(*) FROM skills s WHERE NOT EXISTS (
+                        SELECT 1 FROM curriculum_skill_details d WHERE d.skill_id=s.id
+                    ))
+                FROM chapter_counts"""
+            ).fetchone()
+            columns = (
+                "chapters",
+                "total_skills",
+                "placed_skills",
+                "subskills",
+                "prerequisite_relations",
+                "average_skills_per_chapter",
+                "median_skills_per_chapter",
+                "minimum_skills_per_chapter",
+                "maximum_skills_per_chapter",
+                "chapters_with_one_skill",
+                "chapters_with_multiple_skills",
+                "skills_with_subskills",
+                "skills_without_subskills",
+                "unplaced_skills",
+            )
+            breakdown = [
+                {
+                    "grade_code": row[0],
+                    "subject_code": row[1],
+                    "chapters": int(row[2]),
+                    "placed_skills": int(row[3]),
+                    "subskills": int(row[4]),
+                    "average_skills_per_chapter": float(row[5]),
+                    "chapters_with_one_skill": int(row[6]),
+                    "chapters_with_multiple_skills": int(row[7]),
+                }
+                for row in con.execute(
+                    """WITH grouped AS (
+                        SELECT l.code AS grade_code,s.code AS subject_code,c.id AS chapter_id,
+                            count(DISTINCT d.skill_id) AS skill_count,
+                            count(DISTINCT ss.id) AS subskill_count
+                        FROM curriculum_chapters c
+                        JOIN school_levels l ON l.id=c.grade_level_id
+                        JOIN subjects s ON s.id=c.subject_id
+                        LEFT JOIN curriculum_skill_details d ON d.chapter_id=c.id
+                        LEFT JOIN subskills ss ON ss.skill_id=d.skill_id
+                        GROUP BY l.rank,l.code,s.code,c.id
+                    )
+                    SELECT grade_code,subject_code,count(*),sum(skill_count),sum(subskill_count),
+                        avg(skill_count),count(*) FILTER (WHERE skill_count=1),
+                        count(*) FILTER (WHERE skill_count>1)
+                    FROM grouped
+                    GROUP BY grade_code,subject_code
+                    ORDER BY grade_code,subject_code"""
+                ).fetchall()
+            ]
+            return {
+                "overall": {
+                    name: float(value)
+                    if name in {"average_skills_per_chapter", "median_skills_per_chapter"}
+                    else int(value)
+                    for name, value in zip(columns, overall, strict=True)
+                },
+                "by_grade_subject": breakdown,
+            }
         finally:
             con.close()
 

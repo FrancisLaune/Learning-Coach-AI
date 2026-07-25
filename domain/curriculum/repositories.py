@@ -18,6 +18,7 @@ class CurriculumRepository(Protocol):
     def curriculum_coverage(
         self, *, grade_code: str | None = None, subject_code: str | None = None
     ) -> list[dict[str, Any]]: ...
+    def curriculum_quality_metrics(self) -> dict[str, Any]: ...
 
 
 ChapterRepository = CurriculumRepository

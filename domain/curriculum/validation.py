@@ -91,9 +91,29 @@ class CatalogValidator:
         chapter_codes = {str(item["code"]) for item in chapters}
         skill_codes = {str(item["code"]) for item in skills}
         program_codes = {str(item["code"]) for item in programs}
+        chapter_titles = {str(item["code"]): str(item.get("title", "")).strip().casefold() for item in chapters}
         for skill in skills:
             if skill.get("chapter_code") not in chapter_codes:
                 issues.append(CatalogValidationIssue("unknown_chapter", "Skill chapter is unknown", skill.get("code")))
+            title = str(skill.get("title", "")).strip()
+            if title.casefold() == chapter_titles.get(str(skill.get("chapter_code"))):
+                issues.append(
+                    CatalogValidationIssue(
+                        "skill_repeats_chapter",
+                        "Skill title merely repeats its chapter title",
+                        skill.get("code"),
+                        False,
+                    )
+                )
+            if any(token in title.casefold() for token in ("maîtriser ", "comprendre le chapitre", "connaître ")):
+                issues.append(
+                    CatalogValidationIssue(
+                        "possibly_non_measurable_skill",
+                        "Skill wording should receive pedagogical review",
+                        skill.get("code"),
+                        False,
+                    )
+                )
         for chapter in chapters:
             if chapter.get("program_code") not in program_codes:
                 issues.append(
@@ -106,6 +126,32 @@ class CatalogValidator:
                         "unknown_subskill_parent", "Sub-skill parent is unknown", subskill.get("code")
                     )
                 )
+            parent = next((item for item in skills if item.get("code") == subskill.get("skill_code")), None)
+            if (
+                parent
+                and str(parent.get("title", "")).strip().casefold() == str(subskill.get("title", "")).strip().casefold()
+            ):
+                issues.append(
+                    CatalogValidationIssue(
+                        "subskill_repeats_skill",
+                        "Sub-skill does not add diagnostic precision",
+                        subskill.get("code"),
+                        False,
+                    )
+                )
+        relation_counts = Counter(
+            (
+                relation.get("prerequisite"),
+                relation.get("target"),
+                relation.get("relation_type"),
+            )
+            for relation in relations
+        )
+        issues.extend(
+            CatalogValidationIssue("duplicate_relation", "Duplicate prerequisite relation", str(key))
+            for key, count in relation_counts.items()
+            if count > 1
+        )
         try:
             assert_acyclic(relations)
         except PrerequisiteCycleError as exc:
@@ -113,6 +159,14 @@ class CatalogValidator:
         for relation in relations:
             if relation.get("prerequisite") not in skill_codes or relation.get("target") not in skill_codes:
                 issues.append(CatalogValidationIssue("unknown_skill_relation", "Relation references an unknown skill"))
+            if relation.get("relation_type") not in {
+                "required",
+                "recommended",
+                "remediation",
+                "transition",
+                "exam_dependency",
+            }:
+                issues.append(CatalogValidationIssue("invalid_relation_type", "Unknown prerequisite relation type"))
             threshold = relation.get("minimum_mastery_threshold", -1)
             if not 0 <= threshold <= 1:
                 issues.append(CatalogValidationIssue("invalid_mastery_threshold", "Threshold must be between 0 and 1"))

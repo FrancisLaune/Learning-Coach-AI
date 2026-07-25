@@ -1,0 +1,392 @@
+{
+  "catalog_version": "2026-2027.2",
+  "metadata": {
+    "phase2_curriculum": true,
+    "curriculum_enrichment": true,
+    "reconcile_unaccepted_enrichment": true,
+    "source_label": "LCAI-0011C-pedagogical-enrichment-2026-2027",
+    "language": "fr-FR",
+    "status": "pedagogically_enriched",
+    "review_status": "structured_pending_editorial_validation",
+    "import_version": "LCAI-0011C-1",
+    "effective_school_year": "2026-2027",
+    "source_curriculum": "LCAI-0011B et LCAI-0009, références MEN-DGESCO conservées",
+    "transformation_method": "Décomposition Learning Coach en compétences observables de connaissance, méthode et production. Les formulations enrichies sont des interprétations pédagogiques, pas des citations officielles.",
+    "scope_note": "Enrichissement différentiel des compétences et sous-compétences. Aucun contenu éducatif n'est inclus ou approuvé.",
+    "sources": [
+      {
+        "title": "Programmes de français et de mathématiques du cycle 3",
+        "reference": "BO n°16 du 17 avril 2025",
+        "url": "https://www.education.gouv.fr/bo/2025/Hebdo16/MENE2504620A"
+      },
+      {
+        "title": "Programmes de français et de mathématiques du cycle 4",
+        "reference": "BO n°10 du 5 mars 2026 et BOEN n°31 du 30 juillet 2020 selon calendrier",
+        "url": "https://www.education.gouv.fr/bo/2026/Hebdo10/MENE2602912A"
+      },
+      {
+        "title": "Programmes de langues vivantes étrangères",
+        "reference": "BO n°22 du 29 mai 2025 et BO n°12 du 19 mars 2026",
+        "url": "https://www.education.gouv.fr/sites/default/files/bulletin-officiel-n-22-du-29-mai-2025-441441.pdf"
+      },
+      {
+        "title": "Programmes d'histoire-géographie, EMC, sciences et technologie",
+        "reference": "Références officielles détaillées dans LCAI-0011B",
+        "url": "https://eduscol.education.fr/4356/enseigner-au-cycle-3"
+      }
+    ]
+  },
+  "curriculum_enrichment": {
+    "base_datasets": [
+      "../catalog/lcai_0009_catalog.json",
+      "lcai_0011b_curriculum_2026_2027.json"
+    ],
+    "chapter_competency_dataset": "lcai_0011c_chapter_competencies_2026_2027.json",
+    "subject_profiles": [
+      {
+        "subject_code": "MATHEMATICS",
+        "skills": [
+          {
+            "suffix": "REPRESENT",
+            "title": "Représenter les objets mathématiques de « {chapter} »",
+            "description": "Passer entre une situation, une écriture, une figure ou une représentation adaptée au niveau {grade}.",
+            "observable_outcome": "L'apprenant produit et interprète une représentation correcte avant de calculer.",
+            "subskills": [
+              {"suffix": "READ", "title": "Lire une représentation de « {chapter} »", "description": "Extraire les informations mathématiques utiles d'une représentation."},
+              {"suffix": "CREATE", "title": "Produire une représentation de « {chapter} »", "description": "Choisir et construire une représentation adaptée à la tâche."}
+            ]
+          },
+          {
+            "suffix": "REASON",
+            "title": "Choisir et justifier une méthode pour « {chapter} »",
+            "description": "Résoudre une tâche ciblée en sélectionnant une propriété ou une procédure adaptée.",
+            "observable_outcome": "L'apprenant résout une tâche et justifie les étapes déterminantes de sa méthode."
+          }
+        ],
+        "relations": [
+          {"from_suffix": "REPRESENT", "to_suffix": "REASON", "rationale": "Une représentation pertinente soutient le choix d'une méthode pour « {chapter} »."}
+        ]
+      },
+      {
+        "subject_code": "FRENCH",
+        "skills": [
+          {
+            "suffix": "OBSERVE",
+            "title": "Repérer et interpréter des indices dans « {chapter} »",
+            "description": "Identifier des faits de langue, indices textuels ou procédés pertinents et expliquer leur rôle.",
+            "observable_outcome": "L'apprenant relève des indices précis et formule une interprétation vérifiable.",
+            "subskills": [
+              {"suffix": "IDENTIFY", "title": "Identifier les indices pertinents", "description": "Sélectionner les formes ou passages utiles à l'analyse."},
+              {"suffix": "INTERPRET", "title": "Expliquer l'effet des indices relevés", "description": "Relier les observations au sens ou au fonctionnement de la langue."}
+            ]
+          },
+          {
+            "suffix": "APPLY",
+            "title": "Mobiliser « {chapter} » dans une production",
+            "description": "Appliquer les connaissances du chapitre dans une réponse orale ou écrite contrôlable.",
+            "observable_outcome": "L'apprenant produit puis révise une réponse conforme à une consigne explicite."
+          }
+        ],
+        "relations": [
+          {"from_suffix": "OBSERVE", "to_suffix": "APPLY", "rationale": "L'observation raisonnée fournit les critères nécessaires à la production."}
+        ]
+      },
+      {
+        "subject_code": "ENGLISH",
+        "skills": [
+          {
+            "suffix": "RECEIVE",
+            "title": "Comprendre des messages liés à « {chapter} »",
+            "description": "Prélever les informations explicites et reconstruire le sens global d'un message adapté au niveau.",
+            "observable_outcome": "L'apprenant identifie le sens global et des informations ciblées.",
+            "subskills": [
+              {"suffix": "GLOBAL", "title": "Identifier le sens global", "description": "Reconnaître le thème, les interlocuteurs et l'intention principale."},
+              {"suffix": "DETAIL", "title": "Prélever une information ciblée", "description": "Repérer une information explicite utile à la tâche."}
+            ]
+          },
+          {
+            "suffix": "PRODUCE",
+            "title": "Produire et interagir autour de « {chapter} »",
+            "description": "Construire un message compréhensible avec les ressources linguistiques attendues.",
+            "observable_outcome": "L'apprenant formule un message cohérent et répond à une sollicitation."
+          }
+        ],
+        "relations": [
+          {"from_suffix": "RECEIVE", "to_suffix": "PRODUCE", "rationale": "La compréhension des modèles langagiers soutient une production contextualisée."}
+        ]
+      },
+      {
+        "subject_code": "SPANISH",
+        "skills": [
+          {
+            "suffix": "RECEIVE",
+            "title": "Comprendre des messages liés à « {chapter} »",
+            "description": "Prélever le sens global et des informations explicites dans un message adapté au niveau.",
+            "observable_outcome": "L'apprenant restitue le sens global et les informations demandées.",
+            "subskills": [
+              {"suffix": "GLOBAL", "title": "Identifier le sens global", "description": "Reconnaître le thème et l'intention principale."},
+              {"suffix": "DETAIL", "title": "Prélever une information ciblée", "description": "Repérer une information explicite utile."}
+            ]
+          },
+          {
+            "suffix": "PRODUCE",
+            "title": "Produire et interagir autour de « {chapter} »",
+            "description": "Construire un message compréhensible avec les ressources linguistiques attendues.",
+            "observable_outcome": "L'apprenant formule un message cohérent et réagit à une sollicitation."
+          }
+        ],
+        "relations": [
+          {"from_suffix": "RECEIVE", "to_suffix": "PRODUCE", "rationale": "La compréhension de modèles soutient la production contextualisée."}
+        ]
+      },
+      {
+        "subject_code": "HISTORY",
+        "skills": [
+          {
+            "suffix": "EVIDENCE",
+            "title": "Interroger des sources sur « {chapter} »",
+            "description": "Identifier la nature, le contexte et les informations utiles d'une source historique.",
+            "observable_outcome": "L'apprenant contextualise une source et en extrait des éléments probants.",
+            "subskills": [
+              {"suffix": "CONTEXT", "title": "Contextualiser une source", "description": "Identifier auteur, date, nature et contexte utiles."},
+              {"suffix": "INFER", "title": "Tirer une conclusion étayée", "description": "Appuyer une conclusion sur des indices explicites de la source."}
+            ]
+          },
+          {
+            "suffix": "EXPLAIN",
+            "title": "Construire une explication historique sur « {chapter} »",
+            "description": "Organiser des repères, causes, acteurs et conséquences dans une réponse argumentée.",
+            "observable_outcome": "L'apprenant produit une explication chronologique et étayée."
+          }
+        ],
+        "relations": [
+          {"from_suffix": "EVIDENCE", "to_suffix": "EXPLAIN", "rationale": "Les sources contextualisées fournissent les preuves de l'explication historique."}
+        ]
+      },
+      {
+        "subject_code": "GEOGRAPHY",
+        "skills": [
+          {
+            "suffix": "MAP",
+            "title": "Lire et construire une représentation spatiale de « {chapter} »",
+            "description": "Localiser, changer d'échelle et interpréter une carte, un croquis ou des données spatiales.",
+            "observable_outcome": "L'apprenant localise les phénomènes et produit une représentation légendée.",
+            "subskills": [
+              {"suffix": "LOCATE", "title": "Localiser à l'échelle pertinente", "description": "Situer précisément les espaces étudiés."},
+              {"suffix": "LEGEND", "title": "Organiser une légende", "description": "Classer des informations spatiales dans une légende cohérente."}
+            ]
+          },
+          {
+            "suffix": "ANALYZE",
+            "title": "Expliquer l'organisation spatiale de « {chapter} »",
+            "description": "Relier acteurs, flux, contraintes et transformations territoriales.",
+            "observable_outcome": "L'apprenant formule une explication multicausale appuyée sur des données."
+          }
+        ],
+        "relations": [
+          {"from_suffix": "MAP", "to_suffix": "ANALYZE", "rationale": "La représentation spatiale rend visibles les relations nécessaires à l'analyse."}
+        ]
+      },
+      {
+        "subject_code": "EMC",
+        "skills": [
+          {
+            "suffix": "CASE",
+            "title": "Analyser une situation liée à « {chapter} »",
+            "description": "Identifier les valeurs, droits, règles, acteurs et responsabilités engagés.",
+            "observable_outcome": "L'apprenant qualifie les enjeux d'une situation et cite les principes pertinents.",
+            "subskills": [
+              {"suffix": "PRINCIPLE", "title": "Identifier le principe applicable", "description": "Relier une situation à une valeur, un droit ou une règle."},
+              {"suffix": "PERSPECTIVE", "title": "Prendre en compte plusieurs points de vue", "description": "Distinguer faits, opinions et intérêts des acteurs."}
+            ]
+          },
+          {
+            "suffix": "ARGUE",
+            "title": "Argumenter une décision citoyenne sur « {chapter} »",
+            "description": "Formuler une position justifiée et examiner une objection.",
+            "observable_outcome": "L'apprenant défend une décision avec des arguments et répond à un contre-argument."
+          }
+        ],
+        "relations": [
+          {"from_suffix": "CASE", "to_suffix": "ARGUE", "rationale": "L'analyse des principes et acteurs précède une argumentation citoyenne informée."}
+        ]
+      },
+      {
+        "subject_code": "SVT",
+        "skills": [
+          {
+            "suffix": "EVIDENCE",
+            "title": "Interpréter des données sur « {chapter} »",
+            "description": "Lire une observation, un résultat expérimental ou un document scientifique.",
+            "observable_outcome": "L'apprenant sélectionne des données et formule une conclusion compatible.",
+            "subskills": [
+              {"suffix": "OBSERVE", "title": "Décrire les données sans les interpréter", "description": "Relever précisément les variations et résultats observés."},
+              {"suffix": "CONCLUDE", "title": "Formuler une conclusion étayée", "description": "Relier la conclusion aux données disponibles."}
+            ]
+          },
+          {
+            "suffix": "MODEL",
+            "title": "Utiliser un modèle pour expliquer « {chapter} »",
+            "description": "Mobiliser un mécanisme ou un modèle scientifique et en préciser les limites.",
+            "observable_outcome": "L'apprenant produit une explication causale cohérente avec le modèle étudié."
+          }
+        ],
+        "relations": [
+          {"from_suffix": "EVIDENCE", "to_suffix": "MODEL", "rationale": "Les données constituent les éléments de validation du modèle scientifique."}
+        ]
+      },
+      {
+        "subject_code": "PHYSICS_CHEMISTRY",
+        "skills": [
+          {
+            "suffix": "EXPERIMENT",
+            "title": "Exploiter une expérience sur « {chapter} »",
+            "description": "Identifier les grandeurs, protocole, mesures et incertitudes utiles.",
+            "observable_outcome": "L'apprenant interprète un protocole et tire une conclusion fondée sur les mesures.",
+            "subskills": [
+              {"suffix": "PROTOCOL", "title": "Analyser le protocole", "description": "Identifier variable, mesure et condition de comparaison."},
+              {"suffix": "RESULT", "title": "Interpréter les résultats", "description": "Relier les mesures à une conclusion scientifique."}
+            ]
+          },
+          {
+            "suffix": "MODEL",
+            "title": "Modéliser et calculer dans « {chapter} »",
+            "description": "Choisir une représentation ou une relation quantitative adaptée.",
+            "observable_outcome": "L'apprenant applique un modèle, contrôle les unités et interprète le résultat."
+          }
+        ],
+        "relations": [
+          {"from_suffix": "EXPERIMENT", "to_suffix": "MODEL", "rationale": "L'analyse expérimentale donne du sens au modèle utilisé pour « {chapter} »."}
+        ]
+      }
+    ],
+    "chapter_overrides": [
+      {
+        "chapter_code": "CH-MATHEMATICS-CM1-FRACTIONS",
+        "skills": [
+          {"suffix": "REPRESENT", "title": "Représenter une fraction simple", "description": "Associer partage, écriture fractionnaire et position sur une demi-droite.", "observable_outcome": "L'apprenant représente une fraction donnée de deux façons.", "subskills": [{"suffix": "SHARE", "title": "Interpréter une fraction comme partage", "description": "Relier numérateur, dénominateur et parts égales."}, {"suffix": "LINE", "title": "Placer une fraction sur une demi-droite", "description": "Choisir l'unité et effectuer le placement."}]},
+          {"suffix": "COMPARE", "title": "Comparer des fractions simples", "description": "Comparer à l'unité et comparer des fractions de même dénominateur.", "observable_outcome": "L'apprenant ordonne des fractions et justifie par une représentation.", "subskills": [{"suffix": "ONE", "title": "Comparer une fraction à 1", "description": "Utiliser la relation entre numérateur et dénominateur."}, {"suffix": "DENOMINATOR", "title": "Comparer à dénominateur commun", "description": "Comparer les numérateurs lorsque les parts ont même taille."}]}
+        ],
+        "relations": [{"from_suffix": "REPRESENT", "to_suffix": "COMPARE", "rationale": "La représentation donne un support de sens à la comparaison."}]
+      },
+      {
+        "chapter_code": "CH-FRENCH-CM2-GRAMMAR",
+        "skills": [
+          {"suffix": "CLASSES", "title": "Identifier les classes grammaticales étudiées", "description": "Distinguer nom, déterminant, adjectif, pronom, verbe et mots invariables.", "observable_outcome": "L'apprenant classe les mots en justifiant par leurs propriétés.", "subskills": [{"suffix": "VARIABLE", "title": "Identifier les classes variables", "description": "Utiliser accords et substitutions."}, {"suffix": "INVARIABLE", "title": "Identifier les mots invariables", "description": "Reconnaître leur fonctionnement dans la phrase."}]},
+          {"suffix": "FUNCTIONS", "title": "Identifier sujet, compléments et attribut", "description": "Mobiliser manipulations syntaxiques pour déterminer une fonction.", "observable_outcome": "L'apprenant identifie une fonction et justifie avec une manipulation."},
+          {"suffix": "AGREEMENTS", "title": "Réaliser les accords dans le groupe nominal et avec le verbe", "description": "Contrôler les chaînes d'accord essentielles.", "observable_outcome": "L'apprenant corrige et justifie les accords d'une phrase."}
+        ],
+        "relations": [{"from_suffix": "CLASSES", "to_suffix": "FUNCTIONS", "rationale": "Identifier la classe d'un mot aide à raisonner sur sa fonction."}, {"from_suffix": "FUNCTIONS", "to_suffix": "AGREEMENTS", "rationale": "Les relations syntaxiques déterminent les accords."}]
+      },
+      {
+        "chapter_code": "CH-MATHEMATICS-6E-NUMBERS",
+        "skills": [
+          {"suffix": "DECIMALS", "title": "Comparer et ordonner les nombres décimaux", "description": "Utiliser valeur de position, droite graduée et encadrements.", "observable_outcome": "L'apprenant compare, encadre et intercale des décimaux.", "subskills": [{"suffix": "PLACE", "title": "Utiliser la valeur de position", "description": "Interpréter chaque chiffre selon son rang."}, {"suffix": "BOUND", "title": "Encadrer et intercaler", "description": "Trouver des bornes et un nombre entre deux valeurs."}]},
+          {"suffix": "FRACTIONS", "title": "Interpréter et comparer des écritures fractionnaires", "description": "Relier fraction, quotient, partage et position.", "observable_outcome": "L'apprenant choisit une représentation et compare des fractions simples."},
+          {"suffix": "CALCULATE", "title": "Calculer avec entiers et décimaux", "description": "Choisir calcul mental, posé ou instrumenté et contrôler l'ordre de grandeur.", "observable_outcome": "L'apprenant effectue un calcul et valide sa vraisemblance."}
+        ],
+        "relations": [{"from_suffix": "DECIMALS", "to_suffix": "CALCULATE", "rationale": "La compréhension de la numération décimale soutient les algorithmes de calcul."}]
+      },
+      {
+        "chapter_code": "CH-FRENCH-6E-LANGUAGE",
+        "skills": [
+          {"suffix": "SENTENCE", "title": "Analyser la structure d'une phrase simple", "description": "Identifier groupes syntaxiques et fonctions essentielles.", "observable_outcome": "L'apprenant segmente une phrase et justifie les fonctions.", "subskills": [{"suffix": "GROUPS", "title": "Délimiter les groupes syntaxiques", "description": "Utiliser déplacement, suppression et remplacement."}, {"suffix": "FUNCTIONS", "title": "Déterminer les fonctions essentielles", "description": "Identifier sujet et compléments à l'aide de manipulations."}]},
+          {"suffix": "VERBS", "title": "Conjuguer les temps étudiés en contexte", "description": "Choisir temps et terminaison selon sujet et situation.", "observable_outcome": "L'apprenant complète ou transforme un texte sans rupture temporelle."},
+          {"suffix": "AGREEMENTS", "title": "Contrôler les accords essentiels", "description": "Appliquer accord sujet-verbe et accords du groupe nominal.", "observable_outcome": "L'apprenant repère puis corrige une rupture d'accord."}
+        ],
+        "relations": [{"from_suffix": "SENTENCE", "to_suffix": "AGREEMENTS", "rationale": "L'analyse des groupes et fonctions permet de déterminer les accords."}]
+      },
+      {
+        "chapter_code": "CH-MATHEMATICS-5E-FRACTIONS",
+        "skills": [
+          {"suffix": "QUOTIENT", "title": "Interpréter une fraction comme quotient", "description": "Relier division, fraction et partage d'une grandeur.", "observable_outcome": "L'apprenant traduit une situation par une fraction ou un quotient.", "subskills": [{"suffix": "REPRESENT", "title": "Représenter un quotient", "description": "Passer entre situation, division et écriture fractionnaire."}, {"suffix": "ONE", "title": "Comparer un quotient à 1", "description": "Raisonner sur numérateur et dénominateur."}]},
+          {"suffix": "EQUIVALENT", "title": "Produire et reconnaître des fractions égales", "description": "Utiliser la multiplication ou division du numérateur et du dénominateur.", "observable_outcome": "L'apprenant simplifie ou réduit des fractions à un dénominateur commun."},
+          {"suffix": "OPERATE", "title": "Additionner et soustraire des fractions", "description": "Traiter les cas conformes aux attendus de 5e en justifiant le dénominateur commun.", "observable_outcome": "L'apprenant effectue une somme ou différence et simplifie le résultat."},
+          {"suffix": "PROBLEM", "title": "Résoudre un problème mobilisant des fractions", "description": "Choisir l'opération fractionnaire pertinente et interpréter le résultat.", "observable_outcome": "L'apprenant modélise, calcule et répond avec l'unité ou le sens attendu."}
+        ],
+        "relations": [{"from_suffix": "QUOTIENT", "to_suffix": "EQUIVALENT", "rationale": "Le sens du quotient fonde l'équivalence des écritures."}, {"from_suffix": "EQUIVALENT", "to_suffix": "OPERATE", "rationale": "Les fractions équivalentes permettent de construire un dénominateur commun."}, {"from_suffix": "OPERATE", "to_suffix": "PROBLEM", "rationale": "La maîtrise des opérations soutient la résolution de problèmes fractionnaires."}]
+      },
+      {
+        "chapter_code": "CH-HISTORY-5E-MEDIEVAL",
+        "skills": [
+          {"suffix": "LOCATE", "title": "Situer les chrétientés et l'islam médiévaux", "description": "Mobiliser cartes et chronologie pour localiser pouvoirs, foyers et échanges.", "observable_outcome": "L'apprenant place des repères et explique leur contemporanéité.", "subskills": [{"suffix": "TIME", "title": "Construire les repères chronologiques", "description": "Ordonner événements et périodes."}, {"suffix": "SPACE", "title": "Localiser les principaux espaces", "description": "Identifier foyers, frontières et routes d'échanges."}]},
+          {"suffix": "COMPARE", "title": "Comparer pouvoirs et sociétés médiévales", "description": "Identifier ressemblances, différences et contacts à partir de sources.", "observable_outcome": "L'apprenant construit une comparaison organisée et sourcée."},
+          {"suffix": "SOURCE", "title": "Interpréter une source médiévale contextualisée", "description": "Distinguer nature, point de vue et informations du document.", "observable_outcome": "L'apprenant appuie une conclusion sur des indices précis."}
+        ],
+        "relations": [{"from_suffix": "LOCATE", "to_suffix": "COMPARE", "rationale": "Les repères spatiaux et temporels rendent la comparaison historiquement valide."}]
+      },
+      {
+        "chapter_code": "CH-GEOGRAPHY-5E-POPULATION",
+        "skills": [
+          {"suffix": "INDICATORS", "title": "Lire des indicateurs démographiques et de développement", "description": "Interpréter évolution, structure et indicateurs sans confondre valeur et variation.", "observable_outcome": "L'apprenant extrait et compare correctement plusieurs indicateurs.", "subskills": [{"suffix": "DEMOGRAPHY", "title": "Interpréter une dynamique démographique", "description": "Lire croissance, structure et transition."}, {"suffix": "DEVELOPMENT", "title": "Comparer des indicateurs de développement", "description": "Mobiliser plusieurs indicateurs complémentaires."}]},
+          {"suffix": "MAP", "title": "Cartographier les inégalités de développement", "description": "Choisir figurés et classes pour représenter une distribution.", "observable_outcome": "L'apprenant produit ou critique une carte thématique."},
+          {"suffix": "EXPLAIN", "title": "Expliquer des trajectoires démographiques différenciées", "description": "Relier facteurs sociaux, économiques et territoriaux.", "observable_outcome": "L'apprenant formule une explication comparative étayée."}
+        ],
+        "relations": [{"from_suffix": "INDICATORS", "to_suffix": "EXPLAIN", "rationale": "L'explication comparative doit être étayée par des indicateurs correctement interprétés."}]
+      },
+      {
+        "chapter_code": "CH-MATHEMATICS-4E-PYTH",
+        "skills": [
+          {"suffix": "IDENTIFY", "title": "Identifier une configuration de Pythagore", "description": "Repérer triangle rectangle, hypoténuse et données utiles.", "observable_outcome": "L'apprenant nomme l'hypoténuse et écrit l'égalité adaptée.", "subskills": [{"suffix": "HYPOTENUSE", "title": "Identifier l'hypoténuse", "description": "Relier angle droit et côté opposé."}, {"suffix": "EQUALITY", "title": "Écrire l'égalité de Pythagore", "description": "Associer correctement les longueurs aux termes."}]},
+          {"suffix": "CALCULATE", "title": "Calculer une longueur avec le théorème de Pythagore", "description": "Isoler la longueur recherchée et contrôler la cohérence.", "observable_outcome": "L'apprenant calcule et arrondit une longueur demandée."},
+          {"suffix": "TEST", "title": "Déterminer si un triangle est rectangle", "description": "Comparer les carrés des longueurs avec une conclusion logique.", "observable_outcome": "L'apprenant applique la réciproque ou réfute l'égalité."}
+        ],
+        "relations": [{"from_suffix": "IDENTIFY", "to_suffix": "CALCULATE", "rationale": "La configuration doit être correctement identifiée avant le calcul."}]
+      },
+      {
+        "chapter_code": "CH-FRENCH-4E-GRAMMAR",
+        "skills": [
+          {"suffix": "CLAUSES", "title": "Délimiter et relier les propositions", "description": "Identifier verbes conjugués, coordination, juxtaposition et subordination.", "observable_outcome": "L'apprenant délimite les propositions et nomme leur relation.", "subskills": [{"suffix": "DELIMIT", "title": "Délimiter les propositions", "description": "S'appuyer sur les noyaux verbaux."}, {"suffix": "RELATE", "title": "Identifier la relation entre propositions", "description": "Reconnaître coordination, juxtaposition et subordination."}]},
+          {"suffix": "FUNCTIONS", "title": "Analyser les fonctions dans la phrase complexe", "description": "Utiliser manipulations et relations syntaxiques.", "observable_outcome": "L'apprenant justifie une fonction par un test syntaxique."},
+          {"suffix": "TRANSFORM", "title": "Transformer une phrase en conservant son sens", "description": "Modifier structure ou subordination et contrôler accords et ponctuation.", "observable_outcome": "L'apprenant réalise une transformation syntaxiquement correcte."}
+        ],
+        "relations": [{"from_suffix": "CLAUSES", "to_suffix": "FUNCTIONS", "rationale": "La délimitation des propositions précède l'analyse de leurs fonctions."}]
+      },
+      {
+        "chapter_code": "CH-MATHEMATICS-3E-EQUATIONS",
+        "skills": [
+          {"suffix": "MODEL", "title": "Mettre un problème en équation", "description": "Choisir l'inconnue et traduire les relations de l'énoncé.", "observable_outcome": "L'apprenant définit l'inconnue et écrit une équation fidèle.", "subskills": [{"suffix": "UNKNOWN", "title": "Définir l'inconnue", "description": "Associer une lettre à la grandeur recherchée."}, {"suffix": "TRANSLATE", "title": "Traduire les relations", "description": "Passer du langage naturel à une égalité."}]},
+          {"suffix": "SOLVE", "title": "Résoudre une équation du premier degré", "description": "Effectuer des transformations équivalentes et contrôler la solution.", "observable_outcome": "L'apprenant isole l'inconnue et vérifie par substitution."},
+          {"suffix": "INTERPRET", "title": "Interpréter une solution dans le problème", "description": "Vérifier domaine, unité et cohérence avec la question.", "observable_outcome": "L'apprenant accepte ou écarte une solution et rédige la réponse."}
+        ],
+        "relations": [{"from_suffix": "MODEL", "to_suffix": "SOLVE", "rationale": "Une équation fidèle est nécessaire avant sa résolution."}, {"from_suffix": "SOLVE", "to_suffix": "INTERPRET", "rationale": "La valeur obtenue doit être contrôlée dans le contexte initial."}]
+      },
+      {
+        "chapter_code": "CH-FRENCH-3E-TEXTANALYSIS",
+        "skills": [
+          {"suffix": "EXPLICIT", "title": "Prélever et reformuler les informations explicites", "description": "Sélectionner des passages précis et les reformuler sans contresens.", "observable_outcome": "L'apprenant répond en citant un indice pertinent.", "subskills": [{"suffix": "LOCATE", "title": "Localiser l'information utile", "description": "Associer une question au passage pertinent."}, {"suffix": "REFORMULATE", "title": "Reformuler sans copier", "description": "Conserver le sens dans une formulation personnelle."}]},
+          {"suffix": "INFER", "title": "Construire une inférence à partir d'indices", "description": "Relier plusieurs indices textuels et connaissances contextuelles.", "observable_outcome": "L'apprenant formule une interprétation et la justifie par le texte."},
+          {"suffix": "METHOD", "title": "Analyser un procédé d'écriture", "description": "Identifier le procédé, décrire son fonctionnement et expliquer son effet.", "observable_outcome": "L'apprenant construit une réponse en trois étapes : citation, identification, effet."}
+        ],
+        "relations": [{"from_suffix": "EXPLICIT", "to_suffix": "INFER", "rationale": "Une inférence recevable s'appuie sur des informations explicites."}]
+      },
+      {
+        "chapter_code": "CH-ENGLISH-3E-PAST",
+        "skills": [
+          {"suffix": "RECOGNIZE", "title": "Reconnaître les formes du past simple", "description": "Identifier auxiliaire, formes régulières et principaux verbes irréguliers.", "observable_outcome": "L'apprenant repère la forme et sa valeur dans un récit.", "subskills": [{"suffix": "REGULAR", "title": "Former les verbes réguliers", "description": "Appliquer la terminaison et ses règles orthographiques."}, {"suffix": "IRREGULAR", "title": "Mobiliser les verbes irréguliers fréquents", "description": "Reconnaître et produire les formes étudiées."}]},
+          {"suffix": "QUESTIONS", "title": "Construire négations et questions au past simple", "description": "Utiliser did et la base verbale dans l'ordre attendu.", "observable_outcome": "L'apprenant transforme une affirmation sans double marquage du passé."},
+          {"suffix": "NARRATE", "title": "Raconter des événements passés", "description": "Ordonner les événements avec marqueurs temporels et formes verbales cohérentes.", "observable_outcome": "L'apprenant produit un récit bref compréhensible et chronologique."}
+        ],
+        "relations": [{"from_suffix": "RECOGNIZE", "to_suffix": "QUESTIONS", "rationale": "La maîtrise de la forme affirmative soutient les transformations."}, {"from_suffix": "QUESTIONS", "to_suffix": "NARRATE", "rationale": "Les formes verbales maîtrisées permettent une production autonome."}]
+      },
+      {
+        "chapter_code": "CH-PHYSICS_CHEMISTRY-3E-SPEED",
+        "skills": [
+          {"suffix": "DATA", "title": "Identifier distance, durée et vitesse", "description": "Associer grandeurs, symboles et unités dans une situation de mouvement.", "observable_outcome": "L'apprenant extrait les données et les convertit dans des unités compatibles.", "subskills": [{"suffix": "UNITS", "title": "Convertir les unités de distance et durée", "description": "Rendre les unités compatibles avant le calcul."}, {"suffix": "RELATION", "title": "Choisir la relation entre vitesse, distance et durée", "description": "Identifier la grandeur recherchée."}]},
+          {"suffix": "CALCULATE", "title": "Calculer une vitesse moyenne", "description": "Appliquer la relation, gérer les unités et arrondir raisonnablement.", "observable_outcome": "L'apprenant obtient une valeur avec unité et contrôle son ordre de grandeur."},
+          {"suffix": "INTERPRET", "title": "Interpréter un graphique de mouvement", "description": "Relier évolution de la position ou distance aux phases du mouvement.", "observable_outcome": "L'apprenant décrit et compare des phases à partir du graphique."}
+        ],
+        "relations": [{"from_suffix": "DATA", "to_suffix": "CALCULATE", "rationale": "Le calcul exige des grandeurs identifiées et des unités compatibles."}]
+      },
+      {
+        "chapter_code": "CH-SVT-3E-CELL",
+        "skills": [
+          {"suffix": "OBSERVE", "title": "Interpréter une observation cellulaire", "description": "Identifier échelle, structures visibles et limites de l'observation.", "observable_outcome": "L'apprenant légende une observation et justifie l'identification.", "subskills": [{"suffix": "SCALE", "title": "Raisonner sur l'échelle", "description": "Relier taille réelle, grossissement et représentation."}, {"suffix": "STRUCTURE", "title": "Identifier les structures cellulaires", "description": "Reconnaître les structures au programme à partir d'indices."}]},
+          {"suffix": "ORGANIZE", "title": "Relier cellule, tissu, organe et organisme", "description": "Construire les niveaux d'organisation du vivant.", "observable_outcome": "L'apprenant ordonne les niveaux et explique leurs relations."},
+          {"suffix": "EVIDENCE", "title": "Argumenter l'unité et la diversité du vivant", "description": "Comparer des observations pour identifier points communs et différences.", "observable_outcome": "L'apprenant formule une conclusion fondée sur plusieurs observations."}
+        ],
+        "relations": [{"from_suffix": "OBSERVE", "to_suffix": "ORGANIZE", "rationale": "L'identification des structures fonde le raisonnement sur les niveaux d'organisation."}]
+      }
+    ]
+  }
+}
