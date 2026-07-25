@@ -1,5 +1,11 @@
 """Content-management application services."""
 
+from services.content.factory import (
+    CandidateValidator,
+    ContentCoverageService,
+    ContentFactoryService,
+    QualityAssessor,
+)
 from services.content.importers import (
     ContentImporter,
     CSVContentImporter,
@@ -17,7 +23,10 @@ from services.content.services import (
 )
 
 __all__ = [
+    "CandidateValidator",
     "CSVContentImporter",
+    "ContentCoverageService",
+    "ContentFactoryService",
     "ContentImporter",
     "ContentImportService",
     "ContentSearchService",
@@ -27,5 +36,6 @@ __all__ = [
     "ImporterRegistry",
     "JSONContentImporter",
     "MarkdownContentImporter",
+    "QualityAssessor",
     "YAMLContentImporter",
 ]
