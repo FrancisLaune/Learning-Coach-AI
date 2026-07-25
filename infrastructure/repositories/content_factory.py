@@ -61,10 +61,73 @@ class DuckDBContentFactoryRepository:
         finally:
             connection.close()
 
+    def has_candidate(self, code: str) -> bool:
+        connection = connect_v2(self.database_path, read_only=True)
+        try:
+            return connection.execute("SELECT count(*) FROM exercises WHERE code=?", [code]).fetchone()[0] > 0
+        finally:
+            connection.close()
+
+    def generation_context(self, target: Any) -> dict[str, Any]:
+        connection = connect_v2(self.database_path, read_only=True)
+        try:
+            row = connection.execute(
+                """
+                SELECT cc.title, s.default_label, ss.default_label
+                FROM curriculum_chapters cc
+                JOIN curriculum_skill_details csd ON csd.chapter_id=cc.id
+                    AND csd.grade_level_id=cc.grade_level_id
+                JOIN skills s ON s.id=csd.skill_id
+                LEFT JOIN subskills ss ON ss.skill_id=s.id AND ss.code=?
+                JOIN school_levels sl ON sl.id=cc.grade_level_id
+                JOIN subjects su ON su.id=cc.subject_id
+                JOIN programs p ON p.id=cc.program_id
+                WHERE p.code=? AND sl.code=? AND su.code=? AND cc.stable_code=? AND s.code=?
+                """,
+                [
+                    target.subskill_code,
+                    target.program_code,
+                    target.grade_code,
+                    target.subject_code,
+                    target.chapter_code,
+                    target.primary_skill_code,
+                ],
+            ).fetchone()
+            if row is None:
+                raise ValueError("Unknown curriculum target")
+            prerequisites = [
+                {"code": code, "label": label}
+                for code, label in connection.execute(
+                    """
+                    SELECT prerequisite.code, prerequisite.default_label
+                    FROM skills target
+                    JOIN curriculum_skill_relations relation ON relation.target_skill_id=target.id
+                        AND relation.active
+                    JOIN skills prerequisite ON prerequisite.id=relation.prerequisite_skill_id
+                    WHERE target.code=?
+                    UNION
+                    SELECT prerequisite.code, prerequisite.default_label
+                    FROM skills target
+                    JOIN skill_prerequisites relation ON relation.skill_id=target.id
+                    JOIN skills prerequisite ON prerequisite.id=relation.prerequisite_skill_id
+                    WHERE target.code=?
+                    """,
+                    [target.primary_skill_code, target.primary_skill_code],
+                ).fetchall()
+            ]
+            return {
+                "chapter_label": str(row[0]),
+                "skill_label": str(row[1]),
+                "subskill_label": str(row[2]) if row[2] is not None else None,
+                "prerequisites": prerequisites,
+            }
+        finally:
+            connection.close()
+
     def known_fingerprints(self) -> dict[str, tuple[str | None, str | None]]:
         connection = connect_v2(self.database_path, read_only=True)
         try:
-            rows = connection.execute(
+            approved = connection.execute(
                 """
                 SELECT cq.statement, lcm.source_identifier, lcm.pedagogical_strategy
                 FROM approved_learning_catalog alc
@@ -72,9 +135,43 @@ class DuckDBContentFactoryRepository:
                 JOIN learning_content_metadata lcm ON lcm.exercise_id=alc.content_id
                 """
             ).fetchall()
+            result: dict[str, tuple[str | None, str | None]] = {
+                normalized_content_fingerprint(str(statement)): (str(family), str(role))
+                for statement, family, role in approved
+            }
+            drafts = connection.execute(
+                """
+                SELECT q.statement, cv.payload
+                FROM exercises e
+                JOIN exercise_questions eq ON eq.exercise_id=e.id
+                JOIN questions q ON q.id=eq.question_id
+                JOIN content_versions cv ON cv.entity_type='exercise' AND cv.entity_id=e.id
+                WHERE e.status='draft' AND cv.status='draft'
+                """
+            ).fetchall()
+            for statement, raw_payload in drafts:
+                payload = json.loads(raw_payload)
+                result[normalized_content_fingerprint(str(statement))] = (
+                    payload.get("family_code"),
+                    payload.get("variant_role"),
+                )
+            return result
+        finally:
+            connection.close()
+
+    def approved_fingerprints(self) -> dict[str, tuple[str | None, str | None]]:
+        connection = connect_v2(self.database_path, read_only=True)
+        try:
             return {
                 normalized_content_fingerprint(str(statement)): (str(family), str(role))
-                for statement, family, role in rows
+                for statement, family, role in connection.execute(
+                    """
+                    SELECT cq.statement, lcm.source_identifier, lcm.pedagogical_strategy
+                    FROM approved_learning_catalog alc
+                    JOIN content_questions cq ON cq.exercise_id=alc.content_id
+                    JOIN learning_content_metadata lcm ON lcm.exercise_id=alc.content_id
+                    """
+                ).fetchall()
             }
         finally:
             connection.close()
@@ -213,6 +310,29 @@ class DuckDBContentFactoryRepository:
             )
             for key, data in grouped.items()
         )
+
+    def draft_pilot_coverage(self) -> dict[str, int]:
+        connection = connect_v2(self.database_path, read_only=True)
+        try:
+            return {
+                str(skill_code): int(count)
+                for skill_code, count in connection.execute(
+                    """
+                    SELECT s.code, count(DISTINCT e.id)
+                    FROM exercises e
+                    JOIN exercise_questions eq ON eq.exercise_id=e.id
+                    JOIN question_skills qs ON qs.question_id=eq.question_id AND qs.is_primary
+                    JOIN skills s ON s.id=qs.skill_id
+                    JOIN content_versions cv ON cv.entity_type='exercise' AND cv.entity_id=e.id
+                    WHERE e.status='draft' AND cv.status='draft'
+                      AND json_extract_string(cv.payload, '$.generation_provenance.template_version')
+                          LIKE 'lcai-0012b-%'
+                    GROUP BY s.code
+                    """
+                ).fetchall()
+            }
+        finally:
+            connection.close()
 
 
 def _legacy_answer_type(kind: str) -> str:

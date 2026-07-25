@@ -6,3 +6,20 @@ gatherUsageStats = false
 
 [runner]
 magicEnabled = false
+
+
+[email]
+mode = "smtp"
+
+sender = "demo@abiaka.fr"
+
+smtp_host = "ssl0.ovh.net"
+smtp_port = 587
+
+smtp_user = "demo@abiaka.fr"
+smtp_password = "REPLACE_WITH_YOUR_SMTP_PASSWORD"
+
+smtp_use_tls = true
+
+# OpenAI configuration for Dashboard 7 deep analysis.
+# Never commit a real key to source control.
