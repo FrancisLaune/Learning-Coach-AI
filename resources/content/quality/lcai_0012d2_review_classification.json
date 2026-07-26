@@ -1,0 +1,3132 @@
+[
+  {
+    "review_reason": "AMBIGUOUS_EXPECTED_ANSWER",
+    "content_count": 1,
+    "grade": "FR-3E",
+    "subject": "ENGLISH",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "AMBIGUOUS_EXPECTED_ANSWER",
+    "content_count": 2,
+    "grade": "FR-3E",
+    "subject": "ENGLISH",
+    "content_type": "worked_example",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "AMBIGUOUS_EXPECTED_ANSWER",
+    "content_count": 1,
+    "grade": "FR-3E",
+    "subject": "FRENCH",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "AMBIGUOUS_EXPECTED_ANSWER",
+    "content_count": 4,
+    "grade": "FR-3E",
+    "subject": "FRENCH",
+    "content_type": "practice",
+    "difficulty": 1,
+    "skill_count": 4,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "AMBIGUOUS_EXPECTED_ANSWER",
+    "content_count": 3,
+    "grade": "FR-3E",
+    "subject": "FRENCH",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 3,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "AMBIGUOUS_EXPECTED_ANSWER",
+    "content_count": 1,
+    "grade": "FR-3E",
+    "subject": "FRENCH",
+    "content_type": "practice",
+    "difficulty": 3,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "AMBIGUOUS_EXPECTED_ANSWER",
+    "content_count": 1,
+    "grade": "FR-3E",
+    "subject": "FRENCH",
+    "content_type": "remediation",
+    "difficulty": 1,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "AMBIGUOUS_EXPECTED_ANSWER",
+    "content_count": 2,
+    "grade": "FR-3E",
+    "subject": "MATHEMATICS",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 2,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "AMBIGUOUS_EXPECTED_ANSWER",
+    "content_count": 4,
+    "grade": "FR-3E",
+    "subject": "MATHEMATICS",
+    "content_type": "practice",
+    "difficulty": 1,
+    "skill_count": 4,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "AMBIGUOUS_EXPECTED_ANSWER",
+    "content_count": 2,
+    "grade": "FR-3E",
+    "subject": "MATHEMATICS",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 2,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "AMBIGUOUS_EXPECTED_ANSWER",
+    "content_count": 1,
+    "grade": "FR-3E",
+    "subject": "MATHEMATICS",
+    "content_type": "practice",
+    "difficulty": 3,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "AMBIGUOUS_EXPECTED_ANSWER",
+    "content_count": 1,
+    "grade": "FR-3E",
+    "subject": "PHYSICS_CHEMISTRY",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "AMBIGUOUS_EXPECTED_ANSWER",
+    "content_count": 1,
+    "grade": "FR-3E",
+    "subject": "SPANISH",
+    "content_type": "guided_practice",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "AMBIGUOUS_EXPECTED_ANSWER",
+    "content_count": 4,
+    "grade": "FR-4E",
+    "subject": "FRENCH",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 4,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "AMBIGUOUS_EXPECTED_ANSWER",
+    "content_count": 3,
+    "grade": "FR-4E",
+    "subject": "FRENCH",
+    "content_type": "practice",
+    "difficulty": 1,
+    "skill_count": 3,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "AMBIGUOUS_EXPECTED_ANSWER",
+    "content_count": 1,
+    "grade": "FR-4E",
+    "subject": "FRENCH",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "AMBIGUOUS_EXPECTED_ANSWER",
+    "content_count": 1,
+    "grade": "FR-4E",
+    "subject": "FRENCH",
+    "content_type": "remediation",
+    "difficulty": 1,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "AMBIGUOUS_EXPECTED_ANSWER",
+    "content_count": 1,
+    "grade": "FR-4E",
+    "subject": "HISTORY",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "AMBIGUOUS_EXPECTED_ANSWER",
+    "content_count": 6,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 6,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "AMBIGUOUS_EXPECTED_ANSWER",
+    "content_count": 3,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "content_type": "guided_practice",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "AMBIGUOUS_EXPECTED_ANSWER",
+    "content_count": 6,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "content_type": "practice",
+    "difficulty": 1,
+    "skill_count": 6,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "AMBIGUOUS_EXPECTED_ANSWER",
+    "content_count": 4,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 4,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "AMBIGUOUS_EXPECTED_ANSWER",
+    "content_count": 5,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "content_type": "practice",
+    "difficulty": 3,
+    "skill_count": 5,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "AMBIGUOUS_EXPECTED_ANSWER",
+    "content_count": 2,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "content_type": "remediation",
+    "difficulty": 1,
+    "skill_count": 2,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "AMBIGUOUS_EXPECTED_ANSWER",
+    "content_count": 3,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "content_type": "worked_example",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DETERMINISTIC_VERIFICATION_AVAILABLE",
+    "content_count": 11,
+    "grade": "FR-3E",
+    "subject": "MATHEMATICS",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 11,
+    "automatic_resolution_possible": true
+  },
+  {
+    "review_reason": "DETERMINISTIC_VERIFICATION_AVAILABLE",
+    "content_count": 3,
+    "grade": "FR-3E",
+    "subject": "MATHEMATICS",
+    "content_type": "diagnostic",
+    "difficulty": 2,
+    "skill_count": 2,
+    "automatic_resolution_possible": true
+  },
+  {
+    "review_reason": "DETERMINISTIC_VERIFICATION_AVAILABLE",
+    "content_count": 17,
+    "grade": "FR-3E",
+    "subject": "MATHEMATICS",
+    "content_type": "practice",
+    "difficulty": 1,
+    "skill_count": 17,
+    "automatic_resolution_possible": true
+  },
+  {
+    "review_reason": "DETERMINISTIC_VERIFICATION_AVAILABLE",
+    "content_count": 13,
+    "grade": "FR-3E",
+    "subject": "MATHEMATICS",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 13,
+    "automatic_resolution_possible": true
+  },
+  {
+    "review_reason": "DETERMINISTIC_VERIFICATION_AVAILABLE",
+    "content_count": 8,
+    "grade": "FR-3E",
+    "subject": "MATHEMATICS",
+    "content_type": "practice",
+    "difficulty": 3,
+    "skill_count": 8,
+    "automatic_resolution_possible": true
+  },
+  {
+    "review_reason": "DETERMINISTIC_VERIFICATION_AVAILABLE",
+    "content_count": 4,
+    "grade": "FR-3E",
+    "subject": "MATHEMATICS",
+    "content_type": "remediation",
+    "difficulty": 1,
+    "skill_count": 4,
+    "automatic_resolution_possible": true
+  },
+  {
+    "review_reason": "DETERMINISTIC_VERIFICATION_AVAILABLE",
+    "content_count": 9,
+    "grade": "FR-3E",
+    "subject": "PHYSICS_CHEMISTRY",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 9,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DETERMINISTIC_VERIFICATION_AVAILABLE",
+    "content_count": 9,
+    "grade": "FR-3E",
+    "subject": "PHYSICS_CHEMISTRY",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 9,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DETERMINISTIC_VERIFICATION_AVAILABLE",
+    "content_count": 1,
+    "grade": "FR-4E",
+    "subject": "GEOGRAPHY",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DETERMINISTIC_VERIFICATION_AVAILABLE",
+    "content_count": 2,
+    "grade": "FR-4E",
+    "subject": "GEOGRAPHY",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 2,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DETERMINISTIC_VERIFICATION_AVAILABLE",
+    "content_count": 25,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 25,
+    "automatic_resolution_possible": true
+  },
+  {
+    "review_reason": "DETERMINISTIC_VERIFICATION_AVAILABLE",
+    "content_count": 4,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "content_type": "diagnostic",
+    "difficulty": 2,
+    "skill_count": 4,
+    "automatic_resolution_possible": true
+  },
+  {
+    "review_reason": "DETERMINISTIC_VERIFICATION_AVAILABLE",
+    "content_count": 26,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "content_type": "practice",
+    "difficulty": 1,
+    "skill_count": 26,
+    "automatic_resolution_possible": true
+  },
+  {
+    "review_reason": "DETERMINISTIC_VERIFICATION_AVAILABLE",
+    "content_count": 23,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 23,
+    "automatic_resolution_possible": true
+  },
+  {
+    "review_reason": "DETERMINISTIC_VERIFICATION_AVAILABLE",
+    "content_count": 20,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "content_type": "practice",
+    "difficulty": 3,
+    "skill_count": 20,
+    "automatic_resolution_possible": true
+  },
+  {
+    "review_reason": "DETERMINISTIC_VERIFICATION_AVAILABLE",
+    "content_count": 5,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "content_type": "remediation",
+    "difficulty": 1,
+    "skill_count": 5,
+    "automatic_resolution_possible": true
+  },
+  {
+    "review_reason": "DETERMINISTIC_VERIFICATION_AVAILABLE",
+    "content_count": 6,
+    "grade": "FR-4E",
+    "subject": "PHYSICS_CHEMISTRY",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 6,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DETERMINISTIC_VERIFICATION_AVAILABLE",
+    "content_count": 9,
+    "grade": "FR-4E",
+    "subject": "PHYSICS_CHEMISTRY",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 9,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 11,
+    "grade": "FR-3E",
+    "subject": "EMC",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 11,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 3,
+    "grade": "FR-3E",
+    "subject": "EMC",
+    "content_type": "diagnostic",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 12,
+    "grade": "FR-3E",
+    "subject": "EMC",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 12,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 9,
+    "grade": "FR-3E",
+    "subject": "ENGLISH",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 9,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 10,
+    "grade": "FR-3E",
+    "subject": "ENGLISH",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 10,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 3,
+    "grade": "FR-3E",
+    "subject": "ENGLISH",
+    "content_type": "worked_example",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 34,
+    "grade": "FR-3E",
+    "subject": "FRENCH",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 32,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 6,
+    "grade": "FR-3E",
+    "subject": "FRENCH",
+    "content_type": "diagnostic",
+    "difficulty": 2,
+    "skill_count": 6,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 3,
+    "grade": "FR-3E",
+    "subject": "FRENCH",
+    "content_type": "guided_practice",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 32,
+    "grade": "FR-3E",
+    "subject": "FRENCH",
+    "content_type": "practice",
+    "difficulty": 1,
+    "skill_count": 32,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 34,
+    "grade": "FR-3E",
+    "subject": "FRENCH",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 32,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 33,
+    "grade": "FR-3E",
+    "subject": "FRENCH",
+    "content_type": "practice",
+    "difficulty": 3,
+    "skill_count": 33,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 7,
+    "grade": "FR-3E",
+    "subject": "FRENCH",
+    "content_type": "remediation",
+    "difficulty": 1,
+    "skill_count": 7,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 2,
+    "grade": "FR-3E",
+    "subject": "FRENCH",
+    "content_type": "worked_example",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 23,
+    "grade": "FR-3E",
+    "subject": "GEOGRAPHY",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 23,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 23,
+    "grade": "FR-3E",
+    "subject": "GEOGRAPHY",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 23,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 22,
+    "grade": "FR-3E",
+    "subject": "HISTORY",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 22,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 22,
+    "grade": "FR-3E",
+    "subject": "HISTORY",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 22,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 3,
+    "grade": "FR-3E",
+    "subject": "HISTORY",
+    "content_type": "revision",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 34,
+    "grade": "FR-3E",
+    "subject": "MATHEMATICS",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 34,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 11,
+    "grade": "FR-3E",
+    "subject": "MATHEMATICS",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 11,
+    "automatic_resolution_possible": true
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 1,
+    "grade": "FR-3E",
+    "subject": "MATHEMATICS",
+    "content_type": "challenge",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 9,
+    "grade": "FR-3E",
+    "subject": "MATHEMATICS",
+    "content_type": "diagnostic",
+    "difficulty": 2,
+    "skill_count": 9,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 3,
+    "grade": "FR-3E",
+    "subject": "MATHEMATICS",
+    "content_type": "diagnostic",
+    "difficulty": 2,
+    "skill_count": 2,
+    "automatic_resolution_possible": true
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 28,
+    "grade": "FR-3E",
+    "subject": "MATHEMATICS",
+    "content_type": "practice",
+    "difficulty": 1,
+    "skill_count": 28,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 17,
+    "grade": "FR-3E",
+    "subject": "MATHEMATICS",
+    "content_type": "practice",
+    "difficulty": 1,
+    "skill_count": 17,
+    "automatic_resolution_possible": true
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 32,
+    "grade": "FR-3E",
+    "subject": "MATHEMATICS",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 32,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 13,
+    "grade": "FR-3E",
+    "subject": "MATHEMATICS",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 13,
+    "automatic_resolution_possible": true
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 37,
+    "grade": "FR-3E",
+    "subject": "MATHEMATICS",
+    "content_type": "practice",
+    "difficulty": 3,
+    "skill_count": 37,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 8,
+    "grade": "FR-3E",
+    "subject": "MATHEMATICS",
+    "content_type": "practice",
+    "difficulty": 3,
+    "skill_count": 8,
+    "automatic_resolution_possible": true
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 6,
+    "grade": "FR-3E",
+    "subject": "MATHEMATICS",
+    "content_type": "remediation",
+    "difficulty": 1,
+    "skill_count": 6,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 4,
+    "grade": "FR-3E",
+    "subject": "MATHEMATICS",
+    "content_type": "remediation",
+    "difficulty": 1,
+    "skill_count": 4,
+    "automatic_resolution_possible": true
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 3,
+    "grade": "FR-3E",
+    "subject": "MATHEMATICS",
+    "content_type": "remediation",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 3,
+    "grade": "FR-3E",
+    "subject": "MATHEMATICS",
+    "content_type": "revision",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 14,
+    "grade": "FR-3E",
+    "subject": "PHYSICS_CHEMISTRY",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 14,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 15,
+    "grade": "FR-3E",
+    "subject": "PHYSICS_CHEMISTRY",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 15,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 12,
+    "grade": "FR-3E",
+    "subject": "SPANISH",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 12,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 3,
+    "grade": "FR-3E",
+    "subject": "SPANISH",
+    "content_type": "guided_practice",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 12,
+    "grade": "FR-3E",
+    "subject": "SPANISH",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 12,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 15,
+    "grade": "FR-3E",
+    "subject": "SVT",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 15,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 15,
+    "grade": "FR-3E",
+    "subject": "SVT",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 15,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 11,
+    "grade": "FR-4E",
+    "subject": "EMC",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 11,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 11,
+    "grade": "FR-4E",
+    "subject": "EMC",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 11,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 11,
+    "grade": "FR-4E",
+    "subject": "ENGLISH",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 11,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 11,
+    "grade": "FR-4E",
+    "subject": "ENGLISH",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 11,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 32,
+    "grade": "FR-4E",
+    "subject": "FRENCH",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 32,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 3,
+    "grade": "FR-4E",
+    "subject": "FRENCH",
+    "content_type": "challenge",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 9,
+    "grade": "FR-4E",
+    "subject": "FRENCH",
+    "content_type": "diagnostic",
+    "difficulty": 2,
+    "skill_count": 7,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 32,
+    "grade": "FR-4E",
+    "subject": "FRENCH",
+    "content_type": "practice",
+    "difficulty": 1,
+    "skill_count": 32,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 32,
+    "grade": "FR-4E",
+    "subject": "FRENCH",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 32,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 27,
+    "grade": "FR-4E",
+    "subject": "FRENCH",
+    "content_type": "practice",
+    "difficulty": 3,
+    "skill_count": 27,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 7,
+    "grade": "FR-4E",
+    "subject": "FRENCH",
+    "content_type": "remediation",
+    "difficulty": 1,
+    "skill_count": 7,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 3,
+    "grade": "FR-4E",
+    "subject": "FRENCH",
+    "content_type": "remediation",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 3,
+    "grade": "FR-4E",
+    "subject": "FRENCH",
+    "content_type": "revision",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 19,
+    "grade": "FR-4E",
+    "subject": "GEOGRAPHY",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 17,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 17,
+    "grade": "FR-4E",
+    "subject": "GEOGRAPHY",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 17,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 18,
+    "grade": "FR-4E",
+    "subject": "HISTORY",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 18,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 19,
+    "grade": "FR-4E",
+    "subject": "HISTORY",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 17,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 20,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 18,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 25,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 25,
+    "automatic_resolution_possible": true
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 3,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "content_type": "diagnostic",
+    "difficulty": 1,
+    "skill_count": 3,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 4,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "content_type": "diagnostic",
+    "difficulty": 2,
+    "skill_count": 4,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 4,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "content_type": "diagnostic",
+    "difficulty": 2,
+    "skill_count": 4,
+    "automatic_resolution_possible": true
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 3,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "content_type": "guided_practice",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 17,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "content_type": "practice",
+    "difficulty": 1,
+    "skill_count": 17,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 26,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "content_type": "practice",
+    "difficulty": 1,
+    "skill_count": 26,
+    "automatic_resolution_possible": true
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 23,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 20,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 23,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 23,
+    "automatic_resolution_possible": true
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 18,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "content_type": "practice",
+    "difficulty": 3,
+    "skill_count": 18,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 20,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "content_type": "practice",
+    "difficulty": 3,
+    "skill_count": 20,
+    "automatic_resolution_possible": true
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 6,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "content_type": "remediation",
+    "difficulty": 1,
+    "skill_count": 6,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 5,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "content_type": "remediation",
+    "difficulty": 1,
+    "skill_count": 5,
+    "automatic_resolution_possible": true
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 3,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "content_type": "worked_example",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 11,
+    "grade": "FR-4E",
+    "subject": "PHYSICS_CHEMISTRY",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 11,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 3,
+    "grade": "FR-4E",
+    "subject": "PHYSICS_CHEMISTRY",
+    "content_type": "challenge",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 12,
+    "grade": "FR-4E",
+    "subject": "PHYSICS_CHEMISTRY",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 12,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 11,
+    "grade": "FR-4E",
+    "subject": "SPANISH",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 11,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 12,
+    "grade": "FR-4E",
+    "subject": "SPANISH",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 12,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 11,
+    "grade": "FR-4E",
+    "subject": "SVT",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 11,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 11,
+    "grade": "FR-4E",
+    "subject": "SVT",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 11,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "DIFFICULTY_UNCERTAIN",
+    "content_count": 2,
+    "grade": "FR-4E",
+    "subject": "SVT",
+    "content_type": "remediation",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "HISTORY_KNOWLEDGE_REVIEW",
+    "content_count": 11,
+    "grade": "FR-3E",
+    "subject": "EMC",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 11,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "HISTORY_KNOWLEDGE_REVIEW",
+    "content_count": 2,
+    "grade": "FR-3E",
+    "subject": "EMC",
+    "content_type": "diagnostic",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "HISTORY_KNOWLEDGE_REVIEW",
+    "content_count": 12,
+    "grade": "FR-3E",
+    "subject": "EMC",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 12,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "HISTORY_KNOWLEDGE_REVIEW",
+    "content_count": 23,
+    "grade": "FR-3E",
+    "subject": "GEOGRAPHY",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 23,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "HISTORY_KNOWLEDGE_REVIEW",
+    "content_count": 23,
+    "grade": "FR-3E",
+    "subject": "GEOGRAPHY",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 23,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "HISTORY_KNOWLEDGE_REVIEW",
+    "content_count": 22,
+    "grade": "FR-3E",
+    "subject": "HISTORY",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 22,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "HISTORY_KNOWLEDGE_REVIEW",
+    "content_count": 22,
+    "grade": "FR-3E",
+    "subject": "HISTORY",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 22,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "HISTORY_KNOWLEDGE_REVIEW",
+    "content_count": 3,
+    "grade": "FR-3E",
+    "subject": "HISTORY",
+    "content_type": "revision",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "HISTORY_KNOWLEDGE_REVIEW",
+    "content_count": 11,
+    "grade": "FR-4E",
+    "subject": "EMC",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 11,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "HISTORY_KNOWLEDGE_REVIEW",
+    "content_count": 11,
+    "grade": "FR-4E",
+    "subject": "EMC",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 11,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "HISTORY_KNOWLEDGE_REVIEW",
+    "content_count": 19,
+    "grade": "FR-4E",
+    "subject": "GEOGRAPHY",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 18,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "HISTORY_KNOWLEDGE_REVIEW",
+    "content_count": 15,
+    "grade": "FR-4E",
+    "subject": "GEOGRAPHY",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 15,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "HISTORY_KNOWLEDGE_REVIEW",
+    "content_count": 18,
+    "grade": "FR-4E",
+    "subject": "HISTORY",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 18,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "HISTORY_KNOWLEDGE_REVIEW",
+    "content_count": 19,
+    "grade": "FR-4E",
+    "subject": "HISTORY",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 17,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "LANGUAGE_PRODUCTION",
+    "content_count": 5,
+    "grade": "FR-3E",
+    "subject": "ENGLISH",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 5,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "LANGUAGE_PRODUCTION",
+    "content_count": 6,
+    "grade": "FR-3E",
+    "subject": "ENGLISH",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 6,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "LANGUAGE_PRODUCTION",
+    "content_count": 8,
+    "grade": "FR-3E",
+    "subject": "FRENCH",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 7,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "LANGUAGE_PRODUCTION",
+    "content_count": 3,
+    "grade": "FR-3E",
+    "subject": "FRENCH",
+    "content_type": "diagnostic",
+    "difficulty": 2,
+    "skill_count": 3,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "LANGUAGE_PRODUCTION",
+    "content_count": 1,
+    "grade": "FR-3E",
+    "subject": "FRENCH",
+    "content_type": "guided_practice",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "LANGUAGE_PRODUCTION",
+    "content_count": 7,
+    "grade": "FR-3E",
+    "subject": "FRENCH",
+    "content_type": "practice",
+    "difficulty": 1,
+    "skill_count": 7,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "LANGUAGE_PRODUCTION",
+    "content_count": 6,
+    "grade": "FR-3E",
+    "subject": "FRENCH",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 6,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "LANGUAGE_PRODUCTION",
+    "content_count": 16,
+    "grade": "FR-3E",
+    "subject": "FRENCH",
+    "content_type": "practice",
+    "difficulty": 3,
+    "skill_count": 16,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "LANGUAGE_PRODUCTION",
+    "content_count": 1,
+    "grade": "FR-3E",
+    "subject": "FRENCH",
+    "content_type": "remediation",
+    "difficulty": 1,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "LANGUAGE_PRODUCTION",
+    "content_count": 2,
+    "grade": "FR-3E",
+    "subject": "FRENCH",
+    "content_type": "worked_example",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "LANGUAGE_PRODUCTION",
+    "content_count": 5,
+    "grade": "FR-3E",
+    "subject": "SPANISH",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 5,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "LANGUAGE_PRODUCTION",
+    "content_count": 1,
+    "grade": "FR-3E",
+    "subject": "SPANISH",
+    "content_type": "guided_practice",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "LANGUAGE_PRODUCTION",
+    "content_count": 5,
+    "grade": "FR-3E",
+    "subject": "SPANISH",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 5,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "LANGUAGE_PRODUCTION",
+    "content_count": 6,
+    "grade": "FR-4E",
+    "subject": "ENGLISH",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 6,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "LANGUAGE_PRODUCTION",
+    "content_count": 7,
+    "grade": "FR-4E",
+    "subject": "ENGLISH",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 7,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "LANGUAGE_PRODUCTION",
+    "content_count": 4,
+    "grade": "FR-4E",
+    "subject": "FRENCH",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 4,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "LANGUAGE_PRODUCTION",
+    "content_count": 3,
+    "grade": "FR-4E",
+    "subject": "FRENCH",
+    "content_type": "challenge",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "LANGUAGE_PRODUCTION",
+    "content_count": 1,
+    "grade": "FR-4E",
+    "subject": "FRENCH",
+    "content_type": "diagnostic",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "LANGUAGE_PRODUCTION",
+    "content_count": 6,
+    "grade": "FR-4E",
+    "subject": "FRENCH",
+    "content_type": "practice",
+    "difficulty": 1,
+    "skill_count": 6,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "LANGUAGE_PRODUCTION",
+    "content_count": 7,
+    "grade": "FR-4E",
+    "subject": "FRENCH",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 7,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "LANGUAGE_PRODUCTION",
+    "content_count": 15,
+    "grade": "FR-4E",
+    "subject": "FRENCH",
+    "content_type": "practice",
+    "difficulty": 3,
+    "skill_count": 15,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "LANGUAGE_PRODUCTION",
+    "content_count": 1,
+    "grade": "FR-4E",
+    "subject": "FRENCH",
+    "content_type": "remediation",
+    "difficulty": 1,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "LANGUAGE_PRODUCTION",
+    "content_count": 1,
+    "grade": "FR-4E",
+    "subject": "FRENCH",
+    "content_type": "remediation",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "LANGUAGE_PRODUCTION",
+    "content_count": 3,
+    "grade": "FR-4E",
+    "subject": "SPANISH",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 3,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "LANGUAGE_PRODUCTION",
+    "content_count": 6,
+    "grade": "FR-4E",
+    "subject": "SPANISH",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 6,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "NEAR_DUPLICATE",
+    "content_count": 1,
+    "grade": "FR-3E",
+    "subject": "ENGLISH",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "OPEN_RESPONSE",
+    "content_count": 4,
+    "grade": "FR-3E",
+    "subject": "EMC",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 4,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "OPEN_RESPONSE",
+    "content_count": 1,
+    "grade": "FR-3E",
+    "subject": "EMC",
+    "content_type": "diagnostic",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "OPEN_RESPONSE",
+    "content_count": 2,
+    "grade": "FR-3E",
+    "subject": "EMC",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 2,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "OPEN_RESPONSE",
+    "content_count": 5,
+    "grade": "FR-3E",
+    "subject": "ENGLISH",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 5,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "OPEN_RESPONSE",
+    "content_count": 6,
+    "grade": "FR-3E",
+    "subject": "ENGLISH",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 6,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "OPEN_RESPONSE",
+    "content_count": 8,
+    "grade": "FR-3E",
+    "subject": "FRENCH",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 7,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "OPEN_RESPONSE",
+    "content_count": 3,
+    "grade": "FR-3E",
+    "subject": "FRENCH",
+    "content_type": "diagnostic",
+    "difficulty": 2,
+    "skill_count": 3,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "OPEN_RESPONSE",
+    "content_count": 1,
+    "grade": "FR-3E",
+    "subject": "FRENCH",
+    "content_type": "guided_practice",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "OPEN_RESPONSE",
+    "content_count": 7,
+    "grade": "FR-3E",
+    "subject": "FRENCH",
+    "content_type": "practice",
+    "difficulty": 1,
+    "skill_count": 7,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "OPEN_RESPONSE",
+    "content_count": 6,
+    "grade": "FR-3E",
+    "subject": "FRENCH",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 6,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "OPEN_RESPONSE",
+    "content_count": 16,
+    "grade": "FR-3E",
+    "subject": "FRENCH",
+    "content_type": "practice",
+    "difficulty": 3,
+    "skill_count": 16,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "OPEN_RESPONSE",
+    "content_count": 1,
+    "grade": "FR-3E",
+    "subject": "FRENCH",
+    "content_type": "remediation",
+    "difficulty": 1,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "OPEN_RESPONSE",
+    "content_count": 2,
+    "grade": "FR-3E",
+    "subject": "FRENCH",
+    "content_type": "worked_example",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "OPEN_RESPONSE",
+    "content_count": 5,
+    "grade": "FR-3E",
+    "subject": "GEOGRAPHY",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 5,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "OPEN_RESPONSE",
+    "content_count": 8,
+    "grade": "FR-3E",
+    "subject": "GEOGRAPHY",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 8,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "OPEN_RESPONSE",
+    "content_count": 3,
+    "grade": "FR-3E",
+    "subject": "HISTORY",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 3,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "OPEN_RESPONSE",
+    "content_count": 4,
+    "grade": "FR-3E",
+    "subject": "HISTORY",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 4,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "OPEN_RESPONSE",
+    "content_count": 1,
+    "grade": "FR-3E",
+    "subject": "HISTORY",
+    "content_type": "revision",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "OPEN_RESPONSE",
+    "content_count": 3,
+    "grade": "FR-3E",
+    "subject": "MATHEMATICS",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 3,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "OPEN_RESPONSE",
+    "content_count": 1,
+    "grade": "FR-3E",
+    "subject": "MATHEMATICS",
+    "content_type": "challenge",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "OPEN_RESPONSE",
+    "content_count": 2,
+    "grade": "FR-3E",
+    "subject": "MATHEMATICS",
+    "content_type": "practice",
+    "difficulty": 1,
+    "skill_count": 2,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "OPEN_RESPONSE",
+    "content_count": 3,
+    "grade": "FR-3E",
+    "subject": "MATHEMATICS",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 3,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "OPEN_RESPONSE",
+    "content_count": 4,
+    "grade": "FR-3E",
+    "subject": "MATHEMATICS",
+    "content_type": "practice",
+    "difficulty": 3,
+    "skill_count": 4,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "OPEN_RESPONSE",
+    "content_count": 1,
+    "grade": "FR-3E",
+    "subject": "MATHEMATICS",
+    "content_type": "remediation",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "OPEN_RESPONSE",
+    "content_count": 1,
+    "grade": "FR-3E",
+    "subject": "MATHEMATICS",
+    "content_type": "revision",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "OPEN_RESPONSE",
+    "content_count": 1,
+    "grade": "FR-3E",
+    "subject": "PHYSICS_CHEMISTRY",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "OPEN_RESPONSE",
+    "content_count": 5,
+    "grade": "FR-3E",
+    "subject": "SPANISH",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 5,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "OPEN_RESPONSE",
+    "content_count": 1,
+    "grade": "FR-3E",
+    "subject": "SPANISH",
+    "content_type": "guided_practice",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "OPEN_RESPONSE",
+    "content_count": 5,
+    "grade": "FR-3E",
+    "subject": "SPANISH",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 5,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "OPEN_RESPONSE",
+    "content_count": 1,
+    "grade": "FR-3E",
+    "subject": "SVT",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "OPEN_RESPONSE",
+    "content_count": 3,
+    "grade": "FR-3E",
+    "subject": "SVT",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 3,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "OPEN_RESPONSE",
+    "content_count": 1,
+    "grade": "FR-4E",
+    "subject": "EMC",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "OPEN_RESPONSE",
+    "content_count": 2,
+    "grade": "FR-4E",
+    "subject": "EMC",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 2,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "OPEN_RESPONSE",
+    "content_count": 6,
+    "grade": "FR-4E",
+    "subject": "ENGLISH",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 6,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "OPEN_RESPONSE",
+    "content_count": 7,
+    "grade": "FR-4E",
+    "subject": "ENGLISH",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 7,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "OPEN_RESPONSE",
+    "content_count": 4,
+    "grade": "FR-4E",
+    "subject": "FRENCH",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 4,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "OPEN_RESPONSE",
+    "content_count": 3,
+    "grade": "FR-4E",
+    "subject": "FRENCH",
+    "content_type": "challenge",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "OPEN_RESPONSE",
+    "content_count": 1,
+    "grade": "FR-4E",
+    "subject": "FRENCH",
+    "content_type": "diagnostic",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "OPEN_RESPONSE",
+    "content_count": 6,
+    "grade": "FR-4E",
+    "subject": "FRENCH",
+    "content_type": "practice",
+    "difficulty": 1,
+    "skill_count": 6,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "OPEN_RESPONSE",
+    "content_count": 7,
+    "grade": "FR-4E",
+    "subject": "FRENCH",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 7,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "OPEN_RESPONSE",
+    "content_count": 15,
+    "grade": "FR-4E",
+    "subject": "FRENCH",
+    "content_type": "practice",
+    "difficulty": 3,
+    "skill_count": 15,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "OPEN_RESPONSE",
+    "content_count": 1,
+    "grade": "FR-4E",
+    "subject": "FRENCH",
+    "content_type": "remediation",
+    "difficulty": 1,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "OPEN_RESPONSE",
+    "content_count": 1,
+    "grade": "FR-4E",
+    "subject": "FRENCH",
+    "content_type": "remediation",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "OPEN_RESPONSE",
+    "content_count": 6,
+    "grade": "FR-4E",
+    "subject": "GEOGRAPHY",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 5,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "OPEN_RESPONSE",
+    "content_count": 4,
+    "grade": "FR-4E",
+    "subject": "GEOGRAPHY",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 4,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "OPEN_RESPONSE",
+    "content_count": 5,
+    "grade": "FR-4E",
+    "subject": "HISTORY",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 5,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "OPEN_RESPONSE",
+    "content_count": 3,
+    "grade": "FR-4E",
+    "subject": "HISTORY",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 3,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "OPEN_RESPONSE",
+    "content_count": 1,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "OPEN_RESPONSE",
+    "content_count": 1,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "OPEN_RESPONSE",
+    "content_count": 2,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "content_type": "practice",
+    "difficulty": 3,
+    "skill_count": 2,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "OPEN_RESPONSE",
+    "content_count": 1,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "content_type": "remediation",
+    "difficulty": 1,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "OPEN_RESPONSE",
+    "content_count": 3,
+    "grade": "FR-4E",
+    "subject": "SPANISH",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 3,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "OPEN_RESPONSE",
+    "content_count": 6,
+    "grade": "FR-4E",
+    "subject": "SPANISH",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 6,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "OPEN_RESPONSE",
+    "content_count": 2,
+    "grade": "FR-4E",
+    "subject": "SVT",
+    "content_type": "remediation",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "ORAL_MODALITY",
+    "content_count": 1,
+    "grade": "FR-3E",
+    "subject": "EMC",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "ORAL_MODALITY",
+    "content_count": 1,
+    "grade": "FR-3E",
+    "subject": "FRENCH",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "ORAL_MODALITY",
+    "content_count": 1,
+    "grade": "FR-3E",
+    "subject": "FRENCH",
+    "content_type": "practice",
+    "difficulty": 3,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "ORAL_MODALITY",
+    "content_count": 1,
+    "grade": "FR-4E",
+    "subject": "ENGLISH",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "ORAL_MODALITY",
+    "content_count": 1,
+    "grade": "FR-4E",
+    "subject": "ENGLISH",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "ORAL_MODALITY",
+    "content_count": 2,
+    "grade": "FR-4E",
+    "subject": "FRENCH",
+    "content_type": "practice",
+    "difficulty": 3,
+    "skill_count": 2,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "ORAL_MODALITY",
+    "content_count": 1,
+    "grade": "FR-4E",
+    "subject": "GEOGRAPHY",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "PEDAGOGICAL_JUDGEMENT_REQUIRED",
+    "content_count": 11,
+    "grade": "FR-3E",
+    "subject": "EMC",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 11,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "PEDAGOGICAL_JUDGEMENT_REQUIRED",
+    "content_count": 2,
+    "grade": "FR-3E",
+    "subject": "EMC",
+    "content_type": "diagnostic",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "PEDAGOGICAL_JUDGEMENT_REQUIRED",
+    "content_count": 12,
+    "grade": "FR-3E",
+    "subject": "EMC",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 12,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "PEDAGOGICAL_JUDGEMENT_REQUIRED",
+    "content_count": 4,
+    "grade": "FR-3E",
+    "subject": "ENGLISH",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 4,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "PEDAGOGICAL_JUDGEMENT_REQUIRED",
+    "content_count": 3,
+    "grade": "FR-3E",
+    "subject": "ENGLISH",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 3,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "PEDAGOGICAL_JUDGEMENT_REQUIRED",
+    "content_count": 1,
+    "grade": "FR-3E",
+    "subject": "ENGLISH",
+    "content_type": "worked_example",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "PEDAGOGICAL_JUDGEMENT_REQUIRED",
+    "content_count": 26,
+    "grade": "FR-3E",
+    "subject": "FRENCH",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 26,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "PEDAGOGICAL_JUDGEMENT_REQUIRED",
+    "content_count": 3,
+    "grade": "FR-3E",
+    "subject": "FRENCH",
+    "content_type": "diagnostic",
+    "difficulty": 2,
+    "skill_count": 3,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "PEDAGOGICAL_JUDGEMENT_REQUIRED",
+    "content_count": 2,
+    "grade": "FR-3E",
+    "subject": "FRENCH",
+    "content_type": "guided_practice",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "PEDAGOGICAL_JUDGEMENT_REQUIRED",
+    "content_count": 21,
+    "grade": "FR-3E",
+    "subject": "FRENCH",
+    "content_type": "practice",
+    "difficulty": 1,
+    "skill_count": 21,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "PEDAGOGICAL_JUDGEMENT_REQUIRED",
+    "content_count": 25,
+    "grade": "FR-3E",
+    "subject": "FRENCH",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 23,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "PEDAGOGICAL_JUDGEMENT_REQUIRED",
+    "content_count": 16,
+    "grade": "FR-3E",
+    "subject": "FRENCH",
+    "content_type": "practice",
+    "difficulty": 3,
+    "skill_count": 16,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "PEDAGOGICAL_JUDGEMENT_REQUIRED",
+    "content_count": 5,
+    "grade": "FR-3E",
+    "subject": "FRENCH",
+    "content_type": "remediation",
+    "difficulty": 1,
+    "skill_count": 5,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "PEDAGOGICAL_JUDGEMENT_REQUIRED",
+    "content_count": 23,
+    "grade": "FR-3E",
+    "subject": "GEOGRAPHY",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 23,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "PEDAGOGICAL_JUDGEMENT_REQUIRED",
+    "content_count": 23,
+    "grade": "FR-3E",
+    "subject": "GEOGRAPHY",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 23,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "PEDAGOGICAL_JUDGEMENT_REQUIRED",
+    "content_count": 22,
+    "grade": "FR-3E",
+    "subject": "HISTORY",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 22,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "PEDAGOGICAL_JUDGEMENT_REQUIRED",
+    "content_count": 22,
+    "grade": "FR-3E",
+    "subject": "HISTORY",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 22,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "PEDAGOGICAL_JUDGEMENT_REQUIRED",
+    "content_count": 3,
+    "grade": "FR-3E",
+    "subject": "HISTORY",
+    "content_type": "revision",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "PEDAGOGICAL_JUDGEMENT_REQUIRED",
+    "content_count": 32,
+    "grade": "FR-3E",
+    "subject": "MATHEMATICS",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 32,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "PEDAGOGICAL_JUDGEMENT_REQUIRED",
+    "content_count": 1,
+    "grade": "FR-3E",
+    "subject": "MATHEMATICS",
+    "content_type": "challenge",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "PEDAGOGICAL_JUDGEMENT_REQUIRED",
+    "content_count": 9,
+    "grade": "FR-3E",
+    "subject": "MATHEMATICS",
+    "content_type": "diagnostic",
+    "difficulty": 2,
+    "skill_count": 9,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "PEDAGOGICAL_JUDGEMENT_REQUIRED",
+    "content_count": 24,
+    "grade": "FR-3E",
+    "subject": "MATHEMATICS",
+    "content_type": "practice",
+    "difficulty": 1,
+    "skill_count": 24,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "PEDAGOGICAL_JUDGEMENT_REQUIRED",
+    "content_count": 30,
+    "grade": "FR-3E",
+    "subject": "MATHEMATICS",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 30,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "PEDAGOGICAL_JUDGEMENT_REQUIRED",
+    "content_count": 36,
+    "grade": "FR-3E",
+    "subject": "MATHEMATICS",
+    "content_type": "practice",
+    "difficulty": 3,
+    "skill_count": 36,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "PEDAGOGICAL_JUDGEMENT_REQUIRED",
+    "content_count": 6,
+    "grade": "FR-3E",
+    "subject": "MATHEMATICS",
+    "content_type": "remediation",
+    "difficulty": 1,
+    "skill_count": 6,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "PEDAGOGICAL_JUDGEMENT_REQUIRED",
+    "content_count": 3,
+    "grade": "FR-3E",
+    "subject": "MATHEMATICS",
+    "content_type": "remediation",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "PEDAGOGICAL_JUDGEMENT_REQUIRED",
+    "content_count": 3,
+    "grade": "FR-3E",
+    "subject": "MATHEMATICS",
+    "content_type": "revision",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "PEDAGOGICAL_JUDGEMENT_REQUIRED",
+    "content_count": 4,
+    "grade": "FR-3E",
+    "subject": "PHYSICS_CHEMISTRY",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 4,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "PEDAGOGICAL_JUDGEMENT_REQUIRED",
+    "content_count": 6,
+    "grade": "FR-3E",
+    "subject": "PHYSICS_CHEMISTRY",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 6,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "PEDAGOGICAL_JUDGEMENT_REQUIRED",
+    "content_count": 7,
+    "grade": "FR-3E",
+    "subject": "SPANISH",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 7,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "PEDAGOGICAL_JUDGEMENT_REQUIRED",
+    "content_count": 1,
+    "grade": "FR-3E",
+    "subject": "SPANISH",
+    "content_type": "guided_practice",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "PEDAGOGICAL_JUDGEMENT_REQUIRED",
+    "content_count": 7,
+    "grade": "FR-3E",
+    "subject": "SPANISH",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 7,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "PEDAGOGICAL_JUDGEMENT_REQUIRED",
+    "content_count": 15,
+    "grade": "FR-3E",
+    "subject": "SVT",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 15,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "PEDAGOGICAL_JUDGEMENT_REQUIRED",
+    "content_count": 15,
+    "grade": "FR-3E",
+    "subject": "SVT",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 15,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "PEDAGOGICAL_JUDGEMENT_REQUIRED",
+    "content_count": 11,
+    "grade": "FR-4E",
+    "subject": "EMC",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 11,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "PEDAGOGICAL_JUDGEMENT_REQUIRED",
+    "content_count": 11,
+    "grade": "FR-4E",
+    "subject": "EMC",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 11,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "PEDAGOGICAL_JUDGEMENT_REQUIRED",
+    "content_count": 5,
+    "grade": "FR-4E",
+    "subject": "ENGLISH",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 5,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "PEDAGOGICAL_JUDGEMENT_REQUIRED",
+    "content_count": 4,
+    "grade": "FR-4E",
+    "subject": "ENGLISH",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 4,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "PEDAGOGICAL_JUDGEMENT_REQUIRED",
+    "content_count": 24,
+    "grade": "FR-4E",
+    "subject": "FRENCH",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 24,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "PEDAGOGICAL_JUDGEMENT_REQUIRED",
+    "content_count": 8,
+    "grade": "FR-4E",
+    "subject": "FRENCH",
+    "content_type": "diagnostic",
+    "difficulty": 2,
+    "skill_count": 6,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "PEDAGOGICAL_JUDGEMENT_REQUIRED",
+    "content_count": 23,
+    "grade": "FR-4E",
+    "subject": "FRENCH",
+    "content_type": "practice",
+    "difficulty": 1,
+    "skill_count": 23,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "PEDAGOGICAL_JUDGEMENT_REQUIRED",
+    "content_count": 25,
+    "grade": "FR-4E",
+    "subject": "FRENCH",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 25,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "PEDAGOGICAL_JUDGEMENT_REQUIRED",
+    "content_count": 12,
+    "grade": "FR-4E",
+    "subject": "FRENCH",
+    "content_type": "practice",
+    "difficulty": 3,
+    "skill_count": 12,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "PEDAGOGICAL_JUDGEMENT_REQUIRED",
+    "content_count": 5,
+    "grade": "FR-4E",
+    "subject": "FRENCH",
+    "content_type": "remediation",
+    "difficulty": 1,
+    "skill_count": 5,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "PEDAGOGICAL_JUDGEMENT_REQUIRED",
+    "content_count": 2,
+    "grade": "FR-4E",
+    "subject": "FRENCH",
+    "content_type": "remediation",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "PEDAGOGICAL_JUDGEMENT_REQUIRED",
+    "content_count": 3,
+    "grade": "FR-4E",
+    "subject": "FRENCH",
+    "content_type": "revision",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "PEDAGOGICAL_JUDGEMENT_REQUIRED",
+    "content_count": 19,
+    "grade": "FR-4E",
+    "subject": "GEOGRAPHY",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 18,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "PEDAGOGICAL_JUDGEMENT_REQUIRED",
+    "content_count": 15,
+    "grade": "FR-4E",
+    "subject": "GEOGRAPHY",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 15,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "PEDAGOGICAL_JUDGEMENT_REQUIRED",
+    "content_count": 18,
+    "grade": "FR-4E",
+    "subject": "HISTORY",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 18,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "PEDAGOGICAL_JUDGEMENT_REQUIRED",
+    "content_count": 18,
+    "grade": "FR-4E",
+    "subject": "HISTORY",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 16,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "PEDAGOGICAL_JUDGEMENT_REQUIRED",
+    "content_count": 14,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 12,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "PEDAGOGICAL_JUDGEMENT_REQUIRED",
+    "content_count": 3,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "content_type": "diagnostic",
+    "difficulty": 1,
+    "skill_count": 3,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "PEDAGOGICAL_JUDGEMENT_REQUIRED",
+    "content_count": 4,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "content_type": "diagnostic",
+    "difficulty": 2,
+    "skill_count": 4,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "PEDAGOGICAL_JUDGEMENT_REQUIRED",
+    "content_count": 10,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "content_type": "practice",
+    "difficulty": 1,
+    "skill_count": 10,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "PEDAGOGICAL_JUDGEMENT_REQUIRED",
+    "content_count": 19,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 16,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "PEDAGOGICAL_JUDGEMENT_REQUIRED",
+    "content_count": 13,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "content_type": "practice",
+    "difficulty": 3,
+    "skill_count": 13,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "PEDAGOGICAL_JUDGEMENT_REQUIRED",
+    "content_count": 4,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "content_type": "remediation",
+    "difficulty": 1,
+    "skill_count": 4,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "PEDAGOGICAL_JUDGEMENT_REQUIRED",
+    "content_count": 5,
+    "grade": "FR-4E",
+    "subject": "PHYSICS_CHEMISTRY",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 5,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "PEDAGOGICAL_JUDGEMENT_REQUIRED",
+    "content_count": 3,
+    "grade": "FR-4E",
+    "subject": "PHYSICS_CHEMISTRY",
+    "content_type": "challenge",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "PEDAGOGICAL_JUDGEMENT_REQUIRED",
+    "content_count": 3,
+    "grade": "FR-4E",
+    "subject": "PHYSICS_CHEMISTRY",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 3,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "PEDAGOGICAL_JUDGEMENT_REQUIRED",
+    "content_count": 8,
+    "grade": "FR-4E",
+    "subject": "SPANISH",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 8,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "PEDAGOGICAL_JUDGEMENT_REQUIRED",
+    "content_count": 6,
+    "grade": "FR-4E",
+    "subject": "SPANISH",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 6,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "PEDAGOGICAL_JUDGEMENT_REQUIRED",
+    "content_count": 11,
+    "grade": "FR-4E",
+    "subject": "SVT",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 11,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "PEDAGOGICAL_JUDGEMENT_REQUIRED",
+    "content_count": 11,
+    "grade": "FR-4E",
+    "subject": "SVT",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 11,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "PEDAGOGICAL_JUDGEMENT_REQUIRED",
+    "content_count": 2,
+    "grade": "FR-4E",
+    "subject": "SVT",
+    "content_type": "remediation",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "SCIENCE_LEVEL_REVIEW",
+    "content_count": 5,
+    "grade": "FR-3E",
+    "subject": "PHYSICS_CHEMISTRY",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 5,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "SCIENCE_LEVEL_REVIEW",
+    "content_count": 6,
+    "grade": "FR-3E",
+    "subject": "PHYSICS_CHEMISTRY",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 6,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "SCIENCE_LEVEL_REVIEW",
+    "content_count": 15,
+    "grade": "FR-3E",
+    "subject": "SVT",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 15,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "SCIENCE_LEVEL_REVIEW",
+    "content_count": 15,
+    "grade": "FR-3E",
+    "subject": "SVT",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 15,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "SCIENCE_LEVEL_REVIEW",
+    "content_count": 5,
+    "grade": "FR-4E",
+    "subject": "PHYSICS_CHEMISTRY",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 5,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "SCIENCE_LEVEL_REVIEW",
+    "content_count": 3,
+    "grade": "FR-4E",
+    "subject": "PHYSICS_CHEMISTRY",
+    "content_type": "challenge",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "SCIENCE_LEVEL_REVIEW",
+    "content_count": 3,
+    "grade": "FR-4E",
+    "subject": "PHYSICS_CHEMISTRY",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 3,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "SCIENCE_LEVEL_REVIEW",
+    "content_count": 11,
+    "grade": "FR-4E",
+    "subject": "SVT",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 11,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "SCIENCE_LEVEL_REVIEW",
+    "content_count": 11,
+    "grade": "FR-4E",
+    "subject": "SVT",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 11,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "SCIENCE_LEVEL_REVIEW",
+    "content_count": 2,
+    "grade": "FR-4E",
+    "subject": "SVT",
+    "content_type": "remediation",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "SOURCE_DOCUMENT_REQUIRED",
+    "content_count": 1,
+    "grade": "FR-3E",
+    "subject": "EMC",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "SOURCE_DOCUMENT_REQUIRED",
+    "content_count": 1,
+    "grade": "FR-3E",
+    "subject": "FRENCH",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "SOURCE_DOCUMENT_REQUIRED",
+    "content_count": 1,
+    "grade": "FR-3E",
+    "subject": "FRENCH",
+    "content_type": "practice",
+    "difficulty": 1,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "SOURCE_DOCUMENT_REQUIRED",
+    "content_count": 1,
+    "grade": "FR-3E",
+    "subject": "FRENCH",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "SOURCE_DOCUMENT_REQUIRED",
+    "content_count": 1,
+    "grade": "FR-3E",
+    "subject": "FRENCH",
+    "content_type": "practice",
+    "difficulty": 3,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "SOURCE_DOCUMENT_REQUIRED",
+    "content_count": 1,
+    "grade": "FR-4E",
+    "subject": "EMC",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "SOURCE_DOCUMENT_REQUIRED",
+    "content_count": 1,
+    "grade": "FR-4E",
+    "subject": "FRENCH",
+    "content_type": "practice",
+    "difficulty": 1,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "SOURCE_DOCUMENT_REQUIRED",
+    "content_count": 1,
+    "grade": "FR-4E",
+    "subject": "FRENCH",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "SOURCE_DOCUMENT_REQUIRED",
+    "content_count": 1,
+    "grade": "FR-4E",
+    "subject": "FRENCH",
+    "content_type": "practice",
+    "difficulty": 3,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "SOURCE_DOCUMENT_REQUIRED",
+    "content_count": 1,
+    "grade": "FR-4E",
+    "subject": "HISTORY",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "SOURCE_DOCUMENT_REQUIRED",
+    "content_count": 1,
+    "grade": "FR-4E",
+    "subject": "HISTORY",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "SOURCE_DOCUMENT_REQUIRED",
+    "content_count": 1,
+    "grade": "FR-4E",
+    "subject": "SPANISH",
+    "content_type": "assessment",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  },
+  {
+    "review_reason": "SOURCE_DOCUMENT_REQUIRED",
+    "content_count": 1,
+    "grade": "FR-4E",
+    "subject": "SPANISH",
+    "content_type": "practice",
+    "difficulty": 2,
+    "skill_count": 1,
+    "automatic_resolution_possible": false
+  }
+]

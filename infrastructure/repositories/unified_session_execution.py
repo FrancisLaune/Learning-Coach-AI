@@ -28,7 +28,7 @@ class DuckDBUnifiedSessionExecutionRepository:
                 FROM learning_sessions ls
                 JOIN session_activities a ON a.session_id=ls.id
                 JOIN exercises e ON e.id=a.content_id
-                JOIN approved_learning_catalog c ON c.content_id=a.content_id
+                JOIN production_learning_catalog c ON c.content_id=a.content_id
                     AND c.content_version_id=a.content_version_id
                 JOIN content_questions q ON q.exercise_id=a.content_id
                 JOIN content_solutions sol ON sol.question_id=q.id

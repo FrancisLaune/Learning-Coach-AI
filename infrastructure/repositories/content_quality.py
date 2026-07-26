@@ -7,6 +7,7 @@ from pathlib import Path
 from typing import Any
 
 from infrastructure.database.v2 import connect_v2
+from services.curriculum.services import ContentApprovalService, EditorialWorkflowService
 
 
 class DuckDBContentQualityRepository:
@@ -254,6 +255,396 @@ class DuckDBContentQualityRepository:
             )
             connection.execute("COMMIT")
             return True
+        except Exception:
+            connection.execute("ROLLBACK")
+            raise
+        finally:
+            connection.close()
+
+    def record_human_decision(
+        self,
+        *,
+        version_id: int,
+        reviewer: str,
+        decision: str,
+        notes: str,
+    ) -> None:
+        normalized = decision.upper()
+        if normalized not in {"REJECT", "KEEP_FOR_REVIEW"}:
+            raise ValueError("Unsupported non-approval decision")
+        connection = connect_v2(self.database_path)
+        try:
+            row = connection.execute(
+                """
+                SELECT entity_id,status,payload FROM content_versions
+                WHERE id=? AND entity_type='exercise'
+                """,
+                [version_id],
+            ).fetchone()
+            if row is None:
+                raise ValueError("Unknown content version")
+            target = "archived" if normalized == "REJECT" else "review"
+            EditorialWorkflowService().transition(str(row[1]), target, validated=True)
+            existing = connection.execute(
+                """
+                SELECT id FROM content_versions
+                WHERE entity_type='exercise' AND entity_id=? AND status=?
+                  AND json_extract_string(payload,'$.review_source_version_id')=?
+                """,
+                [row[0], target, str(version_id)],
+            ).fetchone()
+            if existing:
+                return
+            payload = json.loads(str(row[2]))
+            payload["review_source_version_id"] = version_id
+            payload["review_decision"] = normalized
+            next_version = int(
+                connection.execute(
+                    """
+                    SELECT coalesce(max(version_number),0)+1 FROM content_versions
+                    WHERE entity_type='exercise' AND entity_id=?
+                    """,
+                    [row[0]],
+                ).fetchone()[0]
+            )
+            connection.execute("BEGIN")
+            decision_version_id = int(
+                connection.execute(
+                    """
+                    INSERT INTO content_versions(
+                        entity_type,entity_id,version_number,payload,author,status
+                    ) VALUES ('exercise',?,?,?,?,?) RETURNING id
+                    """,
+                    [row[0], next_version, json.dumps(payload), reviewer, target],
+                ).fetchone()[0]
+            )
+            connection.execute(
+                """
+                INSERT INTO editorial_reviews(content_version_id,reviewer,decision,notes)
+                VALUES (?,?,?,?)
+                ON CONFLICT(content_version_id,reviewer) DO UPDATE SET
+                    decision=excluded.decision,notes=excluded.notes,reviewed_at=now()
+                """,
+                [
+                    decision_version_id,
+                    reviewer,
+                    "changes_requested",
+                    notes,
+                ],
+            )
+            connection.execute(
+                """
+                INSERT INTO content_status_events(
+                    content_version_id,previous_status,new_status,author
+                ) VALUES (?,?,?,?)
+                """,
+                [decision_version_id, str(row[1]), target, reviewer],
+            )
+            connection.execute("COMMIT")
+        except Exception:
+            connection.execute("ROLLBACK")
+            raise
+        finally:
+            connection.close()
+
+    def approve_for_production(
+        self,
+        *,
+        item: dict[str, Any],
+        reviewer: str,
+        approver: str,
+        reason: str,
+        pipeline_version: str = "lcai-0012d2-quality-v1",
+    ) -> int:
+        """Publish a reviewed Draft as a new active projection, preserving its source."""
+        if item["recommended_decision"] != "APPROVE" or int(item["candidate_score"]) < 80:
+            raise ValueError("Only high-confidence queue candidates can be approved")
+        source_version_id = int(item["version_id"])
+        connection = connect_v2(self.database_path)
+        try:
+            connection.execute("BEGIN")
+            existing = connection.execute(
+                """
+                SELECT e.id FROM exercises e
+                JOIN content_versions cv ON cv.entity_type='exercise' AND cv.entity_id=e.id
+                WHERE json_extract_string(cv.payload,'$.publication_source_version_id')=?
+                  AND cv.status='approved'
+                """,
+                [str(source_version_id)],
+            ).fetchone()
+            if existing:
+                connection.execute("ROLLBACK")
+                return int(existing[0])
+            source = connection.execute(
+                """
+                SELECT e.subject_id,e.title,e.objective,e.estimated_seconds,e.difficulty,
+                       e.instructions,e.evaluation_strategy,e.language_code,cv.payload,
+                       qs.skill_id,q.statement,q.expected_answer,q.explanation,cv.author
+                FROM content_versions cv
+                JOIN exercises e ON e.id=cv.entity_id AND cv.entity_type='exercise'
+                JOIN exercise_questions eq ON eq.exercise_id=e.id AND eq.position=1
+                JOIN questions q ON q.id=eq.question_id
+                JOIN question_skills qs ON qs.question_id=q.id AND qs.is_primary
+                WHERE cv.id=?
+                """,
+                [source_version_id],
+            ).fetchone()
+            if source is None:
+                raise ValueError("Approval source is unavailable")
+            author = str(source[13])
+            ContentApprovalService.approve(
+                author=author,
+                reviewer=reviewer,
+                approver=approver,
+                validated=bool(item["hard_gates_passed"]),
+            )
+            payload = json.loads(str(source[8]))
+            payload["publication_source_version_id"] = source_version_id
+            payload["quality_pipeline_version"] = pipeline_version
+            payload["approval_reason"] = reason
+            chapter_code = payload["curriculum_target"]["chapter_code"]
+            content_type = str(item["content_type"])
+            legacy_type = {
+                "practice": "exercise",
+                "guided_practice": "exercise",
+                "assessment": "exam_practice",
+                "diagnostic": "diagnostic_activity",
+                "remediation": "remediation_activity",
+                "worked_example": "worked_example",
+            }.get(content_type, "exercise")
+            answer_kind = str(item["answer_kind"])
+            response_type = {
+                "numeric": "decimal",
+                "single_choice": "single_choice",
+                "multiple_choice": "multiple_choice",
+                "boolean": "true_false",
+                "structured": "structured",
+                "open_response": "long_text",
+            }.get(answer_kind, "short_text")
+            legacy_response_type = {
+                "numeric": "number",
+                "single_choice": "choice",
+                "multiple_choice": "choice",
+                "boolean": "boolean",
+                "structured": "structured",
+            }.get(answer_kind, "text")
+            detailed_expected = source[11]
+            if item.get("choices"):
+                labels = [str(choice) for choice in item["choices"]]
+                expected_labels = (
+                    [str(value) for value in item["expected_answer"]]
+                    if isinstance(item["expected_answer"], list)
+                    else [str(item["expected_answer"])]
+                )
+                expected_codes = [f"OPT-{labels.index(label) + 1}" for label in expected_labels]
+                detailed_expected = json.dumps(
+                    expected_codes if answer_kind == "multiple_choice" else expected_codes[0]
+                )
+            exercise_id = int(
+                connection.execute(
+                    """
+                    INSERT INTO exercises(
+                        subject_id,code,title,objective,estimated_seconds,difficulty,instructions,
+                        evaluation_strategy,language_code,content_version,status
+                    ) VALUES (?,?,?,?,?,?,?,?,?,1,'active') RETURNING id
+                    """,
+                    [
+                        source[0],
+                        f"{item['code']}-PUB-{source_version_id}",
+                        source[1],
+                        source[2],
+                        source[3],
+                        source[4],
+                        source[5],
+                        source[6],
+                        source[7],
+                    ],
+                ).fetchone()[0]
+            )
+            legacy_question_id = int(
+                connection.execute(
+                    """
+                    INSERT INTO questions(
+                        code,statement,answer_type,expected_answer,explanation,hints,
+                        estimated_seconds,language_code,content_version,status
+                    ) VALUES (?,?,?,?,?,'[]',60,'fr-FR',1,'active') RETURNING id
+                    """,
+                    [
+                        f"{item['code']}-PUB-Q1-{source_version_id}",
+                        source[10],
+                        legacy_response_type,
+                        detailed_expected,
+                        source[12],
+                    ],
+                ).fetchone()[0]
+            )
+            connection.execute(
+                "INSERT INTO exercise_questions VALUES (?,?,1,1,TRUE)",
+                [exercise_id, legacy_question_id],
+            )
+            connection.execute(
+                "INSERT INTO question_skills VALUES (?,?,1,TRUE)",
+                [legacy_question_id, source[9]],
+            )
+            version_id = int(
+                connection.execute(
+                    """
+                    INSERT INTO content_versions(
+                        entity_type,entity_id,version_number,payload,author,status
+                    ) VALUES ('exercise',?,1,?,?,'approved') RETURNING id
+                    """,
+                    [exercise_id, json.dumps(payload), author],
+                ).fetchone()[0]
+            )
+            chapter_id = int(
+                connection.execute("SELECT id FROM curriculum_chapters WHERE stable_code=?", [chapter_code]).fetchone()[
+                    0
+                ]
+            )
+            connection.execute(
+                """
+                INSERT INTO learning_content_metadata(
+                    exercise_id,chapter_id,subskill_id,content_type,summary,author_source,
+                    license_or_origin,created_on,last_reviewed_on,min_duration_minutes,
+                    max_duration_minutes,difficulty_rationale,expected_attempts,allowed_hints,
+                    calculator_allowed,material_required,compatibility,pedagogical_strategy,
+                    cognitive_demand,expected_response_type,source_identifier,current_version
+                ) VALUES (?,?,NULL,?,?,?,?,current_date,current_date,1,10,?,1,0,FALSE,NULL,?,?,?,?,?,1)
+                """,
+                [
+                    exercise_id,
+                    chapter_id,
+                    legacy_type,
+                    str(source[1]),
+                    author,
+                    "Internally generated and independently reviewed.",
+                    json.dumps({"level": int(source[4])}),
+                    json.dumps({"standalone": True}),
+                    "validated practice",
+                    "grade-level",
+                    response_type,
+                    f"LCAI-0012D2:{source_version_id}",
+                ],
+            )
+            objective = connection.execute(
+                """
+                SELECT learning_objective_id FROM skill_learning_objectives
+                WHERE skill_id=? AND is_primary LIMIT 1
+                """,
+                [source[9]],
+            ).fetchone()
+            if objective:
+                connection.execute(
+                    "INSERT INTO content_learning_objectives VALUES (?,?)",
+                    [exercise_id, objective[0]],
+                )
+            detailed_question_id = int(
+                connection.execute(
+                    """
+                    INSERT INTO content_questions(
+                        exercise_id,stable_code,sequence_order,instructions,context,statement,
+                        response_type,expected_answer,tolerance,unit,points,is_evaluative
+                    ) VALUES (?,?,1,?,NULL,?,?,?,NULL,NULL,1,TRUE) RETURNING id
+                    """,
+                    [
+                        exercise_id,
+                        f"CQ-{item['code']}-PUB-{source_version_id}",
+                        str(source[5]),
+                        str(source[10]),
+                        response_type,
+                        detailed_expected,
+                    ],
+                ).fetchone()[0]
+            )
+            connection.execute(
+                """
+                INSERT INTO content_solutions(
+                    question_id,correct_answer,pedagogical_explanation,method,
+                    common_mistakes,advice,accepted_variants,rubric
+                ) VALUES (?,?,?,?,?,'',?,?)
+                """,
+                [
+                    detailed_question_id,
+                    detailed_expected,
+                    source[12],
+                    "Réponse validée par revue humaine.",
+                    "[]",
+                    "[]",
+                    json.dumps({"points": 1}),
+                ],
+            )
+            for position, option in enumerate(item.get("choices", []), 1):
+                label = str(option)
+                expected = item["expected_answer"]
+                correct = label in (expected if isinstance(expected, list) else [str(expected)])
+                connection.execute(
+                    """
+                    INSERT INTO content_answer_options(
+                        question_id,stable_code,label,is_correct,sequence_order
+                    ) VALUES (?,?,?,?,?)
+                    """,
+                    [detailed_question_id, f"OPT-{position}", label, correct, position],
+                )
+            validation_id = int(
+                connection.execute(
+                    """
+                    INSERT INTO validation_runs(
+                        source_name,is_valid,error_count,warning_count
+                    ) VALUES (?,TRUE,0,0) RETURNING id
+                    """,
+                    [pipeline_version],
+                ).fetchone()[0]
+            )
+            quality_id = int(
+                connection.execute(
+                    """
+                    INSERT INTO content_quality_assessments(
+                        content_version_id,score,quality_level,passed_criteria,missing_criteria,
+                        blocking_errors,warnings,assessor
+                    ) VALUES (?,?,'publishable',?,'[]','[]','[]',?) RETURNING id
+                    """,
+                    [
+                        version_id,
+                        int(item["candidate_score"]),
+                        json.dumps(item["automated_checks"]),
+                        reviewer,
+                    ],
+                ).fetchone()[0]
+            )
+            connection.execute(
+                """
+                INSERT INTO editorial_reviews(content_version_id,reviewer,decision,notes)
+                VALUES (?,?,'accepted',?)
+                """,
+                [version_id, reviewer, reason],
+            )
+            connection.execute(
+                """
+                INSERT INTO editorial_approvals(
+                    content_version_id,approver,approved,validation_run_id,
+                    quality_assessment_id,active
+                ) VALUES (?,?,TRUE,?,?,TRUE)
+                """,
+                [version_id, approver, validation_id, quality_id],
+            )
+            connection.execute(
+                """
+                INSERT INTO content_production_gates(
+                    content_version_id,production_enabled,production_tier,reason,enabled_by
+                ) VALUES (?,TRUE,'LIMITED_PRODUCTION',?,?)
+                """,
+                [version_id, reason, approver],
+            )
+            connection.execute(
+                """
+                INSERT INTO content_status_events(
+                    content_version_id,previous_status,new_status,author
+                ) VALUES (?,'review','approved',?)
+                """,
+                [version_id, approver],
+            )
+            connection.execute("COMMIT")
+            return exercise_id
         except Exception:
             connection.execute("ROLLBACK")
             raise

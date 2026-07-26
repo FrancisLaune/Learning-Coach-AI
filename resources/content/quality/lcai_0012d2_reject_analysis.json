@@ -1,0 +1,90 @@
+[
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-COMPREHENSION-EXPLICIT-ASSESSMENT-20260726104915-1",
+    "grade": "FR-4E",
+    "subject": "FRENCH",
+    "skill": "SK-ENR-FRENCH-4E-COMPREHENSION-EXPLICIT",
+    "reason": "Prompt asks which information is explicit but provides no choices and has several valid answers.",
+    "category": "EXECUTABILITY_OR_PEDAGOGY",
+    "correctable": true,
+    "regeneration_needed": false,
+    "recommended_action": "CORRECT"
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-HISTORY-3E-AFTER1945-COLD-WAR-ASSESSMENT-20260726110447-1",
+    "grade": "FR-3E",
+    "subject": "HISTORY",
+    "skill": "SK-ENR-HISTORY-3E-AFTER1945-COLD_WAR",
+    "reason": "The persisted prompt contains a document but no explicit learner task or question.",
+    "category": "EXECUTABILITY_OR_PEDAGOGY",
+    "correctable": true,
+    "regeneration_needed": false,
+    "recommended_action": "CORRECT"
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-HISTORY-3E-AFTER1945-NEW-CONFLICTS-PRACTICE-20260726110459-1",
+    "grade": "FR-3E",
+    "subject": "HISTORY",
+    "skill": "SK-ENR-HISTORY-3E-AFTER1945-NEW_CONFLICTS",
+    "reason": "Question refers to absent propositions; explanation also overstates a direct causal link with Yugoslavia.",
+    "category": "ANSWER_OR_SCIENCE_ERROR",
+    "correctable": false,
+    "regeneration_needed": false,
+    "recommended_action": "ARCHIVE/REJECT"
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-ARITH-DIVISIBILITY-PRACTICE-20260726092939-1",
+    "grade": "FR-3E",
+    "subject": "MATHEMATICS",
+    "skill": "SK-ENR-MATHEMATICS-3E-ARITH-DIVISIBILITY",
+    "reason": "Independent enumeration gives 55 values but the minimum is 2004, not 2100; expected answer is incorrect.",
+    "category": "ANSWER_OR_SCIENCE_ERROR",
+    "correctable": false,
+    "regeneration_needed": false,
+    "recommended_action": "ARCHIVE/REJECT"
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-PHYSICS-CHEMISTRY-4E-CHEMISTRY-ACID-BASE-ASSESSMENT-20260726111240-1",
+    "grade": "FR-4E",
+    "subject": "PHYSICS_CHEMISTRY",
+    "skill": "SK-ENR-PHYSICS_CHEMISTRY-4E-CHEMISTRY-ACID_BASE",
+    "reason": "Computing hydronium concentration from logarithmic pH is above the intended 4e scope.",
+    "category": "GRADE_OR_CURRICULUM_MISMATCH",
+    "correctable": false,
+    "regeneration_needed": true,
+    "recommended_action": "REGENERATE"
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-PHYSICS-CHEMISTRY-4E-CHEMISTRY-ACID-BASE-PRACTICE-20260726111241-1",
+    "grade": "FR-4E",
+    "subject": "PHYSICS_CHEMISTRY",
+    "skill": "SK-ENR-PHYSICS_CHEMISTRY-4E-CHEMISTRY-ACID_BASE",
+    "reason": "Logarithmic concentration calculation is above 4e and referenced choices are absent.",
+    "category": "GRADE_OR_CURRICULUM_MISMATCH",
+    "correctable": false,
+    "regeneration_needed": true,
+    "recommended_action": "REGENERATE"
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-SVT-3E-HEALTH-IMMUNITY-PRACTICE-20260726110841-1",
+    "grade": "FR-3E",
+    "subject": "SVT",
+    "skill": "SK-ENR-SVT-3E-HEALTH-IMMUNITY",
+    "reason": "A scratch by another cat does not establish re-exposure to the same antigen; immune-memory conclusion is unsupported.",
+    "category": "ANSWER_OR_SCIENCE_ERROR",
+    "correctable": false,
+    "regeneration_needed": false,
+    "recommended_action": "ARCHIVE/REJECT"
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-SVT-4E-EARTH-EARTHQUAKE-ASSESSMENT-20260726111408-1",
+    "grade": "FR-4E",
+    "subject": "SVT",
+    "skill": "SK-ENR-SVT-4E-EARTH-EARTHQUAKE",
+    "reason": "Epicentral-distance computation from P/S velocities is beyond the intended 4e task scope.",
+    "category": "GRADE_OR_CURRICULUM_MISMATCH",
+    "correctable": false,
+    "regeneration_needed": true,
+    "recommended_action": "REGENERATE"
+  }
+]

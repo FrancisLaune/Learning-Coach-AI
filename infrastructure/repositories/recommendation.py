@@ -47,7 +47,7 @@ class DuckDBRecommendationRepository:
                 """
                 SELECT content_id,content_version_id,title,subject_id,domain_id,skill_id,subskill_id,
                        program_id,grade_code,difficulty,estimated_minutes,payload
-                FROM approved_learning_catalog
+                FROM production_learning_catalog
                 ORDER BY content_id,skill_id
                 """
             ).fetchall()
@@ -103,7 +103,7 @@ class DuckDBRecommendationRepository:
                 list(q.id ORDER BY q.sequence_order) AS question_ids,
                 bool_and(q.is_evaluative=FALSE OR sol.id IS NOT NULL) AS has_assessment
                 FROM personalized_session_items i
-                JOIN approved_learning_catalog c ON c.content_id=i.content_id
+                JOIN production_learning_catalog c ON c.content_id=i.content_id
                     AND c.content_version_id=i.content_version_id
                 JOIN exercises e ON e.id=i.content_id
                 JOIN content_versions cv ON cv.id=i.content_version_id

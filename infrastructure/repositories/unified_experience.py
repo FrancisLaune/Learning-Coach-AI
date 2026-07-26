@@ -29,7 +29,7 @@ class DuckDBUnifiedExperienceRepository:
         try:
             rows = connection.execute(
                 """SELECT DISTINCT s.id,s.code,s.default_label FROM subjects s
-                JOIN approved_learning_catalog c ON c.subject_id=s.id
+                JOIN production_learning_catalog c ON c.subject_id=s.id
                 WHERE s.archived_at IS NULL ORDER BY s.default_label"""
             ).fetchall()
             return tuple((int(row[0]), str(row[1]), str(row[2])) for row in rows)
@@ -89,7 +89,7 @@ class DuckDBUnifiedExperienceRepository:
         try:
             rows = connection.execute(
                 """SELECT DISTINCT s.id,s.code,s.default_label
-                FROM approved_learning_catalog a
+                FROM production_learning_catalog a
                 JOIN subjects s ON s.id=a.subject_id
                 JOIN school_levels sl ON sl.code=a.grade_code
                 WHERE sl.id=?
@@ -110,7 +110,7 @@ class DuckDBUnifiedExperienceRepository:
                 parameters.append(grade_level_id)
             rows = connection.execute(
                 f"""SELECT DISTINCT c.id,c.title,c.sequence_order
-                FROM approved_learning_catalog a
+                FROM production_learning_catalog a
                 JOIN curriculum_chapters c ON c.id=a.chapter_id
                 JOIN school_levels sl ON sl.code=a.grade_code
                 WHERE {where}
@@ -140,7 +140,7 @@ class DuckDBUnifiedExperienceRepository:
                 grade_filter = " AND sl.id=?"
                 parameters.append(grade_level_id)
             rows = connection.execute(
-                f"""SELECT DISTINCT c.skill_id,s.default_label FROM approved_learning_catalog c
+                f"""SELECT DISTINCT c.skill_id,s.default_label FROM production_learning_catalog c
                 JOIN skills s ON s.id=c.skill_id
                 JOIN school_levels sl ON sl.code=c.grade_code
                 WHERE c.subject_id=? {chapter_filter} {grade_filter}
@@ -170,7 +170,7 @@ class DuckDBUnifiedExperienceRepository:
                 filters.append("difficulty=?")
                 parameters.append(difficulty)
             rows = connection.execute(
-                f"""SELECT content_id,chapter_id,skill_id,difficulty FROM approved_learning_catalog
+                f"""SELECT content_id,chapter_id,skill_id,difficulty FROM production_learning_catalog
                 WHERE {" AND ".join(filters)}
                 ORDER BY chapter_id,skill_id,difficulty,content_id""",
                 parameters,
@@ -297,7 +297,7 @@ class DuckDBUnifiedExperienceRepository:
             proposal_id = int(proposal[0])
             contents = connection.execute(
                 """SELECT content_id,content_version_id,skill_id,subject_id,estimated_minutes,difficulty
-                FROM approved_learning_catalog WHERE content_id IN
+                FROM production_learning_catalog WHERE content_id IN
                 (SELECT unnest(CAST(selected_content AS BIGINT[])) FROM homework_assignments WHERE id=?)
                 ORDER BY content_id""",
                 [homework_id],

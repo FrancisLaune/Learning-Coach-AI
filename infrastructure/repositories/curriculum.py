@@ -771,6 +771,19 @@ class DuckDBCurriculumRepository:
                 [version_id, item["approver"], validation_id, quality_id],
             )
             con.execute(
+                """
+                INSERT INTO content_production_gates(
+                    content_version_id,production_enabled,production_tier,reason,enabled_by
+                ) VALUES (?,TRUE,'LIMITED_PRODUCTION',?,?)
+                ON CONFLICT(content_version_id) DO NOTHING
+                """,
+                [
+                    version_id,
+                    "Approved catalog import validated by the existing editorial workflow.",
+                    item["approver"],
+                ],
+            )
+            con.execute(
                 "INSERT INTO curriculum_domain_events(event_type,aggregate_type,aggregate_code,payload) VALUES ('ContentApproved','exercise',?,?)",
                 [item["code"], json.dumps({"version": item["version"], "approver": item["approver"]})],
             )

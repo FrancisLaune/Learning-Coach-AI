@@ -111,7 +111,7 @@ def test_operational_health_is_read_only_and_reports_migration(
     before = path.stat().st_size
     result = OperationalHealthService(path).check()
     assert result.healthy
-    assert any(item.name == "migration_level" and "16" in item.detail for item in result.checks)
+    assert any(item.name == "migration_level" and "17" in item.detail for item in result.checks)
     assert path.stat().st_size == before
     connection = connect_v2(path, read_only=True)
     try:
