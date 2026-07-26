@@ -16,6 +16,12 @@ from services.content.approval_acceleration import (
     classify_review,
     rank_candidates,
 )
+from services.content.approval_coverage import (
+    build_pairing,
+    coverage_impact,
+    minimal_approval_plan,
+    potential_tier_1,
+)
 
 ROOT = Path(__file__).parents[1]
 QUALITY = ROOT / "resources" / "content" / "quality"
@@ -101,6 +107,91 @@ def test_approval_queue_prioritizes_missing_coverage_and_practice() -> None:
     positions = {kind: index for index, kind in enumerate(item["content_type"] for item in same_skill)}
     if "practice" in positions and "assessment" in positions:
         assert positions["practice"] < positions["assessment"]
+
+
+def test_coverage_impact_detects_tier_one_completion() -> None:
+    impact = coverage_impact(
+        {"approved_practice": 1, "approved_assessment": 0},
+        "assessment",
+    )
+    assert impact["adds_assessment"]
+    assert impact["completes_tier_1"]
+    assert impact["current"]["tier"] == 2
+    assert impact["potential"]["tier"] == 1
+
+
+def test_pairing_and_minimal_plan_favour_one_approval_completion() -> None:
+    coverage = [
+        {
+            "grade": "FR-3E",
+            "subject": "MATHEMATICS",
+            "chapter": "CH-1",
+            "skill": "SK-ONE",
+            "approved_practice": 1,
+            "approved_assessment": 0,
+        },
+        {
+            "grade": "FR-4E",
+            "subject": "FRENCH",
+            "chapter": "CH-2",
+            "skill": "SK-TWO",
+            "approved_practice": 0,
+            "approved_assessment": 0,
+        },
+    ]
+
+    def candidate(code: str, skill: str, kind: str) -> dict[str, Any]:
+        return {
+            "code": code,
+            "content_id": 1,
+            "version_id": 1,
+            "grade": "FR-3E",
+            "subject": "MATHEMATICS",
+            "skill": skill,
+            "content_type": kind,
+            "quality_result": "PASS",
+            "recommended_decision": "APPROVE",
+            "hard_gates_passed": True,
+            "candidate_score": 90,
+            "answer_kind": "numeric",
+            "coverage_impact": {
+                "completes_tier_1": skill == "SK-ONE",
+                "improves_tier_2": skill == "SK-TWO",
+                "no_coverage_impact": False,
+            },
+        }
+
+    candidates = [
+        candidate("ONE-A", "SK-ONE", "assessment"),
+        candidate("TWO-P", "SK-TWO", "practice"),
+        candidate("TWO-A", "SK-TWO", "assessment"),
+    ]
+    pairing = build_pairing(coverage, candidates)
+    plan = minimal_approval_plan(pairing)
+    assert [item["skill"] for item in plan] == ["SK-ONE", "SK-TWO", "SK-TWO"]
+    assert plan[0]["completes_tier_1"]
+    assert plan[1]["completes_tier_1"] is False
+    assert plan[2]["completes_tier_1"]
+    assert potential_tier_1(pairing, plan, (1, 2)) == {
+        "current": 0,
+        "after_1": 1,
+        "after_2": 1,
+        "after_all_recommended": 2,
+    }
+
+
+def test_d3_queue_orders_tier_one_completion_first() -> None:
+    queue = json.loads((QUALITY / "lcai_0012d3_approval_priority.json").read_text(encoding="utf-8"))
+    recommended = [row for row in queue if row["recommended_decision"] == "APPROVE"]
+    assert recommended
+    completion_positions = [
+        index for index, row in enumerate(recommended) if row["coverage_impact"]["completes_tier_1"]
+    ]
+    improvement_positions = [
+        index for index, row in enumerate(recommended) if row["coverage_impact"]["improves_tier_2"]
+    ]
+    if completion_positions and improvement_positions:
+        assert max(completion_positions) < min(improvement_positions)
 
 
 def test_human_approval_is_idempotent_and_feature_gated(approval_database: Path) -> None:

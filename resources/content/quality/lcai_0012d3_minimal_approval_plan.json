@@ -1,0 +1,1522 @@
+[
+  {
+    "sequence": 1,
+    "grade": "FR-3E",
+    "subject": "ENGLISH",
+    "chapter": "CH-ENGLISH-3E-PAST",
+    "skill": "SK-ENGLISH-3E-PAST",
+    "content_type": "assessment",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-ENGLISH-3E-PAST-ASSESSMENT-20260726110243-1",
+      "content_id": 107684,
+      "version_id": 107686,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 88,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 1,
+    "completes_tier_1": true
+  },
+  {
+    "sequence": 2,
+    "grade": "FR-3E",
+    "subject": "FRENCH",
+    "chapter": "CH-FRENCH-3E-REWRITE",
+    "skill": "SK-FRENCH-3E-REWRITE",
+    "content_type": "practice",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-FRENCH-3E-REWRITE-PRACTICE-20260726092404-1",
+      "content_id": 105252,
+      "version_id": 105254,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 88,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 1,
+    "completes_tier_1": true
+  },
+  {
+    "sequence": 3,
+    "grade": "FR-3E",
+    "subject": "MATHEMATICS",
+    "chapter": "CH-MATHEMATICS-3E-ARITH",
+    "skill": "SK-MATHEMATICS-3E-ARITH",
+    "content_type": "practice",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-MATHEMATICS-3E-ARITH-PRACTICE-20260726094549-1",
+      "content_id": 105508,
+      "version_id": 105510,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 98,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 1,
+    "completes_tier_1": true
+  },
+  {
+    "sequence": 4,
+    "grade": "FR-3E",
+    "subject": "MATHEMATICS",
+    "chapter": "CH-MATHEMATICS-3E-BREVETPROB",
+    "skill": "SK-MATHEMATICS-3E-BREVETPROB",
+    "content_type": "practice",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-MATHEMATICS-3E-BREVETPROB-PRACTICE-20260726094707-1",
+      "content_id": 105616,
+      "version_id": 105618,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 98,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 1,
+    "completes_tier_1": true
+  },
+  {
+    "sequence": 5,
+    "grade": "FR-3E",
+    "subject": "MATHEMATICS",
+    "chapter": "CH-MATHEMATICS-3E-EQUATIONS",
+    "skill": "SK-MATHEMATICS-3E-EQUATIONS",
+    "content_type": "practice",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-MATHEMATICS-3E-EQUATIONS-PRACTICE-20260726094749-1",
+      "content_id": 105696,
+      "version_id": 105698,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 98,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 1,
+    "completes_tier_1": true
+  },
+  {
+    "sequence": 6,
+    "grade": "FR-3E",
+    "subject": "MATHEMATICS",
+    "chapter": "CH-MATHEMATICS-3E-MEDIAN",
+    "skill": "SK-MATHEMATICS-3E-MEDIAN",
+    "content_type": "practice",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-MATHEMATICS-3E-MEDIAN-PRACTICE-20260726095442-1",
+      "content_id": 105908,
+      "version_id": 105910,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 98,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 1,
+    "completes_tier_1": true
+  },
+  {
+    "sequence": 7,
+    "grade": "FR-3E",
+    "subject": "MATHEMATICS",
+    "chapter": "CH-MATHEMATICS-3E-PROBA",
+    "skill": "SK-MATHEMATICS-3E-PROBA",
+    "content_type": "practice",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-MATHEMATICS-3E-PROBA-PRACTICE-20260726104740-1",
+      "content_id": 106172,
+      "version_id": 106174,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 98,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 1,
+    "completes_tier_1": true
+  },
+  {
+    "sequence": 8,
+    "grade": "FR-3E",
+    "subject": "MATHEMATICS",
+    "chapter": "CH-MATHEMATICS-3E-THALES",
+    "skill": "SK-MATHEMATICS-3E-THALES",
+    "content_type": "practice",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-MATHEMATICS-3E-THALES-PRACTICE-20260726104750-1",
+      "content_id": 106196,
+      "version_id": 106198,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 98,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 1,
+    "completes_tier_1": true
+  },
+  {
+    "sequence": 9,
+    "grade": "FR-3E",
+    "subject": "MATHEMATICS",
+    "chapter": "CH-MATHEMATICS-3E-TRIGO",
+    "skill": "SK-MATHEMATICS-3E-TRIGO",
+    "content_type": "practice",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-MATHEMATICS-3E-TRIGO-PRACTICE-20260726104805-1",
+      "content_id": 106236,
+      "version_id": 106238,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 98,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 1,
+    "completes_tier_1": true
+  },
+  {
+    "sequence": 10,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "chapter": "CH-MATHEMATICS-4E-RELNUM",
+    "skill": "SK-MATHEMATICS-4E-RELNUM",
+    "content_type": "assessment",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-MATHEMATICS-4E-RELNUM-ASSESSMENT-20260726105930-1",
+      "content_id": 107316,
+      "version_id": 107318,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 98,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 1,
+    "completes_tier_1": true
+  },
+  {
+    "sequence": 11,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "chapter": "CH-MATHEMATICS-4E-STATS",
+    "skill": "SK-MATHEMATICS-4E-STATS",
+    "content_type": "assessment",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-MATHEMATICS-4E-STATS-ASSESSMENT-20260726110006-1",
+      "content_id": 107404,
+      "version_id": 107406,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 98,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 1,
+    "completes_tier_1": true
+  },
+  {
+    "sequence": 12,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "chapter": "CH-MATHEMATICS-4E-VOLUMES",
+    "skill": "SK-MATHEMATICS-4E-VOLUMES",
+    "content_type": "assessment",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-MATHEMATICS-4E-VOLUMES-ASSESSMENT-20260726110045-1",
+      "content_id": 107512,
+      "version_id": 107514,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 98,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 1,
+    "completes_tier_1": true
+  },
+  {
+    "sequence": 13,
+    "grade": "FR-3E",
+    "subject": "FRENCH",
+    "chapter": "CH-FRENCH-3E-ARGUMENT",
+    "skill": "SK-ENR-FRENCH-3E-ARGUMENT-ARGUMENT",
+    "content_type": "practice",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-ENR-FRENCH-3E-ARGUMENT-ARGUMENT-PRACTICE-20260726091227-1",
+      "content_id": 104852,
+      "version_id": 104854,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 88,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 2,
+    "completes_tier_1": false
+  },
+  {
+    "sequence": 14,
+    "grade": "FR-3E",
+    "subject": "FRENCH",
+    "chapter": "CH-FRENCH-3E-ARGUMENT",
+    "skill": "SK-ENR-FRENCH-3E-ARGUMENT-ARGUMENT",
+    "content_type": "assessment",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-ENR-FRENCH-3E-ARGUMENT-ARGUMENT-ASSESSMENT-20260726091511-1",
+      "content_id": 104872,
+      "version_id": 104874,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 88,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 2,
+    "completes_tier_1": true
+  },
+  {
+    "sequence": 15,
+    "grade": "FR-3E",
+    "subject": "MATHEMATICS",
+    "chapter": "CH-MATHEMATICS-3E-BREVETPROB",
+    "skill": "SK-ENR-MATHEMATICS-3E-BREVETPROB-CALCULATE",
+    "content_type": "practice",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-BREVETPROB-CALCULATE-PRACTICE-20260726094605-1",
+      "content_id": 105528,
+      "version_id": 105530,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 98,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 2,
+    "completes_tier_1": false
+  },
+  {
+    "sequence": 16,
+    "grade": "FR-3E",
+    "subject": "MATHEMATICS",
+    "chapter": "CH-MATHEMATICS-3E-BREVETPROB",
+    "skill": "SK-ENR-MATHEMATICS-3E-BREVETPROB-CALCULATE",
+    "content_type": "assessment",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-BREVETPROB-CALCULATE-ASSESSMENT-20260726094626-1",
+      "content_id": 105564,
+      "version_id": 105566,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 98,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 2,
+    "completes_tier_1": true
+  },
+  {
+    "sequence": 17,
+    "grade": "FR-3E",
+    "subject": "MATHEMATICS",
+    "chapter": "CH-MATHEMATICS-3E-BREVETPROB",
+    "skill": "SK-ENR-MATHEMATICS-3E-BREVETPROB-PLAN",
+    "content_type": "practice",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-BREVETPROB-PLAN-PRACTICE-20260726094700-1",
+      "content_id": 105592,
+      "version_id": 105594,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 98,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 2,
+    "completes_tier_1": false
+  },
+  {
+    "sequence": 18,
+    "grade": "FR-3E",
+    "subject": "MATHEMATICS",
+    "chapter": "CH-MATHEMATICS-3E-BREVETPROB",
+    "skill": "SK-ENR-MATHEMATICS-3E-BREVETPROB-PLAN",
+    "content_type": "assessment",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-BREVETPROB-PLAN-ASSESSMENT-20260726094659-1",
+      "content_id": 105596,
+      "version_id": 105598,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 88,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 2,
+    "completes_tier_1": true
+  },
+  {
+    "sequence": 19,
+    "grade": "FR-3E",
+    "subject": "MATHEMATICS",
+    "chapter": "CH-MATHEMATICS-3E-FUNCTIONS",
+    "skill": "SK-ENR-MATHEMATICS-3E-FUNCTIONS-FORMULA",
+    "content_type": "practice",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-FUNCTIONS-FORMULA-PRACTICE-20260726094817-1",
+      "content_id": 105744,
+      "version_id": 105746,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 98,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 2,
+    "completes_tier_1": false
+  },
+  {
+    "sequence": 20,
+    "grade": "FR-3E",
+    "subject": "MATHEMATICS",
+    "chapter": "CH-MATHEMATICS-3E-FUNCTIONS",
+    "skill": "SK-ENR-MATHEMATICS-3E-FUNCTIONS-FORMULA",
+    "content_type": "assessment",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-FUNCTIONS-FORMULA-ASSESSMENT-20260726104723-1",
+      "content_id": 106116,
+      "version_id": 106118,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 98,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 2,
+    "completes_tier_1": true
+  },
+  {
+    "sequence": 21,
+    "grade": "FR-3E",
+    "subject": "MATHEMATICS",
+    "chapter": "CH-MATHEMATICS-3E-MEDIAN",
+    "skill": "SK-ENR-MATHEMATICS-3E-MEDIAN-MEDIAN",
+    "content_type": "practice",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-MEDIAN-MEDIAN-PRACTICE-20260726095416-1",
+      "content_id": 105864,
+      "version_id": 105866,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 98,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 2,
+    "completes_tier_1": false
+  },
+  {
+    "sequence": 22,
+    "grade": "FR-3E",
+    "subject": "MATHEMATICS",
+    "chapter": "CH-MATHEMATICS-3E-MEDIAN",
+    "skill": "SK-ENR-MATHEMATICS-3E-MEDIAN-MEDIAN",
+    "content_type": "assessment",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-MEDIAN-MEDIAN-ASSESSMENT-20260726104726-1",
+      "content_id": 106136,
+      "version_id": 106138,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 98,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 2,
+    "completes_tier_1": true
+  },
+  {
+    "sequence": 23,
+    "grade": "FR-3E",
+    "subject": "MATHEMATICS",
+    "chapter": "CH-MATHEMATICS-3E-PROBA",
+    "skill": "SK-ENR-MATHEMATICS-3E-PROBA-CALCULATE",
+    "content_type": "practice",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-PROBA-CALCULATE-PRACTICE-20260726104725-1",
+      "content_id": 106124,
+      "version_id": 106126,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 98,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 2,
+    "completes_tier_1": false
+  },
+  {
+    "sequence": 24,
+    "grade": "FR-3E",
+    "subject": "MATHEMATICS",
+    "chapter": "CH-MATHEMATICS-3E-PROBA",
+    "skill": "SK-ENR-MATHEMATICS-3E-PROBA-CALCULATE",
+    "content_type": "assessment",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-PROBA-CALCULATE-ASSESSMENT-20260726104725-1",
+      "content_id": 106128,
+      "version_id": 106130,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 98,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 2,
+    "completes_tier_1": true
+  },
+  {
+    "sequence": 25,
+    "grade": "FR-3E",
+    "subject": "MATHEMATICS",
+    "chapter": "CH-MATHEMATICS-3E-PROBA",
+    "skill": "SK-ENR-MATHEMATICS-3E-PROBA-COMPLEMENT",
+    "content_type": "practice",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-PROBA-COMPLEMENT-PRACTICE-20260726104735-1",
+      "content_id": 106152,
+      "version_id": 106154,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 98,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 2,
+    "completes_tier_1": false
+  },
+  {
+    "sequence": 26,
+    "grade": "FR-3E",
+    "subject": "MATHEMATICS",
+    "chapter": "CH-MATHEMATICS-3E-PROBA",
+    "skill": "SK-ENR-MATHEMATICS-3E-PROBA-COMPLEMENT",
+    "content_type": "assessment",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-PROBA-COMPLEMENT-ASSESSMENT-20260726104735-1",
+      "content_id": 106156,
+      "version_id": 106158,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 98,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 2,
+    "completes_tier_1": true
+  },
+  {
+    "sequence": 27,
+    "grade": "FR-3E",
+    "subject": "MATHEMATICS",
+    "chapter": "CH-MATHEMATICS-3E-THALES",
+    "skill": "SK-ENR-MATHEMATICS-3E-THALES-CALCULATE",
+    "content_type": "practice",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-THALES-CALCULATE-PRACTICE-20260726104739-1",
+      "content_id": 106168,
+      "version_id": 106170,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 98,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 2,
+    "completes_tier_1": false
+  },
+  {
+    "sequence": 28,
+    "grade": "FR-3E",
+    "subject": "MATHEMATICS",
+    "chapter": "CH-MATHEMATICS-3E-THALES",
+    "skill": "SK-ENR-MATHEMATICS-3E-THALES-CALCULATE",
+    "content_type": "assessment",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-THALES-CALCULATE-ASSESSMENT-20260726104737-1",
+      "content_id": 106160,
+      "version_id": 106162,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 98,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 2,
+    "completes_tier_1": true
+  },
+  {
+    "sequence": 29,
+    "grade": "FR-3E",
+    "subject": "MATHEMATICS",
+    "chapter": "CH-MATHEMATICS-3E-TRIGO",
+    "skill": "SK-ENR-MATHEMATICS-3E-TRIGO-ANGLE",
+    "content_type": "practice",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-TRIGO-ANGLE-PRACTICE-20260726104752-1",
+      "content_id": 106208,
+      "version_id": 106210,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 98,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 2,
+    "completes_tier_1": false
+  },
+  {
+    "sequence": 30,
+    "grade": "FR-3E",
+    "subject": "MATHEMATICS",
+    "chapter": "CH-MATHEMATICS-3E-TRIGO",
+    "skill": "SK-ENR-MATHEMATICS-3E-TRIGO-ANGLE",
+    "content_type": "assessment",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-TRIGO-ANGLE-ASSESSMENT-20260726104752-1",
+      "content_id": 106204,
+      "version_id": 106206,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 98,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 2,
+    "completes_tier_1": true
+  },
+  {
+    "sequence": 31,
+    "grade": "FR-3E",
+    "subject": "MATHEMATICS",
+    "chapter": "CH-MATHEMATICS-3E-TRIGO",
+    "skill": "SK-ENR-MATHEMATICS-3E-TRIGO-LENGTH",
+    "content_type": "practice",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-TRIGO-LENGTH-PRACTICE-20260726104756-1",
+      "content_id": 106212,
+      "version_id": 106214,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 98,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 2,
+    "completes_tier_1": false
+  },
+  {
+    "sequence": 32,
+    "grade": "FR-3E",
+    "subject": "MATHEMATICS",
+    "chapter": "CH-MATHEMATICS-3E-TRIGO",
+    "skill": "SK-ENR-MATHEMATICS-3E-TRIGO-LENGTH",
+    "content_type": "assessment",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-TRIGO-LENGTH-ASSESSMENT-20260726104758-1",
+      "content_id": 106216,
+      "version_id": 106218,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 98,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 2,
+    "completes_tier_1": true
+  },
+  {
+    "sequence": 33,
+    "grade": "FR-3E",
+    "subject": "PHYSICS_CHEMISTRY",
+    "chapter": "CH-PHYSICS_CHEMISTRY-3E-MATTER",
+    "skill": "SK-ENR-PHYSICS_CHEMISTRY-3E-MATTER-ATOM",
+    "content_type": "practice",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-ENR-PHYSICS-CHEMISTRY-3E-MATTER-ATOM-PRACTICE-20260726110550-1",
+      "content_id": 108088,
+      "version_id": 108090,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 88,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 2,
+    "completes_tier_1": false
+  },
+  {
+    "sequence": 34,
+    "grade": "FR-3E",
+    "subject": "PHYSICS_CHEMISTRY",
+    "chapter": "CH-PHYSICS_CHEMISTRY-3E-MATTER",
+    "skill": "SK-ENR-PHYSICS_CHEMISTRY-3E-MATTER-ATOM",
+    "content_type": "assessment",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-ENR-PHYSICS-CHEMISTRY-3E-MATTER-ATOM-ASSESSMENT-20260726110546-1",
+      "content_id": 108072,
+      "version_id": 108074,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 88,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 2,
+    "completes_tier_1": true
+  },
+  {
+    "sequence": 35,
+    "grade": "FR-4E",
+    "subject": "ENGLISH",
+    "chapter": "CH-ENGLISH-4E-COMMUNICATION",
+    "skill": "SK-ENGLISH-4E-COMMUNICATION",
+    "content_type": "practice",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-ENGLISH-4E-COMMUNICATION-PRACTICE-20260726110952-1",
+      "content_id": 108540,
+      "version_id": 108542,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 88,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 2,
+    "completes_tier_1": false
+  },
+  {
+    "sequence": 36,
+    "grade": "FR-4E",
+    "subject": "ENGLISH",
+    "chapter": "CH-ENGLISH-4E-COMMUNICATION",
+    "skill": "SK-ENGLISH-4E-COMMUNICATION",
+    "content_type": "assessment",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-ENGLISH-4E-COMMUNICATION-ASSESSMENT-20260726110948-1",
+      "content_id": 108532,
+      "version_id": 108534,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 88,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 2,
+    "completes_tier_1": true
+  },
+  {
+    "sequence": 37,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "chapter": "CH-MATHEMATICS-4E-FRACT",
+    "skill": "SK-ENR-MATHEMATICS-4E-FRACT-DIVIDE",
+    "content_type": "practice",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-FRACT-DIVIDE-PRACTICE-20260726105540-1",
+      "content_id": 106828,
+      "version_id": 106830,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 98,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 2,
+    "completes_tier_1": false
+  },
+  {
+    "sequence": 38,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "chapter": "CH-MATHEMATICS-4E-FRACT",
+    "skill": "SK-ENR-MATHEMATICS-4E-FRACT-DIVIDE",
+    "content_type": "assessment",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-FRACT-DIVIDE-ASSESSMENT-20260726105542-1",
+      "content_id": 106840,
+      "version_id": 106842,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 98,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 2,
+    "completes_tier_1": true
+  },
+  {
+    "sequence": 39,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "chapter": "CH-MATHEMATICS-4E-FRACT",
+    "skill": "SK-ENR-MATHEMATICS-4E-FRACT-MULTIPLY",
+    "content_type": "practice",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-FRACT-MULTIPLY-PRACTICE-20260726105556-1",
+      "content_id": 106880,
+      "version_id": 106882,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 98,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 2,
+    "completes_tier_1": false
+  },
+  {
+    "sequence": 40,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "chapter": "CH-MATHEMATICS-4E-FRACT",
+    "skill": "SK-ENR-MATHEMATICS-4E-FRACT-MULTIPLY",
+    "content_type": "assessment",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-FRACT-MULTIPLY-ASSESSMENT-20260726105555-1",
+      "content_id": 106872,
+      "version_id": 106874,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 98,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 2,
+    "completes_tier_1": true
+  },
+  {
+    "sequence": 41,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "chapter": "CH-MATHEMATICS-4E-FRACT",
+    "skill": "SK-ENR-MATHEMATICS-4E-FRACT-PROBLEM",
+    "content_type": "practice",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-FRACT-PROBLEM-PRACTICE-20260726105558-1",
+      "content_id": 106884,
+      "version_id": 106886,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 98,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 2,
+    "completes_tier_1": false
+  },
+  {
+    "sequence": 42,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "chapter": "CH-MATHEMATICS-4E-FRACT",
+    "skill": "SK-ENR-MATHEMATICS-4E-FRACT-PROBLEM",
+    "content_type": "assessment",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-FRACT-PROBLEM-ASSESSMENT-20260726105555-1",
+      "content_id": 106876,
+      "version_id": 106878,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 98,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 2,
+    "completes_tier_1": true
+  },
+  {
+    "sequence": 43,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "chapter": "CH-MATHEMATICS-4E-LITERAL",
+    "skill": "SK-ENR-MATHEMATICS-4E-LITERAL-REDUCE",
+    "content_type": "practice",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-LITERAL-REDUCE-PRACTICE-20260726105620-1",
+      "content_id": 106956,
+      "version_id": 106958,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 98,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 2,
+    "completes_tier_1": false
+  },
+  {
+    "sequence": 44,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "chapter": "CH-MATHEMATICS-4E-LITERAL",
+    "skill": "SK-ENR-MATHEMATICS-4E-LITERAL-REDUCE",
+    "content_type": "assessment",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-LITERAL-REDUCE-ASSESSMENT-20260726105623-1",
+      "content_id": 106964,
+      "version_id": 106966,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 98,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 2,
+    "completes_tier_1": true
+  },
+  {
+    "sequence": 45,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "chapter": "CH-MATHEMATICS-4E-LITERAL",
+    "skill": "SK-ENR-MATHEMATICS-4E-LITERAL-SUBSTITUTE",
+    "content_type": "practice",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-LITERAL-SUBSTITUTE-PRACTICE-20260726105626-1",
+      "content_id": 106968,
+      "version_id": 106970,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 98,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 2,
+    "completes_tier_1": false
+  },
+  {
+    "sequence": 46,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "chapter": "CH-MATHEMATICS-4E-LITERAL",
+    "skill": "SK-ENR-MATHEMATICS-4E-LITERAL-SUBSTITUTE",
+    "content_type": "assessment",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-LITERAL-SUBSTITUTE-ASSESSMENT-20260726105629-1",
+      "content_id": 106976,
+      "version_id": 106978,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 98,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 2,
+    "completes_tier_1": true
+  },
+  {
+    "sequence": 47,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "chapter": "CH-MATHEMATICS-4E-POWERS",
+    "skill": "SK-ENR-MATHEMATICS-4E-POWERS-CALCULATE",
+    "content_type": "practice",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-POWERS-CALCULATE-PRACTICE-20260726105634-1",
+      "content_id": 106988,
+      "version_id": 106990,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 98,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 2,
+    "completes_tier_1": false
+  },
+  {
+    "sequence": 48,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "chapter": "CH-MATHEMATICS-4E-POWERS",
+    "skill": "SK-ENR-MATHEMATICS-4E-POWERS-CALCULATE",
+    "content_type": "assessment",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-POWERS-CALCULATE-ASSESSMENT-20260726105637-1",
+      "content_id": 107008,
+      "version_id": 107010,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 98,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 2,
+    "completes_tier_1": true
+  },
+  {
+    "sequence": 49,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "chapter": "CH-MATHEMATICS-4E-POWERS",
+    "skill": "SK-ENR-MATHEMATICS-4E-POWERS-RULES",
+    "content_type": "practice",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-POWERS-RULES-PRACTICE-20260726105646-1",
+      "content_id": 107020,
+      "version_id": 107022,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 98,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 2,
+    "completes_tier_1": false
+  },
+  {
+    "sequence": 50,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "chapter": "CH-MATHEMATICS-4E-POWERS",
+    "skill": "SK-ENR-MATHEMATICS-4E-POWERS-RULES",
+    "content_type": "assessment",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-POWERS-RULES-ASSESSMENT-20260726105714-1",
+      "content_id": 107096,
+      "version_id": 107098,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 98,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 2,
+    "completes_tier_1": true
+  },
+  {
+    "sequence": 51,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "chapter": "CH-MATHEMATICS-4E-POWERS",
+    "skill": "SK-ENR-MATHEMATICS-4E-POWERS-TEN",
+    "content_type": "practice",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-POWERS-TEN-PRACTICE-20260726105711-1",
+      "content_id": 107092,
+      "version_id": 107094,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 98,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 2,
+    "completes_tier_1": false
+  },
+  {
+    "sequence": 52,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "chapter": "CH-MATHEMATICS-4E-POWERS",
+    "skill": "SK-ENR-MATHEMATICS-4E-POWERS-TEN",
+    "content_type": "assessment",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-POWERS-TEN-ASSESSMENT-20260726105706-1",
+      "content_id": 107072,
+      "version_id": 107074,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 98,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 2,
+    "completes_tier_1": true
+  },
+  {
+    "sequence": 53,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "chapter": "CH-MATHEMATICS-4E-PROP",
+    "skill": "SK-ENR-MATHEMATICS-4E-PROP-PERCENT",
+    "content_type": "practice",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-PROP-PERCENT-PRACTICE-20260726105721-1",
+      "content_id": 107112,
+      "version_id": 107114,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 98,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 2,
+    "completes_tier_1": false
+  },
+  {
+    "sequence": 54,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "chapter": "CH-MATHEMATICS-4E-PROP",
+    "skill": "SK-ENR-MATHEMATICS-4E-PROP-PERCENT",
+    "content_type": "assessment",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-PROP-PERCENT-ASSESSMENT-20260726105724-1",
+      "content_id": 107124,
+      "version_id": 107126,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 98,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 2,
+    "completes_tier_1": true
+  },
+  {
+    "sequence": 55,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "chapter": "CH-MATHEMATICS-4E-PROP",
+    "skill": "SK-ENR-MATHEMATICS-4E-PROP-PRODUCT",
+    "content_type": "practice",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-PROP-PRODUCT-PRACTICE-20260726105734-1",
+      "content_id": 107148,
+      "version_id": 107150,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 98,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 2,
+    "completes_tier_1": false
+  },
+  {
+    "sequence": 56,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "chapter": "CH-MATHEMATICS-4E-PROP",
+    "skill": "SK-ENR-MATHEMATICS-4E-PROP-PRODUCT",
+    "content_type": "assessment",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-PROP-PRODUCT-ASSESSMENT-20260726105731-1",
+      "content_id": 107140,
+      "version_id": 107142,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 98,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 2,
+    "completes_tier_1": true
+  },
+  {
+    "sequence": 57,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "chapter": "CH-MATHEMATICS-4E-PROP",
+    "skill": "SK-ENR-MATHEMATICS-4E-PROP-SCALE",
+    "content_type": "practice",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-PROP-SCALE-PRACTICE-20260726105738-1",
+      "content_id": 107160,
+      "version_id": 107162,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 98,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 2,
+    "completes_tier_1": false
+  },
+  {
+    "sequence": 58,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "chapter": "CH-MATHEMATICS-4E-PROP",
+    "skill": "SK-ENR-MATHEMATICS-4E-PROP-SCALE",
+    "content_type": "assessment",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-PROP-SCALE-ASSESSMENT-20260726105739-1",
+      "content_id": 107164,
+      "version_id": 107166,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 98,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 2,
+    "completes_tier_1": true
+  },
+  {
+    "sequence": 59,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "chapter": "CH-MATHEMATICS-4E-PYTH",
+    "skill": "SK-ENR-MATHEMATICS-4E-PYTH-CALCULATE",
+    "content_type": "practice",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-PYTH-CALCULATE-PRACTICE-20260726105746-1",
+      "content_id": 107188,
+      "version_id": 107190,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 98,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 2,
+    "completes_tier_1": false
+  },
+  {
+    "sequence": 60,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "chapter": "CH-MATHEMATICS-4E-PYTH",
+    "skill": "SK-ENR-MATHEMATICS-4E-PYTH-CALCULATE",
+    "content_type": "assessment",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-PYTH-CALCULATE-ASSESSMENT-20260726105748-1",
+      "content_id": 107192,
+      "version_id": 107194,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 98,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 2,
+    "completes_tier_1": true
+  },
+  {
+    "sequence": 61,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "chapter": "CH-MATHEMATICS-4E-RELNUM",
+    "skill": "SK-ENR-MATHEMATICS-4E-RELNUM-CHAIN",
+    "content_type": "practice",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-RELNUM-CHAIN-PRACTICE-20260726105907-1",
+      "content_id": 107232,
+      "version_id": 107234,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 98,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 2,
+    "completes_tier_1": false
+  },
+  {
+    "sequence": 62,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "chapter": "CH-MATHEMATICS-4E-RELNUM",
+    "skill": "SK-ENR-MATHEMATICS-4E-RELNUM-CHAIN",
+    "content_type": "assessment",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-RELNUM-CHAIN-ASSESSMENT-20260726105910-1",
+      "content_id": 107264,
+      "version_id": 107266,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 98,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 2,
+    "completes_tier_1": true
+  },
+  {
+    "sequence": 63,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "chapter": "CH-MATHEMATICS-4E-RELNUM",
+    "skill": "SK-ENR-MATHEMATICS-4E-RELNUM-MULTIPLY",
+    "content_type": "practice",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-RELNUM-MULTIPLY-PRACTICE-20260726105908-1",
+      "content_id": 107240,
+      "version_id": 107242,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 98,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 2,
+    "completes_tier_1": false
+  },
+  {
+    "sequence": 64,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "chapter": "CH-MATHEMATICS-4E-RELNUM",
+    "skill": "SK-ENR-MATHEMATICS-4E-RELNUM-MULTIPLY",
+    "content_type": "assessment",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-RELNUM-MULTIPLY-ASSESSMENT-20260726105910-1",
+      "content_id": 107260,
+      "version_id": 107262,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 98,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 2,
+    "completes_tier_1": true
+  },
+  {
+    "sequence": 65,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "chapter": "CH-MATHEMATICS-4E-RELNUM",
+    "skill": "SK-ENR-MATHEMATICS-4E-RELNUM-PROBLEM",
+    "content_type": "practice",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-RELNUM-PROBLEM-PRACTICE-20260726105917-1",
+      "content_id": 107276,
+      "version_id": 107278,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 98,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 2,
+    "completes_tier_1": false
+  },
+  {
+    "sequence": 66,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "chapter": "CH-MATHEMATICS-4E-RELNUM",
+    "skill": "SK-ENR-MATHEMATICS-4E-RELNUM-PROBLEM",
+    "content_type": "assessment",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-RELNUM-PROBLEM-ASSESSMENT-20260726105920-1",
+      "content_id": 107280,
+      "version_id": 107282,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 98,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 2,
+    "completes_tier_1": true
+  },
+  {
+    "sequence": 67,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "chapter": "CH-MATHEMATICS-4E-STATS",
+    "skill": "SK-ENR-MATHEMATICS-4E-STATS-FREQUENCY",
+    "content_type": "practice",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-STATS-FREQUENCY-PRACTICE-20260726105940-1",
+      "content_id": 107340,
+      "version_id": 107342,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 98,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 2,
+    "completes_tier_1": false
+  },
+  {
+    "sequence": 68,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "chapter": "CH-MATHEMATICS-4E-STATS",
+    "skill": "SK-ENR-MATHEMATICS-4E-STATS-FREQUENCY",
+    "content_type": "assessment",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-STATS-FREQUENCY-ASSESSMENT-20260726105938-1",
+      "content_id": 107336,
+      "version_id": 107338,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 98,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 2,
+    "completes_tier_1": true
+  },
+  {
+    "sequence": 69,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "chapter": "CH-MATHEMATICS-4E-STATS",
+    "skill": "SK-ENR-MATHEMATICS-4E-STATS-MEAN",
+    "content_type": "practice",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-STATS-MEAN-PRACTICE-20260726105948-1",
+      "content_id": 107364,
+      "version_id": 107366,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 98,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 2,
+    "completes_tier_1": false
+  },
+  {
+    "sequence": 70,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "chapter": "CH-MATHEMATICS-4E-STATS",
+    "skill": "SK-ENR-MATHEMATICS-4E-STATS-MEAN",
+    "content_type": "assessment",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-STATS-MEAN-ASSESSMENT-20260726105948-1",
+      "content_id": 107360,
+      "version_id": 107362,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 98,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 2,
+    "completes_tier_1": true
+  },
+  {
+    "sequence": 71,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "chapter": "CH-MATHEMATICS-4E-VOLUMES",
+    "skill": "SK-ENR-MATHEMATICS-4E-VOLUMES-CONVERT",
+    "content_type": "practice",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-VOLUMES-CONVERT-PRACTICE-20260726110012-1",
+      "content_id": 107416,
+      "version_id": 107418,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 98,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 2,
+    "completes_tier_1": false
+  },
+  {
+    "sequence": 72,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "chapter": "CH-MATHEMATICS-4E-VOLUMES",
+    "skill": "SK-ENR-MATHEMATICS-4E-VOLUMES-CONVERT",
+    "content_type": "assessment",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-VOLUMES-CONVERT-ASSESSMENT-20260726110013-1",
+      "content_id": 107420,
+      "version_id": 107422,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 98,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 2,
+    "completes_tier_1": true
+  },
+  {
+    "sequence": 73,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "chapter": "CH-MATHEMATICS-4E-VOLUMES",
+    "skill": "SK-ENR-MATHEMATICS-4E-VOLUMES-CYLINDER",
+    "content_type": "practice",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-VOLUMES-CYLINDER-PRACTICE-20260726110024-1",
+      "content_id": 107448,
+      "version_id": 107450,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 98,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 2,
+    "completes_tier_1": false
+  },
+  {
+    "sequence": 74,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "chapter": "CH-MATHEMATICS-4E-VOLUMES",
+    "skill": "SK-ENR-MATHEMATICS-4E-VOLUMES-CYLINDER",
+    "content_type": "assessment",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-VOLUMES-CYLINDER-ASSESSMENT-20260726110023-1",
+      "content_id": 107444,
+      "version_id": 107446,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 98,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 2,
+    "completes_tier_1": true
+  },
+  {
+    "sequence": 75,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "chapter": "CH-MATHEMATICS-4E-VOLUMES",
+    "skill": "SK-ENR-MATHEMATICS-4E-VOLUMES-MODEL",
+    "content_type": "practice",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-VOLUMES-MODEL-PRACTICE-20260726110032-1",
+      "content_id": 107476,
+      "version_id": 107478,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 98,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 2,
+    "completes_tier_1": false
+  },
+  {
+    "sequence": 76,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "chapter": "CH-MATHEMATICS-4E-VOLUMES",
+    "skill": "SK-ENR-MATHEMATICS-4E-VOLUMES-MODEL",
+    "content_type": "assessment",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-VOLUMES-MODEL-ASSESSMENT-20260726110031-1",
+      "content_id": 107468,
+      "version_id": 107470,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 98,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 2,
+    "completes_tier_1": true
+  },
+  {
+    "sequence": 77,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "chapter": "CH-MATHEMATICS-4E-VOLUMES",
+    "skill": "SK-ENR-MATHEMATICS-4E-VOLUMES-PRISM",
+    "content_type": "practice",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-VOLUMES-PRISM-PRACTICE-20260726110036-1",
+      "content_id": 107488,
+      "version_id": 107490,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 98,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 2,
+    "completes_tier_1": false
+  },
+  {
+    "sequence": 78,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "chapter": "CH-MATHEMATICS-4E-VOLUMES",
+    "skill": "SK-ENR-MATHEMATICS-4E-VOLUMES-PRISM",
+    "content_type": "assessment",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-VOLUMES-PRISM-ASSESSMENT-20260726110031-1",
+      "content_id": 107472,
+      "version_id": 107474,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 98,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 2,
+    "completes_tier_1": true
+  },
+  {
+    "sequence": 79,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "chapter": "CH-MATHEMATICS-4E-VOLUMES",
+    "skill": "SK-ENR-MATHEMATICS-4E-VOLUMES-PROBLEM",
+    "content_type": "practice",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-VOLUMES-PROBLEM-PRACTICE-20260726110039-1",
+      "content_id": 107496,
+      "version_id": 107498,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 98,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 2,
+    "completes_tier_1": false
+  },
+  {
+    "sequence": 80,
+    "grade": "FR-4E",
+    "subject": "MATHEMATICS",
+    "chapter": "CH-MATHEMATICS-4E-VOLUMES",
+    "skill": "SK-ENR-MATHEMATICS-4E-VOLUMES-PROBLEM",
+    "content_type": "assessment",
+    "candidate": {
+      "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-VOLUMES-PROBLEM-ASSESSMENT-20260726110040-1",
+      "content_id": 107500,
+      "version_id": 107502,
+      "quality": "PASS",
+      "hard_gates_passed": true,
+      "score": 98,
+      "recommendation": "APPROVE"
+    },
+    "approvals_required_for_skill": 2,
+    "completes_tier_1": true
+  }
+]
