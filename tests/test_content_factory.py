@@ -112,6 +112,30 @@ def test_candidate_validation_detects_schema_answer_and_security_errors() -> Non
     assert {issue.code for issue in report.issues} >= {"missing_explanation", "answer_contradiction", "unsafe_content"}
 
 
+def test_validator_accepts_one_numeric_value_with_decimal_comma_and_unit() -> None:
+    item = candidate(answer=AnswerSpecification(AnswerKind.NUMERIC, "43,35 €", independently_computed="43.35"))
+    assert CandidateValidator().validate(item).valid
+
+
+def test_validator_rejects_explanation_or_list_in_numeric_answer() -> None:
+    verbose = candidate(
+        answer=AnswerSpecification(
+            AnswerKind.NUMERIC,
+            "43,35 € avec le calcul 42,50 × 1,02",
+            independently_computed="43.35",
+        )
+    )
+    listed = candidate(
+        answer=AnswerSpecification(
+            AnswerKind.NUMERIC,
+            "288, 486, 648",
+            independently_computed="288, 486, 648",
+        )
+    )
+    assert "invalid_numeric_format" in {issue.code for issue in CandidateValidator().validate(verbose).issues}
+    assert "invalid_numeric_format" in {issue.code for issue in CandidateValidator().validate(listed).issues}
+
+
 def test_choice_answer_validation_is_deterministic() -> None:
     broken = candidate(answer=AnswerSpecification(AnswerKind.SINGLE_CHOICE, "C", ("A", "A")))
     assert {issue.code for issue in CandidateValidator().validate(broken).issues} == {

@@ -1,0 +1,13 @@
+{
+  "exact_duplicate_groups": 0,
+  "normalized_duplicate_groups": 0,
+  "near_duplicate_pairs": [
+    {
+      "left": "DRAFT-0012C-AI-ENR-ENGLISH-3E-PAST-RECOGNIZE-ASSESSMENT-20260726110247-1",
+      "right": "DRAFT-0012C-AI-ENR-ENGLISH-3E-PAST-RECOGNIZE-PRACTICE-20260726110306-1",
+      "similarity": 0.8991,
+      "intentional_variant": false
+    }
+  ],
+  "intentional_near_variants": 0
+}

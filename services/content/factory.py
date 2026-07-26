@@ -124,16 +124,20 @@ class CandidateValidator:
         if answer.independently_computed is not None:
             consistent = answer.expected == answer.independently_computed
             if answer.kind is AnswerKind.NUMERIC:
-                try:
-                    consistent = math.isclose(
-                        float(answer.expected),
-                        float(answer.independently_computed),
-                        abs_tol=answer.tolerance or 0.0,
-                    )
-                except (TypeError, ValueError):
+                numeric_expected = _numeric_value(answer.expected)
+                independently_computed = _numeric_value(answer.independently_computed)
+                if numeric_expected is None or independently_computed is None:
                     consistent = False
+                else:
+                    consistent = math.isclose(
+                        numeric_expected,
+                        independently_computed,
+                        abs_tol=answer.tolerance or _rounding_tolerance(answer.expected),
+                    )
             if not consistent:
                 issues.append(self._issue("answer", "answer_contradiction", "Independent computation disagrees"))
+        if answer.kind is AnswerKind.NUMERIC and _numeric_value(answer.expected) is None:
+            issues.append(self._issue("answer", "invalid_numeric_format", "Numeric answer must contain one value"))
         if answer.kind in {AnswerKind.SINGLE_CHOICE, AnswerKind.MULTIPLE_CHOICE}:
             normalized = [normalized_content_fingerprint(option) for option in answer.options]
             if len(normalized) < 2 or len(set(normalized)) != len(normalized):
@@ -143,6 +147,37 @@ class CandidateValidator:
             )
             if not expected.issubset(set(answer.options)):
                 issues.append(self._issue("answer", "answer_not_in_choices", "Correct answer must reference a choice"))
+
+
+_NUMERIC_ANSWER = re.compile(
+    r"^\s*(-?\d+(?:[.,]\d+)?(?:\s*/\s*-?\d+(?:[.,]\d+)?)?)"
+    r"\s*(?:€|%|°|[A-Za-zÀ-ÿ]+(?:[²³])?(?:/[A-Za-zÀ-ÿ]+(?:[²³])?)?)?"
+    r"(?:\s*\(arrondi[^)]*\))?\s*$",
+    re.IGNORECASE,
+)
+
+
+def _numeric_value(value: object) -> float | None:
+    match = _NUMERIC_ANSWER.fullmatch(str(value))
+    if match is None:
+        return None
+    raw = match.group(1).replace(" ", "").replace(",", ".")
+    try:
+        if "/" in raw:
+            numerator, denominator = raw.split("/", 1)
+            return float(numerator) / float(denominator)
+        return float(raw)
+    except (ValueError, ZeroDivisionError):
+        return None
+
+
+def _rounding_tolerance(value: object) -> float:
+    match = _NUMERIC_ANSWER.fullmatch(str(value))
+    if match is None or "/" in match.group(1):
+        return 0.0
+    normalized = match.group(1).replace(",", ".")
+    decimals = len(normalized.rsplit(".", 1)[1]) if "." in normalized else 0
+    return 0.5 * 10 ** (-decimals)
 
 
 class QualityAssessor:

@@ -6,8 +6,15 @@ import json
 from pathlib import Path
 from typing import Any
 
-from domain.content.factory import LEGACY_CONTENT_TYPE_MAP, GeneratedContentCandidate, normalized_content_fingerprint
+from domain.content.factory import (
+    LEGACY_CONTENT_TYPE_MAP,
+    CanonicalContentType,
+    CurriculumTarget,
+    GeneratedContentCandidate,
+    normalized_content_fingerprint,
+)
 from infrastructure.database.v2 import connect_v2
+from services.content.expansion import ActiveSkillCoverage, ContentSlot
 from services.content.factory import CoverageRow
 
 
@@ -333,6 +340,129 @@ class DuckDBContentFactoryRepository:
             }
         finally:
             connection.close()
+
+    def active_skill_coverage(
+        self, grade_codes: tuple[str, ...] = ("FR-4E", "FR-3E")
+    ) -> tuple[ActiveSkillCoverage, ...]:
+        """Return authoritative active placements with Approved and Draft slots."""
+        connection = connect_v2(self.database_path, read_only=True)
+        try:
+            active = connection.execute(
+                """
+                SELECT p.code, sl.code, sl.label, su.code, su.default_label, cc.stable_code,
+                       cc.title, s.id, s.code, s.default_label,
+                       count(DISTINCT downstream.target_skill_id)
+                FROM curriculum_skill_details csd
+                JOIN curriculum_chapters cc ON cc.id=csd.chapter_id
+                JOIN programs p ON p.id=cc.program_id
+                JOIN school_levels sl ON sl.id=cc.grade_level_id
+                JOIN subjects su ON su.id=cc.subject_id
+                JOIN skills s ON s.id=csd.skill_id
+                LEFT JOIN curriculum_skill_relations downstream
+                    ON downstream.prerequisite_skill_id=s.id AND downstream.active
+                WHERE csd.status='approved' AND cc.status='approved'
+                  AND sl.code IN (SELECT unnest(?))
+                GROUP BY ALL
+                """,
+                [list(grade_codes)],
+            ).fetchall()
+            subskills: dict[int, list[tuple[str, str]]] = {}
+            for skill_id, code, label in connection.execute(
+                """
+                SELECT DISTINCT s.id, ss.code, ss.default_label
+                FROM skills s JOIN subskills ss ON ss.skill_id=s.id
+                """
+            ).fetchall():
+                subskills.setdefault(int(skill_id), []).append((str(code), str(label)))
+            prerequisites: dict[int, set[str]] = {}
+            for skill_id, code in connection.execute(
+                """
+                SELECT relation.target_skill_id, prerequisite.code
+                FROM curriculum_skill_relations relation
+                JOIN skills prerequisite ON prerequisite.id=relation.prerequisite_skill_id
+                WHERE relation.active
+                UNION
+                SELECT relation.skill_id, prerequisite.code
+                FROM skill_prerequisites relation
+                JOIN skills prerequisite ON prerequisite.id=relation.prerequisite_skill_id
+                """
+            ).fetchall():
+                prerequisites.setdefault(int(skill_id), set()).add(str(code))
+            approved_rows = connection.execute(
+                """
+                SELECT sl.code, cc.stable_code, alc.skill_id, alc.content_type,
+                       alc.difficulty, count(DISTINCT alc.content_id)
+                FROM approved_learning_catalog alc
+                JOIN curriculum_chapters cc ON cc.id=alc.chapter_id
+                JOIN school_levels sl ON sl.id=cc.grade_level_id
+                WHERE sl.code IN (SELECT unnest(?))
+                GROUP BY ALL
+                """,
+                [list(grade_codes)],
+            ).fetchall()
+            draft_rows = connection.execute(
+                """
+                SELECT json_extract_string(cv.payload, '$.curriculum_target.grade_code'),
+                       json_extract_string(cv.payload, '$.curriculum_target.chapter_code'),
+                       qs.skill_id,
+                       json_extract_string(cv.payload, '$.canonical_content_type'),
+                       e.difficulty,
+                       count(DISTINCT e.id)
+                FROM exercises e
+                JOIN exercise_questions eq ON eq.exercise_id=e.id
+                JOIN question_skills qs ON qs.question_id=eq.question_id AND qs.is_primary
+                JOIN content_versions cv ON cv.entity_type='exercise' AND cv.entity_id=e.id
+                WHERE e.status='draft' AND cv.status='draft'
+                  AND json_extract_string(cv.payload, '$.curriculum_target.grade_code')
+                      IN (SELECT unnest(?))
+                GROUP BY ALL
+                """,
+                [list(grade_codes)],
+            ).fetchall()
+        finally:
+            connection.close()
+        approved = _slot_counts(approved_rows)
+        drafts = _slot_counts(draft_rows)
+        return tuple(
+            ActiveSkillCoverage(
+                target=_curriculum_target(row),
+                grade_label=str(row[2]),
+                subject_label=str(row[4]),
+                chapter_label=str(row[6]),
+                skill_label=str(row[9]),
+                subskills=tuple(sorted(subskills.get(int(row[7]), ()))),
+                prerequisites=tuple(sorted(prerequisites.get(int(row[7]), ()))),
+                downstream_dependencies=int(row[10]),
+                approved=approved.get((str(row[1]), str(row[5]), int(row[7])), {}),
+                draft=drafts.get((str(row[1]), str(row[5]), int(row[7])), {}),
+            )
+            for row in active
+        )
+
+
+def _slot_counts(rows: list[tuple[Any, ...]]) -> dict[tuple[str, str, int], dict[ContentSlot, int]]:
+    grouped: dict[tuple[str, str, int], dict[ContentSlot, int]] = {}
+    for grade, chapter, skill_id, raw_type, difficulty, count in rows:
+        if raw_type is None or difficulty is None:
+            continue
+        value = str(raw_type)
+        content_type = (
+            LEGACY_CONTENT_TYPE_MAP[value] if value in LEGACY_CONTENT_TYPE_MAP else CanonicalContentType(value)
+        )
+        key = (str(grade), str(chapter), int(skill_id))
+        slot = ContentSlot(content_type, int(difficulty))
+        grouped.setdefault(key, {})[slot] = int(count)
+    return grouped
+
+
+def _curriculum_target(row: tuple[Any, ...]) -> CurriculumTarget:
+    return CurriculumTarget(
+        program_code=str(row[0]),
+        grade_code=str(row[1]),
+        subject_code=str(row[3]),
+        chapter_code=str(row[5]),
+        primary_skill_code=str(row[8]),
+    )
 
 
 def _legacy_answer_type(kind: str) -> str:

@@ -26,6 +26,7 @@ class _GeneratedItem(BaseModel):
     prompt: str
     answer_kind: str
     expected_answer: str
+    expected_answers: list[str] = Field(default_factory=list)
     options: list[str] = Field(default_factory=list)
     independently_computed_answer: str | None = None
     explanation: str
@@ -51,6 +52,11 @@ class OpenAIContentGenerator:
         *,
         model: str | None = None,
         template_path: Path | None = None,
+        candidate_prefix: str = "PILOT-0012B-AI",
+        specification_version: str = "lcai-0012b-generation-spec-v1",
+        template_version: str = "lcai-0012b-prompt-v1",
+        curriculum_version: str = "phase2-lcai-0011c",
+        metadata: dict[str, Any] | None = None,
     ) -> None:
         from openai import OpenAI
 
@@ -60,6 +66,11 @@ class OpenAIContentGenerator:
         self.template_path = template_path or (
             Path(__file__).resolve().parents[2] / "resources" / "content" / "pilot" / "prompts" / "lcai_0012b_v1.txt"
         )
+        self.candidate_prefix = candidate_prefix
+        self.specification_version = specification_version
+        self.template_version = template_version
+        self.curriculum_version = curriculum_version
+        self.metadata = metadata or {"review_required": True, "real_generation_pilot": True}
 
     def generate(self, request: ContentGenerationRequest) -> tuple[GeneratedContentCandidate, ...]:
         context = self.context_provider.generation_context(request.target)
@@ -134,16 +145,19 @@ class OpenAIContentGenerator:
         except ValueError as error:
             raise ValueError(f"Unsupported generated answer kind: {item.answer_kind}") from error
         independently_computed = item.independently_computed_answer if answer_kind is AnswerKind.NUMERIC else None
+        expected_answer: Any = (
+            item.expected_answers if answer_kind is AnswerKind.MULTIPLE_CHOICE else item.expected_answer
+        )
         suffix = request.target.primary_skill_code.removeprefix("SK-").replace("_", "-")
         timestamp = generated_at.strftime("%Y%m%d%H%M%S")
         return GeneratedContentCandidate(
-            code=f"PILOT-0012B-AI-{suffix}-{request.content_type.value.upper()}-{timestamp}-{index}",
+            code=f"{self.candidate_prefix}-{suffix}-{request.content_type.value.upper()}-{timestamp}-{index}",
             title=item.title,
             instructions=item.instructions,
             prompt=item.prompt,
             answer=AnswerSpecification(
                 answer_kind,
-                item.expected_answer,
+                expected_answer,
                 tuple(item.options),
                 independently_computed=independently_computed,
             ),
@@ -155,9 +169,9 @@ class OpenAIContentGenerator:
             provenance=GenerationProvenance(
                 "openai_structured_output",
                 self.model,
-                "lcai-0012b-generation-spec-v1",
-                "lcai-0012b-prompt-v1",
-                "phase2-lcai-0011c",
+                self.specification_version,
+                self.template_version,
+                self.curriculum_version,
                 generated_at,
                 latency_ms,
                 usage,
@@ -173,7 +187,6 @@ class OpenAIContentGenerator:
             language_code=request.language_code,
             metadata={
                 "difficulty_justification": item.difficulty_justification,
-                "review_required": True,
-                "real_generation_pilot": True,
+                **self.metadata,
             },
         )
