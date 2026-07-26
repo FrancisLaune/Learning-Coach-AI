@@ -141,12 +141,21 @@ def session_screen(controller: StudentExperienceController, learner_id: int) -> 
             st.markdown(f"### {question.statement}")
             answer_key = f"answer_{question.session_id}_{question.question_id}"
             if question.options:
-                answer = st.radio(
-                    "Ta réponse",
-                    [item[0] for item in question.options],
-                    format_func=dict(question.options).__getitem__,
-                    key=answer_key,
-                )
+                option_codes = [item[0] for item in question.options]
+                if question.response_type.casefold() in {"multiple_choice", "mcq_multi"}:
+                    answer = st.multiselect(
+                        "Tes réponses",
+                        option_codes,
+                        format_func=dict(question.options).__getitem__,
+                        key=answer_key,
+                    )
+                else:
+                    answer = st.radio(
+                        "Ta réponse",
+                        option_codes,
+                        format_func=dict(question.options).__getitem__,
+                        key=answer_key,
+                    )
             else:
                 answer = st.text_input("Ta réponse", key=answer_key)
             if question.hints:

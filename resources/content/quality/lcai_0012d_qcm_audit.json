@@ -1,0 +1,2042 @@
+[
+  {
+    "code": "DRAFT-0012C-AI-EMC-4E-INFORMATION-ASSESSMENT-20260726110914-1",
+    "content_id": 108440,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-EMC-4E-LIBERTIES-ASSESSMENT-20260726110931-1",
+    "content_id": 108488,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-EMC-3E-DEMOCRACY-INSTITUTION-ASSESSMENT-20260726110147-1",
+    "content_id": 107536,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-EMC-3E-DEMOCRACY-LAW-ASSESSMENT-20260726110151-1",
+    "content_id": 107576,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-EMC-3E-ENGAGEMENT-MOTIVE-PRACTICE-20260726110205-1",
+    "content_id": 107584,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-EMC-3E-ENGAGEMENT-SECURITY-PRACTICE-20260726110211-1",
+    "content_id": 107616,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-EMC-4E-INFORMATION-ARGUMENT-ASSESSMENT-20260726110921-1",
+    "content_id": 108476,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-EMC-4E-INFORMATION-ARGUMENT-PRACTICE-20260726110918-1",
+    "content_id": 108468,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-EMC-4E-INFORMATION-IMAGE-PRACTICE-20260726110917-1",
+    "content_id": 108460,
+    "kind": "single_choice",
+    "choices": 3,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-EMC-4E-INFORMATION-PUBLISH-ASSESSMENT-20260726110916-1",
+    "content_id": 108456,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-EMC-4E-INFORMATION-SOURCE-ASSESSMENT-20260726110915-1",
+    "content_id": 108448,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-EMC-4E-INFORMATION-SOURCE-PRACTICE-20260726110917-1",
+    "content_id": 108464,
+    "kind": "single_choice",
+    "choices": 3,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-EMC-4E-LIBERTIES-BALANCE-ASSESSMENT-20260726110936-1",
+    "content_id": 108512,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-EMC-4E-LIBERTIES-BALANCE-PRACTICE-20260726110935-1",
+    "content_id": 108504,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-EMC-4E-LIBERTIES-LAW-ASSESSMENT-20260726110930-1",
+    "content_id": 108492,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-EMC-4E-LIBERTIES-LIBERTY-ASSESSMENT-20260726110934-1",
+    "content_id": 108500,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-ENGLISH-3E-COMMUNICATION-LISTEN-ASSESSMENT-20260726110228-1",
+    "content_id": 107644,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-ENGLISH-3E-COMMUNICATION-LISTEN-PRACTICE-20260726110229-1",
+    "content_id": 107648,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-ENGLISH-3E-COMMUNICATION-READ-ASSESSMENT-20260726110233-1",
+    "content_id": 107664,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-ENGLISH-3E-COMMUNICATION-READ-PRACTICE-20260726110239-1",
+    "content_id": 107676,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-ENGLISH-3E-PAST-RECOGNIZE-ASSESSMENT-20260726110247-1",
+    "content_id": 107692,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-ENGLISH-3E-PAST-RECOGNIZE-PRACTICE-20260726110306-1",
+    "content_id": 107732,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-ENGLISH-4E-COMMUNICATION-LISTEN-ASSESSMENT-20260726110954-1",
+    "content_id": 108548,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-ENGLISH-4E-COMMUNICATION-READ-ASSESSMENT-20260726111002-1",
+    "content_id": 108564,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-ENGLISH-4E-COMMUNICATION-READ-PRACTICE-20260726111002-1",
+    "content_id": 108568,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-ENGLISH-4E-LANGUAGE-GRAMMAR-PRACTICE-20260726111006-1",
+    "content_id": 108580,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-ENGLISH-4E-LANGUAGE-TENSE-ASSESSMENT-20260726111029-1",
+    "content_id": 108632,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-ENGLISH-4E-LANGUAGE-VOCAB-ASSESSMENT-20260726111018-1",
+    "content_id": 108608,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-3E-ARGUMENT-EXAMPLE-ASSESSMENT-20260726091635-1",
+    "content_id": 104884,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-3E-ARGUMENT-EXAMPLE-PRACTICE-20260726091632-1",
+    "content_id": 104880,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-3E-ARGUMENT-EXAMPLE-PRACTICE-20260726091636-1",
+    "content_id": 104888,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-3E-ARGUMENT-THESIS-PRACTICE-20260726091659-1",
+    "content_id": 104908,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-3E-ARGUMENT-THESIS-PRACTICE-20260726091706-1",
+    "content_id": 104912,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-3E-BREVETWRITE-COHESION-ASSESSMENT-20260726091817-1",
+    "content_id": 104972,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-3E-BREVETWRITE-COHESION-PRACTICE-20260726091810-1",
+    "content_id": 104964,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-3E-BREVETWRITE-LANGUAGE-ASSESSMENT-20260726091857-1",
+    "content_id": 105008,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-3E-CLAUSES-CIRCUMSTANTIAL-ASSESSMENT-20260726091944-1",
+    "content_id": 105060,
+    "kind": "single_choice",
+    "choices": 6,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-3E-REWRITE-GRAMMAR-ASSESSMENT-20260726092246-1",
+    "content_id": 105172,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-3E-TENSES-CONCORDANCE-PRACTICE-20260726092411-1",
+    "content_id": 105256,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-3E-TENSES-CONDITION-ASSESSMENT-20260726092439-1",
+    "content_id": 105280,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-3E-TEXTANALYSIS-EXPLICIT-PRACTICE-20260726092625-1",
+    "content_id": 105372,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-3E-TEXTANALYSIS-INFER-PRACTICE-20260726092633-1",
+    "content_id": 105384,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-3E-TEXTANALYSIS-INFER-REMEDIATION-20260726092637-1",
+    "content_id": 105392,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-COMPREHENSION-EXPLICIT-ASSESSMENT-20260726104915-1",
+    "content_id": 106272,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-COMPREHENSION-EXPLICIT-PRACTICE-20260726104912-1",
+    "content_id": 106260,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-COMPREHENSION-EXPLICIT-PRACTICE-20260726104915-1",
+    "content_id": 106268,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-COMPREHENSION-INFER-ASSESSMENT-20260726104913-1",
+    "content_id": 106264,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-COMPREHENSION-INFER-PRACTICE-20260726104916-1",
+    "content_id": 106276,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-COMPREHENSION-INFER-PRACTICE-20260726104919-1",
+    "content_id": 106284,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-COMPREHENSION-METHOD-ASSESSMENT-20260726104929-1",
+    "content_id": 106300,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-COMPREHENSION-METHOD-PRACTICE-20260726104931-1",
+    "content_id": 106312,
+    "kind": "single_choice",
+    "choices": 5,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-COMPREHENSION-VIEWPOINT-ASSESSMENT-20260726104936-1",
+    "content_id": 106324,
+    "kind": "single_choice",
+    "choices": 5,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-COMPREHENSION-VIEWPOINT-PRACTICE-20260726104939-1",
+    "content_id": 106328,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-CONJUGATION-INDICATIVE-ASSESSMENT-20260726104959-1",
+    "content_id": 106372,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-CONJUGATION-SUBJUNCTIVE-ASSESSMENT-20260726105012-1",
+    "content_id": 106400,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-CONJUGATION-SUBJUNCTIVE-PRACTICE-20260726105010-1",
+    "content_id": 106392,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-CONJUGATION-SUBJUNCTIVE-PRACTICE-20260726105019-1",
+    "content_id": 106412,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-CONJUGATION-TENSE-VALUE-ASSESSMENT-20260726105023-1",
+    "content_id": 106424,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-CONJUGATION-TENSE-VALUE-PRACTICE-20260726105021-1",
+    "content_id": 106420,
+    "kind": "single_choice",
+    "choices": 5,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-NARRATIVE-REVISE-ASSESSMENT-20260726105141-1",
+    "content_id": 106576,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-NARRATIVE-TIME-PRACTICE-20260726105147-1",
+    "content_id": 106580,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-NARRATIVE-VIEWPOINT-PRACTICE-20260726105148-1",
+    "content_id": 106584,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-SPELLING-GN-ASSESSMENT-20260726105218-1",
+    "content_id": 106644,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-SPELLING-GN-PRACTICE-20260726105216-1",
+    "content_id": 106632,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-SPELLING-GN-PRACTICE-20260726105222-1",
+    "content_id": 106648,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-SPELLING-PARTICIPLE-PRACTICE-20260726105436-1",
+    "content_id": 106664,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-SPELLING-SV-ASSESSMENT-20260726105448-1",
+    "content_id": 106692,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-VOCAB-CONTEXT-ASSESSMENT-20260726105504-1",
+    "content_id": 106732,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-VOCAB-CONTEXT-PRACTICE-20260726105502-1",
+    "content_id": 106728,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-VOCAB-CONTEXT-PRACTICE-20260726105504-1",
+    "content_id": 106736,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-VOCAB-FIGURE-ASSESSMENT-20260726105509-1",
+    "content_id": 106752,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-VOCAB-FIGURE-PRACTICE-20260726105508-1",
+    "content_id": 106748,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-VOCAB-FIGURE-PRACTICE-20260726111908-1",
+    "content_id": 109216,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-VOCAB-REGISTER-ASSESSMENT-20260726105519-1",
+    "content_id": 106768,
+    "kind": "single_choice",
+    "choices": 3,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-VOCAB-REUSE-ASSESSMENT-20260726105527-1",
+    "content_id": 106796,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-VOCAB-REUSE-PRACTICE-20260726105526-1",
+    "content_id": 106792,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-VOCAB-REUSE-PRACTICE-20260726105528-1",
+    "content_id": 106800,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-GEOGRAPHY-3E-DEVELOPMENT-INEQUALITY-ASSESSMENT-20260726110307-1",
+    "content_id": 107736,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-GEOGRAPHY-3E-DEVELOPMENT-INEQUALITY-PRACTICE-20260726110306-1",
+    "content_id": 107728,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-GEOGRAPHY-3E-EU-DISPARITY-ASSESSMENT-20260726110321-1",
+    "content_id": 107768,
+    "kind": "single_choice",
+    "choices": 5,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-GEOGRAPHY-3E-EU-WORLD-ASSESSMENT-20260726110334-1",
+    "content_id": 107788,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-GEOGRAPHY-3E-EU-WORLD-PRACTICE-20260726110334-1",
+    "content_id": 107792,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-GEOGRAPHY-3E-GEOSCALE-EUROPEAN-ASSESSMENT-20260726110342-1",
+    "content_id": 107808,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-GEOGRAPHY-3E-GEOSCALE-EUROPEAN-PRACTICE-20260726110344-1",
+    "content_id": 107812,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-GEOGRAPHY-3E-GEOSCALE-GLOBAL-PRACTICE-20260726110349-1",
+    "content_id": 107824,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-GEOGRAPHY-3E-GEOSCALE-NATIONAL-ASSESSMENT-20260726110359-1",
+    "content_id": 107844,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-GEOGRAPHY-4E-GLOBALIZATION-ACTOR-ASSESSMENT-20260726111026-1",
+    "content_id": 108624,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-GEOGRAPHY-4E-GLOBALIZATION-MARITIME-ASSESSMENT-20260726111042-1",
+    "content_id": 108656,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-GEOGRAPHY-4E-MOBILITY-MAP-ASSESSMENT-20260726111054-1",
+    "content_id": 108680,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-GEOGRAPHY-4E-URBANIZATION-LANDSCAPE-ASSESSMENT-20260726111111-1",
+    "content_id": 108724,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-HISTORY-3E-AFTER1945-EUROPE-ASSESSMENT-20260726110427-1",
+    "content_id": 107904,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-HISTORY-3E-AFTER1945-NEW-CONFLICTS-ASSESSMENT-20260726112152-1",
+    "content_id": 109260,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-HISTORY-3E-AFTER1945-NEW-CONFLICTS-PRACTICE-20260726110459-1",
+    "content_id": 107968,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-HISTORY-3E-FRANCE-FIFTH-ASSESSMENT-20260726110442-1",
+    "content_id": 107932,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-HISTORY-3E-FRANCE-FIFTH-PRACTICE-20260726112154-1",
+    "content_id": 109264,
+    "kind": "multiple_choice",
+    "choices": 7,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-HISTORY-3E-HISTREP-LINK-ASSESSMENT-20260726110511-1",
+    "content_id": 108004,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-HISTORY-3E-HISTREP-ORDER-ASSESSMENT-20260726110516-1",
+    "content_id": 108008,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-HISTORY-3E-HISTREP-ORDER-PRACTICE-20260726110518-1",
+    "content_id": 108012,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-HISTORY-3E-HISTREP-PERIODIZE-ASSESSMENT-20260726110521-1",
+    "content_id": 108024,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-HISTORY-3E-HISTREP-PERIODIZE-PRACTICE-20260726110519-1",
+    "content_id": 108016,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-HISTORY-3E-WARS-TOTALITARIAN-ASSESSMENT-20260726110531-1",
+    "content_id": 108040,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-HISTORY-3E-WARS-WWI-ASSESSMENT-20260726110535-1",
+    "content_id": 108052,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-HISTORY-3E-WARS-WWI-PRACTICE-20260726110535-1",
+    "content_id": 108056,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-HISTORY-4E-18TH-ENLIGHTENMENT-ASSESSMENT-20260726111134-1",
+    "content_id": 108776,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-HISTORY-4E-18TH-SLAVERY-ASSESSMENT-20260726111141-1",
+    "content_id": 108788,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-HISTORY-4E-18TH-SOURCE-ASSESSMENT-20260726111143-1",
+    "content_id": 108792,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-HISTORY-4E-18TH-TRADE-PRACTICE-20260726111153-1",
+    "content_id": 108804,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-HISTORY-4E-19TH-MIGRATION-ASSESSMENT-20260726111203-1",
+    "content_id": 108828,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-HISTORY-4E-FRANCE-CULTURE-ASSESSMENT-20260726111218-1",
+    "content_id": 108856,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-HISTORY-4E-FRANCE-REGIMES-ASSESSMENT-20260726111229-1",
+    "content_id": 108884,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-HISTORY-4E-FRANCE-SOCIETY-PRACTICE-20260726111237-1",
+    "content_id": 108904,
+    "kind": "single_choice",
+    "choices": 3,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-ARITH-GCD-ASSESSMENT-20260726094541-1",
+    "content_id": 105496,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-ARITH-GCD-PRACTICE-20260726094535-1",
+    "content_id": 105480,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-BREVETPROB-SELECT-ASSESSMENT-20260726094701-1",
+    "content_id": 105604,
+    "kind": "single_choice",
+    "choices": 5,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-EQUATIONS-INTERPRET-PRACTICE-20260726094717-1",
+    "content_id": 105628,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-EQUATIONS-MODEL-DIAGNOSTIC-20260726094735-1",
+    "content_id": 105672,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-MEDIAN-COMPARE-PRACTICE-20260726094906-1",
+    "content_id": 105824,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-MEDIAN-COMPARE-PRACTICE-20260726094912-1",
+    "content_id": 105840,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-MEDIAN-MEDIAN-PRACTICE-20260726095426-1",
+    "content_id": 105880,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-PROBA-COMPLEMENT-PRACTICE-20260726104742-1",
+    "content_id": 106180,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-THALES-CONFIG-ASSESSMENT-20260726095611-1",
+    "content_id": 106000,
+    "kind": "single_choice",
+    "choices": 3,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-THALES-CONFIG-PRACTICE-20260726095610-1",
+    "content_id": 105996,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-THALES-CONFIG-PRACTICE-20260726095619-1",
+    "content_id": 106004,
+    "kind": "single_choice",
+    "choices": 3,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-THALES-RECIPROCAL-PRACTICE-20260726095645-1",
+    "content_id": 106048,
+    "kind": "single_choice",
+    "choices": 3,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-TRIGO-CONTROL-ASSESSMENT-20260726095727-1",
+    "content_id": 106072,
+    "kind": "single_choice",
+    "choices": 3,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-TRIGO-CONTROL-PRACTICE-20260726095724-1",
+    "content_id": 106068,
+    "kind": "single_choice",
+    "choices": 2,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-TRIGO-CONTROL-PRACTICE-20260726095733-1",
+    "content_id": 106076,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-TRIGO-MODEL-ASSESSMENT-20260726095748-1",
+    "content_id": 106084,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-TRIGO-RATIO-ASSESSMENT-20260726095807-1",
+    "content_id": 106092,
+    "kind": "single_choice",
+    "choices": 3,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-TRIGO-RATIO-PRACTICE-20260726095804-1",
+    "content_id": 106088,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-POWERS-MEANING-ASSESSMENT-20260726105649-1",
+    "content_id": 107032,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-POWERS-MEANING-PRACTICE-20260726105647-1",
+    "content_id": 107028,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-POWERS-TEN-PRACTICE-20260726105703-1",
+    "content_id": 107060,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-PROP-GRAPH-ASSESSMENT-20260726105718-1",
+    "content_id": 107104,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-PROP-GRAPH-PRACTICE-20260726105719-1",
+    "content_id": 107108,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-PROP-IDENTIFY-ASSESSMENT-20260726105723-1",
+    "content_id": 107120,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-PROP-IDENTIFY-PRACTICE-20260726105721-1",
+    "content_id": 107116,
+    "kind": "single_choice",
+    "choices": 2,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-PROP-IDENTIFY-PRACTICE-20260726111937-1",
+    "content_id": 109244,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-PYTH-IDENTIFY-ASSESSMENT-20260726105803-1",
+    "content_id": 107216,
+    "kind": "single_choice",
+    "choices": 3,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-PYTH-IDENTIFY-DIAGNOSTIC-20260726105818-1",
+    "content_id": 107228,
+    "kind": "single_choice",
+    "choices": 3,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-PYTH-IDENTIFY-PRACTICE-20260726105758-1",
+    "content_id": 107204,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-PYTH-IDENTIFY-PRACTICE-20260726105806-1",
+    "content_id": 107224,
+    "kind": "single_choice",
+    "choices": 3,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-PYTH-IDENTIFY-PRACTICE-20260726112203-1",
+    "content_id": 109268,
+    "kind": "multiple_choice",
+    "choices": 6,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-PYTH-IDENTIFY-REMEDIATION-20260726105805-1",
+    "content_id": 107220,
+    "kind": "single_choice",
+    "choices": 3,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-PYTH-TEST-ASSESSMENT-20260726105803-1",
+    "content_id": 107212,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-PYTH-TEST-PRACTICE-20260726105909-1",
+    "content_id": 107244,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-PYTH-TEST-PRACTICE-20260726105910-1",
+    "content_id": 107256,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-PYTH-TEST-PRACTICE-20260726105915-1",
+    "content_id": 107272,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-RELNUM-SIGN-ASSESSMENT-20260726105923-1",
+    "content_id": 107296,
+    "kind": "single_choice",
+    "choices": 3,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-RELNUM-SIGN-PRACTICE-20260726105923-1",
+    "content_id": 107288,
+    "kind": "single_choice",
+    "choices": 3,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-STATS-COMPARE-ASSESSMENT-20260726110000-1",
+    "content_id": 107392,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-STATS-COMPARE-PRACTICE-20260726105944-1",
+    "content_id": 107352,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-STATS-COMPARE-PRACTICE-20260726105957-1",
+    "content_id": 107380,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-STATS-POPULATION-PRACTICE-20260726110004-1",
+    "content_id": 107400,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-STATS-REPRESENT-ASSESSMENT-20260726110002-1",
+    "content_id": 107396,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-STATS-REPRESENT-PRACTICE-20260726105959-1",
+    "content_id": 107388,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-PHYSICS-CHEMISTRY-3E-MECHANICS-FORCE-ASSESSMENT-20260726110613-1",
+    "content_id": 108148,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-PHYSICS-CHEMISTRY-3E-MECHANICS-REFERENCE-PRACTICE-20260726110617-1",
+    "content_id": 108164,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-PHYSICS-CHEMISTRY-4E-CHEMISTRY-ACID-BASE-ASSESSMENT-20260726111240-1",
+    "content_id": 108912,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-PHYSICS-CHEMISTRY-4E-CHEMISTRY-ACID-BASE-PRACTICE-20260726111241-1",
+    "content_id": 108916,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-PHYSICS-CHEMISTRY-4E-CHEMISTRY-ATOM-ASSESSMENT-20260726111236-1",
+    "content_id": 108896,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-PHYSICS-CHEMISTRY-4E-CHEMISTRY-EQUATION-ASSESSMENT-20260726111250-1",
+    "content_id": 108928,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-PHYSICS-CHEMISTRY-4E-ELECTRICITY-CURRENT-ASSESSMENT-20260726111302-1",
+    "content_id": 108964,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-PHYSICS-CHEMISTRY-4E-ELECTRICITY-VOLTAGE-ASSESSMENT-20260726111312-1",
+    "content_id": 108992,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-SPANISH-3E-COMMUNICATION-LISTEN-ASSESSMENT-20260726110636-1",
+    "content_id": 108220,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-SPANISH-3E-COMMUNICATION-LISTEN-PRACTICE-20260726110634-1",
+    "content_id": 108208,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-SPANISH-3E-COMMUNICATION-READ-ASSESSMENT-20260726110645-1",
+    "content_id": 108236,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-SPANISH-3E-COMMUNICATION-READ-PRACTICE-20260726110642-1",
+    "content_id": 108232,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-SPANISH-3E-PRESENT-AGREEMENT-ASSESSMENT-20260726110657-1",
+    "content_id": 108268,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-SPANISH-3E-PRESENT-AGREEMENT-PRACTICE-20260726110656-1",
+    "content_id": 108264,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-SPANISH-3E-PRESENT-USE-ASSESSMENT-20260726110705-1",
+    "content_id": 108292,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-SPANISH-3E-PRESENT-USE-PRACTICE-20260726110708-1",
+    "content_id": 108296,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-SPANISH-4E-COMMUNICATION-INTERACT-ASSESSMENT-20260726111325-1",
+    "content_id": 109020,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-SPANISH-4E-COMMUNICATION-LISTEN-ASSESSMENT-20260726111320-1",
+    "content_id": 109008,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-SPANISH-4E-COMMUNICATION-LISTEN-PRACTICE-20260726111322-1",
+    "content_id": 109012,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-SPANISH-4E-COMMUNICATION-READ-ASSESSMENT-20260726111328-1",
+    "content_id": 109032,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-SPANISH-4E-COMMUNICATION-READ-PRACTICE-20260726111325-1",
+    "content_id": 109028,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-SPANISH-4E-LANGUAGE-CULTURE-PRACTICE-20260726111338-1",
+    "content_id": 109052,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-SPANISH-4E-LANGUAGE-GRAMMAR-ASSESSMENT-20260726111344-1",
+    "content_id": 109060,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-SPANISH-4E-LANGUAGE-VOCAB-ASSESSMENT-20260726111355-1",
+    "content_id": 109088,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-SVT-3E-CELL-OBSERVE-PRACTICE-20260726110750-1",
+    "content_id": 108320,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-SVT-3E-GENETICS-ALLELE-ASSESSMENT-20260726110752-1",
+    "content_id": 108328,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-SVT-3E-GENETICS-DNA-ASSESSMENT-20260726110806-1",
+    "content_id": 108364,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-SVT-3E-GENETICS-DNA-PRACTICE-20260726110753-1",
+    "content_id": 108336,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-SVT-3E-GENETICS-EVOLUTION-PRACTICE-20260726110752-1",
+    "content_id": 108324,
+    "kind": "single_choice",
+    "choices": 5,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-SVT-3E-GENETICS-MUTATION-ASSESSMENT-20260726110812-1",
+    "content_id": 108384,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-SVT-3E-GENETICS-MUTATION-PRACTICE-20260726110812-1",
+    "content_id": 108380,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-SVT-3E-GENETICS-TRANSMISSION-ASSESSMENT-20260726110808-1",
+    "content_id": 108368,
+    "kind": "single_choice",
+    "choices": 5,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-SVT-3E-GENETICS-TRANSMISSION-PRACTICE-20260726110812-1",
+    "content_id": 108376,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-SVT-3E-HEALTH-MICROBIOTA-ASSESSMENT-20260726110820-1",
+    "content_id": 108400,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-SVT-3E-HEALTH-MICROBIOTA-PRACTICE-20260726110822-1",
+    "content_id": 108408,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-SVT-3E-HEALTH-VACCINATION-ASSESSMENT-20260726110830-1",
+    "content_id": 108428,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-SVT-3E-HEALTH-VACCINATION-PRACTICE-20260726110827-1",
+    "content_id": 108420,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-SVT-4E-EARTH-RISK-ASSESSMENT-20260726111415-1",
+    "content_id": 109124,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-SVT-4E-GENETICS-CHROMOSOME-ASSESSMENT-20260726111424-1",
+    "content_id": 109140,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-SVT-4E-GENETICS-CHROMOSOME-PRACTICE-20260726111426-1",
+    "content_id": 109148,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-SVT-4E-GENETICS-DATA-ASSESSMENT-20260726111432-1",
+    "content_id": 109160,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-SVT-4E-GENETICS-DATA-PRACTICE-20260726111438-1",
+    "content_id": 109184,
+    "kind": "single_choice",
+    "choices": 5,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-SVT-4E-GENETICS-HEREDITY-PRACTICE-20260726111432-1",
+    "content_id": 109164,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-FRENCH-3E-CLAUSES-ASSESSMENT-20260726092203-1",
+    "content_id": 105124,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-FRENCH-3E-REWRITE-ASSESSMENT-20260726092346-1",
+    "content_id": 105232,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-FRENCH-4E-COMPREHENSION-ASSESSMENT-20260726104943-1",
+    "content_id": 106344,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-FRENCH-4E-COMPREHENSION-DIAGNOSTIC-20260726104945-1",
+    "content_id": 106348,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-FRENCH-4E-COMPREHENSION-PRACTICE-20260726104942-1",
+    "content_id": 106336,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-FRENCH-4E-COMPREHENSION-PRACTICE-20260726104943-1",
+    "content_id": 106340,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-FRENCH-4E-CONJUGATION-ASSESSMENT-20260726105030-1",
+    "content_id": 106432,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-FRENCH-4E-GRAMMAR-ASSESSMENT-20260726105107-1",
+    "content_id": 106512,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-FRENCH-4E-GRAMMAR-PRACTICE-20260726105109-1",
+    "content_id": 106520,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-FRENCH-4E-GRAMMAR-REMEDIATION-20260726105112-1",
+    "content_id": 106528,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-FRENCH-4E-SPELLING-ASSESSMENT-20260726105452-1",
+    "content_id": 106704,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-FRENCH-4E-SPELLING-DIAGNOSTIC-20260726105456-1",
+    "content_id": 106716,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-FRENCH-4E-SPELLING-REMEDIATION-20260726105458-1",
+    "content_id": 106724,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-FRENCH-4E-VOCAB-ASSESSMENT-20260726105536-1",
+    "content_id": 106808,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-FRENCH-4E-VOCAB-DIAGNOSTIC-20260726105538-1",
+    "content_id": 106820,
+    "kind": "single_choice",
+    "choices": 5,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-FRENCH-4E-VOCAB-PRACTICE-20260726105537-1",
+    "content_id": 106812,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-FRENCH-4E-VOCAB-REMEDIATION-20260726105539-1",
+    "content_id": 106824,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-GEOGRAPHY-3E-GEOSCALE-PRACTICE-20260726110359-1",
+    "content_id": 107840,
+    "kind": "single_choice",
+    "choices": 5,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-GEOGRAPHY-4E-MOBILITY-ASSESSMENT-20260726111110-1",
+    "content_id": 108720,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-GEOGRAPHY-4E-MOBILITY-PRACTICE-20260726111109-1",
+    "content_id": 108716,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-HISTORY-3E-HISTREP-ASSESSMENT-20260726110523-1",
+    "content_id": 108028,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-MATHEMATICS-3E-EQUATIONS-ASSESSMENT-20260726104726-1",
+    "content_id": 106132,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-MATHEMATICS-3E-PROBA-REMEDIATION-20260726095555-1",
+    "content_id": 105984,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-MATHEMATICS-4E-FRACT-DIAGNOSTIC-20260726105619-1",
+    "content_id": 106944,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-MATHEMATICS-4E-LITERAL-ASSESSMENT-20260726105634-1",
+    "content_id": 106996,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-MATHEMATICS-4E-LITERAL-DIAGNOSTIC-20260726105638-1",
+    "content_id": 107012,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-MATHEMATICS-4E-POWERS-ASSESSMENT-20260726105707-1",
+    "content_id": 107076,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-MATHEMATICS-4E-POWERS-DIAGNOSTIC-20260726111915-1",
+    "content_id": 109228,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-MATHEMATICS-4E-PYTH-ASSESSMENT-20260726105914-1",
+    "content_id": 107268,
+    "kind": "single_choice",
+    "choices": 3,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-MATHEMATICS-4E-PYTH-DIAGNOSTIC-20260726105910-1",
+    "content_id": 107252,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-MATHEMATICS-4E-STATS-DIAGNOSTIC-20260726110016-1",
+    "content_id": 107428,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-PHYSICS-CHEMISTRY-3E-MATTER-ASSESSMENT-20260726110620-1",
+    "content_id": 108176,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-SPANISH-3E-PRESENT-PRACTICE-20260726110716-1",
+    "content_id": 108308,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-SPANISH-4E-COMMUNICATION-ASSESSMENT-20260726111332-1",
+    "content_id": 109036,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-SPANISH-4E-LANGUAGE-ASSESSMENT-20260726111407-1",
+    "content_id": 109100,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-SPANISH-4E-LANGUAGE-PRACTICE-20260726111401-1",
+    "content_id": 109096,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-SVT-3E-GENETICS-ASSESSMENT-20260726110810-1",
+    "content_id": 108372,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-SVT-3E-GENETICS-PRACTICE-20260726110820-1",
+    "content_id": 108404,
+    "kind": "single_choice",
+    "choices": 5,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-SVT-3E-HEALTH-ASSESSMENT-20260726110827-1",
+    "content_id": 108416,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-SVT-4E-EARTH-ASSESSMENT-20260726111432-1",
+    "content_id": 109168,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-SVT-4E-GENETICS-ASSESSMENT-20260726111443-1",
+    "content_id": 109192,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "DRAFT-0012C-AI-SVT-4E-GENETICS-PRACTICE-20260726111443-1",
+    "content_id": 109188,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "PILOT-0012B-AI-ENR-EMC-3E-DEMOCRACY-ELECTION-DIAGNOSTIC-20260725213743-1",
+    "content_id": 104728,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "PILOT-0012B-AI-ENR-FRENCH-3E-TEXTANALYSIS-INFER-ASSESSMENT-20260725214130-1",
+    "content_id": 104620,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "PILOT-0012B-AI-ENR-FRENCH-4E-SPELLING-SV-DIAGNOSTIC-20260725214259-1",
+    "content_id": 104632,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "PILOT-0012B-AI-ENR-FRENCH-4E-SPELLING-SV-DIAGNOSTIC-20260725214352-1",
+    "content_id": 104640,
+    "kind": "single_choice",
+    "choices": 2,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "PILOT-0012B-AI-ENR-FRENCH-4E-VOCAB-CONTEXT-REMEDIATION-20260725214511-1",
+    "content_id": 104648,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "PILOT-0012B-AI-ENR-HISTORY-3E-AFTER1945-COLD-WAR-REVISION-20260725214203-1",
+    "content_id": 104760,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "PILOT-0012B-AI-ENR-HISTORY-3E-AFTER1945-COLD-WAR-REVISION-20260725214303-1",
+    "content_id": 104768,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "PILOT-0012B-AI-ENR-MATHEMATICS-4E-LITERAL-DISTRIBUTE-DIAGNOSTIC-20260725213858-1",
+    "content_id": 104836,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "PILOT-0012B-AI-MATHEMATICS-4E-PROP-ASSESSMENT-20260725213341-2",
+    "content_id": 104536,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "PILOT-0012B-AI-MATHEMATICS-4E-PROP-ASSESSMENT-20260725213409-2",
+    "content_id": 104544,
+    "kind": "single_choice",
+    "choices": 3,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "PILOT-0012B-AI-MATHEMATICS-4E-PROP-PRACTICE-20260725213324-1",
+    "content_id": 104804,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "PILOT-0012B-AI-MATHEMATICS-4E-PYTH-DIAGNOSTIC-20260725214023-1",
+    "content_id": 104844,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "PILOT-0012B-AI-MATHEMATICS-4E-PYTH-PRACTICE-20260725213251-2",
+    "content_id": 104524,
+    "kind": "single_choice",
+    "choices": 4,
+    "issues": [],
+    "production_ready": true
+  },
+  {
+    "code": "PILOT-0012B-AI-MATHEMATICS-4E-PYTH-PRACTICE-20260725213316-2",
+    "content_id": 104532,
+    "kind": "single_choice",
+    "choices": 2,
+    "issues": [],
+    "production_ready": true
+  }
+]

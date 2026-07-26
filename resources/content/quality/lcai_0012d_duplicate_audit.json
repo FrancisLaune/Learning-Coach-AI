@@ -1,0 +1,14 @@
+{
+  "exact_groups": [],
+  "normalized_groups": [],
+  "near_groups": [
+    {
+      "left": "DRAFT-0012C-AI-ENR-ENGLISH-3E-PAST-RECOGNIZE-ASSESSMENT-20260726110247-1",
+      "right": "DRAFT-0012C-AI-ENR-ENGLISH-3E-PAST-RECOGNIZE-PRACTICE-20260726110306-1",
+      "similarity": 0.8991,
+      "decision": "REVIEW",
+      "reason": "near_duplicate"
+    }
+  ],
+  "blocking_codes": []
+}

@@ -1,0 +1,4755 @@
+[
+  {
+    "code": "DRAFT-0012C-AI-EMC-4E-INFORMATION-ASSESSMENT-20260726110914-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "On ne peut pas faire confiance immédiatement à cette information : il faut vérifier l'existence et la fiabilité de l'étude (auteur, institution, méthode), rechercher des sources indépendantes, contrôler les données (axes/échelle du graphique) et se méfier du message émotionnel invitant au partage ; ne pas partager tant que la vérification n'est pas faite.",
+    "independently_computed": null,
+    "decision": "PASS",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-EMC-4E-LIBERTIES-ASSESSMENT-20260726110931-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Lola peut exprimer son opinion, mais cette liberté n'est pas absolue : elle doit respecter la vie privée et la réputation d'autrui (ne pas divulguer ou publier des messages privés ni diffamer). Le règlement intérieur de l'établissement peut prévoir des sanctions et les élèves qui partagent la vidéo peuvent aussi engager leur responsabilité.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENGLISH-3E-PAST-ASSESSMENT-20260726110243-1",
+    "answer_kind": "exact_text",
+    "stored_answer": "Last Saturday, Anna woke up early because she had a piano exam. She didn't feel nervous, but she forgot her music book at home. Her friend Tom helped her and ran back to bring it. At the exam, the teacher was impressed and said she did very well.",
+    "independently_computed": null,
+    "decision": "PASS",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENGLISH-3E-PAST-PRACTICE-20260726110249-1",
+    "answer_kind": "exact_text",
+    "stored_answer": "Last weekend, Maria and her brother went to the seaside. They visited their grandparents who lived near the beach. On Saturday they swam in the sea and then stopped at a small café. For dinner they ate at a restaurant and bought an ice cream. On Sunday they came back home and helped their parents with the garden.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-EMC-3E-DEMOCRACY-INSTITUTION-ASSESSMENT-20260726110147-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Le Conseil constitutionnel",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-EMC-3E-DEMOCRACY-LAW-ASSESSMENT-20260726110151-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "1) Initiative (projet ou proposition de loi) → 2) Examen en commission parlementaire → 3) Débat et vote en première lecture dans une assemblée (Assemblée nationale ou Sénat) → 4) Navette entre les deux assemblées puis vote définitif du Parlement → 5) Promulgation par le Président de la République et publication au Journal officiel",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-EMC-3E-ENGAGEMENT-MOTIVE-PRACTICE-20260726110205-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Il a agi par peur et désir de sécurité personnelle après avoir constaté des actes de vandalisme dans son quartier.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-EMC-3E-ENGAGEMENT-SECURITY-PRACTICE-20260726110211-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "B) Interdire définitivement tous les rassemblements politiques dans le centre‑ville « pour éviter des débordements ».",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-EMC-4E-INFORMATION-ARGUMENT-ASSESSMENT-20260726110921-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "A) « Il faut garder les cours de sport obligatoires : tout le monde le dit, donc c'est forcément bénéfique. (appel à la popularité) »",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-EMC-4E-INFORMATION-ARGUMENT-PRACTICE-20260726110918-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "A — La phrase de Clara contient une erreur de causalité (post hoc) : elle confond corrélation et causalité en affirmant que la baisse du temps de visionnage est la seule cause de l'amélioration des notes.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-EMC-4E-INFORMATION-IMAGE-PRACTICE-20260726110917-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "La légende est probablement trompeuse : des éléments visibles indiquent que la photo a été prise antérieurement ou dans un autre pays.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-EMC-4E-INFORMATION-PUBLISH-ASSESSMENT-20260726110916-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Flouter le visage des élèves dont la famille n'a pas autorisé la diffusion, vérifier qu'on a le droit d'utiliser le logo (ou recadrer pour l'enlever), ajouter une légende factuelle sans informations personnelles et indiquer qu'on peut retirer la photo sur demande.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-EMC-4E-INFORMATION-SOURCE-ASSESSMENT-20260726110915-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "B. Un article publié aujourd'hui sur le site officiel du Ministère de l'Éducation : communiqué daté et signé, avec liens vers le Bulletin officiel et le texte officiel du nouveau programme.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-EMC-4E-INFORMATION-SOURCE-PRACTICE-20260726110917-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Source A — Article de presse en ligne : Un article publié sur un site d'information connu, signé par une journaliste, daté de la semaine dernière. L'article cite et lie un rapport officiel des autorités sanitaires et un article scientifique publié dans une revue (liens fournis). Le ton est informatif et neutre. Objectif : rendre compte d'une étude.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-EMC-4E-LIBERTIES-BALANCE-ASSESSMENT-20260726110936-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Demander la suppression du nom et la modification de l'article pour éviter les accusations nominatives, publier éventuellement un témoignage anonyme qui dénonce le problème général, et proposer une médiation avec les adultes référents (professeur principal, CPE) pour protéger la personne visée et aider à résoudre le conflit.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-EMC-4E-LIBERTIES-BALANCE-PRACTICE-20260726110935-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "La liberté d'expression peut être limitée pour protéger la dignité et la réputation d'autrui; si la vidéo contient insultes ou mensonges, l'établissement peut demander le retrait et une sanction proportionnée.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-EMC-4E-LIBERTIES-LAW-ASSESSMENT-20260726110930-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Un tribunal indépendant annule une décision administrative illégale ; la personne concernée pouvait saisir la justice et faire appel.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-EMC-4E-LIBERTIES-LIBERTY-ASSESSMENT-20260726110934-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Un groupe de citoyen·ne·s organise une manifestation pacifique sur la place publique pour protester contre une décision municipale.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-ENGLISH-3E-COMMUNICATION-LISTEN-ASSESSMENT-20260726110228-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "La professeure se montre ferme mais encourageante : elle fixe des règles et des échéances claires, tout en proposant son aide et en incitant à l'originalité.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-ENGLISH-3E-COMMUNICATION-LISTEN-PRACTICE-20260726110229-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "The speaker is frustrated with past group partners and would prefer to work alone unless teammates are reliable.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-ENGLISH-3E-COMMUNICATION-READ-ASSESSMENT-20260726110233-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "L'élève demande un délai pour rendre le projet et explique deux obstacles (problème matériel et rendez-vous médical).",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-ENGLISH-3E-COMMUNICATION-READ-PRACTICE-20260726110239-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "B. Inviter et motiver les élèves à participer à une activité du club",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-ENGLISH-3E-PAST-RECOGNIZE-ASSESSMENT-20260726110247-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "They watched a movie yesterday and enjoyed it.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-ENGLISH-3E-PAST-RECOGNIZE-PRACTICE-20260726110306-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "They watched a movie yesterday.",
+    "independently_computed": null,
+    "decision": "PASS",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-ENGLISH-4E-COMMUNICATION-LISTEN-ASSESSMENT-20260726110954-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "La personne présente une expérience de bénévolat dans un refuge pour animaux : elle a promené des chiens, nettoyé des cages, nourri des chatons (environ 12 chiens et 6 chats), elle était fatiguée mais heureuse et compte recommencer.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-ENGLISH-4E-COMMUNICATION-READ-ASSESSMENT-20260726111002-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Demander une prolongation pour rendre le devoir en invoquant un problème technique.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-ENGLISH-4E-COMMUNICATION-READ-PRACTICE-20260726111002-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "L'auteur adopte une attitude globalement positive envers les transports en commun : il reconnaît quelques inconvénients mais estime que les avantages l'emportent.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-ENGLISH-4E-LANGUAGE-GRAMMAR-PRACTICE-20260726111006-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "He told Maria that he had been learning Spanish since January.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-ENGLISH-4E-LANGUAGE-TENSE-ASSESSMENT-20260726111029-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "C) 1) Yesterday evening, we had a talent show that everyone enjoyed. 2) Since I arrived, I have been learning lots of new games and songs. 3) At 8 pm, while we were performing, the lights suddenly went out.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-ENGLISH-4E-LANGUAGE-VOCAB-ASSESSMENT-20260726111018-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "disappointed",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-3E-ARGUMENT-EXAMPLE-ASSESSMENT-20260726091635-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "C. Document scolaire synthétique : « Lors du dernier brevet blanc du collège, douze élèves ont été surpris en train d'utiliser leur portable pour communiquer des réponses ; ils ont été sanctionnés et les copies ont été annulées. »",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-3E-ARGUMENT-EXAMPLE-PRACTICE-20260726091632-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Les résultats d'une enquête représentative montrant une corrélation significative entre usage intensif des réseaux sociaux et hausse du sentiment de solitude chez un échantillon d'adolescents.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-3E-ARGUMENT-EXAMPLE-PRACTICE-20260726091636-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "B) « Une vitesse plus faible diminue l'énergie libérée lors d'un choc : en conséquence, les collisions entraînent moins souvent des blessures graves ou mortelles. »",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-3E-ARGUMENT-THESIS-PRACTICE-20260726091659-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Au lycée, permettre aux élèves d'utiliser un téléphone portable pendant les pauses améliorerait leur bien-être et leur autonomie.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-3E-ARGUMENT-THESIS-PRACTICE-20260726091706-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Pour améliorer l'attention et les apprentissages, il faudrait interdire les smartphones dans l'enceinte de l'établissement.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-3E-BREVETWRITE-COHESION-ASSESSMENT-20260726091817-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Option 2 — A → B → C → E → D\n\nA. Le projet avançait lentement. L'atelier manquait d'organisation, et les outils étaient dispersés.\n\nB. La première réunion avait fixé les rôles : Léa se chargerait du design, Karim de la technique, et Samir de la communication.\n\nC. Chaque jour, ils se réunissaient à l'atelier après les cours pour avancer sur la maquette.\n\nE. La veille de la présentation, une panne du prototype a poussé Karim à travailler toute la nuit pour réparer le moteur.\n\nD. Enfin, le jour de la présentation, tous étaient fiers : la maquette fonctionnait et le jury a posé des questions intéressées.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-3E-BREVETWRITE-COHESION-PRACTICE-20260726091810-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Face à son anxiété, Lucie se souvint des conseils de son entraîneur et concentra son attention sur sa respiration.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-3E-BREVETWRITE-LANGUAGE-ASSESSMENT-20260726091857-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Bonjour Mme Dupont,\nJ'étais très stressé hier parce que j'ai raté mon contrôle de maths. Ce n'était pas ma faute : le professeur n'avait pas expliqué l'exercice correctement et nous n'avions pas assez de temps. Si j'avais su, j'aurais davantage révisé mes cours. Merci de me donner une autre chance.\nCordialement,\nLucas",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-3E-CLAUSES-CIRCUMSTANTIAL-ASSESSMENT-20260726091944-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Proposition subordonnée circonstancielle de cause (introduite par 'parce que', répond à la question « pourquoi ? »)",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-3E-REWRITE-AGREEMENT-PRACTICE-20260726092236-1",
+    "answer_kind": "exact_text",
+    "stored_answer": "Les robes rouges que portaient les filles étaient tachées.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-3E-REWRITE-GRAMMAR-ASSESSMENT-20260726092246-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Paul a expliqué qu'il rendrait le livre le lendemain matin.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-3E-REWRITE-GRAMMAR-PRACTICE-20260726092231-1",
+    "answer_kind": "exact_text",
+    "stored_answer": "Les copies sont corrigées par le professeur chaque soir.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-3E-REWRITE-PRONOUN-PRACTICE-20260726092321-1",
+    "answer_kind": "exact_text",
+    "stored_answer": "1) Paul l'a prêté à sa sœur.\n2) J'y ai répondu sans hésiter.\n3) Je les regarde sur mon téléphone.\n4) Nous en avons acheté.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-3E-REWRITE-PRONOUN-PRACTICE-20260726092338-1",
+    "answer_kind": "exact_text",
+    "stored_answer": "Je présente notre projet au professeur. J'explique que mon chien a aidé Paul à retrouver son courage. Le professeur nous pose des questions et nous donne des conseils. Après la présentation, je remercie Paul pour son aide et j'espère que notre travail fera une différence.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-3E-REWRITE-TENSE-PERSON-ASSESSMENT-20260726092333-1",
+    "answer_kind": "exact_text",
+    "stored_answer": "Ils ont fini leurs devoirs avant de dîner. Ils ont lu un roman qu'ils ont beaucoup aimé. Après, ils ont bu une tasse de thé en écoutant de la musique. Parfois, ils ont oublié de ranger leurs notes.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-3E-REWRITE-TENSE-PERSON-PRACTICE-20260726092345-1",
+    "answer_kind": "exact_text",
+    "stored_answer": "Aujourd'hui, il a promené le chien. Il l'a conduit au parc. Le chien a couru et il lui a lancé la balle. Ensuite, il est rentré à la maison et il a préparé le dîner.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-3E-TENSES-CONCORDANCE-PRACTICE-20260726092411-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "partait",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-3E-TENSES-CONCORDANCE-PRACTICE-20260726092434-1",
+    "answer_kind": "exact_text",
+    "stored_answer": "1) Le professeur a dit qu'il corrigerait les copies le lendemain.\n2) Paul a expliqué qu'il avait déjà lu ce livre avant de le recommander.\n3) Le maire a déclaré qu'ils inaugureraient la nouvelle école l'année suivante.\n4) Sophie a dit que si elle gagnait au loto, elle achèterait une maison.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-3E-TENSES-CONDITION-ASSESSMENT-20260726092439-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Si j'avais accepté ce stage, j'aurais acquis plus d'expérience.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-3E-TEXTANALYSIS-EXPLICIT-PRACTICE-20260726092625-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Jeudi 12 octobre, le collège organise une sortie au musée des sciences pour les classes de 4e et 3e ; départ à 8h00 et coût de 7 euros par élève.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-3E-TEXTANALYSIS-INFER-PRACTICE-20260726092633-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Elle vient de rentrer de l'extérieur sous la pluie.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-3E-TEXTANALYSIS-INFER-REMEDIATION-20260726092637-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Il a plu pendant le trajet de Paul.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-COMPREHENSION-EXPLICIT-ASSESSMENT-20260726104915-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "La visite guidée commence à 14h chaque jour.",
+    "independently_computed": null,
+    "decision": "PASS",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-COMPREHENSION-EXPLICIT-PRACTICE-20260726104912-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Le bus partira à 8 h 30.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-COMPREHENSION-EXPLICIT-PRACTICE-20260726104915-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Les élèves de 4e et 3e",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-COMPREHENSION-INFER-ASSESSMENT-20260726104913-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Il a plu récemment à l'extérieur.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-COMPREHENSION-INFER-PRACTICE-20260726104916-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Il a plu pendant le trajet de Clara.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-COMPREHENSION-INFER-PRACTICE-20260726104919-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Maxime a couru ou fait un sport à l'extérieur récemment.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-COMPREHENSION-METHOD-ASSESSMENT-20260726104929-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Une numérotation claire des étapes combinée à l'emploi du verbe à l'impératif et d'indicateurs temporels (p. ex. « puis », « laisse infuser pendant 5 minutes ») pour marquer l'ordre et la durée.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-COMPREHENSION-METHOD-PRACTICE-20260726104931-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "La répétition (anaphore) — répétition de « Il fallait » en début de phrase.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-COMPREHENSION-VIEWPOINT-ASSESSMENT-20260726104936-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Narrateur à la troisième personne focalisé sur un personnage (point de vue interne)",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-COMPREHENSION-VIEWPOINT-PRACTICE-20260726104939-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Point de vue interne (focalisation sur les pensées et les sensations d'un personnage)",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-CONJUGATION-CONCORDANCE-PRACTICE-20260726104954-1",
+    "answer_kind": "exact_text",
+    "stored_answer": "Hier, pendant que je faisais mes devoirs, mon frère est entré dans ma chambre et a mis la radio. Il écoutait de la musique pendant que je terminais mon exercice. Soudain, la radio s'est arrêtée et nous avons entendu un bruit.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-CONJUGATION-INDICATIVE-ASSESSMENT-20260726104959-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "partirons",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-CONJUGATION-INDICATIVE-PRACTICE-20260726104959-1",
+    "answer_kind": "exact_text",
+    "stored_answer": "aller : je vais, tu vas, il/elle/on va, nous allons, vous allez, ils/elles vont; finir : je finis, tu finis, il/elle/on finit, nous finissons, vous finissez, ils/elles finissent; prendre : je prends, tu prends, il/elle/on prend, nous prenons, vous prenez, ils/elles prennent; être : je suis, tu es, il/elle/on est, nous sommes, vous êtes, ils/elles sont; avoir : j'ai, tu as, il/elle/on a, nous avons, vous avez, ils/elles ont; parler : je parle, tu parles, il/elle/on parle, nous parlons, vous parlez, ils/elles parlent",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-CONJUGATION-REWRITE-ASSESSMENT-20260726105003-1",
+    "answer_kind": "exact_text",
+    "stored_answer": "1) Nous étions en retard.\n2) Il a écrit une lettre.\n3) Je pars demain.\n4) Tu feras du sport.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-CONJUGATION-SUBJUNCTIVE-ASSESSMENT-20260726105012-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "viennes",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-CONJUGATION-SUBJUNCTIVE-PRACTICE-20260726105010-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "partes",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-CONJUGATION-SUBJUNCTIVE-PRACTICE-20260726105019-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Je veux que tu ailles à la réunion demain.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-CONJUGATION-TENSE-VALUE-ASSESSMENT-20260726105023-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Antériorité par rapport à un autre fait passé (action achevée avant un autre passé) — plus-que-parfait",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-CONJUGATION-TENSE-VALUE-PRACTICE-20260726105021-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Action habituelle dans le passé",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-GRAMMAR-TRANSFORM-ASSESSMENT-20260726105100-1",
+    "answer_kind": "exact_text",
+    "stored_answer": "Le délégué a été choisi par le comité hier lors de la réunion.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-GRAMMAR-TRANSFORM-PRACTICE-20260726105105-1",
+    "answer_kind": "exact_text",
+    "stored_answer": "Le projet sera présenté aux habitants par le comité la semaine prochaine.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-NARRATIVE-REVISE-ASSESSMENT-20260726105141-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Le soir, je rentrais du collège, préoccupé par le contrôle. La pluie rendait les rues désertes; mon sac me pesait. Soudain, j'entendis un bruit derrière moi. Pris de panique, je courus vers la maison.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-NARRATIVE-TIME-ASSESSMENT-20260726105154-1",
+    "answer_kind": "exact_text",
+    "stored_answer": "La semaine précédente, j'avais posé ce vase sur l'étagère. La veille, j'avais laissé la fenêtre entrouverte. Pendant la nuit, il soufflait un vent fort et je n'arrêtais pas de tourner dans mon lit. Ce matin, j'ai entendu un grand bruit et je me suis levé. J'ai trouvé le vase cassé au sol et de l'eau partout; le chat dormait paisiblement près de la fenêtre. J'ai ramassé les morceaux et j'ai décidé de ne plus laisser la fenêtre ouverte.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-NARRATIVE-TIME-PRACTICE-20260726105147-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "A → B → C → D : Je me suis levé avant le lever du soleil parce que j'avais un examen. / Je me suis réveillé en mettant de la musique, puis je me suis douché. / Ensuite, j'ai pris un café et une tartine en relisant mes notes. / Finalement, je suis parti en courant pour ne pas rater le bus.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-NARRATIVE-VIEWPOINT-PRACTICE-20260726105148-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Point de vue à la première personne (narrateur-personnage, « je »)",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-SPELLING-GN-ASSESSMENT-20260726105218-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Ces belles fleurs jaunes embaument le jardin.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-SPELLING-GN-PRACTICE-20260726105216-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Ce matin, j'ai trouvé sur la table des chocolats délicieux et une lettre importante.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-SPELLING-GN-PRACTICE-20260726105222-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "B) 1) Les vieilles maisons sont peintes en bleu. 2) Il a acheté une ancienne photo. 3) C'était un événement inoubliable.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-SPELLING-PARTICIPLE-PRACTICE-20260726105436-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Elles se sont lavées avant de partir.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-SPELLING-SV-ASSESSMENT-20260726105448-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Plus d'une centaine de personnes étaient présentes.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-VOCAB-CONTEXT-ASSESSMENT-20260726105504-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "b) interrompu, mis fin à un silence ou à une action",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-VOCAB-CONTEXT-PRACTICE-20260726105502-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "qui ne peut être brisé",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-VOCAB-CONTEXT-PRACTICE-20260726105504-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "faire des efforts soutenus et pénibles pour atteindre un but",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-VOCAB-FIGURE-ASSESSMENT-20260726105509-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Elle a oublié la suite de son discours, elle n'arrivait plus à se souvenir de ce qu'elle allait dire.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-VOCAB-FIGURE-PRACTICE-20260726105508-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "être triste ou découragé",
+    "independently_computed": null,
+    "decision": "PASS",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-VOCAB-FIGURE-PRACTICE-20260726111908-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Le professeur a montré son exaspération devant les erreurs.",
+    "independently_computed": null,
+    "decision": "PASS",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-VOCAB-FORMATION-ASSESSMENT-20260726105513-1",
+    "answer_kind": "exact_text",
+    "stored_answer": "Procédé : préfixation et suffixation; Mot de base : loger; Préfixe : re-; Suffixe : -ment; Catégorie grammaticale : nom.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-VOCAB-REGISTER-ASSESSMENT-20260726105519-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Monsieur le Proviseur, je me permets de solliciter votre autorisation pour organiser une sortie scolaire la semaine prochaine et vous remercie de bien vouloir examiner ma demande.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-VOCAB-REUSE-ASSESSMENT-20260726105527-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "sentier",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-VOCAB-REUSE-PRACTICE-20260726105526-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "un couvreur",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-FRENCH-4E-VOCAB-REUSE-PRACTICE-20260726105528-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "girafe",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-GEOGRAPHY-3E-DEVELOPMENT-INEQUALITY-ASSESSMENT-20260726110307-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "A. La commune X compte 1 médecin pour 5 000 habitants alors que la métropole voisine compte 1 médecin pour 800 habitants.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-GEOGRAPHY-3E-DEVELOPMENT-INEQUALITY-PRACTICE-20260726110306-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Les habitants de la commune B ont un accès aux services (santé, éducation) et aux infrastructures numériques moins favorable que ceux de la commune A, ce qui montre une inégalité territoriale d'accès aux services et aux opportunités.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-GEOGRAPHY-3E-EU-DISPARITY-ASSESSMENT-20260726110321-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Île-de-France",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-GEOGRAPHY-3E-EU-WORLD-ASSESSMENT-20260726110334-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "L'Union européenne représente une part modeste de la population mondiale (≈7%) mais une part plus élevée du PIB et des échanges (≈15–16%) et des investissements directs, ce qui en fait un acteur économique majeur de la mondialisation.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-GEOGRAPHY-3E-EU-WORLD-PRACTICE-20260726110334-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "L'Union européenne est un acteur majeur du commerce mondial, en concurrence proche avec l'Asie, et connectée par des flux importants vers les Amériques et l'Asie.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-GEOGRAPHY-3E-GEOSCALE-EUROPEAN-ASSESSMENT-20260726110342-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "1:10 000 000",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-GEOGRAPHY-3E-GEOSCALE-EUROPEAN-PRACTICE-20260726110344-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Les zones les plus riches se concentrent à l'ouest et au nord‑ouest de l'Europe.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-GEOGRAPHY-3E-GEOSCALE-GLOBAL-PRACTICE-20260726110349-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "L'augmentation des échanges commerciaux via le port, l'implantation d'une usine de composants électroniques et l'arrivée de travailleurs migrants reliés aux réseaux économiques et aux chaînes de valeur mondiales.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-GEOGRAPHY-3E-GEOSCALE-NATIONAL-ASSESSMENT-20260726110359-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "B) Le document montre qu’il existe des territoires où la pollution de l’air dépasse la moyenne nationale et que des facteurs locaux (industrie, modes de déplacement) contribuent à ces excès ; cela suggère que des politiques nationales doivent prendre en compte ces inégalités territoriales.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-GEOGRAPHY-4E-GLOBALIZATION-ACTOR-ASSESSMENT-20260726111026-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Investit pour produire et exporter, crée des emplois et des infrastructures locales, intègre le lieu aux réseaux mondiaux mais provoque aussi des effets négatifs (pollution, dépendance économique).",
+    "independently_computed": null,
+    "decision": "PASS",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-GEOGRAPHY-4E-GLOBALIZATION-MARITIME-ASSESSMENT-20260726111042-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "A) Espace maritime multifonctionnel : voies maritimes internationales favorisant le trafic de porte‑conteneurs (compagnies maritimes et armateurs), un grand port hub pour le transbordement et l'industrie portuaire (autorités portuaires, entreprises logistiques), des infrastructures d'extraction et de transport d'hydrocarbures (compagnies pétrolières, opérateurs d'oléoducs) ; activités halieutiques locales (pêcheurs artisanaux) ; présence d'acteurs étatiques pour la sécurité (base navale) et gestion de la ZEE.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-GEOGRAPHY-4E-MOBILITY-MAP-ASSESSMENT-20260726111054-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "L'Europe",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-GEOGRAPHY-4E-MOBILITY-MAP-PRACTICE-20260726111053-1",
+    "answer_kind": "numeric",
+    "stored_answer": "53.3",
+    "independently_computed": "53.3",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-GEOGRAPHY-4E-URBANIZATION-GROWTH-PRACTICE-20260726111112-1",
+    "answer_kind": "numeric",
+    "stored_answer": "36.7",
+    "independently_computed": "36.7",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-GEOGRAPHY-4E-URBANIZATION-LANDSCAPE-ASSESSMENT-20260726111111-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Quartier d’affaires (CBD) : tours de bureaux, grandes artères, parkings",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-HISTORY-3E-AFTER1945-EUROPE-ASSESSMENT-20260726110427-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Marshall Plan (1948) → Conseil de l'Europe (1949) → Déclaration Schuman (1950) → Traité de Paris (CECA, 1951) → Traités de Rome (CEE/Euratom, 1957) → Acte unique européen (1986) → Traité de Maastricht (1992)",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-HISTORY-3E-AFTER1945-NEW-CONFLICTS-ASSESSMENT-20260726112152-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "La désintégration de l'URSS et l'apparition de nouveaux États indépendants ; l'éclatement de la Yougoslavie et les guerres de sécession ; le renforcement de l'intégration européenne (traité de Maastricht) et l'élargissement de l'UE.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-HISTORY-3E-AFTER1945-NEW-CONFLICTS-PRACTICE-20260726110459-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "La disparition de l'URSS et l'indépendance de ses anciennes républiques; la création de la Communauté des États indépendants (CEI) comme structure partielle de coopération; la transition économique vers le marché dans plusieurs pays d'Europe de l'Est; l'élargissement progressif de l'OTAN vers l'Est; l'éclatement de la Yougoslavie et l'apparition de conflits régionaux.",
+    "independently_computed": null,
+    "decision": "PASS",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-HISTORY-3E-FRANCE-FIFTH-ASSESSMENT-20260726110442-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Régime semi-présidentiel caractérisé par un président élu au suffrage universel direct, un Premier ministre responsable devant le Parlement et une séparation souple des pouvoirs",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-HISTORY-3E-FRANCE-FIFTH-PRACTICE-20260726112154-1",
+    "answer_kind": "multiple_choice",
+    "stored_answer": [
+      "La Constitution de 1958 fonde la Ve République.",
+      "Le président est élu au suffrage universel direct et dispose de pouvoirs étendus (dissolution, nomination du PM, référendum).",
+      "Le Premier ministre est responsable devant l'Assemblée nationale et peut être renversé par une motion de censure.",
+      "Le Conseil constitutionnel vérifie la conformité des lois à la Constitution."
+    ],
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-HISTORY-3E-HISTREP-LINK-ASSESSMENT-20260726110511-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Chute du mur de Berlin, événement qui symbolise la fin de la division de l'Allemagne et annonce l'effondrement du bloc communiste et la fin de la Guerre froide.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-HISTORY-3E-HISTREP-ORDER-ASSESSMENT-20260726110516-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Prise de la Bastille (14 juillet 1789) → Sacre de Napoléon (2 décembre 1804) → Début de la Première Guerre mondiale (28 juillet 1914) → Fin de la Seconde Guerre mondiale (8 mai 1945) → Fondation de la Ve République (4 octobre 1958)",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-HISTORY-3E-HISTREP-ORDER-PRACTICE-20260726110518-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "1789 : Révolution française (prise de la Bastille) → 1815 : Défaite de Napoléon à Waterloo / Congrès de Vienne → 1848 : Révolution de 1848 → 1914-1918 : Première Guerre mondiale → 1939-1945 : Seconde Guerre mondiale",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-HISTORY-3E-HISTREP-PERIODIZE-ASSESSMENT-20260726110521-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Temps Modernes (1492-1789)",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-HISTORY-3E-HISTREP-PERIODIZE-PRACTICE-20260726110519-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Époque contemporaine (à partir de 1789)",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-HISTORY-3E-WARS-TOTALITARIAN-ASSESSMENT-20260726110531-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Nazisme : idéologie raciste et ultranationaliste, propriété privée en grande partie conservée mais subordonnée aux objectifs étatiques ; stalinisme : idéologie communiste, nationalisation et collectivisation des moyens de production entraînant une réduction importante de la propriété privée ; fascisme italien : idéologie nationaliste et corporatiste, propriété privée maintenue mais fortement contrôlée par l'État ; dans les trois cas, les médias et la culture sont soumis à une propagande et à une censure stricte.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-HISTORY-3E-WARS-WWI-ASSESSMENT-20260726110535-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Guerre de masses impliquant une mobilisation nationale et industrielle : conscription et économie entièrement orientées vers l'effort de guerre, combats à grande échelle en Europe (notamment tranchées sur le front Ouest), emploi massif d'armes industrielles nouvelles (mitrailleuses, artillerie lourde, gaz), et un bilan humain et matériel très lourd (1914-1918).",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-HISTORY-3E-WARS-WWI-PRACTICE-20260726110535-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "La Première Guerre mondiale est une « guerre totale » car elle mobilise massivement les hommes (conscription), transforme les économies et les industries pour produire en priorité des armes et du matériel, conduit les États à contrôler et encadrer la société (rationnement, censure, propagande) et implique directement ou indirectement la souffrance des civils autant que celle des militaires (front et arrière).",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-HISTORY-4E-18TH-ENLIGHTENMENT-ASSESSMENT-20260726111134-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "La séparation des pouvoirs et la limitation du pouvoir royal pour protéger les libertés individuelles.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-HISTORY-4E-18TH-SLAVERY-ASSESSMENT-20260726111141-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Un système commercial atlantique (le « commerce triangulaire ») qui déporte par la force des millions d'Africains vers les Amériques ; ces personnes sont réduites en esclavage pour travailler principalement sur des plantations produisant sucre, café, coton, etc. Le système est motivé par la recherche de profits pour les négociants et les puissances coloniales, et il s'appuie sur des lois et des pratiques sociales qui lient servitude, privation de droits et justification raciale.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-HISTORY-4E-18TH-SOURCE-ASSESSMENT-20260726111143-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Le négociant présente l'esclavage et le commerce colonial avant tout comme une activité économique rentable; il se prononce en faveur du maintien de ce commerce.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-HISTORY-4E-18TH-TRADE-PRACTICE-20260726111153-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Le commerce triangulaire reposait sur des navires européens qui échangeaient des produits manufacturés contre des esclaves en Afrique, transportaient ces personnes vers les Amériques pour les faire travailler dans les plantations, et ramenaient en Europe des produits coloniaux (sucre, café, coton) qui enrichissaient les négociants européens et fondaient l'économie coloniale sur le travail forcé et la dépendance à l'exportation.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-HISTORY-4E-19TH-MIGRATION-ASSESSMENT-20260726111203-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "A. L'essor des industries crée une demande de main-d'œuvre concentrée près des usines ; le développement des chemins de fer facilite les migrations rurales vers les villes et les déplacements réguliers, ce qui explique la forte augmentation de la population urbaine.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-HISTORY-4E-FRANCE-CULTURE-ASSESSMENT-20260726111218-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "La naissance d'une culture de masse et l'élargissement de l'accès à la culture (presse populaire, loisirs urbains).",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-HISTORY-4E-FRANCE-REGIMES-ASSESSMENT-20260726111229-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Restauration (Bourbons) → Monarchie de Juillet → Deuxième République → Second Empire → Troisième République",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-HISTORY-4E-FRANCE-REGIMES-PRACTICE-20260726111225-1",
+    "answer_kind": "exact_text",
+    "stored_answer": "Premier Empire, Restauration, Monarchie de Juillet, Deuxième République, Second Empire, Troisième République",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-HISTORY-4E-FRANCE-SOCIETY-PRACTICE-20260726111237-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Document A — Extrait d’un recensement municipal (document synthétique) : \"Ville X : population 1820 = 52 000 ; population 1870 = 127 000. Part des personnes travaillant dans l’industrie et les ateliers : 1820 = 12 % ; 1870 = 43 %.\"",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-ARITH-FRACTION-ASSESSMENT-20260726092730-1",
+    "answer_kind": "exact_text",
+    "stored_answer": "2/3",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-ARITH-FRACTION-PRACTICE-20260726092740-1",
+    "answer_kind": "exact_text",
+    "stored_answer": "5/12",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-ARITH-FRACTION-PRACTICE-20260726092748-1",
+    "answer_kind": "exact_text",
+    "stored_answer": "2/3",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-ARITH-FRACTION-PRACTICE-20260726094538-1",
+    "answer_kind": "exact_text",
+    "stored_answer": "1/294",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-ARITH-GCD-ASSESSMENT-20260726094541-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "6",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-ARITH-GCD-PRACTICE-20260726094535-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "B. 3",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-ARITH-GCD-PRACTICE-20260726094545-1",
+    "answer_kind": "numeric",
+    "stored_answer": "18",
+    "independently_computed": "18",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-ARITH-PRIME-ASSESSMENT-20260726094534-1",
+    "answer_kind": "exact_text",
+    "stored_answer": "2^2 × 3 × 5 × 7 × 11",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-ARITH-PRIME-PRACTICE-20260726094537-1",
+    "answer_kind": "exact_text",
+    "stored_answer": "2^2 × 3 × 7",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-ARITH-PROOF-PRACTICE-20260726094615-1",
+    "answer_kind": "numeric",
+    "stored_answer": "24",
+    "independently_computed": "24",
+    "decision": "PASS",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-BREVETPROB-CALCULATE-ASSESSMENT-20260726094626-1",
+    "answer_kind": "numeric",
+    "stored_answer": "82.80",
+    "independently_computed": "82.80",
+    "decision": "PASS",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-BREVETPROB-CALCULATE-PRACTICE-20260726094605-1",
+    "answer_kind": "numeric",
+    "stored_answer": "42",
+    "independently_computed": "42",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-BREVETPROB-CALCULATE-PRACTICE-20260726094612-1",
+    "answer_kind": "numeric",
+    "stored_answer": "39",
+    "independently_computed": "39",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-BREVETPROB-CALCULATE-PRACTICE-20260726104728-1",
+    "answer_kind": "numeric",
+    "stored_answer": "349.89",
+    "independently_computed": "349.89",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-BREVETPROB-PLAN-PRACTICE-20260726094700-1",
+    "answer_kind": "numeric",
+    "stored_answer": "16",
+    "independently_computed": "16",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-BREVETPROB-PLAN-PRACTICE-20260726104725-1",
+    "answer_kind": "numeric",
+    "stored_answer": "21.25",
+    "independently_computed": "21.25",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-BREVETPROB-SELECT-ASSESSMENT-20260726094701-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "28 élèves; 3 accompagnateurs; prix billet élève 6,00 €; gratuité pour 2 accompagnateurs, tarif adulte 10,00 € au-delà; sandwich 3,00 € et dessert 1,50 € par personne; autocar 50 places; coût 120,00 € par autocar.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-EQUATIONS-INTERPRET-PRACTICE-20260726094717-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "7 personnes peuvent partir.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-EQUATIONS-MODEL-DIAGNOSTIC-20260726094735-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "6x + 6 = 46",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-EQUATIONS-SOLVE-ASSESSMENT-20260726094745-1",
+    "answer_kind": "numeric",
+    "stored_answer": "8",
+    "independently_computed": "8",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-EQUATIONS-SOLVE-REMEDIATION-20260726094745-1",
+    "answer_kind": "numeric",
+    "stored_answer": "5",
+    "independently_computed": "5",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-FUNCTIONS-FORMULA-ASSESSMENT-20260726104723-1",
+    "answer_kind": "numeric",
+    "stored_answer": "12.0",
+    "independently_computed": "12.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-FUNCTIONS-FORMULA-PRACTICE-20260726094817-1",
+    "answer_kind": "numeric",
+    "stored_answer": "5",
+    "independently_computed": "5",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-FUNCTIONS-GRAPH-READ-PRACTICE-20260726094812-1",
+    "answer_kind": "numeric",
+    "stored_answer": "0",
+    "independently_computed": "0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-MEDIAN-COMPARE-PRACTICE-20260726094906-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "La médiane est plus élevée dans la classe 3eB (13 contre 12) et la distribution de 3eA est plus dispersée au centre (écart interquartile 6 contre 3).",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-MEDIAN-COMPARE-PRACTICE-20260726094912-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "La médiane de la classe B est plus élevée que celle de la classe A, et la dispersion (écart interquartile) de la classe B est plus grande que celle de la classe A.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-MEDIAN-MEAN-PRACTICE-20260726095429-1",
+    "answer_kind": "numeric",
+    "stored_answer": "11",
+    "independently_computed": "11",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-MEDIAN-MEDIAN-ASSESSMENT-20260726104726-1",
+    "answer_kind": "numeric",
+    "stored_answer": "9.5",
+    "independently_computed": "9.5",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-MEDIAN-MEDIAN-PRACTICE-20260726095416-1",
+    "answer_kind": "numeric",
+    "stored_answer": "10",
+    "independently_computed": "10",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-MEDIAN-MEDIAN-PRACTICE-20260726095421-1",
+    "answer_kind": "numeric",
+    "stored_answer": "6.2",
+    "independently_computed": "6.2",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-MEDIAN-MEDIAN-PRACTICE-20260726095426-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Médiane = 12. L'échantillon comporte 18 valeurs ; les 9e et 10e valeurs sont toutes les deux égales à 12, donc la médiane (moyenne des deux) vaut 12. Interprétation : au moins la moitié des élèves (9 élèves) ont obtenu une note ≤ 12 et au moins la moitié (9 élèves) ont obtenu une note ≥ 12.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-MEDIAN-RANGE-PRACTICE-20260726095414-1",
+    "answer_kind": "numeric",
+    "stored_answer": "14",
+    "independently_computed": "14",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-PROBA-CALCULATE-ASSESSMENT-20260726104725-1",
+    "answer_kind": "numeric",
+    "stored_answer": "0.667",
+    "independently_computed": "0.667",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-PROBA-CALCULATE-PRACTICE-20260726104725-1",
+    "answer_kind": "numeric",
+    "stored_answer": "0.3",
+    "independently_computed": "0.3",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-PROBA-CALCULATE-PRACTICE-20260726104726-1",
+    "answer_kind": "numeric",
+    "stored_answer": "0.308",
+    "independently_computed": "0.308",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-PROBA-CALCULATE-PRACTICE-20260726111907-1",
+    "answer_kind": "numeric",
+    "stored_answer": "0.7778",
+    "independently_computed": "0.7778",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-PROBA-COMPLEMENT-ASSESSMENT-20260726104735-1",
+    "answer_kind": "numeric",
+    "stored_answer": "0.306",
+    "independently_computed": "0.306",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-PROBA-COMPLEMENT-PRACTICE-20260726104735-1",
+    "answer_kind": "numeric",
+    "stored_answer": "0.7",
+    "independently_computed": "0.7",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-PROBA-COMPLEMENT-PRACTICE-20260726104739-1",
+    "answer_kind": "numeric",
+    "stored_answer": "0.875",
+    "independently_computed": "0.875",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-PROBA-COMPLEMENT-PRACTICE-20260726104742-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "1 − (7/10)^3 = 657/1000 ≃ 0,657",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-THALES-CALCULATE-ASSESSMENT-20260726104737-1",
+    "answer_kind": "numeric",
+    "stored_answer": "4.2",
+    "independently_computed": "4.2",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-THALES-CALCULATE-PRACTICE-20260726104739-1",
+    "answer_kind": "numeric",
+    "stored_answer": "6.0",
+    "independently_computed": "6.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-THALES-CALCULATE-PRACTICE-20260726104740-1",
+    "answer_kind": "numeric",
+    "stored_answer": "22.5",
+    "independently_computed": "22.5",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-THALES-CALCULATE-PRACTICE-20260726104746-1",
+    "answer_kind": "numeric",
+    "stored_answer": "24.0",
+    "independently_computed": "24.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-THALES-CONFIG-ASSESSMENT-20260726095611-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Schéma A : Deux demi‑droites issues d’un même point O (OA et OB). Deux droites p et q, parallèles entre elles, coupent OA en A et A' et coupent OB en B et B' (p passe par A et B, q passe par A' et B').",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-THALES-CONFIG-PRACTICE-20260726095610-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Oui. C'est une configuration de Thalès : M ∈ [AB], N ∈ [AC] et (MN) // (BC).",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-THALES-CONFIG-PRACTICE-20260726095619-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "A) D est un point de [AB] et E est un point de [AC]. La droite (DE) est parallèle à (BC).",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-THALES-RATIO-PRACTICE-20260726095632-1",
+    "answer_kind": "exact_text",
+    "stored_answer": "AD/DB = AE/EC = 1/2 et AD/AB = AE/AC = 1/3",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-THALES-RATIO-PRACTICE-20260726095640-1",
+    "answer_kind": "exact_text",
+    "stored_answer": "MN/NP = M'N'/N'P' ; MN/MP = M'N'/M'P' ; NP/MP = N'P'/M'P'",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-THALES-RECIPROCAL-PRACTICE-20260726095645-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Les droites (DE) et (BC) sont parallèles.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-TRIGO-ANGLE-ASSESSMENT-20260726104752-1",
+    "answer_kind": "numeric",
+    "stored_answer": "36.9",
+    "independently_computed": "36.9",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-TRIGO-ANGLE-PRACTICE-20260726104752-1",
+    "answer_kind": "numeric",
+    "stored_answer": "34.0",
+    "independently_computed": "34.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-TRIGO-ANGLE-PRACTICE-20260726104758-1",
+    "answer_kind": "numeric",
+    "stored_answer": "53.1",
+    "independently_computed": "53.1",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-TRIGO-ANGLE-PRACTICE-20260726104806-1",
+    "answer_kind": "numeric",
+    "stored_answer": "45.0",
+    "independently_computed": "45.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-TRIGO-CONTROL-ASSESSMENT-20260726095727-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "B. sin(110°) = −0,94 — non cohérent",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-TRIGO-CONTROL-PRACTICE-20260726095724-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Le résultat est cohérent.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-TRIGO-CONTROL-PRACTICE-20260726095733-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Les élèves 2 et 3 ont des résultats cohérents, l'élève 1 se trompe.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-TRIGO-LENGTH-ASSESSMENT-20260726104758-1",
+    "answer_kind": "numeric",
+    "stored_answer": "7.6",
+    "independently_computed": "7.6",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-TRIGO-LENGTH-PRACTICE-20260726104756-1",
+    "answer_kind": "numeric",
+    "stored_answer": "7.5",
+    "independently_computed": "7.5",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-TRIGO-LENGTH-PRACTICE-20260726104758-1",
+    "answer_kind": "numeric",
+    "stored_answer": "3.91",
+    "independently_computed": "3.91",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-TRIGO-LENGTH-PRACTICE-20260726104804-1",
+    "answer_kind": "numeric",
+    "stored_answer": "16.8",
+    "independently_computed": "16.8",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-TRIGO-MODEL-ASSESSMENT-20260726095748-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Le panneau mesure environ 4,9 m.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-TRIGO-MODEL-PRACTICE-20260726104803-1",
+    "answer_kind": "numeric",
+    "stored_answer": "2.89",
+    "independently_computed": "2.89",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-TRIGO-RATIO-ASSESSMENT-20260726095807-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "tan A",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-3E-TRIGO-RATIO-PRACTICE-20260726095804-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "tan(A) = BC / AC",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-FRACT-ADD-ASSESSMENT-20260726105541-1",
+    "answer_kind": "numeric",
+    "stored_answer": "0.925",
+    "independently_computed": "0.925",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-FRACT-DIVIDE-ASSESSMENT-20260726105542-1",
+    "answer_kind": "numeric",
+    "stored_answer": "8.25",
+    "independently_computed": "8.25",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-FRACT-DIVIDE-PRACTICE-20260726105540-1",
+    "answer_kind": "numeric",
+    "stored_answer": "6.0",
+    "independently_computed": "6.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-FRACT-DIVIDE-PRACTICE-20260726105544-1",
+    "answer_kind": "numeric",
+    "stored_answer": "8.125",
+    "independently_computed": "8.125",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-FRACT-DIVIDE-PRACTICE-20260726105551-1",
+    "answer_kind": "numeric",
+    "stored_answer": "6.0",
+    "independently_computed": "6.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-FRACT-EQUIVALENT-ASSESSMENT-20260726105550-1",
+    "answer_kind": "exact_text",
+    "stored_answer": "a) 3/4 ; b) 25/40",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-FRACT-EQUIVALENT-PRACTICE-20260726105550-1",
+    "answer_kind": "exact_text",
+    "stored_answer": "2/3 ; 14/35",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-FRACT-MULTIPLY-ASSESSMENT-20260726105555-1",
+    "answer_kind": "numeric",
+    "stored_answer": "0.5",
+    "independently_computed": "0.5",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-FRACT-MULTIPLY-PRACTICE-20260726105553-1",
+    "answer_kind": "exact_text",
+    "stored_answer": "2/5",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-FRACT-MULTIPLY-PRACTICE-20260726105556-1",
+    "answer_kind": "numeric",
+    "stored_answer": "1.875",
+    "independently_computed": "1.875",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-FRACT-MULTIPLY-PRACTICE-20260726105558-1",
+    "answer_kind": "numeric",
+    "stored_answer": "1.2",
+    "independently_computed": "1.2",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-FRACT-PROBLEM-ASSESSMENT-20260726105555-1",
+    "answer_kind": "numeric",
+    "stored_answer": "0.528",
+    "independently_computed": "0.528",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-FRACT-PROBLEM-PRACTICE-20260726105558-1",
+    "answer_kind": "numeric",
+    "stored_answer": "9.0",
+    "independently_computed": "9.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-FRACT-PROBLEM-PRACTICE-20260726105601-1",
+    "answer_kind": "numeric",
+    "stored_answer": "1.167",
+    "independently_computed": "1.167",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-FRACT-PROBLEM-PRACTICE-20260726105604-1",
+    "answer_kind": "numeric",
+    "stored_answer": "600.0",
+    "independently_computed": "600.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-LITERAL-DISTRIBUTE-ASSESSMENT-20260726105608-1",
+    "answer_kind": "exact_text",
+    "stored_answer": "6x + 5",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-LITERAL-FACTOR-ASSESSMENT-20260726105609-1",
+    "answer_kind": "exact_text",
+    "stored_answer": "(2x+3)(3x-2)",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-LITERAL-FACTOR-PRACTICE-20260726105608-1",
+    "answer_kind": "exact_text",
+    "stored_answer": "3(2x+3)",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-LITERAL-FACTOR-PRACTICE-20260726105619-1",
+    "answer_kind": "exact_text",
+    "stored_answer": "1) 4x(3x-2); 2) (x-3)(x+2); 3) (x+3)(x+4)",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-LITERAL-MODEL-ASSESSMENT-20260726105617-1",
+    "answer_kind": "exact_text",
+    "stored_answer": "3x + 7",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-LITERAL-MODEL-PRACTICE-20260726105615-1",
+    "answer_kind": "exact_text",
+    "stored_answer": "x + 7",
+    "independently_computed": null,
+    "decision": "PASS",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-LITERAL-MODEL-PRACTICE-20260726105619-1",
+    "answer_kind": "exact_text",
+    "stored_answer": "(x+18)/6",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-LITERAL-MODEL-PRACTICE-20260726111906-1",
+    "answer_kind": "exact_text",
+    "stored_answer": "8x+6",
+    "independently_computed": null,
+    "decision": "PASS",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-LITERAL-REDUCE-ASSESSMENT-20260726105623-1",
+    "answer_kind": "numeric",
+    "stored_answer": "4.0",
+    "independently_computed": "4.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-LITERAL-REDUCE-PRACTICE-20260726105620-1",
+    "answer_kind": "numeric",
+    "stored_answer": "12.0",
+    "independently_computed": "12.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-LITERAL-REDUCE-PRACTICE-20260726105622-1",
+    "answer_kind": "exact_text",
+    "stored_answer": "x - 5",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-LITERAL-REDUCE-PRACTICE-20260726105627-1",
+    "answer_kind": "exact_text",
+    "stored_answer": "x + 2y + 7",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-LITERAL-SUBSTITUTE-ASSESSMENT-20260726105629-1",
+    "answer_kind": "numeric",
+    "stored_answer": "7.0",
+    "independently_computed": "7.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-LITERAL-SUBSTITUTE-PRACTICE-20260726105626-1",
+    "answer_kind": "numeric",
+    "stored_answer": "21.0",
+    "independently_computed": "21.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-LITERAL-SUBSTITUTE-PRACTICE-20260726105631-1",
+    "answer_kind": "numeric",
+    "stored_answer": "-9.5",
+    "independently_computed": "-9.5",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-LITERAL-SUBSTITUTE-PRACTICE-20260726105636-1",
+    "answer_kind": "numeric",
+    "stored_answer": "16.0",
+    "independently_computed": "16.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-POWERS-CALCULATE-ASSESSMENT-20260726105637-1",
+    "answer_kind": "numeric",
+    "stored_answer": "81.0",
+    "independently_computed": "81.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-POWERS-CALCULATE-PRACTICE-20260726105634-1",
+    "answer_kind": "numeric",
+    "stored_answer": "243.0",
+    "independently_computed": "243.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-POWERS-CALCULATE-PRACTICE-20260726105642-1",
+    "answer_kind": "numeric",
+    "stored_answer": "32.0",
+    "independently_computed": "32.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-POWERS-CALCULATE-PRACTICE-20260726105646-1",
+    "answer_kind": "numeric",
+    "stored_answer": "5.12",
+    "independently_computed": "5.12",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-POWERS-MEANING-ASSESSMENT-20260726105649-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "6^3 = 6 × 6 × 6 : le nombre total de petits cubes (6 couches de 6×6) dans la grande boîte.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-POWERS-MEANING-PRACTICE-20260726105647-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Produit de trois facteurs égaux à 7 : 7×7×7",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-POWERS-MEANING-PRACTICE-20260726105657-1",
+    "answer_kind": "exact_text",
+    "stored_answer": "5 × 5 × 5",
+    "independently_computed": null,
+    "decision": "PASS",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-POWERS-RULES-ASSESSMENT-20260726105714-1",
+    "answer_kind": "numeric",
+    "stored_answer": "0.25",
+    "independently_computed": "0.25",
+    "decision": "PASS",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-POWERS-RULES-PRACTICE-20260726105646-1",
+    "answer_kind": "numeric",
+    "stored_answer": "128",
+    "independently_computed": "128",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-POWERS-RULES-PRACTICE-20260726105653-1",
+    "answer_kind": "numeric",
+    "stored_answer": "32.0",
+    "independently_computed": "32.0",
+    "decision": "PASS",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-POWERS-RULES-PRACTICE-20260726111907-1",
+    "answer_kind": "numeric",
+    "stored_answer": "8.0",
+    "independently_computed": "8.0",
+    "decision": "PASS",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-POWERS-SCIENTIFIC-ASSESSMENT-20260726105651-1",
+    "answer_kind": "exact_text",
+    "stored_answer": "4,56 × 10^-4 ; 7,2 × 10^7 ; -3,2 × 10^-3",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-POWERS-SCIENTIFIC-PRACTICE-20260726105654-1",
+    "answer_kind": "exact_text",
+    "stored_answer": "4,82 × 10^-4",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-POWERS-SCIENTIFIC-PRACTICE-20260726105659-1",
+    "answer_kind": "exact_text",
+    "stored_answer": "a) 5,72 × 10^-4 ; b) 4,82 × 10^5 ; c) 1,23 × 10^10",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-POWERS-SCIENTIFIC-PRACTICE-20260726105704-1",
+    "answer_kind": "exact_text",
+    "stored_answer": "3,3 × 10^-6",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-POWERS-TEN-ASSESSMENT-20260726105706-1",
+    "answer_kind": "numeric",
+    "stored_answer": "4560.0",
+    "independently_computed": "4560.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-POWERS-TEN-PRACTICE-20260726105703-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "360",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-POWERS-TEN-PRACTICE-20260726105711-1",
+    "answer_kind": "numeric",
+    "stored_answer": "0.0145",
+    "independently_computed": "0.0145",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-PROP-GRAPH-ASSESSMENT-20260726105718-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "A. Tableau : nombre de packs x : 1, 2, 3, 4 ; nombre de bouteilles y : 6, 12, 18, 24.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-PROP-GRAPH-PRACTICE-20260726105714-1",
+    "answer_kind": "boolean",
+    "stored_answer": "Vrai",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-PROP-GRAPH-PRACTICE-20260726105719-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Seul le tableau représente une relation de proportionnalité.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-PROP-IDENTIFY-ASSESSMENT-20260726105723-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Seule la situation A est proportionnelle.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-PROP-IDENTIFY-PRACTICE-20260726105721-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "proportionnelle",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-PROP-IDENTIFY-PRACTICE-20260726111937-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "A) Un boulanger vend chaque croissant 2 €. Tableau prix (en €) selon le nombre de croissants :\n   nombre : 1, 2, 3\n   prix   : 2, 4, 6",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-PROP-PERCENT-ASSESSMENT-20260726105724-1",
+    "answer_kind": "numeric",
+    "stored_answer": "20.0",
+    "independently_computed": "20.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-PROP-PERCENT-PRACTICE-20260726105721-1",
+    "answer_kind": "numeric",
+    "stored_answer": "25.0",
+    "independently_computed": "25.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-PROP-PERCENT-PRACTICE-20260726105726-1",
+    "answer_kind": "numeric",
+    "stored_answer": "-6.5",
+    "independently_computed": "-6.5",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-PROP-PERCENT-PRACTICE-20260726105728-1",
+    "answer_kind": "numeric",
+    "stored_answer": "-17.5",
+    "independently_computed": "-17.5",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-PROP-PRODUCT-ASSESSMENT-20260726105731-1",
+    "answer_kind": "numeric",
+    "stored_answer": "4.0",
+    "independently_computed": "4.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-PROP-PRODUCT-PRACTICE-20260726105734-1",
+    "answer_kind": "numeric",
+    "stored_answer": "612.5",
+    "independently_computed": "612.5",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-PROP-PRODUCT-PRACTICE-20260726105735-1",
+    "answer_kind": "numeric",
+    "stored_answer": "468.75",
+    "independently_computed": "468.75",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-PROP-PRODUCT-PRACTICE-20260726105737-1",
+    "answer_kind": "numeric",
+    "stored_answer": "44.37",
+    "independently_computed": "44.37",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-PROP-SCALE-ASSESSMENT-20260726105739-1",
+    "answer_kind": "numeric",
+    "stored_answer": "4.0",
+    "independently_computed": "4.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-PROP-SCALE-PRACTICE-20260726105738-1",
+    "answer_kind": "numeric",
+    "stored_answer": "7.5",
+    "independently_computed": "7.5",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-PROP-SCALE-PRACTICE-20260726105741-1",
+    "answer_kind": "numeric",
+    "stored_answer": "26.67",
+    "independently_computed": "26.67",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-PROP-SCALE-PRACTICE-20260726105743-1",
+    "answer_kind": "numeric",
+    "stored_answer": "17.0",
+    "independently_computed": "17.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-PYTH-CALCULATE-ASSESSMENT-20260726105748-1",
+    "answer_kind": "numeric",
+    "stored_answer": "10.95",
+    "independently_computed": "10.95",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-PYTH-CALCULATE-DIAGNOSTIC-20260726105745-1",
+    "answer_kind": "numeric",
+    "stored_answer": "8.5",
+    "independently_computed": "8.5",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-PYTH-CALCULATE-PRACTICE-20260726105746-1",
+    "answer_kind": "numeric",
+    "stored_answer": "10.0",
+    "independently_computed": "10.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-PYTH-CALCULATE-PRACTICE-20260726105751-1",
+    "answer_kind": "numeric",
+    "stored_answer": "25.0",
+    "independently_computed": "25.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-PYTH-CALCULATE-PRACTICE-20260726105800-1",
+    "answer_kind": "numeric",
+    "stored_answer": "14.68",
+    "independently_computed": "14.68",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-PYTH-CALCULATE-REMEDIATION-20260726105753-1",
+    "answer_kind": "numeric",
+    "stored_answer": "10.0",
+    "independently_computed": "10.0",
+    "decision": "PASS",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-PYTH-IDENTIFY-ASSESSMENT-20260726105803-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "A. Le triangle ABC a pour longueurs AB = 10 cm, AC = 6 cm et BC = 8 cm.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-PYTH-IDENTIFY-DIAGNOSTIC-20260726105818-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "A. Triangle ABC : AB = 13 cm, BC = 5 cm, AC = 12 cm.",
+    "independently_computed": null,
+    "decision": "PASS",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-PYTH-IDENTIFY-PRACTICE-20260726105758-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "A. Triangle ABC avec AB = 3 cm, BC = 4 cm, AC = 5 cm",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-PYTH-IDENTIFY-PRACTICE-20260726105806-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Option A : triangle ABC de sommets A(1 ; 2), B(5 ; 2) et C(5 ; 6).",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-PYTH-IDENTIFY-PRACTICE-20260726112203-1",
+    "answer_kind": "multiple_choice",
+    "stored_answer": [
+      "Triangle ABC",
+      "Triangle ABE",
+      "Triangle ACE",
+      "Triangle BCE"
+    ],
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-PYTH-IDENTIFY-REMEDIATION-20260726105805-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "A. Une échelle appuyée contre un mur forme un triangle dont les côtés mesurent 5 cm, 12 cm et 13 cm.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-PYTH-TEST-ASSESSMENT-20260726105803-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Oui, le triangle est rectangle en A.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-PYTH-TEST-PRACTICE-20260726105909-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Le triangle ABC est rectangle en A.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-PYTH-TEST-PRACTICE-20260726105910-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Le triangle ABC est rectangle en C.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-PYTH-TEST-PRACTICE-20260726105915-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Oui. Le triangle ABC est rectangle en A.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-RELNUM-CHAIN-ASSESSMENT-20260726105910-1",
+    "answer_kind": "numeric",
+    "stored_answer": "-16.0",
+    "independently_computed": "-16.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-RELNUM-CHAIN-PRACTICE-20260726105907-1",
+    "answer_kind": "numeric",
+    "stored_answer": "8.0",
+    "independently_computed": "8.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-RELNUM-CHAIN-PRACTICE-20260726105909-1",
+    "answer_kind": "numeric",
+    "stored_answer": "10.0",
+    "independently_computed": "10.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-RELNUM-CHAIN-PRACTICE-20260726111927-1",
+    "answer_kind": "numeric",
+    "stored_answer": "-9.0",
+    "independently_computed": "-9.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-RELNUM-MULTIPLY-ASSESSMENT-20260726105910-1",
+    "answer_kind": "numeric",
+    "stored_answer": "12.0",
+    "independently_computed": "12.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-RELNUM-MULTIPLY-PRACTICE-20260726105908-1",
+    "answer_kind": "numeric",
+    "stored_answer": "-40.0",
+    "independently_computed": "-40.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-RELNUM-MULTIPLY-PRACTICE-20260726105922-1",
+    "answer_kind": "numeric",
+    "stored_answer": "1.6",
+    "independently_computed": "1.6",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-RELNUM-MULTIPLY-PRACTICE-20260726105926-1",
+    "answer_kind": "numeric",
+    "stored_answer": "20.0",
+    "independently_computed": "20.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-RELNUM-PROBLEM-ASSESSMENT-20260726105920-1",
+    "answer_kind": "numeric",
+    "stored_answer": "20.0",
+    "independently_computed": "20.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-RELNUM-PROBLEM-PRACTICE-20260726105917-1",
+    "answer_kind": "numeric",
+    "stored_answer": "10.0",
+    "independently_computed": "10.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-RELNUM-PROBLEM-PRACTICE-20260726105921-1",
+    "answer_kind": "numeric",
+    "stored_answer": "-3.0",
+    "independently_computed": "-3.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-RELNUM-PROBLEM-PRACTICE-20260726105925-1",
+    "answer_kind": "numeric",
+    "stored_answer": "2150.0",
+    "independently_computed": "2150.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-RELNUM-SIGN-ASSESSMENT-20260726105923-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "positif",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-RELNUM-SIGN-PRACTICE-20260726105923-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "négatif",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-STATS-COMPARE-ASSESSMENT-20260726110000-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Classe A : moyenne 12.8, médiane 13, étendue 10. Classe B : moyenne 12.3, médiane 12, étendue 13. Conclusion : la classe A a une meilleure performance moyenne (12.8 > 12.3) et est plus régulière (étendue plus petite : 10 < 13).",
+    "independently_computed": null,
+    "decision": "PASS",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-STATS-COMPARE-PRACTICE-20260726105944-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "La série A a une moyenne plus élevée (14,1 contre 13,0), une médiane plus élevée (14,5 contre 13,0) et une étendue plus grande (12 contre 8).",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-STATS-COMPARE-PRACTICE-20260726105957-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Médiane : A = B (6,5). Moyenne : A < B (6,67 < 7,33). Dispersion : A < B (IQR_A = 1,5 < IQR_B = 3,5 ; étendue 4 < 11). Conclusion : la série A est plus homogène.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-STATS-FREQUENCY-ASSESSMENT-20260726105938-1",
+    "answer_kind": "numeric",
+    "stored_answer": "0.56",
+    "independently_computed": "0.56",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-STATS-FREQUENCY-PRACTICE-20260726105940-1",
+    "answer_kind": "numeric",
+    "stored_answer": "0.3",
+    "independently_computed": "0.3",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-STATS-FREQUENCY-PRACTICE-20260726105944-1",
+    "answer_kind": "numeric",
+    "stored_answer": "0.33",
+    "independently_computed": "0.33",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-STATS-FREQUENCY-PRACTICE-20260726105945-1",
+    "answer_kind": "numeric",
+    "stored_answer": "0.42",
+    "independently_computed": "0.42",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-STATS-MEAN-ASSESSMENT-20260726105948-1",
+    "answer_kind": "numeric",
+    "stored_answer": "12.92",
+    "independently_computed": "12.92",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-STATS-MEAN-PRACTICE-20260726105948-1",
+    "answer_kind": "numeric",
+    "stored_answer": "14.0",
+    "independently_computed": "14.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-STATS-MEAN-PRACTICE-20260726105952-1",
+    "answer_kind": "numeric",
+    "stored_answer": "9.3",
+    "independently_computed": "9.3",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-STATS-MEAN-PRACTICE-20260726105954-1",
+    "answer_kind": "numeric",
+    "stored_answer": "13.92",
+    "independently_computed": "13.92",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-STATS-POPULATION-PRACTICE-20260726110004-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Population : les 18 élèves de la classe de 4eA participant au sondage ; Caractère : sport préféré (caractère qualitatif nominal) ; Effectif de la modalité « football » : 6 élèves.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-STATS-REPRESENT-ASSESSMENT-20260726110002-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "A — Diagramme en barres avec hauteurs (de gauche à droite pour les classes 0–1, 1–2, 2–3, 3–4, 4–5) : 2, 6, 9, 7, 2.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-STATS-REPRESENT-PRACTICE-20260726105959-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Diagramme A : barres verticales, hauteur = 12 pour Pommes, 8 pour Bananes, 6 pour Oranges et 4 pour Raisins (échelle 1 unité = 1 élève).",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-VOLUMES-CONVERT-ASSESSMENT-20260726110013-1",
+    "answer_kind": "numeric",
+    "stored_answer": "72000.0",
+    "independently_computed": "72000.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-VOLUMES-CONVERT-PRACTICE-20260726110012-1",
+    "answer_kind": "numeric",
+    "stored_answer": "7250.0",
+    "independently_computed": "7250.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-VOLUMES-CONVERT-PRACTICE-20260726110018-1",
+    "answer_kind": "numeric",
+    "stored_answer": "75.0",
+    "independently_computed": "75.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-VOLUMES-CONVERT-PRACTICE-20260726110023-1",
+    "answer_kind": "numeric",
+    "stored_answer": "5000.0",
+    "independently_computed": "5000.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-VOLUMES-CYLINDER-ASSESSMENT-20260726110023-1",
+    "answer_kind": "numeric",
+    "stored_answer": "754.0",
+    "independently_computed": "754.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-VOLUMES-CYLINDER-PRACTICE-20260726110024-1",
+    "answer_kind": "numeric",
+    "stored_answer": "1.846",
+    "independently_computed": "1.846",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-VOLUMES-CYLINDER-PRACTICE-20260726110028-1",
+    "answer_kind": "numeric",
+    "stored_answer": "1256.0",
+    "independently_computed": "1256.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-VOLUMES-CYLINDER-PRACTICE-20260726110029-1",
+    "answer_kind": "numeric",
+    "stored_answer": "754.0",
+    "independently_computed": "754.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-VOLUMES-MODEL-ASSESSMENT-20260726110031-1",
+    "answer_kind": "numeric",
+    "stored_answer": "0.672",
+    "independently_computed": "0.672",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-VOLUMES-MODEL-PRACTICE-20260726110032-1",
+    "answer_kind": "numeric",
+    "stored_answer": "2.08",
+    "independently_computed": "2.08",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-VOLUMES-MODEL-PRACTICE-20260726110033-1",
+    "answer_kind": "numeric",
+    "stored_answer": "50.575",
+    "independently_computed": "50.575",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-VOLUMES-MODEL-PRACTICE-20260726110035-1",
+    "answer_kind": "numeric",
+    "stored_answer": "0.04125",
+    "independently_computed": "0.04125",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-VOLUMES-PRISM-ASSESSMENT-20260726110031-1",
+    "answer_kind": "numeric",
+    "stored_answer": "1200.0",
+    "independently_computed": "1200.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-VOLUMES-PRISM-PRACTICE-20260726110036-1",
+    "answer_kind": "numeric",
+    "stored_answer": "1.2",
+    "independently_computed": "1.2",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-VOLUMES-PRISM-PRACTICE-20260726110038-1",
+    "answer_kind": "numeric",
+    "stored_answer": "0.18",
+    "independently_computed": "0.18",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-VOLUMES-PRISM-PRACTICE-20260726110045-1",
+    "answer_kind": "numeric",
+    "stored_answer": "3.8",
+    "independently_computed": "3.8",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-VOLUMES-PROBLEM-ASSESSMENT-20260726110040-1",
+    "answer_kind": "numeric",
+    "stored_answer": "1800.0",
+    "independently_computed": "1800.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-VOLUMES-PROBLEM-PRACTICE-20260726110039-1",
+    "answer_kind": "numeric",
+    "stored_answer": "60.0",
+    "independently_computed": "60.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-VOLUMES-PROBLEM-PRACTICE-20260726110043-1",
+    "answer_kind": "numeric",
+    "stored_answer": "243.0",
+    "independently_computed": "243.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-MATHEMATICS-4E-VOLUMES-PROBLEM-PRACTICE-20260726110047-1",
+    "answer_kind": "numeric",
+    "stored_answer": "128.0",
+    "independently_computed": "128.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-PHYSICS-CHEMISTRY-3E-MATTER-EQUATION-ASSESSMENT-20260726110547-1",
+    "answer_kind": "exact_text",
+    "stored_answer": "4 Fe + 3 O2 -> 2 Fe2O3",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-PHYSICS-CHEMISTRY-3E-MATTER-PH-ASSESSMENT-20260726110554-1",
+    "answer_kind": "numeric",
+    "stored_answer": "2.40",
+    "independently_computed": "2.40",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-PHYSICS-CHEMISTRY-3E-MATTER-PH-PRACTICE-20260726110557-1",
+    "answer_kind": "numeric",
+    "stored_answer": "3.30",
+    "independently_computed": "3.30",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-PHYSICS-CHEMISTRY-3E-MECHANICS-CONVERSION-ASSESSMENT-20260726110604-1",
+    "answer_kind": "numeric",
+    "stored_answer": "8.3",
+    "independently_computed": "8.3",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-PHYSICS-CHEMISTRY-3E-MECHANICS-CONVERSION-PRACTICE-20260726110608-1",
+    "answer_kind": "numeric",
+    "stored_answer": "4.86",
+    "independently_computed": "4.86",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-PHYSICS-CHEMISTRY-3E-MECHANICS-ENERGY-ASSESSMENT-20260726110607-1",
+    "answer_kind": "numeric",
+    "stored_answer": "294.0",
+    "independently_computed": "294.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-PHYSICS-CHEMISTRY-3E-MECHANICS-ENERGY-PRACTICE-20260726110607-1",
+    "answer_kind": "numeric",
+    "stored_answer": "16.0",
+    "independently_computed": "16.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-PHYSICS-CHEMISTRY-3E-MECHANICS-FORCE-ASSESSMENT-20260726110613-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "A. Quatre forces : le poids P (vertical, vers le bas) appliqué au centre du bloc ; la réaction normale N (verticale, vers le haut) appliquée au point de contact avec la table ; la traction T le long de la corde, dirigée vers la droite et en haut avec un angle de 30° au‑dessus de l'horizontale, appliquée au centre du bloc ; la force de frottement f, horizontale, dirigée vers la gauche au point de contact (opposée au mouvement).",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-PHYSICS-CHEMISTRY-3E-MECHANICS-FORCE-PRACTICE-20260726110613-1",
+    "answer_kind": "numeric",
+    "stored_answer": "23.3",
+    "independently_computed": "23.3",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-PHYSICS-CHEMISTRY-3E-MECHANICS-REFERENCE-PRACTICE-20260726110617-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Dans le référentiel du lampadaire (A) : trajectoire rectiligne, mouvement uniforme, vitesse 18,0 km/h vers l’avant. Dans le référentiel de la voiture (B) : trajectoire rectiligne, mouvement uniforme, vitesse 8,0 km/h vers l’avant.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-PHYSICS-CHEMISTRY-3E-MECHANICS-SPEED-ASSESSMENT-20260726110611-1",
+    "answer_kind": "numeric",
+    "stored_answer": "6.0",
+    "independently_computed": "6.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-PHYSICS-CHEMISTRY-3E-MECHANICS-SPEED-PRACTICE-20260726110616-1",
+    "answer_kind": "numeric",
+    "stored_answer": "5.0",
+    "independently_computed": "5.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-PHYSICS-CHEMISTRY-3E-SPEED-CALCULATE-ASSESSMENT-20260726110619-1",
+    "answer_kind": "numeric",
+    "stored_answer": "19.7",
+    "independently_computed": "19.7",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-PHYSICS-CHEMISTRY-3E-SPEED-CALCULATE-PRACTICE-20260726110617-1",
+    "answer_kind": "numeric",
+    "stored_answer": "57.5",
+    "independently_computed": "57.5",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-PHYSICS-CHEMISTRY-3E-SPEED-DATA-ASSESSMENT-20260726110620-1",
+    "answer_kind": "numeric",
+    "stored_answer": "56.67",
+    "independently_computed": "56.67",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-PHYSICS-CHEMISTRY-3E-SPEED-INTERPRET-ASSESSMENT-20260726110632-1",
+    "answer_kind": "numeric",
+    "stored_answer": "1.71",
+    "independently_computed": "1.71",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-PHYSICS-CHEMISTRY-3E-SPEED-INTERPRET-PRACTICE-20260726110627-1",
+    "answer_kind": "numeric",
+    "stored_answer": "8.8",
+    "independently_computed": "8.8",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-PHYSICS-CHEMISTRY-4E-CHEMISTRY-ACID-BASE-ASSESSMENT-20260726111240-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "La solution est acide. [H3O+] = 3,98 × 10^-4 mol·L^-1.",
+    "independently_computed": null,
+    "decision": "PASS",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-PHYSICS-CHEMISTRY-4E-CHEMISTRY-ACID-BASE-PRACTICE-20260726111241-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Solution A est acide (pH = 4,2). La concentration en ions hydronium est d'environ 6,3×10^-5 mol·L^-1.",
+    "independently_computed": null,
+    "decision": "PASS",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-PHYSICS-CHEMISTRY-4E-CHEMISTRY-ATOM-ASSESSMENT-20260726111236-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "2 H2(g) + O2(g) -> 2 H2O(l)",
+    "independently_computed": null,
+    "decision": "PASS",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-PHYSICS-CHEMISTRY-4E-CHEMISTRY-CONSERVATION-ASSESSMENT-20260726111248-1",
+    "answer_kind": "numeric",
+    "stored_answer": "235.7",
+    "independently_computed": "235.7",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-PHYSICS-CHEMISTRY-4E-CHEMISTRY-CONSERVATION-PRACTICE-20260726111250-1",
+    "answer_kind": "numeric",
+    "stored_answer": "54.0",
+    "independently_computed": "54.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-PHYSICS-CHEMISTRY-4E-CHEMISTRY-EQUATION-ASSESSMENT-20260726111250-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "1 mole de CH4 réagit avec 2 moles d'O2 pour former 1 mole de CO2 et 2 moles d'H2O.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-PHYSICS-CHEMISTRY-4E-CHEMISTRY-EXPERIMENT-ASSESSMENT-20260726111258-1",
+    "answer_kind": "numeric",
+    "stored_answer": "21.6",
+    "independently_computed": "21.6",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-PHYSICS-CHEMISTRY-4E-CHEMISTRY-EXPERIMENT-PRACTICE-20260726111253-1",
+    "answer_kind": "numeric",
+    "stored_answer": "18.0",
+    "independently_computed": "18.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-PHYSICS-CHEMISTRY-4E-ELECTRICITY-CIRCUIT-PRACTICE-20260726111257-1",
+    "answer_kind": "numeric",
+    "stored_answer": "2.0",
+    "independently_computed": "2.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-PHYSICS-CHEMISTRY-4E-ELECTRICITY-CURRENT-ASSESSMENT-20260726111302-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Placer l'ampèremètre en série (position A ou C). Il indiquera 0.3 A.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-PHYSICS-CHEMISTRY-4E-ELECTRICITY-CURRENT-PRACTICE-20260726111303-1",
+    "answer_kind": "numeric",
+    "stored_answer": "0.5",
+    "independently_computed": "0.5",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-PHYSICS-CHEMISTRY-4E-ELECTRICITY-ENERGY-ASSESSMENT-20260726111303-1",
+    "answer_kind": "numeric",
+    "stored_answer": "25.0",
+    "independently_computed": "25.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-PHYSICS-CHEMISTRY-4E-ELECTRICITY-ENERGY-PRACTICE-20260726111304-1",
+    "answer_kind": "numeric",
+    "stored_answer": "648000.0",
+    "independently_computed": "648000.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-PHYSICS-CHEMISTRY-4E-ELECTRICITY-LAW-ASSESSMENT-20260726111310-1",
+    "answer_kind": "numeric",
+    "stored_answer": "0.33",
+    "independently_computed": "0.33",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-PHYSICS-CHEMISTRY-4E-ELECTRICITY-LAW-PRACTICE-20260726111308-1",
+    "answer_kind": "numeric",
+    "stored_answer": "0.48",
+    "independently_computed": "0.48",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-PHYSICS-CHEMISTRY-4E-ELECTRICITY-SIGNAL-PRACTICE-20260726111310-1",
+    "answer_kind": "numeric",
+    "stored_answer": "125.0",
+    "independently_computed": "125.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-PHYSICS-CHEMISTRY-4E-ELECTRICITY-VOLTAGE-ASSESSMENT-20260726111312-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Brancher le voltmètre en parallèle aux bornes de R2 et choisir la gamme 10 V.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-PHYSICS-CHEMISTRY-4E-ELECTRICITY-VOLTAGE-PRACTICE-20260726111317-1",
+    "answer_kind": "numeric",
+    "stored_answer": "6.0",
+    "independently_computed": "6.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-SPANISH-3E-COMMUNICATION-LISTEN-ASSESSMENT-20260726110636-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Elle est partagée entre étudier pour l'examen et sortir avec ses amis; elle prévoit un compromis: étudier le matin et sortir l'après-midi.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-SPANISH-3E-COMMUNICATION-LISTEN-PRACTICE-20260726110634-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "B. Informer sur ses projets pour le week-end",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-SPANISH-3E-COMMUNICATION-READ-ASSESSMENT-20260726110645-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Elle explique qu'elle veut rejoindre le club de photographie, mais elle a un conflit d'horaires le mardi et demande s'il existe un autre créneau.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-SPANISH-3E-COMMUNICATION-READ-PRACTICE-20260726110642-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "La classe a fait une sortie d'environ trois heures; il a fait très chaud, plusieurs élèves ont manqué d'eau et l'enseignant propose des mesures (prévoir plus d'eau et des pauses) pour la prochaine sortie.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-SPANISH-3E-PRESENT-AGREEMENT-ASSESSMENT-20260726110657-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Los estudiantes se levantan a las siete. Mi hermana hace la tarea ahora. Tú eres muy amable. Yo juego al tenis los fines de semana.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-SPANISH-3E-PRESENT-AGREEMENT-PRACTICE-20260726110656-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "C. Usted son muy amable.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-SPANISH-3E-PRESENT-USE-ASSESSMENT-20260726110705-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "está leyendo",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-SPANISH-3E-PRESENT-USE-PRACTICE-20260726110708-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "estoy cocinando",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-SPANISH-4E-COMMUNICATION-INTERACT-ASSESSMENT-20260726111325-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Quisiera una camiseta, por favor.",
+    "independently_computed": null,
+    "decision": "PASS",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-SPANISH-4E-COMMUNICATION-LISTEN-ASSESSMENT-20260726111320-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Jugar al fútbol con sus amigos por la tarde",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-SPANISH-4E-COMMUNICATION-LISTEN-PRACTICE-20260726111322-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Le locuteur dit qu'il a un examen le matin, propose d'aller au centre commercial à dix heures et précise qu'il doit partir tôt parce qu'il travaille l'après-midi.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-SPANISH-4E-COMMUNICATION-READ-ASSESSMENT-20260726111328-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Porque si hace mal tiempo, irán al cine.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-SPANISH-4E-COMMUNICATION-READ-PRACTICE-20260726111325-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Samedi après-midi.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-SPANISH-4E-LANGUAGE-CULTURE-PRACTICE-20260726111338-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Les habitants respectent un temps de repos après le déjeuner, lié à la siesta.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-SPANISH-4E-LANGUAGE-GRAMMAR-ASSESSMENT-20260726111344-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Chicos, ¿qué quieren hacer hoy?",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-SPANISH-4E-LANGUAGE-VOCAB-ASSESSMENT-20260726111355-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "quedada",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-SVT-3E-CELL-OBSERVE-PRACTICE-20260726110750-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Le prélèvement provient d'un tissu de feuille (tissu photosynthétique) : les chloroplastes (structures vertes) indiquent que ces cellules réalisent la photosynthèse.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-SVT-3E-GENETICS-ALLELE-ASSESSMENT-20260726110752-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Mutations aléatoires et brassage génétique lors de la reproduction sexuée (méiose : crossing-over et distribution indépendante des chromosomes).",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-SVT-3E-GENETICS-DNA-ASSESSMENT-20260726110806-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Un gène est un segment d'ADN; plusieurs gènes sont organisés le long d'un chromosome.",
+    "independently_computed": null,
+    "decision": "PASS",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-SVT-3E-GENETICS-DNA-PRACTICE-20260726110753-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "A. Un chromosome est constitué d'une seule longue molécule d'ADN enroulée ; cette molécule porte de nombreux gènes, chaque gène correspondant à une section de la molécule d'ADN qui contient l'information pour un caractère ou pour fabriquer une protéine.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-SVT-3E-GENETICS-EVOLUTION-PRACTICE-20260726110752-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "La sélection naturelle par prédation : les coléoptères foncés sont mieux camouflés sur l’écorce assombrie et survivent plus souvent, ce qui augmente leur fréquence.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-SVT-3E-GENETICS-MUTATION-ASSESSMENT-20260726110812-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Toutes les réponses précédentes sont vraies.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-SVT-3E-GENETICS-MUTATION-PRACTICE-20260726110812-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "B — Mutation faux-sens : GAA → GAC (Glu → Asp) — la protéine porte un acide aminé différent, créant une nouvelle variante.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-SVT-3E-GENETICS-TRANSMISSION-ASSESSMENT-20260726110808-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "A. Le parent rouge est hétérozygote (Rr) et le parent blanc est homozygote récessif (rr) — croisement Rr × rr",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-SVT-3E-GENETICS-TRANSMISSION-PRACTICE-20260726110812-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Transmission autosomique dominante",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-SVT-3E-HEALTH-MICROBIOTA-ASSESSMENT-20260726110820-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "La prise d'antibiotiques a réduit la diversité du microbiote intestinal d'A, ce qui a diminué la « résistance à la colonisation » et augmenté sa sensibilité aux infections et aux troubles digestifs ; une alimentation riche en fibres favorise un microbiote diversifié protecteur.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-SVT-3E-HEALTH-MICROBIOTA-PRACTICE-20260726110822-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Scénario A — Après un traitement antibiotique, l'équilibre du microbiote intestinal est perturbé, entraînant diarrhées et prolifération de levures; le lien de causalité microbiote‑santé est plausible.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-SVT-3E-HEALTH-VACCINATION-ASSESSMENT-20260726110830-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "On injecte au corps un élément du microbe (ou une forme inoffensive du microbe) appelé antigène; le système immunitaire fabrique des cellules mémoire spécifiques; ainsi, lors d'une infection ultérieure, la réaction est plus rapide et la maladie est évitée ou atténuée.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-SVT-3E-HEALTH-VACCINATION-PRACTICE-20260726110827-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Le vaccin présente au système immunitaire des antigènes issus d'un micro‑organisme (atténués, inactivés ou fragmentés) sans provoquer la maladie : cela déclenche une réponse primaire et la formation de cellules mémoires ; en cas de rencontre ultérieure avec le vrai agent, la réponse secondaire est plus rapide et protège l'organisme.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-SVT-4E-EARTH-EARTHQUAKE-ASSESSMENT-20260726111408-1",
+    "answer_kind": "numeric",
+    "stored_answer": "168.0",
+    "independently_computed": "168.0",
+    "decision": "PASS",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-SVT-4E-EARTH-RISK-ASSESSMENT-20260726111415-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Aléa : inondation liée à une tempête et à une surcote marine. Vulnérabilité : maisons en rez‑de‑chaussée, forte densité urbaine au bord de l'eau, population âgée, digue fragilisée. Prévention adaptée : système d’alerte et plan d’évacuation ciblant les personnes vulnérables, renforcement ou rehaussement de la digue, adaptation/élévation des logements et restriction de nouvelles constructions en zone inondable.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-SVT-4E-GENETICS-CHROMOSOME-ASSESSMENT-20260726111424-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Chaque paire de chromosomes contient deux chromosomes similaires, l'un hérité du père, l'autre de la mère ; les chromosomes portent les gènes : c'est par leur transmission que les caractères héréditaires passent des parents aux enfants.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-SVT-4E-GENETICS-CHROMOSOME-PRACTICE-20260726111426-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "La méiose réduit le nombre de chromosomes dans les gamètes (de 2n à n) et la fécondation restaure 2n : ainsi les chromosomes portent l'information héréditaire transmise par les parents.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-SVT-4E-GENETICS-DATA-ASSESSMENT-20260726111432-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Le père probable est le Père 1.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-SVT-4E-GENETICS-DATA-PRACTICE-20260726111438-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Transmission liée à l'X récessive",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-ENR-SVT-4E-GENETICS-HEREDITY-PRACTICE-20260726111432-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Transmission autosomique récessive",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-FRENCH-3E-CLAUSES-ASSESSMENT-20260726092203-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "A) «aux étudiants» : groupe prépositionnel (préposition «à» + groupe nominal) — fonction : COI (complément d'objet indirect). «un accès gratuit aux ressources numériques» : groupe nominal (déterminant «un» + nom noyau «accès» + adjectif épithète «gratuit» + complément du nom «aux ressources numériques») — fonction : COD (complément d'objet direct).",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-FRENCH-3E-REWRITE-ASSESSMENT-20260726092346-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Paul a dit à son frère qu'ils partiraient le lendemain matin si le temps le permettait.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-FRENCH-3E-REWRITE-PRACTICE-20260726092353-1",
+    "answer_kind": "exact_text",
+    "stored_answer": "J'y vais tous les samedis.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-FRENCH-3E-REWRITE-REMEDIATION-20260726092359-1",
+    "answer_kind": "exact_text",
+    "stored_answer": "Le professeur leur explique la leçon.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-FRENCH-3E-TENSES-PRACTICE-20260726092549-1",
+    "answer_kind": "exact_text",
+    "stored_answer": "1) Les élèves se sont réveillés.\n2) Tu as mangé toute la tarte.\n3) Marie et Sophie sont venues au musée.\n4) Nous avons fini rapidement nos devoirs.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-FRENCH-4E-COMPREHENSION-ASSESSMENT-20260726104943-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "C: L'élève craint d'être réprimandé.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-FRENCH-4E-COMPREHENSION-DIAGNOSTIC-20260726104945-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Léa réalise que demander de l'aide et adapter son projet l'aide à mieux réussir le concours.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-FRENCH-4E-COMPREHENSION-PRACTICE-20260726104942-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Élise achète du pain et des fruits au marché après avoir trouvé la boulangerie fermée.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-FRENCH-4E-COMPREHENSION-PRACTICE-20260726104943-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "La collaboration entre le collège et les producteurs locaux s'est améliorée.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-FRENCH-4E-COMPREHENSION-REMEDIATION-20260726104946-1",
+    "answer_kind": "exact_text",
+    "stored_answer": "pour permettre au personnel d'organiser les collections et de classer les nouveaux livres.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-FRENCH-4E-CONJUGATION-ASSESSMENT-20260726105030-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "faisait",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-FRENCH-4E-CONJUGATION-PRACTICE-20260726105032-1",
+    "answer_kind": "exact_text",
+    "stored_answer": "nous prenons / ils répondent / tu écris",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-FRENCH-4E-GRAMMAR-ASSESSMENT-20260726105107-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Proposition subordonnée relative (complément du nom « son frère »).",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-FRENCH-4E-GRAMMAR-PRACTICE-20260726105109-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "les élèves de la 4e B",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-FRENCH-4E-GRAMMAR-REMEDIATION-20260726105112-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Les chansons que j'ai chantées hier sont populaires.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-FRENCH-4E-SPELLING-ASSESSMENT-20260726105452-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "ai écrites",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-FRENCH-4E-SPELLING-DIAGNOSTIC-20260726105456-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Ils ont descendus la valise du grenier.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-FRENCH-4E-SPELLING-REMEDIATION-20260726105458-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Marie et Luc sont rentrés tard hier soir.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-FRENCH-4E-VOCAB-ASSESSMENT-20260726105536-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "une odeur d'humus",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-FRENCH-4E-VOCAB-DIAGNOSTIC-20260726105538-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "a évoqué",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-FRENCH-4E-VOCAB-PRACTICE-20260726105537-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "pittoresque",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-FRENCH-4E-VOCAB-REMEDIATION-20260726105539-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "sec",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-GEOGRAPHY-3E-GEOSCALE-PRACTICE-20260726110359-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "La commune (mairie) — travaille sur l'aménagement du quartier et la circulation locale.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-GEOGRAPHY-4E-MOBILITY-ASSESSMENT-20260726111110-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Le pays B est à la fois un pôle d'attraction pour des travailleurs saisonniers venant du pays A (45 000 personnes) et pour des migrants s'installant depuis le pays C (18 000 personnes); le flux touristique entre B et D (220 000 visiteurs) est beaucoup plus important en volume et correspond à des mobilités temporaires.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-GEOGRAPHY-4E-MOBILITY-PRACTICE-20260726111109-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "La région C (ville-centre) est à la fois le principal pôle touristique et le principal pôle migratoire ; la région A attire surtout des touristes mais peu de migrants, tandis que la région D reçoit beaucoup plus de migrants que de touristes.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-HISTORY-3E-HISTREP-ASSESSMENT-20260726110523-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Révolution française (1789) → Napoléon empereur (1804) → Première Guerre mondiale (1914-1918) → Seconde Guerre mondiale (1939-1945)",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-MATHEMATICS-3E-ARITH-PRACTICE-20260726094549-1",
+    "answer_kind": "numeric",
+    "stored_answer": "360",
+    "independently_computed": "360",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-MATHEMATICS-3E-BREVETPROB-PRACTICE-20260726094707-1",
+    "answer_kind": "numeric",
+    "stored_answer": "192",
+    "independently_computed": "192",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-MATHEMATICS-3E-EQUATIONS-ASSESSMENT-20260726104726-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "x = -12",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-MATHEMATICS-3E-EQUATIONS-PRACTICE-20260726094749-1",
+    "answer_kind": "numeric",
+    "stored_answer": "5",
+    "independently_computed": "5",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-MATHEMATICS-3E-EQUATIONS-PRACTICE-20260726104729-1",
+    "answer_kind": "numeric",
+    "stored_answer": "2.6",
+    "independently_computed": "2.6",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-MATHEMATICS-3E-EQUATIONS-REMEDIATION-20260726094751-1",
+    "answer_kind": "numeric",
+    "stored_answer": "-3",
+    "independently_computed": "-3",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-MATHEMATICS-3E-MEDIAN-ASSESSMENT-20260726095436-1",
+    "answer_kind": "numeric",
+    "stored_answer": "13",
+    "independently_computed": "13",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-MATHEMATICS-3E-MEDIAN-DIAGNOSTIC-20260726095437-1",
+    "answer_kind": "numeric",
+    "stored_answer": "2",
+    "independently_computed": "2",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-MATHEMATICS-3E-MEDIAN-PRACTICE-20260726095442-1",
+    "answer_kind": "numeric",
+    "stored_answer": "14",
+    "independently_computed": "14",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-MATHEMATICS-3E-MEDIAN-PRACTICE-20260726095500-1",
+    "answer_kind": "numeric",
+    "stored_answer": "10",
+    "independently_computed": "10",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-MATHEMATICS-3E-PROBA-PRACTICE-20260726104740-1",
+    "answer_kind": "numeric",
+    "stored_answer": "0.476",
+    "independently_computed": "0.476",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-MATHEMATICS-3E-PROBA-REMEDIATION-20260726095555-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "2/5 (0,4)",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-MATHEMATICS-3E-THALES-ASSESSMENT-20260726104742-1",
+    "answer_kind": "numeric",
+    "stored_answer": "3.36",
+    "independently_computed": "3.36",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-MATHEMATICS-3E-THALES-DIAGNOSTIC-20260726104746-1",
+    "answer_kind": "numeric",
+    "stored_answer": "7.5",
+    "independently_computed": "7.5",
+    "decision": "PASS",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-MATHEMATICS-3E-THALES-PRACTICE-20260726104750-1",
+    "answer_kind": "numeric",
+    "stored_answer": "9.0",
+    "independently_computed": "9.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-MATHEMATICS-3E-THALES-REMEDIATION-20260726104750-1",
+    "answer_kind": "numeric",
+    "stored_answer": "8.0",
+    "independently_computed": "8.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-MATHEMATICS-3E-TRIGO-ASSESSMENT-20260726104806-1",
+    "answer_kind": "numeric",
+    "stored_answer": "4.53",
+    "independently_computed": "4.53",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-MATHEMATICS-3E-TRIGO-PRACTICE-20260726104805-1",
+    "answer_kind": "numeric",
+    "stored_answer": "9.24",
+    "independently_computed": "9.24",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-MATHEMATICS-3E-TRIGO-PRACTICE-20260726104808-1",
+    "answer_kind": "numeric",
+    "stored_answer": "58.0",
+    "independently_computed": "58.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-MATHEMATICS-3E-TRIGO-PRACTICE-20260726104817-1",
+    "answer_kind": "numeric",
+    "stored_answer": "54.6",
+    "independently_computed": "54.6",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-MATHEMATICS-3E-TRIGO-REMEDIATION-20260726104811-1",
+    "answer_kind": "numeric",
+    "stored_answer": "7.0",
+    "independently_computed": "7.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-MATHEMATICS-4E-FRACT-ASSESSMENT-20260726105602-1",
+    "answer_kind": "exact_text",
+    "stored_answer": "-11/30",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-MATHEMATICS-4E-FRACT-DIAGNOSTIC-20260726105619-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "13/10",
+    "independently_computed": null,
+    "decision": "PASS",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-MATHEMATICS-4E-FRACT-PRACTICE-20260726105603-1",
+    "answer_kind": "exact_text",
+    "stored_answer": "3/4",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-MATHEMATICS-4E-FRACT-PRACTICE-20260726105610-1",
+    "answer_kind": "exact_text",
+    "stored_answer": "-5/24",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-MATHEMATICS-4E-FRACT-REMEDIATION-20260726105611-1",
+    "answer_kind": "exact_text",
+    "stored_answer": "-1/8",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-MATHEMATICS-4E-LITERAL-ASSESSMENT-20260726105634-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "(3/2)(x+2)",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-MATHEMATICS-4E-LITERAL-DIAGNOSTIC-20260726105638-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Développer puis réduire : développer 3(x-2) et -5(x+1), puis regrouper et réduire les termes semblables pour obtenir l'expression simplifiée.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-MATHEMATICS-4E-LITERAL-PRACTICE-20260726105633-1",
+    "answer_kind": "numeric",
+    "stored_answer": "-0.5",
+    "independently_computed": "-0.5",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-MATHEMATICS-4E-LITERAL-PRACTICE-20260726105634-1",
+    "answer_kind": "numeric",
+    "stored_answer": "10.0",
+    "independently_computed": "10.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-MATHEMATICS-4E-LITERAL-REMEDIATION-20260726105635-1",
+    "answer_kind": "exact_text",
+    "stored_answer": "5/8 x",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-MATHEMATICS-4E-POWERS-ASSESSMENT-20260726105707-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "2",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-MATHEMATICS-4E-POWERS-DIAGNOSTIC-20260726111915-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "10^5",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-MATHEMATICS-4E-POWERS-PRACTICE-20260726105706-1",
+    "answer_kind": "numeric",
+    "stored_answer": "81.0",
+    "independently_computed": "81.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-MATHEMATICS-4E-POWERS-PRACTICE-20260726105710-1",
+    "answer_kind": "exact_text",
+    "stored_answer": "2^4",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-MATHEMATICS-4E-POWERS-REMEDIATION-20260726105711-1",
+    "answer_kind": "numeric",
+    "stored_answer": "32000.0",
+    "independently_computed": "32000.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-MATHEMATICS-4E-PROP-DIAGNOSTIC-20260726105744-1",
+    "answer_kind": "numeric",
+    "stored_answer": "300.0",
+    "independently_computed": "300.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-MATHEMATICS-4E-PROP-REMEDIATION-20260726105740-1",
+    "answer_kind": "numeric",
+    "stored_answer": "400.0",
+    "independently_computed": "400.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-MATHEMATICS-4E-PYTH-ASSESSMENT-20260726105914-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Oui, le triangle est rectangle (7,5^2 = 4,5^2 + 6,0^2).",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-MATHEMATICS-4E-PYTH-DIAGNOSTIC-20260726105910-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Oui, rectangle en A",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-MATHEMATICS-4E-PYTH-PRACTICE-20260726105909-1",
+    "answer_kind": "numeric",
+    "stored_answer": "15.0",
+    "independently_computed": "15.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-MATHEMATICS-4E-RELNUM-ASSESSMENT-20260726105930-1",
+    "answer_kind": "numeric",
+    "stored_answer": "13.0",
+    "independently_computed": "13.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-MATHEMATICS-4E-RELNUM-DIAGNOSTIC-20260726105933-1",
+    "answer_kind": "numeric",
+    "stored_answer": "-10.0",
+    "independently_computed": "-10.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-MATHEMATICS-4E-RELNUM-PRACTICE-20260726105928-1",
+    "answer_kind": "numeric",
+    "stored_answer": "-7.0",
+    "independently_computed": "-7.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-MATHEMATICS-4E-RELNUM-PRACTICE-20260726105935-1",
+    "answer_kind": "numeric",
+    "stored_answer": "-2.0",
+    "independently_computed": "-2.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-MATHEMATICS-4E-RELNUM-REMEDIATION-20260726105938-1",
+    "answer_kind": "numeric",
+    "stored_answer": "4.0",
+    "independently_computed": "4.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-MATHEMATICS-4E-STATS-ASSESSMENT-20260726110006-1",
+    "answer_kind": "numeric",
+    "stored_answer": "5.0",
+    "independently_computed": "5.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-MATHEMATICS-4E-STATS-DIAGNOSTIC-20260726110016-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "La médiane",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-MATHEMATICS-4E-STATS-PRACTICE-20260726110008-1",
+    "answer_kind": "numeric",
+    "stored_answer": "1.25",
+    "independently_computed": "1.25",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-MATHEMATICS-4E-STATS-PRACTICE-20260726110017-1",
+    "answer_kind": "numeric",
+    "stored_answer": "12.0",
+    "independently_computed": "12.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-MATHEMATICS-4E-STATS-REMEDIATION-20260726110009-1",
+    "answer_kind": "numeric",
+    "stored_answer": "3.45",
+    "independently_computed": "3.45",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-MATHEMATICS-4E-VOLUMES-ASSESSMENT-20260726110045-1",
+    "answer_kind": "numeric",
+    "stored_answer": "23100.0",
+    "independently_computed": "23100.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-MATHEMATICS-4E-VOLUMES-DIAGNOSTIC-20260726110050-1",
+    "answer_kind": "numeric",
+    "stored_answer": "72.0",
+    "independently_computed": "72.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-MATHEMATICS-4E-VOLUMES-PRACTICE-20260726110044-1",
+    "answer_kind": "numeric",
+    "stored_answer": "3.0",
+    "independently_computed": "3.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-MATHEMATICS-4E-VOLUMES-PRACTICE-20260726110052-1",
+    "answer_kind": "numeric",
+    "stored_answer": "112.0",
+    "independently_computed": "112.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-MATHEMATICS-4E-VOLUMES-REMEDIATION-20260726110050-1",
+    "answer_kind": "numeric",
+    "stored_answer": "1200.0",
+    "independently_computed": "1200.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-PHYSICS-CHEMISTRY-3E-MATTER-ASSESSMENT-20260726110620-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "MgCl2",
+    "independently_computed": null,
+    "decision": "PASS",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-PHYSICS-CHEMISTRY-3E-MECHANICS-ASSESSMENT-20260726110618-1",
+    "answer_kind": "numeric",
+    "stored_answer": "7.6",
+    "independently_computed": "7.6",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-PHYSICS-CHEMISTRY-3E-MECHANICS-PRACTICE-20260726110629-1",
+    "answer_kind": "numeric",
+    "stored_answer": "7.14",
+    "independently_computed": "7.14",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-PHYSICS-CHEMISTRY-3E-SPEED-ASSESSMENT-20260726110628-1",
+    "answer_kind": "numeric",
+    "stored_answer": "12.3",
+    "independently_computed": "12.3",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-PHYSICS-CHEMISTRY-3E-SPEED-PRACTICE-20260726110631-1",
+    "answer_kind": "numeric",
+    "stored_answer": "16.8",
+    "independently_computed": "16.8",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-PHYSICS-CHEMISTRY-4E-CHEMISTRY-ASSESSMENT-20260726111254-1",
+    "answer_kind": "numeric",
+    "stored_answer": "7.96",
+    "independently_computed": "7.96",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-PHYSICS-CHEMISTRY-4E-ELECTRICITY-ASSESSMENT-20260726111316-1",
+    "answer_kind": "numeric",
+    "stored_answer": "720.0",
+    "independently_computed": "720.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-PHYSICS-CHEMISTRY-4E-ELECTRICITY-PRACTICE-20260726111324-1",
+    "answer_kind": "numeric",
+    "stored_answer": "6075.0",
+    "independently_computed": "6075.0",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-SPANISH-3E-PRESENT-PRACTICE-20260726110716-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Cada mañana, yo me levanto a las siete, luego desayuno y después voy al instituto.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-SPANISH-4E-COMMUNICATION-ASSESSMENT-20260726111332-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "¡Perfecto! Quedamos a las 7 en la entrada del cine y cenamos algo rápido antes. ¿Te va bien?",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-SPANISH-4E-LANGUAGE-ASSESSMENT-20260726111407-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Le flyer annonce une fête traditionnelle locale destinée surtout aux familles et aux habitants, mettant en avant plats traditionnels, défilés et activités pour enfants; la réaction souligne une inquiétude sur la présence de vendeurs mais ne change pas le caractère communautaire.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-SPANISH-4E-LANGUAGE-PRACTICE-20260726111401-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Es una fiesta popular en la que la gente se lanza tomates en la plaza; se celebra a finales de agosto y atrae a visitantes que participan en la tradición.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-SVT-3E-GENETICS-ASSESSMENT-20260726110810-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Sélection naturelle favorisant l'allèle G (avantage adaptatif) ; changement directionnel rapide dans une grande population.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-SVT-3E-GENETICS-PRACTICE-20260726110820-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "La sélection naturelle : les oiseaux mangent préférentiellement les coléoptères verts, ce qui réduit la fréquence de l'allèle associé à la couleur verte.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-SVT-3E-HEALTH-ASSESSMENT-20260726110827-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "B. Conseiller repos, hydratation, antipyrétique si besoin et surveillance des symptômes ; pas d’antibiotique pour l’instant.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-SVT-4E-EARTH-ASSESSMENT-20260726111432-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "1) Les tremblements de terre sont dus à la rupture et au frottement le long de la plaque océanique qui plonge sous la plaque continentale (subduction), ce qui provoque des séismes fréquents et parfois profonds. 2) Les volcans sont explosifs parce que la fusion partielle liée à la subduction produit des magmas riches en silice et en gaz, plus visqueux, qui favorisent des éruptions explosives. 3) Risques majeurs : tsunamis, nuées ardentes/coulées pyroclastiques et retombées de cendres, ainsi que séismes causant effondrements et glissements de terrain.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-SVT-4E-GENETICS-ASSESSMENT-20260726111443-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Lors de la reproduction sexuée, chaque descendant reçoit des allèles de deux parents différents (combinaison par la méiose et la fécondation), ce qui crée de nouveaux mélanges d'allèles et donc de la diversité ; la reproduction asexuée fabrique des clones génétiquement très semblables sauf rares mutations.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "DRAFT-0012C-AI-SVT-4E-GENETICS-PRACTICE-20260726111443-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Scénario A — Des parents de coléoptères, l'un noir et l'autre rouge, ont plusieurs petits de couleur intermédiaire (brun).",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "PILOT-0012B-AI-ENGLISH-3E-PAST-WORKED_EXAMPLE-20260725213330-1",
+    "answer_kind": "exact_text",
+    "stored_answer": "Anna walked to school yesterday.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "PILOT-0012B-AI-ENGLISH-3E-PAST-WORKED_EXAMPLE-20260725213330-2",
+    "answer_kind": "exact_text",
+    "stored_answer": "Tom got up at 7, had breakfast, went to the shop and bought bread.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "PILOT-0012B-AI-ENR-EMC-3E-DEMOCRACY-ELECTION-DIAGNOSTIC-20260725213743-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Parce que les citoyens peuvent voter librement et en secret, chaque voix compte de la même façon, et il y a alternance possible.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "PILOT-0012B-AI-ENR-EMC-3E-DEMOCRACY-ELECTION-DIAGNOSTIC-20260725213743-3",
+    "answer_kind": "boolean",
+    "stored_answer": "Faux",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "PILOT-0012B-AI-ENR-FRENCH-3E-TEXTANALYSIS-INFER-ASSESSMENT-20260725214130-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Il est en train de pleuvoir.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "PILOT-0012B-AI-ENR-FRENCH-4E-SPELLING-SV-DIAGNOSTIC-20260725214259-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "B. La plupart des élèves sont venus en retard.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "PILOT-0012B-AI-ENR-FRENCH-4E-SPELLING-SV-DIAGNOSTIC-20260725214352-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "est arrivé",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "PILOT-0012B-AI-ENR-FRENCH-4E-VOCAB-CONTEXT-REMEDIATION-20260725214511-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "B — Accumulateur électrique (pile rechargeable)",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "PILOT-0012B-AI-ENR-GEOGRAPHY-4E-URBANIZATION-GROWTH-ASSESSMENT-20260725213637-2",
+    "answer_kind": "numeric",
+    "stored_answer": "17050000",
+    "independently_computed": "17050000",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "PILOT-0012B-AI-ENR-HISTORY-3E-AFTER1945-COLD-WAR-REVISION-20260725214203-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Une rivalité idéologique et géopolitique entre deux blocs (États‑Unis et URSS) caractérisée par une compétition globale — alliances, course aux armements et affrontements indirects — sans affrontement militaire direct entre les deux superpuissances.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "PILOT-0012B-AI-ENR-HISTORY-3E-AFTER1945-COLD-WAR-REVISION-20260725214303-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "Empêcher l'expansion du communisme en utilisant des moyens politiques, économiques et militaires limités, sans engager une guerre directe contre l'Union soviétique.",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "PILOT-0012B-AI-ENR-MATHEMATICS-3E-EQUATIONS-SOLVE-DIAGNOSTIC-20260725213436-2",
+    "answer_kind": "numeric",
+    "stored_answer": "12",
+    "independently_computed": "12",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "PILOT-0012B-AI-ENR-MATHEMATICS-3E-EQUATIONS-SOLVE-DIAGNOSTIC-20260725213436-3",
+    "answer_kind": "numeric",
+    "stored_answer": "2",
+    "independently_computed": "2",
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "PILOT-0012B-AI-ENR-MATHEMATICS-3E-EQUATIONS-SOLVE-PRACTICE-20260725213448-1",
+    "answer_kind": "exact_text",
+    "stored_answer": "x = 6",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "PILOT-0012B-AI-ENR-MATHEMATICS-4E-FRACT-ADD-PRACTICE-20260725214502-1",
+    "answer_kind": "exact_text",
+    "stored_answer": "1/3",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "PILOT-0012B-AI-ENR-MATHEMATICS-4E-FRACT-ADD-WORKED_EXAMPLE-20260725213157-1",
+    "answer_kind": "exact_text",
+    "stored_answer": "11/24",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "PILOT-0012B-AI-ENR-MATHEMATICS-4E-FRACT-ADD-WORKED_EXAMPLE-20260725213157-2",
+    "answer_kind": "exact_text",
+    "stored_answer": "1 5/6 (soit 11/6)",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "PILOT-0012B-AI-ENR-MATHEMATICS-4E-FRACT-ADD-WORKED_EXAMPLE-20260725213157-3",
+    "answer_kind": "exact_text",
+    "stored_answer": "13/24",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "PILOT-0012B-AI-ENR-MATHEMATICS-4E-LITERAL-DISTRIBUTE-DIAGNOSTIC-20260725213858-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "8x + 12y + 20",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "PILOT-0012B-AI-ENR-MATHEMATICS-4E-LITERAL-DISTRIBUTE-GUIDED_PRACTICE-20260725213217-1",
+    "answer_kind": "exact_text",
+    "stored_answer": "4x + 12",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "PILOT-0012B-AI-ENR-MATHEMATICS-4E-LITERAL-DISTRIBUTE-GUIDED_PRACTICE-20260725213217-2",
+    "answer_kind": "exact_text",
+    "stored_answer": "-6x + 10",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "PILOT-0012B-AI-ENR-MATHEMATICS-4E-LITERAL-DISTRIBUTE-GUIDED_PRACTICE-20260725213217-3",
+    "answer_kind": "exact_text",
+    "stored_answer": "x^2 - x - 6",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "PILOT-0012B-AI-ENR-MATHEMATICS-4E-LITERAL-DISTRIBUTE-PRACTICE-20260725214524-1",
+    "answer_kind": "exact_text",
+    "stored_answer": "a) 3x + 12\nb) -6x + 10\nc) 11x - 8\nd) x^2 - x - 6",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "PILOT-0012B-AI-ENR-SPANISH-3E-PRESENT-IRREGULAR-GUIDED_PRACTICE-20260725213405-1",
+    "answer_kind": "exact_text",
+    "stored_answer": "ser : soy, eres, es, somos, sois, son\nestar : estoy, estás, está, estamos, estáis, están\ntener : tengo, tienes, tiene, tenemos, tenéis, tienen\nir : voy, vas, va, vamos, vais, van",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "PILOT-0012B-AI-MATHEMATICS-4E-PROP-ASSESSMENT-20260725213341-2",
+    "answer_kind": "single_choice",
+    "stored_answer": "105 km",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "PILOT-0012B-AI-MATHEMATICS-4E-PROP-ASSESSMENT-20260725213409-2",
+    "answer_kind": "single_choice",
+    "stored_answer": "B",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "PILOT-0012B-AI-MATHEMATICS-4E-PROP-PRACTICE-20260725213324-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "15 €",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "PILOT-0012B-AI-MATHEMATICS-4E-PYTH-DIAGNOSTIC-20260725214023-1",
+    "answer_kind": "single_choice",
+    "stored_answer": "10 cm",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "PILOT-0012B-AI-MATHEMATICS-4E-PYTH-PRACTICE-20260725213251-2",
+    "answer_kind": "single_choice",
+    "stored_answer": "12 m",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  },
+  {
+    "code": "PILOT-0012B-AI-MATHEMATICS-4E-PYTH-PRACTICE-20260725213316-2",
+    "answer_kind": "single_choice",
+    "stored_answer": "Oui",
+    "independently_computed": null,
+    "decision": "REVIEW",
+    "reason": "structural_check",
+    "was_known_incorrect": false
+  }
+]

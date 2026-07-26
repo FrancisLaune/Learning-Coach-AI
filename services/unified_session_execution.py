@@ -143,6 +143,11 @@ class UnifiedSessionExecutionService:
                 raw_answer,
                 material.expected_answer,
                 method,
+                correct_options=(
+                    tuple(str(item) for item in material.expected_answer)
+                    if answer_type is AnswerType.MCQ_MULTI and isinstance(material.expected_answer, (list, tuple))
+                    else ()
+                ),
                 tolerance=material.tolerance,
                 hint_penalties=self.repository.used_hint_penalties(material.question.activity_id),
                 difficulty=material.question.difficulty,
@@ -200,6 +205,9 @@ class UnifiedSessionExecutionService:
             "BOOLEAN": (AnswerType.BOOLEAN, AssessmentMethod.BOOLEAN),
             "FORMULA": (AnswerType.FORMULA, AssessmentMethod.FORMULA),
             "MCQ_SINGLE": (AnswerType.MCQ_SINGLE, AssessmentMethod.EXACT_MATCH),
+            "SINGLE_CHOICE": (AnswerType.MCQ_SINGLE, AssessmentMethod.EXACT_MATCH),
+            "MCQ_MULTI": (AnswerType.MCQ_MULTI, AssessmentMethod.MCQ),
+            "MULTIPLE_CHOICE": (AnswerType.MCQ_MULTI, AssessmentMethod.MCQ),
             "TEXT": (AnswerType.TEXT, AssessmentMethod.EXACT_MATCH),
             "SHORT_TEXT": (AnswerType.SHORT_TEXT, AssessmentMethod.EXACT_MATCH),
         }

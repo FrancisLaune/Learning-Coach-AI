@@ -502,4 +502,11 @@ def _candidate_payload(candidate: GeneratedContentCandidate) -> dict[str, Any]:
             "latency_ms": provenance.latency_ms,
             "usage": provenance.usage,
         },
+        "answer": {
+            "kind": candidate.answer.kind.value,
+            "expected": candidate.answer.expected,
+            "options": list(candidate.answer.options),
+            "tolerance": candidate.answer.tolerance,
+            "independently_computed": candidate.answer.independently_computed,
+        },
     }
