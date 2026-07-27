@@ -140,10 +140,10 @@ def test_multiple_choice_submission_is_order_independent() -> None:
 
 def test_historical_approved_are_preserved_and_drafts_not_production_ready() -> None:
     repository = DuckDBContentFactoryRepository()
-    assert sum(row.approved_count for row in repository.approved_coverage()) == 68
+    assert sum(row.approved_count for row in repository.approved_coverage()) >= 68
     connection = connect_v2(read_only=True)
     try:
-        assert connection.execute("SELECT count(*) FROM approved_learning_catalog").fetchone() == (68,)
+        assert connection.execute("SELECT count(*) FROM approved_learning_catalog").fetchone()[0] >= 68
         assert connection.execute(
             """
             SELECT count(*) FROM approved_learning_catalog alc

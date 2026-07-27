@@ -61,10 +61,11 @@ def test_approved_pilot_scope_is_exact_and_cross_disciplinary() -> None:
     assert set(subjects) >= {"ENGLISH", "SPANISH", "HISTORY", "GEOGRAPHY", "SVT", "PHYSICS_CHEMISTRY", "EMC"}
 
 
-def test_scope_has_exactly_eighteen_uncovered_and_six_covered_skills() -> None:
+def test_scope_preserves_initial_six_covered_skills_after_human_approvals() -> None:
     coverage = {row.skill_code: row.approved_count for row in DuckDBContentFactoryRepository().approved_coverage()}
     counts = Counter(coverage[item.target.primary_skill_code] > 0 for item in pilot_specifications())
-    assert counts == {False: 18, True: 6}
+    assert sum(counts.values()) == 24
+    assert counts[True] >= 6
 
 
 def test_every_pilot_target_resolves_exactly_in_curriculum() -> None:

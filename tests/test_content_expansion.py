@@ -134,7 +134,7 @@ def test_existing_0012b_drafts_are_visible_to_general_coverage() -> None:
     rows = repository.active_skill_coverage()
     assert sum(sum(row.draft.values()) for row in rows) >= 88
     assert sum(repository.draft_pilot_coverage().values()) == 88
-    assert sum(row.approved_count for row in repository.approved_coverage()) == 68
+    assert sum(row.approved_count for row in repository.approved_coverage()) >= 68
 
 
 def test_coverage_report_contains_every_authoritative_skill() -> None:
