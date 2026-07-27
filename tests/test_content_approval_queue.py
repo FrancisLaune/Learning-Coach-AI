@@ -1,9 +1,36 @@
 from __future__ import annotations
 
+import json
+import shutil
+from pathlib import Path
 from typing import Any
 
+import pytest
+
+from infrastructure.database.v2 import connect_v2
+from infrastructure.repositories.content_quality import DuckDBContentQualityRepository
 from services.content.approval_queue import build_dynamic_queue, filter_queue
-from ui.content_approval_app import _resolve_candidate_index, _subject_options
+from ui.content_approval_app import (
+    _persist_and_verify_decision,
+    _resolve_candidate_index,
+    _subject_options,
+)
+
+ROOT = Path(__file__).parents[1]
+QUEUE_PATH = ROOT / "resources" / "content" / "quality" / "lcai_0012d3_approval_priority.json"
+PHYSICS_ATOM_SKILL = "SK-ENR-PHYSICS_CHEMISTRY-3E-MATTER-ATOM"
+
+
+@pytest.fixture
+def approval_persistence_database(tmp_path: Path) -> Path:
+    target = tmp_path / "approval-persistence.duckdb"
+    shutil.copy2(ROOT / "data" / "learning_coach_v2.duckdb", target)
+    return target
+
+
+def _physics_atom_p1() -> dict[str, Any]:
+    queue = json.loads(QUEUE_PATH.read_text(encoding="utf-8"))
+    return next(item for item in queue if item["skill"] == PHYSICS_ATOM_SKILL and item["content_type"] == "practice")
 
 
 def _coverage(
@@ -201,3 +228,147 @@ def test_filter_options_remain_stable_when_last_subject_candidate_is_removed() -
     assert _subject_options(base) == ("FRENCH", "MATHEMATICS")
     remaining = [base[1]]
     assert _subject_options(base) != _subject_options(remaining)
+
+
+def test_regression_structured_p1_does_not_use_list_index_for_composite_answer(
+    approval_persistence_database: Path,
+) -> None:
+    item = _physics_atom_p1()
+    assert item["answer_kind"] == "structured"
+    with pytest.raises(ValueError, match=r"not in list"):
+        item["choices"].index(item["expected_answer"])
+
+    repository = DuckDBContentQualityRepository(approval_persistence_database)
+    persisted = _persist_and_verify_decision(
+        repository,
+        item=item,
+        action="APPROVE",
+        reviewer="isolated-reviewer",
+        approver="isolated-approver",
+        reason="Isolated regression test.",
+    )
+    assert persisted["review_status"] == "APPROVED"
+    assert persisted["production_enabled"] is True
+    assert persisted["source_status"] == "draft"
+
+    rebuilt, _ = build_dynamic_queue(
+        [item],
+        [
+            _coverage(
+                PHYSICS_ATOM_SKILL,
+                subject="PHYSICS_CHEMISTRY",
+                practice=1,
+                assessment=1,
+            )
+        ],
+        {int(item["version_id"]): "APPROVED"},
+    )
+    assert rebuilt == []
+    assert _resolve_candidate_index(rebuilt, int(item["version_id"]), 0) is None
+
+
+@pytest.mark.parametrize(
+    ("action", "expected_status"),
+    [("REJECT", "REJECTED"), ("KEEP_FOR_REVIEW", "KEEP_REVIEW")],
+)
+def test_single_candidate_non_approval_decision_is_persisted_before_empty_queue(
+    approval_persistence_database: Path,
+    action: str,
+    expected_status: str,
+) -> None:
+    item = _physics_atom_p1()
+    repository = DuckDBContentQualityRepository(approval_persistence_database)
+    persisted = _persist_and_verify_decision(
+        repository,
+        item=item,
+        action=action,
+        reviewer="isolated-reviewer",
+        approver="",
+        reason="Isolated lifecycle test.",
+    )
+    assert persisted["review_status"] == expected_status
+    rebuilt, _ = build_dynamic_queue(
+        [item],
+        [_coverage(PHYSICS_ATOM_SKILL, subject="PHYSICS_CHEMISTRY", assessment=1)],
+        {int(item["version_id"]): expected_status},
+    )
+    assert rebuilt == []
+
+
+def test_approval_double_rerun_is_idempotent(
+    approval_persistence_database: Path,
+) -> None:
+    item = _physics_atom_p1()
+    repository = DuckDBContentQualityRepository(approval_persistence_database)
+    first = _persist_and_verify_decision(
+        repository,
+        item=item,
+        action="APPROVE",
+        reviewer="isolated-reviewer",
+        approver="isolated-approver",
+        reason="Idempotence test.",
+    )
+    second = _persist_and_verify_decision(
+        repository,
+        item=item,
+        action="APPROVE",
+        reviewer="isolated-reviewer",
+        approver="isolated-approver",
+        reason="Idempotence test.",
+    )
+    assert second["content_id"] == first["content_id"]
+    connection = connect_v2(approval_persistence_database, read_only=True)
+    try:
+        source_id = str(item["version_id"])
+        assert connection.execute(
+            """
+            SELECT count(*) FROM content_versions
+            WHERE status='approved'
+              AND json_extract_string(payload,'$.publication_source_version_id')=?
+            """,
+            [source_id],
+        ).fetchone() == (1,)
+        assert connection.execute(
+            """
+            SELECT count(*) FROM content_production_gates
+            WHERE content_version_id=?
+            """,
+            [first["published_version_id"]],
+        ).fetchone() == (1,)
+    finally:
+        connection.close()
+
+
+def test_failure_after_commit_cannot_remove_persisted_decision(
+    approval_persistence_database: Path,
+) -> None:
+    item = _physics_atom_p1()
+    repository = DuckDBContentQualityRepository(approval_persistence_database)
+    with pytest.raises(RuntimeError, match="simulated navigation failure"):
+        _persist_and_verify_decision(
+            repository,
+            item=item,
+            action="APPROVE",
+            reviewer="isolated-reviewer",
+            approver="isolated-approver",
+            reason="Commit boundary test.",
+        )
+        raise RuntimeError("simulated navigation failure")
+    assert repository.read_human_decision(int(item["version_id"]))["review_status"] == "APPROVED"
+
+
+def test_failure_before_commit_leaves_no_partial_decision(
+    approval_persistence_database: Path,
+) -> None:
+    item = {**_physics_atom_p1(), "recommended_decision": "KEEP_FOR_REVIEW"}
+    repository = DuckDBContentQualityRepository(approval_persistence_database)
+    with pytest.raises(ValueError, match="high-confidence"):
+        _persist_and_verify_decision(
+            repository,
+            item=item,
+            action="APPROVE",
+            reviewer="isolated-reviewer",
+            approver="isolated-approver",
+            reason="Pre-commit failure test.",
+        )
+    assert repository.read_human_decision(int(item["version_id"])) is None

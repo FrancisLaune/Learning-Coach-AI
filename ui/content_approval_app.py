@@ -57,6 +57,90 @@ def _remember_position(index: int, version_id: int) -> None:
     st.session_state.approval_current_version_id = version_id
 
 
+def _prepare_navigation_after_decision(
+    previous_index: int,
+    version_id: int,
+    review_status: str,
+) -> None:
+    """Clear the removed identity only after persistence has been confirmed."""
+    st.session_state.approval_queue_index = previous_index
+    st.session_state.approval_current_version_id = None
+    st.session_state.approval_last_decision = {
+        "version_id": version_id,
+        "review_status": review_status,
+    }
+
+
+def _reset_priority_selection() -> None:
+    st.session_state.approval_priority_filter = "Plan minimal — prioritaire"
+    st.session_state.approval_priority_levels = ["P1", "P2"]
+    st.session_state.approval_queue_index = 0
+    st.session_state.approval_current_version_id = None
+
+
+def _persist_and_verify_decision(
+    repository: DuckDBContentQualityRepository,
+    *,
+    item: dict[str, Any],
+    action: str,
+    reviewer: str,
+    approver: str,
+    reason: str,
+) -> dict[str, Any]:
+    """Persist one business decision, then verify it through an independent read."""
+    version_id = int(item["version_id"])
+    if action == "APPROVE":
+        repository.approve_for_production(
+            item=item,
+            reviewer=reviewer,
+            approver=approver,
+            reason=reason,
+        )
+        expected_status = "APPROVED"
+    elif action in {"REJECT", "KEEP_FOR_REVIEW"}:
+        repository.record_human_decision(
+            version_id=version_id,
+            reviewer=reviewer,
+            decision=action,
+            notes=reason,
+        )
+        expected_status = "REJECTED" if action == "REJECT" else "KEEP_REVIEW"
+    else:
+        raise ValueError(f"Unsupported approval action: {action}")
+
+    persisted = repository.read_human_decision(version_id)
+    if persisted is None or persisted.get("review_status") != expected_status:
+        raise RuntimeError("La décision n’a pas pu être confirmée après écriture.")
+    if persisted.get("source_status") != "draft" or not persisted.get("audit_trail_present"):
+        raise RuntimeError("La source Draft ou la piste d’audit n’est pas conforme.")
+    if persisted.get("reviewer") != reviewer:
+        raise RuntimeError("Le relecteur persisté ne correspond pas à la décision.")
+    if action == "APPROVE":
+        valid_approval = (
+            persisted.get("published_status") == "approved"
+            and persisted.get("content_status") == "active"
+            and persisted.get("active_version_number") == persisted.get("published_version_number")
+            and persisted.get("approver") == approver
+            and persisted.get("approved") is True
+            and persisted.get("approval_active") is True
+            and persisted.get("production_enabled") is True
+            and persisted.get("reason") == reason
+            and persisted.get("approved_at") is not None
+            and persisted.get("published_at") is not None
+        )
+        if not valid_approval:
+            raise RuntimeError("L’approbation persistée est incomplète ou inactive.")
+    elif action == "REJECT" and (
+        persisted.get("decision_status") != "archived" or persisted.get("decision") != "REJECT"
+    ):
+        raise RuntimeError("Le rejet persisté est incomplet.")
+    elif action == "KEEP_FOR_REVIEW" and (
+        persisted.get("decision_status") != "review" or persisted.get("decision") != "KEEP_FOR_REVIEW"
+    ):
+        raise RuntimeError("Le maintien en révision persisté est incomplet.")
+    return persisted
+
+
 def _coverage_rows() -> list[dict[str, Any]]:
     output: list[dict[str, Any]] = []
     for row in DuckDBContentFactoryRepository().active_skill_coverage():
@@ -109,6 +193,11 @@ def run() -> None:
     st.set_page_config(page_title="LCAI — File de validation", layout="wide")
     st.title("File de validation des contenus — 4e et 3e")
     st.warning("Outil interne : chaque action modifie individuellement le lifecycle éditorial.")
+    last_decision = st.session_state.pop("approval_last_decision", None)
+    if last_decision:
+        st.success(
+            f"Décision {label(last_decision['review_status'])} confirmée pour la version {last_decision['version_id']}."
+        )
     repository = DuckDBContentQualityRepository()
     skipped = set(st.session_state.get("approval_skipped_versions", set()))
     base_queue = _load_queue()
@@ -130,11 +219,13 @@ def run() -> None:
         "Vue principale",
         PRIORITY_FILTERS,
         index=0,
+        key="approval_priority_filter",
     )
     priority_levels = st.sidebar.multiselect(
         "Niveaux de priorité",
         ("P1", "P2", "P3", "P4", "P5"),
         default=("P1", "P2"),
+        key="approval_priority_levels",
     )
     for status in PRIORITY_LABELS_FR:
         st.sidebar.caption(f"{PRIORITY_LABELS_FR[status]} : {summary['priority_counts'].get(status, 0)}")
@@ -170,6 +261,10 @@ def run() -> None:
         st.session_state.approval_current_version_id = None
         st.session_state.approval_queue_index = 0
         st.info("Aucun contenu restant dans cette sélection.")
+        st.button(
+            "Afficher le prochain contenu prioritaire",
+            on_click=_reset_priority_selection,
+        )
         return
 
     stored_version = st.session_state.get("approval_current_version_id")
@@ -253,34 +348,58 @@ def run() -> None:
         disabled=not identities_ready or item["recommended_decision"] != "APPROVE",
     ):
         try:
-            repository.approve_for_production(
+            persisted = _persist_and_verify_decision(
+                repository,
                 item=item,
+                action="APPROVE",
                 reviewer=reviewer.strip(),
                 approver=approver.strip(),
                 reason=reason.strip(),
             )
-            _remember_position(index, int(item["version_id"]))
+            _prepare_navigation_after_decision(
+                index,
+                int(item["version_id"]),
+                str(persisted["review_status"]),
+            )
             st.rerun()
-        except ValueError as exc:
+        except (RuntimeError, ValueError) as exc:
             st.error(str(exc))
     if reject.button("Rejeter", disabled=not reviewer.strip()):
-        repository.record_human_decision(
-            version_id=int(item["version_id"]),
-            reviewer=reviewer.strip(),
-            decision="REJECT",
-            notes=reason.strip(),
-        )
-        _remember_position(index, int(item["version_id"]))
-        st.rerun()
+        try:
+            persisted = _persist_and_verify_decision(
+                repository,
+                item=item,
+                action="REJECT",
+                reviewer=reviewer.strip(),
+                approver="",
+                reason=reason.strip(),
+            )
+            _prepare_navigation_after_decision(
+                index,
+                int(item["version_id"]),
+                str(persisted["review_status"]),
+            )
+            st.rerun()
+        except (RuntimeError, ValueError) as exc:
+            st.error(str(exc))
     if keep.button("Maintenir en révision", disabled=not reviewer.strip()):
-        repository.record_human_decision(
-            version_id=int(item["version_id"]),
-            reviewer=reviewer.strip(),
-            decision="KEEP_FOR_REVIEW",
-            notes=reason.strip(),
-        )
-        _remember_position(index, int(item["version_id"]))
-        st.rerun()
+        try:
+            persisted = _persist_and_verify_decision(
+                repository,
+                item=item,
+                action="KEEP_FOR_REVIEW",
+                reviewer=reviewer.strip(),
+                approver="",
+                reason=reason.strip(),
+            )
+            _prepare_navigation_after_decision(
+                index,
+                int(item["version_id"]),
+                str(persisted["review_status"]),
+            )
+            st.rerun()
+        except (RuntimeError, ValueError) as exc:
+            st.error(str(exc))
     if skip.button("Ignorer pour cette session"):
         skipped.add(int(item["version_id"]))
         st.session_state.approval_skipped_versions = skipped

@@ -76,6 +76,139 @@ class DuckDBContentQualityRepository:
             for row in rows
         ]
 
+    def approval_queue_review_statuses(self) -> dict[int, str]:
+        """Return editorial review state keyed by the original Draft version."""
+        connection = connect_v2(self.database_path, read_only=True)
+        try:
+            rows = connection.execute(
+                """
+                SELECT status,
+                       json_extract_string(payload,'$.publication_source_version_id'),
+                       json_extract_string(payload,'$.review_source_version_id')
+                FROM content_versions
+                WHERE entity_type='exercise'
+                  AND (
+                    json_extract_string(payload,'$.publication_source_version_id') IS NOT NULL
+                    OR json_extract_string(payload,'$.review_source_version_id') IS NOT NULL
+                  )
+                ORDER BY id
+                """
+            ).fetchall()
+        finally:
+            connection.close()
+        output: dict[int, str] = {}
+        for status, publication_source, review_source in rows:
+            if publication_source is not None and str(status) == "approved":
+                output[int(publication_source)] = "APPROVED"
+            if review_source is not None:
+                output[int(review_source)] = "REJECTED" if str(status) == "archived" else "KEEP_REVIEW"
+        return output
+
+    def read_human_decision(self, source_version_id: int) -> dict[str, Any] | None:
+        """Read a persisted decision through a new, independent connection."""
+        connection = connect_v2(self.database_path, read_only=True)
+        try:
+            approved = connection.execute(
+                """
+                SELECT source.status,e.id,e.status,e.content_version,
+                       published.id,published.version_number,published.status,
+                       json_extract_string(published.payload,'$.approval_reason'),
+                       published.created_at,
+                       review.reviewer,review.decision,
+                       approval.approver,approval.approved,approval.active,
+                       approval.approved_at,
+                       gate.production_enabled,gate.enabled_by,gate.enabled_at,
+                       EXISTS (
+                           SELECT 1 FROM content_status_events event
+                           WHERE event.content_version_id=published.id
+                             AND event.new_status='approved'
+                       )
+                FROM content_versions source
+                JOIN content_versions published
+                  ON json_extract_string(
+                       published.payload,'$.publication_source_version_id'
+                     )=cast(source.id AS VARCHAR)
+                 AND published.entity_type='exercise'
+                JOIN exercises e
+                  ON e.id=published.entity_id
+                LEFT JOIN editorial_reviews review
+                  ON review.content_version_id=published.id
+                LEFT JOIN editorial_approvals approval
+                  ON approval.content_version_id=published.id AND approval.active
+                LEFT JOIN content_production_gates gate
+                  ON gate.content_version_id=published.id
+                WHERE source.id=? AND source.entity_type='exercise'
+                  AND published.status='approved'
+                ORDER BY published.id DESC
+                LIMIT 1
+                """,
+                [source_version_id],
+            ).fetchone()
+            if approved is not None:
+                return {
+                    "review_status": "APPROVED",
+                    "source_status": str(approved[0]),
+                    "content_id": int(approved[1]),
+                    "content_status": str(approved[2]),
+                    "active_version_number": int(approved[3]),
+                    "published_version_id": int(approved[4]),
+                    "published_version_number": int(approved[5]),
+                    "published_status": str(approved[6]),
+                    "reason": str(approved[7]),
+                    "published_at": approved[8],
+                    "reviewer": str(approved[9]),
+                    "review_decision": str(approved[10]),
+                    "approver": str(approved[11]),
+                    "approved": bool(approved[12]),
+                    "approval_active": bool(approved[13]),
+                    "approved_at": approved[14],
+                    "production_enabled": bool(approved[15]),
+                    "enabled_by": str(approved[16]),
+                    "enabled_at": approved[17],
+                    "audit_trail_present": bool(approved[18]),
+                }
+            reviewed = connection.execute(
+                """
+                SELECT source.status,decision.status,
+                       json_extract_string(decision.payload,'$.review_decision'),
+                       decision.author,decision.created_at,
+                       review.reviewer,review.decision,review.reviewed_at,
+                       EXISTS (
+                           SELECT 1 FROM content_status_events event
+                           WHERE event.content_version_id=decision.id
+                             AND event.new_status=decision.status
+                       )
+                FROM content_versions source
+                JOIN content_versions decision
+                  ON json_extract_string(
+                       decision.payload,'$.review_source_version_id'
+                     )=cast(source.id AS VARCHAR)
+                 AND decision.entity_type='exercise'
+                LEFT JOIN editorial_reviews review
+                  ON review.content_version_id=decision.id
+                WHERE source.id=? AND source.entity_type='exercise'
+                ORDER BY decision.id DESC
+                LIMIT 1
+                """,
+                [source_version_id],
+            ).fetchone()
+            if reviewed is None:
+                return None
+            return {
+                "review_status": "REJECTED" if str(reviewed[1]) == "archived" else "KEEP_REVIEW",
+                "source_status": str(reviewed[0]),
+                "decision_status": str(reviewed[1]),
+                "decision": str(reviewed[2]),
+                "author": str(reviewed[3]),
+                "decided_at": reviewed[4],
+                "reviewer": str(reviewed[5]),
+                "review_decision": str(reviewed[6]),
+                "reviewed_at": reviewed[7],
+                "audit_trail_present": bool(reviewed[8]),
+            }
+        finally:
+            connection.close()
+
     def persist_qcm_execution_payload(self, item: dict[str, Any], candidate: dict[str, Any]) -> int:
         """Materialize QCM choices in execution tables without approving the Draft."""
         answer = candidate["answer"]
@@ -429,14 +562,23 @@ class DuckDBContentQualityRepository:
                 "structured": "structured",
             }.get(answer_kind, "text")
             detailed_expected = source[11]
-            if item.get("choices"):
+            choice_answer = answer_kind in {"single_choice", "multiple_choice"}
+            if choice_answer:
                 labels = [str(choice) for choice in item["choices"]]
                 expected_labels = (
                     [str(value) for value in item["expected_answer"]]
                     if isinstance(item["expected_answer"], list)
                     else [str(item["expected_answer"])]
                 )
-                expected_codes = [f"OPT-{labels.index(label) + 1}" for label in expected_labels]
+                missing_labels = [label for label in expected_labels if label not in labels]
+                if missing_labels:
+                    raise ValueError("Expected choice is absent from candidate options: " + ", ".join(missing_labels))
+                expected_codes = [
+                    f"OPT-{position + 1}"
+                    for label in expected_labels
+                    for position, option in enumerate(labels)
+                    if option == label
+                ]
                 detailed_expected = json.dumps(
                     expected_codes if answer_kind == "multiple_choice" else expected_codes[0]
                 )
@@ -573,7 +715,7 @@ class DuckDBContentQualityRepository:
                     json.dumps({"points": 1}),
                 ],
             )
-            for position, option in enumerate(item.get("choices", []), 1):
+            for position, option in enumerate(item.get("choices", []) if choice_answer else [], 1):
                 label = str(option)
                 expected = item["expected_answer"]
                 correct = label in (expected if isinstance(expected, list) else [str(expected)])

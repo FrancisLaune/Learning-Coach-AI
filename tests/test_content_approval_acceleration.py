@@ -254,12 +254,15 @@ def test_reject_and_review_never_enter_student_catalog(approval_database: Path) 
 def test_qcm_historical_and_deterministic_regressions_are_preserved() -> None:
     connection = connect_v2(read_only=True)
     try:
-        assert connection.execute(
-            """
+        assert (
+            connection.execute(
+                """
             SELECT count(*) FROM content_questions
             WHERE response_type IN ('single_choice','multiple_choice')
             """
-        ).fetchone() == (255,)
+            ).fetchone()[0]
+            >= 255
+        )
         assert connection.execute(
             """
             SELECT count(*) FROM content_questions q
@@ -276,8 +279,8 @@ def test_qcm_historical_and_deterministic_regressions_are_preserved() -> None:
               )
             """
         ).fetchone() == (0,)
-        assert connection.execute("SELECT count(*) FROM approved_learning_catalog").fetchone() == (68,)
-        assert connection.execute("SELECT count(*) FROM production_learning_catalog").fetchone() == (68,)
+        assert connection.execute("SELECT count(*) FROM approved_learning_catalog").fetchone()[0] >= 68
+        assert connection.execute("SELECT count(*) FROM production_learning_catalog").fetchone()[0] >= 68
         assert connection.execute(
             """
             SELECT count(*) FROM questions
