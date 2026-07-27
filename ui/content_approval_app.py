@@ -1,4 +1,4 @@
-"""Standalone internal Streamlit queue for controlled content approval."""
+"""File Streamlit interne pour la validation humaine contrôlée."""
 
 from __future__ import annotations
 
@@ -8,87 +8,212 @@ from typing import Any
 
 import streamlit as st
 
+from infrastructure.repositories.content_factory import DuckDBContentFactoryRepository
 from infrastructure.repositories.content_quality import DuckDBContentQualityRepository
+from services.content.approval_queue import build_dynamic_queue, filter_queue
 from services.runtime import prepare_runtime
+from ui.i18n import PRIORITY_LABELS_FR, grade_label, label, subject_label, tier_label
 
 QUEUE = Path(__file__).resolve().parents[1] / "resources" / "content" / "quality" / "lcai_0012d3_approval_priority.json"
+
+PRIORITY_FILTERS = (
+    "Plan minimal — prioritaire",
+    "Complète immédiatement un Tier 1",
+    "Tier 3 → Tier 2",
+    "Évaluation manquante",
+    "Entraînement manquant",
+    "Tous les candidats recommandés",
+    "Sans impact direct",
+)
 
 
 def _load_queue() -> list[dict[str, Any]]:
     return json.loads(QUEUE.read_text(encoding="utf-8"))
 
 
+def _subject_options(base_queue: list[dict[str, Any]]) -> tuple[str, ...]:
+    """Keep widget options stable even when the last candidate is removed."""
+    return tuple(sorted({str(item["subject"]) for item in base_queue}))
+
+
+def _resolve_candidate_index(
+    items: list[dict[str, Any]],
+    current_version_id: int | None,
+    previous_index: int,
+) -> int | None:
+    """Resolve navigation without assuming a removed object still exists."""
+    if not items:
+        return None
+    if current_version_id is not None:
+        for position, candidate in enumerate(items):
+            if int(candidate["version_id"]) == current_version_id:
+                return position
+    return min(max(0, previous_index), len(items) - 1)
+
+
+def _remember_position(index: int, version_id: int) -> None:
+    """Keep a stable identity and numeric fallback across a Streamlit rerun."""
+    st.session_state.approval_queue_index = index
+    st.session_state.approval_current_version_id = version_id
+
+
+def _coverage_rows() -> list[dict[str, Any]]:
+    output: list[dict[str, Any]] = []
+    for row in DuckDBContentFactoryRepository().active_skill_coverage():
+        practice = sum(
+            count for slot, count in row.approved.items() if slot.content_type.value in {"practice", "guided_practice"}
+        )
+        assessment = sum(count for slot, count in row.approved.items() if slot.content_type.value == "assessment")
+        output.append(
+            {
+                "grade": row.target.grade_code,
+                "subject": row.target.subject_code,
+                "chapter": row.target.chapter_code,
+                "skill": row.target.primary_skill_code,
+                "approved_practice": practice,
+                "approved_assessment": assessment,
+            }
+        )
+    return output
+
+
+def _display_impact(item: dict[str, Any]) -> None:
+    impact = item["coverage_impact"]
+    if impact["completes_tier_1"]:
+        st.success("🟢 **IMPACT : cette validation rend la compétence complète (Tier 1)**")
+    elif impact["improves_tier_2"]:
+        missing = "Évaluation" if not impact["potential"]["assessment_approved"] else "Entraînement"
+        st.warning(
+            f"🟡 **IMPACT : cette validation améliore la couverture de la compétence**  \n{missing} encore manquant."
+        )
+    else:
+        st.info("⚪ **IMPACT DE CETTE VALIDATION : aucun impact immédiat sur le Tier**")
+    current, potential = impact["current"], impact["potential"]
+    left, right = st.columns(2)
+    left.markdown(
+        "**Statut actuel de la compétence**  \n"
+        f"- Entraînement approuvé : {'Oui' if current['practice_approved'] else 'Non'}  \n"
+        f"- Évaluation approuvée : {'Oui' if current['assessment_approved'] else 'Non'}  \n"
+        f"- État : **{tier_label(int(current['tier']))}**"
+    )
+    right.markdown(
+        "**Après approbation**  \n"
+        f"- Entraînement approuvé : {'Oui' if potential['practice_approved'] else 'Non'}  \n"
+        f"- Évaluation approuvée : {'Oui' if potential['assessment_approved'] else 'Non'}  \n"
+        f"- État : **{tier_label(int(potential['tier']))}**"
+    )
+
+
 def run() -> None:
     prepare_runtime()
-    st.set_page_config(page_title="LCAI — Approval Queue", layout="wide")
-    st.title("Content Approval Queue — 4e & 3e")
+    st.set_page_config(page_title="LCAI — File de validation", layout="wide")
+    st.title("File de validation des contenus — 4e et 3e")
     st.warning("Outil interne : chaque action modifie individuellement le lifecycle éditorial.")
-    queue = _load_queue()
-    grade = st.sidebar.multiselect("Niveau", sorted({str(item["grade"]) for item in queue}))
-    subject = st.sidebar.multiselect("Matière", sorted({str(item["subject"]) for item in queue}))
-    content_type = st.sidebar.multiselect("Type", sorted({str(item["content_type"]) for item in queue}))
-    recommendation = st.sidebar.multiselect(
-        "Recommandation", sorted({str(item["recommended_decision"]) for item in queue})
+    repository = DuckDBContentQualityRepository()
+    skipped = set(st.session_state.get("approval_skipped_versions", set()))
+    base_queue = _load_queue()
+    queue, summary = build_dynamic_queue(
+        base_queue,
+        _coverage_rows(),
+        repository.approval_queue_review_statuses(),
+        skipped=skipped,
     )
-    review_group = st.sidebar.multiselect("Groupe de revue", sorted({str(item["approval_group"]) for item in queue}))
-    missing_only = st.sidebar.checkbox("Couverture manquante uniquement", value=True)
-    reviewer = st.sidebar.text_input("Reviewer")
-    approver = st.sidebar.text_input("Approver")
-    reason = st.sidebar.text_area("Motif de décision", value="Revue humaine LCAI-0012D3.")
-    filtered = [
-        item
-        for item in queue
-        if (not grade or item["grade"] in grade)
-        and (not subject or item["subject"] in subject)
-        and (not content_type or item["content_type"] in content_type)
-        and (not recommendation or item["recommended_decision"] in recommendation)
-        and (not review_group or item["approval_group"] in review_group)
-        and (not missing_only or item["missing_coverage"])
-    ]
+
+    metrics = st.columns(4)
+    metrics[0].metric("Plan minimal restant", summary["minimal_plan_remaining"])
+    metrics[1].metric("Compétences complètes", summary["current_tier_1"])
+    metrics[2].metric("Compétences complètes supplémentaires", summary["additional_tier_1"])
+    metrics[3].metric("Maximum de compétences complètes", summary["maximum_tier_1"])
+
+    st.sidebar.header("Priorité de validation")
+    priority_filter = st.sidebar.radio(
+        "Vue principale",
+        PRIORITY_FILTERS,
+        index=0,
+    )
+    priority_levels = st.sidebar.multiselect(
+        "Niveaux de priorité",
+        ("P1", "P2", "P3", "P4", "P5"),
+        default=("P1", "P2"),
+    )
+    for status in PRIORITY_LABELS_FR:
+        st.sidebar.caption(f"{PRIORITY_LABELS_FR[status]} : {summary['priority_counts'].get(status, 0)}")
+    tier1_only = st.sidebar.checkbox("Seulement les validations qui créent un Tier 1")
+    grade = st.sidebar.selectbox(
+        "Niveau",
+        ("Tous", "FR-3E", "FR-4E"),
+        format_func=lambda value: "Tous" if value == "Tous" else grade_label(value),
+    )
+    subjects = st.sidebar.multiselect(
+        "Matière",
+        _subject_options(base_queue),
+        format_func=subject_label,
+    )
+    priority_4e = st.sidebar.checkbox("Priorité 4e")
+    balance_subjects = st.sidebar.checkbox("Équilibrer les matières")
+    reviewer = st.sidebar.text_input("Relecteur")
+    approver = st.sidebar.text_input("Approbateur")
+    reason = st.sidebar.text_area("Motif de décision", value="Revue humaine LCAI-0012D3A.")
+
+    filtered = filter_queue(
+        queue,
+        priority_filter=priority_filter,
+        priority_levels=priority_levels,
+        grade=grade,
+        subjects=subjects,
+        tier1_only=tier1_only,
+        priority_4e=priority_4e,
+        balance_subjects=balance_subjects,
+    )
     st.sidebar.metric("Résultats", len(filtered))
     if not filtered:
-        st.info("Aucun candidat pour ces filtres.")
+        st.session_state.approval_current_version_id = None
+        st.session_state.approval_queue_index = 0
+        st.info("Aucun contenu restant dans cette sélection.")
         return
-    index = int(st.session_state.get("approval_queue_index", 0))
-    index = min(index, len(filtered) - 1)
+
+    stored_version = st.session_state.get("approval_current_version_id")
+    index = _resolve_candidate_index(
+        filtered,
+        int(stored_version) if stored_version is not None else None,
+        int(st.session_state.get("approval_queue_index", 0)),
+    )
+    if index is None:
+        st.info("Aucun contenu restant dans cette sélection.")
+        return
     item = filtered[index]
+    _remember_position(index, int(item["version_id"]))
+    item["review_status"] = "IN_REVIEW"
     previous, position, following = st.columns((1, 2, 1))
-    if previous.button("← Previous", disabled=index == 0):
-        st.session_state.approval_queue_index = index - 1
+    if previous.button("← Précédent", disabled=index == 0):
+        target = filtered[index - 1]
+        _remember_position(index - 1, int(target["version_id"]))
         st.rerun()
-    position.write(f"**{index + 1}/{len(filtered)}** · `{item['code']}`")
-    if following.button("Next →", disabled=index == len(filtered) - 1):
-        st.session_state.approval_queue_index = index + 1
+    position.write(
+        f"**{index + 1}/{len(filtered)}** · `{item['code']}` · "
+        f"**{PRIORITY_LABELS_FR[str(item['approval_priority_status'])]}** · "
+        f"rang {item['approval_priority_rank']}"
+    )
+    if following.button("Suivant →", disabled=index == len(filtered) - 1):
+        target = filtered[index + 1]
+        _remember_position(index + 1, int(target["version_id"]))
         st.rerun()
-    st.subheader(f"{item['grade']} · {item['subject']} · {item['chapter']}")
-    st.write(f"**Skill :** {item['skill']}")
+
+    st.subheader(f"{grade_label(item['grade'])} · {subject_label(item['subject'])} · {item['chapter']}")
+    st.write(f"**Compétence :** {item['skill']}")
+    content_label = {
+        "practice": "Entraînement",
+        "assessment": "Évaluation",
+        "remediation": "Remédiation",
+        "diagnostic": "Diagnostic",
+    }.get(str(item["content_type"]), str(item["content_type"]))
     st.write(
-        f"**Type :** {item['content_type']} · **Difficulté :** {item['difficulty']} · "
-        f"**Score :** {item['candidate_score']}/100"
+        f"**Type :** {content_label} · **Difficulté :** {item['difficulty']} · "
+        f"**Score :** {item['candidate_score']}/100 · "
+        f"**Statut de revue :** {label(item['review_status'])}"
     )
-    impact = item["coverage_impact"]
-    st.info(
-        "**Impact couverture —** "
-        f"Practice: {'YES' if impact['current']['practice_approved'] else 'NO'} → "
-        f"{'YES' if impact['potential']['practice_approved'] else 'NO'} · "
-        f"Assessment: {'YES' if impact['current']['assessment_approved'] else 'NO'} → "
-        f"{'YES' if impact['potential']['assessment_approved'] else 'NO'} · "
-        f"Tier {impact['current']['tier']} → Tier {impact['potential']['tier']}"
-    )
-    st.write(
-        "**THIS APPROVAL WOULD:** "
-        + " · ".join(
-            label
-            for enabled, label in (
-                (impact["adds_practice"], "add practice"),
-                (impact["adds_assessment"], "add assessment"),
-                (impact["completes_tier_1"], "complete Tier 1"),
-                (impact["improves_tier_2"], "improve Tier 2"),
-                (impact["no_coverage_impact"], "no coverage impact"),
-            )
-            if enabled
-        )
-    )
+    _display_impact(item)
+
     st.markdown("### Question")
     st.write(item["question"])
     if item["choices"]:
@@ -104,61 +229,63 @@ def run() -> None:
         {
             "STRUCTURE": item["automated_checks"].get("structural_validity"),
             "CURRICULUM": item["automated_checks"].get("curriculum_alignment"),
-            "SKILL_ALIGNMENT": item["automated_checks"].get("skill_alignment"),
-            "ANSWER": item["automated_checks"].get("answer_correctness"),
-            "DETERMINISTIC_CHECK": item["deterministic_verification"],
-            "QCM_CHECK": (
-                item["automated_checks"].get("executability")
-                if item["answer_kind"] in {"single_choice", "multiple_choice"}
-                else "N/A"
-            ),
-            "DUPLICATE_CHECK": item["automated_checks"].get("duplicate_safety"),
-            "EXECUTABILITY": item["automated_checks"].get("executability"),
-            "LEVEL": item["automated_checks"].get("grade_appropriateness"),
+            "ALIGNEMENT_COMPÉTENCE": item["automated_checks"].get("skill_alignment"),
+            "RÉPONSE": item["automated_checks"].get("answer_correctness"),
+            "CONTRÔLE_DÉTERMINISTE": item["deterministic_verification"],
+            "DOUBLON": item["automated_checks"].get("duplicate_safety"),
+            "EXÉCUTABILITÉ": item["automated_checks"].get("executability"),
+            "NIVEAU": item["automated_checks"].get("grade_appropriateness"),
         }
     )
     right.json(
         {
-            "quality_result": item["quality_result"],
-            "reason": item["quality_reason"],
-            "deterministic_verification": item["deterministic_verification"],
-            "recommendation": item["recommended_decision"],
+            "résultat_qualité": label(item["quality_result"]),
+            "motif": item["quality_reason"],
+            "recommandation": label(item["recommended_decision"]),
         }
     )
-    repository = DuckDBContentQualityRepository()
-    approve, reject, keep = st.columns(3)
+
+    approve, reject, keep, skip = st.columns(4)
     identities_ready = bool(reviewer.strip() and approver.strip() and reviewer != approver)
     if approve.button(
-        "Approve",
+        "Approuver",
         type="primary",
         disabled=not identities_ready or item["recommended_decision"] != "APPROVE",
     ):
         try:
-            content_id = repository.approve_for_production(
+            repository.approve_for_production(
                 item=item,
                 reviewer=reviewer.strip(),
                 approver=approver.strip(),
                 reason=reason.strip(),
             )
-            st.success(f"Contenu publié individuellement : {content_id}")
+            _remember_position(index, int(item["version_id"]))
+            st.rerun()
         except ValueError as exc:
             st.error(str(exc))
-    if reject.button("Reject", disabled=not reviewer.strip()):
+    if reject.button("Rejeter", disabled=not reviewer.strip()):
         repository.record_human_decision(
             version_id=int(item["version_id"]),
             reviewer=reviewer.strip(),
             decision="REJECT",
             notes=reason.strip(),
         )
-        st.success("Contenu rejeté et archivé.")
-    if keep.button("Keep Review", disabled=not reviewer.strip()):
+        _remember_position(index, int(item["version_id"]))
+        st.rerun()
+    if keep.button("Maintenir en révision", disabled=not reviewer.strip()):
         repository.record_human_decision(
             version_id=int(item["version_id"]),
             reviewer=reviewer.strip(),
             decision="KEEP_FOR_REVIEW",
             notes=reason.strip(),
         )
-        st.success("Contenu maintenu en revue.")
+        _remember_position(index, int(item["version_id"]))
+        st.rerun()
+    if skip.button("Ignorer pour cette session"):
+        skipped.add(int(item["version_id"]))
+        st.session_state.approval_skipped_versions = skipped
+        _remember_position(index, int(item["version_id"]))
+        st.rerun()
 
 
 if __name__ == "__main__":

@@ -57,6 +57,7 @@ from services.unified_experience import (
     UnifiedOnboardingProfileService,
 )
 from ui.curriculum_state import clear_curriculum_selection, reconcile_skills, reconcile_subject_change
+from ui.i18n import label
 from ui.navigation import apply_navigation_request, request_navigation
 from ui.session import logout
 from ui.v2_experience import (
@@ -144,7 +145,7 @@ def onboarding(user: dict[str, object]) -> None:
     grade_labels = {item[0]: item[2] for item in grades}
     subject_labels = {item[0]: item[2] for item in subjects}
     if not grades or not subjects:
-        st.error("Le curriculum Approved est vide. Aucun parcours ne sera inventé.")
+        st.error("Le catalogue de contenus approuvés est vide. Aucun parcours ne sera inventé.")
         return
 
     with st.form("unified_onboarding"):
@@ -157,6 +158,7 @@ def onboarding(user: dict[str, object]) -> None:
             value=None,
             min_value=date(date.today().year - 30, 1, 1),
             max_value=date(date.today().year - 5, 12, 31),
+            format="DD/MM/YYYY",
         )
         current_id = st.selectbox("Classe actuelle", list(grade_labels), format_func=grade_labels.__getitem__)
         target_options: list[int | None] = [None, *grade_labels]
@@ -281,7 +283,7 @@ def onboarding(user: dict[str, object]) -> None:
         st.session_state.v2_session_id = session_id
         st.success("Ton parcours et ta première séance personnalisée sont prêts.")
     else:
-        st.warning("Ton parcours est prêt, mais aucun contenu Approved compatible n'est disponible pour une séance.")
+        st.warning("Ton parcours est prêt, mais aucun contenu approuvé compatible n'est disponible pour une séance.")
     st.rerun()
 
 
@@ -328,7 +330,7 @@ def _homework_form(
     )
     reconcile_subject_change(st.session_state, key, subject_id)
     if subject_id is None:
-        st.info("Sélectionnez une matière pour afficher le contenu Approved disponible.")
+        st.info("Sélectionnez une matière pour afficher le contenu approuvé disponible.")
         return
     selected_chapters: list[int] = []
     selected_skills: list[int] = []
@@ -341,7 +343,7 @@ def _homework_form(
                 f"{labels[int(subject_id)]} dans cette classe."
             )
             return
-        st.caption(f"Le devoir sera équilibré automatiquement sur {len(available_chapters)} chapitre(s) Approved.")
+        st.caption(f"Le devoir sera équilibré automatiquement sur {len(available_chapters)} chapitre(s) approuvé(s).")
     else:
         chapters = repository.chapters(int(subject_id), grade_id)
         chapter_labels = dict(chapters)
@@ -387,7 +389,12 @@ def _homework_form(
     )
     exercise_count = st.slider("Nombre d'exercices", 1, 40, 10, key=f"{key}_exercise_count")
     target_duration = st.slider("Durée cible", 5, 120, 30, 5, key=f"{key}_duration")
-    due_date = st.date_input("Échéance", value=date.today(), key=f"{key}_due_date")
+    due_date = st.date_input(
+        "Échéance",
+        value=date.today(),
+        format="DD/MM/YYYY",
+        key=f"{key}_due_date",
+    )
     correction = st.selectbox(
         "Correction",
         ("IMMEDIATE", "AFTER_EACH_EXERCISE", "AFTER_SUBMISSION"),
@@ -431,7 +438,7 @@ def _homework_form(
                     f"Le devoir a été créé avec {selected_count} contenu(s) au lieu des {exercise_count} demandés."
                 )
             else:
-                st.success(f"Devoir créé avec {selected_count} contenu(s) Approved.")
+                st.success(f"Devoir créé avec {selected_count} contenu(s) approuvé(s).")
 
 
 def student_homework(learner_id: int) -> None:
@@ -452,9 +459,9 @@ def student_homework(learner_id: int) -> None:
             for item in selected:
                 with st.container(border=True):
                     st.write(
-                        f"**{item.subject_label}** · {item.exercise_count} exercice(s) · {item.difficulty.value.title()}"
+                        f"**{item.subject_label}** · {item.exercise_count} exercice(s) · {label(item.difficulty.value)}"
                     )
-                    st.caption(f"État : {item.status.value.replace('_', ' ').title()}")
+                    st.caption(f"État : {label(item.status.value)}")
                     if item.status is AssignmentStatus.READY and st.button(
                         "Commencer", key=f"hw_start_{item.homework_id}"
                     ):
@@ -541,7 +548,10 @@ def run_student(user: dict[str, object], learner_id: int) -> None:
         ]
         if due:
             st.dataframe(
-                [{"Matière": item.subject_label, "Échéance": item.due_at, "État": item.status.value} for item in due],
+                [
+                    {"Matière": item.subject_label, "Échéance": item.due_at, "État": label(item.status.value)}
+                    for item in due
+                ],
                 hide_index=True,
             )
         else:
@@ -592,6 +602,7 @@ def _edit_learner(parent_ref: str, learner_id: int) -> None:
             value=profile.birth_date,
             min_value=date(date.today().year - 30, 1, 1),
             max_value=date(date.today().year - 5, 12, 31),
+            format="DD/MM/YYYY",
         )
         current_grade = st.selectbox(
             "Classe actuelle",
@@ -854,6 +865,7 @@ def _create_child(parent_ref: str) -> None:
             value=date(2012, 1, 1),
             min_value=date(date.today().year - 30, 1, 1),
             max_value=date(date.today().year - 5, 12, 31),
+            format="DD/MM/YYYY",
         )
         current_grade = st.selectbox("Classe actuelle", list(grade_labels), format_func=grade_labels.__getitem__)
         target_choices: list[int | None] = [None, *grade_labels]
@@ -1111,7 +1123,10 @@ def run_parent(user: dict[str, object]) -> None:
         st.subheader("Devoirs de l'élève")
         items = HomeworkService(_repository()).list_for_learner(learner_id)
         st.dataframe(
-            [{"Matière": item.subject_label, "État": item.status.value, "Échéance": item.due_at} for item in items],
+            [
+                {"Matière": item.subject_label, "État": label(item.status.value), "Échéance": item.due_at}
+                for item in items
+            ],
             hide_index=True,
         )
     elif page == "Programme":
@@ -1126,10 +1141,10 @@ def run_parent(user: dict[str, object]) -> None:
                 st.write(f"Bénéfice attendu : {change.expected_benefit}")
                 if change.status == "PENDING_PARENT":
                     cols = st.columns(3)
-                    for column, decision, label in zip(
+                    for column, decision, action_label in zip(
                         cols, ("accept", "modify", "reject"), ("Accepter", "Modifier", "Refuser"), strict=True
                     ):
-                        if column.button(label, key=f"change_{change.proposal_id}_{decision}"):
+                        if column.button(action_label, key=f"change_{change.proposal_id}_{decision}"):
                             service = ProgrammeChangeService(_repository())
                             _safe(partial(service.decide, parent_ref, change.proposal_id, decision))
                             st.rerun()
@@ -1137,7 +1152,10 @@ def run_parent(user: dict[str, object]) -> None:
         st.title("Planning et échéances")
         items = HomeworkService(_repository()).list_for_learner(learner_id)
         st.dataframe(
-            [{"Matière": item.subject_label, "Échéance": item.due_at, "État": item.status.value} for item in items],
+            [
+                {"Matière": item.subject_label, "Échéance": item.due_at, "État": label(item.status.value)}
+                for item in items
+            ],
             hide_index=True,
         )
     elif page == "Profil élève":

@@ -82,7 +82,7 @@ class HomeworkService:
     def create(self, request: HomeworkRequest) -> HomeworkAssignment:
         content_ids = self.repository.select_approved_content(request)
         if not content_ids:
-            raise ValueError("Aucun contenu Approved ne correspond à cette sélection.")
+            raise ValueError("Aucun contenu approuvé ne correspond à cette sélection.")
         return self.repository.create_homework(request, content_ids)
 
     def assign_as_parent(self, parent_ref: str, request: HomeworkRequest) -> HomeworkAssignment:

@@ -18,6 +18,7 @@ from application.experience_factory import (
     build_unified_session_execution_service,
 )
 from services.learning_session.experience import SessionListItem, StudentDashboard
+from ui.i18n import label, status_label
 from ui.session import logout
 
 
@@ -27,13 +28,7 @@ def _error(error: PresentationError) -> None:
 
 
 def _status_label(status: str) -> str:
-    return {
-        "READY": "Prête",
-        "RUNNING": "En cours",
-        "PAUSED": "En pause",
-        "COMPLETED": "Terminée",
-        "ABANDONED": "Arrêtée",
-    }.get(status, status.replace("_", " ").title())
+    return status_label(status, feminine=True)
 
 
 def _metric_cards(dashboard: StudentDashboard) -> None:
@@ -48,8 +43,8 @@ def _mastery(dashboard: StudentDashboard) -> None:
         st.info("Les compétences apparaîtront après les premières activités évaluées.")
         return
     for item in dashboard.mastery:
-        st.write(f"**{item.label}** — {item.score:.0f} % — {item.level.replace('_', ' ').title()}")
-        st.progress(min(100, max(0, int(item.score))), text=f"Tendance : {item.trend.lower()}")
+        st.write(f"**{item.label}** — {item.score:.0f} % — {label(item.level)}")
+        st.progress(min(100, max(0, int(item.score))), text=f"Tendance : {label(item.trend)}")
 
 
 def _history_rows(sessions: tuple[SessionListItem, ...]) -> list[dict[str, object]]:
@@ -110,7 +105,7 @@ def session_screen(controller: StudentExperienceController, learner_id: int) -> 
     for position, activity in enumerate(result.activities, 1):
         with st.container(border=True):
             st.markdown(f"#### Activité {position} — {activity.title}")
-            st.write(f"Type : {activity.activity_type} · État : {_status_label(activity.status)}")
+            st.write(f"Type : {label(activity.activity_type)} · État : {_status_label(activity.status)}")
             if activity.status == "COMPLETED":
                 st.write(f"Score : {activity.score:.0f} %")
     if result.session.status == "RUNNING":
