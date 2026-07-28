@@ -1,16 +1,52 @@
 from __future__ import annotations
 
-import hashlib
 from contextlib import suppress
-from datetime import datetime
+from datetime import UTC, datetime, timedelta
 from typing import Any
 
 import duckdb
 import pandas as pd
 
-from core.config import get_database_path, get_demo_parent_credentials, is_demo_credentials_enabled
+from core.config import (
+    get_database_path,
+    get_demo_parent_credentials,
+    get_password_reset_base_url,
+    is_demo_credentials_enabled,
+)
+from services.auth.email_delivery import deliver_auth_email
+from services.auth.email_templates import (
+    child_password_recovery_requested_email,
+    parent_password_reset_email,
+    password_changed_notification_email,
+)
+from services.auth.password_reset import (
+    DEFAULT_EXPIRY_MINUTES,
+    RESET_PURPOSE_CHILD,
+    RESET_PURPOSE_PARENT,
+    generate_reset_token,
+    hash_reset_token,
+    neutral_recovery_message,
+)
+from services.auth.passwords import hash_password, needs_rehash, verify_password
+from services.auth.roles import is_known_auth_role
 
 DB_PATH = get_database_path()
+
+
+def _parent_owns_learner(parent_user_id: int, learner_external_ref: str) -> bool:
+    from services.auth.authorization import parent_owns_learner
+
+    return parent_owns_learner(parent_user_id, learner_external_ref)
+
+
+def _utc_now() -> datetime:
+    return datetime.now(UTC)
+
+
+def _as_utc_aware(value: datetime) -> datetime:
+    if value.tzinfo is None:
+        return value.replace(tzinfo=UTC)
+    return value.astimezone(UTC)
 
 
 def connect() -> duckdb.DuckDBPyConnection:
@@ -19,7 +55,7 @@ def connect() -> duckdb.DuckDBPyConnection:
 
 
 def pin_hash(pin: str) -> str:
-    return hashlib.sha256(pin.encode("utf-8")).hexdigest()
+    return hash_password(pin)
 
 
 def init_db() -> None:
@@ -43,9 +79,34 @@ def init_db() -> None:
         ALTER TABLE users ADD COLUMN IF NOT EXISTS email VARCHAR;
         ALTER TABLE users ADD COLUMN IF NOT EXISTS learner_external_ref VARCHAR;
         ALTER TABLE users ADD COLUMN IF NOT EXISTS active BOOLEAN DEFAULT TRUE;
+        ALTER TABLE users ADD COLUMN IF NOT EXISTS auth_epoch BIGINT DEFAULT 0;
         CREATE UNIQUE INDEX IF NOT EXISTS idx_users_email ON users(email);
         CREATE UNIQUE INDEX IF NOT EXISTS idx_users_learner_external_ref
             ON users(learner_external_ref);
+
+        CREATE SEQUENCE IF NOT EXISTS seq_auth_event START 1;
+
+        CREATE TABLE IF NOT EXISTS password_reset_tokens (
+            id BIGINT PRIMARY KEY DEFAULT nextval('seq_auth_event'),
+            user_id BIGINT NOT NULL,
+            token_hash VARCHAR NOT NULL,
+            purpose VARCHAR NOT NULL,
+            learner_external_ref VARCHAR,
+            expires_at TIMESTAMP NOT NULL,
+            used_at TIMESTAMP,
+            created_at TIMESTAMP NOT NULL DEFAULT now()
+        );
+        CREATE INDEX IF NOT EXISTS idx_password_reset_token_hash
+            ON password_reset_tokens(token_hash);
+
+        CREATE TABLE IF NOT EXISTS authentication_audit_events (
+            id BIGINT PRIMARY KEY DEFAULT nextval('seq_auth_event'),
+            event_type VARCHAR NOT NULL,
+            user_id BIGINT,
+            learner_external_ref VARCHAR,
+            detail VARCHAR,
+            created_at TIMESTAMP NOT NULL DEFAULT now()
+        );
 
         CREATE TABLE IF NOT EXISTS exams (
             id BIGINT PRIMARY KEY DEFAULT nextval('seq_exam'),
@@ -201,7 +262,7 @@ def create_student_account(
     username = username.strip()
     if not learner_external_ref or not first_name:
         return False, "L'identité de l'élève est incomplète."
-    if "@" not in email or "." not in email.rsplit("@", 1)[-1]:
+    if email and ("@" not in email or "." not in email.rsplit("@", 1)[-1]):
         return False, "L'adresse e-mail de l'élève n'est pas valide."
     if len(username) < 3:
         return False, "L'identifiant élève doit contenir au moins trois caractères."
@@ -217,12 +278,14 @@ def create_student_account(
         ).fetchone()
         if parent is None:
             return False, "Seul un parent authentifié peut créer un compte élève."
+        if not _parent_owns_learner(parent_user_id, learner_external_ref):
+            return False, "Ce profil élève n'appartient pas à votre espace familial."
         con.execute("BEGIN TRANSACTION")
         con.execute(
             """INSERT INTO users
             (name,pin_hash,role,created_at,first_name,email,learner_external_ref,active)
             VALUES (?,?,?,now(),?,?,?,TRUE)""",
-            [username, pin_hash(password), "student", first_name, email, learner_external_ref],
+            [username, pin_hash(password), "student", first_name, email or None, learner_external_ref],
         )
         linked = con.execute(
             """SELECT count(*) FROM users
@@ -288,8 +351,10 @@ def reset_student_password(
         ).fetchone()
         if parent is None:
             return False, "Seul un parent authentifié peut réinitialiser ce mot de passe."
+        if not _parent_owns_learner(parent_user_id, learner_external_ref):
+            return False, "Ce profil élève n'appartient pas à votre espace familial."
         changed = con.execute(
-            """UPDATE users SET pin_hash=?
+            """UPDATE users SET pin_hash=?, auth_epoch=COALESCE(auth_epoch,0)+1
             WHERE learner_external_ref=? AND role='student' AND active
             RETURNING id""",
             [pin_hash(password), learner_external_ref],
@@ -310,6 +375,8 @@ def deactivate_student_account(parent_user_id: int, learner_external_ref: str) -
         ).fetchone()
         if parent is None:
             raise PermissionError("PARENT_ACCESS_DENIED")
+        if not _parent_owns_learner(parent_user_id, learner_external_ref):
+            raise PermissionError("PARENT_ACCESS_DENIED")
         con.execute(
             """UPDATE users SET active=FALSE
             WHERE learner_external_ref=? AND role='student'""",
@@ -329,6 +396,8 @@ def delete_student_account(parent_user_id: int, learner_external_ref: str) -> No
         ).fetchone()
         if parent is None:
             raise PermissionError("PARENT_ACCESS_DENIED")
+        if not _parent_owns_learner(parent_user_id, learner_external_ref):
+            raise PermissionError("PARENT_ACCESS_DENIED")
         con.execute(
             """DELETE FROM users
             WHERE learner_external_ref=? AND role='student' AND active=FALSE""",
@@ -347,6 +416,8 @@ def reactivate_student_account(parent_user_id: int, learner_external_ref: str) -
         ).fetchone()
         if parent is None:
             raise PermissionError("PARENT_ACCESS_DENIED")
+        if not _parent_owns_learner(parent_user_id, learner_external_ref):
+            raise PermissionError("PARENT_ACCESS_DENIED")
         con.execute(
             """UPDATE users SET active=TRUE
             WHERE learner_external_ref=? AND role='student'""",
@@ -356,24 +427,219 @@ def reactivate_student_account(parent_user_id: int, learner_external_ref: str) -
         con.close()
 
 
+def _record_auth_event(
+    event_type: str,
+    *,
+    user_id: int | None = None,
+    learner_external_ref: str | None = None,
+    detail: str | None = None,
+) -> None:
+    con = connect()
+    try:
+        con.execute(
+            """INSERT INTO authentication_audit_events(event_type,user_id,learner_external_ref,detail,created_at)
+            VALUES (?,?,?,?,?)""",
+            [event_type, user_id, learner_external_ref, detail, datetime.now(UTC)],
+        )
+    finally:
+        con.close()
+
+
+def _store_reset_token(
+    *,
+    user_id: int,
+    purpose: str,
+    learner_external_ref: str | None = None,
+) -> str:
+    token = generate_reset_token()
+    expires_at = datetime.now(UTC).replace(microsecond=0) + timedelta(minutes=DEFAULT_EXPIRY_MINUTES)
+    con = connect()
+    try:
+        con.execute(
+            """INSERT INTO password_reset_tokens
+            (user_id,token_hash,purpose,learner_external_ref,expires_at,created_at)
+            VALUES (?,?,?,?,?,?)""",
+            [user_id, hash_reset_token(token), purpose, learner_external_ref, expires_at, datetime.now(UTC)],
+        )
+    finally:
+        con.close()
+    _record_auth_event("PASSWORD_RESET_REQUESTED", user_id=user_id, learner_external_ref=learner_external_ref)
+    return token
+
+
+def _resolve_reset_token(token: str) -> dict[str, Any] | None:
+    con = connect()
+    try:
+        row = con.execute(
+            """SELECT id,user_id,purpose,learner_external_ref,expires_at,used_at
+            FROM password_reset_tokens WHERE token_hash=?""",
+            [hash_reset_token(token)],
+        ).fetchone()
+        if row is None:
+            return None
+        expires_at = row[4]
+        if row[5] is not None:
+            return None
+        if _as_utc_aware(expires_at) < _utc_now():
+            return None
+        return {
+            "token_id": int(row[0]),
+            "user_id": int(row[1]),
+            "purpose": str(row[2]),
+            "learner_external_ref": row[3],
+        }
+    finally:
+        con.close()
+
+
+def request_parent_password_reset(email: str) -> str:
+    email = email.strip().lower()
+    con = connect()
+    try:
+        row = con.execute(
+            "SELECT id,email FROM users WHERE lower(email)=lower(?) AND role='parent' AND active",
+            [email],
+        ).fetchone()
+    finally:
+        con.close()
+    if row is not None:
+        token = _store_reset_token(user_id=int(row[0]), purpose=RESET_PURPOSE_PARENT)
+        reset_link = f"{get_password_reset_base_url()}/?reset_token={token}&purpose=parent"
+        subject, body = parent_password_reset_email(reset_link=reset_link, expires_minutes=DEFAULT_EXPIRY_MINUTES)
+        deliver_auth_email(recipient=str(row[1]), subject=subject, body=body)
+    return neutral_recovery_message()
+
+
+def request_child_password_recovery(parent_email: str, child_username: str) -> str:
+    parent_email = parent_email.strip().lower()
+    child_username = child_username.strip()
+    con = connect()
+    try:
+        parent = con.execute(
+            "SELECT id,email FROM users WHERE lower(email)=lower(?) AND role='parent' AND active",
+            [parent_email],
+        ).fetchone()
+        if parent is None:
+            return neutral_recovery_message()
+        student = con.execute(
+            """SELECT id,first_name,learner_external_ref FROM users
+            WHERE lower(name)=lower(?) AND role='student' AND active""",
+            [child_username],
+        ).fetchone()
+        if student is None or student[2] is None:
+            return neutral_recovery_message()
+        if not _parent_owns_learner(int(parent[0]), str(student[2])):
+            return neutral_recovery_message()
+    finally:
+        con.close()
+    token = _store_reset_token(
+        user_id=int(parent[0]),
+        purpose=RESET_PURPOSE_CHILD,
+        learner_external_ref=str(student[2]),
+    )
+    reset_link = f"{get_password_reset_base_url()}/?reset_token={token}&purpose=child"
+    subject, body = child_password_recovery_requested_email(
+        child_display=str(student[1]),
+        reset_link=reset_link,
+        expires_minutes=DEFAULT_EXPIRY_MINUTES,
+    )
+    deliver_auth_email(recipient=str(parent[1]), subject=subject, body=body)
+    return neutral_recovery_message()
+
+
+def complete_password_reset(token: str, password: str, password_confirmation: str) -> tuple[bool, str]:
+    if len(password) < 8:
+        return False, "Le mot de passe doit contenir au moins huit caractères."
+    if password != password_confirmation:
+        return False, "La confirmation du mot de passe ne correspond pas."
+    resolved = _resolve_reset_token(token)
+    if resolved is None:
+        return False, "Ce lien de réinitialisation est invalide ou expiré."
+    con = connect()
+    try:
+        if resolved["purpose"] == RESET_PURPOSE_PARENT:
+            updated = con.execute(
+                """UPDATE users SET pin_hash=?, auth_epoch=COALESCE(auth_epoch,0)+1
+                WHERE id=? AND role='parent' AND active RETURNING email,name""",
+                [pin_hash(password), resolved["user_id"]],
+            ).fetchone()
+            account_label = str(updated[1]) if updated else "parent"
+        elif resolved["purpose"] == RESET_PURPOSE_CHILD:
+            learner_external_ref = str(resolved["learner_external_ref"] or "")
+            updated = con.execute(
+                """UPDATE users SET pin_hash=?, auth_epoch=COALESCE(auth_epoch,0)+1
+                WHERE learner_external_ref=? AND role='student' AND active RETURNING first_name""",
+                [pin_hash(password), learner_external_ref],
+            ).fetchone()
+            account_label = str(updated[0]) if updated else "élève"
+        else:
+            return False, "Ce lien de réinitialisation est invalide ou expiré."
+        if updated is None:
+            return False, "Ce lien de réinitialisation est invalide ou expiré."
+        con.execute(
+            "UPDATE password_reset_tokens SET used_at=? WHERE id=? AND used_at IS NULL",
+            [datetime.now(UTC), resolved["token_id"]],
+        )
+    finally:
+        con.close()
+    subject, body = password_changed_notification_email(account_label=account_label)
+    if resolved["purpose"] == RESET_PURPOSE_PARENT and updated:
+        deliver_auth_email(recipient=str(updated[0]), subject=subject, body=body)
+    _record_auth_event("PASSWORD_RESET_COMPLETED", user_id=resolved["user_id"])
+    return True, "Le mot de passe a été réinitialisé. Vous pouvez vous connecter."
+
+
+def session_user_still_valid(user: dict[str, Any]) -> bool:
+    session_role = user.get("role")
+    if not is_known_auth_role(session_role):
+        return False
+    con = connect()
+    try:
+        row = con.execute(
+            "SELECT auth_epoch, active, role FROM users WHERE id=?",
+            [int(user["id"])],
+        ).fetchone()
+    finally:
+        con.close()
+    if row is None or not bool(row[1]):
+        return False
+    if str(row[2]) != str(session_role):
+        return False
+    if not is_known_auth_role(row[2]):
+        return False
+    return int(row[0] or 0) == int(user.get("auth_epoch") or 0)
+
+
 def authenticate(name: str, pin: str, expected_role: str | None = None) -> dict[str, Any] | None:
     con = connect()
     row = con.execute(
-        """SELECT id,name,pin_hash,role,learner_external_ref,email
+        """SELECT id,name,pin_hash,role,learner_external_ref,email,auth_epoch
         FROM users
         WHERE (lower(name)=lower(?) OR lower(email)=lower(?)) AND active""",
         [name.strip(), name.strip()],
     ).fetchone()
     con.close()
-    if row and row[2] == pin_hash(pin) and (expected_role is None or row[3] == expected_role):
-        return {
-            "id": row[0],
-            "name": row[1],
-            "role": row[3],
-            "learner_external_ref": row[4],
-            "email": row[5],
-        }
-    return None
+    if not row or not verify_password(pin, str(row[2])):
+        return None
+    if not is_known_auth_role(row[3]):
+        return None
+    if expected_role is not None and row[3] != expected_role:
+        return None
+    stored_hash = str(row[2])
+    if needs_rehash(stored_hash):
+        con = connect()
+        try:
+            con.execute("UPDATE users SET pin_hash=? WHERE id=?", [pin_hash(pin), row[0]])
+        finally:
+            con.close()
+    return {
+        "id": row[0],
+        "name": row[1],
+        "role": row[3],
+        "learner_external_ref": row[4],
+        "email": row[5],
+        "auth_epoch": int(row[6] or 0),
+    }
 
 
 def student_list() -> list[dict[str, Any]]:

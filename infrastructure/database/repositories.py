@@ -17,6 +17,10 @@ class UserRepository:
     reactivate_student_account = staticmethod(legacy.reactivate_student_account)
     reset_student_password = staticmethod(legacy.reset_student_password)
     student_account_for_learner = staticmethod(legacy.student_account_for_learner)
+    request_parent_password_reset = staticmethod(legacy.request_parent_password_reset)
+    request_child_password_recovery = staticmethod(legacy.request_child_password_recovery)
+    complete_password_reset = staticmethod(legacy.complete_password_reset)
+    session_user_still_valid = staticmethod(legacy.session_user_still_valid)
     create_user = staticmethod(legacy.create_user)
     student_list = staticmethod(legacy.student_list)
 

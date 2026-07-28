@@ -23,6 +23,10 @@ has_active_student_account = _users.has_active_student_account
 reactivate_student_account = _users.reactivate_student_account
 reset_student_password = _users.reset_student_password
 student_account_for_learner = _users.student_account_for_learner
+request_parent_password_reset = _users.request_parent_password_reset
+request_child_password_recovery = _users.request_child_password_recovery
+complete_password_reset = _users.complete_password_reset
+session_user_still_valid = _users.session_user_still_valid
 create_user = _users.create_user
 student_list = _users.student_list
 

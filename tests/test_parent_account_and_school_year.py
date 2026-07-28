@@ -7,6 +7,7 @@ from pytest import MonkeyPatch
 
 import core.database as legacy_database
 from services.academic_year import academic_year_options, default_academic_year, parse_academic_year
+from services.auth.passwords import verify_password
 
 
 def test_parent_account_requires_email_and_authenticates(tmp_path: Path, monkeypatch: MonkeyPatch) -> None:
@@ -102,7 +103,7 @@ def test_parent_manages_secure_student_credentials(tmp_path: Path, monkeypatch: 
     finally:
         connection.close()
     assert stored_hash != "mot-de-passe-eleve"
-    assert stored_hash == legacy_database.pin_hash("mot-de-passe-eleve")
+    assert verify_password("mot-de-passe-eleve", stored_hash)
 
     assert legacy_database.reset_student_password(
         int(parent["id"]),

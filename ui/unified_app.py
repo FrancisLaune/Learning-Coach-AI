@@ -1171,11 +1171,27 @@ def run_unified_app(login_renderer: LoginRenderer) -> None:
         login_renderer()
         return
     user = st.session_state.user
-    if user["role"] == "parent":
+    from core.database import session_user_still_valid
+    from ui.session import logout
+
+    if not session_user_still_valid(user):
+        logout()
+        st.warning("Votre session a expiré après un changement de mot de passe. Veuillez vous reconnecter.")
+        login_renderer()
+        return
+    from services.auth.roles import AuthRole, normalize_auth_role
+
+    auth_role = normalize_auth_role(user.get("role"))
+    if auth_role is AuthRole.PARENT:
         run_parent(user)
         return
-    learner_id = _learner_id(user)
-    if learner_id is None or not _repository().onboarding_complete(learner_id):
-        onboarding(user)
+    if auth_role is AuthRole.STUDENT:
+        learner_id = _learner_id(user)
+        if learner_id is None or not _repository().onboarding_complete(learner_id):
+            onboarding(user)
+            return
+        run_student(user, learner_id)
         return
-    run_student(user, learner_id)
+    logout()
+    st.error("Ce type de compte n'est pas pris en charge.")
+    login_renderer()

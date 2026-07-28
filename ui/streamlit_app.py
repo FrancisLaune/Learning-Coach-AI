@@ -24,6 +24,7 @@ from infrastructure.database.legacy_gateway import (
     advanced_learning_overview,
     authenticate,
     chapter_performance,
+    complete_password_reset,
     create_exam,
     create_parent,
     dashboard_metrics,
@@ -35,6 +36,8 @@ from infrastructure.database.legacy_gateway import (
     note_history,
     practice_chapter_stats,
     practice_difficulty_stats,
+    request_child_password_recovery,
+    request_parent_password_reset,
     save_exam_answers,
     save_practice_attempt,
     student_list,
@@ -52,7 +55,47 @@ configure_page()
 render_global_styles()
 
 
+def _render_password_reset_from_query() -> bool:
+    token = st.query_params.get("reset_token")
+    if not token:
+        return False
+    st.subheader("Réinitialisation du mot de passe")
+    with st.form("complete_password_reset"):
+        password = st.text_input("Nouveau mot de passe", type="password")
+        confirmation = st.text_input("Confirmer le mot de passe", type="password")
+        submitted = st.form_submit_button("Enregistrer le nouveau mot de passe", type="primary")
+    if submitted:
+        ok, message = complete_password_reset(token, password, confirmation)
+        if ok:
+            st.success(message)
+            st.query_params.clear()
+        else:
+            st.error(message)
+    return True
+
+
+def _render_forgot_password_panel() -> None:
+    with st.expander("Mot de passe oublié ?"):
+        parent_tab, child_tab = st.tabs(["Compte Parent", "Compte Élève"])
+        with parent_tab:
+            with st.form("request_parent_password_reset"):
+                email = st.text_input("Adresse e-mail du compte Parent")
+                submitted = st.form_submit_button("Envoyer le lien de réinitialisation")
+            if submitted:
+                st.info(request_parent_password_reset(email))
+        with child_tab:
+            st.caption("La procédure est envoyée à l'adresse e-mail du Parent responsable.")
+            with st.form("request_child_password_recovery"):
+                parent_email = st.text_input("E-mail du Parent")
+                child_username = st.text_input("Identifiant de l'élève")
+                submitted = st.form_submit_button("Demander la réinitialisation")
+            if submitted:
+                st.info(request_child_password_recovery(parent_email, child_username))
+
+
 def login_screen() -> None:
+    if _render_password_reset_from_query():
+        return
     st.markdown(
         """
     <div class="hero">
@@ -97,6 +140,7 @@ def login_screen() -> None:
                     st.success(message)
                 else:
                     st.error(message)
+        _render_forgot_password_panel()
     with student_tab:
         with st.form("student_login"):
             student_name = st.text_input("Identifiant ou e-mail", key="student_login_name")
@@ -112,7 +156,8 @@ def login_screen() -> None:
                 st.session_state.user = user
                 st.rerun()
             st.error("Identifiant, e-mail ou mot de passe incorrect.")
-        st.caption("Le compte Élève est créé et géré depuis l’espace Parent.")
+        st.caption("Le compte Élève est créé et géré depuis l'espace Parent.")
+        _render_forgot_password_panel()
 
 
 def render_revision_sheet(subject: str, chapter: str) -> None:

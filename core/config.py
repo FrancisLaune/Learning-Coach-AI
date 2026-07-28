@@ -109,3 +109,35 @@ def get_log_level() -> str:
     """Return a safe standard-library logging level name."""
     level = os.getenv("LCAI_LOG_LEVEL", "INFO").strip().upper()
     return level if level in VALID_LOG_LEVELS else "INFO"
+
+
+def get_auth_email_mode() -> str:
+    mode = os.getenv("LCAI_AUTH_EMAIL_MODE", "console").strip().lower()
+    if mode in {"console", "file", "smtp", "disabled"}:
+        return mode
+    return "console"
+
+
+def get_auth_email_output_dir() -> Path:
+    configured = os.getenv("LCAI_AUTH_EMAIL_OUTPUT_DIR")
+    if configured:
+        path = Path(configured).expanduser()
+        return path if path.is_absolute() else PROJECT_ROOT / path
+    return PROJECT_ROOT / "exports" / "auth_emails"
+
+
+def get_auth_email_from_address() -> str:
+    return os.getenv("LCAI_AUTH_EMAIL_FROM", "noreply@learning-coach.local").strip()
+
+
+def get_password_reset_base_url() -> str:
+    return os.getenv("LCAI_PASSWORD_RESET_BASE_URL", "http://localhost:8501").rstrip("/")
+
+
+def get_smtp_settings() -> tuple[str, int, str | None, str | None, bool]:
+    host = os.getenv("LCAI_SMTP_HOST", "").strip()
+    port = _bounded_int("LCAI_SMTP_PORT", 587, 1, 65535)
+    username = os.getenv("LCAI_SMTP_USERNAME")
+    password = os.getenv("LCAI_SMTP_PASSWORD")
+    use_tls = os.getenv("LCAI_SMTP_USE_TLS", "true").strip().lower() in {"1", "true", "yes"}
+    return host, port, username, password, use_tls
