@@ -1,0 +1,72 @@
+{
+  "exam_id": "DNB-2024-ASIA-MATH-GEN",
+  "reference": "24GENMATAA1",
+  "year": 2024,
+  "zone": "ASIA",
+  "series": "GENERAL",
+  "subject": "MATHEMATICS",
+  "format_version": "DNB_PRE_2026",
+  "duration_minutes": 120,
+  "points": 100,
+  "calculator": true,
+  "source_type": "OFFICIAL_EXAM",
+  "source_ref": "turn1view2",
+  "source_url": "https://www.education.gouv.fr/sites/default/files/document/Dipl%C3%B4me%20national%20du%20brevet%202024%20-%20Math%C3%A9matiques-402462.pdf",
+  "exercises": [
+    {
+      "exercise": 1,
+      "points": 20,
+      "descriptor": "QCM: prime number, cube surface area, factorization, ratio and median",
+      "skill_hints": [
+        "prime_numbers",
+        "surface_area",
+        "factorization",
+        "ratio",
+        "median"
+      ],
+      "question_slots": 5
+    },
+    {
+      "exercise": 2,
+      "points": 18,
+      "descriptor": "true/false: spatial view, parallelism and probability comparison",
+      "skill_hints": [
+        "spatial_geometry",
+        "parallelism",
+        "probability"
+      ],
+      "question_slots": 4,
+      "requires_figure": true
+    },
+    {
+      "exercise": 3,
+      "points": 20,
+      "descriptor": "mixed problem-solving exercise",
+      "skill_hints": [
+        "problem_solving"
+      ],
+      "question_slots": null,
+      "review_required": true
+    },
+    {
+      "exercise": 4,
+      "points": 26,
+      "descriptor": "mixed mathematical reasoning exercise",
+      "skill_hints": [
+        "problem_solving"
+      ],
+      "question_slots": null,
+      "review_required": true
+    },
+    {
+      "exercise": 5,
+      "points": 16,
+      "descriptor": "mixed mathematical reasoning exercise",
+      "skill_hints": [
+        "problem_solving"
+      ],
+      "question_slots": null,
+      "review_required": true
+    }
+  ]
+}

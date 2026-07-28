@@ -1,0 +1,83 @@
+{
+  "exam_id": "DNB-2024-AMERIQUE_DU_NORD-MATH-GEN",
+  "reference": "24GENMATAN1",
+  "year": 2024,
+  "zone": "AMERIQUE_DU_NORD",
+  "series": "GENERAL",
+  "subject": "MATHEMATICS",
+  "format_version": "DNB_PRE_2026",
+  "duration_minutes": 120,
+  "points": 100,
+  "calculator": true,
+  "source_type": "OFFICIAL_EXAM",
+  "source_ref": "turn1view1",
+  "source_url": "https://www.education.gouv.fr/sites/default/files/document/Dipl%C3%B4me%20national%20du%20brevet%202024%20-%20Math%C3%A9matiques-401862.pdf",
+  "exercises": [
+    {
+      "exercise": 1,
+      "points": 20,
+      "descriptor": "true/false: mean, median, speed, probability and homothety",
+      "skill_hints": [
+        "mean",
+        "median",
+        "speed",
+        "probability",
+        "homothety"
+      ],
+      "question_slots": 5,
+      "requires_figure": true
+    },
+    {
+      "exercise": 2,
+      "points": 20,
+      "descriptor": "calculation program: substitution, algebra, zero-product reasoning and expansion",
+      "skill_hints": [
+        "substitution",
+        "algebraic_expression",
+        "zero_product",
+        "expand_expression"
+      ],
+      "question_slots": 5
+    },
+    {
+      "exercise": 3,
+      "points": 20,
+      "descriptor": "cinema tariffs: proportionality, functions and graph interpretation",
+      "skill_hints": [
+        "proportionality",
+        "functions",
+        "graph_reading",
+        "budget_problem"
+      ],
+      "question_slots": 7,
+      "requires_figure": true
+    },
+    {
+      "exercise": 4,
+      "points": 21,
+      "descriptor": "terrace project: geometry, volume, ratios and optimization of paint purchase",
+      "skill_hints": [
+        "geometry",
+        "volume",
+        "ratio",
+        "proportionality",
+        "optimization"
+      ],
+      "question_slots": 7,
+      "requires_figure": true
+    },
+    {
+      "exercise": 5,
+      "points": 19,
+      "descriptor": "equilateral geometry, parallelism and Scratch drawing",
+      "skill_hints": [
+        "equilateral_triangle",
+        "parallelism",
+        "coordinates",
+        "scratch"
+      ],
+      "question_slots": 6,
+      "requires_figure": true
+    }
+  ]
+}

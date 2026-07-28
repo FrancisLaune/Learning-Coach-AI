@@ -1,0 +1,115 @@
+{
+  "exam_id": "DNB-2018-AMERIQUE_DU_NORD-MATH-GEN",
+  "reference": "18GENMATAN1",
+  "year": 2018,
+  "zone": "AMERIQUE_DU_NORD",
+  "series": "GENERAL",
+  "subject": "MATHEMATICS",
+  "format_version": "DNB_PRE_2026",
+  "duration_minutes": 120,
+  "points": 100,
+  "calculator": true,
+  "source_type": "OFFICIAL_EXAM",
+  "source_url": "https://eduscol.education.gouv.fr/sites/default/files/document/18genmatan1pdf-80373.pdf",
+  "exercise_count": 8,
+  "exercises": [
+    {
+      "exercise": 1,
+      "points": 14,
+      "descriptor": "internet subscriptions table: reading, difference, spreadsheet formula and percentage",
+      "skill_hints": [
+        "table_reading",
+        "arithmetic",
+        "spreadsheet_formula",
+        "percentage"
+      ],
+      "question_slots": 4,
+      "requires_figure": true
+    },
+    {
+      "exercise": 2,
+      "points": 14,
+      "descriptor": "construction, right triangle proof and parallel-line length calculation",
+      "skill_hints": [
+        "construction",
+        "pythagoras",
+        "thales",
+        "parallelism"
+      ],
+      "question_slots": 3,
+      "requires_figure": true
+    },
+    {
+      "exercise": 3,
+      "points": 15,
+      "descriptor": "two-urn experiment: parity, prime numbers and probability",
+      "skill_hints": [
+        "probability",
+        "prime_numbers",
+        "parity"
+      ],
+      "question_slots": 4,
+      "requires_figure": true
+    },
+    {
+      "exercise": 4,
+      "points": 14,
+      "descriptor": "Scratch square drawing and program modification",
+      "skill_hints": [
+        "scratch",
+        "algorithm",
+        "geometry"
+      ],
+      "question_slots": 4,
+      "requires_figure": true
+    },
+    {
+      "exercise": 5,
+      "points": 6,
+      "descriptor": "dynamic geometry frieze: transformation and translation",
+      "skill_hints": [
+        "transformations",
+        "translation"
+      ],
+      "question_slots": 2,
+      "requires_figure": true
+    },
+    {
+      "exercise": 6,
+      "points": 16,
+      "descriptor": "sloped concrete terrace: angle condition, prism volume, pricing and delivery",
+      "skill_hints": [
+        "trigonometry",
+        "prism_volume",
+        "proportionality",
+        "budget"
+      ],
+      "question_slots": 2,
+      "requires_figure": true
+    },
+    {
+      "exercise": 7,
+      "points": 15,
+      "descriptor": "expand algebraic expression, verify equation solution and identify affine-function graph",
+      "skill_hints": [
+        "expand_expression",
+        "equation",
+        "affine_function",
+        "graph_reading"
+      ],
+      "question_slots": 4,
+      "requires_figure": true
+    },
+    {
+      "exercise": 8,
+      "points": 6,
+      "descriptor": "download duration from transfer speed",
+      "skill_hints": [
+        "speed_distance_time",
+        "unit_conversion"
+      ],
+      "question_slots": 1,
+      "requires_figure": true
+    }
+  ]
+}

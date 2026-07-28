@@ -1,0 +1,43 @@
+{
+  "ticket": "LCAI-0013B",
+  "artifact": "DNB_2021_2023_MATHEMATICS_BLOCK_V1",
+  "generated_at": "2026-07-26T14:08:11.300164+00:00",
+  "status": "PREPARATION_NO_DATABASE_CHANGE",
+  "papers": [
+    {
+      "exam_id": "DNB-2023-ASIA-MATH-GEN",
+      "reference": "23GENMATAA1",
+      "year": 2023,
+      "zone": "ASIA",
+      "source_url": "https://eduscol.education.fr/document/53394/download"
+    },
+    {
+      "exam_id": "DNB-2022-ASIA-MATH-GEN",
+      "reference": "22GENMATAA1",
+      "year": 2022,
+      "zone": "ASIA",
+      "source_url": "https://eduscol.education.gouv.fr/sites/default/files/document/22genmataa1pdf-98133.pdf"
+    },
+    {
+      "exam_id": "DNB-2021-AMERIQUE_DU_NORD-MATH-GEN",
+      "reference": "21GENMATAN1",
+      "year": 2021,
+      "zone": "AMERIQUE_DU_NORD",
+      "source_url": "https://eduscol.education.gouv.fr/sites/default/files/document/21genmatan1pdf-98055.pdf"
+    }
+  ],
+  "counts": {
+    "papers": 3,
+    "exercises": 15,
+    "known_question_slots": 59,
+    "exercise_records_needing_deeper_decomposition": 3
+  },
+  "format_note": "All papers use the pre-2026 Mathematics format: 2 hours, 100 points, calculator authorized.",
+  "mapping_policy": {
+    "current": "skill_hint",
+    "target": "exact FR-3E / LCAI-0011C chapter_code and skill_code",
+    "review_required": true
+  },
+  "copyright_policy": "Keep official source URL and normalized descriptors; do not copy the complete paper text into the Learning Coach dataset.",
+  "figure_policy": "Questions requiring diagrams, graphs, tables, Scratch blocks or maps must preserve those dependencies."
+}

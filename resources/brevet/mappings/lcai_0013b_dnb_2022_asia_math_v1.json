@@ -1,0 +1,85 @@
+{
+  "exam_id": "DNB-2022-ASIA-MATH-GEN",
+  "reference": "22GENMATAA1",
+  "year": 2022,
+  "zone": "ASIA",
+  "series": "GENERAL",
+  "subject": "MATHEMATICS",
+  "format_version": "DNB_PRE_2026",
+  "duration_minutes": 120,
+  "points": 100,
+  "calculator": true,
+  "source_type": "OFFICIAL_EXAM",
+  "source_url": "https://eduscol.education.gouv.fr/sites/default/files/document/22genmataa1pdf-98133.pdf",
+  "exercise_count": 5,
+  "exercises": [
+    {
+      "exercise": 1,
+      "points": 20,
+      "descriptor": "three independent situations: calculation program/algebra, linear function graph, pyramid volume",
+      "skill_hints": [
+        "calculation_program",
+        "algebraic_expression",
+        "linear_function",
+        "graph_reading",
+        "pyramid_volume"
+      ],
+      "question_slots": 5,
+      "requires_figure": true
+    },
+    {
+      "exercise": 2,
+      "points": 20,
+      "descriptor": "parallel lines, ratio reasoning, right-triangle reasoning, transformation and area scaling",
+      "skill_hints": [
+        "parallelism",
+        "thales",
+        "pythagoras",
+        "homothety",
+        "area_scaling"
+      ],
+      "question_slots": 4,
+      "requires_figure": true
+    },
+    {
+      "exercise": 3,
+      "points": 20,
+      "descriptor": "Paralympic medals: table/spreadsheet, percentages and median",
+      "skill_hints": [
+        "table_reading",
+        "spreadsheet_formula",
+        "percentage",
+        "median"
+      ],
+      "question_slots": 5,
+      "requires_figure": true
+    },
+    {
+      "exercise": 4,
+      "points": 25,
+      "descriptor": "online photo pricing: arithmetic, tariff modelling and programming",
+      "skill_hints": [
+        "arithmetic",
+        "piecewise_tariff",
+        "proportionality",
+        "scratch",
+        "percentage"
+      ],
+      "question_slots": null,
+      "review_required": true,
+      "requires_figure": true
+    },
+    {
+      "exercise": 5,
+      "points": 15,
+      "descriptor": "ISS and geographical coordinates from a planisphere",
+      "skill_hints": [
+        "coordinates",
+        "map_reading"
+      ],
+      "question_slots": null,
+      "review_required": true,
+      "requires_figure": true
+    }
+  ]
+}

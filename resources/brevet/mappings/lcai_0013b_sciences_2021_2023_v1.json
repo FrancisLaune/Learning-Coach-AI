@@ -1,0 +1,99 @@
+{
+  "ticket": "LCAI-0013B",
+  "artifact": "DNB_SCIENCES_2021_2023_BLOCK_V1",
+  "status": "PREPARATION_NO_DATABASE_CHANGE",
+  "records": [
+    {
+      "exam_id": "DNB-2023-SCIENCES-GEN",
+      "reference": "23GENSCNC1",
+      "year": 2023,
+      "series": "GENERAL",
+      "subject": "SCIENCES",
+      "duration_minutes": 60,
+      "points": 50,
+      "source_url": "https://eduscol.education.fr/document/56472/download",
+      "discipline_note": "2023 official selection for the general series included SVT and Physique-Chimie.",
+      "skill_hints": [
+        "scientific_document_analysis",
+        "experimental_reasoning",
+        "data_interpretation",
+        "scientific_calculation",
+        "units",
+        "evidence_based_conclusion"
+      ],
+      "requires_documents": true
+    },
+    {
+      "exam_id": "DNB-2022-ASIA-SCIENCES-GEN",
+      "reference": "22GENSCAA1",
+      "year": 2022,
+      "series": "GENERAL",
+      "subject": "SCIENCES",
+      "duration_minutes": 60,
+      "points": 50,
+      "source_url": "https://eduscol.education.fr/document/47100/download",
+      "disciplines": [
+        {
+          "discipline": "SVT",
+          "minutes": 30,
+          "points": 25,
+          "topic": "Coccinelle asiatique et biodiversité",
+          "skill_hints": [
+            "document_analysis",
+            "quantitative_data",
+            "population_change",
+            "human_impact",
+            "ecosystem_reasoning"
+          ]
+        },
+        {
+          "discipline": "TECHNOLOGY",
+          "minutes": 30,
+          "points": 25,
+          "topic": "Modification d'un overboard",
+          "skill_hints": [
+            "energy_chain",
+            "information_chain",
+            "technical_system",
+            "sensors",
+            "functional_analysis"
+          ]
+        }
+      ],
+      "requires_documents": true,
+      "requires_annex": true
+    },
+    {
+      "exam_id": "DNB-2021-AMERIQUE_DU_NORD-SCIENCES-GEN",
+      "reference": "21GENSCAN1",
+      "year": 2021,
+      "series": "GENERAL",
+      "subject": "SCIENCES",
+      "duration_minutes": 60,
+      "points": 50,
+      "source_url": "https://eduscol.education.fr/document/47019/download",
+      "components": [
+        {
+          "discipline": "PHYSICS_CHEMISTRY",
+          "minutes": 30,
+          "points": 25,
+          "topic": "La neige",
+          "skill_hints": [
+            "molecule_composition",
+            "orders_of_magnitude",
+            "state_change",
+            "scientific_reasoning"
+          ]
+        },
+        {
+          "discipline": "SECOND_DISCIPLINE",
+          "minutes": 30,
+          "points": 25,
+          "note": "Retained as a second-discipline slot; deeper decomposition is deferred."
+        }
+      ],
+      "requires_documents": true
+    }
+  ],
+  "mapping_policy": "Discipline-level and skill_hint metadata only until exact LCAI-0011C curriculum resolution."
+}

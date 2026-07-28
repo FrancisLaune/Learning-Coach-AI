@@ -1,0 +1,71 @@
+{
+  "ticket": "LCAI-0013B",
+  "records": [
+    {
+      "exam_id": "DNB-2026-AMERIQUE_DU_NORD-MULTISUBJECT-GEN",
+      "year": 2026,
+      "zone": "AMERIQUE_DU_NORD",
+      "subject": "MULTI_SUBJECT_REFERENCE",
+      "series": "GENERAL",
+      "source_type": "OFFICIAL_EXAM",
+      "available_components": [
+        "FRENCH",
+        "HISTORY_GEOGRAPHY_EMC",
+        "SCIENCES",
+        "MATHEMATICS",
+        "ENGLISH"
+      ],
+      "source_index": "https://www.education.gouv.fr/brevet-bac-et-cap-les-sujets-des-examens-2026-504911",
+      "integration_note": "Use as a second-zone source pool after the Métropole decomposition."
+    },
+    {
+      "exam_id": "DNB-2026-ASIA-MULTISUBJECT-GEN",
+      "year": 2026,
+      "zone": "ASIA",
+      "subject": "MULTI_SUBJECT_REFERENCE",
+      "series": "GENERAL",
+      "source_type": "OFFICIAL_EXAM",
+      "available_components": [
+        "FRENCH",
+        "HISTORY_GEOGRAPHY_EMC",
+        "SCIENCES",
+        "MATHEMATICS",
+        "ENGLISH"
+      ],
+      "source_index": "https://www.education.gouv.fr/brevet-bac-et-cap-les-sujets-des-examens-2026-504911",
+      "integration_note": "Use as a third-zone source pool after the Métropole decomposition."
+    },
+    {
+      "exam_id": "DNB-2025-NATIONAL-MULTISUBJECT-GEN",
+      "year": 2025,
+      "zone": "NATIONAL_AND_OVERSEAS",
+      "subject": "MULTI_SUBJECT_REFERENCE",
+      "series": "GENERAL",
+      "source_type": "OFFICIAL_EXAM",
+      "available_components": [
+        "FRENCH",
+        "HISTORY_GEOGRAPHY_EMC",
+        "SCIENCES",
+        "MATHEMATICS"
+      ],
+      "source_index": "https://www.education.gouv.fr/diplome-national-du-brevet-session-2025-462966",
+      "format_note": "Historical scoring framework: French 100, Mathematics 100, HG-EMC 50, Sciences 50. HG and EMC marks are separated on the transcript from 2025."
+    },
+    {
+      "exam_id": "DNB-2024-NATIONAL-MULTISUBJECT-GEN",
+      "year": 2024,
+      "zone": "NATIONAL_AND_OVERSEAS",
+      "subject": "MULTI_SUBJECT_REFERENCE",
+      "series": "GENERAL",
+      "source_type": "OFFICIAL_EXAM",
+      "available_components": [
+        "FRENCH",
+        "HISTORY_GEOGRAPHY_EMC",
+        "SCIENCES",
+        "MATHEMATICS"
+      ],
+      "source_index": "https://www.education.gouv.fr/diplome-national-du-brevet-session-2024-462162",
+      "format_note": "Historical scoring framework: French 100, Mathematics 100, HG-EMC 50, Sciences 50."
+    }
+  ]
+}

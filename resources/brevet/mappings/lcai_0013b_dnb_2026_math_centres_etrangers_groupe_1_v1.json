@@ -1,0 +1,123 @@
+{
+  "exam_id": "DNB-2026-CENTRES_ETRANGERS_GROUPE_1-MATH-GEN",
+  "reference": "26GENMATG11",
+  "year": 2026,
+  "zone": "CENTRES_ETRANGERS_GROUPE_1",
+  "series": "GENERAL",
+  "subject": "MATHEMATICS",
+  "format_version": "DNB_2026",
+  "source_type": "OFFICIAL_EXAM",
+  "source_url": "https://www.education.gouv.fr/sites/default/files/document/diplome-national-du-brevet-2026-mathematiques-serie-generale-518132.pdf",
+  "duration_minutes": 120,
+  "coefficient": 2,
+  "parts": [
+    {
+      "part": "AUTOMATISMES",
+      "minutes": 20,
+      "points": 6,
+      "calculator": false,
+      "items": [
+        {
+          "q": "A1",
+          "descriptor": "median of temperatures",
+          "skill_hint": "median"
+        },
+        {
+          "q": "A2",
+          "descriptor": "translation of a motif",
+          "skill_hint": "translation",
+          "requires_figure": true
+        },
+        {
+          "q": "A3",
+          "descriptor": "probability from colored balls",
+          "skill_hint": "probability"
+        },
+        {
+          "q": "A4",
+          "descriptor": "cosine ratio in a right triangle",
+          "skill_hint": "trigonometry",
+          "requires_figure": true
+        },
+        {
+          "q": "A5",
+          "descriptor": "scientific notation of a large distance",
+          "skill_hint": "scientific_notation"
+        },
+        {
+          "q": "A6",
+          "descriptor": "distance from speed and time",
+          "skill_hint": "speed_distance_time"
+        },
+        {
+          "q": "A7",
+          "descriptor": "factorize a simple expression",
+          "skill_hint": "factorization"
+        },
+        {
+          "q": "A8",
+          "descriptor": "select percentage-decrease calculation",
+          "skill_hint": "percentage"
+        },
+        {
+          "q": "A9",
+          "descriptor": "read duration above threshold on a graph",
+          "skill_hint": "graph_reading",
+          "requires_figure": true
+        }
+      ]
+    },
+    {
+      "part": "REASONING_PROBLEM_SOLVING",
+      "minutes": 100,
+      "points": 14,
+      "calculator": true,
+      "exercises": [
+        {
+          "exercise": 1,
+          "points": 4,
+          "theme": "construction, Pythagoras, parallelism and similar geometry",
+          "skill_hints": [
+            "construction",
+            "pythagoras",
+            "parallelism",
+            "similarity"
+          ],
+          "question_count": 5,
+          "requires_figure": true
+        },
+        {
+          "exercise": 2,
+          "points": 3.5,
+          "theme": "candy geometry, cylinder/sphere volumes, unit conversion and price comparison",
+          "skill_hints": [
+            "volume",
+            "unit_conversion",
+            "proportionality",
+            "price_comparison"
+          ],
+          "question_count": 4,
+          "requires_figure": true
+        },
+        {
+          "exercise": 3,
+          "points": 4.5,
+          "theme": "calculation programs, Scratch, algebra and equation solving",
+          "skill_hints": [
+            "scratch",
+            "algebraic_expression",
+            "equation",
+            "proof"
+          ],
+          "question_count": 6,
+          "requires_figure": true
+        }
+      ]
+    }
+  ],
+  "mapping_policy": {
+    "current": "skill_hint",
+    "target": "exact LCAI-0011C 3e chapter_code + primary_skill_code",
+    "review_required": true
+  }
+}

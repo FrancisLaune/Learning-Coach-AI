@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
+from typing import Any
 
 from domain.content.factory import (
     CanonicalContentType,
@@ -12,6 +13,7 @@ from domain.content.factory import (
 )
 
 TARGET_GRADES = ("FR-4E", "FR-3E")
+GUIDED_PRACTICE_TYPES = frozenset({"practice", "guided_practice"})
 
 
 @dataclass(frozen=True, slots=True)
@@ -43,7 +45,7 @@ class CoverageGap:
     slot: ContentSlot
     priority: int
 
-    def request(self) -> ContentGenerationRequest:
+    def request(self, *, extra_constraints: tuple[str, ...] = ()) -> ContentGenerationRequest:
         intent = {
             CanonicalContentType.PRACTICE: PedagogicalIntent.PRACTICE,
             CanonicalContentType.ASSESSMENT: PedagogicalIntent.CHECK,
@@ -58,9 +60,89 @@ class CoverageGap:
             variation_constraints=(
                 "Vary context, representation and reasoning rather than only names or numbers.",
                 "Remain independently assessable for the declared disciplinary Skill.",
+                *extra_constraints,
             ),
             language_code="fr-FR",
         )
+
+
+def slot_index_key(skill_code: str, slot: ContentSlot) -> tuple[str, str, int]:
+    """Normalize a production slot to the quality-audit lookup key."""
+    content_type = slot.content_type.value
+    if content_type in GUIDED_PRACTICE_TYPES:
+        content_type = "practice"
+    return (skill_code, content_type, slot.difficulty)
+
+
+def build_slot_quality_index(results: list[dict[str, Any]]) -> dict[tuple[str, str, int], list[dict[str, Any]]]:
+    """Group quality-audit records by Skill and canonical production slot."""
+    grouped: dict[tuple[str, str, int], list[dict[str, Any]]] = {}
+    for record in results:
+        content_type = str(record.get("content_type", ""))
+        if content_type not in {"practice", "assessment", "guided_practice"}:
+            continue
+        if content_type in GUIDED_PRACTICE_TYPES:
+            content_type = "practice"
+        key = (str(record["skill"]), content_type, int(record["difficulty"]))
+        grouped.setdefault(key, []).append(record)
+    return grouped
+
+
+def is_usable_quality_record(record: dict[str, Any]) -> bool:
+    """Return True when a Draft remains a corrective-generation blocker."""
+    if str(record.get("decision")) == "REJECT":
+        return False
+    gates = record.get("hard_gates") or {}
+    required = (
+        "structural_validity",
+        "answer_correctness",
+        "skill_alignment",
+        "executability",
+        "duplicate_safety",
+    )
+    return all(bool(gates.get(name)) for name in required)
+
+
+def slot_has_usable_candidate(
+    skill: ActiveSkillCoverage,
+    slot: ContentSlot,
+    quality_index: dict[tuple[str, str, int], list[dict[str, Any]]],
+) -> bool:
+    """Approved production or at least one audited usable Draft blocks replacement."""
+    if skill.approved.get(slot, 0) > 0:
+        return True
+    if skill.draft.get(slot, 0) == 0:
+        return False
+    records = quality_index.get(slot_index_key(skill.target.primary_skill_code, slot), ())
+    if not records:
+        return True
+    return any(is_usable_quality_record(record) for record in records)
+
+
+def generation_gaps(
+    rows: tuple[ActiveSkillCoverage, ...],
+    quality_index: dict[tuple[str, str, int], list[dict[str, Any]]],
+) -> tuple[CoverageGap, ...]:
+    """Return slots that still need replacement generation after unusable Drafts."""
+    gaps = [
+        CoverageGap(skill, slot, priority_for(skill))
+        for skill in rows
+        for slot in required_slots(skill)
+        if not slot_has_usable_candidate(skill, slot, quality_index)
+    ]
+    return tuple(
+        sorted(
+            gaps,
+            key=lambda gap: (
+                gap.priority,
+                gap.skill.target.subject_code,
+                gap.skill.target.chapter_code,
+                gap.skill.target.primary_skill_code,
+                gap.slot.content_type.value,
+                gap.slot.difficulty,
+            ),
+        )
+    )
 
 
 def required_slots(skill: ActiveSkillCoverage) -> tuple[ContentSlot, ...]:

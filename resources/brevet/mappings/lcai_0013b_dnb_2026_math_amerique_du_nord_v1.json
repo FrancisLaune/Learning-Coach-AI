@@ -1,0 +1,138 @@
+{
+  "exam_id": "DNB-2026-AMERIQUE_DU_NORD-MATH-GEN",
+  "reference": "26GENMATAN1",
+  "year": 2026,
+  "zone": "AMERIQUE_DU_NORD",
+  "series": "GENERAL",
+  "subject": "MATHEMATICS",
+  "format_version": "DNB_2026",
+  "source_type": "OFFICIAL_EXAM",
+  "source_url": "https://www.education.gouv.fr/sites/default/files/document/diplome-national-du-brevet-2026-mathematiques-serie-generale-516986.pdf",
+  "duration_minutes": 120,
+  "coefficient": 2,
+  "parts": [
+    {
+      "part": "AUTOMATISMES",
+      "minutes": 20,
+      "points": 6,
+      "calculator": false,
+      "items": [
+        {
+          "q": "A1",
+          "descriptor": "add two fractions",
+          "skill_hint": "fraction_arithmetic"
+        },
+        {
+          "q": "A2",
+          "descriptor": "10 percent price reduction",
+          "skill_hint": "percentage"
+        },
+        {
+          "q": "A3",
+          "descriptor": "infer quadrilateral type from diagonals",
+          "skill_hint": "quadrilateral_properties",
+          "requires_figure": true
+        },
+        {
+          "q": "A4",
+          "descriptor": "solve a first-degree equation",
+          "skill_hint": "equation"
+        },
+        {
+          "q": "A5a",
+          "descriptor": "read abscissa of a point",
+          "skill_hint": "coordinates",
+          "requires_figure": true
+        },
+        {
+          "q": "A5b",
+          "descriptor": "read coordinates of a point",
+          "skill_hint": "coordinates",
+          "requires_figure": true
+        },
+        {
+          "q": "A6",
+          "descriptor": "median of a numerical series",
+          "skill_hint": "median"
+        },
+        {
+          "q": "A7",
+          "descriptor": "choose trigonometric formula",
+          "skill_hint": "trigonometry",
+          "requires_figure": true
+        },
+        {
+          "q": "A8",
+          "descriptor": "find a non-trivial divisor",
+          "skill_hint": "divisibility"
+        }
+      ]
+    },
+    {
+      "part": "REASONING_PROBLEM_SOLVING",
+      "minutes": 100,
+      "points": 14,
+      "calculator": true,
+      "exercises": [
+        {
+          "exercise": 1,
+          "points": 2.5,
+          "theme": "right triangles, area and parallelism",
+          "skill_hints": [
+            "pythagoras",
+            "triangle_area",
+            "parallelism",
+            "angles"
+          ],
+          "question_count": 5,
+          "requires_figure": true
+        },
+        {
+          "exercise": 2,
+          "points": 3.5,
+          "theme": "functions, spreadsheet, graph and equations",
+          "skill_hints": [
+            "functions",
+            "image_preimage",
+            "spreadsheet",
+            "graph_reading",
+            "equation"
+          ],
+          "question_count": 5,
+          "requires_figure": true
+        },
+        {
+          "exercise": 3,
+          "points": 4,
+          "theme": "statistics, percentages, probability and scientific notation in an AI context",
+          "skill_hints": [
+            "statistics",
+            "percentage",
+            "probability",
+            "scientific_notation",
+            "unit_conversion"
+          ],
+          "question_count": 7,
+          "requires_figure": true
+        },
+        {
+          "exercise": 4,
+          "points": 2,
+          "theme": "algorithmic drawing with squares and equilateral triangles",
+          "skill_hints": [
+            "scratch",
+            "angles",
+            "geometry"
+          ],
+          "question_count": 3,
+          "requires_figure": true
+        }
+      ]
+    }
+  ],
+  "mapping_policy": {
+    "current": "skill_hint",
+    "target": "exact LCAI-0011C 3e chapter_code + primary_skill_code",
+    "review_required": true
+  }
+}

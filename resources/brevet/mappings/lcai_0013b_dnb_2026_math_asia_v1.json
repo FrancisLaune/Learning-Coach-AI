@@ -1,0 +1,141 @@
+{
+  "exam_id": "DNB-2026-ASIA-MATH-GEN",
+  "reference": "26GENMATAA1",
+  "year": 2026,
+  "zone": "ASIA",
+  "series": "GENERAL",
+  "subject": "MATHEMATICS",
+  "format_version": "DNB_2026",
+  "source_type": "OFFICIAL_EXAM",
+  "source_url": "https://www.education.gouv.fr/sites/default/files/document/diplome-national-du-brevet-2026-mathematiques-serie-generale-517553.pdf",
+  "duration_minutes": 120,
+  "coefficient": 2,
+  "parts": [
+    {
+      "part": "AUTOMATISMES",
+      "minutes": 20,
+      "points": 6,
+      "calculator": false,
+      "items": [
+        {
+          "q": "A1",
+          "descriptor": "scientific notation",
+          "skill_hint": "scientific_notation"
+        },
+        {
+          "q": "A2",
+          "descriptor": "expand an algebraic product",
+          "skill_hint": "expand_expression"
+        },
+        {
+          "q": "A3",
+          "descriptor": "rectangular-prism volume",
+          "skill_hint": "volume"
+        },
+        {
+          "q": "A4",
+          "descriptor": "divisibility by 9",
+          "skill_hint": "divisibility"
+        },
+        {
+          "q": "A5",
+          "descriptor": "average speed",
+          "skill_hint": "speed"
+        },
+        {
+          "q": "A6",
+          "descriptor": "probability on equal sectors",
+          "skill_hint": "probability",
+          "requires_figure": true
+        },
+        {
+          "q": "A7",
+          "descriptor": "percentage decrease",
+          "skill_hint": "percentage"
+        },
+        {
+          "q": "A8",
+          "descriptor": "angle from geometric figure",
+          "skill_hint": "angles",
+          "requires_figure": true
+        },
+        {
+          "q": "A9a",
+          "descriptor": "read total effectif from a bar chart",
+          "skill_hint": "read_chart",
+          "requires_figure": true
+        },
+        {
+          "q": "A9b",
+          "descriptor": "determine median from a bar chart",
+          "skill_hint": "median",
+          "requires_figure": true
+        }
+      ]
+    },
+    {
+      "part": "REASONING_PROBLEM_SOLVING",
+      "minutes": 100,
+      "points": 14,
+      "calculator": true,
+      "exercises": [
+        {
+          "exercise": 1,
+          "points": 2.5,
+          "theme": "compare two smartphone tariffs",
+          "skill_hints": [
+            "arithmetic",
+            "functions",
+            "linear_models",
+            "equation"
+          ],
+          "question_count": 4
+        },
+        {
+          "exercise": 2,
+          "points": 3,
+          "theme": "geometry, parallel lines and truncated cone",
+          "skill_hints": [
+            "pythagoras",
+            "thales",
+            "parallelism",
+            "cone_volume"
+          ],
+          "question_count": 5,
+          "requires_figure": true
+        },
+        {
+          "exercise": 3,
+          "points": 4,
+          "theme": "calculation programs, spreadsheet and algebra",
+          "skill_hints": [
+            "substitution",
+            "spreadsheet_formula",
+            "algebraic_expression",
+            "factorization",
+            "equations"
+          ],
+          "question_count": 8
+        },
+        {
+          "exercise": 4,
+          "points": 2.5,
+          "theme": "square, equilateral triangle and block programming",
+          "skill_hints": [
+            "angles",
+            "geometry",
+            "scratch",
+            "algorithmic_representation"
+          ],
+          "question_count": 3,
+          "requires_figure": true
+        }
+      ]
+    }
+  ],
+  "mapping_policy": {
+    "current": "skill_hint",
+    "target": "exact LCAI-0011C 3e chapter_code + primary_skill_code",
+    "review_required": true
+  }
+}

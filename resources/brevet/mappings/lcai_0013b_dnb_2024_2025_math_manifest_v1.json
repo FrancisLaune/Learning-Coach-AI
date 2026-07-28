@@ -1,0 +1,40 @@
+{
+  "ticket": "LCAI-0013B",
+  "artifact": "DNB_2024_2025_MATHEMATICS_BLOCK_V1",
+  "generated_at": "2026-07-26T13:06:34.575152+00:00",
+  "status": "PREPARATION_NO_DATABASE_CHANGE",
+  "papers": [
+    {
+      "exam_id": "DNB-2025-METROPOLE-MATH-GEN",
+      "reference": "25GENMATMEAG1",
+      "year": 2025,
+      "zone": "METROPOLE_REUNION_MAYOTTE",
+      "source_url": "https://www.education.gouv.fr/sites/default/files/2025-06/dipl-me-national-du-brevet-2025-math-matiques-441336.pdf"
+    },
+    {
+      "exam_id": "DNB-2024-AMERIQUE_DU_NORD-MATH-GEN",
+      "reference": "24GENMATAN1",
+      "year": 2024,
+      "zone": "AMERIQUE_DU_NORD",
+      "source_url": "https://www.education.gouv.fr/sites/default/files/document/Dipl%C3%B4me%20national%20du%20brevet%202024%20-%20Math%C3%A9matiques-401862.pdf"
+    },
+    {
+      "exam_id": "DNB-2024-ASIA-MATH-GEN",
+      "reference": "24GENMATAA1",
+      "year": 2024,
+      "zone": "ASIA",
+      "source_url": "https://www.education.gouv.fr/sites/default/files/document/Dipl%C3%B4me%20national%20du%20brevet%202024%20-%20Math%C3%A9matiques-402462.pdf"
+    }
+  ],
+  "format_note": "2024-2025 papers use the former 100-point, 2-hour mathematics format. They must not be treated as equivalent to the 2026 two-part 20-point/coefficient-2 format.",
+  "mapping_policy": "Descriptors/skill_hints only; exact LCAI-0011C Skill IDs require curriculum resolution and review.",
+  "known_incomplete_indexing": [
+    "24GENMATAA1 exercises 3-5 require deeper question-level decomposition in a later pass."
+  ],
+  "guardrails": [
+    "No DuckDB modification",
+    "No Approved content",
+    "Do not duplicate full official paper text",
+    "Retain figure/graph/Scratch dependencies"
+  ]
+}

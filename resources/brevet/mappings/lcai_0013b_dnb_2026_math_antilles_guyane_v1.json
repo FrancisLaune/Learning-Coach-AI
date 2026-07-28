@@ -1,0 +1,124 @@
+{
+  "exam_id": "DNB-2026-ANTILLES_GUYANE-MATH-GEN",
+  "reference": "26GENMATAG1",
+  "year": 2026,
+  "zone": "ANTILLES_GUYANE",
+  "series": "GENERAL",
+  "subject": "MATHEMATICS",
+  "format_version": "DNB_2026",
+  "source_type": "OFFICIAL_EXAM",
+  "source_url": "https://www.education.gouv.fr/sites/default/files/document/diplome-national-du-brevet-2026-mathematiques-serie-generale-518657.pdf",
+  "duration_minutes": 120,
+  "coefficient": 2,
+  "parts": [
+    {
+      "part": "AUTOMATISMES",
+      "minutes": 20,
+      "points": 6,
+      "calculator": false,
+      "items": [
+        {
+          "q": "A1",
+          "descriptor": "coordinates of a point",
+          "skill_hint": "coordinates",
+          "requires_figure": true
+        },
+        {
+          "q": "A2",
+          "descriptor": "central symmetry on a grid",
+          "skill_hint": "central_symmetry",
+          "requires_figure": true
+        },
+        {
+          "q": "A3",
+          "descriptor": "choose a triangle-area calculation",
+          "skill_hint": "triangle_area",
+          "requires_figure": true
+        },
+        {
+          "q": "A4",
+          "descriptor": "experimental frequency from coin tosses",
+          "skill_hint": "frequency"
+        },
+        {
+          "q": "A5",
+          "descriptor": "literal expression for half an integer",
+          "skill_hint": "literal_expression"
+        },
+        {
+          "q": "A6",
+          "descriptor": "fraction of an hour converted to minutes",
+          "skill_hint": "time_conversion"
+        },
+        {
+          "q": "A7",
+          "descriptor": "mean of a numerical series",
+          "skill_hint": "mean"
+        },
+        {
+          "q": "A8",
+          "descriptor": "find a geometric unknown from a figure",
+          "skill_hint": "geometry_calculation",
+          "requires_figure": true
+        },
+        {
+          "q": "A9",
+          "descriptor": "travel duration from distance and speed",
+          "skill_hint": "speed_distance_time"
+        }
+      ]
+    },
+    {
+      "part": "REASONING_PROBLEM_SOLVING",
+      "minutes": 100,
+      "points": 14,
+      "calculator": true,
+      "exercises": [
+        {
+          "exercise": 1,
+          "points": 4,
+          "theme": "right triangle, trigonometry, parallelism and homothety",
+          "skill_hints": [
+            "pythagoras",
+            "trigonometry",
+            "parallelism",
+            "homothety"
+          ],
+          "question_count": 5,
+          "requires_figure": true
+        },
+        {
+          "exercise": 2,
+          "points": 4,
+          "theme": "calculation programs, algebra and Scratch",
+          "skill_hints": [
+            "algebraic_expression",
+            "equation",
+            "scratch",
+            "proof"
+          ],
+          "question_count": 4,
+          "requires_figure": true
+        },
+        {
+          "exercise": 3,
+          "points": 4,
+          "theme": "leisure-centre tariffs, functions, graph and spreadsheet",
+          "skill_hints": [
+            "functions",
+            "proportionality",
+            "graph_reading",
+            "spreadsheet"
+          ],
+          "question_count": 6,
+          "requires_figure": true
+        }
+      ]
+    }
+  ],
+  "mapping_policy": {
+    "current": "skill_hint",
+    "target": "exact LCAI-0011C 3e chapter_code + primary_skill_code",
+    "review_required": true
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "exam_id": "DNB-2023-ASIA-MATH-GEN",
+  "reference": "23GENMATAA1",
+  "year": 2023,
+  "zone": "ASIA",
+  "series": "GENERAL",
+  "subject": "MATHEMATICS",
+  "format_version": "DNB_PRE_2026",
+  "duration_minutes": 120,
+  "points": 100,
+  "calculator": true,
+  "source_type": "OFFICIAL_EXAM",
+  "source_url": "https://eduscol.education.fr/document/53394/download",
+  "exercise_count": 5,
+  "exercises": [
+    {
+      "exercise": 1,
+      "points": 22,
+      "descriptor": "leisure-centre geometry: lengths, Pythagoras/parallelism, area and budget",
+      "skill_hints": [
+        "geometry",
+        "pythagoras",
+        "parallelism",
+        "area",
+        "proportionality",
+        "budget"
+      ],
+      "question_slots": 5,
+      "requires_figure": true
+    },
+    {
+      "exercise": 2,
+      "points": 18,
+      "descriptor": "QCM: probability, percentage coefficient, transformation, affine function, scientific notation and trigonometry",
+      "skill_hints": [
+        "probability",
+        "percentage",
+        "homothety",
+        "affine_function",
+        "scientific_notation",
+        "trigonometry"
+      ],
+      "question_slots": 6,
+      "requires_figure": true
+    },
+    {
+      "exercise": 3,
+      "points": 20,
+      "descriptor": "calculation program, square function, graph, spreadsheet and exact antecedent",
+      "skill_hints": [
+        "algebraic_expression",
+        "square_function",
+        "graph_reading",
+        "spreadsheet",
+        "equation"
+      ],
+      "question_slots": 7,
+      "requires_figure": true
+    },
+    {
+      "exercise": 4,
+      "points": 16,
+      "descriptor": "Scratch drawing with squares/rectangles, coordinates and scripts",
+      "skill_hints": [
+        "scratch",
+        "coordinates",
+        "geometry",
+        "algorithm"
+      ],
+      "question_slots": 5,
+      "requires_figure": true
+    },
+    {
+      "exercise": 5,
+      "points": 24,
+      "descriptor": "ice-cream sales: mean, percentages, sphere volume and litre conversion",
+      "skill_hints": [
+        "mean",
+        "percentage",
+        "sphere_volume",
+        "unit_conversion"
+      ],
+      "question_slots": 4
+    }
+  ]
+}

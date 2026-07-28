@@ -1,0 +1,42 @@
+{
+  "ticket": "LCAI-0013B",
+  "artifact": "DNB_2021_2023_MULTI_SUBJECT_BLOCK_V1",
+  "generated_at": "2026-07-26T14:25:51.067381+00:00",
+  "status": "PREPARATION_NO_DATABASE_CHANGE",
+  "scope": {
+    "years": [
+      2021,
+      2022,
+      2023
+    ],
+    "subjects": [
+      "FRENCH",
+      "HISTORY_GEOGRAPHY_EMC",
+      "SCIENCES"
+    ],
+    "series": "GENERAL"
+  },
+  "files": [
+    "lcai_0013b_french_2021_2023_v1.json",
+    "lcai_0013b_hgemc_2021_2023_v1.json",
+    "lcai_0013b_sciences_2021_2023_v1.json"
+  ],
+  "verified_records": {
+    "french": 3,
+    "hgemc": 2,
+    "sciences": 3
+  },
+  "known_gaps": [
+    "Complete 2021 French decomposition remains incomplete in V1.",
+    "Verified 2021 general-series HG-EMC source is intentionally omitted pending exact source resolution.",
+    "Some science second-discipline details remain at component level pending deeper decomposition."
+  ],
+  "guardrails": [
+    "No DuckDB modification",
+    "No Approved content",
+    "No student-catalog change",
+    "Do not reproduce full official literary texts or complete document corpora",
+    "Preserve source-text, image, annex, graph and scientific-document dependencies",
+    "Do not invent exact LCAI Skill IDs before authoritative curriculum resolution"
+  ]
+}

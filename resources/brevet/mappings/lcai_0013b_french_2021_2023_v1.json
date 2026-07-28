@@ -1,0 +1,102 @@
+{
+  "ticket": "LCAI-0013B",
+  "artifact": "DNB_FRENCH_2021_2023_BLOCK_V1",
+  "status": "PREPARATION_NO_DATABASE_CHANGE",
+  "records": [
+    {
+      "exam_id": "DNB-2023-FRENCH-GEN",
+      "year": 2023,
+      "series": "GENERAL",
+      "subject": "FRENCH",
+      "components": [
+        {
+          "component": "GRAMMAR_COMPREHENSION_INTERPRETATION",
+          "reference": "23GENFRQGCAG1",
+          "duration_minutes": 70,
+          "points": 50,
+          "source_url": "https://eduscol.education.fr/document/54699/download",
+          "skill_hints": [
+            "reading_comprehension",
+            "textual_interpretation",
+            "lexical_field",
+            "grammar_classes",
+            "verb_tense_and_value",
+            "subordinate_clauses",
+            "word_formation",
+            "rewriting"
+          ],
+          "requires_source_text": true,
+          "requires_image": true
+        },
+        {
+          "component": "DICTATION",
+          "reference": "23GENFRDAA1",
+          "duration_minutes": 20,
+          "points": 10,
+          "source_url": "https://eduscol.education.fr/document/53379/download",
+          "skill_hints": [
+            "spelling",
+            "grammar_agreement",
+            "punctuation"
+          ]
+        }
+      ]
+    },
+    {
+      "exam_id": "DNB-2022-FRENCH-GEN",
+      "year": 2022,
+      "series": "GENERAL",
+      "subject": "FRENCH",
+      "components": [
+        {
+          "component": "GRAMMAR_COMPREHENSION_INTERPRETATION",
+          "reference": "22GENFRQGCAN1",
+          "duration_minutes": 70,
+          "points": 50,
+          "source_url": "https://eduscol.education.fr/document/47061/download",
+          "skill_hints": [
+            "reading_comprehension",
+            "interpretation",
+            "grammar",
+            "lexicon",
+            "rewriting"
+          ],
+          "requires_source_text": true
+        },
+        {
+          "component": "DICTATION",
+          "reference": "22GENFRDAA1",
+          "duration_minutes": 20,
+          "points": 10,
+          "source_url": "https://eduscol.education.fr/document/47103/download",
+          "skill_hints": [
+            "spelling",
+            "grammar_agreement",
+            "punctuation"
+          ]
+        }
+      ]
+    },
+    {
+      "exam_id": "DNB-2021-FRENCH-GEN",
+      "year": 2021,
+      "series": "GENERAL",
+      "subject": "FRENCH",
+      "components": [
+        {
+          "component": "DICTATION_ADAPTED",
+          "reference": "21GENFRDAME1",
+          "duration_minutes": 20,
+          "points": 10,
+          "source_url": "https://eduscol.education.fr/document/39680/download",
+          "skill_hints": [
+            "spelling",
+            "grammar_agreement"
+          ],
+          "note": "Only this verified French component is indexed in V1; complete 2021 French decomposition remains pending."
+        }
+      ]
+    }
+  ],
+  "mapping_policy": "Exact LCAI-0011C 3e chapter/skill resolution deferred to integration."
+}

@@ -1,0 +1,317 @@
+{
+  "ticket": "LCAI-0013B",
+  "artifact": "DNB_2026_MATHEMATICS_QUESTION_INDEX_V1",
+  "generated_at": "2026-07-26T12:55:56.445040+00:00",
+  "status": "PREPARATION_NO_DATABASE_CHANGE",
+  "copyright_policy": "Store source provenance and normalized descriptors/mappings; do not duplicate full official paper text in the application dataset.",
+  "papers": [
+    {
+      "exam_id": "DNB-2026-ASIA-MATH-GEN",
+      "reference": "26GENMATAA1",
+      "year": 2026,
+      "zone": "ASIA",
+      "series": "GENERAL",
+      "subject": "MATHEMATICS",
+      "format_version": "DNB_2026",
+      "duration_minutes": 120,
+      "coefficient": 2,
+      "source_type": "OFFICIAL_EXAM",
+      "source_url": "https://www.education.gouv.fr/sites/default/files/document/diplome-national-du-brevet-2026-mathematiques-serie-generale-517553.pdf",
+      "parts": [
+        {
+          "part": "AUTOMATISMES",
+          "minutes": 20,
+          "points": 6,
+          "calculator": false,
+          "questions": [
+            {
+              "q": "A1",
+              "descriptor": "scientific notation",
+              "domain": "NUMBERS_CALCULATION",
+              "skill_hint": "scientific_notation",
+              "response": "single_choice"
+            },
+            {
+              "q": "A2",
+              "descriptor": "expand an algebraic product",
+              "domain": "ALGEBRA",
+              "skill_hint": "expand_expression",
+              "response": "single_choice"
+            },
+            {
+              "q": "A3",
+              "descriptor": "rectangular-prism volume",
+              "domain": "GEOMETRY_MEASURES",
+              "skill_hint": "volume",
+              "response": "single_choice"
+            },
+            {
+              "q": "A4",
+              "descriptor": "divisibility by 9",
+              "domain": "NUMBERS_CALCULATION",
+              "skill_hint": "divisibility",
+              "response": "single_choice"
+            },
+            {
+              "q": "A5",
+              "descriptor": "average speed",
+              "domain": "PROPORTIONALITY",
+              "skill_hint": "speed",
+              "response": "short_answer"
+            },
+            {
+              "q": "A6",
+              "descriptor": "probability on equal sectors",
+              "domain": "DATA_PROBABILITY",
+              "skill_hint": "probability",
+              "response": "short_answer"
+            },
+            {
+              "q": "A7",
+              "descriptor": "percentage decrease",
+              "domain": "PROPORTIONALITY",
+              "skill_hint": "percentage",
+              "response": "short_answer"
+            },
+            {
+              "q": "A8",
+              "descriptor": "angle from a geometric figure",
+              "domain": "GEOMETRY",
+              "skill_hint": "angles",
+              "response": "short_answer",
+              "requires_figure": true
+            },
+            {
+              "q": "A9a",
+              "descriptor": "read total frequency from bar chart",
+              "domain": "DATA_PROBABILITY",
+              "skill_hint": "read_chart",
+              "response": "short_answer",
+              "requires_figure": true
+            },
+            {
+              "q": "A9b",
+              "descriptor": "determine median from bar chart",
+              "domain": "DATA_PROBABILITY",
+              "skill_hint": "median",
+              "response": "short_answer",
+              "requires_figure": true
+            }
+          ]
+        },
+        {
+          "part": "REASONING_PROBLEM_SOLVING",
+          "minutes": 100,
+          "points": 14,
+          "calculator": true,
+          "exercises": [
+            {
+              "exercise": 1,
+              "points": 2.5,
+              "theme": "compare two smartphone tariffs",
+              "skill_hints": [
+                "arithmetic",
+                "functions",
+                "linear_models",
+                "equation"
+              ],
+              "question_count": 4
+            },
+            {
+              "exercise": 2,
+              "points": 3,
+              "theme": "geometry, parallel lines and truncated cone",
+              "skill_hints": [
+                "pythagoras",
+                "thales",
+                "parallelism",
+                "cone_volume"
+              ],
+              "question_count": 5,
+              "requires_figure": true
+            },
+            {
+              "exercise": 3,
+              "points": 4,
+              "theme": "calculation programs, spreadsheet and algebra",
+              "skill_hints": [
+                "substitution",
+                "spreadsheet_formula",
+                "algebraic_expression",
+                "factorization",
+                "equations"
+              ],
+              "question_count": 8
+            },
+            {
+              "exercise": 4,
+              "points": 2.5,
+              "theme": "square, equilateral triangle and block programming",
+              "skill_hints": [
+                "angles",
+                "geometry",
+                "scratch",
+                "algorithmic_representation"
+              ],
+              "question_count": 3,
+              "requires_figure": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "exam_id": "DNB-2026-ANTILLES-GUYANE-MATH-GEN",
+      "reference": "26GENMATAG1",
+      "year": 2026,
+      "zone": "ANTILLES_GUYANE",
+      "series": "GENERAL",
+      "subject": "MATHEMATICS",
+      "format_version": "DNB_2026",
+      "duration_minutes": 120,
+      "coefficient": 2,
+      "source_type": "OFFICIAL_EXAM",
+      "source_url": "https://www.education.gouv.fr/sites/default/files/document/diplome-national-du-brevet-2026-mathematiques-serie-generale-518657.pdf",
+      "parts": [
+        {
+          "part": "AUTOMATISMES",
+          "minutes": 20,
+          "points": 6,
+          "calculator": false,
+          "questions": [
+            {
+              "q": "A1",
+              "descriptor": "coordinates in a coordinate plane",
+              "domain": "GEOMETRY",
+              "skill_hint": "coordinates",
+              "response": "short_answer",
+              "requires_figure": true
+            },
+            {
+              "q": "A2",
+              "descriptor": "central symmetry on a grid",
+              "domain": "GEOMETRY",
+              "skill_hint": "central_symmetry",
+              "response": "short_answer",
+              "requires_figure": true
+            },
+            {
+              "q": "A3",
+              "descriptor": "choose triangle-area calculation",
+              "domain": "GEOMETRY_MEASURES",
+              "skill_hint": "triangle_area",
+              "response": "single_choice",
+              "requires_figure": true
+            },
+            {
+              "q": "A4",
+              "descriptor": "experimental frequency from coin tosses",
+              "domain": "DATA_PROBABILITY",
+              "skill_hint": "frequency",
+              "response": "single_choice"
+            },
+            {
+              "q": "A5",
+              "descriptor": "algebraic expression for half an integer",
+              "domain": "ALGEBRA",
+              "skill_hint": "literal_expression",
+              "response": "single_choice"
+            },
+            {
+              "q": "A6",
+              "descriptor": "convert a fraction of an hour to minutes",
+              "domain": "MEASURES",
+              "skill_hint": "time_conversion",
+              "response": "single_choice"
+            },
+            {
+              "q": "A7",
+              "descriptor": "mean of a numerical series",
+              "domain": "DATA_PROBABILITY",
+              "skill_hint": "mean",
+              "response": "short_answer"
+            },
+            {
+              "q": "A8",
+              "descriptor": "solve a geometric unknown from a figure",
+              "domain": "GEOMETRY",
+              "skill_hint": "geometry_calculation",
+              "response": "short_answer",
+              "requires_figure": true
+            },
+            {
+              "q": "A9",
+              "descriptor": "travel time from speed and distance",
+              "domain": "PROPORTIONALITY",
+              "skill_hint": "speed_distance_time",
+              "response": "short_answer"
+            }
+          ]
+        },
+        {
+          "part": "REASONING_PROBLEM_SOLVING",
+          "minutes": 100,
+          "points": 14,
+          "calculator": true,
+          "exercises": [
+            {
+              "exercise": 1,
+              "points": 4,
+              "theme": "right triangle, trigonometry, parallelism and homothety",
+              "skill_hints": [
+                "pythagoras",
+                "trigonometry",
+                "parallelism",
+                "homothety"
+              ],
+              "question_count": 5,
+              "requires_figure": true
+            },
+            {
+              "exercise": 2,
+              "points": 4,
+              "theme": "calculation programs, algebra and Scratch",
+              "skill_hints": [
+                "algebraic_expression",
+                "equation",
+                "scratch",
+                "proof"
+              ],
+              "question_count": 4
+            },
+            {
+              "exercise": 3,
+              "points": 4,
+              "theme": "leisure-centre tariffs, functions, graph and spreadsheet",
+              "skill_hints": [
+                "functions",
+                "proportionality",
+                "graph_reading",
+                "spreadsheet"
+              ],
+              "question_count": 6,
+              "requires_figure": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "mapping_schema": {
+    "target_curriculum": "LCAI-0011C / FR-3E",
+    "fields": [
+      "chapter_code",
+      "primary_skill_code",
+      "secondary_skill_codes",
+      "mapping_confidence",
+      "review_status"
+    ],
+    "initial_state": "skill_hint only until exact project Skill IDs are resolved during integration"
+  },
+  "counts": {
+    "papers": 2,
+    "automatism_items": 19,
+    "reasoning_exercises": 7,
+    "reasoning_question_slots": 35
+  }
+}

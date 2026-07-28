@@ -1,0 +1,118 @@
+{
+  "exam_id": "DNB-2019-AMERIQUE_DU_NORD-MATH-GEN",
+  "reference": "19GENMATAN1",
+  "year": 2019,
+  "zone": "AMERIQUE_DU_NORD",
+  "series": "GENERAL",
+  "subject": "MATHEMATICS",
+  "format_version": "DNB_PRE_2026",
+  "duration_minutes": 120,
+  "points": 100,
+  "calculator": true,
+  "source_type": "OFFICIAL_EXAM",
+  "source_url": "https://eduscol.education.gouv.fr/sites/default/files/document/19genmatan1pdf-97950.pdf",
+  "exercise_count": 8,
+  "exercises": [
+    {
+      "exercise": 1,
+      "points": 14,
+      "descriptor": "right triangle, angle calculation and parallelism",
+      "skill_hints": [
+        "pythagoras",
+        "trigonometry",
+        "parallelism"
+      ],
+      "question_slots": 3,
+      "requires_figure": true
+    },
+    {
+      "exercise": 2,
+      "points": 17,
+      "descriptor": "true/false: fractions, affine calculation, probability comparison and algebraic identity",
+      "skill_hints": [
+        "fractions",
+        "functions",
+        "probability",
+        "algebraic_identity"
+      ],
+      "question_slots": 4
+    },
+    {
+      "exercise": 3,
+      "points": 12,
+      "descriptor": "food-waste chart and spreadsheet: reading, ratio, unit conversion and formula",
+      "skill_hints": [
+        "chart_reading",
+        "ratio",
+        "unit_conversion",
+        "spreadsheet_formula"
+      ],
+      "question_slots": 4,
+      "requires_figure": true
+    },
+    {
+      "exercise": 4,
+      "points": 10,
+      "descriptor": "Scratch maze: conditional instruction, coordinates/distance and program execution",
+      "skill_hints": [
+        "scratch",
+        "algorithm",
+        "coordinates",
+        "distance"
+      ],
+      "question_slots": 3,
+      "requires_figure": true
+    },
+    {
+      "exercise": 5,
+      "points": 10,
+      "descriptor": "central/axial symmetry, rotation and translation on hexagonal tiling",
+      "skill_hints": [
+        "central_symmetry",
+        "axial_symmetry",
+        "rotation",
+        "translation"
+      ],
+      "question_slots": 4,
+      "requires_figure": true
+    },
+    {
+      "exercise": 6,
+      "points": 12,
+      "descriptor": "graph reading and comparison of quantities using a supplied formula",
+      "skill_hints": [
+        "graph_reading",
+        "formula_application",
+        "unit_conversion",
+        "proportional_reasoning"
+      ],
+      "question_slots": 3,
+      "requires_figure": true
+    },
+    {
+      "exercise": 7,
+      "points": 15,
+      "descriptor": "pyramidal stacking sequence, sphere volume and density",
+      "skill_hints": [
+        "sequences",
+        "sphere_volume",
+        "density",
+        "unit_conversion"
+      ],
+      "question_slots": 4,
+      "requires_figure": true
+    },
+    {
+      "exercise": 8,
+      "points": 10,
+      "descriptor": "statistics constraints: range, mean, median and success percentage",
+      "skill_hints": [
+        "range",
+        "mean",
+        "median",
+        "percentage"
+      ],
+      "question_slots": 2
+    }
+  ]
+}

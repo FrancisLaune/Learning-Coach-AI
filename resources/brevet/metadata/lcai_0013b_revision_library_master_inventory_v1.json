@@ -1,0 +1,489 @@
+{
+  "ticket": "LCAI-0013B",
+  "artifact": "DNB_REVISION_LIBRARY_MASTER_INVENTORY_V1",
+  "generated_at": "2026-07-26T16:48:47.643412+00:00",
+  "status": "READY_FOR_INTEGRATION_DESIGN_REVIEW",
+  "library_purpose": "Adaptive DNB revision bank driven by Skills and a virtual teacher.",
+  "exam_year_role": "provenance_only_by_default",
+  "summary": {
+    "unique_exam_records": 28,
+    "years": {
+      "2018": 1,
+      "2019": 1,
+      "2021": 3,
+      "2022": 4,
+      "2023": 4,
+      "2024": 3,
+      "2025": 2,
+      "2026": 10
+    },
+    "subjects": {
+      "MATHEMATICS": 13,
+      "FRENCH": 4,
+      "HISTORY_GEOGRAPHY_EMC": 3,
+      "MULTI_SUBJECT_REFERENCE": 4,
+      "SCIENCES": 4
+    },
+    "zones": {
+      "AMERIQUE_DU_NORD": 6,
+      "ASIA": 5,
+      "METROPOLE_REUNION_MAYOTTE": 4,
+      "ANTILLES_GUYANE": 2,
+      "CENTRES_ETRANGERS_GROUPE_1": 1,
+      "UNKNOWN": 8,
+      "NATIONAL_AND_OVERSEAS": 2
+    },
+    "json_files": 26,
+    "markdown_files": 7,
+    "json_parse_errors": 0
+  },
+  "exam_records": [
+    {
+      "exam_id": "DNB-2018-AMERIQUE_DU_NORD-MATH-GEN",
+      "year": 2018,
+      "zone": "AMERIQUE_DU_NORD",
+      "series": "GENERAL",
+      "subject": "MATHEMATICS",
+      "reference": "18GENMATAN1",
+      "format_version": "DNB_PRE_2026",
+      "source_type": "OFFICIAL_EXAM",
+      "source_url": "https://eduscol.education.gouv.fr/sites/default/files/document/18genmatan1pdf-80373.pdf",
+      "source_file": "lcai_0013b_dnb_2018_2019_math_manifest_v1.json",
+      "source_files": [
+        "lcai_0013b_dnb_2018_2019_math_manifest_v1.json",
+        "lcai_0013b_dnb_2018_amerique_du_nord_math_v1.json"
+      ]
+    },
+    {
+      "exam_id": "DNB-2019-AMERIQUE_DU_NORD-MATH-GEN",
+      "year": 2019,
+      "zone": "AMERIQUE_DU_NORD",
+      "series": "GENERAL",
+      "subject": "MATHEMATICS",
+      "reference": "19GENMATAN1",
+      "format_version": "DNB_PRE_2026",
+      "source_type": "OFFICIAL_EXAM",
+      "source_url": "https://eduscol.education.gouv.fr/sites/default/files/document/19genmatan1pdf-97950.pdf",
+      "source_file": "lcai_0013b_dnb_2018_2019_math_manifest_v1.json",
+      "source_files": [
+        "lcai_0013b_dnb_2018_2019_math_manifest_v1.json",
+        "lcai_0013b_dnb_2019_amerique_du_nord_math_v1.json"
+      ]
+    },
+    {
+      "exam_id": "DNB-2021-FRENCH-GEN",
+      "year": 2021,
+      "zone": null,
+      "series": "GENERAL",
+      "subject": "FRENCH",
+      "reference": null,
+      "format_version": null,
+      "source_type": null,
+      "source_url": null,
+      "source_file": "lcai_0013b_french_2021_2023_v1.json",
+      "source_files": [
+        "lcai_0013b_french_2021_2023_v1.json"
+      ]
+    },
+    {
+      "exam_id": "DNB-2021-AMERIQUE_DU_NORD-MATH-GEN",
+      "year": 2021,
+      "zone": "AMERIQUE_DU_NORD",
+      "series": "GENERAL",
+      "subject": "MATHEMATICS",
+      "reference": "21GENMATAN1",
+      "format_version": "DNB_PRE_2026",
+      "source_type": "OFFICIAL_EXAM",
+      "source_url": "https://eduscol.education.gouv.fr/sites/default/files/document/21genmatan1pdf-98055.pdf",
+      "source_file": "lcai_0013b_dnb_2021_2023_math_manifest_v1.json",
+      "source_files": [
+        "lcai_0013b_dnb_2021_2023_math_manifest_v1.json",
+        "lcai_0013b_dnb_2021_amerique_du_nord_math_v1.json"
+      ]
+    },
+    {
+      "exam_id": "DNB-2021-AMERIQUE_DU_NORD-SCIENCES-GEN",
+      "year": 2021,
+      "zone": null,
+      "series": "GENERAL",
+      "subject": "SCIENCES",
+      "reference": "21GENSCAN1",
+      "format_version": null,
+      "source_type": null,
+      "source_url": "https://eduscol.education.fr/document/47019/download",
+      "source_file": "lcai_0013b_sciences_2021_2023_v1.json",
+      "source_files": [
+        "lcai_0013b_sciences_2021_2023_v1.json"
+      ]
+    },
+    {
+      "exam_id": "DNB-2022-FRENCH-GEN",
+      "year": 2022,
+      "zone": null,
+      "series": "GENERAL",
+      "subject": "FRENCH",
+      "reference": null,
+      "format_version": null,
+      "source_type": null,
+      "source_url": null,
+      "source_file": "lcai_0013b_french_2021_2023_v1.json",
+      "source_files": [
+        "lcai_0013b_french_2021_2023_v1.json"
+      ]
+    },
+    {
+      "exam_id": "DNB-2022-HGEMC-GEN",
+      "year": 2022,
+      "zone": null,
+      "series": "GENERAL",
+      "subject": "HISTORY_GEOGRAPHY_EMC",
+      "reference": "22GENHGEMCAG1",
+      "format_version": null,
+      "source_type": null,
+      "source_url": "https://eduscol.education.fr/document/49523/download",
+      "source_file": "lcai_0013b_hgemc_2021_2023_v1.json",
+      "source_files": [
+        "lcai_0013b_hgemc_2021_2023_v1.json"
+      ]
+    },
+    {
+      "exam_id": "DNB-2022-ASIA-MATH-GEN",
+      "year": 2022,
+      "zone": "ASIA",
+      "series": "GENERAL",
+      "subject": "MATHEMATICS",
+      "reference": "22GENMATAA1",
+      "format_version": "DNB_PRE_2026",
+      "source_type": "OFFICIAL_EXAM",
+      "source_url": "https://eduscol.education.gouv.fr/sites/default/files/document/22genmataa1pdf-98133.pdf",
+      "source_file": "lcai_0013b_dnb_2021_2023_math_manifest_v1.json",
+      "source_files": [
+        "lcai_0013b_dnb_2021_2023_math_manifest_v1.json",
+        "lcai_0013b_dnb_2022_asia_math_v1.json"
+      ]
+    },
+    {
+      "exam_id": "DNB-2022-ASIA-SCIENCES-GEN",
+      "year": 2022,
+      "zone": null,
+      "series": "GENERAL",
+      "subject": "SCIENCES",
+      "reference": "22GENSCAA1",
+      "format_version": null,
+      "source_type": null,
+      "source_url": "https://eduscol.education.fr/document/47100/download",
+      "source_file": "lcai_0013b_sciences_2021_2023_v1.json",
+      "source_files": [
+        "lcai_0013b_sciences_2021_2023_v1.json"
+      ]
+    },
+    {
+      "exam_id": "DNB-2023-FRENCH-GEN",
+      "year": 2023,
+      "zone": null,
+      "series": "GENERAL",
+      "subject": "FRENCH",
+      "reference": null,
+      "format_version": null,
+      "source_type": null,
+      "source_url": null,
+      "source_file": "lcai_0013b_french_2021_2023_v1.json",
+      "source_files": [
+        "lcai_0013b_french_2021_2023_v1.json"
+      ]
+    },
+    {
+      "exam_id": "DNB-2023-METROPOLE-HGEMC-GEN",
+      "year": 2023,
+      "zone": null,
+      "series": "GENERAL",
+      "subject": "HISTORY_GEOGRAPHY_EMC",
+      "reference": "23GENHGEMCME1",
+      "format_version": null,
+      "source_type": null,
+      "source_url": "https://eduscol.education.fr/document/54861/download",
+      "source_file": "lcai_0013b_hgemc_2021_2023_v1.json",
+      "source_files": [
+        "lcai_0013b_hgemc_2021_2023_v1.json"
+      ]
+    },
+    {
+      "exam_id": "DNB-2023-ASIA-MATH-GEN",
+      "year": 2023,
+      "zone": "ASIA",
+      "series": "GENERAL",
+      "subject": "MATHEMATICS",
+      "reference": "23GENMATAA1",
+      "format_version": "DNB_PRE_2026",
+      "source_type": "OFFICIAL_EXAM",
+      "source_url": "https://eduscol.education.fr/document/53394/download",
+      "source_file": "lcai_0013b_dnb_2021_2023_math_manifest_v1.json",
+      "source_files": [
+        "lcai_0013b_dnb_2021_2023_math_manifest_v1.json",
+        "lcai_0013b_dnb_2023_asia_math_v1.json"
+      ]
+    },
+    {
+      "exam_id": "DNB-2023-SCIENCES-GEN",
+      "year": 2023,
+      "zone": null,
+      "series": "GENERAL",
+      "subject": "SCIENCES",
+      "reference": "23GENSCNC1",
+      "format_version": null,
+      "source_type": null,
+      "source_url": "https://eduscol.education.fr/document/56472/download",
+      "source_file": "lcai_0013b_sciences_2021_2023_v1.json",
+      "source_files": [
+        "lcai_0013b_sciences_2021_2023_v1.json"
+      ]
+    },
+    {
+      "exam_id": "DNB-2024-AMERIQUE_DU_NORD-MATH-GEN",
+      "year": 2024,
+      "zone": "AMERIQUE_DU_NORD",
+      "series": "GENERAL",
+      "subject": "MATHEMATICS",
+      "reference": "24GENMATAN1",
+      "format_version": "DNB_PRE_2026",
+      "source_type": "OFFICIAL_EXAM",
+      "source_url": "https://www.education.gouv.fr/sites/default/files/document/Dipl%C3%B4me%20national%20du%20brevet%202024%20-%20Math%C3%A9matiques-401862.pdf",
+      "source_file": "dnb_2024_amerique_du_nord_math_gen_v1.json",
+      "source_files": [
+        "dnb_2024_amerique_du_nord_math_gen_v1.json",
+        "lcai_0013b_dnb_2024_2025_math_manifest_v1.json"
+      ]
+    },
+    {
+      "exam_id": "DNB-2024-ASIA-MATH-GEN",
+      "year": 2024,
+      "zone": "ASIA",
+      "series": "GENERAL",
+      "subject": "MATHEMATICS",
+      "reference": "24GENMATAA1",
+      "format_version": "DNB_PRE_2026",
+      "source_type": "OFFICIAL_EXAM",
+      "source_url": "https://www.education.gouv.fr/sites/default/files/document/Dipl%C3%B4me%20national%20du%20brevet%202024%20-%20Math%C3%A9matiques-402462.pdf",
+      "source_file": "dnb_2024_asia_math_gen_v1.json",
+      "source_files": [
+        "dnb_2024_asia_math_gen_v1.json",
+        "lcai_0013b_dnb_2024_2025_math_manifest_v1.json"
+      ]
+    },
+    {
+      "exam_id": "DNB-2024-NATIONAL-MULTISUBJECT-GEN",
+      "year": 2024,
+      "zone": "NATIONAL_AND_OVERSEAS",
+      "series": "GENERAL",
+      "subject": "MULTI_SUBJECT_REFERENCE",
+      "reference": null,
+      "format_version": null,
+      "source_type": "OFFICIAL_EXAM",
+      "source_url": "https://www.education.gouv.fr/diplome-national-du-brevet-session-2024-462162",
+      "source_file": "lcai_0013b_multisubject_sources_2024_2026_v1.json",
+      "source_files": [
+        "lcai_0013b_multisubject_sources_2024_2026_v1.json"
+      ]
+    },
+    {
+      "exam_id": "DNB-2025-METROPOLE-MATH-GEN",
+      "year": 2025,
+      "zone": "METROPOLE_REUNION_MAYOTTE",
+      "series": "GENERAL",
+      "subject": "MATHEMATICS",
+      "reference": "25GENMATMEAG1",
+      "format_version": "DNB_PRE_2026",
+      "source_type": "OFFICIAL_EXAM",
+      "source_url": "https://www.education.gouv.fr/sites/default/files/2025-06/dipl-me-national-du-brevet-2025-math-matiques-441336.pdf",
+      "source_file": "dnb_2025_metropole_math_gen_v1.json",
+      "source_files": [
+        "dnb_2025_metropole_math_gen_v1.json",
+        "lcai_0013b_dnb_2024_2025_math_manifest_v1.json"
+      ]
+    },
+    {
+      "exam_id": "DNB-2025-NATIONAL-MULTISUBJECT-GEN",
+      "year": 2025,
+      "zone": "NATIONAL_AND_OVERSEAS",
+      "series": "GENERAL",
+      "subject": "MULTI_SUBJECT_REFERENCE",
+      "reference": null,
+      "format_version": null,
+      "source_type": "OFFICIAL_EXAM",
+      "source_url": "https://www.education.gouv.fr/diplome-national-du-brevet-session-2025-462966",
+      "source_file": "lcai_0013b_multisubject_sources_2024_2026_v1.json",
+      "source_files": [
+        "lcai_0013b_multisubject_sources_2024_2026_v1.json"
+      ]
+    },
+    {
+      "exam_id": "DNB-2026-METROPOLE-FRENCH-GEN",
+      "year": 2026,
+      "zone": "METROPOLE_REUNION_MAYOTTE",
+      "series": "GENERAL",
+      "subject": "FRENCH",
+      "reference": null,
+      "format_version": null,
+      "source_type": "OFFICIAL_EXAM",
+      "source_url": null,
+      "source_file": "lcai_0013b_french_2026_v1.json",
+      "source_files": [
+        "lcai_0013b_french_2026_v1.json"
+      ]
+    },
+    {
+      "exam_id": "DNB-2026-METROPOLE-HGEMC-GEN",
+      "year": 2026,
+      "zone": "METROPOLE_REUNION_MAYOTTE",
+      "series": "GENERAL",
+      "subject": "HISTORY_GEOGRAPHY_EMC",
+      "reference": null,
+      "format_version": null,
+      "source_type": "OFFICIAL_EXAM",
+      "source_url": null,
+      "source_file": "lcai_0013b_hgemc_2026_v1.json",
+      "source_files": [
+        "lcai_0013b_hgemc_2026_v1.json"
+      ]
+    },
+    {
+      "exam_id": "DNB-2026-AMERIQUE_DU_NORD-MATH-GEN",
+      "year": 2026,
+      "zone": "AMERIQUE_DU_NORD",
+      "series": "GENERAL",
+      "subject": "MATHEMATICS",
+      "reference": "26GENMATAN1",
+      "format_version": "DNB_2026",
+      "source_type": "OFFICIAL_EXAM",
+      "source_url": "https://www.education.gouv.fr/sites/default/files/document/diplome-national-du-brevet-2026-mathematiques-serie-generale-516986.pdf",
+      "source_file": "lcai_0013b_dnb_2026_math_amerique_du_nord_v1.json",
+      "source_files": [
+        "lcai_0013b_dnb_2026_math_amerique_du_nord_v1.json",
+        "lcai_0013b_dnb_2026_mathematics_multi_zone_manifest_v1.json"
+      ]
+    },
+    {
+      "exam_id": "DNB-2026-ANTILLES-GUYANE-MATH-GEN",
+      "year": 2026,
+      "zone": "ANTILLES_GUYANE",
+      "series": "GENERAL",
+      "subject": "MATHEMATICS",
+      "reference": "26GENMATAG1",
+      "format_version": "DNB_2026",
+      "source_type": "OFFICIAL_EXAM",
+      "source_url": "https://www.education.gouv.fr/sites/default/files/document/diplome-national-du-brevet-2026-mathematiques-serie-generale-518657.pdf",
+      "source_file": "lcai_0013b_dnb_2026_mathematics_question_index_v1.json",
+      "source_files": [
+        "lcai_0013b_dnb_2026_mathematics_question_index_v1.json"
+      ]
+    },
+    {
+      "exam_id": "DNB-2026-ANTILLES_GUYANE-MATH-GEN",
+      "year": 2026,
+      "zone": "ANTILLES_GUYANE",
+      "series": "GENERAL",
+      "subject": "MATHEMATICS",
+      "reference": "26GENMATAG1",
+      "format_version": "DNB_2026",
+      "source_type": "OFFICIAL_EXAM",
+      "source_url": "https://www.education.gouv.fr/sites/default/files/document/diplome-national-du-brevet-2026-mathematiques-serie-generale-518657.pdf",
+      "source_file": "lcai_0013b_dnb_2026_math_antilles_guyane_v1.json",
+      "source_files": [
+        "lcai_0013b_dnb_2026_math_antilles_guyane_v1.json",
+        "lcai_0013b_dnb_2026_mathematics_multi_zone_manifest_v1.json"
+      ]
+    },
+    {
+      "exam_id": "DNB-2026-ASIA-MATH-GEN",
+      "year": 2026,
+      "zone": "ASIA",
+      "series": "GENERAL",
+      "subject": "MATHEMATICS",
+      "reference": "26GENMATAA1",
+      "format_version": "DNB_2026",
+      "source_type": "OFFICIAL_EXAM",
+      "source_url": "https://www.education.gouv.fr/sites/default/files/document/diplome-national-du-brevet-2026-mathematiques-serie-generale-517553.pdf",
+      "source_file": "lcai_0013b_dnb_2026_math_asia_v1.json",
+      "source_files": [
+        "lcai_0013b_dnb_2026_math_asia_v1.json",
+        "lcai_0013b_dnb_2026_mathematics_multi_zone_manifest_v1.json",
+        "lcai_0013b_dnb_2026_mathematics_question_index_v1.json"
+      ]
+    },
+    {
+      "exam_id": "DNB-2026-CENTRES_ETRANGERS_GROUPE_1-MATH-GEN",
+      "year": 2026,
+      "zone": "CENTRES_ETRANGERS_GROUPE_1",
+      "series": "GENERAL",
+      "subject": "MATHEMATICS",
+      "reference": "26GENMATG11",
+      "format_version": "DNB_2026",
+      "source_type": "OFFICIAL_EXAM",
+      "source_url": "https://www.education.gouv.fr/sites/default/files/document/diplome-national-du-brevet-2026-mathematiques-serie-generale-518132.pdf",
+      "source_file": "lcai_0013b_dnb_2026_math_centres_etrangers_groupe_1_v1.json",
+      "source_files": [
+        "lcai_0013b_dnb_2026_math_centres_etrangers_groupe_1_v1.json",
+        "lcai_0013b_dnb_2026_mathematics_multi_zone_manifest_v1.json"
+      ]
+    },
+    {
+      "exam_id": "DNB-2026-AMERIQUE_DU_NORD-MULTISUBJECT-GEN",
+      "year": 2026,
+      "zone": "AMERIQUE_DU_NORD",
+      "series": "GENERAL",
+      "subject": "MULTI_SUBJECT_REFERENCE",
+      "reference": null,
+      "format_version": null,
+      "source_type": "OFFICIAL_EXAM",
+      "source_url": "https://www.education.gouv.fr/brevet-bac-et-cap-les-sujets-des-examens-2026-504911",
+      "source_file": "lcai_0013b_multisubject_sources_2024_2026_v1.json",
+      "source_files": [
+        "lcai_0013b_multisubject_sources_2024_2026_v1.json"
+      ]
+    },
+    {
+      "exam_id": "DNB-2026-ASIA-MULTISUBJECT-GEN",
+      "year": 2026,
+      "zone": "ASIA",
+      "series": "GENERAL",
+      "subject": "MULTI_SUBJECT_REFERENCE",
+      "reference": null,
+      "format_version": null,
+      "source_type": "OFFICIAL_EXAM",
+      "source_url": "https://www.education.gouv.fr/brevet-bac-et-cap-les-sujets-des-examens-2026-504911",
+      "source_file": "lcai_0013b_multisubject_sources_2024_2026_v1.json",
+      "source_files": [
+        "lcai_0013b_multisubject_sources_2024_2026_v1.json"
+      ]
+    },
+    {
+      "exam_id": "DNB-2026-METROPOLE-SCIENCES-GEN",
+      "year": 2026,
+      "zone": "METROPOLE_REUNION_MAYOTTE",
+      "series": "GENERAL",
+      "subject": "SCIENCES",
+      "reference": null,
+      "format_version": null,
+      "source_type": "OFFICIAL_EXAM",
+      "source_url": "https://www.education.gouv.fr/sites/default/files/document/diplome-national-du-brevet-2026-sciences-serie-generale-518603.pdf",
+      "source_file": "lcai_0013b_sciences_2026_v1.json",
+      "source_files": [
+        "lcai_0013b_sciences_2026_v1.json"
+      ]
+    }
+  ],
+  "integration_state": {
+    "exact_lcai_skill_mapping": "PENDING",
+    "curriculum_compatibility_review": "PENDING",
+    "document_asset_ingestion": "PENDING",
+    "student_catalog_integration": "NOT_STARTED",
+    "duckdb_modified": false
+  },
+  "known_rules": [
+    "2020 is not treated as a standard written-session paper.",
+    "Historical papers remain useful when the underlying Skill is compatible with the current curriculum.",
+    "The application should select by Skill/mastery/difficulty, not by exam year.",
+    "Full copyrighted source texts are not duplicated in normalized metadata."
+  ],
+  "parse_errors": []
+}

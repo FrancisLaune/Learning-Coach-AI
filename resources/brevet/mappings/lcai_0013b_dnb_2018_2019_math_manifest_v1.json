@@ -1,0 +1,39 @@
+{
+  "ticket": "LCAI-0013B",
+  "artifact": "DNB_2018_2019_MATHEMATICS_BLOCK_V1",
+  "generated_at": "2026-07-26T14:13:55.182572+00:00",
+  "status": "PREPARATION_NO_DATABASE_CHANGE",
+  "papers": [
+    {
+      "exam_id": "DNB-2019-AMERIQUE_DU_NORD-MATH-GEN",
+      "reference": "19GENMATAN1",
+      "year": 2019,
+      "zone": "AMERIQUE_DU_NORD",
+      "source_url": "https://eduscol.education.gouv.fr/sites/default/files/document/19genmatan1pdf-97950.pdf"
+    },
+    {
+      "exam_id": "DNB-2018-AMERIQUE_DU_NORD-MATH-GEN",
+      "reference": "18GENMATAN1",
+      "year": 2018,
+      "zone": "AMERIQUE_DU_NORD",
+      "source_url": "https://eduscol.education.gouv.fr/sites/default/files/document/18genmatan1pdf-80373.pdf"
+    }
+  ],
+  "counts": {
+    "papers": 2,
+    "exercises": 16,
+    "question_slots": 51
+  },
+  "coverage_period_note": "This completes the first historical Mathematics backbone for 2018-2019 plus previously prepared 2021-2026. 2020 is not represented as a standard written-session paper.",
+  "mapping_policy": {
+    "current": "skill_hint",
+    "target": "exact LCAI-0011C FR-3E Skill IDs",
+    "human_review_required": true
+  },
+  "guardrails": [
+    "No DuckDB modification",
+    "No content approval",
+    "Do not duplicate complete official paper text",
+    "Preserve figure/graph/table/Scratch dependencies"
+  ]
+}

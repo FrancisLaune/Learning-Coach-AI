@@ -1,0 +1,33 @@
+{
+  "ticket": "LCAI-0013B",
+  "artifact": "DNB_2024_2026_MULTI_SUBJECT_BLOCK_V1",
+  "generated_at": "2026-07-26T14:19:05.778883+00:00",
+  "status": "PREPARATION_NO_DATABASE_CHANGE",
+  "scope": {
+    "years": [
+      2024,
+      2025,
+      2026
+    ],
+    "subjects": [
+      "FRENCH",
+      "HISTORY_GEOGRAPHY_EMC",
+      "SCIENCES"
+    ],
+    "series": "GENERAL"
+  },
+  "records": 7,
+  "authoritative_sources": [
+    "https://www.education.gouv.fr/brevet-bac-et-cap-les-sujets-des-examens-2026-504911",
+    "https://www.education.gouv.fr/diplome-national-du-brevet-session-2025-462966",
+    "https://www.education.gouv.fr/diplome-national-du-brevet-session-2024-462162"
+  ],
+  "mapping_policy": {
+    "current": "normalized skill_hints and exam components",
+    "target": "exact LCAI-0011C FR-3E chapter/skill mapping",
+    "human_review_required": true
+  },
+  "copyright_policy": "Index provenance, structure and normalized pedagogical metadata. Do not reproduce full official source texts in the application dataset.",
+  "dependency_policy": "Texts, images, maps, annexes, tables and scientific documents are explicit dependencies and must not be silently discarded.",
+  "production_policy": "No Approved content and no student exposure in this preparation block."
+}

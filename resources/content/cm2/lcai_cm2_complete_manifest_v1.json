@@ -1,0 +1,69 @@
+{
+  "batch": "CM2-COMPLETE-V1",
+  "program_code": "FR-CYCLE3-CM2-2026",
+  "grade_code": "FR-CM2",
+  "subjects": [
+    {
+      "subject": "MATHEMATICS",
+      "skills": 24,
+      "candidates": 72,
+      "json_file": "lcai_cm2_mathematics_candidates_v1.json",
+      "report_file": "LCAI_CM2_MATHEMATICS_CONTENT_PREPARATION_V1.md"
+    },
+    {
+      "subject": "FRENCH",
+      "skills": 21,
+      "candidates": 63,
+      "json_file": "lcai_cm2_french_candidates_v1.json",
+      "report_file": "LCAI_CM2_FRENCH_CONTENT_PREPARATION_V1.md"
+    },
+    {
+      "subject": "ENGLISH",
+      "skills": 8,
+      "candidates": 24,
+      "json_file": "lcai_cm2_english_candidates_v1.json",
+      "report_file": "LCAI_CM2_ENGLISH_CONTENT_PREPARATION_V1.md"
+    },
+    {
+      "subject": "HISTORY",
+      "skills": 12,
+      "candidates": 36,
+      "json_file": "lcai_cm2_history_candidates_v1.json",
+      "report_file": "LCAI_CM2_HISTORY_CONTENT_PREPARATION_V1.md"
+    },
+    {
+      "subject": "GEOGRAPHY",
+      "skills": 12,
+      "candidates": 36,
+      "json_file": "lcai_cm2_geography_candidates_v1.json",
+      "report_file": "LCAI_CM2_GEOGRAPHY_CONTENT_PREPARATION_V1.md"
+    },
+    {
+      "subject": "EMC",
+      "skills": 8,
+      "candidates": 24,
+      "json_file": "lcai_cm2_emc_candidates_v1.json",
+      "report_file": "LCAI_CM2_EMC_CONTENT_PREPARATION_V1.md"
+    },
+    {
+      "subject": "SVT",
+      "skills": 8,
+      "candidates": 24,
+      "json_file": "lcai_cm2_svt_candidates_v1.json",
+      "report_file": "LCAI_CM2_SVT_CONTENT_PREPARATION_V1.md"
+    },
+    {
+      "subject": "PHYSICS_CHEMISTRY",
+      "skills": 8,
+      "candidates": 24,
+      "json_file": "lcai_cm2_physics_chemistry_candidates_v1.json",
+      "report_file": "LCAI_CM2_PHYSICS_CHEMISTRY_CONTENT_PREPARATION_V1.md"
+    }
+  ],
+  "total_skills": 101,
+  "total_candidates": 303,
+  "lifecycle_target": "Draft",
+  "automatic_approval": false,
+  "source_curriculum": "LCAI-0011C chapter competencies + CM2 French grammar override",
+  "quality_status": "candidate_pack_pending_content_factory_and_editorial_review"
+}

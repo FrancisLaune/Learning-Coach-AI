@@ -1,0 +1,64 @@
+{
+  "ticket": "LCAI-0013B",
+  "artifact": "VIRTUAL_TEACHER_DNB_ORCHESTRATION_V1",
+  "modes": {
+    "GUIDED_PRACTICE": {
+      "help_allowed": true,
+      "sequence": [
+        "prompt",
+        "student_attempt",
+        "hint_1",
+        "hint_2",
+        "method",
+        "retry",
+        "feedback"
+      ],
+      "goal": "Teach the method without revealing the final answer immediately."
+    },
+    "REVISION": {
+      "help_allowed": true,
+      "selection": [
+        "weak_skill",
+        "recent_error",
+        "difficulty_fit",
+        "curriculum_compatible"
+      ],
+      "goal": "Mix authentic DNB questions from any compatible year around the target Skill."
+    },
+    "ASSESSMENT": {
+      "help_allowed": false,
+      "feedback_timing": "after_submission",
+      "goal": "Measure mastery with limited scaffolding."
+    },
+    "MOCK_EXAM": {
+      "help_allowed": false,
+      "timer": true,
+      "source_mix": "single official paper or generated compatible assembly",
+      "feedback_timing": "after_exam",
+      "goal": "Simulate exam conditions and generate a Skill-level diagnostic."
+    },
+    "REMEDIATION": {
+      "help_allowed": true,
+      "selection": [
+        "specific_error_category",
+        "primary_skill",
+        "lower_or_equal_difficulty"
+      ],
+      "goal": "Repair a diagnosed misconception before returning to exam-level practice."
+    }
+  },
+  "post_attempt_updates": [
+    "skill_evidence",
+    "mastery_estimate",
+    "error_category",
+    "time_on_task",
+    "hint_usage",
+    "recommended_next_activity"
+  ],
+  "safety_rules": [
+    "Do not expose Draft/non-production content.",
+    "Do not strip required source documents or figures.",
+    "Do not use historical source year as a difficulty proxy.",
+    "Do not present an old scoring format as the current DNB format."
+  ]
+}

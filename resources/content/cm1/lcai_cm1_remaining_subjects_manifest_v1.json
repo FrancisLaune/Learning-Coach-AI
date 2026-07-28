@@ -1,0 +1,46 @@
+{
+  "batch": "CM1-REMAINING-SUBJECTS-V1",
+  "program_code": "FR-CYCLE3-CM1-2026",
+  "grade_code": "FR-CM1",
+  "subjects": [
+    {
+      "subject": "HISTORY",
+      "skills": 12,
+      "candidates": 36,
+      "json_file": "lcai_cm1_history_candidates_v1.json",
+      "report_file": "LCAI_CM1_HISTORY_CONTENT_PREPARATION_V1.md"
+    },
+    {
+      "subject": "GEOGRAPHY",
+      "skills": 12,
+      "candidates": 36,
+      "json_file": "lcai_cm1_geography_candidates_v1.json",
+      "report_file": "LCAI_CM1_GEOGRAPHY_CONTENT_PREPARATION_V1.md"
+    },
+    {
+      "subject": "EMC",
+      "skills": 8,
+      "candidates": 24,
+      "json_file": "lcai_cm1_emc_candidates_v1.json",
+      "report_file": "LCAI_CM1_EMC_CONTENT_PREPARATION_V1.md"
+    },
+    {
+      "subject": "SVT",
+      "skills": 8,
+      "candidates": 24,
+      "json_file": "lcai_cm1_svt_candidates_v1.json",
+      "report_file": "LCAI_CM1_SVT_CONTENT_PREPARATION_V1.md"
+    },
+    {
+      "subject": "PHYSICS_CHEMISTRY",
+      "skills": 8,
+      "candidates": 24,
+      "json_file": "lcai_cm1_physics_chemistry_candidates_v1.json",
+      "report_file": "LCAI_CM1_PHYSICS_CHEMISTRY_CONTENT_PREPARATION_V1.md"
+    }
+  ],
+  "total_skills": 48,
+  "total_candidates": 144,
+  "lifecycle_target": "Draft",
+  "automatic_approval": false
+}

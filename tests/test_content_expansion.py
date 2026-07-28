@@ -12,9 +12,13 @@ from services.content.expansion import (
     ActiveSkillCoverage,
     ContentSlot,
     CoverageGap,
+    build_slot_quality_index,
     coverage_gaps,
+    generation_gaps,
     coverage_status,
+    is_usable_quality_record,
     required_slots,
+    slot_has_usable_candidate,
 )
 
 
@@ -142,6 +146,61 @@ def test_coverage_report_contains_every_authoritative_skill() -> None:
     report = _coverage_report(rows)
     assert "Grade | Subject | Skills | Core covered" in report
     assert all(row.target.primary_skill_code in report for row in rows)
+
+
+def test_reject_draft_allows_corrective_generation() -> None:
+    practice = ContentSlot(CanonicalContentType.PRACTICE, 2)
+    assessment = ContentSlot(CanonicalContentType.ASSESSMENT, 2)
+    row = skill(subject="SVT", approved={practice: 1}, draft={assessment: 1})
+    quality_index = {
+        ("SKILL", "assessment", 2): [
+            {
+                "decision": "REJECT",
+                "hard_gates": {
+                    "structural_validity": True,
+                    "answer_correctness": True,
+                    "skill_alignment": True,
+                    "executability": True,
+                    "duplicate_safety": True,
+                },
+            }
+        ]
+    }
+    gaps = generation_gaps((row,), quality_index)
+    assert len(gaps) == 1
+    assert gaps[0].slot == assessment
+    assert not slot_has_usable_candidate(row, assessment, quality_index)
+
+
+def test_usable_draft_blocks_corrective_generation() -> None:
+    practice = ContentSlot(CanonicalContentType.PRACTICE, 2)
+    assessment = ContentSlot(CanonicalContentType.ASSESSMENT, 2)
+    row = skill(subject="GEOGRAPHY", approved={practice: 1}, draft={assessment: 1})
+    quality_index = {
+        ("SKILL", "assessment", 2): [
+            {
+                "decision": "REVIEW",
+                "hard_gates": {
+                    "structural_validity": True,
+                    "answer_correctness": True,
+                    "skill_alignment": True,
+                    "executability": True,
+                    "duplicate_safety": True,
+                },
+            }
+        ]
+    }
+    assert slot_has_usable_candidate(row, assessment, quality_index)
+    assert generation_gaps((row,), quality_index) == ()
+
+
+def test_approved_production_slot_blocks_corrective_generation() -> None:
+    practice = ContentSlot(CanonicalContentType.PRACTICE, 2)
+    assessment = ContentSlot(CanonicalContentType.ASSESSMENT, 2)
+    row = skill(subject="SVT", approved={practice: 1, assessment: 1}, draft={assessment: 1})
+    quality_index: dict[tuple[str, str, int], list[dict[str, object]]] = {}
+    assert slot_has_usable_candidate(row, assessment, quality_index)
+    assert generation_gaps((row,), quality_index) == ()
 
 
 def test_metrics_do_not_relabel_corrective_run_as_first_pass() -> None:

@@ -1,0 +1,53 @@
+{
+  "ticket": "LCAI-0013B",
+  "artifact": "DNB_REVISION_LIBRARY_COVERAGE_GAPS_V1",
+  "by_year_subject": {
+    "2018": [
+      "MATHEMATICS"
+    ],
+    "2019": [
+      "MATHEMATICS"
+    ],
+    "2021": [
+      "FRENCH",
+      "MATHEMATICS",
+      "SCIENCES"
+    ],
+    "2022": [
+      "FRENCH",
+      "HISTORY_GEOGRAPHY_EMC",
+      "MATHEMATICS",
+      "SCIENCES"
+    ],
+    "2023": [
+      "FRENCH",
+      "HISTORY_GEOGRAPHY_EMC",
+      "MATHEMATICS",
+      "SCIENCES"
+    ],
+    "2024": [
+      "MATHEMATICS",
+      "MULTI_SUBJECT_REFERENCE"
+    ],
+    "2025": [
+      "MATHEMATICS",
+      "MULTI_SUBJECT_REFERENCE"
+    ],
+    "2026": [
+      "FRENCH",
+      "HISTORY_GEOGRAPHY_EMC",
+      "MATHEMATICS",
+      "MULTI_SUBJECT_REFERENCE",
+      "SCIENCES"
+    ]
+  },
+  "known_gaps": [
+    "Exact LCAI-0011C Skill IDs are not yet resolved for most historical records.",
+    "Some multi-subject records are source-level inventories rather than full question decompositions.",
+    "French 2021 decomposition is incomplete.",
+    "HG-EMC 2021 general-series source was intentionally left unresolved in the prepared V1 block.",
+    "Some science second-discipline details remain at component level.",
+    "Document/image/graph/annex assets are referenced but not yet ingested as a managed asset library.",
+    "2016-2017 remain outside the official Eduscol core and require a separately sourced archive if still desired."
+  ]
+}

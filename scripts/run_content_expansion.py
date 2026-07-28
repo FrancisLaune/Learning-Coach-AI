@@ -25,10 +25,16 @@ from domain.content.factory import (  # noqa: E402
 from infrastructure.database.v2 import connect_v2  # noqa: E402
 from infrastructure.generators.openai_content import OpenAIContentGenerator  # noqa: E402
 from infrastructure.repositories.content_factory import DuckDBContentFactoryRepository  # noqa: E402
-from services.content.expansion import CoverageGap, coverage_gaps  # noqa: E402
+from services.content.expansion import (  # noqa: E402
+    CoverageGap,
+    build_slot_quality_index,
+    coverage_gaps,
+    generation_gaps,
+)
 from services.content.factory import CandidateValidator, QualityAssessor  # noqa: E402
 
 DEFAULT_OUTPUT = Path("resources/content/expansion/lcai_0012c_generation.jsonl")
+QUALITY_RESULTS = Path("resources/content/quality/lcai_0012d_quality_results.json")
 PROMPT = Path("resources/content/expansion/prompts/lcai_0012c_v3.txt")
 _local = threading.local()
 
@@ -89,11 +95,16 @@ def _candidate_data(candidate: GeneratedContentCandidate) -> dict[str, Any]:
     return data
 
 
-def _generate_one(gap: CoverageGap, model: str | None) -> dict[str, Any]:
+def _generate_one(
+    gap: CoverageGap,
+    model: str | None,
+    *,
+    extra_constraints: tuple[str, ...] = (),
+) -> dict[str, Any]:
     repository = DuckDBContentFactoryRepository()
     validator = CandidateValidator()
     assessor = QualityAssessor()
-    request = gap.request()
+    request = gap.request(extra_constraints=extra_constraints)
     attempts: list[dict[str, Any]] = []
     started = perf_counter()
     for attempt in (1, 2):
@@ -168,29 +179,54 @@ def plan(
     priorities: tuple[int, ...] = (),
     grades: tuple[str, ...] = (),
     subjects: tuple[str, ...] = (),
+    skills: tuple[str, ...] = (),
     output: Path = DEFAULT_OUTPUT,
     retry_rejected: bool = False,
+    corrective: bool = True,
 ) -> tuple[CoverageGap, ...]:
     rows = DuckDBContentFactoryRepository().active_skill_coverage()
     completed = _completed_keys(output, include_rejected=not retry_rejected)
+    quality_index = (
+        build_slot_quality_index(json.loads(QUALITY_RESULTS.read_text(encoding="utf-8")))
+        if corrective
+        else {}
+    )
+    gaps_source = generation_gaps(rows, quality_index) if corrective else coverage_gaps(rows)
     return tuple(
         gap
-        for gap in coverage_gaps(rows)
+        for gap in gaps_source
         if (not priorities or gap.priority in priorities)
         and (not grades or gap.skill.target.grade_code in grades)
         and (not subjects or gap.skill.target.subject_code in subjects)
+        and (not skills or gap.skill.target.primary_skill_code in skills)
         and gap_key(gap) not in completed
     )
 
 
-def execute(gaps: tuple[CoverageGap, ...], *, output: Path, workers: int, model: str | None) -> dict[str, int]:
+def execute(
+    gaps: tuple[CoverageGap, ...],
+    *,
+    output: Path,
+    workers: int,
+    model: str | None,
+    extra_constraints: dict[str, tuple[str, ...]] | None = None,
+) -> dict[str, int]:
     output.parent.mkdir(parents=True, exist_ok=True)
     repository = DuckDBContentFactoryRepository()
     validator = CandidateValidator()
     metrics: Counter[str] = Counter()
+    extra_constraints = extra_constraints or {}
     generated: list[dict[str, Any]] = []
     with ThreadPoolExecutor(max_workers=workers) as executor:
-        futures = {executor.submit(_generate_one, gap, model): gap for gap in gaps}
+        futures = {
+            executor.submit(
+                _generate_one,
+                gap,
+                model,
+                extra_constraints=extra_constraints.get(gap_key(gap), ()),
+            ): gap
+            for gap in gaps
+        }
         for position, future in enumerate(as_completed(futures), 1):
             record = future.result()
             generated.append(record)
@@ -251,6 +287,7 @@ def main() -> None:
     parser.add_argument("--priority", type=int, action="append", default=[])
     parser.add_argument("--grade", action="append", default=[])
     parser.add_argument("--subject", action="append", default=[])
+    parser.add_argument("--skill", action="append", default=[])
     parser.add_argument("--limit", type=int)
     parser.add_argument("--workers", type=int, default=4)
     parser.add_argument("--retry-rejected", action="store_true")
@@ -260,6 +297,7 @@ def main() -> None:
         priorities=tuple(args.priority),
         grades=tuple(args.grade),
         subjects=tuple(args.subject),
+        skills=tuple(args.skill),
         output=args.output,
         retry_rejected=args.retry_rejected,
     )

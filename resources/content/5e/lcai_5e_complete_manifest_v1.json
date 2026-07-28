@@ -1,0 +1,87 @@
+{
+  "batch": "5E-COMPLETE-V1",
+  "program_code": "FR-CYCLE4-5E-2026",
+  "grade_code": "FR-5E",
+  "subjects": [
+    {
+      "subject": "MATHEMATICS",
+      "skills": 25,
+      "candidates": 75,
+      "json_file": "lcai_5e_mathematics_candidates_v1.json",
+      "report_file": "LCAI_5E_MATHEMATICS_CONTENT_PREPARATION_V1.md"
+    },
+    {
+      "subject": "FRENCH",
+      "skills": 24,
+      "candidates": 72,
+      "json_file": "lcai_5e_french_candidates_v1.json",
+      "report_file": "LCAI_5E_FRENCH_CONTENT_PREPARATION_V1.md"
+    },
+    {
+      "subject": "ENGLISH",
+      "skills": 13,
+      "candidates": 39,
+      "json_file": "lcai_5e_english_candidates_v1.json",
+      "report_file": "LCAI_5E_ENGLISH_CONTENT_PREPARATION_V1.md"
+    },
+    {
+      "subject": "SPANISH",
+      "skills": 13,
+      "candidates": 39,
+      "json_file": "lcai_5e_spanish_candidates_v1.json",
+      "report_file": "LCAI_5E_SPANISH_CONTENT_PREPARATION_V1.md"
+    },
+    {
+      "subject": "HISTORY",
+      "skills": 11,
+      "candidates": 33,
+      "json_file": "lcai_5e_history_candidates_v1.json",
+      "report_file": "LCAI_5E_HISTORY_CONTENT_PREPARATION_V1.md"
+    },
+    {
+      "subject": "GEOGRAPHY",
+      "skills": 11,
+      "candidates": 33,
+      "json_file": "lcai_5e_geography_candidates_v1.json",
+      "report_file": "LCAI_5E_GEOGRAPHY_CONTENT_PREPARATION_V1.md"
+    },
+    {
+      "subject": "EMC",
+      "skills": 8,
+      "candidates": 24,
+      "json_file": "lcai_5e_emc_candidates_v1.json",
+      "report_file": "LCAI_5E_EMC_CONTENT_PREPARATION_V1.md"
+    },
+    {
+      "subject": "SVT",
+      "skills": 10,
+      "candidates": 30,
+      "json_file": "lcai_5e_svt_candidates_v1.json",
+      "report_file": "LCAI_5E_SVT_CONTENT_PREPARATION_V1.md"
+    },
+    {
+      "subject": "PHYSICS_CHEMISTRY",
+      "skills": 10,
+      "candidates": 30,
+      "json_file": "lcai_5e_physics_chemistry_candidates_v1.json",
+      "report_file": "LCAI_5E_PHYSICS_CHEMISTRY_CONTENT_PREPARATION_V1.md"
+    }
+  ],
+  "total_skills": 125,
+  "total_candidates": 375,
+  "lifecycle_target": "Draft",
+  "automatic_approval": false,
+  "included_subjects": [
+    "MATHEMATICS",
+    "FRENCH",
+    "ENGLISH",
+    "SPANISH",
+    "HISTORY",
+    "GEOGRAPHY",
+    "EMC",
+    "SVT",
+    "PHYSICS_CHEMISTRY"
+  ],
+  "curriculum_basis": "LCAI-0011B 5e chapter set + LCAI-0011C chapter-specific enrichment",
+  "quality_status": "candidate_pack_pending_content_factory_and_editorial_review"
+}

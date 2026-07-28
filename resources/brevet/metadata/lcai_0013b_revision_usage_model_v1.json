@@ -1,0 +1,47 @@
+{
+  "ticket": "LCAI-0013B",
+  "artifact": "DNB_REVISION_USAGE_MODEL_V1",
+  "principle": "The exam year is provenance metadata, not a primary learner-facing selection criterion.",
+  "learner_facing_selection": [
+    "primary_skill_code",
+    "secondary_skill_codes",
+    "student_mastery",
+    "error_category",
+    "difficulty",
+    "content_usage",
+    "estimated_time",
+    "curriculum_compatibility"
+  ],
+  "source_metadata_kept_internal": [
+    "year",
+    "zone",
+    "session",
+    "official_reference",
+    "source_url",
+    "format_version"
+  ],
+  "curriculum_compatibility": [
+    "CURRENT_CURRICULUM_COMPATIBLE",
+    "PARTIALLY_COMPATIBLE",
+    "NOT_RECOMMENDED"
+  ],
+  "content_usages": [
+    "PRACTICE",
+    "ASSESSMENT",
+    "REVISION",
+    "REMEDIATION",
+    "MOCK_EXAM"
+  ],
+  "display_policy": {
+    "default_student_label": "Entraînement Brevet",
+    "show_year_by_default": false,
+    "show_source_reference_by_default": false,
+    "teacher_and_admin_can_view_provenance": true
+  },
+  "question_reuse_policy": {
+    "allow_subquestion_reuse": true,
+    "allow_cross_year_skill_mix": true,
+    "preserve_required_documents": true,
+    "preserve_figures_graphs_tables_scratch": true
+  }
+}

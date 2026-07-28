@@ -1,0 +1,72 @@
+{
+  "batch": "6E-COMPLETE-V1",
+  "program_code": "FR-CYCLE3-6E-2026",
+  "grade_code": "FR-6E",
+  "subjects": [
+    {
+      "subject": "MATHEMATICS",
+      "skills": 23,
+      "candidates": 69,
+      "json_file": "lcai_6e_mathematics_candidates_v1.json",
+      "report_file": "LCAI_6E_MATHEMATICS_CONTENT_PREPARATION_V1.md"
+    },
+    {
+      "subject": "FRENCH",
+      "skills": 22,
+      "candidates": 66,
+      "json_file": "lcai_6e_french_candidates_v1.json",
+      "report_file": "LCAI_6E_FRENCH_CONTENT_PREPARATION_V1.md"
+    },
+    {
+      "subject": "ENGLISH",
+      "skills": 13,
+      "candidates": 39,
+      "json_file": "lcai_6e_english_candidates_v1.json",
+      "report_file": "LCAI_6E_ENGLISH_CONTENT_PREPARATION_V1.md"
+    },
+    {
+      "subject": "HISTORY",
+      "skills": 13,
+      "candidates": 39,
+      "json_file": "lcai_6e_history_candidates_v1.json",
+      "report_file": "LCAI_6E_HISTORY_CONTENT_PREPARATION_V1.md"
+    },
+    {
+      "subject": "GEOGRAPHY",
+      "skills": 18,
+      "candidates": 54,
+      "json_file": "lcai_6e_geography_candidates_v1.json",
+      "report_file": "LCAI_6E_GEOGRAPHY_CONTENT_PREPARATION_V1.md"
+    },
+    {
+      "subject": "EMC",
+      "skills": 8,
+      "candidates": 24,
+      "json_file": "lcai_6e_emc_candidates_v1.json",
+      "report_file": "LCAI_6E_EMC_CONTENT_PREPARATION_V1.md"
+    },
+    {
+      "subject": "SVT",
+      "skills": 10,
+      "candidates": 30,
+      "json_file": "lcai_6e_svt_candidates_v1.json",
+      "report_file": "LCAI_6E_SVT_CONTENT_PREPARATION_V1.md"
+    },
+    {
+      "subject": "PHYSICS_CHEMISTRY",
+      "skills": 10,
+      "candidates": 30,
+      "json_file": "lcai_6e_physics_chemistry_candidates_v1.json",
+      "report_file": "LCAI_6E_PHYSICS_CHEMISTRY_CONTENT_PREPARATION_V1.md"
+    }
+  ],
+  "total_skills": 117,
+  "total_candidates": 351,
+  "lifecycle_target": "Draft",
+  "automatic_approval": false,
+  "source_curriculum": "LCAI-0011B + LCAI-0011C chapter competencies/overrides",
+  "excluded_subjects": [
+    "SPANISH"
+  ],
+  "quality_status": "candidate_pack_pending_content_factory_and_editorial_review"
+}

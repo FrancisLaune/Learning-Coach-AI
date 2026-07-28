@@ -1,0 +1,288 @@
+{
+  "ticket": "LCAI-0013A",
+  "artifact": "DNB_OFFICIAL_LIBRARY_CONSOLIDATED_INVENTORY_V2",
+  "generated_at": "2026-07-26T11:34:36.104735+00:00",
+  "scope": {
+    "years": "2016-2026",
+    "official_eduscol_core": "2018-2026",
+    "series": "GENERAL",
+    "subjects": [
+      "FRENCH",
+      "MATHEMATICS",
+      "HISTORY_GEOGRAPHY_EMC",
+      "SCIENCES"
+    ]
+  },
+  "sessions": [
+    {
+      "year": 2018,
+      "status": "OFFICIAL_ANNALS_TARGET",
+      "series": "GENERAL",
+      "target_subjects": [
+        "FRENCH",
+        "MATHEMATICS",
+        "HISTORY_GEOGRAPHY_EMC",
+        "SCIENCES"
+      ],
+      "priority_zones": [
+        "METROPOLE_REUNION_MAYOTTE",
+        "AMERIQUE_DU_NORD",
+        "ASIE",
+        "CENTRES_ETRANGERS"
+      ],
+      "mapping_policy": "Map at question level to LCAI-0011C 3e skills; retain historical-format compatibility metadata."
+    },
+    {
+      "year": 2019,
+      "status": "OFFICIAL_ANNALS_TARGET",
+      "series": "GENERAL",
+      "target_subjects": [
+        "FRENCH",
+        "MATHEMATICS",
+        "HISTORY_GEOGRAPHY_EMC",
+        "SCIENCES"
+      ],
+      "priority_zones": [
+        "METROPOLE_REUNION_MAYOTTE",
+        "AMERIQUE_DU_NORD",
+        "ASIE",
+        "CENTRES_ETRANGERS"
+      ],
+      "mapping_policy": "Map at question level to LCAI-0011C 3e skills; retain historical-format compatibility metadata."
+    },
+    {
+      "year": 2020,
+      "status": "EXCEPTIONAL_NO_NORMAL_JUNE_WRITTEN_SESSION",
+      "series": "GENERAL",
+      "target_subjects": [
+        "FRENCH",
+        "MATHEMATICS",
+        "HISTORY_GEOGRAPHY_EMC",
+        "SCIENCES"
+      ],
+      "priority_zones": [
+        "METROPOLE_REUNION_MAYOTTE",
+        "AMERIQUE_DU_NORD",
+        "ASIE",
+        "CENTRES_ETRANGERS"
+      ],
+      "mapping_policy": "Map at question level to LCAI-0011C 3e skills; retain historical-format compatibility metadata."
+    },
+    {
+      "year": 2021,
+      "status": "OFFICIAL_ANNALS_TARGET",
+      "series": "GENERAL",
+      "target_subjects": [
+        "FRENCH",
+        "MATHEMATICS",
+        "HISTORY_GEOGRAPHY_EMC",
+        "SCIENCES"
+      ],
+      "priority_zones": [
+        "METROPOLE_REUNION_MAYOTTE",
+        "AMERIQUE_DU_NORD",
+        "ASIE",
+        "CENTRES_ETRANGERS"
+      ],
+      "mapping_policy": "Map at question level to LCAI-0011C 3e skills; retain historical-format compatibility metadata."
+    },
+    {
+      "year": 2022,
+      "status": "OFFICIAL_ANNALS_TARGET",
+      "series": "GENERAL",
+      "target_subjects": [
+        "FRENCH",
+        "MATHEMATICS",
+        "HISTORY_GEOGRAPHY_EMC",
+        "SCIENCES"
+      ],
+      "priority_zones": [
+        "METROPOLE_REUNION_MAYOTTE",
+        "AMERIQUE_DU_NORD",
+        "ASIE",
+        "CENTRES_ETRANGERS"
+      ],
+      "mapping_policy": "Map at question level to LCAI-0011C 3e skills; retain historical-format compatibility metadata."
+    },
+    {
+      "year": 2023,
+      "status": "OFFICIAL_ANNALS_TARGET",
+      "series": "GENERAL",
+      "target_subjects": [
+        "FRENCH",
+        "MATHEMATICS",
+        "HISTORY_GEOGRAPHY_EMC",
+        "SCIENCES"
+      ],
+      "priority_zones": [
+        "METROPOLE_REUNION_MAYOTTE",
+        "AMERIQUE_DU_NORD",
+        "ASIE",
+        "CENTRES_ETRANGERS"
+      ],
+      "mapping_policy": "Map at question level to LCAI-0011C 3e skills; retain historical-format compatibility metadata."
+    },
+    {
+      "year": 2024,
+      "status": "OFFICIAL_ANNALS_TARGET",
+      "series": "GENERAL",
+      "target_subjects": [
+        "FRENCH",
+        "MATHEMATICS",
+        "HISTORY_GEOGRAPHY_EMC",
+        "SCIENCES"
+      ],
+      "priority_zones": [
+        "METROPOLE_REUNION_MAYOTTE",
+        "AMERIQUE_DU_NORD",
+        "ASIE",
+        "CENTRES_ETRANGERS"
+      ],
+      "mapping_policy": "Map at question level to LCAI-0011C 3e skills; retain historical-format compatibility metadata."
+    },
+    {
+      "year": 2025,
+      "status": "OFFICIAL_ANNALS_TARGET",
+      "series": "GENERAL",
+      "target_subjects": [
+        "FRENCH",
+        "MATHEMATICS",
+        "HISTORY_GEOGRAPHY_EMC",
+        "SCIENCES"
+      ],
+      "priority_zones": [
+        "METROPOLE_REUNION_MAYOTTE",
+        "AMERIQUE_DU_NORD",
+        "ASIE",
+        "CENTRES_ETRANGERS"
+      ],
+      "mapping_policy": "Map at question level to LCAI-0011C 3e skills; retain historical-format compatibility metadata."
+    },
+    {
+      "year": 2026,
+      "status": "CURRENT_FORMAT_REFERENCE",
+      "series": "GENERAL",
+      "target_subjects": [
+        "FRENCH",
+        "MATHEMATICS",
+        "HISTORY_GEOGRAPHY_EMC",
+        "SCIENCES"
+      ],
+      "priority_zones": [
+        "METROPOLE_REUNION_MAYOTTE",
+        "AMERIQUE_DU_NORD",
+        "ASIE",
+        "CENTRES_ETRANGERS"
+      ],
+      "mapping_policy": "Map at question level to LCAI-0011C 3e skills; retain historical-format compatibility metadata."
+    }
+  ],
+  "verified_reference_records": [
+    {
+      "id": "DNB-2019-METROPOLE-MATHEMATICS-GENERAL",
+      "year": 2019,
+      "zone": "METROPOLE",
+      "subject": "MATHEMATICS",
+      "reference": "19GENMATMEAG1",
+      "duration_minutes": 120,
+      "points": 100,
+      "exercise_count": 6,
+      "source_type": "OFFICIAL_EDUSCOL_PDF",
+      "source_url": "https://cache.media.eduscol.education.fr/file/sujets_DNB_2019/91/6/DNB2019_MATHEMATIQUES_SERIE_GENERALE_METROPOLE_1162916.pdf"
+    },
+    {
+      "id": "DNB-2024-MATHEMATICS-GENERAL-SAMPLE",
+      "year": 2024,
+      "subject": "MATHEMATICS",
+      "reference": "24GENMATAA1",
+      "source_type": "OFFICIAL_EDUSCOL_PDF",
+      "source_url": "https://eduscol.education.fr/document/63523/download"
+    },
+    {
+      "id": "DNB-2025-MATHEMATICS-GENERAL-SAMPLE",
+      "year": 2025,
+      "subject": "MATHEMATICS",
+      "reference": "25GENMATAA1",
+      "source_type": "OFFICIAL_EDUSCOL_PDF",
+      "source_url": "https://eduscol.education.fr/document/68113/download"
+    },
+    {
+      "id": "DNB-2018-MATH-ZERO-GENERAL",
+      "year": 2018,
+      "subject": "MATHEMATICS",
+      "source_type": "OFFICIAL_ZERO_SUBJECT",
+      "source_url": "https://cache.media.eduscol.education.fr/file/DNB_2018/63/0/Sujet0_DNB2018_MATH_Serie_GEN_862630.pdf"
+    }
+  ],
+  "supplementary_official_indexes": [
+    {
+      "year": 2018,
+      "url": "https://sti.eduscol.education.fr/concours_examens/dnb-2018",
+      "note": "Official STI Eduscol index includes zero subjects, Pondichery, June Metropole and September Metropole."
+    },
+    {
+      "year": 2021,
+      "url": "https://sti.eduscol.education.fr/concours_examens/dnb-2021",
+      "note": "Official STI Eduscol index includes general-series Polynesia and Pondichery subjects with corrections."
+    },
+    {
+      "year": 2022,
+      "url": "https://sti.eduscol.education.fr/concours_examens/dnb-2022",
+      "note": "Official STI Eduscol index includes general-series foreign centres, Metropole, Asia and September with corrections."
+    },
+    {
+      "year": 2024,
+      "url": "https://sti.eduscol.education.fr/concours_examens/sujets-dnb-2024",
+      "note": "Official STI Eduscol index includes Metropole, Asia and September subjects; some corrections/grids are available."
+    }
+  ],
+  "normalization": {
+    "source_types": [
+      "OFFICIAL_EXAM",
+      "OFFICIAL_ZERO_SUBJECT",
+      "OFFICIAL_CORRECTION",
+      "MOCK_EXAM",
+      "GENERATED_MOCK_EXAM"
+    ],
+    "exam_fields": [
+      "exam_id",
+      "year",
+      "session",
+      "zone",
+      "series",
+      "subject",
+      "format_version",
+      "source_type",
+      "source_url"
+    ],
+    "question_mapping_fields": [
+      "exercise_number",
+      "question_number",
+      "points",
+      "chapter_code",
+      "primary_skill_code",
+      "secondary_skill_codes",
+      "difficulty",
+      "estimated_minutes",
+      "mapping_confidence",
+      "review_status"
+    ]
+  },
+  "rules": [
+    "Never label a third-party brevet blanc as an official exam.",
+    "Keep original PDF provenance separate from normalized question metadata.",
+    "2020 must not be counted as a normal June written DNB session.",
+    "Historical questions are training evidence, not automatically equivalent to the 2027 3e-only written programme.",
+    "No question-level Skill mapping is promoted without review."
+  ],
+  "next_phase": {
+    "code": "LCAI-0013B",
+    "work": [
+      "download/retain official PDFs where licensing and repository policy allow",
+      "extract exercise/question structure",
+      "map questions to 3e skills",
+      "build corrections/barème links",
+      "add mock-exam library separately"
+    ]
+  }
+}

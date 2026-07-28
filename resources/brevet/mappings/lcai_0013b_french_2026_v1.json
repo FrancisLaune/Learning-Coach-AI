@@ -1,0 +1,50 @@
+{
+  "ticket": "LCAI-0013B",
+  "records": [
+    {
+      "exam_id": "DNB-2026-METROPOLE-FRENCH-GEN",
+      "year": 2026,
+      "zone": "METROPOLE_REUNION_MAYOTTE",
+      "subject": "FRENCH",
+      "series": "GENERAL",
+      "source_type": "OFFICIAL_EXAM",
+      "components": [
+        {
+          "component": "GRAMMAR_COMPREHENSION_INTERPRETATION",
+          "skill_hints": [
+            "reading_comprehension",
+            "interpretation",
+            "grammar",
+            "lexicon",
+            "rewriting"
+          ],
+          "source_index": "official_2026_exam_page",
+          "requires_source_text": true
+        },
+        {
+          "component": "DICTATION",
+          "points": 10,
+          "minutes": 20,
+          "skill_hints": [
+            "spelling",
+            "grammar_agreement",
+            "punctuation"
+          ],
+          "source_index": "official_2026_exam_page"
+        },
+        {
+          "component": "WRITING",
+          "points": 40,
+          "minutes": 90,
+          "skill_hints": [
+            "argumentative_writing",
+            "creative_writing",
+            "written_expression"
+          ],
+          "source_url": "https://www.education.gouv.fr/sites/default/files/document/diplome-national-du-brevet-2026-francais-redaction-serie-generale-516983.pdf"
+        }
+      ],
+      "format_note": "French coefficient 2, total duration 3h in the 2026 DNB framework."
+    }
+  ]
+}

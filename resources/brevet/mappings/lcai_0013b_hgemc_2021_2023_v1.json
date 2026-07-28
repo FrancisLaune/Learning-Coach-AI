@@ -1,0 +1,96 @@
+{
+  "ticket": "LCAI-0013B",
+  "artifact": "DNB_HGEMC_2021_2023_BLOCK_V1",
+  "status": "PREPARATION_NO_DATABASE_CHANGE",
+  "records": [
+    {
+      "exam_id": "DNB-2023-METROPOLE-HGEMC-GEN",
+      "reference": "23GENHGEMCME1",
+      "year": 2023,
+      "series": "GENERAL",
+      "subject": "HISTORY_GEOGRAPHY_EMC",
+      "duration_minutes": 120,
+      "points": 50,
+      "source_url": "https://eduscol.education.fr/document/54861/download",
+      "components": [
+        {
+          "component": "HISTORY_DOCUMENT_ANALYSIS",
+          "points": 20,
+          "topic": "Civils et militaires dans la Première Guerre mondiale",
+          "skill_hints": [
+            "source_identification",
+            "extract_information",
+            "historical_context",
+            "document_comparison",
+            "constructed_explanation"
+          ],
+          "requires_documents": true
+        },
+        {
+          "component": "GEOGRAPHY_REASONING_AND_LANDMARKS",
+          "points": 20,
+          "topic": "Espaces de faible densité et aires urbaines",
+          "skill_hints": [
+            "constructed_response",
+            "territorial_dynamics",
+            "map_legend",
+            "geographical_landmarks"
+          ],
+          "requires_annex": true
+        },
+        {
+          "component": "EMC",
+          "points": 10,
+          "topic": "Engagement citoyen des jeunes",
+          "skill_hints": [
+            "civic_engagement",
+            "democratic_participation",
+            "document_analysis",
+            "argumentative_speech"
+          ],
+          "requires_documents": true
+        }
+      ]
+    },
+    {
+      "exam_id": "DNB-2022-HGEMC-GEN",
+      "reference": "22GENHGEMCAG1",
+      "year": 2022,
+      "series": "GENERAL",
+      "subject": "HISTORY_GEOGRAPHY_EMC",
+      "duration_minutes": 120,
+      "points": 50,
+      "source_url": "https://eduscol.education.fr/document/49523/download",
+      "components": [
+        {
+          "component": "DOCUMENT_ANALYSIS",
+          "skill_hints": [
+            "document_analysis",
+            "extract_information",
+            "historical_or_geographical_context"
+          ],
+          "requires_documents": true
+        },
+        {
+          "component": "CONSTRUCTED_RESPONSE_AND_LANDMARKS",
+          "skill_hints": [
+            "constructed_response",
+            "chronology_or_map_landmarks"
+          ],
+          "requires_annex": true
+        },
+        {
+          "component": "EMC",
+          "skill_hints": [
+            "civic_reasoning",
+            "values_and_principles",
+            "document_analysis"
+          ],
+          "requires_documents": true
+        }
+      ]
+    }
+  ],
+  "note": "A verified general-series 2021 HG-EMC paper is not included in this V1 rather than risk misclassifying a professional-series document.",
+  "mapping_policy": "Exact LCAI-0011C 3e Skill mapping deferred to integration."
+}

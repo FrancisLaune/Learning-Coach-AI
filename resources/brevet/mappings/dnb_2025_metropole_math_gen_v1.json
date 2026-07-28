@@ -1,0 +1,84 @@
+{
+  "exam_id": "DNB-2025-METROPOLE-MATH-GEN",
+  "reference": "25GENMATMEAG1",
+  "year": 2025,
+  "zone": "METROPOLE_REUNION_MAYOTTE",
+  "series": "GENERAL",
+  "subject": "MATHEMATICS",
+  "format_version": "DNB_PRE_2026",
+  "duration_minutes": 120,
+  "points": 100,
+  "calculator": true,
+  "source_type": "OFFICIAL_EXAM",
+  "source_ref": "turn1view0",
+  "source_url": "https://www.education.gouv.fr/sites/default/files/2025-06/dipl-me-national-du-brevet-2025-math-matiques-441336.pdf",
+  "exercises": [
+    {
+      "exercise": 1,
+      "points": 20,
+      "descriptor": "probability, primes, multiples and comparison of urn probabilities",
+      "skill_hints": [
+        "probability",
+        "prime_numbers",
+        "multiples",
+        "fractions"
+      ],
+      "question_slots": 5
+    },
+    {
+      "exercise": 2,
+      "points": 23,
+      "descriptor": "aquathlon: right-triangle geometry, parallelism, angle, median and speed",
+      "skill_hints": [
+        "pythagoras",
+        "thales_parallelism",
+        "trigonometry",
+        "median",
+        "speed"
+      ],
+      "question_slots": 7,
+      "requires_figure": true
+    },
+    {
+      "exercise": 3,
+      "points": 18,
+      "descriptor": "QCM: proportionality, transformations, percentage, area, algebra and pyramid volume",
+      "skill_hints": [
+        "proportionality",
+        "transformations",
+        "percentage",
+        "triangle_area",
+        "expand_expression",
+        "pyramid_volume"
+      ],
+      "question_slots": 6,
+      "requires_figure": true
+    },
+    {
+      "exercise": 4,
+      "points": 20,
+      "descriptor": "calculation programs, literal algebra, equation and Scratch",
+      "skill_hints": [
+        "calculation_program",
+        "algebraic_expression",
+        "equation",
+        "scratch"
+      ],
+      "question_slots": 6,
+      "requires_figure": true
+    },
+    {
+      "exercise": 5,
+      "points": 19,
+      "descriptor": "purchase versus rental: arithmetic, spreadsheet, affine functions and graph reading",
+      "skill_hints": [
+        "arithmetic",
+        "spreadsheet",
+        "affine_function",
+        "graph_reading"
+      ],
+      "question_slots": 5,
+      "requires_figure": true
+    }
+  ]
+}

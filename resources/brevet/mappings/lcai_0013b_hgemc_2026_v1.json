@@ -1,0 +1,49 @@
+{
+  "ticket": "LCAI-0013B",
+  "records": [
+    {
+      "exam_id": "DNB-2026-METROPOLE-HGEMC-GEN",
+      "year": 2026,
+      "zone": "METROPOLE_REUNION_MAYOTTE",
+      "subject": "HISTORY_GEOGRAPHY_EMC",
+      "series": "GENERAL",
+      "source_type": "OFFICIAL_EXAM",
+      "components": [
+        {
+          "component": "DOCUMENT_ANALYSIS",
+          "points": 15,
+          "discipline": "HISTORY",
+          "topic": "European project after 1945",
+          "skill_hints": [
+            "document_analysis",
+            "historical_context",
+            "extract_information",
+            "argument_from_sources"
+          ],
+          "requires_documents": true,
+          "source_url": "https://www.education.gouv.fr/sites/default/files/document/diplome-national-du-brevet-2026-histoire-geographie-enseignement-moral-et-civique-serie-generale_3.pdf"
+        },
+        {
+          "component": "REASONING_AND_LANDMARKS",
+          "points": 25,
+          "skill_hints": [
+            "constructed_response",
+            "chronology",
+            "historical_landmarks",
+            "geographical_landmarks"
+          ],
+          "requires_annex": true
+        },
+        {
+          "component": "EMC",
+          "skill_hints": [
+            "civic_reasoning",
+            "values_of_republic",
+            "document_analysis"
+          ],
+          "requires_documents": true
+        }
+      ]
+    }
+  ]
+}

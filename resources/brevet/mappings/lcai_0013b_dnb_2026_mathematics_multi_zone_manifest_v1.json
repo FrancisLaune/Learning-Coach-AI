@@ -1,0 +1,59 @@
+{
+  "ticket": "LCAI-0013B",
+  "artifact": "DNB_2026_MATHEMATICS_MULTI_ZONE_BLOCK_V1",
+  "generated_at": "2026-07-26T13:00:38.814948+00:00",
+  "status": "PREPARATION_NO_DATABASE_CHANGE",
+  "official_index": "https://www.education.gouv.fr/brevet-bac-et-cap-les-sujets-des-examens-2026-504911",
+  "format": {
+    "duration_minutes": 120,
+    "coefficient": 2,
+    "automatismes": {
+      "minutes": 20,
+      "points": 6,
+      "calculator": false
+    },
+    "reasoning": {
+      "minutes": 100,
+      "points": 14,
+      "calculator": true
+    }
+  },
+  "papers": [
+    {
+      "exam_id": "DNB-2026-ANTILLES_GUYANE-MATH-GEN",
+      "reference": "26GENMATAG1",
+      "zone": "ANTILLES_GUYANE",
+      "source_url": "https://www.education.gouv.fr/sites/default/files/document/diplome-national-du-brevet-2026-mathematiques-serie-generale-518657.pdf"
+    },
+    {
+      "exam_id": "DNB-2026-AMERIQUE_DU_NORD-MATH-GEN",
+      "reference": "26GENMATAN1",
+      "zone": "AMERIQUE_DU_NORD",
+      "source_url": "https://www.education.gouv.fr/sites/default/files/document/diplome-national-du-brevet-2026-mathematiques-serie-generale-516986.pdf"
+    },
+    {
+      "exam_id": "DNB-2026-ASIA-MATH-GEN",
+      "reference": "26GENMATAA1",
+      "zone": "ASIA",
+      "source_url": "https://www.education.gouv.fr/sites/default/files/document/diplome-national-du-brevet-2026-mathematiques-serie-generale-517553.pdf"
+    },
+    {
+      "exam_id": "DNB-2026-CENTRES_ETRANGERS_GROUPE_1-MATH-GEN",
+      "reference": "26GENMATG11",
+      "zone": "CENTRES_ETRANGERS_GROUPE_1",
+      "source_url": "https://www.education.gouv.fr/sites/default/files/document/diplome-national-du-brevet-2026-mathematiques-serie-generale-518132.pdf"
+    }
+  ],
+  "counts": {
+    "papers": 4,
+    "automatism_items": 37,
+    "reasoning_exercises": 14,
+    "reasoning_question_slots": 70
+  },
+  "guardrails": [
+    "Descriptors and mappings are normalized metadata; full official paper text is not duplicated.",
+    "Figure-dependent questions are explicitly marked.",
+    "Exact LCAI-0011C Skill IDs are deferred until curriculum-resolution integration.",
+    "All mappings require review before production use."
+  ]
+}

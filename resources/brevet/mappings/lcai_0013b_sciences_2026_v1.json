@@ -1,0 +1,38 @@
+{
+  "ticket": "LCAI-0013B",
+  "records": [
+    {
+      "exam_id": "DNB-2026-METROPOLE-SCIENCES-GEN",
+      "year": 2026,
+      "zone": "METROPOLE_REUNION_MAYOTTE",
+      "subject": "SCIENCES",
+      "series": "GENERAL",
+      "source_type": "OFFICIAL_EXAM",
+      "duration_minutes": 60,
+      "coefficient": 2,
+      "components": [
+        {
+          "component": "DISCIPLINE_1",
+          "skill_hints": [
+            "scientific_document_analysis",
+            "reasoning",
+            "calculation",
+            "units"
+          ],
+          "requires_documents": true
+        },
+        {
+          "component": "DISCIPLINE_2",
+          "skill_hints": [
+            "scientific_document_analysis",
+            "reasoning",
+            "experimental_interpretation"
+          ],
+          "requires_documents": true
+        }
+      ],
+      "source_url": "https://www.education.gouv.fr/sites/default/files/document/diplome-national-du-brevet-2026-sciences-serie-generale-518603.pdf",
+      "format_note": "Two science disciplines are answered on the same script."
+    }
+  ]
+}

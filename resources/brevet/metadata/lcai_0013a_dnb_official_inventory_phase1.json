@@ -1,0 +1,239 @@
+{
+  "ticket": "LCAI-0013A",
+  "title": "DNB Official Exam Library - Phase 1 Inventory",
+  "status": "in_progress",
+  "generated_at": "2026-07-26T11:21:14.890922+00:00",
+  "scope": {
+    "series": "general",
+    "target_years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "priority_years": [
+      2026,
+      2025,
+      2024,
+      2023,
+      2022,
+      2021,
+      2020,
+      2019,
+      2018
+    ],
+    "subjects": [
+      "FRENCH",
+      "MATHEMATICS",
+      "HISTORY_GEOGRAPHY_EMC",
+      "SCIENCES"
+    ],
+    "zones_priority": [
+      "METROPOLE_REUNION_MAYOTTE",
+      "AMERIQUE_DU_NORD",
+      "ASIE",
+      "CENTRES_ETRANGERS_GROUPE_1",
+      "ANTILLES_GUYANE"
+    ]
+  },
+  "format_versions": [
+    {
+      "code": "DNB_PRE_2026",
+      "years": "2018-2025",
+      "note": "Historical archive format; must not be treated as identical to the 2026 format."
+    },
+    {
+      "code": "DNB_2026",
+      "years": "2026",
+      "note": "Maths includes 20-minute no-calculator automatismes then 1h40 reasoning/problem solving."
+    },
+    {
+      "code": "DNB_2027_PLUS",
+      "years": "2027+",
+      "note": "Written subjects are based on the class of 3e programmes; historical annals remain training material but require compatibility tagging."
+    }
+  ],
+  "official_sources": [
+    {
+      "source_code": "MEN_2026_EXAMS",
+      "type": "official_exam_index",
+      "title": "Brevet, Bac et CAP : les sujets des examens 2026",
+      "url": "https://www.education.gouv.fr/brevet-bac-et-cap-les-sujets-des-examens-2026-504911",
+      "authority": "Ministère de l'Éducation nationale"
+    },
+    {
+      "source_code": "EDUSCOL_DNB_ANNALS",
+      "type": "official_annals_index",
+      "title": "Préparer le diplôme national du brevet (DNB) avec les sujets des annales",
+      "url": "https://eduscol.education.fr/5202/preparer-le-diplome-national-du-brevet-dnb-avec-les-sujets-des-annales",
+      "authority": "Éduscol",
+      "coverage_note": "Official annals are offered from session 2018."
+    },
+    {
+      "source_code": "EDUSCOL_DNB_RULES",
+      "type": "official_exam_rules",
+      "title": "Les épreuves du DNB",
+      "url": "https://eduscol.education.fr/5607/les-epreuves-du-dnb",
+      "authority": "Éduscol"
+    }
+  ],
+  "official_2026_metropole": [
+    {
+      "exam_id": "DNB-2026-ME-MATH-GEN",
+      "year": 2026,
+      "zone": "METROPOLE_REUNION_MAYOTTE",
+      "series": "GENERAL",
+      "subject": "MATHEMATICS",
+      "source_type": "OFFICIAL_EXAM",
+      "reference": "26GENMATME1",
+      "duration_minutes": 120,
+      "coefficient": 2,
+      "format_version": "DNB_2026",
+      "structure": [
+        {
+          "part": "AUTOMATISMES",
+          "minutes": 20,
+          "calculator": false,
+          "points": 6
+        },
+        {
+          "part": "REASONING_PROBLEM_SOLVING",
+          "minutes": 100,
+          "calculator": true,
+          "points": 14
+        }
+      ],
+      "url": "https://www.education.gouv.fr/sites/default/files/document/diplome-national-du-brevet-2026-sciences-serie-generale-518633.pdf",
+      "source_label_warning": "The ministry index labels this link Sciences, but the PDF itself is Mathematics 26GENMATME1."
+    },
+    {
+      "exam_id": "DNB-2026-ME-FR-QG-GEN",
+      "year": 2026,
+      "zone": "METROPOLE_REUNION_MAYOTTE",
+      "series": "GENERAL",
+      "subject": "FRENCH",
+      "component": "GRAMMAR_COMPREHENSION_INTERPRETATION",
+      "source_type": "OFFICIAL_EXAM",
+      "reference": "26GENFRQGCME1",
+      "duration_minutes": 70,
+      "points": 50,
+      "coefficient": 2,
+      "format_version": "DNB_2026",
+      "url": "https://www.education.gouv.fr/sites/default/files/document/diplome-national-du-brevet-2026-francais-grammaire-et-competences-linguistiques-comprehension-et_3.pdf"
+    },
+    {
+      "exam_id": "DNB-2026-ME-HGEMC-GEN",
+      "year": 2026,
+      "zone": "METROPOLE_REUNION_MAYOTTE",
+      "series": "GENERAL",
+      "subject": "HISTORY_GEOGRAPHY_EMC",
+      "source_type": "OFFICIAL_EXAM",
+      "reference": "26GENHGEMCME1",
+      "duration_minutes": 120,
+      "coefficient": 2,
+      "format_version": "DNB_2026",
+      "structure": [
+        {
+          "part": "HISTORY_GEOGRAPHY",
+          "points": 40,
+          "coefficient": 1.5
+        },
+        {
+          "part": "EMC",
+          "points": 20,
+          "coefficient": 0.5
+        }
+      ],
+      "url": "https://www.education.gouv.fr/sites/default/files/document/diplome-national-du-brevet-2026-histoire-geographie-enseignement-moral-et-civique-serie-generale_2.pdf"
+    },
+    {
+      "exam_id": "DNB-2026-ME-SCI-GEN",
+      "year": 2026,
+      "zone": "METROPOLE_REUNION_MAYOTTE",
+      "series": "GENERAL",
+      "subject": "SCIENCES",
+      "source_type": "OFFICIAL_EXAM",
+      "reference": "26GENSCMEAG1",
+      "duration_minutes": 60,
+      "coefficient": 2,
+      "format_version": "DNB_2026",
+      "discipline_count": 2,
+      "url": "https://www.education.gouv.fr/sites/default/files/document/diplome-national-du-brevet-2026-sciences-serie-generale-518603.pdf"
+    }
+  ],
+  "official_mock_2026": [
+    {
+      "exam_id": "DNB-ZERO-MATH-GEN-A",
+      "source_type": "OFFICIAL_ZERO_SUBJECT",
+      "subject": "MATHEMATICS",
+      "series": "GENERAL",
+      "variant": "A",
+      "format_version": "DNB_2026",
+      "url": "https://eduscol.education.gouv.fr/sites/default/files/document/sujet-zero-dnb-serie-generale-mathematiquespdf-123317.pdf"
+    },
+    {
+      "exam_id": "DNB-ZERO-MATH-GEN-B",
+      "source_type": "OFFICIAL_ZERO_SUBJECT",
+      "subject": "MATHEMATICS",
+      "series": "GENERAL",
+      "variant": "B",
+      "format_version": "DNB_2026",
+      "url": "https://eduscol.education.gouv.fr/sites/default/files/document/sujet-zero-dnb-serie-generale-b-mathematiquespdf-123314.pdf"
+    }
+  ],
+  "historical_discovery": {
+    "official_eduscol_available_from": 2018,
+    "years_2018_2025": "TO_INDEX",
+    "years_2016_2017": "REQUIRES_COMPLEMENTARY_RELIABLE_ARCHIVE",
+    "rule": "Do not present a non-official third-party archive as an official ministry source."
+  },
+  "normalization_model": {
+    "exam": [
+      "exam_id",
+      "year",
+      "session",
+      "zone",
+      "series",
+      "subject",
+      "source_type",
+      "format_version",
+      "source_url"
+    ],
+    "component": [
+      "component_code",
+      "title",
+      "duration_minutes",
+      "points",
+      "calculator_policy"
+    ],
+    "exercise": [
+      "exercise_number",
+      "title",
+      "points",
+      "document_refs"
+    ],
+    "question": [
+      "question_number",
+      "prompt_ref",
+      "points",
+      "expected_response_type",
+      "skill_codes",
+      "difficulty",
+      "estimated_minutes"
+    ],
+    "mapping": [
+      "chapter_code",
+      "primary_skill_code",
+      "secondary_skill_codes",
+      "mapping_confidence",
+      "mapping_review_status"
+    ]
+  }
+}
