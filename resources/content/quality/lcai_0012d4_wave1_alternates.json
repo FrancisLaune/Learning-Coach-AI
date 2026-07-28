@@ -1,110 +1,29 @@
 {
-  "SK-ENR-HISTORY-4E-18TH-SOURCE": [
+  "SK-ENR-SVT-4E-EARTH-RISK": [
     {
-      "content_id": 108816,
-      "version_id": 108818,
+      "content_id": 109152,
+      "version_id": 109154,
       "author": "gpt-5-mini",
-      "code": "DRAFT-0012C-AI-ENR-HISTORY-4E-18TH-SOURCE-PRACTICE-20260726111155-1",
+      "code": "DRAFT-0012C-AI-ENR-SVT-4E-EARTH-RISK-PRACTICE-20260726111427-1",
       "grade": "FR-4E",
-      "subject": "HISTORY",
-      "chapter": "CH-HISTORY-4E-18TH",
-      "skill": "SK-ENR-HISTORY-4E-18TH-SOURCE",
-      "skill_name": "SK-ENR-HISTORY-4E-18TH-SOURCE",
+      "subject": "SVT",
+      "chapter": "CH-SVT-4E-EARTH",
+      "skill": "SK-ENR-SVT-4E-EARTH-RISK",
+      "skill_name": "SK-ENR-SVT-4E-EARTH-RISK",
       "content_type": "practice",
       "missing_slot": "practice",
       "difficulty": 2,
-      "question": "Document de classe synthétique (extrait). Ce texte a été créé par l'enseignant pour l'exercice et n'est pas une citation authentique.\n\n\"Bordeaux, le 12 juin 1765.\nJe vois chaque jour arriver des navires chargés de sucre et de café ; le port est plein d'hommes d'affaires qui comptent leurs profits. De nombreux propriétaires font des fortunes immenses grâce aux comptoirs et aux plantations. Mais je ne puis fermer les yeux : ces richesses reposent sur le travail forcé d'hommes arrachés à leurs terres. Les lois qui régissent ces colonies semblent permettre l'injustice au nom du commerce. Les philosophes parlent de droits naturels — comment ces idées pourront‑elles s'accorder avec de telles pratiques ?\"\n\nConsignes :\n1) Indiquez le type et la nature de la source (quel type de document, qui parle ?).\n2) Donnez la datation fournie.\n3) Expliquez en une phrase la position (point de vue) de l'auteur.\n4) Indiquez en une phrase l'intention principale de l'auteur.\n5) Donnez deux informations historiques précises que l'on peut tirer du texte concernant les expansions du XVIIIe siècle.\n6) Donnez une limite majeure de ce document comme source historique pour étudier le XVIIIe siècle.",
-      "choices": [],
-      "expected_answer": "1) Type/nature : lettre privée (extrait d'une lettre d'un négociant, témoignage de témoin contemporain du commerce colonial).\n2) Datation : 1765.\n3) Position de l'auteur : point de vue ambivalent — il reconnaît et décrit l'enrichissement lié au commerce colonial mais critique moralement le recours au travail forcé/à l'esclavage.\n4) Intention : informer et alerter sur les effets du commerce colonial ; exprimer une critique morale des pratiques coloniales (sensibiliser le destinataire aux injustices liées au commerce d'esclaves).\n5) Deux informations historiques : (a) il existe un commerce actif de produits coloniaux (sucre, café) qui enrichit certains négociants et propriétaires ; (b) ce commerce repose sur le travail forcé/esclavage dans les colonies (présence d'hommes « arrachés à leurs terres » et de plantations).\n6) Limite majeure : source partielle et potentiellement biaisée (point de vue personnel d'un négociant — portée locale et subjectivité ; absence de données chiffrées et d'information sur d'autres acteurs), donc non représentative seule pour généraliser.",
-      "answer_kind": "structured",
-      "explanation": "Correction et critères d'évaluation accessibles au professeur :\n- Pour la question 1, accepter « lettre », « courrier privé », « témoignage d'un négociant » ; refuser si l'élève présente le texte comme un texte officiel (ex. décret). La précision « négociant » ou « témoin lié au commerce » est attendue.\n- Pour la question 2, la date doit être citée (1765). Une fourchette proche n'est pas nécessaire ici car la date est donnée dans le document.\n- Pour la question 3, l'élève doit repérer l'ambivalence : reconnaissance économique + critique morale du travail forcé. Une formulation équivalente (« constate l'enrichissement mais dénonce l'esclavage ») est correcte.\n- Pour la question 4, l'intention principale retenue doit relever du témoignage et de la critique (informer/alerter / dénoncer l'injustice du système colonial), pas d'une simple description neutre.\n- Pour la question 5, les deux informations peuvent être formulées autrement mais doivent mentionner (i) l'existence d'un commerce colonial lucratif (sucre, café) et (ii) le recours au travail forcé / esclavage comme base de ce système.\n- Pour la question 6, l'élève doit citer une limite de nature historiographique : subjectivité, portée locale, absence de statistiques, possible intérêt personnel du négociant, ou visée rhétorique. Exemples d'erreurs : présenter la lettre comme une preuve absolue de pratiques générales sans critique.\nÉvaluation : chaque item vaut une partie égale ; pour être considéré entièrement juste, la réponse doit inclure les éléments-clés indiqués ci‑dessus. Des réponses synonymes ou légèrement reformulées sont acceptables si elles conservent le sens historique attendu.",
-      "automated_checks": {
-        "structural_validity": true,
-        "answer_correctness": true,
-        "skill_alignment": true,
-        "grade_appropriateness": false,
-        "executability": true,
-        "duplicate_safety": true
-      },
-      "deterministic_verification": null,
-      "quality_result": "REVIEW",
-      "quality_reason": [
-        "Independent pedagogical review is still required."
-      ],
-      "candidate_score": 53,
-      "hard_gates_passed": true,
-      "missing_coverage": true,
-      "recommended_decision": "KEEP_FOR_REVIEW",
-      "pipeline_version": "lcai-0012d4-wave1-v1",
-      "original_lcai_0012d_decision": "REVIEW",
-      "d4_wave1_selected": false
-    }
-  ],
-  "SK-ENR-SVT-3E-HEALTH-VACCINATION": [
-    {
-      "content_id": 108428,
-      "version_id": 108430,
-      "author": "gpt-5-mini",
-      "code": "DRAFT-0012C-AI-ENR-SVT-3E-HEALTH-VACCINATION-ASSESSMENT-20260726110830-1",
-      "grade": "FR-3E",
-      "subject": "SVT",
-      "chapter": "CH-SVT-3E-HEALTH",
-      "skill": "SK-ENR-SVT-3E-HEALTH-VACCINATION",
-      "skill_name": "SK-ENR-SVT-3E-HEALTH-VACCINATION",
-      "content_type": "assessment",
-      "missing_slot": "assessment",
-      "difficulty": 2,
-      "question": "Dans une classe, le professeur propose quatre affirmations sur la vaccination. Laquelle explique le mieux comment un vaccin protège l'organisme ?",
+      "question": "Document synthétique (classe) :\n- Un séisme de magnitude 6,5 a son épicentre à 30 km au large d’une commune côtière (aléa sismique et risque de tsunami modéré). Des répliques sont probables.\n- Ville C : 15 000 habitants. Types de bâtiments : 40 % maisons anciennes en maçonnerie non armée, 50 % bâtiments en béton armé, 10 % maisons en bois.\n- Infrastructures : un hôpital se trouve sur une colline à l’arrière-ville ; une école se situe dans la zone basse, à 2 km du littoral. Il existe deux routes d’évacuation : l’une longe la côte (zone de falaises instables), l’autre va vers l’intérieur en traversant un col étroit.\n- Mesures déjà en place : une sirène d’alerte locale est installée près de la mairie.\n\nTâches :\n1) Pour chaque élément ci‑dessous, indiquez s’il s’agit d’un « aléa », d’une « vulnérabilité » ou d’une « mesure de prévention ». Donnez un mot-clé (« aléa », « vulnérabilité » ou « prévention ») pour chacun.\n   a) Épicentre à 30 km en mer, séisme M6,5\n   b) Anciennes maisons en maçonnerie non armée\n   c) Hôpital situé sur la colline\n   d) Route d’évacuation le long de la côte, exposée aux glissements\n   e) Sirène d’alerte installée près de la mairie\n\n2) Parmi les actions suivantes, choisissez les DEUX mesures de prévention prioritaires à mettre en œuvre pour réduire le risque dans cette commune, puis justifiez brièvement (1–2 phrases) votre choix en reliant explicitement l’aléa aux vulnérabilités qu’elles réduisent.\n   Options :\n   A) Renforcer les maisons anciennes en maçonnerie (travaux structurels)\n   B) Construire des abris et points de rassemblement sur la colline\n   C) Renforcer et diversifier les routes d’évacuation vers l’intérieur (création d’itinéraires sûrs)\n   D) Installer et relier le système d’alerte local à un système d’alerte tsunami régional (améliorer l’alerte)\n   E) Mettre en place des exercices annuels d’évacuation et de sensibilisation pour toute la population",
       "choices": [
-        "On injecte au corps un élément du microbe (ou une forme inoffensive du microbe) appelé antigène; le système immunitaire fabrique des cellules mémoire spécifiques; ainsi, lors d'une infection ultérieure, la réaction est plus rapide et la maladie est évitée ou atténuée.",
-        "Le vaccin contient de petites quantités du microbe entier qui provoquent volontairement la maladie légère; après guérison, l'organisme est protégé.",
-        "Le vaccin renforce indifféremment tout le système immunitaire pour le rendre plus fort contre toutes les maladies, même non liées au microbe ciblé.",
-        "Les vaccins tuent les microbes dans l'organisme au moment de l'injection, ce qui empêche l'apparition de la maladie."
+        "A) Renforcer les maisons anciennes en maçonnerie (travaux structurels)",
+        "B) Construire des abris et points de rassemblement sur la colline",
+        "C) Renforcer et diversifier les routes d’évacuation vers l’intérieur (création d’itinéraires sûrs)",
+        "D) Installer et relier le système d’alerte local à un système d’alerte tsunami régional (améliorer l’alerte)",
+        "E) Mettre en place des exercices annuels d’évacuation et de sensibilisation pour toute la population"
       ],
-      "expected_answer": "On injecte au corps un élément du microbe (ou une forme inoffensive du microbe) appelé antigène; le système immunitaire fabrique des cellules mémoire spécifiques; ainsi, lors d'une infection ultérieure, la réaction est plus rapide et la maladie est évitée ou atténuée.",
-      "answer_kind": "single_choice",
-      "explanation": "Explication du choix correct : Un vaccin présente au système immunitaire un antigène (une partie du microbe ou une forme atténuée/inactivée du microbe) sans provoquer la maladie grave. Le système immunitaire reconnaît cet antigène et produit des cellules mémoires spécifiques (lymphocytes mémoire). Si la personne rencontre plus tard le vrai microbe, ces cellules mémoire déclenchent rapidement une réponse ciblée qui empêche ou atténue la maladie. Pourquoi les autres réponses sont incorrectes :\n- Option 2 : certains vaccins atténués peuvent, chez des personnes très particulières, provoquer des symptômes légers, mais dire que l'objectif est de « provoquer volontairement la maladie » est trompeur et ne décrit pas le principe général (on n'infecte pas intentionnellement pour rendre malade).\n- Option 3 : la vaccination entraîne une réponse spécifique contre l'antigène présenté; elle n'« améliore » pas indistinctement toutes les défenses contre toutes les maladies.\n- Option 4 : les vaccins ne tuent pas directement des microbes dans l'organisme au moment de l'injection (ce rôle revient aux antibiotiques ou au système immunitaire lors d'une infection); le vaccin prépare le système immunitaire pour une réponse future.",
-      "automated_checks": {
-        "structural_validity": true,
-        "answer_correctness": true,
-        "skill_alignment": true,
-        "grade_appropriateness": false,
-        "executability": true,
-        "duplicate_safety": true
-      },
-      "deterministic_verification": null,
-      "quality_result": "REVIEW",
-      "quality_reason": [
-        "Independent pedagogical review is still required."
-      ],
-      "candidate_score": 58,
-      "hard_gates_passed": true,
-      "missing_coverage": true,
-      "recommended_decision": "KEEP_FOR_REVIEW",
-      "pipeline_version": "lcai-0012d4-wave1-v1",
-      "original_lcai_0012d_decision": "REVIEW",
-      "d4_wave1_selected": false
-    }
-  ],
-  "SK-ENR-SVT-4E-GENETICS-VARIATION": [
-    {
-      "content_id": 109196,
-      "version_id": 109198,
-      "author": "gpt-5-mini",
-      "code": "DRAFT-0012C-AI-ENR-SVT-4E-GENETICS-VARIATION-PRACTICE-20260726111444-1",
-      "grade": "FR-4E",
-      "subject": "SVT",
-      "chapter": "CH-SVT-4E-GENETICS",
-      "skill": "SK-ENR-SVT-4E-GENETICS-VARIATION",
-      "skill_name": "SK-ENR-SVT-4E-GENETICS-VARIATION",
-      "content_type": "practice",
-      "missing_slot": "practice",
-      "difficulty": 2,
-      "question": "Document synthétique de classe — Observation :\n• Deux plants de haricot ont été semés le même jour à partir du même paquet de graines (même variété) et dans des pots identiques.\n• Plant A : a été placé à la fenêtre, arrosé régulièrement, il mesure 24 cm, a de nombreuses feuilles et commence à fleurir.\n• Plant B : est resté 10 jours dans un placard sombre puis placé à la fenêtre, a été peu arrosé pendant ces 10 jours ; il mesure 9 cm, a des feuilles pâles et ne fleurit pas.\n\nTâche (répondre en français) :\n1) Indiquer l’origine la plus probable de la variation individuelle observée entre A et B (génétique, environnementale ou mixte).\n2) Donner deux éléments précis du document qui justifient votre réponse.\n3) Proposer une expérience simple et contrôlée (en une phrase) permettant de vérifier que la cause identifiée est bien responsable de la différence observée.\n\nConsignes d’évaluation : vos réponses seront évaluées sur la pertinence de l’origine choisie, la précision des éléments de justification cités et la faisabilité/contrôle de l’expérience proposée.",
-      "choices": [],
-      "expected_answer": "1) Cause : variation d'origine environnementale.\n2) Justifications (au moins deux éléments) : a) les deux plants proviennent du même paquet de graines et ont été semés le même jour (même origine génétique présumée) ; b) les conditions de lumière et d'arrosage diffèrent nettement (A placé à la fenêtre et bien arrosé ; B resté 10 jours dans le placard sombre et peu arrosé). Ces éléments montrent que ce sont les conditions de milieu qui expliquent la différence.\n3) Expérience proposée : semer plusieurs graines du même paquet en deux groupes identiques (même terre, mêmes pots), exposer un groupe à la lumière et un autre à l'obscurité/pauvre arrosage pendant 10 jours, puis comparer la croissance (taille, couleur des feuilles, floraison) — on s'attend à reproduire la différence si l'origine est environnementale.",
+      "expected_answer": "1) a) aléa ; b) vulnérabilité ; c) vulnérabilité ; d) vulnérabilité ; e) prévention\n2) Mesures prioritaires : C) Renforcer et diversifier les routes d’évacuation vers l’intérieur (création d’itinéraires sûrs) ; D) Installer et relier le système d’alerte local à un système d’alerte tsunami régional (améliorer l’alerte).",
       "answer_kind": "structured",
-      "explanation": "Réponse attendue et correction détaillée :\n1) Origine environnementale : Les différences observées (taille, couleur, floraison) sont typiques d'un effet du milieu (lumière et eau) sur la croissance des plantes.\n2) Justifications :\n   - Même origine génétique présumée : le fait que les deux plants viennent du même paquet de graines semées le même jour minimise l'hypothèse d'une différence génétique importante. (Remarque pédagogique : un paquet peut contenir une légère variabilité génétique, mais pour cet exercice le document indique « même variété » et même date de semis, ce qui oriente vers l'environnement.)\n   - Différence de conditions : Plant B a subi 10 jours sans lumière suffisante et peu d'eau, ce qui explique sa faible taille, la pâleur des feuilles (manque de chlorophylle lié au manque de lumière) et l'absence de floraison.\n3) Expérience de vérification : proposer un protocole simple et contrôlé est essentiel (groupes témoins, variables maintenues identiques sauf la variable testée). Un protocole acceptable : utiliser plusieurs graines du même paquet, répartir en deux groupes, garder identiques la terre, la température et la taille des pots ; n'agir que sur la lumière et/ou l'arrosage pendant 10 jours, puis mesurer et comparer la taille, la couleur des feuilles et la présence de fleurs. Si le groupe soumis au manque de lumière/pauvre arrosage présente les mêmes symptômes que le plant B, cela confirme l'origine environnementale.\nBarème implicite : indiquer correctement l'origine (environnementale) = point principal ; citer les deux éléments du document = 1 point; proposer une expérience contrôlée et cohérente = 1 point.\nNotes pédagogiques : Cet item est de difficulté D2 car l'élève doit choisir une hypothèse parmi plusieurs (génétique vs environnementale) et justifier ce choix en sélectionnant des indices pertinents dans le document, puis proposer un test expérimental simple.",
+      "explanation": "Réponses attendues et justification pédagogique :\n1) Classification :\n   a) Épicentre à 30 km en mer, séisme M6,5 → aléa (événement naturel dangereux susceptible de produire tremblements et tsunamis).\n   b) Anciennes maisons en maçonnerie non armée → vulnérabilité (car elles risquent de s’effondrer et d’augmenter le nombre de victimes).\n   c) Hôpital situé sur la colline → vulnérabilité (position d’un équipement critique : ici la colline réduit la vulnérabilité de l’hôpital face au tsunami, mais la présence même d’un équipement critique est un facteur de vulnérabilité si son accès ou son fonctionnement peut être perdu ; on classe donc l’emplacement/contrainte comme élément influençant la vulnérabilité globale).\n   d) Route d’évacuation le long de la côte, exposée aux glissements → vulnérabilité (voie d’évacuation susceptible d’être coupée, ce qui augmente le risque pour la population).\n   e) Sirène d’alerte installée près de la mairie → prévention (mesure non-structurelle qui permet d’alerter et d’organiser l’évacuation).\n\n2) Choix des deux mesures prioritaires (attendu : C et D) et justification courte :\n   - D (alerte tsunami améliorée) : l’aléa principal est un séisme offshore pouvant provoquer un tsunami ; améliorer l’alerte permet d’avertir la population plus rapidement et de déclencher l’évacuation avant l’arrivée d’une vague, ce qui réduit fortement le nombre de victimes immédiates. L’alerte s’attaque directement à la temporalité de l’aléa (prévenir avant l’impact).\n   - C (renforcer/diversifier routes d’évacuation) : la vulnérabilité majeure identifiée est l’unique route côtière exposée aux glissements ; si elle est coupée, l’évacuation devient impossible. Créer ou sécuriser des itinéraires vers l’intérieur réduit cette vulnérabilité et assure l’évacuation même en cas de dommages locaux.\n\nRemarque pédagogique : l’option A (renforcement des maisons) est également importante — elle réduit la vulnérabilité des bâtiments — mais c’est une mesure structurelle longue à mettre en place. En situation de risque de tsunami imminent, les priorités opérationnelles portent sur l’alerte et l’évacuation sécurisée ; à moyen et long terme, on combine ces mesures (A + maintenance des itinéraires + sensibilisation).\n\nCritères de réussite (comment l’élève est évalué) :\n- Pour la tâche 1 : chaque élément correctement classé (3 pts par item, total 15 pts). L’élève doit montrer qu’il distingue aléa (événement), vulnérabilité (élément susceptible d’aggraver les conséquences) et prévention (mesure réduisant le risque).\n- Pour la tâche 2 : choix des deux options exactes (6 pts) et justification claire (4 pts) qui lie explicitement un aléa identifié à une vulnérabilité réduite par la mesure choisie. Une bonne justification évoque la manière dont la mesure réduit la probabilité de victimes ou les dommages (par ex. réduction du temps d’exposition, maintien des itinéraires, protection des structures vitales).\n\nRemarque sur erreurs fréquentes ciblées : confondre « aléa » et « vulnérabilité » (par ex. dire que les anciennes maisons sont un aléa) ; penser qu’une sirène n’est pas une prévention si elle existe déjà (il faut comprendre qu’elle est une mesure de prévention/alerte).",
       "automated_checks": {
         "structural_validity": true,
         "answer_correctness": true,
@@ -187,6 +106,380 @@
       "expected_answer": "Critères observables de réussite (à inclure dans la réponse) :\n- Trois formes d'inégalités distinctes identifiées (ex. sociale, spatiale, environnementale, d'accès aux services).\n- Pour chaque forme : un élément précis du document cité comme preuve (ex. « absence d'eau potable dans le quartier C » ou « prix du m² élevé dans le quartier A »).\n- Pour chaque forme : deux causes plausibles et cohérentes avec le document (ex. manque d'investissement public, urbanisation rapide, marché immobilier, proximité d'activités polluantes).\n- Pour chaque forme : une conséquence clairement liée aux preuves et causes (ex. problèmes de santé, mobilité réduite, ségrégation scolaire, précarité économique).\n- Pour chaque forme : une mesure publique réaliste et adaptée (ex. extension du réseau d'eau, création de lignes de transport, régulation du foncier, dépollution, politique de mixité sociale), expliquée en une phrase et reliée à la réduction de l'inégalité.\n- Cohérence interne : les liens preuve→cause→conséquence→mesure sont logiques et directement appuyés sur les éléments du document.\n- Clarté et organisation : trois paragraphes distincts, chaque paragraphe traitant une forme d'inégalité.\n\nBarème indicatif (non demandé à l'élève mais utile pour correction) :\n- Identification correcte des 3 formes : 3 points (1 par forme).\n- Preuve du document citée pour chaque forme : 3 points (1 par forme).\n- Deux causes plausibles pour chaque forme : 6 points (2 par forme).\n- Conséquence pertinente pour chaque forme : 3 points (1 par forme).\n- Mesure publique réaliste et cohérente pour chaque forme : 5 points (≈1,5–2 par forme selon précision).\n- Cohérence et organisation : 2 points.\nTotal : 22 points.",
       "answer_kind": "open_response",
       "explanation": "Explication pédagogique et exemples (utiles pour corriger et pour comprendre les attentes) :\n\nPourquoi cette tâche correspond au niveau 4e (difficulté D2) : l'élève doit choisir une méthode d'analyse (catégoriser les formes d'inégalités) et appliquer le raisonnement au document en reliant preuves, causes, conséquences et solutions. Ce n'est pas une simple reproduction de connaissances : il faut sélectionner et expliciter des liens causaux plausibles.\n\nExemples d'éléments attendus (à utiliser comme guide de correction, non comme réponse unique) :\n- Exemple pour l'inégalité d'accès aux services : preuve = « présence de services médicaux spécialisés dans le quartier A » vs « absence d'accès à l'eau potable dans le quartier C ». Causes plausibles = priorisation des investissements publics vers le centre ; inégalités de revenu qui attirent les services privés. Conséquence = habitants du quartier C souffrent de problèmes de santé et doivent se déplacer loin pour se soigner. Mesure = extension des infrastructures (réseau d'eau et centres de santé mobiles) financée par la mairie; accompagnée d'un plan de redistribution des équipements.\n\n- Exemple pour l'inégalité spatiale/sociale : preuve = « prix du m² élevé dans le quartier A » et « quartiers informels en périphérie ». Causes plausibles = marché immobilier spéculatif et faibles réglementations sur le foncier ; urbanisation rapide sans planification. Conséquence = ghettoïsation sociale, ségrégation des écoles et inégalités d'accès à l'emploi. Mesure = politiques de mixité sociale (quota de logements sociaux dans les rénovations) et régulation foncière pour limiter la spéculation.\n\n- Exemple pour l'inégalité environnementale : preuve = « quartier C proche d'une zone industrielle et pollution » ; « rues non goudronnées favorisant poussières et mauvaises conditions sanitaires ». Causes plausibles = implantation d'activités polluantes à moindre coût en périphérie ; faibles contrôles environnementaux. Conséquence = augmentation des maladies respiratoires, diminution de la qualité de vie. Mesure = contrôle des émissions industrielles, réaménagement des franges industrielles et programmes de dépollution, création d'équipements verts.\n\nConseils de correction :\n- Vérifier que l'élève cite explicitement au moins un élément du document pour chaque forme d'inégalité ; sans preuve, l'argument est insuffisant.\n- Accepter des causes et mesures plausibles même si elles ne sont pas exactement celles des exemples, tant qu'elles sont cohérentes avec le document.\n- Noter la capacité de l'élève à faire des liens logiques : preuve → cause → conséquence → mesure.\n\nRemarque sur les sources : le document est indiqué comme document synthétique de classe ; les observations viennent du texte fourni et ne prétendent pas être des données réelles.",
+      "automated_checks": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "deterministic_verification": null,
+      "quality_result": "REVIEW",
+      "quality_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "candidate_score": 53,
+      "hard_gates_passed": true,
+      "missing_coverage": true,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "pipeline_version": "lcai-0012d4-wave1-v1",
+      "original_lcai_0012d_decision": "REVIEW",
+      "d4_wave1_selected": false
+    }
+  ],
+  "SK-ENR-SVT-3E-HEALTH-VACCINATION": [
+    {
+      "content_id": 108428,
+      "version_id": 108430,
+      "author": "gpt-5-mini",
+      "code": "DRAFT-0012C-AI-ENR-SVT-3E-HEALTH-VACCINATION-ASSESSMENT-20260726110830-1",
+      "grade": "FR-3E",
+      "subject": "SVT",
+      "chapter": "CH-SVT-3E-HEALTH",
+      "skill": "SK-ENR-SVT-3E-HEALTH-VACCINATION",
+      "skill_name": "SK-ENR-SVT-3E-HEALTH-VACCINATION",
+      "content_type": "assessment",
+      "missing_slot": "assessment",
+      "difficulty": 2,
+      "question": "Dans une classe, le professeur propose quatre affirmations sur la vaccination. Laquelle explique le mieux comment un vaccin protège l'organisme ?",
+      "choices": [
+        "On injecte au corps un élément du microbe (ou une forme inoffensive du microbe) appelé antigène; le système immunitaire fabrique des cellules mémoire spécifiques; ainsi, lors d'une infection ultérieure, la réaction est plus rapide et la maladie est évitée ou atténuée.",
+        "Le vaccin contient de petites quantités du microbe entier qui provoquent volontairement la maladie légère; après guérison, l'organisme est protégé.",
+        "Le vaccin renforce indifféremment tout le système immunitaire pour le rendre plus fort contre toutes les maladies, même non liées au microbe ciblé.",
+        "Les vaccins tuent les microbes dans l'organisme au moment de l'injection, ce qui empêche l'apparition de la maladie."
+      ],
+      "expected_answer": "On injecte au corps un élément du microbe (ou une forme inoffensive du microbe) appelé antigène; le système immunitaire fabrique des cellules mémoire spécifiques; ainsi, lors d'une infection ultérieure, la réaction est plus rapide et la maladie est évitée ou atténuée.",
+      "answer_kind": "single_choice",
+      "explanation": "Explication du choix correct : Un vaccin présente au système immunitaire un antigène (une partie du microbe ou une forme atténuée/inactivée du microbe) sans provoquer la maladie grave. Le système immunitaire reconnaît cet antigène et produit des cellules mémoires spécifiques (lymphocytes mémoire). Si la personne rencontre plus tard le vrai microbe, ces cellules mémoire déclenchent rapidement une réponse ciblée qui empêche ou atténue la maladie. Pourquoi les autres réponses sont incorrectes :\n- Option 2 : certains vaccins atténués peuvent, chez des personnes très particulières, provoquer des symptômes légers, mais dire que l'objectif est de « provoquer volontairement la maladie » est trompeur et ne décrit pas le principe général (on n'infecte pas intentionnellement pour rendre malade).\n- Option 3 : la vaccination entraîne une réponse spécifique contre l'antigène présenté; elle n'« améliore » pas indistinctement toutes les défenses contre toutes les maladies.\n- Option 4 : les vaccins ne tuent pas directement des microbes dans l'organisme au moment de l'injection (ce rôle revient aux antibiotiques ou au système immunitaire lors d'une infection); le vaccin prépare le système immunitaire pour une réponse future.",
+      "automated_checks": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "deterministic_verification": null,
+      "quality_result": "REVIEW",
+      "quality_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "candidate_score": 58,
+      "hard_gates_passed": true,
+      "missing_coverage": true,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "pipeline_version": "lcai-0012d4-wave1-v1",
+      "original_lcai_0012d_decision": "REVIEW",
+      "d4_wave1_selected": false
+    }
+  ],
+  "SK-ENR-HISTORY-4E-18TH-SOURCE": [
+    {
+      "content_id": 108816,
+      "version_id": 108818,
+      "author": "gpt-5-mini",
+      "code": "DRAFT-0012C-AI-ENR-HISTORY-4E-18TH-SOURCE-PRACTICE-20260726111155-1",
+      "grade": "FR-4E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-4E-18TH",
+      "skill": "SK-ENR-HISTORY-4E-18TH-SOURCE",
+      "skill_name": "SK-ENR-HISTORY-4E-18TH-SOURCE",
+      "content_type": "practice",
+      "missing_slot": "practice",
+      "difficulty": 2,
+      "question": "Document de classe synthétique (extrait). Ce texte a été créé par l'enseignant pour l'exercice et n'est pas une citation authentique.\n\n\"Bordeaux, le 12 juin 1765.\nJe vois chaque jour arriver des navires chargés de sucre et de café ; le port est plein d'hommes d'affaires qui comptent leurs profits. De nombreux propriétaires font des fortunes immenses grâce aux comptoirs et aux plantations. Mais je ne puis fermer les yeux : ces richesses reposent sur le travail forcé d'hommes arrachés à leurs terres. Les lois qui régissent ces colonies semblent permettre l'injustice au nom du commerce. Les philosophes parlent de droits naturels — comment ces idées pourront‑elles s'accorder avec de telles pratiques ?\"\n\nConsignes :\n1) Indiquez le type et la nature de la source (quel type de document, qui parle ?).\n2) Donnez la datation fournie.\n3) Expliquez en une phrase la position (point de vue) de l'auteur.\n4) Indiquez en une phrase l'intention principale de l'auteur.\n5) Donnez deux informations historiques précises que l'on peut tirer du texte concernant les expansions du XVIIIe siècle.\n6) Donnez une limite majeure de ce document comme source historique pour étudier le XVIIIe siècle.",
+      "choices": [],
+      "expected_answer": "1) Type/nature : lettre privée (extrait d'une lettre d'un négociant, témoignage de témoin contemporain du commerce colonial).\n2) Datation : 1765.\n3) Position de l'auteur : point de vue ambivalent — il reconnaît et décrit l'enrichissement lié au commerce colonial mais critique moralement le recours au travail forcé/à l'esclavage.\n4) Intention : informer et alerter sur les effets du commerce colonial ; exprimer une critique morale des pratiques coloniales (sensibiliser le destinataire aux injustices liées au commerce d'esclaves).\n5) Deux informations historiques : (a) il existe un commerce actif de produits coloniaux (sucre, café) qui enrichit certains négociants et propriétaires ; (b) ce commerce repose sur le travail forcé/esclavage dans les colonies (présence d'hommes « arrachés à leurs terres » et de plantations).\n6) Limite majeure : source partielle et potentiellement biaisée (point de vue personnel d'un négociant — portée locale et subjectivité ; absence de données chiffrées et d'information sur d'autres acteurs), donc non représentative seule pour généraliser.",
+      "answer_kind": "structured",
+      "explanation": "Correction et critères d'évaluation accessibles au professeur :\n- Pour la question 1, accepter « lettre », « courrier privé », « témoignage d'un négociant » ; refuser si l'élève présente le texte comme un texte officiel (ex. décret). La précision « négociant » ou « témoin lié au commerce » est attendue.\n- Pour la question 2, la date doit être citée (1765). Une fourchette proche n'est pas nécessaire ici car la date est donnée dans le document.\n- Pour la question 3, l'élève doit repérer l'ambivalence : reconnaissance économique + critique morale du travail forcé. Une formulation équivalente (« constate l'enrichissement mais dénonce l'esclavage ») est correcte.\n- Pour la question 4, l'intention principale retenue doit relever du témoignage et de la critique (informer/alerter / dénoncer l'injustice du système colonial), pas d'une simple description neutre.\n- Pour la question 5, les deux informations peuvent être formulées autrement mais doivent mentionner (i) l'existence d'un commerce colonial lucratif (sucre, café) et (ii) le recours au travail forcé / esclavage comme base de ce système.\n- Pour la question 6, l'élève doit citer une limite de nature historiographique : subjectivité, portée locale, absence de statistiques, possible intérêt personnel du négociant, ou visée rhétorique. Exemples d'erreurs : présenter la lettre comme une preuve absolue de pratiques générales sans critique.\nÉvaluation : chaque item vaut une partie égale ; pour être considéré entièrement juste, la réponse doit inclure les éléments-clés indiqués ci‑dessus. Des réponses synonymes ou légèrement reformulées sont acceptables si elles conservent le sens historique attendu.",
+      "automated_checks": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "deterministic_verification": null,
+      "quality_result": "REVIEW",
+      "quality_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "candidate_score": 53,
+      "hard_gates_passed": true,
+      "missing_coverage": true,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "pipeline_version": "lcai-0012d4-wave1-v1",
+      "original_lcai_0012d_decision": "REVIEW",
+      "d4_wave1_selected": false
+    }
+  ],
+  "SK-ENR-SVT-4E-GENETICS-VARIATION": [
+    {
+      "content_id": 109196,
+      "version_id": 109198,
+      "author": "gpt-5-mini",
+      "code": "DRAFT-0012C-AI-ENR-SVT-4E-GENETICS-VARIATION-PRACTICE-20260726111444-1",
+      "grade": "FR-4E",
+      "subject": "SVT",
+      "chapter": "CH-SVT-4E-GENETICS",
+      "skill": "SK-ENR-SVT-4E-GENETICS-VARIATION",
+      "skill_name": "SK-ENR-SVT-4E-GENETICS-VARIATION",
+      "content_type": "practice",
+      "missing_slot": "practice",
+      "difficulty": 2,
+      "question": "Document synthétique de classe — Observation :\n• Deux plants de haricot ont été semés le même jour à partir du même paquet de graines (même variété) et dans des pots identiques.\n• Plant A : a été placé à la fenêtre, arrosé régulièrement, il mesure 24 cm, a de nombreuses feuilles et commence à fleurir.\n• Plant B : est resté 10 jours dans un placard sombre puis placé à la fenêtre, a été peu arrosé pendant ces 10 jours ; il mesure 9 cm, a des feuilles pâles et ne fleurit pas.\n\nTâche (répondre en français) :\n1) Indiquer l’origine la plus probable de la variation individuelle observée entre A et B (génétique, environnementale ou mixte).\n2) Donner deux éléments précis du document qui justifient votre réponse.\n3) Proposer une expérience simple et contrôlée (en une phrase) permettant de vérifier que la cause identifiée est bien responsable de la différence observée.\n\nConsignes d’évaluation : vos réponses seront évaluées sur la pertinence de l’origine choisie, la précision des éléments de justification cités et la faisabilité/contrôle de l’expérience proposée.",
+      "choices": [],
+      "expected_answer": "1) Cause : variation d'origine environnementale.\n2) Justifications (au moins deux éléments) : a) les deux plants proviennent du même paquet de graines et ont été semés le même jour (même origine génétique présumée) ; b) les conditions de lumière et d'arrosage diffèrent nettement (A placé à la fenêtre et bien arrosé ; B resté 10 jours dans le placard sombre et peu arrosé). Ces éléments montrent que ce sont les conditions de milieu qui expliquent la différence.\n3) Expérience proposée : semer plusieurs graines du même paquet en deux groupes identiques (même terre, mêmes pots), exposer un groupe à la lumière et un autre à l'obscurité/pauvre arrosage pendant 10 jours, puis comparer la croissance (taille, couleur des feuilles, floraison) — on s'attend à reproduire la différence si l'origine est environnementale.",
+      "answer_kind": "structured",
+      "explanation": "Réponse attendue et correction détaillée :\n1) Origine environnementale : Les différences observées (taille, couleur, floraison) sont typiques d'un effet du milieu (lumière et eau) sur la croissance des plantes.\n2) Justifications :\n   - Même origine génétique présumée : le fait que les deux plants viennent du même paquet de graines semées le même jour minimise l'hypothèse d'une différence génétique importante. (Remarque pédagogique : un paquet peut contenir une légère variabilité génétique, mais pour cet exercice le document indique « même variété » et même date de semis, ce qui oriente vers l'environnement.)\n   - Différence de conditions : Plant B a subi 10 jours sans lumière suffisante et peu d'eau, ce qui explique sa faible taille, la pâleur des feuilles (manque de chlorophylle lié au manque de lumière) et l'absence de floraison.\n3) Expérience de vérification : proposer un protocole simple et contrôlé est essentiel (groupes témoins, variables maintenues identiques sauf la variable testée). Un protocole acceptable : utiliser plusieurs graines du même paquet, répartir en deux groupes, garder identiques la terre, la température et la taille des pots ; n'agir que sur la lumière et/ou l'arrosage pendant 10 jours, puis mesurer et comparer la taille, la couleur des feuilles et la présence de fleurs. Si le groupe soumis au manque de lumière/pauvre arrosage présente les mêmes symptômes que le plant B, cela confirme l'origine environnementale.\nBarème implicite : indiquer correctement l'origine (environnementale) = point principal ; citer les deux éléments du document = 1 point; proposer une expérience contrôlée et cohérente = 1 point.\nNotes pédagogiques : Cet item est de difficulté D2 car l'élève doit choisir une hypothèse parmi plusieurs (génétique vs environnementale) et justifier ce choix en sélectionnant des indices pertinents dans le document, puis proposer un test expérimental simple.",
+      "automated_checks": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "deterministic_verification": null,
+      "quality_result": "REVIEW",
+      "quality_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "candidate_score": 53,
+      "hard_gates_passed": true,
+      "missing_coverage": true,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "pipeline_version": "lcai-0012d4-wave1-v1",
+      "original_lcai_0012d_decision": "REVIEW",
+      "d4_wave1_selected": false
+    }
+  ],
+  "SK-ENR-GEOGRAPHY-3E-TERRITORY-MOBILITY": [
+    {
+      "content_id": 107872,
+      "version_id": 107874,
+      "author": "gpt-5-mini",
+      "code": "DRAFT-0012C-AI-ENR-GEOGRAPHY-3E-TERRITORY-MOBILITY-PRACTICE-20260726110411-1",
+      "grade": "FR-3E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-3E-TERRITORY",
+      "skill": "SK-ENR-GEOGRAPHY-3E-TERRITORY-MOBILITY",
+      "skill_name": "SK-ENR-GEOGRAPHY-3E-TERRITORY-MOBILITY",
+      "content_type": "practice",
+      "missing_slot": "practice",
+      "difficulty": 2,
+      "question": "Document synthétique (document de classe, inventé pour l'exercice) :\n- Carte schématique : flèches importantes indiquant des mouvements de population et de navettes\n  • Grandes flèches convergentes vers les métropoles (Paris, Lyon, Marseille, Toulouse) indiquant migrations résidentielles et flux d'emploi.\n  • Bandes périphériques autour des métropoles marquées « périurbanisation : croissance démographique ».\n  • Flèches sortantes depuis certaines zones rurales intérieures vers villes moyennes et métropoles, avec annotation « départs et vieillissement ».\n  • Zones littorales et océanes annotées « attractivité touristique et résidences secondaires ».\n  • Petites flèches pointant vers métropoles depuis l'étranger, annotation « migrations internationales concentrées en zones urbaines ».\n- Légende qualitative : « centres urbains : croissance ; périurbain : forte augmentation ; rural isolé : déclin démographique ; littoral : attractif saisonnier ». \n\nConsigne : Expliquez en quoi ces éléments traduisent les principales mobilités territoriales contemporaines en France. Utilisez des termes géographiques (métropolisation, périurbanisation, exode rural, migrations pendulaires, migrations internationales) et citez au moins deux indices du document qui soutiennent votre explication.",
+      "choices": [],
+      "expected_answer": "Critères d'évaluation observables :\n1) Identification précise d'au moins trois types de mobilité (par exemple : migrations vers les métropoles / périurbanisation / exode rural / migrations pendulaires / migrations internationales). \n2) Pour chaque type identifié, explication d'au moins une cause (au total au moins 3 causes différentes) : emploi/économie, accès aux services/éducation/santé, qualité de vie/logement, infrastructures de transport, facteurs démographiques. \n3) Présentation d'au moins trois conséquences territoriales distinctes (par exemple : renforcement des métropoles et ségrégation socio-spatiale, étalement urbain et artificialisation, dévitalisation des campagnes, pression sur les littoraux, transformations des transports quotidiens). \n4) Lien explicite avec le document : citer au moins deux indices du document (ex. : « flèches convergentes vers les métropoles », « annotation périurbanisation », « zones rurales : départs et vieillissement », « migrations internationales concentrées en zones urbaines ») et expliquer comment ils soutiennent l'argumentation. \nRéussite minimale : respecter les 4 critères ci-dessus.",
+      "answer_kind": "open_response",
+      "explanation": "Modèle de réponse (exemple attendu) :\nLe document montre d'abord une forte métropolisation : de grandes flèches convergent vers Paris, Lyon, Marseille et Toulouse, ce qui signifie des migrations résidentielles et des flux d'emploi vers ces centres. Cause : concentration des emplois, des services supérieurs et des universités dans les métropoles. Conséquence : renforcement économique et démographique des métropoles et risque de ségrégation sociale (prix du logement plus élevés, gentrification). \nEnsuite, la légende et les bandes périphériques indiquent une périurbanisation : croissance démographique autour des villes. Cause : recherche de logements plus abordables et amélioration des transports (transports quotidiens pendulaires). Conséquence : étalement urbain, augmentation des déplacements quotidiens et artificialisation des espaces agricoles. \nLe document signale aussi des départs depuis les zones rurales intérieures (« départs et vieillissement »). Cause : manque d'emplois locaux et de services, vieillissement de la population. Conséquence : dévitalisation de certains territoires ruraux, fermeture d'écoles/commerces, fragilisation des services publics locaux. \nEnfin, les petites flèches depuis l'étranger vers les villes et la mention « migrations internationales concentrées en zones urbaines » indiquent que l'immigration se concentre surtout en zones urbaines, alimentant la diversité démographique et répondant à des besoins de main-d'œuvre. Les littoraux marqués attractifs montrent une mobilité saisonnière et l'installation de résidences secondaires, cause : attractivité touristique et climatique ; conséquence : pression sur l'environnement côtier et hausse des prix immobiliers saisonniers.\n\nBarème indicatif lié aux critères :\n- Critère 1 (types) : 2 points si ≥3 types clairement identifiés, 1 point si 2 types. \n- Critère 2 (causes) : 3 points si ≥3 causes différentes expliquées clairement, 2 points si 2 causes, 1 point si 1 cause. \n- Critère 3 (conséquences) : 3 points si ≥3 conséquences distinctes expliquées, 2 points si 2, 1 point si 1. \n- Critère 4 (lien avec le document) : 2 points si au moins deux indices du document sont cités et explicitement liés aux explications, 1 point si un indice cité. \nTotal maximal proposé : 10 points. \n\nRemarques pédagogiques : l'élève doit montrer qu'il sait sélectionner des informations pertinentes dans le document (D2) et mobiliser des notions de géographie (métropolisation, périurbanisation, exode rural, migrations pendulaires, migrations internationales).",
+      "automated_checks": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "deterministic_verification": null,
+      "quality_result": "REVIEW",
+      "quality_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "candidate_score": 53,
+      "hard_gates_passed": true,
+      "missing_coverage": true,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "pipeline_version": "lcai-0012d4-wave1-v1",
+      "original_lcai_0012d_decision": "REVIEW",
+      "d4_wave1_selected": false
+    }
+  ],
+  "SK-ENR-HISTORY-4E-FRANCE-CULTURE": [
+    {
+      "content_id": 108892,
+      "version_id": 108894,
+      "author": "gpt-5-mini",
+      "code": "DRAFT-0012C-AI-ENR-HISTORY-4E-FRANCE-CULTURE-PRACTICE-20260726111235-1",
+      "grade": "FR-4E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-4E-FRANCE",
+      "skill": "SK-ENR-HISTORY-4E-FRANCE-CULTURE",
+      "skill_name": "SK-ENR-HISTORY-4E-FRANCE-CULTURE",
+      "content_type": "practice",
+      "missing_slot": "practice",
+      "difficulty": 2,
+      "question": "Documents (document de classe synthétique).\n\nDocument A — Extrait d'un journal de voyage, vers 1825 (document synthétique) :\n« Dans les villes, les salons et les théâtres restent surtout le rendez-vous des notables. On trouve peu de journaux bon marché ; dans les campagnes, les écoles sont rares et la lecture n'est guère répandue. »\n\nDocument B — Article d'un hebdomadaire populaire, vers 1895 (document synthétique) :\n« Chaque matin, des milliers d'exemplaires de feuilles illustrées circulent en ville et à la campagne. Les bibliothèques populaires et les salles de lecture voient affluer des ouvriers ; les affiches des music-halls et des cafés-concerts annoncent des spectacles accessibles à un large public. L'école laïque a multiplié les lecteurs. »\n\nConsignes :\n1) Identifie en une phrase claire et précise une évolution culturelle qui se voit entre ces deux documents (formulation courte). \n2) Donne deux preuves spécifiques : une phrase qui paraphrase un élément important du document A, et une phrase qui paraphrase un élément important du document B. \n3) Explique en 2 ou 3 phrases comment ces deux éléments montrent l'évolution culturelle que tu as nommée.\n\nRappels : cite le document (A ou B) pour chaque preuve. Tu as maximum 10 lignes pour ta réponse.",
+      "choices": [],
+      "expected_answer": "Critères observables de réussite :\n- Nommer précisément l'évolution culturelle (ex. « démocratisation de la lecture et des loisirs »). \n- Fournir deux preuves, clairement identifiées par document : une preuve tirée du document A et une preuve tirée du document B (paraphrase correcte + mention « (Doc A) » ou « (Doc B) »). \n- Expliquer en 2–3 phrases comment la preuve A et la preuve B vont dans des sens opposés ou montrent une transformation progressive, reliant explicitement ces preuves à l'évolution nommée.",
+      "answer_kind": "structured",
+      "explanation": "Éléments d'aide pour la correction et exemple de réponse attendue :\n\nCe que l'élève doit faire :\n- Repérer une évolution culturelle concrète visible entre début et fin du siècle (par exemple : augmentation de la lecture, diffusion de la presse, accès élargi aux loisirs et spectacles, montée de l'alphabétisation). Cela montre qu'il identifie une évolution culturelle.\n- Citer une preuve de chaque document pour appuyer l'affirmation (paraphrase suffisante).\n- Expliquer le lien entre preuves et évolution (raisonnement historique simple : cause/conséquence ou comparaison temporelle).\n\nExemple de réponse correcte (modèle) :\n1) Évolution nommée : « Démocratisation de la lecture et des loisirs ».\n2) Preuves : « (Doc A) Le journal de voyage indique qu’au début du siècle il y avait peu de journaux bon marché et que la lecture était peu répandue dans les campagnes. » / « (Doc B) L’hebdomadaire populaire signale qu’à la fin du siècle des milliers d’exemplaires circulent, que des bibliothèques populaires attirent des ouvriers et que des spectacles s’adressent à un large public. »\n3) Explication : « Au début du siècle, la culture écrite et les spectacles étaient surtout réservés aux élites ; à la fin du siècle, la diffusion de la presse, l’alphabétisation liée à l’école laïque et l’apparition de lieux de loisir populaires montrent que l’accès à la culture s’est élargi. Ces changements traduisent une démocratisation des pratiques culturelles. »\n\nBarème suggéré (pratique) :\n- 1 point : évolution clairement nommée et pertinente. \n- 1 point : preuve correcte et clairement tirée du Doc A. \n- 1 point : preuve correcte et clairement tirée du Doc B. \n- 1 point : explication reliant preuves et évolution (cohérente et succincte).\n\nRemarque pédagogique (niveau 4e/3e, difficulté D2) : la tâche demande de choisir la méthode appropriée (comparer deux documents pour repérer un changement culturel) et d'extraire et utiliser des indices textuels ; l'élève doit sélectionner et organiser l'information, pas seulement restituer des connaissances générales.",
+      "automated_checks": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "deterministic_verification": null,
+      "quality_result": "REVIEW",
+      "quality_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "candidate_score": 53,
+      "hard_gates_passed": true,
+      "missing_coverage": true,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "pipeline_version": "lcai-0012d4-wave1-v1",
+      "original_lcai_0012d_decision": "REVIEW",
+      "d4_wave1_selected": false
+    }
+  ],
+  "SK-ENR-GEOGRAPHY-4E-MOBILITY-EFFECT": [
+    {
+      "content_id": 108696,
+      "version_id": 108698,
+      "author": "gpt-5-mini",
+      "code": "DRAFT-0012C-AI-ENR-GEOGRAPHY-4E-MOBILITY-EFFECT-ASSESSMENT-20260726111101-1",
+      "grade": "FR-4E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-4E-MOBILITY",
+      "skill": "SK-ENR-GEOGRAPHY-4E-MOBILITY-EFFECT",
+      "skill_name": "SK-ENR-GEOGRAPHY-4E-MOBILITY-EFFECT",
+      "content_type": "assessment",
+      "missing_slot": "assessment",
+      "difficulty": 2,
+      "question": "Document synthétique (classe) — données inventées pour l'exercice :\n- Village X (zone rurale) : population 10 000. Chaque année, environ 250 personnes partent vivre ou travailler à l'étranger ou dans les grandes villes ; les envois de fonds (transferts de migrants) reçus par le village s'élèvent à l'équivalent de 1,8 million d'euros par an. On observe aussi un départ moyen annuel de 20 personnes diplômées (enseignants, infirmiers, techniciens).\n- Métropole Y (grande ville) : population 1 200 000. Elle accueille des flux migratoires internationaux et nationaux ; les nouveaux arrivants occupent majoritairement des emplois peu qualifiés dans le bâtiment, les services à la personne et le nettoyage. La métropole connaît une forte demande de logements et de services publics.\n\nConsignes (répondre dans un texte structuré, environ 15–20 lignes) :\n1) Pour le Village X (territoire d'origine), identifie deux effets territoriaux des mobilités mentionnées dans le document et justifie chacun en t'appuyant sur le document et sur un raisonnement géographique (échelle, acteurs, conséquences sur l'espace local).\n2) Pour la Métropole Y (territoire de destination), identifie deux effets territoriaux et justifie-les de la même manière.\n3) Propose pour chaque territoire une mesure publique (donc deux mesures au total) visant à renforcer les effets positifs ou à limiter les effets négatifs ; explique brièvement pourquoi chaque mesure est adaptée au territoire.\n\nTravail attendu : ta réponse doit comporter des paragraphes distincts pour l'origine et la destination, citer explicitement des éléments du document (chiffres ou descriptions) pour justifier ton raisonnement, et utiliser un vocabulaire géographique simple (flux, espace rural/urbain, services, main-d'œuvre, envois de fonds, fuite des cerveaux, intégration...).",
+      "choices": [],
+      "expected_answer": "Critères de réussite observables :\n- Origine (Village X) : identification claire de 2 effets (par exemple : 1 effet économique lié aux envois de fonds ; 1 effet démographique ou de capital humain tel que le vieillissement ou la fuite des diplômés). Chaque effet est justifié par une référence au document (ex. « 1,8 M€ d'envois », « 20 diplômés/an quittent ») et par un raisonnement géographique qui explique les conséquences sur l'espace local (services, dépendance économique, baisse d'activité locale, vieillissement de la population).\n- Destination (Métropole Y) : identification claire de 2 effets (par exemple : renforcement du marché du travail peu qualifié ; pression sur le logement et les services). Chaque effet est justifié par une référence au document (ex. « emplois peu qualifiés », « forte demande de logements ») et par un raisonnement géographique reliant flux migratoires et transformations spatiales (densification, ségrégation, reconfiguration des services publics).\n- Mesures publiques : deux propositions plausibles (une pour chaque territoire) clairement expliquées et directement liées aux effets identifiés (par ex. soutien aux investissements locaux utilisant les envois de fonds ; politiques d'intégration et de logement abordable en ville). On attend que l'élève précise en quoi la mesure renforce un effet positif ou réduit un effet négatif.\n- Présentation : le texte est structuré en paragraphes, utilise le vocabulaire demandé et montre un lien explicite entre document et analyse.\n\nBarème indicatif (pour le professeur) : identification et référence au document 4 pts, justification géographique 6 pts, pertinence des mesures 4 pts, clarté et vocabulaire 2 pts.",
+      "answer_kind": "structured",
+      "explanation": "Exemple de réponse attendue (modèle d'évaluation et éléments que doit contenir une copie complète) :\n\nOrigine — Village X :\n1) Effet économique positif mais dépendant : les envois de fonds annuels (1,8 M€ selon le document) augmentent le niveau de vie, permettent des dépenses de consommation ou des investissements locaux. Toutefois, le raisonnement géographique doit préciser que ces flux monétaires peuvent créer une dépendance aux transferts et freiner des transformations structurelles (moins d'investissement public local). On explique aussi l'échelle (argent transfrontalier arrivant au niveau communal) et les acteurs (familles, commerçants locaux).\n2) Effet sur le capital humain/démographique : le départ annuel de 20 diplômés provoque une perte de compétences locales (« fuite des cerveaux ») et contribue au vieillissement démographique, réduisant la capacité du village à maintenir services (école, santé) et activités qualifiées. Il faut lier ce constat aux conséquences spatiales : baisse d'attractivité, possible fermeture de services, contraction de l'espace social.\n\nDestination — Métropole Y :\n1) Effet sur le marché du travail : l'arrivée de migrants pour des emplois peu qualifiés répond à une demande de main-d'œuvre (bâtiment, services), ce qui soutient certains secteurs économiques de la ville. Le raisonnement géographique doit montrer le lien entre flux migratoires et segmentation du marché du travail.\n2) Effet sur le logement et les services : la forte demande de logements provoque pression foncière, hausse des loyers et peut conduire à la formation de logements informels ou à la ségrégation socio-spatiale. Il convient d'expliquer l'impact sur l'organisation urbaine et les infrastructures.\n\nMesures publiques (exemples et justification) :\n- Pour Village X : création d'un fonds d'appui aux projets productifs locaux qui valorisent les envois de fonds (ex. microcrédits pour petites entreprises, infrastructures de base). Justification : transforme les transferts privés en investissements durables, réduit la dépendance et crée des emplois locaux, limitant la fuite des jeunes.\n- Pour Métropole Y : politique de logement social et de régulation des loyers + programmes d'accueil et de formation professionnelle pour les nouveaux arrivants. Justification : réduit la pression sur le marché du logement, améliore l'intégration socio-économique et permet aux migrants d'accéder à des filières de formation qui sont bénéfiques à l'économie urbaine.\n\nCommentaires pédagogiques : l'exercice est de difficulté D2 (choix et justification d'une méthode d'analyse simple) : l'élève doit sélectionner les effets pertinents dans le document et les expliquer par un raisonnement géographique à l'échelle locale/urbaine. On évalue la capacité à lier données (chiffres ou descriptions) et conséquences territoriales, ainsi que la pertinence des mesures proposées.",
+      "automated_checks": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "deterministic_verification": null,
+      "quality_result": "REVIEW",
+      "quality_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "candidate_score": 53,
+      "hard_gates_passed": true,
+      "missing_coverage": true,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "pipeline_version": "lcai-0012d4-wave1-v1",
+      "original_lcai_0012d_decision": "REVIEW",
+      "d4_wave1_selected": false
+    }
+  ],
+  "SK-HISTORY-3E-FRANCE": [
+    {
+      "content_id": 107976,
+      "version_id": 107978,
+      "author": "gpt-5-mini",
+      "code": "DRAFT-0012C-AI-HISTORY-3E-FRANCE-ASSESSMENT-20260726110505-1",
+      "grade": "FR-3E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-3E-FRANCE",
+      "skill": "SK-HISTORY-3E-FRANCE",
+      "skill_name": "SK-HISTORY-3E-FRANCE",
+      "content_type": "assessment",
+      "missing_slot": "assessment",
+      "difficulty": 2,
+      "question": "Document de classe (synthétique) — événements importants en France\n\n- 1944 : attribution du droit de vote aux femmes (décret du Gouvernement provisoire)\n- 1945 : création de la Sécurité sociale (ordonnances organisant la protection sociale)\n- 1946 : adoption de la Constitution instituant la IVe République\n- 1958 : adoption de la Constitution instituant la Ve République\n- 1962 : indépendance de l'Algérie (fin de la guerre d'Algérie)\n- Mai‑juin 1968 : mouvement social et contestation étudiante et ouvrière\n- 1981 : abolition de la peine de mort (loi)\n\nConsignes\nA. Pour chacun des sept événements, indiquez s'il relève principalement d'un changement « politique » (institutions, souveraineté, lois fondamentales) ou d'un changement « social » (protection sociale, droits civils, mouvements sociaux). Donnez pour chaque événement une justification très brève (une phrase maximum) qui explique votre choix.\n\nB. Choisissez un événement parmi les sept que vous jugez le plus décisif pour la République repensée depuis 1944. Expliquez en deux ou trois phrases pourquoi (indiquez les critères que vous utilisez pour juger de la « décisivité » et les conséquences majeures de l'événement).",
+      "choices": [],
+      "expected_answer": "Réponse attendue (critères d'évaluation observables) :\n1) Pour chaque événement, la réponse indique clairement « politique » ou « social » et fournit une justification courte montrant le lien avec institutions/lois (pour politique) ou avec protection sociale/droits/mouvement social (pour social). (7 justificatifs corrects attendus.)\n2) Pour le choix décisif : la réponse nomme un événement, explicite au moins deux critères permettant d'évaluer sa « décisivité » (par ex. changement durable des institutions, extension des droits, impact sur la société) et explique en 2–3 phrases quelles conséquences concrètes cet événement a eues pour la République. La justification doit être cohérente avec la classification donnée en A.",
+      "answer_kind": "structured",
+      "explanation": "Correction et éléments de réponse attendus (modèle) :\nA — Classification et justification courte :\n- 1944 : politique. Justification : modification du corps électoral et extension du droit de vote (changement institutionnel majeur). \n- 1945 : social. Justification : création d'un système national de protection sociale (Sécurité sociale) visant à protéger la population (santé, retraite, famille).\n- 1946 : politique. Justification : adoption d'une nouvelle Constitution instituant la IVe République (nouvel ordre institutionnel).\n- 1958 : politique. Justification : nouvelle Constitution créant la Ve République et renforçant le rôle du Président (changement institutionnel majeur).\n- 1962 : politique. Justification : indépendance de l'Algérie modifie la souveraineté et l'organisation territoriale et met fin à une guerre coloniale.\n- Mai‑juin 1968 : social. Justification : mouvement de contestation étudiant et ouvrier qui remet en cause les normes sociales et entraîne des réformes sociales et culturelles.\n- 1981 : politique et social (on peut justifier l'un ou l'autre si argumenté). Justification attendue : loi politique votée par le Parlement (politique) mais portant sur un droit fondamental et une valeur sociale (social) — l'abolition de la peine de mort modifie la législation pénale et les valeurs républicaines.\n\nB — Choix décisif (exemples d'argumentation acceptable) :\nExemple 1 (choix 1958) : critères : changement durable des institutions et stabilité politique ; conséquences : instaurations des institutions de la Ve République qui durent aujourd'hui et renforcent l'exécutif, modifiant la manière dont la France est gouvernée. (2–3 phrases expliquant ces points.)\nExemple 2 (choix 1945) : critères : extension concrète des protections sociales et amélioration durable des conditions de vie ; conséquences : mise en place d'un État‑providence qui transforme la sécurité économique et sanitaire des Français et structure les politiques sociales d'après‑guerre.\n\nRemarques d'évaluation :\n- Pour A, tout classement est accepté s'il est justifié par un lien précis avec institutions/lois (politique) ou avec protection sociale/droits/mouvements (social). \n- Pour B, la réponse est jugée correcte si l'élève énonce au moins deux critères pertinents et relie clairement ces critères aux conséquences évoquées (cohérence attendue).",
+      "automated_checks": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "deterministic_verification": null,
+      "quality_result": "REVIEW",
+      "quality_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "candidate_score": 53,
+      "hard_gates_passed": true,
+      "missing_coverage": true,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "pipeline_version": "lcai-0012d4-wave1-v1",
+      "original_lcai_0012d_decision": "REVIEW",
+      "d4_wave1_selected": false
+    }
+  ],
+  "SK-ENR-GEOGRAPHY-3E-EU-FRANCE": [
+    {
+      "content_id": 107784,
+      "version_id": 107786,
+      "author": "gpt-5-mini",
+      "code": "DRAFT-0012C-AI-ENR-GEOGRAPHY-3E-EU-FRANCE-ASSESSMENT-20260726110326-1",
+      "grade": "FR-3E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-3E-EU",
+      "skill": "SK-ENR-GEOGRAPHY-3E-EU-FRANCE",
+      "skill_name": "SK-ENR-GEOGRAPHY-3E-EU-FRANCE",
+      "content_type": "assessment",
+      "missing_slot": "assessment",
+      "difficulty": 2,
+      "question": "Document synthétique pour la classe (texte inventé pour l'exercice) :\n- La France est un État membre fondateur de la construction européenne et participe aux principales institutions de l'Union (Commission européenne et Conseil à Bruxelles ; Parlement européen à Strasbourg).\n- Elle fait partie de la zone euro et de l'espace Schengen, ce qui facilite la libre circulation des personnes et des flux monétaires avec d'autres États membres.\n- La France compte parmi les principales économies de l'Union et possède un secteur agricole important pour l'approvisionnement européen.\n- La langue française et la culture française sont largement présentes dans les échanges culturels et institutionnels à l'échelle européenne.\nEn te fondant sur ce document, explique la place de la France en Europe selon au moins deux dimensions demandées.",
+      "choices": [],
+      "expected_answer": "Critères d'évaluation (réponse ouverte) :\n- Contenu : la réponse cite au moins 3 éléments précis du document (par exemple : « membre fondateur », « sièges des institutions », « zone euro/Schengen », « grande économie », « secteur agricole important », « influence culturelle »).\n- Pertinence : pour chaque dimension choisie (au moins deux), la réponse associe un ou plusieurs éléments du document à une explication claire montrant comment ces éléments traduisent la place de la France en Europe (par ex. : siège d'institutions → influence politique ; zone euro + échanges → intégration économique).\n- Raisonnement : la réponse fait un lien explicite entre preuve(s) et conclusion (cause/effet ou conséquence pour la place de la France).\n- Forme : texte en français, 6 à 8 phrases cohérentes et organisées.\n- Conclusion : une phrase finale résumant le rôle principal de la France en Europe (par ex. : « La France joue un rôle politique et économique majeur au sein de l'Union européenne. »).",
+      "answer_kind": "open_response",
+      "explanation": "Barème et guide d'aide à la correction (niveau 3e, D2 — sélection de méthode et utilisation de preuves) :\n- 4 points : tous les critères remplis — au moins 3 éléments cités, au moins deux dimensions traitées avec explications bien reliées aux preuves, 6–8 phrases, conclusion claire.\n- 3 points : la plupart des critères remplis — 2 éléments cités ou une dimension moins développée, ou longueur légèrement hors consigne (5 ou 9 phrases) mais raisonnement présent.\n- 2 points : preuves citées mais liens explicatifs faibles ou une seule dimension traitée correctement.\n- 1 point : référence au document limitée, explication insuffisante, structure très pauvre.\n- 0 point : hors sujet ou réponse non fournie.\nRemarques pédagogiques et exemples de bonne réponse (modèle indicatif, pas l'unique formulation acceptée) :\nExemple de réponse satisfaisante (6 phrases) : « La France est un membre fondateur de l'Union européenne et accueille des institutions européennes importantes, ce qui lui donne une influence politique dans les décisions communautaires. En étant au coeur des institutions (Commission/Council à Bruxelles, Parlement à Strasbourg), elle peut peser sur les politiques communes. De plus, sa présence dans la zone euro et l'espace Schengen montre qu'elle est fortement intégrée économiquement et facilite les échanges avec d'autres États membres. Le fait d'être une des principales économies de l'Union et d'avoir un secteur agricole important confirme son poids économique dans l'UE. Enfin, la diffusion de la langue et de la culture françaises renforce son rayonnement culturel en Europe. Ainsi, la France joue un rôle politique et économique majeur au sein de l'Union européenne. »\nErreurs fréquentes à corriger : confondre « Europe » et « Union européenne » — demande que l'élève précise s'il parle de l'UE ; ne pas donner d'exemples tirés du document ; limiter l'explication à des impressions générales sans montrer le lien preuve→conclusion.\nPourquoi cet exercice est de difficulté D2 : l'élève doit sélectionner des indicateurs pertinents dans le document (méthode), puis les relier explicitement à la place de la France (raisonnement d'application), sans se contenter d'énumérer des faits.",
+      "automated_checks": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "deterministic_verification": null,
+      "quality_result": "REVIEW",
+      "quality_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "candidate_score": 53,
+      "hard_gates_passed": true,
+      "missing_coverage": true,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "pipeline_version": "lcai-0012d4-wave1-v1",
+      "original_lcai_0012d_decision": "REVIEW",
+      "d4_wave1_selected": false
+    }
+  ],
+  "SK-ENR-GEOGRAPHY-4E-GLOBALIZATION-MAP": [
+    {
+      "content_id": 108700,
+      "version_id": 108702,
+      "author": "gpt-5-mini",
+      "code": "DRAFT-0012C-AI-ENR-GEOGRAPHY-4E-GLOBALIZATION-MAP-PRACTICE-20260726111101-1",
+      "grade": "FR-4E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-4E-GLOBALIZATION",
+      "skill": "SK-ENR-GEOGRAPHY-4E-GLOBALIZATION-MAP",
+      "skill_name": "SK-ENR-GEOGRAPHY-4E-GLOBALIZATION-MAP",
+      "content_type": "practice",
+      "missing_slot": "practice",
+      "difficulty": 2,
+      "question": "Données (document synthétique, unités fictives : conteneurs/semaine)\n- Shanghai → Rotterdam : 320\n- Rotterdam → New York : 180\n- Shanghai → Singapore : 410\n- Singapore → Dubai : 200\n- Dubai → Lagos : 120\n- Lagos → Rotterdam : 90\n- New York → São Paulo : 140\n- São Paulo → Rotterdam : 70\n- Mumbai → Singapore : 160\n- Shanghai → Mumbai : 110\n- Singapore → New York : 130\n- Dubai → Rotterdam : 220\nConsignes (obligatoires)\n1) Trace un réseau schématique sur une feuille (ou un dessin numérique) en plaçant approximativement les villes sur un planisphère simplifié (ou en respectant leur répartition continentale).\n2) Représente chaque flux par une flèche dirigée (sens du flux).\n3) Utilise l'épaisseur des flèches pour traduire l'intensité : choisis une règle simple (par ex. épais/moyen/fin) et fais-en la légende. Indique les seuils choisis.\n4) Redimensionne la taille des nœuds selon l'importance totale de la ville (somme des flux entrants + sortants). Indique la règle de taille choisie.\n5) Identifie exactement deux (2) hubs globaux en appliquant la règle suivante : sélectionner d'abord les villes ayant le plus grand nombre de connexions (degré = nombre d'arêtes entrantes + sortantes). En cas d'égalité, départager par le volume total de flux. Donne une phrase de justification pour chaque hub choisit (2 phrases, une par hub), en mentionnant degré et volume total.\n6) Donne un exemple de légende complète (couleur/épaisseur des liens, tailles des nœuds) et ajoute une phrase qui explique pourquoi ta représentation permet de comprendre le fonctionnement du réseau mondial.\nRemarque : ton dessin peut varier, mais ta réponse écrite (liste des éléments demandés et justifications) doit être lisible et autonome.",
+      "choices": [],
+      "expected_answer": "Éléments attendus (modèle de réponse précis et vérifiable) :\n1) Légende choisie : seuils d'épaisseur des liens — épais ≥ 300, moyen 150–299, fin < 150 ; taille des nœuds proportionnelle au volume total (par exemple : grand ≥ 800, moyen 400–799, petit < 400).\n2) Liste des nœuds (8) et position approximative continentale : Shanghai (Asie‑Est), Singapore (Asie du Sud‑Est), Mumbai (Asie du Sud), Rotterdam (Europe), Dubai (Moyen‑Orient), Lagos (Afrique de l'Ouest), New York (Amérique du Nord), São Paulo (Amérique du Sud).\n3) Liste des liens avec direction et catégorie d'épaisseur :\n   - Shanghai → Rotterdam : 320 (épaise)\n   - Rotterdam → New York : 180 (moyenne)\n   - Shanghai → Singapore : 410 (épaise)\n   - Singapore → Dubai : 200 (moyenne)\n   - Dubai → Lagos : 120 (fine)\n   - Lagos → Rotterdam : 90 (fine)\n   - New York → São Paulo : 140 (fine)\n   - São Paulo → Rotterdam : 70 (fine)\n   - Mumbai → Singapore : 160 (moyenne)\n   - Shanghai → Mumbai : 110 (fine)\n   - Singapore → New York : 130 (fine)\n   - Dubai → Rotterdam : 220 (moyenne)\n4) Calculs pour justifier la taille des nœuds (somme entrants + sortants) :\n   - Shanghai : 840\n   - Singapore : 900\n   - Rotterdam : 880\n   - New York : 450\n   - Dubai : 540\n   - Mumbai : 270\n   - Lagos : 210\n   - São Paulo : 210\n   (appliquer la règle de taille donnée au point 1 pour classer chaque nœud)\n5) Hubs choisis selon la règle (degré d'abord, puis volume si besoin) :\n   - Hub global 1 : Rotterdam — degré 5 (4 entrantes, 1 sortante), volume total 880. Justification : degré le plus élevé et volume total très élevé.\n   - Hub global 2 : Singapore — degré 4, volume total 900. Justification : deuxième degré le plus élevé ; volume total le plus élevé, servant de plaque tournante Asie–Monde.\n   - Hub régional choisi (exigence du prompt : indiquer un hub régional) : New York — degré 3, volume total 450. Justification : principal relais pour les échanges vers l'Amérique du Sud dans ce jeu de données.\n6) Légende complète et phrase finale expliquant la représentation (ex. : « Les flèches épaisses montrent les axes de très forte circulation (Asie–Europe, Asie–Asie du Sud‑Est) ; les nœuds grands indiquent les plateformes d'éclatement et redistribution. Cette représentation permet de repérer visuellement hubs et corridors du réseau mondial. »)\nCette liste reprend exactement les éléments vérifiables que doit contenir la production.",
+      "answer_kind": "structured",
+      "explanation": "Correction commentée et calculs (explication destinée au professeur / corrigé modèle).\n1) Règles de représentation proposées (exemples) : épais ≥ 300 conteneurs/semaine, moyen 150–299, fin < 150. Taille nœud : grand ≥ 800, moyen 400–799, petit < 400. Ces seuils sont pédagogiques et rendent visible la hiérarchie.\n2) Calcul des volumes totaux (entrants + sortants) à partir des flux donnés :\n   - Shanghai : sorties 320+410+110 = 840 ; entrées = 0 ; total = 840.\n   - Singapore : sorties 200+130 = 330 ; entrées 410+160 = 570 ; total = 900.\n   - Rotterdam : sorties 180 ; entrées 320+90+70+220 = 700 ; total = 880.\n   - New York : sorties 140 ; entrées 180+130 = 310 ; total = 450.\n   - Dubai : sorties 120+220 = 340 ; entrées 200 ; total = 540.\n   - Mumbai : sorties 160 ; entrées 110 ; total = 270.\n   - Lagos : sorties 90 ; entrées 120 ; total = 210.\n   - São Paulo : sorties 70 ; entrées 140 ; total = 210.\n3) Calcul des degrés (nombre de liens entrants + sortants, chacun compté une fois) :\n   - Rotterdam : degré 5 (entrantes de Shanghai, Lagos, São Paulo, Dubai ; sortante vers New York).\n   - Singapore : degré 4 (entrantes de Shanghai, Mumbai ; sortantes vers Dubai, New York).\n   - Shanghai : degré 3 (sortantes vers Rotterdam, Singapore, Mumbai).\n   - New York : degré 3 (entrantes de Rotterdam, Singapore ; sortante vers São Paulo).\n   - Dubai : degré 3 (entrantes de Singapore ; sortantes vers Lagos, Rotterdam).\n   - Mumbai : degré 2 (sortante vers Singapore ; entrante de Shanghai).\n   - Lagos : degré 2 (entrante de Dubai ; sortante vers Rotterdam).\n   - São Paulo : degré 2 (entrante de New York ; sortante vers Rotterdam).\n4) Application de la règle demandée pour choisir 2 hubs globaux : on choisit d’abord les villes avec le plus grand degré. Rotterdam a le degré maximal (5) ; Singapore a le deuxième degré le plus élevé (4). En cas de doute, on utilise le volume total comme départageur (ici Singapore 900 > Rotterdam 880 > Shanghai 840). Ainsi les deux hubs globaux retenus sont Rotterdam et Singapore. New York est retenu comme hub régional (degré 3, rôle de relais vers l'Amérique du Sud, volume 450).\n5) Éléments de justification attendus dans la production de l'élève : citer le degré et le volume total pour chaque hub choisi, montrer la légende choisie (seuils) et expliquer en une phrase pourquoi la taille et l'épaisseur rendent visible la hiérarchie du réseau.\nRemarque pédagogique : on accepte des variantes de seuils et de positionnements géographiques si l'élève applique de façon cohérente sa règle et fournit les calculs qui justifient le choix des hubs.\nCe corrigé fournit les calculs et la logique attendue pour permettre une correction objective.",
       "automated_checks": {
         "structural_validity": true,
         "answer_correctness": true,
@@ -332,258 +625,6 @@
       "d4_wave1_selected": false
     }
   ],
-  "SK-ENR-GEOGRAPHY-4E-MOBILITY-EFFECT": [
-    {
-      "content_id": 108696,
-      "version_id": 108698,
-      "author": "gpt-5-mini",
-      "code": "DRAFT-0012C-AI-ENR-GEOGRAPHY-4E-MOBILITY-EFFECT-ASSESSMENT-20260726111101-1",
-      "grade": "FR-4E",
-      "subject": "GEOGRAPHY",
-      "chapter": "CH-GEOGRAPHY-4E-MOBILITY",
-      "skill": "SK-ENR-GEOGRAPHY-4E-MOBILITY-EFFECT",
-      "skill_name": "SK-ENR-GEOGRAPHY-4E-MOBILITY-EFFECT",
-      "content_type": "assessment",
-      "missing_slot": "assessment",
-      "difficulty": 2,
-      "question": "Document synthétique (classe) — données inventées pour l'exercice :\n- Village X (zone rurale) : population 10 000. Chaque année, environ 250 personnes partent vivre ou travailler à l'étranger ou dans les grandes villes ; les envois de fonds (transferts de migrants) reçus par le village s'élèvent à l'équivalent de 1,8 million d'euros par an. On observe aussi un départ moyen annuel de 20 personnes diplômées (enseignants, infirmiers, techniciens).\n- Métropole Y (grande ville) : population 1 200 000. Elle accueille des flux migratoires internationaux et nationaux ; les nouveaux arrivants occupent majoritairement des emplois peu qualifiés dans le bâtiment, les services à la personne et le nettoyage. La métropole connaît une forte demande de logements et de services publics.\n\nConsignes (répondre dans un texte structuré, environ 15–20 lignes) :\n1) Pour le Village X (territoire d'origine), identifie deux effets territoriaux des mobilités mentionnées dans le document et justifie chacun en t'appuyant sur le document et sur un raisonnement géographique (échelle, acteurs, conséquences sur l'espace local).\n2) Pour la Métropole Y (territoire de destination), identifie deux effets territoriaux et justifie-les de la même manière.\n3) Propose pour chaque territoire une mesure publique (donc deux mesures au total) visant à renforcer les effets positifs ou à limiter les effets négatifs ; explique brièvement pourquoi chaque mesure est adaptée au territoire.\n\nTravail attendu : ta réponse doit comporter des paragraphes distincts pour l'origine et la destination, citer explicitement des éléments du document (chiffres ou descriptions) pour justifier ton raisonnement, et utiliser un vocabulaire géographique simple (flux, espace rural/urbain, services, main-d'œuvre, envois de fonds, fuite des cerveaux, intégration...).",
-      "choices": [],
-      "expected_answer": "Critères de réussite observables :\n- Origine (Village X) : identification claire de 2 effets (par exemple : 1 effet économique lié aux envois de fonds ; 1 effet démographique ou de capital humain tel que le vieillissement ou la fuite des diplômés). Chaque effet est justifié par une référence au document (ex. « 1,8 M€ d'envois », « 20 diplômés/an quittent ») et par un raisonnement géographique qui explique les conséquences sur l'espace local (services, dépendance économique, baisse d'activité locale, vieillissement de la population).\n- Destination (Métropole Y) : identification claire de 2 effets (par exemple : renforcement du marché du travail peu qualifié ; pression sur le logement et les services). Chaque effet est justifié par une référence au document (ex. « emplois peu qualifiés », « forte demande de logements ») et par un raisonnement géographique reliant flux migratoires et transformations spatiales (densification, ségrégation, reconfiguration des services publics).\n- Mesures publiques : deux propositions plausibles (une pour chaque territoire) clairement expliquées et directement liées aux effets identifiés (par ex. soutien aux investissements locaux utilisant les envois de fonds ; politiques d'intégration et de logement abordable en ville). On attend que l'élève précise en quoi la mesure renforce un effet positif ou réduit un effet négatif.\n- Présentation : le texte est structuré en paragraphes, utilise le vocabulaire demandé et montre un lien explicite entre document et analyse.\n\nBarème indicatif (pour le professeur) : identification et référence au document 4 pts, justification géographique 6 pts, pertinence des mesures 4 pts, clarté et vocabulaire 2 pts.",
-      "answer_kind": "structured",
-      "explanation": "Exemple de réponse attendue (modèle d'évaluation et éléments que doit contenir une copie complète) :\n\nOrigine — Village X :\n1) Effet économique positif mais dépendant : les envois de fonds annuels (1,8 M€ selon le document) augmentent le niveau de vie, permettent des dépenses de consommation ou des investissements locaux. Toutefois, le raisonnement géographique doit préciser que ces flux monétaires peuvent créer une dépendance aux transferts et freiner des transformations structurelles (moins d'investissement public local). On explique aussi l'échelle (argent transfrontalier arrivant au niveau communal) et les acteurs (familles, commerçants locaux).\n2) Effet sur le capital humain/démographique : le départ annuel de 20 diplômés provoque une perte de compétences locales (« fuite des cerveaux ») et contribue au vieillissement démographique, réduisant la capacité du village à maintenir services (école, santé) et activités qualifiées. Il faut lier ce constat aux conséquences spatiales : baisse d'attractivité, possible fermeture de services, contraction de l'espace social.\n\nDestination — Métropole Y :\n1) Effet sur le marché du travail : l'arrivée de migrants pour des emplois peu qualifiés répond à une demande de main-d'œuvre (bâtiment, services), ce qui soutient certains secteurs économiques de la ville. Le raisonnement géographique doit montrer le lien entre flux migratoires et segmentation du marché du travail.\n2) Effet sur le logement et les services : la forte demande de logements provoque pression foncière, hausse des loyers et peut conduire à la formation de logements informels ou à la ségrégation socio-spatiale. Il convient d'expliquer l'impact sur l'organisation urbaine et les infrastructures.\n\nMesures publiques (exemples et justification) :\n- Pour Village X : création d'un fonds d'appui aux projets productifs locaux qui valorisent les envois de fonds (ex. microcrédits pour petites entreprises, infrastructures de base). Justification : transforme les transferts privés en investissements durables, réduit la dépendance et crée des emplois locaux, limitant la fuite des jeunes.\n- Pour Métropole Y : politique de logement social et de régulation des loyers + programmes d'accueil et de formation professionnelle pour les nouveaux arrivants. Justification : réduit la pression sur le marché du logement, améliore l'intégration socio-économique et permet aux migrants d'accéder à des filières de formation qui sont bénéfiques à l'économie urbaine.\n\nCommentaires pédagogiques : l'exercice est de difficulté D2 (choix et justification d'une méthode d'analyse simple) : l'élève doit sélectionner les effets pertinents dans le document et les expliquer par un raisonnement géographique à l'échelle locale/urbaine. On évalue la capacité à lier données (chiffres ou descriptions) et conséquences territoriales, ainsi que la pertinence des mesures proposées.",
-      "automated_checks": {
-        "structural_validity": true,
-        "answer_correctness": true,
-        "skill_alignment": true,
-        "grade_appropriateness": false,
-        "executability": true,
-        "duplicate_safety": true
-      },
-      "deterministic_verification": null,
-      "quality_result": "REVIEW",
-      "quality_reason": [
-        "Independent pedagogical review is still required."
-      ],
-      "candidate_score": 53,
-      "hard_gates_passed": true,
-      "missing_coverage": true,
-      "recommended_decision": "KEEP_FOR_REVIEW",
-      "pipeline_version": "lcai-0012d4-wave1-v1",
-      "original_lcai_0012d_decision": "REVIEW",
-      "d4_wave1_selected": false
-    }
-  ],
-  "SK-HISTORY-3E-FRANCE": [
-    {
-      "content_id": 107976,
-      "version_id": 107978,
-      "author": "gpt-5-mini",
-      "code": "DRAFT-0012C-AI-HISTORY-3E-FRANCE-ASSESSMENT-20260726110505-1",
-      "grade": "FR-3E",
-      "subject": "HISTORY",
-      "chapter": "CH-HISTORY-3E-FRANCE",
-      "skill": "SK-HISTORY-3E-FRANCE",
-      "skill_name": "SK-HISTORY-3E-FRANCE",
-      "content_type": "assessment",
-      "missing_slot": "assessment",
-      "difficulty": 2,
-      "question": "Document de classe (synthétique) — événements importants en France\n\n- 1944 : attribution du droit de vote aux femmes (décret du Gouvernement provisoire)\n- 1945 : création de la Sécurité sociale (ordonnances organisant la protection sociale)\n- 1946 : adoption de la Constitution instituant la IVe République\n- 1958 : adoption de la Constitution instituant la Ve République\n- 1962 : indépendance de l'Algérie (fin de la guerre d'Algérie)\n- Mai‑juin 1968 : mouvement social et contestation étudiante et ouvrière\n- 1981 : abolition de la peine de mort (loi)\n\nConsignes\nA. Pour chacun des sept événements, indiquez s'il relève principalement d'un changement « politique » (institutions, souveraineté, lois fondamentales) ou d'un changement « social » (protection sociale, droits civils, mouvements sociaux). Donnez pour chaque événement une justification très brève (une phrase maximum) qui explique votre choix.\n\nB. Choisissez un événement parmi les sept que vous jugez le plus décisif pour la République repensée depuis 1944. Expliquez en deux ou trois phrases pourquoi (indiquez les critères que vous utilisez pour juger de la « décisivité » et les conséquences majeures de l'événement).",
-      "choices": [],
-      "expected_answer": "Réponse attendue (critères d'évaluation observables) :\n1) Pour chaque événement, la réponse indique clairement « politique » ou « social » et fournit une justification courte montrant le lien avec institutions/lois (pour politique) ou avec protection sociale/droits/mouvement social (pour social). (7 justificatifs corrects attendus.)\n2) Pour le choix décisif : la réponse nomme un événement, explicite au moins deux critères permettant d'évaluer sa « décisivité » (par ex. changement durable des institutions, extension des droits, impact sur la société) et explique en 2–3 phrases quelles conséquences concrètes cet événement a eues pour la République. La justification doit être cohérente avec la classification donnée en A.",
-      "answer_kind": "structured",
-      "explanation": "Correction et éléments de réponse attendus (modèle) :\nA — Classification et justification courte :\n- 1944 : politique. Justification : modification du corps électoral et extension du droit de vote (changement institutionnel majeur). \n- 1945 : social. Justification : création d'un système national de protection sociale (Sécurité sociale) visant à protéger la population (santé, retraite, famille).\n- 1946 : politique. Justification : adoption d'une nouvelle Constitution instituant la IVe République (nouvel ordre institutionnel).\n- 1958 : politique. Justification : nouvelle Constitution créant la Ve République et renforçant le rôle du Président (changement institutionnel majeur).\n- 1962 : politique. Justification : indépendance de l'Algérie modifie la souveraineté et l'organisation territoriale et met fin à une guerre coloniale.\n- Mai‑juin 1968 : social. Justification : mouvement de contestation étudiant et ouvrier qui remet en cause les normes sociales et entraîne des réformes sociales et culturelles.\n- 1981 : politique et social (on peut justifier l'un ou l'autre si argumenté). Justification attendue : loi politique votée par le Parlement (politique) mais portant sur un droit fondamental et une valeur sociale (social) — l'abolition de la peine de mort modifie la législation pénale et les valeurs républicaines.\n\nB — Choix décisif (exemples d'argumentation acceptable) :\nExemple 1 (choix 1958) : critères : changement durable des institutions et stabilité politique ; conséquences : instaurations des institutions de la Ve République qui durent aujourd'hui et renforcent l'exécutif, modifiant la manière dont la France est gouvernée. (2–3 phrases expliquant ces points.)\nExemple 2 (choix 1945) : critères : extension concrète des protections sociales et amélioration durable des conditions de vie ; conséquences : mise en place d'un État‑providence qui transforme la sécurité économique et sanitaire des Français et structure les politiques sociales d'après‑guerre.\n\nRemarques d'évaluation :\n- Pour A, tout classement est accepté s'il est justifié par un lien précis avec institutions/lois (politique) ou avec protection sociale/droits/mouvements (social). \n- Pour B, la réponse est jugée correcte si l'élève énonce au moins deux critères pertinents et relie clairement ces critères aux conséquences évoquées (cohérence attendue).",
-      "automated_checks": {
-        "structural_validity": true,
-        "answer_correctness": true,
-        "skill_alignment": true,
-        "grade_appropriateness": false,
-        "executability": true,
-        "duplicate_safety": true
-      },
-      "deterministic_verification": null,
-      "quality_result": "REVIEW",
-      "quality_reason": [
-        "Independent pedagogical review is still required."
-      ],
-      "candidate_score": 53,
-      "hard_gates_passed": true,
-      "missing_coverage": true,
-      "recommended_decision": "KEEP_FOR_REVIEW",
-      "pipeline_version": "lcai-0012d4-wave1-v1",
-      "original_lcai_0012d_decision": "REVIEW",
-      "d4_wave1_selected": false
-    }
-  ],
-  "SK-ENR-HISTORY-4E-FRANCE-CULTURE": [
-    {
-      "content_id": 108892,
-      "version_id": 108894,
-      "author": "gpt-5-mini",
-      "code": "DRAFT-0012C-AI-ENR-HISTORY-4E-FRANCE-CULTURE-PRACTICE-20260726111235-1",
-      "grade": "FR-4E",
-      "subject": "HISTORY",
-      "chapter": "CH-HISTORY-4E-FRANCE",
-      "skill": "SK-ENR-HISTORY-4E-FRANCE-CULTURE",
-      "skill_name": "SK-ENR-HISTORY-4E-FRANCE-CULTURE",
-      "content_type": "practice",
-      "missing_slot": "practice",
-      "difficulty": 2,
-      "question": "Documents (document de classe synthétique).\n\nDocument A — Extrait d'un journal de voyage, vers 1825 (document synthétique) :\n« Dans les villes, les salons et les théâtres restent surtout le rendez-vous des notables. On trouve peu de journaux bon marché ; dans les campagnes, les écoles sont rares et la lecture n'est guère répandue. »\n\nDocument B — Article d'un hebdomadaire populaire, vers 1895 (document synthétique) :\n« Chaque matin, des milliers d'exemplaires de feuilles illustrées circulent en ville et à la campagne. Les bibliothèques populaires et les salles de lecture voient affluer des ouvriers ; les affiches des music-halls et des cafés-concerts annoncent des spectacles accessibles à un large public. L'école laïque a multiplié les lecteurs. »\n\nConsignes :\n1) Identifie en une phrase claire et précise une évolution culturelle qui se voit entre ces deux documents (formulation courte). \n2) Donne deux preuves spécifiques : une phrase qui paraphrase un élément important du document A, et une phrase qui paraphrase un élément important du document B. \n3) Explique en 2 ou 3 phrases comment ces deux éléments montrent l'évolution culturelle que tu as nommée.\n\nRappels : cite le document (A ou B) pour chaque preuve. Tu as maximum 10 lignes pour ta réponse.",
-      "choices": [],
-      "expected_answer": "Critères observables de réussite :\n- Nommer précisément l'évolution culturelle (ex. « démocratisation de la lecture et des loisirs »). \n- Fournir deux preuves, clairement identifiées par document : une preuve tirée du document A et une preuve tirée du document B (paraphrase correcte + mention « (Doc A) » ou « (Doc B) »). \n- Expliquer en 2–3 phrases comment la preuve A et la preuve B vont dans des sens opposés ou montrent une transformation progressive, reliant explicitement ces preuves à l'évolution nommée.",
-      "answer_kind": "structured",
-      "explanation": "Éléments d'aide pour la correction et exemple de réponse attendue :\n\nCe que l'élève doit faire :\n- Repérer une évolution culturelle concrète visible entre début et fin du siècle (par exemple : augmentation de la lecture, diffusion de la presse, accès élargi aux loisirs et spectacles, montée de l'alphabétisation). Cela montre qu'il identifie une évolution culturelle.\n- Citer une preuve de chaque document pour appuyer l'affirmation (paraphrase suffisante).\n- Expliquer le lien entre preuves et évolution (raisonnement historique simple : cause/conséquence ou comparaison temporelle).\n\nExemple de réponse correcte (modèle) :\n1) Évolution nommée : « Démocratisation de la lecture et des loisirs ».\n2) Preuves : « (Doc A) Le journal de voyage indique qu’au début du siècle il y avait peu de journaux bon marché et que la lecture était peu répandue dans les campagnes. » / « (Doc B) L’hebdomadaire populaire signale qu’à la fin du siècle des milliers d’exemplaires circulent, que des bibliothèques populaires attirent des ouvriers et que des spectacles s’adressent à un large public. »\n3) Explication : « Au début du siècle, la culture écrite et les spectacles étaient surtout réservés aux élites ; à la fin du siècle, la diffusion de la presse, l’alphabétisation liée à l’école laïque et l’apparition de lieux de loisir populaires montrent que l’accès à la culture s’est élargi. Ces changements traduisent une démocratisation des pratiques culturelles. »\n\nBarème suggéré (pratique) :\n- 1 point : évolution clairement nommée et pertinente. \n- 1 point : preuve correcte et clairement tirée du Doc A. \n- 1 point : preuve correcte et clairement tirée du Doc B. \n- 1 point : explication reliant preuves et évolution (cohérente et succincte).\n\nRemarque pédagogique (niveau 4e/3e, difficulté D2) : la tâche demande de choisir la méthode appropriée (comparer deux documents pour repérer un changement culturel) et d'extraire et utiliser des indices textuels ; l'élève doit sélectionner et organiser l'information, pas seulement restituer des connaissances générales.",
-      "automated_checks": {
-        "structural_validity": true,
-        "answer_correctness": true,
-        "skill_alignment": true,
-        "grade_appropriateness": false,
-        "executability": true,
-        "duplicate_safety": true
-      },
-      "deterministic_verification": null,
-      "quality_result": "REVIEW",
-      "quality_reason": [
-        "Independent pedagogical review is still required."
-      ],
-      "candidate_score": 53,
-      "hard_gates_passed": true,
-      "missing_coverage": true,
-      "recommended_decision": "KEEP_FOR_REVIEW",
-      "pipeline_version": "lcai-0012d4-wave1-v1",
-      "original_lcai_0012d_decision": "REVIEW",
-      "d4_wave1_selected": false
-    }
-  ],
-  "SK-ENR-GEOGRAPHY-4E-GLOBALIZATION-MAP": [
-    {
-      "content_id": 108700,
-      "version_id": 108702,
-      "author": "gpt-5-mini",
-      "code": "DRAFT-0012C-AI-ENR-GEOGRAPHY-4E-GLOBALIZATION-MAP-PRACTICE-20260726111101-1",
-      "grade": "FR-4E",
-      "subject": "GEOGRAPHY",
-      "chapter": "CH-GEOGRAPHY-4E-GLOBALIZATION",
-      "skill": "SK-ENR-GEOGRAPHY-4E-GLOBALIZATION-MAP",
-      "skill_name": "SK-ENR-GEOGRAPHY-4E-GLOBALIZATION-MAP",
-      "content_type": "practice",
-      "missing_slot": "practice",
-      "difficulty": 2,
-      "question": "Données (document synthétique, unités fictives : conteneurs/semaine)\n- Shanghai → Rotterdam : 320\n- Rotterdam → New York : 180\n- Shanghai → Singapore : 410\n- Singapore → Dubai : 200\n- Dubai → Lagos : 120\n- Lagos → Rotterdam : 90\n- New York → São Paulo : 140\n- São Paulo → Rotterdam : 70\n- Mumbai → Singapore : 160\n- Shanghai → Mumbai : 110\n- Singapore → New York : 130\n- Dubai → Rotterdam : 220\nConsignes (obligatoires)\n1) Trace un réseau schématique sur une feuille (ou un dessin numérique) en plaçant approximativement les villes sur un planisphère simplifié (ou en respectant leur répartition continentale).\n2) Représente chaque flux par une flèche dirigée (sens du flux).\n3) Utilise l'épaisseur des flèches pour traduire l'intensité : choisis une règle simple (par ex. épais/moyen/fin) et fais-en la légende. Indique les seuils choisis.\n4) Redimensionne la taille des nœuds selon l'importance totale de la ville (somme des flux entrants + sortants). Indique la règle de taille choisie.\n5) Identifie exactement deux (2) hubs globaux en appliquant la règle suivante : sélectionner d'abord les villes ayant le plus grand nombre de connexions (degré = nombre d'arêtes entrantes + sortantes). En cas d'égalité, départager par le volume total de flux. Donne une phrase de justification pour chaque hub choisit (2 phrases, une par hub), en mentionnant degré et volume total.\n6) Donne un exemple de légende complète (couleur/épaisseur des liens, tailles des nœuds) et ajoute une phrase qui explique pourquoi ta représentation permet de comprendre le fonctionnement du réseau mondial.\nRemarque : ton dessin peut varier, mais ta réponse écrite (liste des éléments demandés et justifications) doit être lisible et autonome.",
-      "choices": [],
-      "expected_answer": "Éléments attendus (modèle de réponse précis et vérifiable) :\n1) Légende choisie : seuils d'épaisseur des liens — épais ≥ 300, moyen 150–299, fin < 150 ; taille des nœuds proportionnelle au volume total (par exemple : grand ≥ 800, moyen 400–799, petit < 400).\n2) Liste des nœuds (8) et position approximative continentale : Shanghai (Asie‑Est), Singapore (Asie du Sud‑Est), Mumbai (Asie du Sud), Rotterdam (Europe), Dubai (Moyen‑Orient), Lagos (Afrique de l'Ouest), New York (Amérique du Nord), São Paulo (Amérique du Sud).\n3) Liste des liens avec direction et catégorie d'épaisseur :\n   - Shanghai → Rotterdam : 320 (épaise)\n   - Rotterdam → New York : 180 (moyenne)\n   - Shanghai → Singapore : 410 (épaise)\n   - Singapore → Dubai : 200 (moyenne)\n   - Dubai → Lagos : 120 (fine)\n   - Lagos → Rotterdam : 90 (fine)\n   - New York → São Paulo : 140 (fine)\n   - São Paulo → Rotterdam : 70 (fine)\n   - Mumbai → Singapore : 160 (moyenne)\n   - Shanghai → Mumbai : 110 (fine)\n   - Singapore → New York : 130 (fine)\n   - Dubai → Rotterdam : 220 (moyenne)\n4) Calculs pour justifier la taille des nœuds (somme entrants + sortants) :\n   - Shanghai : 840\n   - Singapore : 900\n   - Rotterdam : 880\n   - New York : 450\n   - Dubai : 540\n   - Mumbai : 270\n   - Lagos : 210\n   - São Paulo : 210\n   (appliquer la règle de taille donnée au point 1 pour classer chaque nœud)\n5) Hubs choisis selon la règle (degré d'abord, puis volume si besoin) :\n   - Hub global 1 : Rotterdam — degré 5 (4 entrantes, 1 sortante), volume total 880. Justification : degré le plus élevé et volume total très élevé.\n   - Hub global 2 : Singapore — degré 4, volume total 900. Justification : deuxième degré le plus élevé ; volume total le plus élevé, servant de plaque tournante Asie–Monde.\n   - Hub régional choisi (exigence du prompt : indiquer un hub régional) : New York — degré 3, volume total 450. Justification : principal relais pour les échanges vers l'Amérique du Sud dans ce jeu de données.\n6) Légende complète et phrase finale expliquant la représentation (ex. : « Les flèches épaisses montrent les axes de très forte circulation (Asie–Europe, Asie–Asie du Sud‑Est) ; les nœuds grands indiquent les plateformes d'éclatement et redistribution. Cette représentation permet de repérer visuellement hubs et corridors du réseau mondial. »)\nCette liste reprend exactement les éléments vérifiables que doit contenir la production.",
-      "answer_kind": "structured",
-      "explanation": "Correction commentée et calculs (explication destinée au professeur / corrigé modèle).\n1) Règles de représentation proposées (exemples) : épais ≥ 300 conteneurs/semaine, moyen 150–299, fin < 150. Taille nœud : grand ≥ 800, moyen 400–799, petit < 400. Ces seuils sont pédagogiques et rendent visible la hiérarchie.\n2) Calcul des volumes totaux (entrants + sortants) à partir des flux donnés :\n   - Shanghai : sorties 320+410+110 = 840 ; entrées = 0 ; total = 840.\n   - Singapore : sorties 200+130 = 330 ; entrées 410+160 = 570 ; total = 900.\n   - Rotterdam : sorties 180 ; entrées 320+90+70+220 = 700 ; total = 880.\n   - New York : sorties 140 ; entrées 180+130 = 310 ; total = 450.\n   - Dubai : sorties 120+220 = 340 ; entrées 200 ; total = 540.\n   - Mumbai : sorties 160 ; entrées 110 ; total = 270.\n   - Lagos : sorties 90 ; entrées 120 ; total = 210.\n   - São Paulo : sorties 70 ; entrées 140 ; total = 210.\n3) Calcul des degrés (nombre de liens entrants + sortants, chacun compté une fois) :\n   - Rotterdam : degré 5 (entrantes de Shanghai, Lagos, São Paulo, Dubai ; sortante vers New York).\n   - Singapore : degré 4 (entrantes de Shanghai, Mumbai ; sortantes vers Dubai, New York).\n   - Shanghai : degré 3 (sortantes vers Rotterdam, Singapore, Mumbai).\n   - New York : degré 3 (entrantes de Rotterdam, Singapore ; sortante vers São Paulo).\n   - Dubai : degré 3 (entrantes de Singapore ; sortantes vers Lagos, Rotterdam).\n   - Mumbai : degré 2 (sortante vers Singapore ; entrante de Shanghai).\n   - Lagos : degré 2 (entrante de Dubai ; sortante vers Rotterdam).\n   - São Paulo : degré 2 (entrante de New York ; sortante vers Rotterdam).\n4) Application de la règle demandée pour choisir 2 hubs globaux : on choisit d’abord les villes avec le plus grand degré. Rotterdam a le degré maximal (5) ; Singapore a le deuxième degré le plus élevé (4). En cas de doute, on utilise le volume total comme départageur (ici Singapore 900 > Rotterdam 880 > Shanghai 840). Ainsi les deux hubs globaux retenus sont Rotterdam et Singapore. New York est retenu comme hub régional (degré 3, rôle de relais vers l'Amérique du Sud, volume 450).\n5) Éléments de justification attendus dans la production de l'élève : citer le degré et le volume total pour chaque hub choisi, montrer la légende choisie (seuils) et expliquer en une phrase pourquoi la taille et l'épaisseur rendent visible la hiérarchie du réseau.\nRemarque pédagogique : on accepte des variantes de seuils et de positionnements géographiques si l'élève applique de façon cohérente sa règle et fournit les calculs qui justifient le choix des hubs.\nCe corrigé fournit les calculs et la logique attendue pour permettre une correction objective.",
-      "automated_checks": {
-        "structural_validity": true,
-        "answer_correctness": true,
-        "skill_alignment": true,
-        "grade_appropriateness": false,
-        "executability": true,
-        "duplicate_safety": true
-      },
-      "deterministic_verification": null,
-      "quality_result": "REVIEW",
-      "quality_reason": [
-        "Independent pedagogical review is still required."
-      ],
-      "candidate_score": 53,
-      "hard_gates_passed": true,
-      "missing_coverage": true,
-      "recommended_decision": "KEEP_FOR_REVIEW",
-      "pipeline_version": "lcai-0012d4-wave1-v1",
-      "original_lcai_0012d_decision": "REVIEW",
-      "d4_wave1_selected": false
-    }
-  ],
-  "SK-ENR-SVT-4E-EARTH-RISK": [
-    {
-      "content_id": 109152,
-      "version_id": 109154,
-      "author": "gpt-5-mini",
-      "code": "DRAFT-0012C-AI-ENR-SVT-4E-EARTH-RISK-PRACTICE-20260726111427-1",
-      "grade": "FR-4E",
-      "subject": "SVT",
-      "chapter": "CH-SVT-4E-EARTH",
-      "skill": "SK-ENR-SVT-4E-EARTH-RISK",
-      "skill_name": "SK-ENR-SVT-4E-EARTH-RISK",
-      "content_type": "practice",
-      "missing_slot": "practice",
-      "difficulty": 2,
-      "question": "Document synthétique (classe) :\n- Un séisme de magnitude 6,5 a son épicentre à 30 km au large d’une commune côtière (aléa sismique et risque de tsunami modéré). Des répliques sont probables.\n- Ville C : 15 000 habitants. Types de bâtiments : 40 % maisons anciennes en maçonnerie non armée, 50 % bâtiments en béton armé, 10 % maisons en bois.\n- Infrastructures : un hôpital se trouve sur une colline à l’arrière-ville ; une école se situe dans la zone basse, à 2 km du littoral. Il existe deux routes d’évacuation : l’une longe la côte (zone de falaises instables), l’autre va vers l’intérieur en traversant un col étroit.\n- Mesures déjà en place : une sirène d’alerte locale est installée près de la mairie.\n\nTâches :\n1) Pour chaque élément ci‑dessous, indiquez s’il s’agit d’un « aléa », d’une « vulnérabilité » ou d’une « mesure de prévention ». Donnez un mot-clé (« aléa », « vulnérabilité » ou « prévention ») pour chacun.\n   a) Épicentre à 30 km en mer, séisme M6,5\n   b) Anciennes maisons en maçonnerie non armée\n   c) Hôpital situé sur la colline\n   d) Route d’évacuation le long de la côte, exposée aux glissements\n   e) Sirène d’alerte installée près de la mairie\n\n2) Parmi les actions suivantes, choisissez les DEUX mesures de prévention prioritaires à mettre en œuvre pour réduire le risque dans cette commune, puis justifiez brièvement (1–2 phrases) votre choix en reliant explicitement l’aléa aux vulnérabilités qu’elles réduisent.\n   Options :\n   A) Renforcer les maisons anciennes en maçonnerie (travaux structurels)\n   B) Construire des abris et points de rassemblement sur la colline\n   C) Renforcer et diversifier les routes d’évacuation vers l’intérieur (création d’itinéraires sûrs)\n   D) Installer et relier le système d’alerte local à un système d’alerte tsunami régional (améliorer l’alerte)\n   E) Mettre en place des exercices annuels d’évacuation et de sensibilisation pour toute la population",
-      "choices": [
-        "A) Renforcer les maisons anciennes en maçonnerie (travaux structurels)",
-        "B) Construire des abris et points de rassemblement sur la colline",
-        "C) Renforcer et diversifier les routes d’évacuation vers l’intérieur (création d’itinéraires sûrs)",
-        "D) Installer et relier le système d’alerte local à un système d’alerte tsunami régional (améliorer l’alerte)",
-        "E) Mettre en place des exercices annuels d’évacuation et de sensibilisation pour toute la population"
-      ],
-      "expected_answer": "1) a) aléa ; b) vulnérabilité ; c) vulnérabilité ; d) vulnérabilité ; e) prévention\n2) Mesures prioritaires : C) Renforcer et diversifier les routes d’évacuation vers l’intérieur (création d’itinéraires sûrs) ; D) Installer et relier le système d’alerte local à un système d’alerte tsunami régional (améliorer l’alerte).",
-      "answer_kind": "structured",
-      "explanation": "Réponses attendues et justification pédagogique :\n1) Classification :\n   a) Épicentre à 30 km en mer, séisme M6,5 → aléa (événement naturel dangereux susceptible de produire tremblements et tsunamis).\n   b) Anciennes maisons en maçonnerie non armée → vulnérabilité (car elles risquent de s’effondrer et d’augmenter le nombre de victimes).\n   c) Hôpital situé sur la colline → vulnérabilité (position d’un équipement critique : ici la colline réduit la vulnérabilité de l’hôpital face au tsunami, mais la présence même d’un équipement critique est un facteur de vulnérabilité si son accès ou son fonctionnement peut être perdu ; on classe donc l’emplacement/contrainte comme élément influençant la vulnérabilité globale).\n   d) Route d’évacuation le long de la côte, exposée aux glissements → vulnérabilité (voie d’évacuation susceptible d’être coupée, ce qui augmente le risque pour la population).\n   e) Sirène d’alerte installée près de la mairie → prévention (mesure non-structurelle qui permet d’alerter et d’organiser l’évacuation).\n\n2) Choix des deux mesures prioritaires (attendu : C et D) et justification courte :\n   - D (alerte tsunami améliorée) : l’aléa principal est un séisme offshore pouvant provoquer un tsunami ; améliorer l’alerte permet d’avertir la population plus rapidement et de déclencher l’évacuation avant l’arrivée d’une vague, ce qui réduit fortement le nombre de victimes immédiates. L’alerte s’attaque directement à la temporalité de l’aléa (prévenir avant l’impact).\n   - C (renforcer/diversifier routes d’évacuation) : la vulnérabilité majeure identifiée est l’unique route côtière exposée aux glissements ; si elle est coupée, l’évacuation devient impossible. Créer ou sécuriser des itinéraires vers l’intérieur réduit cette vulnérabilité et assure l’évacuation même en cas de dommages locaux.\n\nRemarque pédagogique : l’option A (renforcement des maisons) est également importante — elle réduit la vulnérabilité des bâtiments — mais c’est une mesure structurelle longue à mettre en place. En situation de risque de tsunami imminent, les priorités opérationnelles portent sur l’alerte et l’évacuation sécurisée ; à moyen et long terme, on combine ces mesures (A + maintenance des itinéraires + sensibilisation).\n\nCritères de réussite (comment l’élève est évalué) :\n- Pour la tâche 1 : chaque élément correctement classé (3 pts par item, total 15 pts). L’élève doit montrer qu’il distingue aléa (événement), vulnérabilité (élément susceptible d’aggraver les conséquences) et prévention (mesure réduisant le risque).\n- Pour la tâche 2 : choix des deux options exactes (6 pts) et justification claire (4 pts) qui lie explicitement un aléa identifié à une vulnérabilité réduite par la mesure choisie. Une bonne justification évoque la manière dont la mesure réduit la probabilité de victimes ou les dommages (par ex. réduction du temps d’exposition, maintien des itinéraires, protection des structures vitales).\n\nRemarque sur erreurs fréquentes ciblées : confondre « aléa » et « vulnérabilité » (par ex. dire que les anciennes maisons sont un aléa) ; penser qu’une sirène n’est pas une prévention si elle existe déjà (il faut comprendre qu’elle est une mesure de prévention/alerte).",
-      "automated_checks": {
-        "structural_validity": true,
-        "answer_correctness": true,
-        "skill_alignment": true,
-        "grade_appropriateness": false,
-        "executability": true,
-        "duplicate_safety": true
-      },
-      "deterministic_verification": null,
-      "quality_result": "REVIEW",
-      "quality_reason": [
-        "Independent pedagogical review is still required."
-      ],
-      "candidate_score": 53,
-      "hard_gates_passed": true,
-      "missing_coverage": true,
-      "recommended_decision": "KEEP_FOR_REVIEW",
-      "pipeline_version": "lcai-0012d4-wave1-v1",
-      "original_lcai_0012d_decision": "REVIEW",
-      "d4_wave1_selected": false
-    }
-  ],
-  "SK-ENR-GEOGRAPHY-3E-TERRITORY-MOBILITY": [
-    {
-      "content_id": 107872,
-      "version_id": 107874,
-      "author": "gpt-5-mini",
-      "code": "DRAFT-0012C-AI-ENR-GEOGRAPHY-3E-TERRITORY-MOBILITY-PRACTICE-20260726110411-1",
-      "grade": "FR-3E",
-      "subject": "GEOGRAPHY",
-      "chapter": "CH-GEOGRAPHY-3E-TERRITORY",
-      "skill": "SK-ENR-GEOGRAPHY-3E-TERRITORY-MOBILITY",
-      "skill_name": "SK-ENR-GEOGRAPHY-3E-TERRITORY-MOBILITY",
-      "content_type": "practice",
-      "missing_slot": "practice",
-      "difficulty": 2,
-      "question": "Document synthétique (document de classe, inventé pour l'exercice) :\n- Carte schématique : flèches importantes indiquant des mouvements de population et de navettes\n  • Grandes flèches convergentes vers les métropoles (Paris, Lyon, Marseille, Toulouse) indiquant migrations résidentielles et flux d'emploi.\n  • Bandes périphériques autour des métropoles marquées « périurbanisation : croissance démographique ».\n  • Flèches sortantes depuis certaines zones rurales intérieures vers villes moyennes et métropoles, avec annotation « départs et vieillissement ».\n  • Zones littorales et océanes annotées « attractivité touristique et résidences secondaires ».\n  • Petites flèches pointant vers métropoles depuis l'étranger, annotation « migrations internationales concentrées en zones urbaines ».\n- Légende qualitative : « centres urbains : croissance ; périurbain : forte augmentation ; rural isolé : déclin démographique ; littoral : attractif saisonnier ». \n\nConsigne : Expliquez en quoi ces éléments traduisent les principales mobilités territoriales contemporaines en France. Utilisez des termes géographiques (métropolisation, périurbanisation, exode rural, migrations pendulaires, migrations internationales) et citez au moins deux indices du document qui soutiennent votre explication.",
-      "choices": [],
-      "expected_answer": "Critères d'évaluation observables :\n1) Identification précise d'au moins trois types de mobilité (par exemple : migrations vers les métropoles / périurbanisation / exode rural / migrations pendulaires / migrations internationales). \n2) Pour chaque type identifié, explication d'au moins une cause (au total au moins 3 causes différentes) : emploi/économie, accès aux services/éducation/santé, qualité de vie/logement, infrastructures de transport, facteurs démographiques. \n3) Présentation d'au moins trois conséquences territoriales distinctes (par exemple : renforcement des métropoles et ségrégation socio-spatiale, étalement urbain et artificialisation, dévitalisation des campagnes, pression sur les littoraux, transformations des transports quotidiens). \n4) Lien explicite avec le document : citer au moins deux indices du document (ex. : « flèches convergentes vers les métropoles », « annotation périurbanisation », « zones rurales : départs et vieillissement », « migrations internationales concentrées en zones urbaines ») et expliquer comment ils soutiennent l'argumentation. \nRéussite minimale : respecter les 4 critères ci-dessus.",
-      "answer_kind": "open_response",
-      "explanation": "Modèle de réponse (exemple attendu) :\nLe document montre d'abord une forte métropolisation : de grandes flèches convergent vers Paris, Lyon, Marseille et Toulouse, ce qui signifie des migrations résidentielles et des flux d'emploi vers ces centres. Cause : concentration des emplois, des services supérieurs et des universités dans les métropoles. Conséquence : renforcement économique et démographique des métropoles et risque de ségrégation sociale (prix du logement plus élevés, gentrification). \nEnsuite, la légende et les bandes périphériques indiquent une périurbanisation : croissance démographique autour des villes. Cause : recherche de logements plus abordables et amélioration des transports (transports quotidiens pendulaires). Conséquence : étalement urbain, augmentation des déplacements quotidiens et artificialisation des espaces agricoles. \nLe document signale aussi des départs depuis les zones rurales intérieures (« départs et vieillissement »). Cause : manque d'emplois locaux et de services, vieillissement de la population. Conséquence : dévitalisation de certains territoires ruraux, fermeture d'écoles/commerces, fragilisation des services publics locaux. \nEnfin, les petites flèches depuis l'étranger vers les villes et la mention « migrations internationales concentrées en zones urbaines » indiquent que l'immigration se concentre surtout en zones urbaines, alimentant la diversité démographique et répondant à des besoins de main-d'œuvre. Les littoraux marqués attractifs montrent une mobilité saisonnière et l'installation de résidences secondaires, cause : attractivité touristique et climatique ; conséquence : pression sur l'environnement côtier et hausse des prix immobiliers saisonniers.\n\nBarème indicatif lié aux critères :\n- Critère 1 (types) : 2 points si ≥3 types clairement identifiés, 1 point si 2 types. \n- Critère 2 (causes) : 3 points si ≥3 causes différentes expliquées clairement, 2 points si 2 causes, 1 point si 1 cause. \n- Critère 3 (conséquences) : 3 points si ≥3 conséquences distinctes expliquées, 2 points si 2, 1 point si 1. \n- Critère 4 (lien avec le document) : 2 points si au moins deux indices du document sont cités et explicitement liés aux explications, 1 point si un indice cité. \nTotal maximal proposé : 10 points. \n\nRemarques pédagogiques : l'élève doit montrer qu'il sait sélectionner des informations pertinentes dans le document (D2) et mobiliser des notions de géographie (métropolisation, périurbanisation, exode rural, migrations pendulaires, migrations internationales).",
-      "automated_checks": {
-        "structural_validity": true,
-        "answer_correctness": true,
-        "skill_alignment": true,
-        "grade_appropriateness": false,
-        "executability": true,
-        "duplicate_safety": true
-      },
-      "deterministic_verification": null,
-      "quality_result": "REVIEW",
-      "quality_reason": [
-        "Independent pedagogical review is still required."
-      ],
-      "candidate_score": 53,
-      "hard_gates_passed": true,
-      "missing_coverage": true,
-      "recommended_decision": "KEEP_FOR_REVIEW",
-      "pipeline_version": "lcai-0012d4-wave1-v1",
-      "original_lcai_0012d_decision": "REVIEW",
-      "d4_wave1_selected": false
-    }
-  ],
   "SK-HISTORY-3E-WARS": [
     {
       "content_id": 108092,
@@ -603,47 +644,6 @@
       "expected_answer": "Critères observables de réussite (l'élève doit montrer ces éléments dans sa production) :\n1) Identifier au moins trois caractéristiques du totalitarisme (parti unique/culte du chef, contrôle de l'information, répression, endoctrinement, contrôle de l'économie).\n2) Expliquer clairement le lien causal entre ces caractéristiques et la logique de guerre totale (réorientation de l'économie, mobilisation humaine et morale, emploi de la propagande, militarisation de la société).\n3) Décrire les mécanismes concrets qui permettent l'organisation d'un génocide (déshumanisation idéologique, législation discriminatoire, utilisation de la police/administration, camps et logistique des transports) et les relier aux caractéristiques du régime.\n4) Donner au moins un exemple précis de régime et de politique (ex. : nazisme et persécution/extermination des Juifs ; pour d'autres régimes, citer des répressions/deportations sans prétendre automatiquement au même statut juridique si incertain).\n5) Proposer une comparaison brève entre 1914–1918 et 1939–1945 montrant une continuité ou une rupture (par ex. : continuité dans la mobilisation totale des sociétés ; rupture : industrialisation de la violence et généralisation de la violence d'extermination).\n6) Structuration et argumentative : introduction, développement en parties, conclusion, et usage d'au moins deux éléments de preuve tirés du document ou des connaissances.",
       "answer_kind": "open_response",
       "explanation": "Explication et critères de correction (barème conseillé pour un exercice D2, total 10 points) :\n- Identification des caractéristiques du totalitarisme (2 points) : l'élève doit nommer au moins trois traits et montrer qu'il comprend leur sens.\n- Lien avec la guerre totale (2,5 points) : explication des mécanismes de mobilisation des ressources, d'économie de guerre, de propagande et de contrôle social qui intensifient le conflit.\n- Mécanismes du génocide (3 points) : décrire comment une idéologie d'État et les instruments du pouvoir (lois, police, administration, camps) rendent possible l'organisation systématique d'une violence d'extermination ; relier ces mécanismes aux caractéristiques identifiées.\n- Exemple(s) et comparaison 1914–1918 vs 1939–1945 (1,5 point) : citer au moins un régime et exposer une continuité ou une rupture pertinente.\n- Structuration et qualité d'argumentation (1 point) : clarté, logique et respect de la consigne.\n\nExemple de réponse attendue (schéma, pas une formulation obligatoire) :\nIntroduction : définir brièvement guerre totale et totalitarisme et annoncer le plan. \nDéveloppement A : présenter les caractéristiques d'un régime totalitaire (parti unique, culte du chef, contrôle de l'information, répression, contrôle économique) et expliquer comment elles permettent la mobilisation totale (ex. : propagande pour maintenir le moral et recruter, contrôle des médias pour justifier la guerre, économie réorganisée pour produire armements). \nDéveloppement B : expliquer les mécanismes conduisant au génocide : idéologie qui déshumanise des groupes, lois discriminatoires, rôle de la police et de l'administration pour identifier, arrêter et déporter, camps et transports organisés grâce à la bureaucratie et aux moyens mobilisés par l'économie de guerre. Lier chaque mécanisme à une caractéristique du régime (par ex. : contrôle de l'information facilite la déshumanisation). Citer le nazisme comme exemple pour l'extermination des Juifs, en précisant la nature étatique et organisée de la politique, et évoquer d'autres formes de violence d'État sans en faire automatiquement un génocide juridique si le contexte l'exige.\nDéveloppement C / conclusion : comparer 1914–1918 et 1939–1945 : continuité dans la mobilisation générale des sociétés ; rupture dans l'ampleur et le caractère organisé de l'extermination systématique durant la Seconde Guerre mondiale. Conclusion synthétique.\n\nRemarques pédagogiques : l'exercice est de type D2 car l'élève doit choisir et mobiliser des méthodes d'explication historique (identifier des traits, établir des liens de causalité, utiliser un exemple) plutôt que de restituer une seule définition. On attend une argumentation qui articule document et connaissances personnelles.",
-      "automated_checks": {
-        "structural_validity": true,
-        "answer_correctness": true,
-        "skill_alignment": true,
-        "grade_appropriateness": false,
-        "executability": true,
-        "duplicate_safety": true
-      },
-      "deterministic_verification": null,
-      "quality_result": "REVIEW",
-      "quality_reason": [
-        "Independent pedagogical review is still required."
-      ],
-      "candidate_score": 53,
-      "hard_gates_passed": true,
-      "missing_coverage": true,
-      "recommended_decision": "KEEP_FOR_REVIEW",
-      "pipeline_version": "lcai-0012d4-wave1-v1",
-      "original_lcai_0012d_decision": "REVIEW",
-      "d4_wave1_selected": false
-    }
-  ],
-  "SK-ENR-GEOGRAPHY-3E-EU-FRANCE": [
-    {
-      "content_id": 107784,
-      "version_id": 107786,
-      "author": "gpt-5-mini",
-      "code": "DRAFT-0012C-AI-ENR-GEOGRAPHY-3E-EU-FRANCE-ASSESSMENT-20260726110326-1",
-      "grade": "FR-3E",
-      "subject": "GEOGRAPHY",
-      "chapter": "CH-GEOGRAPHY-3E-EU",
-      "skill": "SK-ENR-GEOGRAPHY-3E-EU-FRANCE",
-      "skill_name": "SK-ENR-GEOGRAPHY-3E-EU-FRANCE",
-      "content_type": "assessment",
-      "missing_slot": "assessment",
-      "difficulty": 2,
-      "question": "Document synthétique pour la classe (texte inventé pour l'exercice) :\n- La France est un État membre fondateur de la construction européenne et participe aux principales institutions de l'Union (Commission européenne et Conseil à Bruxelles ; Parlement européen à Strasbourg).\n- Elle fait partie de la zone euro et de l'espace Schengen, ce qui facilite la libre circulation des personnes et des flux monétaires avec d'autres États membres.\n- La France compte parmi les principales économies de l'Union et possède un secteur agricole important pour l'approvisionnement européen.\n- La langue française et la culture française sont largement présentes dans les échanges culturels et institutionnels à l'échelle européenne.\nEn te fondant sur ce document, explique la place de la France en Europe selon au moins deux dimensions demandées.",
-      "choices": [],
-      "expected_answer": "Critères d'évaluation (réponse ouverte) :\n- Contenu : la réponse cite au moins 3 éléments précis du document (par exemple : « membre fondateur », « sièges des institutions », « zone euro/Schengen », « grande économie », « secteur agricole important », « influence culturelle »).\n- Pertinence : pour chaque dimension choisie (au moins deux), la réponse associe un ou plusieurs éléments du document à une explication claire montrant comment ces éléments traduisent la place de la France en Europe (par ex. : siège d'institutions → influence politique ; zone euro + échanges → intégration économique).\n- Raisonnement : la réponse fait un lien explicite entre preuve(s) et conclusion (cause/effet ou conséquence pour la place de la France).\n- Forme : texte en français, 6 à 8 phrases cohérentes et organisées.\n- Conclusion : une phrase finale résumant le rôle principal de la France en Europe (par ex. : « La France joue un rôle politique et économique majeur au sein de l'Union européenne. »).",
-      "answer_kind": "open_response",
-      "explanation": "Barème et guide d'aide à la correction (niveau 3e, D2 — sélection de méthode et utilisation de preuves) :\n- 4 points : tous les critères remplis — au moins 3 éléments cités, au moins deux dimensions traitées avec explications bien reliées aux preuves, 6–8 phrases, conclusion claire.\n- 3 points : la plupart des critères remplis — 2 éléments cités ou une dimension moins développée, ou longueur légèrement hors consigne (5 ou 9 phrases) mais raisonnement présent.\n- 2 points : preuves citées mais liens explicatifs faibles ou une seule dimension traitée correctement.\n- 1 point : référence au document limitée, explication insuffisante, structure très pauvre.\n- 0 point : hors sujet ou réponse non fournie.\nRemarques pédagogiques et exemples de bonne réponse (modèle indicatif, pas l'unique formulation acceptée) :\nExemple de réponse satisfaisante (6 phrases) : « La France est un membre fondateur de l'Union européenne et accueille des institutions européennes importantes, ce qui lui donne une influence politique dans les décisions communautaires. En étant au coeur des institutions (Commission/Council à Bruxelles, Parlement à Strasbourg), elle peut peser sur les politiques communes. De plus, sa présence dans la zone euro et l'espace Schengen montre qu'elle est fortement intégrée économiquement et facilite les échanges avec d'autres États membres. Le fait d'être une des principales économies de l'Union et d'avoir un secteur agricole important confirme son poids économique dans l'UE. Enfin, la diffusion de la langue et de la culture françaises renforce son rayonnement culturel en Europe. Ainsi, la France joue un rôle politique et économique majeur au sein de l'Union européenne. »\nErreurs fréquentes à corriger : confondre « Europe » et « Union européenne » — demande que l'élève précise s'il parle de l'UE ; ne pas donner d'exemples tirés du document ; limiter l'explication à des impressions générales sans montrer le lien preuve→conclusion.\nPourquoi cet exercice est de difficulté D2 : l'élève doit sélectionner des indicateurs pertinents dans le document (méthode), puis les relier explicitement à la place de la France (raisonnement d'application), sans se contenter d'énumérer des faits.",
       "automated_checks": {
         "structural_validity": true,
         "answer_correctness": true,

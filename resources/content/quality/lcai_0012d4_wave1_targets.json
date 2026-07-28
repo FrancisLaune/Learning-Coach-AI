@@ -1,39 +1,15 @@
 [
   {
-    "skill": "SK-ENR-HISTORY-4E-18TH-SOURCE",
-    "skill_name": "Interpréter une source du XVIIIe siècle",
+    "skill": "SK-ENR-SVT-4E-EARTH-RISK",
+    "skill_name": "Relier aléa, vulnérabilité et prévention",
     "grade": "FR-4E",
-    "subject": "HISTORY",
-    "chapter": "CH-HISTORY-4E-18TH",
+    "subject": "SVT",
+    "chapter": "CH-SVT-4E-EARTH",
     "wave_band": "TIER2_COMPLETION",
     "selected_slot": "practice",
     "complement_slot": "assessment",
     "candidate_count": 1,
-    "active_version_id": 108818
-  },
-  {
-    "skill": "SK-ENR-SVT-3E-HEALTH-VACCINATION",
-    "skill_name": "Expliquer le principe de vaccination",
-    "grade": "FR-3E",
-    "subject": "SVT",
-    "chapter": "CH-SVT-3E-HEALTH",
-    "wave_band": "TIER2_COMPLETION",
-    "selected_slot": "assessment",
-    "complement_slot": "practice",
-    "candidate_count": 1,
-    "active_version_id": 108430
-  },
-  {
-    "skill": "SK-ENR-SVT-4E-GENETICS-VARIATION",
-    "skill_name": "Expliquer une variation individuelle",
-    "grade": "FR-4E",
-    "subject": "SVT",
-    "chapter": "CH-SVT-4E-GENETICS",
-    "wave_band": "TIER2_COMPLETION",
-    "selected_slot": "practice",
-    "complement_slot": "assessment",
-    "candidate_count": 1,
-    "active_version_id": 109198
+    "active_version_id": 109154
   },
   {
     "skill": "SK-ENR-GEOGRAPHY-3E-GEOSCALE-GLOBAL",
@@ -58,6 +34,114 @@
     "complement_slot": "practice",
     "candidate_count": 1,
     "active_version_id": 108734
+  },
+  {
+    "skill": "SK-ENR-SVT-3E-HEALTH-VACCINATION",
+    "skill_name": "Expliquer le principe de vaccination",
+    "grade": "FR-3E",
+    "subject": "SVT",
+    "chapter": "CH-SVT-3E-HEALTH",
+    "wave_band": "TIER2_COMPLETION",
+    "selected_slot": "assessment",
+    "complement_slot": "practice",
+    "candidate_count": 1,
+    "active_version_id": 108430
+  },
+  {
+    "skill": "SK-ENR-HISTORY-4E-18TH-SOURCE",
+    "skill_name": "Interpréter une source du XVIIIe siècle",
+    "grade": "FR-4E",
+    "subject": "HISTORY",
+    "chapter": "CH-HISTORY-4E-18TH",
+    "wave_band": "TIER2_COMPLETION",
+    "selected_slot": "practice",
+    "complement_slot": "assessment",
+    "candidate_count": 1,
+    "active_version_id": 108818
+  },
+  {
+    "skill": "SK-ENR-SVT-4E-GENETICS-VARIATION",
+    "skill_name": "Expliquer une variation individuelle",
+    "grade": "FR-4E",
+    "subject": "SVT",
+    "chapter": "CH-SVT-4E-GENETICS",
+    "wave_band": "TIER2_COMPLETION",
+    "selected_slot": "practice",
+    "complement_slot": "assessment",
+    "candidate_count": 1,
+    "active_version_id": 109198
+  },
+  {
+    "skill": "SK-ENR-GEOGRAPHY-3E-TERRITORY-MOBILITY",
+    "skill_name": "Expliquer des mobilités territoriales",
+    "grade": "FR-3E",
+    "subject": "GEOGRAPHY",
+    "chapter": "CH-GEOGRAPHY-3E-TERRITORY",
+    "wave_band": "TIER2_COMPLETION",
+    "selected_slot": "practice",
+    "complement_slot": "assessment",
+    "candidate_count": 1,
+    "active_version_id": 107874
+  },
+  {
+    "skill": "SK-ENR-HISTORY-4E-FRANCE-CULTURE",
+    "skill_name": "Identifier une évolution culturelle",
+    "grade": "FR-4E",
+    "subject": "HISTORY",
+    "chapter": "CH-HISTORY-4E-FRANCE",
+    "wave_band": "TIER2_COMPLETION",
+    "selected_slot": "practice",
+    "complement_slot": "assessment",
+    "candidate_count": 1,
+    "active_version_id": 108894
+  },
+  {
+    "skill": "SK-ENR-GEOGRAPHY-4E-MOBILITY-EFFECT",
+    "skill_name": "Analyser des effets territoriaux",
+    "grade": "FR-4E",
+    "subject": "GEOGRAPHY",
+    "chapter": "CH-GEOGRAPHY-4E-MOBILITY",
+    "wave_band": "TIER2_COMPLETION",
+    "selected_slot": "assessment",
+    "complement_slot": "practice",
+    "candidate_count": 1,
+    "active_version_id": 108698
+  },
+  {
+    "skill": "SK-HISTORY-3E-FRANCE",
+    "skill_name": "Construire des repères politiques et sociaux depuis 1944",
+    "grade": "FR-3E",
+    "subject": "HISTORY",
+    "chapter": "CH-HISTORY-3E-FRANCE",
+    "wave_band": "TIER2_COMPLETION",
+    "selected_slot": "assessment",
+    "complement_slot": "practice",
+    "candidate_count": 1,
+    "active_version_id": 107978
+  },
+  {
+    "skill": "SK-ENR-GEOGRAPHY-3E-EU-FRANCE",
+    "skill_name": "Expliquer la place de la France en Europe",
+    "grade": "FR-3E",
+    "subject": "GEOGRAPHY",
+    "chapter": "CH-GEOGRAPHY-3E-EU",
+    "wave_band": "TIER2_COMPLETION",
+    "selected_slot": "assessment",
+    "complement_slot": "practice",
+    "candidate_count": 1,
+    "active_version_id": 107786
+  },
+  {
+    "skill": "SK-ENR-GEOGRAPHY-4E-GLOBALIZATION-MAP",
+    "skill_name": "Construire une représentation de réseaux",
+    "grade": "FR-4E",
+    "subject": "GEOGRAPHY",
+    "chapter": "CH-GEOGRAPHY-4E-GLOBALIZATION",
+    "wave_band": "TIER2_COMPLETION",
+    "selected_slot": "practice",
+    "complement_slot": "assessment",
+    "candidate_count": 1,
+    "active_version_id": 108702
   },
   {
     "skill": "SK-ENR-GEOGRAPHY-3E-GEOSCALE-COMPARE",
@@ -96,78 +180,6 @@
     "active_version_id": 107894
   },
   {
-    "skill": "SK-ENR-GEOGRAPHY-4E-MOBILITY-EFFECT",
-    "skill_name": "Analyser des effets territoriaux",
-    "grade": "FR-4E",
-    "subject": "GEOGRAPHY",
-    "chapter": "CH-GEOGRAPHY-4E-MOBILITY",
-    "wave_band": "TIER2_COMPLETION",
-    "selected_slot": "assessment",
-    "complement_slot": "practice",
-    "candidate_count": 1,
-    "active_version_id": 108698
-  },
-  {
-    "skill": "SK-HISTORY-3E-FRANCE",
-    "skill_name": "Construire des repères politiques et sociaux depuis 1944",
-    "grade": "FR-3E",
-    "subject": "HISTORY",
-    "chapter": "CH-HISTORY-3E-FRANCE",
-    "wave_band": "TIER2_COMPLETION",
-    "selected_slot": "assessment",
-    "complement_slot": "practice",
-    "candidate_count": 1,
-    "active_version_id": 107978
-  },
-  {
-    "skill": "SK-ENR-HISTORY-4E-FRANCE-CULTURE",
-    "skill_name": "Identifier une évolution culturelle",
-    "grade": "FR-4E",
-    "subject": "HISTORY",
-    "chapter": "CH-HISTORY-4E-FRANCE",
-    "wave_band": "TIER2_COMPLETION",
-    "selected_slot": "practice",
-    "complement_slot": "assessment",
-    "candidate_count": 1,
-    "active_version_id": 108894
-  },
-  {
-    "skill": "SK-ENR-GEOGRAPHY-4E-GLOBALIZATION-MAP",
-    "skill_name": "Construire une représentation de réseaux",
-    "grade": "FR-4E",
-    "subject": "GEOGRAPHY",
-    "chapter": "CH-GEOGRAPHY-4E-GLOBALIZATION",
-    "wave_band": "TIER2_COMPLETION",
-    "selected_slot": "practice",
-    "complement_slot": "assessment",
-    "candidate_count": 1,
-    "active_version_id": 108702
-  },
-  {
-    "skill": "SK-ENR-SVT-4E-EARTH-RISK",
-    "skill_name": "Relier aléa, vulnérabilité et prévention",
-    "grade": "FR-4E",
-    "subject": "SVT",
-    "chapter": "CH-SVT-4E-EARTH",
-    "wave_band": "TIER2_COMPLETION",
-    "selected_slot": "practice",
-    "complement_slot": "assessment",
-    "candidate_count": 1,
-    "active_version_id": 109154
-  },
-  {
-    "skill": "SK-ENR-GEOGRAPHY-3E-TERRITORY-MOBILITY",
-    "skill_name": "Expliquer des mobilités territoriales",
-    "grade": "FR-3E",
-    "subject": "GEOGRAPHY",
-    "chapter": "CH-GEOGRAPHY-3E-TERRITORY",
-    "wave_band": "TIER2_COMPLETION",
-    "selected_slot": "practice",
-    "complement_slot": "assessment",
-    "candidate_count": 1,
-    "active_version_id": 107874
-  },
-  {
     "skill": "SK-HISTORY-3E-WARS",
     "skill_name": "Expliquer guerres mondiales, totalitarismes et génocides",
     "grade": "FR-3E",
@@ -178,17 +190,5 @@
     "complement_slot": "assessment",
     "candidate_count": 1,
     "active_version_id": 108094
-  },
-  {
-    "skill": "SK-ENR-GEOGRAPHY-3E-EU-FRANCE",
-    "skill_name": "Expliquer la place de la France en Europe",
-    "grade": "FR-3E",
-    "subject": "GEOGRAPHY",
-    "chapter": "CH-GEOGRAPHY-3E-EU",
-    "wave_band": "TIER2_COMPLETION",
-    "selected_slot": "assessment",
-    "complement_slot": "practice",
-    "candidate_count": 1,
-    "active_version_id": 107786
   }
 ]

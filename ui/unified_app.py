@@ -42,6 +42,7 @@ from infrastructure.repositories.learning_session import DuckDBLearningSessionRe
 from infrastructure.repositories.onboarding import DuckDBOnboardingRepository
 from infrastructure.repositories.recommendation import DuckDBRecommendationRepository
 from infrastructure.repositories.unified_experience import DuckDBUnifiedExperienceRepository
+from infrastructure.repositories.virtual_teacher import DuckDBVirtualTeacherRepository
 from services.academic_year import academic_year_options, default_academic_year, parse_academic_year
 from services.learning_session.experience import StudentDashboard
 from services.learning_session.orchestration import LearningSessionService
@@ -56,6 +57,8 @@ from services.unified_experience import (
     ProgrammeChangeService,
     UnifiedOnboardingProfileService,
 )
+from services.virtual_teacher.ai_teacher_preferences_service import AITeacherPreferencesService
+from services.virtual_teacher.ai_teacher_service import AITeacherService
 from ui.curriculum_state import clear_curriculum_selection, reconcile_skills, reconcile_subject_change
 from ui.i18n import label
 from ui.navigation import apply_navigation_request, request_navigation
@@ -66,6 +69,11 @@ from ui.v2_experience import (
     student_dashboard,
     student_history,
     student_summary,
+)
+from ui.virtual_teacher import (
+    build_virtual_teacher_stack,
+    render_parent_virtual_teacher_settings,
+    render_student_virtual_teacher,
 )
 
 LoginRenderer = Callable[[], None]
@@ -88,6 +96,14 @@ OBJECTIVE_LABELS = {
 
 def _repository() -> DuckDBUnifiedExperienceRepository:
     return DuckDBUnifiedExperienceRepository()
+
+
+def _virtual_teacher_repository() -> DuckDBVirtualTeacherRepository:
+    return DuckDBVirtualTeacherRepository()
+
+
+def _virtual_teacher_services() -> tuple[AITeacherService, AITeacherPreferencesService]:
+    return build_virtual_teacher_stack(_virtual_teacher_repository)
 
 
 def _homework_sessions() -> HomeworkSessionService:
@@ -515,7 +531,7 @@ def coach_view(dashboard: StudentDashboard) -> None:
 
 def run_student(user: dict[str, object], learner_id: int) -> None:
     controller = build_student_experience_controller()
-    pages = ("Accueil", "Ma séance IA", "Devoirs", "Révision", "Mes progrès", "Mes résultats", "Mon planning", "Profil")
+    pages = ("Accueil", "Ma séance IA", "Mon professeur", "Devoirs", "Révision", "Mes progrès", "Mes résultats", "Mon planning", "Profil")
     apply_navigation_request(st.session_state, "student", "unified_student_page", pages)
     with st.sidebar:
         st.success(f"Élève : {user['name']}")
@@ -528,6 +544,21 @@ def run_student(user: dict[str, object], learner_id: int) -> None:
             coach_view(dashboard)
     elif page == "Ma séance IA":
         session_screen(controller, learner_id)
+    elif page == "Mon professeur":
+        teacher_service, preferences_service = _virtual_teacher_services()
+        profile = _safe(lambda: _repository().learner_management_profile(learner_id))
+        grade_label = None
+        if profile is not None:
+            grades = {item[0]: item[2] for item in _repository().grade_levels()}
+            grade_label = grades.get(profile.current_grade_id)
+        render_student_virtual_teacher(
+            user=user,
+            learner_id=learner_id,
+            teacher_service=teacher_service,
+            preferences_service=preferences_service,
+            learner_display_name=profile.first_name if profile else str(user["name"]),
+            grade_label=grade_label,
+        )
     elif page == "Devoirs":
         student_homework(learner_id)
     elif page == "Révision":
@@ -1164,6 +1195,14 @@ def run_parent(user: dict[str, object]) -> None:
     else:
         st.title("Paramètres parent")
         st.write("Les accès restent limités aux apprenants explicitement rattachés.")
+        _, preferences_service = _virtual_teacher_services()
+        render_parent_virtual_teacher_settings(
+            user=user,
+            parent_ref=parent_ref,
+            learner_id=learner_id,
+            learner_label=labels[learner_id],
+            preferences_service=preferences_service,
+        )
 
 
 def run_unified_app(login_renderer: LoginRenderer) -> None:
