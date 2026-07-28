@@ -1,0 +1,3010 @@
+{
+  "batch": "CM1-GEOGRAPHY-V1",
+  "purpose": "Parallel CM1 content preparation for Learning Coach AI",
+  "lifecycle_target": "Draft",
+  "automatic_approval": false,
+  "curriculum_version": "phase2-lcai-0011c",
+  "program_code": "FR-CYCLE3-CM1-2026",
+  "grade_code": "FR-CM1",
+  "subject_code": "GEOGRAPHY",
+  "skill_count": 12,
+  "candidate_count": 36,
+  "content_types": {
+    "practice": 24,
+    "assessment": 12
+  },
+  "difficulty_distribution": {
+    "1": 12,
+    "2": 24
+  },
+  "accepted_candidates": [
+    {
+      "code": "CM1-GEOGRAPHY-V1-PLACES-LOCATE-PRACTICE-01",
+      "grade": "FR-CM1",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-CM1-PLACES",
+      "skill": "SK-ENR-GEOGRAPHY-CM1-PLACES-LOCATE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Pour situer Courbevoie à une échelle plus large, on peut dire qu'elle se trouve :",
+      "expected_answer": "en Île-de-France, en France",
+      "answer_kind": "single_choice",
+      "explanation": "Une localisation peut être emboîtée : commune, région, pays.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-GEOGRAPHY-PLACES-LOCATE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-GEOGRAPHY-V1-PLACES-LOCATE-PRACTICE-01",
+        "title": "Localiser son lieu de vie à plusieurs échelles",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Pour situer Courbevoie à une échelle plus large, on peut dire qu'elle se trouve :",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "en Île-de-France, en France",
+          "options": [
+            "dans l'océan Atlantique",
+            "en Antarctique",
+            "au Japon",
+            "en Île-de-France, en France"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Une localisation peut être emboîtée : commune, région, pays.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-CM1-PLACES",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-CM1-PLACES-LOCATE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-geography-generation-spec-v1",
+          "template_version": "lcai-cm1-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-GEOGRAPHY-PLACES-LOCATE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-GEOGRAPHY-V1-PLACES-LOCATE-PRACTICE-02",
+      "grade": "FR-CM1",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-CM1-PLACES",
+      "skill": "SK-ENR-GEOGRAPHY-CM1-PLACES-LOCATE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Quelle échelle est la plus précise pour localiser une école dans un quartier ?",
+      "expected_answer": "le plan du quartier",
+      "answer_kind": "single_choice",
+      "explanation": "Un plan local offre le niveau de détail adapté.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-GEOGRAPHY-PLACES-LOCATE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-GEOGRAPHY-V1-PLACES-LOCATE-PRACTICE-02",
+        "title": "Localiser son lieu de vie à plusieurs échelles",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Quelle échelle est la plus précise pour localiser une école dans un quartier ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "le plan du quartier",
+          "options": [
+            "une carte de l'Europe",
+            "un globe sans détail",
+            "le plan du quartier",
+            "un planisphère"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Un plan local offre le niveau de détail adapté.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-CM1-PLACES",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-CM1-PLACES-LOCATE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-geography-generation-spec-v1",
+          "template_version": "lcai-cm1-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-GEOGRAPHY-PLACES-LOCATE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-GEOGRAPHY-V1-PLACES-LOCATE-ASSESSMENT-03",
+      "grade": "FR-CM1",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-CM1-PLACES",
+      "skill": "SK-ENR-GEOGRAPHY-CM1-PLACES-LOCATE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Quel ordre va de l'échelle locale à l'échelle mondiale ?",
+      "expected_answer": "commune → région → pays → monde",
+      "answer_kind": "single_choice",
+      "explanation": "On passe du lieu proche à des ensembles géographiques de plus en plus vastes.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-GEOGRAPHY-PLACES-LOCATE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-GEOGRAPHY-V1-PLACES-LOCATE-ASSESSMENT-03",
+        "title": "Localiser son lieu de vie à plusieurs échelles",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Quel ordre va de l'échelle locale à l'échelle mondiale ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "commune → région → pays → monde",
+          "options": [
+            "région → commune → monde → pays",
+            "commune → région → pays → monde",
+            "monde → commune → région → pays",
+            "pays → monde → commune → région"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "On passe du lieu proche à des ensembles géographiques de plus en plus vastes.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-CM1-PLACES",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-CM1-PLACES-LOCATE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-geography-generation-spec-v1",
+          "template_version": "lcai-cm1-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-GEOGRAPHY-PLACES-LOCATE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-GEOGRAPHY-V1-PLACES-DESCRIBE-PRACTICE-01",
+      "grade": "FR-CM1",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-CM1-PLACES",
+      "skill": "SK-ENR-GEOGRAPHY-CM1-PLACES-DESCRIBE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Des immeubles, commerces, routes et bureaux indiquent surtout un paysage :",
+      "expected_answer": "urbain",
+      "answer_kind": "single_choice",
+      "explanation": "Une forte concentration de bâtiments et fonctions caractérise un espace urbain.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-GEOGRAPHY-PLACES-DESCRIBE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-GEOGRAPHY-V1-PLACES-DESCRIBE-PRACTICE-01",
+        "title": "Décrire les paysages et fonctions de l'espace proche",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Des immeubles, commerces, routes et bureaux indiquent surtout un paysage :",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "urbain",
+          "options": [
+            "polaire inhabité",
+            "forestier uniquement",
+            "désertique",
+            "urbain"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Une forte concentration de bâtiments et fonctions caractérise un espace urbain.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-CM1-PLACES",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-CM1-PLACES-DESCRIBE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-geography-generation-spec-v1",
+          "template_version": "lcai-cm1-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-GEOGRAPHY-PLACES-DESCRIBE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-GEOGRAPHY-V1-PLACES-DESCRIBE-PRACTICE-02",
+      "grade": "FR-CM1",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-CM1-PLACES",
+      "skill": "SK-ENR-GEOGRAPHY-CM1-PLACES-DESCRIBE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Une école remplit principalement quelle fonction dans un quartier ?",
+      "expected_answer": "une fonction éducative",
+      "answer_kind": "single_choice",
+      "explanation": "Une école est un équipement destiné à l'éducation.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-GEOGRAPHY-PLACES-DESCRIBE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-GEOGRAPHY-V1-PLACES-DESCRIBE-PRACTICE-02",
+        "title": "Décrire les paysages et fonctions de l'espace proche",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Une école remplit principalement quelle fonction dans un quartier ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "une fonction éducative",
+          "options": [
+            "portuaire",
+            "minière",
+            "une fonction éducative",
+            "agricole"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Une école est un équipement destiné à l'éducation.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-CM1-PLACES",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-CM1-PLACES-DESCRIBE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-geography-generation-spec-v1",
+          "template_version": "lcai-cm1-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-GEOGRAPHY-PLACES-DESCRIBE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-GEOGRAPHY-V1-PLACES-DESCRIBE-ASSESSMENT-03",
+      "grade": "FR-CM1",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-CM1-PLACES",
+      "skill": "SK-ENR-GEOGRAPHY-CM1-PLACES-DESCRIBE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Pour décrire un paysage, il est utile de distinguer :",
+      "expected_answer": "les éléments naturels et les aménagements humains",
+      "answer_kind": "single_choice",
+      "explanation": "La description géographique s'appuie sur les éléments visibles et leurs fonctions.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-GEOGRAPHY-PLACES-DESCRIBE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-GEOGRAPHY-V1-PLACES-DESCRIBE-ASSESSMENT-03",
+        "title": "Décrire les paysages et fonctions de l'espace proche",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Pour décrire un paysage, il est utile de distinguer :",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "les éléments naturels et les aménagements humains",
+          "options": [
+            "les opinions sans observation",
+            "les éléments naturels et les aménagements humains",
+            "seulement les couleurs",
+            "uniquement les noms de rues"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "La description géographique s'appuie sur les éléments visibles et leurs fonctions.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-CM1-PLACES",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-CM1-PLACES-DESCRIBE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-geography-generation-spec-v1",
+          "template_version": "lcai-cm1-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-GEOGRAPHY-PLACES-DESCRIBE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-GEOGRAPHY-V1-PLACES-MAP-PRACTICE-01",
+      "grade": "FR-CM1",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-CM1-PLACES",
+      "skill": "SK-ENR-GEOGRAPHY-CM1-PLACES-MAP",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "À quoi sert une légende sur un plan ?",
+      "expected_answer": "à expliquer les figurés et symboles",
+      "answer_kind": "single_choice",
+      "explanation": "La légende donne le sens des figurés utilisés.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-GEOGRAPHY-PLACES-MAP",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-GEOGRAPHY-V1-PLACES-MAP-PRACTICE-01",
+        "title": "Lire et produire un plan simple",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "À quoi sert une légende sur un plan ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "à expliquer les figurés et symboles",
+          "options": [
+            "à donner l'heure",
+            "à calculer l'âge du plan",
+            "à remplacer l'orientation",
+            "à expliquer les figurés et symboles"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "La légende donne le sens des figurés utilisés.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-CM1-PLACES",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-CM1-PLACES-MAP",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-geography-generation-spec-v1",
+          "template_version": "lcai-cm1-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-GEOGRAPHY-PLACES-MAP",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-GEOGRAPHY-V1-PLACES-MAP-PRACTICE-02",
+      "grade": "FR-CM1",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-CM1-PLACES",
+      "skill": "SK-ENR-GEOGRAPHY-CM1-PLACES-MAP",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Sur un plan, quel élément aide à repérer le nord ?",
+      "expected_answer": "une flèche d'orientation",
+      "answer_kind": "single_choice",
+      "explanation": "Une flèche ou rose des vents permet de s'orienter.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-GEOGRAPHY-PLACES-MAP",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-GEOGRAPHY-V1-PLACES-MAP-PRACTICE-02",
+        "title": "Lire et produire un plan simple",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Sur un plan, quel élément aide à repérer le nord ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "une flèche d'orientation",
+          "options": [
+            "une photographie de classe",
+            "un titre seul",
+            "une flèche d'orientation",
+            "un prix"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Une flèche ou rose des vents permet de s'orienter.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-CM1-PLACES",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-CM1-PLACES-MAP",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-geography-generation-spec-v1",
+          "template_version": "lcai-cm1-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-GEOGRAPHY-PLACES-MAP",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-GEOGRAPHY-V1-PLACES-MAP-ASSESSMENT-03",
+      "grade": "FR-CM1",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-CM1-PLACES",
+      "skill": "SK-ENR-GEOGRAPHY-CM1-PLACES-MAP",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Pour représenter un parc sur un plan, il faut surtout :",
+      "expected_answer": "choisir un figuré et l'indiquer dans la légende",
+      "answer_kind": "single_choice",
+      "explanation": "Un plan utilise des figurés expliqués par une légende.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-GEOGRAPHY-PLACES-MAP",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-GEOGRAPHY-V1-PLACES-MAP-ASSESSMENT-03",
+        "title": "Lire et produire un plan simple",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Pour représenter un parc sur un plan, il faut surtout :",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "choisir un figuré et l'indiquer dans la légende",
+          "options": [
+            "supprimer tous les repères",
+            "choisir un figuré et l'indiquer dans la légende",
+            "écrire un long récit",
+            "changer l'échelle au hasard"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Un plan utilise des figurés expliqués par une légende.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-CM1-PLACES",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-CM1-PLACES-MAP",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-geography-generation-spec-v1",
+          "template_version": "lcai-cm1-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-GEOGRAPHY-PLACES-MAP",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-GEOGRAPHY-V1-PLACES-ACTORS-PRACTICE-01",
+      "grade": "FR-CM1",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-CM1-PLACES",
+      "skill": "SK-ENR-GEOGRAPHY-CM1-PLACES-ACTORS",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Qui peut décider d'aménager une piste cyclable communale ?",
+      "expected_answer": "la commune avec les acteurs concernés",
+      "answer_kind": "single_choice",
+      "explanation": "Les collectivités territoriales participent aux aménagements locaux.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-GEOGRAPHY-PLACES-ACTORS",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-GEOGRAPHY-V1-PLACES-ACTORS-PRACTICE-01",
+        "title": "Identifier des acteurs qui aménagent l'espace proche",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Qui peut décider d'aménager une piste cyclable communale ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "la commune avec les acteurs concernés",
+          "options": [
+            "un empereur romain",
+            "un personnage de roman",
+            "un arbitre de tennis",
+            "la commune avec les acteurs concernés"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Les collectivités territoriales participent aux aménagements locaux.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-CM1-PLACES",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-CM1-PLACES-ACTORS",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-geography-generation-spec-v1",
+          "template_version": "lcai-cm1-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-GEOGRAPHY-PLACES-ACTORS",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-GEOGRAPHY-V1-PLACES-ACTORS-PRACTICE-02",
+      "grade": "FR-CM1",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-CM1-PLACES",
+      "skill": "SK-ENR-GEOGRAPHY-CM1-PLACES-ACTORS",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Les habitants peuvent-ils être concernés par un nouvel aménagement ?",
+      "expected_answer": "Oui",
+      "answer_kind": "single_choice",
+      "explanation": "Les habitants utilisent les espaces et peuvent être consultés ou affectés.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-GEOGRAPHY-PLACES-ACTORS",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-GEOGRAPHY-V1-PLACES-ACTORS-PRACTICE-02",
+        "title": "Identifier des acteurs qui aménagent l'espace proche",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Les habitants peuvent-ils être concernés par un nouvel aménagement ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "Oui",
+          "options": [
+            "Seulement s'ils sont touristes",
+            "Uniquement au Moyen Âge",
+            "Oui",
+            "Non, jamais"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Les habitants utilisent les espaces et peuvent être consultés ou affectés.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-CM1-PLACES",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-CM1-PLACES-ACTORS",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-geography-generation-spec-v1",
+          "template_version": "lcai-cm1-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-GEOGRAPHY-PLACES-ACTORS",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-GEOGRAPHY-V1-PLACES-ACTORS-ASSESSMENT-03",
+      "grade": "FR-CM1",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-CM1-PLACES",
+      "skill": "SK-ENR-GEOGRAPHY-CM1-PLACES-ACTORS",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Une entreprise qui construit un nouveau commerce est :",
+      "expected_answer": "un acteur de l'aménagement",
+      "answer_kind": "single_choice",
+      "explanation": "Les entreprises font partie des acteurs pouvant transformer un territoire.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-GEOGRAPHY-PLACES-ACTORS",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-GEOGRAPHY-V1-PLACES-ACTORS-ASSESSMENT-03",
+        "title": "Identifier des acteurs qui aménagent l'espace proche",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Une entreprise qui construit un nouveau commerce est :",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "un acteur de l'aménagement",
+          "options": [
+            "une unité de mesure",
+            "un acteur de l'aménagement",
+            "un élément naturel",
+            "une période historique"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Les entreprises font partie des acteurs pouvant transformer un territoire.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-CM1-PLACES",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-CM1-PLACES-ACTORS",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-geography-generation-spec-v1",
+          "template_version": "lcai-cm1-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-GEOGRAPHY-PLACES-ACTORS",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-GEOGRAPHY-V1-HOUSING-HOUSING-PRACTICE-01",
+      "grade": "FR-CM1",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-CM1-HOUSING",
+      "skill": "SK-ENR-GEOGRAPHY-CM1-HOUSING-HOUSING",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Quelle différence distingue souvent une maison individuelle d'un immeuble collectif ?",
+      "expected_answer": "le nombre de logements regroupés dans le bâtiment",
+      "answer_kind": "single_choice",
+      "explanation": "Un immeuble collectif regroupe plusieurs logements, contrairement à une maison individuelle.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-GEOGRAPHY-HOUSING-HOUSING",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-GEOGRAPHY-V1-HOUSING-HOUSING-PRACTICE-01",
+        "title": "Comparer différentes formes d'habitat",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Quelle différence distingue souvent une maison individuelle d'un immeuble collectif ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "le nombre de logements regroupés dans le bâtiment",
+          "options": [
+            "la présence obligatoire d'une route",
+            "le pays où elle se trouve",
+            "la couleur du ciel",
+            "le nombre de logements regroupés dans le bâtiment"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Un immeuble collectif regroupe plusieurs logements, contrairement à une maison individuelle.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-CM1-HOUSING",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-CM1-HOUSING-HOUSING",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-geography-generation-spec-v1",
+          "template_version": "lcai-cm1-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-GEOGRAPHY-HOUSING-HOUSING",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-GEOGRAPHY-V1-HOUSING-HOUSING-PRACTICE-02",
+      "grade": "FR-CM1",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-CM1-HOUSING",
+      "skill": "SK-ENR-GEOGRAPHY-CM1-HOUSING-HOUSING",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Un habitat rural peut comprendre :",
+      "expected_answer": "des maisons dispersées ou regroupées en village",
+      "answer_kind": "single_choice",
+      "explanation": "Les espaces ruraux présentent diverses formes d'habitat.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-GEOGRAPHY-HOUSING-HOUSING",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-GEOGRAPHY-V1-HOUSING-HOUSING-PRACTICE-02",
+        "title": "Comparer différentes formes d'habitat",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Un habitat rural peut comprendre :",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "des maisons dispersées ou regroupées en village",
+          "options": [
+            "aucun logement",
+            "seulement des ports",
+            "des maisons dispersées ou regroupées en village",
+            "uniquement des gratte-ciel"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Les espaces ruraux présentent diverses formes d'habitat.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-CM1-HOUSING",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-CM1-HOUSING-HOUSING",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-geography-generation-spec-v1",
+          "template_version": "lcai-cm1-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-GEOGRAPHY-HOUSING-HOUSING",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-GEOGRAPHY-V1-HOUSING-HOUSING-ASSESSMENT-03",
+      "grade": "FR-CM1",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-CM1-HOUSING",
+      "skill": "SK-ENR-GEOGRAPHY-CM1-HOUSING-HOUSING",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Pour comparer deux habitats, quel critère est géographique ?",
+      "expected_answer": "densité et type de bâtiments",
+      "answer_kind": "single_choice",
+      "explanation": "La densité et la forme du bâti permettent de comparer les espaces habités.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-GEOGRAPHY-HOUSING-HOUSING",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-GEOGRAPHY-V1-HOUSING-HOUSING-ASSESSMENT-03",
+        "title": "Comparer différentes formes d'habitat",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Pour comparer deux habitats, quel critère est géographique ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "densité et type de bâtiments",
+          "options": [
+            "jour de la semaine",
+            "densité et type de bâtiments",
+            "prénom des habitants",
+            "couleur préférée des élèves"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "La densité et la forme du bâti permettent de comparer les espaces habités.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-CM1-HOUSING",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-CM1-HOUSING-HOUSING",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-geography-generation-spec-v1",
+          "template_version": "lcai-cm1-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-GEOGRAPHY-HOUSING-HOUSING",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-GEOGRAPHY-V1-HOUSING-FUNCTIONS-PRACTICE-01",
+      "grade": "FR-CM1",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-CM1-HOUSING",
+      "skill": "SK-ENR-GEOGRAPHY-CM1-HOUSING-FUNCTIONS",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Un quartier avec de nombreux logements a notamment une fonction :",
+      "expected_answer": "résidentielle",
+      "answer_kind": "single_choice",
+      "explanation": "La fonction résidentielle correspond au logement des habitants.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-GEOGRAPHY-HOUSING-FUNCTIONS",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-GEOGRAPHY-V1-HOUSING-FUNCTIONS-PRACTICE-01",
+        "title": "Identifier les fonctions d'un espace habité",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Un quartier avec de nombreux logements a notamment une fonction :",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "résidentielle",
+          "options": [
+            "volcanique",
+            "astronomique",
+            "archéologique",
+            "résidentielle"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "La fonction résidentielle correspond au logement des habitants.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-CM1-HOUSING",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-CM1-HOUSING-FUNCTIONS",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-geography-generation-spec-v1",
+          "template_version": "lcai-cm1-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-GEOGRAPHY-HOUSING-FUNCTIONS",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-GEOGRAPHY-V1-HOUSING-FUNCTIONS-PRACTICE-02",
+      "grade": "FR-CM1",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-CM1-HOUSING",
+      "skill": "SK-ENR-GEOGRAPHY-CM1-HOUSING-FUNCTIONS",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Une zone regroupant magasins et centre commercial a surtout une fonction :",
+      "expected_answer": "commerciale",
+      "answer_kind": "single_choice",
+      "explanation": "Les commerces donnent une fonction commerciale à l'espace.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-GEOGRAPHY-HOUSING-FUNCTIONS",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-GEOGRAPHY-V1-HOUSING-FUNCTIONS-PRACTICE-02",
+        "title": "Identifier les fonctions d'un espace habité",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Une zone regroupant magasins et centre commercial a surtout une fonction :",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "commerciale",
+          "options": [
+            "militaire antique",
+            "glaciaire",
+            "commerciale",
+            "agricole uniquement"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Les commerces donnent une fonction commerciale à l'espace.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-CM1-HOUSING",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-CM1-HOUSING-FUNCTIONS",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-geography-generation-spec-v1",
+          "template_version": "lcai-cm1-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-GEOGRAPHY-HOUSING-FUNCTIONS",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-GEOGRAPHY-V1-HOUSING-FUNCTIONS-ASSESSMENT-03",
+      "grade": "FR-CM1",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-CM1-HOUSING",
+      "skill": "SK-ENR-GEOGRAPHY-CM1-HOUSING-FUNCTIONS",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Une gare dans une ville remplit principalement une fonction :",
+      "expected_answer": "de transport et de mobilité",
+      "answer_kind": "single_choice",
+      "explanation": "Une gare organise les déplacements de voyageurs.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-GEOGRAPHY-HOUSING-FUNCTIONS",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-GEOGRAPHY-V1-HOUSING-FUNCTIONS-ASSESSMENT-03",
+        "title": "Identifier les fonctions d'un espace habité",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Une gare dans une ville remplit principalement une fonction :",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "de transport et de mobilité",
+          "options": [
+            "de frontière nationale",
+            "de transport et de mobilité",
+            "de production agricole",
+            "de relief naturel"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Une gare organise les déplacements de voyageurs.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-CM1-HOUSING",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-CM1-HOUSING-FUNCTIONS",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-geography-generation-spec-v1",
+          "template_version": "lcai-cm1-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-GEOGRAPHY-HOUSING-FUNCTIONS",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-GEOGRAPHY-V1-HOUSING-MOBILITY-PRACTICE-01",
+      "grade": "FR-CM1",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-CM1-HOUSING",
+      "skill": "SK-ENR-GEOGRAPHY-CM1-HOUSING-MOBILITY",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Pourquoi un habitant se déplace-t-il de son domicile vers une autre commune chaque matin ?",
+      "expected_answer": "il peut aller travailler ou étudier",
+      "answer_kind": "single_choice",
+      "explanation": "Les mobilités quotidiennes relient domicile, travail, école et services.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-GEOGRAPHY-HOUSING-MOBILITY",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-GEOGRAPHY-V1-HOUSING-MOBILITY-PRACTICE-01",
+        "title": "Relier lieux de résidence, travail et services",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Pourquoi un habitant se déplace-t-il de son domicile vers une autre commune chaque matin ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "il peut aller travailler ou étudier",
+          "options": [
+            "la commune change de place",
+            "le soleil l'oblige toujours",
+            "aucun déplacement n'a de motif",
+            "il peut aller travailler ou étudier"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Les mobilités quotidiennes relient domicile, travail, école et services.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-CM1-HOUSING",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-CM1-HOUSING-MOBILITY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-geography-generation-spec-v1",
+          "template_version": "lcai-cm1-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-GEOGRAPHY-HOUSING-MOBILITY",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-GEOGRAPHY-V1-HOUSING-MOBILITY-PRACTICE-02",
+      "grade": "FR-CM1",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-CM1-HOUSING",
+      "skill": "SK-ENR-GEOGRAPHY-CM1-HOUSING-MOBILITY",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Quel trajet est un déplacement quotidien lié à un service ?",
+      "expected_answer": "aller de chez soi chez le médecin",
+      "answer_kind": "single_choice",
+      "explanation": "Consulter un service peut nécessiter un déplacement dans l'espace proche.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-GEOGRAPHY-HOUSING-MOBILITY",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-GEOGRAPHY-V1-HOUSING-MOBILITY-PRACTICE-02",
+        "title": "Relier lieux de résidence, travail et services",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Quel trajet est un déplacement quotidien lié à un service ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "aller de chez soi chez le médecin",
+          "options": [
+            "voyager dans le temps",
+            "rester chez soi",
+            "aller de chez soi chez le médecin",
+            "migrer définitivement vers un autre continent"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Consulter un service peut nécessiter un déplacement dans l'espace proche.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-CM1-HOUSING",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-CM1-HOUSING-MOBILITY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-geography-generation-spec-v1",
+          "template_version": "lcai-cm1-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-GEOGRAPHY-HOUSING-MOBILITY",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-GEOGRAPHY-V1-HOUSING-MOBILITY-ASSESSMENT-03",
+      "grade": "FR-CM1",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-CM1-HOUSING",
+      "skill": "SK-ENR-GEOGRAPHY-CM1-HOUSING-MOBILITY",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Des transports en commun efficaces peuvent :",
+      "expected_answer": "faciliter l'accès au travail et aux services",
+      "answer_kind": "single_choice",
+      "explanation": "Les réseaux de transport structurent les mobilités.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-GEOGRAPHY-HOUSING-MOBILITY",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-GEOGRAPHY-V1-HOUSING-MOBILITY-ASSESSMENT-03",
+        "title": "Relier lieux de résidence, travail et services",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Des transports en commun efficaces peuvent :",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "faciliter l'accès au travail et aux services",
+          "options": [
+            "transformer une ville en forêt",
+            "faciliter l'accès au travail et aux services",
+            "supprimer toutes les distances",
+            "empêcher tout déplacement"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Les réseaux de transport structurent les mobilités.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-CM1-HOUSING",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-CM1-HOUSING-MOBILITY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-geography-generation-spec-v1",
+          "template_version": "lcai-cm1-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-GEOGRAPHY-HOUSING-MOBILITY",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-GEOGRAPHY-V1-HOUSING-LANDSCAPE-PRACTICE-01",
+      "grade": "FR-CM1",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-CM1-HOUSING",
+      "skill": "SK-ENR-GEOGRAPHY-CM1-HOUSING-LANDSCAPE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Quel indice évoque plutôt un paysage rural ?",
+      "expected_answer": "des champs et un habitat peu dense",
+      "answer_kind": "single_choice",
+      "explanation": "Les champs et une faible densité bâtie sont fréquents dans les paysages ruraux.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-GEOGRAPHY-HOUSING-LANDSCAPE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-GEOGRAPHY-V1-HOUSING-LANDSCAPE-PRACTICE-01",
+        "title": "Lire un paysage urbain ou rural",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Quel indice évoque plutôt un paysage rural ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "des champs et un habitat peu dense",
+          "options": [
+            "de nombreuses tours de bureaux",
+            "un métro très dense",
+            "un grand échangeur au centre-ville",
+            "des champs et un habitat peu dense"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Les champs et une faible densité bâtie sont fréquents dans les paysages ruraux.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-CM1-HOUSING",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-CM1-HOUSING-LANDSCAPE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-geography-generation-spec-v1",
+          "template_version": "lcai-cm1-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-GEOGRAPHY-HOUSING-LANDSCAPE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-GEOGRAPHY-V1-HOUSING-LANDSCAPE-PRACTICE-02",
+      "grade": "FR-CM1",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-CM1-HOUSING",
+      "skill": "SK-ENR-GEOGRAPHY-CM1-HOUSING-LANDSCAPE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Quel indice évoque plutôt un paysage urbain dense ?",
+      "expected_answer": "de nombreux immeubles rapprochés",
+      "answer_kind": "single_choice",
+      "explanation": "Une forte densité de bâtiments caractérise un espace urbain dense.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-GEOGRAPHY-HOUSING-LANDSCAPE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-GEOGRAPHY-V1-HOUSING-LANDSCAPE-PRACTICE-02",
+        "title": "Lire un paysage urbain ou rural",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Quel indice évoque plutôt un paysage urbain dense ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "de nombreux immeubles rapprochés",
+          "options": [
+            "une forêt sans route",
+            "un alpage isolé",
+            "de nombreux immeubles rapprochés",
+            "de vastes champs sans bâtiments"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Une forte densité de bâtiments caractérise un espace urbain dense.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-CM1-HOUSING",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-CM1-HOUSING-LANDSCAPE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-geography-generation-spec-v1",
+          "template_version": "lcai-cm1-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-GEOGRAPHY-HOUSING-LANDSCAPE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-GEOGRAPHY-V1-HOUSING-LANDSCAPE-ASSESSMENT-03",
+      "grade": "FR-CM1",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-CM1-HOUSING",
+      "skill": "SK-ENR-GEOGRAPHY-CM1-HOUSING-LANDSCAPE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Lire un paysage consiste d'abord à :",
+      "expected_answer": "observer et identifier les éléments visibles",
+      "answer_kind": "single_choice",
+      "explanation": "L'analyse part de l'observation avant l'interprétation.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-GEOGRAPHY-HOUSING-LANDSCAPE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-GEOGRAPHY-V1-HOUSING-LANDSCAPE-ASSESSMENT-03",
+        "title": "Lire un paysage urbain ou rural",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Lire un paysage consiste d'abord à :",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "observer et identifier les éléments visibles",
+          "options": [
+            "donner seulement son opinion",
+            "observer et identifier les éléments visibles",
+            "inventer des éléments invisibles",
+            "ignorer le premier plan"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "L'analyse part de l'observation avant l'interprétation.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-CM1-HOUSING",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-CM1-HOUSING-LANDSCAPE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-geography-generation-spec-v1",
+          "template_version": "lcai-cm1-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-GEOGRAPHY-HOUSING-LANDSCAPE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-GEOGRAPHY-V1-CONSUME-ORIGIN-PRACTICE-01",
+      "grade": "FR-CM1",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-CM1-CONSUME",
+      "skill": "SK-ENR-GEOGRAPHY-CM1-CONSUME-ORIGIN",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Sur l'étiquette d'un produit, quelle mention aide à connaître son origine ?",
+      "expected_answer": "le pays ou lieu de production",
+      "answer_kind": "single_choice",
+      "explanation": "L'étiquette peut indiquer le lieu de production ou de fabrication.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-GEOGRAPHY-CONSUME-ORIGIN",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-GEOGRAPHY-V1-CONSUME-ORIGIN-PRACTICE-01",
+        "title": "Identifier l'origine d'un produit consommé",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Sur l'étiquette d'un produit, quelle mention aide à connaître son origine ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "le pays ou lieu de production",
+          "options": [
+            "le code couleur du magasin uniquement",
+            "le prénom du client",
+            "l'heure d'ouverture",
+            "le pays ou lieu de production"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "L'étiquette peut indiquer le lieu de production ou de fabrication.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-CM1-CONSUME",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-CM1-CONSUME-ORIGIN",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-geography-generation-spec-v1",
+          "template_version": "lcai-cm1-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-GEOGRAPHY-CONSUME-ORIGIN",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-GEOGRAPHY-V1-CONSUME-ORIGIN-PRACTICE-02",
+      "grade": "FR-CM1",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-CM1-CONSUME",
+      "skill": "SK-ENR-GEOGRAPHY-CM1-CONSUME-ORIGIN",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Une banane vendue en France peut avoir été cultivée loin du lieu de consommation. Cela montre :",
+      "expected_answer": "qu'un produit peut circuler entre lieux de production et de consommation",
+      "answer_kind": "single_choice",
+      "explanation": "Les produits consommés peuvent venir de territoires éloignés.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-GEOGRAPHY-CONSUME-ORIGIN",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-GEOGRAPHY-V1-CONSUME-ORIGIN-PRACTICE-02",
+        "title": "Identifier l'origine d'un produit consommé",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Une banane vendue en France peut avoir été cultivée loin du lieu de consommation. Cela montre :",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "qu'un produit peut circuler entre lieux de production et de consommation",
+          "options": [
+            "qu'aucun transport n'est nécessaire",
+            "que les fruits sont fabriqués en usine",
+            "qu'un produit peut circuler entre lieux de production et de consommation",
+            "que tous les produits sont locaux"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Les produits consommés peuvent venir de territoires éloignés.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-CM1-CONSUME",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-CM1-CONSUME-ORIGIN",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-geography-generation-spec-v1",
+          "template_version": "lcai-cm1-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-GEOGRAPHY-CONSUME-ORIGIN",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-GEOGRAPHY-V1-CONSUME-ORIGIN-ASSESSMENT-03",
+      "grade": "FR-CM1",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-CM1-CONSUME",
+      "skill": "SK-ENR-GEOGRAPHY-CM1-CONSUME-ORIGIN",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Pour connaître l'origine d'une pomme, l'information la plus utile est :",
+      "expected_answer": "son lieu de culture indiqué sur l'étiquette",
+      "answer_kind": "single_choice",
+      "explanation": "L'origine renvoie au lieu où le produit a été cultivé ou produit.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-GEOGRAPHY-CONSUME-ORIGIN",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-GEOGRAPHY-V1-CONSUME-ORIGIN-ASSESSMENT-03",
+        "title": "Identifier l'origine d'un produit consommé",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Pour connaître l'origine d'une pomme, l'information la plus utile est :",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "son lieu de culture indiqué sur l'étiquette",
+          "options": [
+            "la météo de l'an prochain",
+            "son lieu de culture indiqué sur l'étiquette",
+            "sa taille seulement",
+            "le nombre de clients"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "L'origine renvoie au lieu où le produit a été cultivé ou produit.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-CM1-CONSUME",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-CM1-CONSUME-ORIGIN",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-geography-generation-spec-v1",
+          "template_version": "lcai-cm1-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-GEOGRAPHY-CONSUME-ORIGIN",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-GEOGRAPHY-V1-CONSUME-ROUTE-PRACTICE-01",
+      "grade": "FR-CM1",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-CM1-CONSUME",
+      "skill": "SK-ENR-GEOGRAPHY-CM1-CONSUME-ROUTE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Quel ordre est logique pour un fruit importé ?",
+      "expected_answer": "production → transport → distribution → consommation",
+      "answer_kind": "single_choice",
+      "explanation": "Une chaîne d'acheminement va du lieu de production au consommateur.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-GEOGRAPHY-CONSUME-ROUTE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-GEOGRAPHY-V1-CONSUME-ROUTE-PRACTICE-01",
+        "title": "Retracer l'acheminement d'une ressource",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Quel ordre est logique pour un fruit importé ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "production → transport → distribution → consommation",
+          "options": [
+            "consommation → production → transport → distribution",
+            "distribution → consommation → production → transport",
+            "transport → consommation → production → distribution",
+            "production → transport → distribution → consommation"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Une chaîne d'acheminement va du lieu de production au consommateur.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-CM1-CONSUME",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-CM1-CONSUME-ROUTE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-geography-generation-spec-v1",
+          "template_version": "lcai-cm1-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-GEOGRAPHY-CONSUME-ROUTE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-GEOGRAPHY-V1-CONSUME-ROUTE-PRACTICE-02",
+      "grade": "FR-CM1",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-CM1-CONSUME",
+      "skill": "SK-ENR-GEOGRAPHY-CM1-CONSUME-ROUTE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Pourquoi certains aliments passent-ils par un entrepôt ?",
+      "expected_answer": "pour être stockés et répartis vers les points de vente",
+      "answer_kind": "single_choice",
+      "explanation": "Les entrepôts jouent un rôle logistique dans la distribution.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-GEOGRAPHY-CONSUME-ROUTE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-GEOGRAPHY-V1-CONSUME-ROUTE-PRACTICE-02",
+        "title": "Retracer l'acheminement d'une ressource",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Pourquoi certains aliments passent-ils par un entrepôt ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "pour être stockés et répartis vers les points de vente",
+          "options": [
+            "pour devenir gratuits",
+            "pour supprimer leur origine",
+            "pour être stockés et répartis vers les points de vente",
+            "pour changer de continent sans transport"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Les entrepôts jouent un rôle logistique dans la distribution.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-CM1-CONSUME",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-CM1-CONSUME-ROUTE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-geography-generation-spec-v1",
+          "template_version": "lcai-cm1-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-GEOGRAPHY-CONSUME-ROUTE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-GEOGRAPHY-V1-CONSUME-ROUTE-ASSESSMENT-03",
+      "grade": "FR-CM1",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-CM1-CONSUME",
+      "skill": "SK-ENR-GEOGRAPHY-CM1-CONSUME-ROUTE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Un camion qui livre des produits à un supermarché intervient surtout à l'étape :",
+      "expected_answer": "du transport et de la distribution",
+      "answer_kind": "single_choice",
+      "explanation": "La livraison relie les lieux de stockage ou production aux points de vente.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-GEOGRAPHY-CONSUME-ROUTE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-GEOGRAPHY-V1-CONSUME-ROUTE-ASSESSMENT-03",
+        "title": "Retracer l'acheminement d'une ressource",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Un camion qui livre des produits à un supermarché intervient surtout à l'étape :",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "du transport et de la distribution",
+          "options": [
+            "de la météo",
+            "du transport et de la distribution",
+            "de la culture du blé",
+            "de la consommation à domicile"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "La livraison relie les lieux de stockage ou production aux points de vente.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-CM1-CONSUME",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-CM1-CONSUME-ROUTE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-geography-generation-spec-v1",
+          "template_version": "lcai-cm1-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-GEOGRAPHY-CONSUME-ROUTE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-GEOGRAPHY-V1-CONSUME-ACTORS-PRACTICE-01",
+      "grade": "FR-CM1",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-CM1-CONSUME",
+      "skill": "SK-ENR-GEOGRAPHY-CM1-CONSUME-ACTORS",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Qui produit directement des légumes dans une exploitation ?",
+      "expected_answer": "l'agriculteur",
+      "answer_kind": "single_choice",
+      "explanation": "L'agriculteur est un acteur de la production agricole.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-GEOGRAPHY-CONSUME-ACTORS",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-GEOGRAPHY-V1-CONSUME-ACTORS-PRACTICE-01",
+        "title": "Identifier les acteurs d'une chaîne de consommation",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Qui produit directement des légumes dans une exploitation ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "l'agriculteur",
+          "options": [
+            "le consommateur uniquement",
+            "le conducteur de métro",
+            "le bibliothécaire",
+            "l'agriculteur"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "L'agriculteur est un acteur de la production agricole.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-CM1-CONSUME",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-CM1-CONSUME-ACTORS",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-geography-generation-spec-v1",
+          "template_version": "lcai-cm1-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-GEOGRAPHY-CONSUME-ACTORS",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-GEOGRAPHY-V1-CONSUME-ACTORS-PRACTICE-02",
+      "grade": "FR-CM1",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-CM1-CONSUME",
+      "skill": "SK-ENR-GEOGRAPHY-CM1-CONSUME-ACTORS",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Dans une chaîne alimentaire, le supermarché est surtout :",
+      "expected_answer": "un acteur de la distribution",
+      "answer_kind": "single_choice",
+      "explanation": "Le commerce distribue les produits aux consommateurs.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-GEOGRAPHY-CONSUME-ACTORS",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-GEOGRAPHY-V1-CONSUME-ACTORS-PRACTICE-02",
+        "title": "Identifier les acteurs d'une chaîne de consommation",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Dans une chaîne alimentaire, le supermarché est surtout :",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "un acteur de la distribution",
+          "options": [
+            "une période historique",
+            "une source d'énergie",
+            "un acteur de la distribution",
+            "un phénomène naturel"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Le commerce distribue les produits aux consommateurs.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-CM1-CONSUME",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-CM1-CONSUME-ACTORS",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-geography-generation-spec-v1",
+          "template_version": "lcai-cm1-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-GEOGRAPHY-CONSUME-ACTORS",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-GEOGRAPHY-V1-CONSUME-ACTORS-ASSESSMENT-03",
+      "grade": "FR-CM1",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-CM1-CONSUME",
+      "skill": "SK-ENR-GEOGRAPHY-CM1-CONSUME-ACTORS",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Qui est l'acteur final lorsqu'une famille achète et utilise un produit ?",
+      "expected_answer": "le consommateur",
+      "answer_kind": "single_choice",
+      "explanation": "L'utilisateur ou acheteur final est le consommateur.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-GEOGRAPHY-CONSUME-ACTORS",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-GEOGRAPHY-V1-CONSUME-ACTORS-ASSESSMENT-03",
+        "title": "Identifier les acteurs d'une chaîne de consommation",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Qui est l'acteur final lorsqu'une famille achète et utilise un produit ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "le consommateur",
+          "options": [
+            "le satellite",
+            "le consommateur",
+            "le volcan",
+            "le producteur antique"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "L'utilisateur ou acheteur final est le consommateur.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-CM1-CONSUME",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-CM1-CONSUME-ACTORS",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-geography-generation-spec-v1",
+          "template_version": "lcai-cm1-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-GEOGRAPHY-CONSUME-ACTORS",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-GEOGRAPHY-V1-CONSUME-IMPACT-PRACTICE-01",
+      "grade": "FR-CM1",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-CM1-CONSUME",
+      "skill": "SK-ENR-GEOGRAPHY-CM1-CONSUME-IMPACT",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Transporter un produit sur une très longue distance peut notamment :",
+      "expected_answer": "augmenter les émissions liées au transport",
+      "answer_kind": "single_choice",
+      "explanation": "Les transports utilisent de l'énergie et peuvent émettre des gaz à effet de serre.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-GEOGRAPHY-CONSUME-IMPACT",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-GEOGRAPHY-V1-CONSUME-IMPACT-PRACTICE-01",
+        "title": "Reconnaître des effets environnementaux de la consommation",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Transporter un produit sur une très longue distance peut notamment :",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "augmenter les émissions liées au transport",
+          "options": [
+            "supprimer toute consommation d'énergie",
+            "faire disparaître les routes",
+            "ne jamais avoir aucun impact",
+            "augmenter les émissions liées au transport"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Les transports utilisent de l'énergie et peuvent émettre des gaz à effet de serre.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-CM1-CONSUME",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-CM1-CONSUME-IMPACT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-geography-generation-spec-v1",
+          "template_version": "lcai-cm1-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-GEOGRAPHY-CONSUME-IMPACT",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-GEOGRAPHY-V1-CONSUME-IMPACT-PRACTICE-02",
+      "grade": "FR-CM1",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-CM1-CONSUME",
+      "skill": "SK-ENR-GEOGRAPHY-CM1-CONSUME-IMPACT",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Quel geste peut réduire les déchets d'emballage ?",
+      "expected_answer": "utiliser une gourde réutilisable",
+      "answer_kind": "single_choice",
+      "explanation": "Réutiliser un contenant évite une partie des emballages jetables.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-GEOGRAPHY-CONSUME-IMPACT",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-GEOGRAPHY-V1-CONSUME-IMPACT-PRACTICE-02",
+        "title": "Reconnaître des effets environnementaux de la consommation",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Quel geste peut réduire les déchets d'emballage ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "utiliser une gourde réutilisable",
+          "options": [
+            "jeter les emballages dans la nature",
+            "emballer chaque objet deux fois",
+            "utiliser une gourde réutilisable",
+            "prendre plusieurs bouteilles jetables chaque jour"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Réutiliser un contenant évite une partie des emballages jetables.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-CM1-CONSUME",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-CM1-CONSUME-IMPACT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-geography-generation-spec-v1",
+          "template_version": "lcai-cm1-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-GEOGRAPHY-CONSUME-IMPACT",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-GEOGRAPHY-V1-CONSUME-IMPACT-ASSESSMENT-03",
+      "grade": "FR-CM1",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-CM1-CONSUME",
+      "skill": "SK-ENR-GEOGRAPHY-CM1-CONSUME-IMPACT",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Comparer deux produits pour une consommation plus responsable peut prendre en compte :",
+      "expected_answer": "origine, emballage et mode de production",
+      "answer_kind": "single_choice",
+      "explanation": "Plusieurs critères permettent de réfléchir aux impacts de consommation.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-GEOGRAPHY-CONSUME-IMPACT",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-GEOGRAPHY-V1-CONSUME-IMPACT-ASSESSMENT-03",
+        "title": "Reconnaître des effets environnementaux de la consommation",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Comparer deux produits pour une consommation plus responsable peut prendre en compte :",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "origine, emballage et mode de production",
+          "options": [
+            "le prénom du vendeur",
+            "origine, emballage et mode de production",
+            "seulement la couleur du logo",
+            "uniquement la taille du texte"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Plusieurs critères permettent de réfléchir aux impacts de consommation.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-CM1-CONSUME",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-CM1-CONSUME-IMPACT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-geography-generation-spec-v1",
+          "template_version": "lcai-cm1-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-GEOGRAPHY-CONSUME-IMPACT",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_geography_candidates_v1.json"
+      }
+    }
+  ]
+}

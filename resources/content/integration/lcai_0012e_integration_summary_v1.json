@@ -1,0 +1,104 @@
+{
+  "pipeline_version": "lcai-0012e-primary-v1",
+  "database": "data\\learning_coach_v2_0012e_quick.duckdb",
+  "production_db_modified": false,
+  "load": {
+    "files": 33,
+    "candidates": 1311,
+    "by_file": {
+      "lcai_cm1_emc_candidates_v1.json": 24,
+      "lcai_cm1_english_candidates_v1.json": 24,
+      "lcai_cm1_french_candidates_v1.json": 63,
+      "lcai_cm1_geography_candidates_v1.json": 36,
+      "lcai_cm1_history_candidates_v1.json": 36,
+      "lcai_cm1_mathematics_candidates_v1.json": 51,
+      "lcai_cm1_physics_chemistry_candidates_v1.json": 24,
+      "lcai_cm1_svt_candidates_v1.json": 24,
+      "lcai_cm2_emc_candidates_v1.json": 24,
+      "lcai_cm2_english_candidates_v1.json": 24,
+      "lcai_cm2_french_candidates_v1.json": 63,
+      "lcai_cm2_geography_candidates_v1.json": 36,
+      "lcai_cm2_history_candidates_v1.json": 36,
+      "lcai_cm2_mathematics_candidates_v1.json": 72,
+      "lcai_cm2_physics_chemistry_candidates_v1.json": 24,
+      "lcai_cm2_svt_candidates_v1.json": 24,
+      "lcai_6e_emc_candidates_v1.json": 24,
+      "lcai_6e_english_candidates_v1.json": 39,
+      "lcai_6e_french_candidates_v1.json": 66,
+      "lcai_6e_geography_candidates_v1.json": 54,
+      "lcai_6e_history_candidates_v1.json": 39,
+      "lcai_6e_mathematics_candidates_v1.json": 69,
+      "lcai_6e_physics_chemistry_candidates_v1.json": 30,
+      "lcai_6e_svt_candidates_v1.json": 30,
+      "lcai_5e_emc_candidates_v1.json": 24,
+      "lcai_5e_english_candidates_v1.json": 39,
+      "lcai_5e_french_candidates_v1.json": 72,
+      "lcai_5e_geography_candidates_v1.json": 33,
+      "lcai_5e_history_candidates_v1.json": 33,
+      "lcai_5e_mathematics_candidates_v1.json": 75,
+      "lcai_5e_physics_chemistry_candidates_v1.json": 30,
+      "lcai_5e_spanish_candidates_v1.json": 39,
+      "lcai_5e_svt_candidates_v1.json": 30
+    },
+    "unique_codes": 1311
+  },
+  "resource_audit": {
+    "candidate_count": 1311,
+    "curriculum_valid": false,
+    "curriculum_mapping_errors": 303,
+    "malformed_records": 0,
+    "duplicate_codes": 0
+  },
+  "import": {
+    "imported": 0,
+    "skipped_existing": 60,
+    "skipped_blocked": 0,
+    "skipped_invalid": 0,
+    "failed": 0
+  },
+  "quality_estimates": {
+    "REJECT": 228,
+    "REVIEW": 566,
+    "PASS": 214,
+    "CORRECTION_REQUIRED": 303
+  },
+  "quality": {
+    "REVIEW": 36,
+    "REJECT": 24
+  },
+  "gap_analysis": {
+    "FR-CM1": {
+      "skills": 118,
+      "practice_gaps": 105,
+      "assessment_gaps": 98,
+      "usable_practice_slots": 8,
+      "usable_assessment_slots": 11,
+      "generation_required_slots": 217
+    },
+    "FR-CM2": {
+      "skills": 125,
+      "practice_gaps": 125,
+      "assessment_gaps": 125,
+      "usable_practice_slots": 0,
+      "usable_assessment_slots": 0,
+      "generation_required_slots": 250
+    },
+    "FR-6E": {
+      "skills": 143,
+      "practice_gaps": 143,
+      "assessment_gaps": 143,
+      "usable_practice_slots": 0,
+      "usable_assessment_slots": 0,
+      "generation_required_slots": 286
+    },
+    "FR-5E": {
+      "skills": 161,
+      "practice_gaps": 161,
+      "assessment_gaps": 161,
+      "usable_practice_slots": 0,
+      "usable_assessment_slots": 0,
+      "generation_required_slots": 322
+    }
+  },
+  "review_queue_size": 24
+}

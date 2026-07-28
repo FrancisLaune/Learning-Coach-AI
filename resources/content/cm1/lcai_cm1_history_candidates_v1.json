@@ -1,0 +1,3010 @@
+{
+  "batch": "CM1-HISTORY-V1",
+  "purpose": "Parallel CM1 content preparation for Learning Coach AI",
+  "lifecycle_target": "Draft",
+  "automatic_approval": false,
+  "curriculum_version": "phase2-lcai-0011c",
+  "program_code": "FR-CYCLE3-CM1-2026",
+  "grade_code": "FR-CM1",
+  "subject_code": "HISTORY",
+  "skill_count": 12,
+  "candidate_count": 36,
+  "content_types": {
+    "practice": 24,
+    "assessment": 12
+  },
+  "difficulty_distribution": {
+    "1": 12,
+    "2": 24
+  },
+  "accepted_candidates": [
+    {
+      "code": "CM1-HISTORY-V1-BEFORE-FRANCE-CHRONOLOGY-PRACTICE-01",
+      "grade": "FR-CM1",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-CM1-BEFORE-FRANCE",
+      "skill": "SK-ENR-HISTORY-CM1-BEFORE-FRANCE-CHRONOLOGY",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Quelle période vient avant l'Antiquité ?",
+      "expected_answer": "la Préhistoire",
+      "answer_kind": "single_choice",
+      "explanation": "La Préhistoire précède l'Antiquité.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-HISTORY-BEFORE-FRANCE-CHRONOLOGY",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-HISTORY-V1-BEFORE-FRANCE-CHRONOLOGY-PRACTICE-01",
+        "title": "Situer les premiers peuplements et l'Antiquité sur une chronologie",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Quelle période vient avant l'Antiquité ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "la Préhistoire",
+          "options": [
+            "le Moyen Âge",
+            "les Temps modernes",
+            "l'époque contemporaine",
+            "la Préhistoire"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "La Préhistoire précède l'Antiquité.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-CM1-BEFORE-FRANCE",
+          "primary_skill_code": "SK-ENR-HISTORY-CM1-BEFORE-FRANCE-CHRONOLOGY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-history-generation-spec-v1",
+          "template_version": "lcai-cm1-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-HISTORY-BEFORE-FRANCE-CHRONOLOGY",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-HISTORY-V1-BEFORE-FRANCE-CHRONOLOGY-PRACTICE-02",
+      "grade": "FR-CM1",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-CM1-BEFORE-FRANCE",
+      "skill": "SK-ENR-HISTORY-CM1-BEFORE-FRANCE-CHRONOLOGY",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Quel événement marque traditionnellement le début de l'Antiquité ?",
+      "expected_answer": "l'invention de l'écriture",
+      "answer_kind": "single_choice",
+      "explanation": "L'apparition de l'écriture sert traditionnellement de repère pour le début de l'Antiquité.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-HISTORY-BEFORE-FRANCE-CHRONOLOGY",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-HISTORY-V1-BEFORE-FRANCE-CHRONOLOGY-PRACTICE-02",
+        "title": "Situer les premiers peuplements et l'Antiquité sur une chronologie",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Quel événement marque traditionnellement le début de l'Antiquité ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "l'invention de l'écriture",
+          "options": [
+            "la chute de Rome",
+            "l'invention de l'imprimerie",
+            "l'invention de l'écriture",
+            "la Révolution française"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "L'apparition de l'écriture sert traditionnellement de repère pour le début de l'Antiquité.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-CM1-BEFORE-FRANCE",
+          "primary_skill_code": "SK-ENR-HISTORY-CM1-BEFORE-FRANCE-CHRONOLOGY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-history-generation-spec-v1",
+          "template_version": "lcai-cm1-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-HISTORY-BEFORE-FRANCE-CHRONOLOGY",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-HISTORY-V1-BEFORE-FRANCE-CHRONOLOGY-ASSESSMENT-03",
+      "grade": "FR-CM1",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-CM1-BEFORE-FRANCE",
+      "skill": "SK-ENR-HISTORY-CM1-BEFORE-FRANCE-CHRONOLOGY",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Range de la plus ancienne à la plus récente.",
+      "expected_answer": "Préhistoire → Antiquité → Moyen Âge",
+      "answer_kind": "single_choice",
+      "explanation": "La Préhistoire est suivie de l'Antiquité puis du Moyen Âge.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-HISTORY-BEFORE-FRANCE-CHRONOLOGY",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-HISTORY-V1-BEFORE-FRANCE-CHRONOLOGY-ASSESSMENT-03",
+        "title": "Situer les premiers peuplements et l'Antiquité sur une chronologie",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Range de la plus ancienne à la plus récente.",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "Préhistoire → Antiquité → Moyen Âge",
+          "options": [
+            "Préhistoire → Moyen Âge → Antiquité",
+            "Préhistoire → Antiquité → Moyen Âge",
+            "Antiquité → Préhistoire → Moyen Âge",
+            "Moyen Âge → Antiquité → Préhistoire"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "La Préhistoire est suivie de l'Antiquité puis du Moyen Âge.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-CM1-BEFORE-FRANCE",
+          "primary_skill_code": "SK-ENR-HISTORY-CM1-BEFORE-FRANCE-CHRONOLOGY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-history-generation-spec-v1",
+          "template_version": "lcai-cm1-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-HISTORY-BEFORE-FRANCE-CHRONOLOGY",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-HISTORY-V1-BEFORE-FRANCE-PEOPLES-PRACTICE-01",
+      "grade": "FR-CM1",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-CM1-BEFORE-FRANCE",
+      "skill": "SK-ENR-HISTORY-CM1-BEFORE-FRANCE-PEOPLES",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Avant la conquête romaine, comment appelle-t-on couramment les peuples installés en Gaule ?",
+      "expected_answer": "les Gaulois",
+      "answer_kind": "single_choice",
+      "explanation": "Le terme Gaulois désigne couramment les peuples de la Gaule avant la conquête romaine.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-HISTORY-BEFORE-FRANCE-PEOPLES",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-HISTORY-V1-BEFORE-FRANCE-PEOPLES-PRACTICE-01",
+        "title": "Identifier des caractéristiques des peuples de la Gaule",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Avant la conquête romaine, comment appelle-t-on couramment les peuples installés en Gaule ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "les Gaulois",
+          "options": [
+            "les Vikings",
+            "les Francs du Moyen Âge",
+            "les Incas",
+            "les Gaulois"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Le terme Gaulois désigne couramment les peuples de la Gaule avant la conquête romaine.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-CM1-BEFORE-FRANCE",
+          "primary_skill_code": "SK-ENR-HISTORY-CM1-BEFORE-FRANCE-PEOPLES",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-history-generation-spec-v1",
+          "template_version": "lcai-cm1-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-HISTORY-BEFORE-FRANCE-PEOPLES",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-HISTORY-V1-BEFORE-FRANCE-PEOPLES-PRACTICE-02",
+      "grade": "FR-CM1",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-CM1-BEFORE-FRANCE",
+      "skill": "SK-ENR-HISTORY-CM1-BEFORE-FRANCE-PEOPLES",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Quelle activité est attestée chez les populations gauloises ?",
+      "expected_answer": "l'agriculture et l'artisanat",
+      "answer_kind": "single_choice",
+      "explanation": "Les sociétés gauloises pratiquent notamment agriculture, élevage, artisanat et échanges.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-HISTORY-BEFORE-FRANCE-PEOPLES",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-HISTORY-V1-BEFORE-FRANCE-PEOPLES-PRACTICE-02",
+        "title": "Identifier des caractéristiques des peuples de la Gaule",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Quelle activité est attestée chez les populations gauloises ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "l'agriculture et l'artisanat",
+          "options": [
+            "la construction de gratte-ciel",
+            "l'imprimerie industrielle",
+            "l'agriculture et l'artisanat",
+            "uniquement la chasse"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Les sociétés gauloises pratiquent notamment agriculture, élevage, artisanat et échanges.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-CM1-BEFORE-FRANCE",
+          "primary_skill_code": "SK-ENR-HISTORY-CM1-BEFORE-FRANCE-PEOPLES",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-history-generation-spec-v1",
+          "template_version": "lcai-cm1-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-HISTORY-BEFORE-FRANCE-PEOPLES",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-HISTORY-V1-BEFORE-FRANCE-PEOPLES-ASSESSMENT-03",
+      "grade": "FR-CM1",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-CM1-BEFORE-FRANCE",
+      "skill": "SK-ENR-HISTORY-CM1-BEFORE-FRANCE-PEOPLES",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "La Gaule avant Rome est-elle un royaume unique dirigé par un seul roi ?",
+      "expected_answer": "Non, elle comprend plusieurs peuples.",
+      "answer_kind": "single_choice",
+      "explanation": "La Gaule rassemble plusieurs peuples et territoires, et non un État français unifié.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-HISTORY-BEFORE-FRANCE-PEOPLES",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-HISTORY-V1-BEFORE-FRANCE-PEOPLES-ASSESSMENT-03",
+        "title": "Identifier des caractéristiques des peuples de la Gaule",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "La Gaule avant Rome est-elle un royaume unique dirigé par un seul roi ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "Non, elle comprend plusieurs peuples.",
+          "options": [
+            "Non, elle est entièrement vide.",
+            "Non, elle comprend plusieurs peuples.",
+            "Oui, un seul roi gouverne toute la Gaule.",
+            "Oui, elle forme déjà la France actuelle."
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "La Gaule rassemble plusieurs peuples et territoires, et non un État français unifié.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-CM1-BEFORE-FRANCE",
+          "primary_skill_code": "SK-ENR-HISTORY-CM1-BEFORE-FRANCE-PEOPLES",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-history-generation-spec-v1",
+          "template_version": "lcai-cm1-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-HISTORY-BEFORE-FRANCE-PEOPLES",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-HISTORY-V1-BEFORE-FRANCE-HERITAGE-PRACTICE-01",
+      "grade": "FR-CM1",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-CM1-BEFORE-FRANCE",
+      "skill": "SK-ENR-HISTORY-CM1-BEFORE-FRANCE-HERITAGE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Quel monument est un héritage de l'époque romaine ?",
+      "expected_answer": "un aqueduc romain",
+      "answer_kind": "single_choice",
+      "explanation": "Les aqueducs sont des constructions caractéristiques de l'ingénierie romaine.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-HISTORY-BEFORE-FRANCE-HERITAGE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-HISTORY-V1-BEFORE-FRANCE-HERITAGE-PRACTICE-01",
+        "title": "Reconnaître des héritages antiques en France",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Quel monument est un héritage de l'époque romaine ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "un aqueduc romain",
+          "options": [
+            "une gare TGV",
+            "un château de la Renaissance",
+            "une usine du XIXe siècle",
+            "un aqueduc romain"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Les aqueducs sont des constructions caractéristiques de l'ingénierie romaine.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-CM1-BEFORE-FRANCE",
+          "primary_skill_code": "SK-ENR-HISTORY-CM1-BEFORE-FRANCE-HERITAGE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-history-generation-spec-v1",
+          "template_version": "lcai-cm1-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-HISTORY-BEFORE-FRANCE-HERITAGE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-HISTORY-V1-BEFORE-FRANCE-HERITAGE-PRACTICE-02",
+      "grade": "FR-CM1",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-CM1-BEFORE-FRANCE",
+      "skill": "SK-ENR-HISTORY-CM1-BEFORE-FRANCE-HERITAGE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Quelle langue a fortement influencé le français ?",
+      "expected_answer": "le latin",
+      "answer_kind": "single_choice",
+      "explanation": "Le français est une langue romane issue en grande partie du latin.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-HISTORY-BEFORE-FRANCE-HERITAGE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-HISTORY-V1-BEFORE-FRANCE-HERITAGE-PRACTICE-02",
+        "title": "Reconnaître des héritages antiques en France",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Quelle langue a fortement influencé le français ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "le latin",
+          "options": [
+            "le quechua",
+            "le finnois",
+            "le latin",
+            "le japonais"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Le français est une langue romane issue en grande partie du latin.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-CM1-BEFORE-FRANCE",
+          "primary_skill_code": "SK-ENR-HISTORY-CM1-BEFORE-FRANCE-HERITAGE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-history-generation-spec-v1",
+          "template_version": "lcai-cm1-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-HISTORY-BEFORE-FRANCE-HERITAGE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-HISTORY-V1-BEFORE-FRANCE-HERITAGE-ASSESSMENT-03",
+      "grade": "FR-CM1",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-CM1-BEFORE-FRANCE",
+      "skill": "SK-ENR-HISTORY-CM1-BEFORE-FRANCE-HERITAGE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Le pont du Gard est principalement un héritage de quelle période ?",
+      "expected_answer": "l'Antiquité romaine",
+      "answer_kind": "single_choice",
+      "explanation": "Le pont du Gard est un aqueduc construit à l'époque romaine.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-HISTORY-BEFORE-FRANCE-HERITAGE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-HISTORY-V1-BEFORE-FRANCE-HERITAGE-ASSESSMENT-03",
+        "title": "Reconnaître des héritages antiques en France",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Le pont du Gard est principalement un héritage de quelle période ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "l'Antiquité romaine",
+          "options": [
+            "le XXe siècle",
+            "l'Antiquité romaine",
+            "la Préhistoire",
+            "la Révolution française"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Le pont du Gard est un aqueduc construit à l'époque romaine.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-CM1-BEFORE-FRANCE",
+          "primary_skill_code": "SK-ENR-HISTORY-CM1-BEFORE-FRANCE-HERITAGE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-history-generation-spec-v1",
+          "template_version": "lcai-cm1-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-HISTORY-BEFORE-FRANCE-HERITAGE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-HISTORY-V1-BEFORE-FRANCE-SOURCE-PRACTICE-01",
+      "grade": "FR-CM1",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-CM1-BEFORE-FRANCE",
+      "skill": "SK-ENR-HISTORY-CM1-BEFORE-FRANCE-SOURCE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Des archéologues trouvent des pièces romaines sur un site. Que peuvent-elles aider à étudier ?",
+      "expected_answer": "les échanges et la présence humaine à l'époque romaine",
+      "answer_kind": "single_choice",
+      "explanation": "Une monnaie est une trace matérielle qui renseigne sur les échanges et les sociétés.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-HISTORY-BEFORE-FRANCE-SOURCE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-HISTORY-V1-BEFORE-FRANCE-SOURCE-PRACTICE-01",
+        "title": "Interpréter une trace archéologique ou un document historique",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Des archéologues trouvent des pièces romaines sur un site. Que peuvent-elles aider à étudier ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "les échanges et la présence humaine à l'époque romaine",
+          "options": [
+            "la météo de demain",
+            "les règles du football moderne",
+            "les satellites",
+            "les échanges et la présence humaine à l'époque romaine"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Une monnaie est une trace matérielle qui renseigne sur les échanges et les sociétés.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-CM1-BEFORE-FRANCE",
+          "primary_skill_code": "SK-ENR-HISTORY-CM1-BEFORE-FRANCE-SOURCE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-history-generation-spec-v1",
+          "template_version": "lcai-cm1-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-HISTORY-BEFORE-FRANCE-SOURCE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-HISTORY-V1-BEFORE-FRANCE-SOURCE-PRACTICE-02",
+      "grade": "FR-CM1",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-CM1-BEFORE-FRANCE",
+      "skill": "SK-ENR-HISTORY-CM1-BEFORE-FRANCE-SOURCE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Pourquoi faut-il observer la date et l'origine d'un document historique ?",
+      "expected_answer": "pour comprendre son contexte",
+      "answer_kind": "single_choice",
+      "explanation": "Identifier l'origine et la date aide à replacer le document dans son contexte.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-HISTORY-BEFORE-FRANCE-SOURCE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-HISTORY-V1-BEFORE-FRANCE-SOURCE-PRACTICE-02",
+        "title": "Interpréter une trace archéologique ou un document historique",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Pourquoi faut-il observer la date et l'origine d'un document historique ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "pour comprendre son contexte",
+          "options": [
+            "pour le rendre plus long",
+            "pour éviter de le lire",
+            "pour comprendre son contexte",
+            "pour connaître sa couleur préférée"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Identifier l'origine et la date aide à replacer le document dans son contexte.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-CM1-BEFORE-FRANCE",
+          "primary_skill_code": "SK-ENR-HISTORY-CM1-BEFORE-FRANCE-SOURCE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-history-generation-spec-v1",
+          "template_version": "lcai-cm1-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-HISTORY-BEFORE-FRANCE-SOURCE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-HISTORY-V1-BEFORE-FRANCE-SOURCE-ASSESSMENT-03",
+      "grade": "FR-CM1",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-CM1-BEFORE-FRANCE",
+      "skill": "SK-ENR-HISTORY-CM1-BEFORE-FRANCE-SOURCE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Un fragment de poterie retrouvé lors d'une fouille est surtout :",
+      "expected_answer": "une trace archéologique",
+      "answer_kind": "single_choice",
+      "explanation": "Un objet ancien retrouvé en fouille constitue une trace archéologique.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-HISTORY-BEFORE-FRANCE-SOURCE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-HISTORY-V1-BEFORE-FRANCE-SOURCE-ASSESSMENT-03",
+        "title": "Interpréter une trace archéologique ou un document historique",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Un fragment de poterie retrouvé lors d'une fouille est surtout :",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "une trace archéologique",
+          "options": [
+            "un objet sans intérêt historique",
+            "une trace archéologique",
+            "une prévision",
+            "une fiction obligatoire"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Un objet ancien retrouvé en fouille constitue une trace archéologique.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-CM1-BEFORE-FRANCE",
+          "primary_skill_code": "SK-ENR-HISTORY-CM1-BEFORE-FRANCE-SOURCE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-history-generation-spec-v1",
+          "template_version": "lcai-cm1-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-HISTORY-BEFORE-FRANCE-SOURCE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-HISTORY-V1-KINGS-MONARCHY-PRACTICE-01",
+      "grade": "FR-CM1",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-CM1-KINGS",
+      "skill": "SK-ENR-HISTORY-CM1-KINGS-MONARCHY",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans une monarchie, qui est le souverain ?",
+      "expected_answer": "le roi ou la reine",
+      "answer_kind": "single_choice",
+      "explanation": "Une monarchie est un régime dont le souverain est un roi ou une reine.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-HISTORY-KINGS-MONARCHY",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-HISTORY-V1-KINGS-MONARCHY-PRACTICE-01",
+        "title": "Expliquer le rôle et le pouvoir du roi",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Dans une monarchie, qui est le souverain ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "le roi ou la reine",
+          "options": [
+            "le maire uniquement",
+            "le directeur d'école",
+            "un arbitre",
+            "le roi ou la reine"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Une monarchie est un régime dont le souverain est un roi ou une reine.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-CM1-KINGS",
+          "primary_skill_code": "SK-ENR-HISTORY-CM1-KINGS-MONARCHY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-history-generation-spec-v1",
+          "template_version": "lcai-cm1-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-HISTORY-KINGS-MONARCHY",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-HISTORY-V1-KINGS-MONARCHY-PRACTICE-02",
+      "grade": "FR-CM1",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-CM1-KINGS",
+      "skill": "SK-ENR-HISTORY-CM1-KINGS-MONARCHY",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Sous la monarchie absolue de Louis XIV, où le pouvoir royal est-il particulièrement concentré ?",
+      "expected_answer": "entre les mains du roi",
+      "answer_kind": "single_choice",
+      "explanation": "La monarchie absolue renforce la concentration du pouvoir autour du roi.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-HISTORY-KINGS-MONARCHY",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-HISTORY-V1-KINGS-MONARCHY-PRACTICE-02",
+        "title": "Expliquer le rôle et le pouvoir du roi",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Sous la monarchie absolue de Louis XIV, où le pouvoir royal est-il particulièrement concentré ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "entre les mains du roi",
+          "options": [
+            "dans une assemblée élue au suffrage universel",
+            "chez les marchands uniquement",
+            "entre les mains du roi",
+            "dans chaque village indépendamment"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "La monarchie absolue renforce la concentration du pouvoir autour du roi.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-CM1-KINGS",
+          "primary_skill_code": "SK-ENR-HISTORY-CM1-KINGS-MONARCHY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-history-generation-spec-v1",
+          "template_version": "lcai-cm1-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-HISTORY-KINGS-MONARCHY",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-HISTORY-V1-KINGS-MONARCHY-ASSESSMENT-03",
+      "grade": "FR-CM1",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-CM1-KINGS",
+      "skill": "SK-ENR-HISTORY-CM1-KINGS-MONARCHY",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Quel palais est associé au règne de Louis XIV et à la mise en scène du pouvoir royal ?",
+      "expected_answer": "Versailles",
+      "answer_kind": "single_choice",
+      "explanation": "Louis XIV fait de Versailles un centre majeur de la cour et du pouvoir.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-HISTORY-KINGS-MONARCHY",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-HISTORY-V1-KINGS-MONARCHY-ASSESSMENT-03",
+        "title": "Expliquer le rôle et le pouvoir du roi",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Quel palais est associé au règne de Louis XIV et à la mise en scène du pouvoir royal ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "Versailles",
+          "options": [
+            "le Centre Pompidou",
+            "Versailles",
+            "le Louvre-Lens",
+            "la tour Eiffel"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Louis XIV fait de Versailles un centre majeur de la cour et du pouvoir.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-CM1-KINGS",
+          "primary_skill_code": "SK-ENR-HISTORY-CM1-KINGS-MONARCHY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-history-generation-spec-v1",
+          "template_version": "lcai-cm1-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-HISTORY-KINGS-MONARCHY",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-HISTORY-V1-KINGS-REIGN-PRACTICE-01",
+      "grade": "FR-CM1",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-CM1-KINGS",
+      "skill": "SK-ENR-HISTORY-CM1-KINGS-REIGN",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Quel roi est surnommé le Roi-Soleil ?",
+      "expected_answer": "Louis XIV",
+      "answer_kind": "single_choice",
+      "explanation": "Louis XIV est couramment surnommé le Roi-Soleil.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-HISTORY-KINGS-REIGN",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-HISTORY-V1-KINGS-REIGN-PRACTICE-01",
+        "title": "Situer quelques règnes et événements structurants",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Quel roi est surnommé le Roi-Soleil ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "Louis XIV",
+          "options": [
+            "François Ier",
+            "Henri IV",
+            "Louis XVI",
+            "Louis XIV"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Louis XIV est couramment surnommé le Roi-Soleil.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-CM1-KINGS",
+          "primary_skill_code": "SK-ENR-HISTORY-CM1-KINGS-REIGN",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-history-generation-spec-v1",
+          "template_version": "lcai-cm1-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-HISTORY-KINGS-REIGN",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-HISTORY-V1-KINGS-REIGN-PRACTICE-02",
+      "grade": "FR-CM1",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-CM1-KINGS",
+      "skill": "SK-ENR-HISTORY-CM1-KINGS-REIGN",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "François Ier règne principalement à quelle grande période culturelle ?",
+      "expected_answer": "la Renaissance",
+      "answer_kind": "single_choice",
+      "explanation": "François Ier est un roi emblématique de la Renaissance française.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-HISTORY-KINGS-REIGN",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-HISTORY-V1-KINGS-REIGN-PRACTICE-02",
+        "title": "Situer quelques règnes et événements structurants",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "François Ier règne principalement à quelle grande période culturelle ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "la Renaissance",
+          "options": [
+            "l'Antiquité",
+            "le XXe siècle",
+            "la Renaissance",
+            "la Préhistoire"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "François Ier est un roi emblématique de la Renaissance française.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-CM1-KINGS",
+          "primary_skill_code": "SK-ENR-HISTORY-CM1-KINGS-REIGN",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-history-generation-spec-v1",
+          "template_version": "lcai-cm1-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-HISTORY-KINGS-REIGN",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-HISTORY-V1-KINGS-REIGN-ASSESSMENT-03",
+      "grade": "FR-CM1",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-CM1-KINGS",
+      "skill": "SK-ENR-HISTORY-CM1-KINGS-REIGN",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Quel ordre chronologique est correct ?",
+      "expected_answer": "François Ier → Henri IV → Louis XIV",
+      "answer_kind": "single_choice",
+      "explanation": "François Ier règne au XVIe siècle, Henri IV à la charnière XVIe-XVIIe, Louis XIV au XVIIe-début XVIIIe.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-HISTORY-KINGS-REIGN",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-HISTORY-V1-KINGS-REIGN-ASSESSMENT-03",
+        "title": "Situer quelques règnes et événements structurants",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Quel ordre chronologique est correct ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "François Ier → Henri IV → Louis XIV",
+          "options": [
+            "Louis XIV → Henri IV → François Ier",
+            "François Ier → Henri IV → Louis XIV",
+            "Louis XIV → François Ier → Henri IV",
+            "Henri IV → Louis XIV → François Ier"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "François Ier règne au XVIe siècle, Henri IV à la charnière XVIe-XVIIe, Louis XIV au XVIIe-début XVIIIe.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-CM1-KINGS",
+          "primary_skill_code": "SK-ENR-HISTORY-CM1-KINGS-REIGN",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-history-generation-spec-v1",
+          "template_version": "lcai-cm1-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-HISTORY-KINGS-REIGN",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-HISTORY-V1-KINGS-SOCIETY-PRACTICE-01",
+      "grade": "FR-CM1",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-CM1-KINGS",
+      "skill": "SK-ENR-HISTORY-CM1-KINGS-SOCIETY",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Avant 1789, la société française est traditionnellement organisée en :",
+      "expected_answer": "trois ordres",
+      "answer_kind": "single_choice",
+      "explanation": "On distingue traditionnellement clergé, noblesse et tiers état.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-HISTORY-KINGS-SOCIETY",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-HISTORY-V1-KINGS-SOCIETY-PRACTICE-01",
+        "title": "Décrire des aspects de la société sous la monarchie",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Avant 1789, la société française est traditionnellement organisée en :",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "trois ordres",
+          "options": [
+            "deux équipes",
+            "dix provinces égales en droits",
+            "un seul groupe social",
+            "trois ordres"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "On distingue traditionnellement clergé, noblesse et tiers état.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-CM1-KINGS",
+          "primary_skill_code": "SK-ENR-HISTORY-CM1-KINGS-SOCIETY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-history-generation-spec-v1",
+          "template_version": "lcai-cm1-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-HISTORY-KINGS-SOCIETY",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-HISTORY-V1-KINGS-SOCIETY-PRACTICE-02",
+      "grade": "FR-CM1",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-CM1-KINGS",
+      "skill": "SK-ENR-HISTORY-CM1-KINGS-SOCIETY",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Quel groupe représente la très grande majorité de la population avant 1789 ?",
+      "expected_answer": "le tiers état",
+      "answer_kind": "single_choice",
+      "explanation": "Le tiers état regroupe la grande majorité de la population.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-HISTORY-KINGS-SOCIETY",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-HISTORY-V1-KINGS-SOCIETY-PRACTICE-02",
+        "title": "Décrire des aspects de la société sous la monarchie",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Quel groupe représente la très grande majorité de la population avant 1789 ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "le tiers état",
+          "options": [
+            "le clergé",
+            "la famille royale seule",
+            "le tiers état",
+            "la noblesse"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Le tiers état regroupe la grande majorité de la population.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-CM1-KINGS",
+          "primary_skill_code": "SK-ENR-HISTORY-CM1-KINGS-SOCIETY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-history-generation-spec-v1",
+          "template_version": "lcai-cm1-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-HISTORY-KINGS-SOCIETY",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-HISTORY-V1-KINGS-SOCIETY-ASSESSMENT-03",
+      "grade": "FR-CM1",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-CM1-KINGS",
+      "skill": "SK-ENR-HISTORY-CM1-KINGS-SOCIETY",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "La vie à la cour de Versailles concerne surtout :",
+      "expected_answer": "le roi et une partie de la noblesse",
+      "answer_kind": "single_choice",
+      "explanation": "Versailles rassemble le roi, sa cour et de nombreux nobles.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-HISTORY-KINGS-SOCIETY",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-HISTORY-V1-KINGS-SOCIETY-ASSESSMENT-03",
+        "title": "Décrire des aspects de la société sous la monarchie",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "La vie à la cour de Versailles concerne surtout :",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "le roi et une partie de la noblesse",
+          "options": [
+            "les citoyens élus",
+            "le roi et une partie de la noblesse",
+            "tous les paysans de France chaque jour",
+            "uniquement les soldats romains"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Versailles rassemble le roi, sa cour et de nombreux nobles.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-CM1-KINGS",
+          "primary_skill_code": "SK-ENR-HISTORY-CM1-KINGS-SOCIETY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-history-generation-spec-v1",
+          "template_version": "lcai-cm1-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-HISTORY-KINGS-SOCIETY",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-HISTORY-V1-KINGS-SOURCE-PRACTICE-01",
+      "grade": "FR-CM1",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-CM1-KINGS",
+      "skill": "SK-ENR-HISTORY-CM1-KINGS-SOURCE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans un portrait officiel d'un roi portant couronne et sceptre, ces objets servent surtout à montrer :",
+      "expected_answer": "son pouvoir",
+      "answer_kind": "single_choice",
+      "explanation": "Les attributs royaux mettent en scène l'autorité du souverain.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-HISTORY-KINGS-SOURCE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-HISTORY-V1-KINGS-SOURCE-PRACTICE-01",
+        "title": "Prélever des informations dans une source d'époque",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Dans un portrait officiel d'un roi portant couronne et sceptre, ces objets servent surtout à montrer :",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "son pouvoir",
+          "options": [
+            "son métier d'agriculteur",
+            "son âge exact",
+            "la météo",
+            "son pouvoir"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Les attributs royaux mettent en scène l'autorité du souverain.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-CM1-KINGS",
+          "primary_skill_code": "SK-ENR-HISTORY-CM1-KINGS-SOURCE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-history-generation-spec-v1",
+          "template_version": "lcai-cm1-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-HISTORY-KINGS-SOURCE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-HISTORY-V1-KINGS-SOURCE-PRACTICE-02",
+      "grade": "FR-CM1",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-CM1-KINGS",
+      "skill": "SK-ENR-HISTORY-CM1-KINGS-SOURCE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Dans une lettre ancienne, quelle information faut-il chercher pour savoir qui écrit ?",
+      "expected_answer": "l'auteur ou la signature",
+      "answer_kind": "single_choice",
+      "explanation": "L'auteur ou la signature permet d'identifier l'émetteur.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-HISTORY-KINGS-SOURCE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-HISTORY-V1-KINGS-SOURCE-PRACTICE-02",
+        "title": "Prélever des informations dans une source d'époque",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Dans une lettre ancienne, quelle information faut-il chercher pour savoir qui écrit ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "l'auteur ou la signature",
+          "options": [
+            "le nombre de virgules",
+            "la couleur du mur",
+            "l'auteur ou la signature",
+            "la taille de la feuille seulement"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "L'auteur ou la signature permet d'identifier l'émetteur.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-CM1-KINGS",
+          "primary_skill_code": "SK-ENR-HISTORY-CM1-KINGS-SOURCE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-history-generation-spec-v1",
+          "template_version": "lcai-cm1-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-HISTORY-KINGS-SOURCE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-HISTORY-V1-KINGS-SOURCE-ASSESSMENT-03",
+      "grade": "FR-CM1",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-CM1-KINGS",
+      "skill": "SK-ENR-HISTORY-CM1-KINGS-SOURCE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Pour utiliser une source d'époque, quelle démarche est la plus rigoureuse ?",
+      "expected_answer": "identifier l'auteur, la date et ce que montre le document",
+      "answer_kind": "single_choice",
+      "explanation": "Une source doit être contextualisée avant interprétation.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-HISTORY-KINGS-SOURCE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-HISTORY-V1-KINGS-SOURCE-ASSESSMENT-03",
+        "title": "Prélever des informations dans une source d'époque",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Pour utiliser une source d'époque, quelle démarche est la plus rigoureuse ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "identifier l'auteur, la date et ce que montre le document",
+          "options": [
+            "inventer ce qui manque",
+            "identifier l'auteur, la date et ce que montre le document",
+            "croire tout sans vérifier",
+            "ignorer la date"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Une source doit être contextualisée avant interprétation.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-CM1-KINGS",
+          "primary_skill_code": "SK-ENR-HISTORY-CM1-KINGS-SOURCE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-history-generation-spec-v1",
+          "template_version": "lcai-cm1-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-HISTORY-KINGS-SOURCE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-HISTORY-V1-REVOLUTION-CAUSES-PRACTICE-01",
+      "grade": "FR-CM1",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-CM1-REVOLUTION",
+      "skill": "SK-ENR-HISTORY-CM1-REVOLUTION-CAUSES",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "En 1789, quel problème contribue au mécontentement d'une partie de la population ?",
+      "expected_answer": "les inégalités entre les ordres",
+      "answer_kind": "single_choice",
+      "explanation": "Les privilèges et inégalités de la société d'ordres alimentent les tensions.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-HISTORY-REVOLUTION-CAUSES",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-HISTORY-V1-REVOLUTION-CAUSES-PRACTICE-01",
+        "title": "Identifier des causes de la Révolution française",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "En 1789, quel problème contribue au mécontentement d'une partie de la population ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "les inégalités entre les ordres",
+          "options": [
+            "l'absence totale d'agriculture",
+            "la disparition de toutes les villes",
+            "l'interdiction de parler français",
+            "les inégalités entre les ordres"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Les privilèges et inégalités de la société d'ordres alimentent les tensions.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-CM1-REVOLUTION",
+          "primary_skill_code": "SK-ENR-HISTORY-CM1-REVOLUTION-CAUSES",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-history-generation-spec-v1",
+          "template_version": "lcai-cm1-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-HISTORY-REVOLUTION-CAUSES",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-HISTORY-V1-REVOLUTION-CAUSES-PRACTICE-02",
+      "grade": "FR-CM1",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-CM1-REVOLUTION",
+      "skill": "SK-ENR-HISTORY-CM1-REVOLUTION-CAUSES",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Quelle difficulté de l'État français contribue à la crise avant 1789 ?",
+      "expected_answer": "de graves difficultés financières",
+      "answer_kind": "single_choice",
+      "explanation": "La monarchie connaît une grave crise financière à la veille de la Révolution.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-HISTORY-REVOLUTION-CAUSES",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-HISTORY-V1-REVOLUTION-CAUSES-PRACTICE-02",
+        "title": "Identifier des causes de la Révolution française",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Quelle difficulté de l'État français contribue à la crise avant 1789 ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "de graves difficultés financières",
+          "options": [
+            "l'absence de monnaie depuis Rome",
+            "la fermeture de toutes les routes",
+            "de graves difficultés financières",
+            "un excès de satellites"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "La monarchie connaît une grave crise financière à la veille de la Révolution.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-CM1-REVOLUTION",
+          "primary_skill_code": "SK-ENR-HISTORY-CM1-REVOLUTION-CAUSES",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-history-generation-spec-v1",
+          "template_version": "lcai-cm1-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-HISTORY-REVOLUTION-CAUSES",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-HISTORY-V1-REVOLUTION-CAUSES-ASSESSMENT-03",
+      "grade": "FR-CM1",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-CM1-REVOLUTION",
+      "skill": "SK-ENR-HISTORY-CM1-REVOLUTION-CAUSES",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Les idées des Lumières critiquent notamment :",
+      "expected_answer": "l'arbitraire et les inégalités",
+      "answer_kind": "single_choice",
+      "explanation": "Les philosophes des Lumières discutent liberté, égalité, tolérance et organisation du pouvoir.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-HISTORY-REVOLUTION-CAUSES",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-HISTORY-V1-REVOLUTION-CAUSES-ASSESSMENT-03",
+        "title": "Identifier des causes de la Révolution française",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Les idées des Lumières critiquent notamment :",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "l'arbitraire et les inégalités",
+          "options": [
+            "toute forme d'éducation",
+            "l'arbitraire et les inégalités",
+            "la lecture",
+            "les sciences en général"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Les philosophes des Lumières discutent liberté, égalité, tolérance et organisation du pouvoir.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-CM1-REVOLUTION",
+          "primary_skill_code": "SK-ENR-HISTORY-CM1-REVOLUTION-CAUSES",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-history-generation-spec-v1",
+          "template_version": "lcai-cm1-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-HISTORY-REVOLUTION-CAUSES",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-HISTORY-V1-REVOLUTION-EVENTS-PRACTICE-01",
+      "grade": "FR-CM1",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-CM1-REVOLUTION",
+      "skill": "SK-ENR-HISTORY-CM1-REVOLUTION-EVENTS",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Quel événement a lieu le 14 juillet 1789 ?",
+      "expected_answer": "la prise de la Bastille",
+      "answer_kind": "single_choice",
+      "explanation": "La Bastille est prise le 14 juillet 1789.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-HISTORY-REVOLUTION-EVENTS",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-HISTORY-V1-REVOLUTION-EVENTS-PRACTICE-01",
+        "title": "Ordonner les principaux événements de 1789",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Quel événement a lieu le 14 juillet 1789 ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "la prise de la Bastille",
+          "options": [
+            "le sacre de Napoléon",
+            "l'appel du 18 Juin",
+            "la bataille d'Alésia",
+            "la prise de la Bastille"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "La Bastille est prise le 14 juillet 1789.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-CM1-REVOLUTION",
+          "primary_skill_code": "SK-ENR-HISTORY-CM1-REVOLUTION-EVENTS",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-history-generation-spec-v1",
+          "template_version": "lcai-cm1-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-HISTORY-REVOLUTION-EVENTS",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-HISTORY-V1-REVOLUTION-EVENTS-PRACTICE-02",
+      "grade": "FR-CM1",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-CM1-REVOLUTION",
+      "skill": "SK-ENR-HISTORY-CM1-REVOLUTION-EVENTS",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "La Déclaration des droits de l'homme et du citoyen est adoptée en :",
+      "expected_answer": "1789",
+      "answer_kind": "single_choice",
+      "explanation": "La Déclaration est adoptée en août 1789.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-HISTORY-REVOLUTION-EVENTS",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-HISTORY-V1-REVOLUTION-EVENTS-PRACTICE-02",
+        "title": "Ordonner les principaux événements de 1789",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "La Déclaration des droits de l'homme et du citoyen est adoptée en :",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "1789",
+          "options": [
+            "1914",
+            "1945",
+            "1789",
+            "1515"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "La Déclaration est adoptée en août 1789.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-CM1-REVOLUTION",
+          "primary_skill_code": "SK-ENR-HISTORY-CM1-REVOLUTION-EVENTS",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-history-generation-spec-v1",
+          "template_version": "lcai-cm1-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-HISTORY-REVOLUTION-EVENTS",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-HISTORY-V1-REVOLUTION-EVENTS-ASSESSMENT-03",
+      "grade": "FR-CM1",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-CM1-REVOLUTION",
+      "skill": "SK-ENR-HISTORY-CM1-REVOLUTION-EVENTS",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Quel ordre est correct pour 1789 ?",
+      "expected_answer": "États généraux → prise de la Bastille → Déclaration des droits",
+      "answer_kind": "single_choice",
+      "explanation": "Les États généraux s'ouvrent en mai, la Bastille est prise en juillet, la Déclaration est adoptée en août.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-HISTORY-REVOLUTION-EVENTS",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-HISTORY-V1-REVOLUTION-EVENTS-ASSESSMENT-03",
+        "title": "Ordonner les principaux événements de 1789",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Quel ordre est correct pour 1789 ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "États généraux → prise de la Bastille → Déclaration des droits",
+          "options": [
+            "Déclaration → Bastille → États généraux",
+            "États généraux → prise de la Bastille → Déclaration des droits",
+            "Déclaration → États généraux → Bastille",
+            "Bastille → Déclaration → États généraux"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Les États généraux s'ouvrent en mai, la Bastille est prise en juillet, la Déclaration est adoptée en août.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-CM1-REVOLUTION",
+          "primary_skill_code": "SK-ENR-HISTORY-CM1-REVOLUTION-EVENTS",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-history-generation-spec-v1",
+          "template_version": "lcai-cm1-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-HISTORY-REVOLUTION-EVENTS",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-HISTORY-V1-REVOLUTION-CHANGE-PRACTICE-01",
+      "grade": "FR-CM1",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-CM1-REVOLUTION",
+      "skill": "SK-ENR-HISTORY-CM1-REVOLUTION-CHANGE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Quel principe de 1789 remet en cause les privilèges de naissance ?",
+      "expected_answer": "l'égalité en droits",
+      "answer_kind": "single_choice",
+      "explanation": "L'égalité en droits s'oppose aux privilèges liés à la naissance.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-HISTORY-REVOLUTION-CHANGE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-HISTORY-V1-REVOLUTION-CHANGE-PRACTICE-01",
+        "title": "Expliquer les changements politiques et sociaux",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Quel principe de 1789 remet en cause les privilèges de naissance ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "l'égalité en droits",
+          "options": [
+            "l'hérédité des privilèges",
+            "la censure obligatoire",
+            "le servage généralisé",
+            "l'égalité en droits"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "L'égalité en droits s'oppose aux privilèges liés à la naissance.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-CM1-REVOLUTION",
+          "primary_skill_code": "SK-ENR-HISTORY-CM1-REVOLUTION-CHANGE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-history-generation-spec-v1",
+          "template_version": "lcai-cm1-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-HISTORY-REVOLUTION-CHANGE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-HISTORY-V1-REVOLUTION-CHANGE-PRACTICE-02",
+      "grade": "FR-CM1",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-CM1-REVOLUTION",
+      "skill": "SK-ENR-HISTORY-CM1-REVOLUTION-CHANGE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "La Révolution française transforme notamment :",
+      "expected_answer": "l'organisation politique et sociale",
+      "answer_kind": "single_choice",
+      "explanation": "La Révolution modifie les institutions, les droits et l'organisation sociale.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-HISTORY-REVOLUTION-CHANGE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-HISTORY-V1-REVOLUTION-CHANGE-PRACTICE-02",
+        "title": "Expliquer les changements politiques et sociaux",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "La Révolution française transforme notamment :",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "l'organisation politique et sociale",
+          "options": [
+            "la langue latine de l'Empire romain",
+            "le climat mondial en une journée",
+            "l'organisation politique et sociale",
+            "la rotation de la Terre"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "La Révolution modifie les institutions, les droits et l'organisation sociale.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-CM1-REVOLUTION",
+          "primary_skill_code": "SK-ENR-HISTORY-CM1-REVOLUTION-CHANGE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-history-generation-spec-v1",
+          "template_version": "lcai-cm1-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-HISTORY-REVOLUTION-CHANGE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-HISTORY-V1-REVOLUTION-CHANGE-ASSESSMENT-03",
+      "grade": "FR-CM1",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-CM1-REVOLUTION",
+      "skill": "SK-ENR-HISTORY-CM1-REVOLUTION-CHANGE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Quel texte affirme des droits et libertés en 1789 ?",
+      "expected_answer": "la Déclaration des droits de l'homme et du citoyen",
+      "answer_kind": "single_choice",
+      "explanation": "La Déclaration de 1789 énonce des principes de droits et libertés.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-HISTORY-REVOLUTION-CHANGE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-HISTORY-V1-REVOLUTION-CHANGE-ASSESSMENT-03",
+        "title": "Expliquer les changements politiques et sociaux",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Quel texte affirme des droits et libertés en 1789 ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "la Déclaration des droits de l'homme et du citoyen",
+          "options": [
+            "l'Édit de Nantes",
+            "la Déclaration des droits de l'homme et du citoyen",
+            "le Code de la route",
+            "la Charte des Nations unies"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "La Déclaration de 1789 énonce des principes de droits et libertés.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-CM1-REVOLUTION",
+          "primary_skill_code": "SK-ENR-HISTORY-CM1-REVOLUTION-CHANGE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-history-generation-spec-v1",
+          "template_version": "lcai-cm1-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-HISTORY-REVOLUTION-CHANGE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-HISTORY-V1-REVOLUTION-EMPIRE-PRACTICE-01",
+      "grade": "FR-CM1",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-CM1-REVOLUTION",
+      "skill": "SK-ENR-HISTORY-CM1-REVOLUTION-EMPIRE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Qui devient empereur des Français en 1804 ?",
+      "expected_answer": "Napoléon Bonaparte",
+      "answer_kind": "single_choice",
+      "explanation": "Napoléon Bonaparte est sacré empereur en 1804.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-HISTORY-REVOLUTION-EMPIRE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-HISTORY-V1-REVOLUTION-EMPIRE-PRACTICE-01",
+        "title": "Situer le Consulat et l'Empire dans la continuité révolutionnaire",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Qui devient empereur des Français en 1804 ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "Napoléon Bonaparte",
+          "options": [
+            "Louis XIV",
+            "Charlemagne",
+            "Jules César",
+            "Napoléon Bonaparte"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Napoléon Bonaparte est sacré empereur en 1804.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-CM1-REVOLUTION",
+          "primary_skill_code": "SK-ENR-HISTORY-CM1-REVOLUTION-EMPIRE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-history-generation-spec-v1",
+          "template_version": "lcai-cm1-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-HISTORY-REVOLUTION-EMPIRE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-HISTORY-V1-REVOLUTION-EMPIRE-PRACTICE-02",
+      "grade": "FR-CM1",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-CM1-REVOLUTION",
+      "skill": "SK-ENR-HISTORY-CM1-REVOLUTION-EMPIRE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Quel régime précède directement le Premier Empire de Napoléon ?",
+      "expected_answer": "le Consulat",
+      "answer_kind": "single_choice",
+      "explanation": "Le Consulat est établi en 1799 avant l'Empire en 1804.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-HISTORY-REVOLUTION-EMPIRE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-HISTORY-V1-REVOLUTION-EMPIRE-PRACTICE-02",
+        "title": "Situer le Consulat et l'Empire dans la continuité révolutionnaire",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Quel régime précède directement le Premier Empire de Napoléon ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "le Consulat",
+          "options": [
+            "la monarchie de Louis XIV",
+            "la Ve République",
+            "le Consulat",
+            "la Gaule romaine"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Le Consulat est établi en 1799 avant l'Empire en 1804.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-CM1-REVOLUTION",
+          "primary_skill_code": "SK-ENR-HISTORY-CM1-REVOLUTION-EMPIRE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-history-generation-spec-v1",
+          "template_version": "lcai-cm1-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-HISTORY-REVOLUTION-EMPIRE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-HISTORY-V1-REVOLUTION-EMPIRE-ASSESSMENT-03",
+      "grade": "FR-CM1",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-CM1-REVOLUTION",
+      "skill": "SK-ENR-HISTORY-CM1-REVOLUTION-EMPIRE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Le Code civil promulgué sous Napoléon sert principalement à :",
+      "expected_answer": "organiser des règles de droit civil",
+      "answer_kind": "single_choice",
+      "explanation": "Le Code civil rassemble et organise des règles concernant les personnes, biens et relations civiles.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-HISTORY-REVOLUTION-EMPIRE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-HISTORY-V1-REVOLUTION-EMPIRE-ASSESSMENT-03",
+        "title": "Situer le Consulat et l'Empire dans la continuité révolutionnaire",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Le Code civil promulgué sous Napoléon sert principalement à :",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "organiser des règles de droit civil",
+          "options": [
+            "remplacer toutes les écoles",
+            "organiser des règles de droit civil",
+            "fixer les règles du football",
+            "décrire les planètes"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Le Code civil rassemble et organise des règles concernant les personnes, biens et relations civiles.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-CM1-REVOLUTION",
+          "primary_skill_code": "SK-ENR-HISTORY-CM1-REVOLUTION-EMPIRE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-history-generation-spec-v1",
+          "template_version": "lcai-cm1-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-HISTORY-REVOLUTION-EMPIRE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_history_candidates_v1.json"
+      }
+    }
+  ]
+}

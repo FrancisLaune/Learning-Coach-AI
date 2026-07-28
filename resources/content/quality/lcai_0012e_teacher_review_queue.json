@@ -1,0 +1,214 @@
+{
+  "queue": [
+    {
+      "version_id": 114910,
+      "grade": "FR-CM1",
+      "subject": "EMC",
+      "skill_code": "SK-ENR-EMC-CM1-COLLECTIVE-RIGHT_DUTY",
+      "content_type": "practice",
+      "decision": "TEACHER_REVIEW_REQUIRED",
+      "fact_check_required": false,
+      "teacher_reason": "Remaining pedagogical uncertainty requires Teacher review.",
+      "escalation_categories": [
+        "explanation_uncertainty"
+      ]
+    },
+    {
+      "version_id": 114898,
+      "grade": "FR-CM1",
+      "subject": "EMC",
+      "skill_code": "SK-ENR-EMC-CM1-COLLECTIVE-RULE",
+      "content_type": "practice",
+      "decision": "TEACHER_REVIEW_REQUIRED",
+      "fact_check_required": false,
+      "teacher_reason": "Remaining pedagogical uncertainty requires Teacher review.",
+      "escalation_categories": [
+        "explanation_uncertainty"
+      ]
+    },
+    {
+      "version_id": 115050,
+      "grade": "FR-CM1",
+      "subject": "FRENCH",
+      "skill_code": "SK-ENR-FRENCH-CM1-ORAL-LISTEN",
+      "content_type": "assessment",
+      "decision": "TEACHER_REVIEW_REQUIRED",
+      "fact_check_required": false,
+      "teacher_reason": "Independent AI reviewers disagreed on an ambiguous case.",
+      "escalation_categories": [
+        "open_response_ambiguity",
+        "low_confidence",
+        "second_opinion_disagreement"
+      ]
+    },
+    {
+      "version_id": 115434,
+      "grade": "FR-CM1",
+      "subject": "HISTORY",
+      "skill_code": "SK-ENR-HISTORY-CM1-BEFORE-FRANCE-CHRONOLOGY",
+      "content_type": "practice",
+      "decision": "TEACHER_REVIEW_REQUIRED",
+      "fact_check_required": false,
+      "teacher_reason": "Remaining pedagogical uncertainty requires Teacher review.",
+      "escalation_categories": [
+        "explanation_uncertainty"
+      ]
+    },
+    {
+      "version_id": 115670,
+      "grade": "FR-CM1",
+      "subject": "MATHEMATICS",
+      "skill_code": "SK-ENR-MATHEMATICS-CM1-CALCULATION-MULTIPLY",
+      "content_type": "assessment",
+      "decision": "TEACHER_REVIEW_REQUIRED",
+      "fact_check_required": false,
+      "teacher_reason": "Remaining pedagogical uncertainty requires Teacher review.",
+      "escalation_categories": [
+        "explanation_uncertainty"
+      ]
+    },
+    {
+      "version_id": 115662,
+      "grade": "FR-CM1",
+      "subject": "MATHEMATICS",
+      "skill_code": "SK-ENR-MATHEMATICS-CM1-CALCULATION-MULTIPLY",
+      "content_type": "practice",
+      "decision": "TEACHER_REVIEW_REQUIRED",
+      "fact_check_required": false,
+      "teacher_reason": "Remaining pedagogical uncertainty requires Teacher review.",
+      "escalation_categories": [
+        "explanation_uncertainty"
+      ]
+    },
+    {
+      "version_id": 115622,
+      "grade": "FR-CM1",
+      "subject": "MATHEMATICS",
+      "skill_code": "SK-ENR-MATHEMATICS-CM1-FRACTIONS-REPRESENT",
+      "content_type": "assessment",
+      "decision": "TEACHER_REVIEW_REQUIRED",
+      "fact_check_required": false,
+      "teacher_reason": "Remaining pedagogical uncertainty requires Teacher review.",
+      "escalation_categories": [
+        "explanation_uncertainty"
+      ]
+    },
+    {
+      "version_id": 115610,
+      "grade": "FR-CM1",
+      "subject": "MATHEMATICS",
+      "skill_code": "SK-ENR-MATHEMATICS-CM1-INTEGERS-NUMBERLINE",
+      "content_type": "assessment",
+      "decision": "TEACHER_REVIEW_REQUIRED",
+      "fact_check_required": false,
+      "teacher_reason": "Remaining pedagogical uncertainty requires Teacher review.",
+      "escalation_categories": [
+        "explanation_uncertainty"
+      ]
+    },
+    {
+      "version_id": 115710,
+      "grade": "FR-CM1",
+      "subject": "MATHEMATICS",
+      "skill_code": "SK-ENR-MATHEMATICS-CM1-MEASURES-CONVERT",
+      "content_type": "practice",
+      "decision": "TEACHER_REVIEW_REQUIRED",
+      "fact_check_required": false,
+      "teacher_reason": "Remaining pedagogical uncertainty requires Teacher review.",
+      "escalation_categories": [
+        "explanation_uncertainty"
+      ]
+    },
+    {
+      "version_id": 115706,
+      "grade": "FR-CM1",
+      "subject": "MATHEMATICS",
+      "skill_code": "SK-ENR-MATHEMATICS-CM1-MEASURES-MEASURE",
+      "content_type": "assessment",
+      "decision": "TEACHER_REVIEW_REQUIRED",
+      "fact_check_required": false,
+      "teacher_reason": "Remaining pedagogical uncertainty requires Teacher review.",
+      "escalation_categories": [
+        "explanation_uncertainty"
+      ]
+    },
+    {
+      "version_id": 115698,
+      "grade": "FR-CM1",
+      "subject": "MATHEMATICS",
+      "skill_code": "SK-ENR-MATHEMATICS-CM1-MEASURES-MEASURE",
+      "content_type": "practice",
+      "decision": "TEACHER_REVIEW_REQUIRED",
+      "fact_check_required": false,
+      "teacher_reason": "Remaining pedagogical uncertainty requires Teacher review.",
+      "escalation_categories": [
+        "explanation_uncertainty"
+      ]
+    },
+    {
+      "version_id": 115722,
+      "grade": "FR-CM1",
+      "subject": "MATHEMATICS",
+      "skill_code": "SK-ENR-MATHEMATICS-CM1-MEASURES-PROBLEM",
+      "content_type": "practice",
+      "decision": "TEACHER_REVIEW_REQUIRED",
+      "fact_check_required": false,
+      "teacher_reason": "Remaining pedagogical uncertainty requires Teacher review.",
+      "escalation_categories": [
+        "explanation_uncertainty"
+      ]
+    },
+    {
+      "version_id": 115806,
+      "grade": "FR-CM1",
+      "subject": "PHYSICS_CHEMISTRY",
+      "skill_code": "SK-ENR-PHYSICS_CHEMISTRY-CM1-MATTER-MASS_VOLUME",
+      "content_type": "practice",
+      "decision": "TEACHER_REVIEW_REQUIRED",
+      "fact_check_required": false,
+      "teacher_reason": "Remaining pedagogical uncertainty requires Teacher review.",
+      "escalation_categories": [
+        "explanation_uncertainty"
+      ]
+    },
+    {
+      "version_id": 115926,
+      "grade": "FR-CM1",
+      "subject": "SVT",
+      "skill_code": "SK-ENR-SVT-CM1-ECOSYSTEMS-COMPONENTS",
+      "content_type": "practice",
+      "decision": "TEACHER_REVIEW_REQUIRED",
+      "fact_check_required": false,
+      "teacher_reason": "Remaining pedagogical uncertainty requires Teacher review.",
+      "escalation_categories": [
+        "explanation_uncertainty"
+      ]
+    },
+    {
+      "version_id": 115922,
+      "grade": "FR-CM1",
+      "subject": "SVT",
+      "skill_code": "SK-ENR-SVT-CM1-LIVING-OBSERVE",
+      "content_type": "assessment",
+      "decision": "TEACHER_REVIEW_REQUIRED",
+      "fact_check_required": false,
+      "teacher_reason": "Remaining pedagogical uncertainty requires Teacher review.",
+      "escalation_categories": [
+        "explanation_uncertainty"
+      ]
+    },
+    {
+      "version_id": 121284,
+      "grade": "FR-CM1",
+      "subject": "FRENCH",
+      "skill_code": "SK-ENR-FRENCH-CM1-SPELLING-LEXICAL",
+      "content_type": "practice",
+      "decision": "TEACHER_REVIEW_REQUIRED",
+      "fact_check_required": false,
+      "teacher_reason": "Remaining pedagogical uncertainty requires Teacher review.",
+      "escalation_categories": [
+        "explanation_uncertainty"
+      ]
+    }
+  ]
+}

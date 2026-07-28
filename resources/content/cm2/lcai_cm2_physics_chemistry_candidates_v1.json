@@ -1,0 +1,2014 @@
+{
+  "batch": "CM2-PHYSICS_CHEMISTRY-V1",
+  "purpose": "Parallel CM2 content preparation for Learning Coach AI",
+  "lifecycle_target": "Draft",
+  "automatic_approval": false,
+  "curriculum_version": "phase2-lcai-0011c",
+  "program_code": "FR-CYCLE3-CM2-2026",
+  "grade_code": "FR-CM2",
+  "subject_code": "PHYSICS_CHEMISTRY",
+  "skill_count": 8,
+  "candidate_count": 24,
+  "content_types": {
+    "practice": 16,
+    "assessment": 8
+  },
+  "difficulty_distribution": {
+    "1": 8,
+    "2": 16
+  },
+  "accepted_candidates": [
+    {
+      "code": "CM2-PHYSICS_CHEMISTRY-V1-MIXTURES-PURE_MIXTURE-PRACTICE-01",
+      "grade": "FR-CM2",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-CM2-MIXTURES",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-CM2-MIXTURES-PURE_MIXTURE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Matière, mélanges et transformations », réalise une tâche courte montrant que tu sais distinguer corps pur et mélange. Donne un exemple précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Distinguer corps pur et mélange ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-PHYSICS_CHEMISTRY-MIXTURES-PURE_MIXTURE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-PHYSICS_CHEMISTRY-V1-MIXTURES-PURE_MIXTURE-PRACTICE-01",
+        "title": "Distinguer corps pur et mélange",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Matière, mélanges et transformations », réalise une tâche courte montrant que tu sais distinguer corps pur et mélange. Donne un exemple précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Distinguer corps pur et mélange ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-CM2-MIXTURES",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-CM2-MIXTURES-PURE_MIXTURE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-physics_chemistry-v1",
+          "template_version": "lcai-cm2-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-PHYSICS_CHEMISTRY-MIXTURES-PURE_MIXTURE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-PHYSICS_CHEMISTRY-V1-MIXTURES-PURE_MIXTURE-PRACTICE-02",
+      "grade": "FR-CM2",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-CM2-MIXTURES",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-CM2-MIXTURES-PURE_MIXTURE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique avec tes mots puis applique à un exemple : « Distinguer corps pur et mélange ».",
+      "expected_answer": "Réponse ouverte : explication correcte et exemple pertinent.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Distinguer corps pur et mélange ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-PHYSICS_CHEMISTRY-MIXTURES-PURE_MIXTURE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-PHYSICS_CHEMISTRY-V1-MIXTURES-PURE_MIXTURE-PRACTICE-02",
+        "title": "Distinguer corps pur et mélange",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique avec tes mots puis applique à un exemple : « Distinguer corps pur et mélange ».",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et exemple pertinent.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Distinguer corps pur et mélange ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-CM2-MIXTURES",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-CM2-MIXTURES-PURE_MIXTURE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-physics_chemistry-v1",
+          "template_version": "lcai-cm2-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-PHYSICS_CHEMISTRY-MIXTURES-PURE_MIXTURE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-PHYSICS_CHEMISTRY-V1-MIXTURES-PURE_MIXTURE-ASSESSMENT-03",
+      "grade": "FR-CM2",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-CM2-MIXTURES",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-CM2-MIXTURES-PURE_MIXTURE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation CM2 : montre de façon autonome que tu sais distinguer corps pur et mélange. Justifie avec un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Distinguer corps pur et mélange ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-PHYSICS_CHEMISTRY-MIXTURES-PURE_MIXTURE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-PHYSICS_CHEMISTRY-V1-MIXTURES-PURE_MIXTURE-ASSESSMENT-03",
+        "title": "Distinguer corps pur et mélange",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation CM2 : montre de façon autonome que tu sais distinguer corps pur et mélange. Justifie avec un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Distinguer corps pur et mélange ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-CM2-MIXTURES",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-CM2-MIXTURES-PURE_MIXTURE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-physics_chemistry-v1",
+          "template_version": "lcai-cm2-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-PHYSICS_CHEMISTRY-MIXTURES-PURE_MIXTURE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-PHYSICS_CHEMISTRY-V1-MIXTURES-SEPARATE-PRACTICE-01",
+      "grade": "FR-CM2",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-CM2-MIXTURES",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-CM2-MIXTURES-SEPARATE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Matière, mélanges et transformations », réalise une tâche courte montrant que tu sais choisir une technique de séparation. Donne un exemple précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Choisir une technique de séparation ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-PHYSICS_CHEMISTRY-MIXTURES-SEPARATE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-PHYSICS_CHEMISTRY-V1-MIXTURES-SEPARATE-PRACTICE-01",
+        "title": "Choisir une technique de séparation",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Matière, mélanges et transformations », réalise une tâche courte montrant que tu sais choisir une technique de séparation. Donne un exemple précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Choisir une technique de séparation ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-CM2-MIXTURES",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-CM2-MIXTURES-SEPARATE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-physics_chemistry-v1",
+          "template_version": "lcai-cm2-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-PHYSICS_CHEMISTRY-MIXTURES-SEPARATE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-PHYSICS_CHEMISTRY-V1-MIXTURES-SEPARATE-PRACTICE-02",
+      "grade": "FR-CM2",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-CM2-MIXTURES",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-CM2-MIXTURES-SEPARATE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique avec tes mots puis applique à un exemple : « Choisir une technique de séparation ».",
+      "expected_answer": "Réponse ouverte : explication correcte et exemple pertinent.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Choisir une technique de séparation ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-PHYSICS_CHEMISTRY-MIXTURES-SEPARATE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-PHYSICS_CHEMISTRY-V1-MIXTURES-SEPARATE-PRACTICE-02",
+        "title": "Choisir une technique de séparation",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique avec tes mots puis applique à un exemple : « Choisir une technique de séparation ».",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et exemple pertinent.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Choisir une technique de séparation ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-CM2-MIXTURES",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-CM2-MIXTURES-SEPARATE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-physics_chemistry-v1",
+          "template_version": "lcai-cm2-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-PHYSICS_CHEMISTRY-MIXTURES-SEPARATE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-PHYSICS_CHEMISTRY-V1-MIXTURES-SEPARATE-ASSESSMENT-03",
+      "grade": "FR-CM2",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-CM2-MIXTURES",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-CM2-MIXTURES-SEPARATE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation CM2 : montre de façon autonome que tu sais choisir une technique de séparation. Justifie avec un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Choisir une technique de séparation ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-PHYSICS_CHEMISTRY-MIXTURES-SEPARATE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-PHYSICS_CHEMISTRY-V1-MIXTURES-SEPARATE-ASSESSMENT-03",
+        "title": "Choisir une technique de séparation",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation CM2 : montre de façon autonome que tu sais choisir une technique de séparation. Justifie avec un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Choisir une technique de séparation ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-CM2-MIXTURES",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-CM2-MIXTURES-SEPARATE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-physics_chemistry-v1",
+          "template_version": "lcai-cm2-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-PHYSICS_CHEMISTRY-MIXTURES-SEPARATE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-PHYSICS_CHEMISTRY-V1-MIXTURES-DISSOLVE-PRACTICE-01",
+      "grade": "FR-CM2",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-CM2-MIXTURES",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-CM2-MIXTURES-DISSOLVE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Matière, mélanges et transformations », réalise une tâche courte montrant que tu sais décrire une dissolution. Donne un exemple précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Décrire une dissolution ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-PHYSICS_CHEMISTRY-MIXTURES-DISSOLVE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-PHYSICS_CHEMISTRY-V1-MIXTURES-DISSOLVE-PRACTICE-01",
+        "title": "Décrire une dissolution",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Matière, mélanges et transformations », réalise une tâche courte montrant que tu sais décrire une dissolution. Donne un exemple précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Décrire une dissolution ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-CM2-MIXTURES",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-CM2-MIXTURES-DISSOLVE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-physics_chemistry-v1",
+          "template_version": "lcai-cm2-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-PHYSICS_CHEMISTRY-MIXTURES-DISSOLVE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-PHYSICS_CHEMISTRY-V1-MIXTURES-DISSOLVE-PRACTICE-02",
+      "grade": "FR-CM2",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-CM2-MIXTURES",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-CM2-MIXTURES-DISSOLVE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique avec tes mots puis applique à un exemple : « Décrire une dissolution ».",
+      "expected_answer": "Réponse ouverte : explication correcte et exemple pertinent.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Décrire une dissolution ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-PHYSICS_CHEMISTRY-MIXTURES-DISSOLVE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-PHYSICS_CHEMISTRY-V1-MIXTURES-DISSOLVE-PRACTICE-02",
+        "title": "Décrire une dissolution",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique avec tes mots puis applique à un exemple : « Décrire une dissolution ».",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et exemple pertinent.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Décrire une dissolution ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-CM2-MIXTURES",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-CM2-MIXTURES-DISSOLVE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-physics_chemistry-v1",
+          "template_version": "lcai-cm2-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-PHYSICS_CHEMISTRY-MIXTURES-DISSOLVE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-PHYSICS_CHEMISTRY-V1-MIXTURES-DISSOLVE-ASSESSMENT-03",
+      "grade": "FR-CM2",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-CM2-MIXTURES",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-CM2-MIXTURES-DISSOLVE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation CM2 : montre de façon autonome que tu sais décrire une dissolution. Justifie avec un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Décrire une dissolution ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-PHYSICS_CHEMISTRY-MIXTURES-DISSOLVE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-PHYSICS_CHEMISTRY-V1-MIXTURES-DISSOLVE-ASSESSMENT-03",
+        "title": "Décrire une dissolution",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation CM2 : montre de façon autonome que tu sais décrire une dissolution. Justifie avec un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Décrire une dissolution ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-CM2-MIXTURES",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-CM2-MIXTURES-DISSOLVE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-physics_chemistry-v1",
+          "template_version": "lcai-cm2-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-PHYSICS_CHEMISTRY-MIXTURES-DISSOLVE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-PHYSICS_CHEMISTRY-V1-MIXTURES-TRANSFORM-PRACTICE-01",
+      "grade": "FR-CM2",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-CM2-MIXTURES",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-CM2-MIXTURES-TRANSFORM",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Matière, mélanges et transformations », réalise une tâche courte montrant que tu sais distinguer transformation physique et chimique. Donne un exemple précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Distinguer transformation physique et chimique ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-PHYSICS_CHEMISTRY-MIXTURES-TRANSFORM",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-PHYSICS_CHEMISTRY-V1-MIXTURES-TRANSFORM-PRACTICE-01",
+        "title": "Distinguer transformation physique et chimique",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Matière, mélanges et transformations », réalise une tâche courte montrant que tu sais distinguer transformation physique et chimique. Donne un exemple précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Distinguer transformation physique et chimique ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-CM2-MIXTURES",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-CM2-MIXTURES-TRANSFORM",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-physics_chemistry-v1",
+          "template_version": "lcai-cm2-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-PHYSICS_CHEMISTRY-MIXTURES-TRANSFORM",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-PHYSICS_CHEMISTRY-V1-MIXTURES-TRANSFORM-PRACTICE-02",
+      "grade": "FR-CM2",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-CM2-MIXTURES",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-CM2-MIXTURES-TRANSFORM",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique avec tes mots puis applique à un exemple : « Distinguer transformation physique et chimique ».",
+      "expected_answer": "Réponse ouverte : explication correcte et exemple pertinent.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Distinguer transformation physique et chimique ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-PHYSICS_CHEMISTRY-MIXTURES-TRANSFORM",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-PHYSICS_CHEMISTRY-V1-MIXTURES-TRANSFORM-PRACTICE-02",
+        "title": "Distinguer transformation physique et chimique",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique avec tes mots puis applique à un exemple : « Distinguer transformation physique et chimique ».",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et exemple pertinent.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Distinguer transformation physique et chimique ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-CM2-MIXTURES",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-CM2-MIXTURES-TRANSFORM",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-physics_chemistry-v1",
+          "template_version": "lcai-cm2-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-PHYSICS_CHEMISTRY-MIXTURES-TRANSFORM",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-PHYSICS_CHEMISTRY-V1-MIXTURES-TRANSFORM-ASSESSMENT-03",
+      "grade": "FR-CM2",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-CM2-MIXTURES",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-CM2-MIXTURES-TRANSFORM",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation CM2 : montre de façon autonome que tu sais distinguer transformation physique et chimique. Justifie avec un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Distinguer transformation physique et chimique ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-PHYSICS_CHEMISTRY-MIXTURES-TRANSFORM",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-PHYSICS_CHEMISTRY-V1-MIXTURES-TRANSFORM-ASSESSMENT-03",
+        "title": "Distinguer transformation physique et chimique",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation CM2 : montre de façon autonome que tu sais distinguer transformation physique et chimique. Justifie avec un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Distinguer transformation physique et chimique ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-CM2-MIXTURES",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-CM2-MIXTURES-TRANSFORM",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-physics_chemistry-v1",
+          "template_version": "lcai-cm2-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-PHYSICS_CHEMISTRY-MIXTURES-TRANSFORM",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-PHYSICS_CHEMISTRY-V1-SIGNALS-ENERGY_FORM-PRACTICE-01",
+      "grade": "FR-CM2",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-CM2-SIGNALS",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-CM2-SIGNALS-ENERGY_FORM",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Énergie, signaux et systèmes techniques », réalise une tâche courte montrant que tu sais identifier formes et sources d'énergie. Donne un exemple précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Identifier formes et sources d'énergie ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-PHYSICS_CHEMISTRY-SIGNALS-ENERGY_FORM",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-PHYSICS_CHEMISTRY-V1-SIGNALS-ENERGY_FORM-PRACTICE-01",
+        "title": "Identifier formes et sources d'énergie",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Énergie, signaux et systèmes techniques », réalise une tâche courte montrant que tu sais identifier formes et sources d'énergie. Donne un exemple précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Identifier formes et sources d'énergie ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-CM2-SIGNALS",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-CM2-SIGNALS-ENERGY_FORM",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-physics_chemistry-v1",
+          "template_version": "lcai-cm2-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-PHYSICS_CHEMISTRY-SIGNALS-ENERGY_FORM",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-PHYSICS_CHEMISTRY-V1-SIGNALS-ENERGY_FORM-PRACTICE-02",
+      "grade": "FR-CM2",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-CM2-SIGNALS",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-CM2-SIGNALS-ENERGY_FORM",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique avec tes mots puis applique à un exemple : « Identifier formes et sources d'énergie ».",
+      "expected_answer": "Réponse ouverte : explication correcte et exemple pertinent.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Identifier formes et sources d'énergie ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-PHYSICS_CHEMISTRY-SIGNALS-ENERGY_FORM",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-PHYSICS_CHEMISTRY-V1-SIGNALS-ENERGY_FORM-PRACTICE-02",
+        "title": "Identifier formes et sources d'énergie",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique avec tes mots puis applique à un exemple : « Identifier formes et sources d'énergie ».",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et exemple pertinent.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Identifier formes et sources d'énergie ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-CM2-SIGNALS",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-CM2-SIGNALS-ENERGY_FORM",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-physics_chemistry-v1",
+          "template_version": "lcai-cm2-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-PHYSICS_CHEMISTRY-SIGNALS-ENERGY_FORM",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-PHYSICS_CHEMISTRY-V1-SIGNALS-ENERGY_FORM-ASSESSMENT-03",
+      "grade": "FR-CM2",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-CM2-SIGNALS",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-CM2-SIGNALS-ENERGY_FORM",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation CM2 : montre de façon autonome que tu sais identifier formes et sources d'énergie. Justifie avec un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Identifier formes et sources d'énergie ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-PHYSICS_CHEMISTRY-SIGNALS-ENERGY_FORM",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-PHYSICS_CHEMISTRY-V1-SIGNALS-ENERGY_FORM-ASSESSMENT-03",
+        "title": "Identifier formes et sources d'énergie",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation CM2 : montre de façon autonome que tu sais identifier formes et sources d'énergie. Justifie avec un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Identifier formes et sources d'énergie ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-CM2-SIGNALS",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-CM2-SIGNALS-ENERGY_FORM",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-physics_chemistry-v1",
+          "template_version": "lcai-cm2-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-PHYSICS_CHEMISTRY-SIGNALS-ENERGY_FORM",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-PHYSICS_CHEMISTRY-V1-SIGNALS-TRANSFER-PRACTICE-01",
+      "grade": "FR-CM2",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-CM2-SIGNALS",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-CM2-SIGNALS-TRANSFER",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Énergie, signaux et systèmes techniques », réalise une tâche courte montrant que tu sais décrire un transfert ou une conversion. Donne un exemple précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Décrire un transfert ou une conversion ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-PHYSICS_CHEMISTRY-SIGNALS-TRANSFER",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-PHYSICS_CHEMISTRY-V1-SIGNALS-TRANSFER-PRACTICE-01",
+        "title": "Décrire un transfert ou une conversion",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Énergie, signaux et systèmes techniques », réalise une tâche courte montrant que tu sais décrire un transfert ou une conversion. Donne un exemple précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Décrire un transfert ou une conversion ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-CM2-SIGNALS",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-CM2-SIGNALS-TRANSFER",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-physics_chemistry-v1",
+          "template_version": "lcai-cm2-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-PHYSICS_CHEMISTRY-SIGNALS-TRANSFER",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-PHYSICS_CHEMISTRY-V1-SIGNALS-TRANSFER-PRACTICE-02",
+      "grade": "FR-CM2",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-CM2-SIGNALS",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-CM2-SIGNALS-TRANSFER",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique avec tes mots puis applique à un exemple : « Décrire un transfert ou une conversion ».",
+      "expected_answer": "Réponse ouverte : explication correcte et exemple pertinent.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Décrire un transfert ou une conversion ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-PHYSICS_CHEMISTRY-SIGNALS-TRANSFER",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-PHYSICS_CHEMISTRY-V1-SIGNALS-TRANSFER-PRACTICE-02",
+        "title": "Décrire un transfert ou une conversion",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique avec tes mots puis applique à un exemple : « Décrire un transfert ou une conversion ».",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et exemple pertinent.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Décrire un transfert ou une conversion ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-CM2-SIGNALS",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-CM2-SIGNALS-TRANSFER",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-physics_chemistry-v1",
+          "template_version": "lcai-cm2-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-PHYSICS_CHEMISTRY-SIGNALS-TRANSFER",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-PHYSICS_CHEMISTRY-V1-SIGNALS-TRANSFER-ASSESSMENT-03",
+      "grade": "FR-CM2",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-CM2-SIGNALS",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-CM2-SIGNALS-TRANSFER",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation CM2 : montre de façon autonome que tu sais décrire un transfert ou une conversion. Justifie avec un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Décrire un transfert ou une conversion ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-PHYSICS_CHEMISTRY-SIGNALS-TRANSFER",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-PHYSICS_CHEMISTRY-V1-SIGNALS-TRANSFER-ASSESSMENT-03",
+        "title": "Décrire un transfert ou une conversion",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation CM2 : montre de façon autonome que tu sais décrire un transfert ou une conversion. Justifie avec un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Décrire un transfert ou une conversion ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-CM2-SIGNALS",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-CM2-SIGNALS-TRANSFER",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-physics_chemistry-v1",
+          "template_version": "lcai-cm2-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-PHYSICS_CHEMISTRY-SIGNALS-TRANSFER",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-PHYSICS_CHEMISTRY-V1-SIGNALS-SIGNAL-PRACTICE-01",
+      "grade": "FR-CM2",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-CM2-SIGNALS",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-CM2-SIGNALS-SIGNAL",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Énergie, signaux et systèmes techniques », réalise une tâche courte montrant que tu sais distinguer information et signal. Donne un exemple précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Distinguer information et signal ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-PHYSICS_CHEMISTRY-SIGNALS-SIGNAL",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-PHYSICS_CHEMISTRY-V1-SIGNALS-SIGNAL-PRACTICE-01",
+        "title": "Distinguer information et signal",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Énergie, signaux et systèmes techniques », réalise une tâche courte montrant que tu sais distinguer information et signal. Donne un exemple précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Distinguer information et signal ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-CM2-SIGNALS",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-CM2-SIGNALS-SIGNAL",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-physics_chemistry-v1",
+          "template_version": "lcai-cm2-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-PHYSICS_CHEMISTRY-SIGNALS-SIGNAL",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-PHYSICS_CHEMISTRY-V1-SIGNALS-SIGNAL-PRACTICE-02",
+      "grade": "FR-CM2",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-CM2-SIGNALS",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-CM2-SIGNALS-SIGNAL",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique avec tes mots puis applique à un exemple : « Distinguer information et signal ».",
+      "expected_answer": "Réponse ouverte : explication correcte et exemple pertinent.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Distinguer information et signal ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-PHYSICS_CHEMISTRY-SIGNALS-SIGNAL",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-PHYSICS_CHEMISTRY-V1-SIGNALS-SIGNAL-PRACTICE-02",
+        "title": "Distinguer information et signal",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique avec tes mots puis applique à un exemple : « Distinguer information et signal ».",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et exemple pertinent.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Distinguer information et signal ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-CM2-SIGNALS",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-CM2-SIGNALS-SIGNAL",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-physics_chemistry-v1",
+          "template_version": "lcai-cm2-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-PHYSICS_CHEMISTRY-SIGNALS-SIGNAL",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-PHYSICS_CHEMISTRY-V1-SIGNALS-SIGNAL-ASSESSMENT-03",
+      "grade": "FR-CM2",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-CM2-SIGNALS",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-CM2-SIGNALS-SIGNAL",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation CM2 : montre de façon autonome que tu sais distinguer information et signal. Justifie avec un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Distinguer information et signal ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-PHYSICS_CHEMISTRY-SIGNALS-SIGNAL",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-PHYSICS_CHEMISTRY-V1-SIGNALS-SIGNAL-ASSESSMENT-03",
+        "title": "Distinguer information et signal",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation CM2 : montre de façon autonome que tu sais distinguer information et signal. Justifie avec un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Distinguer information et signal ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-CM2-SIGNALS",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-CM2-SIGNALS-SIGNAL",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-physics_chemistry-v1",
+          "template_version": "lcai-cm2-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-PHYSICS_CHEMISTRY-SIGNALS-SIGNAL",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-PHYSICS_CHEMISTRY-V1-SIGNALS-SYSTEM-PRACTICE-01",
+      "grade": "FR-CM2",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-CM2-SIGNALS",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-CM2-SIGNALS-SYSTEM",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Énergie, signaux et systèmes techniques », réalise une tâche courte montrant que tu sais analyser la chaîne fonctionnelle d'un objet. Donne un exemple précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Analyser la chaîne fonctionnelle d'un objet ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-PHYSICS_CHEMISTRY-SIGNALS-SYSTEM",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-PHYSICS_CHEMISTRY-V1-SIGNALS-SYSTEM-PRACTICE-01",
+        "title": "Analyser la chaîne fonctionnelle d'un objet",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Énergie, signaux et systèmes techniques », réalise une tâche courte montrant que tu sais analyser la chaîne fonctionnelle d'un objet. Donne un exemple précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Analyser la chaîne fonctionnelle d'un objet ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-CM2-SIGNALS",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-CM2-SIGNALS-SYSTEM",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-physics_chemistry-v1",
+          "template_version": "lcai-cm2-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-PHYSICS_CHEMISTRY-SIGNALS-SYSTEM",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-PHYSICS_CHEMISTRY-V1-SIGNALS-SYSTEM-PRACTICE-02",
+      "grade": "FR-CM2",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-CM2-SIGNALS",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-CM2-SIGNALS-SYSTEM",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique avec tes mots puis applique à un exemple : « Analyser la chaîne fonctionnelle d'un objet ».",
+      "expected_answer": "Réponse ouverte : explication correcte et exemple pertinent.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Analyser la chaîne fonctionnelle d'un objet ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-PHYSICS_CHEMISTRY-SIGNALS-SYSTEM",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-PHYSICS_CHEMISTRY-V1-SIGNALS-SYSTEM-PRACTICE-02",
+        "title": "Analyser la chaîne fonctionnelle d'un objet",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique avec tes mots puis applique à un exemple : « Analyser la chaîne fonctionnelle d'un objet ».",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et exemple pertinent.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Analyser la chaîne fonctionnelle d'un objet ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-CM2-SIGNALS",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-CM2-SIGNALS-SYSTEM",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-physics_chemistry-v1",
+          "template_version": "lcai-cm2-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-PHYSICS_CHEMISTRY-SIGNALS-SYSTEM",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-PHYSICS_CHEMISTRY-V1-SIGNALS-SYSTEM-ASSESSMENT-03",
+      "grade": "FR-CM2",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-CM2-SIGNALS",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-CM2-SIGNALS-SYSTEM",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation CM2 : montre de façon autonome que tu sais analyser la chaîne fonctionnelle d'un objet. Justifie avec un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Analyser la chaîne fonctionnelle d'un objet ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-PHYSICS_CHEMISTRY-SIGNALS-SYSTEM",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-PHYSICS_CHEMISTRY-V1-SIGNALS-SYSTEM-ASSESSMENT-03",
+        "title": "Analyser la chaîne fonctionnelle d'un objet",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation CM2 : montre de façon autonome que tu sais analyser la chaîne fonctionnelle d'un objet. Justifie avec un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Analyser la chaîne fonctionnelle d'un objet ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-CM2-SIGNALS",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-CM2-SIGNALS-SYSTEM",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-physics_chemistry-v1",
+          "template_version": "lcai-cm2-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-PHYSICS_CHEMISTRY-SIGNALS-SYSTEM",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_physics_chemistry_candidates_v1.json"
+      }
+    }
+  ]
+}

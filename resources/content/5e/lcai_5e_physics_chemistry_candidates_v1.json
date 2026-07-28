@@ -1,0 +1,2590 @@
+{
+  "batch": "5E-PHYSICS_CHEMISTRY-V1",
+  "purpose": "Parallel 5e content preparation for Learning Coach AI",
+  "lifecycle_target": "Draft",
+  "automatic_approval": false,
+  "curriculum_version": "phase2-lcai-0011c",
+  "program_code": "FR-CYCLE4-5E-2026",
+  "grade_code": "FR-5E",
+  "subject_code": "PHYSICS_CHEMISTRY",
+  "skill_count": 10,
+  "candidate_count": 30,
+  "content_types": {
+    "practice": 20,
+    "assessment": 10
+  },
+  "difficulty_distribution": {
+    "1": 10,
+    "2": 20
+  },
+  "accepted_candidates": [
+    {
+      "code": "5E-PHYSICS_CHEMISTRY-V1-MATTER-MIXTURE-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-5E-MATTER",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-5E-MATTER-MIXTURE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Organisation et transformations de la matière », réalise une tâche qui montre que tu sais distinguer corps pur et mélange. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Distinguer corps pur et mélange ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-PHYSICS_CHEMISTRY-MATTER-MIXTURE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-PHYSICS_CHEMISTRY-V1-MATTER-MIXTURE-PRACTICE-01",
+        "title": "Distinguer corps pur et mélange",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Organisation et transformations de la matière », réalise une tâche qui montre que tu sais distinguer corps pur et mélange. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Distinguer corps pur et mélange ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-5E-MATTER",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-5E-MATTER-MIXTURE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-physics_chemistry-v1",
+          "template_version": "lcai-5e-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-PHYSICS_CHEMISTRY-MATTER-MIXTURE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-PHYSICS_CHEMISTRY-V1-MATTER-MIXTURE-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-5E-MATTER",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-5E-MATTER-MIXTURE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Distinguer corps pur et mélange » à une situation pertinente de niveau 5e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Distinguer corps pur et mélange ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-PHYSICS_CHEMISTRY-MATTER-MIXTURE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-PHYSICS_CHEMISTRY-V1-MATTER-MIXTURE-PRACTICE-02",
+        "title": "Distinguer corps pur et mélange",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Distinguer corps pur et mélange » à une situation pertinente de niveau 5e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Distinguer corps pur et mélange ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-5E-MATTER",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-5E-MATTER-MIXTURE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-physics_chemistry-v1",
+          "template_version": "lcai-5e-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-PHYSICS_CHEMISTRY-MATTER-MIXTURE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-PHYSICS_CHEMISTRY-V1-MATTER-MIXTURE-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-5E-MATTER",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-5E-MATTER-MIXTURE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 5e : démontre de façon autonome que tu sais distinguer corps pur et mélange. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Distinguer corps pur et mélange ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-PHYSICS_CHEMISTRY-MATTER-MIXTURE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-PHYSICS_CHEMISTRY-V1-MATTER-MIXTURE-ASSESSMENT-03",
+        "title": "Distinguer corps pur et mélange",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 5e : démontre de façon autonome que tu sais distinguer corps pur et mélange. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Distinguer corps pur et mélange ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-5E-MATTER",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-5E-MATTER-MIXTURE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-physics_chemistry-v1",
+          "template_version": "lcai-5e-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-PHYSICS_CHEMISTRY-MATTER-MIXTURE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-PHYSICS_CHEMISTRY-V1-MATTER-DISSOLUTION-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-5E-MATTER",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-5E-MATTER-DISSOLUTION",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Organisation et transformations de la matière », réalise une tâche qui montre que tu sais interpréter une dissolution. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Interpréter une dissolution ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-PHYSICS_CHEMISTRY-MATTER-DISSOLUTION",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-PHYSICS_CHEMISTRY-V1-MATTER-DISSOLUTION-PRACTICE-01",
+        "title": "Interpréter une dissolution",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Organisation et transformations de la matière », réalise une tâche qui montre que tu sais interpréter une dissolution. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Interpréter une dissolution ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-5E-MATTER",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-5E-MATTER-DISSOLUTION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-physics_chemistry-v1",
+          "template_version": "lcai-5e-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-PHYSICS_CHEMISTRY-MATTER-DISSOLUTION",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-PHYSICS_CHEMISTRY-V1-MATTER-DISSOLUTION-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-5E-MATTER",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-5E-MATTER-DISSOLUTION",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Interpréter une dissolution » à une situation pertinente de niveau 5e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Interpréter une dissolution ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-PHYSICS_CHEMISTRY-MATTER-DISSOLUTION",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-PHYSICS_CHEMISTRY-V1-MATTER-DISSOLUTION-PRACTICE-02",
+        "title": "Interpréter une dissolution",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Interpréter une dissolution » à une situation pertinente de niveau 5e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Interpréter une dissolution ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-5E-MATTER",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-5E-MATTER-DISSOLUTION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-physics_chemistry-v1",
+          "template_version": "lcai-5e-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-PHYSICS_CHEMISTRY-MATTER-DISSOLUTION",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-PHYSICS_CHEMISTRY-V1-MATTER-DISSOLUTION-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-5E-MATTER",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-5E-MATTER-DISSOLUTION",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 5e : démontre de façon autonome que tu sais interpréter une dissolution. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Interpréter une dissolution ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-PHYSICS_CHEMISTRY-MATTER-DISSOLUTION",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-PHYSICS_CHEMISTRY-V1-MATTER-DISSOLUTION-ASSESSMENT-03",
+        "title": "Interpréter une dissolution",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 5e : démontre de façon autonome que tu sais interpréter une dissolution. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Interpréter une dissolution ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-5E-MATTER",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-5E-MATTER-DISSOLUTION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-physics_chemistry-v1",
+          "template_version": "lcai-5e-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-PHYSICS_CHEMISTRY-MATTER-DISSOLUTION",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-PHYSICS_CHEMISTRY-V1-MATTER-SEPARATION-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-5E-MATTER",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-5E-MATTER-SEPARATE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Organisation et transformations de la matière », réalise une tâche qui montre que tu sais choisir une technique de séparation. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Choisir une technique de séparation ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-PHYSICS_CHEMISTRY-MATTER-SEPARATION",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-PHYSICS_CHEMISTRY-V1-MATTER-SEPARATION-PRACTICE-01",
+        "title": "Choisir une technique de séparation",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Organisation et transformations de la matière », réalise une tâche qui montre que tu sais choisir une technique de séparation. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Choisir une technique de séparation ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-5E-MATTER",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-5E-MATTER-SEPARATE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-physics_chemistry-v1",
+          "template_version": "lcai-5e-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-PHYSICS_CHEMISTRY-MATTER-SEPARATION",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ],
+          "skill_correction": {
+            "original_primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-5E-MATTER-SEPARATION",
+            "corrected_primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-5E-MATTER-SEPARATE",
+            "correction_reason": "Resolved: SK-ENR-PHYSICS_CHEMISTRY-5E-MATTER-SEPARATION -> SK-ENR-PHYSICS_CHEMISTRY-5E-MATTER-SEPARATE",
+            "correction_method": "suffix_substitution",
+            "curriculum_match": {
+              "program_code": "FR-CYCLE4-5E-2026",
+              "grade_code": "FR-5E",
+              "subject_code": "PHYSICS_CHEMISTRY",
+              "chapter_code": "CH-PHYSICS_CHEMISTRY-5E-MATTER",
+              "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-5E-MATTER-SEPARATE"
+            }
+          }
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-PHYSICS_CHEMISTRY-V1-MATTER-SEPARATION-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-5E-MATTER",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-5E-MATTER-SEPARATE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Choisir une technique de séparation » à une situation pertinente de niveau 5e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Choisir une technique de séparation ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-PHYSICS_CHEMISTRY-MATTER-SEPARATION",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-PHYSICS_CHEMISTRY-V1-MATTER-SEPARATION-PRACTICE-02",
+        "title": "Choisir une technique de séparation",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Choisir une technique de séparation » à une situation pertinente de niveau 5e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Choisir une technique de séparation ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-5E-MATTER",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-5E-MATTER-SEPARATE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-physics_chemistry-v1",
+          "template_version": "lcai-5e-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-PHYSICS_CHEMISTRY-MATTER-SEPARATION",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ],
+          "skill_correction": {
+            "original_primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-5E-MATTER-SEPARATION",
+            "corrected_primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-5E-MATTER-SEPARATE",
+            "correction_reason": "Resolved: SK-ENR-PHYSICS_CHEMISTRY-5E-MATTER-SEPARATION -> SK-ENR-PHYSICS_CHEMISTRY-5E-MATTER-SEPARATE",
+            "correction_method": "suffix_substitution",
+            "curriculum_match": {
+              "program_code": "FR-CYCLE4-5E-2026",
+              "grade_code": "FR-5E",
+              "subject_code": "PHYSICS_CHEMISTRY",
+              "chapter_code": "CH-PHYSICS_CHEMISTRY-5E-MATTER",
+              "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-5E-MATTER-SEPARATE"
+            }
+          }
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-PHYSICS_CHEMISTRY-V1-MATTER-SEPARATION-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-5E-MATTER",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-5E-MATTER-SEPARATE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 5e : démontre de façon autonome que tu sais choisir une technique de séparation. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Choisir une technique de séparation ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-PHYSICS_CHEMISTRY-MATTER-SEPARATION",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-PHYSICS_CHEMISTRY-V1-MATTER-SEPARATION-ASSESSMENT-03",
+        "title": "Choisir une technique de séparation",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 5e : démontre de façon autonome que tu sais choisir une technique de séparation. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Choisir une technique de séparation ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-5E-MATTER",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-5E-MATTER-SEPARATE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-physics_chemistry-v1",
+          "template_version": "lcai-5e-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-PHYSICS_CHEMISTRY-MATTER-SEPARATION",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ],
+          "skill_correction": {
+            "original_primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-5E-MATTER-SEPARATION",
+            "corrected_primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-5E-MATTER-SEPARATE",
+            "correction_reason": "Resolved: SK-ENR-PHYSICS_CHEMISTRY-5E-MATTER-SEPARATION -> SK-ENR-PHYSICS_CHEMISTRY-5E-MATTER-SEPARATE",
+            "correction_method": "suffix_substitution",
+            "curriculum_match": {
+              "program_code": "FR-CYCLE4-5E-2026",
+              "grade_code": "FR-5E",
+              "subject_code": "PHYSICS_CHEMISTRY",
+              "chapter_code": "CH-PHYSICS_CHEMISTRY-5E-MATTER",
+              "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-5E-MATTER-SEPARATE"
+            }
+          }
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-PHYSICS_CHEMISTRY-V1-MATTER-CHANGE-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-5E-MATTER",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-5E-MATTER-CHANGE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Organisation et transformations de la matière », réalise une tâche qui montre que tu sais distinguer transformation physique et chimique. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Distinguer transformation physique et chimique ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-PHYSICS_CHEMISTRY-MATTER-CHANGE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-PHYSICS_CHEMISTRY-V1-MATTER-CHANGE-PRACTICE-01",
+        "title": "Distinguer transformation physique et chimique",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Organisation et transformations de la matière », réalise une tâche qui montre que tu sais distinguer transformation physique et chimique. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Distinguer transformation physique et chimique ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-5E-MATTER",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-5E-MATTER-CHANGE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-physics_chemistry-v1",
+          "template_version": "lcai-5e-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-PHYSICS_CHEMISTRY-MATTER-CHANGE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-PHYSICS_CHEMISTRY-V1-MATTER-CHANGE-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-5E-MATTER",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-5E-MATTER-CHANGE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Distinguer transformation physique et chimique » à une situation pertinente de niveau 5e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Distinguer transformation physique et chimique ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-PHYSICS_CHEMISTRY-MATTER-CHANGE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-PHYSICS_CHEMISTRY-V1-MATTER-CHANGE-PRACTICE-02",
+        "title": "Distinguer transformation physique et chimique",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Distinguer transformation physique et chimique » à une situation pertinente de niveau 5e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Distinguer transformation physique et chimique ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-5E-MATTER",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-5E-MATTER-CHANGE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-physics_chemistry-v1",
+          "template_version": "lcai-5e-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-PHYSICS_CHEMISTRY-MATTER-CHANGE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-PHYSICS_CHEMISTRY-V1-MATTER-CHANGE-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-5E-MATTER",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-5E-MATTER-CHANGE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 5e : démontre de façon autonome que tu sais distinguer transformation physique et chimique. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Distinguer transformation physique et chimique ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-PHYSICS_CHEMISTRY-MATTER-CHANGE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-PHYSICS_CHEMISTRY-V1-MATTER-CHANGE-ASSESSMENT-03",
+        "title": "Distinguer transformation physique et chimique",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 5e : démontre de façon autonome que tu sais distinguer transformation physique et chimique. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Distinguer transformation physique et chimique ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-5E-MATTER",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-5E-MATTER-CHANGE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-physics_chemistry-v1",
+          "template_version": "lcai-5e-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-PHYSICS_CHEMISTRY-MATTER-CHANGE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-PHYSICS_CHEMISTRY-V1-MATTER-CONSERVATION-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-5E-MATTER",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-5E-MATTER-CONSERVATION",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Organisation et transformations de la matière », réalise une tâche qui montre que tu sais raisonner sur une conservation lors d'une transformation. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Raisonner sur une conservation lors d'une transformation ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-PHYSICS_CHEMISTRY-MATTER-CONSERVATION",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-PHYSICS_CHEMISTRY-V1-MATTER-CONSERVATION-PRACTICE-01",
+        "title": "Raisonner sur une conservation lors d'une transformation",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Organisation et transformations de la matière », réalise une tâche qui montre que tu sais raisonner sur une conservation lors d'une transformation. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Raisonner sur une conservation lors d'une transformation ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-5E-MATTER",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-5E-MATTER-CONSERVATION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-physics_chemistry-v1",
+          "template_version": "lcai-5e-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-PHYSICS_CHEMISTRY-MATTER-CONSERVATION",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-PHYSICS_CHEMISTRY-V1-MATTER-CONSERVATION-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-5E-MATTER",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-5E-MATTER-CONSERVATION",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Raisonner sur une conservation lors d'une transformation » à une situation pertinente de niveau 5e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Raisonner sur une conservation lors d'une transformation ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-PHYSICS_CHEMISTRY-MATTER-CONSERVATION",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-PHYSICS_CHEMISTRY-V1-MATTER-CONSERVATION-PRACTICE-02",
+        "title": "Raisonner sur une conservation lors d'une transformation",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Raisonner sur une conservation lors d'une transformation » à une situation pertinente de niveau 5e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Raisonner sur une conservation lors d'une transformation ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-5E-MATTER",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-5E-MATTER-CONSERVATION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-physics_chemistry-v1",
+          "template_version": "lcai-5e-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-PHYSICS_CHEMISTRY-MATTER-CONSERVATION",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-PHYSICS_CHEMISTRY-V1-MATTER-CONSERVATION-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-5E-MATTER",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-5E-MATTER-CONSERVATION",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 5e : démontre de façon autonome que tu sais raisonner sur une conservation lors d'une transformation. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Raisonner sur une conservation lors d'une transformation ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-PHYSICS_CHEMISTRY-MATTER-CONSERVATION",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-PHYSICS_CHEMISTRY-V1-MATTER-CONSERVATION-ASSESSMENT-03",
+        "title": "Raisonner sur une conservation lors d'une transformation",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 5e : démontre de façon autonome que tu sais raisonner sur une conservation lors d'une transformation. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Raisonner sur une conservation lors d'une transformation ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-5E-MATTER",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-5E-MATTER-CONSERVATION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-physics_chemistry-v1",
+          "template_version": "lcai-5e-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-PHYSICS_CHEMISTRY-MATTER-CONSERVATION",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-PHYSICS_CHEMISTRY-V1-MOTION-MOTION-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-5E-MOTION",
+      "skill": "SK-PHYSICS_CHEMISTRY-5E-MOTION",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Mouvement, interactions, énergie et signaux », réalise une tâche qui montre que tu sais décrire un mouvement. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Décrire un mouvement ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-PHYSICS_CHEMISTRY-MOTION-MOTION",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-PHYSICS_CHEMISTRY-V1-MOTION-MOTION-PRACTICE-01",
+        "title": "Décrire un mouvement",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Mouvement, interactions, énergie et signaux », réalise une tâche qui montre que tu sais décrire un mouvement. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Décrire un mouvement ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-5E-MOTION",
+          "primary_skill_code": "SK-PHYSICS_CHEMISTRY-5E-MOTION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-physics_chemistry-v1",
+          "template_version": "lcai-5e-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-PHYSICS_CHEMISTRY-MOTION-MOTION",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ],
+          "skill_correction": {
+            "original_primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-5E-MOTION-MOTION",
+            "corrected_primary_skill_code": "SK-PHYSICS_CHEMISTRY-5E-MOTION",
+            "correction_reason": "Authoritative curriculum placement confirmed.",
+            "correction_method": "exact_curriculum_match",
+            "curriculum_match": {
+              "program_code": "FR-CYCLE4-5E-2026",
+              "grade_code": "FR-5E",
+              "subject_code": "PHYSICS_CHEMISTRY",
+              "chapter_code": "CH-PHYSICS_CHEMISTRY-5E-MOTION",
+              "primary_skill_code": "SK-PHYSICS_CHEMISTRY-5E-MOTION"
+            }
+          }
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-PHYSICS_CHEMISTRY-V1-MOTION-MOTION-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-5E-MOTION",
+      "skill": "SK-PHYSICS_CHEMISTRY-5E-MOTION",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Décrire un mouvement » à une situation pertinente de niveau 5e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Décrire un mouvement ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-PHYSICS_CHEMISTRY-MOTION-MOTION",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-PHYSICS_CHEMISTRY-V1-MOTION-MOTION-PRACTICE-02",
+        "title": "Décrire un mouvement",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Décrire un mouvement » à une situation pertinente de niveau 5e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Décrire un mouvement ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-5E-MOTION",
+          "primary_skill_code": "SK-PHYSICS_CHEMISTRY-5E-MOTION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-physics_chemistry-v1",
+          "template_version": "lcai-5e-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-PHYSICS_CHEMISTRY-MOTION-MOTION",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ],
+          "skill_correction": {
+            "original_primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-5E-MOTION-MOTION",
+            "corrected_primary_skill_code": "SK-PHYSICS_CHEMISTRY-5E-MOTION",
+            "correction_reason": "Authoritative curriculum placement confirmed.",
+            "correction_method": "exact_curriculum_match",
+            "curriculum_match": {
+              "program_code": "FR-CYCLE4-5E-2026",
+              "grade_code": "FR-5E",
+              "subject_code": "PHYSICS_CHEMISTRY",
+              "chapter_code": "CH-PHYSICS_CHEMISTRY-5E-MOTION",
+              "primary_skill_code": "SK-PHYSICS_CHEMISTRY-5E-MOTION"
+            }
+          }
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-PHYSICS_CHEMISTRY-V1-MOTION-MOTION-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-5E-MOTION",
+      "skill": "SK-PHYSICS_CHEMISTRY-5E-MOTION",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 5e : démontre de façon autonome que tu sais décrire un mouvement. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Décrire un mouvement ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-PHYSICS_CHEMISTRY-MOTION-MOTION",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-PHYSICS_CHEMISTRY-V1-MOTION-MOTION-ASSESSMENT-03",
+        "title": "Décrire un mouvement",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 5e : démontre de façon autonome que tu sais décrire un mouvement. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Décrire un mouvement ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-5E-MOTION",
+          "primary_skill_code": "SK-PHYSICS_CHEMISTRY-5E-MOTION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-physics_chemistry-v1",
+          "template_version": "lcai-5e-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-PHYSICS_CHEMISTRY-MOTION-MOTION",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ],
+          "skill_correction": {
+            "original_primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-5E-MOTION-MOTION",
+            "corrected_primary_skill_code": "SK-PHYSICS_CHEMISTRY-5E-MOTION",
+            "correction_reason": "Authoritative curriculum placement confirmed.",
+            "correction_method": "exact_curriculum_match",
+            "curriculum_match": {
+              "program_code": "FR-CYCLE4-5E-2026",
+              "grade_code": "FR-5E",
+              "subject_code": "PHYSICS_CHEMISTRY",
+              "chapter_code": "CH-PHYSICS_CHEMISTRY-5E-MOTION",
+              "primary_skill_code": "SK-PHYSICS_CHEMISTRY-5E-MOTION"
+            }
+          }
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-PHYSICS_CHEMISTRY-V1-MOTION-SPEED-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-5E-MOTION",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-5E-MOTION-SPEED",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Mouvement, interactions, énergie et signaux », réalise une tâche qui montre que tu sais calculer ou comparer une vitesse. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Calculer ou comparer une vitesse ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-PHYSICS_CHEMISTRY-MOTION-SPEED",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-PHYSICS_CHEMISTRY-V1-MOTION-SPEED-PRACTICE-01",
+        "title": "Calculer ou comparer une vitesse",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Mouvement, interactions, énergie et signaux », réalise une tâche qui montre que tu sais calculer ou comparer une vitesse. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Calculer ou comparer une vitesse ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-5E-MOTION",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-5E-MOTION-SPEED",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-physics_chemistry-v1",
+          "template_version": "lcai-5e-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-PHYSICS_CHEMISTRY-MOTION-SPEED",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-PHYSICS_CHEMISTRY-V1-MOTION-SPEED-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-5E-MOTION",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-5E-MOTION-SPEED",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Calculer ou comparer une vitesse » à une situation pertinente de niveau 5e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Calculer ou comparer une vitesse ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-PHYSICS_CHEMISTRY-MOTION-SPEED",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-PHYSICS_CHEMISTRY-V1-MOTION-SPEED-PRACTICE-02",
+        "title": "Calculer ou comparer une vitesse",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Calculer ou comparer une vitesse » à une situation pertinente de niveau 5e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Calculer ou comparer une vitesse ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-5E-MOTION",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-5E-MOTION-SPEED",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-physics_chemistry-v1",
+          "template_version": "lcai-5e-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-PHYSICS_CHEMISTRY-MOTION-SPEED",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-PHYSICS_CHEMISTRY-V1-MOTION-SPEED-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-5E-MOTION",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-5E-MOTION-SPEED",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 5e : démontre de façon autonome que tu sais calculer ou comparer une vitesse. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Calculer ou comparer une vitesse ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-PHYSICS_CHEMISTRY-MOTION-SPEED",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-PHYSICS_CHEMISTRY-V1-MOTION-SPEED-ASSESSMENT-03",
+        "title": "Calculer ou comparer une vitesse",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 5e : démontre de façon autonome que tu sais calculer ou comparer une vitesse. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Calculer ou comparer une vitesse ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-5E-MOTION",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-5E-MOTION-SPEED",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-physics_chemistry-v1",
+          "template_version": "lcai-5e-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-PHYSICS_CHEMISTRY-MOTION-SPEED",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-PHYSICS_CHEMISTRY-V1-MOTION-INTERACTION-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-5E-MOTION",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-5E-MOTION-INTERACTION",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Mouvement, interactions, énergie et signaux », réalise une tâche qui montre que tu sais identifier une interaction. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Identifier une interaction ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-PHYSICS_CHEMISTRY-MOTION-INTERACTION",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-PHYSICS_CHEMISTRY-V1-MOTION-INTERACTION-PRACTICE-01",
+        "title": "Identifier une interaction",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Mouvement, interactions, énergie et signaux », réalise une tâche qui montre que tu sais identifier une interaction. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Identifier une interaction ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-5E-MOTION",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-5E-MOTION-INTERACTION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-physics_chemistry-v1",
+          "template_version": "lcai-5e-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-PHYSICS_CHEMISTRY-MOTION-INTERACTION",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-PHYSICS_CHEMISTRY-V1-MOTION-INTERACTION-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-5E-MOTION",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-5E-MOTION-INTERACTION",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Identifier une interaction » à une situation pertinente de niveau 5e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Identifier une interaction ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-PHYSICS_CHEMISTRY-MOTION-INTERACTION",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-PHYSICS_CHEMISTRY-V1-MOTION-INTERACTION-PRACTICE-02",
+        "title": "Identifier une interaction",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Identifier une interaction » à une situation pertinente de niveau 5e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Identifier une interaction ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-5E-MOTION",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-5E-MOTION-INTERACTION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-physics_chemistry-v1",
+          "template_version": "lcai-5e-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-PHYSICS_CHEMISTRY-MOTION-INTERACTION",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-PHYSICS_CHEMISTRY-V1-MOTION-INTERACTION-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-5E-MOTION",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-5E-MOTION-INTERACTION",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 5e : démontre de façon autonome que tu sais identifier une interaction. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Identifier une interaction ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-PHYSICS_CHEMISTRY-MOTION-INTERACTION",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-PHYSICS_CHEMISTRY-V1-MOTION-INTERACTION-ASSESSMENT-03",
+        "title": "Identifier une interaction",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 5e : démontre de façon autonome que tu sais identifier une interaction. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Identifier une interaction ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-5E-MOTION",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-5E-MOTION-INTERACTION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-physics_chemistry-v1",
+          "template_version": "lcai-5e-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-PHYSICS_CHEMISTRY-MOTION-INTERACTION",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-PHYSICS_CHEMISTRY-V1-MOTION-ENERGY-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-5E-MOTION",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-5E-MOTION-ENERGY",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Mouvement, interactions, énergie et signaux », réalise une tâche qui montre que tu sais identifier un transfert ou une conversion d'énergie. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Identifier un transfert ou une conversion d'énergie ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-PHYSICS_CHEMISTRY-MOTION-ENERGY",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-PHYSICS_CHEMISTRY-V1-MOTION-ENERGY-PRACTICE-01",
+        "title": "Identifier un transfert ou une conversion d'énergie",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Mouvement, interactions, énergie et signaux », réalise une tâche qui montre que tu sais identifier un transfert ou une conversion d'énergie. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Identifier un transfert ou une conversion d'énergie ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-5E-MOTION",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-5E-MOTION-ENERGY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-physics_chemistry-v1",
+          "template_version": "lcai-5e-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-PHYSICS_CHEMISTRY-MOTION-ENERGY",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-PHYSICS_CHEMISTRY-V1-MOTION-ENERGY-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-5E-MOTION",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-5E-MOTION-ENERGY",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Identifier un transfert ou une conversion d'énergie » à une situation pertinente de niveau 5e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Identifier un transfert ou une conversion d'énergie ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-PHYSICS_CHEMISTRY-MOTION-ENERGY",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-PHYSICS_CHEMISTRY-V1-MOTION-ENERGY-PRACTICE-02",
+        "title": "Identifier un transfert ou une conversion d'énergie",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Identifier un transfert ou une conversion d'énergie » à une situation pertinente de niveau 5e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Identifier un transfert ou une conversion d'énergie ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-5E-MOTION",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-5E-MOTION-ENERGY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-physics_chemistry-v1",
+          "template_version": "lcai-5e-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-PHYSICS_CHEMISTRY-MOTION-ENERGY",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-PHYSICS_CHEMISTRY-V1-MOTION-ENERGY-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-5E-MOTION",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-5E-MOTION-ENERGY",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 5e : démontre de façon autonome que tu sais identifier un transfert ou une conversion d'énergie. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Identifier un transfert ou une conversion d'énergie ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-PHYSICS_CHEMISTRY-MOTION-ENERGY",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-PHYSICS_CHEMISTRY-V1-MOTION-ENERGY-ASSESSMENT-03",
+        "title": "Identifier un transfert ou une conversion d'énergie",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 5e : démontre de façon autonome que tu sais identifier un transfert ou une conversion d'énergie. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Identifier un transfert ou une conversion d'énergie ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-5E-MOTION",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-5E-MOTION-ENERGY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-physics_chemistry-v1",
+          "template_version": "lcai-5e-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-PHYSICS_CHEMISTRY-MOTION-ENERGY",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-PHYSICS_CHEMISTRY-V1-MOTION-SIGNAL-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-5E-MOTION",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-5E-MOTION-SIGNAL",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Mouvement, interactions, énergie et signaux », réalise une tâche qui montre que tu sais relier signal et information. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Relier signal et information ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-PHYSICS_CHEMISTRY-MOTION-SIGNAL",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-PHYSICS_CHEMISTRY-V1-MOTION-SIGNAL-PRACTICE-01",
+        "title": "Relier signal et information",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Mouvement, interactions, énergie et signaux », réalise une tâche qui montre que tu sais relier signal et information. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Relier signal et information ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-5E-MOTION",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-5E-MOTION-SIGNAL",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-physics_chemistry-v1",
+          "template_version": "lcai-5e-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-PHYSICS_CHEMISTRY-MOTION-SIGNAL",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-PHYSICS_CHEMISTRY-V1-MOTION-SIGNAL-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-5E-MOTION",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-5E-MOTION-SIGNAL",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Relier signal et information » à une situation pertinente de niveau 5e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Relier signal et information ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-PHYSICS_CHEMISTRY-MOTION-SIGNAL",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-PHYSICS_CHEMISTRY-V1-MOTION-SIGNAL-PRACTICE-02",
+        "title": "Relier signal et information",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Relier signal et information » à une situation pertinente de niveau 5e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Relier signal et information ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-5E-MOTION",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-5E-MOTION-SIGNAL",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-physics_chemistry-v1",
+          "template_version": "lcai-5e-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-PHYSICS_CHEMISTRY-MOTION-SIGNAL",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-PHYSICS_CHEMISTRY-V1-MOTION-SIGNAL-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-5E-MOTION",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-5E-MOTION-SIGNAL",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 5e : démontre de façon autonome que tu sais relier signal et information. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Relier signal et information ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-PHYSICS_CHEMISTRY-MOTION-SIGNAL",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-PHYSICS_CHEMISTRY-V1-MOTION-SIGNAL-ASSESSMENT-03",
+        "title": "Relier signal et information",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 5e : démontre de façon autonome que tu sais relier signal et information. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Relier signal et information ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-5E-MOTION",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-5E-MOTION-SIGNAL",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-physics_chemistry-v1",
+          "template_version": "lcai-5e-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-PHYSICS_CHEMISTRY-MOTION-SIGNAL",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_physics_chemistry_candidates_v1.json"
+      }
+    }
+  ]
+}

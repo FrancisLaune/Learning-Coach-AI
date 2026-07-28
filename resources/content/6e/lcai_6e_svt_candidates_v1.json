@@ -1,0 +1,2512 @@
+{
+  "batch": "6E-SVT-V1",
+  "purpose": "Parallel 6e content preparation for Learning Coach AI",
+  "lifecycle_target": "Draft",
+  "automatic_approval": false,
+  "curriculum_version": "phase2-lcai-0011c",
+  "program_code": "FR-CYCLE3-6E-2026",
+  "grade_code": "FR-6E",
+  "subject_code": "SVT",
+  "skill_count": 10,
+  "candidate_count": 30,
+  "content_types": {
+    "practice": 20,
+    "assessment": 10
+  },
+  "difficulty_distribution": {
+    "1": 10,
+    "2": 20
+  },
+  "accepted_candidates": [
+    {
+      "code": "6E-SVT-V1-LIVING-CELL-PRACTICE-01",
+      "grade": "FR-6E",
+      "subject": "SVT",
+      "chapter": "CH-SVT-6E-LIVING",
+      "skill": "SK-ENR-SVT-6E-LIVING-CELL",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Unité, diversité et évolution du vivant », réalise une tâche montrant que tu sais reconnaître la cellule comme unité du vivant. Appuie-toi sur un exemple ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Reconnaître la cellule comme unité du vivant ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-SVT-LIVING-CELL",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-SVT-V1-LIVING-CELL-PRACTICE-01",
+        "title": "Reconnaître la cellule comme unité du vivant",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Unité, diversité et évolution du vivant », réalise une tâche montrant que tu sais reconnaître la cellule comme unité du vivant. Appuie-toi sur un exemple ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Reconnaître la cellule comme unité du vivant ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-6E-LIVING",
+          "primary_skill_code": "SK-ENR-SVT-6E-LIVING-CELL",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-svt-v1",
+          "template_version": "lcai-6e-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-SVT-LIVING-CELL",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-SVT-V1-LIVING-CELL-PRACTICE-02",
+      "grade": "FR-6E",
+      "subject": "SVT",
+      "chapter": "CH-SVT-6E-LIVING",
+      "skill": "SK-ENR-SVT-6E-LIVING-CELL",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Reconnaître la cellule comme unité du vivant » à une situation pertinente de niveau 6e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Reconnaître la cellule comme unité du vivant ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-SVT-LIVING-CELL",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-SVT-V1-LIVING-CELL-PRACTICE-02",
+        "title": "Reconnaître la cellule comme unité du vivant",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Reconnaître la cellule comme unité du vivant » à une situation pertinente de niveau 6e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Reconnaître la cellule comme unité du vivant ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-6E-LIVING",
+          "primary_skill_code": "SK-ENR-SVT-6E-LIVING-CELL",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-svt-v1",
+          "template_version": "lcai-6e-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-SVT-LIVING-CELL",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-SVT-V1-LIVING-CELL-ASSESSMENT-03",
+      "grade": "FR-6E",
+      "subject": "SVT",
+      "chapter": "CH-SVT-6E-LIVING",
+      "skill": "SK-ENR-SVT-6E-LIVING-CELL",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 6e : démontre de façon autonome que tu sais reconnaître la cellule comme unité du vivant. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Reconnaître la cellule comme unité du vivant ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-SVT-LIVING-CELL",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-SVT-V1-LIVING-CELL-ASSESSMENT-03",
+        "title": "Reconnaître la cellule comme unité du vivant",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 6e : démontre de façon autonome que tu sais reconnaître la cellule comme unité du vivant. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Reconnaître la cellule comme unité du vivant ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-6E-LIVING",
+          "primary_skill_code": "SK-ENR-SVT-6E-LIVING-CELL",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-svt-v1",
+          "template_version": "lcai-6e-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-SVT-LIVING-CELL",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-SVT-V1-LIVING-CHARACTER-PRACTICE-01",
+      "grade": "FR-6E",
+      "subject": "SVT",
+      "chapter": "CH-SVT-6E-LIVING",
+      "skill": "SK-ENR-SVT-6E-LIVING-CHARACTER",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Unité, diversité et évolution du vivant », réalise une tâche montrant que tu sais identifier des caractères partagés. Appuie-toi sur un exemple ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Identifier des caractères partagés ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-SVT-LIVING-CHARACTER",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-SVT-V1-LIVING-CHARACTER-PRACTICE-01",
+        "title": "Identifier des caractères partagés",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Unité, diversité et évolution du vivant », réalise une tâche montrant que tu sais identifier des caractères partagés. Appuie-toi sur un exemple ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Identifier des caractères partagés ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-6E-LIVING",
+          "primary_skill_code": "SK-ENR-SVT-6E-LIVING-CHARACTER",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-svt-v1",
+          "template_version": "lcai-6e-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-SVT-LIVING-CHARACTER",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-SVT-V1-LIVING-CHARACTER-PRACTICE-02",
+      "grade": "FR-6E",
+      "subject": "SVT",
+      "chapter": "CH-SVT-6E-LIVING",
+      "skill": "SK-ENR-SVT-6E-LIVING-CHARACTER",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Identifier des caractères partagés » à une situation pertinente de niveau 6e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Identifier des caractères partagés ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-SVT-LIVING-CHARACTER",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-SVT-V1-LIVING-CHARACTER-PRACTICE-02",
+        "title": "Identifier des caractères partagés",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Identifier des caractères partagés » à une situation pertinente de niveau 6e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Identifier des caractères partagés ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-6E-LIVING",
+          "primary_skill_code": "SK-ENR-SVT-6E-LIVING-CHARACTER",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-svt-v1",
+          "template_version": "lcai-6e-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-SVT-LIVING-CHARACTER",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-SVT-V1-LIVING-CHARACTER-ASSESSMENT-03",
+      "grade": "FR-6E",
+      "subject": "SVT",
+      "chapter": "CH-SVT-6E-LIVING",
+      "skill": "SK-ENR-SVT-6E-LIVING-CHARACTER",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 6e : démontre de façon autonome que tu sais identifier des caractères partagés. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Identifier des caractères partagés ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-SVT-LIVING-CHARACTER",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-SVT-V1-LIVING-CHARACTER-ASSESSMENT-03",
+        "title": "Identifier des caractères partagés",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 6e : démontre de façon autonome que tu sais identifier des caractères partagés. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Identifier des caractères partagés ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-6E-LIVING",
+          "primary_skill_code": "SK-ENR-SVT-6E-LIVING-CHARACTER",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-svt-v1",
+          "template_version": "lcai-6e-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-SVT-LIVING-CHARACTER",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-SVT-V1-LIVING-CLASSIFY-PRACTICE-01",
+      "grade": "FR-6E",
+      "subject": "SVT",
+      "chapter": "CH-SVT-6E-LIVING",
+      "skill": "SK-ENR-SVT-6E-LIVING-CLASSIFY",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Unité, diversité et évolution du vivant », réalise une tâche montrant que tu sais construire une classification. Appuie-toi sur un exemple ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Construire une classification ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-SVT-LIVING-CLASSIFY",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-SVT-V1-LIVING-CLASSIFY-PRACTICE-01",
+        "title": "Construire une classification",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Unité, diversité et évolution du vivant », réalise une tâche montrant que tu sais construire une classification. Appuie-toi sur un exemple ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Construire une classification ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-6E-LIVING",
+          "primary_skill_code": "SK-ENR-SVT-6E-LIVING-CLASSIFY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-svt-v1",
+          "template_version": "lcai-6e-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-SVT-LIVING-CLASSIFY",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-SVT-V1-LIVING-CLASSIFY-PRACTICE-02",
+      "grade": "FR-6E",
+      "subject": "SVT",
+      "chapter": "CH-SVT-6E-LIVING",
+      "skill": "SK-ENR-SVT-6E-LIVING-CLASSIFY",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Construire une classification » à une situation pertinente de niveau 6e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Construire une classification ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-SVT-LIVING-CLASSIFY",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-SVT-V1-LIVING-CLASSIFY-PRACTICE-02",
+        "title": "Construire une classification",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Construire une classification » à une situation pertinente de niveau 6e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Construire une classification ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-6E-LIVING",
+          "primary_skill_code": "SK-ENR-SVT-6E-LIVING-CLASSIFY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-svt-v1",
+          "template_version": "lcai-6e-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-SVT-LIVING-CLASSIFY",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-SVT-V1-LIVING-CLASSIFY-ASSESSMENT-03",
+      "grade": "FR-6E",
+      "subject": "SVT",
+      "chapter": "CH-SVT-6E-LIVING",
+      "skill": "SK-ENR-SVT-6E-LIVING-CLASSIFY",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 6e : démontre de façon autonome que tu sais construire une classification. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Construire une classification ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-SVT-LIVING-CLASSIFY",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-SVT-V1-LIVING-CLASSIFY-ASSESSMENT-03",
+        "title": "Construire une classification",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 6e : démontre de façon autonome que tu sais construire une classification. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Construire une classification ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-6E-LIVING",
+          "primary_skill_code": "SK-ENR-SVT-6E-LIVING-CLASSIFY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-svt-v1",
+          "template_version": "lcai-6e-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-SVT-LIVING-CLASSIFY",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-SVT-V1-LIVING-EVOLUTION-PRACTICE-01",
+      "grade": "FR-6E",
+      "subject": "SVT",
+      "chapter": "CH-SVT-6E-LIVING",
+      "skill": "SK-ENR-SVT-6E-LIVING-EVOLUTION",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Unité, diversité et évolution du vivant », réalise une tâche montrant que tu sais relier parenté et évolution. Appuie-toi sur un exemple ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Relier parenté et évolution ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-SVT-LIVING-EVOLUTION",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-SVT-V1-LIVING-EVOLUTION-PRACTICE-01",
+        "title": "Relier parenté et évolution",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Unité, diversité et évolution du vivant », réalise une tâche montrant que tu sais relier parenté et évolution. Appuie-toi sur un exemple ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Relier parenté et évolution ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-6E-LIVING",
+          "primary_skill_code": "SK-ENR-SVT-6E-LIVING-EVOLUTION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-svt-v1",
+          "template_version": "lcai-6e-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-SVT-LIVING-EVOLUTION",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-SVT-V1-LIVING-EVOLUTION-PRACTICE-02",
+      "grade": "FR-6E",
+      "subject": "SVT",
+      "chapter": "CH-SVT-6E-LIVING",
+      "skill": "SK-ENR-SVT-6E-LIVING-EVOLUTION",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Relier parenté et évolution » à une situation pertinente de niveau 6e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Relier parenté et évolution ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-SVT-LIVING-EVOLUTION",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-SVT-V1-LIVING-EVOLUTION-PRACTICE-02",
+        "title": "Relier parenté et évolution",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Relier parenté et évolution » à une situation pertinente de niveau 6e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Relier parenté et évolution ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-6E-LIVING",
+          "primary_skill_code": "SK-ENR-SVT-6E-LIVING-EVOLUTION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-svt-v1",
+          "template_version": "lcai-6e-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-SVT-LIVING-EVOLUTION",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-SVT-V1-LIVING-EVOLUTION-ASSESSMENT-03",
+      "grade": "FR-6E",
+      "subject": "SVT",
+      "chapter": "CH-SVT-6E-LIVING",
+      "skill": "SK-ENR-SVT-6E-LIVING-EVOLUTION",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 6e : démontre de façon autonome que tu sais relier parenté et évolution. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Relier parenté et évolution ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-SVT-LIVING-EVOLUTION",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-SVT-V1-LIVING-EVOLUTION-ASSESSMENT-03",
+        "title": "Relier parenté et évolution",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 6e : démontre de façon autonome que tu sais relier parenté et évolution. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Relier parenté et évolution ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-6E-LIVING",
+          "primary_skill_code": "SK-ENR-SVT-6E-LIVING-EVOLUTION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-svt-v1",
+          "template_version": "lcai-6e-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-SVT-LIVING-EVOLUTION",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-SVT-V1-LIVING-EVIDENCE-PRACTICE-01",
+      "grade": "FR-6E",
+      "subject": "SVT",
+      "chapter": "CH-SVT-6E-LIVING",
+      "skill": "SK-ENR-SVT-6E-LIVING-EVIDENCE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Unité, diversité et évolution du vivant », réalise une tâche montrant que tu sais interpréter des données de classification. Appuie-toi sur un exemple ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Interpréter des données de classification ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-SVT-LIVING-EVIDENCE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-SVT-V1-LIVING-EVIDENCE-PRACTICE-01",
+        "title": "Interpréter des données de classification",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Unité, diversité et évolution du vivant », réalise une tâche montrant que tu sais interpréter des données de classification. Appuie-toi sur un exemple ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Interpréter des données de classification ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-6E-LIVING",
+          "primary_skill_code": "SK-ENR-SVT-6E-LIVING-EVIDENCE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-svt-v1",
+          "template_version": "lcai-6e-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-SVT-LIVING-EVIDENCE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-SVT-V1-LIVING-EVIDENCE-PRACTICE-02",
+      "grade": "FR-6E",
+      "subject": "SVT",
+      "chapter": "CH-SVT-6E-LIVING",
+      "skill": "SK-ENR-SVT-6E-LIVING-EVIDENCE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Interpréter des données de classification » à une situation pertinente de niveau 6e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Interpréter des données de classification ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-SVT-LIVING-EVIDENCE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-SVT-V1-LIVING-EVIDENCE-PRACTICE-02",
+        "title": "Interpréter des données de classification",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Interpréter des données de classification » à une situation pertinente de niveau 6e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Interpréter des données de classification ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-6E-LIVING",
+          "primary_skill_code": "SK-ENR-SVT-6E-LIVING-EVIDENCE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-svt-v1",
+          "template_version": "lcai-6e-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-SVT-LIVING-EVIDENCE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-SVT-V1-LIVING-EVIDENCE-ASSESSMENT-03",
+      "grade": "FR-6E",
+      "subject": "SVT",
+      "chapter": "CH-SVT-6E-LIVING",
+      "skill": "SK-ENR-SVT-6E-LIVING-EVIDENCE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 6e : démontre de façon autonome que tu sais interpréter des données de classification. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Interpréter des données de classification ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-SVT-LIVING-EVIDENCE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-SVT-V1-LIVING-EVIDENCE-ASSESSMENT-03",
+        "title": "Interpréter des données de classification",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 6e : démontre de façon autonome que tu sais interpréter des données de classification. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Interpréter des données de classification ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-6E-LIVING",
+          "primary_skill_code": "SK-ENR-SVT-6E-LIVING-EVIDENCE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-svt-v1",
+          "template_version": "lcai-6e-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-SVT-LIVING-EVIDENCE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-SVT-V1-ECOSYSTEMS-NETWORK-PRACTICE-01",
+      "grade": "FR-6E",
+      "subject": "SVT",
+      "chapter": "CH-SVT-6E-ECOSYSTEMS",
+      "skill": "SK-ENR-SVT-6E-ECOSYSTEMS-NETWORK",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Écosystèmes, ressources et environnement », réalise une tâche montrant que tu sais construire un réseau alimentaire. Appuie-toi sur un exemple ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Construire un réseau alimentaire ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-SVT-ECOSYSTEMS-NETWORK",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-SVT-V1-ECOSYSTEMS-NETWORK-PRACTICE-01",
+        "title": "Construire un réseau alimentaire",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Écosystèmes, ressources et environnement », réalise une tâche montrant que tu sais construire un réseau alimentaire. Appuie-toi sur un exemple ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Construire un réseau alimentaire ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-6E-ECOSYSTEMS",
+          "primary_skill_code": "SK-ENR-SVT-6E-ECOSYSTEMS-NETWORK",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-svt-v1",
+          "template_version": "lcai-6e-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-SVT-ECOSYSTEMS-NETWORK",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-SVT-V1-ECOSYSTEMS-NETWORK-PRACTICE-02",
+      "grade": "FR-6E",
+      "subject": "SVT",
+      "chapter": "CH-SVT-6E-ECOSYSTEMS",
+      "skill": "SK-ENR-SVT-6E-ECOSYSTEMS-NETWORK",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Construire un réseau alimentaire » à une situation pertinente de niveau 6e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Construire un réseau alimentaire ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-SVT-ECOSYSTEMS-NETWORK",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-SVT-V1-ECOSYSTEMS-NETWORK-PRACTICE-02",
+        "title": "Construire un réseau alimentaire",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Construire un réseau alimentaire » à une situation pertinente de niveau 6e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Construire un réseau alimentaire ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-6E-ECOSYSTEMS",
+          "primary_skill_code": "SK-ENR-SVT-6E-ECOSYSTEMS-NETWORK",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-svt-v1",
+          "template_version": "lcai-6e-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-SVT-ECOSYSTEMS-NETWORK",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-SVT-V1-ECOSYSTEMS-NETWORK-ASSESSMENT-03",
+      "grade": "FR-6E",
+      "subject": "SVT",
+      "chapter": "CH-SVT-6E-ECOSYSTEMS",
+      "skill": "SK-ENR-SVT-6E-ECOSYSTEMS-NETWORK",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 6e : démontre de façon autonome que tu sais construire un réseau alimentaire. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Construire un réseau alimentaire ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-SVT-ECOSYSTEMS-NETWORK",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-SVT-V1-ECOSYSTEMS-NETWORK-ASSESSMENT-03",
+        "title": "Construire un réseau alimentaire",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 6e : démontre de façon autonome que tu sais construire un réseau alimentaire. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Construire un réseau alimentaire ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-6E-ECOSYSTEMS",
+          "primary_skill_code": "SK-ENR-SVT-6E-ECOSYSTEMS-NETWORK",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-svt-v1",
+          "template_version": "lcai-6e-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-SVT-ECOSYSTEMS-NETWORK",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-SVT-V1-ECOSYSTEMS-INTERACTION-PRACTICE-01",
+      "grade": "FR-6E",
+      "subject": "SVT",
+      "chapter": "CH-SVT-6E-ECOSYSTEMS",
+      "skill": "SK-ENR-SVT-6E-ECOSYSTEMS-INTERACTION",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Écosystèmes, ressources et environnement », réalise une tâche montrant que tu sais expliquer des interactions écologiques. Appuie-toi sur un exemple ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Expliquer des interactions écologiques ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-SVT-ECOSYSTEMS-INTERACTION",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-SVT-V1-ECOSYSTEMS-INTERACTION-PRACTICE-01",
+        "title": "Expliquer des interactions écologiques",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Écosystèmes, ressources et environnement », réalise une tâche montrant que tu sais expliquer des interactions écologiques. Appuie-toi sur un exemple ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Expliquer des interactions écologiques ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-6E-ECOSYSTEMS",
+          "primary_skill_code": "SK-ENR-SVT-6E-ECOSYSTEMS-INTERACTION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-svt-v1",
+          "template_version": "lcai-6e-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-SVT-ECOSYSTEMS-INTERACTION",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-SVT-V1-ECOSYSTEMS-INTERACTION-PRACTICE-02",
+      "grade": "FR-6E",
+      "subject": "SVT",
+      "chapter": "CH-SVT-6E-ECOSYSTEMS",
+      "skill": "SK-ENR-SVT-6E-ECOSYSTEMS-INTERACTION",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Expliquer des interactions écologiques » à une situation pertinente de niveau 6e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Expliquer des interactions écologiques ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-SVT-ECOSYSTEMS-INTERACTION",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-SVT-V1-ECOSYSTEMS-INTERACTION-PRACTICE-02",
+        "title": "Expliquer des interactions écologiques",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Expliquer des interactions écologiques » à une situation pertinente de niveau 6e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Expliquer des interactions écologiques ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-6E-ECOSYSTEMS",
+          "primary_skill_code": "SK-ENR-SVT-6E-ECOSYSTEMS-INTERACTION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-svt-v1",
+          "template_version": "lcai-6e-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-SVT-ECOSYSTEMS-INTERACTION",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-SVT-V1-ECOSYSTEMS-INTERACTION-ASSESSMENT-03",
+      "grade": "FR-6E",
+      "subject": "SVT",
+      "chapter": "CH-SVT-6E-ECOSYSTEMS",
+      "skill": "SK-ENR-SVT-6E-ECOSYSTEMS-INTERACTION",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 6e : démontre de façon autonome que tu sais expliquer des interactions écologiques. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Expliquer des interactions écologiques ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-SVT-ECOSYSTEMS-INTERACTION",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-SVT-V1-ECOSYSTEMS-INTERACTION-ASSESSMENT-03",
+        "title": "Expliquer des interactions écologiques",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 6e : démontre de façon autonome que tu sais expliquer des interactions écologiques. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Expliquer des interactions écologiques ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-6E-ECOSYSTEMS",
+          "primary_skill_code": "SK-ENR-SVT-6E-ECOSYSTEMS-INTERACTION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-svt-v1",
+          "template_version": "lcai-6e-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-SVT-ECOSYSTEMS-INTERACTION",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-SVT-V1-ECOSYSTEMS-RESOURCE-PRACTICE-01",
+      "grade": "FR-6E",
+      "subject": "SVT",
+      "chapter": "CH-SVT-6E-ECOSYSTEMS",
+      "skill": "SK-ENR-SVT-6E-ECOSYSTEMS-RESOURCE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Écosystèmes, ressources et environnement », réalise une tâche montrant que tu sais relier ressources et peuplement. Appuie-toi sur un exemple ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Relier ressources et peuplement ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-SVT-ECOSYSTEMS-RESOURCE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-SVT-V1-ECOSYSTEMS-RESOURCE-PRACTICE-01",
+        "title": "Relier ressources et peuplement",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Écosystèmes, ressources et environnement », réalise une tâche montrant que tu sais relier ressources et peuplement. Appuie-toi sur un exemple ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Relier ressources et peuplement ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-6E-ECOSYSTEMS",
+          "primary_skill_code": "SK-ENR-SVT-6E-ECOSYSTEMS-RESOURCE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-svt-v1",
+          "template_version": "lcai-6e-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-SVT-ECOSYSTEMS-RESOURCE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-SVT-V1-ECOSYSTEMS-RESOURCE-PRACTICE-02",
+      "grade": "FR-6E",
+      "subject": "SVT",
+      "chapter": "CH-SVT-6E-ECOSYSTEMS",
+      "skill": "SK-ENR-SVT-6E-ECOSYSTEMS-RESOURCE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Relier ressources et peuplement » à une situation pertinente de niveau 6e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Relier ressources et peuplement ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-SVT-ECOSYSTEMS-RESOURCE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-SVT-V1-ECOSYSTEMS-RESOURCE-PRACTICE-02",
+        "title": "Relier ressources et peuplement",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Relier ressources et peuplement » à une situation pertinente de niveau 6e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Relier ressources et peuplement ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-6E-ECOSYSTEMS",
+          "primary_skill_code": "SK-ENR-SVT-6E-ECOSYSTEMS-RESOURCE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-svt-v1",
+          "template_version": "lcai-6e-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-SVT-ECOSYSTEMS-RESOURCE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-SVT-V1-ECOSYSTEMS-RESOURCE-ASSESSMENT-03",
+      "grade": "FR-6E",
+      "subject": "SVT",
+      "chapter": "CH-SVT-6E-ECOSYSTEMS",
+      "skill": "SK-ENR-SVT-6E-ECOSYSTEMS-RESOURCE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 6e : démontre de façon autonome que tu sais relier ressources et peuplement. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Relier ressources et peuplement ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-SVT-ECOSYSTEMS-RESOURCE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-SVT-V1-ECOSYSTEMS-RESOURCE-ASSESSMENT-03",
+        "title": "Relier ressources et peuplement",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 6e : démontre de façon autonome que tu sais relier ressources et peuplement. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Relier ressources et peuplement ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-6E-ECOSYSTEMS",
+          "primary_skill_code": "SK-ENR-SVT-6E-ECOSYSTEMS-RESOURCE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-svt-v1",
+          "template_version": "lcai-6e-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-SVT-ECOSYSTEMS-RESOURCE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-SVT-V1-ECOSYSTEMS-IMPACT-PRACTICE-01",
+      "grade": "FR-6E",
+      "subject": "SVT",
+      "chapter": "CH-SVT-6E-ECOSYSTEMS",
+      "skill": "SK-ENR-SVT-6E-ECOSYSTEMS-IMPACT",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Écosystèmes, ressources et environnement », réalise une tâche montrant que tu sais évaluer un impact humain. Appuie-toi sur un exemple ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Évaluer un impact humain ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-SVT-ECOSYSTEMS-IMPACT",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-SVT-V1-ECOSYSTEMS-IMPACT-PRACTICE-01",
+        "title": "Évaluer un impact humain",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Écosystèmes, ressources et environnement », réalise une tâche montrant que tu sais évaluer un impact humain. Appuie-toi sur un exemple ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Évaluer un impact humain ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-6E-ECOSYSTEMS",
+          "primary_skill_code": "SK-ENR-SVT-6E-ECOSYSTEMS-IMPACT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-svt-v1",
+          "template_version": "lcai-6e-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-SVT-ECOSYSTEMS-IMPACT",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-SVT-V1-ECOSYSTEMS-IMPACT-PRACTICE-02",
+      "grade": "FR-6E",
+      "subject": "SVT",
+      "chapter": "CH-SVT-6E-ECOSYSTEMS",
+      "skill": "SK-ENR-SVT-6E-ECOSYSTEMS-IMPACT",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Évaluer un impact humain » à une situation pertinente de niveau 6e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Évaluer un impact humain ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-SVT-ECOSYSTEMS-IMPACT",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-SVT-V1-ECOSYSTEMS-IMPACT-PRACTICE-02",
+        "title": "Évaluer un impact humain",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Évaluer un impact humain » à une situation pertinente de niveau 6e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Évaluer un impact humain ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-6E-ECOSYSTEMS",
+          "primary_skill_code": "SK-ENR-SVT-6E-ECOSYSTEMS-IMPACT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-svt-v1",
+          "template_version": "lcai-6e-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-SVT-ECOSYSTEMS-IMPACT",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-SVT-V1-ECOSYSTEMS-IMPACT-ASSESSMENT-03",
+      "grade": "FR-6E",
+      "subject": "SVT",
+      "chapter": "CH-SVT-6E-ECOSYSTEMS",
+      "skill": "SK-ENR-SVT-6E-ECOSYSTEMS-IMPACT",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 6e : démontre de façon autonome que tu sais évaluer un impact humain. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Évaluer un impact humain ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-SVT-ECOSYSTEMS-IMPACT",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-SVT-V1-ECOSYSTEMS-IMPACT-ASSESSMENT-03",
+        "title": "Évaluer un impact humain",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 6e : démontre de façon autonome que tu sais évaluer un impact humain. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Évaluer un impact humain ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-6E-ECOSYSTEMS",
+          "primary_skill_code": "SK-ENR-SVT-6E-ECOSYSTEMS-IMPACT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-svt-v1",
+          "template_version": "lcai-6e-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-SVT-ECOSYSTEMS-IMPACT",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-SVT-V1-ECOSYSTEMS-SOLUTION-PRACTICE-01",
+      "grade": "FR-6E",
+      "subject": "SVT",
+      "chapter": "CH-SVT-6E-ECOSYSTEMS",
+      "skill": "SK-ENR-SVT-6E-ECOSYSTEMS-SOLUTION",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Écosystèmes, ressources et environnement », réalise une tâche montrant que tu sais proposer une action de préservation. Appuie-toi sur un exemple ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Proposer une action de préservation ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-SVT-ECOSYSTEMS-SOLUTION",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-SVT-V1-ECOSYSTEMS-SOLUTION-PRACTICE-01",
+        "title": "Proposer une action de préservation",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Écosystèmes, ressources et environnement », réalise une tâche montrant que tu sais proposer une action de préservation. Appuie-toi sur un exemple ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Proposer une action de préservation ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-6E-ECOSYSTEMS",
+          "primary_skill_code": "SK-ENR-SVT-6E-ECOSYSTEMS-SOLUTION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-svt-v1",
+          "template_version": "lcai-6e-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-SVT-ECOSYSTEMS-SOLUTION",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-SVT-V1-ECOSYSTEMS-SOLUTION-PRACTICE-02",
+      "grade": "FR-6E",
+      "subject": "SVT",
+      "chapter": "CH-SVT-6E-ECOSYSTEMS",
+      "skill": "SK-ENR-SVT-6E-ECOSYSTEMS-SOLUTION",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Proposer une action de préservation » à une situation pertinente de niveau 6e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Proposer une action de préservation ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-SVT-ECOSYSTEMS-SOLUTION",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-SVT-V1-ECOSYSTEMS-SOLUTION-PRACTICE-02",
+        "title": "Proposer une action de préservation",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Proposer une action de préservation » à une situation pertinente de niveau 6e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Proposer une action de préservation ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-6E-ECOSYSTEMS",
+          "primary_skill_code": "SK-ENR-SVT-6E-ECOSYSTEMS-SOLUTION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-svt-v1",
+          "template_version": "lcai-6e-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-SVT-ECOSYSTEMS-SOLUTION",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-SVT-V1-ECOSYSTEMS-SOLUTION-ASSESSMENT-03",
+      "grade": "FR-6E",
+      "subject": "SVT",
+      "chapter": "CH-SVT-6E-ECOSYSTEMS",
+      "skill": "SK-ENR-SVT-6E-ECOSYSTEMS-SOLUTION",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 6e : démontre de façon autonome que tu sais proposer une action de préservation. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Proposer une action de préservation ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-SVT-ECOSYSTEMS-SOLUTION",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-SVT-V1-ECOSYSTEMS-SOLUTION-ASSESSMENT-03",
+        "title": "Proposer une action de préservation",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 6e : démontre de façon autonome que tu sais proposer une action de préservation. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Proposer une action de préservation ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-6E-ECOSYSTEMS",
+          "primary_skill_code": "SK-ENR-SVT-6E-ECOSYSTEMS-SOLUTION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-svt-v1",
+          "template_version": "lcai-6e-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-SVT-ECOSYSTEMS-SOLUTION",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_svt_candidates_v1.json"
+      }
+    }
+  ]
+}

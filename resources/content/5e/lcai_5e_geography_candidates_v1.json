@@ -1,0 +1,2839 @@
+{
+  "batch": "5E-GEOGRAPHY-V1",
+  "purpose": "Parallel 5e content preparation for Learning Coach AI",
+  "lifecycle_target": "Draft",
+  "automatic_approval": false,
+  "curriculum_version": "phase2-lcai-0011c",
+  "program_code": "FR-CYCLE4-5E-2026",
+  "grade_code": "FR-5E",
+  "subject_code": "GEOGRAPHY",
+  "skill_count": 11,
+  "candidate_count": 33,
+  "content_types": {
+    "practice": 22,
+    "assessment": 11
+  },
+  "difficulty_distribution": {
+    "1": 11,
+    "2": 22
+  },
+  "accepted_candidates": [
+    {
+      "code": "5E-GEOGRAPHY-V1-POPULATION-INDICATORS-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-5E-POPULATION",
+      "skill": "SK-ENR-GEOGRAPHY-5E-POPULATION-INDICATORS",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Démographie et inégal développement », réalise une tâche qui montre que tu sais lire des indicateurs démographiques et de développement. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Lire des indicateurs démographiques et de développement ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-GEOGRAPHY-POPULATION-INDICATORS",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-GEOGRAPHY-V1-POPULATION-INDICATORS-PRACTICE-01",
+        "title": "Lire des indicateurs démographiques et de développement",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Démographie et inégal développement », réalise une tâche qui montre que tu sais lire des indicateurs démographiques et de développement. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Lire des indicateurs démographiques et de développement ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-5E-POPULATION",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-5E-POPULATION-INDICATORS",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-geography-v1",
+          "template_version": "lcai-5e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-GEOGRAPHY-POPULATION-INDICATORS",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-GEOGRAPHY-V1-POPULATION-INDICATORS-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-5E-POPULATION",
+      "skill": "SK-ENR-GEOGRAPHY-5E-POPULATION-INDICATORS",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Lire des indicateurs démographiques et de développement » à une situation pertinente de niveau 5e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Lire des indicateurs démographiques et de développement ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-GEOGRAPHY-POPULATION-INDICATORS",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-GEOGRAPHY-V1-POPULATION-INDICATORS-PRACTICE-02",
+        "title": "Lire des indicateurs démographiques et de développement",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Lire des indicateurs démographiques et de développement » à une situation pertinente de niveau 5e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Lire des indicateurs démographiques et de développement ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-5E-POPULATION",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-5E-POPULATION-INDICATORS",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-geography-v1",
+          "template_version": "lcai-5e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-GEOGRAPHY-POPULATION-INDICATORS",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-GEOGRAPHY-V1-POPULATION-INDICATORS-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-5E-POPULATION",
+      "skill": "SK-ENR-GEOGRAPHY-5E-POPULATION-INDICATORS",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 5e : démontre de façon autonome que tu sais lire des indicateurs démographiques et de développement. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Lire des indicateurs démographiques et de développement ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-GEOGRAPHY-POPULATION-INDICATORS",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-GEOGRAPHY-V1-POPULATION-INDICATORS-ASSESSMENT-03",
+        "title": "Lire des indicateurs démographiques et de développement",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 5e : démontre de façon autonome que tu sais lire des indicateurs démographiques et de développement. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Lire des indicateurs démographiques et de développement ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-5E-POPULATION",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-5E-POPULATION-INDICATORS",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-geography-v1",
+          "template_version": "lcai-5e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-GEOGRAPHY-POPULATION-INDICATORS",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-GEOGRAPHY-V1-POPULATION-MAP-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-5E-POPULATION",
+      "skill": "SK-ENR-GEOGRAPHY-5E-POPULATION-MAP",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Démographie et inégal développement », réalise une tâche qui montre que tu sais cartographier les inégalités de développement. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Cartographier les inégalités de développement ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-GEOGRAPHY-POPULATION-MAP",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-GEOGRAPHY-V1-POPULATION-MAP-PRACTICE-01",
+        "title": "Cartographier les inégalités de développement",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Démographie et inégal développement », réalise une tâche qui montre que tu sais cartographier les inégalités de développement. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Cartographier les inégalités de développement ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-5E-POPULATION",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-5E-POPULATION-MAP",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-geography-v1",
+          "template_version": "lcai-5e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-GEOGRAPHY-POPULATION-MAP",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-GEOGRAPHY-V1-POPULATION-MAP-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-5E-POPULATION",
+      "skill": "SK-ENR-GEOGRAPHY-5E-POPULATION-MAP",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Cartographier les inégalités de développement » à une situation pertinente de niveau 5e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Cartographier les inégalités de développement ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-GEOGRAPHY-POPULATION-MAP",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-GEOGRAPHY-V1-POPULATION-MAP-PRACTICE-02",
+        "title": "Cartographier les inégalités de développement",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Cartographier les inégalités de développement » à une situation pertinente de niveau 5e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Cartographier les inégalités de développement ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-5E-POPULATION",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-5E-POPULATION-MAP",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-geography-v1",
+          "template_version": "lcai-5e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-GEOGRAPHY-POPULATION-MAP",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-GEOGRAPHY-V1-POPULATION-MAP-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-5E-POPULATION",
+      "skill": "SK-ENR-GEOGRAPHY-5E-POPULATION-MAP",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 5e : démontre de façon autonome que tu sais cartographier les inégalités de développement. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Cartographier les inégalités de développement ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-GEOGRAPHY-POPULATION-MAP",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-GEOGRAPHY-V1-POPULATION-MAP-ASSESSMENT-03",
+        "title": "Cartographier les inégalités de développement",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 5e : démontre de façon autonome que tu sais cartographier les inégalités de développement. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Cartographier les inégalités de développement ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-5E-POPULATION",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-5E-POPULATION-MAP",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-geography-v1",
+          "template_version": "lcai-5e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-GEOGRAPHY-POPULATION-MAP",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-GEOGRAPHY-V1-POPULATION-EXPLAIN-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-5E-POPULATION",
+      "skill": "SK-ENR-GEOGRAPHY-5E-POPULATION-EXPLAIN",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Démographie et inégal développement », réalise une tâche qui montre que tu sais expliquer des trajectoires démographiques différenciées. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Expliquer des trajectoires démographiques différenciées ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-GEOGRAPHY-POPULATION-EXPLAIN",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-GEOGRAPHY-V1-POPULATION-EXPLAIN-PRACTICE-01",
+        "title": "Expliquer des trajectoires démographiques différenciées",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Démographie et inégal développement », réalise une tâche qui montre que tu sais expliquer des trajectoires démographiques différenciées. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Expliquer des trajectoires démographiques différenciées ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-5E-POPULATION",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-5E-POPULATION-EXPLAIN",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-geography-v1",
+          "template_version": "lcai-5e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-GEOGRAPHY-POPULATION-EXPLAIN",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-GEOGRAPHY-V1-POPULATION-EXPLAIN-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-5E-POPULATION",
+      "skill": "SK-ENR-GEOGRAPHY-5E-POPULATION-EXPLAIN",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Expliquer des trajectoires démographiques différenciées » à une situation pertinente de niveau 5e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Expliquer des trajectoires démographiques différenciées ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-GEOGRAPHY-POPULATION-EXPLAIN",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-GEOGRAPHY-V1-POPULATION-EXPLAIN-PRACTICE-02",
+        "title": "Expliquer des trajectoires démographiques différenciées",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Expliquer des trajectoires démographiques différenciées » à une situation pertinente de niveau 5e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Expliquer des trajectoires démographiques différenciées ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-5E-POPULATION",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-5E-POPULATION-EXPLAIN",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-geography-v1",
+          "template_version": "lcai-5e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-GEOGRAPHY-POPULATION-EXPLAIN",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-GEOGRAPHY-V1-POPULATION-EXPLAIN-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-5E-POPULATION",
+      "skill": "SK-ENR-GEOGRAPHY-5E-POPULATION-EXPLAIN",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 5e : démontre de façon autonome que tu sais expliquer des trajectoires démographiques différenciées. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Expliquer des trajectoires démographiques différenciées ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-GEOGRAPHY-POPULATION-EXPLAIN",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-GEOGRAPHY-V1-POPULATION-EXPLAIN-ASSESSMENT-03",
+        "title": "Expliquer des trajectoires démographiques différenciées",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 5e : démontre de façon autonome que tu sais expliquer des trajectoires démographiques différenciées. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Expliquer des trajectoires démographiques différenciées ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-5E-POPULATION",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-5E-POPULATION-EXPLAIN",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-geography-v1",
+          "template_version": "lcai-5e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-GEOGRAPHY-POPULATION-EXPLAIN",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-GEOGRAPHY-V1-RESOURCES-NEED-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-5E-RESOURCES",
+      "skill": "SK-ENR-GEOGRAPHY-5E-RESOURCES-NEED",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Ressources limitées à gérer et renouveler », réalise une tâche qui montre que tu sais identifier besoins et ressources. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Identifier besoins et ressources ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-GEOGRAPHY-RESOURCES-NEED",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-GEOGRAPHY-V1-RESOURCES-NEED-PRACTICE-01",
+        "title": "Identifier besoins et ressources",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Ressources limitées à gérer et renouveler », réalise une tâche qui montre que tu sais identifier besoins et ressources. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Identifier besoins et ressources ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-5E-RESOURCES",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-5E-RESOURCES-NEED",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-geography-v1",
+          "template_version": "lcai-5e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-GEOGRAPHY-RESOURCES-NEED",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-GEOGRAPHY-V1-RESOURCES-NEED-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-5E-RESOURCES",
+      "skill": "SK-ENR-GEOGRAPHY-5E-RESOURCES-NEED",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Identifier besoins et ressources » à une situation pertinente de niveau 5e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Identifier besoins et ressources ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-GEOGRAPHY-RESOURCES-NEED",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-GEOGRAPHY-V1-RESOURCES-NEED-PRACTICE-02",
+        "title": "Identifier besoins et ressources",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Identifier besoins et ressources » à une situation pertinente de niveau 5e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Identifier besoins et ressources ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-5E-RESOURCES",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-5E-RESOURCES-NEED",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-geography-v1",
+          "template_version": "lcai-5e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-GEOGRAPHY-RESOURCES-NEED",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-GEOGRAPHY-V1-RESOURCES-NEED-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-5E-RESOURCES",
+      "skill": "SK-ENR-GEOGRAPHY-5E-RESOURCES-NEED",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 5e : démontre de façon autonome que tu sais identifier besoins et ressources. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Identifier besoins et ressources ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-GEOGRAPHY-RESOURCES-NEED",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-GEOGRAPHY-V1-RESOURCES-NEED-ASSESSMENT-03",
+        "title": "Identifier besoins et ressources",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 5e : démontre de façon autonome que tu sais identifier besoins et ressources. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Identifier besoins et ressources ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-5E-RESOURCES",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-5E-RESOURCES-NEED",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-geography-v1",
+          "template_version": "lcai-5e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-GEOGRAPHY-RESOURCES-NEED",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-GEOGRAPHY-V1-RESOURCES-USE-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-5E-RESOURCES",
+      "skill": "SK-ENR-GEOGRAPHY-5E-RESOURCES-USE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Ressources limitées à gérer et renouveler », réalise une tâche qui montre que tu sais comparer des usages d'une ressource. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Comparer des usages d'une ressource ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-GEOGRAPHY-RESOURCES-USE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-GEOGRAPHY-V1-RESOURCES-USE-PRACTICE-01",
+        "title": "Comparer des usages d'une ressource",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Ressources limitées à gérer et renouveler », réalise une tâche qui montre que tu sais comparer des usages d'une ressource. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Comparer des usages d'une ressource ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-5E-RESOURCES",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-5E-RESOURCES-USE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-geography-v1",
+          "template_version": "lcai-5e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-GEOGRAPHY-RESOURCES-USE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-GEOGRAPHY-V1-RESOURCES-USE-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-5E-RESOURCES",
+      "skill": "SK-ENR-GEOGRAPHY-5E-RESOURCES-USE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Comparer des usages d'une ressource » à une situation pertinente de niveau 5e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Comparer des usages d'une ressource ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-GEOGRAPHY-RESOURCES-USE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-GEOGRAPHY-V1-RESOURCES-USE-PRACTICE-02",
+        "title": "Comparer des usages d'une ressource",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Comparer des usages d'une ressource » à une situation pertinente de niveau 5e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Comparer des usages d'une ressource ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-5E-RESOURCES",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-5E-RESOURCES-USE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-geography-v1",
+          "template_version": "lcai-5e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-GEOGRAPHY-RESOURCES-USE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-GEOGRAPHY-V1-RESOURCES-USE-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-5E-RESOURCES",
+      "skill": "SK-ENR-GEOGRAPHY-5E-RESOURCES-USE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 5e : démontre de façon autonome que tu sais comparer des usages d'une ressource. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Comparer des usages d'une ressource ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-GEOGRAPHY-RESOURCES-USE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-GEOGRAPHY-V1-RESOURCES-USE-ASSESSMENT-03",
+        "title": "Comparer des usages d'une ressource",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 5e : démontre de façon autonome que tu sais comparer des usages d'une ressource. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Comparer des usages d'une ressource ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-5E-RESOURCES",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-5E-RESOURCES-USE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-geography-v1",
+          "template_version": "lcai-5e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-GEOGRAPHY-RESOURCES-USE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-GEOGRAPHY-V1-RESOURCES-TENSION-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-5E-RESOURCES",
+      "skill": "SK-ENR-GEOGRAPHY-5E-RESOURCES-TENSION",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Ressources limitées à gérer et renouveler », réalise une tâche qui montre que tu sais expliquer une tension sur une ressource. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Expliquer une tension sur une ressource ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-GEOGRAPHY-RESOURCES-TENSION",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-GEOGRAPHY-V1-RESOURCES-TENSION-PRACTICE-01",
+        "title": "Expliquer une tension sur une ressource",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Ressources limitées à gérer et renouveler », réalise une tâche qui montre que tu sais expliquer une tension sur une ressource. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Expliquer une tension sur une ressource ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-5E-RESOURCES",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-5E-RESOURCES-TENSION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-geography-v1",
+          "template_version": "lcai-5e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-GEOGRAPHY-RESOURCES-TENSION",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-GEOGRAPHY-V1-RESOURCES-TENSION-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-5E-RESOURCES",
+      "skill": "SK-ENR-GEOGRAPHY-5E-RESOURCES-TENSION",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Expliquer une tension sur une ressource » à une situation pertinente de niveau 5e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Expliquer une tension sur une ressource ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-GEOGRAPHY-RESOURCES-TENSION",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-GEOGRAPHY-V1-RESOURCES-TENSION-PRACTICE-02",
+        "title": "Expliquer une tension sur une ressource",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Expliquer une tension sur une ressource » à une situation pertinente de niveau 5e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Expliquer une tension sur une ressource ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-5E-RESOURCES",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-5E-RESOURCES-TENSION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-geography-v1",
+          "template_version": "lcai-5e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-GEOGRAPHY-RESOURCES-TENSION",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-GEOGRAPHY-V1-RESOURCES-TENSION-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-5E-RESOURCES",
+      "skill": "SK-ENR-GEOGRAPHY-5E-RESOURCES-TENSION",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 5e : démontre de façon autonome que tu sais expliquer une tension sur une ressource. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Expliquer une tension sur une ressource ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-GEOGRAPHY-RESOURCES-TENSION",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-GEOGRAPHY-V1-RESOURCES-TENSION-ASSESSMENT-03",
+        "title": "Expliquer une tension sur une ressource",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 5e : démontre de façon autonome que tu sais expliquer une tension sur une ressource. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Expliquer une tension sur une ressource ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-5E-RESOURCES",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-5E-RESOURCES-TENSION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-geography-v1",
+          "template_version": "lcai-5e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-GEOGRAPHY-RESOURCES-TENSION",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-GEOGRAPHY-V1-RESOURCES-MANAGE-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-5E-RESOURCES",
+      "skill": "SK-ENR-GEOGRAPHY-5E-RESOURCES-MANAGEMENT",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Ressources limitées à gérer et renouveler », réalise une tâche qui montre que tu sais évaluer une gestion durable. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Évaluer une gestion durable ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-GEOGRAPHY-RESOURCES-MANAGE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-GEOGRAPHY-V1-RESOURCES-MANAGE-PRACTICE-01",
+        "title": "Évaluer une gestion durable",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Ressources limitées à gérer et renouveler », réalise une tâche qui montre que tu sais évaluer une gestion durable. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Évaluer une gestion durable ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-5E-RESOURCES",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-5E-RESOURCES-MANAGEMENT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-geography-v1",
+          "template_version": "lcai-5e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-GEOGRAPHY-RESOURCES-MANAGE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ],
+          "skill_correction": {
+            "original_primary_skill_code": "SK-ENR-GEOGRAPHY-5E-RESOURCES-MANAGE",
+            "corrected_primary_skill_code": "SK-ENR-GEOGRAPHY-5E-RESOURCES-MANAGEMENT",
+            "correction_reason": "Resolved: SK-ENR-GEOGRAPHY-5E-RESOURCES-MANAGE -> SK-ENR-GEOGRAPHY-5E-RESOURCES-MANAGEMENT",
+            "correction_method": "suffix_substitution",
+            "curriculum_match": {
+              "program_code": "FR-CYCLE4-5E-2026",
+              "grade_code": "FR-5E",
+              "subject_code": "GEOGRAPHY",
+              "chapter_code": "CH-GEOGRAPHY-5E-RESOURCES",
+              "primary_skill_code": "SK-ENR-GEOGRAPHY-5E-RESOURCES-MANAGEMENT"
+            }
+          }
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-GEOGRAPHY-V1-RESOURCES-MANAGE-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-5E-RESOURCES",
+      "skill": "SK-ENR-GEOGRAPHY-5E-RESOURCES-MANAGEMENT",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Évaluer une gestion durable » à une situation pertinente de niveau 5e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Évaluer une gestion durable ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-GEOGRAPHY-RESOURCES-MANAGE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-GEOGRAPHY-V1-RESOURCES-MANAGE-PRACTICE-02",
+        "title": "Évaluer une gestion durable",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Évaluer une gestion durable » à une situation pertinente de niveau 5e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Évaluer une gestion durable ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-5E-RESOURCES",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-5E-RESOURCES-MANAGEMENT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-geography-v1",
+          "template_version": "lcai-5e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-GEOGRAPHY-RESOURCES-MANAGE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ],
+          "skill_correction": {
+            "original_primary_skill_code": "SK-ENR-GEOGRAPHY-5E-RESOURCES-MANAGE",
+            "corrected_primary_skill_code": "SK-ENR-GEOGRAPHY-5E-RESOURCES-MANAGEMENT",
+            "correction_reason": "Resolved: SK-ENR-GEOGRAPHY-5E-RESOURCES-MANAGE -> SK-ENR-GEOGRAPHY-5E-RESOURCES-MANAGEMENT",
+            "correction_method": "suffix_substitution",
+            "curriculum_match": {
+              "program_code": "FR-CYCLE4-5E-2026",
+              "grade_code": "FR-5E",
+              "subject_code": "GEOGRAPHY",
+              "chapter_code": "CH-GEOGRAPHY-5E-RESOURCES",
+              "primary_skill_code": "SK-ENR-GEOGRAPHY-5E-RESOURCES-MANAGEMENT"
+            }
+          }
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-GEOGRAPHY-V1-RESOURCES-MANAGE-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-5E-RESOURCES",
+      "skill": "SK-ENR-GEOGRAPHY-5E-RESOURCES-MANAGEMENT",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 5e : démontre de façon autonome que tu sais évaluer une gestion durable. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Évaluer une gestion durable ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-GEOGRAPHY-RESOURCES-MANAGE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-GEOGRAPHY-V1-RESOURCES-MANAGE-ASSESSMENT-03",
+        "title": "Évaluer une gestion durable",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 5e : démontre de façon autonome que tu sais évaluer une gestion durable. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Évaluer une gestion durable ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-5E-RESOURCES",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-5E-RESOURCES-MANAGEMENT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-geography-v1",
+          "template_version": "lcai-5e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-GEOGRAPHY-RESOURCES-MANAGE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ],
+          "skill_correction": {
+            "original_primary_skill_code": "SK-ENR-GEOGRAPHY-5E-RESOURCES-MANAGE",
+            "corrected_primary_skill_code": "SK-ENR-GEOGRAPHY-5E-RESOURCES-MANAGEMENT",
+            "correction_reason": "Resolved: SK-ENR-GEOGRAPHY-5E-RESOURCES-MANAGE -> SK-ENR-GEOGRAPHY-5E-RESOURCES-MANAGEMENT",
+            "correction_method": "suffix_substitution",
+            "curriculum_match": {
+              "program_code": "FR-CYCLE4-5E-2026",
+              "grade_code": "FR-5E",
+              "subject_code": "GEOGRAPHY",
+              "chapter_code": "CH-GEOGRAPHY-5E-RESOURCES",
+              "primary_skill_code": "SK-ENR-GEOGRAPHY-5E-RESOURCES-MANAGEMENT"
+            }
+          }
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-GEOGRAPHY-V1-CHANGE-HAZARD-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-5E-CHANGE",
+      "skill": "SK-ENR-GEOGRAPHY-5E-CHANGE-HAZARD",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Prévenir les risques et s'adapter au changement global », réalise une tâche qui montre que tu sais identifier un aléa. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Identifier un aléa ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-GEOGRAPHY-CHANGE-HAZARD",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-GEOGRAPHY-V1-CHANGE-HAZARD-PRACTICE-01",
+        "title": "Identifier un aléa",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Prévenir les risques et s'adapter au changement global », réalise une tâche qui montre que tu sais identifier un aléa. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Identifier un aléa ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-5E-CHANGE",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-5E-CHANGE-HAZARD",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-geography-v1",
+          "template_version": "lcai-5e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-GEOGRAPHY-CHANGE-HAZARD",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-GEOGRAPHY-V1-CHANGE-HAZARD-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-5E-CHANGE",
+      "skill": "SK-ENR-GEOGRAPHY-5E-CHANGE-HAZARD",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Identifier un aléa » à une situation pertinente de niveau 5e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Identifier un aléa ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-GEOGRAPHY-CHANGE-HAZARD",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-GEOGRAPHY-V1-CHANGE-HAZARD-PRACTICE-02",
+        "title": "Identifier un aléa",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Identifier un aléa » à une situation pertinente de niveau 5e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Identifier un aléa ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-5E-CHANGE",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-5E-CHANGE-HAZARD",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-geography-v1",
+          "template_version": "lcai-5e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-GEOGRAPHY-CHANGE-HAZARD",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-GEOGRAPHY-V1-CHANGE-HAZARD-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-5E-CHANGE",
+      "skill": "SK-ENR-GEOGRAPHY-5E-CHANGE-HAZARD",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 5e : démontre de façon autonome que tu sais identifier un aléa. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Identifier un aléa ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-GEOGRAPHY-CHANGE-HAZARD",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-GEOGRAPHY-V1-CHANGE-HAZARD-ASSESSMENT-03",
+        "title": "Identifier un aléa",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 5e : démontre de façon autonome que tu sais identifier un aléa. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Identifier un aléa ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-5E-CHANGE",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-5E-CHANGE-HAZARD",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-geography-v1",
+          "template_version": "lcai-5e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-GEOGRAPHY-CHANGE-HAZARD",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-GEOGRAPHY-V1-CHANGE-VULNERABILITY-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-5E-CHANGE",
+      "skill": "SK-ENR-GEOGRAPHY-5E-CHANGE-VULNERABILITY",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Prévenir les risques et s'adapter au changement global », réalise une tâche qui montre que tu sais analyser une vulnérabilité. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Analyser une vulnérabilité ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-GEOGRAPHY-CHANGE-VULNERABILITY",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-GEOGRAPHY-V1-CHANGE-VULNERABILITY-PRACTICE-01",
+        "title": "Analyser une vulnérabilité",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Prévenir les risques et s'adapter au changement global », réalise une tâche qui montre que tu sais analyser une vulnérabilité. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Analyser une vulnérabilité ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-5E-CHANGE",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-5E-CHANGE-VULNERABILITY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-geography-v1",
+          "template_version": "lcai-5e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-GEOGRAPHY-CHANGE-VULNERABILITY",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-GEOGRAPHY-V1-CHANGE-VULNERABILITY-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-5E-CHANGE",
+      "skill": "SK-ENR-GEOGRAPHY-5E-CHANGE-VULNERABILITY",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Analyser une vulnérabilité » à une situation pertinente de niveau 5e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Analyser une vulnérabilité ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-GEOGRAPHY-CHANGE-VULNERABILITY",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-GEOGRAPHY-V1-CHANGE-VULNERABILITY-PRACTICE-02",
+        "title": "Analyser une vulnérabilité",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Analyser une vulnérabilité » à une situation pertinente de niveau 5e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Analyser une vulnérabilité ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-5E-CHANGE",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-5E-CHANGE-VULNERABILITY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-geography-v1",
+          "template_version": "lcai-5e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-GEOGRAPHY-CHANGE-VULNERABILITY",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-GEOGRAPHY-V1-CHANGE-VULNERABILITY-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-5E-CHANGE",
+      "skill": "SK-ENR-GEOGRAPHY-5E-CHANGE-VULNERABILITY",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 5e : démontre de façon autonome que tu sais analyser une vulnérabilité. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Analyser une vulnérabilité ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-GEOGRAPHY-CHANGE-VULNERABILITY",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-GEOGRAPHY-V1-CHANGE-VULNERABILITY-ASSESSMENT-03",
+        "title": "Analyser une vulnérabilité",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 5e : démontre de façon autonome que tu sais analyser une vulnérabilité. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Analyser une vulnérabilité ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-5E-CHANGE",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-5E-CHANGE-VULNERABILITY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-geography-v1",
+          "template_version": "lcai-5e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-GEOGRAPHY-CHANGE-VULNERABILITY",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-GEOGRAPHY-V1-CHANGE-RISK-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-5E-CHANGE",
+      "skill": "SK-ENR-GEOGRAPHY-5E-CHANGE-RISK",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Prévenir les risques et s'adapter au changement global », réalise une tâche qui montre que tu sais expliquer la construction d'un risque. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Expliquer la construction d'un risque ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-GEOGRAPHY-CHANGE-RISK",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-GEOGRAPHY-V1-CHANGE-RISK-PRACTICE-01",
+        "title": "Expliquer la construction d'un risque",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Prévenir les risques et s'adapter au changement global », réalise une tâche qui montre que tu sais expliquer la construction d'un risque. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Expliquer la construction d'un risque ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-5E-CHANGE",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-5E-CHANGE-RISK",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-geography-v1",
+          "template_version": "lcai-5e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-GEOGRAPHY-CHANGE-RISK",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-GEOGRAPHY-V1-CHANGE-RISK-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-5E-CHANGE",
+      "skill": "SK-ENR-GEOGRAPHY-5E-CHANGE-RISK",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Expliquer la construction d'un risque » à une situation pertinente de niveau 5e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Expliquer la construction d'un risque ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-GEOGRAPHY-CHANGE-RISK",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-GEOGRAPHY-V1-CHANGE-RISK-PRACTICE-02",
+        "title": "Expliquer la construction d'un risque",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Expliquer la construction d'un risque » à une situation pertinente de niveau 5e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Expliquer la construction d'un risque ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-5E-CHANGE",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-5E-CHANGE-RISK",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-geography-v1",
+          "template_version": "lcai-5e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-GEOGRAPHY-CHANGE-RISK",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-GEOGRAPHY-V1-CHANGE-RISK-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-5E-CHANGE",
+      "skill": "SK-ENR-GEOGRAPHY-5E-CHANGE-RISK",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 5e : démontre de façon autonome que tu sais expliquer la construction d'un risque. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Expliquer la construction d'un risque ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-GEOGRAPHY-CHANGE-RISK",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-GEOGRAPHY-V1-CHANGE-RISK-ASSESSMENT-03",
+        "title": "Expliquer la construction d'un risque",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 5e : démontre de façon autonome que tu sais expliquer la construction d'un risque. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Expliquer la construction d'un risque ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-5E-CHANGE",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-5E-CHANGE-RISK",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-geography-v1",
+          "template_version": "lcai-5e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-GEOGRAPHY-CHANGE-RISK",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-GEOGRAPHY-V1-CHANGE-ADAPT-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-5E-CHANGE",
+      "skill": "SK-ENR-GEOGRAPHY-5E-CHANGE-ADAPTATION",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Prévenir les risques et s'adapter au changement global », réalise une tâche qui montre que tu sais comparer des stratégies d'adaptation. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Comparer des stratégies d'adaptation ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-GEOGRAPHY-CHANGE-ADAPT",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-GEOGRAPHY-V1-CHANGE-ADAPT-PRACTICE-01",
+        "title": "Comparer des stratégies d'adaptation",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Prévenir les risques et s'adapter au changement global », réalise une tâche qui montre que tu sais comparer des stratégies d'adaptation. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Comparer des stratégies d'adaptation ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-5E-CHANGE",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-5E-CHANGE-ADAPTATION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-geography-v1",
+          "template_version": "lcai-5e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-GEOGRAPHY-CHANGE-ADAPT",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ],
+          "skill_correction": {
+            "original_primary_skill_code": "SK-ENR-GEOGRAPHY-5E-CHANGE-ADAPT",
+            "corrected_primary_skill_code": "SK-ENR-GEOGRAPHY-5E-CHANGE-ADAPTATION",
+            "correction_reason": "Resolved: SK-ENR-GEOGRAPHY-5E-CHANGE-ADAPT -> SK-ENR-GEOGRAPHY-5E-CHANGE-ADAPTATION",
+            "correction_method": "suffix_substitution",
+            "curriculum_match": {
+              "program_code": "FR-CYCLE4-5E-2026",
+              "grade_code": "FR-5E",
+              "subject_code": "GEOGRAPHY",
+              "chapter_code": "CH-GEOGRAPHY-5E-CHANGE",
+              "primary_skill_code": "SK-ENR-GEOGRAPHY-5E-CHANGE-ADAPTATION"
+            }
+          }
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-GEOGRAPHY-V1-CHANGE-ADAPT-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-5E-CHANGE",
+      "skill": "SK-ENR-GEOGRAPHY-5E-CHANGE-ADAPTATION",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Comparer des stratégies d'adaptation » à une situation pertinente de niveau 5e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Comparer des stratégies d'adaptation ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-GEOGRAPHY-CHANGE-ADAPT",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-GEOGRAPHY-V1-CHANGE-ADAPT-PRACTICE-02",
+        "title": "Comparer des stratégies d'adaptation",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Comparer des stratégies d'adaptation » à une situation pertinente de niveau 5e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Comparer des stratégies d'adaptation ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-5E-CHANGE",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-5E-CHANGE-ADAPTATION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-geography-v1",
+          "template_version": "lcai-5e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-GEOGRAPHY-CHANGE-ADAPT",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ],
+          "skill_correction": {
+            "original_primary_skill_code": "SK-ENR-GEOGRAPHY-5E-CHANGE-ADAPT",
+            "corrected_primary_skill_code": "SK-ENR-GEOGRAPHY-5E-CHANGE-ADAPTATION",
+            "correction_reason": "Resolved: SK-ENR-GEOGRAPHY-5E-CHANGE-ADAPT -> SK-ENR-GEOGRAPHY-5E-CHANGE-ADAPTATION",
+            "correction_method": "suffix_substitution",
+            "curriculum_match": {
+              "program_code": "FR-CYCLE4-5E-2026",
+              "grade_code": "FR-5E",
+              "subject_code": "GEOGRAPHY",
+              "chapter_code": "CH-GEOGRAPHY-5E-CHANGE",
+              "primary_skill_code": "SK-ENR-GEOGRAPHY-5E-CHANGE-ADAPTATION"
+            }
+          }
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-GEOGRAPHY-V1-CHANGE-ADAPT-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-5E-CHANGE",
+      "skill": "SK-ENR-GEOGRAPHY-5E-CHANGE-ADAPTATION",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 5e : démontre de façon autonome que tu sais comparer des stratégies d'adaptation. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Comparer des stratégies d'adaptation ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-GEOGRAPHY-CHANGE-ADAPT",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-GEOGRAPHY-V1-CHANGE-ADAPT-ASSESSMENT-03",
+        "title": "Comparer des stratégies d'adaptation",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 5e : démontre de façon autonome que tu sais comparer des stratégies d'adaptation. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Comparer des stratégies d'adaptation ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-5E-CHANGE",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-5E-CHANGE-ADAPTATION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-geography-v1",
+          "template_version": "lcai-5e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-GEOGRAPHY-CHANGE-ADAPT",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ],
+          "skill_correction": {
+            "original_primary_skill_code": "SK-ENR-GEOGRAPHY-5E-CHANGE-ADAPT",
+            "corrected_primary_skill_code": "SK-ENR-GEOGRAPHY-5E-CHANGE-ADAPTATION",
+            "correction_reason": "Resolved: SK-ENR-GEOGRAPHY-5E-CHANGE-ADAPT -> SK-ENR-GEOGRAPHY-5E-CHANGE-ADAPTATION",
+            "correction_method": "suffix_substitution",
+            "curriculum_match": {
+              "program_code": "FR-CYCLE4-5E-2026",
+              "grade_code": "FR-5E",
+              "subject_code": "GEOGRAPHY",
+              "chapter_code": "CH-GEOGRAPHY-5E-CHANGE",
+              "primary_skill_code": "SK-ENR-GEOGRAPHY-5E-CHANGE-ADAPTATION"
+            }
+          }
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_geography_candidates_v1.json"
+      }
+    }
+  ]
+}

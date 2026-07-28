@@ -1,0 +1,9 @@
+{
+  "decisions": {
+    "REJECT": 228,
+    "REVIEW": 566,
+    "PASS": 214,
+    "CORRECTION_REQUIRED": 303
+  },
+  "details_count": 1311
+}

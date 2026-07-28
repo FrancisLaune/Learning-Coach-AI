@@ -1,0 +1,2551 @@
+{
+  "batch": "5E-SVT-V1",
+  "purpose": "Parallel 5e content preparation for Learning Coach AI",
+  "lifecycle_target": "Draft",
+  "automatic_approval": false,
+  "curriculum_version": "phase2-lcai-0011c",
+  "program_code": "FR-CYCLE4-5E-2026",
+  "grade_code": "FR-5E",
+  "subject_code": "SVT",
+  "skill_count": 10,
+  "candidate_count": 30,
+  "content_types": {
+    "practice": 20,
+    "assessment": 10
+  },
+  "difficulty_distribution": {
+    "1": 10,
+    "2": 20
+  },
+  "accepted_candidates": [
+    {
+      "code": "5E-SVT-V1-BODY-NUTRITION-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "SVT",
+      "chapter": "CH-SVT-5E-BODY",
+      "skill": "SK-ENR-SVT-5E-BODY-NUTRITION",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Corps humain et santé », réalise une tâche qui montre que tu sais relier alimentation et besoins de l'organisme. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Relier alimentation et besoins de l'organisme ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-SVT-BODY-NUTRITION",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-SVT-V1-BODY-NUTRITION-PRACTICE-01",
+        "title": "Relier alimentation et besoins de l'organisme",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Corps humain et santé », réalise une tâche qui montre que tu sais relier alimentation et besoins de l'organisme. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Relier alimentation et besoins de l'organisme ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-5E-BODY",
+          "primary_skill_code": "SK-ENR-SVT-5E-BODY-NUTRITION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-svt-v1",
+          "template_version": "lcai-5e-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-SVT-BODY-NUTRITION",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-SVT-V1-BODY-NUTRITION-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "SVT",
+      "chapter": "CH-SVT-5E-BODY",
+      "skill": "SK-ENR-SVT-5E-BODY-NUTRITION",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Relier alimentation et besoins de l'organisme » à une situation pertinente de niveau 5e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Relier alimentation et besoins de l'organisme ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-SVT-BODY-NUTRITION",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-SVT-V1-BODY-NUTRITION-PRACTICE-02",
+        "title": "Relier alimentation et besoins de l'organisme",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Relier alimentation et besoins de l'organisme » à une situation pertinente de niveau 5e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Relier alimentation et besoins de l'organisme ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-5E-BODY",
+          "primary_skill_code": "SK-ENR-SVT-5E-BODY-NUTRITION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-svt-v1",
+          "template_version": "lcai-5e-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-SVT-BODY-NUTRITION",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-SVT-V1-BODY-NUTRITION-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "SVT",
+      "chapter": "CH-SVT-5E-BODY",
+      "skill": "SK-ENR-SVT-5E-BODY-NUTRITION",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 5e : démontre de façon autonome que tu sais relier alimentation et besoins de l'organisme. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Relier alimentation et besoins de l'organisme ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-SVT-BODY-NUTRITION",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-SVT-V1-BODY-NUTRITION-ASSESSMENT-03",
+        "title": "Relier alimentation et besoins de l'organisme",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 5e : démontre de façon autonome que tu sais relier alimentation et besoins de l'organisme. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Relier alimentation et besoins de l'organisme ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-5E-BODY",
+          "primary_skill_code": "SK-ENR-SVT-5E-BODY-NUTRITION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-svt-v1",
+          "template_version": "lcai-5e-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-SVT-BODY-NUTRITION",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-SVT-V1-BODY-DIGESTION-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "SVT",
+      "chapter": "CH-SVT-5E-BODY",
+      "skill": "SK-ENR-SVT-5E-BODY-DIGESTION",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Corps humain et santé », réalise une tâche qui montre que tu sais expliquer la transformation des aliments. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Expliquer la transformation des aliments ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-SVT-BODY-DIGESTION",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-SVT-V1-BODY-DIGESTION-PRACTICE-01",
+        "title": "Expliquer la transformation des aliments",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Corps humain et santé », réalise une tâche qui montre que tu sais expliquer la transformation des aliments. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Expliquer la transformation des aliments ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-5E-BODY",
+          "primary_skill_code": "SK-ENR-SVT-5E-BODY-DIGESTION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-svt-v1",
+          "template_version": "lcai-5e-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-SVT-BODY-DIGESTION",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-SVT-V1-BODY-DIGESTION-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "SVT",
+      "chapter": "CH-SVT-5E-BODY",
+      "skill": "SK-ENR-SVT-5E-BODY-DIGESTION",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Expliquer la transformation des aliments » à une situation pertinente de niveau 5e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Expliquer la transformation des aliments ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-SVT-BODY-DIGESTION",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-SVT-V1-BODY-DIGESTION-PRACTICE-02",
+        "title": "Expliquer la transformation des aliments",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Expliquer la transformation des aliments » à une situation pertinente de niveau 5e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Expliquer la transformation des aliments ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-5E-BODY",
+          "primary_skill_code": "SK-ENR-SVT-5E-BODY-DIGESTION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-svt-v1",
+          "template_version": "lcai-5e-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-SVT-BODY-DIGESTION",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-SVT-V1-BODY-DIGESTION-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "SVT",
+      "chapter": "CH-SVT-5E-BODY",
+      "skill": "SK-ENR-SVT-5E-BODY-DIGESTION",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 5e : démontre de façon autonome que tu sais expliquer la transformation des aliments. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Expliquer la transformation des aliments ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-SVT-BODY-DIGESTION",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-SVT-V1-BODY-DIGESTION-ASSESSMENT-03",
+        "title": "Expliquer la transformation des aliments",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 5e : démontre de façon autonome que tu sais expliquer la transformation des aliments. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Expliquer la transformation des aliments ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-5E-BODY",
+          "primary_skill_code": "SK-ENR-SVT-5E-BODY-DIGESTION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-svt-v1",
+          "template_version": "lcai-5e-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-SVT-BODY-DIGESTION",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-SVT-V1-BODY-RESPIRATION-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "SVT",
+      "chapter": "CH-SVT-5E-BODY",
+      "skill": "SK-ENR-SVT-5E-BODY-RESPIRATION",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Corps humain et santé », réalise une tâche qui montre que tu sais relier respiration et fonctionnement de l'organisme. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Relier respiration et fonctionnement de l'organisme ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-SVT-BODY-RESPIRATION",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-SVT-V1-BODY-RESPIRATION-PRACTICE-01",
+        "title": "Relier respiration et fonctionnement de l'organisme",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Corps humain et santé », réalise une tâche qui montre que tu sais relier respiration et fonctionnement de l'organisme. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Relier respiration et fonctionnement de l'organisme ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-5E-BODY",
+          "primary_skill_code": "SK-ENR-SVT-5E-BODY-RESPIRATION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-svt-v1",
+          "template_version": "lcai-5e-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-SVT-BODY-RESPIRATION",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-SVT-V1-BODY-RESPIRATION-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "SVT",
+      "chapter": "CH-SVT-5E-BODY",
+      "skill": "SK-ENR-SVT-5E-BODY-RESPIRATION",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Relier respiration et fonctionnement de l'organisme » à une situation pertinente de niveau 5e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Relier respiration et fonctionnement de l'organisme ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-SVT-BODY-RESPIRATION",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-SVT-V1-BODY-RESPIRATION-PRACTICE-02",
+        "title": "Relier respiration et fonctionnement de l'organisme",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Relier respiration et fonctionnement de l'organisme » à une situation pertinente de niveau 5e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Relier respiration et fonctionnement de l'organisme ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-5E-BODY",
+          "primary_skill_code": "SK-ENR-SVT-5E-BODY-RESPIRATION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-svt-v1",
+          "template_version": "lcai-5e-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-SVT-BODY-RESPIRATION",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-SVT-V1-BODY-RESPIRATION-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "SVT",
+      "chapter": "CH-SVT-5E-BODY",
+      "skill": "SK-ENR-SVT-5E-BODY-RESPIRATION",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 5e : démontre de façon autonome que tu sais relier respiration et fonctionnement de l'organisme. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Relier respiration et fonctionnement de l'organisme ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-SVT-BODY-RESPIRATION",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-SVT-V1-BODY-RESPIRATION-ASSESSMENT-03",
+        "title": "Relier respiration et fonctionnement de l'organisme",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 5e : démontre de façon autonome que tu sais relier respiration et fonctionnement de l'organisme. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Relier respiration et fonctionnement de l'organisme ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-5E-BODY",
+          "primary_skill_code": "SK-ENR-SVT-5E-BODY-RESPIRATION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-svt-v1",
+          "template_version": "lcai-5e-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-SVT-BODY-RESPIRATION",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-SVT-V1-BODY-EFFORT-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "SVT",
+      "chapter": "CH-SVT-5E-BODY",
+      "skill": "SK-ENR-SVT-5E-BODY-EFFORT",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Corps humain et santé », réalise une tâche qui montre que tu sais expliquer les réponses du corps à l'effort. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Expliquer les réponses du corps à l'effort ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-SVT-BODY-EFFORT",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-SVT-V1-BODY-EFFORT-PRACTICE-01",
+        "title": "Expliquer les réponses du corps à l'effort",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Corps humain et santé », réalise une tâche qui montre que tu sais expliquer les réponses du corps à l'effort. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Expliquer les réponses du corps à l'effort ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-5E-BODY",
+          "primary_skill_code": "SK-ENR-SVT-5E-BODY-EFFORT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-svt-v1",
+          "template_version": "lcai-5e-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-SVT-BODY-EFFORT",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-SVT-V1-BODY-EFFORT-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "SVT",
+      "chapter": "CH-SVT-5E-BODY",
+      "skill": "SK-ENR-SVT-5E-BODY-EFFORT",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Expliquer les réponses du corps à l'effort » à une situation pertinente de niveau 5e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Expliquer les réponses du corps à l'effort ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-SVT-BODY-EFFORT",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-SVT-V1-BODY-EFFORT-PRACTICE-02",
+        "title": "Expliquer les réponses du corps à l'effort",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Expliquer les réponses du corps à l'effort » à une situation pertinente de niveau 5e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Expliquer les réponses du corps à l'effort ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-5E-BODY",
+          "primary_skill_code": "SK-ENR-SVT-5E-BODY-EFFORT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-svt-v1",
+          "template_version": "lcai-5e-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-SVT-BODY-EFFORT",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-SVT-V1-BODY-EFFORT-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "SVT",
+      "chapter": "CH-SVT-5E-BODY",
+      "skill": "SK-ENR-SVT-5E-BODY-EFFORT",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 5e : démontre de façon autonome que tu sais expliquer les réponses du corps à l'effort. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Expliquer les réponses du corps à l'effort ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-SVT-BODY-EFFORT",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-SVT-V1-BODY-EFFORT-ASSESSMENT-03",
+        "title": "Expliquer les réponses du corps à l'effort",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 5e : démontre de façon autonome que tu sais expliquer les réponses du corps à l'effort. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Expliquer les réponses du corps à l'effort ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-5E-BODY",
+          "primary_skill_code": "SK-ENR-SVT-5E-BODY-EFFORT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-svt-v1",
+          "template_version": "lcai-5e-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-SVT-BODY-EFFORT",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-SVT-V1-BODY-PREVENT-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "SVT",
+      "chapter": "CH-SVT-5E-BODY",
+      "skill": "SK-ENR-SVT-5E-BODY-PREVENT",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Corps humain et santé », réalise une tâche qui montre que tu sais justifier un comportement favorable à la santé. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Justifier un comportement favorable à la santé ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-SVT-BODY-PREVENT",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-SVT-V1-BODY-PREVENT-PRACTICE-01",
+        "title": "Justifier un comportement favorable à la santé",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Corps humain et santé », réalise une tâche qui montre que tu sais justifier un comportement favorable à la santé. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Justifier un comportement favorable à la santé ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-5E-BODY",
+          "primary_skill_code": "SK-ENR-SVT-5E-BODY-PREVENT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-svt-v1",
+          "template_version": "lcai-5e-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-SVT-BODY-PREVENT",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-SVT-V1-BODY-PREVENT-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "SVT",
+      "chapter": "CH-SVT-5E-BODY",
+      "skill": "SK-ENR-SVT-5E-BODY-PREVENT",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Justifier un comportement favorable à la santé » à une situation pertinente de niveau 5e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Justifier un comportement favorable à la santé ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-SVT-BODY-PREVENT",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-SVT-V1-BODY-PREVENT-PRACTICE-02",
+        "title": "Justifier un comportement favorable à la santé",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Justifier un comportement favorable à la santé » à une situation pertinente de niveau 5e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Justifier un comportement favorable à la santé ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-5E-BODY",
+          "primary_skill_code": "SK-ENR-SVT-5E-BODY-PREVENT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-svt-v1",
+          "template_version": "lcai-5e-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-SVT-BODY-PREVENT",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-SVT-V1-BODY-PREVENT-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "SVT",
+      "chapter": "CH-SVT-5E-BODY",
+      "skill": "SK-ENR-SVT-5E-BODY-PREVENT",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 5e : démontre de façon autonome que tu sais justifier un comportement favorable à la santé. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Justifier un comportement favorable à la santé ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-SVT-BODY-PREVENT",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-SVT-V1-BODY-PREVENT-ASSESSMENT-03",
+        "title": "Justifier un comportement favorable à la santé",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 5e : démontre de façon autonome que tu sais justifier un comportement favorable à la santé. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Justifier un comportement favorable à la santé ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-5E-BODY",
+          "primary_skill_code": "SK-ENR-SVT-5E-BODY-PREVENT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-svt-v1",
+          "template_version": "lcai-5e-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-SVT-BODY-PREVENT",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-SVT-V1-PLANET-PHENOMENON-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "SVT",
+      "chapter": "CH-SVT-5E-PLANET",
+      "skill": "SK-ENR-SVT-5E-PLANET-PHENOMENON",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Planète Terre, environnement et action humaine », réalise une tâche qui montre que tu sais décrire un phénomène terrestre. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Décrire un phénomène terrestre ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-SVT-PLANET-PHENOMENON",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-SVT-V1-PLANET-PHENOMENON-PRACTICE-01",
+        "title": "Décrire un phénomène terrestre",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Planète Terre, environnement et action humaine », réalise une tâche qui montre que tu sais décrire un phénomène terrestre. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Décrire un phénomène terrestre ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-5E-PLANET",
+          "primary_skill_code": "SK-ENR-SVT-5E-PLANET-PHENOMENON",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-svt-v1",
+          "template_version": "lcai-5e-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-SVT-PLANET-PHENOMENON",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-SVT-V1-PLANET-PHENOMENON-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "SVT",
+      "chapter": "CH-SVT-5E-PLANET",
+      "skill": "SK-ENR-SVT-5E-PLANET-PHENOMENON",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Décrire un phénomène terrestre » à une situation pertinente de niveau 5e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Décrire un phénomène terrestre ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-SVT-PLANET-PHENOMENON",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-SVT-V1-PLANET-PHENOMENON-PRACTICE-02",
+        "title": "Décrire un phénomène terrestre",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Décrire un phénomène terrestre » à une situation pertinente de niveau 5e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Décrire un phénomène terrestre ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-5E-PLANET",
+          "primary_skill_code": "SK-ENR-SVT-5E-PLANET-PHENOMENON",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-svt-v1",
+          "template_version": "lcai-5e-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-SVT-PLANET-PHENOMENON",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-SVT-V1-PLANET-PHENOMENON-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "SVT",
+      "chapter": "CH-SVT-5E-PLANET",
+      "skill": "SK-ENR-SVT-5E-PLANET-PHENOMENON",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 5e : démontre de façon autonome que tu sais décrire un phénomène terrestre. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Décrire un phénomène terrestre ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-SVT-PLANET-PHENOMENON",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-SVT-V1-PLANET-PHENOMENON-ASSESSMENT-03",
+        "title": "Décrire un phénomène terrestre",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 5e : démontre de façon autonome que tu sais décrire un phénomène terrestre. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Décrire un phénomène terrestre ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-5E-PLANET",
+          "primary_skill_code": "SK-ENR-SVT-5E-PLANET-PHENOMENON",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-svt-v1",
+          "template_version": "lcai-5e-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-SVT-PLANET-PHENOMENON",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-SVT-V1-PLANET-DATA-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "SVT",
+      "chapter": "CH-SVT-5E-PLANET",
+      "skill": "SK-ENR-SVT-5E-PLANET-DATA",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Planète Terre, environnement et action humaine », réalise une tâche qui montre que tu sais interpréter des données environnementales. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Interpréter des données environnementales ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-SVT-PLANET-DATA",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-SVT-V1-PLANET-DATA-PRACTICE-01",
+        "title": "Interpréter des données environnementales",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Planète Terre, environnement et action humaine », réalise une tâche qui montre que tu sais interpréter des données environnementales. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Interpréter des données environnementales ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-5E-PLANET",
+          "primary_skill_code": "SK-ENR-SVT-5E-PLANET-DATA",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-svt-v1",
+          "template_version": "lcai-5e-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-SVT-PLANET-DATA",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-SVT-V1-PLANET-DATA-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "SVT",
+      "chapter": "CH-SVT-5E-PLANET",
+      "skill": "SK-ENR-SVT-5E-PLANET-DATA",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Interpréter des données environnementales » à une situation pertinente de niveau 5e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Interpréter des données environnementales ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-SVT-PLANET-DATA",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-SVT-V1-PLANET-DATA-PRACTICE-02",
+        "title": "Interpréter des données environnementales",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Interpréter des données environnementales » à une situation pertinente de niveau 5e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Interpréter des données environnementales ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-5E-PLANET",
+          "primary_skill_code": "SK-ENR-SVT-5E-PLANET-DATA",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-svt-v1",
+          "template_version": "lcai-5e-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-SVT-PLANET-DATA",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-SVT-V1-PLANET-DATA-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "SVT",
+      "chapter": "CH-SVT-5E-PLANET",
+      "skill": "SK-ENR-SVT-5E-PLANET-DATA",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 5e : démontre de façon autonome que tu sais interpréter des données environnementales. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Interpréter des données environnementales ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-SVT-PLANET-DATA",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-SVT-V1-PLANET-DATA-ASSESSMENT-03",
+        "title": "Interpréter des données environnementales",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 5e : démontre de façon autonome que tu sais interpréter des données environnementales. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Interpréter des données environnementales ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-5E-PLANET",
+          "primary_skill_code": "SK-ENR-SVT-5E-PLANET-DATA",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-svt-v1",
+          "template_version": "lcai-5e-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-SVT-PLANET-DATA",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-SVT-V1-PLANET-RISK-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "SVT",
+      "chapter": "CH-SVT-5E-PLANET",
+      "skill": "SK-ENR-SVT-5E-PLANET-RISK",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Planète Terre, environnement et action humaine », réalise une tâche qui montre que tu sais relier phénomène, enjeux et risque. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Relier phénomène, enjeux et risque ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-SVT-PLANET-RISK",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-SVT-V1-PLANET-RISK-PRACTICE-01",
+        "title": "Relier phénomène, enjeux et risque",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Planète Terre, environnement et action humaine », réalise une tâche qui montre que tu sais relier phénomène, enjeux et risque. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Relier phénomène, enjeux et risque ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-5E-PLANET",
+          "primary_skill_code": "SK-ENR-SVT-5E-PLANET-RISK",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-svt-v1",
+          "template_version": "lcai-5e-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-SVT-PLANET-RISK",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-SVT-V1-PLANET-RISK-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "SVT",
+      "chapter": "CH-SVT-5E-PLANET",
+      "skill": "SK-ENR-SVT-5E-PLANET-RISK",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Relier phénomène, enjeux et risque » à une situation pertinente de niveau 5e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Relier phénomène, enjeux et risque ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-SVT-PLANET-RISK",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-SVT-V1-PLANET-RISK-PRACTICE-02",
+        "title": "Relier phénomène, enjeux et risque",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Relier phénomène, enjeux et risque » à une situation pertinente de niveau 5e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Relier phénomène, enjeux et risque ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-5E-PLANET",
+          "primary_skill_code": "SK-ENR-SVT-5E-PLANET-RISK",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-svt-v1",
+          "template_version": "lcai-5e-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-SVT-PLANET-RISK",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-SVT-V1-PLANET-RISK-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "SVT",
+      "chapter": "CH-SVT-5E-PLANET",
+      "skill": "SK-ENR-SVT-5E-PLANET-RISK",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 5e : démontre de façon autonome que tu sais relier phénomène, enjeux et risque. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Relier phénomène, enjeux et risque ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-SVT-PLANET-RISK",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-SVT-V1-PLANET-RISK-ASSESSMENT-03",
+        "title": "Relier phénomène, enjeux et risque",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 5e : démontre de façon autonome que tu sais relier phénomène, enjeux et risque. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Relier phénomène, enjeux et risque ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-5E-PLANET",
+          "primary_skill_code": "SK-ENR-SVT-5E-PLANET-RISK",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-svt-v1",
+          "template_version": "lcai-5e-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-SVT-PLANET-RISK",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-SVT-V1-PLANET-IMPACT-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "SVT",
+      "chapter": "CH-SVT-5E-PLANET",
+      "skill": "SK-ENR-SVT-5E-PLANET-HUMAN_IMPACT",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Planète Terre, environnement et action humaine », réalise une tâche qui montre que tu sais analyser un impact humain. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Analyser un impact humain ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-SVT-PLANET-IMPACT",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-SVT-V1-PLANET-IMPACT-PRACTICE-01",
+        "title": "Analyser un impact humain",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Planète Terre, environnement et action humaine », réalise une tâche qui montre que tu sais analyser un impact humain. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Analyser un impact humain ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-5E-PLANET",
+          "primary_skill_code": "SK-ENR-SVT-5E-PLANET-HUMAN_IMPACT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-svt-v1",
+          "template_version": "lcai-5e-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-SVT-PLANET-IMPACT",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ],
+          "skill_correction": {
+            "original_primary_skill_code": "SK-ENR-SVT-5E-PLANET-IMPACT",
+            "corrected_primary_skill_code": "SK-ENR-SVT-5E-PLANET-HUMAN_IMPACT",
+            "correction_reason": "Resolved: SK-ENR-SVT-5E-PLANET-IMPACT -> SK-ENR-SVT-5E-PLANET-HUMAN_IMPACT",
+            "correction_method": "suffix_substitution",
+            "curriculum_match": {
+              "program_code": "FR-CYCLE4-5E-2026",
+              "grade_code": "FR-5E",
+              "subject_code": "SVT",
+              "chapter_code": "CH-SVT-5E-PLANET",
+              "primary_skill_code": "SK-ENR-SVT-5E-PLANET-HUMAN_IMPACT"
+            }
+          }
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-SVT-V1-PLANET-IMPACT-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "SVT",
+      "chapter": "CH-SVT-5E-PLANET",
+      "skill": "SK-ENR-SVT-5E-PLANET-HUMAN_IMPACT",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Analyser un impact humain » à une situation pertinente de niveau 5e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Analyser un impact humain ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-SVT-PLANET-IMPACT",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-SVT-V1-PLANET-IMPACT-PRACTICE-02",
+        "title": "Analyser un impact humain",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Analyser un impact humain » à une situation pertinente de niveau 5e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Analyser un impact humain ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-5E-PLANET",
+          "primary_skill_code": "SK-ENR-SVT-5E-PLANET-HUMAN_IMPACT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-svt-v1",
+          "template_version": "lcai-5e-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-SVT-PLANET-IMPACT",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ],
+          "skill_correction": {
+            "original_primary_skill_code": "SK-ENR-SVT-5E-PLANET-IMPACT",
+            "corrected_primary_skill_code": "SK-ENR-SVT-5E-PLANET-HUMAN_IMPACT",
+            "correction_reason": "Resolved: SK-ENR-SVT-5E-PLANET-IMPACT -> SK-ENR-SVT-5E-PLANET-HUMAN_IMPACT",
+            "correction_method": "suffix_substitution",
+            "curriculum_match": {
+              "program_code": "FR-CYCLE4-5E-2026",
+              "grade_code": "FR-5E",
+              "subject_code": "SVT",
+              "chapter_code": "CH-SVT-5E-PLANET",
+              "primary_skill_code": "SK-ENR-SVT-5E-PLANET-HUMAN_IMPACT"
+            }
+          }
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-SVT-V1-PLANET-IMPACT-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "SVT",
+      "chapter": "CH-SVT-5E-PLANET",
+      "skill": "SK-ENR-SVT-5E-PLANET-HUMAN_IMPACT",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 5e : démontre de façon autonome que tu sais analyser un impact humain. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Analyser un impact humain ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-SVT-PLANET-IMPACT",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-SVT-V1-PLANET-IMPACT-ASSESSMENT-03",
+        "title": "Analyser un impact humain",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 5e : démontre de façon autonome que tu sais analyser un impact humain. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Analyser un impact humain ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-5E-PLANET",
+          "primary_skill_code": "SK-ENR-SVT-5E-PLANET-HUMAN_IMPACT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-svt-v1",
+          "template_version": "lcai-5e-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-SVT-PLANET-IMPACT",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ],
+          "skill_correction": {
+            "original_primary_skill_code": "SK-ENR-SVT-5E-PLANET-IMPACT",
+            "corrected_primary_skill_code": "SK-ENR-SVT-5E-PLANET-HUMAN_IMPACT",
+            "correction_reason": "Resolved: SK-ENR-SVT-5E-PLANET-IMPACT -> SK-ENR-SVT-5E-PLANET-HUMAN_IMPACT",
+            "correction_method": "suffix_substitution",
+            "curriculum_match": {
+              "program_code": "FR-CYCLE4-5E-2026",
+              "grade_code": "FR-5E",
+              "subject_code": "SVT",
+              "chapter_code": "CH-SVT-5E-PLANET",
+              "primary_skill_code": "SK-ENR-SVT-5E-PLANET-HUMAN_IMPACT"
+            }
+          }
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-SVT-V1-PLANET-ACTION-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "SVT",
+      "chapter": "CH-SVT-5E-PLANET",
+      "skill": "SK-ENR-SVT-5E-PLANET-ACTION",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Planète Terre, environnement et action humaine », réalise une tâche qui montre que tu sais évaluer une action de prévention ou de gestion. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Évaluer une action de prévention ou de gestion ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-SVT-PLANET-ACTION",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-SVT-V1-PLANET-ACTION-PRACTICE-01",
+        "title": "Évaluer une action de prévention ou de gestion",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Planète Terre, environnement et action humaine », réalise une tâche qui montre que tu sais évaluer une action de prévention ou de gestion. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Évaluer une action de prévention ou de gestion ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-5E-PLANET",
+          "primary_skill_code": "SK-ENR-SVT-5E-PLANET-ACTION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-svt-v1",
+          "template_version": "lcai-5e-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-SVT-PLANET-ACTION",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-SVT-V1-PLANET-ACTION-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "SVT",
+      "chapter": "CH-SVT-5E-PLANET",
+      "skill": "SK-ENR-SVT-5E-PLANET-ACTION",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Évaluer une action de prévention ou de gestion » à une situation pertinente de niveau 5e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Évaluer une action de prévention ou de gestion ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-SVT-PLANET-ACTION",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-SVT-V1-PLANET-ACTION-PRACTICE-02",
+        "title": "Évaluer une action de prévention ou de gestion",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Évaluer une action de prévention ou de gestion » à une situation pertinente de niveau 5e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Évaluer une action de prévention ou de gestion ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-5E-PLANET",
+          "primary_skill_code": "SK-ENR-SVT-5E-PLANET-ACTION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-svt-v1",
+          "template_version": "lcai-5e-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-SVT-PLANET-ACTION",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-SVT-V1-PLANET-ACTION-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "SVT",
+      "chapter": "CH-SVT-5E-PLANET",
+      "skill": "SK-ENR-SVT-5E-PLANET-ACTION",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 5e : démontre de façon autonome que tu sais évaluer une action de prévention ou de gestion. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Évaluer une action de prévention ou de gestion ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-SVT-PLANET-ACTION",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-SVT-V1-PLANET-ACTION-ASSESSMENT-03",
+        "title": "Évaluer une action de prévention ou de gestion",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 5e : démontre de façon autonome que tu sais évaluer une action de prévention ou de gestion. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Évaluer une action de prévention ou de gestion ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-5E-PLANET",
+          "primary_skill_code": "SK-ENR-SVT-5E-PLANET-ACTION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-svt-v1",
+          "template_version": "lcai-5e-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-SVT-PLANET-ACTION",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_svt_candidates_v1.json"
+      }
+    }
+  ]
+}

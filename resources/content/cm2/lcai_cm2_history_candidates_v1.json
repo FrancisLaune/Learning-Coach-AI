@@ -1,0 +1,3010 @@
+{
+  "batch": "CM2-HISTORY-V1",
+  "purpose": "Parallel CM2 content preparation for Learning Coach AI",
+  "lifecycle_target": "Draft",
+  "automatic_approval": false,
+  "curriculum_version": "phase2-lcai-0011c",
+  "program_code": "FR-CYCLE3-CM2-2026",
+  "grade_code": "FR-CM2",
+  "subject_code": "HISTORY",
+  "skill_count": 12,
+  "candidate_count": 36,
+  "content_types": {
+    "practice": 24,
+    "assessment": 12
+  },
+  "difficulty_distribution": {
+    "1": 12,
+    "2": 24
+  },
+  "accepted_candidates": [
+    {
+      "code": "CM2-HISTORY-V1-REPUBLIC-REGIMES-PRACTICE-01",
+      "grade": "FR-CM2",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-CM2-REPUBLIC",
+      "skill": "SK-ENR-HISTORY-CM2-REPUBLIC-REGIMES",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Le temps de la République », réalise une tâche courte montrant que tu sais distinguer république et autres régimes du xixe siècle. Donne un exemple précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Distinguer République et autres régimes du XIXe siècle ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-HISTORY-REPUBLIC-REGIMES",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-HISTORY-V1-REPUBLIC-REGIMES-PRACTICE-01",
+        "title": "Distinguer République et autres régimes du XIXe siècle",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Le temps de la République », réalise une tâche courte montrant que tu sais distinguer république et autres régimes du xixe siècle. Donne un exemple précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Distinguer République et autres régimes du XIXe siècle ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-CM2-REPUBLIC",
+          "primary_skill_code": "SK-ENR-HISTORY-CM2-REPUBLIC-REGIMES",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-history-v1",
+          "template_version": "lcai-cm2-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-HISTORY-REPUBLIC-REGIMES",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-HISTORY-V1-REPUBLIC-REGIMES-PRACTICE-02",
+      "grade": "FR-CM2",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-CM2-REPUBLIC",
+      "skill": "SK-ENR-HISTORY-CM2-REPUBLIC-REGIMES",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique avec tes mots puis applique à un exemple : « Distinguer République et autres régimes du XIXe siècle ».",
+      "expected_answer": "Réponse ouverte : explication correcte et exemple pertinent.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Distinguer République et autres régimes du XIXe siècle ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-HISTORY-REPUBLIC-REGIMES",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-HISTORY-V1-REPUBLIC-REGIMES-PRACTICE-02",
+        "title": "Distinguer République et autres régimes du XIXe siècle",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique avec tes mots puis applique à un exemple : « Distinguer République et autres régimes du XIXe siècle ».",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et exemple pertinent.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Distinguer République et autres régimes du XIXe siècle ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-CM2-REPUBLIC",
+          "primary_skill_code": "SK-ENR-HISTORY-CM2-REPUBLIC-REGIMES",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-history-v1",
+          "template_version": "lcai-cm2-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-HISTORY-REPUBLIC-REGIMES",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-HISTORY-V1-REPUBLIC-REGIMES-ASSESSMENT-03",
+      "grade": "FR-CM2",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-CM2-REPUBLIC",
+      "skill": "SK-ENR-HISTORY-CM2-REPUBLIC-REGIMES",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation CM2 : montre de façon autonome que tu sais distinguer république et autres régimes du xixe siècle. Justifie avec un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Distinguer République et autres régimes du XIXe siècle ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-HISTORY-REPUBLIC-REGIMES",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-HISTORY-V1-REPUBLIC-REGIMES-ASSESSMENT-03",
+        "title": "Distinguer République et autres régimes du XIXe siècle",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation CM2 : montre de façon autonome que tu sais distinguer république et autres régimes du xixe siècle. Justifie avec un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Distinguer République et autres régimes du XIXe siècle ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-CM2-REPUBLIC",
+          "primary_skill_code": "SK-ENR-HISTORY-CM2-REPUBLIC-REGIMES",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-history-v1",
+          "template_version": "lcai-cm2-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-HISTORY-REPUBLIC-REGIMES",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-HISTORY-V1-REPUBLIC-SYMBOLS-PRACTICE-01",
+      "grade": "FR-CM2",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-CM2-REPUBLIC",
+      "skill": "SK-ENR-HISTORY-CM2-REPUBLIC-SYMBOLS",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Le temps de la République », réalise une tâche courte montrant que tu sais expliquer symboles et principes républicains. Donne un exemple précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Expliquer symboles et principes républicains ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-HISTORY-REPUBLIC-SYMBOLS",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-HISTORY-V1-REPUBLIC-SYMBOLS-PRACTICE-01",
+        "title": "Expliquer symboles et principes républicains",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Le temps de la République », réalise une tâche courte montrant que tu sais expliquer symboles et principes républicains. Donne un exemple précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Expliquer symboles et principes républicains ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-CM2-REPUBLIC",
+          "primary_skill_code": "SK-ENR-HISTORY-CM2-REPUBLIC-SYMBOLS",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-history-v1",
+          "template_version": "lcai-cm2-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-HISTORY-REPUBLIC-SYMBOLS",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-HISTORY-V1-REPUBLIC-SYMBOLS-PRACTICE-02",
+      "grade": "FR-CM2",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-CM2-REPUBLIC",
+      "skill": "SK-ENR-HISTORY-CM2-REPUBLIC-SYMBOLS",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique avec tes mots puis applique à un exemple : « Expliquer symboles et principes républicains ».",
+      "expected_answer": "Réponse ouverte : explication correcte et exemple pertinent.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Expliquer symboles et principes républicains ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-HISTORY-REPUBLIC-SYMBOLS",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-HISTORY-V1-REPUBLIC-SYMBOLS-PRACTICE-02",
+        "title": "Expliquer symboles et principes républicains",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique avec tes mots puis applique à un exemple : « Expliquer symboles et principes républicains ».",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et exemple pertinent.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Expliquer symboles et principes républicains ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-CM2-REPUBLIC",
+          "primary_skill_code": "SK-ENR-HISTORY-CM2-REPUBLIC-SYMBOLS",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-history-v1",
+          "template_version": "lcai-cm2-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-HISTORY-REPUBLIC-SYMBOLS",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-HISTORY-V1-REPUBLIC-SYMBOLS-ASSESSMENT-03",
+      "grade": "FR-CM2",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-CM2-REPUBLIC",
+      "skill": "SK-ENR-HISTORY-CM2-REPUBLIC-SYMBOLS",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation CM2 : montre de façon autonome que tu sais expliquer symboles et principes républicains. Justifie avec un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Expliquer symboles et principes républicains ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-HISTORY-REPUBLIC-SYMBOLS",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-HISTORY-V1-REPUBLIC-SYMBOLS-ASSESSMENT-03",
+        "title": "Expliquer symboles et principes républicains",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation CM2 : montre de façon autonome que tu sais expliquer symboles et principes républicains. Justifie avec un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Expliquer symboles et principes républicains ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-CM2-REPUBLIC",
+          "primary_skill_code": "SK-ENR-HISTORY-CM2-REPUBLIC-SYMBOLS",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-history-v1",
+          "template_version": "lcai-cm2-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-HISTORY-REPUBLIC-SYMBOLS",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-HISTORY-V1-REPUBLIC-SCHOOL-PRACTICE-01",
+      "grade": "FR-CM2",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-CM2-REPUBLIC",
+      "skill": "SK-ENR-HISTORY-CM2-REPUBLIC-SCHOOL",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Le temps de la République », réalise une tâche courte montrant que tu sais expliquer le rôle de l'école républicaine. Donne un exemple précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Expliquer le rôle de l'école républicaine ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-HISTORY-REPUBLIC-SCHOOL",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-HISTORY-V1-REPUBLIC-SCHOOL-PRACTICE-01",
+        "title": "Expliquer le rôle de l'école républicaine",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Le temps de la République », réalise une tâche courte montrant que tu sais expliquer le rôle de l'école républicaine. Donne un exemple précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Expliquer le rôle de l'école républicaine ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-CM2-REPUBLIC",
+          "primary_skill_code": "SK-ENR-HISTORY-CM2-REPUBLIC-SCHOOL",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-history-v1",
+          "template_version": "lcai-cm2-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-HISTORY-REPUBLIC-SCHOOL",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-HISTORY-V1-REPUBLIC-SCHOOL-PRACTICE-02",
+      "grade": "FR-CM2",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-CM2-REPUBLIC",
+      "skill": "SK-ENR-HISTORY-CM2-REPUBLIC-SCHOOL",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique avec tes mots puis applique à un exemple : « Expliquer le rôle de l'école républicaine ».",
+      "expected_answer": "Réponse ouverte : explication correcte et exemple pertinent.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Expliquer le rôle de l'école républicaine ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-HISTORY-REPUBLIC-SCHOOL",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-HISTORY-V1-REPUBLIC-SCHOOL-PRACTICE-02",
+        "title": "Expliquer le rôle de l'école républicaine",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique avec tes mots puis applique à un exemple : « Expliquer le rôle de l'école républicaine ».",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et exemple pertinent.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Expliquer le rôle de l'école républicaine ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-CM2-REPUBLIC",
+          "primary_skill_code": "SK-ENR-HISTORY-CM2-REPUBLIC-SCHOOL",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-history-v1",
+          "template_version": "lcai-cm2-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-HISTORY-REPUBLIC-SCHOOL",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-HISTORY-V1-REPUBLIC-SCHOOL-ASSESSMENT-03",
+      "grade": "FR-CM2",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-CM2-REPUBLIC",
+      "skill": "SK-ENR-HISTORY-CM2-REPUBLIC-SCHOOL",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation CM2 : montre de façon autonome que tu sais expliquer le rôle de l'école républicaine. Justifie avec un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Expliquer le rôle de l'école républicaine ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-HISTORY-REPUBLIC-SCHOOL",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-HISTORY-V1-REPUBLIC-SCHOOL-ASSESSMENT-03",
+        "title": "Expliquer le rôle de l'école républicaine",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation CM2 : montre de façon autonome que tu sais expliquer le rôle de l'école républicaine. Justifie avec un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Expliquer le rôle de l'école républicaine ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-CM2-REPUBLIC",
+          "primary_skill_code": "SK-ENR-HISTORY-CM2-REPUBLIC-SCHOOL",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-history-v1",
+          "template_version": "lcai-cm2-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-HISTORY-REPUBLIC-SCHOOL",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-HISTORY-V1-REPUBLIC-CHRONOLOGY-PRACTICE-01",
+      "grade": "FR-CM2",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-CM2-REPUBLIC",
+      "skill": "SK-ENR-HISTORY-CM2-REPUBLIC-CHRONOLOGY",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Le temps de la République », réalise une tâche courte montrant que tu sais ordonner les étapes d'installation de la république. Donne un exemple précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Ordonner les étapes d'installation de la République ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-HISTORY-REPUBLIC-CHRONOLOGY",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-HISTORY-V1-REPUBLIC-CHRONOLOGY-PRACTICE-01",
+        "title": "Ordonner les étapes d'installation de la République",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Le temps de la République », réalise une tâche courte montrant que tu sais ordonner les étapes d'installation de la république. Donne un exemple précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Ordonner les étapes d'installation de la République ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-CM2-REPUBLIC",
+          "primary_skill_code": "SK-ENR-HISTORY-CM2-REPUBLIC-CHRONOLOGY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-history-v1",
+          "template_version": "lcai-cm2-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-HISTORY-REPUBLIC-CHRONOLOGY",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-HISTORY-V1-REPUBLIC-CHRONOLOGY-PRACTICE-02",
+      "grade": "FR-CM2",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-CM2-REPUBLIC",
+      "skill": "SK-ENR-HISTORY-CM2-REPUBLIC-CHRONOLOGY",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique avec tes mots puis applique à un exemple : « Ordonner les étapes d'installation de la République ».",
+      "expected_answer": "Réponse ouverte : explication correcte et exemple pertinent.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Ordonner les étapes d'installation de la République ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-HISTORY-REPUBLIC-CHRONOLOGY",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-HISTORY-V1-REPUBLIC-CHRONOLOGY-PRACTICE-02",
+        "title": "Ordonner les étapes d'installation de la République",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique avec tes mots puis applique à un exemple : « Ordonner les étapes d'installation de la République ».",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et exemple pertinent.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Ordonner les étapes d'installation de la République ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-CM2-REPUBLIC",
+          "primary_skill_code": "SK-ENR-HISTORY-CM2-REPUBLIC-CHRONOLOGY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-history-v1",
+          "template_version": "lcai-cm2-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-HISTORY-REPUBLIC-CHRONOLOGY",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-HISTORY-V1-REPUBLIC-CHRONOLOGY-ASSESSMENT-03",
+      "grade": "FR-CM2",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-CM2-REPUBLIC",
+      "skill": "SK-ENR-HISTORY-CM2-REPUBLIC-CHRONOLOGY",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation CM2 : montre de façon autonome que tu sais ordonner les étapes d'installation de la république. Justifie avec un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Ordonner les étapes d'installation de la République ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-HISTORY-REPUBLIC-CHRONOLOGY",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-HISTORY-V1-REPUBLIC-CHRONOLOGY-ASSESSMENT-03",
+        "title": "Ordonner les étapes d'installation de la République",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation CM2 : montre de façon autonome que tu sais ordonner les étapes d'installation de la république. Justifie avec un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Ordonner les étapes d'installation de la République ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-CM2-REPUBLIC",
+          "primary_skill_code": "SK-ENR-HISTORY-CM2-REPUBLIC-CHRONOLOGY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-history-v1",
+          "template_version": "lcai-cm2-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-HISTORY-REPUBLIC-CHRONOLOGY",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-HISTORY-V1-INDUSTRIAL-INNOVATION-PRACTICE-01",
+      "grade": "FR-CM2",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-CM2-INDUSTRIAL",
+      "skill": "SK-ENR-HISTORY-CM2-INDUSTRIAL-INNOVATION",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « L'âge industriel en France », réalise une tâche courte montrant que tu sais identifier des innovations de l'âge industriel. Donne un exemple précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Identifier des innovations de l'âge industriel ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-HISTORY-INDUSTRIAL-INNOVATION",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-HISTORY-V1-INDUSTRIAL-INNOVATION-PRACTICE-01",
+        "title": "Identifier des innovations de l'âge industriel",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « L'âge industriel en France », réalise une tâche courte montrant que tu sais identifier des innovations de l'âge industriel. Donne un exemple précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Identifier des innovations de l'âge industriel ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-CM2-INDUSTRIAL",
+          "primary_skill_code": "SK-ENR-HISTORY-CM2-INDUSTRIAL-INNOVATION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-history-v1",
+          "template_version": "lcai-cm2-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-HISTORY-INDUSTRIAL-INNOVATION",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-HISTORY-V1-INDUSTRIAL-INNOVATION-PRACTICE-02",
+      "grade": "FR-CM2",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-CM2-INDUSTRIAL",
+      "skill": "SK-ENR-HISTORY-CM2-INDUSTRIAL-INNOVATION",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique avec tes mots puis applique à un exemple : « Identifier des innovations de l'âge industriel ».",
+      "expected_answer": "Réponse ouverte : explication correcte et exemple pertinent.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Identifier des innovations de l'âge industriel ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-HISTORY-INDUSTRIAL-INNOVATION",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-HISTORY-V1-INDUSTRIAL-INNOVATION-PRACTICE-02",
+        "title": "Identifier des innovations de l'âge industriel",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique avec tes mots puis applique à un exemple : « Identifier des innovations de l'âge industriel ».",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et exemple pertinent.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Identifier des innovations de l'âge industriel ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-CM2-INDUSTRIAL",
+          "primary_skill_code": "SK-ENR-HISTORY-CM2-INDUSTRIAL-INNOVATION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-history-v1",
+          "template_version": "lcai-cm2-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-HISTORY-INDUSTRIAL-INNOVATION",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-HISTORY-V1-INDUSTRIAL-INNOVATION-ASSESSMENT-03",
+      "grade": "FR-CM2",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-CM2-INDUSTRIAL",
+      "skill": "SK-ENR-HISTORY-CM2-INDUSTRIAL-INNOVATION",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation CM2 : montre de façon autonome que tu sais identifier des innovations de l'âge industriel. Justifie avec un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Identifier des innovations de l'âge industriel ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-HISTORY-INDUSTRIAL-INNOVATION",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-HISTORY-V1-INDUSTRIAL-INNOVATION-ASSESSMENT-03",
+        "title": "Identifier des innovations de l'âge industriel",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation CM2 : montre de façon autonome que tu sais identifier des innovations de l'âge industriel. Justifie avec un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Identifier des innovations de l'âge industriel ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-CM2-INDUSTRIAL",
+          "primary_skill_code": "SK-ENR-HISTORY-CM2-INDUSTRIAL-INNOVATION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-history-v1",
+          "template_version": "lcai-cm2-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-HISTORY-INDUSTRIAL-INNOVATION",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-HISTORY-V1-INDUSTRIAL-PRODUCTION-PRACTICE-01",
+      "grade": "FR-CM2",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-CM2-INDUSTRIAL",
+      "skill": "SK-ENR-HISTORY-CM2-INDUSTRIAL-PRODUCTION",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « L'âge industriel en France », réalise une tâche courte montrant que tu sais expliquer la transformation de la production. Donne un exemple précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Expliquer la transformation de la production ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-HISTORY-INDUSTRIAL-PRODUCTION",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-HISTORY-V1-INDUSTRIAL-PRODUCTION-PRACTICE-01",
+        "title": "Expliquer la transformation de la production",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « L'âge industriel en France », réalise une tâche courte montrant que tu sais expliquer la transformation de la production. Donne un exemple précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Expliquer la transformation de la production ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-CM2-INDUSTRIAL",
+          "primary_skill_code": "SK-ENR-HISTORY-CM2-INDUSTRIAL-PRODUCTION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-history-v1",
+          "template_version": "lcai-cm2-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-HISTORY-INDUSTRIAL-PRODUCTION",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-HISTORY-V1-INDUSTRIAL-PRODUCTION-PRACTICE-02",
+      "grade": "FR-CM2",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-CM2-INDUSTRIAL",
+      "skill": "SK-ENR-HISTORY-CM2-INDUSTRIAL-PRODUCTION",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique avec tes mots puis applique à un exemple : « Expliquer la transformation de la production ».",
+      "expected_answer": "Réponse ouverte : explication correcte et exemple pertinent.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Expliquer la transformation de la production ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-HISTORY-INDUSTRIAL-PRODUCTION",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-HISTORY-V1-INDUSTRIAL-PRODUCTION-PRACTICE-02",
+        "title": "Expliquer la transformation de la production",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique avec tes mots puis applique à un exemple : « Expliquer la transformation de la production ».",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et exemple pertinent.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Expliquer la transformation de la production ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-CM2-INDUSTRIAL",
+          "primary_skill_code": "SK-ENR-HISTORY-CM2-INDUSTRIAL-PRODUCTION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-history-v1",
+          "template_version": "lcai-cm2-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-HISTORY-INDUSTRIAL-PRODUCTION",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-HISTORY-V1-INDUSTRIAL-PRODUCTION-ASSESSMENT-03",
+      "grade": "FR-CM2",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-CM2-INDUSTRIAL",
+      "skill": "SK-ENR-HISTORY-CM2-INDUSTRIAL-PRODUCTION",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation CM2 : montre de façon autonome que tu sais expliquer la transformation de la production. Justifie avec un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Expliquer la transformation de la production ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-HISTORY-INDUSTRIAL-PRODUCTION",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-HISTORY-V1-INDUSTRIAL-PRODUCTION-ASSESSMENT-03",
+        "title": "Expliquer la transformation de la production",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation CM2 : montre de façon autonome que tu sais expliquer la transformation de la production. Justifie avec un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Expliquer la transformation de la production ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-CM2-INDUSTRIAL",
+          "primary_skill_code": "SK-ENR-HISTORY-CM2-INDUSTRIAL-PRODUCTION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-history-v1",
+          "template_version": "lcai-cm2-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-HISTORY-INDUSTRIAL-PRODUCTION",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-HISTORY-V1-INDUSTRIAL-SOCIETY-PRACTICE-01",
+      "grade": "FR-CM2",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-CM2-INDUSTRIAL",
+      "skill": "SK-ENR-HISTORY-CM2-INDUSTRIAL-SOCIETY",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « L'âge industriel en France », réalise une tâche courte montrant que tu sais décrire les transformations sociales. Donne un exemple précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Décrire les transformations sociales ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-HISTORY-INDUSTRIAL-SOCIETY",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-HISTORY-V1-INDUSTRIAL-SOCIETY-PRACTICE-01",
+        "title": "Décrire les transformations sociales",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « L'âge industriel en France », réalise une tâche courte montrant que tu sais décrire les transformations sociales. Donne un exemple précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Décrire les transformations sociales ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-CM2-INDUSTRIAL",
+          "primary_skill_code": "SK-ENR-HISTORY-CM2-INDUSTRIAL-SOCIETY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-history-v1",
+          "template_version": "lcai-cm2-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-HISTORY-INDUSTRIAL-SOCIETY",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-HISTORY-V1-INDUSTRIAL-SOCIETY-PRACTICE-02",
+      "grade": "FR-CM2",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-CM2-INDUSTRIAL",
+      "skill": "SK-ENR-HISTORY-CM2-INDUSTRIAL-SOCIETY",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique avec tes mots puis applique à un exemple : « Décrire les transformations sociales ».",
+      "expected_answer": "Réponse ouverte : explication correcte et exemple pertinent.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Décrire les transformations sociales ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-HISTORY-INDUSTRIAL-SOCIETY",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-HISTORY-V1-INDUSTRIAL-SOCIETY-PRACTICE-02",
+        "title": "Décrire les transformations sociales",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique avec tes mots puis applique à un exemple : « Décrire les transformations sociales ».",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et exemple pertinent.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Décrire les transformations sociales ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-CM2-INDUSTRIAL",
+          "primary_skill_code": "SK-ENR-HISTORY-CM2-INDUSTRIAL-SOCIETY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-history-v1",
+          "template_version": "lcai-cm2-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-HISTORY-INDUSTRIAL-SOCIETY",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-HISTORY-V1-INDUSTRIAL-SOCIETY-ASSESSMENT-03",
+      "grade": "FR-CM2",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-CM2-INDUSTRIAL",
+      "skill": "SK-ENR-HISTORY-CM2-INDUSTRIAL-SOCIETY",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation CM2 : montre de façon autonome que tu sais décrire les transformations sociales. Justifie avec un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Décrire les transformations sociales ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-HISTORY-INDUSTRIAL-SOCIETY",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-HISTORY-V1-INDUSTRIAL-SOCIETY-ASSESSMENT-03",
+        "title": "Décrire les transformations sociales",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation CM2 : montre de façon autonome que tu sais décrire les transformations sociales. Justifie avec un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Décrire les transformations sociales ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-CM2-INDUSTRIAL",
+          "primary_skill_code": "SK-ENR-HISTORY-CM2-INDUSTRIAL-SOCIETY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-history-v1",
+          "template_version": "lcai-cm2-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-HISTORY-INDUSTRIAL-SOCIETY",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-HISTORY-V1-INDUSTRIAL-LANDSCAPE-PRACTICE-01",
+      "grade": "FR-CM2",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-CM2-INDUSTRIAL",
+      "skill": "SK-ENR-HISTORY-CM2-INDUSTRIAL-LANDSCAPE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « L'âge industriel en France », réalise une tâche courte montrant que tu sais interpréter un paysage industriel. Donne un exemple précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Interpréter un paysage industriel ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-HISTORY-INDUSTRIAL-LANDSCAPE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-HISTORY-V1-INDUSTRIAL-LANDSCAPE-PRACTICE-01",
+        "title": "Interpréter un paysage industriel",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « L'âge industriel en France », réalise une tâche courte montrant que tu sais interpréter un paysage industriel. Donne un exemple précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Interpréter un paysage industriel ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-CM2-INDUSTRIAL",
+          "primary_skill_code": "SK-ENR-HISTORY-CM2-INDUSTRIAL-LANDSCAPE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-history-v1",
+          "template_version": "lcai-cm2-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-HISTORY-INDUSTRIAL-LANDSCAPE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-HISTORY-V1-INDUSTRIAL-LANDSCAPE-PRACTICE-02",
+      "grade": "FR-CM2",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-CM2-INDUSTRIAL",
+      "skill": "SK-ENR-HISTORY-CM2-INDUSTRIAL-LANDSCAPE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique avec tes mots puis applique à un exemple : « Interpréter un paysage industriel ».",
+      "expected_answer": "Réponse ouverte : explication correcte et exemple pertinent.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Interpréter un paysage industriel ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-HISTORY-INDUSTRIAL-LANDSCAPE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-HISTORY-V1-INDUSTRIAL-LANDSCAPE-PRACTICE-02",
+        "title": "Interpréter un paysage industriel",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique avec tes mots puis applique à un exemple : « Interpréter un paysage industriel ».",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et exemple pertinent.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Interpréter un paysage industriel ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-CM2-INDUSTRIAL",
+          "primary_skill_code": "SK-ENR-HISTORY-CM2-INDUSTRIAL-LANDSCAPE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-history-v1",
+          "template_version": "lcai-cm2-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-HISTORY-INDUSTRIAL-LANDSCAPE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-HISTORY-V1-INDUSTRIAL-LANDSCAPE-ASSESSMENT-03",
+      "grade": "FR-CM2",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-CM2-INDUSTRIAL",
+      "skill": "SK-ENR-HISTORY-CM2-INDUSTRIAL-LANDSCAPE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation CM2 : montre de façon autonome que tu sais interpréter un paysage industriel. Justifie avec un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Interpréter un paysage industriel ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-HISTORY-INDUSTRIAL-LANDSCAPE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-HISTORY-V1-INDUSTRIAL-LANDSCAPE-ASSESSMENT-03",
+        "title": "Interpréter un paysage industriel",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation CM2 : montre de façon autonome que tu sais interpréter un paysage industriel. Justifie avec un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Interpréter un paysage industriel ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-CM2-INDUSTRIAL",
+          "primary_skill_code": "SK-ENR-HISTORY-CM2-INDUSTRIAL-LANDSCAPE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-history-v1",
+          "template_version": "lcai-cm2-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-HISTORY-INDUSTRIAL-LANDSCAPE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-HISTORY-V1-WARS-WWI-PRACTICE-01",
+      "grade": "FR-CM2",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-CM2-WARS",
+      "skill": "SK-ENR-HISTORY-CM2-WARS-WWI",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « La France des guerres mondiales à l'Union européenne », réalise une tâche courte montrant que tu sais situer et caractériser la première guerre mondiale. Donne un exemple précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Situer et caractériser la Première Guerre mondiale ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-HISTORY-WARS-WWI",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-HISTORY-V1-WARS-WWI-PRACTICE-01",
+        "title": "Situer et caractériser la Première Guerre mondiale",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « La France des guerres mondiales à l'Union européenne », réalise une tâche courte montrant que tu sais situer et caractériser la première guerre mondiale. Donne un exemple précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Situer et caractériser la Première Guerre mondiale ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-CM2-WARS",
+          "primary_skill_code": "SK-ENR-HISTORY-CM2-WARS-WWI",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-history-v1",
+          "template_version": "lcai-cm2-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-HISTORY-WARS-WWI",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-HISTORY-V1-WARS-WWI-PRACTICE-02",
+      "grade": "FR-CM2",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-CM2-WARS",
+      "skill": "SK-ENR-HISTORY-CM2-WARS-WWI",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique avec tes mots puis applique à un exemple : « Situer et caractériser la Première Guerre mondiale ».",
+      "expected_answer": "Réponse ouverte : explication correcte et exemple pertinent.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Situer et caractériser la Première Guerre mondiale ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-HISTORY-WARS-WWI",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-HISTORY-V1-WARS-WWI-PRACTICE-02",
+        "title": "Situer et caractériser la Première Guerre mondiale",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique avec tes mots puis applique à un exemple : « Situer et caractériser la Première Guerre mondiale ».",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et exemple pertinent.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Situer et caractériser la Première Guerre mondiale ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-CM2-WARS",
+          "primary_skill_code": "SK-ENR-HISTORY-CM2-WARS-WWI",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-history-v1",
+          "template_version": "lcai-cm2-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-HISTORY-WARS-WWI",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-HISTORY-V1-WARS-WWI-ASSESSMENT-03",
+      "grade": "FR-CM2",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-CM2-WARS",
+      "skill": "SK-ENR-HISTORY-CM2-WARS-WWI",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation CM2 : montre de façon autonome que tu sais situer et caractériser la première guerre mondiale. Justifie avec un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Situer et caractériser la Première Guerre mondiale ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-HISTORY-WARS-WWI",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-HISTORY-V1-WARS-WWI-ASSESSMENT-03",
+        "title": "Situer et caractériser la Première Guerre mondiale",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation CM2 : montre de façon autonome que tu sais situer et caractériser la première guerre mondiale. Justifie avec un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Situer et caractériser la Première Guerre mondiale ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-CM2-WARS",
+          "primary_skill_code": "SK-ENR-HISTORY-CM2-WARS-WWI",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-history-v1",
+          "template_version": "lcai-cm2-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-HISTORY-WARS-WWI",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-HISTORY-V1-WARS-WWII-PRACTICE-01",
+      "grade": "FR-CM2",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-CM2-WARS",
+      "skill": "SK-ENR-HISTORY-CM2-WARS-WWII",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « La France des guerres mondiales à l'Union européenne », réalise une tâche courte montrant que tu sais situer et caractériser la seconde guerre mondiale. Donne un exemple précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Situer et caractériser la Seconde Guerre mondiale ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-HISTORY-WARS-WWII",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-HISTORY-V1-WARS-WWII-PRACTICE-01",
+        "title": "Situer et caractériser la Seconde Guerre mondiale",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « La France des guerres mondiales à l'Union européenne », réalise une tâche courte montrant que tu sais situer et caractériser la seconde guerre mondiale. Donne un exemple précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Situer et caractériser la Seconde Guerre mondiale ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-CM2-WARS",
+          "primary_skill_code": "SK-ENR-HISTORY-CM2-WARS-WWII",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-history-v1",
+          "template_version": "lcai-cm2-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-HISTORY-WARS-WWII",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-HISTORY-V1-WARS-WWII-PRACTICE-02",
+      "grade": "FR-CM2",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-CM2-WARS",
+      "skill": "SK-ENR-HISTORY-CM2-WARS-WWII",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique avec tes mots puis applique à un exemple : « Situer et caractériser la Seconde Guerre mondiale ».",
+      "expected_answer": "Réponse ouverte : explication correcte et exemple pertinent.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Situer et caractériser la Seconde Guerre mondiale ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-HISTORY-WARS-WWII",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-HISTORY-V1-WARS-WWII-PRACTICE-02",
+        "title": "Situer et caractériser la Seconde Guerre mondiale",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique avec tes mots puis applique à un exemple : « Situer et caractériser la Seconde Guerre mondiale ».",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et exemple pertinent.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Situer et caractériser la Seconde Guerre mondiale ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-CM2-WARS",
+          "primary_skill_code": "SK-ENR-HISTORY-CM2-WARS-WWII",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-history-v1",
+          "template_version": "lcai-cm2-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-HISTORY-WARS-WWII",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-HISTORY-V1-WARS-WWII-ASSESSMENT-03",
+      "grade": "FR-CM2",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-CM2-WARS",
+      "skill": "SK-ENR-HISTORY-CM2-WARS-WWII",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation CM2 : montre de façon autonome que tu sais situer et caractériser la seconde guerre mondiale. Justifie avec un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Situer et caractériser la Seconde Guerre mondiale ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-HISTORY-WARS-WWII",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-HISTORY-V1-WARS-WWII-ASSESSMENT-03",
+        "title": "Situer et caractériser la Seconde Guerre mondiale",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation CM2 : montre de façon autonome que tu sais situer et caractériser la seconde guerre mondiale. Justifie avec un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Situer et caractériser la Seconde Guerre mondiale ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-CM2-WARS",
+          "primary_skill_code": "SK-ENR-HISTORY-CM2-WARS-WWII",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-history-v1",
+          "template_version": "lcai-cm2-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-HISTORY-WARS-WWII",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-HISTORY-V1-WARS-CIVILIANS-PRACTICE-01",
+      "grade": "FR-CM2",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-CM2-WARS",
+      "skill": "SK-ENR-HISTORY-CM2-WARS-CIVILIANS",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « La France des guerres mondiales à l'Union européenne », réalise une tâche courte montrant que tu sais expliquer l'expérience des civils. Donne un exemple précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Expliquer l'expérience des civils ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-HISTORY-WARS-CIVILIANS",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-HISTORY-V1-WARS-CIVILIANS-PRACTICE-01",
+        "title": "Expliquer l'expérience des civils",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « La France des guerres mondiales à l'Union européenne », réalise une tâche courte montrant que tu sais expliquer l'expérience des civils. Donne un exemple précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Expliquer l'expérience des civils ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-CM2-WARS",
+          "primary_skill_code": "SK-ENR-HISTORY-CM2-WARS-CIVILIANS",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-history-v1",
+          "template_version": "lcai-cm2-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-HISTORY-WARS-CIVILIANS",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-HISTORY-V1-WARS-CIVILIANS-PRACTICE-02",
+      "grade": "FR-CM2",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-CM2-WARS",
+      "skill": "SK-ENR-HISTORY-CM2-WARS-CIVILIANS",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique avec tes mots puis applique à un exemple : « Expliquer l'expérience des civils ».",
+      "expected_answer": "Réponse ouverte : explication correcte et exemple pertinent.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Expliquer l'expérience des civils ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-HISTORY-WARS-CIVILIANS",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-HISTORY-V1-WARS-CIVILIANS-PRACTICE-02",
+        "title": "Expliquer l'expérience des civils",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique avec tes mots puis applique à un exemple : « Expliquer l'expérience des civils ».",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et exemple pertinent.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Expliquer l'expérience des civils ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-CM2-WARS",
+          "primary_skill_code": "SK-ENR-HISTORY-CM2-WARS-CIVILIANS",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-history-v1",
+          "template_version": "lcai-cm2-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-HISTORY-WARS-CIVILIANS",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-HISTORY-V1-WARS-CIVILIANS-ASSESSMENT-03",
+      "grade": "FR-CM2",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-CM2-WARS",
+      "skill": "SK-ENR-HISTORY-CM2-WARS-CIVILIANS",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation CM2 : montre de façon autonome que tu sais expliquer l'expérience des civils. Justifie avec un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Expliquer l'expérience des civils ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-HISTORY-WARS-CIVILIANS",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-HISTORY-V1-WARS-CIVILIANS-ASSESSMENT-03",
+        "title": "Expliquer l'expérience des civils",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation CM2 : montre de façon autonome que tu sais expliquer l'expérience des civils. Justifie avec un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Expliquer l'expérience des civils ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-CM2-WARS",
+          "primary_skill_code": "SK-ENR-HISTORY-CM2-WARS-CIVILIANS",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-history-v1",
+          "template_version": "lcai-cm2-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-HISTORY-WARS-CIVILIANS",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-HISTORY-V1-WARS-EUROPE-PRACTICE-01",
+      "grade": "FR-CM2",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-CM2-WARS",
+      "skill": "SK-ENR-HISTORY-CM2-WARS-EUROPE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « La France des guerres mondiales à l'Union européenne », réalise une tâche courte montrant que tu sais relier l'après-guerre à la construction européenne. Donne un exemple précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Relier l'après-guerre à la construction européenne ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-HISTORY-WARS-EUROPE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-HISTORY-V1-WARS-EUROPE-PRACTICE-01",
+        "title": "Relier l'après-guerre à la construction européenne",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « La France des guerres mondiales à l'Union européenne », réalise une tâche courte montrant que tu sais relier l'après-guerre à la construction européenne. Donne un exemple précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Relier l'après-guerre à la construction européenne ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-CM2-WARS",
+          "primary_skill_code": "SK-ENR-HISTORY-CM2-WARS-EUROPE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-history-v1",
+          "template_version": "lcai-cm2-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-HISTORY-WARS-EUROPE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-HISTORY-V1-WARS-EUROPE-PRACTICE-02",
+      "grade": "FR-CM2",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-CM2-WARS",
+      "skill": "SK-ENR-HISTORY-CM2-WARS-EUROPE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique avec tes mots puis applique à un exemple : « Relier l'après-guerre à la construction européenne ».",
+      "expected_answer": "Réponse ouverte : explication correcte et exemple pertinent.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Relier l'après-guerre à la construction européenne ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-HISTORY-WARS-EUROPE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-HISTORY-V1-WARS-EUROPE-PRACTICE-02",
+        "title": "Relier l'après-guerre à la construction européenne",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique avec tes mots puis applique à un exemple : « Relier l'après-guerre à la construction européenne ».",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et exemple pertinent.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Relier l'après-guerre à la construction européenne ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-CM2-WARS",
+          "primary_skill_code": "SK-ENR-HISTORY-CM2-WARS-EUROPE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-history-v1",
+          "template_version": "lcai-cm2-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-HISTORY-WARS-EUROPE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-HISTORY-V1-WARS-EUROPE-ASSESSMENT-03",
+      "grade": "FR-CM2",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-CM2-WARS",
+      "skill": "SK-ENR-HISTORY-CM2-WARS-EUROPE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation CM2 : montre de façon autonome que tu sais relier l'après-guerre à la construction européenne. Justifie avec un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Relier l'après-guerre à la construction européenne ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-HISTORY-WARS-EUROPE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-HISTORY-V1-WARS-EUROPE-ASSESSMENT-03",
+        "title": "Relier l'après-guerre à la construction européenne",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation CM2 : montre de façon autonome que tu sais relier l'après-guerre à la construction européenne. Justifie avec un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Relier l'après-guerre à la construction européenne ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-CM2-WARS",
+          "primary_skill_code": "SK-ENR-HISTORY-CM2-WARS-EUROPE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-history-v1",
+          "template_version": "lcai-cm2-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-HISTORY-WARS-EUROPE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_history_candidates_v1.json"
+      }
+    }
+  ]
+}

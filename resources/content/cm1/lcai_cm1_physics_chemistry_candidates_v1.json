@@ -1,0 +1,2014 @@
+{
+  "batch": "CM1-PHYSICS_CHEMISTRY-V1",
+  "purpose": "Parallel CM1 content preparation for Learning Coach AI",
+  "lifecycle_target": "Draft",
+  "automatic_approval": false,
+  "curriculum_version": "phase2-lcai-0011c",
+  "program_code": "FR-CYCLE3-CM1-2026",
+  "grade_code": "FR-CM1",
+  "subject_code": "PHYSICS_CHEMISTRY",
+  "skill_count": 8,
+  "candidate_count": 24,
+  "content_types": {
+    "practice": 16,
+    "assessment": 8
+  },
+  "difficulty_distribution": {
+    "1": 8,
+    "2": 16
+  },
+  "accepted_candidates": [
+    {
+      "code": "CM1-PHYSICS_CHEMISTRY-V1-MATTER-STATE-PRACTICE-01",
+      "grade": "FR-CM1",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-CM1-MATTER",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-CM1-MATTER-STATE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Lequel conserve sa forme propre lorsqu'on le pose sur une table ?",
+      "expected_answer": "un solide",
+      "answer_kind": "single_choice",
+      "explanation": "Un solide possède une forme propre dans les conditions usuelles.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-PHYSICS_CHEMISTRY-MATTER-STATE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-PHYSICS_CHEMISTRY-V1-MATTER-STATE-PRACTICE-01",
+        "title": "Identifier solide, liquide et gaz par leurs propriétés",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Lequel conserve sa forme propre lorsqu'on le pose sur une table ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "un solide",
+          "options": [
+            "un liquide",
+            "un gaz",
+            "la vapeur uniquement",
+            "un solide"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Un solide possède une forme propre dans les conditions usuelles.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-CM1-MATTER",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-CM1-MATTER-STATE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-physics_chemistry-generation-spec-v1",
+          "template_version": "lcai-cm1-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-PHYSICS_CHEMISTRY-MATTER-STATE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-PHYSICS_CHEMISTRY-V1-MATTER-STATE-PRACTICE-02",
+      "grade": "FR-CM1",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-CM1-MATTER",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-CM1-MATTER-STATE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Un liquide versé dans différents récipients :",
+      "expected_answer": "prend la forme du récipient",
+      "answer_kind": "single_choice",
+      "explanation": "Un liquide n'a pas de forme propre et épouse celle du récipient.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-PHYSICS_CHEMISTRY-MATTER-STATE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-PHYSICS_CHEMISTRY-V1-MATTER-STATE-PRACTICE-02",
+        "title": "Identifier solide, liquide et gaz par leurs propriétés",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Un liquide versé dans différents récipients :",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "prend la forme du récipient",
+          "options": [
+            "disparaît",
+            "devient automatiquement un gaz",
+            "prend la forme du récipient",
+            "garde toujours la forme d'un cube"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Un liquide n'a pas de forme propre et épouse celle du récipient.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-CM1-MATTER",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-CM1-MATTER-STATE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-physics_chemistry-generation-spec-v1",
+          "template_version": "lcai-cm1-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-PHYSICS_CHEMISTRY-MATTER-STATE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-PHYSICS_CHEMISTRY-V1-MATTER-STATE-ASSESSMENT-03",
+      "grade": "FR-CM1",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-CM1-MATTER",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-CM1-MATTER-STATE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Un gaz occupe :",
+      "expected_answer": "l'espace disponible dans le récipient",
+      "answer_kind": "single_choice",
+      "explanation": "Un gaz se répartit dans l'espace disponible.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-PHYSICS_CHEMISTRY-MATTER-STATE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-PHYSICS_CHEMISTRY-V1-MATTER-STATE-ASSESSMENT-03",
+        "title": "Identifier solide, liquide et gaz par leurs propriétés",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Un gaz occupe :",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "l'espace disponible dans le récipient",
+          "options": [
+            "uniquement le fond sans se répartir",
+            "l'espace disponible dans le récipient",
+            "une forme propre fixe",
+            "aucun volume"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Un gaz se répartit dans l'espace disponible.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-CM1-MATTER",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-CM1-MATTER-STATE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-physics_chemistry-generation-spec-v1",
+          "template_version": "lcai-cm1-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-PHYSICS_CHEMISTRY-MATTER-STATE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-PHYSICS_CHEMISTRY-V1-MATTER-CHANGE-PRACTICE-01",
+      "grade": "FR-CM1",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-CM1-MATTER",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-CM1-MATTER-CHANGE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Quand un glaçon devient de l'eau liquide, c'est :",
+      "expected_answer": "une fusion",
+      "answer_kind": "single_choice",
+      "explanation": "La fusion est le passage de l'état solide à l'état liquide.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-PHYSICS_CHEMISTRY-MATTER-CHANGE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-PHYSICS_CHEMISTRY-V1-MATTER-CHANGE-PRACTICE-01",
+        "title": "Décrire un changement d'état",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Quand un glaçon devient de l'eau liquide, c'est :",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "une fusion",
+          "options": [
+            "une solidification",
+            "une condensation",
+            "une combustion",
+            "une fusion"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "La fusion est le passage de l'état solide à l'état liquide.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-CM1-MATTER",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-CM1-MATTER-CHANGE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-physics_chemistry-generation-spec-v1",
+          "template_version": "lcai-cm1-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-PHYSICS_CHEMISTRY-MATTER-CHANGE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-PHYSICS_CHEMISTRY-V1-MATTER-CHANGE-PRACTICE-02",
+      "grade": "FR-CM1",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-CM1-MATTER",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-CM1-MATTER-CHANGE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Quand de l'eau liquide devient de la glace, c'est :",
+      "expected_answer": "une solidification",
+      "answer_kind": "single_choice",
+      "explanation": "La solidification est le passage du liquide au solide.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-PHYSICS_CHEMISTRY-MATTER-CHANGE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-PHYSICS_CHEMISTRY-V1-MATTER-CHANGE-PRACTICE-02",
+        "title": "Décrire un changement d'état",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Quand de l'eau liquide devient de la glace, c'est :",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "une solidification",
+          "options": [
+            "une évaporation",
+            "une dissolution",
+            "une solidification",
+            "une fusion"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "La solidification est le passage du liquide au solide.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-CM1-MATTER",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-CM1-MATTER-CHANGE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-physics_chemistry-generation-spec-v1",
+          "template_version": "lcai-cm1-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-PHYSICS_CHEMISTRY-MATTER-CHANGE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-PHYSICS_CHEMISTRY-V1-MATTER-CHANGE-ASSESSMENT-03",
+      "grade": "FR-CM1",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-CM1-MATTER",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-CM1-MATTER-CHANGE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Quand de l'eau liquide se transforme en vapeur d'eau, il s'agit :",
+      "expected_answer": "d'une vaporisation",
+      "answer_kind": "single_choice",
+      "explanation": "La vaporisation est le passage de l'état liquide à l'état gazeux.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-PHYSICS_CHEMISTRY-MATTER-CHANGE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-PHYSICS_CHEMISTRY-V1-MATTER-CHANGE-ASSESSMENT-03",
+        "title": "Décrire un changement d'état",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Quand de l'eau liquide se transforme en vapeur d'eau, il s'agit :",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "d'une vaporisation",
+          "options": [
+            "d'une filtration",
+            "d'une vaporisation",
+            "d'une solidification",
+            "d'une fusion"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "La vaporisation est le passage de l'état liquide à l'état gazeux.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-CM1-MATTER",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-CM1-MATTER-CHANGE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-physics_chemistry-generation-spec-v1",
+          "template_version": "lcai-cm1-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-PHYSICS_CHEMISTRY-MATTER-CHANGE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-PHYSICS_CHEMISTRY-V1-MATTER-MASS_VOLUME-PRACTICE-01",
+      "grade": "FR-CM1",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-CM1-MATTER",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-CM1-MATTER-MASS_VOLUME",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Quelle grandeur mesure-t-on avec une balance ?",
+      "expected_answer": "la masse",
+      "answer_kind": "single_choice",
+      "explanation": "Une balance mesure une masse.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-PHYSICS_CHEMISTRY-MATTER-MASS_VOLUME",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-PHYSICS_CHEMISTRY-V1-MATTER-MASS_VOLUME-PRACTICE-01",
+        "title": "Distinguer masse et volume",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Quelle grandeur mesure-t-on avec une balance ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "la masse",
+          "options": [
+            "le volume",
+            "la température",
+            "la vitesse",
+            "la masse"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Une balance mesure une masse.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-CM1-MATTER",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-CM1-MATTER-MASS_VOLUME",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-physics_chemistry-generation-spec-v1",
+          "template_version": "lcai-cm1-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-PHYSICS_CHEMISTRY-MATTER-MASS_VOLUME",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-PHYSICS_CHEMISTRY-V1-MATTER-MASS_VOLUME-PRACTICE-02",
+      "grade": "FR-CM1",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-CM1-MATTER",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-CM1-MATTER-MASS_VOLUME",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Le litre est une unité utilisée pour mesurer :",
+      "expected_answer": "un volume ou une contenance",
+      "answer_kind": "single_choice",
+      "explanation": "Le litre sert à exprimer un volume ou une contenance.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-PHYSICS_CHEMISTRY-MATTER-MASS_VOLUME",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-PHYSICS_CHEMISTRY-V1-MATTER-MASS_VOLUME-PRACTICE-02",
+        "title": "Distinguer masse et volume",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Le litre est une unité utilisée pour mesurer :",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "un volume ou une contenance",
+          "options": [
+            "une durée",
+            "une température",
+            "un volume ou une contenance",
+            "une masse"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Le litre sert à exprimer un volume ou une contenance.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-CM1-MATTER",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-CM1-MATTER-MASS_VOLUME",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-physics_chemistry-generation-spec-v1",
+          "template_version": "lcai-cm1-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-PHYSICS_CHEMISTRY-MATTER-MASS_VOLUME",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-PHYSICS_CHEMISTRY-V1-MATTER-MASS_VOLUME-ASSESSMENT-03",
+      "grade": "FR-CM1",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-CM1-MATTER",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-CM1-MATTER-MASS_VOLUME",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Deux objets de même volume ont-ils forcément la même masse ?",
+      "expected_answer": "Non",
+      "answer_kind": "single_choice",
+      "explanation": "Des matériaux différents peuvent avoir des masses différentes pour un même volume.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-PHYSICS_CHEMISTRY-MATTER-MASS_VOLUME",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-PHYSICS_CHEMISTRY-V1-MATTER-MASS_VOLUME-ASSESSMENT-03",
+        "title": "Distinguer masse et volume",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Deux objets de même volume ont-ils forcément la même masse ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "Non",
+          "options": [
+            "La masse n'existe pas",
+            "Non",
+            "Oui, toujours",
+            "Seulement s'ils ont la même couleur"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Des matériaux différents peuvent avoir des masses différentes pour un même volume.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-CM1-MATTER",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-CM1-MATTER-MASS_VOLUME",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-physics_chemistry-generation-spec-v1",
+          "template_version": "lcai-cm1-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-PHYSICS_CHEMISTRY-MATTER-MASS_VOLUME",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-PHYSICS_CHEMISTRY-V1-MATTER-EXPERIMENT-PRACTICE-01",
+      "grade": "FR-CM1",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-CM1-MATTER",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-CM1-MATTER-EXPERIMENT",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "On place un glaçon dans une pièce chaude et il devient liquide. Quelle conclusion est justifiée ?",
+      "expected_answer": "la glace a subi une fusion",
+      "answer_kind": "single_choice",
+      "explanation": "L'observation montre un passage solide → liquide.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-PHYSICS_CHEMISTRY-MATTER-EXPERIMENT",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-PHYSICS_CHEMISTRY-V1-MATTER-EXPERIMENT-PRACTICE-01",
+        "title": "Interpréter une observation sur la matière",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "On place un glaçon dans une pièce chaude et il devient liquide. Quelle conclusion est justifiée ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "la glace a subi une fusion",
+          "options": [
+            "la matière a disparu",
+            "le glaçon est devenu un gaz directement",
+            "la masse est une couleur",
+            "la glace a subi une fusion"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "L'observation montre un passage solide → liquide.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-CM1-MATTER",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-CM1-MATTER-EXPERIMENT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-physics_chemistry-generation-spec-v1",
+          "template_version": "lcai-cm1-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-PHYSICS_CHEMISTRY-MATTER-EXPERIMENT",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-PHYSICS_CHEMISTRY-V1-MATTER-EXPERIMENT-PRACTICE-02",
+      "grade": "FR-CM1",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-CM1-MATTER",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-CM1-MATTER-EXPERIMENT",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "On verse 100 mL d'eau dans un récipient de forme différente. Que peut-on observer ?",
+      "expected_answer": "l'eau change de forme mais reste liquide",
+      "answer_kind": "single_choice",
+      "explanation": "Un liquide prend la forme de son récipient.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-PHYSICS_CHEMISTRY-MATTER-EXPERIMENT",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-PHYSICS_CHEMISTRY-V1-MATTER-EXPERIMENT-PRACTICE-02",
+        "title": "Interpréter une observation sur la matière",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "On verse 100 mL d'eau dans un récipient de forme différente. Que peut-on observer ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "l'eau change de forme mais reste liquide",
+          "options": [
+            "elle garde exactement la forme précédente",
+            "elle disparaît",
+            "l'eau change de forme mais reste liquide",
+            "elle devient solide"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Un liquide prend la forme de son récipient.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-CM1-MATTER",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-CM1-MATTER-EXPERIMENT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-physics_chemistry-generation-spec-v1",
+          "template_version": "lcai-cm1-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-PHYSICS_CHEMISTRY-MATTER-EXPERIMENT",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-PHYSICS_CHEMISTRY-V1-MATTER-EXPERIMENT-ASSESSMENT-03",
+      "grade": "FR-CM1",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-CM1-MATTER",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-CM1-MATTER-EXPERIMENT",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Dans une expérience, pourquoi faut-il noter précisément ce qu'on observe ?",
+      "expected_answer": "pour distinguer les faits de ce qu'on imagine",
+      "answer_kind": "single_choice",
+      "explanation": "Une interprétation fiable doit s'appuyer sur des observations.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-PHYSICS_CHEMISTRY-MATTER-EXPERIMENT",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-PHYSICS_CHEMISTRY-V1-MATTER-EXPERIMENT-ASSESSMENT-03",
+        "title": "Interpréter une observation sur la matière",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Dans une expérience, pourquoi faut-il noter précisément ce qu'on observe ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "pour distinguer les faits de ce qu'on imagine",
+          "options": [
+            "pour éviter toute conclusion",
+            "pour distinguer les faits de ce qu'on imagine",
+            "pour rendre le cahier plus lourd",
+            "pour changer le résultat"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Une interprétation fiable doit s'appuyer sur des observations.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-CM1-MATTER",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-CM1-MATTER-EXPERIMENT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-physics_chemistry-generation-spec-v1",
+          "template_version": "lcai-cm1-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-PHYSICS_CHEMISTRY-MATTER-EXPERIMENT",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-PHYSICS_CHEMISTRY-V1-ENERGY-MOTION-PRACTICE-01",
+      "grade": "FR-CM1",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-CM1-ENERGY",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-CM1-ENERGY-MOTION",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Une voiture qui suit une route parfaitement droite a une trajectoire :",
+      "expected_answer": "rectiligne",
+      "answer_kind": "single_choice",
+      "explanation": "Une trajectoire en ligne droite est rectiligne.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-PHYSICS_CHEMISTRY-ENERGY-MOTION",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-PHYSICS_CHEMISTRY-V1-ENERGY-MOTION-PRACTICE-01",
+        "title": "Décrire la trajectoire et la vitesse d'un mouvement simple",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Une voiture qui suit une route parfaitement droite a une trajectoire :",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "rectiligne",
+          "options": [
+            "circulaire obligatoirement",
+            "immobile",
+            "sans trajectoire",
+            "rectiligne"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Une trajectoire en ligne droite est rectiligne.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-CM1-ENERGY",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-CM1-ENERGY-MOTION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-physics_chemistry-generation-spec-v1",
+          "template_version": "lcai-cm1-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-PHYSICS_CHEMISTRY-ENERGY-MOTION",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-PHYSICS_CHEMISTRY-V1-ENERGY-MOTION-PRACTICE-02",
+      "grade": "FR-CM1",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-CM1-ENERGY",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-CM1-ENERGY-MOTION",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Deux cyclistes parcourent la même distance. Celui qui met le moins de temps est :",
+      "expected_answer": "le plus rapide",
+      "answer_kind": "single_choice",
+      "explanation": "À distance égale, le temps le plus court correspond à une vitesse plus grande.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-PHYSICS_CHEMISTRY-ENERGY-MOTION",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-PHYSICS_CHEMISTRY-V1-ENERGY-MOTION-PRACTICE-02",
+        "title": "Décrire la trajectoire et la vitesse d'un mouvement simple",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Deux cyclistes parcourent la même distance. Celui qui met le moins de temps est :",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "le plus rapide",
+          "options": [
+            "forcément immobile",
+            "sans mouvement",
+            "le plus rapide",
+            "le plus lent"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "À distance égale, le temps le plus court correspond à une vitesse plus grande.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-CM1-ENERGY",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-CM1-ENERGY-MOTION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-physics_chemistry-generation-spec-v1",
+          "template_version": "lcai-cm1-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-PHYSICS_CHEMISTRY-ENERGY-MOTION",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-PHYSICS_CHEMISTRY-V1-ENERGY-MOTION-ASSESSMENT-03",
+      "grade": "FR-CM1",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-CM1-ENERGY",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-CM1-ENERGY-MOTION",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Une cabine de grande roue suit approximativement une trajectoire :",
+      "expected_answer": "circulaire",
+      "answer_kind": "single_choice",
+      "explanation": "La cabine tourne autour du centre de la roue.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-PHYSICS_CHEMISTRY-ENERGY-MOTION",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-PHYSICS_CHEMISTRY-V1-ENERGY-MOTION-ASSESSMENT-03",
+        "title": "Décrire la trajectoire et la vitesse d'un mouvement simple",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Une cabine de grande roue suit approximativement une trajectoire :",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "circulaire",
+          "options": [
+            "triangulaire par morceaux uniquement",
+            "circulaire",
+            "rectiligne",
+            "sans forme"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "La cabine tourne autour du centre de la roue.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-CM1-ENERGY",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-CM1-ENERGY-MOTION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-physics_chemistry-generation-spec-v1",
+          "template_version": "lcai-cm1-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-PHYSICS_CHEMISTRY-ENERGY-MOTION",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-PHYSICS_CHEMISTRY-V1-ENERGY-ENERGY_SOURCE-PRACTICE-01",
+      "grade": "FR-CM1",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-CM1-ENERGY",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-CM1-ENERGY-ENERGY_SOURCE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Le Soleil est une source d'énergie :",
+      "expected_answer": "lumineuse et thermique",
+      "answer_kind": "single_choice",
+      "explanation": "Le rayonnement solaire fournit notamment lumière et chaleur.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-PHYSICS_CHEMISTRY-ENERGY-ENERGY_SOURCE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-PHYSICS_CHEMISTRY-V1-ENERGY-ENERGY_SOURCE-PRACTICE-01",
+        "title": "Identifier une source et une forme d'énergie",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Le Soleil est une source d'énergie :",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "lumineuse et thermique",
+          "options": [
+            "uniquement sonore",
+            "nucléaire domestique dans une pile",
+            "sans aucune énergie",
+            "lumineuse et thermique"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Le rayonnement solaire fournit notamment lumière et chaleur.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-CM1-ENERGY",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-CM1-ENERGY-ENERGY_SOURCE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-physics_chemistry-generation-spec-v1",
+          "template_version": "lcai-cm1-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-PHYSICS_CHEMISTRY-ENERGY-ENERGY_SOURCE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-PHYSICS_CHEMISTRY-V1-ENERGY-ENERGY_SOURCE-PRACTICE-02",
+      "grade": "FR-CM1",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-CM1-ENERGY",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-CM1-ENERGY-ENERGY_SOURCE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Une pile peut fournir à un circuit :",
+      "expected_answer": "de l'énergie électrique",
+      "answer_kind": "single_choice",
+      "explanation": "Une pile est une source d'énergie pour un circuit électrique.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-PHYSICS_CHEMISTRY-ENERGY-ENERGY_SOURCE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-PHYSICS_CHEMISTRY-V1-ENERGY-ENERGY_SOURCE-PRACTICE-02",
+        "title": "Identifier une source et une forme d'énergie",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Une pile peut fournir à un circuit :",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "de l'énergie électrique",
+          "options": [
+            "une masse infinie",
+            "un paysage",
+            "de l'énergie électrique",
+            "de la pluie"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Une pile est une source d'énergie pour un circuit électrique.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-CM1-ENERGY",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-CM1-ENERGY-ENERGY_SOURCE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-physics_chemistry-generation-spec-v1",
+          "template_version": "lcai-cm1-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-PHYSICS_CHEMISTRY-ENERGY-ENERGY_SOURCE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-PHYSICS_CHEMISTRY-V1-ENERGY-ENERGY_SOURCE-ASSESSMENT-03",
+      "grade": "FR-CM1",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-CM1-ENERGY",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-CM1-ENERGY-ENERGY_SOURCE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Dans une éolienne, quelle ressource met les pales en mouvement ?",
+      "expected_answer": "le vent",
+      "answer_kind": "single_choice",
+      "explanation": "L'énergie cinétique du vent entraîne les pales.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-PHYSICS_CHEMISTRY-ENERGY-ENERGY_SOURCE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-PHYSICS_CHEMISTRY-V1-ENERGY-ENERGY_SOURCE-ASSESSMENT-03",
+        "title": "Identifier une source et une forme d'énergie",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Dans une éolienne, quelle ressource met les pales en mouvement ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "le vent",
+          "options": [
+            "l'obscurité",
+            "le vent",
+            "le sable",
+            "le plastique"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "L'énergie cinétique du vent entraîne les pales.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-CM1-ENERGY",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-CM1-ENERGY-ENERGY_SOURCE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-physics_chemistry-generation-spec-v1",
+          "template_version": "lcai-cm1-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-PHYSICS_CHEMISTRY-ENERGY-ENERGY_SOURCE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-PHYSICS_CHEMISTRY-V1-ENERGY-CONVERSION-PRACTICE-01",
+      "grade": "FR-CM1",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-CM1-ENERGY",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-CM1-ENERGY-CONVERSION",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans une lampe électrique allumée, l'énergie électrique est notamment convertie en :",
+      "expected_answer": "énergie lumineuse",
+      "answer_kind": "single_choice",
+      "explanation": "La lampe transforme une partie de l'énergie électrique en lumière.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-PHYSICS_CHEMISTRY-ENERGY-CONVERSION",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-PHYSICS_CHEMISTRY-V1-ENERGY-CONVERSION-PRACTICE-01",
+        "title": "Reconnaître une conversion d'énergie dans un objet",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Dans une lampe électrique allumée, l'énergie électrique est notamment convertie en :",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "énergie lumineuse",
+          "options": [
+            "eau",
+            "masse",
+            "distance",
+            "énergie lumineuse"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "La lampe transforme une partie de l'énergie électrique en lumière.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-CM1-ENERGY",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-CM1-ENERGY-CONVERSION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-physics_chemistry-generation-spec-v1",
+          "template_version": "lcai-cm1-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-PHYSICS_CHEMISTRY-ENERGY-CONVERSION",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-PHYSICS_CHEMISTRY-V1-ENERGY-CONVERSION-PRACTICE-02",
+      "grade": "FR-CM1",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-CM1-ENERGY",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-CM1-ENERGY-CONVERSION",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Dans un ventilateur, l'énergie électrique sert principalement à produire :",
+      "expected_answer": "un mouvement mécanique",
+      "answer_kind": "single_choice",
+      "explanation": "Le moteur convertit l'énergie électrique en mouvement.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-PHYSICS_CHEMISTRY-ENERGY-CONVERSION",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-PHYSICS_CHEMISTRY-V1-ENERGY-CONVERSION-PRACTICE-02",
+        "title": "Reconnaître une conversion d'énergie dans un objet",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Dans un ventilateur, l'énergie électrique sert principalement à produire :",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "un mouvement mécanique",
+          "options": [
+            "une couleur",
+            "un poids",
+            "un mouvement mécanique",
+            "de la glace"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Le moteur convertit l'énergie électrique en mouvement.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-CM1-ENERGY",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-CM1-ENERGY-CONVERSION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-physics_chemistry-generation-spec-v1",
+          "template_version": "lcai-cm1-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-PHYSICS_CHEMISTRY-ENERGY-CONVERSION",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-PHYSICS_CHEMISTRY-V1-ENERGY-CONVERSION-ASSESSMENT-03",
+      "grade": "FR-CM1",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-CM1-ENERGY",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-CM1-ENERGY-CONVERSION",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Un panneau solaire photovoltaïque convertit principalement l'énergie lumineuse en :",
+      "expected_answer": "énergie électrique",
+      "answer_kind": "single_choice",
+      "explanation": "Une cellule photovoltaïque transforme une partie du rayonnement lumineux en électricité.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-PHYSICS_CHEMISTRY-ENERGY-CONVERSION",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-PHYSICS_CHEMISTRY-V1-ENERGY-CONVERSION-ASSESSMENT-03",
+        "title": "Reconnaître une conversion d'énergie dans un objet",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Un panneau solaire photovoltaïque convertit principalement l'énergie lumineuse en :",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "énergie électrique",
+          "options": [
+            "son uniquement",
+            "énergie électrique",
+            "énergie alimentaire",
+            "masse"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Une cellule photovoltaïque transforme une partie du rayonnement lumineux en électricité.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-CM1-ENERGY",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-CM1-ENERGY-CONVERSION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-physics_chemistry-generation-spec-v1",
+          "template_version": "lcai-cm1-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-PHYSICS_CHEMISTRY-ENERGY-CONVERSION",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-PHYSICS_CHEMISTRY-V1-ENERGY-TECHNICAL-PRACTICE-01",
+      "grade": "FR-CM1",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-CM1-ENERGY",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-CM1-ENERGY-TECHNICAL",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans un vélo, quelle pièce permet principalement de freiner ?",
+      "expected_answer": "le système de freins",
+      "answer_kind": "single_choice",
+      "explanation": "Le système de freinage répond à la fonction ralentir/arrêter.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-PHYSICS_CHEMISTRY-ENERGY-TECHNICAL",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-PHYSICS_CHEMISTRY-V1-ENERGY-TECHNICAL-PRACTICE-01",
+        "title": "Relier fonction et solution technique",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Dans un vélo, quelle pièce permet principalement de freiner ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "le système de freins",
+          "options": [
+            "la selle",
+            "la sonnette",
+            "le porte-bidon",
+            "le système de freins"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Le système de freinage répond à la fonction ralentir/arrêter.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-CM1-ENERGY",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-CM1-ENERGY-TECHNICAL",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-physics_chemistry-generation-spec-v1",
+          "template_version": "lcai-cm1-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-PHYSICS_CHEMISTRY-ENERGY-TECHNICAL",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-PHYSICS_CHEMISTRY-V1-ENERGY-TECHNICAL-PRACTICE-02",
+      "grade": "FR-CM1",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-CM1-ENERGY",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-CM1-ENERGY-TECHNICAL",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Dans une lampe de poche, quel composant fournit l'énergie au circuit ?",
+      "expected_answer": "la pile ou la batterie",
+      "answer_kind": "single_choice",
+      "explanation": "La pile ou batterie constitue la source d'énergie.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-PHYSICS_CHEMISTRY-ENERGY-TECHNICAL",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-PHYSICS_CHEMISTRY-V1-ENERGY-TECHNICAL-PRACTICE-02",
+        "title": "Relier fonction et solution technique",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Dans une lampe de poche, quel composant fournit l'énergie au circuit ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "la pile ou la batterie",
+          "options": [
+            "le boîtier seul",
+            "la vitre seule",
+            "la pile ou la batterie",
+            "le bouton seul"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "La pile ou batterie constitue la source d'énergie.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-CM1-ENERGY",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-CM1-ENERGY-TECHNICAL",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-physics_chemistry-generation-spec-v1",
+          "template_version": "lcai-cm1-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-PHYSICS_CHEMISTRY-ENERGY-TECHNICAL",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-PHYSICS_CHEMISTRY-V1-ENERGY-TECHNICAL-ASSESSMENT-03",
+      "grade": "FR-CM1",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-CM1-ENERGY",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-CM1-ENERGY-TECHNICAL",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Pour choisir une solution technique, il faut d'abord connaître :",
+      "expected_answer": "la fonction à assurer",
+      "answer_kind": "single_choice",
+      "explanation": "Une solution technique répond à une fonction ou un besoin.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-PHYSICS_CHEMISTRY-ENERGY-TECHNICAL",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-PHYSICS_CHEMISTRY-V1-ENERGY-TECHNICAL-ASSESSMENT-03",
+        "title": "Relier fonction et solution technique",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Pour choisir une solution technique, il faut d'abord connaître :",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "la fonction à assurer",
+          "options": [
+            "un événement historique",
+            "la fonction à assurer",
+            "la couleur préférée du concepteur",
+            "le jour de la semaine"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Une solution technique répond à une fonction ou un besoin.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-CM1-ENERGY",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-CM1-ENERGY-TECHNICAL",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-physics_chemistry-generation-spec-v1",
+          "template_version": "lcai-cm1-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-PHYSICS_CHEMISTRY-ENERGY-TECHNICAL",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_physics_chemistry_candidates_v1.json"
+      }
+    }
+  ]
+}

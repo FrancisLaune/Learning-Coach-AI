@@ -1,0 +1,21 @@
+{
+  "campaign_id": "LCAI-0012E-PRIMARY",
+  "handoff_candidates": 731,
+  "artifacts": [
+    {
+      "path": "resources/content/quality/lcai_0012e_ai_pedagogical_review_authoritative.jsonl",
+      "sha256": "d292b0b62c1bfa946c0af1baf348f111f7766141cbb2229f356d8c52c0c23c31",
+      "bytes": 2131835
+    },
+    {
+      "path": "resources/content/quality/lcai_0012e_ai_pedagogical_review_calibrated.jsonl",
+      "sha256": "d292b0b62c1bfa946c0af1baf348f111f7766141cbb2229f356d8c52c0c23c31",
+      "bytes": 2131835
+    },
+    {
+      "path": "resources/content/quality/lcai_0012e_ai_pedagogical_review_summary.json",
+      "sha256": "e539ce18f067644d32c932004d0a4bedafec84a85ee348b667abdc5d2584cff2",
+      "bytes": 11804
+    }
+  ]
+}

@@ -1,0 +1,4504 @@
+{
+  "batch": "6E-GEOGRAPHY-V1",
+  "purpose": "Parallel 6e content preparation for Learning Coach AI",
+  "lifecycle_target": "Draft",
+  "automatic_approval": false,
+  "curriculum_version": "phase2-lcai-0011c",
+  "program_code": "FR-CYCLE3-6E-2026",
+  "grade_code": "FR-6E",
+  "subject_code": "GEOGRAPHY",
+  "skill_count": 18,
+  "candidate_count": 54,
+  "content_types": {
+    "practice": 36,
+    "assessment": 18
+  },
+  "difficulty_distribution": {
+    "1": 18,
+    "2": 36
+  },
+  "accepted_candidates": [
+    {
+      "code": "6E-GEOGRAPHY-V1-METROPOLIS-LOCATE-PRACTICE-01",
+      "grade": "FR-6E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-6E-METROPOLIS",
+      "skill": "SK-ENR-GEOGRAPHY-6E-METROPOLIS-LOCATE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Habiter une métropole », réalise une tâche montrant que tu sais localiser les grandes métropoles. Appuie-toi sur un exemple ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Localiser les grandes métropoles ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-GEOGRAPHY-METROPOLIS-LOCATE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-GEOGRAPHY-V1-METROPOLIS-LOCATE-PRACTICE-01",
+        "title": "Localiser les grandes métropoles",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Habiter une métropole », réalise une tâche montrant que tu sais localiser les grandes métropoles. Appuie-toi sur un exemple ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Localiser les grandes métropoles ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-6E-METROPOLIS",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-6E-METROPOLIS-LOCATE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-geography-v1",
+          "template_version": "lcai-6e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-GEOGRAPHY-METROPOLIS-LOCATE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-GEOGRAPHY-V1-METROPOLIS-LOCATE-PRACTICE-02",
+      "grade": "FR-6E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-6E-METROPOLIS",
+      "skill": "SK-ENR-GEOGRAPHY-6E-METROPOLIS-LOCATE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Localiser les grandes métropoles » à une situation pertinente de niveau 6e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Localiser les grandes métropoles ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-GEOGRAPHY-METROPOLIS-LOCATE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-GEOGRAPHY-V1-METROPOLIS-LOCATE-PRACTICE-02",
+        "title": "Localiser les grandes métropoles",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Localiser les grandes métropoles » à une situation pertinente de niveau 6e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Localiser les grandes métropoles ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-6E-METROPOLIS",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-6E-METROPOLIS-LOCATE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-geography-v1",
+          "template_version": "lcai-6e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-GEOGRAPHY-METROPOLIS-LOCATE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-GEOGRAPHY-V1-METROPOLIS-LOCATE-ASSESSMENT-03",
+      "grade": "FR-6E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-6E-METROPOLIS",
+      "skill": "SK-ENR-GEOGRAPHY-6E-METROPOLIS-LOCATE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 6e : démontre de façon autonome que tu sais localiser les grandes métropoles. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Localiser les grandes métropoles ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-GEOGRAPHY-METROPOLIS-LOCATE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-GEOGRAPHY-V1-METROPOLIS-LOCATE-ASSESSMENT-03",
+        "title": "Localiser les grandes métropoles",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 6e : démontre de façon autonome que tu sais localiser les grandes métropoles. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Localiser les grandes métropoles ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-6E-METROPOLIS",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-6E-METROPOLIS-LOCATE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-geography-v1",
+          "template_version": "lcai-6e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-GEOGRAPHY-METROPOLIS-LOCATE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-GEOGRAPHY-V1-METROPOLIS-CENTER-PRACTICE-01",
+      "grade": "FR-6E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-6E-METROPOLIS",
+      "skill": "SK-ENR-GEOGRAPHY-6E-METROPOLIS-CENTER",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Habiter une métropole », réalise une tâche montrant que tu sais identifier centres et périphéries. Appuie-toi sur un exemple ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Identifier centres et périphéries ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-GEOGRAPHY-METROPOLIS-CENTER",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-GEOGRAPHY-V1-METROPOLIS-CENTER-PRACTICE-01",
+        "title": "Identifier centres et périphéries",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Habiter une métropole », réalise une tâche montrant que tu sais identifier centres et périphéries. Appuie-toi sur un exemple ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Identifier centres et périphéries ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-6E-METROPOLIS",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-6E-METROPOLIS-CENTER",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-geography-v1",
+          "template_version": "lcai-6e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-GEOGRAPHY-METROPOLIS-CENTER",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-GEOGRAPHY-V1-METROPOLIS-CENTER-PRACTICE-02",
+      "grade": "FR-6E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-6E-METROPOLIS",
+      "skill": "SK-ENR-GEOGRAPHY-6E-METROPOLIS-CENTER",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Identifier centres et périphéries » à une situation pertinente de niveau 6e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Identifier centres et périphéries ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-GEOGRAPHY-METROPOLIS-CENTER",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-GEOGRAPHY-V1-METROPOLIS-CENTER-PRACTICE-02",
+        "title": "Identifier centres et périphéries",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Identifier centres et périphéries » à une situation pertinente de niveau 6e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Identifier centres et périphéries ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-6E-METROPOLIS",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-6E-METROPOLIS-CENTER",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-geography-v1",
+          "template_version": "lcai-6e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-GEOGRAPHY-METROPOLIS-CENTER",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-GEOGRAPHY-V1-METROPOLIS-CENTER-ASSESSMENT-03",
+      "grade": "FR-6E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-6E-METROPOLIS",
+      "skill": "SK-ENR-GEOGRAPHY-6E-METROPOLIS-CENTER",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 6e : démontre de façon autonome que tu sais identifier centres et périphéries. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Identifier centres et périphéries ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-GEOGRAPHY-METROPOLIS-CENTER",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-GEOGRAPHY-V1-METROPOLIS-CENTER-ASSESSMENT-03",
+        "title": "Identifier centres et périphéries",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 6e : démontre de façon autonome que tu sais identifier centres et périphéries. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Identifier centres et périphéries ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-6E-METROPOLIS",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-6E-METROPOLIS-CENTER",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-geography-v1",
+          "template_version": "lcai-6e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-GEOGRAPHY-METROPOLIS-CENTER",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-GEOGRAPHY-V1-METROPOLIS-PRACTICE-PRACTICE-01",
+      "grade": "FR-6E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-6E-METROPOLIS",
+      "skill": "SK-ENR-GEOGRAPHY-6E-METROPOLIS-PRACTICE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Habiter une métropole », réalise une tâche montrant que tu sais comparer des pratiques habitantes. Appuie-toi sur un exemple ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Comparer des pratiques habitantes ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-GEOGRAPHY-METROPOLIS-PRACTICE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-GEOGRAPHY-V1-METROPOLIS-PRACTICE-PRACTICE-01",
+        "title": "Comparer des pratiques habitantes",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Habiter une métropole », réalise une tâche montrant que tu sais comparer des pratiques habitantes. Appuie-toi sur un exemple ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Comparer des pratiques habitantes ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-6E-METROPOLIS",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-6E-METROPOLIS-PRACTICE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-geography-v1",
+          "template_version": "lcai-6e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-GEOGRAPHY-METROPOLIS-PRACTICE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-GEOGRAPHY-V1-METROPOLIS-PRACTICE-PRACTICE-02",
+      "grade": "FR-6E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-6E-METROPOLIS",
+      "skill": "SK-ENR-GEOGRAPHY-6E-METROPOLIS-PRACTICE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Comparer des pratiques habitantes » à une situation pertinente de niveau 6e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Comparer des pratiques habitantes ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-GEOGRAPHY-METROPOLIS-PRACTICE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-GEOGRAPHY-V1-METROPOLIS-PRACTICE-PRACTICE-02",
+        "title": "Comparer des pratiques habitantes",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Comparer des pratiques habitantes » à une situation pertinente de niveau 6e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Comparer des pratiques habitantes ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-6E-METROPOLIS",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-6E-METROPOLIS-PRACTICE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-geography-v1",
+          "template_version": "lcai-6e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-GEOGRAPHY-METROPOLIS-PRACTICE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-GEOGRAPHY-V1-METROPOLIS-PRACTICE-ASSESSMENT-03",
+      "grade": "FR-6E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-6E-METROPOLIS",
+      "skill": "SK-ENR-GEOGRAPHY-6E-METROPOLIS-PRACTICE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 6e : démontre de façon autonome que tu sais comparer des pratiques habitantes. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Comparer des pratiques habitantes ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-GEOGRAPHY-METROPOLIS-PRACTICE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-GEOGRAPHY-V1-METROPOLIS-PRACTICE-ASSESSMENT-03",
+        "title": "Comparer des pratiques habitantes",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 6e : démontre de façon autonome que tu sais comparer des pratiques habitantes. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Comparer des pratiques habitantes ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-6E-METROPOLIS",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-6E-METROPOLIS-PRACTICE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-geography-v1",
+          "template_version": "lcai-6e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-GEOGRAPHY-METROPOLIS-PRACTICE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-GEOGRAPHY-V1-METROPOLIS-INEQUALITY-PRACTICE-01",
+      "grade": "FR-6E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-6E-METROPOLIS",
+      "skill": "SK-ENR-GEOGRAPHY-6E-METROPOLIS-INEQUALITY",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Habiter une métropole », réalise une tâche montrant que tu sais expliquer des inégalités urbaines. Appuie-toi sur un exemple ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Expliquer des inégalités urbaines ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-GEOGRAPHY-METROPOLIS-INEQUALITY",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-GEOGRAPHY-V1-METROPOLIS-INEQUALITY-PRACTICE-01",
+        "title": "Expliquer des inégalités urbaines",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Habiter une métropole », réalise une tâche montrant que tu sais expliquer des inégalités urbaines. Appuie-toi sur un exemple ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Expliquer des inégalités urbaines ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-6E-METROPOLIS",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-6E-METROPOLIS-INEQUALITY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-geography-v1",
+          "template_version": "lcai-6e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-GEOGRAPHY-METROPOLIS-INEQUALITY",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-GEOGRAPHY-V1-METROPOLIS-INEQUALITY-PRACTICE-02",
+      "grade": "FR-6E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-6E-METROPOLIS",
+      "skill": "SK-ENR-GEOGRAPHY-6E-METROPOLIS-INEQUALITY",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Expliquer des inégalités urbaines » à une situation pertinente de niveau 6e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Expliquer des inégalités urbaines ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-GEOGRAPHY-METROPOLIS-INEQUALITY",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-GEOGRAPHY-V1-METROPOLIS-INEQUALITY-PRACTICE-02",
+        "title": "Expliquer des inégalités urbaines",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Expliquer des inégalités urbaines » à une situation pertinente de niveau 6e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Expliquer des inégalités urbaines ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-6E-METROPOLIS",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-6E-METROPOLIS-INEQUALITY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-geography-v1",
+          "template_version": "lcai-6e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-GEOGRAPHY-METROPOLIS-INEQUALITY",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-GEOGRAPHY-V1-METROPOLIS-INEQUALITY-ASSESSMENT-03",
+      "grade": "FR-6E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-6E-METROPOLIS",
+      "skill": "SK-ENR-GEOGRAPHY-6E-METROPOLIS-INEQUALITY",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 6e : démontre de façon autonome que tu sais expliquer des inégalités urbaines. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Expliquer des inégalités urbaines ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-GEOGRAPHY-METROPOLIS-INEQUALITY",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-GEOGRAPHY-V1-METROPOLIS-INEQUALITY-ASSESSMENT-03",
+        "title": "Expliquer des inégalités urbaines",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 6e : démontre de façon autonome que tu sais expliquer des inégalités urbaines. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Expliquer des inégalités urbaines ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-6E-METROPOLIS",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-6E-METROPOLIS-INEQUALITY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-geography-v1",
+          "template_version": "lcai-6e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-GEOGRAPHY-METROPOLIS-INEQUALITY",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-GEOGRAPHY-V1-METROPOLIS-MAP-PRACTICE-01",
+      "grade": "FR-6E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-6E-METROPOLIS",
+      "skill": "SK-ENR-GEOGRAPHY-6E-METROPOLIS-MAP",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Habiter une métropole », réalise une tâche montrant que tu sais construire un croquis simple. Appuie-toi sur un exemple ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Construire un croquis simple ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-GEOGRAPHY-METROPOLIS-MAP",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-GEOGRAPHY-V1-METROPOLIS-MAP-PRACTICE-01",
+        "title": "Construire un croquis simple",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Habiter une métropole », réalise une tâche montrant que tu sais construire un croquis simple. Appuie-toi sur un exemple ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Construire un croquis simple ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-6E-METROPOLIS",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-6E-METROPOLIS-MAP",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-geography-v1",
+          "template_version": "lcai-6e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-GEOGRAPHY-METROPOLIS-MAP",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-GEOGRAPHY-V1-METROPOLIS-MAP-PRACTICE-02",
+      "grade": "FR-6E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-6E-METROPOLIS",
+      "skill": "SK-ENR-GEOGRAPHY-6E-METROPOLIS-MAP",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Construire un croquis simple » à une situation pertinente de niveau 6e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Construire un croquis simple ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-GEOGRAPHY-METROPOLIS-MAP",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-GEOGRAPHY-V1-METROPOLIS-MAP-PRACTICE-02",
+        "title": "Construire un croquis simple",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Construire un croquis simple » à une situation pertinente de niveau 6e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Construire un croquis simple ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-6E-METROPOLIS",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-6E-METROPOLIS-MAP",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-geography-v1",
+          "template_version": "lcai-6e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-GEOGRAPHY-METROPOLIS-MAP",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-GEOGRAPHY-V1-METROPOLIS-MAP-ASSESSMENT-03",
+      "grade": "FR-6E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-6E-METROPOLIS",
+      "skill": "SK-ENR-GEOGRAPHY-6E-METROPOLIS-MAP",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 6e : démontre de façon autonome que tu sais construire un croquis simple. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Construire un croquis simple ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-GEOGRAPHY-METROPOLIS-MAP",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-GEOGRAPHY-V1-METROPOLIS-MAP-ASSESSMENT-03",
+        "title": "Construire un croquis simple",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 6e : démontre de façon autonome que tu sais construire un croquis simple. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Construire un croquis simple ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-6E-METROPOLIS",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-6E-METROPOLIS-MAP",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-geography-v1",
+          "template_version": "lcai-6e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-GEOGRAPHY-METROPOLIS-MAP",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-GEOGRAPHY-V1-LOW-DENSITY-LOCATE-PRACTICE-01",
+      "grade": "FR-6E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-6E-LOW-DENSITY",
+      "skill": "SK-ENR-GEOGRAPHY-6E-LOW-DENSITY-LOCATE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Habiter un espace de faible densité », réalise une tâche montrant que tu sais localiser des espaces de faible densité. Appuie-toi sur un exemple ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Localiser des espaces de faible densité ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-GEOGRAPHY-LOW-DENSITY-LOCATE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-GEOGRAPHY-V1-LOW-DENSITY-LOCATE-PRACTICE-01",
+        "title": "Localiser des espaces de faible densité",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Habiter un espace de faible densité », réalise une tâche montrant que tu sais localiser des espaces de faible densité. Appuie-toi sur un exemple ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Localiser des espaces de faible densité ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-6E-LOW-DENSITY",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-6E-LOW-DENSITY-LOCATE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-geography-v1",
+          "template_version": "lcai-6e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-GEOGRAPHY-LOW-DENSITY-LOCATE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-GEOGRAPHY-V1-LOW-DENSITY-LOCATE-PRACTICE-02",
+      "grade": "FR-6E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-6E-LOW-DENSITY",
+      "skill": "SK-ENR-GEOGRAPHY-6E-LOW-DENSITY-LOCATE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Localiser des espaces de faible densité » à une situation pertinente de niveau 6e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Localiser des espaces de faible densité ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-GEOGRAPHY-LOW-DENSITY-LOCATE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-GEOGRAPHY-V1-LOW-DENSITY-LOCATE-PRACTICE-02",
+        "title": "Localiser des espaces de faible densité",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Localiser des espaces de faible densité » à une situation pertinente de niveau 6e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Localiser des espaces de faible densité ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-6E-LOW-DENSITY",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-6E-LOW-DENSITY-LOCATE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-geography-v1",
+          "template_version": "lcai-6e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-GEOGRAPHY-LOW-DENSITY-LOCATE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-GEOGRAPHY-V1-LOW-DENSITY-LOCATE-ASSESSMENT-03",
+      "grade": "FR-6E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-6E-LOW-DENSITY",
+      "skill": "SK-ENR-GEOGRAPHY-6E-LOW-DENSITY-LOCATE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 6e : démontre de façon autonome que tu sais localiser des espaces de faible densité. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Localiser des espaces de faible densité ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-GEOGRAPHY-LOW-DENSITY-LOCATE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-GEOGRAPHY-V1-LOW-DENSITY-LOCATE-ASSESSMENT-03",
+        "title": "Localiser des espaces de faible densité",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 6e : démontre de façon autonome que tu sais localiser des espaces de faible densité. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Localiser des espaces de faible densité ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-6E-LOW-DENSITY",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-6E-LOW-DENSITY-LOCATE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-geography-v1",
+          "template_version": "lcai-6e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-GEOGRAPHY-LOW-DENSITY-LOCATE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-GEOGRAPHY-V1-LOW-DENSITY-CONSTRAINT-PRACTICE-01",
+      "grade": "FR-6E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-6E-LOW-DENSITY",
+      "skill": "SK-ENR-GEOGRAPHY-6E-LOW-DENSITY-CONSTRAINT",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Habiter un espace de faible densité », réalise une tâche montrant que tu sais identifier contraintes et ressources. Appuie-toi sur un exemple ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Identifier contraintes et ressources ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-GEOGRAPHY-LOW-DENSITY-CONSTRAINT",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-GEOGRAPHY-V1-LOW-DENSITY-CONSTRAINT-PRACTICE-01",
+        "title": "Identifier contraintes et ressources",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Habiter un espace de faible densité », réalise une tâche montrant que tu sais identifier contraintes et ressources. Appuie-toi sur un exemple ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Identifier contraintes et ressources ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-6E-LOW-DENSITY",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-6E-LOW-DENSITY-CONSTRAINT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-geography-v1",
+          "template_version": "lcai-6e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-GEOGRAPHY-LOW-DENSITY-CONSTRAINT",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-GEOGRAPHY-V1-LOW-DENSITY-CONSTRAINT-PRACTICE-02",
+      "grade": "FR-6E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-6E-LOW-DENSITY",
+      "skill": "SK-ENR-GEOGRAPHY-6E-LOW-DENSITY-CONSTRAINT",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Identifier contraintes et ressources » à une situation pertinente de niveau 6e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Identifier contraintes et ressources ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-GEOGRAPHY-LOW-DENSITY-CONSTRAINT",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-GEOGRAPHY-V1-LOW-DENSITY-CONSTRAINT-PRACTICE-02",
+        "title": "Identifier contraintes et ressources",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Identifier contraintes et ressources » à une situation pertinente de niveau 6e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Identifier contraintes et ressources ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-6E-LOW-DENSITY",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-6E-LOW-DENSITY-CONSTRAINT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-geography-v1",
+          "template_version": "lcai-6e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-GEOGRAPHY-LOW-DENSITY-CONSTRAINT",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-GEOGRAPHY-V1-LOW-DENSITY-CONSTRAINT-ASSESSMENT-03",
+      "grade": "FR-6E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-6E-LOW-DENSITY",
+      "skill": "SK-ENR-GEOGRAPHY-6E-LOW-DENSITY-CONSTRAINT",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 6e : démontre de façon autonome que tu sais identifier contraintes et ressources. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Identifier contraintes et ressources ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-GEOGRAPHY-LOW-DENSITY-CONSTRAINT",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-GEOGRAPHY-V1-LOW-DENSITY-CONSTRAINT-ASSESSMENT-03",
+        "title": "Identifier contraintes et ressources",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 6e : démontre de façon autonome que tu sais identifier contraintes et ressources. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Identifier contraintes et ressources ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-6E-LOW-DENSITY",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-6E-LOW-DENSITY-CONSTRAINT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-geography-v1",
+          "template_version": "lcai-6e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-GEOGRAPHY-LOW-DENSITY-CONSTRAINT",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-GEOGRAPHY-V1-LOW-DENSITY-PRACTICE-PRACTICE-01",
+      "grade": "FR-6E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-6E-LOW-DENSITY",
+      "skill": "SK-ENR-GEOGRAPHY-6E-LOW-DENSITY-PRACTICE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Habiter un espace de faible densité », réalise une tâche montrant que tu sais décrire des manières d'habiter. Appuie-toi sur un exemple ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Décrire des manières d'habiter ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-GEOGRAPHY-LOW-DENSITY-PRACTICE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-GEOGRAPHY-V1-LOW-DENSITY-PRACTICE-PRACTICE-01",
+        "title": "Décrire des manières d'habiter",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Habiter un espace de faible densité », réalise une tâche montrant que tu sais décrire des manières d'habiter. Appuie-toi sur un exemple ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Décrire des manières d'habiter ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-6E-LOW-DENSITY",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-6E-LOW-DENSITY-PRACTICE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-geography-v1",
+          "template_version": "lcai-6e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-GEOGRAPHY-LOW-DENSITY-PRACTICE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-GEOGRAPHY-V1-LOW-DENSITY-PRACTICE-PRACTICE-02",
+      "grade": "FR-6E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-6E-LOW-DENSITY",
+      "skill": "SK-ENR-GEOGRAPHY-6E-LOW-DENSITY-PRACTICE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Décrire des manières d'habiter » à une situation pertinente de niveau 6e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Décrire des manières d'habiter ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-GEOGRAPHY-LOW-DENSITY-PRACTICE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-GEOGRAPHY-V1-LOW-DENSITY-PRACTICE-PRACTICE-02",
+        "title": "Décrire des manières d'habiter",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Décrire des manières d'habiter » à une situation pertinente de niveau 6e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Décrire des manières d'habiter ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-6E-LOW-DENSITY",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-6E-LOW-DENSITY-PRACTICE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-geography-v1",
+          "template_version": "lcai-6e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-GEOGRAPHY-LOW-DENSITY-PRACTICE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-GEOGRAPHY-V1-LOW-DENSITY-PRACTICE-ASSESSMENT-03",
+      "grade": "FR-6E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-6E-LOW-DENSITY",
+      "skill": "SK-ENR-GEOGRAPHY-6E-LOW-DENSITY-PRACTICE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 6e : démontre de façon autonome que tu sais décrire des manières d'habiter. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Décrire des manières d'habiter ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-GEOGRAPHY-LOW-DENSITY-PRACTICE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-GEOGRAPHY-V1-LOW-DENSITY-PRACTICE-ASSESSMENT-03",
+        "title": "Décrire des manières d'habiter",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 6e : démontre de façon autonome que tu sais décrire des manières d'habiter. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Décrire des manières d'habiter ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-6E-LOW-DENSITY",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-6E-LOW-DENSITY-PRACTICE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-geography-v1",
+          "template_version": "lcai-6e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-GEOGRAPHY-LOW-DENSITY-PRACTICE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-GEOGRAPHY-V1-LOW-DENSITY-DYNAMIC-PRACTICE-01",
+      "grade": "FR-6E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-6E-LOW-DENSITY",
+      "skill": "SK-ENR-GEOGRAPHY-6E-LOW-DENSITY-DYNAMIC",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Habiter un espace de faible densité », réalise une tâche montrant que tu sais expliquer une dynamique territoriale. Appuie-toi sur un exemple ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Expliquer une dynamique territoriale ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-GEOGRAPHY-LOW-DENSITY-DYNAMIC",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-GEOGRAPHY-V1-LOW-DENSITY-DYNAMIC-PRACTICE-01",
+        "title": "Expliquer une dynamique territoriale",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Habiter un espace de faible densité », réalise une tâche montrant que tu sais expliquer une dynamique territoriale. Appuie-toi sur un exemple ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Expliquer une dynamique territoriale ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-6E-LOW-DENSITY",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-6E-LOW-DENSITY-DYNAMIC",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-geography-v1",
+          "template_version": "lcai-6e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-GEOGRAPHY-LOW-DENSITY-DYNAMIC",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-GEOGRAPHY-V1-LOW-DENSITY-DYNAMIC-PRACTICE-02",
+      "grade": "FR-6E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-6E-LOW-DENSITY",
+      "skill": "SK-ENR-GEOGRAPHY-6E-LOW-DENSITY-DYNAMIC",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Expliquer une dynamique territoriale » à une situation pertinente de niveau 6e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Expliquer une dynamique territoriale ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-GEOGRAPHY-LOW-DENSITY-DYNAMIC",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-GEOGRAPHY-V1-LOW-DENSITY-DYNAMIC-PRACTICE-02",
+        "title": "Expliquer une dynamique territoriale",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Expliquer une dynamique territoriale » à une situation pertinente de niveau 6e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Expliquer une dynamique territoriale ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-6E-LOW-DENSITY",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-6E-LOW-DENSITY-DYNAMIC",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-geography-v1",
+          "template_version": "lcai-6e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-GEOGRAPHY-LOW-DENSITY-DYNAMIC",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-GEOGRAPHY-V1-LOW-DENSITY-DYNAMIC-ASSESSMENT-03",
+      "grade": "FR-6E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-6E-LOW-DENSITY",
+      "skill": "SK-ENR-GEOGRAPHY-6E-LOW-DENSITY-DYNAMIC",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 6e : démontre de façon autonome que tu sais expliquer une dynamique territoriale. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Expliquer une dynamique territoriale ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-GEOGRAPHY-LOW-DENSITY-DYNAMIC",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-GEOGRAPHY-V1-LOW-DENSITY-DYNAMIC-ASSESSMENT-03",
+        "title": "Expliquer une dynamique territoriale",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 6e : démontre de façon autonome que tu sais expliquer une dynamique territoriale. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Expliquer une dynamique territoriale ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-6E-LOW-DENSITY",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-6E-LOW-DENSITY-DYNAMIC",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-geography-v1",
+          "template_version": "lcai-6e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-GEOGRAPHY-LOW-DENSITY-DYNAMIC",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-GEOGRAPHY-V1-COASTS-LOCATE-PRACTICE-01",
+      "grade": "FR-6E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-6E-COASTS",
+      "skill": "SK-ENR-GEOGRAPHY-6E-COASTS-LOCATE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Habiter les littoraux », réalise une tâche montrant que tu sais localiser les grands littoraux. Appuie-toi sur un exemple ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Localiser les grands littoraux ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-GEOGRAPHY-COASTS-LOCATE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-GEOGRAPHY-V1-COASTS-LOCATE-PRACTICE-01",
+        "title": "Localiser les grands littoraux",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Habiter les littoraux », réalise une tâche montrant que tu sais localiser les grands littoraux. Appuie-toi sur un exemple ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Localiser les grands littoraux ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-6E-COASTS",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-6E-COASTS-LOCATE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-geography-v1",
+          "template_version": "lcai-6e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-GEOGRAPHY-COASTS-LOCATE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-GEOGRAPHY-V1-COASTS-LOCATE-PRACTICE-02",
+      "grade": "FR-6E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-6E-COASTS",
+      "skill": "SK-ENR-GEOGRAPHY-6E-COASTS-LOCATE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Localiser les grands littoraux » à une situation pertinente de niveau 6e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Localiser les grands littoraux ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-GEOGRAPHY-COASTS-LOCATE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-GEOGRAPHY-V1-COASTS-LOCATE-PRACTICE-02",
+        "title": "Localiser les grands littoraux",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Localiser les grands littoraux » à une situation pertinente de niveau 6e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Localiser les grands littoraux ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-6E-COASTS",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-6E-COASTS-LOCATE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-geography-v1",
+          "template_version": "lcai-6e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-GEOGRAPHY-COASTS-LOCATE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-GEOGRAPHY-V1-COASTS-LOCATE-ASSESSMENT-03",
+      "grade": "FR-6E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-6E-COASTS",
+      "skill": "SK-ENR-GEOGRAPHY-6E-COASTS-LOCATE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 6e : démontre de façon autonome que tu sais localiser les grands littoraux. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Localiser les grands littoraux ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-GEOGRAPHY-COASTS-LOCATE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-GEOGRAPHY-V1-COASTS-LOCATE-ASSESSMENT-03",
+        "title": "Localiser les grands littoraux",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 6e : démontre de façon autonome que tu sais localiser les grands littoraux. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Localiser les grands littoraux ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-6E-COASTS",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-6E-COASTS-LOCATE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-geography-v1",
+          "template_version": "lcai-6e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-GEOGRAPHY-COASTS-LOCATE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-GEOGRAPHY-V1-COASTS-USE-PRACTICE-01",
+      "grade": "FR-6E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-6E-COASTS",
+      "skill": "SK-ENR-GEOGRAPHY-6E-COASTS-USE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Habiter les littoraux », réalise une tâche montrant que tu sais identifier des usages littoraux. Appuie-toi sur un exemple ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Identifier des usages littoraux ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-GEOGRAPHY-COASTS-USE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-GEOGRAPHY-V1-COASTS-USE-PRACTICE-01",
+        "title": "Identifier des usages littoraux",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Habiter les littoraux », réalise une tâche montrant que tu sais identifier des usages littoraux. Appuie-toi sur un exemple ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Identifier des usages littoraux ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-6E-COASTS",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-6E-COASTS-USE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-geography-v1",
+          "template_version": "lcai-6e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-GEOGRAPHY-COASTS-USE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-GEOGRAPHY-V1-COASTS-USE-PRACTICE-02",
+      "grade": "FR-6E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-6E-COASTS",
+      "skill": "SK-ENR-GEOGRAPHY-6E-COASTS-USE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Identifier des usages littoraux » à une situation pertinente de niveau 6e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Identifier des usages littoraux ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-GEOGRAPHY-COASTS-USE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-GEOGRAPHY-V1-COASTS-USE-PRACTICE-02",
+        "title": "Identifier des usages littoraux",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Identifier des usages littoraux » à une situation pertinente de niveau 6e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Identifier des usages littoraux ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-6E-COASTS",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-6E-COASTS-USE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-geography-v1",
+          "template_version": "lcai-6e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-GEOGRAPHY-COASTS-USE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-GEOGRAPHY-V1-COASTS-USE-ASSESSMENT-03",
+      "grade": "FR-6E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-6E-COASTS",
+      "skill": "SK-ENR-GEOGRAPHY-6E-COASTS-USE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 6e : démontre de façon autonome que tu sais identifier des usages littoraux. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Identifier des usages littoraux ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-GEOGRAPHY-COASTS-USE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-GEOGRAPHY-V1-COASTS-USE-ASSESSMENT-03",
+        "title": "Identifier des usages littoraux",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 6e : démontre de façon autonome que tu sais identifier des usages littoraux. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Identifier des usages littoraux ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-6E-COASTS",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-6E-COASTS-USE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-geography-v1",
+          "template_version": "lcai-6e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-GEOGRAPHY-COASTS-USE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-GEOGRAPHY-V1-COASTS-DEVELOP-PRACTICE-01",
+      "grade": "FR-6E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-6E-COASTS",
+      "skill": "SK-ENR-GEOGRAPHY-6E-COASTS-DEVELOP",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Habiter les littoraux », réalise une tâche montrant que tu sais analyser un aménagement. Appuie-toi sur un exemple ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Analyser un aménagement ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-GEOGRAPHY-COASTS-DEVELOP",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-GEOGRAPHY-V1-COASTS-DEVELOP-PRACTICE-01",
+        "title": "Analyser un aménagement",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Habiter les littoraux », réalise une tâche montrant que tu sais analyser un aménagement. Appuie-toi sur un exemple ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Analyser un aménagement ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-6E-COASTS",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-6E-COASTS-DEVELOP",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-geography-v1",
+          "template_version": "lcai-6e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-GEOGRAPHY-COASTS-DEVELOP",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-GEOGRAPHY-V1-COASTS-DEVELOP-PRACTICE-02",
+      "grade": "FR-6E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-6E-COASTS",
+      "skill": "SK-ENR-GEOGRAPHY-6E-COASTS-DEVELOP",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Analyser un aménagement » à une situation pertinente de niveau 6e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Analyser un aménagement ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-GEOGRAPHY-COASTS-DEVELOP",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-GEOGRAPHY-V1-COASTS-DEVELOP-PRACTICE-02",
+        "title": "Analyser un aménagement",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Analyser un aménagement » à une situation pertinente de niveau 6e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Analyser un aménagement ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-6E-COASTS",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-6E-COASTS-DEVELOP",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-geography-v1",
+          "template_version": "lcai-6e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-GEOGRAPHY-COASTS-DEVELOP",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-GEOGRAPHY-V1-COASTS-DEVELOP-ASSESSMENT-03",
+      "grade": "FR-6E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-6E-COASTS",
+      "skill": "SK-ENR-GEOGRAPHY-6E-COASTS-DEVELOP",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 6e : démontre de façon autonome que tu sais analyser un aménagement. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Analyser un aménagement ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-GEOGRAPHY-COASTS-DEVELOP",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-GEOGRAPHY-V1-COASTS-DEVELOP-ASSESSMENT-03",
+        "title": "Analyser un aménagement",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 6e : démontre de façon autonome que tu sais analyser un aménagement. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Analyser un aménagement ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-6E-COASTS",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-6E-COASTS-DEVELOP",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-geography-v1",
+          "template_version": "lcai-6e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-GEOGRAPHY-COASTS-DEVELOP",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-GEOGRAPHY-V1-COASTS-CONFLICT-PRACTICE-01",
+      "grade": "FR-6E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-6E-COASTS",
+      "skill": "SK-ENR-GEOGRAPHY-6E-COASTS-CONFLICT",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Habiter les littoraux », réalise une tâche montrant que tu sais expliquer un conflit d'usage. Appuie-toi sur un exemple ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Expliquer un conflit d'usage ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-GEOGRAPHY-COASTS-CONFLICT",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-GEOGRAPHY-V1-COASTS-CONFLICT-PRACTICE-01",
+        "title": "Expliquer un conflit d'usage",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Habiter les littoraux », réalise une tâche montrant que tu sais expliquer un conflit d'usage. Appuie-toi sur un exemple ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Expliquer un conflit d'usage ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-6E-COASTS",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-6E-COASTS-CONFLICT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-geography-v1",
+          "template_version": "lcai-6e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-GEOGRAPHY-COASTS-CONFLICT",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-GEOGRAPHY-V1-COASTS-CONFLICT-PRACTICE-02",
+      "grade": "FR-6E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-6E-COASTS",
+      "skill": "SK-ENR-GEOGRAPHY-6E-COASTS-CONFLICT",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Expliquer un conflit d'usage » à une situation pertinente de niveau 6e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Expliquer un conflit d'usage ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-GEOGRAPHY-COASTS-CONFLICT",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-GEOGRAPHY-V1-COASTS-CONFLICT-PRACTICE-02",
+        "title": "Expliquer un conflit d'usage",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Expliquer un conflit d'usage » à une situation pertinente de niveau 6e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Expliquer un conflit d'usage ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-6E-COASTS",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-6E-COASTS-CONFLICT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-geography-v1",
+          "template_version": "lcai-6e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-GEOGRAPHY-COASTS-CONFLICT",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-GEOGRAPHY-V1-COASTS-CONFLICT-ASSESSMENT-03",
+      "grade": "FR-6E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-6E-COASTS",
+      "skill": "SK-ENR-GEOGRAPHY-6E-COASTS-CONFLICT",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 6e : démontre de façon autonome que tu sais expliquer un conflit d'usage. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Expliquer un conflit d'usage ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-GEOGRAPHY-COASTS-CONFLICT",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-GEOGRAPHY-V1-COASTS-CONFLICT-ASSESSMENT-03",
+        "title": "Expliquer un conflit d'usage",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 6e : démontre de façon autonome que tu sais expliquer un conflit d'usage. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Expliquer un conflit d'usage ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-6E-COASTS",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-6E-COASTS-CONFLICT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-geography-v1",
+          "template_version": "lcai-6e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-GEOGRAPHY-COASTS-CONFLICT",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-GEOGRAPHY-V1-COASTS-RISK-PRACTICE-01",
+      "grade": "FR-6E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-6E-COASTS",
+      "skill": "SK-ENR-GEOGRAPHY-6E-COASTS-RISK",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Habiter les littoraux », réalise une tâche montrant que tu sais identifier un risque littoral. Appuie-toi sur un exemple ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Identifier un risque littoral ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-GEOGRAPHY-COASTS-RISK",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-GEOGRAPHY-V1-COASTS-RISK-PRACTICE-01",
+        "title": "Identifier un risque littoral",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Habiter les littoraux », réalise une tâche montrant que tu sais identifier un risque littoral. Appuie-toi sur un exemple ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Identifier un risque littoral ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-6E-COASTS",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-6E-COASTS-RISK",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-geography-v1",
+          "template_version": "lcai-6e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-GEOGRAPHY-COASTS-RISK",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-GEOGRAPHY-V1-COASTS-RISK-PRACTICE-02",
+      "grade": "FR-6E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-6E-COASTS",
+      "skill": "SK-ENR-GEOGRAPHY-6E-COASTS-RISK",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Identifier un risque littoral » à une situation pertinente de niveau 6e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Identifier un risque littoral ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-GEOGRAPHY-COASTS-RISK",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-GEOGRAPHY-V1-COASTS-RISK-PRACTICE-02",
+        "title": "Identifier un risque littoral",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Identifier un risque littoral » à une situation pertinente de niveau 6e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Identifier un risque littoral ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-6E-COASTS",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-6E-COASTS-RISK",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-geography-v1",
+          "template_version": "lcai-6e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-GEOGRAPHY-COASTS-RISK",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-GEOGRAPHY-V1-COASTS-RISK-ASSESSMENT-03",
+      "grade": "FR-6E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-6E-COASTS",
+      "skill": "SK-ENR-GEOGRAPHY-6E-COASTS-RISK",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 6e : démontre de façon autonome que tu sais identifier un risque littoral. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Identifier un risque littoral ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-GEOGRAPHY-COASTS-RISK",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-GEOGRAPHY-V1-COASTS-RISK-ASSESSMENT-03",
+        "title": "Identifier un risque littoral",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 6e : démontre de façon autonome que tu sais identifier un risque littoral. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Identifier un risque littoral ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-6E-COASTS",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-6E-COASTS-RISK",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-geography-v1",
+          "template_version": "lcai-6e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-GEOGRAPHY-COASTS-RISK",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-GEOGRAPHY-V1-WORLD-DISTRIBUTION-PRACTICE-01",
+      "grade": "FR-6E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-6E-WORLD",
+      "skill": "SK-ENR-GEOGRAPHY-6E-WORLD-DISTRIBUTION",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Le monde habité », réalise une tâche montrant que tu sais décrire la répartition de la population mondiale. Appuie-toi sur un exemple ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Décrire la répartition de la population mondiale ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-GEOGRAPHY-WORLD-DISTRIBUTION",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-GEOGRAPHY-V1-WORLD-DISTRIBUTION-PRACTICE-01",
+        "title": "Décrire la répartition de la population mondiale",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Le monde habité », réalise une tâche montrant que tu sais décrire la répartition de la population mondiale. Appuie-toi sur un exemple ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Décrire la répartition de la population mondiale ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-6E-WORLD",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-6E-WORLD-DISTRIBUTION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-geography-v1",
+          "template_version": "lcai-6e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-GEOGRAPHY-WORLD-DISTRIBUTION",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-GEOGRAPHY-V1-WORLD-DISTRIBUTION-PRACTICE-02",
+      "grade": "FR-6E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-6E-WORLD",
+      "skill": "SK-ENR-GEOGRAPHY-6E-WORLD-DISTRIBUTION",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Décrire la répartition de la population mondiale » à une situation pertinente de niveau 6e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Décrire la répartition de la population mondiale ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-GEOGRAPHY-WORLD-DISTRIBUTION",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-GEOGRAPHY-V1-WORLD-DISTRIBUTION-PRACTICE-02",
+        "title": "Décrire la répartition de la population mondiale",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Décrire la répartition de la population mondiale » à une situation pertinente de niveau 6e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Décrire la répartition de la population mondiale ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-6E-WORLD",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-6E-WORLD-DISTRIBUTION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-geography-v1",
+          "template_version": "lcai-6e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-GEOGRAPHY-WORLD-DISTRIBUTION",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-GEOGRAPHY-V1-WORLD-DISTRIBUTION-ASSESSMENT-03",
+      "grade": "FR-6E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-6E-WORLD",
+      "skill": "SK-ENR-GEOGRAPHY-6E-WORLD-DISTRIBUTION",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 6e : démontre de façon autonome que tu sais décrire la répartition de la population mondiale. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Décrire la répartition de la population mondiale ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-GEOGRAPHY-WORLD-DISTRIBUTION",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-GEOGRAPHY-V1-WORLD-DISTRIBUTION-ASSESSMENT-03",
+        "title": "Décrire la répartition de la population mondiale",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 6e : démontre de façon autonome que tu sais décrire la répartition de la population mondiale. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Décrire la répartition de la population mondiale ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-6E-WORLD",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-6E-WORLD-DISTRIBUTION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-geography-v1",
+          "template_version": "lcai-6e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-GEOGRAPHY-WORLD-DISTRIBUTION",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-GEOGRAPHY-V1-WORLD-DENSITY-PRACTICE-01",
+      "grade": "FR-6E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-6E-WORLD",
+      "skill": "SK-ENR-GEOGRAPHY-6E-WORLD-DENSITY",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Le monde habité », réalise une tâche montrant que tu sais calculer et interpréter une densité. Appuie-toi sur un exemple ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Calculer et interpréter une densité ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-GEOGRAPHY-WORLD-DENSITY",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-GEOGRAPHY-V1-WORLD-DENSITY-PRACTICE-01",
+        "title": "Calculer et interpréter une densité",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Le monde habité », réalise une tâche montrant que tu sais calculer et interpréter une densité. Appuie-toi sur un exemple ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Calculer et interpréter une densité ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-6E-WORLD",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-6E-WORLD-DENSITY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-geography-v1",
+          "template_version": "lcai-6e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-GEOGRAPHY-WORLD-DENSITY",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-GEOGRAPHY-V1-WORLD-DENSITY-PRACTICE-02",
+      "grade": "FR-6E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-6E-WORLD",
+      "skill": "SK-ENR-GEOGRAPHY-6E-WORLD-DENSITY",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Calculer et interpréter une densité » à une situation pertinente de niveau 6e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Calculer et interpréter une densité ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-GEOGRAPHY-WORLD-DENSITY",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-GEOGRAPHY-V1-WORLD-DENSITY-PRACTICE-02",
+        "title": "Calculer et interpréter une densité",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Calculer et interpréter une densité » à une situation pertinente de niveau 6e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Calculer et interpréter une densité ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-6E-WORLD",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-6E-WORLD-DENSITY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-geography-v1",
+          "template_version": "lcai-6e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-GEOGRAPHY-WORLD-DENSITY",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-GEOGRAPHY-V1-WORLD-DENSITY-ASSESSMENT-03",
+      "grade": "FR-6E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-6E-WORLD",
+      "skill": "SK-ENR-GEOGRAPHY-6E-WORLD-DENSITY",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 6e : démontre de façon autonome que tu sais calculer et interpréter une densité. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Calculer et interpréter une densité ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-GEOGRAPHY-WORLD-DENSITY",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-GEOGRAPHY-V1-WORLD-DENSITY-ASSESSMENT-03",
+        "title": "Calculer et interpréter une densité",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 6e : démontre de façon autonome que tu sais calculer et interpréter une densité. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Calculer et interpréter une densité ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-6E-WORLD",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-6E-WORLD-DENSITY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-geography-v1",
+          "template_version": "lcai-6e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-GEOGRAPHY-WORLD-DENSITY",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-GEOGRAPHY-V1-WORLD-FOYER-PRACTICE-01",
+      "grade": "FR-6E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-6E-WORLD",
+      "skill": "SK-ENR-GEOGRAPHY-6E-WORLD-FOYER",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Le monde habité », réalise une tâche montrant que tu sais localiser foyers et déserts de peuplement. Appuie-toi sur un exemple ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Localiser foyers et déserts de peuplement ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-GEOGRAPHY-WORLD-FOYER",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-GEOGRAPHY-V1-WORLD-FOYER-PRACTICE-01",
+        "title": "Localiser foyers et déserts de peuplement",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Le monde habité », réalise une tâche montrant que tu sais localiser foyers et déserts de peuplement. Appuie-toi sur un exemple ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Localiser foyers et déserts de peuplement ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-6E-WORLD",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-6E-WORLD-FOYER",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-geography-v1",
+          "template_version": "lcai-6e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-GEOGRAPHY-WORLD-FOYER",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-GEOGRAPHY-V1-WORLD-FOYER-PRACTICE-02",
+      "grade": "FR-6E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-6E-WORLD",
+      "skill": "SK-ENR-GEOGRAPHY-6E-WORLD-FOYER",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Localiser foyers et déserts de peuplement » à une situation pertinente de niveau 6e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Localiser foyers et déserts de peuplement ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-GEOGRAPHY-WORLD-FOYER",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-GEOGRAPHY-V1-WORLD-FOYER-PRACTICE-02",
+        "title": "Localiser foyers et déserts de peuplement",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Localiser foyers et déserts de peuplement » à une situation pertinente de niveau 6e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Localiser foyers et déserts de peuplement ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-6E-WORLD",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-6E-WORLD-FOYER",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-geography-v1",
+          "template_version": "lcai-6e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-GEOGRAPHY-WORLD-FOYER",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-GEOGRAPHY-V1-WORLD-FOYER-ASSESSMENT-03",
+      "grade": "FR-6E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-6E-WORLD",
+      "skill": "SK-ENR-GEOGRAPHY-6E-WORLD-FOYER",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 6e : démontre de façon autonome que tu sais localiser foyers et déserts de peuplement. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Localiser foyers et déserts de peuplement ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-GEOGRAPHY-WORLD-FOYER",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-GEOGRAPHY-V1-WORLD-FOYER-ASSESSMENT-03",
+        "title": "Localiser foyers et déserts de peuplement",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 6e : démontre de façon autonome que tu sais localiser foyers et déserts de peuplement. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Localiser foyers et déserts de peuplement ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-6E-WORLD",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-6E-WORLD-FOYER",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-geography-v1",
+          "template_version": "lcai-6e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-GEOGRAPHY-WORLD-FOYER",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-GEOGRAPHY-V1-WORLD-EXPLAIN-PRACTICE-01",
+      "grade": "FR-6E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-6E-WORLD",
+      "skill": "SK-ENR-GEOGRAPHY-6E-WORLD-EXPLAIN",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Le monde habité », réalise une tâche montrant que tu sais expliquer une inégale répartition. Appuie-toi sur un exemple ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Expliquer une inégale répartition ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-GEOGRAPHY-WORLD-EXPLAIN",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-GEOGRAPHY-V1-WORLD-EXPLAIN-PRACTICE-01",
+        "title": "Expliquer une inégale répartition",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Le monde habité », réalise une tâche montrant que tu sais expliquer une inégale répartition. Appuie-toi sur un exemple ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Expliquer une inégale répartition ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-6E-WORLD",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-6E-WORLD-EXPLAIN",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-geography-v1",
+          "template_version": "lcai-6e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-GEOGRAPHY-WORLD-EXPLAIN",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-GEOGRAPHY-V1-WORLD-EXPLAIN-PRACTICE-02",
+      "grade": "FR-6E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-6E-WORLD",
+      "skill": "SK-ENR-GEOGRAPHY-6E-WORLD-EXPLAIN",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Expliquer une inégale répartition » à une situation pertinente de niveau 6e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Expliquer une inégale répartition ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-GEOGRAPHY-WORLD-EXPLAIN",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-GEOGRAPHY-V1-WORLD-EXPLAIN-PRACTICE-02",
+        "title": "Expliquer une inégale répartition",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Expliquer une inégale répartition » à une situation pertinente de niveau 6e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Expliquer une inégale répartition ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-6E-WORLD",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-6E-WORLD-EXPLAIN",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-geography-v1",
+          "template_version": "lcai-6e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-GEOGRAPHY-WORLD-EXPLAIN",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-GEOGRAPHY-V1-WORLD-EXPLAIN-ASSESSMENT-03",
+      "grade": "FR-6E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-6E-WORLD",
+      "skill": "SK-ENR-GEOGRAPHY-6E-WORLD-EXPLAIN",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 6e : démontre de façon autonome que tu sais expliquer une inégale répartition. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Expliquer une inégale répartition ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-GEOGRAPHY-WORLD-EXPLAIN",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-GEOGRAPHY-V1-WORLD-EXPLAIN-ASSESSMENT-03",
+        "title": "Expliquer une inégale répartition",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 6e : démontre de façon autonome que tu sais expliquer une inégale répartition. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Expliquer une inégale répartition ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-6E-WORLD",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-6E-WORLD-EXPLAIN",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-geography-v1",
+          "template_version": "lcai-6e-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-GEOGRAPHY-WORLD-EXPLAIN",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_geography_candidates_v1.json"
+      }
+    }
+  ]
+}

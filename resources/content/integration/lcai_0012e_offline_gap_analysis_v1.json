@@ -1,0 +1,287 @@
+{
+  "load": {
+    "files": 33,
+    "candidates": 1311,
+    "by_file": {
+      "lcai_cm1_emc_candidates_v1.json": 24,
+      "lcai_cm1_english_candidates_v1.json": 24,
+      "lcai_cm1_french_candidates_v1.json": 63,
+      "lcai_cm1_geography_candidates_v1.json": 36,
+      "lcai_cm1_history_candidates_v1.json": 36,
+      "lcai_cm1_mathematics_candidates_v1.json": 51,
+      "lcai_cm1_physics_chemistry_candidates_v1.json": 24,
+      "lcai_cm1_svt_candidates_v1.json": 24,
+      "lcai_cm2_emc_candidates_v1.json": 24,
+      "lcai_cm2_english_candidates_v1.json": 24,
+      "lcai_cm2_french_candidates_v1.json": 63,
+      "lcai_cm2_geography_candidates_v1.json": 36,
+      "lcai_cm2_history_candidates_v1.json": 36,
+      "lcai_cm2_mathematics_candidates_v1.json": 72,
+      "lcai_cm2_physics_chemistry_candidates_v1.json": 24,
+      "lcai_cm2_svt_candidates_v1.json": 24,
+      "lcai_6e_emc_candidates_v1.json": 24,
+      "lcai_6e_english_candidates_v1.json": 39,
+      "lcai_6e_french_candidates_v1.json": 66,
+      "lcai_6e_geography_candidates_v1.json": 54,
+      "lcai_6e_history_candidates_v1.json": 39,
+      "lcai_6e_mathematics_candidates_v1.json": 69,
+      "lcai_6e_physics_chemistry_candidates_v1.json": 30,
+      "lcai_6e_svt_candidates_v1.json": 30,
+      "lcai_5e_emc_candidates_v1.json": 24,
+      "lcai_5e_english_candidates_v1.json": 39,
+      "lcai_5e_french_candidates_v1.json": 72,
+      "lcai_5e_geography_candidates_v1.json": 33,
+      "lcai_5e_history_candidates_v1.json": 33,
+      "lcai_5e_mathematics_candidates_v1.json": 75,
+      "lcai_5e_physics_chemistry_candidates_v1.json": 30,
+      "lcai_5e_spanish_candidates_v1.json": 39,
+      "lcai_5e_svt_candidates_v1.json": 30
+    },
+    "unique_codes": 1311
+  },
+  "resource_audit": {
+    "curriculum_valid": false,
+    "curriculum_mapping_errors": 303,
+    "malformed_records": 0,
+    "duplicate_codes": 0
+  },
+  "preintegration_qc_estimate": {},
+  "by_grade": {
+    "FR-CM1": {
+      "skills": 118,
+      "skills_with_candidates": 94,
+      "skills_missing_entirely": 24,
+      "prepared_candidates": 282,
+      "practice_gaps": 24,
+      "assessment_gaps": 24,
+      "generation_required_slots": 48
+    },
+    "FR-CM2": {
+      "skills": 125,
+      "skills_with_candidates": 80,
+      "skills_missing_entirely": 45,
+      "prepared_candidates": 240,
+      "practice_gaps": 45,
+      "assessment_gaps": 45,
+      "generation_required_slots": 90
+    },
+    "FR-6E": {
+      "skills": 143,
+      "skills_with_candidates": 95,
+      "skills_missing_entirely": 48,
+      "prepared_candidates": 285,
+      "practice_gaps": 48,
+      "assessment_gaps": 48,
+      "generation_required_slots": 96
+    },
+    "FR-5E": {
+      "skills": 161,
+      "skills_with_candidates": 67,
+      "skills_missing_entirely": 94,
+      "prepared_candidates": 201,
+      "practice_gaps": 94,
+      "assessment_gaps": 94,
+      "generation_required_slots": 188
+    }
+  },
+  "by_subject": {
+    "FR-5E|EMC": {
+      "skills": 10,
+      "practice_gaps": 2,
+      "assessment_gaps": 2,
+      "generation_required_slots": 4
+    },
+    "FR-5E|ENGLISH": {
+      "skills": 16,
+      "practice_gaps": 5,
+      "assessment_gaps": 5,
+      "generation_required_slots": 10
+    },
+    "FR-5E|FRENCH": {
+      "skills": 30,
+      "practice_gaps": 30,
+      "assessment_gaps": 30,
+      "generation_required_slots": 60
+    },
+    "FR-5E|GEOGRAPHY": {
+      "skills": 16,
+      "practice_gaps": 8,
+      "assessment_gaps": 8,
+      "generation_required_slots": 16
+    },
+    "FR-5E|HISTORY": {
+      "skills": 16,
+      "practice_gaps": 10,
+      "assessment_gaps": 10,
+      "generation_required_slots": 20
+    },
+    "FR-5E|MATHEMATICS": {
+      "skills": 32,
+      "practice_gaps": 19,
+      "assessment_gaps": 19,
+      "generation_required_slots": 38
+    },
+    "FR-5E|PHYSICS_CHEMISTRY": {
+      "skills": 13,
+      "practice_gaps": 7,
+      "assessment_gaps": 7,
+      "generation_required_slots": 14
+    },
+    "FR-5E|SPANISH": {
+      "skills": 16,
+      "practice_gaps": 5,
+      "assessment_gaps": 5,
+      "generation_required_slots": 10
+    },
+    "FR-5E|SVT": {
+      "skills": 12,
+      "practice_gaps": 8,
+      "assessment_gaps": 8,
+      "generation_required_slots": 16
+    },
+    "FR-6E|EMC": {
+      "skills": 10,
+      "practice_gaps": 2,
+      "assessment_gaps": 2,
+      "generation_required_slots": 4
+    },
+    "FR-6E|ENGLISH": {
+      "skills": 16,
+      "practice_gaps": 3,
+      "assessment_gaps": 3,
+      "generation_required_slots": 6
+    },
+    "FR-6E|FRENCH": {
+      "skills": 27,
+      "practice_gaps": 27,
+      "assessment_gaps": 27,
+      "generation_required_slots": 54
+    },
+    "FR-6E|GEOGRAPHY": {
+      "skills": 22,
+      "practice_gaps": 4,
+      "assessment_gaps": 4,
+      "generation_required_slots": 8
+    },
+    "FR-6E|HISTORY": {
+      "skills": 16,
+      "practice_gaps": 3,
+      "assessment_gaps": 3,
+      "generation_required_slots": 6
+    },
+    "FR-6E|MATHEMATICS": {
+      "skills": 28,
+      "practice_gaps": 5,
+      "assessment_gaps": 5,
+      "generation_required_slots": 10
+    },
+    "FR-6E|PHYSICS_CHEMISTRY": {
+      "skills": 12,
+      "practice_gaps": 2,
+      "assessment_gaps": 2,
+      "generation_required_slots": 4
+    },
+    "FR-6E|SVT": {
+      "skills": 12,
+      "practice_gaps": 2,
+      "assessment_gaps": 2,
+      "generation_required_slots": 4
+    },
+    "FR-CM1|EMC": {
+      "skills": 10,
+      "practice_gaps": 2,
+      "assessment_gaps": 2,
+      "generation_required_slots": 4
+    },
+    "FR-CM1|ENGLISH": {
+      "skills": 10,
+      "practice_gaps": 2,
+      "assessment_gaps": 2,
+      "generation_required_slots": 4
+    },
+    "FR-CM1|FRENCH": {
+      "skills": 26,
+      "practice_gaps": 5,
+      "assessment_gaps": 5,
+      "generation_required_slots": 10
+    },
+    "FR-CM1|GEOGRAPHY": {
+      "skills": 15,
+      "practice_gaps": 3,
+      "assessment_gaps": 3,
+      "generation_required_slots": 6
+    },
+    "FR-CM1|HISTORY": {
+      "skills": 15,
+      "practice_gaps": 3,
+      "assessment_gaps": 3,
+      "generation_required_slots": 6
+    },
+    "FR-CM1|MATHEMATICS": {
+      "skills": 22,
+      "practice_gaps": 5,
+      "assessment_gaps": 5,
+      "generation_required_slots": 10
+    },
+    "FR-CM1|PHYSICS_CHEMISTRY": {
+      "skills": 10,
+      "practice_gaps": 2,
+      "assessment_gaps": 2,
+      "generation_required_slots": 4
+    },
+    "FR-CM1|SVT": {
+      "skills": 10,
+      "practice_gaps": 2,
+      "assessment_gaps": 2,
+      "generation_required_slots": 4
+    },
+    "FR-CM2|EMC": {
+      "skills": 10,
+      "practice_gaps": 2,
+      "assessment_gaps": 2,
+      "generation_required_slots": 4
+    },
+    "FR-CM2|ENGLISH": {
+      "skills": 10,
+      "practice_gaps": 2,
+      "assessment_gaps": 2,
+      "generation_required_slots": 4
+    },
+    "FR-CM2|FRENCH": {
+      "skills": 26,
+      "practice_gaps": 26,
+      "assessment_gaps": 26,
+      "generation_required_slots": 52
+    },
+    "FR-CM2|GEOGRAPHY": {
+      "skills": 15,
+      "practice_gaps": 3,
+      "assessment_gaps": 3,
+      "generation_required_slots": 6
+    },
+    "FR-CM2|HISTORY": {
+      "skills": 15,
+      "practice_gaps": 3,
+      "assessment_gaps": 3,
+      "generation_required_slots": 6
+    },
+    "FR-CM2|MATHEMATICS": {
+      "skills": 29,
+      "practice_gaps": 5,
+      "assessment_gaps": 5,
+      "generation_required_slots": 10
+    },
+    "FR-CM2|PHYSICS_CHEMISTRY": {
+      "skills": 10,
+      "practice_gaps": 2,
+      "assessment_gaps": 2,
+      "generation_required_slots": 4
+    },
+    "FR-CM2|SVT": {
+      "skills": 10,
+      "practice_gaps": 2,
+      "assessment_gaps": 2,
+      "generation_required_slots": 4
+    }
+  }
+}

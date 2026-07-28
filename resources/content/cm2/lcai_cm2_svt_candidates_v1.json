@@ -1,0 +1,2014 @@
+{
+  "batch": "CM2-SVT-V1",
+  "purpose": "Parallel CM2 content preparation for Learning Coach AI",
+  "lifecycle_target": "Draft",
+  "automatic_approval": false,
+  "curriculum_version": "phase2-lcai-0011c",
+  "program_code": "FR-CYCLE3-CM2-2026",
+  "grade_code": "FR-CM2",
+  "subject_code": "SVT",
+  "skill_count": 8,
+  "candidate_count": 24,
+  "content_types": {
+    "practice": 16,
+    "assessment": 8
+  },
+  "difficulty_distribution": {
+    "1": 8,
+    "2": 16
+  },
+  "accepted_candidates": [
+    {
+      "code": "CM2-SVT-V1-LIFE-CYCLES-DEVELOPMENT-PRACTICE-01",
+      "grade": "FR-CM2",
+      "subject": "SVT",
+      "chapter": "CH-SVT-CM2-LIFE-CYCLES",
+      "skill": "SK-ENR-SVT-CM2-LIFE-CYCLES-DEVELOPMENT",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Cycles de vie et classification », réalise une tâche courte montrant que tu sais décrire les étapes d'un cycle de vie. Donne un exemple précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Décrire les étapes d'un cycle de vie ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-SVT-LIFE-CYCLES-DEVELOPMENT",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-SVT-V1-LIFE-CYCLES-DEVELOPMENT-PRACTICE-01",
+        "title": "Décrire les étapes d'un cycle de vie",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Cycles de vie et classification », réalise une tâche courte montrant que tu sais décrire les étapes d'un cycle de vie. Donne un exemple précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Décrire les étapes d'un cycle de vie ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-CM2-LIFE-CYCLES",
+          "primary_skill_code": "SK-ENR-SVT-CM2-LIFE-CYCLES-DEVELOPMENT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-svt-v1",
+          "template_version": "lcai-cm2-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-SVT-LIFE-CYCLES-DEVELOPMENT",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-SVT-V1-LIFE-CYCLES-DEVELOPMENT-PRACTICE-02",
+      "grade": "FR-CM2",
+      "subject": "SVT",
+      "chapter": "CH-SVT-CM2-LIFE-CYCLES",
+      "skill": "SK-ENR-SVT-CM2-LIFE-CYCLES-DEVELOPMENT",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique avec tes mots puis applique à un exemple : « Décrire les étapes d'un cycle de vie ».",
+      "expected_answer": "Réponse ouverte : explication correcte et exemple pertinent.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Décrire les étapes d'un cycle de vie ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-SVT-LIFE-CYCLES-DEVELOPMENT",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-SVT-V1-LIFE-CYCLES-DEVELOPMENT-PRACTICE-02",
+        "title": "Décrire les étapes d'un cycle de vie",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique avec tes mots puis applique à un exemple : « Décrire les étapes d'un cycle de vie ».",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et exemple pertinent.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Décrire les étapes d'un cycle de vie ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-CM2-LIFE-CYCLES",
+          "primary_skill_code": "SK-ENR-SVT-CM2-LIFE-CYCLES-DEVELOPMENT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-svt-v1",
+          "template_version": "lcai-cm2-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-SVT-LIFE-CYCLES-DEVELOPMENT",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-SVT-V1-LIFE-CYCLES-DEVELOPMENT-ASSESSMENT-03",
+      "grade": "FR-CM2",
+      "subject": "SVT",
+      "chapter": "CH-SVT-CM2-LIFE-CYCLES",
+      "skill": "SK-ENR-SVT-CM2-LIFE-CYCLES-DEVELOPMENT",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation CM2 : montre de façon autonome que tu sais décrire les étapes d'un cycle de vie. Justifie avec un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Décrire les étapes d'un cycle de vie ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-SVT-LIFE-CYCLES-DEVELOPMENT",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-SVT-V1-LIFE-CYCLES-DEVELOPMENT-ASSESSMENT-03",
+        "title": "Décrire les étapes d'un cycle de vie",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation CM2 : montre de façon autonome que tu sais décrire les étapes d'un cycle de vie. Justifie avec un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Décrire les étapes d'un cycle de vie ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-CM2-LIFE-CYCLES",
+          "primary_skill_code": "SK-ENR-SVT-CM2-LIFE-CYCLES-DEVELOPMENT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-svt-v1",
+          "template_version": "lcai-cm2-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-SVT-LIFE-CYCLES-DEVELOPMENT",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-SVT-V1-LIFE-CYCLES-REPRODUCTION-PRACTICE-01",
+      "grade": "FR-CM2",
+      "subject": "SVT",
+      "chapter": "CH-SVT-CM2-LIFE-CYCLES",
+      "skill": "SK-ENR-SVT-CM2-LIFE-CYCLES-REPRODUCTION",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Cycles de vie et classification », réalise une tâche courte montrant que tu sais distinguer des modes de reproduction. Donne un exemple précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Distinguer des modes de reproduction ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-SVT-LIFE-CYCLES-REPRODUCTION",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-SVT-V1-LIFE-CYCLES-REPRODUCTION-PRACTICE-01",
+        "title": "Distinguer des modes de reproduction",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Cycles de vie et classification », réalise une tâche courte montrant que tu sais distinguer des modes de reproduction. Donne un exemple précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Distinguer des modes de reproduction ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-CM2-LIFE-CYCLES",
+          "primary_skill_code": "SK-ENR-SVT-CM2-LIFE-CYCLES-REPRODUCTION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-svt-v1",
+          "template_version": "lcai-cm2-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-SVT-LIFE-CYCLES-REPRODUCTION",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-SVT-V1-LIFE-CYCLES-REPRODUCTION-PRACTICE-02",
+      "grade": "FR-CM2",
+      "subject": "SVT",
+      "chapter": "CH-SVT-CM2-LIFE-CYCLES",
+      "skill": "SK-ENR-SVT-CM2-LIFE-CYCLES-REPRODUCTION",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique avec tes mots puis applique à un exemple : « Distinguer des modes de reproduction ».",
+      "expected_answer": "Réponse ouverte : explication correcte et exemple pertinent.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Distinguer des modes de reproduction ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-SVT-LIFE-CYCLES-REPRODUCTION",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-SVT-V1-LIFE-CYCLES-REPRODUCTION-PRACTICE-02",
+        "title": "Distinguer des modes de reproduction",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique avec tes mots puis applique à un exemple : « Distinguer des modes de reproduction ».",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et exemple pertinent.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Distinguer des modes de reproduction ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-CM2-LIFE-CYCLES",
+          "primary_skill_code": "SK-ENR-SVT-CM2-LIFE-CYCLES-REPRODUCTION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-svt-v1",
+          "template_version": "lcai-cm2-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-SVT-LIFE-CYCLES-REPRODUCTION",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-SVT-V1-LIFE-CYCLES-REPRODUCTION-ASSESSMENT-03",
+      "grade": "FR-CM2",
+      "subject": "SVT",
+      "chapter": "CH-SVT-CM2-LIFE-CYCLES",
+      "skill": "SK-ENR-SVT-CM2-LIFE-CYCLES-REPRODUCTION",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation CM2 : montre de façon autonome que tu sais distinguer des modes de reproduction. Justifie avec un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Distinguer des modes de reproduction ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-SVT-LIFE-CYCLES-REPRODUCTION",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-SVT-V1-LIFE-CYCLES-REPRODUCTION-ASSESSMENT-03",
+        "title": "Distinguer des modes de reproduction",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation CM2 : montre de façon autonome que tu sais distinguer des modes de reproduction. Justifie avec un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Distinguer des modes de reproduction ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-CM2-LIFE-CYCLES",
+          "primary_skill_code": "SK-ENR-SVT-CM2-LIFE-CYCLES-REPRODUCTION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-svt-v1",
+          "template_version": "lcai-cm2-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-SVT-LIFE-CYCLES-REPRODUCTION",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-SVT-V1-LIFE-CYCLES-CHARACTERS-PRACTICE-01",
+      "grade": "FR-CM2",
+      "subject": "SVT",
+      "chapter": "CH-SVT-CM2-LIFE-CYCLES",
+      "skill": "SK-ENR-SVT-CM2-LIFE-CYCLES-CHARACTERS",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Cycles de vie et classification », réalise une tâche courte montrant que tu sais identifier des caractères partagés. Donne un exemple précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Identifier des caractères partagés ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-SVT-LIFE-CYCLES-CHARACTERS",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-SVT-V1-LIFE-CYCLES-CHARACTERS-PRACTICE-01",
+        "title": "Identifier des caractères partagés",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Cycles de vie et classification », réalise une tâche courte montrant que tu sais identifier des caractères partagés. Donne un exemple précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Identifier des caractères partagés ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-CM2-LIFE-CYCLES",
+          "primary_skill_code": "SK-ENR-SVT-CM2-LIFE-CYCLES-CHARACTERS",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-svt-v1",
+          "template_version": "lcai-cm2-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-SVT-LIFE-CYCLES-CHARACTERS",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-SVT-V1-LIFE-CYCLES-CHARACTERS-PRACTICE-02",
+      "grade": "FR-CM2",
+      "subject": "SVT",
+      "chapter": "CH-SVT-CM2-LIFE-CYCLES",
+      "skill": "SK-ENR-SVT-CM2-LIFE-CYCLES-CHARACTERS",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique avec tes mots puis applique à un exemple : « Identifier des caractères partagés ».",
+      "expected_answer": "Réponse ouverte : explication correcte et exemple pertinent.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Identifier des caractères partagés ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-SVT-LIFE-CYCLES-CHARACTERS",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-SVT-V1-LIFE-CYCLES-CHARACTERS-PRACTICE-02",
+        "title": "Identifier des caractères partagés",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique avec tes mots puis applique à un exemple : « Identifier des caractères partagés ».",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et exemple pertinent.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Identifier des caractères partagés ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-CM2-LIFE-CYCLES",
+          "primary_skill_code": "SK-ENR-SVT-CM2-LIFE-CYCLES-CHARACTERS",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-svt-v1",
+          "template_version": "lcai-cm2-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-SVT-LIFE-CYCLES-CHARACTERS",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-SVT-V1-LIFE-CYCLES-CHARACTERS-ASSESSMENT-03",
+      "grade": "FR-CM2",
+      "subject": "SVT",
+      "chapter": "CH-SVT-CM2-LIFE-CYCLES",
+      "skill": "SK-ENR-SVT-CM2-LIFE-CYCLES-CHARACTERS",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation CM2 : montre de façon autonome que tu sais identifier des caractères partagés. Justifie avec un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Identifier des caractères partagés ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-SVT-LIFE-CYCLES-CHARACTERS",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-SVT-V1-LIFE-CYCLES-CHARACTERS-ASSESSMENT-03",
+        "title": "Identifier des caractères partagés",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation CM2 : montre de façon autonome que tu sais identifier des caractères partagés. Justifie avec un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Identifier des caractères partagés ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-CM2-LIFE-CYCLES",
+          "primary_skill_code": "SK-ENR-SVT-CM2-LIFE-CYCLES-CHARACTERS",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-svt-v1",
+          "template_version": "lcai-cm2-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-SVT-LIFE-CYCLES-CHARACTERS",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-SVT-V1-LIFE-CYCLES-CLASSIFY-PRACTICE-01",
+      "grade": "FR-CM2",
+      "subject": "SVT",
+      "chapter": "CH-SVT-CM2-LIFE-CYCLES",
+      "skill": "SK-ENR-SVT-CM2-LIFE-CYCLES-CLASSIFY",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Cycles de vie et classification », réalise une tâche courte montrant que tu sais construire une classification emboîtée. Donne un exemple précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Construire une classification emboîtée ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-SVT-LIFE-CYCLES-CLASSIFY",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-SVT-V1-LIFE-CYCLES-CLASSIFY-PRACTICE-01",
+        "title": "Construire une classification emboîtée",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Cycles de vie et classification », réalise une tâche courte montrant que tu sais construire une classification emboîtée. Donne un exemple précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Construire une classification emboîtée ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-CM2-LIFE-CYCLES",
+          "primary_skill_code": "SK-ENR-SVT-CM2-LIFE-CYCLES-CLASSIFY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-svt-v1",
+          "template_version": "lcai-cm2-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-SVT-LIFE-CYCLES-CLASSIFY",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-SVT-V1-LIFE-CYCLES-CLASSIFY-PRACTICE-02",
+      "grade": "FR-CM2",
+      "subject": "SVT",
+      "chapter": "CH-SVT-CM2-LIFE-CYCLES",
+      "skill": "SK-ENR-SVT-CM2-LIFE-CYCLES-CLASSIFY",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique avec tes mots puis applique à un exemple : « Construire une classification emboîtée ».",
+      "expected_answer": "Réponse ouverte : explication correcte et exemple pertinent.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Construire une classification emboîtée ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-SVT-LIFE-CYCLES-CLASSIFY",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-SVT-V1-LIFE-CYCLES-CLASSIFY-PRACTICE-02",
+        "title": "Construire une classification emboîtée",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique avec tes mots puis applique à un exemple : « Construire une classification emboîtée ».",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et exemple pertinent.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Construire une classification emboîtée ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-CM2-LIFE-CYCLES",
+          "primary_skill_code": "SK-ENR-SVT-CM2-LIFE-CYCLES-CLASSIFY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-svt-v1",
+          "template_version": "lcai-cm2-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-SVT-LIFE-CYCLES-CLASSIFY",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-SVT-V1-LIFE-CYCLES-CLASSIFY-ASSESSMENT-03",
+      "grade": "FR-CM2",
+      "subject": "SVT",
+      "chapter": "CH-SVT-CM2-LIFE-CYCLES",
+      "skill": "SK-ENR-SVT-CM2-LIFE-CYCLES-CLASSIFY",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation CM2 : montre de façon autonome que tu sais construire une classification emboîtée. Justifie avec un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Construire une classification emboîtée ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-SVT-LIFE-CYCLES-CLASSIFY",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-SVT-V1-LIFE-CYCLES-CLASSIFY-ASSESSMENT-03",
+        "title": "Construire une classification emboîtée",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation CM2 : montre de façon autonome que tu sais construire une classification emboîtée. Justifie avec un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Construire une classification emboîtée ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-CM2-LIFE-CYCLES",
+          "primary_skill_code": "SK-ENR-SVT-CM2-LIFE-CYCLES-CLASSIFY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-svt-v1",
+          "template_version": "lcai-cm2-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-SVT-LIFE-CYCLES-CLASSIFY",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-SVT-V1-ENVIRONMENT-HAZARD-PRACTICE-01",
+      "grade": "FR-CM2",
+      "subject": "SVT",
+      "chapter": "CH-SVT-CM2-ENVIRONMENT",
+      "skill": "SK-ENR-SVT-CM2-ENVIRONMENT-HAZARD",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Environnement, risques et ressources », réalise une tâche courte montrant que tu sais distinguer aléa, enjeu et risque. Donne un exemple précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Distinguer aléa, enjeu et risque ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-SVT-ENVIRONMENT-HAZARD",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-SVT-V1-ENVIRONMENT-HAZARD-PRACTICE-01",
+        "title": "Distinguer aléa, enjeu et risque",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Environnement, risques et ressources », réalise une tâche courte montrant que tu sais distinguer aléa, enjeu et risque. Donne un exemple précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Distinguer aléa, enjeu et risque ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-CM2-ENVIRONMENT",
+          "primary_skill_code": "SK-ENR-SVT-CM2-ENVIRONMENT-HAZARD",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-svt-v1",
+          "template_version": "lcai-cm2-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-SVT-ENVIRONMENT-HAZARD",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-SVT-V1-ENVIRONMENT-HAZARD-PRACTICE-02",
+      "grade": "FR-CM2",
+      "subject": "SVT",
+      "chapter": "CH-SVT-CM2-ENVIRONMENT",
+      "skill": "SK-ENR-SVT-CM2-ENVIRONMENT-HAZARD",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique avec tes mots puis applique à un exemple : « Distinguer aléa, enjeu et risque ».",
+      "expected_answer": "Réponse ouverte : explication correcte et exemple pertinent.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Distinguer aléa, enjeu et risque ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-SVT-ENVIRONMENT-HAZARD",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-SVT-V1-ENVIRONMENT-HAZARD-PRACTICE-02",
+        "title": "Distinguer aléa, enjeu et risque",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique avec tes mots puis applique à un exemple : « Distinguer aléa, enjeu et risque ».",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et exemple pertinent.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Distinguer aléa, enjeu et risque ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-CM2-ENVIRONMENT",
+          "primary_skill_code": "SK-ENR-SVT-CM2-ENVIRONMENT-HAZARD",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-svt-v1",
+          "template_version": "lcai-cm2-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-SVT-ENVIRONMENT-HAZARD",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-SVT-V1-ENVIRONMENT-HAZARD-ASSESSMENT-03",
+      "grade": "FR-CM2",
+      "subject": "SVT",
+      "chapter": "CH-SVT-CM2-ENVIRONMENT",
+      "skill": "SK-ENR-SVT-CM2-ENVIRONMENT-HAZARD",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation CM2 : montre de façon autonome que tu sais distinguer aléa, enjeu et risque. Justifie avec un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Distinguer aléa, enjeu et risque ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-SVT-ENVIRONMENT-HAZARD",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-SVT-V1-ENVIRONMENT-HAZARD-ASSESSMENT-03",
+        "title": "Distinguer aléa, enjeu et risque",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation CM2 : montre de façon autonome que tu sais distinguer aléa, enjeu et risque. Justifie avec un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Distinguer aléa, enjeu et risque ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-CM2-ENVIRONMENT",
+          "primary_skill_code": "SK-ENR-SVT-CM2-ENVIRONMENT-HAZARD",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-svt-v1",
+          "template_version": "lcai-cm2-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-SVT-ENVIRONMENT-HAZARD",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-SVT-V1-ENVIRONMENT-RESOURCE-PRACTICE-01",
+      "grade": "FR-CM2",
+      "subject": "SVT",
+      "chapter": "CH-SVT-CM2-ENVIRONMENT",
+      "skill": "SK-ENR-SVT-CM2-ENVIRONMENT-RESOURCE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Environnement, risques et ressources », réalise une tâche courte montrant que tu sais identifier une ressource naturelle et ses usages. Donne un exemple précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Identifier une ressource naturelle et ses usages ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-SVT-ENVIRONMENT-RESOURCE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-SVT-V1-ENVIRONMENT-RESOURCE-PRACTICE-01",
+        "title": "Identifier une ressource naturelle et ses usages",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Environnement, risques et ressources », réalise une tâche courte montrant que tu sais identifier une ressource naturelle et ses usages. Donne un exemple précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Identifier une ressource naturelle et ses usages ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-CM2-ENVIRONMENT",
+          "primary_skill_code": "SK-ENR-SVT-CM2-ENVIRONMENT-RESOURCE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-svt-v1",
+          "template_version": "lcai-cm2-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-SVT-ENVIRONMENT-RESOURCE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-SVT-V1-ENVIRONMENT-RESOURCE-PRACTICE-02",
+      "grade": "FR-CM2",
+      "subject": "SVT",
+      "chapter": "CH-SVT-CM2-ENVIRONMENT",
+      "skill": "SK-ENR-SVT-CM2-ENVIRONMENT-RESOURCE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique avec tes mots puis applique à un exemple : « Identifier une ressource naturelle et ses usages ».",
+      "expected_answer": "Réponse ouverte : explication correcte et exemple pertinent.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Identifier une ressource naturelle et ses usages ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-SVT-ENVIRONMENT-RESOURCE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-SVT-V1-ENVIRONMENT-RESOURCE-PRACTICE-02",
+        "title": "Identifier une ressource naturelle et ses usages",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique avec tes mots puis applique à un exemple : « Identifier une ressource naturelle et ses usages ».",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et exemple pertinent.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Identifier une ressource naturelle et ses usages ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-CM2-ENVIRONMENT",
+          "primary_skill_code": "SK-ENR-SVT-CM2-ENVIRONMENT-RESOURCE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-svt-v1",
+          "template_version": "lcai-cm2-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-SVT-ENVIRONMENT-RESOURCE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-SVT-V1-ENVIRONMENT-RESOURCE-ASSESSMENT-03",
+      "grade": "FR-CM2",
+      "subject": "SVT",
+      "chapter": "CH-SVT-CM2-ENVIRONMENT",
+      "skill": "SK-ENR-SVT-CM2-ENVIRONMENT-RESOURCE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation CM2 : montre de façon autonome que tu sais identifier une ressource naturelle et ses usages. Justifie avec un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Identifier une ressource naturelle et ses usages ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-SVT-ENVIRONMENT-RESOURCE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-SVT-V1-ENVIRONMENT-RESOURCE-ASSESSMENT-03",
+        "title": "Identifier une ressource naturelle et ses usages",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation CM2 : montre de façon autonome que tu sais identifier une ressource naturelle et ses usages. Justifie avec un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Identifier une ressource naturelle et ses usages ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-CM2-ENVIRONMENT",
+          "primary_skill_code": "SK-ENR-SVT-CM2-ENVIRONMENT-RESOURCE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-svt-v1",
+          "template_version": "lcai-cm2-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-SVT-ENVIRONMENT-RESOURCE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-SVT-V1-ENVIRONMENT-IMPACT-PRACTICE-01",
+      "grade": "FR-CM2",
+      "subject": "SVT",
+      "chapter": "CH-SVT-CM2-ENVIRONMENT",
+      "skill": "SK-ENR-SVT-CM2-ENVIRONMENT-IMPACT",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Environnement, risques et ressources », réalise une tâche courte montrant que tu sais relier une action humaine à un impact. Donne un exemple précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Relier une action humaine à un impact ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-SVT-ENVIRONMENT-IMPACT",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-SVT-V1-ENVIRONMENT-IMPACT-PRACTICE-01",
+        "title": "Relier une action humaine à un impact",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Environnement, risques et ressources », réalise une tâche courte montrant que tu sais relier une action humaine à un impact. Donne un exemple précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Relier une action humaine à un impact ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-CM2-ENVIRONMENT",
+          "primary_skill_code": "SK-ENR-SVT-CM2-ENVIRONMENT-IMPACT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-svt-v1",
+          "template_version": "lcai-cm2-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-SVT-ENVIRONMENT-IMPACT",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-SVT-V1-ENVIRONMENT-IMPACT-PRACTICE-02",
+      "grade": "FR-CM2",
+      "subject": "SVT",
+      "chapter": "CH-SVT-CM2-ENVIRONMENT",
+      "skill": "SK-ENR-SVT-CM2-ENVIRONMENT-IMPACT",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique avec tes mots puis applique à un exemple : « Relier une action humaine à un impact ».",
+      "expected_answer": "Réponse ouverte : explication correcte et exemple pertinent.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Relier une action humaine à un impact ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-SVT-ENVIRONMENT-IMPACT",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-SVT-V1-ENVIRONMENT-IMPACT-PRACTICE-02",
+        "title": "Relier une action humaine à un impact",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique avec tes mots puis applique à un exemple : « Relier une action humaine à un impact ».",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et exemple pertinent.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Relier une action humaine à un impact ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-CM2-ENVIRONMENT",
+          "primary_skill_code": "SK-ENR-SVT-CM2-ENVIRONMENT-IMPACT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-svt-v1",
+          "template_version": "lcai-cm2-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-SVT-ENVIRONMENT-IMPACT",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-SVT-V1-ENVIRONMENT-IMPACT-ASSESSMENT-03",
+      "grade": "FR-CM2",
+      "subject": "SVT",
+      "chapter": "CH-SVT-CM2-ENVIRONMENT",
+      "skill": "SK-ENR-SVT-CM2-ENVIRONMENT-IMPACT",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation CM2 : montre de façon autonome que tu sais relier une action humaine à un impact. Justifie avec un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Relier une action humaine à un impact ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-SVT-ENVIRONMENT-IMPACT",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-SVT-V1-ENVIRONMENT-IMPACT-ASSESSMENT-03",
+        "title": "Relier une action humaine à un impact",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation CM2 : montre de façon autonome que tu sais relier une action humaine à un impact. Justifie avec un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Relier une action humaine à un impact ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-CM2-ENVIRONMENT",
+          "primary_skill_code": "SK-ENR-SVT-CM2-ENVIRONMENT-IMPACT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-svt-v1",
+          "template_version": "lcai-cm2-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-SVT-ENVIRONMENT-IMPACT",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-SVT-V1-ENVIRONMENT-PREVENT-PRACTICE-01",
+      "grade": "FR-CM2",
+      "subject": "SVT",
+      "chapter": "CH-SVT-CM2-ENVIRONMENT",
+      "skill": "SK-ENR-SVT-CM2-ENVIRONMENT-PREVENT",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Environnement, risques et ressources », réalise une tâche courte montrant que tu sais proposer une mesure de prévention. Donne un exemple précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Proposer une mesure de prévention ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-SVT-ENVIRONMENT-PREVENT",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-SVT-V1-ENVIRONMENT-PREVENT-PRACTICE-01",
+        "title": "Proposer une mesure de prévention",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Environnement, risques et ressources », réalise une tâche courte montrant que tu sais proposer une mesure de prévention. Donne un exemple précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Proposer une mesure de prévention ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-CM2-ENVIRONMENT",
+          "primary_skill_code": "SK-ENR-SVT-CM2-ENVIRONMENT-PREVENT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-svt-v1",
+          "template_version": "lcai-cm2-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-SVT-ENVIRONMENT-PREVENT",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-SVT-V1-ENVIRONMENT-PREVENT-PRACTICE-02",
+      "grade": "FR-CM2",
+      "subject": "SVT",
+      "chapter": "CH-SVT-CM2-ENVIRONMENT",
+      "skill": "SK-ENR-SVT-CM2-ENVIRONMENT-PREVENT",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique avec tes mots puis applique à un exemple : « Proposer une mesure de prévention ».",
+      "expected_answer": "Réponse ouverte : explication correcte et exemple pertinent.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Proposer une mesure de prévention ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-SVT-ENVIRONMENT-PREVENT",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-SVT-V1-ENVIRONMENT-PREVENT-PRACTICE-02",
+        "title": "Proposer une mesure de prévention",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique avec tes mots puis applique à un exemple : « Proposer une mesure de prévention ».",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et exemple pertinent.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Proposer une mesure de prévention ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-CM2-ENVIRONMENT",
+          "primary_skill_code": "SK-ENR-SVT-CM2-ENVIRONMENT-PREVENT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-svt-v1",
+          "template_version": "lcai-cm2-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-SVT-ENVIRONMENT-PREVENT",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-SVT-V1-ENVIRONMENT-PREVENT-ASSESSMENT-03",
+      "grade": "FR-CM2",
+      "subject": "SVT",
+      "chapter": "CH-SVT-CM2-ENVIRONMENT",
+      "skill": "SK-ENR-SVT-CM2-ENVIRONMENT-PREVENT",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation CM2 : montre de façon autonome que tu sais proposer une mesure de prévention. Justifie avec un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Proposer une mesure de prévention ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-SVT-ENVIRONMENT-PREVENT",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-SVT-V1-ENVIRONMENT-PREVENT-ASSESSMENT-03",
+        "title": "Proposer une mesure de prévention",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation CM2 : montre de façon autonome que tu sais proposer une mesure de prévention. Justifie avec un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Proposer une mesure de prévention ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-CM2-ENVIRONMENT",
+          "primary_skill_code": "SK-ENR-SVT-CM2-ENVIRONMENT-PREVENT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-svt-v1",
+          "template_version": "lcai-cm2-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-SVT-ENVIRONMENT-PREVENT",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_svt_candidates_v1.json"
+      }
+    }
+  ]
+}

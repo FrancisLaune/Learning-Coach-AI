@@ -1,0 +1,3259 @@
+{
+  "batch": "6E-HISTORY-V1",
+  "purpose": "Parallel 6e content preparation for Learning Coach AI",
+  "lifecycle_target": "Draft",
+  "automatic_approval": false,
+  "curriculum_version": "phase2-lcai-0011c",
+  "program_code": "FR-CYCLE3-6E-2026",
+  "grade_code": "FR-6E",
+  "subject_code": "HISTORY",
+  "skill_count": 13,
+  "candidate_count": 39,
+  "content_types": {
+    "practice": 26,
+    "assessment": 13
+  },
+  "difficulty_distribution": {
+    "1": 13,
+    "2": 26
+  },
+  "accepted_candidates": [
+    {
+      "code": "6E-HISTORY-V1-PREHISTORY-TIME-PRACTICE-01",
+      "grade": "FR-6E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-6E-PREHISTORY",
+      "skill": "SK-ENR-HISTORY-6E-PREHISTORY-TIME",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « La longue histoire de l'humanité et des migrations », réalise une tâche montrant que tu sais construire les repères de la préhistoire. Appuie-toi sur un exemple ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Construire les repères de la préhistoire ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-HISTORY-PREHISTORY-TIME",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-HISTORY-V1-PREHISTORY-TIME-PRACTICE-01",
+        "title": "Construire les repères de la préhistoire",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « La longue histoire de l'humanité et des migrations », réalise une tâche montrant que tu sais construire les repères de la préhistoire. Appuie-toi sur un exemple ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Construire les repères de la préhistoire ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-6E-PREHISTORY",
+          "primary_skill_code": "SK-ENR-HISTORY-6E-PREHISTORY-TIME",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-history-v1",
+          "template_version": "lcai-6e-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-HISTORY-PREHISTORY-TIME",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-HISTORY-V1-PREHISTORY-TIME-PRACTICE-02",
+      "grade": "FR-6E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-6E-PREHISTORY",
+      "skill": "SK-ENR-HISTORY-6E-PREHISTORY-TIME",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Construire les repères de la préhistoire » à une situation pertinente de niveau 6e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Construire les repères de la préhistoire ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-HISTORY-PREHISTORY-TIME",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-HISTORY-V1-PREHISTORY-TIME-PRACTICE-02",
+        "title": "Construire les repères de la préhistoire",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Construire les repères de la préhistoire » à une situation pertinente de niveau 6e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Construire les repères de la préhistoire ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-6E-PREHISTORY",
+          "primary_skill_code": "SK-ENR-HISTORY-6E-PREHISTORY-TIME",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-history-v1",
+          "template_version": "lcai-6e-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-HISTORY-PREHISTORY-TIME",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-HISTORY-V1-PREHISTORY-TIME-ASSESSMENT-03",
+      "grade": "FR-6E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-6E-PREHISTORY",
+      "skill": "SK-ENR-HISTORY-6E-PREHISTORY-TIME",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 6e : démontre de façon autonome que tu sais construire les repères de la préhistoire. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Construire les repères de la préhistoire ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-HISTORY-PREHISTORY-TIME",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-HISTORY-V1-PREHISTORY-TIME-ASSESSMENT-03",
+        "title": "Construire les repères de la préhistoire",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 6e : démontre de façon autonome que tu sais construire les repères de la préhistoire. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Construire les repères de la préhistoire ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-6E-PREHISTORY",
+          "primary_skill_code": "SK-ENR-HISTORY-6E-PREHISTORY-TIME",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-history-v1",
+          "template_version": "lcai-6e-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-HISTORY-PREHISTORY-TIME",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-HISTORY-V1-PREHISTORY-MIGRATION-PRACTICE-01",
+      "grade": "FR-6E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-6E-PREHISTORY",
+      "skill": "SK-ENR-HISTORY-6E-PREHISTORY-MIGRATION",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « La longue histoire de l'humanité et des migrations », réalise une tâche montrant que tu sais expliquer les premiers peuplements. Appuie-toi sur un exemple ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Expliquer les premiers peuplements ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-HISTORY-PREHISTORY-MIGRATION",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-HISTORY-V1-PREHISTORY-MIGRATION-PRACTICE-01",
+        "title": "Expliquer les premiers peuplements",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « La longue histoire de l'humanité et des migrations », réalise une tâche montrant que tu sais expliquer les premiers peuplements. Appuie-toi sur un exemple ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Expliquer les premiers peuplements ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-6E-PREHISTORY",
+          "primary_skill_code": "SK-ENR-HISTORY-6E-PREHISTORY-MIGRATION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-history-v1",
+          "template_version": "lcai-6e-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-HISTORY-PREHISTORY-MIGRATION",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-HISTORY-V1-PREHISTORY-MIGRATION-PRACTICE-02",
+      "grade": "FR-6E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-6E-PREHISTORY",
+      "skill": "SK-ENR-HISTORY-6E-PREHISTORY-MIGRATION",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Expliquer les premiers peuplements » à une situation pertinente de niveau 6e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Expliquer les premiers peuplements ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-HISTORY-PREHISTORY-MIGRATION",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-HISTORY-V1-PREHISTORY-MIGRATION-PRACTICE-02",
+        "title": "Expliquer les premiers peuplements",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Expliquer les premiers peuplements » à une situation pertinente de niveau 6e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Expliquer les premiers peuplements ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-6E-PREHISTORY",
+          "primary_skill_code": "SK-ENR-HISTORY-6E-PREHISTORY-MIGRATION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-history-v1",
+          "template_version": "lcai-6e-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-HISTORY-PREHISTORY-MIGRATION",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-HISTORY-V1-PREHISTORY-MIGRATION-ASSESSMENT-03",
+      "grade": "FR-6E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-6E-PREHISTORY",
+      "skill": "SK-ENR-HISTORY-6E-PREHISTORY-MIGRATION",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 6e : démontre de façon autonome que tu sais expliquer les premiers peuplements. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Expliquer les premiers peuplements ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-HISTORY-PREHISTORY-MIGRATION",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-HISTORY-V1-PREHISTORY-MIGRATION-ASSESSMENT-03",
+        "title": "Expliquer les premiers peuplements",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 6e : démontre de façon autonome que tu sais expliquer les premiers peuplements. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Expliquer les premiers peuplements ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-6E-PREHISTORY",
+          "primary_skill_code": "SK-ENR-HISTORY-6E-PREHISTORY-MIGRATION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-history-v1",
+          "template_version": "lcai-6e-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-HISTORY-PREHISTORY-MIGRATION",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-HISTORY-V1-PREHISTORY-NEOLITHIC-PRACTICE-01",
+      "grade": "FR-6E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-6E-PREHISTORY",
+      "skill": "SK-ENR-HISTORY-6E-PREHISTORY-NEOLITHIC",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « La longue histoire de l'humanité et des migrations », réalise une tâche montrant que tu sais caractériser la révolution néolithique. Appuie-toi sur un exemple ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Caractériser la révolution néolithique ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-HISTORY-PREHISTORY-NEOLITHIC",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-HISTORY-V1-PREHISTORY-NEOLITHIC-PRACTICE-01",
+        "title": "Caractériser la révolution néolithique",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « La longue histoire de l'humanité et des migrations », réalise une tâche montrant que tu sais caractériser la révolution néolithique. Appuie-toi sur un exemple ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Caractériser la révolution néolithique ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-6E-PREHISTORY",
+          "primary_skill_code": "SK-ENR-HISTORY-6E-PREHISTORY-NEOLITHIC",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-history-v1",
+          "template_version": "lcai-6e-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-HISTORY-PREHISTORY-NEOLITHIC",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-HISTORY-V1-PREHISTORY-NEOLITHIC-PRACTICE-02",
+      "grade": "FR-6E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-6E-PREHISTORY",
+      "skill": "SK-ENR-HISTORY-6E-PREHISTORY-NEOLITHIC",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Caractériser la révolution néolithique » à une situation pertinente de niveau 6e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Caractériser la révolution néolithique ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-HISTORY-PREHISTORY-NEOLITHIC",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-HISTORY-V1-PREHISTORY-NEOLITHIC-PRACTICE-02",
+        "title": "Caractériser la révolution néolithique",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Caractériser la révolution néolithique » à une situation pertinente de niveau 6e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Caractériser la révolution néolithique ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-6E-PREHISTORY",
+          "primary_skill_code": "SK-ENR-HISTORY-6E-PREHISTORY-NEOLITHIC",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-history-v1",
+          "template_version": "lcai-6e-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-HISTORY-PREHISTORY-NEOLITHIC",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-HISTORY-V1-PREHISTORY-NEOLITHIC-ASSESSMENT-03",
+      "grade": "FR-6E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-6E-PREHISTORY",
+      "skill": "SK-ENR-HISTORY-6E-PREHISTORY-NEOLITHIC",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 6e : démontre de façon autonome que tu sais caractériser la révolution néolithique. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Caractériser la révolution néolithique ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-HISTORY-PREHISTORY-NEOLITHIC",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-HISTORY-V1-PREHISTORY-NEOLITHIC-ASSESSMENT-03",
+        "title": "Caractériser la révolution néolithique",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 6e : démontre de façon autonome que tu sais caractériser la révolution néolithique. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Caractériser la révolution néolithique ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-6E-PREHISTORY",
+          "primary_skill_code": "SK-ENR-HISTORY-6E-PREHISTORY-NEOLITHIC",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-history-v1",
+          "template_version": "lcai-6e-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-HISTORY-PREHISTORY-NEOLITHIC",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-HISTORY-V1-PREHISTORY-SOURCE-PRACTICE-01",
+      "grade": "FR-6E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-6E-PREHISTORY",
+      "skill": "SK-ENR-HISTORY-6E-PREHISTORY-SOURCE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « La longue histoire de l'humanité et des migrations », réalise une tâche montrant que tu sais interpréter une trace archéologique. Appuie-toi sur un exemple ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Interpréter une trace archéologique ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-HISTORY-PREHISTORY-SOURCE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-HISTORY-V1-PREHISTORY-SOURCE-PRACTICE-01",
+        "title": "Interpréter une trace archéologique",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « La longue histoire de l'humanité et des migrations », réalise une tâche montrant que tu sais interpréter une trace archéologique. Appuie-toi sur un exemple ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Interpréter une trace archéologique ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-6E-PREHISTORY",
+          "primary_skill_code": "SK-ENR-HISTORY-6E-PREHISTORY-SOURCE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-history-v1",
+          "template_version": "lcai-6e-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-HISTORY-PREHISTORY-SOURCE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-HISTORY-V1-PREHISTORY-SOURCE-PRACTICE-02",
+      "grade": "FR-6E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-6E-PREHISTORY",
+      "skill": "SK-ENR-HISTORY-6E-PREHISTORY-SOURCE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Interpréter une trace archéologique » à une situation pertinente de niveau 6e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Interpréter une trace archéologique ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-HISTORY-PREHISTORY-SOURCE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-HISTORY-V1-PREHISTORY-SOURCE-PRACTICE-02",
+        "title": "Interpréter une trace archéologique",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Interpréter une trace archéologique » à une situation pertinente de niveau 6e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Interpréter une trace archéologique ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-6E-PREHISTORY",
+          "primary_skill_code": "SK-ENR-HISTORY-6E-PREHISTORY-SOURCE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-history-v1",
+          "template_version": "lcai-6e-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-HISTORY-PREHISTORY-SOURCE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-HISTORY-V1-PREHISTORY-SOURCE-ASSESSMENT-03",
+      "grade": "FR-6E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-6E-PREHISTORY",
+      "skill": "SK-ENR-HISTORY-6E-PREHISTORY-SOURCE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 6e : démontre de façon autonome que tu sais interpréter une trace archéologique. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Interpréter une trace archéologique ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-HISTORY-PREHISTORY-SOURCE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-HISTORY-V1-PREHISTORY-SOURCE-ASSESSMENT-03",
+        "title": "Interpréter une trace archéologique",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 6e : démontre de façon autonome que tu sais interpréter une trace archéologique. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Interpréter une trace archéologique ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-6E-PREHISTORY",
+          "primary_skill_code": "SK-ENR-HISTORY-6E-PREHISTORY-SOURCE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-history-v1",
+          "template_version": "lcai-6e-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-HISTORY-PREHISTORY-SOURCE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-HISTORY-V1-ANCIENT-GREEK-PRACTICE-01",
+      "grade": "FR-6E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-6E-ANCIENT",
+      "skill": "SK-ENR-HISTORY-6E-ANCIENT-GREEK",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Récits fondateurs, croyances et citoyenneté dans la Méditerranée antique », réalise une tâche montrant que tu sais caractériser cité et citoyenneté grecques. Appuie-toi sur un exemple ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Caractériser cité et citoyenneté grecques ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-HISTORY-ANCIENT-GREEK",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-HISTORY-V1-ANCIENT-GREEK-PRACTICE-01",
+        "title": "Caractériser cité et citoyenneté grecques",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Récits fondateurs, croyances et citoyenneté dans la Méditerranée antique », réalise une tâche montrant que tu sais caractériser cité et citoyenneté grecques. Appuie-toi sur un exemple ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Caractériser cité et citoyenneté grecques ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-6E-ANCIENT",
+          "primary_skill_code": "SK-ENR-HISTORY-6E-ANCIENT-GREEK",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-history-v1",
+          "template_version": "lcai-6e-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-HISTORY-ANCIENT-GREEK",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-HISTORY-V1-ANCIENT-GREEK-PRACTICE-02",
+      "grade": "FR-6E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-6E-ANCIENT",
+      "skill": "SK-ENR-HISTORY-6E-ANCIENT-GREEK",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Caractériser cité et citoyenneté grecques » à une situation pertinente de niveau 6e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Caractériser cité et citoyenneté grecques ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-HISTORY-ANCIENT-GREEK",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-HISTORY-V1-ANCIENT-GREEK-PRACTICE-02",
+        "title": "Caractériser cité et citoyenneté grecques",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Caractériser cité et citoyenneté grecques » à une situation pertinente de niveau 6e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Caractériser cité et citoyenneté grecques ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-6E-ANCIENT",
+          "primary_skill_code": "SK-ENR-HISTORY-6E-ANCIENT-GREEK",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-history-v1",
+          "template_version": "lcai-6e-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-HISTORY-ANCIENT-GREEK",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-HISTORY-V1-ANCIENT-GREEK-ASSESSMENT-03",
+      "grade": "FR-6E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-6E-ANCIENT",
+      "skill": "SK-ENR-HISTORY-6E-ANCIENT-GREEK",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 6e : démontre de façon autonome que tu sais caractériser cité et citoyenneté grecques. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Caractériser cité et citoyenneté grecques ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-HISTORY-ANCIENT-GREEK",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-HISTORY-V1-ANCIENT-GREEK-ASSESSMENT-03",
+        "title": "Caractériser cité et citoyenneté grecques",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 6e : démontre de façon autonome que tu sais caractériser cité et citoyenneté grecques. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Caractériser cité et citoyenneté grecques ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-6E-ANCIENT",
+          "primary_skill_code": "SK-ENR-HISTORY-6E-ANCIENT-GREEK",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-history-v1",
+          "template_version": "lcai-6e-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-HISTORY-ANCIENT-GREEK",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-HISTORY-V1-ANCIENT-ROME-PRACTICE-01",
+      "grade": "FR-6E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-6E-ANCIENT",
+      "skill": "SK-ENR-HISTORY-6E-ANCIENT-ROME",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Récits fondateurs, croyances et citoyenneté dans la Méditerranée antique », réalise une tâche montrant que tu sais identifier les fondements de rome républicaine. Appuie-toi sur un exemple ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Identifier les fondements de Rome républicaine ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-HISTORY-ANCIENT-ROME",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-HISTORY-V1-ANCIENT-ROME-PRACTICE-01",
+        "title": "Identifier les fondements de Rome républicaine",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Récits fondateurs, croyances et citoyenneté dans la Méditerranée antique », réalise une tâche montrant que tu sais identifier les fondements de rome républicaine. Appuie-toi sur un exemple ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Identifier les fondements de Rome républicaine ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-6E-ANCIENT",
+          "primary_skill_code": "SK-ENR-HISTORY-6E-ANCIENT-ROME",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-history-v1",
+          "template_version": "lcai-6e-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-HISTORY-ANCIENT-ROME",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-HISTORY-V1-ANCIENT-ROME-PRACTICE-02",
+      "grade": "FR-6E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-6E-ANCIENT",
+      "skill": "SK-ENR-HISTORY-6E-ANCIENT-ROME",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Identifier les fondements de Rome républicaine » à une situation pertinente de niveau 6e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Identifier les fondements de Rome républicaine ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-HISTORY-ANCIENT-ROME",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-HISTORY-V1-ANCIENT-ROME-PRACTICE-02",
+        "title": "Identifier les fondements de Rome républicaine",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Identifier les fondements de Rome républicaine » à une situation pertinente de niveau 6e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Identifier les fondements de Rome républicaine ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-6E-ANCIENT",
+          "primary_skill_code": "SK-ENR-HISTORY-6E-ANCIENT-ROME",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-history-v1",
+          "template_version": "lcai-6e-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-HISTORY-ANCIENT-ROME",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-HISTORY-V1-ANCIENT-ROME-ASSESSMENT-03",
+      "grade": "FR-6E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-6E-ANCIENT",
+      "skill": "SK-ENR-HISTORY-6E-ANCIENT-ROME",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 6e : démontre de façon autonome que tu sais identifier les fondements de rome républicaine. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Identifier les fondements de Rome républicaine ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-HISTORY-ANCIENT-ROME",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-HISTORY-V1-ANCIENT-ROME-ASSESSMENT-03",
+        "title": "Identifier les fondements de Rome républicaine",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 6e : démontre de façon autonome que tu sais identifier les fondements de rome républicaine. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Identifier les fondements de Rome républicaine ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-6E-ANCIENT",
+          "primary_skill_code": "SK-ENR-HISTORY-6E-ANCIENT-ROME",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-history-v1",
+          "template_version": "lcai-6e-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-HISTORY-ANCIENT-ROME",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-HISTORY-V1-ANCIENT-JUDAISM-PRACTICE-01",
+      "grade": "FR-6E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-6E-ANCIENT",
+      "skill": "SK-ENR-HISTORY-6E-ANCIENT-JUDAISM",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Récits fondateurs, croyances et citoyenneté dans la Méditerranée antique », réalise une tâche montrant que tu sais situer les débuts du judaïsme. Appuie-toi sur un exemple ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Situer les débuts du judaïsme ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-HISTORY-ANCIENT-JUDAISM",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-HISTORY-V1-ANCIENT-JUDAISM-PRACTICE-01",
+        "title": "Situer les débuts du judaïsme",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Récits fondateurs, croyances et citoyenneté dans la Méditerranée antique », réalise une tâche montrant que tu sais situer les débuts du judaïsme. Appuie-toi sur un exemple ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Situer les débuts du judaïsme ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-6E-ANCIENT",
+          "primary_skill_code": "SK-ENR-HISTORY-6E-ANCIENT-JUDAISM",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-history-v1",
+          "template_version": "lcai-6e-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-HISTORY-ANCIENT-JUDAISM",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-HISTORY-V1-ANCIENT-JUDAISM-PRACTICE-02",
+      "grade": "FR-6E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-6E-ANCIENT",
+      "skill": "SK-ENR-HISTORY-6E-ANCIENT-JUDAISM",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Situer les débuts du judaïsme » à une situation pertinente de niveau 6e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Situer les débuts du judaïsme ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-HISTORY-ANCIENT-JUDAISM",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-HISTORY-V1-ANCIENT-JUDAISM-PRACTICE-02",
+        "title": "Situer les débuts du judaïsme",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Situer les débuts du judaïsme » à une situation pertinente de niveau 6e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Situer les débuts du judaïsme ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-6E-ANCIENT",
+          "primary_skill_code": "SK-ENR-HISTORY-6E-ANCIENT-JUDAISM",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-history-v1",
+          "template_version": "lcai-6e-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-HISTORY-ANCIENT-JUDAISM",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-HISTORY-V1-ANCIENT-JUDAISM-ASSESSMENT-03",
+      "grade": "FR-6E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-6E-ANCIENT",
+      "skill": "SK-ENR-HISTORY-6E-ANCIENT-JUDAISM",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 6e : démontre de façon autonome que tu sais situer les débuts du judaïsme. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Situer les débuts du judaïsme ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-HISTORY-ANCIENT-JUDAISM",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-HISTORY-V1-ANCIENT-JUDAISM-ASSESSMENT-03",
+        "title": "Situer les débuts du judaïsme",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 6e : démontre de façon autonome que tu sais situer les débuts du judaïsme. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Situer les débuts du judaïsme ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-6E-ANCIENT",
+          "primary_skill_code": "SK-ENR-HISTORY-6E-ANCIENT-JUDAISM",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-history-v1",
+          "template_version": "lcai-6e-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-HISTORY-ANCIENT-JUDAISM",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-HISTORY-V1-ANCIENT-CHRISTIANITY-PRACTICE-01",
+      "grade": "FR-6E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-6E-ANCIENT",
+      "skill": "SK-ENR-HISTORY-6E-ANCIENT-CHRISTIANITY",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Récits fondateurs, croyances et citoyenneté dans la Méditerranée antique », réalise une tâche montrant que tu sais situer les débuts du christianisme. Appuie-toi sur un exemple ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Situer les débuts du christianisme ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-HISTORY-ANCIENT-CHRISTIANITY",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-HISTORY-V1-ANCIENT-CHRISTIANITY-PRACTICE-01",
+        "title": "Situer les débuts du christianisme",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Récits fondateurs, croyances et citoyenneté dans la Méditerranée antique », réalise une tâche montrant que tu sais situer les débuts du christianisme. Appuie-toi sur un exemple ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Situer les débuts du christianisme ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-6E-ANCIENT",
+          "primary_skill_code": "SK-ENR-HISTORY-6E-ANCIENT-CHRISTIANITY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-history-v1",
+          "template_version": "lcai-6e-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-HISTORY-ANCIENT-CHRISTIANITY",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-HISTORY-V1-ANCIENT-CHRISTIANITY-PRACTICE-02",
+      "grade": "FR-6E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-6E-ANCIENT",
+      "skill": "SK-ENR-HISTORY-6E-ANCIENT-CHRISTIANITY",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Situer les débuts du christianisme » à une situation pertinente de niveau 6e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Situer les débuts du christianisme ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-HISTORY-ANCIENT-CHRISTIANITY",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-HISTORY-V1-ANCIENT-CHRISTIANITY-PRACTICE-02",
+        "title": "Situer les débuts du christianisme",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Situer les débuts du christianisme » à une situation pertinente de niveau 6e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Situer les débuts du christianisme ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-6E-ANCIENT",
+          "primary_skill_code": "SK-ENR-HISTORY-6E-ANCIENT-CHRISTIANITY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-history-v1",
+          "template_version": "lcai-6e-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-HISTORY-ANCIENT-CHRISTIANITY",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-HISTORY-V1-ANCIENT-CHRISTIANITY-ASSESSMENT-03",
+      "grade": "FR-6E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-6E-ANCIENT",
+      "skill": "SK-ENR-HISTORY-6E-ANCIENT-CHRISTIANITY",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 6e : démontre de façon autonome que tu sais situer les débuts du christianisme. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Situer les débuts du christianisme ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-HISTORY-ANCIENT-CHRISTIANITY",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-HISTORY-V1-ANCIENT-CHRISTIANITY-ASSESSMENT-03",
+        "title": "Situer les débuts du christianisme",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 6e : démontre de façon autonome que tu sais situer les débuts du christianisme. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Situer les débuts du christianisme ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-6E-ANCIENT",
+          "primary_skill_code": "SK-ENR-HISTORY-6E-ANCIENT-CHRISTIANITY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-history-v1",
+          "template_version": "lcai-6e-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-HISTORY-ANCIENT-CHRISTIANITY",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-HISTORY-V1-ANCIENT-COMPARE-PRACTICE-01",
+      "grade": "FR-6E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-6E-ANCIENT",
+      "skill": "SK-ENR-HISTORY-6E-ANCIENT-COMPARE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Récits fondateurs, croyances et citoyenneté dans la Méditerranée antique », réalise une tâche montrant que tu sais comparer récits et pratiques antiques. Appuie-toi sur un exemple ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Comparer récits et pratiques antiques ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-HISTORY-ANCIENT-COMPARE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-HISTORY-V1-ANCIENT-COMPARE-PRACTICE-01",
+        "title": "Comparer récits et pratiques antiques",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Récits fondateurs, croyances et citoyenneté dans la Méditerranée antique », réalise une tâche montrant que tu sais comparer récits et pratiques antiques. Appuie-toi sur un exemple ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Comparer récits et pratiques antiques ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-6E-ANCIENT",
+          "primary_skill_code": "SK-ENR-HISTORY-6E-ANCIENT-COMPARE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-history-v1",
+          "template_version": "lcai-6e-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-HISTORY-ANCIENT-COMPARE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-HISTORY-V1-ANCIENT-COMPARE-PRACTICE-02",
+      "grade": "FR-6E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-6E-ANCIENT",
+      "skill": "SK-ENR-HISTORY-6E-ANCIENT-COMPARE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Comparer récits et pratiques antiques » à une situation pertinente de niveau 6e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Comparer récits et pratiques antiques ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-HISTORY-ANCIENT-COMPARE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-HISTORY-V1-ANCIENT-COMPARE-PRACTICE-02",
+        "title": "Comparer récits et pratiques antiques",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Comparer récits et pratiques antiques » à une situation pertinente de niveau 6e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Comparer récits et pratiques antiques ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-6E-ANCIENT",
+          "primary_skill_code": "SK-ENR-HISTORY-6E-ANCIENT-COMPARE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-history-v1",
+          "template_version": "lcai-6e-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-HISTORY-ANCIENT-COMPARE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-HISTORY-V1-ANCIENT-COMPARE-ASSESSMENT-03",
+      "grade": "FR-6E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-6E-ANCIENT",
+      "skill": "SK-ENR-HISTORY-6E-ANCIENT-COMPARE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 6e : démontre de façon autonome que tu sais comparer récits et pratiques antiques. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Comparer récits et pratiques antiques ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-HISTORY-ANCIENT-COMPARE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-HISTORY-V1-ANCIENT-COMPARE-ASSESSMENT-03",
+        "title": "Comparer récits et pratiques antiques",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 6e : démontre de façon autonome que tu sais comparer récits et pratiques antiques. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Comparer récits et pratiques antiques ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-6E-ANCIENT",
+          "primary_skill_code": "SK-ENR-HISTORY-6E-ANCIENT-COMPARE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-history-v1",
+          "template_version": "lcai-6e-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-HISTORY-ANCIENT-COMPARE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-HISTORY-V1-ROME-EMPIRE-PRACTICE-01",
+      "grade": "FR-6E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-6E-ROME",
+      "skill": "SK-ENR-HISTORY-6E-ROME-EMPIRE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « L'Empire romain dans le monde antique », réalise une tâche montrant que tu sais expliquer le fonctionnement de l'empire romain. Appuie-toi sur un exemple ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Expliquer le fonctionnement de l'Empire romain ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-HISTORY-ROME-EMPIRE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-HISTORY-V1-ROME-EMPIRE-PRACTICE-01",
+        "title": "Expliquer le fonctionnement de l'Empire romain",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « L'Empire romain dans le monde antique », réalise une tâche montrant que tu sais expliquer le fonctionnement de l'empire romain. Appuie-toi sur un exemple ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Expliquer le fonctionnement de l'Empire romain ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-6E-ROME",
+          "primary_skill_code": "SK-ENR-HISTORY-6E-ROME-EMPIRE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-history-v1",
+          "template_version": "lcai-6e-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-HISTORY-ROME-EMPIRE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-HISTORY-V1-ROME-EMPIRE-PRACTICE-02",
+      "grade": "FR-6E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-6E-ROME",
+      "skill": "SK-ENR-HISTORY-6E-ROME-EMPIRE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Expliquer le fonctionnement de l'Empire romain » à une situation pertinente de niveau 6e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Expliquer le fonctionnement de l'Empire romain ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-HISTORY-ROME-EMPIRE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-HISTORY-V1-ROME-EMPIRE-PRACTICE-02",
+        "title": "Expliquer le fonctionnement de l'Empire romain",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Expliquer le fonctionnement de l'Empire romain » à une situation pertinente de niveau 6e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Expliquer le fonctionnement de l'Empire romain ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-6E-ROME",
+          "primary_skill_code": "SK-ENR-HISTORY-6E-ROME-EMPIRE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-history-v1",
+          "template_version": "lcai-6e-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-HISTORY-ROME-EMPIRE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-HISTORY-V1-ROME-EMPIRE-ASSESSMENT-03",
+      "grade": "FR-6E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-6E-ROME",
+      "skill": "SK-ENR-HISTORY-6E-ROME-EMPIRE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 6e : démontre de façon autonome que tu sais expliquer le fonctionnement de l'empire romain. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Expliquer le fonctionnement de l'Empire romain ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-HISTORY-ROME-EMPIRE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-HISTORY-V1-ROME-EMPIRE-ASSESSMENT-03",
+        "title": "Expliquer le fonctionnement de l'Empire romain",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 6e : démontre de façon autonome que tu sais expliquer le fonctionnement de l'empire romain. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Expliquer le fonctionnement de l'Empire romain ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-6E-ROME",
+          "primary_skill_code": "SK-ENR-HISTORY-6E-ROME-EMPIRE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-history-v1",
+          "template_version": "lcai-6e-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-HISTORY-ROME-EMPIRE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-HISTORY-V1-ROME-ROMANIZATION-PRACTICE-01",
+      "grade": "FR-6E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-6E-ROME",
+      "skill": "SK-ENR-HISTORY-6E-ROME-ROMANIZATION",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « L'Empire romain dans le monde antique », réalise une tâche montrant que tu sais décrire la romanisation. Appuie-toi sur un exemple ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Décrire la romanisation ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-HISTORY-ROME-ROMANIZATION",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-HISTORY-V1-ROME-ROMANIZATION-PRACTICE-01",
+        "title": "Décrire la romanisation",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « L'Empire romain dans le monde antique », réalise une tâche montrant que tu sais décrire la romanisation. Appuie-toi sur un exemple ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Décrire la romanisation ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-6E-ROME",
+          "primary_skill_code": "SK-ENR-HISTORY-6E-ROME-ROMANIZATION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-history-v1",
+          "template_version": "lcai-6e-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-HISTORY-ROME-ROMANIZATION",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-HISTORY-V1-ROME-ROMANIZATION-PRACTICE-02",
+      "grade": "FR-6E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-6E-ROME",
+      "skill": "SK-ENR-HISTORY-6E-ROME-ROMANIZATION",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Décrire la romanisation » à une situation pertinente de niveau 6e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Décrire la romanisation ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-HISTORY-ROME-ROMANIZATION",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-HISTORY-V1-ROME-ROMANIZATION-PRACTICE-02",
+        "title": "Décrire la romanisation",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Décrire la romanisation » à une situation pertinente de niveau 6e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Décrire la romanisation ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-6E-ROME",
+          "primary_skill_code": "SK-ENR-HISTORY-6E-ROME-ROMANIZATION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-history-v1",
+          "template_version": "lcai-6e-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-HISTORY-ROME-ROMANIZATION",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-HISTORY-V1-ROME-ROMANIZATION-ASSESSMENT-03",
+      "grade": "FR-6E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-6E-ROME",
+      "skill": "SK-ENR-HISTORY-6E-ROME-ROMANIZATION",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 6e : démontre de façon autonome que tu sais décrire la romanisation. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Décrire la romanisation ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-HISTORY-ROME-ROMANIZATION",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-HISTORY-V1-ROME-ROMANIZATION-ASSESSMENT-03",
+        "title": "Décrire la romanisation",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 6e : démontre de façon autonome que tu sais décrire la romanisation. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Décrire la romanisation ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-6E-ROME",
+          "primary_skill_code": "SK-ENR-HISTORY-6E-ROME-ROMANIZATION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-history-v1",
+          "template_version": "lcai-6e-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-HISTORY-ROME-ROMANIZATION",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-HISTORY-V1-ROME-CITIES-PRACTICE-01",
+      "grade": "FR-6E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-6E-ROME",
+      "skill": "SK-ENR-HISTORY-6E-ROME-CITIES",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « L'Empire romain dans le monde antique », réalise une tâche montrant que tu sais lire l'organisation d'une ville romaine. Appuie-toi sur un exemple ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Lire l'organisation d'une ville romaine ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-HISTORY-ROME-CITIES",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-HISTORY-V1-ROME-CITIES-PRACTICE-01",
+        "title": "Lire l'organisation d'une ville romaine",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « L'Empire romain dans le monde antique », réalise une tâche montrant que tu sais lire l'organisation d'une ville romaine. Appuie-toi sur un exemple ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Lire l'organisation d'une ville romaine ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-6E-ROME",
+          "primary_skill_code": "SK-ENR-HISTORY-6E-ROME-CITIES",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-history-v1",
+          "template_version": "lcai-6e-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-HISTORY-ROME-CITIES",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-HISTORY-V1-ROME-CITIES-PRACTICE-02",
+      "grade": "FR-6E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-6E-ROME",
+      "skill": "SK-ENR-HISTORY-6E-ROME-CITIES",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Lire l'organisation d'une ville romaine » à une situation pertinente de niveau 6e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Lire l'organisation d'une ville romaine ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-HISTORY-ROME-CITIES",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-HISTORY-V1-ROME-CITIES-PRACTICE-02",
+        "title": "Lire l'organisation d'une ville romaine",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Lire l'organisation d'une ville romaine » à une situation pertinente de niveau 6e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Lire l'organisation d'une ville romaine ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-6E-ROME",
+          "primary_skill_code": "SK-ENR-HISTORY-6E-ROME-CITIES",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-history-v1",
+          "template_version": "lcai-6e-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-HISTORY-ROME-CITIES",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-HISTORY-V1-ROME-CITIES-ASSESSMENT-03",
+      "grade": "FR-6E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-6E-ROME",
+      "skill": "SK-ENR-HISTORY-6E-ROME-CITIES",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 6e : démontre de façon autonome que tu sais lire l'organisation d'une ville romaine. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Lire l'organisation d'une ville romaine ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-HISTORY-ROME-CITIES",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-HISTORY-V1-ROME-CITIES-ASSESSMENT-03",
+        "title": "Lire l'organisation d'une ville romaine",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 6e : démontre de façon autonome que tu sais lire l'organisation d'une ville romaine. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Lire l'organisation d'une ville romaine ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-6E-ROME",
+          "primary_skill_code": "SK-ENR-HISTORY-6E-ROME-CITIES",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-history-v1",
+          "template_version": "lcai-6e-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-HISTORY-ROME-CITIES",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-HISTORY-V1-ROME-HERITAGE-PRACTICE-01",
+      "grade": "FR-6E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-6E-ROME",
+      "skill": "SK-ENR-HISTORY-6E-ROME-HERITAGE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « L'Empire romain dans le monde antique », réalise une tâche montrant que tu sais identifier des héritages romains. Appuie-toi sur un exemple ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Identifier des héritages romains ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-HISTORY-ROME-HERITAGE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-HISTORY-V1-ROME-HERITAGE-PRACTICE-01",
+        "title": "Identifier des héritages romains",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « L'Empire romain dans le monde antique », réalise une tâche montrant que tu sais identifier des héritages romains. Appuie-toi sur un exemple ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Identifier des héritages romains ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-6E-ROME",
+          "primary_skill_code": "SK-ENR-HISTORY-6E-ROME-HERITAGE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-history-v1",
+          "template_version": "lcai-6e-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-HISTORY-ROME-HERITAGE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-HISTORY-V1-ROME-HERITAGE-PRACTICE-02",
+      "grade": "FR-6E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-6E-ROME",
+      "skill": "SK-ENR-HISTORY-6E-ROME-HERITAGE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Identifier des héritages romains » à une situation pertinente de niveau 6e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Identifier des héritages romains ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-HISTORY-ROME-HERITAGE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-HISTORY-V1-ROME-HERITAGE-PRACTICE-02",
+        "title": "Identifier des héritages romains",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Identifier des héritages romains » à une situation pertinente de niveau 6e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Identifier des héritages romains ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-6E-ROME",
+          "primary_skill_code": "SK-ENR-HISTORY-6E-ROME-HERITAGE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-history-v1",
+          "template_version": "lcai-6e-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-HISTORY-ROME-HERITAGE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-HISTORY-V1-ROME-HERITAGE-ASSESSMENT-03",
+      "grade": "FR-6E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-6E-ROME",
+      "skill": "SK-ENR-HISTORY-6E-ROME-HERITAGE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 6e : démontre de façon autonome que tu sais identifier des héritages romains. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Identifier des héritages romains ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-HISTORY-ROME-HERITAGE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-HISTORY-V1-ROME-HERITAGE-ASSESSMENT-03",
+        "title": "Identifier des héritages romains",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 6e : démontre de façon autonome que tu sais identifier des héritages romains. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Identifier des héritages romains ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-6E-ROME",
+          "primary_skill_code": "SK-ENR-HISTORY-6E-ROME-HERITAGE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-history-v1",
+          "template_version": "lcai-6e-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-HISTORY-ROME-HERITAGE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_history_candidates_v1.json"
+      }
+    }
+  ]
+}

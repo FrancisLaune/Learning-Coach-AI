@@ -1,0 +1,3298 @@
+{
+  "batch": "5E-ENGLISH-V1",
+  "purpose": "Parallel 5e content preparation for Learning Coach AI",
+  "lifecycle_target": "Draft",
+  "automatic_approval": false,
+  "curriculum_version": "phase2-lcai-0011c",
+  "program_code": "FR-CYCLE4-5E-2026",
+  "grade_code": "FR-5E",
+  "subject_code": "ENGLISH",
+  "skill_count": 13,
+  "candidate_count": 39,
+  "content_types": {
+    "practice": 26,
+    "assessment": 13
+  },
+  "difficulty_distribution": {
+    "1": 13,
+    "2": 26
+  },
+  "accepted_candidates": [
+    {
+      "code": "5E-ENGLISH-V1-COMMUNICATION-LISTEN-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-5E-COMMUNICATION",
+      "skill": "SK-ENR-ENGLISH-5E-COMMUNICATION-LISTEN",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Practice: demonstrate that you can comprendre un message oral a2 in an A2 familiar situation.",
+      "expected_answer": "Open response assessed with A2 success criteria.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Comprendre un message oral A2 ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-ENGLISH-COMMUNICATION-LISTEN",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-ENGLISH-V1-COMMUNICATION-LISTEN-PRACTICE-01",
+        "title": "Comprendre un message oral A2",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Practice: demonstrate that you can comprendre un message oral a2 in an A2 familiar situation.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Open response assessed with A2 success criteria.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Comprendre un message oral A2 ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-5E-COMMUNICATION",
+          "primary_skill_code": "SK-ENR-ENGLISH-5E-COMMUNICATION-LISTEN",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-english-v1",
+          "template_version": "lcai-5e-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-ENGLISH-COMMUNICATION-LISTEN",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "oral_or_teacher_read",
+          "success_criteria": [
+            "A2 task completed",
+            "message understandable",
+            "relevant vocabulary and structures"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-ENGLISH-V1-COMMUNICATION-LISTEN-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-5E-COMMUNICATION",
+      "skill": "SK-ENR-ENGLISH-5E-COMMUNICATION-LISTEN",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Apply the skill “Comprendre un message oral A2” to a short school, daily-life or cultural task.",
+      "expected_answer": "Open response assessed with A2 success criteria.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Comprendre un message oral A2 ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-ENGLISH-COMMUNICATION-LISTEN",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-ENGLISH-V1-COMMUNICATION-LISTEN-PRACTICE-02",
+        "title": "Comprendre un message oral A2",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Apply the skill “Comprendre un message oral A2” to a short school, daily-life or cultural task.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Open response assessed with A2 success criteria.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Comprendre un message oral A2 ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-5E-COMMUNICATION",
+          "primary_skill_code": "SK-ENR-ENGLISH-5E-COMMUNICATION-LISTEN",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-english-v1",
+          "template_version": "lcai-5e-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-ENGLISH-COMMUNICATION-LISTEN",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "oral_or_teacher_read",
+          "success_criteria": [
+            "A2 task completed",
+            "message understandable",
+            "relevant vocabulary and structures"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-ENGLISH-V1-COMMUNICATION-LISTEN-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-5E-COMMUNICATION",
+      "skill": "SK-ENR-ENGLISH-5E-COMMUNICATION-LISTEN",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Assessment: independently show that you can comprendre un message oral a2.",
+      "expected_answer": "Open response assessed with A2 success criteria.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Comprendre un message oral A2 ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-ENGLISH-COMMUNICATION-LISTEN",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-ENGLISH-V1-COMMUNICATION-LISTEN-ASSESSMENT-03",
+        "title": "Comprendre un message oral A2",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Assessment: independently show that you can comprendre un message oral a2.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Open response assessed with A2 success criteria.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Comprendre un message oral A2 ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-5E-COMMUNICATION",
+          "primary_skill_code": "SK-ENR-ENGLISH-5E-COMMUNICATION-LISTEN",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-english-v1",
+          "template_version": "lcai-5e-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-ENGLISH-COMMUNICATION-LISTEN",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "oral_or_teacher_read",
+          "success_criteria": [
+            "A2 task completed",
+            "message understandable",
+            "relevant vocabulary and structures"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-ENGLISH-V1-COMMUNICATION-READ-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-5E-COMMUNICATION",
+      "skill": "SK-ENR-ENGLISH-5E-COMMUNICATION-READ",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Practice: demonstrate that you can comprendre un texte court a2 in an A2 familiar situation.",
+      "expected_answer": "Open response assessed with A2 success criteria.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Comprendre un texte court A2 ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-ENGLISH-COMMUNICATION-READ",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-ENGLISH-V1-COMMUNICATION-READ-PRACTICE-01",
+        "title": "Comprendre un texte court A2",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Practice: demonstrate that you can comprendre un texte court a2 in an A2 familiar situation.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Open response assessed with A2 success criteria.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Comprendre un texte court A2 ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-5E-COMMUNICATION",
+          "primary_skill_code": "SK-ENR-ENGLISH-5E-COMMUNICATION-READ",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-english-v1",
+          "template_version": "lcai-5e-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-ENGLISH-COMMUNICATION-READ",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "A2 task completed",
+            "message understandable",
+            "relevant vocabulary and structures"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-ENGLISH-V1-COMMUNICATION-READ-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-5E-COMMUNICATION",
+      "skill": "SK-ENR-ENGLISH-5E-COMMUNICATION-READ",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Apply the skill “Comprendre un texte court A2” to a short school, daily-life or cultural task.",
+      "expected_answer": "Open response assessed with A2 success criteria.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Comprendre un texte court A2 ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-ENGLISH-COMMUNICATION-READ",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-ENGLISH-V1-COMMUNICATION-READ-PRACTICE-02",
+        "title": "Comprendre un texte court A2",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Apply the skill “Comprendre un texte court A2” to a short school, daily-life or cultural task.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Open response assessed with A2 success criteria.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Comprendre un texte court A2 ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-5E-COMMUNICATION",
+          "primary_skill_code": "SK-ENR-ENGLISH-5E-COMMUNICATION-READ",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-english-v1",
+          "template_version": "lcai-5e-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-ENGLISH-COMMUNICATION-READ",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "A2 task completed",
+            "message understandable",
+            "relevant vocabulary and structures"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-ENGLISH-V1-COMMUNICATION-READ-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-5E-COMMUNICATION",
+      "skill": "SK-ENR-ENGLISH-5E-COMMUNICATION-READ",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Assessment: independently show that you can comprendre un texte court a2.",
+      "expected_answer": "Open response assessed with A2 success criteria.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Comprendre un texte court A2 ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-ENGLISH-COMMUNICATION-READ",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-ENGLISH-V1-COMMUNICATION-READ-ASSESSMENT-03",
+        "title": "Comprendre un texte court A2",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Assessment: independently show that you can comprendre un texte court a2.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Open response assessed with A2 success criteria.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Comprendre un texte court A2 ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-5E-COMMUNICATION",
+          "primary_skill_code": "SK-ENR-ENGLISH-5E-COMMUNICATION-READ",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-english-v1",
+          "template_version": "lcai-5e-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-ENGLISH-COMMUNICATION-READ",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "A2 task completed",
+            "message understandable",
+            "relevant vocabulary and structures"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-ENGLISH-V1-COMMUNICATION-INTERACT-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-5E-COMMUNICATION",
+      "skill": "SK-ENR-ENGLISH-5E-COMMUNICATION-INTERACT",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Practice: demonstrate that you can interagir dans une situation familière in an A2 familiar situation.",
+      "expected_answer": "Open response assessed with A2 success criteria.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Interagir dans une situation familière ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-ENGLISH-COMMUNICATION-INTERACT",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-ENGLISH-V1-COMMUNICATION-INTERACT-PRACTICE-01",
+        "title": "Interagir dans une situation familière",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Practice: demonstrate that you can interagir dans une situation familière in an A2 familiar situation.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Open response assessed with A2 success criteria.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Interagir dans une situation familière ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-5E-COMMUNICATION",
+          "primary_skill_code": "SK-ENR-ENGLISH-5E-COMMUNICATION-INTERACT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-english-v1",
+          "template_version": "lcai-5e-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-ENGLISH-COMMUNICATION-INTERACT",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "oral_or_teacher_read",
+          "success_criteria": [
+            "A2 task completed",
+            "message understandable",
+            "relevant vocabulary and structures"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-ENGLISH-V1-COMMUNICATION-INTERACT-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-5E-COMMUNICATION",
+      "skill": "SK-ENR-ENGLISH-5E-COMMUNICATION-INTERACT",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Apply the skill “Interagir dans une situation familière” to a short school, daily-life or cultural task.",
+      "expected_answer": "Open response assessed with A2 success criteria.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Interagir dans une situation familière ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-ENGLISH-COMMUNICATION-INTERACT",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-ENGLISH-V1-COMMUNICATION-INTERACT-PRACTICE-02",
+        "title": "Interagir dans une situation familière",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Apply the skill “Interagir dans une situation familière” to a short school, daily-life or cultural task.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Open response assessed with A2 success criteria.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Interagir dans une situation familière ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-5E-COMMUNICATION",
+          "primary_skill_code": "SK-ENR-ENGLISH-5E-COMMUNICATION-INTERACT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-english-v1",
+          "template_version": "lcai-5e-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-ENGLISH-COMMUNICATION-INTERACT",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "oral_or_teacher_read",
+          "success_criteria": [
+            "A2 task completed",
+            "message understandable",
+            "relevant vocabulary and structures"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-ENGLISH-V1-COMMUNICATION-INTERACT-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-5E-COMMUNICATION",
+      "skill": "SK-ENR-ENGLISH-5E-COMMUNICATION-INTERACT",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Assessment: independently show that you can interagir dans une situation familière.",
+      "expected_answer": "Open response assessed with A2 success criteria.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Interagir dans une situation familière ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-ENGLISH-COMMUNICATION-INTERACT",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-ENGLISH-V1-COMMUNICATION-INTERACT-ASSESSMENT-03",
+        "title": "Interagir dans une situation familière",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Assessment: independently show that you can interagir dans une situation familière.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Open response assessed with A2 success criteria.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Interagir dans une situation familière ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-5E-COMMUNICATION",
+          "primary_skill_code": "SK-ENR-ENGLISH-5E-COMMUNICATION-INTERACT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-english-v1",
+          "template_version": "lcai-5e-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-ENGLISH-COMMUNICATION-INTERACT",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "oral_or_teacher_read",
+          "success_criteria": [
+            "A2 task completed",
+            "message understandable",
+            "relevant vocabulary and structures"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-ENGLISH-V1-COMMUNICATION-SPEAK-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-5E-COMMUNICATION",
+      "skill": "SK-ENR-ENGLISH-5E-COMMUNICATION-SPEAK",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Practice: demonstrate that you can produire un message oral continu in an A2 familiar situation.",
+      "expected_answer": "Open response assessed with A2 success criteria.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Produire un message oral continu ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-ENGLISH-COMMUNICATION-SPEAK",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-ENGLISH-V1-COMMUNICATION-SPEAK-PRACTICE-01",
+        "title": "Produire un message oral continu",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Practice: demonstrate that you can produire un message oral continu in an A2 familiar situation.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Open response assessed with A2 success criteria.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Produire un message oral continu ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-5E-COMMUNICATION",
+          "primary_skill_code": "SK-ENR-ENGLISH-5E-COMMUNICATION-SPEAK",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-english-v1",
+          "template_version": "lcai-5e-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-ENGLISH-COMMUNICATION-SPEAK",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "oral_or_teacher_read",
+          "success_criteria": [
+            "A2 task completed",
+            "message understandable",
+            "relevant vocabulary and structures"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-ENGLISH-V1-COMMUNICATION-SPEAK-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-5E-COMMUNICATION",
+      "skill": "SK-ENR-ENGLISH-5E-COMMUNICATION-SPEAK",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Apply the skill “Produire un message oral continu” to a short school, daily-life or cultural task.",
+      "expected_answer": "Open response assessed with A2 success criteria.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Produire un message oral continu ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-ENGLISH-COMMUNICATION-SPEAK",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-ENGLISH-V1-COMMUNICATION-SPEAK-PRACTICE-02",
+        "title": "Produire un message oral continu",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Apply the skill “Produire un message oral continu” to a short school, daily-life or cultural task.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Open response assessed with A2 success criteria.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Produire un message oral continu ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-5E-COMMUNICATION",
+          "primary_skill_code": "SK-ENR-ENGLISH-5E-COMMUNICATION-SPEAK",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-english-v1",
+          "template_version": "lcai-5e-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-ENGLISH-COMMUNICATION-SPEAK",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "oral_or_teacher_read",
+          "success_criteria": [
+            "A2 task completed",
+            "message understandable",
+            "relevant vocabulary and structures"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-ENGLISH-V1-COMMUNICATION-SPEAK-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-5E-COMMUNICATION",
+      "skill": "SK-ENR-ENGLISH-5E-COMMUNICATION-SPEAK",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Assessment: independently show that you can produire un message oral continu.",
+      "expected_answer": "Open response assessed with A2 success criteria.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Produire un message oral continu ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-ENGLISH-COMMUNICATION-SPEAK",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-ENGLISH-V1-COMMUNICATION-SPEAK-ASSESSMENT-03",
+        "title": "Produire un message oral continu",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Assessment: independently show that you can produire un message oral continu.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Open response assessed with A2 success criteria.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Produire un message oral continu ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-5E-COMMUNICATION",
+          "primary_skill_code": "SK-ENR-ENGLISH-5E-COMMUNICATION-SPEAK",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-english-v1",
+          "template_version": "lcai-5e-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-ENGLISH-COMMUNICATION-SPEAK",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "oral_or_teacher_read",
+          "success_criteria": [
+            "A2 task completed",
+            "message understandable",
+            "relevant vocabulary and structures"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-ENGLISH-V1-COMMUNICATION-WRITE-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-5E-COMMUNICATION",
+      "skill": "SK-ENR-ENGLISH-5E-COMMUNICATION-WRITE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Practice: demonstrate that you can rédiger un message simple et cohérent in an A2 familiar situation.",
+      "expected_answer": "Open response assessed with A2 success criteria.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Rédiger un message simple et cohérent ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-ENGLISH-COMMUNICATION-WRITE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-ENGLISH-V1-COMMUNICATION-WRITE-PRACTICE-01",
+        "title": "Rédiger un message simple et cohérent",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Practice: demonstrate that you can rédiger un message simple et cohérent in an A2 familiar situation.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Open response assessed with A2 success criteria.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Rédiger un message simple et cohérent ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-5E-COMMUNICATION",
+          "primary_skill_code": "SK-ENR-ENGLISH-5E-COMMUNICATION-WRITE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-english-v1",
+          "template_version": "lcai-5e-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-ENGLISH-COMMUNICATION-WRITE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "A2 task completed",
+            "message understandable",
+            "relevant vocabulary and structures"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-ENGLISH-V1-COMMUNICATION-WRITE-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-5E-COMMUNICATION",
+      "skill": "SK-ENR-ENGLISH-5E-COMMUNICATION-WRITE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Apply the skill “Rédiger un message simple et cohérent” to a short school, daily-life or cultural task.",
+      "expected_answer": "Open response assessed with A2 success criteria.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Rédiger un message simple et cohérent ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-ENGLISH-COMMUNICATION-WRITE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-ENGLISH-V1-COMMUNICATION-WRITE-PRACTICE-02",
+        "title": "Rédiger un message simple et cohérent",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Apply the skill “Rédiger un message simple et cohérent” to a short school, daily-life or cultural task.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Open response assessed with A2 success criteria.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Rédiger un message simple et cohérent ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-5E-COMMUNICATION",
+          "primary_skill_code": "SK-ENR-ENGLISH-5E-COMMUNICATION-WRITE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-english-v1",
+          "template_version": "lcai-5e-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-ENGLISH-COMMUNICATION-WRITE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "A2 task completed",
+            "message understandable",
+            "relevant vocabulary and structures"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-ENGLISH-V1-COMMUNICATION-WRITE-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-5E-COMMUNICATION",
+      "skill": "SK-ENR-ENGLISH-5E-COMMUNICATION-WRITE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Assessment: independently show that you can rédiger un message simple et cohérent.",
+      "expected_answer": "Open response assessed with A2 success criteria.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Rédiger un message simple et cohérent ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-ENGLISH-COMMUNICATION-WRITE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-ENGLISH-V1-COMMUNICATION-WRITE-ASSESSMENT-03",
+        "title": "Rédiger un message simple et cohérent",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Assessment: independently show that you can rédiger un message simple et cohérent.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Open response assessed with A2 success criteria.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Rédiger un message simple et cohérent ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-5E-COMMUNICATION",
+          "primary_skill_code": "SK-ENR-ENGLISH-5E-COMMUNICATION-WRITE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-english-v1",
+          "template_version": "lcai-5e-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-ENGLISH-COMMUNICATION-WRITE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "A2 task completed",
+            "message understandable",
+            "relevant vocabulary and structures"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-ENGLISH-V1-LANGUAGE-VOCAB-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-5E-LANGUAGE",
+      "skill": "SK-ENR-ENGLISH-5E-LANGUAGE-VOCAB",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Practice: demonstrate that you can mobiliser le lexique des thèmes étudiés in an A2 familiar situation.",
+      "expected_answer": "Open response assessed with A2 success criteria.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Mobiliser le lexique des thèmes étudiés ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-ENGLISH-LANGUAGE-VOCAB",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-ENGLISH-V1-LANGUAGE-VOCAB-PRACTICE-01",
+        "title": "Mobiliser le lexique des thèmes étudiés",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Practice: demonstrate that you can mobiliser le lexique des thèmes étudiés in an A2 familiar situation.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Open response assessed with A2 success criteria.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Mobiliser le lexique des thèmes étudiés ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-5E-LANGUAGE",
+          "primary_skill_code": "SK-ENR-ENGLISH-5E-LANGUAGE-VOCAB",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-english-v1",
+          "template_version": "lcai-5e-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-ENGLISH-LANGUAGE-VOCAB",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "A2 task completed",
+            "message understandable",
+            "relevant vocabulary and structures"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-ENGLISH-V1-LANGUAGE-VOCAB-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-5E-LANGUAGE",
+      "skill": "SK-ENR-ENGLISH-5E-LANGUAGE-VOCAB",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Apply the skill “Mobiliser le lexique des thèmes étudiés” to a short school, daily-life or cultural task.",
+      "expected_answer": "Open response assessed with A2 success criteria.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Mobiliser le lexique des thèmes étudiés ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-ENGLISH-LANGUAGE-VOCAB",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-ENGLISH-V1-LANGUAGE-VOCAB-PRACTICE-02",
+        "title": "Mobiliser le lexique des thèmes étudiés",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Apply the skill “Mobiliser le lexique des thèmes étudiés” to a short school, daily-life or cultural task.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Open response assessed with A2 success criteria.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Mobiliser le lexique des thèmes étudiés ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-5E-LANGUAGE",
+          "primary_skill_code": "SK-ENR-ENGLISH-5E-LANGUAGE-VOCAB",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-english-v1",
+          "template_version": "lcai-5e-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-ENGLISH-LANGUAGE-VOCAB",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "A2 task completed",
+            "message understandable",
+            "relevant vocabulary and structures"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-ENGLISH-V1-LANGUAGE-VOCAB-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-5E-LANGUAGE",
+      "skill": "SK-ENR-ENGLISH-5E-LANGUAGE-VOCAB",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Assessment: independently show that you can mobiliser le lexique des thèmes étudiés.",
+      "expected_answer": "Open response assessed with A2 success criteria.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Mobiliser le lexique des thèmes étudiés ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-ENGLISH-LANGUAGE-VOCAB",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-ENGLISH-V1-LANGUAGE-VOCAB-ASSESSMENT-03",
+        "title": "Mobiliser le lexique des thèmes étudiés",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Assessment: independently show that you can mobiliser le lexique des thèmes étudiés.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Open response assessed with A2 success criteria.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Mobiliser le lexique des thèmes étudiés ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-5E-LANGUAGE",
+          "primary_skill_code": "SK-ENR-ENGLISH-5E-LANGUAGE-VOCAB",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-english-v1",
+          "template_version": "lcai-5e-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-ENGLISH-LANGUAGE-VOCAB",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "A2 task completed",
+            "message understandable",
+            "relevant vocabulary and structures"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-ENGLISH-V1-LANGUAGE-GRAMMAR-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-5E-LANGUAGE",
+      "skill": "SK-ENR-ENGLISH-5E-LANGUAGE-GRAMMAR",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Practice: demonstrate that you can construire des phrases correctes in an A2 familiar situation.",
+      "expected_answer": "Open response assessed with A2 success criteria.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Construire des phrases correctes ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-ENGLISH-LANGUAGE-GRAMMAR",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-ENGLISH-V1-LANGUAGE-GRAMMAR-PRACTICE-01",
+        "title": "Construire des phrases correctes",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Practice: demonstrate that you can construire des phrases correctes in an A2 familiar situation.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Open response assessed with A2 success criteria.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Construire des phrases correctes ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-5E-LANGUAGE",
+          "primary_skill_code": "SK-ENR-ENGLISH-5E-LANGUAGE-GRAMMAR",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-english-v1",
+          "template_version": "lcai-5e-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-ENGLISH-LANGUAGE-GRAMMAR",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "A2 task completed",
+            "message understandable",
+            "relevant vocabulary and structures"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-ENGLISH-V1-LANGUAGE-GRAMMAR-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-5E-LANGUAGE",
+      "skill": "SK-ENR-ENGLISH-5E-LANGUAGE-GRAMMAR",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Apply the skill “Construire des phrases correctes” to a short school, daily-life or cultural task.",
+      "expected_answer": "Open response assessed with A2 success criteria.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Construire des phrases correctes ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-ENGLISH-LANGUAGE-GRAMMAR",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-ENGLISH-V1-LANGUAGE-GRAMMAR-PRACTICE-02",
+        "title": "Construire des phrases correctes",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Apply the skill “Construire des phrases correctes” to a short school, daily-life or cultural task.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Open response assessed with A2 success criteria.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Construire des phrases correctes ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-5E-LANGUAGE",
+          "primary_skill_code": "SK-ENR-ENGLISH-5E-LANGUAGE-GRAMMAR",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-english-v1",
+          "template_version": "lcai-5e-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-ENGLISH-LANGUAGE-GRAMMAR",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "A2 task completed",
+            "message understandable",
+            "relevant vocabulary and structures"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-ENGLISH-V1-LANGUAGE-GRAMMAR-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-5E-LANGUAGE",
+      "skill": "SK-ENR-ENGLISH-5E-LANGUAGE-GRAMMAR",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Assessment: independently show that you can construire des phrases correctes.",
+      "expected_answer": "Open response assessed with A2 success criteria.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Construire des phrases correctes ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-ENGLISH-LANGUAGE-GRAMMAR",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-ENGLISH-V1-LANGUAGE-GRAMMAR-ASSESSMENT-03",
+        "title": "Construire des phrases correctes",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Assessment: independently show that you can construire des phrases correctes.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Open response assessed with A2 success criteria.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Construire des phrases correctes ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-5E-LANGUAGE",
+          "primary_skill_code": "SK-ENR-ENGLISH-5E-LANGUAGE-GRAMMAR",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-english-v1",
+          "template_version": "lcai-5e-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-ENGLISH-LANGUAGE-GRAMMAR",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "A2 task completed",
+            "message understandable",
+            "relevant vocabulary and structures"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-ENGLISH-V1-LANGUAGE-TENSES-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-5E-LANGUAGE",
+      "skill": "SK-ENR-ENGLISH-5E-LANGUAGE-TENSE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Practice: demonstrate that you can employer les temps attendus in an A2 familiar situation.",
+      "expected_answer": "Open response assessed with A2 success criteria.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Employer les temps attendus ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-ENGLISH-LANGUAGE-TENSES",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-ENGLISH-V1-LANGUAGE-TENSES-PRACTICE-01",
+        "title": "Employer les temps attendus",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Practice: demonstrate that you can employer les temps attendus in an A2 familiar situation.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Open response assessed with A2 success criteria.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Employer les temps attendus ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-5E-LANGUAGE",
+          "primary_skill_code": "SK-ENR-ENGLISH-5E-LANGUAGE-TENSE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-english-v1",
+          "template_version": "lcai-5e-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-ENGLISH-LANGUAGE-TENSES",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "A2 task completed",
+            "message understandable",
+            "relevant vocabulary and structures"
+          ],
+          "skill_correction": {
+            "original_primary_skill_code": "SK-ENR-ENGLISH-5E-LANGUAGE-TENSES",
+            "corrected_primary_skill_code": "SK-ENR-ENGLISH-5E-LANGUAGE-TENSE",
+            "correction_reason": "Resolved: SK-ENR-ENGLISH-5E-LANGUAGE-TENSES -> SK-ENR-ENGLISH-5E-LANGUAGE-TENSE",
+            "correction_method": "suffix_substitution",
+            "curriculum_match": {
+              "program_code": "FR-CYCLE4-5E-2026",
+              "grade_code": "FR-5E",
+              "subject_code": "ENGLISH",
+              "chapter_code": "CH-ENGLISH-5E-LANGUAGE",
+              "primary_skill_code": "SK-ENR-ENGLISH-5E-LANGUAGE-TENSE"
+            }
+          }
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-ENGLISH-V1-LANGUAGE-TENSES-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-5E-LANGUAGE",
+      "skill": "SK-ENR-ENGLISH-5E-LANGUAGE-TENSE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Apply the skill “Employer les temps attendus” to a short school, daily-life or cultural task.",
+      "expected_answer": "Open response assessed with A2 success criteria.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Employer les temps attendus ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-ENGLISH-LANGUAGE-TENSES",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-ENGLISH-V1-LANGUAGE-TENSES-PRACTICE-02",
+        "title": "Employer les temps attendus",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Apply the skill “Employer les temps attendus” to a short school, daily-life or cultural task.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Open response assessed with A2 success criteria.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Employer les temps attendus ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-5E-LANGUAGE",
+          "primary_skill_code": "SK-ENR-ENGLISH-5E-LANGUAGE-TENSE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-english-v1",
+          "template_version": "lcai-5e-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-ENGLISH-LANGUAGE-TENSES",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "A2 task completed",
+            "message understandable",
+            "relevant vocabulary and structures"
+          ],
+          "skill_correction": {
+            "original_primary_skill_code": "SK-ENR-ENGLISH-5E-LANGUAGE-TENSES",
+            "corrected_primary_skill_code": "SK-ENR-ENGLISH-5E-LANGUAGE-TENSE",
+            "correction_reason": "Resolved: SK-ENR-ENGLISH-5E-LANGUAGE-TENSES -> SK-ENR-ENGLISH-5E-LANGUAGE-TENSE",
+            "correction_method": "suffix_substitution",
+            "curriculum_match": {
+              "program_code": "FR-CYCLE4-5E-2026",
+              "grade_code": "FR-5E",
+              "subject_code": "ENGLISH",
+              "chapter_code": "CH-ENGLISH-5E-LANGUAGE",
+              "primary_skill_code": "SK-ENR-ENGLISH-5E-LANGUAGE-TENSE"
+            }
+          }
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-ENGLISH-V1-LANGUAGE-TENSES-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-5E-LANGUAGE",
+      "skill": "SK-ENR-ENGLISH-5E-LANGUAGE-TENSE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Assessment: independently show that you can employer les temps attendus.",
+      "expected_answer": "Open response assessed with A2 success criteria.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Employer les temps attendus ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-ENGLISH-LANGUAGE-TENSES",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-ENGLISH-V1-LANGUAGE-TENSES-ASSESSMENT-03",
+        "title": "Employer les temps attendus",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Assessment: independently show that you can employer les temps attendus.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Open response assessed with A2 success criteria.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Employer les temps attendus ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-5E-LANGUAGE",
+          "primary_skill_code": "SK-ENR-ENGLISH-5E-LANGUAGE-TENSE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-english-v1",
+          "template_version": "lcai-5e-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-ENGLISH-LANGUAGE-TENSES",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "A2 task completed",
+            "message understandable",
+            "relevant vocabulary and structures"
+          ],
+          "skill_correction": {
+            "original_primary_skill_code": "SK-ENR-ENGLISH-5E-LANGUAGE-TENSES",
+            "corrected_primary_skill_code": "SK-ENR-ENGLISH-5E-LANGUAGE-TENSE",
+            "correction_reason": "Resolved: SK-ENR-ENGLISH-5E-LANGUAGE-TENSES -> SK-ENR-ENGLISH-5E-LANGUAGE-TENSE",
+            "correction_method": "suffix_substitution",
+            "curriculum_match": {
+              "program_code": "FR-CYCLE4-5E-2026",
+              "grade_code": "FR-5E",
+              "subject_code": "ENGLISH",
+              "chapter_code": "CH-ENGLISH-5E-LANGUAGE",
+              "primary_skill_code": "SK-ENR-ENGLISH-5E-LANGUAGE-TENSE"
+            }
+          }
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-ENGLISH-V1-LANGUAGE-PHONOLOGY-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-5E-LANGUAGE",
+      "skill": "SK-ENR-ENGLISH-5E-LANGUAGE-PHONOLOGY",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Practice: demonstrate that you can produire un message phonologiquement intelligible in an A2 familiar situation.",
+      "expected_answer": "Open response assessed with A2 success criteria.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Produire un message phonologiquement intelligible ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-ENGLISH-LANGUAGE-PHONOLOGY",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-ENGLISH-V1-LANGUAGE-PHONOLOGY-PRACTICE-01",
+        "title": "Produire un message phonologiquement intelligible",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Practice: demonstrate that you can produire un message phonologiquement intelligible in an A2 familiar situation.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Open response assessed with A2 success criteria.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Produire un message phonologiquement intelligible ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-5E-LANGUAGE",
+          "primary_skill_code": "SK-ENR-ENGLISH-5E-LANGUAGE-PHONOLOGY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-english-v1",
+          "template_version": "lcai-5e-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-ENGLISH-LANGUAGE-PHONOLOGY",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "oral_or_teacher_read",
+          "success_criteria": [
+            "A2 task completed",
+            "message understandable",
+            "relevant vocabulary and structures"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-ENGLISH-V1-LANGUAGE-PHONOLOGY-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-5E-LANGUAGE",
+      "skill": "SK-ENR-ENGLISH-5E-LANGUAGE-PHONOLOGY",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Apply the skill “Produire un message phonologiquement intelligible” to a short school, daily-life or cultural task.",
+      "expected_answer": "Open response assessed with A2 success criteria.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Produire un message phonologiquement intelligible ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-ENGLISH-LANGUAGE-PHONOLOGY",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-ENGLISH-V1-LANGUAGE-PHONOLOGY-PRACTICE-02",
+        "title": "Produire un message phonologiquement intelligible",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Apply the skill “Produire un message phonologiquement intelligible” to a short school, daily-life or cultural task.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Open response assessed with A2 success criteria.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Produire un message phonologiquement intelligible ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-5E-LANGUAGE",
+          "primary_skill_code": "SK-ENR-ENGLISH-5E-LANGUAGE-PHONOLOGY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-english-v1",
+          "template_version": "lcai-5e-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-ENGLISH-LANGUAGE-PHONOLOGY",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "oral_or_teacher_read",
+          "success_criteria": [
+            "A2 task completed",
+            "message understandable",
+            "relevant vocabulary and structures"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-ENGLISH-V1-LANGUAGE-PHONOLOGY-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-5E-LANGUAGE",
+      "skill": "SK-ENR-ENGLISH-5E-LANGUAGE-PHONOLOGY",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Assessment: independently show that you can produire un message phonologiquement intelligible.",
+      "expected_answer": "Open response assessed with A2 success criteria.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Produire un message phonologiquement intelligible ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-ENGLISH-LANGUAGE-PHONOLOGY",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-ENGLISH-V1-LANGUAGE-PHONOLOGY-ASSESSMENT-03",
+        "title": "Produire un message phonologiquement intelligible",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Assessment: independently show that you can produire un message phonologiquement intelligible.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Open response assessed with A2 success criteria.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Produire un message phonologiquement intelligible ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-5E-LANGUAGE",
+          "primary_skill_code": "SK-ENR-ENGLISH-5E-LANGUAGE-PHONOLOGY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-english-v1",
+          "template_version": "lcai-5e-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-ENGLISH-LANGUAGE-PHONOLOGY",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "oral_or_teacher_read",
+          "success_criteria": [
+            "A2 task completed",
+            "message understandable",
+            "relevant vocabulary and structures"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-ENGLISH-V1-CULTURE-LOCATE-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-5E-CULTURE",
+      "skill": "SK-ENR-ENGLISH-5E-CULTURE-LOCATE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Practice: demonstrate that you can localiser des espaces anglophones in an A2 familiar situation.",
+      "expected_answer": "Open response assessed with A2 success criteria.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Localiser des espaces anglophones ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-ENGLISH-CULTURE-LOCATE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-ENGLISH-V1-CULTURE-LOCATE-PRACTICE-01",
+        "title": "Localiser des espaces anglophones",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Practice: demonstrate that you can localiser des espaces anglophones in an A2 familiar situation.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Open response assessed with A2 success criteria.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Localiser des espaces anglophones ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-5E-CULTURE",
+          "primary_skill_code": "SK-ENR-ENGLISH-5E-CULTURE-LOCATE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-english-v1",
+          "template_version": "lcai-5e-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-ENGLISH-CULTURE-LOCATE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "A2 task completed",
+            "message understandable",
+            "relevant vocabulary and structures"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-ENGLISH-V1-CULTURE-LOCATE-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-5E-CULTURE",
+      "skill": "SK-ENR-ENGLISH-5E-CULTURE-LOCATE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Apply the skill “Localiser des espaces anglophones” to a short school, daily-life or cultural task.",
+      "expected_answer": "Open response assessed with A2 success criteria.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Localiser des espaces anglophones ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-ENGLISH-CULTURE-LOCATE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-ENGLISH-V1-CULTURE-LOCATE-PRACTICE-02",
+        "title": "Localiser des espaces anglophones",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Apply the skill “Localiser des espaces anglophones” to a short school, daily-life or cultural task.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Open response assessed with A2 success criteria.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Localiser des espaces anglophones ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-5E-CULTURE",
+          "primary_skill_code": "SK-ENR-ENGLISH-5E-CULTURE-LOCATE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-english-v1",
+          "template_version": "lcai-5e-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-ENGLISH-CULTURE-LOCATE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "A2 task completed",
+            "message understandable",
+            "relevant vocabulary and structures"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-ENGLISH-V1-CULTURE-LOCATE-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-5E-CULTURE",
+      "skill": "SK-ENR-ENGLISH-5E-CULTURE-LOCATE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Assessment: independently show that you can localiser des espaces anglophones.",
+      "expected_answer": "Open response assessed with A2 success criteria.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Localiser des espaces anglophones ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-ENGLISH-CULTURE-LOCATE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-ENGLISH-V1-CULTURE-LOCATE-ASSESSMENT-03",
+        "title": "Localiser des espaces anglophones",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Assessment: independently show that you can localiser des espaces anglophones.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Open response assessed with A2 success criteria.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Localiser des espaces anglophones ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-5E-CULTURE",
+          "primary_skill_code": "SK-ENR-ENGLISH-5E-CULTURE-LOCATE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-english-v1",
+          "template_version": "lcai-5e-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-ENGLISH-CULTURE-LOCATE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "A2 task completed",
+            "message understandable",
+            "relevant vocabulary and structures"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-ENGLISH-V1-CULTURE-IDENTIFY-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-5E-CULTURE",
+      "skill": "SK-ENR-ENGLISH-5E-CULTURE-IDENTIFY",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Practice: demonstrate that you can identifier des repères culturels in an A2 familiar situation.",
+      "expected_answer": "Open response assessed with A2 success criteria.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Identifier des repères culturels ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-ENGLISH-CULTURE-IDENTIFY",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-ENGLISH-V1-CULTURE-IDENTIFY-PRACTICE-01",
+        "title": "Identifier des repères culturels",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Practice: demonstrate that you can identifier des repères culturels in an A2 familiar situation.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Open response assessed with A2 success criteria.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Identifier des repères culturels ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-5E-CULTURE",
+          "primary_skill_code": "SK-ENR-ENGLISH-5E-CULTURE-IDENTIFY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-english-v1",
+          "template_version": "lcai-5e-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-ENGLISH-CULTURE-IDENTIFY",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "A2 task completed",
+            "message understandable",
+            "relevant vocabulary and structures"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-ENGLISH-V1-CULTURE-IDENTIFY-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-5E-CULTURE",
+      "skill": "SK-ENR-ENGLISH-5E-CULTURE-IDENTIFY",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Apply the skill “Identifier des repères culturels” to a short school, daily-life or cultural task.",
+      "expected_answer": "Open response assessed with A2 success criteria.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Identifier des repères culturels ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-ENGLISH-CULTURE-IDENTIFY",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-ENGLISH-V1-CULTURE-IDENTIFY-PRACTICE-02",
+        "title": "Identifier des repères culturels",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Apply the skill “Identifier des repères culturels” to a short school, daily-life or cultural task.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Open response assessed with A2 success criteria.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Identifier des repères culturels ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-5E-CULTURE",
+          "primary_skill_code": "SK-ENR-ENGLISH-5E-CULTURE-IDENTIFY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-english-v1",
+          "template_version": "lcai-5e-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-ENGLISH-CULTURE-IDENTIFY",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "A2 task completed",
+            "message understandable",
+            "relevant vocabulary and structures"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-ENGLISH-V1-CULTURE-IDENTIFY-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-5E-CULTURE",
+      "skill": "SK-ENR-ENGLISH-5E-CULTURE-IDENTIFY",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Assessment: independently show that you can identifier des repères culturels.",
+      "expected_answer": "Open response assessed with A2 success criteria.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Identifier des repères culturels ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-ENGLISH-CULTURE-IDENTIFY",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-ENGLISH-V1-CULTURE-IDENTIFY-ASSESSMENT-03",
+        "title": "Identifier des repères culturels",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Assessment: independently show that you can identifier des repères culturels.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Open response assessed with A2 success criteria.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Identifier des repères culturels ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-5E-CULTURE",
+          "primary_skill_code": "SK-ENR-ENGLISH-5E-CULTURE-IDENTIFY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-english-v1",
+          "template_version": "lcai-5e-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-ENGLISH-CULTURE-IDENTIFY",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "A2 task completed",
+            "message understandable",
+            "relevant vocabulary and structures"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-ENGLISH-V1-CULTURE-COMPARE-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-5E-CULTURE",
+      "skill": "SK-ENR-ENGLISH-5E-CULTURE-COMPARE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Practice: demonstrate that you can comparer pratiques et documents culturels in an A2 familiar situation.",
+      "expected_answer": "Open response assessed with A2 success criteria.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Comparer pratiques et documents culturels ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-ENGLISH-CULTURE-COMPARE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-ENGLISH-V1-CULTURE-COMPARE-PRACTICE-01",
+        "title": "Comparer pratiques et documents culturels",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Practice: demonstrate that you can comparer pratiques et documents culturels in an A2 familiar situation.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Open response assessed with A2 success criteria.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Comparer pratiques et documents culturels ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-5E-CULTURE",
+          "primary_skill_code": "SK-ENR-ENGLISH-5E-CULTURE-COMPARE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-english-v1",
+          "template_version": "lcai-5e-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-ENGLISH-CULTURE-COMPARE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "A2 task completed",
+            "message understandable",
+            "relevant vocabulary and structures"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-ENGLISH-V1-CULTURE-COMPARE-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-5E-CULTURE",
+      "skill": "SK-ENR-ENGLISH-5E-CULTURE-COMPARE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Apply the skill “Comparer pratiques et documents culturels” to a short school, daily-life or cultural task.",
+      "expected_answer": "Open response assessed with A2 success criteria.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Comparer pratiques et documents culturels ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-ENGLISH-CULTURE-COMPARE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-ENGLISH-V1-CULTURE-COMPARE-PRACTICE-02",
+        "title": "Comparer pratiques et documents culturels",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Apply the skill “Comparer pratiques et documents culturels” to a short school, daily-life or cultural task.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Open response assessed with A2 success criteria.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Comparer pratiques et documents culturels ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-5E-CULTURE",
+          "primary_skill_code": "SK-ENR-ENGLISH-5E-CULTURE-COMPARE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-english-v1",
+          "template_version": "lcai-5e-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-ENGLISH-CULTURE-COMPARE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "A2 task completed",
+            "message understandable",
+            "relevant vocabulary and structures"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-ENGLISH-V1-CULTURE-COMPARE-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-5E-CULTURE",
+      "skill": "SK-ENR-ENGLISH-5E-CULTURE-COMPARE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Assessment: independently show that you can comparer pratiques et documents culturels.",
+      "expected_answer": "Open response assessed with A2 success criteria.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Comparer pratiques et documents culturels ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-ENGLISH-CULTURE-COMPARE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-ENGLISH-V1-CULTURE-COMPARE-ASSESSMENT-03",
+        "title": "Comparer pratiques et documents culturels",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Assessment: independently show that you can comparer pratiques et documents culturels.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Open response assessed with A2 success criteria.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Comparer pratiques et documents culturels ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-5E-CULTURE",
+          "primary_skill_code": "SK-ENR-ENGLISH-5E-CULTURE-COMPARE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-english-v1",
+          "template_version": "lcai-5e-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-ENGLISH-CULTURE-COMPARE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "A2 task completed",
+            "message understandable",
+            "relevant vocabulary and structures"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-ENGLISH-V1-CULTURE-PRESENT-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-5E-CULTURE",
+      "skill": "SK-ENR-ENGLISH-5E-CULTURE-PRESENT",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Practice: demonstrate that you can présenter un repère culturel in an A2 familiar situation.",
+      "expected_answer": "Open response assessed with A2 success criteria.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Présenter un repère culturel ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-ENGLISH-CULTURE-PRESENT",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-ENGLISH-V1-CULTURE-PRESENT-PRACTICE-01",
+        "title": "Présenter un repère culturel",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Practice: demonstrate that you can présenter un repère culturel in an A2 familiar situation.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Open response assessed with A2 success criteria.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Présenter un repère culturel ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-5E-CULTURE",
+          "primary_skill_code": "SK-ENR-ENGLISH-5E-CULTURE-PRESENT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-english-v1",
+          "template_version": "lcai-5e-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-ENGLISH-CULTURE-PRESENT",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "oral_or_teacher_read",
+          "success_criteria": [
+            "A2 task completed",
+            "message understandable",
+            "relevant vocabulary and structures"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-ENGLISH-V1-CULTURE-PRESENT-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-5E-CULTURE",
+      "skill": "SK-ENR-ENGLISH-5E-CULTURE-PRESENT",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Apply the skill “Présenter un repère culturel” to a short school, daily-life or cultural task.",
+      "expected_answer": "Open response assessed with A2 success criteria.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Présenter un repère culturel ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-ENGLISH-CULTURE-PRESENT",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-ENGLISH-V1-CULTURE-PRESENT-PRACTICE-02",
+        "title": "Présenter un repère culturel",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Apply the skill “Présenter un repère culturel” to a short school, daily-life or cultural task.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Open response assessed with A2 success criteria.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Présenter un repère culturel ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-5E-CULTURE",
+          "primary_skill_code": "SK-ENR-ENGLISH-5E-CULTURE-PRESENT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-english-v1",
+          "template_version": "lcai-5e-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-ENGLISH-CULTURE-PRESENT",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "oral_or_teacher_read",
+          "success_criteria": [
+            "A2 task completed",
+            "message understandable",
+            "relevant vocabulary and structures"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-ENGLISH-V1-CULTURE-PRESENT-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-5E-CULTURE",
+      "skill": "SK-ENR-ENGLISH-5E-CULTURE-PRESENT",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Assessment: independently show that you can présenter un repère culturel.",
+      "expected_answer": "Open response assessed with A2 success criteria.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Présenter un repère culturel ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-ENGLISH-CULTURE-PRESENT",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-ENGLISH-V1-CULTURE-PRESENT-ASSESSMENT-03",
+        "title": "Présenter un repère culturel",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Assessment: independently show that you can présenter un repère culturel.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Open response assessed with A2 success criteria.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Présenter un repère culturel ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-5E-CULTURE",
+          "primary_skill_code": "SK-ENR-ENGLISH-5E-CULTURE-PRESENT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-english-v1",
+          "template_version": "lcai-5e-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-ENGLISH-CULTURE-PRESENT",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "oral_or_teacher_read",
+          "success_criteria": [
+            "A2 task completed",
+            "message understandable",
+            "relevant vocabulary and structures"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_english_candidates_v1.json"
+      }
+    }
+  ]
+}

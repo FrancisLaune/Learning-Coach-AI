@@ -1,0 +1,1972 @@
+{
+  "pipeline_version": "lcai-0012e-primary-v1",
+  "grades": [
+    "FR-CM1",
+    "FR-CM2",
+    "FR-6E",
+    "FR-5E"
+  ],
+  "candidate_count": 1311,
+  "unique_codes": 1311,
+  "duplicate_codes": {},
+  "malformed_records": [],
+  "curriculum_mapping_errors": [
+    {
+      "code": "CM2-FRENCH-V1-ORAL-LISTEN-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "CM2-FRENCH-V1-ORAL-LISTEN-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "CM2-FRENCH-V1-ORAL-LISTEN-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "CM2-FRENCH-V1-ORAL-REFORMULATE-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "CM2-FRENCH-V1-ORAL-REFORMULATE-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "CM2-FRENCH-V1-ORAL-REFORMULATE-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "CM2-FRENCH-V1-ORAL-PRESENT-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "CM2-FRENCH-V1-ORAL-PRESENT-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "CM2-FRENCH-V1-ORAL-PRESENT-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "CM2-FRENCH-V1-ORAL-INTERACT-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "CM2-FRENCH-V1-ORAL-INTERACT-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "CM2-FRENCH-V1-ORAL-INTERACT-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "CM2-FRENCH-V1-READING-FLUENCY-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "CM2-FRENCH-V1-READING-FLUENCY-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "CM2-FRENCH-V1-READING-FLUENCY-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "CM2-FRENCH-V1-READING-EXPLICIT-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "CM2-FRENCH-V1-READING-EXPLICIT-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "CM2-FRENCH-V1-READING-EXPLICIT-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "CM2-FRENCH-V1-READING-INFER-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "CM2-FRENCH-V1-READING-INFER-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "CM2-FRENCH-V1-READING-INFER-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "CM2-FRENCH-V1-READING-INTERPRET-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "CM2-FRENCH-V1-READING-INTERPRET-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "CM2-FRENCH-V1-READING-INTERPRET-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "CM2-FRENCH-V1-READING-JUSTIFY-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "CM2-FRENCH-V1-READING-JUSTIFY-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "CM2-FRENCH-V1-READING-JUSTIFY-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "CM2-FRENCH-V1-WRITING-PLAN-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "CM2-FRENCH-V1-WRITING-PLAN-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "CM2-FRENCH-V1-WRITING-PLAN-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "CM2-FRENCH-V1-WRITING-COHERENCE-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "CM2-FRENCH-V1-WRITING-COHERENCE-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "CM2-FRENCH-V1-WRITING-COHERENCE-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "CM2-FRENCH-V1-WRITING-SENTENCES-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "CM2-FRENCH-V1-WRITING-SENTENCES-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "CM2-FRENCH-V1-WRITING-SENTENCES-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "CM2-FRENCH-V1-WRITING-REVISE-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "CM2-FRENCH-V1-WRITING-REVISE-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "CM2-FRENCH-V1-WRITING-REVISE-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "CM2-FRENCH-V1-GRAMMAR-CLASSES-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "CM2-FRENCH-V1-GRAMMAR-CLASSES-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "CM2-FRENCH-V1-GRAMMAR-CLASSES-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "CM2-FRENCH-V1-GRAMMAR-FUNCTIONS-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "CM2-FRENCH-V1-GRAMMAR-FUNCTIONS-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "CM2-FRENCH-V1-GRAMMAR-FUNCTIONS-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "CM2-FRENCH-V1-GRAMMAR-AGREEMENTS-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "CM2-FRENCH-V1-GRAMMAR-AGREEMENTS-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "CM2-FRENCH-V1-GRAMMAR-AGREEMENTS-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "CM2-FRENCH-V1-LEXICON-FORMATION-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "CM2-FRENCH-V1-LEXICON-FORMATION-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "CM2-FRENCH-V1-LEXICON-FORMATION-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "CM2-FRENCH-V1-LEXICON-RELATIONS-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "CM2-FRENCH-V1-LEXICON-RELATIONS-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "CM2-FRENCH-V1-LEXICON-RELATIONS-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "CM2-FRENCH-V1-LEXICON-CONTEXT-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "CM2-FRENCH-V1-LEXICON-CONTEXT-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "CM2-FRENCH-V1-LEXICON-CONTEXT-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "CM2-FRENCH-V1-LEXICON-LEXICAL_SPELLING-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "CM2-FRENCH-V1-LEXICON-LEXICAL_SPELLING-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "CM2-FRENCH-V1-LEXICON-LEXICAL_SPELLING-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "CM2-FRENCH-V1-LEXICON-REUSE-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "CM2-FRENCH-V1-LEXICON-REUSE-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "CM2-FRENCH-V1-LEXICON-REUSE-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "6E-FRENCH-V1-ORAL-LISTEN-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "6E-FRENCH-V1-ORAL-LISTEN-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "6E-FRENCH-V1-ORAL-LISTEN-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "6E-FRENCH-V1-ORAL-INTERACT-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "6E-FRENCH-V1-ORAL-INTERACT-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "6E-FRENCH-V1-ORAL-INTERACT-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "6E-FRENCH-V1-ORAL-PRESENT-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "6E-FRENCH-V1-ORAL-PRESENT-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "6E-FRENCH-V1-ORAL-PRESENT-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "6E-FRENCH-V1-ORAL-REFORMULATE-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "6E-FRENCH-V1-ORAL-REFORMULATE-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "6E-FRENCH-V1-ORAL-REFORMULATE-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "6E-FRENCH-V1-READING-FLUENCY-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "6E-FRENCH-V1-READING-FLUENCY-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "6E-FRENCH-V1-READING-FLUENCY-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "6E-FRENCH-V1-READING-EXPLICIT-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "6E-FRENCH-V1-READING-EXPLICIT-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "6E-FRENCH-V1-READING-EXPLICIT-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "6E-FRENCH-V1-READING-INFER-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "6E-FRENCH-V1-READING-INFER-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "6E-FRENCH-V1-READING-INFER-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "6E-FRENCH-V1-READING-LITERARY-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "6E-FRENCH-V1-READING-LITERARY-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "6E-FRENCH-V1-READING-LITERARY-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "6E-FRENCH-V1-READING-INTERPRET-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "6E-FRENCH-V1-READING-INTERPRET-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "6E-FRENCH-V1-READING-INTERPRET-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "6E-FRENCH-V1-WRITING-PURPOSE-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "6E-FRENCH-V1-WRITING-PURPOSE-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "6E-FRENCH-V1-WRITING-PURPOSE-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "6E-FRENCH-V1-WRITING-PLAN-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "6E-FRENCH-V1-WRITING-PLAN-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "6E-FRENCH-V1-WRITING-PLAN-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "6E-FRENCH-V1-WRITING-NARRATE-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "6E-FRENCH-V1-WRITING-NARRATE-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "6E-FRENCH-V1-WRITING-NARRATE-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "6E-FRENCH-V1-WRITING-DESCRIBE-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "6E-FRENCH-V1-WRITING-DESCRIBE-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "6E-FRENCH-V1-WRITING-DESCRIBE-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "6E-FRENCH-V1-WRITING-REVISE-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "6E-FRENCH-V1-WRITING-REVISE-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "6E-FRENCH-V1-WRITING-REVISE-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "6E-FRENCH-V1-LANGUAGE-SENTENCE-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "6E-FRENCH-V1-LANGUAGE-SENTENCE-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "6E-FRENCH-V1-LANGUAGE-SENTENCE-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "6E-FRENCH-V1-LANGUAGE-VERBS-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "6E-FRENCH-V1-LANGUAGE-VERBS-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "6E-FRENCH-V1-LANGUAGE-VERBS-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "6E-FRENCH-V1-LANGUAGE-AGREEMENTS-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "6E-FRENCH-V1-LANGUAGE-AGREEMENTS-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "6E-FRENCH-V1-LANGUAGE-AGREEMENTS-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "6E-FRENCH-V1-LEXICON-FORMATION-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "6E-FRENCH-V1-LEXICON-FORMATION-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "6E-FRENCH-V1-LEXICON-FORMATION-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "6E-FRENCH-V1-LEXICON-RELATIONS-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "6E-FRENCH-V1-LEXICON-RELATIONS-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "6E-FRENCH-V1-LEXICON-RELATIONS-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "6E-FRENCH-V1-LEXICON-CONTEXT-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "6E-FRENCH-V1-LEXICON-CONTEXT-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "6E-FRENCH-V1-LEXICON-CONTEXT-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "6E-FRENCH-V1-LEXICON-PRECISE-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "6E-FRENCH-V1-LEXICON-PRECISE-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "6E-FRENCH-V1-LEXICON-PRECISE-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "6E-FRENCH-V1-LEXICON-REUSE-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "6E-FRENCH-V1-LEXICON-REUSE-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "6E-FRENCH-V1-LEXICON-REUSE-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-ENGLISH-V1-LANGUAGE-TENSES-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-ENGLISH-V1-LANGUAGE-TENSES-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-ENGLISH-V1-LANGUAGE-TENSES-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-ENGLISH-V1-CULTURE-LOCATE-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-ENGLISH-V1-CULTURE-LOCATE-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-ENGLISH-V1-CULTURE-LOCATE-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-FRENCH-V1-ORAL-LISTEN-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-FRENCH-V1-ORAL-LISTEN-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-FRENCH-V1-ORAL-LISTEN-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-FRENCH-V1-ORAL-REFORMULATE-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-FRENCH-V1-ORAL-REFORMULATE-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-FRENCH-V1-ORAL-REFORMULATE-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-FRENCH-V1-ORAL-PRESENT-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-FRENCH-V1-ORAL-PRESENT-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-FRENCH-V1-ORAL-PRESENT-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-FRENCH-V1-ORAL-INTERACT-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-FRENCH-V1-ORAL-INTERACT-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-FRENCH-V1-ORAL-INTERACT-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-FRENCH-V1-READING-EXPLICIT-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-FRENCH-V1-READING-EXPLICIT-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-FRENCH-V1-READING-EXPLICIT-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-FRENCH-V1-READING-INFER-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-FRENCH-V1-READING-INFER-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-FRENCH-V1-READING-INFER-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-FRENCH-V1-READING-PROCESS-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-FRENCH-V1-READING-PROCESS-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-FRENCH-V1-READING-PROCESS-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-FRENCH-V1-READING-INTERPRET-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-FRENCH-V1-READING-INTERPRET-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-FRENCH-V1-READING-INTERPRET-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-FRENCH-V1-READING-JUSTIFY-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-FRENCH-V1-READING-JUSTIFY-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-FRENCH-V1-READING-JUSTIFY-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-FRENCH-V1-WRITING-PLAN-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-FRENCH-V1-WRITING-PLAN-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-FRENCH-V1-WRITING-PLAN-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-FRENCH-V1-WRITING-COHERENCE-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-FRENCH-V1-WRITING-COHERENCE-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-FRENCH-V1-WRITING-COHERENCE-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-FRENCH-V1-WRITING-NARRATE-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-FRENCH-V1-WRITING-NARRATE-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-FRENCH-V1-WRITING-NARRATE-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-FRENCH-V1-WRITING-DESCRIBE-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-FRENCH-V1-WRITING-DESCRIBE-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-FRENCH-V1-WRITING-DESCRIBE-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-FRENCH-V1-WRITING-REVISE-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-FRENCH-V1-WRITING-REVISE-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-FRENCH-V1-WRITING-REVISE-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-FRENCH-V1-LANGUAGE-CLASSES-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-FRENCH-V1-LANGUAGE-CLASSES-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-FRENCH-V1-LANGUAGE-CLASSES-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-FRENCH-V1-LANGUAGE-FUNCTIONS-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-FRENCH-V1-LANGUAGE-FUNCTIONS-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-FRENCH-V1-LANGUAGE-FUNCTIONS-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-FRENCH-V1-LANGUAGE-COMPLEX-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-FRENCH-V1-LANGUAGE-COMPLEX-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-FRENCH-V1-LANGUAGE-COMPLEX-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-FRENCH-V1-LANGUAGE-TENSES-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-FRENCH-V1-LANGUAGE-TENSES-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-FRENCH-V1-LANGUAGE-TENSES-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-FRENCH-V1-LANGUAGE-AGREEMENTS-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-FRENCH-V1-LANGUAGE-AGREEMENTS-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-FRENCH-V1-LANGUAGE-AGREEMENTS-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-FRENCH-V1-LEXICON-FORMATION-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-FRENCH-V1-LEXICON-FORMATION-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-FRENCH-V1-LEXICON-FORMATION-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-FRENCH-V1-LEXICON-RELATIONS-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-FRENCH-V1-LEXICON-RELATIONS-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-FRENCH-V1-LEXICON-RELATIONS-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-FRENCH-V1-LEXICON-CONTEXT-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-FRENCH-V1-LEXICON-CONTEXT-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-FRENCH-V1-LEXICON-CONTEXT-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-FRENCH-V1-LEXICON-FIELDS-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-FRENCH-V1-LEXICON-FIELDS-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-FRENCH-V1-LEXICON-FIELDS-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-FRENCH-V1-LEXICON-REUSE-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-FRENCH-V1-LEXICON-REUSE-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-FRENCH-V1-LEXICON-REUSE-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-GEOGRAPHY-V1-RESOURCES-TENSION-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-GEOGRAPHY-V1-RESOURCES-TENSION-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-GEOGRAPHY-V1-RESOURCES-TENSION-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-GEOGRAPHY-V1-RESOURCES-MANAGE-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-GEOGRAPHY-V1-RESOURCES-MANAGE-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-GEOGRAPHY-V1-RESOURCES-MANAGE-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-GEOGRAPHY-V1-CHANGE-ADAPT-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-GEOGRAPHY-V1-CHANGE-ADAPT-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-GEOGRAPHY-V1-CHANGE-ADAPT-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-HISTORY-V1-SOCIETY-FEUDAL-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-HISTORY-V1-SOCIETY-FEUDAL-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-HISTORY-V1-SOCIETY-FEUDAL-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-HISTORY-V1-SOCIETY-CHURCH-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-HISTORY-V1-SOCIETY-CHURCH-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-HISTORY-V1-SOCIETY-CHURCH-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-HISTORY-V1-SOCIETY-CITIES-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-HISTORY-V1-SOCIETY-CITIES-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-HISTORY-V1-SOCIETY-CITIES-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-HISTORY-V1-SOCIETY-POWER-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-HISTORY-V1-SOCIETY-POWER-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-HISTORY-V1-SOCIETY-POWER-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-HISTORY-V1-RENAISSANCE-EXPLORATION-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-HISTORY-V1-RENAISSANCE-EXPLORATION-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-HISTORY-V1-RENAISSANCE-EXPLORATION-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-MATHEMATICS-V1-NUMBERS-COMPARE-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-MATHEMATICS-V1-NUMBERS-COMPARE-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-MATHEMATICS-V1-NUMBERS-COMPARE-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-MATHEMATICS-V1-NUMBERS-LINE-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-MATHEMATICS-V1-NUMBERS-LINE-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-MATHEMATICS-V1-NUMBERS-LINE-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-MATHEMATICS-V1-NUMBERS-ADD-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-MATHEMATICS-V1-NUMBERS-ADD-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-MATHEMATICS-V1-NUMBERS-ADD-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-MATHEMATICS-V1-NUMBERS-SIGNS-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-MATHEMATICS-V1-NUMBERS-SIGNS-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-MATHEMATICS-V1-NUMBERS-SIGNS-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-MATHEMATICS-V1-ALGEBRA-SIMPLIFY-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-MATHEMATICS-V1-ALGEBRA-SIMPLIFY-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-MATHEMATICS-V1-ALGEBRA-SIMPLIFY-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-MATHEMATICS-V1-ALGEBRA-EQUALITY-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-MATHEMATICS-V1-ALGEBRA-EQUALITY-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-MATHEMATICS-V1-ALGEBRA-EQUALITY-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-MATHEMATICS-V1-PROPORTIONALITY-PROPORTION-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-MATHEMATICS-V1-PROPORTIONALITY-PROPORTION-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-MATHEMATICS-V1-PROPORTIONALITY-PROPORTION-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-MATHEMATICS-V1-PROPORTIONALITY-DATA-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-MATHEMATICS-V1-PROPORTIONALITY-DATA-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-MATHEMATICS-V1-PROPORTIONALITY-DATA-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-MATHEMATICS-V1-PROPORTIONALITY-FREQUENCY-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-MATHEMATICS-V1-PROPORTIONALITY-FREQUENCY-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-MATHEMATICS-V1-PROPORTIONALITY-FREQUENCY-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-MATHEMATICS-V1-PROPORTIONALITY-CHANCE-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-MATHEMATICS-V1-PROPORTIONALITY-CHANCE-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-MATHEMATICS-V1-PROPORTIONALITY-CHANCE-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-MATHEMATICS-V1-GEOMETRY-TRIANGLES-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-MATHEMATICS-V1-GEOMETRY-TRIANGLES-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-MATHEMATICS-V1-GEOMETRY-TRIANGLES-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-MATHEMATICS-V1-GEOMETRY-SOLIDS-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-MATHEMATICS-V1-GEOMETRY-SOLIDS-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-MATHEMATICS-V1-GEOMETRY-SOLIDS-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-PHYSICS_CHEMISTRY-V1-MATTER-DISSOLUTION-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-PHYSICS_CHEMISTRY-V1-MATTER-DISSOLUTION-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-PHYSICS_CHEMISTRY-V1-MATTER-DISSOLUTION-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-PHYSICS_CHEMISTRY-V1-MATTER-SEPARATION-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-PHYSICS_CHEMISTRY-V1-MATTER-SEPARATION-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-PHYSICS_CHEMISTRY-V1-MATTER-SEPARATION-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-PHYSICS_CHEMISTRY-V1-MATTER-CHANGE-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-PHYSICS_CHEMISTRY-V1-MATTER-CHANGE-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-PHYSICS_CHEMISTRY-V1-MATTER-CHANGE-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-PHYSICS_CHEMISTRY-V1-MOTION-MOTION-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-PHYSICS_CHEMISTRY-V1-MOTION-MOTION-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-PHYSICS_CHEMISTRY-V1-MOTION-MOTION-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-SPANISH-V1-LANGUAGE-TENSES-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-SPANISH-V1-LANGUAGE-TENSES-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-SPANISH-V1-LANGUAGE-TENSES-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-SPANISH-V1-CULTURE-COMPARE-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-SPANISH-V1-CULTURE-COMPARE-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-SPANISH-V1-CULTURE-COMPARE-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-SVT-V1-BODY-EFFORT-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-SVT-V1-BODY-EFFORT-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-SVT-V1-BODY-EFFORT-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-SVT-V1-BODY-PREVENT-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-SVT-V1-BODY-PREVENT-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-SVT-V1-BODY-PREVENT-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-SVT-V1-PLANET-PHENOMENON-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-SVT-V1-PLANET-PHENOMENON-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-SVT-V1-PLANET-PHENOMENON-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-SVT-V1-PLANET-DATA-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-SVT-V1-PLANET-DATA-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-SVT-V1-PLANET-DATA-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-SVT-V1-PLANET-IMPACT-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-SVT-V1-PLANET-IMPACT-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-SVT-V1-PLANET-IMPACT-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-SVT-V1-PLANET-ACTION-PRACTICE-01",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-SVT-V1-PLANET-ACTION-PRACTICE-02",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    },
+    {
+      "code": "5E-SVT-V1-PLANET-ACTION-ASSESSMENT-03",
+      "errors": [
+        "Unknown or inconsistent Program/Grade/Subject/Chapter/Skill target"
+      ]
+    }
+  ],
+  "inventory_mismatches": [
+    {
+      "code": "CM1-FRENCH-V1-SPELLING-LEXICAL-PRACTICE-01",
+      "issue": "blocked_still_in_json"
+    }
+  ],
+  "skills_by_grade": {
+    "FR-CM1": 94,
+    "FR-CM2": 101,
+    "FR-6E": 117,
+    "FR-5E": 125
+  },
+  "content_types": {
+    "practice": 874,
+    "assessment": 437
+  },
+  "answer_kinds": {
+    "single_choice": 216,
+    "exact_text": 237,
+    "open_response": 836,
+    "structured": 4,
+    "numeric": 18
+  },
+  "by_grade": {
+    "FR-CM1": {
+      "candidates": 282
+    },
+    "FR-CM2": {
+      "candidates": 303
+    },
+    "FR-6E": {
+      "candidates": 351
+    },
+    "FR-5E": {
+      "candidates": 375
+    }
+  },
+  "by_subject": {
+    "FR-5E|EMC": {
+      "candidates": 24
+    },
+    "FR-5E|ENGLISH": {
+      "candidates": 39
+    },
+    "FR-5E|FRENCH": {
+      "candidates": 72
+    },
+    "FR-5E|GEOGRAPHY": {
+      "candidates": 33
+    },
+    "FR-5E|HISTORY": {
+      "candidates": 33
+    },
+    "FR-5E|MATHEMATICS": {
+      "candidates": 75
+    },
+    "FR-5E|PHYSICS_CHEMISTRY": {
+      "candidates": 30
+    },
+    "FR-5E|SPANISH": {
+      "candidates": 39
+    },
+    "FR-5E|SVT": {
+      "candidates": 30
+    },
+    "FR-6E|EMC": {
+      "candidates": 24
+    },
+    "FR-6E|ENGLISH": {
+      "candidates": 39
+    },
+    "FR-6E|FRENCH": {
+      "candidates": 66
+    },
+    "FR-6E|GEOGRAPHY": {
+      "candidates": 54
+    },
+    "FR-6E|HISTORY": {
+      "candidates": 39
+    },
+    "FR-6E|MATHEMATICS": {
+      "candidates": 69
+    },
+    "FR-6E|PHYSICS_CHEMISTRY": {
+      "candidates": 30
+    },
+    "FR-6E|SVT": {
+      "candidates": 30
+    },
+    "FR-CM1|EMC": {
+      "candidates": 24
+    },
+    "FR-CM1|ENGLISH": {
+      "candidates": 24
+    },
+    "FR-CM1|FRENCH": {
+      "candidates": 63
+    },
+    "FR-CM1|GEOGRAPHY": {
+      "candidates": 36
+    },
+    "FR-CM1|HISTORY": {
+      "candidates": 36
+    },
+    "FR-CM1|MATHEMATICS": {
+      "candidates": 51
+    },
+    "FR-CM1|PHYSICS_CHEMISTRY": {
+      "candidates": 24
+    },
+    "FR-CM1|SVT": {
+      "candidates": 24
+    },
+    "FR-CM2|EMC": {
+      "candidates": 24
+    },
+    "FR-CM2|ENGLISH": {
+      "candidates": 24
+    },
+    "FR-CM2|FRENCH": {
+      "candidates": 63
+    },
+    "FR-CM2|GEOGRAPHY": {
+      "candidates": 36
+    },
+    "FR-CM2|HISTORY": {
+      "candidates": 36
+    },
+    "FR-CM2|MATHEMATICS": {
+      "candidates": 72
+    },
+    "FR-CM2|PHYSICS_CHEMISTRY": {
+      "candidates": 24
+    },
+    "FR-CM2|SVT": {
+      "candidates": 24
+    }
+  },
+  "curriculum_valid": false
+}

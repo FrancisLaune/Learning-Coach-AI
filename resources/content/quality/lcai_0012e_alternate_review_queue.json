@@ -1,0 +1,200 @@
+{
+  "queue": [
+    {
+      "version_id": 119014,
+      "code": "5E-FRENCH-V1-LEXICON-RELATIONS-PRACTICE-02",
+      "campaign_id": "LCAI-0012E-PRIMARY",
+      "grade": "FR-5E",
+      "subject": "FRENCH",
+      "chapter": "CH-FRENCH-5E-LEXICON",
+      "skill_code": "SK-ENR-FRENCH-5E-LEXICON-RELATIONS",
+      "skill": "SK-ENR-FRENCH-5E-LEXICON-RELATIONS",
+      "content_type": "practice",
+      "target_slot": "practice",
+      "question": "Explique puis applique la compétence « Mobiliser synonymie, antonymie et polysémie » à une situation pertinente de niveau 5e.",
+      "choices": [],
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "explanation": "Cette activité cible directement la compétence « Mobiliser synonymie, antonymie et polysémie ».",
+      "answer_kind": "open_response",
+      "hard_gates_passed": false,
+      "automated_checks": {
+        "structural_validity": true,
+        "answer_correctness": false,
+        "skill_alignment": true,
+        "grade_appropriateness": true,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "candidate_score": 60,
+      "recommended_decision": "REVIEW",
+      "quality_metadata": {
+        "decision": "REVIEW",
+        "confidence": 0.6,
+        "hard_gates": {
+          "structural_validity": true,
+          "answer_correctness": false,
+          "skill_alignment": true,
+          "grade_appropriateness": true,
+          "executability": true,
+          "duplicate_safety": true
+        },
+        "reasons": [
+          "Independent pedagogical review is still required."
+        ]
+      },
+      "is_alternate_review": true,
+      "rejected_from_version_id": 121348,
+      "alternate_lineage": {
+        "rejected_version_id": 121348,
+        "alternate_code": "5E-FRENCH-V1-LEXICON-RELATIONS-PRACTICE-02"
+      }
+    },
+    {
+      "version_id": 119458,
+      "code": "5E-PHYSICS_CHEMISTRY-V1-MATTER-MIXTURE-PRACTICE-02",
+      "campaign_id": "LCAI-0012E-PRIMARY",
+      "grade": "FR-5E",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-5E-MATTER",
+      "skill_code": "SK-ENR-PHYSICS_CHEMISTRY-5E-MATTER-MIXTURE",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-5E-MATTER-MIXTURE",
+      "content_type": "practice",
+      "target_slot": "practice",
+      "question": "Explique puis applique la compétence « Distinguer corps pur et mélange » à une situation pertinente de niveau 5e.",
+      "choices": [],
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "explanation": "Cette activité cible directement la compétence « Distinguer corps pur et mélange ».",
+      "answer_kind": "open_response",
+      "hard_gates_passed": false,
+      "automated_checks": {
+        "structural_validity": true,
+        "answer_correctness": false,
+        "skill_alignment": true,
+        "grade_appropriateness": true,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "candidate_score": 60,
+      "recommended_decision": "REVIEW",
+      "quality_metadata": {
+        "decision": "REVIEW",
+        "confidence": 0.6,
+        "hard_gates": {
+          "structural_validity": true,
+          "answer_correctness": false,
+          "skill_alignment": true,
+          "grade_appropriateness": true,
+          "executability": true,
+          "duplicate_safety": true
+        },
+        "reasons": [
+          "Independent pedagogical review is still required."
+        ]
+      },
+      "is_alternate_review": true,
+      "rejected_from_version_id": 121504,
+      "alternate_lineage": {
+        "rejected_version_id": 121504,
+        "alternate_code": "5E-PHYSICS_CHEMISTRY-V1-MATTER-MIXTURE-PRACTICE-02"
+      }
+    },
+    {
+      "version_id": 119710,
+      "code": "5E-SVT-V1-BODY-RESPIRATION-PRACTICE-02",
+      "campaign_id": "LCAI-0012E-PRIMARY",
+      "grade": "FR-5E",
+      "subject": "SVT",
+      "chapter": "CH-SVT-5E-BODY",
+      "skill_code": "SK-ENR-SVT-5E-BODY-RESPIRATION",
+      "skill": "SK-ENR-SVT-5E-BODY-RESPIRATION",
+      "content_type": "practice",
+      "target_slot": "practice",
+      "question": "Explique puis applique la compétence « Relier respiration et fonctionnement de l'organisme » à une situation pertinente de niveau 5e.",
+      "choices": [],
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "explanation": "Cette activité cible directement la compétence « Relier respiration et fonctionnement de l'organisme ».",
+      "answer_kind": "open_response",
+      "hard_gates_passed": false,
+      "automated_checks": {
+        "structural_validity": true,
+        "answer_correctness": false,
+        "skill_alignment": true,
+        "grade_appropriateness": true,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "candidate_score": 60,
+      "recommended_decision": "REVIEW",
+      "quality_metadata": {
+        "decision": "REVIEW",
+        "confidence": 0.6,
+        "hard_gates": {
+          "structural_validity": true,
+          "answer_correctness": false,
+          "skill_alignment": true,
+          "grade_appropriateness": true,
+          "executability": true,
+          "duplicate_safety": true
+        },
+        "reasons": [
+          "Independent pedagogical review is still required."
+        ]
+      },
+      "is_alternate_review": true,
+      "rejected_from_version_id": 121528,
+      "alternate_lineage": {
+        "rejected_version_id": 121528,
+        "alternate_code": "5E-SVT-V1-BODY-RESPIRATION-PRACTICE-02"
+      }
+    },
+    {
+      "version_id": 119734,
+      "code": "5E-SVT-V1-PLANET-IMPACT-PRACTICE-02",
+      "campaign_id": "LCAI-0012E-PRIMARY",
+      "grade": "FR-5E",
+      "subject": "SVT",
+      "chapter": "CH-SVT-5E-PLANET",
+      "skill_code": "SK-ENR-SVT-5E-PLANET-HUMAN_IMPACT",
+      "skill": "SK-ENR-SVT-5E-PLANET-HUMAN_IMPACT",
+      "content_type": "practice",
+      "target_slot": "practice",
+      "question": "Explique puis applique la compétence « Analyser un impact humain » à une situation pertinente de niveau 5e.",
+      "choices": [],
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "explanation": "Cette activité cible directement la compétence « Analyser un impact humain ».",
+      "answer_kind": "open_response",
+      "hard_gates_passed": false,
+      "automated_checks": {
+        "structural_validity": true,
+        "answer_correctness": false,
+        "skill_alignment": true,
+        "grade_appropriateness": true,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "candidate_score": 60,
+      "recommended_decision": "REVIEW",
+      "quality_metadata": {
+        "decision": "REVIEW",
+        "confidence": 0.6,
+        "hard_gates": {
+          "structural_validity": true,
+          "answer_correctness": false,
+          "skill_alignment": true,
+          "grade_appropriateness": true,
+          "executability": true,
+          "duplicate_safety": true
+        },
+        "reasons": [
+          "Independent pedagogical review is still required."
+        ]
+      },
+      "is_alternate_review": true,
+      "rejected_from_version_id": 121552,
+      "alternate_lineage": {
+        "rejected_version_id": 121552,
+        "alternate_code": "5E-SVT-V1-PLANET-IMPACT-PRACTICE-02"
+      }
+    }
+  ]
+}

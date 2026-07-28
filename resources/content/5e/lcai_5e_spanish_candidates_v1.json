@@ -1,0 +1,3259 @@
+{
+  "batch": "5E-SPANISH-V1",
+  "purpose": "Parallel 5e content preparation for Learning Coach AI",
+  "lifecycle_target": "Draft",
+  "automatic_approval": false,
+  "curriculum_version": "phase2-lcai-0011c",
+  "program_code": "FR-CYCLE4-5E-2026",
+  "grade_code": "FR-5E",
+  "subject_code": "SPANISH",
+  "skill_count": 13,
+  "candidate_count": 39,
+  "content_types": {
+    "practice": 26,
+    "assessment": 13
+  },
+  "difficulty_distribution": {
+    "1": 13,
+    "2": 26
+  },
+  "accepted_candidates": [
+    {
+      "code": "5E-SPANISH-V1-COMMUNICATION-LISTEN-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "SPANISH",
+      "chapter": "CH-SPANISH-5E-COMMUNICATION",
+      "skill": "SK-ENR-SPANISH-5E-COMMUNICATION-LISTEN",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Práctica: demuestra que puedes comprendre des consignes et messages très simples en una situación muy sencilla y familiar.",
+      "expected_answer": "Respuesta abierta evaluada con criterios de nivel inicial.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Comprendre des consignes et messages très simples ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-SPANISH-COMMUNICATION-LISTEN",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-spanish-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-SPANISH-V1-COMMUNICATION-LISTEN-PRACTICE-01",
+        "title": "Comprendre des consignes et messages très simples",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Práctica: demuestra que puedes comprendre des consignes et messages très simples en una situación muy sencilla y familiar.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Respuesta abierta evaluada con criterios de nivel inicial.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Comprendre des consignes et messages très simples ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "SPANISH",
+          "chapter_code": "CH-SPANISH-5E-COMMUNICATION",
+          "primary_skill_code": "SK-ENR-SPANISH-5E-COMMUNICATION-LISTEN",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-spanish-v1",
+          "template_version": "lcai-5e-spanish-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-SPANISH-COMMUNICATION-LISTEN",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "es-ES",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "oral_or_teacher_read",
+          "success_criteria": [
+            "tarea inicial completada",
+            "mensaje comprensible",
+            "léxico y estructuras básicas pertinentes"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_spanish_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-SPANISH-V1-COMMUNICATION-LISTEN-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "SPANISH",
+      "chapter": "CH-SPANISH-5E-COMMUNICATION",
+      "skill": "SK-ENR-SPANISH-5E-COMMUNICATION-LISTEN",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Aplica la competencia « Comprendre des consignes et messages très simples » a una tarea breve sobre identidad, colegio, familia o gustos.",
+      "expected_answer": "Respuesta abierta evaluada con criterios de nivel inicial.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Comprendre des consignes et messages très simples ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-SPANISH-COMMUNICATION-LISTEN",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-spanish-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-SPANISH-V1-COMMUNICATION-LISTEN-PRACTICE-02",
+        "title": "Comprendre des consignes et messages très simples",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Aplica la competencia « Comprendre des consignes et messages très simples » a una tarea breve sobre identidad, colegio, familia o gustos.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Respuesta abierta evaluada con criterios de nivel inicial.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Comprendre des consignes et messages très simples ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "SPANISH",
+          "chapter_code": "CH-SPANISH-5E-COMMUNICATION",
+          "primary_skill_code": "SK-ENR-SPANISH-5E-COMMUNICATION-LISTEN",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-spanish-v1",
+          "template_version": "lcai-5e-spanish-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-SPANISH-COMMUNICATION-LISTEN",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "es-ES",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "oral_or_teacher_read",
+          "success_criteria": [
+            "tarea inicial completada",
+            "mensaje comprensible",
+            "léxico y estructuras básicas pertinentes"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_spanish_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-SPANISH-V1-COMMUNICATION-LISTEN-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "SPANISH",
+      "chapter": "CH-SPANISH-5E-COMMUNICATION",
+      "skill": "SK-ENR-SPANISH-5E-COMMUNICATION-LISTEN",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Evaluación: demuestra de forma autónoma que puedes comprendre des consignes et messages très simples.",
+      "expected_answer": "Respuesta abierta evaluada con criterios de nivel inicial.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Comprendre des consignes et messages très simples ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-SPANISH-COMMUNICATION-LISTEN",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-spanish-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-SPANISH-V1-COMMUNICATION-LISTEN-ASSESSMENT-03",
+        "title": "Comprendre des consignes et messages très simples",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Evaluación: demuestra de forma autónoma que puedes comprendre des consignes et messages très simples.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Respuesta abierta evaluada con criterios de nivel inicial.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Comprendre des consignes et messages très simples ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "SPANISH",
+          "chapter_code": "CH-SPANISH-5E-COMMUNICATION",
+          "primary_skill_code": "SK-ENR-SPANISH-5E-COMMUNICATION-LISTEN",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-spanish-v1",
+          "template_version": "lcai-5e-spanish-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-SPANISH-COMMUNICATION-LISTEN",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "es-ES",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "oral_or_teacher_read",
+          "success_criteria": [
+            "tarea inicial completada",
+            "mensaje comprensible",
+            "léxico y estructuras básicas pertinentes"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_spanish_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-SPANISH-V1-COMMUNICATION-READ-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "SPANISH",
+      "chapter": "CH-SPANISH-5E-COMMUNICATION",
+      "skill": "SK-ENR-SPANISH-5E-COMMUNICATION-READ",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Práctica: demuestra que puedes comprendre un court écrit familier en una situación muy sencilla y familiar.",
+      "expected_answer": "Respuesta abierta evaluada con criterios de nivel inicial.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Comprendre un court écrit familier ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-SPANISH-COMMUNICATION-READ",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-spanish-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-SPANISH-V1-COMMUNICATION-READ-PRACTICE-01",
+        "title": "Comprendre un court écrit familier",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Práctica: demuestra que puedes comprendre un court écrit familier en una situación muy sencilla y familiar.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Respuesta abierta evaluada con criterios de nivel inicial.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Comprendre un court écrit familier ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "SPANISH",
+          "chapter_code": "CH-SPANISH-5E-COMMUNICATION",
+          "primary_skill_code": "SK-ENR-SPANISH-5E-COMMUNICATION-READ",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-spanish-v1",
+          "template_version": "lcai-5e-spanish-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-SPANISH-COMMUNICATION-READ",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "es-ES",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "tarea inicial completada",
+            "mensaje comprensible",
+            "léxico y estructuras básicas pertinentes"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_spanish_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-SPANISH-V1-COMMUNICATION-READ-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "SPANISH",
+      "chapter": "CH-SPANISH-5E-COMMUNICATION",
+      "skill": "SK-ENR-SPANISH-5E-COMMUNICATION-READ",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Aplica la competencia « Comprendre un court écrit familier » a una tarea breve sobre identidad, colegio, familia o gustos.",
+      "expected_answer": "Respuesta abierta evaluada con criterios de nivel inicial.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Comprendre un court écrit familier ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-SPANISH-COMMUNICATION-READ",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-spanish-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-SPANISH-V1-COMMUNICATION-READ-PRACTICE-02",
+        "title": "Comprendre un court écrit familier",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Aplica la competencia « Comprendre un court écrit familier » a una tarea breve sobre identidad, colegio, familia o gustos.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Respuesta abierta evaluada con criterios de nivel inicial.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Comprendre un court écrit familier ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "SPANISH",
+          "chapter_code": "CH-SPANISH-5E-COMMUNICATION",
+          "primary_skill_code": "SK-ENR-SPANISH-5E-COMMUNICATION-READ",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-spanish-v1",
+          "template_version": "lcai-5e-spanish-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-SPANISH-COMMUNICATION-READ",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "es-ES",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "tarea inicial completada",
+            "mensaje comprensible",
+            "léxico y estructuras básicas pertinentes"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_spanish_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-SPANISH-V1-COMMUNICATION-READ-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "SPANISH",
+      "chapter": "CH-SPANISH-5E-COMMUNICATION",
+      "skill": "SK-ENR-SPANISH-5E-COMMUNICATION-READ",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Evaluación: demuestra de forma autónoma que puedes comprendre un court écrit familier.",
+      "expected_answer": "Respuesta abierta evaluada con criterios de nivel inicial.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Comprendre un court écrit familier ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-SPANISH-COMMUNICATION-READ",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-spanish-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-SPANISH-V1-COMMUNICATION-READ-ASSESSMENT-03",
+        "title": "Comprendre un court écrit familier",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Evaluación: demuestra de forma autónoma que puedes comprendre un court écrit familier.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Respuesta abierta evaluada con criterios de nivel inicial.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Comprendre un court écrit familier ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "SPANISH",
+          "chapter_code": "CH-SPANISH-5E-COMMUNICATION",
+          "primary_skill_code": "SK-ENR-SPANISH-5E-COMMUNICATION-READ",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-spanish-v1",
+          "template_version": "lcai-5e-spanish-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-SPANISH-COMMUNICATION-READ",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "es-ES",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "tarea inicial completada",
+            "mensaje comprensible",
+            "léxico y estructuras básicas pertinentes"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_spanish_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-SPANISH-V1-COMMUNICATION-INTERACT-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "SPANISH",
+      "chapter": "CH-SPANISH-5E-COMMUNICATION",
+      "skill": "SK-ENR-SPANISH-5E-COMMUNICATION-INTERACT",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Práctica: demuestra que puedes se présenter et échanger des informations simples en una situación muy sencilla y familiar.",
+      "expected_answer": "Respuesta abierta evaluada con criterios de nivel inicial.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Se présenter et échanger des informations simples ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-SPANISH-COMMUNICATION-INTERACT",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-spanish-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-SPANISH-V1-COMMUNICATION-INTERACT-PRACTICE-01",
+        "title": "Se présenter et échanger des informations simples",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Práctica: demuestra que puedes se présenter et échanger des informations simples en una situación muy sencilla y familiar.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Respuesta abierta evaluada con criterios de nivel inicial.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Se présenter et échanger des informations simples ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "SPANISH",
+          "chapter_code": "CH-SPANISH-5E-COMMUNICATION",
+          "primary_skill_code": "SK-ENR-SPANISH-5E-COMMUNICATION-INTERACT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-spanish-v1",
+          "template_version": "lcai-5e-spanish-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-SPANISH-COMMUNICATION-INTERACT",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "es-ES",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "oral_or_teacher_read",
+          "success_criteria": [
+            "tarea inicial completada",
+            "mensaje comprensible",
+            "léxico y estructuras básicas pertinentes"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_spanish_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-SPANISH-V1-COMMUNICATION-INTERACT-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "SPANISH",
+      "chapter": "CH-SPANISH-5E-COMMUNICATION",
+      "skill": "SK-ENR-SPANISH-5E-COMMUNICATION-INTERACT",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Aplica la competencia « Se présenter et échanger des informations simples » a una tarea breve sobre identidad, colegio, familia o gustos.",
+      "expected_answer": "Respuesta abierta evaluada con criterios de nivel inicial.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Se présenter et échanger des informations simples ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-SPANISH-COMMUNICATION-INTERACT",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-spanish-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-SPANISH-V1-COMMUNICATION-INTERACT-PRACTICE-02",
+        "title": "Se présenter et échanger des informations simples",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Aplica la competencia « Se présenter et échanger des informations simples » a una tarea breve sobre identidad, colegio, familia o gustos.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Respuesta abierta evaluada con criterios de nivel inicial.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Se présenter et échanger des informations simples ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "SPANISH",
+          "chapter_code": "CH-SPANISH-5E-COMMUNICATION",
+          "primary_skill_code": "SK-ENR-SPANISH-5E-COMMUNICATION-INTERACT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-spanish-v1",
+          "template_version": "lcai-5e-spanish-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-SPANISH-COMMUNICATION-INTERACT",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "es-ES",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "oral_or_teacher_read",
+          "success_criteria": [
+            "tarea inicial completada",
+            "mensaje comprensible",
+            "léxico y estructuras básicas pertinentes"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_spanish_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-SPANISH-V1-COMMUNICATION-INTERACT-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "SPANISH",
+      "chapter": "CH-SPANISH-5E-COMMUNICATION",
+      "skill": "SK-ENR-SPANISH-5E-COMMUNICATION-INTERACT",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Evaluación: demuestra de forma autónoma que puedes se présenter et échanger des informations simples.",
+      "expected_answer": "Respuesta abierta evaluada con criterios de nivel inicial.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Se présenter et échanger des informations simples ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-SPANISH-COMMUNICATION-INTERACT",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-spanish-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-SPANISH-V1-COMMUNICATION-INTERACT-ASSESSMENT-03",
+        "title": "Se présenter et échanger des informations simples",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Evaluación: demuestra de forma autónoma que puedes se présenter et échanger des informations simples.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Respuesta abierta evaluada con criterios de nivel inicial.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Se présenter et échanger des informations simples ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "SPANISH",
+          "chapter_code": "CH-SPANISH-5E-COMMUNICATION",
+          "primary_skill_code": "SK-ENR-SPANISH-5E-COMMUNICATION-INTERACT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-spanish-v1",
+          "template_version": "lcai-5e-spanish-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-SPANISH-COMMUNICATION-INTERACT",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "es-ES",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "oral_or_teacher_read",
+          "success_criteria": [
+            "tarea inicial completada",
+            "mensaje comprensible",
+            "léxico y estructuras básicas pertinentes"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_spanish_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-SPANISH-V1-COMMUNICATION-SPEAK-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "SPANISH",
+      "chapter": "CH-SPANISH-5E-COMMUNICATION",
+      "skill": "SK-ENR-SPANISH-5E-COMMUNICATION-SPEAK",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Práctica: demuestra que puedes produire quelques phrases en continu en una situación muy sencilla y familiar.",
+      "expected_answer": "Respuesta abierta evaluada con criterios de nivel inicial.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Produire quelques phrases en continu ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-SPANISH-COMMUNICATION-SPEAK",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-spanish-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-SPANISH-V1-COMMUNICATION-SPEAK-PRACTICE-01",
+        "title": "Produire quelques phrases en continu",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Práctica: demuestra que puedes produire quelques phrases en continu en una situación muy sencilla y familiar.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Respuesta abierta evaluada con criterios de nivel inicial.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Produire quelques phrases en continu ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "SPANISH",
+          "chapter_code": "CH-SPANISH-5E-COMMUNICATION",
+          "primary_skill_code": "SK-ENR-SPANISH-5E-COMMUNICATION-SPEAK",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-spanish-v1",
+          "template_version": "lcai-5e-spanish-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-SPANISH-COMMUNICATION-SPEAK",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "es-ES",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "oral_or_teacher_read",
+          "success_criteria": [
+            "tarea inicial completada",
+            "mensaje comprensible",
+            "léxico y estructuras básicas pertinentes"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_spanish_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-SPANISH-V1-COMMUNICATION-SPEAK-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "SPANISH",
+      "chapter": "CH-SPANISH-5E-COMMUNICATION",
+      "skill": "SK-ENR-SPANISH-5E-COMMUNICATION-SPEAK",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Aplica la competencia « Produire quelques phrases en continu » a una tarea breve sobre identidad, colegio, familia o gustos.",
+      "expected_answer": "Respuesta abierta evaluada con criterios de nivel inicial.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Produire quelques phrases en continu ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-SPANISH-COMMUNICATION-SPEAK",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-spanish-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-SPANISH-V1-COMMUNICATION-SPEAK-PRACTICE-02",
+        "title": "Produire quelques phrases en continu",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Aplica la competencia « Produire quelques phrases en continu » a una tarea breve sobre identidad, colegio, familia o gustos.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Respuesta abierta evaluada con criterios de nivel inicial.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Produire quelques phrases en continu ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "SPANISH",
+          "chapter_code": "CH-SPANISH-5E-COMMUNICATION",
+          "primary_skill_code": "SK-ENR-SPANISH-5E-COMMUNICATION-SPEAK",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-spanish-v1",
+          "template_version": "lcai-5e-spanish-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-SPANISH-COMMUNICATION-SPEAK",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "es-ES",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "oral_or_teacher_read",
+          "success_criteria": [
+            "tarea inicial completada",
+            "mensaje comprensible",
+            "léxico y estructuras básicas pertinentes"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_spanish_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-SPANISH-V1-COMMUNICATION-SPEAK-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "SPANISH",
+      "chapter": "CH-SPANISH-5E-COMMUNICATION",
+      "skill": "SK-ENR-SPANISH-5E-COMMUNICATION-SPEAK",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Evaluación: demuestra de forma autónoma que puedes produire quelques phrases en continu.",
+      "expected_answer": "Respuesta abierta evaluada con criterios de nivel inicial.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Produire quelques phrases en continu ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-SPANISH-COMMUNICATION-SPEAK",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-spanish-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-SPANISH-V1-COMMUNICATION-SPEAK-ASSESSMENT-03",
+        "title": "Produire quelques phrases en continu",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Evaluación: demuestra de forma autónoma que puedes produire quelques phrases en continu.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Respuesta abierta evaluada con criterios de nivel inicial.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Produire quelques phrases en continu ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "SPANISH",
+          "chapter_code": "CH-SPANISH-5E-COMMUNICATION",
+          "primary_skill_code": "SK-ENR-SPANISH-5E-COMMUNICATION-SPEAK",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-spanish-v1",
+          "template_version": "lcai-5e-spanish-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-SPANISH-COMMUNICATION-SPEAK",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "es-ES",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "oral_or_teacher_read",
+          "success_criteria": [
+            "tarea inicial completada",
+            "mensaje comprensible",
+            "léxico y estructuras básicas pertinentes"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_spanish_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-SPANISH-V1-COMMUNICATION-WRITE-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "SPANISH",
+      "chapter": "CH-SPANISH-5E-COMMUNICATION",
+      "skill": "SK-ENR-SPANISH-5E-COMMUNICATION-WRITE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Práctica: demuestra que puedes rédiger un message très simple en una situación muy sencilla y familiar.",
+      "expected_answer": "Respuesta abierta evaluada con criterios de nivel inicial.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Rédiger un message très simple ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-SPANISH-COMMUNICATION-WRITE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-spanish-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-SPANISH-V1-COMMUNICATION-WRITE-PRACTICE-01",
+        "title": "Rédiger un message très simple",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Práctica: demuestra que puedes rédiger un message très simple en una situación muy sencilla y familiar.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Respuesta abierta evaluada con criterios de nivel inicial.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Rédiger un message très simple ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "SPANISH",
+          "chapter_code": "CH-SPANISH-5E-COMMUNICATION",
+          "primary_skill_code": "SK-ENR-SPANISH-5E-COMMUNICATION-WRITE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-spanish-v1",
+          "template_version": "lcai-5e-spanish-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-SPANISH-COMMUNICATION-WRITE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "es-ES",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "tarea inicial completada",
+            "mensaje comprensible",
+            "léxico y estructuras básicas pertinentes"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_spanish_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-SPANISH-V1-COMMUNICATION-WRITE-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "SPANISH",
+      "chapter": "CH-SPANISH-5E-COMMUNICATION",
+      "skill": "SK-ENR-SPANISH-5E-COMMUNICATION-WRITE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Aplica la competencia « Rédiger un message très simple » a una tarea breve sobre identidad, colegio, familia o gustos.",
+      "expected_answer": "Respuesta abierta evaluada con criterios de nivel inicial.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Rédiger un message très simple ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-SPANISH-COMMUNICATION-WRITE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-spanish-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-SPANISH-V1-COMMUNICATION-WRITE-PRACTICE-02",
+        "title": "Rédiger un message très simple",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Aplica la competencia « Rédiger un message très simple » a una tarea breve sobre identidad, colegio, familia o gustos.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Respuesta abierta evaluada con criterios de nivel inicial.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Rédiger un message très simple ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "SPANISH",
+          "chapter_code": "CH-SPANISH-5E-COMMUNICATION",
+          "primary_skill_code": "SK-ENR-SPANISH-5E-COMMUNICATION-WRITE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-spanish-v1",
+          "template_version": "lcai-5e-spanish-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-SPANISH-COMMUNICATION-WRITE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "es-ES",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "tarea inicial completada",
+            "mensaje comprensible",
+            "léxico y estructuras básicas pertinentes"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_spanish_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-SPANISH-V1-COMMUNICATION-WRITE-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "SPANISH",
+      "chapter": "CH-SPANISH-5E-COMMUNICATION",
+      "skill": "SK-ENR-SPANISH-5E-COMMUNICATION-WRITE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Evaluación: demuestra de forma autónoma que puedes rédiger un message très simple.",
+      "expected_answer": "Respuesta abierta evaluada con criterios de nivel inicial.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Rédiger un message très simple ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-SPANISH-COMMUNICATION-WRITE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-spanish-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-SPANISH-V1-COMMUNICATION-WRITE-ASSESSMENT-03",
+        "title": "Rédiger un message très simple",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Evaluación: demuestra de forma autónoma que puedes rédiger un message très simple.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Respuesta abierta evaluada con criterios de nivel inicial.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Rédiger un message très simple ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "SPANISH",
+          "chapter_code": "CH-SPANISH-5E-COMMUNICATION",
+          "primary_skill_code": "SK-ENR-SPANISH-5E-COMMUNICATION-WRITE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-spanish-v1",
+          "template_version": "lcai-5e-spanish-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-SPANISH-COMMUNICATION-WRITE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "es-ES",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "tarea inicial completada",
+            "mensaje comprensible",
+            "léxico y estructuras básicas pertinentes"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_spanish_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-SPANISH-V1-LANGUAGE-VOCAB-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "SPANISH",
+      "chapter": "CH-SPANISH-5E-LANGUAGE",
+      "skill": "SK-ENR-SPANISH-5E-LANGUAGE-VOCAB",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Práctica: demuestra que puedes mobiliser le lexique de base en una situación muy sencilla y familiar.",
+      "expected_answer": "Respuesta abierta evaluada con criterios de nivel inicial.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Mobiliser le lexique de base ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-SPANISH-LANGUAGE-VOCAB",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-spanish-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-SPANISH-V1-LANGUAGE-VOCAB-PRACTICE-01",
+        "title": "Mobiliser le lexique de base",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Práctica: demuestra que puedes mobiliser le lexique de base en una situación muy sencilla y familiar.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Respuesta abierta evaluada con criterios de nivel inicial.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Mobiliser le lexique de base ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "SPANISH",
+          "chapter_code": "CH-SPANISH-5E-LANGUAGE",
+          "primary_skill_code": "SK-ENR-SPANISH-5E-LANGUAGE-VOCAB",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-spanish-v1",
+          "template_version": "lcai-5e-spanish-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-SPANISH-LANGUAGE-VOCAB",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "es-ES",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "tarea inicial completada",
+            "mensaje comprensible",
+            "léxico y estructuras básicas pertinentes"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_spanish_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-SPANISH-V1-LANGUAGE-VOCAB-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "SPANISH",
+      "chapter": "CH-SPANISH-5E-LANGUAGE",
+      "skill": "SK-ENR-SPANISH-5E-LANGUAGE-VOCAB",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Aplica la competencia « Mobiliser le lexique de base » a una tarea breve sobre identidad, colegio, familia o gustos.",
+      "expected_answer": "Respuesta abierta evaluada con criterios de nivel inicial.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Mobiliser le lexique de base ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-SPANISH-LANGUAGE-VOCAB",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-spanish-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-SPANISH-V1-LANGUAGE-VOCAB-PRACTICE-02",
+        "title": "Mobiliser le lexique de base",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Aplica la competencia « Mobiliser le lexique de base » a una tarea breve sobre identidad, colegio, familia o gustos.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Respuesta abierta evaluada con criterios de nivel inicial.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Mobiliser le lexique de base ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "SPANISH",
+          "chapter_code": "CH-SPANISH-5E-LANGUAGE",
+          "primary_skill_code": "SK-ENR-SPANISH-5E-LANGUAGE-VOCAB",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-spanish-v1",
+          "template_version": "lcai-5e-spanish-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-SPANISH-LANGUAGE-VOCAB",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "es-ES",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "tarea inicial completada",
+            "mensaje comprensible",
+            "léxico y estructuras básicas pertinentes"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_spanish_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-SPANISH-V1-LANGUAGE-VOCAB-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "SPANISH",
+      "chapter": "CH-SPANISH-5E-LANGUAGE",
+      "skill": "SK-ENR-SPANISH-5E-LANGUAGE-VOCAB",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Evaluación: demuestra de forma autónoma que puedes mobiliser le lexique de base.",
+      "expected_answer": "Respuesta abierta evaluada con criterios de nivel inicial.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Mobiliser le lexique de base ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-SPANISH-LANGUAGE-VOCAB",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-spanish-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-SPANISH-V1-LANGUAGE-VOCAB-ASSESSMENT-03",
+        "title": "Mobiliser le lexique de base",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Evaluación: demuestra de forma autónoma que puedes mobiliser le lexique de base.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Respuesta abierta evaluada con criterios de nivel inicial.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Mobiliser le lexique de base ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "SPANISH",
+          "chapter_code": "CH-SPANISH-5E-LANGUAGE",
+          "primary_skill_code": "SK-ENR-SPANISH-5E-LANGUAGE-VOCAB",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-spanish-v1",
+          "template_version": "lcai-5e-spanish-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-SPANISH-LANGUAGE-VOCAB",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "es-ES",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "tarea inicial completada",
+            "mensaje comprensible",
+            "léxico y estructuras básicas pertinentes"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_spanish_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-SPANISH-V1-LANGUAGE-GRAMMAR-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "SPANISH",
+      "chapter": "CH-SPANISH-5E-LANGUAGE",
+      "skill": "SK-ENR-SPANISH-5E-LANGUAGE-GRAMMAR",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Práctica: demuestra que puedes construire une phrase simple en una situación muy sencilla y familiar.",
+      "expected_answer": "Respuesta abierta evaluada con criterios de nivel inicial.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Construire une phrase simple ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-SPANISH-LANGUAGE-GRAMMAR",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-spanish-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-SPANISH-V1-LANGUAGE-GRAMMAR-PRACTICE-01",
+        "title": "Construire une phrase simple",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Práctica: demuestra que puedes construire une phrase simple en una situación muy sencilla y familiar.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Respuesta abierta evaluada con criterios de nivel inicial.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Construire une phrase simple ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "SPANISH",
+          "chapter_code": "CH-SPANISH-5E-LANGUAGE",
+          "primary_skill_code": "SK-ENR-SPANISH-5E-LANGUAGE-GRAMMAR",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-spanish-v1",
+          "template_version": "lcai-5e-spanish-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-SPANISH-LANGUAGE-GRAMMAR",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "es-ES",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "tarea inicial completada",
+            "mensaje comprensible",
+            "léxico y estructuras básicas pertinentes"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_spanish_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-SPANISH-V1-LANGUAGE-GRAMMAR-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "SPANISH",
+      "chapter": "CH-SPANISH-5E-LANGUAGE",
+      "skill": "SK-ENR-SPANISH-5E-LANGUAGE-GRAMMAR",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Aplica la competencia « Construire une phrase simple » a una tarea breve sobre identidad, colegio, familia o gustos.",
+      "expected_answer": "Respuesta abierta evaluada con criterios de nivel inicial.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Construire une phrase simple ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-SPANISH-LANGUAGE-GRAMMAR",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-spanish-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-SPANISH-V1-LANGUAGE-GRAMMAR-PRACTICE-02",
+        "title": "Construire une phrase simple",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Aplica la competencia « Construire une phrase simple » a una tarea breve sobre identidad, colegio, familia o gustos.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Respuesta abierta evaluada con criterios de nivel inicial.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Construire une phrase simple ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "SPANISH",
+          "chapter_code": "CH-SPANISH-5E-LANGUAGE",
+          "primary_skill_code": "SK-ENR-SPANISH-5E-LANGUAGE-GRAMMAR",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-spanish-v1",
+          "template_version": "lcai-5e-spanish-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-SPANISH-LANGUAGE-GRAMMAR",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "es-ES",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "tarea inicial completada",
+            "mensaje comprensible",
+            "léxico y estructuras básicas pertinentes"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_spanish_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-SPANISH-V1-LANGUAGE-GRAMMAR-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "SPANISH",
+      "chapter": "CH-SPANISH-5E-LANGUAGE",
+      "skill": "SK-ENR-SPANISH-5E-LANGUAGE-GRAMMAR",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Evaluación: demuestra de forma autónoma que puedes construire une phrase simple.",
+      "expected_answer": "Respuesta abierta evaluada con criterios de nivel inicial.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Construire une phrase simple ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-SPANISH-LANGUAGE-GRAMMAR",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-spanish-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-SPANISH-V1-LANGUAGE-GRAMMAR-ASSESSMENT-03",
+        "title": "Construire une phrase simple",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Evaluación: demuestra de forma autónoma que puedes construire une phrase simple.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Respuesta abierta evaluada con criterios de nivel inicial.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Construire une phrase simple ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "SPANISH",
+          "chapter_code": "CH-SPANISH-5E-LANGUAGE",
+          "primary_skill_code": "SK-ENR-SPANISH-5E-LANGUAGE-GRAMMAR",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-spanish-v1",
+          "template_version": "lcai-5e-spanish-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-SPANISH-LANGUAGE-GRAMMAR",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "es-ES",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "tarea inicial completada",
+            "mensaje comprensible",
+            "léxico y estructuras básicas pertinentes"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_spanish_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-SPANISH-V1-LANGUAGE-TENSES-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "SPANISH",
+      "chapter": "CH-SPANISH-5E-LANGUAGE",
+      "skill": "SK-ENR-SPANISH-5E-LANGUAGE-TENSES",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Práctica: demuestra que puedes employer les formes verbales de base en una situación muy sencilla y familiar.",
+      "expected_answer": "Respuesta abierta evaluada con criterios de nivel inicial.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Employer les formes verbales de base ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-SPANISH-LANGUAGE-TENSES",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-spanish-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-SPANISH-V1-LANGUAGE-TENSES-PRACTICE-01",
+        "title": "Employer les formes verbales de base",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Práctica: demuestra que puedes employer les formes verbales de base en una situación muy sencilla y familiar.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Respuesta abierta evaluada con criterios de nivel inicial.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Employer les formes verbales de base ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "SPANISH",
+          "chapter_code": "CH-SPANISH-5E-LANGUAGE",
+          "primary_skill_code": "SK-ENR-SPANISH-5E-LANGUAGE-TENSES",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-spanish-v1",
+          "template_version": "lcai-5e-spanish-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-SPANISH-LANGUAGE-TENSES",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "es-ES",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "tarea inicial completada",
+            "mensaje comprensible",
+            "léxico y estructuras básicas pertinentes"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_spanish_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-SPANISH-V1-LANGUAGE-TENSES-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "SPANISH",
+      "chapter": "CH-SPANISH-5E-LANGUAGE",
+      "skill": "SK-ENR-SPANISH-5E-LANGUAGE-TENSES",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Aplica la competencia « Employer les formes verbales de base » a una tarea breve sobre identidad, colegio, familia o gustos.",
+      "expected_answer": "Respuesta abierta evaluada con criterios de nivel inicial.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Employer les formes verbales de base ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-SPANISH-LANGUAGE-TENSES",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-spanish-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-SPANISH-V1-LANGUAGE-TENSES-PRACTICE-02",
+        "title": "Employer les formes verbales de base",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Aplica la competencia « Employer les formes verbales de base » a una tarea breve sobre identidad, colegio, familia o gustos.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Respuesta abierta evaluada con criterios de nivel inicial.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Employer les formes verbales de base ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "SPANISH",
+          "chapter_code": "CH-SPANISH-5E-LANGUAGE",
+          "primary_skill_code": "SK-ENR-SPANISH-5E-LANGUAGE-TENSES",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-spanish-v1",
+          "template_version": "lcai-5e-spanish-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-SPANISH-LANGUAGE-TENSES",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "es-ES",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "tarea inicial completada",
+            "mensaje comprensible",
+            "léxico y estructuras básicas pertinentes"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_spanish_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-SPANISH-V1-LANGUAGE-TENSES-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "SPANISH",
+      "chapter": "CH-SPANISH-5E-LANGUAGE",
+      "skill": "SK-ENR-SPANISH-5E-LANGUAGE-TENSES",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Evaluación: demuestra de forma autónoma que puedes employer les formes verbales de base.",
+      "expected_answer": "Respuesta abierta evaluada con criterios de nivel inicial.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Employer les formes verbales de base ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-SPANISH-LANGUAGE-TENSES",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-spanish-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-SPANISH-V1-LANGUAGE-TENSES-ASSESSMENT-03",
+        "title": "Employer les formes verbales de base",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Evaluación: demuestra de forma autónoma que puedes employer les formes verbales de base.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Respuesta abierta evaluada con criterios de nivel inicial.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Employer les formes verbales de base ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "SPANISH",
+          "chapter_code": "CH-SPANISH-5E-LANGUAGE",
+          "primary_skill_code": "SK-ENR-SPANISH-5E-LANGUAGE-TENSES",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-spanish-v1",
+          "template_version": "lcai-5e-spanish-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-SPANISH-LANGUAGE-TENSES",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "es-ES",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "tarea inicial completada",
+            "mensaje comprensible",
+            "léxico y estructuras básicas pertinentes"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_spanish_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-SPANISH-V1-LANGUAGE-PHONOLOGY-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "SPANISH",
+      "chapter": "CH-SPANISH-5E-LANGUAGE",
+      "skill": "SK-ENR-SPANISH-5E-LANGUAGE-PHONOLOGY",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Práctica: demuestra que puedes prononcer de façon intelligible en una situación muy sencilla y familiar.",
+      "expected_answer": "Respuesta abierta evaluada con criterios de nivel inicial.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Prononcer de façon intelligible ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-SPANISH-LANGUAGE-PHONOLOGY",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-spanish-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-SPANISH-V1-LANGUAGE-PHONOLOGY-PRACTICE-01",
+        "title": "Prononcer de façon intelligible",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Práctica: demuestra que puedes prononcer de façon intelligible en una situación muy sencilla y familiar.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Respuesta abierta evaluada con criterios de nivel inicial.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Prononcer de façon intelligible ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "SPANISH",
+          "chapter_code": "CH-SPANISH-5E-LANGUAGE",
+          "primary_skill_code": "SK-ENR-SPANISH-5E-LANGUAGE-PHONOLOGY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-spanish-v1",
+          "template_version": "lcai-5e-spanish-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-SPANISH-LANGUAGE-PHONOLOGY",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "es-ES",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "oral_or_teacher_read",
+          "success_criteria": [
+            "tarea inicial completada",
+            "mensaje comprensible",
+            "léxico y estructuras básicas pertinentes"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_spanish_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-SPANISH-V1-LANGUAGE-PHONOLOGY-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "SPANISH",
+      "chapter": "CH-SPANISH-5E-LANGUAGE",
+      "skill": "SK-ENR-SPANISH-5E-LANGUAGE-PHONOLOGY",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Aplica la competencia « Prononcer de façon intelligible » a una tarea breve sobre identidad, colegio, familia o gustos.",
+      "expected_answer": "Respuesta abierta evaluada con criterios de nivel inicial.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Prononcer de façon intelligible ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-SPANISH-LANGUAGE-PHONOLOGY",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-spanish-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-SPANISH-V1-LANGUAGE-PHONOLOGY-PRACTICE-02",
+        "title": "Prononcer de façon intelligible",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Aplica la competencia « Prononcer de façon intelligible » a una tarea breve sobre identidad, colegio, familia o gustos.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Respuesta abierta evaluada con criterios de nivel inicial.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Prononcer de façon intelligible ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "SPANISH",
+          "chapter_code": "CH-SPANISH-5E-LANGUAGE",
+          "primary_skill_code": "SK-ENR-SPANISH-5E-LANGUAGE-PHONOLOGY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-spanish-v1",
+          "template_version": "lcai-5e-spanish-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-SPANISH-LANGUAGE-PHONOLOGY",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "es-ES",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "oral_or_teacher_read",
+          "success_criteria": [
+            "tarea inicial completada",
+            "mensaje comprensible",
+            "léxico y estructuras básicas pertinentes"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_spanish_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-SPANISH-V1-LANGUAGE-PHONOLOGY-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "SPANISH",
+      "chapter": "CH-SPANISH-5E-LANGUAGE",
+      "skill": "SK-ENR-SPANISH-5E-LANGUAGE-PHONOLOGY",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Evaluación: demuestra de forma autónoma que puedes prononcer de façon intelligible.",
+      "expected_answer": "Respuesta abierta evaluada con criterios de nivel inicial.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Prononcer de façon intelligible ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-SPANISH-LANGUAGE-PHONOLOGY",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-spanish-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-SPANISH-V1-LANGUAGE-PHONOLOGY-ASSESSMENT-03",
+        "title": "Prononcer de façon intelligible",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Evaluación: demuestra de forma autónoma que puedes prononcer de façon intelligible.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Respuesta abierta evaluada con criterios de nivel inicial.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Prononcer de façon intelligible ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "SPANISH",
+          "chapter_code": "CH-SPANISH-5E-LANGUAGE",
+          "primary_skill_code": "SK-ENR-SPANISH-5E-LANGUAGE-PHONOLOGY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-spanish-v1",
+          "template_version": "lcai-5e-spanish-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-SPANISH-LANGUAGE-PHONOLOGY",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "es-ES",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "oral_or_teacher_read",
+          "success_criteria": [
+            "tarea inicial completada",
+            "mensaje comprensible",
+            "léxico y estructuras básicas pertinentes"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_spanish_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-SPANISH-V1-CULTURE-LOCATE-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "SPANISH",
+      "chapter": "CH-SPANISH-5E-CULTURE",
+      "skill": "SK-ENR-SPANISH-5E-CULTURE-LOCATE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Práctica: demuestra que puedes localiser des espaces hispanophones en una situación muy sencilla y familiar.",
+      "expected_answer": "Respuesta abierta evaluada con criterios de nivel inicial.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Localiser des espaces hispanophones ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-SPANISH-CULTURE-LOCATE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-spanish-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-SPANISH-V1-CULTURE-LOCATE-PRACTICE-01",
+        "title": "Localiser des espaces hispanophones",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Práctica: demuestra que puedes localiser des espaces hispanophones en una situación muy sencilla y familiar.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Respuesta abierta evaluada con criterios de nivel inicial.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Localiser des espaces hispanophones ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "SPANISH",
+          "chapter_code": "CH-SPANISH-5E-CULTURE",
+          "primary_skill_code": "SK-ENR-SPANISH-5E-CULTURE-LOCATE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-spanish-v1",
+          "template_version": "lcai-5e-spanish-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-SPANISH-CULTURE-LOCATE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "es-ES",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "tarea inicial completada",
+            "mensaje comprensible",
+            "léxico y estructuras básicas pertinentes"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_spanish_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-SPANISH-V1-CULTURE-LOCATE-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "SPANISH",
+      "chapter": "CH-SPANISH-5E-CULTURE",
+      "skill": "SK-ENR-SPANISH-5E-CULTURE-LOCATE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Aplica la competencia « Localiser des espaces hispanophones » a una tarea breve sobre identidad, colegio, familia o gustos.",
+      "expected_answer": "Respuesta abierta evaluada con criterios de nivel inicial.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Localiser des espaces hispanophones ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-SPANISH-CULTURE-LOCATE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-spanish-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-SPANISH-V1-CULTURE-LOCATE-PRACTICE-02",
+        "title": "Localiser des espaces hispanophones",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Aplica la competencia « Localiser des espaces hispanophones » a una tarea breve sobre identidad, colegio, familia o gustos.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Respuesta abierta evaluada con criterios de nivel inicial.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Localiser des espaces hispanophones ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "SPANISH",
+          "chapter_code": "CH-SPANISH-5E-CULTURE",
+          "primary_skill_code": "SK-ENR-SPANISH-5E-CULTURE-LOCATE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-spanish-v1",
+          "template_version": "lcai-5e-spanish-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-SPANISH-CULTURE-LOCATE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "es-ES",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "tarea inicial completada",
+            "mensaje comprensible",
+            "léxico y estructuras básicas pertinentes"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_spanish_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-SPANISH-V1-CULTURE-LOCATE-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "SPANISH",
+      "chapter": "CH-SPANISH-5E-CULTURE",
+      "skill": "SK-ENR-SPANISH-5E-CULTURE-LOCATE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Evaluación: demuestra de forma autónoma que puedes localiser des espaces hispanophones.",
+      "expected_answer": "Respuesta abierta evaluada con criterios de nivel inicial.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Localiser des espaces hispanophones ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-SPANISH-CULTURE-LOCATE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-spanish-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-SPANISH-V1-CULTURE-LOCATE-ASSESSMENT-03",
+        "title": "Localiser des espaces hispanophones",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Evaluación: demuestra de forma autónoma que puedes localiser des espaces hispanophones.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Respuesta abierta evaluada con criterios de nivel inicial.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Localiser des espaces hispanophones ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "SPANISH",
+          "chapter_code": "CH-SPANISH-5E-CULTURE",
+          "primary_skill_code": "SK-ENR-SPANISH-5E-CULTURE-LOCATE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-spanish-v1",
+          "template_version": "lcai-5e-spanish-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-SPANISH-CULTURE-LOCATE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "es-ES",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "tarea inicial completada",
+            "mensaje comprensible",
+            "léxico y estructuras básicas pertinentes"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_spanish_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-SPANISH-V1-CULTURE-IDENTIFY-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "SPANISH",
+      "chapter": "CH-SPANISH-5E-CULTURE",
+      "skill": "SK-ENR-SPANISH-5E-CULTURE-IDENTIFY",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Práctica: demuestra que puedes identifier un repère culturel en una situación muy sencilla y familiar.",
+      "expected_answer": "Respuesta abierta evaluada con criterios de nivel inicial.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Identifier un repère culturel ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-SPANISH-CULTURE-IDENTIFY",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-spanish-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-SPANISH-V1-CULTURE-IDENTIFY-PRACTICE-01",
+        "title": "Identifier un repère culturel",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Práctica: demuestra que puedes identifier un repère culturel en una situación muy sencilla y familiar.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Respuesta abierta evaluada con criterios de nivel inicial.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Identifier un repère culturel ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "SPANISH",
+          "chapter_code": "CH-SPANISH-5E-CULTURE",
+          "primary_skill_code": "SK-ENR-SPANISH-5E-CULTURE-IDENTIFY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-spanish-v1",
+          "template_version": "lcai-5e-spanish-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-SPANISH-CULTURE-IDENTIFY",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "es-ES",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "tarea inicial completada",
+            "mensaje comprensible",
+            "léxico y estructuras básicas pertinentes"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_spanish_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-SPANISH-V1-CULTURE-IDENTIFY-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "SPANISH",
+      "chapter": "CH-SPANISH-5E-CULTURE",
+      "skill": "SK-ENR-SPANISH-5E-CULTURE-IDENTIFY",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Aplica la competencia « Identifier un repère culturel » a una tarea breve sobre identidad, colegio, familia o gustos.",
+      "expected_answer": "Respuesta abierta evaluada con criterios de nivel inicial.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Identifier un repère culturel ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-SPANISH-CULTURE-IDENTIFY",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-spanish-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-SPANISH-V1-CULTURE-IDENTIFY-PRACTICE-02",
+        "title": "Identifier un repère culturel",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Aplica la competencia « Identifier un repère culturel » a una tarea breve sobre identidad, colegio, familia o gustos.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Respuesta abierta evaluada con criterios de nivel inicial.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Identifier un repère culturel ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "SPANISH",
+          "chapter_code": "CH-SPANISH-5E-CULTURE",
+          "primary_skill_code": "SK-ENR-SPANISH-5E-CULTURE-IDENTIFY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-spanish-v1",
+          "template_version": "lcai-5e-spanish-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-SPANISH-CULTURE-IDENTIFY",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "es-ES",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "tarea inicial completada",
+            "mensaje comprensible",
+            "léxico y estructuras básicas pertinentes"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_spanish_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-SPANISH-V1-CULTURE-IDENTIFY-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "SPANISH",
+      "chapter": "CH-SPANISH-5E-CULTURE",
+      "skill": "SK-ENR-SPANISH-5E-CULTURE-IDENTIFY",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Evaluación: demuestra de forma autónoma que puedes identifier un repère culturel.",
+      "expected_answer": "Respuesta abierta evaluada con criterios de nivel inicial.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Identifier un repère culturel ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-SPANISH-CULTURE-IDENTIFY",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-spanish-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-SPANISH-V1-CULTURE-IDENTIFY-ASSESSMENT-03",
+        "title": "Identifier un repère culturel",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Evaluación: demuestra de forma autónoma que puedes identifier un repère culturel.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Respuesta abierta evaluada con criterios de nivel inicial.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Identifier un repère culturel ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "SPANISH",
+          "chapter_code": "CH-SPANISH-5E-CULTURE",
+          "primary_skill_code": "SK-ENR-SPANISH-5E-CULTURE-IDENTIFY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-spanish-v1",
+          "template_version": "lcai-5e-spanish-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-SPANISH-CULTURE-IDENTIFY",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "es-ES",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "tarea inicial completada",
+            "mensaje comprensible",
+            "léxico y estructuras básicas pertinentes"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_spanish_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-SPANISH-V1-CULTURE-COMPARE-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "SPANISH",
+      "chapter": "CH-SPANISH-5E-CULTURE",
+      "skill": "SK-ENR-SPANISH-5E-CULTURE-COMPARE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Práctica: demuestra que puedes comparer une pratique culturelle en una situación muy sencilla y familiar.",
+      "expected_answer": "Respuesta abierta evaluada con criterios de nivel inicial.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Comparer une pratique culturelle ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-SPANISH-CULTURE-COMPARE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-spanish-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-SPANISH-V1-CULTURE-COMPARE-PRACTICE-01",
+        "title": "Comparer une pratique culturelle",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Práctica: demuestra que puedes comparer une pratique culturelle en una situación muy sencilla y familiar.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Respuesta abierta evaluada con criterios de nivel inicial.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Comparer une pratique culturelle ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "SPANISH",
+          "chapter_code": "CH-SPANISH-5E-CULTURE",
+          "primary_skill_code": "SK-ENR-SPANISH-5E-CULTURE-COMPARE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-spanish-v1",
+          "template_version": "lcai-5e-spanish-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-SPANISH-CULTURE-COMPARE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "es-ES",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "tarea inicial completada",
+            "mensaje comprensible",
+            "léxico y estructuras básicas pertinentes"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_spanish_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-SPANISH-V1-CULTURE-COMPARE-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "SPANISH",
+      "chapter": "CH-SPANISH-5E-CULTURE",
+      "skill": "SK-ENR-SPANISH-5E-CULTURE-COMPARE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Aplica la competencia « Comparer une pratique culturelle » a una tarea breve sobre identidad, colegio, familia o gustos.",
+      "expected_answer": "Respuesta abierta evaluada con criterios de nivel inicial.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Comparer une pratique culturelle ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-SPANISH-CULTURE-COMPARE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-spanish-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-SPANISH-V1-CULTURE-COMPARE-PRACTICE-02",
+        "title": "Comparer une pratique culturelle",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Aplica la competencia « Comparer une pratique culturelle » a una tarea breve sobre identidad, colegio, familia o gustos.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Respuesta abierta evaluada con criterios de nivel inicial.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Comparer une pratique culturelle ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "SPANISH",
+          "chapter_code": "CH-SPANISH-5E-CULTURE",
+          "primary_skill_code": "SK-ENR-SPANISH-5E-CULTURE-COMPARE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-spanish-v1",
+          "template_version": "lcai-5e-spanish-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-SPANISH-CULTURE-COMPARE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "es-ES",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "tarea inicial completada",
+            "mensaje comprensible",
+            "léxico y estructuras básicas pertinentes"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_spanish_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-SPANISH-V1-CULTURE-COMPARE-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "SPANISH",
+      "chapter": "CH-SPANISH-5E-CULTURE",
+      "skill": "SK-ENR-SPANISH-5E-CULTURE-COMPARE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Evaluación: demuestra de forma autónoma que puedes comparer une pratique culturelle.",
+      "expected_answer": "Respuesta abierta evaluada con criterios de nivel inicial.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Comparer une pratique culturelle ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-SPANISH-CULTURE-COMPARE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-spanish-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-SPANISH-V1-CULTURE-COMPARE-ASSESSMENT-03",
+        "title": "Comparer une pratique culturelle",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Evaluación: demuestra de forma autónoma que puedes comparer une pratique culturelle.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Respuesta abierta evaluada con criterios de nivel inicial.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Comparer une pratique culturelle ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "SPANISH",
+          "chapter_code": "CH-SPANISH-5E-CULTURE",
+          "primary_skill_code": "SK-ENR-SPANISH-5E-CULTURE-COMPARE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-spanish-v1",
+          "template_version": "lcai-5e-spanish-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-SPANISH-CULTURE-COMPARE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "es-ES",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "tarea inicial completada",
+            "mensaje comprensible",
+            "léxico y estructuras básicas pertinentes"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_spanish_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-SPANISH-V1-CULTURE-PRESENT-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "SPANISH",
+      "chapter": "CH-SPANISH-5E-CULTURE",
+      "skill": "SK-ENR-SPANISH-5E-CULTURE-PRESENT",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Práctica: demuestra que puedes présenter simplement un repère culturel en una situación muy sencilla y familiar.",
+      "expected_answer": "Respuesta abierta evaluada con criterios de nivel inicial.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Présenter simplement un repère culturel ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-SPANISH-CULTURE-PRESENT",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-spanish-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-SPANISH-V1-CULTURE-PRESENT-PRACTICE-01",
+        "title": "Présenter simplement un repère culturel",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Práctica: demuestra que puedes présenter simplement un repère culturel en una situación muy sencilla y familiar.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Respuesta abierta evaluada con criterios de nivel inicial.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Présenter simplement un repère culturel ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "SPANISH",
+          "chapter_code": "CH-SPANISH-5E-CULTURE",
+          "primary_skill_code": "SK-ENR-SPANISH-5E-CULTURE-PRESENT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-spanish-v1",
+          "template_version": "lcai-5e-spanish-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-SPANISH-CULTURE-PRESENT",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "es-ES",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "oral_or_teacher_read",
+          "success_criteria": [
+            "tarea inicial completada",
+            "mensaje comprensible",
+            "léxico y estructuras básicas pertinentes"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_spanish_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-SPANISH-V1-CULTURE-PRESENT-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "SPANISH",
+      "chapter": "CH-SPANISH-5E-CULTURE",
+      "skill": "SK-ENR-SPANISH-5E-CULTURE-PRESENT",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Aplica la competencia « Présenter simplement un repère culturel » a una tarea breve sobre identidad, colegio, familia o gustos.",
+      "expected_answer": "Respuesta abierta evaluada con criterios de nivel inicial.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Présenter simplement un repère culturel ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-SPANISH-CULTURE-PRESENT",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-spanish-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-SPANISH-V1-CULTURE-PRESENT-PRACTICE-02",
+        "title": "Présenter simplement un repère culturel",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Aplica la competencia « Présenter simplement un repère culturel » a una tarea breve sobre identidad, colegio, familia o gustos.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Respuesta abierta evaluada con criterios de nivel inicial.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Présenter simplement un repère culturel ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "SPANISH",
+          "chapter_code": "CH-SPANISH-5E-CULTURE",
+          "primary_skill_code": "SK-ENR-SPANISH-5E-CULTURE-PRESENT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-spanish-v1",
+          "template_version": "lcai-5e-spanish-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-SPANISH-CULTURE-PRESENT",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "es-ES",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "oral_or_teacher_read",
+          "success_criteria": [
+            "tarea inicial completada",
+            "mensaje comprensible",
+            "léxico y estructuras básicas pertinentes"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_spanish_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-SPANISH-V1-CULTURE-PRESENT-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "SPANISH",
+      "chapter": "CH-SPANISH-5E-CULTURE",
+      "skill": "SK-ENR-SPANISH-5E-CULTURE-PRESENT",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Evaluación: demuestra de forma autónoma que puedes présenter simplement un repère culturel.",
+      "expected_answer": "Respuesta abierta evaluada con criterios de nivel inicial.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Présenter simplement un repère culturel ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-SPANISH-CULTURE-PRESENT",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-spanish-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-SPANISH-V1-CULTURE-PRESENT-ASSESSMENT-03",
+        "title": "Présenter simplement un repère culturel",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Evaluación: demuestra de forma autónoma que puedes présenter simplement un repère culturel.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Respuesta abierta evaluada con criterios de nivel inicial.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Présenter simplement un repère culturel ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "SPANISH",
+          "chapter_code": "CH-SPANISH-5E-CULTURE",
+          "primary_skill_code": "SK-ENR-SPANISH-5E-CULTURE-PRESENT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-spanish-v1",
+          "template_version": "lcai-5e-spanish-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-SPANISH-CULTURE-PRESENT",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "es-ES",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "oral_or_teacher_read",
+          "success_criteria": [
+            "tarea inicial completada",
+            "mensaje comprensible",
+            "léxico y estructuras básicas pertinentes"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_spanish_candidates_v1.json"
+      }
+    }
+  ]
+}

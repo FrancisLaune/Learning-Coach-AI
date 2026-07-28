@@ -1,0 +1,2014 @@
+{
+  "batch": "CM1-EMC-V1",
+  "purpose": "Parallel CM1 content preparation for Learning Coach AI",
+  "lifecycle_target": "Draft",
+  "automatic_approval": false,
+  "curriculum_version": "phase2-lcai-0011c",
+  "program_code": "FR-CYCLE3-CM1-2026",
+  "grade_code": "FR-CM1",
+  "subject_code": "EMC",
+  "skill_count": 8,
+  "candidate_count": 24,
+  "content_types": {
+    "practice": 16,
+    "assessment": 8
+  },
+  "difficulty_distribution": {
+    "1": 8,
+    "2": 16
+  },
+  "accepted_candidates": [
+    {
+      "code": "CM1-EMC-V1-DIGNITY-DIGNITY-PRACTICE-01",
+      "grade": "FR-CM1",
+      "subject": "EMC",
+      "chapter": "CH-EMC-CM1-DIGNITY",
+      "skill": "SK-ENR-EMC-CM1-DIGNITY-DIGNITY",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Un élève est humilié publiquement à cause de son apparence. Cela porte atteinte :",
+      "expected_answer": "à sa dignité",
+      "answer_kind": "single_choice",
+      "explanation": "Humilier une personne porte atteinte au respect dû à sa dignité.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-EMC-DIGNITY-DIGNITY",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-EMC-V1-DIGNITY-DIGNITY-PRACTICE-01",
+        "title": "Reconnaître une atteinte à la dignité",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Un élève est humilié publiquement à cause de son apparence. Cela porte atteinte :",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "à sa dignité",
+          "options": [
+            "à une unité de mesure",
+            "à une règle de calcul",
+            "au climat",
+            "à sa dignité"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Humilier une personne porte atteinte au respect dû à sa dignité.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-CM1-DIGNITY",
+          "primary_skill_code": "SK-ENR-EMC-CM1-DIGNITY-DIGNITY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-emc-generation-spec-v1",
+          "template_version": "lcai-cm1-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-EMC-DIGNITY-DIGNITY",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-EMC-V1-DIGNITY-DIGNITY-PRACTICE-02",
+      "grade": "FR-CM1",
+      "subject": "EMC",
+      "chapter": "CH-EMC-CM1-DIGNITY",
+      "skill": "SK-ENR-EMC-CM1-DIGNITY-DIGNITY",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Respecter la dignité d'une personne signifie notamment :",
+      "expected_answer": "ne pas l'humilier ni la traiter comme inférieure",
+      "answer_kind": "single_choice",
+      "explanation": "La dignité implique un respect fondamental de chaque personne.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-EMC-DIGNITY-DIGNITY",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-EMC-V1-DIGNITY-DIGNITY-PRACTICE-02",
+        "title": "Reconnaître une atteinte à la dignité",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Respecter la dignité d'une personne signifie notamment :",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "ne pas l'humilier ni la traiter comme inférieure",
+          "options": [
+            "publier ses photos sans réfléchir",
+            "l'exclure pour son apparence",
+            "ne pas l'humilier ni la traiter comme inférieure",
+            "se moquer d'elle"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "La dignité implique un respect fondamental de chaque personne.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-CM1-DIGNITY",
+          "primary_skill_code": "SK-ENR-EMC-CM1-DIGNITY-DIGNITY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-emc-generation-spec-v1",
+          "template_version": "lcai-cm1-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-EMC-DIGNITY-DIGNITY",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-EMC-V1-DIGNITY-DIGNITY-ASSESSMENT-03",
+      "grade": "FR-CM1",
+      "subject": "EMC",
+      "chapter": "CH-EMC-CM1-DIGNITY",
+      "skill": "SK-ENR-EMC-CM1-DIGNITY-DIGNITY",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Quelle situation respecte le mieux la dignité ?",
+      "expected_answer": "écouter un camarade et lui parler sans l'insulter",
+      "answer_kind": "single_choice",
+      "explanation": "Le respect dans les paroles et comportements protège la dignité.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-EMC-DIGNITY-DIGNITY",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-EMC-V1-DIGNITY-DIGNITY-ASSESSMENT-03",
+        "title": "Reconnaître une atteinte à la dignité",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Quelle situation respecte le mieux la dignité ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "écouter un camarade et lui parler sans l'insulter",
+          "options": [
+            "le menacer",
+            "écouter un camarade et lui parler sans l'insulter",
+            "diffuser une moquerie",
+            "l'humilier devant la classe"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Le respect dans les paroles et comportements protège la dignité.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-CM1-DIGNITY",
+          "primary_skill_code": "SK-ENR-EMC-CM1-DIGNITY-DIGNITY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-emc-generation-spec-v1",
+          "template_version": "lcai-cm1-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-EMC-DIGNITY-DIGNITY",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-EMC-V1-DIGNITY-EQUALITY-PRACTICE-01",
+      "grade": "FR-CM1",
+      "subject": "EMC",
+      "chapter": "CH-EMC-CM1-DIGNITY",
+      "skill": "SK-ENR-EMC-CM1-DIGNITY-EQUALITY",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Refuser une activité à un élève uniquement à cause de son origine est :",
+      "expected_answer": "une discrimination",
+      "answer_kind": "single_choice",
+      "explanation": "Traiter défavorablement une personne sur un critère discriminatoire est une discrimination.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-EMC-DIGNITY-EQUALITY",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-EMC-V1-DIGNITY-EQUALITY-PRACTICE-01",
+        "title": "Distinguer égalité et discrimination",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Refuser une activité à un élève uniquement à cause de son origine est :",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "une discrimination",
+          "options": [
+            "une égalité de traitement",
+            "une unité de mesure",
+            "une récompense scolaire",
+            "une discrimination"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Traiter défavorablement une personne sur un critère discriminatoire est une discrimination.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-CM1-DIGNITY",
+          "primary_skill_code": "SK-ENR-EMC-CM1-DIGNITY-EQUALITY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-emc-generation-spec-v1",
+          "template_version": "lcai-cm1-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-EMC-DIGNITY-EQUALITY",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-EMC-V1-DIGNITY-EQUALITY-PRACTICE-02",
+      "grade": "FR-CM1",
+      "subject": "EMC",
+      "chapter": "CH-EMC-CM1-DIGNITY",
+      "skill": "SK-ENR-EMC-CM1-DIGNITY-EQUALITY",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "L'égalité signifie que :",
+      "expected_answer": "les personnes ont les mêmes droits fondamentaux",
+      "answer_kind": "single_choice",
+      "explanation": "L'égalité en droits ne signifie pas que chacun est identique.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-EMC-DIGNITY-EQUALITY",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-EMC-V1-DIGNITY-EQUALITY-PRACTICE-02",
+        "title": "Distinguer égalité et discrimination",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "L'égalité signifie que :",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "les personnes ont les mêmes droits fondamentaux",
+          "options": [
+            "certains ont moins de droits selon leur apparence",
+            "les règles ne s'appliquent à personne",
+            "les personnes ont les mêmes droits fondamentaux",
+            "tout le monde doit avoir exactement les mêmes goûts"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "L'égalité en droits ne signifie pas que chacun est identique.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-CM1-DIGNITY",
+          "primary_skill_code": "SK-ENR-EMC-CM1-DIGNITY-EQUALITY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-emc-generation-spec-v1",
+          "template_version": "lcai-cm1-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-EMC-DIGNITY-EQUALITY",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-EMC-V1-DIGNITY-EQUALITY-ASSESSMENT-03",
+      "grade": "FR-CM1",
+      "subject": "EMC",
+      "chapter": "CH-EMC-CM1-DIGNITY",
+      "skill": "SK-ENR-EMC-CM1-DIGNITY-EQUALITY",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Adapter un accès pour un élève en situation de handicap peut servir :",
+      "expected_answer": "l'égalité d'accès",
+      "answer_kind": "single_choice",
+      "explanation": "Une adaptation peut compenser un obstacle et permettre un accès effectif.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-EMC-DIGNITY-EQUALITY",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-EMC-V1-DIGNITY-EQUALITY-ASSESSMENT-03",
+        "title": "Distinguer égalité et discrimination",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Adapter un accès pour un élève en situation de handicap peut servir :",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "l'égalité d'accès",
+          "options": [
+            "la suppression de ses droits",
+            "l'égalité d'accès",
+            "la discrimination",
+            "l'exclusion"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Une adaptation peut compenser un obstacle et permettre un accès effectif.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-CM1-DIGNITY",
+          "primary_skill_code": "SK-ENR-EMC-CM1-DIGNITY-EQUALITY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-emc-generation-spec-v1",
+          "template_version": "lcai-cm1-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-EMC-DIGNITY-EQUALITY",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-EMC-V1-DIGNITY-RESPECT-PRACTICE-01",
+      "grade": "FR-CM1",
+      "subject": "EMC",
+      "chapter": "CH-EMC-CM1-DIGNITY",
+      "skill": "SK-ENR-EMC-CM1-DIGNITY-RESPECT",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Un camarade se trompe en répondant. Quelle réaction est respectueuse ?",
+      "expected_answer": "l'aider sans se moquer",
+      "answer_kind": "single_choice",
+      "explanation": "Le respect consiste à ne pas humilier et à aider de manière appropriée.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-EMC-DIGNITY-RESPECT",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-EMC-V1-DIGNITY-RESPECT-PRACTICE-01",
+        "title": "Choisir un comportement respectueux dans une situation",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Un camarade se trompe en répondant. Quelle réaction est respectueuse ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "l'aider sans se moquer",
+          "options": [
+            "rire de lui",
+            "l'insulter",
+            "filmer son erreur",
+            "l'aider sans se moquer"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Le respect consiste à ne pas humilier et à aider de manière appropriée.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-CM1-DIGNITY",
+          "primary_skill_code": "SK-ENR-EMC-CM1-DIGNITY-RESPECT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-emc-generation-spec-v1",
+          "template_version": "lcai-cm1-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-EMC-DIGNITY-RESPECT",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-EMC-V1-DIGNITY-RESPECT-PRACTICE-02",
+      "grade": "FR-CM1",
+      "subject": "EMC",
+      "chapter": "CH-EMC-CM1-DIGNITY",
+      "skill": "SK-ENR-EMC-CM1-DIGNITY-RESPECT",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Tu n'es pas d'accord avec quelqu'un. Que peux-tu faire ?",
+      "expected_answer": "exprimer ton désaccord sans insulte et écouter sa réponse",
+      "answer_kind": "single_choice",
+      "explanation": "Un désaccord peut être exprimé tout en respectant la personne.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-EMC-DIGNITY-RESPECT",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-EMC-V1-DIGNITY-RESPECT-PRACTICE-02",
+        "title": "Choisir un comportement respectueux dans une situation",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Tu n'es pas d'accord avec quelqu'un. Que peux-tu faire ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "exprimer ton désaccord sans insulte et écouter sa réponse",
+          "options": [
+            "menacer",
+            "refuser qu'il parle",
+            "exprimer ton désaccord sans insulte et écouter sa réponse",
+            "crier plus fort"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Un désaccord peut être exprimé tout en respectant la personne.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-CM1-DIGNITY",
+          "primary_skill_code": "SK-ENR-EMC-CM1-DIGNITY-RESPECT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-emc-generation-spec-v1",
+          "template_version": "lcai-cm1-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-EMC-DIGNITY-RESPECT",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-EMC-V1-DIGNITY-RESPECT-ASSESSMENT-03",
+      "grade": "FR-CM1",
+      "subject": "EMC",
+      "chapter": "CH-EMC-CM1-DIGNITY",
+      "skill": "SK-ENR-EMC-CM1-DIGNITY-RESPECT",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Dans un travail de groupe, quel comportement est adapté ?",
+      "expected_answer": "laisser chacun s'exprimer et répartir les tâches",
+      "answer_kind": "single_choice",
+      "explanation": "La coopération suppose écoute et respect.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-EMC-DIGNITY-RESPECT",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-EMC-V1-DIGNITY-RESPECT-ASSESSMENT-03",
+        "title": "Choisir un comportement respectueux dans une situation",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Dans un travail de groupe, quel comportement est adapté ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "laisser chacun s'exprimer et répartir les tâches",
+          "options": [
+            "prendre tout le matériel",
+            "laisser chacun s'exprimer et répartir les tâches",
+            "décider seul sans écouter",
+            "exclure un élève"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "La coopération suppose écoute et respect.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-CM1-DIGNITY",
+          "primary_skill_code": "SK-ENR-EMC-CM1-DIGNITY-RESPECT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-emc-generation-spec-v1",
+          "template_version": "lcai-cm1-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-EMC-DIGNITY-RESPECT",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-EMC-V1-DIGNITY-ARGUE-PRACTICE-01",
+      "grade": "FR-CM1",
+      "subject": "EMC",
+      "chapter": "CH-EMC-CM1-DIGNITY",
+      "skill": "SK-ENR-EMC-CM1-DIGNITY-ARGUE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Pourquoi faut-il laisser chaque élève parler lors d'un débat réglé ?",
+      "expected_answer": "par respect et pour permettre une participation équitable",
+      "answer_kind": "single_choice",
+      "explanation": "Le respect et l'égalité de participation justifient les tours de parole.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-EMC-DIGNITY-ARGUE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-EMC-V1-DIGNITY-ARGUE-PRACTICE-01",
+        "title": "Justifier une décision par un principe",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Pourquoi faut-il laisser chaque élève parler lors d'un débat réglé ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "par respect et pour permettre une participation équitable",
+          "options": [
+            "pour finir moins vite",
+            "parce que seul le plus fort décide",
+            "pour éviter toute opinion différente",
+            "par respect et pour permettre une participation équitable"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Le respect et l'égalité de participation justifient les tours de parole.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-CM1-DIGNITY",
+          "primary_skill_code": "SK-ENR-EMC-CM1-DIGNITY-ARGUE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-emc-generation-spec-v1",
+          "template_version": "lcai-cm1-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-EMC-DIGNITY-ARGUE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-EMC-V1-DIGNITY-ARGUE-PRACTICE-02",
+      "grade": "FR-CM1",
+      "subject": "EMC",
+      "chapter": "CH-EMC-CM1-DIGNITY",
+      "skill": "SK-ENR-EMC-CM1-DIGNITY-ARGUE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Pourquoi une insulte n'est-elle pas acceptable même en cas de désaccord ?",
+      "expected_answer": "elle porte atteinte au respect dû à la personne",
+      "answer_kind": "single_choice",
+      "explanation": "On peut contester une idée sans attaquer la dignité de la personne.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-EMC-DIGNITY-ARGUE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-EMC-V1-DIGNITY-ARGUE-PRACTICE-02",
+        "title": "Justifier une décision par un principe",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Pourquoi une insulte n'est-elle pas acceptable même en cas de désaccord ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "elle porte atteinte au respect dû à la personne",
+          "options": [
+            "elle est obligatoire",
+            "elle remplace un argument",
+            "elle porte atteinte au respect dû à la personne",
+            "elle améliore toujours le débat"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "On peut contester une idée sans attaquer la dignité de la personne.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-CM1-DIGNITY",
+          "primary_skill_code": "SK-ENR-EMC-CM1-DIGNITY-ARGUE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-emc-generation-spec-v1",
+          "template_version": "lcai-cm1-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-EMC-DIGNITY-ARGUE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-EMC-V1-DIGNITY-ARGUE-ASSESSMENT-03",
+      "grade": "FR-CM1",
+      "subject": "EMC",
+      "chapter": "CH-EMC-CM1-DIGNITY",
+      "skill": "SK-ENR-EMC-CM1-DIGNITY-ARGUE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Quel argument justifie le mieux une règle contre les moqueries ?",
+      "expected_answer": "elle protège le respect et la dignité de chacun",
+      "answer_kind": "single_choice",
+      "explanation": "La règle se rattache à un principe de respect et de dignité.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-EMC-DIGNITY-ARGUE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-EMC-V1-DIGNITY-ARGUE-ASSESSMENT-03",
+        "title": "Justifier une décision par un principe",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Quel argument justifie le mieux une règle contre les moqueries ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "elle protège le respect et la dignité de chacun",
+          "options": [
+            "elle favorise les moqueries",
+            "elle protège le respect et la dignité de chacun",
+            "elle rend les exercices plus longs",
+            "elle change la météo"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "La règle se rattache à un principe de respect et de dignité.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-CM1-DIGNITY",
+          "primary_skill_code": "SK-ENR-EMC-CM1-DIGNITY-ARGUE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-emc-generation-spec-v1",
+          "template_version": "lcai-cm1-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-EMC-DIGNITY-ARGUE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-EMC-V1-COLLECTIVE-RULE-PRACTICE-01",
+      "grade": "FR-CM1",
+      "subject": "EMC",
+      "chapter": "CH-EMC-CM1-COLLECTIVE",
+      "skill": "SK-ENR-EMC-CM1-COLLECTIVE-RULE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Pourquoi existe-t-il une règle de silence à certains moments en classe ?",
+      "expected_answer": "pour permettre à tous de travailler ou d'écouter",
+      "answer_kind": "single_choice",
+      "explanation": "Une règle répond à un besoin collectif.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-EMC-COLLECTIVE-RULE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-EMC-V1-COLLECTIVE-RULE-PRACTICE-01",
+        "title": "Expliquer la fonction d'une règle",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Pourquoi existe-t-il une règle de silence à certains moments en classe ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "pour permettre à tous de travailler ou d'écouter",
+          "options": [
+            "pour empêcher d'apprendre",
+            "pour choisir les vêtements",
+            "pour supprimer les récréations",
+            "pour permettre à tous de travailler ou d'écouter"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Une règle répond à un besoin collectif.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-CM1-COLLECTIVE",
+          "primary_skill_code": "SK-ENR-EMC-CM1-COLLECTIVE-RULE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-emc-generation-spec-v1",
+          "template_version": "lcai-cm1-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-EMC-COLLECTIVE-RULE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-EMC-V1-COLLECTIVE-RULE-PRACTICE-02",
+      "grade": "FR-CM1",
+      "subject": "EMC",
+      "chapter": "CH-EMC-CM1-COLLECTIVE",
+      "skill": "SK-ENR-EMC-CM1-COLLECTIVE-RULE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Une règle collective sert notamment à :",
+      "expected_answer": "organiser la vie commune et protéger chacun",
+      "answer_kind": "single_choice",
+      "explanation": "Les règles organisent les comportements dans un groupe.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-EMC-COLLECTIVE-RULE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-EMC-V1-COLLECTIVE-RULE-PRACTICE-02",
+        "title": "Expliquer la fonction d'une règle",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Une règle collective sert notamment à :",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "organiser la vie commune et protéger chacun",
+          "options": [
+            "changer les saisons",
+            "remplacer tous les droits",
+            "organiser la vie commune et protéger chacun",
+            "créer des problèmes"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Les règles organisent les comportements dans un groupe.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-CM1-COLLECTIVE",
+          "primary_skill_code": "SK-ENR-EMC-CM1-COLLECTIVE-RULE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-emc-generation-spec-v1",
+          "template_version": "lcai-cm1-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-EMC-COLLECTIVE-RULE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-EMC-V1-COLLECTIVE-RULE-ASSESSMENT-03",
+      "grade": "FR-CM1",
+      "subject": "EMC",
+      "chapter": "CH-EMC-CM1-COLLECTIVE",
+      "skill": "SK-ENR-EMC-CM1-COLLECTIVE-RULE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Pour qu'une règle soit comprise, elle doit être :",
+      "expected_answer": "claire et liée à un besoin",
+      "answer_kind": "single_choice",
+      "explanation": "Une règle utile doit pouvoir être comprise et appliquée.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-EMC-COLLECTIVE-RULE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-EMC-V1-COLLECTIVE-RULE-ASSESSMENT-03",
+        "title": "Expliquer la fonction d'une règle",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Pour qu'une règle soit comprise, elle doit être :",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "claire et liée à un besoin",
+          "options": [
+            "différente chaque minute",
+            "claire et liée à un besoin",
+            "secrète",
+            "impossible à respecter"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Une règle utile doit pouvoir être comprise et appliquée.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-CM1-COLLECTIVE",
+          "primary_skill_code": "SK-ENR-EMC-CM1-COLLECTIVE-RULE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-emc-generation-spec-v1",
+          "template_version": "lcai-cm1-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-EMC-COLLECTIVE-RULE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-EMC-V1-COLLECTIVE-RIGHT_DUTY-PRACTICE-01",
+      "grade": "FR-CM1",
+      "subject": "EMC",
+      "chapter": "CH-EMC-CM1-COLLECTIVE",
+      "skill": "SK-ENR-EMC-CM1-COLLECTIVE-RIGHT_DUTY",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Être scolarisé correspond pour un enfant à :",
+      "expected_answer": "un droit",
+      "answer_kind": "single_choice",
+      "explanation": "L'accès à l'éducation est un droit.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-EMC-COLLECTIVE-RIGHT_DUTY",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-EMC-V1-COLLECTIVE-RIGHT_DUTY-PRACTICE-01",
+        "title": "Distinguer un droit d'un devoir",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Être scolarisé correspond pour un enfant à :",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "un droit",
+          "options": [
+            "une punition",
+            "une unité",
+            "un loisir obligatoire",
+            "un droit"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "L'accès à l'éducation est un droit.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-CM1-COLLECTIVE",
+          "primary_skill_code": "SK-ENR-EMC-CM1-COLLECTIVE-RIGHT_DUTY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-emc-generation-spec-v1",
+          "template_version": "lcai-cm1-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-EMC-COLLECTIVE-RIGHT_DUTY",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-EMC-V1-COLLECTIVE-RIGHT_DUTY-PRACTICE-02",
+      "grade": "FR-CM1",
+      "subject": "EMC",
+      "chapter": "CH-EMC-CM1-COLLECTIVE",
+      "skill": "SK-ENR-EMC-CM1-COLLECTIVE-RIGHT_DUTY",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Respecter les autres à l'école correspond notamment à :",
+      "expected_answer": "un devoir",
+      "answer_kind": "single_choice",
+      "explanation": "La vie collective implique des devoirs et responsabilités.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-EMC-COLLECTIVE-RIGHT_DUTY",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-EMC-V1-COLLECTIVE-RIGHT_DUTY-PRACTICE-02",
+        "title": "Distinguer un droit d'un devoir",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Respecter les autres à l'école correspond notamment à :",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "un devoir",
+          "options": [
+            "une option sans importance",
+            "une mesure de longueur",
+            "un devoir",
+            "un droit de les insulter"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "La vie collective implique des devoirs et responsabilités.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-CM1-COLLECTIVE",
+          "primary_skill_code": "SK-ENR-EMC-CM1-COLLECTIVE-RIGHT_DUTY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-emc-generation-spec-v1",
+          "template_version": "lcai-cm1-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-EMC-COLLECTIVE-RIGHT_DUTY",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-EMC-V1-COLLECTIVE-RIGHT_DUTY-ASSESSMENT-03",
+      "grade": "FR-CM1",
+      "subject": "EMC",
+      "chapter": "CH-EMC-CM1-COLLECTIVE",
+      "skill": "SK-ENR-EMC-CM1-COLLECTIVE-RIGHT_DUTY",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Quelle paire est correctement classée ?",
+      "expected_answer": "droit : apprendre ; devoir : respecter les règles",
+      "answer_kind": "single_choice",
+      "explanation": "Le droit à l'éducation s'accompagne de devoirs de respect des règles et d'autrui.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-EMC-COLLECTIVE-RIGHT_DUTY",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-EMC-V1-COLLECTIVE-RIGHT_DUTY-ASSESSMENT-03",
+        "title": "Distinguer un droit d'un devoir",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Quelle paire est correctement classée ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "droit : apprendre ; devoir : respecter les règles",
+          "options": [
+            "droit : casser ; devoir : mentir",
+            "droit : apprendre ; devoir : respecter les règles",
+            "droit : tricher ; devoir : se moquer",
+            "droit : frapper ; devoir : exclure"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Le droit à l'éducation s'accompagne de devoirs de respect des règles et d'autrui.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-CM1-COLLECTIVE",
+          "primary_skill_code": "SK-ENR-EMC-CM1-COLLECTIVE-RIGHT_DUTY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-emc-generation-spec-v1",
+          "template_version": "lcai-cm1-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-EMC-COLLECTIVE-RIGHT_DUTY",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-EMC-V1-COLLECTIVE-CONSEQUENCE-PRACTICE-01",
+      "grade": "FR-CM1",
+      "subject": "EMC",
+      "chapter": "CH-EMC-CM1-COLLECTIVE",
+      "skill": "SK-ENR-EMC-CM1-COLLECTIVE-CONSEQUENCE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Si personne ne respecte les tours de parole, que risque-t-il de se passer ?",
+      "expected_answer": "on ne s'entend plus et certains ne peuvent pas s'exprimer",
+      "answer_kind": "single_choice",
+      "explanation": "Le non-respect d'une règle peut empêcher le fonctionnement collectif.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-EMC-COLLECTIVE-CONSEQUENCE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-EMC-V1-COLLECTIVE-CONSEQUENCE-PRACTICE-01",
+        "title": "Anticiper les conséquences d'un non-respect",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Si personne ne respecte les tours de parole, que risque-t-il de se passer ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "on ne s'entend plus et certains ne peuvent pas s'exprimer",
+          "options": [
+            "le débat devient automatiquement plus clair",
+            "tout le monde écoute mieux",
+            "aucune conséquence n'est possible",
+            "on ne s'entend plus et certains ne peuvent pas s'exprimer"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Le non-respect d'une règle peut empêcher le fonctionnement collectif.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-CM1-COLLECTIVE",
+          "primary_skill_code": "SK-ENR-EMC-CM1-COLLECTIVE-CONSEQUENCE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-emc-generation-spec-v1",
+          "template_version": "lcai-cm1-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-EMC-COLLECTIVE-CONSEQUENCE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-EMC-V1-COLLECTIVE-CONSEQUENCE-PRACTICE-02",
+      "grade": "FR-CM1",
+      "subject": "EMC",
+      "chapter": "CH-EMC-CM1-COLLECTIVE",
+      "skill": "SK-ENR-EMC-CM1-COLLECTIVE-CONSEQUENCE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Ne pas respecter une règle de sécurité peut :",
+      "expected_answer": "mettre soi-même ou les autres en danger",
+      "answer_kind": "single_choice",
+      "explanation": "Les règles de sécurité visent à prévenir des risques.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-EMC-COLLECTIVE-CONSEQUENCE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-EMC-V1-COLLECTIVE-CONSEQUENCE-PRACTICE-02",
+        "title": "Anticiper les conséquences d'un non-respect",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Ne pas respecter une règle de sécurité peut :",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "mettre soi-même ou les autres en danger",
+          "options": [
+            "n'avoir jamais d'effet",
+            "améliorer toutes les situations",
+            "mettre soi-même ou les autres en danger",
+            "garantir la sécurité"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Les règles de sécurité visent à prévenir des risques.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-CM1-COLLECTIVE",
+          "primary_skill_code": "SK-ENR-EMC-CM1-COLLECTIVE-CONSEQUENCE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-emc-generation-spec-v1",
+          "template_version": "lcai-cm1-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-EMC-COLLECTIVE-CONSEQUENCE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-EMC-V1-COLLECTIVE-CONSEQUENCE-ASSESSMENT-03",
+      "grade": "FR-CM1",
+      "subject": "EMC",
+      "chapter": "CH-EMC-CM1-COLLECTIVE",
+      "skill": "SK-ENR-EMC-CM1-COLLECTIVE-CONSEQUENCE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Pourquoi réfléchir aux conséquences avant d'agir ?",
+      "expected_answer": "pour anticiper les effets sur soi et sur les autres",
+      "answer_kind": "single_choice",
+      "explanation": "Anticiper aide à prendre une décision responsable.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-EMC-COLLECTIVE-CONSEQUENCE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-EMC-V1-COLLECTIVE-CONSEQUENCE-ASSESSMENT-03",
+        "title": "Anticiper les conséquences d'un non-respect",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Pourquoi réfléchir aux conséquences avant d'agir ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "pour anticiper les effets sur soi et sur les autres",
+          "options": [
+            "pour ignorer les règles",
+            "pour anticiper les effets sur soi et sur les autres",
+            "pour éviter toute responsabilité",
+            "pour ne jamais décider"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Anticiper aide à prendre une décision responsable.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-CM1-COLLECTIVE",
+          "primary_skill_code": "SK-ENR-EMC-CM1-COLLECTIVE-CONSEQUENCE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-emc-generation-spec-v1",
+          "template_version": "lcai-cm1-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-EMC-COLLECTIVE-CONSEQUENCE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-EMC-V1-COLLECTIVE-PARTICIPATE-PRACTICE-01",
+      "grade": "FR-CM1",
+      "subject": "EMC",
+      "chapter": "CH-EMC-CM1-COLLECTIVE",
+      "skill": "SK-ENR-EMC-CM1-COLLECTIVE-PARTICIPATE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "La classe perd souvent du temps à distribuer le matériel. Quelle règle est adaptée ?",
+      "expected_answer": "désigner à tour de rôle des responsables du matériel",
+      "answer_kind": "single_choice",
+      "explanation": "La règle répond directement au besoin d'organisation.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-EMC-COLLECTIVE-PARTICIPATE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-EMC-V1-COLLECTIVE-PARTICIPATE-PRACTICE-01",
+        "title": "Proposer une règle adaptée à un besoin collectif",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "La classe perd souvent du temps à distribuer le matériel. Quelle règle est adaptée ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "désigner à tour de rôle des responsables du matériel",
+          "options": [
+            "interdire tout matériel",
+            "laisser tout au sol",
+            "prendre le matériel des autres",
+            "désigner à tour de rôle des responsables du matériel"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "La règle répond directement au besoin d'organisation.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-CM1-COLLECTIVE",
+          "primary_skill_code": "SK-ENR-EMC-CM1-COLLECTIVE-PARTICIPATE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-emc-generation-spec-v1",
+          "template_version": "lcai-cm1-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-EMC-COLLECTIVE-PARTICIPATE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-EMC-V1-COLLECTIVE-PARTICIPATE-PRACTICE-02",
+      "grade": "FR-CM1",
+      "subject": "EMC",
+      "chapter": "CH-EMC-CM1-COLLECTIVE",
+      "skill": "SK-ENR-EMC-CM1-COLLECTIVE-PARTICIPATE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Pour réduire le bruit pendant un travail individuel, quelle proposition est pertinente ?",
+      "expected_answer": "parler seulement si nécessaire et à voix basse",
+      "answer_kind": "single_choice",
+      "explanation": "La règle doit être proportionnée au besoin de concentration.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-EMC-COLLECTIVE-PARTICIPATE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-EMC-V1-COLLECTIVE-PARTICIPATE-PRACTICE-02",
+        "title": "Proposer une règle adaptée à un besoin collectif",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Pour réduire le bruit pendant un travail individuel, quelle proposition est pertinente ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "parler seulement si nécessaire et à voix basse",
+          "options": [
+            "mettre de la musique très forte",
+            "déplacer les tables sans raison",
+            "parler seulement si nécessaire et à voix basse",
+            "crier pour demander de l'aide"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "La règle doit être proportionnée au besoin de concentration.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-CM1-COLLECTIVE",
+          "primary_skill_code": "SK-ENR-EMC-CM1-COLLECTIVE-PARTICIPATE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-emc-generation-spec-v1",
+          "template_version": "lcai-cm1-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-EMC-COLLECTIVE-PARTICIPATE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-EMC-V1-COLLECTIVE-PARTICIPATE-ASSESSMENT-03",
+      "grade": "FR-CM1",
+      "subject": "EMC",
+      "chapter": "CH-EMC-CM1-COLLECTIVE",
+      "skill": "SK-ENR-EMC-CM1-COLLECTIVE-PARTICIPATE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Une bonne règle de classe doit être :",
+      "expected_answer": "réalisable, compréhensible et utile au collectif",
+      "answer_kind": "single_choice",
+      "explanation": "Une règle adaptée répond au besoin et peut être respectée.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-EMC-COLLECTIVE-PARTICIPATE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-EMC-V1-COLLECTIVE-PARTICIPATE-ASSESSMENT-03",
+        "title": "Proposer une règle adaptée à un besoin collectif",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Une bonne règle de classe doit être :",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "réalisable, compréhensible et utile au collectif",
+          "options": [
+            "sans lien avec le problème",
+            "réalisable, compréhensible et utile au collectif",
+            "impossible à appliquer",
+            "faite pour une seule personne sans raison"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Une règle adaptée répond au besoin et peut être respectée.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-CM1-COLLECTIVE",
+          "primary_skill_code": "SK-ENR-EMC-CM1-COLLECTIVE-PARTICIPATE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-emc-generation-spec-v1",
+          "template_version": "lcai-cm1-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-EMC-COLLECTIVE-PARTICIPATE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_emc_candidates_v1.json"
+      }
+    }
+  ]
+}

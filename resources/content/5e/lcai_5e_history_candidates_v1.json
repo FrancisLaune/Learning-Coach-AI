@@ -1,0 +1,2761 @@
+{
+  "batch": "5E-HISTORY-V1",
+  "purpose": "Parallel 5e content preparation for Learning Coach AI",
+  "lifecycle_target": "Draft",
+  "automatic_approval": false,
+  "curriculum_version": "phase2-lcai-0011c",
+  "program_code": "FR-CYCLE4-5E-2026",
+  "grade_code": "FR-5E",
+  "subject_code": "HISTORY",
+  "skill_count": 11,
+  "candidate_count": 33,
+  "content_types": {
+    "practice": 22,
+    "assessment": 11
+  },
+  "difficulty_distribution": {
+    "1": 11,
+    "2": 22
+  },
+  "accepted_candidates": [
+    {
+      "code": "5E-HISTORY-V1-MEDIEVAL-LOCATE-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-5E-MEDIEVAL",
+      "skill": "SK-ENR-HISTORY-5E-MEDIEVAL-LOCATE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Chrétientés et islam au Moyen Âge », réalise une tâche qui montre que tu sais situer les chrétientés et l'islam médiévaux. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Situer les chrétientés et l'islam médiévaux ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-HISTORY-MEDIEVAL-LOCATE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-HISTORY-V1-MEDIEVAL-LOCATE-PRACTICE-01",
+        "title": "Situer les chrétientés et l'islam médiévaux",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Chrétientés et islam au Moyen Âge », réalise une tâche qui montre que tu sais situer les chrétientés et l'islam médiévaux. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Situer les chrétientés et l'islam médiévaux ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-5E-MEDIEVAL",
+          "primary_skill_code": "SK-ENR-HISTORY-5E-MEDIEVAL-LOCATE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-history-v1",
+          "template_version": "lcai-5e-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-HISTORY-MEDIEVAL-LOCATE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-HISTORY-V1-MEDIEVAL-LOCATE-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-5E-MEDIEVAL",
+      "skill": "SK-ENR-HISTORY-5E-MEDIEVAL-LOCATE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Situer les chrétientés et l'islam médiévaux » à une situation pertinente de niveau 5e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Situer les chrétientés et l'islam médiévaux ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-HISTORY-MEDIEVAL-LOCATE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-HISTORY-V1-MEDIEVAL-LOCATE-PRACTICE-02",
+        "title": "Situer les chrétientés et l'islam médiévaux",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Situer les chrétientés et l'islam médiévaux » à une situation pertinente de niveau 5e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Situer les chrétientés et l'islam médiévaux ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-5E-MEDIEVAL",
+          "primary_skill_code": "SK-ENR-HISTORY-5E-MEDIEVAL-LOCATE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-history-v1",
+          "template_version": "lcai-5e-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-HISTORY-MEDIEVAL-LOCATE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-HISTORY-V1-MEDIEVAL-LOCATE-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-5E-MEDIEVAL",
+      "skill": "SK-ENR-HISTORY-5E-MEDIEVAL-LOCATE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 5e : démontre de façon autonome que tu sais situer les chrétientés et l'islam médiévaux. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Situer les chrétientés et l'islam médiévaux ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-HISTORY-MEDIEVAL-LOCATE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-HISTORY-V1-MEDIEVAL-LOCATE-ASSESSMENT-03",
+        "title": "Situer les chrétientés et l'islam médiévaux",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 5e : démontre de façon autonome que tu sais situer les chrétientés et l'islam médiévaux. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Situer les chrétientés et l'islam médiévaux ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-5E-MEDIEVAL",
+          "primary_skill_code": "SK-ENR-HISTORY-5E-MEDIEVAL-LOCATE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-history-v1",
+          "template_version": "lcai-5e-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-HISTORY-MEDIEVAL-LOCATE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-HISTORY-V1-MEDIEVAL-COMPARE-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-5E-MEDIEVAL",
+      "skill": "SK-ENR-HISTORY-5E-MEDIEVAL-COMPARE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Chrétientés et islam au Moyen Âge », réalise une tâche qui montre que tu sais comparer pouvoirs et sociétés médiévales. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Comparer pouvoirs et sociétés médiévales ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-HISTORY-MEDIEVAL-COMPARE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-HISTORY-V1-MEDIEVAL-COMPARE-PRACTICE-01",
+        "title": "Comparer pouvoirs et sociétés médiévales",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Chrétientés et islam au Moyen Âge », réalise une tâche qui montre que tu sais comparer pouvoirs et sociétés médiévales. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Comparer pouvoirs et sociétés médiévales ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-5E-MEDIEVAL",
+          "primary_skill_code": "SK-ENR-HISTORY-5E-MEDIEVAL-COMPARE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-history-v1",
+          "template_version": "lcai-5e-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-HISTORY-MEDIEVAL-COMPARE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-HISTORY-V1-MEDIEVAL-COMPARE-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-5E-MEDIEVAL",
+      "skill": "SK-ENR-HISTORY-5E-MEDIEVAL-COMPARE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Comparer pouvoirs et sociétés médiévales » à une situation pertinente de niveau 5e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Comparer pouvoirs et sociétés médiévales ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-HISTORY-MEDIEVAL-COMPARE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-HISTORY-V1-MEDIEVAL-COMPARE-PRACTICE-02",
+        "title": "Comparer pouvoirs et sociétés médiévales",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Comparer pouvoirs et sociétés médiévales » à une situation pertinente de niveau 5e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Comparer pouvoirs et sociétés médiévales ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-5E-MEDIEVAL",
+          "primary_skill_code": "SK-ENR-HISTORY-5E-MEDIEVAL-COMPARE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-history-v1",
+          "template_version": "lcai-5e-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-HISTORY-MEDIEVAL-COMPARE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-HISTORY-V1-MEDIEVAL-COMPARE-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-5E-MEDIEVAL",
+      "skill": "SK-ENR-HISTORY-5E-MEDIEVAL-COMPARE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 5e : démontre de façon autonome que tu sais comparer pouvoirs et sociétés médiévales. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Comparer pouvoirs et sociétés médiévales ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-HISTORY-MEDIEVAL-COMPARE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-HISTORY-V1-MEDIEVAL-COMPARE-ASSESSMENT-03",
+        "title": "Comparer pouvoirs et sociétés médiévales",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 5e : démontre de façon autonome que tu sais comparer pouvoirs et sociétés médiévales. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Comparer pouvoirs et sociétés médiévales ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-5E-MEDIEVAL",
+          "primary_skill_code": "SK-ENR-HISTORY-5E-MEDIEVAL-COMPARE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-history-v1",
+          "template_version": "lcai-5e-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-HISTORY-MEDIEVAL-COMPARE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-HISTORY-V1-MEDIEVAL-SOURCE-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-5E-MEDIEVAL",
+      "skill": "SK-ENR-HISTORY-5E-MEDIEVAL-SOURCE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Chrétientés et islam au Moyen Âge », réalise une tâche qui montre que tu sais interpréter une source médiévale contextualisée. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Interpréter une source médiévale contextualisée ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-HISTORY-MEDIEVAL-SOURCE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-HISTORY-V1-MEDIEVAL-SOURCE-PRACTICE-01",
+        "title": "Interpréter une source médiévale contextualisée",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Chrétientés et islam au Moyen Âge », réalise une tâche qui montre que tu sais interpréter une source médiévale contextualisée. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Interpréter une source médiévale contextualisée ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-5E-MEDIEVAL",
+          "primary_skill_code": "SK-ENR-HISTORY-5E-MEDIEVAL-SOURCE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-history-v1",
+          "template_version": "lcai-5e-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-HISTORY-MEDIEVAL-SOURCE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-HISTORY-V1-MEDIEVAL-SOURCE-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-5E-MEDIEVAL",
+      "skill": "SK-ENR-HISTORY-5E-MEDIEVAL-SOURCE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Interpréter une source médiévale contextualisée » à une situation pertinente de niveau 5e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Interpréter une source médiévale contextualisée ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-HISTORY-MEDIEVAL-SOURCE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-HISTORY-V1-MEDIEVAL-SOURCE-PRACTICE-02",
+        "title": "Interpréter une source médiévale contextualisée",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Interpréter une source médiévale contextualisée » à une situation pertinente de niveau 5e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Interpréter une source médiévale contextualisée ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-5E-MEDIEVAL",
+          "primary_skill_code": "SK-ENR-HISTORY-5E-MEDIEVAL-SOURCE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-history-v1",
+          "template_version": "lcai-5e-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-HISTORY-MEDIEVAL-SOURCE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-HISTORY-V1-MEDIEVAL-SOURCE-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-5E-MEDIEVAL",
+      "skill": "SK-ENR-HISTORY-5E-MEDIEVAL-SOURCE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 5e : démontre de façon autonome que tu sais interpréter une source médiévale contextualisée. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Interpréter une source médiévale contextualisée ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-HISTORY-MEDIEVAL-SOURCE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-HISTORY-V1-MEDIEVAL-SOURCE-ASSESSMENT-03",
+        "title": "Interpréter une source médiévale contextualisée",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 5e : démontre de façon autonome que tu sais interpréter une source médiévale contextualisée. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Interpréter une source médiévale contextualisée ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-5E-MEDIEVAL",
+          "primary_skill_code": "SK-ENR-HISTORY-5E-MEDIEVAL-SOURCE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-history-v1",
+          "template_version": "lcai-5e-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-HISTORY-MEDIEVAL-SOURCE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-HISTORY-V1-SOCIETY-FEUDAL-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-5E-SOCIETY",
+      "skill": "SK-ENR-HISTORY-5E-SOCIETY-FEUDAL",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Société, Église et pouvoir dans l'Occident féodal », réalise une tâche qui montre que tu sais expliquer les relations féodales. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Expliquer les relations féodales ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-HISTORY-SOCIETY-FEUDAL",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-HISTORY-V1-SOCIETY-FEUDAL-PRACTICE-01",
+        "title": "Expliquer les relations féodales",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Société, Église et pouvoir dans l'Occident féodal », réalise une tâche qui montre que tu sais expliquer les relations féodales. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Expliquer les relations féodales ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-5E-SOCIETY",
+          "primary_skill_code": "SK-ENR-HISTORY-5E-SOCIETY-FEUDAL",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-history-v1",
+          "template_version": "lcai-5e-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-HISTORY-SOCIETY-FEUDAL",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-HISTORY-V1-SOCIETY-FEUDAL-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-5E-SOCIETY",
+      "skill": "SK-ENR-HISTORY-5E-SOCIETY-FEUDAL",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Expliquer les relations féodales » à une situation pertinente de niveau 5e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Expliquer les relations féodales ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-HISTORY-SOCIETY-FEUDAL",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-HISTORY-V1-SOCIETY-FEUDAL-PRACTICE-02",
+        "title": "Expliquer les relations féodales",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Expliquer les relations féodales » à une situation pertinente de niveau 5e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Expliquer les relations féodales ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-5E-SOCIETY",
+          "primary_skill_code": "SK-ENR-HISTORY-5E-SOCIETY-FEUDAL",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-history-v1",
+          "template_version": "lcai-5e-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-HISTORY-SOCIETY-FEUDAL",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-HISTORY-V1-SOCIETY-FEUDAL-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-5E-SOCIETY",
+      "skill": "SK-ENR-HISTORY-5E-SOCIETY-FEUDAL",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 5e : démontre de façon autonome que tu sais expliquer les relations féodales. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Expliquer les relations féodales ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-HISTORY-SOCIETY-FEUDAL",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-HISTORY-V1-SOCIETY-FEUDAL-ASSESSMENT-03",
+        "title": "Expliquer les relations féodales",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 5e : démontre de façon autonome que tu sais expliquer les relations féodales. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Expliquer les relations féodales ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-5E-SOCIETY",
+          "primary_skill_code": "SK-ENR-HISTORY-5E-SOCIETY-FEUDAL",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-history-v1",
+          "template_version": "lcai-5e-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-HISTORY-SOCIETY-FEUDAL",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-HISTORY-V1-SOCIETY-CHURCH-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-5E-SOCIETY",
+      "skill": "SK-ENR-HISTORY-5E-SOCIETY-CHURCH",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Société, Église et pouvoir dans l'Occident féodal », réalise une tâche qui montre que tu sais expliquer la place de l'église. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Expliquer la place de l'Église ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-HISTORY-SOCIETY-CHURCH",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-HISTORY-V1-SOCIETY-CHURCH-PRACTICE-01",
+        "title": "Expliquer la place de l'Église",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Société, Église et pouvoir dans l'Occident féodal », réalise une tâche qui montre que tu sais expliquer la place de l'église. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Expliquer la place de l'Église ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-5E-SOCIETY",
+          "primary_skill_code": "SK-ENR-HISTORY-5E-SOCIETY-CHURCH",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-history-v1",
+          "template_version": "lcai-5e-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-HISTORY-SOCIETY-CHURCH",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-HISTORY-V1-SOCIETY-CHURCH-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-5E-SOCIETY",
+      "skill": "SK-ENR-HISTORY-5E-SOCIETY-CHURCH",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Expliquer la place de l'Église » à une situation pertinente de niveau 5e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Expliquer la place de l'Église ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-HISTORY-SOCIETY-CHURCH",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-HISTORY-V1-SOCIETY-CHURCH-PRACTICE-02",
+        "title": "Expliquer la place de l'Église",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Expliquer la place de l'Église » à une situation pertinente de niveau 5e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Expliquer la place de l'Église ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-5E-SOCIETY",
+          "primary_skill_code": "SK-ENR-HISTORY-5E-SOCIETY-CHURCH",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-history-v1",
+          "template_version": "lcai-5e-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-HISTORY-SOCIETY-CHURCH",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-HISTORY-V1-SOCIETY-CHURCH-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-5E-SOCIETY",
+      "skill": "SK-ENR-HISTORY-5E-SOCIETY-CHURCH",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 5e : démontre de façon autonome que tu sais expliquer la place de l'église. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Expliquer la place de l'Église ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-HISTORY-SOCIETY-CHURCH",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-HISTORY-V1-SOCIETY-CHURCH-ASSESSMENT-03",
+        "title": "Expliquer la place de l'Église",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 5e : démontre de façon autonome que tu sais expliquer la place de l'église. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Expliquer la place de l'Église ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-5E-SOCIETY",
+          "primary_skill_code": "SK-ENR-HISTORY-5E-SOCIETY-CHURCH",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-history-v1",
+          "template_version": "lcai-5e-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-HISTORY-SOCIETY-CHURCH",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-HISTORY-V1-SOCIETY-CITIES-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-5E-SOCIETY",
+      "skill": "SK-ENR-HISTORY-5E-SOCIETY-CITIES",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Société, Église et pouvoir dans l'Occident féodal », réalise une tâche qui montre que tu sais décrire l'essor des villes et des échanges. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Décrire l'essor des villes et des échanges ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-HISTORY-SOCIETY-CITIES",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-HISTORY-V1-SOCIETY-CITIES-PRACTICE-01",
+        "title": "Décrire l'essor des villes et des échanges",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Société, Église et pouvoir dans l'Occident féodal », réalise une tâche qui montre que tu sais décrire l'essor des villes et des échanges. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Décrire l'essor des villes et des échanges ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-5E-SOCIETY",
+          "primary_skill_code": "SK-ENR-HISTORY-5E-SOCIETY-CITIES",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-history-v1",
+          "template_version": "lcai-5e-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-HISTORY-SOCIETY-CITIES",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-HISTORY-V1-SOCIETY-CITIES-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-5E-SOCIETY",
+      "skill": "SK-ENR-HISTORY-5E-SOCIETY-CITIES",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Décrire l'essor des villes et des échanges » à une situation pertinente de niveau 5e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Décrire l'essor des villes et des échanges ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-HISTORY-SOCIETY-CITIES",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-HISTORY-V1-SOCIETY-CITIES-PRACTICE-02",
+        "title": "Décrire l'essor des villes et des échanges",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Décrire l'essor des villes et des échanges » à une situation pertinente de niveau 5e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Décrire l'essor des villes et des échanges ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-5E-SOCIETY",
+          "primary_skill_code": "SK-ENR-HISTORY-5E-SOCIETY-CITIES",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-history-v1",
+          "template_version": "lcai-5e-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-HISTORY-SOCIETY-CITIES",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-HISTORY-V1-SOCIETY-CITIES-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-5E-SOCIETY",
+      "skill": "SK-ENR-HISTORY-5E-SOCIETY-CITIES",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 5e : démontre de façon autonome que tu sais décrire l'essor des villes et des échanges. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Décrire l'essor des villes et des échanges ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-HISTORY-SOCIETY-CITIES",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-HISTORY-V1-SOCIETY-CITIES-ASSESSMENT-03",
+        "title": "Décrire l'essor des villes et des échanges",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 5e : démontre de façon autonome que tu sais décrire l'essor des villes et des échanges. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Décrire l'essor des villes et des échanges ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-5E-SOCIETY",
+          "primary_skill_code": "SK-ENR-HISTORY-5E-SOCIETY-CITIES",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-history-v1",
+          "template_version": "lcai-5e-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-HISTORY-SOCIETY-CITIES",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-HISTORY-V1-SOCIETY-POWER-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-5E-SOCIETY",
+      "skill": "SK-ENR-HISTORY-5E-SOCIETY-POWER",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Société, Église et pouvoir dans l'Occident féodal », réalise une tâche qui montre que tu sais analyser l'affirmation du pouvoir monarchique. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Analyser l'affirmation du pouvoir monarchique ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-HISTORY-SOCIETY-POWER",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-HISTORY-V1-SOCIETY-POWER-PRACTICE-01",
+        "title": "Analyser l'affirmation du pouvoir monarchique",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Société, Église et pouvoir dans l'Occident féodal », réalise une tâche qui montre que tu sais analyser l'affirmation du pouvoir monarchique. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Analyser l'affirmation du pouvoir monarchique ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-5E-SOCIETY",
+          "primary_skill_code": "SK-ENR-HISTORY-5E-SOCIETY-POWER",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-history-v1",
+          "template_version": "lcai-5e-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-HISTORY-SOCIETY-POWER",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-HISTORY-V1-SOCIETY-POWER-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-5E-SOCIETY",
+      "skill": "SK-ENR-HISTORY-5E-SOCIETY-POWER",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Analyser l'affirmation du pouvoir monarchique » à une situation pertinente de niveau 5e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Analyser l'affirmation du pouvoir monarchique ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-HISTORY-SOCIETY-POWER",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-HISTORY-V1-SOCIETY-POWER-PRACTICE-02",
+        "title": "Analyser l'affirmation du pouvoir monarchique",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Analyser l'affirmation du pouvoir monarchique » à une situation pertinente de niveau 5e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Analyser l'affirmation du pouvoir monarchique ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-5E-SOCIETY",
+          "primary_skill_code": "SK-ENR-HISTORY-5E-SOCIETY-POWER",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-history-v1",
+          "template_version": "lcai-5e-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-HISTORY-SOCIETY-POWER",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-HISTORY-V1-SOCIETY-POWER-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-5E-SOCIETY",
+      "skill": "SK-ENR-HISTORY-5E-SOCIETY-POWER",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 5e : démontre de façon autonome que tu sais analyser l'affirmation du pouvoir monarchique. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Analyser l'affirmation du pouvoir monarchique ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-HISTORY-SOCIETY-POWER",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-HISTORY-V1-SOCIETY-POWER-ASSESSMENT-03",
+        "title": "Analyser l'affirmation du pouvoir monarchique",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 5e : démontre de façon autonome que tu sais analyser l'affirmation du pouvoir monarchique. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Analyser l'affirmation du pouvoir monarchique ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-5E-SOCIETY",
+          "primary_skill_code": "SK-ENR-HISTORY-5E-SOCIETY-POWER",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-history-v1",
+          "template_version": "lcai-5e-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-HISTORY-SOCIETY-POWER",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-HISTORY-V1-RENAISSANCE-EXPLORATION-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-5E-RENAISSANCE",
+      "skill": "SK-ENR-HISTORY-5E-RENAISSANCE-EXPLORATION",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Transformations de l'Europe et ouverture sur le monde », réalise une tâche qui montre que tu sais situer les grandes explorations. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Situer les grandes explorations ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-HISTORY-RENAISSANCE-EXPLORATION",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-HISTORY-V1-RENAISSANCE-EXPLORATION-PRACTICE-01",
+        "title": "Situer les grandes explorations",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Transformations de l'Europe et ouverture sur le monde », réalise une tâche qui montre que tu sais situer les grandes explorations. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Situer les grandes explorations ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-5E-RENAISSANCE",
+          "primary_skill_code": "SK-ENR-HISTORY-5E-RENAISSANCE-EXPLORATION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-history-v1",
+          "template_version": "lcai-5e-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-HISTORY-RENAISSANCE-EXPLORATION",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-HISTORY-V1-RENAISSANCE-EXPLORATION-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-5E-RENAISSANCE",
+      "skill": "SK-ENR-HISTORY-5E-RENAISSANCE-EXPLORATION",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Situer les grandes explorations » à une situation pertinente de niveau 5e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Situer les grandes explorations ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-HISTORY-RENAISSANCE-EXPLORATION",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-HISTORY-V1-RENAISSANCE-EXPLORATION-PRACTICE-02",
+        "title": "Situer les grandes explorations",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Situer les grandes explorations » à une situation pertinente de niveau 5e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Situer les grandes explorations ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-5E-RENAISSANCE",
+          "primary_skill_code": "SK-ENR-HISTORY-5E-RENAISSANCE-EXPLORATION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-history-v1",
+          "template_version": "lcai-5e-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-HISTORY-RENAISSANCE-EXPLORATION",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-HISTORY-V1-RENAISSANCE-EXPLORATION-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-5E-RENAISSANCE",
+      "skill": "SK-ENR-HISTORY-5E-RENAISSANCE-EXPLORATION",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 5e : démontre de façon autonome que tu sais situer les grandes explorations. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Situer les grandes explorations ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-HISTORY-RENAISSANCE-EXPLORATION",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-HISTORY-V1-RENAISSANCE-EXPLORATION-ASSESSMENT-03",
+        "title": "Situer les grandes explorations",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 5e : démontre de façon autonome que tu sais situer les grandes explorations. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Situer les grandes explorations ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-5E-RENAISSANCE",
+          "primary_skill_code": "SK-ENR-HISTORY-5E-RENAISSANCE-EXPLORATION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-history-v1",
+          "template_version": "lcai-5e-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-HISTORY-RENAISSANCE-EXPLORATION",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-HISTORY-V1-RENAISSANCE-RENAISSANCE-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-5E-RENAISSANCE",
+      "skill": "SK-ENR-HISTORY-5E-RENAISSANCE-RENAISSANCE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Transformations de l'Europe et ouverture sur le monde », réalise une tâche qui montre que tu sais caractériser la renaissance. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Caractériser la Renaissance ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-HISTORY-RENAISSANCE-RENAISSANCE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-HISTORY-V1-RENAISSANCE-RENAISSANCE-PRACTICE-01",
+        "title": "Caractériser la Renaissance",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Transformations de l'Europe et ouverture sur le monde », réalise une tâche qui montre que tu sais caractériser la renaissance. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Caractériser la Renaissance ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-5E-RENAISSANCE",
+          "primary_skill_code": "SK-ENR-HISTORY-5E-RENAISSANCE-RENAISSANCE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-history-v1",
+          "template_version": "lcai-5e-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-HISTORY-RENAISSANCE-RENAISSANCE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-HISTORY-V1-RENAISSANCE-RENAISSANCE-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-5E-RENAISSANCE",
+      "skill": "SK-ENR-HISTORY-5E-RENAISSANCE-RENAISSANCE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Caractériser la Renaissance » à une situation pertinente de niveau 5e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Caractériser la Renaissance ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-HISTORY-RENAISSANCE-RENAISSANCE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-HISTORY-V1-RENAISSANCE-RENAISSANCE-PRACTICE-02",
+        "title": "Caractériser la Renaissance",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Caractériser la Renaissance » à une situation pertinente de niveau 5e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Caractériser la Renaissance ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-5E-RENAISSANCE",
+          "primary_skill_code": "SK-ENR-HISTORY-5E-RENAISSANCE-RENAISSANCE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-history-v1",
+          "template_version": "lcai-5e-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-HISTORY-RENAISSANCE-RENAISSANCE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-HISTORY-V1-RENAISSANCE-RENAISSANCE-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-5E-RENAISSANCE",
+      "skill": "SK-ENR-HISTORY-5E-RENAISSANCE-RENAISSANCE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 5e : démontre de façon autonome que tu sais caractériser la renaissance. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Caractériser la Renaissance ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-HISTORY-RENAISSANCE-RENAISSANCE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-HISTORY-V1-RENAISSANCE-RENAISSANCE-ASSESSMENT-03",
+        "title": "Caractériser la Renaissance",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 5e : démontre de façon autonome que tu sais caractériser la renaissance. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Caractériser la Renaissance ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-5E-RENAISSANCE",
+          "primary_skill_code": "SK-ENR-HISTORY-5E-RENAISSANCE-RENAISSANCE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-history-v1",
+          "template_version": "lcai-5e-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-HISTORY-RENAISSANCE-RENAISSANCE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-HISTORY-V1-RENAISSANCE-REFORMATION-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-5E-RENAISSANCE",
+      "skill": "SK-ENR-HISTORY-5E-RENAISSANCE-REFORMATION",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Transformations de l'Europe et ouverture sur le monde », réalise une tâche qui montre que tu sais expliquer les réformes religieuses. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Expliquer les réformes religieuses ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-HISTORY-RENAISSANCE-REFORMATION",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-HISTORY-V1-RENAISSANCE-REFORMATION-PRACTICE-01",
+        "title": "Expliquer les réformes religieuses",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Transformations de l'Europe et ouverture sur le monde », réalise une tâche qui montre que tu sais expliquer les réformes religieuses. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Expliquer les réformes religieuses ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-5E-RENAISSANCE",
+          "primary_skill_code": "SK-ENR-HISTORY-5E-RENAISSANCE-REFORMATION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-history-v1",
+          "template_version": "lcai-5e-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-HISTORY-RENAISSANCE-REFORMATION",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-HISTORY-V1-RENAISSANCE-REFORMATION-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-5E-RENAISSANCE",
+      "skill": "SK-ENR-HISTORY-5E-RENAISSANCE-REFORMATION",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Expliquer les réformes religieuses » à une situation pertinente de niveau 5e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Expliquer les réformes religieuses ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-HISTORY-RENAISSANCE-REFORMATION",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-HISTORY-V1-RENAISSANCE-REFORMATION-PRACTICE-02",
+        "title": "Expliquer les réformes religieuses",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Expliquer les réformes religieuses » à une situation pertinente de niveau 5e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Expliquer les réformes religieuses ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-5E-RENAISSANCE",
+          "primary_skill_code": "SK-ENR-HISTORY-5E-RENAISSANCE-REFORMATION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-history-v1",
+          "template_version": "lcai-5e-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-HISTORY-RENAISSANCE-REFORMATION",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-HISTORY-V1-RENAISSANCE-REFORMATION-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-5E-RENAISSANCE",
+      "skill": "SK-ENR-HISTORY-5E-RENAISSANCE-REFORMATION",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 5e : démontre de façon autonome que tu sais expliquer les réformes religieuses. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Expliquer les réformes religieuses ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-HISTORY-RENAISSANCE-REFORMATION",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-HISTORY-V1-RENAISSANCE-REFORMATION-ASSESSMENT-03",
+        "title": "Expliquer les réformes religieuses",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 5e : démontre de façon autonome que tu sais expliquer les réformes religieuses. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Expliquer les réformes religieuses ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-5E-RENAISSANCE",
+          "primary_skill_code": "SK-ENR-HISTORY-5E-RENAISSANCE-REFORMATION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-history-v1",
+          "template_version": "lcai-5e-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-HISTORY-RENAISSANCE-REFORMATION",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-HISTORY-V1-RENAISSANCE-STATE-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-5E-RENAISSANCE",
+      "skill": "SK-ENR-HISTORY-5E-RENAISSANCE-STATE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Transformations de l'Europe et ouverture sur le monde », réalise une tâche qui montre que tu sais identifier des transformations politiques. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Identifier des transformations politiques ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-HISTORY-RENAISSANCE-STATE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-HISTORY-V1-RENAISSANCE-STATE-PRACTICE-01",
+        "title": "Identifier des transformations politiques",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Transformations de l'Europe et ouverture sur le monde », réalise une tâche qui montre que tu sais identifier des transformations politiques. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Identifier des transformations politiques ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-5E-RENAISSANCE",
+          "primary_skill_code": "SK-ENR-HISTORY-5E-RENAISSANCE-STATE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-history-v1",
+          "template_version": "lcai-5e-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-HISTORY-RENAISSANCE-STATE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-HISTORY-V1-RENAISSANCE-STATE-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-5E-RENAISSANCE",
+      "skill": "SK-ENR-HISTORY-5E-RENAISSANCE-STATE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Identifier des transformations politiques » à une situation pertinente de niveau 5e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Identifier des transformations politiques ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-HISTORY-RENAISSANCE-STATE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-HISTORY-V1-RENAISSANCE-STATE-PRACTICE-02",
+        "title": "Identifier des transformations politiques",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Identifier des transformations politiques » à une situation pertinente de niveau 5e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Identifier des transformations politiques ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-5E-RENAISSANCE",
+          "primary_skill_code": "SK-ENR-HISTORY-5E-RENAISSANCE-STATE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-history-v1",
+          "template_version": "lcai-5e-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-HISTORY-RENAISSANCE-STATE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_history_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-HISTORY-V1-RENAISSANCE-STATE-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-5E-RENAISSANCE",
+      "skill": "SK-ENR-HISTORY-5E-RENAISSANCE-STATE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 5e : démontre de façon autonome que tu sais identifier des transformations politiques. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Identifier des transformations politiques ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-HISTORY-RENAISSANCE-STATE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-history-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-HISTORY-V1-RENAISSANCE-STATE-ASSESSMENT-03",
+        "title": "Identifier des transformations politiques",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 5e : démontre de façon autonome que tu sais identifier des transformations politiques. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Identifier des transformations politiques ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "HISTORY",
+          "chapter_code": "CH-HISTORY-5E-RENAISSANCE",
+          "primary_skill_code": "SK-ENR-HISTORY-5E-RENAISSANCE-STATE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-history-v1",
+          "template_version": "lcai-5e-history-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-HISTORY-RENAISSANCE-STATE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_history_candidates_v1.json"
+      }
+    }
+  ]
+}

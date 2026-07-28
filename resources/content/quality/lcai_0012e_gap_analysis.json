@@ -1,0 +1,381 @@
+{
+  "pipeline_version": "lcai-0012e-primary-v1",
+  "by_grade": {
+    "FR-CM1": {
+      "skills": 118,
+      "practice_gaps": 105,
+      "assessment_gaps": 98,
+      "usable_practice_slots": 8,
+      "usable_assessment_slots": 11,
+      "generation_required_slots": 217
+    },
+    "FR-CM2": {
+      "skills": 125,
+      "practice_gaps": 125,
+      "assessment_gaps": 125,
+      "usable_practice_slots": 0,
+      "usable_assessment_slots": 0,
+      "generation_required_slots": 250
+    },
+    "FR-6E": {
+      "skills": 143,
+      "practice_gaps": 143,
+      "assessment_gaps": 143,
+      "usable_practice_slots": 0,
+      "usable_assessment_slots": 0,
+      "generation_required_slots": 286
+    },
+    "FR-5E": {
+      "skills": 161,
+      "practice_gaps": 161,
+      "assessment_gaps": 161,
+      "usable_practice_slots": 0,
+      "usable_assessment_slots": 0,
+      "generation_required_slots": 322
+    }
+  },
+  "by_subject": {
+    "FR-5E|EMC": {
+      "skills": 10,
+      "practice_gaps": 10,
+      "assessment_gaps": 10,
+      "generation_required_slots": 20
+    },
+    "FR-5E|ENGLISH": {
+      "skills": 16,
+      "practice_gaps": 16,
+      "assessment_gaps": 16,
+      "generation_required_slots": 32
+    },
+    "FR-5E|FRENCH": {
+      "skills": 30,
+      "practice_gaps": 30,
+      "assessment_gaps": 30,
+      "generation_required_slots": 60
+    },
+    "FR-5E|GEOGRAPHY": {
+      "skills": 16,
+      "practice_gaps": 16,
+      "assessment_gaps": 16,
+      "generation_required_slots": 32
+    },
+    "FR-5E|HISTORY": {
+      "skills": 16,
+      "practice_gaps": 16,
+      "assessment_gaps": 16,
+      "generation_required_slots": 32
+    },
+    "FR-5E|MATHEMATICS": {
+      "skills": 32,
+      "practice_gaps": 32,
+      "assessment_gaps": 32,
+      "generation_required_slots": 64
+    },
+    "FR-5E|PHYSICS_CHEMISTRY": {
+      "skills": 13,
+      "practice_gaps": 13,
+      "assessment_gaps": 13,
+      "generation_required_slots": 26
+    },
+    "FR-5E|SPANISH": {
+      "skills": 16,
+      "practice_gaps": 16,
+      "assessment_gaps": 16,
+      "generation_required_slots": 32
+    },
+    "FR-5E|SVT": {
+      "skills": 12,
+      "practice_gaps": 12,
+      "assessment_gaps": 12,
+      "generation_required_slots": 24
+    },
+    "FR-6E|EMC": {
+      "skills": 10,
+      "practice_gaps": 10,
+      "assessment_gaps": 10,
+      "generation_required_slots": 20
+    },
+    "FR-6E|ENGLISH": {
+      "skills": 16,
+      "practice_gaps": 16,
+      "assessment_gaps": 16,
+      "generation_required_slots": 32
+    },
+    "FR-6E|FRENCH": {
+      "skills": 27,
+      "practice_gaps": 27,
+      "assessment_gaps": 27,
+      "generation_required_slots": 54
+    },
+    "FR-6E|GEOGRAPHY": {
+      "skills": 22,
+      "practice_gaps": 22,
+      "assessment_gaps": 22,
+      "generation_required_slots": 44
+    },
+    "FR-6E|HISTORY": {
+      "skills": 16,
+      "practice_gaps": 16,
+      "assessment_gaps": 16,
+      "generation_required_slots": 32
+    },
+    "FR-6E|MATHEMATICS": {
+      "skills": 28,
+      "practice_gaps": 28,
+      "assessment_gaps": 28,
+      "generation_required_slots": 56
+    },
+    "FR-6E|PHYSICS_CHEMISTRY": {
+      "skills": 12,
+      "practice_gaps": 12,
+      "assessment_gaps": 12,
+      "generation_required_slots": 24
+    },
+    "FR-6E|SVT": {
+      "skills": 12,
+      "practice_gaps": 12,
+      "assessment_gaps": 12,
+      "generation_required_slots": 24
+    },
+    "FR-CM1|EMC": {
+      "skills": 10,
+      "practice_gaps": 2,
+      "assessment_gaps": 2,
+      "generation_required_slots": 4
+    },
+    "FR-CM1|ENGLISH": {
+      "skills": 10,
+      "practice_gaps": 9,
+      "assessment_gaps": 2,
+      "generation_required_slots": 20
+    },
+    "FR-CM1|FRENCH": {
+      "skills": 26,
+      "practice_gaps": 22,
+      "assessment_gaps": 22,
+      "generation_required_slots": 49
+    },
+    "FR-CM1|GEOGRAPHY": {
+      "skills": 15,
+      "practice_gaps": 15,
+      "assessment_gaps": 15,
+      "generation_required_slots": 30
+    },
+    "FR-CM1|HISTORY": {
+      "skills": 15,
+      "practice_gaps": 15,
+      "assessment_gaps": 15,
+      "generation_required_slots": 30
+    },
+    "FR-CM1|MATHEMATICS": {
+      "skills": 22,
+      "practice_gaps": 22,
+      "assessment_gaps": 22,
+      "generation_required_slots": 44
+    },
+    "FR-CM1|PHYSICS_CHEMISTRY": {
+      "skills": 10,
+      "practice_gaps": 10,
+      "assessment_gaps": 10,
+      "generation_required_slots": 20
+    },
+    "FR-CM1|SVT": {
+      "skills": 10,
+      "practice_gaps": 10,
+      "assessment_gaps": 10,
+      "generation_required_slots": 20
+    },
+    "FR-CM2|EMC": {
+      "skills": 10,
+      "practice_gaps": 10,
+      "assessment_gaps": 10,
+      "generation_required_slots": 20
+    },
+    "FR-CM2|ENGLISH": {
+      "skills": 10,
+      "practice_gaps": 10,
+      "assessment_gaps": 10,
+      "generation_required_slots": 20
+    },
+    "FR-CM2|FRENCH": {
+      "skills": 26,
+      "practice_gaps": 26,
+      "assessment_gaps": 26,
+      "generation_required_slots": 52
+    },
+    "FR-CM2|GEOGRAPHY": {
+      "skills": 15,
+      "practice_gaps": 15,
+      "assessment_gaps": 15,
+      "generation_required_slots": 30
+    },
+    "FR-CM2|HISTORY": {
+      "skills": 15,
+      "practice_gaps": 15,
+      "assessment_gaps": 15,
+      "generation_required_slots": 30
+    },
+    "FR-CM2|MATHEMATICS": {
+      "skills": 29,
+      "practice_gaps": 29,
+      "assessment_gaps": 29,
+      "generation_required_slots": 58
+    },
+    "FR-CM2|PHYSICS_CHEMISTRY": {
+      "skills": 10,
+      "practice_gaps": 10,
+      "assessment_gaps": 10,
+      "generation_required_slots": 20
+    },
+    "FR-CM2|SVT": {
+      "skills": 10,
+      "practice_gaps": 10,
+      "assessment_gaps": 10,
+      "generation_required_slots": 20
+    }
+  },
+  "coverage_gaps_total": 1581,
+  "generation_gaps_total": 1598,
+  "generation_gaps_sample": [
+    {
+      "grade": "FR-5E",
+      "subject": "EMC",
+      "skill": "SK-EMC-5E-COLLECTIVE-ACTION",
+      "content_type": "assessment",
+      "difficulty": 2
+    },
+    {
+      "grade": "FR-5E",
+      "subject": "EMC",
+      "skill": "SK-EMC-5E-COLLECTIVE-ACTION",
+      "content_type": "practice",
+      "difficulty": 2
+    },
+    {
+      "grade": "FR-5E",
+      "subject": "EMC",
+      "skill": "SK-ENR-EMC-5E-COLLECTIVE-ACTION-ACTORS",
+      "content_type": "assessment",
+      "difficulty": 2
+    },
+    {
+      "grade": "FR-5E",
+      "subject": "EMC",
+      "skill": "SK-ENR-EMC-5E-COLLECTIVE-ACTION-ACTORS",
+      "content_type": "practice",
+      "difficulty": 2
+    },
+    {
+      "grade": "FR-5E",
+      "subject": "EMC",
+      "skill": "SK-ENR-EMC-5E-COLLECTIVE-ACTION-EVALUATE",
+      "content_type": "assessment",
+      "difficulty": 2
+    },
+    {
+      "grade": "FR-5E",
+      "subject": "EMC",
+      "skill": "SK-ENR-EMC-5E-COLLECTIVE-ACTION-EVALUATE",
+      "content_type": "practice",
+      "difficulty": 2
+    },
+    {
+      "grade": "FR-5E",
+      "subject": "EMC",
+      "skill": "SK-ENR-EMC-5E-COLLECTIVE-ACTION-ISSUE",
+      "content_type": "assessment",
+      "difficulty": 2
+    },
+    {
+      "grade": "FR-5E",
+      "subject": "EMC",
+      "skill": "SK-ENR-EMC-5E-COLLECTIVE-ACTION-ISSUE",
+      "content_type": "practice",
+      "difficulty": 2
+    },
+    {
+      "grade": "FR-5E",
+      "subject": "EMC",
+      "skill": "SK-ENR-EMC-5E-COLLECTIVE-ACTION-PLAN",
+      "content_type": "assessment",
+      "difficulty": 2
+    },
+    {
+      "grade": "FR-5E",
+      "subject": "EMC",
+      "skill": "SK-ENR-EMC-5E-COLLECTIVE-ACTION-PLAN",
+      "content_type": "practice",
+      "difficulty": 2
+    },
+    {
+      "grade": "FR-5E",
+      "subject": "EMC",
+      "skill": "SK-EMC-5E-EQUALITY",
+      "content_type": "assessment",
+      "difficulty": 2
+    },
+    {
+      "grade": "FR-5E",
+      "subject": "EMC",
+      "skill": "SK-EMC-5E-EQUALITY",
+      "content_type": "practice",
+      "difficulty": 2
+    },
+    {
+      "grade": "FR-5E",
+      "subject": "EMC",
+      "skill": "SK-ENR-EMC-5E-EQUALITY-ARGUE",
+      "content_type": "assessment",
+      "difficulty": 2
+    },
+    {
+      "grade": "FR-5E",
+      "subject": "EMC",
+      "skill": "SK-ENR-EMC-5E-EQUALITY-ARGUE",
+      "content_type": "practice",
+      "difficulty": 2
+    },
+    {
+      "grade": "FR-5E",
+      "subject": "EMC",
+      "skill": "SK-ENR-EMC-5E-EQUALITY-DISCRIMINATION",
+      "content_type": "assessment",
+      "difficulty": 2
+    },
+    {
+      "grade": "FR-5E",
+      "subject": "EMC",
+      "skill": "SK-ENR-EMC-5E-EQUALITY-DISCRIMINATION",
+      "content_type": "practice",
+      "difficulty": 2
+    },
+    {
+      "grade": "FR-5E",
+      "subject": "EMC",
+      "skill": "SK-ENR-EMC-5E-EQUALITY-EQUALITY",
+      "content_type": "assessment",
+      "difficulty": 2
+    },
+    {
+      "grade": "FR-5E",
+      "subject": "EMC",
+      "skill": "SK-ENR-EMC-5E-EQUALITY-EQUALITY",
+      "content_type": "practice",
+      "difficulty": 2
+    },
+    {
+      "grade": "FR-5E",
+      "subject": "EMC",
+      "skill": "SK-ENR-EMC-5E-EQUALITY-SOLIDARITY",
+      "content_type": "assessment",
+      "difficulty": 2
+    },
+    {
+      "grade": "FR-5E",
+      "subject": "EMC",
+      "skill": "SK-ENR-EMC-5E-EQUALITY-SOLIDARITY",
+      "content_type": "practice",
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,2014 @@
+{
+  "batch": "CM2-ENGLISH-V1",
+  "purpose": "Parallel CM2 content preparation for Learning Coach AI",
+  "lifecycle_target": "Draft",
+  "automatic_approval": false,
+  "curriculum_version": "phase2-lcai-0011c",
+  "program_code": "FR-CYCLE3-CM2-2026",
+  "grade_code": "FR-CM2",
+  "subject_code": "ENGLISH",
+  "skill_count": 8,
+  "candidate_count": 24,
+  "content_types": {
+    "practice": 16,
+    "assessment": 8
+  },
+  "difficulty_distribution": {
+    "1": 8,
+    "2": 16
+  },
+  "accepted_candidates": [
+    {
+      "code": "CM2-ENGLISH-V1-COMMUNICATION-LISTEN-PRACTICE-01",
+      "grade": "FR-CM2",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-CM2-COMMUNICATION",
+      "skill": "SK-ENR-ENGLISH-CM2-COMMUNICATION-LISTEN",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Practice: Comprendre l'essentiel d'un message familier. Use a familiar topic (school, family, hobbies).",
+      "expected_answer": "Open response assessed with success criteria.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Comprendre l'essentiel d'un message familier ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-ENGLISH-COMMUNICATION-LISTEN",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-ENGLISH-V1-COMMUNICATION-LISTEN-PRACTICE-01",
+        "title": "Comprendre l'essentiel d'un message familier",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Practice: Comprendre l'essentiel d'un message familier. Use a familiar topic (school, family, hobbies).",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Open response assessed with success criteria.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Comprendre l'essentiel d'un message familier ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-CM2-COMMUNICATION",
+          "primary_skill_code": "SK-ENR-ENGLISH-CM2-COMMUNICATION-LISTEN",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-english-v1",
+          "template_version": "lcai-cm2-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-ENGLISH-COMMUNICATION-LISTEN",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "oral_or_teacher_read",
+          "success_criteria": [
+            "task completed in understandable English",
+            "relevant familiar vocabulary",
+            "meaning remains clear"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-ENGLISH-V1-COMMUNICATION-LISTEN-PRACTICE-02",
+      "grade": "FR-CM2",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-CM2-COMMUNICATION",
+      "skill": "SK-ENR-ENGLISH-CM2-COMMUNICATION-LISTEN",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Produce or respond to a short message showing that you can: comprendre l'essentiel d'un message familier.",
+      "expected_answer": "Open response assessed with success criteria.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Comprendre l'essentiel d'un message familier ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-ENGLISH-COMMUNICATION-LISTEN",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-ENGLISH-V1-COMMUNICATION-LISTEN-PRACTICE-02",
+        "title": "Comprendre l'essentiel d'un message familier",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Produce or respond to a short message showing that you can: comprendre l'essentiel d'un message familier.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Open response assessed with success criteria.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Comprendre l'essentiel d'un message familier ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-CM2-COMMUNICATION",
+          "primary_skill_code": "SK-ENR-ENGLISH-CM2-COMMUNICATION-LISTEN",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-english-v1",
+          "template_version": "lcai-cm2-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-ENGLISH-COMMUNICATION-LISTEN",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "oral_or_teacher_read",
+          "success_criteria": [
+            "task completed in understandable English",
+            "relevant familiar vocabulary",
+            "meaning remains clear"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-ENGLISH-V1-COMMUNICATION-LISTEN-ASSESSMENT-03",
+      "grade": "FR-CM2",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-CM2-COMMUNICATION",
+      "skill": "SK-ENR-ENGLISH-CM2-COMMUNICATION-LISTEN",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Assessment: independently demonstrate that you can comprendre l'essentiel d'un message familier.",
+      "expected_answer": "Open response assessed with success criteria.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Comprendre l'essentiel d'un message familier ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-ENGLISH-COMMUNICATION-LISTEN",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-ENGLISH-V1-COMMUNICATION-LISTEN-ASSESSMENT-03",
+        "title": "Comprendre l'essentiel d'un message familier",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Assessment: independently demonstrate that you can comprendre l'essentiel d'un message familier.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Open response assessed with success criteria.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Comprendre l'essentiel d'un message familier ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-CM2-COMMUNICATION",
+          "primary_skill_code": "SK-ENR-ENGLISH-CM2-COMMUNICATION-LISTEN",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-english-v1",
+          "template_version": "lcai-cm2-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-ENGLISH-COMMUNICATION-LISTEN",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "oral_or_teacher_read",
+          "success_criteria": [
+            "task completed in understandable English",
+            "relevant familiar vocabulary",
+            "meaning remains clear"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-ENGLISH-V1-COMMUNICATION-INTERACT-PRACTICE-01",
+      "grade": "FR-CM2",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-CM2-COMMUNICATION",
+      "skill": "SK-ENR-ENGLISH-CM2-COMMUNICATION-INTERACT",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Practice: Poser et répondre à des questions simples. Use a familiar topic (school, family, hobbies).",
+      "expected_answer": "Open response assessed with success criteria.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Poser et répondre à des questions simples ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-ENGLISH-COMMUNICATION-INTERACT",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-ENGLISH-V1-COMMUNICATION-INTERACT-PRACTICE-01",
+        "title": "Poser et répondre à des questions simples",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Practice: Poser et répondre à des questions simples. Use a familiar topic (school, family, hobbies).",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Open response assessed with success criteria.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Poser et répondre à des questions simples ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-CM2-COMMUNICATION",
+          "primary_skill_code": "SK-ENR-ENGLISH-CM2-COMMUNICATION-INTERACT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-english-v1",
+          "template_version": "lcai-cm2-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-ENGLISH-COMMUNICATION-INTERACT",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "oral_or_teacher_read",
+          "success_criteria": [
+            "task completed in understandable English",
+            "relevant familiar vocabulary",
+            "meaning remains clear"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-ENGLISH-V1-COMMUNICATION-INTERACT-PRACTICE-02",
+      "grade": "FR-CM2",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-CM2-COMMUNICATION",
+      "skill": "SK-ENR-ENGLISH-CM2-COMMUNICATION-INTERACT",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Produce or respond to a short message showing that you can: poser et répondre à des questions simples.",
+      "expected_answer": "Open response assessed with success criteria.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Poser et répondre à des questions simples ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-ENGLISH-COMMUNICATION-INTERACT",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-ENGLISH-V1-COMMUNICATION-INTERACT-PRACTICE-02",
+        "title": "Poser et répondre à des questions simples",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Produce or respond to a short message showing that you can: poser et répondre à des questions simples.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Open response assessed with success criteria.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Poser et répondre à des questions simples ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-CM2-COMMUNICATION",
+          "primary_skill_code": "SK-ENR-ENGLISH-CM2-COMMUNICATION-INTERACT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-english-v1",
+          "template_version": "lcai-cm2-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-ENGLISH-COMMUNICATION-INTERACT",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "oral_or_teacher_read",
+          "success_criteria": [
+            "task completed in understandable English",
+            "relevant familiar vocabulary",
+            "meaning remains clear"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-ENGLISH-V1-COMMUNICATION-INTERACT-ASSESSMENT-03",
+      "grade": "FR-CM2",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-CM2-COMMUNICATION",
+      "skill": "SK-ENR-ENGLISH-CM2-COMMUNICATION-INTERACT",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Assessment: independently demonstrate that you can poser et répondre à des questions simples.",
+      "expected_answer": "Open response assessed with success criteria.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Poser et répondre à des questions simples ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-ENGLISH-COMMUNICATION-INTERACT",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-ENGLISH-V1-COMMUNICATION-INTERACT-ASSESSMENT-03",
+        "title": "Poser et répondre à des questions simples",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Assessment: independently demonstrate that you can poser et répondre à des questions simples.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Open response assessed with success criteria.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Poser et répondre à des questions simples ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-CM2-COMMUNICATION",
+          "primary_skill_code": "SK-ENR-ENGLISH-CM2-COMMUNICATION-INTERACT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-english-v1",
+          "template_version": "lcai-cm2-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-ENGLISH-COMMUNICATION-INTERACT",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "oral_or_teacher_read",
+          "success_criteria": [
+            "task completed in understandable English",
+            "relevant familiar vocabulary",
+            "meaning remains clear"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-ENGLISH-V1-COMMUNICATION-SPEAK-PRACTICE-01",
+      "grade": "FR-CM2",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-CM2-COMMUNICATION",
+      "skill": "SK-ENR-ENGLISH-CM2-COMMUNICATION-SPEAK",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Practice: Parler en continu à partir de notes. Use a familiar topic (school, family, hobbies).",
+      "expected_answer": "Open response assessed with success criteria.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Parler en continu à partir de notes ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-ENGLISH-COMMUNICATION-SPEAK",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-ENGLISH-V1-COMMUNICATION-SPEAK-PRACTICE-01",
+        "title": "Parler en continu à partir de notes",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Practice: Parler en continu à partir de notes. Use a familiar topic (school, family, hobbies).",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Open response assessed with success criteria.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Parler en continu à partir de notes ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-CM2-COMMUNICATION",
+          "primary_skill_code": "SK-ENR-ENGLISH-CM2-COMMUNICATION-SPEAK",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-english-v1",
+          "template_version": "lcai-cm2-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-ENGLISH-COMMUNICATION-SPEAK",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "oral_or_teacher_read",
+          "success_criteria": [
+            "task completed in understandable English",
+            "relevant familiar vocabulary",
+            "meaning remains clear"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-ENGLISH-V1-COMMUNICATION-SPEAK-PRACTICE-02",
+      "grade": "FR-CM2",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-CM2-COMMUNICATION",
+      "skill": "SK-ENR-ENGLISH-CM2-COMMUNICATION-SPEAK",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Produce or respond to a short message showing that you can: parler en continu à partir de notes.",
+      "expected_answer": "Open response assessed with success criteria.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Parler en continu à partir de notes ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-ENGLISH-COMMUNICATION-SPEAK",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-ENGLISH-V1-COMMUNICATION-SPEAK-PRACTICE-02",
+        "title": "Parler en continu à partir de notes",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Produce or respond to a short message showing that you can: parler en continu à partir de notes.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Open response assessed with success criteria.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Parler en continu à partir de notes ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-CM2-COMMUNICATION",
+          "primary_skill_code": "SK-ENR-ENGLISH-CM2-COMMUNICATION-SPEAK",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-english-v1",
+          "template_version": "lcai-cm2-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-ENGLISH-COMMUNICATION-SPEAK",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "oral_or_teacher_read",
+          "success_criteria": [
+            "task completed in understandable English",
+            "relevant familiar vocabulary",
+            "meaning remains clear"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-ENGLISH-V1-COMMUNICATION-SPEAK-ASSESSMENT-03",
+      "grade": "FR-CM2",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-CM2-COMMUNICATION",
+      "skill": "SK-ENR-ENGLISH-CM2-COMMUNICATION-SPEAK",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Assessment: independently demonstrate that you can parler en continu à partir de notes.",
+      "expected_answer": "Open response assessed with success criteria.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Parler en continu à partir de notes ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-ENGLISH-COMMUNICATION-SPEAK",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-ENGLISH-V1-COMMUNICATION-SPEAK-ASSESSMENT-03",
+        "title": "Parler en continu à partir de notes",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Assessment: independently demonstrate that you can parler en continu à partir de notes.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Open response assessed with success criteria.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Parler en continu à partir de notes ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-CM2-COMMUNICATION",
+          "primary_skill_code": "SK-ENR-ENGLISH-CM2-COMMUNICATION-SPEAK",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-english-v1",
+          "template_version": "lcai-cm2-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-ENGLISH-COMMUNICATION-SPEAK",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "oral_or_teacher_read",
+          "success_criteria": [
+            "task completed in understandable English",
+            "relevant familiar vocabulary",
+            "meaning remains clear"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-ENGLISH-V1-COMMUNICATION-PRONOUNCE-PRACTICE-01",
+      "grade": "FR-CM2",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-CM2-COMMUNICATION",
+      "skill": "SK-ENR-ENGLISH-CM2-COMMUNICATION-PRONOUNCE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Practice: Produire un message phonologiquement intelligible. Use a familiar topic (school, family, hobbies).",
+      "expected_answer": "Open response assessed with success criteria.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Produire un message phonologiquement intelligible ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-ENGLISH-COMMUNICATION-PRONOUNCE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-ENGLISH-V1-COMMUNICATION-PRONOUNCE-PRACTICE-01",
+        "title": "Produire un message phonologiquement intelligible",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Practice: Produire un message phonologiquement intelligible. Use a familiar topic (school, family, hobbies).",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Open response assessed with success criteria.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Produire un message phonologiquement intelligible ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-CM2-COMMUNICATION",
+          "primary_skill_code": "SK-ENR-ENGLISH-CM2-COMMUNICATION-PRONOUNCE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-english-v1",
+          "template_version": "lcai-cm2-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-ENGLISH-COMMUNICATION-PRONOUNCE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "oral_or_teacher_read",
+          "success_criteria": [
+            "task completed in understandable English",
+            "relevant familiar vocabulary",
+            "meaning remains clear"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-ENGLISH-V1-COMMUNICATION-PRONOUNCE-PRACTICE-02",
+      "grade": "FR-CM2",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-CM2-COMMUNICATION",
+      "skill": "SK-ENR-ENGLISH-CM2-COMMUNICATION-PRONOUNCE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Produce or respond to a short message showing that you can: produire un message phonologiquement intelligible.",
+      "expected_answer": "Open response assessed with success criteria.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Produire un message phonologiquement intelligible ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-ENGLISH-COMMUNICATION-PRONOUNCE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-ENGLISH-V1-COMMUNICATION-PRONOUNCE-PRACTICE-02",
+        "title": "Produire un message phonologiquement intelligible",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Produce or respond to a short message showing that you can: produire un message phonologiquement intelligible.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Open response assessed with success criteria.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Produire un message phonologiquement intelligible ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-CM2-COMMUNICATION",
+          "primary_skill_code": "SK-ENR-ENGLISH-CM2-COMMUNICATION-PRONOUNCE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-english-v1",
+          "template_version": "lcai-cm2-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-ENGLISH-COMMUNICATION-PRONOUNCE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "oral_or_teacher_read",
+          "success_criteria": [
+            "task completed in understandable English",
+            "relevant familiar vocabulary",
+            "meaning remains clear"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-ENGLISH-V1-COMMUNICATION-PRONOUNCE-ASSESSMENT-03",
+      "grade": "FR-CM2",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-CM2-COMMUNICATION",
+      "skill": "SK-ENR-ENGLISH-CM2-COMMUNICATION-PRONOUNCE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Assessment: independently demonstrate that you can produire un message phonologiquement intelligible.",
+      "expected_answer": "Open response assessed with success criteria.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Produire un message phonologiquement intelligible ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-ENGLISH-COMMUNICATION-PRONOUNCE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-ENGLISH-V1-COMMUNICATION-PRONOUNCE-ASSESSMENT-03",
+        "title": "Produire un message phonologiquement intelligible",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Assessment: independently demonstrate that you can produire un message phonologiquement intelligible.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Open response assessed with success criteria.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Produire un message phonologiquement intelligible ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-CM2-COMMUNICATION",
+          "primary_skill_code": "SK-ENR-ENGLISH-CM2-COMMUNICATION-PRONOUNCE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-english-v1",
+          "template_version": "lcai-cm2-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-ENGLISH-COMMUNICATION-PRONOUNCE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "oral_or_teacher_read",
+          "success_criteria": [
+            "task completed in understandable English",
+            "relevant familiar vocabulary",
+            "meaning remains clear"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-ENGLISH-V1-LANGUAGE-READ-PRACTICE-01",
+      "grade": "FR-CM2",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-CM2-LANGUAGE",
+      "skill": "SK-ENR-ENGLISH-CM2-LANGUAGE-READ",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Practice: Comprendre un court document écrit. Use a familiar topic (school, family, hobbies).",
+      "expected_answer": "Open response assessed with success criteria.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Comprendre un court document écrit ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-ENGLISH-LANGUAGE-READ",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-ENGLISH-V1-LANGUAGE-READ-PRACTICE-01",
+        "title": "Comprendre un court document écrit",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Practice: Comprendre un court document écrit. Use a familiar topic (school, family, hobbies).",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Open response assessed with success criteria.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Comprendre un court document écrit ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-CM2-LANGUAGE",
+          "primary_skill_code": "SK-ENR-ENGLISH-CM2-LANGUAGE-READ",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-english-v1",
+          "template_version": "lcai-cm2-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-ENGLISH-LANGUAGE-READ",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "task completed in understandable English",
+            "relevant familiar vocabulary",
+            "meaning remains clear"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-ENGLISH-V1-LANGUAGE-READ-PRACTICE-02",
+      "grade": "FR-CM2",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-CM2-LANGUAGE",
+      "skill": "SK-ENR-ENGLISH-CM2-LANGUAGE-READ",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Produce or respond to a short message showing that you can: comprendre un court document écrit.",
+      "expected_answer": "Open response assessed with success criteria.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Comprendre un court document écrit ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-ENGLISH-LANGUAGE-READ",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-ENGLISH-V1-LANGUAGE-READ-PRACTICE-02",
+        "title": "Comprendre un court document écrit",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Produce or respond to a short message showing that you can: comprendre un court document écrit.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Open response assessed with success criteria.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Comprendre un court document écrit ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-CM2-LANGUAGE",
+          "primary_skill_code": "SK-ENR-ENGLISH-CM2-LANGUAGE-READ",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-english-v1",
+          "template_version": "lcai-cm2-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-ENGLISH-LANGUAGE-READ",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "task completed in understandable English",
+            "relevant familiar vocabulary",
+            "meaning remains clear"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-ENGLISH-V1-LANGUAGE-READ-ASSESSMENT-03",
+      "grade": "FR-CM2",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-CM2-LANGUAGE",
+      "skill": "SK-ENR-ENGLISH-CM2-LANGUAGE-READ",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Assessment: independently demonstrate that you can comprendre un court document écrit.",
+      "expected_answer": "Open response assessed with success criteria.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Comprendre un court document écrit ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-ENGLISH-LANGUAGE-READ",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-ENGLISH-V1-LANGUAGE-READ-ASSESSMENT-03",
+        "title": "Comprendre un court document écrit",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Assessment: independently demonstrate that you can comprendre un court document écrit.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Open response assessed with success criteria.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Comprendre un court document écrit ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-CM2-LANGUAGE",
+          "primary_skill_code": "SK-ENR-ENGLISH-CM2-LANGUAGE-READ",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-english-v1",
+          "template_version": "lcai-cm2-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-ENGLISH-LANGUAGE-READ",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "task completed in understandable English",
+            "relevant familiar vocabulary",
+            "meaning remains clear"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-ENGLISH-V1-LANGUAGE-WRITE-PRACTICE-01",
+      "grade": "FR-CM2",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-CM2-LANGUAGE",
+      "skill": "SK-ENR-ENGLISH-CM2-LANGUAGE-WRITE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Practice: Rédiger un message simple. Use a familiar topic (school, family, hobbies).",
+      "expected_answer": "Open response assessed with success criteria.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Rédiger un message simple ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-ENGLISH-LANGUAGE-WRITE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-ENGLISH-V1-LANGUAGE-WRITE-PRACTICE-01",
+        "title": "Rédiger un message simple",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Practice: Rédiger un message simple. Use a familiar topic (school, family, hobbies).",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Open response assessed with success criteria.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Rédiger un message simple ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-CM2-LANGUAGE",
+          "primary_skill_code": "SK-ENR-ENGLISH-CM2-LANGUAGE-WRITE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-english-v1",
+          "template_version": "lcai-cm2-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-ENGLISH-LANGUAGE-WRITE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "task completed in understandable English",
+            "relevant familiar vocabulary",
+            "meaning remains clear"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-ENGLISH-V1-LANGUAGE-WRITE-PRACTICE-02",
+      "grade": "FR-CM2",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-CM2-LANGUAGE",
+      "skill": "SK-ENR-ENGLISH-CM2-LANGUAGE-WRITE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Produce or respond to a short message showing that you can: rédiger un message simple.",
+      "expected_answer": "Open response assessed with success criteria.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Rédiger un message simple ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-ENGLISH-LANGUAGE-WRITE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-ENGLISH-V1-LANGUAGE-WRITE-PRACTICE-02",
+        "title": "Rédiger un message simple",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Produce or respond to a short message showing that you can: rédiger un message simple.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Open response assessed with success criteria.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Rédiger un message simple ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-CM2-LANGUAGE",
+          "primary_skill_code": "SK-ENR-ENGLISH-CM2-LANGUAGE-WRITE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-english-v1",
+          "template_version": "lcai-cm2-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-ENGLISH-LANGUAGE-WRITE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "task completed in understandable English",
+            "relevant familiar vocabulary",
+            "meaning remains clear"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-ENGLISH-V1-LANGUAGE-WRITE-ASSESSMENT-03",
+      "grade": "FR-CM2",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-CM2-LANGUAGE",
+      "skill": "SK-ENR-ENGLISH-CM2-LANGUAGE-WRITE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Assessment: independently demonstrate that you can rédiger un message simple.",
+      "expected_answer": "Open response assessed with success criteria.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Rédiger un message simple ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-ENGLISH-LANGUAGE-WRITE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-ENGLISH-V1-LANGUAGE-WRITE-ASSESSMENT-03",
+        "title": "Rédiger un message simple",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Assessment: independently demonstrate that you can rédiger un message simple.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Open response assessed with success criteria.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Rédiger un message simple ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-CM2-LANGUAGE",
+          "primary_skill_code": "SK-ENR-ENGLISH-CM2-LANGUAGE-WRITE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-english-v1",
+          "template_version": "lcai-cm2-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-ENGLISH-LANGUAGE-WRITE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "task completed in understandable English",
+            "relevant familiar vocabulary",
+            "meaning remains clear"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-ENGLISH-V1-LANGUAGE-GRAMMAR-PRACTICE-01",
+      "grade": "FR-CM2",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-CM2-LANGUAGE",
+      "skill": "SK-ENR-ENGLISH-CM2-LANGUAGE-GRAMMAR",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Practice: Mobiliser les structures grammaticales attendues. Use a familiar topic (school, family, hobbies).",
+      "expected_answer": "Open response assessed with success criteria.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Mobiliser les structures grammaticales attendues ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-ENGLISH-LANGUAGE-GRAMMAR",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-ENGLISH-V1-LANGUAGE-GRAMMAR-PRACTICE-01",
+        "title": "Mobiliser les structures grammaticales attendues",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Practice: Mobiliser les structures grammaticales attendues. Use a familiar topic (school, family, hobbies).",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Open response assessed with success criteria.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Mobiliser les structures grammaticales attendues ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-CM2-LANGUAGE",
+          "primary_skill_code": "SK-ENR-ENGLISH-CM2-LANGUAGE-GRAMMAR",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-english-v1",
+          "template_version": "lcai-cm2-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-ENGLISH-LANGUAGE-GRAMMAR",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "task completed in understandable English",
+            "relevant familiar vocabulary",
+            "meaning remains clear"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-ENGLISH-V1-LANGUAGE-GRAMMAR-PRACTICE-02",
+      "grade": "FR-CM2",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-CM2-LANGUAGE",
+      "skill": "SK-ENR-ENGLISH-CM2-LANGUAGE-GRAMMAR",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Produce or respond to a short message showing that you can: mobiliser les structures grammaticales attendues.",
+      "expected_answer": "Open response assessed with success criteria.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Mobiliser les structures grammaticales attendues ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-ENGLISH-LANGUAGE-GRAMMAR",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-ENGLISH-V1-LANGUAGE-GRAMMAR-PRACTICE-02",
+        "title": "Mobiliser les structures grammaticales attendues",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Produce or respond to a short message showing that you can: mobiliser les structures grammaticales attendues.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Open response assessed with success criteria.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Mobiliser les structures grammaticales attendues ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-CM2-LANGUAGE",
+          "primary_skill_code": "SK-ENR-ENGLISH-CM2-LANGUAGE-GRAMMAR",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-english-v1",
+          "template_version": "lcai-cm2-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-ENGLISH-LANGUAGE-GRAMMAR",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "task completed in understandable English",
+            "relevant familiar vocabulary",
+            "meaning remains clear"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-ENGLISH-V1-LANGUAGE-GRAMMAR-ASSESSMENT-03",
+      "grade": "FR-CM2",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-CM2-LANGUAGE",
+      "skill": "SK-ENR-ENGLISH-CM2-LANGUAGE-GRAMMAR",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Assessment: independently demonstrate that you can mobiliser les structures grammaticales attendues.",
+      "expected_answer": "Open response assessed with success criteria.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Mobiliser les structures grammaticales attendues ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-ENGLISH-LANGUAGE-GRAMMAR",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-ENGLISH-V1-LANGUAGE-GRAMMAR-ASSESSMENT-03",
+        "title": "Mobiliser les structures grammaticales attendues",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Assessment: independently demonstrate that you can mobiliser les structures grammaticales attendues.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Open response assessed with success criteria.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Mobiliser les structures grammaticales attendues ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-CM2-LANGUAGE",
+          "primary_skill_code": "SK-ENR-ENGLISH-CM2-LANGUAGE-GRAMMAR",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-english-v1",
+          "template_version": "lcai-cm2-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-ENGLISH-LANGUAGE-GRAMMAR",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "task completed in understandable English",
+            "relevant familiar vocabulary",
+            "meaning remains clear"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-ENGLISH-V1-LANGUAGE-CULTURE-PRACTICE-01",
+      "grade": "FR-CM2",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-CM2-LANGUAGE",
+      "skill": "SK-ENR-ENGLISH-CM2-LANGUAGE-CULTURE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Practice: Identifier un repère culturel anglophone. Use a familiar topic (school, family, hobbies).",
+      "expected_answer": "Open response assessed with success criteria.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Identifier un repère culturel anglophone ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-ENGLISH-LANGUAGE-CULTURE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-ENGLISH-V1-LANGUAGE-CULTURE-PRACTICE-01",
+        "title": "Identifier un repère culturel anglophone",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Practice: Identifier un repère culturel anglophone. Use a familiar topic (school, family, hobbies).",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Open response assessed with success criteria.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Identifier un repère culturel anglophone ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-CM2-LANGUAGE",
+          "primary_skill_code": "SK-ENR-ENGLISH-CM2-LANGUAGE-CULTURE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-english-v1",
+          "template_version": "lcai-cm2-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-ENGLISH-LANGUAGE-CULTURE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "task completed in understandable English",
+            "relevant familiar vocabulary",
+            "meaning remains clear"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-ENGLISH-V1-LANGUAGE-CULTURE-PRACTICE-02",
+      "grade": "FR-CM2",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-CM2-LANGUAGE",
+      "skill": "SK-ENR-ENGLISH-CM2-LANGUAGE-CULTURE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Produce or respond to a short message showing that you can: identifier un repère culturel anglophone.",
+      "expected_answer": "Open response assessed with success criteria.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Identifier un repère culturel anglophone ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-ENGLISH-LANGUAGE-CULTURE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-ENGLISH-V1-LANGUAGE-CULTURE-PRACTICE-02",
+        "title": "Identifier un repère culturel anglophone",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Produce or respond to a short message showing that you can: identifier un repère culturel anglophone.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Open response assessed with success criteria.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Identifier un repère culturel anglophone ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-CM2-LANGUAGE",
+          "primary_skill_code": "SK-ENR-ENGLISH-CM2-LANGUAGE-CULTURE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-english-v1",
+          "template_version": "lcai-cm2-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-ENGLISH-LANGUAGE-CULTURE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "task completed in understandable English",
+            "relevant familiar vocabulary",
+            "meaning remains clear"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-ENGLISH-V1-LANGUAGE-CULTURE-ASSESSMENT-03",
+      "grade": "FR-CM2",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-CM2-LANGUAGE",
+      "skill": "SK-ENR-ENGLISH-CM2-LANGUAGE-CULTURE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Assessment: independently demonstrate that you can identifier un repère culturel anglophone.",
+      "expected_answer": "Open response assessed with success criteria.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Identifier un repère culturel anglophone ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-ENGLISH-LANGUAGE-CULTURE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-ENGLISH-V1-LANGUAGE-CULTURE-ASSESSMENT-03",
+        "title": "Identifier un repère culturel anglophone",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Assessment: independently demonstrate that you can identifier un repère culturel anglophone.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Open response assessed with success criteria.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Identifier un repère culturel anglophone ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-CM2-LANGUAGE",
+          "primary_skill_code": "SK-ENR-ENGLISH-CM2-LANGUAGE-CULTURE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-english-v1",
+          "template_version": "lcai-cm2-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-ENGLISH-LANGUAGE-CULTURE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "task completed in understandable English",
+            "relevant familiar vocabulary",
+            "meaning remains clear"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_english_candidates_v1.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,4137 @@
+{
+  "batch": "CM1-MATHEMATICS-V1",
+  "purpose": "Parallel CM1 content preparation for Learning Coach AI",
+  "lifecycle_target": "Draft",
+  "automatic_approval": false,
+  "curriculum_version": "phase2-lcai-0011c",
+  "program_code": "FR-CYCLE3-CM1-2026",
+  "grade_code": "FR-CM1",
+  "subject_code": "MATHEMATICS",
+  "skill_count": 17,
+  "candidate_count": 51,
+  "content_types": {
+    "assessment": 17,
+    "practice": 34
+  },
+  "difficulty_distribution": {
+    "1": 19,
+    "2": 32
+  },
+  "independently_checked_candidates": 27,
+  "accepted_candidates": [
+    {
+      "code": "CM1-MATH-V1-INTEGERS-PLACE-PRACTICE-01",
+      "grade": "FR-CM1",
+      "subject": "MATHEMATICS",
+      "chapter": "CH-MATHEMATICS-CM1-INTEGERS",
+      "skill": "SK-ENR-MATHEMATICS-CM1-INTEGERS-PLACE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans le nombre 438 572, quelle est la valeur du chiffre 8 ?",
+      "expected_answer": "8 000",
+      "answer_kind": "exact_text",
+      "explanation": "Le 8 est au rang des milliers : sa valeur est 8 000.",
+      "hints": [
+        "Repère les classes : milliers puis unités."
+      ],
+      "misconception_target": null,
+      "family_code": "CM1-INTEGERS-PLACE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T09:20:53.083031+00:00",
+        "template_version": "lcai-cm1-math-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-MATH-V1-INTEGERS-PLACE-PRACTICE-01",
+        "title": "Valeur de position",
+        "instructions": "Écris la valeur du chiffre demandé.",
+        "prompt": "Dans le nombre 438 572, quelle est la valeur du chiffre 8 ?",
+        "answer": {
+          "kind": "exact_text",
+          "expected": "8 000",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": "8 000"
+        },
+        "explanation": "Le 8 est au rang des milliers : sa valeur est 8 000.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "MATHEMATICS",
+          "chapter_code": "CH-MATHEMATICS-CM1-INTEGERS",
+          "primary_skill_code": "SK-ENR-MATHEMATICS-CM1-INTEGERS-PLACE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-cm1-math-generation-spec-v1",
+          "template_version": "lcai-cm1-math-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:20:53.083031+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [
+          "Repère les classes : milliers puis unités."
+        ],
+        "feedback": {
+          "correct": "Bonne réponse. La compétence ciblée est correctement mobilisée.",
+          "incorrect": "Reprends les données utiles, applique la méthode attendue puis vérifie ton résultat."
+        },
+        "family_code": "CM1-INTEGERS-PLACE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "independent_answer_check": true
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_mathematics_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-MATH-V1-INTEGERS-PLACE-PRACTICE-02",
+      "grade": "FR-CM1",
+      "subject": "MATHEMATICS",
+      "chapter": "CH-MATHEMATICS-CM1-INTEGERS",
+      "skill": "SK-ENR-MATHEMATICS-CM1-INTEGERS-PLACE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Décompose 305 742 sous la forme d'une somme de valeurs de position.",
+      "expected_answer": "300 000 + 5 000 + 700 + 40 + 2",
+      "answer_kind": "structured",
+      "explanation": "305 742 contient 3 centaines de mille, 5 milliers, 7 centaines, 4 dizaines et 2 unités.",
+      "hints": [
+        "Le chiffre 0 des dizaines de mille n'ajoute aucun terme."
+      ],
+      "misconception_target": null,
+      "family_code": "CM1-INTEGERS-PLACE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T09:20:53.083031+00:00",
+        "template_version": "lcai-cm1-math-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-MATH-V1-INTEGERS-PLACE-PRACTICE-02",
+        "title": "Décomposer un nombre",
+        "instructions": "Décompose le nombre en valeurs de position.",
+        "prompt": "Décompose 305 742 sous la forme d'une somme de valeurs de position.",
+        "answer": {
+          "kind": "structured",
+          "expected": "300 000 + 5 000 + 700 + 40 + 2",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": "300 000 + 5 000 + 700 + 40 + 2"
+        },
+        "explanation": "305 742 contient 3 centaines de mille, 5 milliers, 7 centaines, 4 dizaines et 2 unités.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "MATHEMATICS",
+          "chapter_code": "CH-MATHEMATICS-CM1-INTEGERS",
+          "primary_skill_code": "SK-ENR-MATHEMATICS-CM1-INTEGERS-PLACE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-cm1-math-generation-spec-v1",
+          "template_version": "lcai-cm1-math-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:20:53.083031+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [
+          "Le chiffre 0 des dizaines de mille n'ajoute aucun terme."
+        ],
+        "feedback": {
+          "correct": "Bonne réponse. La compétence ciblée est correctement mobilisée.",
+          "incorrect": "Reprends les données utiles, applique la méthode attendue puis vérifie ton résultat."
+        },
+        "family_code": "CM1-INTEGERS-PLACE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "independent_answer_check": true
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_mathematics_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-MATH-V1-INTEGERS-PLACE-ASSESSMENT-03",
+      "grade": "FR-CM1",
+      "subject": "MATHEMATICS",
+      "chapter": "CH-MATHEMATICS-CM1-INTEGERS",
+      "skill": "SK-ENR-MATHEMATICS-CM1-INTEGERS-PLACE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Quel nombre correspond à 600 000 + 20 000 + 4 000 + 300 + 8 ?",
+      "expected_answer": "624 308",
+      "answer_kind": "single_choice",
+      "explanation": "On additionne les valeurs de position : 600 000 + 20 000 + 4 000 + 300 + 8 = 624 308.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-INTEGERS-PLACE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T09:20:53.083031+00:00",
+        "template_version": "lcai-cm1-math-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-MATH-V1-INTEGERS-PLACE-ASSESSMENT-03",
+        "title": "Composer un nombre",
+        "instructions": "Choisis le nombre correspondant à la décomposition.",
+        "prompt": "Quel nombre correspond à 600 000 + 20 000 + 4 000 + 300 + 8 ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "624 308",
+          "options": [
+            "624 308",
+            "620 438",
+            "624 038",
+            "642 308"
+          ],
+          "tolerance": null,
+          "independently_computed": "624 308"
+        },
+        "explanation": "On additionne les valeurs de position : 600 000 + 20 000 + 4 000 + 300 + 8 = 624 308.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "MATHEMATICS",
+          "chapter_code": "CH-MATHEMATICS-CM1-INTEGERS",
+          "primary_skill_code": "SK-ENR-MATHEMATICS-CM1-INTEGERS-PLACE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-cm1-math-generation-spec-v1",
+          "template_version": "lcai-cm1-math-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:20:53.083031+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse. La compétence ciblée est correctement mobilisée.",
+          "incorrect": "Reprends les données utiles, applique la méthode attendue puis vérifie ton résultat."
+        },
+        "family_code": "CM1-INTEGERS-PLACE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "independent_answer_check": true
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_mathematics_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-MATH-V1-INTEGERS-COMPARE-PRACTICE-01",
+      "grade": "FR-CM1",
+      "subject": "MATHEMATICS",
+      "chapter": "CH-MATHEMATICS-CM1-INTEGERS",
+      "skill": "SK-ENR-MATHEMATICS-CM1-INTEGERS-COMPARE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Complète : 58 407 __ 58 470",
+      "expected_answer": "<",
+      "answer_kind": "single_choice",
+      "explanation": "Les dizaines diffèrent : 0 dizaine dans 58 407 contre 7 dizaines dans 58 470, donc 58 407 < 58 470.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-INTEGERS-COMPARE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T09:20:53.083031+00:00",
+        "template_version": "lcai-cm1-math-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-MATH-V1-INTEGERS-COMPARE-PRACTICE-01",
+        "title": "Comparer deux entiers",
+        "instructions": "Choisis le bon symbole.",
+        "prompt": "Complète : 58 407 __ 58 470",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "<",
+          "options": [
+            "<",
+            "> (option 2)",
+            "= (option 3)"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Les dizaines diffèrent : 0 dizaine dans 58 407 contre 7 dizaines dans 58 470, donc 58 407 < 58 470.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "MATHEMATICS",
+          "chapter_code": "CH-MATHEMATICS-CM1-INTEGERS",
+          "primary_skill_code": "SK-ENR-MATHEMATICS-CM1-INTEGERS-COMPARE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-cm1-math-generation-spec-v1",
+          "template_version": "lcai-cm1-math-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:20:53.083031+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse. La compétence ciblée est correctement mobilisée.",
+          "incorrect": "Reprends les données utiles, applique la méthode attendue puis vérifie ton résultat."
+        },
+        "family_code": "CM1-INTEGERS-COMPARE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "independent_answer_check": false,
+          "qcm_repair": {
+            "status": "DETERMINISTIC_FIX",
+            "original_options": [
+              "<",
+              ">",
+              "="
+            ],
+            "repaired_options": [
+              "<",
+              "> (option 2)",
+              "= (option 3)"
+            ]
+          }
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_mathematics_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-MATH-V1-INTEGERS-COMPARE-PRACTICE-02",
+      "grade": "FR-CM1",
+      "subject": "MATHEMATICS",
+      "chapter": "CH-MATHEMATICS-CM1-INTEGERS",
+      "skill": "SK-ENR-MATHEMATICS-CM1-INTEGERS-COMPARE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Encadre 347 286 entre deux milliers consécutifs.",
+      "expected_answer": "347 000 < 347 286 < 348 000",
+      "answer_kind": "structured",
+      "explanation": "347 286 est supérieur à 347 000 et inférieur au millier suivant, 348 000.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-INTEGERS-COMPARE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T09:20:53.083031+00:00",
+        "template_version": "lcai-cm1-math-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-MATH-V1-INTEGERS-COMPARE-PRACTICE-02",
+        "title": "Encadrer un entier",
+        "instructions": "Encadre le nombre entre deux milliers consécutifs.",
+        "prompt": "Encadre 347 286 entre deux milliers consécutifs.",
+        "answer": {
+          "kind": "structured",
+          "expected": "347 000 < 347 286 < 348 000",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "347 286 est supérieur à 347 000 et inférieur au millier suivant, 348 000.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "MATHEMATICS",
+          "chapter_code": "CH-MATHEMATICS-CM1-INTEGERS",
+          "primary_skill_code": "SK-ENR-MATHEMATICS-CM1-INTEGERS-COMPARE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-cm1-math-generation-spec-v1",
+          "template_version": "lcai-cm1-math-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:20:53.083031+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse. La compétence ciblée est correctement mobilisée.",
+          "incorrect": "Reprends les données utiles, applique la méthode attendue puis vérifie ton résultat."
+        },
+        "family_code": "CM1-INTEGERS-COMPARE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "independent_answer_check": false
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_mathematics_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-MATH-V1-INTEGERS-COMPARE-ASSESSMENT-03",
+      "grade": "FR-CM1",
+      "subject": "MATHEMATICS",
+      "chapter": "CH-MATHEMATICS-CM1-INTEGERS",
+      "skill": "SK-ENR-MATHEMATICS-CM1-INTEGERS-COMPARE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Range : 72 905 ; 72 590 ; 72 950 ; 72 509.",
+      "expected_answer": "72 509 ; 72 590 ; 72 905 ; 72 950",
+      "answer_kind": "exact_text",
+      "explanation": "On compare d'abord les centaines puis les dizaines et unités lorsque les milliers sont identiques.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-INTEGERS-COMPARE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T09:20:53.083031+00:00",
+        "template_version": "lcai-cm1-math-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-MATH-V1-INTEGERS-COMPARE-ASSESSMENT-03",
+        "title": "Ordonner des entiers",
+        "instructions": "Range les nombres dans l'ordre croissant.",
+        "prompt": "Range : 72 905 ; 72 590 ; 72 950 ; 72 509.",
+        "answer": {
+          "kind": "exact_text",
+          "expected": "72 509 ; 72 590 ; 72 905 ; 72 950",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "On compare d'abord les centaines puis les dizaines et unités lorsque les milliers sont identiques.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "MATHEMATICS",
+          "chapter_code": "CH-MATHEMATICS-CM1-INTEGERS",
+          "primary_skill_code": "SK-ENR-MATHEMATICS-CM1-INTEGERS-COMPARE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-cm1-math-generation-spec-v1",
+          "template_version": "lcai-cm1-math-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:20:53.083031+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse. La compétence ciblée est correctement mobilisée.",
+          "incorrect": "Reprends les données utiles, applique la méthode attendue puis vérifie ton résultat."
+        },
+        "family_code": "CM1-INTEGERS-COMPARE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "independent_answer_check": false
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_mathematics_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-MATH-V1-INTEGERS-NUMBERLINE-PRACTICE-01",
+      "grade": "FR-CM1",
+      "subject": "MATHEMATICS",
+      "chapter": "CH-MATHEMATICS-CM1-INTEGERS",
+      "skill": "SK-ENR-MATHEMATICS-CM1-INTEGERS-NUMBERLINE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Une demi-droite est graduée de 100 en 100. Après 2 300, on avance de 4 graduations. Quel nombre atteint-on ?",
+      "expected_answer": "2700",
+      "answer_kind": "numeric",
+      "explanation": "Quatre pas de 100 font 400 : 2 300 + 400 = 2 700.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-INTEGERS-NUMBERLINE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T09:20:53.083031+00:00",
+        "template_version": "lcai-cm1-math-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-MATH-V1-INTEGERS-NUMBERLINE-PRACTICE-01",
+        "title": "Repérer sur une demi-droite",
+        "instructions": "Trouve la valeur d'une graduation.",
+        "prompt": "Une demi-droite est graduée de 100 en 100. Après 2 300, on avance de 4 graduations. Quel nombre atteint-on ?",
+        "answer": {
+          "kind": "numeric",
+          "expected": "2700",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": "2700"
+        },
+        "explanation": "Quatre pas de 100 font 400 : 2 300 + 400 = 2 700.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "MATHEMATICS",
+          "chapter_code": "CH-MATHEMATICS-CM1-INTEGERS",
+          "primary_skill_code": "SK-ENR-MATHEMATICS-CM1-INTEGERS-NUMBERLINE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-cm1-math-generation-spec-v1",
+          "template_version": "lcai-cm1-math-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:20:53.083031+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse. La compétence ciblée est correctement mobilisée.",
+          "incorrect": "Reprends les données utiles, applique la méthode attendue puis vérifie ton résultat."
+        },
+        "family_code": "CM1-INTEGERS-NUMBERLINE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "independent_answer_check": true
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_mathematics_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-MATH-V1-INTEGERS-NUMBERLINE-PRACTICE-02",
+      "grade": "FR-CM1",
+      "subject": "MATHEMATICS",
+      "chapter": "CH-MATHEMATICS-CM1-INTEGERS",
+      "skill": "SK-ENR-MATHEMATICS-CM1-INTEGERS-NUMBERLINE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Sur une demi-droite, 4 000 et 5 000 sont séparés par 5 intervalles égaux. Quelle est la valeur d'un intervalle ?",
+      "expected_answer": "200",
+      "answer_kind": "numeric",
+      "explanation": "L'écart est 1 000. 1 000 ÷ 5 = 200.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-INTEGERS-NUMBERLINE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T09:20:53.083031+00:00",
+        "template_version": "lcai-cm1-math-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-MATH-V1-INTEGERS-NUMBERLINE-PRACTICE-02",
+        "title": "Trouver une graduation",
+        "instructions": "Calcule la valeur de chaque intervalle.",
+        "prompt": "Sur une demi-droite, 4 000 et 5 000 sont séparés par 5 intervalles égaux. Quelle est la valeur d'un intervalle ?",
+        "answer": {
+          "kind": "numeric",
+          "expected": "200",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": "200"
+        },
+        "explanation": "L'écart est 1 000. 1 000 ÷ 5 = 200.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "MATHEMATICS",
+          "chapter_code": "CH-MATHEMATICS-CM1-INTEGERS",
+          "primary_skill_code": "SK-ENR-MATHEMATICS-CM1-INTEGERS-NUMBERLINE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-cm1-math-generation-spec-v1",
+          "template_version": "lcai-cm1-math-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:20:53.083031+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse. La compétence ciblée est correctement mobilisée.",
+          "incorrect": "Reprends les données utiles, applique la méthode attendue puis vérifie ton résultat."
+        },
+        "family_code": "CM1-INTEGERS-NUMBERLINE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "independent_answer_check": true
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_mathematics_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-MATH-V1-INTEGERS-NUMBERLINE-ASSESSMENT-03",
+      "grade": "FR-CM1",
+      "subject": "MATHEMATICS",
+      "chapter": "CH-MATHEMATICS-CM1-INTEGERS",
+      "skill": "SK-ENR-MATHEMATICS-CM1-INTEGERS-NUMBERLINE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Entre 6 000 et 7 000, les graduations sont de 250. Sur quelle graduation se trouve 6 750 ?",
+      "expected_answer": "3e graduation après 6 000",
+      "answer_kind": "single_choice",
+      "explanation": "6 750 - 6 000 = 750 et 750 ÷ 250 = 3.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-INTEGERS-NUMBERLINE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T09:20:53.083031+00:00",
+        "template_version": "lcai-cm1-math-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-MATH-V1-INTEGERS-NUMBERLINE-ASSESSMENT-03",
+        "title": "Placer un nombre",
+        "instructions": "Choisis la position correcte.",
+        "prompt": "Entre 6 000 et 7 000, les graduations sont de 250. Sur quelle graduation se trouve 6 750 ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "3e graduation après 6 000",
+          "options": [
+            "1re graduation après 6 000",
+            "2e graduation après 6 000",
+            "3e graduation après 6 000",
+            "4e graduation après 6 000"
+          ],
+          "tolerance": null,
+          "independently_computed": "3"
+        },
+        "explanation": "6 750 - 6 000 = 750 et 750 ÷ 250 = 3.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "MATHEMATICS",
+          "chapter_code": "CH-MATHEMATICS-CM1-INTEGERS",
+          "primary_skill_code": "SK-ENR-MATHEMATICS-CM1-INTEGERS-NUMBERLINE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-cm1-math-generation-spec-v1",
+          "template_version": "lcai-cm1-math-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:20:53.083031+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse. La compétence ciblée est correctement mobilisée.",
+          "incorrect": "Reprends les données utiles, applique la méthode attendue puis vérifie ton résultat."
+        },
+        "family_code": "CM1-INTEGERS-NUMBERLINE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "independent_answer_check": true
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_mathematics_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-MATH-V1-FRACTIONS-REPRESENT-PRACTICE-01",
+      "grade": "FR-CM1",
+      "subject": "MATHEMATICS",
+      "chapter": "CH-MATHEMATICS-CM1-FRACTIONS",
+      "skill": "SK-ENR-MATHEMATICS-CM1-FRACTIONS-REPRESENT",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Une tablette est partagée en 8 parts égales. Lina mange 3 parts. Quelle fraction de la tablette a-t-elle mangée ?",
+      "expected_answer": "3/8",
+      "answer_kind": "exact_text",
+      "explanation": "Le dénominateur est le nombre total de parts égales (8) et le numérateur le nombre de parts prises (3).",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-FRACTIONS-REPRESENT",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T09:20:53.083031+00:00",
+        "template_version": "lcai-cm1-math-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-MATH-V1-FRACTIONS-REPRESENT-PRACTICE-01",
+        "title": "Fraction comme partage",
+        "instructions": "Associe le partage à une fraction.",
+        "prompt": "Une tablette est partagée en 8 parts égales. Lina mange 3 parts. Quelle fraction de la tablette a-t-elle mangée ?",
+        "answer": {
+          "kind": "exact_text",
+          "expected": "3/8",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Le dénominateur est le nombre total de parts égales (8) et le numérateur le nombre de parts prises (3).",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "MATHEMATICS",
+          "chapter_code": "CH-MATHEMATICS-CM1-FRACTIONS",
+          "primary_skill_code": "SK-ENR-MATHEMATICS-CM1-FRACTIONS-REPRESENT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-cm1-math-generation-spec-v1",
+          "template_version": "lcai-cm1-math-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:20:53.083031+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse. La compétence ciblée est correctement mobilisée.",
+          "incorrect": "Reprends les données utiles, applique la méthode attendue puis vérifie ton résultat."
+        },
+        "family_code": "CM1-FRACTIONS-REPRESENT",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "independent_answer_check": false
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_mathematics_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-MATH-V1-FRACTIONS-REPRESENT-PRACTICE-02",
+      "grade": "FR-CM1",
+      "subject": "MATHEMATICS",
+      "chapter": "CH-MATHEMATICS-CM1-FRACTIONS",
+      "skill": "SK-ENR-MATHEMATICS-CM1-FRACTIONS-REPRESENT",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Entre 0 et 1, l'unité est partagée en 6 intervalles égaux. Quel nombre correspond à la 5e graduation après 0 ?",
+      "expected_answer": "5/6",
+      "answer_kind": "exact_text",
+      "explanation": "Chaque intervalle vaut 1/6. Après 5 intervalles, on atteint 5/6.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-FRACTIONS-REPRESENT",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T09:20:53.083031+00:00",
+        "template_version": "lcai-cm1-math-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-MATH-V1-FRACTIONS-REPRESENT-PRACTICE-02",
+        "title": "Fraction sur une demi-droite",
+        "instructions": "Repère une fraction.",
+        "prompt": "Entre 0 et 1, l'unité est partagée en 6 intervalles égaux. Quel nombre correspond à la 5e graduation après 0 ?",
+        "answer": {
+          "kind": "exact_text",
+          "expected": "5/6",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Chaque intervalle vaut 1/6. Après 5 intervalles, on atteint 5/6.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "MATHEMATICS",
+          "chapter_code": "CH-MATHEMATICS-CM1-FRACTIONS",
+          "primary_skill_code": "SK-ENR-MATHEMATICS-CM1-FRACTIONS-REPRESENT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-cm1-math-generation-spec-v1",
+          "template_version": "lcai-cm1-math-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:20:53.083031+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse. La compétence ciblée est correctement mobilisée.",
+          "incorrect": "Reprends les données utiles, applique la méthode attendue puis vérifie ton résultat."
+        },
+        "family_code": "CM1-FRACTIONS-REPRESENT",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "independent_answer_check": false
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_mathematics_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-MATH-V1-FRACTIONS-REPRESENT-ASSESSMENT-03",
+      "grade": "FR-CM1",
+      "subject": "MATHEMATICS",
+      "chapter": "CH-MATHEMATICS-CM1-FRACTIONS",
+      "skill": "SK-ENR-MATHEMATICS-CM1-FRACTIONS-REPRESENT",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Un disque est partagé en 10 secteurs égaux et 7 sont coloriés. Quelle fraction est coloriée ?",
+      "expected_answer": "7/10",
+      "answer_kind": "single_choice",
+      "explanation": "7 secteurs sur 10 sont coloriés : 7/10.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-FRACTIONS-REPRESENT",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T09:20:53.083031+00:00",
+        "template_version": "lcai-cm1-math-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-MATH-V1-FRACTIONS-REPRESENT-ASSESSMENT-03",
+        "title": "Choisir une représentation",
+        "instructions": "Choisis la fraction correspondant à la situation.",
+        "prompt": "Un disque est partagé en 10 secteurs égaux et 7 sont coloriés. Quelle fraction est coloriée ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "7/10",
+          "options": [
+            "3/10",
+            "7/10",
+            "10/7",
+            "7/3"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "7 secteurs sur 10 sont coloriés : 7/10.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "MATHEMATICS",
+          "chapter_code": "CH-MATHEMATICS-CM1-FRACTIONS",
+          "primary_skill_code": "SK-ENR-MATHEMATICS-CM1-FRACTIONS-REPRESENT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-cm1-math-generation-spec-v1",
+          "template_version": "lcai-cm1-math-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:20:53.083031+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse. La compétence ciblée est correctement mobilisée.",
+          "incorrect": "Reprends les données utiles, applique la méthode attendue puis vérifie ton résultat."
+        },
+        "family_code": "CM1-FRACTIONS-REPRESENT",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "independent_answer_check": false
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_mathematics_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-MATH-V1-FRACTIONS-COMPARE-PRACTICE-01",
+      "grade": "FR-CM1",
+      "subject": "MATHEMATICS",
+      "chapter": "CH-MATHEMATICS-CM1-FRACTIONS",
+      "skill": "SK-ENR-MATHEMATICS-CM1-FRACTIONS-COMPARE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "La fraction 7/9 est-elle inférieure, égale ou supérieure à 1 ?",
+      "expected_answer": "inférieure à 1",
+      "answer_kind": "single_choice",
+      "explanation": "Pour une fraction positive, si le numérateur est plus petit que le dénominateur, la fraction est inférieure à 1.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-FRACTIONS-COMPARE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T09:20:53.083031+00:00",
+        "template_version": "lcai-cm1-math-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-MATH-V1-FRACTIONS-COMPARE-PRACTICE-01",
+        "title": "Comparer à 1",
+        "instructions": "Indique si la fraction est inférieure, égale ou supérieure à 1.",
+        "prompt": "La fraction 7/9 est-elle inférieure, égale ou supérieure à 1 ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "inférieure à 1",
+          "options": [
+            "inférieure à 1",
+            "égale à 1",
+            "supérieure à 1"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Pour une fraction positive, si le numérateur est plus petit que le dénominateur, la fraction est inférieure à 1.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "MATHEMATICS",
+          "chapter_code": "CH-MATHEMATICS-CM1-FRACTIONS",
+          "primary_skill_code": "SK-ENR-MATHEMATICS-CM1-FRACTIONS-COMPARE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-cm1-math-generation-spec-v1",
+          "template_version": "lcai-cm1-math-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:20:53.083031+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse. La compétence ciblée est correctement mobilisée.",
+          "incorrect": "Reprends les données utiles, applique la méthode attendue puis vérifie ton résultat."
+        },
+        "family_code": "CM1-FRACTIONS-COMPARE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "independent_answer_check": false
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_mathematics_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-MATH-V1-FRACTIONS-COMPARE-PRACTICE-02",
+      "grade": "FR-CM1",
+      "subject": "MATHEMATICS",
+      "chapter": "CH-MATHEMATICS-CM1-FRACTIONS",
+      "skill": "SK-ENR-MATHEMATICS-CM1-FRACTIONS-COMPARE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Laquelle est la plus grande : 3/8 ou 5/8 ?",
+      "expected_answer": "5/8",
+      "answer_kind": "exact_text",
+      "explanation": "Les parts ont la même taille car le dénominateur est identique. 5 parts sont plus que 3.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-FRACTIONS-COMPARE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T09:20:53.083031+00:00",
+        "template_version": "lcai-cm1-math-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-MATH-V1-FRACTIONS-COMPARE-PRACTICE-02",
+        "title": "Comparer même dénominateur",
+        "instructions": "Choisis la plus grande fraction.",
+        "prompt": "Laquelle est la plus grande : 3/8 ou 5/8 ?",
+        "answer": {
+          "kind": "exact_text",
+          "expected": "5/8",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Les parts ont la même taille car le dénominateur est identique. 5 parts sont plus que 3.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "MATHEMATICS",
+          "chapter_code": "CH-MATHEMATICS-CM1-FRACTIONS",
+          "primary_skill_code": "SK-ENR-MATHEMATICS-CM1-FRACTIONS-COMPARE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-cm1-math-generation-spec-v1",
+          "template_version": "lcai-cm1-math-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:20:53.083031+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse. La compétence ciblée est correctement mobilisée.",
+          "incorrect": "Reprends les données utiles, applique la méthode attendue puis vérifie ton résultat."
+        },
+        "family_code": "CM1-FRACTIONS-COMPARE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "independent_answer_check": false
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_mathematics_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-MATH-V1-FRACTIONS-COMPARE-ASSESSMENT-03",
+      "grade": "FR-CM1",
+      "subject": "MATHEMATICS",
+      "chapter": "CH-MATHEMATICS-CM1-FRACTIONS",
+      "skill": "SK-ENR-MATHEMATICS-CM1-FRACTIONS-COMPARE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Range 2/7 ; 6/7 ; 4/7.",
+      "expected_answer": "2/7 ; 4/7 ; 6/7",
+      "answer_kind": "exact_text",
+      "explanation": "Avec le même dénominateur, on compare directement les numérateurs.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-FRACTIONS-COMPARE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T09:20:53.083031+00:00",
+        "template_version": "lcai-cm1-math-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-MATH-V1-FRACTIONS-COMPARE-ASSESSMENT-03",
+        "title": "Ordonner des fractions",
+        "instructions": "Range les fractions de la plus petite à la plus grande.",
+        "prompt": "Range 2/7 ; 6/7 ; 4/7.",
+        "answer": {
+          "kind": "exact_text",
+          "expected": "2/7 ; 4/7 ; 6/7",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Avec le même dénominateur, on compare directement les numérateurs.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "MATHEMATICS",
+          "chapter_code": "CH-MATHEMATICS-CM1-FRACTIONS",
+          "primary_skill_code": "SK-ENR-MATHEMATICS-CM1-FRACTIONS-COMPARE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-cm1-math-generation-spec-v1",
+          "template_version": "lcai-cm1-math-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:20:53.083031+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse. La compétence ciblée est correctement mobilisée.",
+          "incorrect": "Reprends les données utiles, applique la méthode attendue puis vérifie ton résultat."
+        },
+        "family_code": "CM1-FRACTIONS-COMPARE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "independent_answer_check": false
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_mathematics_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-MATH-V1-CALCULATION-MENTAL-PRACTICE-01",
+      "grade": "FR-CM1",
+      "subject": "MATHEMATICS",
+      "chapter": "CH-MATHEMATICS-CM1-CALCULATION",
+      "skill": "SK-ENR-MATHEMATICS-CM1-CALCULATION-MENTAL",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "250 + 70 = ?",
+      "expected_answer": "320",
+      "answer_kind": "numeric",
+      "explanation": "25 dizaines + 7 dizaines = 32 dizaines = 320.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-CALCULATION-MENTAL",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T09:20:53.083031+00:00",
+        "template_version": "lcai-cm1-math-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-MATH-V1-CALCULATION-MENTAL-PRACTICE-01",
+        "title": "Calcul mental",
+        "instructions": "Calcule sans poser l'opération.",
+        "prompt": "250 + 70 = ?",
+        "answer": {
+          "kind": "numeric",
+          "expected": "320",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": "320"
+        },
+        "explanation": "25 dizaines + 7 dizaines = 32 dizaines = 320.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "MATHEMATICS",
+          "chapter_code": "CH-MATHEMATICS-CM1-CALCULATION",
+          "primary_skill_code": "SK-ENR-MATHEMATICS-CM1-CALCULATION-MENTAL",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-cm1-math-generation-spec-v1",
+          "template_version": "lcai-cm1-math-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:20:53.083031+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse. La compétence ciblée est correctement mobilisée.",
+          "incorrect": "Reprends les données utiles, applique la méthode attendue puis vérifie ton résultat."
+        },
+        "family_code": "CM1-CALCULATION-MENTAL",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "independent_answer_check": true
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_mathematics_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-MATH-V1-CALCULATION-MENTAL-PRACTICE-02",
+      "grade": "FR-CM1",
+      "subject": "MATHEMATICS",
+      "chapter": "CH-MATHEMATICS-CM1-CALCULATION",
+      "skill": "SK-ENR-MATHEMATICS-CM1-CALCULATION-MENTAL",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Calcule mentalement 398 + 47.",
+      "expected_answer": "445",
+      "answer_kind": "numeric",
+      "explanation": "On peut faire 398 + 2 = 400, puis ajouter les 45 restants : 445.",
+      "hints": [
+        "Complète d'abord jusqu'à 400."
+      ],
+      "misconception_target": null,
+      "family_code": "CM1-CALCULATION-MENTAL",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T09:20:53.083031+00:00",
+        "template_version": "lcai-cm1-math-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-MATH-V1-CALCULATION-MENTAL-PRACTICE-02",
+        "title": "Décomposer pour calculer",
+        "instructions": "Utilise une décomposition efficace.",
+        "prompt": "Calcule mentalement 398 + 47.",
+        "answer": {
+          "kind": "numeric",
+          "expected": "445",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": "445"
+        },
+        "explanation": "On peut faire 398 + 2 = 400, puis ajouter les 45 restants : 445.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "MATHEMATICS",
+          "chapter_code": "CH-MATHEMATICS-CM1-CALCULATION",
+          "primary_skill_code": "SK-ENR-MATHEMATICS-CM1-CALCULATION-MENTAL",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-cm1-math-generation-spec-v1",
+          "template_version": "lcai-cm1-math-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:20:53.083031+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [
+          "Complète d'abord jusqu'à 400."
+        ],
+        "feedback": {
+          "correct": "Bonne réponse. La compétence ciblée est correctement mobilisée.",
+          "incorrect": "Reprends les données utiles, applique la méthode attendue puis vérifie ton résultat."
+        },
+        "family_code": "CM1-CALCULATION-MENTAL",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "independent_answer_check": true
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_mathematics_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-MATH-V1-CALCULATION-MENTAL-ASSESSMENT-03",
+      "grade": "FR-CM1",
+      "subject": "MATHEMATICS",
+      "chapter": "CH-MATHEMATICS-CM1-CALCULATION",
+      "skill": "SK-ENR-MATHEMATICS-CM1-CALCULATION-MENTAL",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Calcule 600 - 198.",
+      "expected_answer": "402",
+      "answer_kind": "single_choice",
+      "explanation": "600 - 200 = 400, puis on ajoute 2 car on a retiré 2 de trop : 402.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-CALCULATION-MENTAL",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T09:20:53.083031+00:00",
+        "template_version": "lcai-cm1-math-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-MATH-V1-CALCULATION-MENTAL-ASSESSMENT-03",
+        "title": "Calcul réfléchi",
+        "instructions": "Choisis le bon résultat.",
+        "prompt": "Calcule 600 - 198.",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "402",
+          "options": [
+            "398",
+            "400",
+            "402",
+            "412"
+          ],
+          "tolerance": null,
+          "independently_computed": "402"
+        },
+        "explanation": "600 - 200 = 400, puis on ajoute 2 car on a retiré 2 de trop : 402.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "MATHEMATICS",
+          "chapter_code": "CH-MATHEMATICS-CM1-CALCULATION",
+          "primary_skill_code": "SK-ENR-MATHEMATICS-CM1-CALCULATION-MENTAL",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-cm1-math-generation-spec-v1",
+          "template_version": "lcai-cm1-math-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:20:53.083031+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse. La compétence ciblée est correctement mobilisée.",
+          "incorrect": "Reprends les données utiles, applique la méthode attendue puis vérifie ton résultat."
+        },
+        "family_code": "CM1-CALCULATION-MENTAL",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "independent_answer_check": true
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_mathematics_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-MATH-V1-CALCULATION-ADD_SUB-PRACTICE-01",
+      "grade": "FR-CM1",
+      "subject": "MATHEMATICS",
+      "chapter": "CH-MATHEMATICS-CM1-CALCULATION",
+      "skill": "SK-ENR-MATHEMATICS-CM1-CALCULATION-ADD_SUB",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Calcule 24 578 + 13 406.",
+      "expected_answer": "37984",
+      "answer_kind": "numeric",
+      "explanation": "En alignant les unités, dizaines, centaines et milliers, on obtient 37 984.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-CALCULATION-ADD_SUB",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T09:20:53.083031+00:00",
+        "template_version": "lcai-cm1-math-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-MATH-V1-CALCULATION-ADD_SUB-PRACTICE-01",
+        "title": "Addition posée",
+        "instructions": "Effectue l'addition.",
+        "prompt": "Calcule 24 578 + 13 406.",
+        "answer": {
+          "kind": "numeric",
+          "expected": "37984",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": "37984"
+        },
+        "explanation": "En alignant les unités, dizaines, centaines et milliers, on obtient 37 984.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "MATHEMATICS",
+          "chapter_code": "CH-MATHEMATICS-CM1-CALCULATION",
+          "primary_skill_code": "SK-ENR-MATHEMATICS-CM1-CALCULATION-ADD_SUB",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-cm1-math-generation-spec-v1",
+          "template_version": "lcai-cm1-math-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:20:53.083031+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse. La compétence ciblée est correctement mobilisée.",
+          "incorrect": "Reprends les données utiles, applique la méthode attendue puis vérifie ton résultat."
+        },
+        "family_code": "CM1-CALCULATION-ADD_SUB",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "independent_answer_check": true
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_mathematics_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-MATH-V1-CALCULATION-ADD_SUB-PRACTICE-02",
+      "grade": "FR-CM1",
+      "subject": "MATHEMATICS",
+      "chapter": "CH-MATHEMATICS-CM1-CALCULATION",
+      "skill": "SK-ENR-MATHEMATICS-CM1-CALCULATION-ADD_SUB",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Calcule 50 003 - 27 856.",
+      "expected_answer": "22147",
+      "answer_kind": "numeric",
+      "explanation": "La soustraction avec échanges donne 22 147.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-CALCULATION-ADD_SUB",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T09:20:53.083031+00:00",
+        "template_version": "lcai-cm1-math-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-MATH-V1-CALCULATION-ADD_SUB-PRACTICE-02",
+        "title": "Soustraction posée",
+        "instructions": "Effectue la soustraction.",
+        "prompt": "Calcule 50 003 - 27 856.",
+        "answer": {
+          "kind": "numeric",
+          "expected": "22147",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": "22147"
+        },
+        "explanation": "La soustraction avec échanges donne 22 147.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "MATHEMATICS",
+          "chapter_code": "CH-MATHEMATICS-CM1-CALCULATION",
+          "primary_skill_code": "SK-ENR-MATHEMATICS-CM1-CALCULATION-ADD_SUB",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-cm1-math-generation-spec-v1",
+          "template_version": "lcai-cm1-math-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:20:53.083031+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse. La compétence ciblée est correctement mobilisée.",
+          "incorrect": "Reprends les données utiles, applique la méthode attendue puis vérifie ton résultat."
+        },
+        "family_code": "CM1-CALCULATION-ADD_SUB",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "independent_answer_check": true
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_mathematics_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-MATH-V1-CALCULATION-ADD_SUB-ASSESSMENT-03",
+      "grade": "FR-CM1",
+      "subject": "MATHEMATICS",
+      "chapter": "CH-MATHEMATICS-CM1-CALCULATION",
+      "skill": "SK-ENR-MATHEMATICS-CM1-CALCULATION-ADD_SUB",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Une bibliothèque possède 18 450 livres et en reçoit 2 375 nouveaux. Combien en possède-t-elle maintenant ?",
+      "expected_answer": "20825",
+      "answer_kind": "numeric",
+      "explanation": "Il s'agit d'une augmentation : 18 450 + 2 375 = 20 825.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-CALCULATION-ADD_SUB",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T09:20:53.083031+00:00",
+        "template_version": "lcai-cm1-math-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-MATH-V1-CALCULATION-ADD_SUB-ASSESSMENT-03",
+        "title": "Choisir l'opération",
+        "instructions": "Résous le problème.",
+        "prompt": "Une bibliothèque possède 18 450 livres et en reçoit 2 375 nouveaux. Combien en possède-t-elle maintenant ?",
+        "answer": {
+          "kind": "numeric",
+          "expected": "20825",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": "20825"
+        },
+        "explanation": "Il s'agit d'une augmentation : 18 450 + 2 375 = 20 825.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "MATHEMATICS",
+          "chapter_code": "CH-MATHEMATICS-CM1-CALCULATION",
+          "primary_skill_code": "SK-ENR-MATHEMATICS-CM1-CALCULATION-ADD_SUB",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-cm1-math-generation-spec-v1",
+          "template_version": "lcai-cm1-math-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:20:53.083031+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse. La compétence ciblée est correctement mobilisée.",
+          "incorrect": "Reprends les données utiles, applique la méthode attendue puis vérifie ton résultat."
+        },
+        "family_code": "CM1-CALCULATION-ADD_SUB",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "independent_answer_check": true
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_mathematics_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-MATH-V1-CALCULATION-MULTIPLY-PRACTICE-01",
+      "grade": "FR-CM1",
+      "subject": "MATHEMATICS",
+      "chapter": "CH-MATHEMATICS-CM1-CALCULATION",
+      "skill": "SK-ENR-MATHEMATICS-CM1-CALCULATION-MULTIPLY",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Calcule 326 × 4.",
+      "expected_answer": "1304",
+      "answer_kind": "numeric",
+      "explanation": "326 × 4 = 1 304.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-CALCULATION-MULTIPLY",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T09:20:53.083031+00:00",
+        "template_version": "lcai-cm1-math-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-MATH-V1-CALCULATION-MULTIPLY-PRACTICE-01",
+        "title": "Multiplication simple",
+        "instructions": "Effectue la multiplication.",
+        "prompt": "Calcule 326 × 4.",
+        "answer": {
+          "kind": "numeric",
+          "expected": "1304",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": "1304"
+        },
+        "explanation": "326 × 4 = 1 304.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "MATHEMATICS",
+          "chapter_code": "CH-MATHEMATICS-CM1-CALCULATION",
+          "primary_skill_code": "SK-ENR-MATHEMATICS-CM1-CALCULATION-MULTIPLY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-cm1-math-generation-spec-v1",
+          "template_version": "lcai-cm1-math-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:20:53.083031+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse. La compétence ciblée est correctement mobilisée.",
+          "incorrect": "Reprends les données utiles, applique la méthode attendue puis vérifie ton résultat."
+        },
+        "family_code": "CM1-CALCULATION-MULTIPLY",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "independent_answer_check": true
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_mathematics_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-MATH-V1-CALCULATION-MULTIPLY-PRACTICE-02",
+      "grade": "FR-CM1",
+      "subject": "MATHEMATICS",
+      "chapter": "CH-MATHEMATICS-CM1-CALCULATION",
+      "skill": "SK-ENR-MATHEMATICS-CM1-CALCULATION-MULTIPLY",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Calcule 247 × 36.",
+      "expected_answer": "8892",
+      "answer_kind": "numeric",
+      "explanation": "247 × 30 = 7 410 et 247 × 6 = 1 482. Somme : 8 892.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-CALCULATION-MULTIPLY",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T09:20:53.083031+00:00",
+        "template_version": "lcai-cm1-math-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-MATH-V1-CALCULATION-MULTIPLY-PRACTICE-02",
+        "title": "Multiplication posée",
+        "instructions": "Effectue la multiplication.",
+        "prompt": "Calcule 247 × 36.",
+        "answer": {
+          "kind": "numeric",
+          "expected": "8892",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": "8892"
+        },
+        "explanation": "247 × 30 = 7 410 et 247 × 6 = 1 482. Somme : 8 892.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "MATHEMATICS",
+          "chapter_code": "CH-MATHEMATICS-CM1-CALCULATION",
+          "primary_skill_code": "SK-ENR-MATHEMATICS-CM1-CALCULATION-MULTIPLY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-cm1-math-generation-spec-v1",
+          "template_version": "lcai-cm1-math-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:20:53.083031+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse. La compétence ciblée est correctement mobilisée.",
+          "incorrect": "Reprends les données utiles, applique la méthode attendue puis vérifie ton résultat."
+        },
+        "family_code": "CM1-CALCULATION-MULTIPLY",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "independent_answer_check": true
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_mathematics_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-MATH-V1-CALCULATION-MULTIPLY-ASSESSMENT-03",
+      "grade": "FR-CM1",
+      "subject": "MATHEMATICS",
+      "chapter": "CH-MATHEMATICS-CM1-CALCULATION",
+      "skill": "SK-ENR-MATHEMATICS-CM1-CALCULATION-MULTIPLY",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Une école commande 28 boîtes de 125 feuilles. Combien de feuilles reçoit-elle ?",
+      "expected_answer": "3500",
+      "answer_kind": "numeric",
+      "explanation": "28 × 125 = 3 500 feuilles.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-CALCULATION-MULTIPLY",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T09:20:53.083031+00:00",
+        "template_version": "lcai-cm1-math-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-MATH-V1-CALCULATION-MULTIPLY-ASSESSMENT-03",
+        "title": "Problème multiplicatif",
+        "instructions": "Résous le problème.",
+        "prompt": "Une école commande 28 boîtes de 125 feuilles. Combien de feuilles reçoit-elle ?",
+        "answer": {
+          "kind": "numeric",
+          "expected": "3500",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": "3500"
+        },
+        "explanation": "28 × 125 = 3 500 feuilles.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "MATHEMATICS",
+          "chapter_code": "CH-MATHEMATICS-CM1-CALCULATION",
+          "primary_skill_code": "SK-ENR-MATHEMATICS-CM1-CALCULATION-MULTIPLY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-cm1-math-generation-spec-v1",
+          "template_version": "lcai-cm1-math-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:20:53.083031+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse. La compétence ciblée est correctement mobilisée.",
+          "incorrect": "Reprends les données utiles, applique la méthode attendue puis vérifie ton résultat."
+        },
+        "family_code": "CM1-CALCULATION-MULTIPLY",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "independent_answer_check": true
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_mathematics_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-MATH-V1-CALCULATION-ESTIMATE-PRACTICE-01",
+      "grade": "FR-CM1",
+      "subject": "MATHEMATICS",
+      "chapter": "CH-MATHEMATICS-CM1-CALCULATION",
+      "skill": "SK-ENR-MATHEMATICS-CM1-CALCULATION-ESTIMATE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Quel est le meilleur ordre de grandeur de 398 + 603 ?",
+      "expected_answer": "1 000",
+      "answer_kind": "single_choice",
+      "explanation": "398 est proche de 400 et 603 de 600 : 400 + 600 ≈ 1 000.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-CALCULATION-ESTIMATE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T09:20:53.083031+00:00",
+        "template_version": "lcai-cm1-math-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-MATH-V1-CALCULATION-ESTIMATE-PRACTICE-01",
+        "title": "Ordre de grandeur",
+        "instructions": "Choisis l'estimation la plus proche.",
+        "prompt": "Quel est le meilleur ordre de grandeur de 398 + 603 ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "1 000",
+          "options": [
+            "100",
+            "500",
+            "1 000",
+            "10 000"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "398 est proche de 400 et 603 de 600 : 400 + 600 ≈ 1 000.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "MATHEMATICS",
+          "chapter_code": "CH-MATHEMATICS-CM1-CALCULATION",
+          "primary_skill_code": "SK-ENR-MATHEMATICS-CM1-CALCULATION-ESTIMATE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-cm1-math-generation-spec-v1",
+          "template_version": "lcai-cm1-math-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:20:53.083031+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse. La compétence ciblée est correctement mobilisée.",
+          "incorrect": "Reprends les données utiles, applique la méthode attendue puis vérifie ton résultat."
+        },
+        "family_code": "CM1-CALCULATION-ESTIMATE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "independent_answer_check": false
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_mathematics_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-MATH-V1-CALCULATION-ESTIMATE-PRACTICE-02",
+      "grade": "FR-CM1",
+      "subject": "MATHEMATICS",
+      "chapter": "CH-MATHEMATICS-CM1-CALCULATION",
+      "skill": "SK-ENR-MATHEMATICS-CM1-CALCULATION-ESTIMATE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Un élève trouve 48 × 21 = 10 008. Son résultat est-il vraisemblable ?",
+      "expected_answer": "Non",
+      "answer_kind": "single_choice",
+      "explanation": "48 ≈ 50 et 21 ≈ 20, donc le produit doit être proche de 1 000, pas de 10 000.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-CALCULATION-ESTIMATE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T09:20:53.083031+00:00",
+        "template_version": "lcai-cm1-math-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-MATH-V1-CALCULATION-ESTIMATE-PRACTICE-02",
+        "title": "Contrôler une multiplication",
+        "instructions": "Estime avant de conclure.",
+        "prompt": "Un élève trouve 48 × 21 = 10 008. Son résultat est-il vraisemblable ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "Non",
+          "options": [
+            "Oui",
+            "Non"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "48 ≈ 50 et 21 ≈ 20, donc le produit doit être proche de 1 000, pas de 10 000.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "MATHEMATICS",
+          "chapter_code": "CH-MATHEMATICS-CM1-CALCULATION",
+          "primary_skill_code": "SK-ENR-MATHEMATICS-CM1-CALCULATION-ESTIMATE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-cm1-math-generation-spec-v1",
+          "template_version": "lcai-cm1-math-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:20:53.083031+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse. La compétence ciblée est correctement mobilisée.",
+          "incorrect": "Reprends les données utiles, applique la méthode attendue puis vérifie ton résultat."
+        },
+        "family_code": "CM1-CALCULATION-ESTIMATE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "independent_answer_check": false
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_mathematics_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-MATH-V1-CALCULATION-ESTIMATE-ASSESSMENT-03",
+      "grade": "FR-CM1",
+      "subject": "MATHEMATICS",
+      "chapter": "CH-MATHEMATICS-CM1-CALCULATION",
+      "skill": "SK-ENR-MATHEMATICS-CM1-CALCULATION-ESTIMATE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Pour 5 021 - 1 978, quel résultat est vraisemblable ?",
+      "expected_answer": "environ 3 000",
+      "answer_kind": "single_choice",
+      "explanation": "5 021 ≈ 5 000 et 1 978 ≈ 2 000 ; la différence est proche de 3 000.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-CALCULATION-ESTIMATE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T09:20:53.083031+00:00",
+        "template_version": "lcai-cm1-math-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-MATH-V1-CALCULATION-ESTIMATE-ASSESSMENT-03",
+        "title": "Détecter une erreur",
+        "instructions": "Choisis le résultat vraisemblable.",
+        "prompt": "Pour 5 021 - 1 978, quel résultat est vraisemblable ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "environ 3 000",
+          "options": [
+            "environ 300",
+            "environ 3 000",
+            "environ 7 000",
+            "environ 30 000"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "5 021 ≈ 5 000 et 1 978 ≈ 2 000 ; la différence est proche de 3 000.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "MATHEMATICS",
+          "chapter_code": "CH-MATHEMATICS-CM1-CALCULATION",
+          "primary_skill_code": "SK-ENR-MATHEMATICS-CM1-CALCULATION-ESTIMATE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-cm1-math-generation-spec-v1",
+          "template_version": "lcai-cm1-math-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:20:53.083031+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse. La compétence ciblée est correctement mobilisée.",
+          "incorrect": "Reprends les données utiles, applique la méthode attendue puis vérifie ton résultat."
+        },
+        "family_code": "CM1-CALCULATION-ESTIMATE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "independent_answer_check": false
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_mathematics_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-MATH-V1-MEASURES-CHOOSE_UNIT-PRACTICE-01",
+      "grade": "FR-CM1",
+      "subject": "MATHEMATICS",
+      "chapter": "CH-MATHEMATICS-CM1-MEASURES",
+      "skill": "SK-ENR-MATHEMATICS-CM1-MEASURES-CHOOSE_UNIT",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Quelle unité est la plus adaptée pour exprimer la longueur d'un crayon ?",
+      "expected_answer": "cm",
+      "answer_kind": "single_choice",
+      "explanation": "Un crayon mesure généralement quelques dizaines de centimètres.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-MEASURES-CHOOSE_UNIT",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T09:20:53.083031+00:00",
+        "template_version": "lcai-cm1-math-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-MATH-V1-MEASURES-CHOOSE_UNIT-PRACTICE-01",
+        "title": "Choisir une unité de longueur",
+        "instructions": "Choisis l'unité adaptée.",
+        "prompt": "Quelle unité est la plus adaptée pour exprimer la longueur d'un crayon ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "cm",
+          "options": [
+            "mm",
+            "cm",
+            "km",
+            "L"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Un crayon mesure généralement quelques dizaines de centimètres.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "MATHEMATICS",
+          "chapter_code": "CH-MATHEMATICS-CM1-MEASURES",
+          "primary_skill_code": "SK-ENR-MATHEMATICS-CM1-MEASURES-CHOOSE_UNIT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-cm1-math-generation-spec-v1",
+          "template_version": "lcai-cm1-math-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:20:53.083031+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse. La compétence ciblée est correctement mobilisée.",
+          "incorrect": "Reprends les données utiles, applique la méthode attendue puis vérifie ton résultat."
+        },
+        "family_code": "CM1-MEASURES-CHOOSE_UNIT",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "independent_answer_check": false
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_mathematics_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-MATH-V1-MEASURES-CHOOSE_UNIT-PRACTICE-02",
+      "grade": "FR-CM1",
+      "subject": "MATHEMATICS",
+      "chapter": "CH-MATHEMATICS-CM1-MEASURES",
+      "skill": "SK-ENR-MATHEMATICS-CM1-MEASURES-CHOOSE_UNIT",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Quelle unité convient le mieux pour la masse d'un cartable rempli ?",
+      "expected_answer": "kg",
+      "answer_kind": "single_choice",
+      "explanation": "La masse d'un cartable se mesure en kilogrammes.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-MEASURES-CHOOSE_UNIT",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T09:20:53.083031+00:00",
+        "template_version": "lcai-cm1-math-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-MATH-V1-MEASURES-CHOOSE_UNIT-PRACTICE-02",
+        "title": "Choisir une unité de masse",
+        "instructions": "Choisis l'unité adaptée.",
+        "prompt": "Quelle unité convient le mieux pour la masse d'un cartable rempli ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "kg",
+          "options": [
+            "g",
+            "kg",
+            "mL",
+            "km"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "La masse d'un cartable se mesure en kilogrammes.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "MATHEMATICS",
+          "chapter_code": "CH-MATHEMATICS-CM1-MEASURES",
+          "primary_skill_code": "SK-ENR-MATHEMATICS-CM1-MEASURES-CHOOSE_UNIT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-cm1-math-generation-spec-v1",
+          "template_version": "lcai-cm1-math-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:20:53.083031+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse. La compétence ciblée est correctement mobilisée.",
+          "incorrect": "Reprends les données utiles, applique la méthode attendue puis vérifie ton résultat."
+        },
+        "family_code": "CM1-MEASURES-CHOOSE_UNIT",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "independent_answer_check": false
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_mathematics_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-MATH-V1-MEASURES-CHOOSE_UNIT-ASSESSMENT-03",
+      "grade": "FR-CM1",
+      "subject": "MATHEMATICS",
+      "chapter": "CH-MATHEMATICS-CM1-MEASURES",
+      "skill": "SK-ENR-MATHEMATICS-CM1-MEASURES-CHOOSE_UNIT",
+      "content_type": "assessment",
+      "difficulty": 1,
+      "prompt": "Quelle unité convient le mieux pour la contenance d'une bouteille d'eau ?",
+      "expected_answer": "L",
+      "answer_kind": "single_choice",
+      "explanation": "Une bouteille contient typiquement une fraction de litre ou quelques litres.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-MEASURES-CHOOSE_UNIT",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T09:20:53.083031+00:00",
+        "template_version": "lcai-cm1-math-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-MATH-V1-MEASURES-CHOOSE_UNIT-ASSESSMENT-03",
+        "title": "Choisir une unité de contenance",
+        "instructions": "Choisis l'unité adaptée.",
+        "prompt": "Quelle unité convient le mieux pour la contenance d'une bouteille d'eau ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "L",
+          "options": [
+            "L",
+            "kg",
+            "cm",
+            "h"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Une bouteille contient typiquement une fraction de litre ou quelques litres.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "MATHEMATICS",
+          "chapter_code": "CH-MATHEMATICS-CM1-MEASURES",
+          "primary_skill_code": "SK-ENR-MATHEMATICS-CM1-MEASURES-CHOOSE_UNIT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-cm1-math-generation-spec-v1",
+          "template_version": "lcai-cm1-math-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:20:53.083031+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse. La compétence ciblée est correctement mobilisée.",
+          "incorrect": "Reprends les données utiles, applique la méthode attendue puis vérifie ton résultat."
+        },
+        "family_code": "CM1-MEASURES-CHOOSE_UNIT",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "independent_answer_check": false
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_mathematics_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-MATH-V1-MEASURES-MEASURE-PRACTICE-01",
+      "grade": "FR-CM1",
+      "subject": "MATHEMATICS",
+      "chapter": "CH-MATHEMATICS-CM1-MEASURES",
+      "skill": "SK-ENR-MATHEMATICS-CM1-MEASURES-MEASURE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Sur une règle, un segment commence à 2 cm et se termine à 11 cm. Quelle est sa longueur ?",
+      "expected_answer": "9",
+      "answer_kind": "numeric",
+      "explanation": "11 - 2 = 9 cm.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-MEASURES-MEASURE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T09:20:53.083031+00:00",
+        "template_version": "lcai-cm1-math-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-MATH-V1-MEASURES-MEASURE-PRACTICE-01",
+        "title": "Lire une longueur",
+        "instructions": "Calcule une longueur à partir de deux repères.",
+        "prompt": "Sur une règle, un segment commence à 2 cm et se termine à 11 cm. Quelle est sa longueur ?",
+        "answer": {
+          "kind": "numeric",
+          "expected": "9",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": "9"
+        },
+        "explanation": "11 - 2 = 9 cm.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "MATHEMATICS",
+          "chapter_code": "CH-MATHEMATICS-CM1-MEASURES",
+          "primary_skill_code": "SK-ENR-MATHEMATICS-CM1-MEASURES-MEASURE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-cm1-math-generation-spec-v1",
+          "template_version": "lcai-cm1-math-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:20:53.083031+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse. La compétence ciblée est correctement mobilisée.",
+          "incorrect": "Reprends les données utiles, applique la méthode attendue puis vérifie ton résultat."
+        },
+        "family_code": "CM1-MEASURES-MEASURE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "independent_answer_check": true
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_mathematics_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-MATH-V1-MEASURES-MEASURE-PRACTICE-02",
+      "grade": "FR-CM1",
+      "subject": "MATHEMATICS",
+      "chapter": "CH-MATHEMATICS-CM1-MEASURES",
+      "skill": "SK-ENR-MATHEMATICS-CM1-MEASURES-MEASURE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Un film commence à 14 h 20 et se termine à 15 h 55. Quelle est sa durée ?",
+      "expected_answer": "1 h 35 min",
+      "answer_kind": "exact_text",
+      "explanation": "De 14 h 20 à 15 h 20 : 1 h ; puis jusqu'à 15 h 55 : 35 min. Total : 1 h 35 min.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-MEASURES-MEASURE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T09:20:53.083031+00:00",
+        "template_version": "lcai-cm1-math-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-MATH-V1-MEASURES-MEASURE-PRACTICE-02",
+        "title": "Calculer une durée",
+        "instructions": "Trouve la durée écoulée.",
+        "prompt": "Un film commence à 14 h 20 et se termine à 15 h 55. Quelle est sa durée ?",
+        "answer": {
+          "kind": "exact_text",
+          "expected": "1 h 35 min",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": "1 h 35 min"
+        },
+        "explanation": "De 14 h 20 à 15 h 20 : 1 h ; puis jusqu'à 15 h 55 : 35 min. Total : 1 h 35 min.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "MATHEMATICS",
+          "chapter_code": "CH-MATHEMATICS-CM1-MEASURES",
+          "primary_skill_code": "SK-ENR-MATHEMATICS-CM1-MEASURES-MEASURE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-cm1-math-generation-spec-v1",
+          "template_version": "lcai-cm1-math-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:20:53.083031+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse. La compétence ciblée est correctement mobilisée.",
+          "incorrect": "Reprends les données utiles, applique la méthode attendue puis vérifie ton résultat."
+        },
+        "family_code": "CM1-MEASURES-MEASURE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "independent_answer_check": true
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_mathematics_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-MATH-V1-MEASURES-MEASURE-ASSESSMENT-03",
+      "grade": "FR-CM1",
+      "subject": "MATHEMATICS",
+      "chapter": "CH-MATHEMATICS-CM1-MEASURES",
+      "skill": "SK-ENR-MATHEMATICS-CM1-MEASURES-MEASURE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Une balance indique 2 kg et 350 g. Quelle masse totale est affichée en grammes ?",
+      "expected_answer": "2350",
+      "answer_kind": "numeric",
+      "explanation": "2 kg = 2 000 g. 2 000 + 350 = 2 350 g.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-MEASURES-MEASURE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T09:20:53.083031+00:00",
+        "template_version": "lcai-cm1-math-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-MATH-V1-MEASURES-MEASURE-ASSESSMENT-03",
+        "title": "Lire une masse",
+        "instructions": "Choisis la mesure correcte.",
+        "prompt": "Une balance indique 2 kg et 350 g. Quelle masse totale est affichée en grammes ?",
+        "answer": {
+          "kind": "numeric",
+          "expected": "2350",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": "2350"
+        },
+        "explanation": "2 kg = 2 000 g. 2 000 + 350 = 2 350 g.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "MATHEMATICS",
+          "chapter_code": "CH-MATHEMATICS-CM1-MEASURES",
+          "primary_skill_code": "SK-ENR-MATHEMATICS-CM1-MEASURES-MEASURE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-cm1-math-generation-spec-v1",
+          "template_version": "lcai-cm1-math-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:20:53.083031+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse. La compétence ciblée est correctement mobilisée.",
+          "incorrect": "Reprends les données utiles, applique la méthode attendue puis vérifie ton résultat."
+        },
+        "family_code": "CM1-MEASURES-MEASURE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "independent_answer_check": true
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_mathematics_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-MATH-V1-MEASURES-CONVERT-PRACTICE-01",
+      "grade": "FR-CM1",
+      "subject": "MATHEMATICS",
+      "chapter": "CH-MATHEMATICS-CM1-MEASURES",
+      "skill": "SK-ENR-MATHEMATICS-CM1-MEASURES-CONVERT",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "3 m = combien de centimètres ?",
+      "expected_answer": "300",
+      "answer_kind": "numeric",
+      "explanation": "1 m = 100 cm, donc 3 m = 300 cm.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-MEASURES-CONVERT",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T09:20:53.083031+00:00",
+        "template_version": "lcai-cm1-math-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-MATH-V1-MEASURES-CONVERT-PRACTICE-01",
+        "title": "Convertir des longueurs",
+        "instructions": "Effectue la conversion.",
+        "prompt": "3 m = combien de centimètres ?",
+        "answer": {
+          "kind": "numeric",
+          "expected": "300",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": "300"
+        },
+        "explanation": "1 m = 100 cm, donc 3 m = 300 cm.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "MATHEMATICS",
+          "chapter_code": "CH-MATHEMATICS-CM1-MEASURES",
+          "primary_skill_code": "SK-ENR-MATHEMATICS-CM1-MEASURES-CONVERT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-cm1-math-generation-spec-v1",
+          "template_version": "lcai-cm1-math-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:20:53.083031+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse. La compétence ciblée est correctement mobilisée.",
+          "incorrect": "Reprends les données utiles, applique la méthode attendue puis vérifie ton résultat."
+        },
+        "family_code": "CM1-MEASURES-CONVERT",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "independent_answer_check": true
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_mathematics_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-MATH-V1-MEASURES-CONVERT-PRACTICE-02",
+      "grade": "FR-CM1",
+      "subject": "MATHEMATICS",
+      "chapter": "CH-MATHEMATICS-CM1-MEASURES",
+      "skill": "SK-ENR-MATHEMATICS-CM1-MEASURES-CONVERT",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "4 kg 250 g = combien de grammes ?",
+      "expected_answer": "4250",
+      "answer_kind": "numeric",
+      "explanation": "4 kg = 4 000 g ; 4 000 + 250 = 4 250 g.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-MEASURES-CONVERT",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T09:20:53.083031+00:00",
+        "template_version": "lcai-cm1-math-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-MATH-V1-MEASURES-CONVERT-PRACTICE-02",
+        "title": "Convertir des masses",
+        "instructions": "Effectue la conversion.",
+        "prompt": "4 kg 250 g = combien de grammes ?",
+        "answer": {
+          "kind": "numeric",
+          "expected": "4250",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": "4250"
+        },
+        "explanation": "4 kg = 4 000 g ; 4 000 + 250 = 4 250 g.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "MATHEMATICS",
+          "chapter_code": "CH-MATHEMATICS-CM1-MEASURES",
+          "primary_skill_code": "SK-ENR-MATHEMATICS-CM1-MEASURES-CONVERT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-cm1-math-generation-spec-v1",
+          "template_version": "lcai-cm1-math-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:20:53.083031+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse. La compétence ciblée est correctement mobilisée.",
+          "incorrect": "Reprends les données utiles, applique la méthode attendue puis vérifie ton résultat."
+        },
+        "family_code": "CM1-MEASURES-CONVERT",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "independent_answer_check": true
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_mathematics_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-MATH-V1-MEASURES-CONVERT-ASSESSMENT-03",
+      "grade": "FR-CM1",
+      "subject": "MATHEMATICS",
+      "chapter": "CH-MATHEMATICS-CM1-MEASURES",
+      "skill": "SK-ENR-MATHEMATICS-CM1-MEASURES-CONVERT",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "2 L 50 cL correspondent à combien de cL ?",
+      "expected_answer": "250 cL",
+      "answer_kind": "single_choice",
+      "explanation": "1 L = 100 cL. 2 L = 200 cL ; 200 + 50 = 250 cL.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-MEASURES-CONVERT",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T09:20:53.083031+00:00",
+        "template_version": "lcai-cm1-math-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-MATH-V1-MEASURES-CONVERT-ASSESSMENT-03",
+        "title": "Convertir des contenances",
+        "instructions": "Choisis la bonne conversion.",
+        "prompt": "2 L 50 cL correspondent à combien de cL ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "250 cL",
+          "options": [
+            "205 cL",
+            "250 cL",
+            "2 050 cL",
+            "25 cL"
+          ],
+          "tolerance": null,
+          "independently_computed": "250"
+        },
+        "explanation": "1 L = 100 cL. 2 L = 200 cL ; 200 + 50 = 250 cL.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "MATHEMATICS",
+          "chapter_code": "CH-MATHEMATICS-CM1-MEASURES",
+          "primary_skill_code": "SK-ENR-MATHEMATICS-CM1-MEASURES-CONVERT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-cm1-math-generation-spec-v1",
+          "template_version": "lcai-cm1-math-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:20:53.083031+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse. La compétence ciblée est correctement mobilisée.",
+          "incorrect": "Reprends les données utiles, applique la méthode attendue puis vérifie ton résultat."
+        },
+        "family_code": "CM1-MEASURES-CONVERT",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "independent_answer_check": true
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_mathematics_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-MATH-V1-MEASURES-PROBLEM-PRACTICE-01",
+      "grade": "FR-CM1",
+      "subject": "MATHEMATICS",
+      "chapter": "CH-MATHEMATICS-CM1-MEASURES",
+      "skill": "SK-ENR-MATHEMATICS-CM1-MEASURES-PROBLEM",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Une corde de 5 m est coupée : on retire 175 cm. Quelle longueur reste-t-il en centimètres ?",
+      "expected_answer": "325",
+      "answer_kind": "numeric",
+      "explanation": "5 m = 500 cm. 500 - 175 = 325 cm.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-MEASURES-PROBLEM",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T09:20:53.083031+00:00",
+        "template_version": "lcai-cm1-math-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-MATH-V1-MEASURES-PROBLEM-PRACTICE-01",
+        "title": "Problème de longueur",
+        "instructions": "Résous avec l'unité demandée.",
+        "prompt": "Une corde de 5 m est coupée : on retire 175 cm. Quelle longueur reste-t-il en centimètres ?",
+        "answer": {
+          "kind": "numeric",
+          "expected": "325",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": "325"
+        },
+        "explanation": "5 m = 500 cm. 500 - 175 = 325 cm.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "MATHEMATICS",
+          "chapter_code": "CH-MATHEMATICS-CM1-MEASURES",
+          "primary_skill_code": "SK-ENR-MATHEMATICS-CM1-MEASURES-PROBLEM",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-cm1-math-generation-spec-v1",
+          "template_version": "lcai-cm1-math-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:20:53.083031+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse. La compétence ciblée est correctement mobilisée.",
+          "incorrect": "Reprends les données utiles, applique la méthode attendue puis vérifie ton résultat."
+        },
+        "family_code": "CM1-MEASURES-PROBLEM",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "independent_answer_check": true
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_mathematics_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-MATH-V1-MEASURES-PROBLEM-PRACTICE-02",
+      "grade": "FR-CM1",
+      "subject": "MATHEMATICS",
+      "chapter": "CH-MATHEMATICS-CM1-MEASURES",
+      "skill": "SK-ENR-MATHEMATICS-CM1-MEASURES-PROBLEM",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Un panier contient 3 kg 600 g de fruits. On retire 850 g. Quelle masse reste-t-il en grammes ?",
+      "expected_answer": "2750",
+      "answer_kind": "numeric",
+      "explanation": "3 kg 600 g = 3 600 g. 3 600 - 850 = 2 750 g.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-MEASURES-PROBLEM",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T09:20:53.083031+00:00",
+        "template_version": "lcai-cm1-math-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-MATH-V1-MEASURES-PROBLEM-PRACTICE-02",
+        "title": "Problème de masse",
+        "instructions": "Résous le problème.",
+        "prompt": "Un panier contient 3 kg 600 g de fruits. On retire 850 g. Quelle masse reste-t-il en grammes ?",
+        "answer": {
+          "kind": "numeric",
+          "expected": "2750",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": "2750"
+        },
+        "explanation": "3 kg 600 g = 3 600 g. 3 600 - 850 = 2 750 g.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "MATHEMATICS",
+          "chapter_code": "CH-MATHEMATICS-CM1-MEASURES",
+          "primary_skill_code": "SK-ENR-MATHEMATICS-CM1-MEASURES-PROBLEM",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-cm1-math-generation-spec-v1",
+          "template_version": "lcai-cm1-math-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:20:53.083031+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse. La compétence ciblée est correctement mobilisée.",
+          "incorrect": "Reprends les données utiles, applique la méthode attendue puis vérifie ton résultat."
+        },
+        "family_code": "CM1-MEASURES-PROBLEM",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "independent_answer_check": true
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_mathematics_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-MATH-V1-MEASURES-PROBLEM-ASSESSMENT-03",
+      "grade": "FR-CM1",
+      "subject": "MATHEMATICS",
+      "chapter": "CH-MATHEMATICS-CM1-MEASURES",
+      "skill": "SK-ENR-MATHEMATICS-CM1-MEASURES-PROBLEM",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Un entraînement dure 1 h 25 min et commence à 16 h 40. À quelle heure se termine-t-il ?",
+      "expected_answer": "18 h 05",
+      "answer_kind": "exact_text",
+      "explanation": "16 h 40 + 1 h = 17 h 40 ; + 25 min = 18 h 05.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-MEASURES-PROBLEM",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T09:20:53.083031+00:00",
+        "template_version": "lcai-cm1-math-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-MATH-V1-MEASURES-PROBLEM-ASSESSMENT-03",
+        "title": "Problème de durée",
+        "instructions": "Résous le problème.",
+        "prompt": "Un entraînement dure 1 h 25 min et commence à 16 h 40. À quelle heure se termine-t-il ?",
+        "answer": {
+          "kind": "exact_text",
+          "expected": "18 h 05",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": "18 h 05"
+        },
+        "explanation": "16 h 40 + 1 h = 17 h 40 ; + 25 min = 18 h 05.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "MATHEMATICS",
+          "chapter_code": "CH-MATHEMATICS-CM1-MEASURES",
+          "primary_skill_code": "SK-ENR-MATHEMATICS-CM1-MEASURES-PROBLEM",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-cm1-math-generation-spec-v1",
+          "template_version": "lcai-cm1-math-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:20:53.083031+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse. La compétence ciblée est correctement mobilisée.",
+          "incorrect": "Reprends les données utiles, applique la méthode attendue puis vérifie ton résultat."
+        },
+        "family_code": "CM1-MEASURES-PROBLEM",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "independent_answer_check": true
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_mathematics_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-MATH-V1-GEOMETRY-IDENTIFY-PRACTICE-01",
+      "grade": "FR-CM1",
+      "subject": "MATHEMATICS",
+      "chapter": "CH-MATHEMATICS-CM1-GEOMETRY",
+      "skill": "SK-ENR-MATHEMATICS-CM1-GEOMETRY-IDENTIFY",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Quelle affirmation est toujours vraie pour un rectangle ?",
+      "expected_answer": "Il a 4 angles droits",
+      "answer_kind": "single_choice",
+      "explanation": "Un rectangle possède quatre angles droits.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-GEOMETRY-IDENTIFY",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T09:20:53.083031+00:00",
+        "template_version": "lcai-cm1-math-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-MATH-V1-GEOMETRY-IDENTIFY-PRACTICE-01",
+        "title": "Reconnaître un rectangle",
+        "instructions": "Choisis la propriété correcte.",
+        "prompt": "Quelle affirmation est toujours vraie pour un rectangle ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "Il a 4 angles droits",
+          "options": [
+            "Il a 3 côtés",
+            "Il a 4 angles droits",
+            "Tous ses côtés ont la même longueur",
+            "Il n'a aucun côté parallèle"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Un rectangle possède quatre angles droits.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "MATHEMATICS",
+          "chapter_code": "CH-MATHEMATICS-CM1-GEOMETRY",
+          "primary_skill_code": "SK-ENR-MATHEMATICS-CM1-GEOMETRY-IDENTIFY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-cm1-math-generation-spec-v1",
+          "template_version": "lcai-cm1-math-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:20:53.083031+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse. La compétence ciblée est correctement mobilisée.",
+          "incorrect": "Reprends les données utiles, applique la méthode attendue puis vérifie ton résultat."
+        },
+        "family_code": "CM1-GEOMETRY-IDENTIFY",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "independent_answer_check": false
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_mathematics_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-MATH-V1-GEOMETRY-IDENTIFY-PRACTICE-02",
+      "grade": "FR-CM1",
+      "subject": "MATHEMATICS",
+      "chapter": "CH-MATHEMATICS-CM1-GEOMETRY",
+      "skill": "SK-ENR-MATHEMATICS-CM1-GEOMETRY-IDENTIFY",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Dans un rectangle ABCD, quelle paire de côtés est parallèle ?",
+      "expected_answer": "AB et CD",
+      "answer_kind": "single_choice",
+      "explanation": "Les côtés opposés d'un rectangle sont parallèles.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-GEOMETRY-IDENTIFY",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T09:20:53.083031+00:00",
+        "template_version": "lcai-cm1-math-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-MATH-V1-GEOMETRY-IDENTIFY-PRACTICE-02",
+        "title": "Parallélisme",
+        "instructions": "Choisis la bonne relation.",
+        "prompt": "Dans un rectangle ABCD, quelle paire de côtés est parallèle ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "AB et CD",
+          "options": [
+            "AB et BC",
+            "AB et CD",
+            "AB et AC",
+            "BC et BD"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Les côtés opposés d'un rectangle sont parallèles.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "MATHEMATICS",
+          "chapter_code": "CH-MATHEMATICS-CM1-GEOMETRY",
+          "primary_skill_code": "SK-ENR-MATHEMATICS-CM1-GEOMETRY-IDENTIFY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-cm1-math-generation-spec-v1",
+          "template_version": "lcai-cm1-math-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:20:53.083031+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse. La compétence ciblée est correctement mobilisée.",
+          "incorrect": "Reprends les données utiles, applique la méthode attendue puis vérifie ton résultat."
+        },
+        "family_code": "CM1-GEOMETRY-IDENTIFY",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "independent_answer_check": false
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_mathematics_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-MATH-V1-GEOMETRY-IDENTIFY-ASSESSMENT-03",
+      "grade": "FR-CM1",
+      "subject": "MATHEMATICS",
+      "chapter": "CH-MATHEMATICS-CM1-GEOMETRY",
+      "skill": "SK-ENR-MATHEMATICS-CM1-GEOMETRY-IDENTIFY",
+      "content_type": "assessment",
+      "difficulty": 1,
+      "prompt": "Une figure a 4 côtés de même longueur et 4 angles droits. Quelle est cette figure ?",
+      "expected_answer": "carré",
+      "answer_kind": "single_choice",
+      "explanation": "Un quadrilatère ayant quatre côtés égaux et quatre angles droits est un carré.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-GEOMETRY-IDENTIFY",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T09:20:53.083031+00:00",
+        "template_version": "lcai-cm1-math-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-MATH-V1-GEOMETRY-IDENTIFY-ASSESSMENT-03",
+        "title": "Décrire une figure",
+        "instructions": "Identifie la figure.",
+        "prompt": "Une figure a 4 côtés de même longueur et 4 angles droits. Quelle est cette figure ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "carré",
+          "options": [
+            "rectangle non carré",
+            "triangle",
+            "carré",
+            "cercle"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Un quadrilatère ayant quatre côtés égaux et quatre angles droits est un carré.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "MATHEMATICS",
+          "chapter_code": "CH-MATHEMATICS-CM1-GEOMETRY",
+          "primary_skill_code": "SK-ENR-MATHEMATICS-CM1-GEOMETRY-IDENTIFY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-cm1-math-generation-spec-v1",
+          "template_version": "lcai-cm1-math-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:20:53.083031+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse. La compétence ciblée est correctement mobilisée.",
+          "incorrect": "Reprends les données utiles, applique la méthode attendue puis vérifie ton résultat."
+        },
+        "family_code": "CM1-GEOMETRY-IDENTIFY",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "independent_answer_check": false
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_mathematics_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-MATH-V1-GEOMETRY-CONSTRUCT-PRACTICE-01",
+      "grade": "FR-CM1",
+      "subject": "MATHEMATICS",
+      "chapter": "CH-MATHEMATICS-CM1-GEOMETRY",
+      "skill": "SK-ENR-MATHEMATICS-CM1-GEOMETRY-CONSTRUCT",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Pour construire un carré ABCD de côté 4 cm, quelle propriété faut-il respecter en plus de quatre côtés de 4 cm ?",
+      "expected_answer": "quatre angles droits",
+      "answer_kind": "single_choice",
+      "explanation": "Quatre côtés égaux ne suffisent pas : un losange peut aussi en avoir. Le carré exige quatre angles droits.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-GEOMETRY-CONSTRUCT",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T09:20:53.083031+00:00",
+        "template_version": "lcai-cm1-math-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-MATH-V1-GEOMETRY-CONSTRUCT-PRACTICE-01",
+        "title": "Programme de construction",
+        "instructions": "Choisis l'instruction indispensable.",
+        "prompt": "Pour construire un carré ABCD de côté 4 cm, quelle propriété faut-il respecter en plus de quatre côtés de 4 cm ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "quatre angles droits",
+          "options": [
+            "une diagonale de 4 cm",
+            "quatre angles droits",
+            "aucun côté parallèle",
+            "trois sommets"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Quatre côtés égaux ne suffisent pas : un losange peut aussi en avoir. Le carré exige quatre angles droits.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "MATHEMATICS",
+          "chapter_code": "CH-MATHEMATICS-CM1-GEOMETRY",
+          "primary_skill_code": "SK-ENR-MATHEMATICS-CM1-GEOMETRY-CONSTRUCT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-cm1-math-generation-spec-v1",
+          "template_version": "lcai-cm1-math-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:20:53.083031+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse. La compétence ciblée est correctement mobilisée.",
+          "incorrect": "Reprends les données utiles, applique la méthode attendue puis vérifie ton résultat."
+        },
+        "family_code": "CM1-GEOMETRY-CONSTRUCT",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "independent_answer_check": false
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_mathematics_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-MATH-V1-GEOMETRY-CONSTRUCT-PRACTICE-02",
+      "grade": "FR-CM1",
+      "subject": "MATHEMATICS",
+      "chapter": "CH-MATHEMATICS-CM1-GEOMETRY",
+      "skill": "SK-ENR-MATHEMATICS-CM1-GEOMETRY-CONSTRUCT",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Quel programme permet de construire un rectangle de longueur 6 cm et largeur 3 cm ?",
+      "expected_answer": "Tracer 6 cm, construire des perpendiculaires aux extrémités, reporter 3 cm puis fermer la figure",
+      "answer_kind": "single_choice",
+      "explanation": "Les côtés adjacents d'un rectangle sont perpendiculaires et les côtés opposés sont parallèles.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-GEOMETRY-CONSTRUCT",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T09:20:53.083031+00:00",
+        "template_version": "lcai-cm1-math-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-MATH-V1-GEOMETRY-CONSTRUCT-PRACTICE-02",
+        "title": "Construire un rectangle",
+        "instructions": "Choisis le bon programme.",
+        "prompt": "Quel programme permet de construire un rectangle de longueur 6 cm et largeur 3 cm ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "Tracer 6 cm, construire des perpendiculaires aux extrémités, reporter 3 cm puis fermer la figure",
+          "options": [
+            "Tracer quatre segments quelconques",
+            "Tracer 6 cm, construire des perpendiculaires aux extrémités, reporter 3 cm puis fermer la figure",
+            "Tracer un cercle de rayon 3 cm",
+            "Tracer un triangle puis doubler un côté"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Les côtés adjacents d'un rectangle sont perpendiculaires et les côtés opposés sont parallèles.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "MATHEMATICS",
+          "chapter_code": "CH-MATHEMATICS-CM1-GEOMETRY",
+          "primary_skill_code": "SK-ENR-MATHEMATICS-CM1-GEOMETRY-CONSTRUCT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-cm1-math-generation-spec-v1",
+          "template_version": "lcai-cm1-math-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:20:53.083031+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse. La compétence ciblée est correctement mobilisée.",
+          "incorrect": "Reprends les données utiles, applique la méthode attendue puis vérifie ton résultat."
+        },
+        "family_code": "CM1-GEOMETRY-CONSTRUCT",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "independent_answer_check": false
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_mathematics_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-MATH-V1-GEOMETRY-CONSTRUCT-ASSESSMENT-03",
+      "grade": "FR-CM1",
+      "subject": "MATHEMATICS",
+      "chapter": "CH-MATHEMATICS-CM1-GEOMETRY",
+      "skill": "SK-ENR-MATHEMATICS-CM1-GEOMETRY-CONSTRUCT",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "On trace [AB] de 5 cm, puis deux segments de 2 cm perpendiculaires à [AB] aux points A et B, du même côté, puis on relie leurs extrémités. Quelle figure obtient-on ?",
+      "expected_answer": "un rectangle",
+      "answer_kind": "single_choice",
+      "explanation": "Les deux côtés de 2 cm sont perpendiculaires à AB et donc parallèles entre eux ; la fermeture forme un rectangle.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-GEOMETRY-CONSTRUCT",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T09:20:53.083031+00:00",
+        "template_version": "lcai-cm1-math-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-MATH-V1-GEOMETRY-CONSTRUCT-ASSESSMENT-03",
+        "title": "Suivre un programme",
+        "instructions": "Détermine la figure obtenue.",
+        "prompt": "On trace [AB] de 5 cm, puis deux segments de 2 cm perpendiculaires à [AB] aux points A et B, du même côté, puis on relie leurs extrémités. Quelle figure obtient-on ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "un rectangle",
+          "options": [
+            "un triangle",
+            "un rectangle",
+            "un cercle",
+            "un pentagone"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Les deux côtés de 2 cm sont perpendiculaires à AB et donc parallèles entre eux ; la fermeture forme un rectangle.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "MATHEMATICS",
+          "chapter_code": "CH-MATHEMATICS-CM1-GEOMETRY",
+          "primary_skill_code": "SK-ENR-MATHEMATICS-CM1-GEOMETRY-CONSTRUCT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-cm1-math-generation-spec-v1",
+          "template_version": "lcai-cm1-math-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:20:53.083031+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse. La compétence ciblée est correctement mobilisée.",
+          "incorrect": "Reprends les données utiles, applique la méthode attendue puis vérifie ton résultat."
+        },
+        "family_code": "CM1-GEOMETRY-CONSTRUCT",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "independent_answer_check": false
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_mathematics_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-MATH-V1-GEOMETRY-SYMMETRY-PRACTICE-01",
+      "grade": "FR-CM1",
+      "subject": "MATHEMATICS",
+      "chapter": "CH-MATHEMATICS-CM1-GEOMETRY",
+      "skill": "SK-ENR-MATHEMATICS-CM1-GEOMETRY-SYMMETRY",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Si A et A' sont symétriques par rapport à une droite (d), que peut-on dire de (d) ?",
+      "expected_answer": "(d) est la médiatrice de [AA']",
+      "answer_kind": "single_choice",
+      "explanation": "L'axe de symétrie est perpendiculaire au segment reliant un point à son image et passe par son milieu.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-GEOMETRY-SYMMETRY",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T09:20:53.083031+00:00",
+        "template_version": "lcai-cm1-math-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-MATH-V1-GEOMETRY-SYMMETRY-PRACTICE-01",
+        "title": "Reconnaître la symétrie",
+        "instructions": "Choisis la propriété correcte.",
+        "prompt": "Si A et A' sont symétriques par rapport à une droite (d), que peut-on dire de (d) ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "(d) est la médiatrice de [AA']",
+          "options": [
+            "(d) est parallèle à [AA']",
+            "(d) est la médiatrice de [AA']",
+            "A appartient toujours à (d)",
+            "A et A' sont confondus"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "L'axe de symétrie est perpendiculaire au segment reliant un point à son image et passe par son milieu.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "MATHEMATICS",
+          "chapter_code": "CH-MATHEMATICS-CM1-GEOMETRY",
+          "primary_skill_code": "SK-ENR-MATHEMATICS-CM1-GEOMETRY-SYMMETRY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-cm1-math-generation-spec-v1",
+          "template_version": "lcai-cm1-math-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:20:53.083031+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse. La compétence ciblée est correctement mobilisée.",
+          "incorrect": "Reprends les données utiles, applique la méthode attendue puis vérifie ton résultat."
+        },
+        "family_code": "CM1-GEOMETRY-SYMMETRY",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "independent_answer_check": false
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_mathematics_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-MATH-V1-GEOMETRY-SYMMETRY-PRACTICE-02",
+      "grade": "FR-CM1",
+      "subject": "MATHEMATICS",
+      "chapter": "CH-MATHEMATICS-CM1-GEOMETRY",
+      "skill": "SK-ENR-MATHEMATICS-CM1-GEOMETRY-SYMMETRY",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Un point M est à 3 cm d'un axe de symétrie. À quelle distance de l'axe se trouve son image M' ?",
+      "expected_answer": "3",
+      "answer_kind": "numeric",
+      "explanation": "La symétrie axiale conserve la distance à l'axe : M' est aussi à 3 cm.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-GEOMETRY-SYMMETRY",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T09:20:53.083031+00:00",
+        "template_version": "lcai-cm1-math-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-MATH-V1-GEOMETRY-SYMMETRY-PRACTICE-02",
+        "title": "Distance à l'axe",
+        "instructions": "Raisonne sur une symétrie.",
+        "prompt": "Un point M est à 3 cm d'un axe de symétrie. À quelle distance de l'axe se trouve son image M' ?",
+        "answer": {
+          "kind": "numeric",
+          "expected": "3",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": "3"
+        },
+        "explanation": "La symétrie axiale conserve la distance à l'axe : M' est aussi à 3 cm.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "MATHEMATICS",
+          "chapter_code": "CH-MATHEMATICS-CM1-GEOMETRY",
+          "primary_skill_code": "SK-ENR-MATHEMATICS-CM1-GEOMETRY-SYMMETRY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-cm1-math-generation-spec-v1",
+          "template_version": "lcai-cm1-math-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:20:53.083031+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse. La compétence ciblée est correctement mobilisée.",
+          "incorrect": "Reprends les données utiles, applique la méthode attendue puis vérifie ton résultat."
+        },
+        "family_code": "CM1-GEOMETRY-SYMMETRY",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "independent_answer_check": true
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_mathematics_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-MATH-V1-GEOMETRY-SYMMETRY-ASSESSMENT-03",
+      "grade": "FR-CM1",
+      "subject": "MATHEMATICS",
+      "chapter": "CH-MATHEMATICS-CM1-GEOMETRY",
+      "skill": "SK-ENR-MATHEMATICS-CM1-GEOMETRY-SYMMETRY",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Pour construire le symétrique d'un sommet P par rapport à un axe, que faut-il faire ?",
+      "expected_answer": "placer P' de l'autre côté de l'axe à la même distance, sur la perpendiculaire à l'axe",
+      "answer_kind": "single_choice",
+      "explanation": "Le point et son image sont alignés sur une perpendiculaire à l'axe et à égale distance de celui-ci.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-GEOMETRY-SYMMETRY",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T09:20:53.083031+00:00",
+        "template_version": "lcai-cm1-math-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-MATH-V1-GEOMETRY-SYMMETRY-ASSESSMENT-03",
+        "title": "Compléter une figure",
+        "instructions": "Choisis la bonne règle.",
+        "prompt": "Pour construire le symétrique d'un sommet P par rapport à un axe, que faut-il faire ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "placer P' de l'autre côté de l'axe à la même distance, sur la perpendiculaire à l'axe",
+          "options": [
+            "placer P' n'importe où de l'autre côté",
+            "placer P' sur l'axe",
+            "placer P' de l'autre côté de l'axe à la même distance, sur la perpendiculaire à l'axe",
+            "doubler la distance sans tenir compte de la perpendiculaire"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Le point et son image sont alignés sur une perpendiculaire à l'axe et à égale distance de celui-ci.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "MATHEMATICS",
+          "chapter_code": "CH-MATHEMATICS-CM1-GEOMETRY",
+          "primary_skill_code": "SK-ENR-MATHEMATICS-CM1-GEOMETRY-SYMMETRY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-cm1-math-generation-spec-v1",
+          "template_version": "lcai-cm1-math-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:20:53.083031+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse. La compétence ciblée est correctement mobilisée.",
+          "incorrect": "Reprends les données utiles, applique la méthode attendue puis vérifie ton résultat."
+        },
+        "family_code": "CM1-GEOMETRY-SYMMETRY",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "independent_answer_check": false
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_mathematics_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-MATH-V1-GEOMETRY-SPACE-PRACTICE-01",
+      "grade": "FR-CM1",
+      "subject": "MATHEMATICS",
+      "chapter": "CH-MATHEMATICS-CM1-GEOMETRY",
+      "skill": "SK-ENR-MATHEMATICS-CM1-GEOMETRY-SPACE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Quel solide possède 6 faces carrées identiques ?",
+      "expected_answer": "cube",
+      "answer_kind": "single_choice",
+      "explanation": "Le cube possède six faces carrées congruentes.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-GEOMETRY-SPACE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T09:20:53.083031+00:00",
+        "template_version": "lcai-cm1-math-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-MATH-V1-GEOMETRY-SPACE-PRACTICE-01",
+        "title": "Reconnaître un solide",
+        "instructions": "Choisis le solide.",
+        "prompt": "Quel solide possède 6 faces carrées identiques ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "cube",
+          "options": [
+            "cube",
+            "cylindre",
+            "pyramide",
+            "boule"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Le cube possède six faces carrées congruentes.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "MATHEMATICS",
+          "chapter_code": "CH-MATHEMATICS-CM1-GEOMETRY",
+          "primary_skill_code": "SK-ENR-MATHEMATICS-CM1-GEOMETRY-SPACE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-cm1-math-generation-spec-v1",
+          "template_version": "lcai-cm1-math-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:20:53.083031+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse. La compétence ciblée est correctement mobilisée.",
+          "incorrect": "Reprends les données utiles, applique la méthode attendue puis vérifie ton résultat."
+        },
+        "family_code": "CM1-GEOMETRY-SPACE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "independent_answer_check": false
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_mathematics_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-MATH-V1-GEOMETRY-SPACE-PRACTICE-02",
+      "grade": "FR-CM1",
+      "subject": "MATHEMATICS",
+      "chapter": "CH-MATHEMATICS-CM1-GEOMETRY",
+      "skill": "SK-ENR-MATHEMATICS-CM1-GEOMETRY-SPACE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Combien de faces possède un pavé droit ?",
+      "expected_answer": "6",
+      "answer_kind": "numeric",
+      "explanation": "Un pavé droit possède 6 faces rectangulaires.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-GEOMETRY-SPACE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T09:20:53.083031+00:00",
+        "template_version": "lcai-cm1-math-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-MATH-V1-GEOMETRY-SPACE-PRACTICE-02",
+        "title": "Décrire un pavé droit",
+        "instructions": "Donne le nombre de faces.",
+        "prompt": "Combien de faces possède un pavé droit ?",
+        "answer": {
+          "kind": "numeric",
+          "expected": "6",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": "6"
+        },
+        "explanation": "Un pavé droit possède 6 faces rectangulaires.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "MATHEMATICS",
+          "chapter_code": "CH-MATHEMATICS-CM1-GEOMETRY",
+          "primary_skill_code": "SK-ENR-MATHEMATICS-CM1-GEOMETRY-SPACE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-cm1-math-generation-spec-v1",
+          "template_version": "lcai-cm1-math-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:20:53.083031+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse. La compétence ciblée est correctement mobilisée.",
+          "incorrect": "Reprends les données utiles, applique la méthode attendue puis vérifie ton résultat."
+        },
+        "family_code": "CM1-GEOMETRY-SPACE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "independent_answer_check": true
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_mathematics_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-MATH-V1-GEOMETRY-SPACE-ASSESSMENT-03",
+      "grade": "FR-CM1",
+      "subject": "MATHEMATICS",
+      "chapter": "CH-MATHEMATICS-CM1-GEOMETRY",
+      "skill": "SK-ENR-MATHEMATICS-CM1-GEOMETRY-SPACE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Un patron de cube doit être composé de combien de carrés identiques ?",
+      "expected_answer": "6",
+      "answer_kind": "single_choice",
+      "explanation": "Chaque carré du patron devient une face du cube, qui en possède 6.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-GEOMETRY-SPACE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T09:20:53.083031+00:00",
+        "template_version": "lcai-cm1-math-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-MATH-V1-GEOMETRY-SPACE-ASSESSMENT-03",
+        "title": "Patron de cube",
+        "instructions": "Choisis la propriété nécessaire.",
+        "prompt": "Un patron de cube doit être composé de combien de carrés identiques ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "6",
+          "options": [
+            "4",
+            "5",
+            "6",
+            "8"
+          ],
+          "tolerance": null,
+          "independently_computed": "6"
+        },
+        "explanation": "Chaque carré du patron devient une face du cube, qui en possède 6.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "MATHEMATICS",
+          "chapter_code": "CH-MATHEMATICS-CM1-GEOMETRY",
+          "primary_skill_code": "SK-ENR-MATHEMATICS-CM1-GEOMETRY-SPACE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-cm1-math-generation-spec-v1",
+          "template_version": "lcai-cm1-math-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:20:53.083031+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse. La compétence ciblée est correctement mobilisée.",
+          "incorrect": "Reprends les données utiles, applique la méthode attendue puis vérifie ton résultat."
+        },
+        "family_code": "CM1-GEOMETRY-SPACE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "independent_answer_check": true
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_mathematics_candidates_v1.json"
+      }
+    }
+  ]
+}

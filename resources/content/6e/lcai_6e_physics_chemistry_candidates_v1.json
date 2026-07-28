@@ -1,0 +1,2512 @@
+{
+  "batch": "6E-PHYSICS_CHEMISTRY-V1",
+  "purpose": "Parallel 6e content preparation for Learning Coach AI",
+  "lifecycle_target": "Draft",
+  "automatic_approval": false,
+  "curriculum_version": "phase2-lcai-0011c",
+  "program_code": "FR-CYCLE3-6E-2026",
+  "grade_code": "FR-6E",
+  "subject_code": "PHYSICS_CHEMISTRY",
+  "skill_count": 10,
+  "candidate_count": 30,
+  "content_types": {
+    "practice": 20,
+    "assessment": 10
+  },
+  "difficulty_distribution": {
+    "1": 10,
+    "2": 20
+  },
+  "accepted_candidates": [
+    {
+      "code": "6E-PHYSICS_CHEMISTRY-V1-MATTER-STATE-PRACTICE-01",
+      "grade": "FR-6E",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-6E-MATTER",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-6E-MATTER-STATE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Matière, états et transformations », réalise une tâche montrant que tu sais caractériser les états de la matière. Appuie-toi sur un exemple ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Caractériser les états de la matière ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-PHYSICS_CHEMISTRY-MATTER-STATE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-PHYSICS_CHEMISTRY-V1-MATTER-STATE-PRACTICE-01",
+        "title": "Caractériser les états de la matière",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Matière, états et transformations », réalise une tâche montrant que tu sais caractériser les états de la matière. Appuie-toi sur un exemple ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Caractériser les états de la matière ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-6E-MATTER",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-6E-MATTER-STATE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-physics_chemistry-v1",
+          "template_version": "lcai-6e-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-PHYSICS_CHEMISTRY-MATTER-STATE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-PHYSICS_CHEMISTRY-V1-MATTER-STATE-PRACTICE-02",
+      "grade": "FR-6E",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-6E-MATTER",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-6E-MATTER-STATE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Caractériser les états de la matière » à une situation pertinente de niveau 6e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Caractériser les états de la matière ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-PHYSICS_CHEMISTRY-MATTER-STATE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-PHYSICS_CHEMISTRY-V1-MATTER-STATE-PRACTICE-02",
+        "title": "Caractériser les états de la matière",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Caractériser les états de la matière » à une situation pertinente de niveau 6e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Caractériser les états de la matière ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-6E-MATTER",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-6E-MATTER-STATE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-physics_chemistry-v1",
+          "template_version": "lcai-6e-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-PHYSICS_CHEMISTRY-MATTER-STATE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-PHYSICS_CHEMISTRY-V1-MATTER-STATE-ASSESSMENT-03",
+      "grade": "FR-6E",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-6E-MATTER",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-6E-MATTER-STATE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 6e : démontre de façon autonome que tu sais caractériser les états de la matière. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Caractériser les états de la matière ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-PHYSICS_CHEMISTRY-MATTER-STATE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-PHYSICS_CHEMISTRY-V1-MATTER-STATE-ASSESSMENT-03",
+        "title": "Caractériser les états de la matière",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 6e : démontre de façon autonome que tu sais caractériser les états de la matière. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Caractériser les états de la matière ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-6E-MATTER",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-6E-MATTER-STATE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-physics_chemistry-v1",
+          "template_version": "lcai-6e-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-PHYSICS_CHEMISTRY-MATTER-STATE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-PHYSICS_CHEMISTRY-V1-MATTER-MIXTURE-PRACTICE-01",
+      "grade": "FR-6E",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-6E-MATTER",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-6E-MATTER-MIXTURE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Matière, états et transformations », réalise une tâche montrant que tu sais distinguer corps pur et mélange. Appuie-toi sur un exemple ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Distinguer corps pur et mélange ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-PHYSICS_CHEMISTRY-MATTER-MIXTURE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-PHYSICS_CHEMISTRY-V1-MATTER-MIXTURE-PRACTICE-01",
+        "title": "Distinguer corps pur et mélange",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Matière, états et transformations », réalise une tâche montrant que tu sais distinguer corps pur et mélange. Appuie-toi sur un exemple ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Distinguer corps pur et mélange ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-6E-MATTER",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-6E-MATTER-MIXTURE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-physics_chemistry-v1",
+          "template_version": "lcai-6e-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-PHYSICS_CHEMISTRY-MATTER-MIXTURE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-PHYSICS_CHEMISTRY-V1-MATTER-MIXTURE-PRACTICE-02",
+      "grade": "FR-6E",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-6E-MATTER",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-6E-MATTER-MIXTURE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Distinguer corps pur et mélange » à une situation pertinente de niveau 6e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Distinguer corps pur et mélange ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-PHYSICS_CHEMISTRY-MATTER-MIXTURE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-PHYSICS_CHEMISTRY-V1-MATTER-MIXTURE-PRACTICE-02",
+        "title": "Distinguer corps pur et mélange",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Distinguer corps pur et mélange » à une situation pertinente de niveau 6e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Distinguer corps pur et mélange ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-6E-MATTER",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-6E-MATTER-MIXTURE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-physics_chemistry-v1",
+          "template_version": "lcai-6e-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-PHYSICS_CHEMISTRY-MATTER-MIXTURE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-PHYSICS_CHEMISTRY-V1-MATTER-MIXTURE-ASSESSMENT-03",
+      "grade": "FR-6E",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-6E-MATTER",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-6E-MATTER-MIXTURE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 6e : démontre de façon autonome que tu sais distinguer corps pur et mélange. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Distinguer corps pur et mélange ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-PHYSICS_CHEMISTRY-MATTER-MIXTURE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-PHYSICS_CHEMISTRY-V1-MATTER-MIXTURE-ASSESSMENT-03",
+        "title": "Distinguer corps pur et mélange",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 6e : démontre de façon autonome que tu sais distinguer corps pur et mélange. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Distinguer corps pur et mélange ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-6E-MATTER",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-6E-MATTER-MIXTURE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-physics_chemistry-v1",
+          "template_version": "lcai-6e-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-PHYSICS_CHEMISTRY-MATTER-MIXTURE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-PHYSICS_CHEMISTRY-V1-MATTER-CHANGE-PRACTICE-01",
+      "grade": "FR-6E",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-6E-MATTER",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-6E-MATTER-CHANGE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Matière, états et transformations », réalise une tâche montrant que tu sais interpréter un changement d'état. Appuie-toi sur un exemple ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Interpréter un changement d'état ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-PHYSICS_CHEMISTRY-MATTER-CHANGE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-PHYSICS_CHEMISTRY-V1-MATTER-CHANGE-PRACTICE-01",
+        "title": "Interpréter un changement d'état",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Matière, états et transformations », réalise une tâche montrant que tu sais interpréter un changement d'état. Appuie-toi sur un exemple ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Interpréter un changement d'état ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-6E-MATTER",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-6E-MATTER-CHANGE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-physics_chemistry-v1",
+          "template_version": "lcai-6e-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-PHYSICS_CHEMISTRY-MATTER-CHANGE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-PHYSICS_CHEMISTRY-V1-MATTER-CHANGE-PRACTICE-02",
+      "grade": "FR-6E",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-6E-MATTER",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-6E-MATTER-CHANGE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Interpréter un changement d'état » à une situation pertinente de niveau 6e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Interpréter un changement d'état ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-PHYSICS_CHEMISTRY-MATTER-CHANGE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-PHYSICS_CHEMISTRY-V1-MATTER-CHANGE-PRACTICE-02",
+        "title": "Interpréter un changement d'état",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Interpréter un changement d'état » à une situation pertinente de niveau 6e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Interpréter un changement d'état ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-6E-MATTER",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-6E-MATTER-CHANGE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-physics_chemistry-v1",
+          "template_version": "lcai-6e-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-PHYSICS_CHEMISTRY-MATTER-CHANGE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-PHYSICS_CHEMISTRY-V1-MATTER-CHANGE-ASSESSMENT-03",
+      "grade": "FR-6E",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-6E-MATTER",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-6E-MATTER-CHANGE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 6e : démontre de façon autonome que tu sais interpréter un changement d'état. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Interpréter un changement d'état ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-PHYSICS_CHEMISTRY-MATTER-CHANGE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-PHYSICS_CHEMISTRY-V1-MATTER-CHANGE-ASSESSMENT-03",
+        "title": "Interpréter un changement d'état",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 6e : démontre de façon autonome que tu sais interpréter un changement d'état. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Interpréter un changement d'état ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-6E-MATTER",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-6E-MATTER-CHANGE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-physics_chemistry-v1",
+          "template_version": "lcai-6e-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-PHYSICS_CHEMISTRY-MATTER-CHANGE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-PHYSICS_CHEMISTRY-V1-MATTER-MASS-PRACTICE-01",
+      "grade": "FR-6E",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-6E-MATTER",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-6E-MATTER-MASS",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Matière, états et transformations », réalise une tâche montrant que tu sais utiliser la conservation de la masse. Appuie-toi sur un exemple ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Utiliser la conservation de la masse ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-PHYSICS_CHEMISTRY-MATTER-MASS",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-PHYSICS_CHEMISTRY-V1-MATTER-MASS-PRACTICE-01",
+        "title": "Utiliser la conservation de la masse",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Matière, états et transformations », réalise une tâche montrant que tu sais utiliser la conservation de la masse. Appuie-toi sur un exemple ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Utiliser la conservation de la masse ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-6E-MATTER",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-6E-MATTER-MASS",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-physics_chemistry-v1",
+          "template_version": "lcai-6e-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-PHYSICS_CHEMISTRY-MATTER-MASS",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-PHYSICS_CHEMISTRY-V1-MATTER-MASS-PRACTICE-02",
+      "grade": "FR-6E",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-6E-MATTER",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-6E-MATTER-MASS",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Utiliser la conservation de la masse » à une situation pertinente de niveau 6e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Utiliser la conservation de la masse ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-PHYSICS_CHEMISTRY-MATTER-MASS",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-PHYSICS_CHEMISTRY-V1-MATTER-MASS-PRACTICE-02",
+        "title": "Utiliser la conservation de la masse",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Utiliser la conservation de la masse » à une situation pertinente de niveau 6e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Utiliser la conservation de la masse ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-6E-MATTER",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-6E-MATTER-MASS",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-physics_chemistry-v1",
+          "template_version": "lcai-6e-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-PHYSICS_CHEMISTRY-MATTER-MASS",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-PHYSICS_CHEMISTRY-V1-MATTER-MASS-ASSESSMENT-03",
+      "grade": "FR-6E",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-6E-MATTER",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-6E-MATTER-MASS",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 6e : démontre de façon autonome que tu sais utiliser la conservation de la masse. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Utiliser la conservation de la masse ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-PHYSICS_CHEMISTRY-MATTER-MASS",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-PHYSICS_CHEMISTRY-V1-MATTER-MASS-ASSESSMENT-03",
+        "title": "Utiliser la conservation de la masse",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 6e : démontre de façon autonome que tu sais utiliser la conservation de la masse. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Utiliser la conservation de la masse ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-6E-MATTER",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-6E-MATTER-MASS",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-physics_chemistry-v1",
+          "template_version": "lcai-6e-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-PHYSICS_CHEMISTRY-MATTER-MASS",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-PHYSICS_CHEMISTRY-V1-MATTER-EXPERIMENT-PRACTICE-01",
+      "grade": "FR-6E",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-6E-MATTER",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-6E-MATTER-EXPERIMENT",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Matière, états et transformations », réalise une tâche montrant que tu sais exploiter un protocole sur la matière. Appuie-toi sur un exemple ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Exploiter un protocole sur la matière ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-PHYSICS_CHEMISTRY-MATTER-EXPERIMENT",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-PHYSICS_CHEMISTRY-V1-MATTER-EXPERIMENT-PRACTICE-01",
+        "title": "Exploiter un protocole sur la matière",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Matière, états et transformations », réalise une tâche montrant que tu sais exploiter un protocole sur la matière. Appuie-toi sur un exemple ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Exploiter un protocole sur la matière ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-6E-MATTER",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-6E-MATTER-EXPERIMENT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-physics_chemistry-v1",
+          "template_version": "lcai-6e-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-PHYSICS_CHEMISTRY-MATTER-EXPERIMENT",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-PHYSICS_CHEMISTRY-V1-MATTER-EXPERIMENT-PRACTICE-02",
+      "grade": "FR-6E",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-6E-MATTER",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-6E-MATTER-EXPERIMENT",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Exploiter un protocole sur la matière » à une situation pertinente de niveau 6e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Exploiter un protocole sur la matière ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-PHYSICS_CHEMISTRY-MATTER-EXPERIMENT",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-PHYSICS_CHEMISTRY-V1-MATTER-EXPERIMENT-PRACTICE-02",
+        "title": "Exploiter un protocole sur la matière",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Exploiter un protocole sur la matière » à une situation pertinente de niveau 6e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Exploiter un protocole sur la matière ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-6E-MATTER",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-6E-MATTER-EXPERIMENT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-physics_chemistry-v1",
+          "template_version": "lcai-6e-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-PHYSICS_CHEMISTRY-MATTER-EXPERIMENT",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-PHYSICS_CHEMISTRY-V1-MATTER-EXPERIMENT-ASSESSMENT-03",
+      "grade": "FR-6E",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-6E-MATTER",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-6E-MATTER-EXPERIMENT",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 6e : démontre de façon autonome que tu sais exploiter un protocole sur la matière. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Exploiter un protocole sur la matière ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-PHYSICS_CHEMISTRY-MATTER-EXPERIMENT",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-PHYSICS_CHEMISTRY-V1-MATTER-EXPERIMENT-ASSESSMENT-03",
+        "title": "Exploiter un protocole sur la matière",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 6e : démontre de façon autonome que tu sais exploiter un protocole sur la matière. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Exploiter un protocole sur la matière ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-6E-MATTER",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-6E-MATTER-EXPERIMENT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-physics_chemistry-v1",
+          "template_version": "lcai-6e-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-PHYSICS_CHEMISTRY-MATTER-EXPERIMENT",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-PHYSICS_CHEMISTRY-V1-MOTION-TRAJECTORY-PRACTICE-01",
+      "grade": "FR-6E",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-6E-MOTION",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-6E-MOTION-TRAJECTORY",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Mouvement, énergie et signaux », réalise une tâche montrant que tu sais décrire une trajectoire. Appuie-toi sur un exemple ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Décrire une trajectoire ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-PHYSICS_CHEMISTRY-MOTION-TRAJECTORY",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-PHYSICS_CHEMISTRY-V1-MOTION-TRAJECTORY-PRACTICE-01",
+        "title": "Décrire une trajectoire",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Mouvement, énergie et signaux », réalise une tâche montrant que tu sais décrire une trajectoire. Appuie-toi sur un exemple ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Décrire une trajectoire ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-6E-MOTION",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-6E-MOTION-TRAJECTORY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-physics_chemistry-v1",
+          "template_version": "lcai-6e-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-PHYSICS_CHEMISTRY-MOTION-TRAJECTORY",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-PHYSICS_CHEMISTRY-V1-MOTION-TRAJECTORY-PRACTICE-02",
+      "grade": "FR-6E",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-6E-MOTION",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-6E-MOTION-TRAJECTORY",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Décrire une trajectoire » à une situation pertinente de niveau 6e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Décrire une trajectoire ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-PHYSICS_CHEMISTRY-MOTION-TRAJECTORY",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-PHYSICS_CHEMISTRY-V1-MOTION-TRAJECTORY-PRACTICE-02",
+        "title": "Décrire une trajectoire",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Décrire une trajectoire » à une situation pertinente de niveau 6e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Décrire une trajectoire ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-6E-MOTION",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-6E-MOTION-TRAJECTORY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-physics_chemistry-v1",
+          "template_version": "lcai-6e-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-PHYSICS_CHEMISTRY-MOTION-TRAJECTORY",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-PHYSICS_CHEMISTRY-V1-MOTION-TRAJECTORY-ASSESSMENT-03",
+      "grade": "FR-6E",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-6E-MOTION",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-6E-MOTION-TRAJECTORY",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 6e : démontre de façon autonome que tu sais décrire une trajectoire. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Décrire une trajectoire ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-PHYSICS_CHEMISTRY-MOTION-TRAJECTORY",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-PHYSICS_CHEMISTRY-V1-MOTION-TRAJECTORY-ASSESSMENT-03",
+        "title": "Décrire une trajectoire",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 6e : démontre de façon autonome que tu sais décrire une trajectoire. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Décrire une trajectoire ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-6E-MOTION",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-6E-MOTION-TRAJECTORY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-physics_chemistry-v1",
+          "template_version": "lcai-6e-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-PHYSICS_CHEMISTRY-MOTION-TRAJECTORY",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-PHYSICS_CHEMISTRY-V1-MOTION-SPEED-PRACTICE-01",
+      "grade": "FR-6E",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-6E-MOTION",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-6E-MOTION-SPEED",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Mouvement, énergie et signaux », réalise une tâche montrant que tu sais comparer des vitesses. Appuie-toi sur un exemple ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Comparer des vitesses ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-PHYSICS_CHEMISTRY-MOTION-SPEED",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-PHYSICS_CHEMISTRY-V1-MOTION-SPEED-PRACTICE-01",
+        "title": "Comparer des vitesses",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Mouvement, énergie et signaux », réalise une tâche montrant que tu sais comparer des vitesses. Appuie-toi sur un exemple ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Comparer des vitesses ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-6E-MOTION",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-6E-MOTION-SPEED",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-physics_chemistry-v1",
+          "template_version": "lcai-6e-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-PHYSICS_CHEMISTRY-MOTION-SPEED",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-PHYSICS_CHEMISTRY-V1-MOTION-SPEED-PRACTICE-02",
+      "grade": "FR-6E",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-6E-MOTION",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-6E-MOTION-SPEED",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Comparer des vitesses » à une situation pertinente de niveau 6e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Comparer des vitesses ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-PHYSICS_CHEMISTRY-MOTION-SPEED",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-PHYSICS_CHEMISTRY-V1-MOTION-SPEED-PRACTICE-02",
+        "title": "Comparer des vitesses",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Comparer des vitesses » à une situation pertinente de niveau 6e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Comparer des vitesses ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-6E-MOTION",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-6E-MOTION-SPEED",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-physics_chemistry-v1",
+          "template_version": "lcai-6e-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-PHYSICS_CHEMISTRY-MOTION-SPEED",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-PHYSICS_CHEMISTRY-V1-MOTION-SPEED-ASSESSMENT-03",
+      "grade": "FR-6E",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-6E-MOTION",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-6E-MOTION-SPEED",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 6e : démontre de façon autonome que tu sais comparer des vitesses. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Comparer des vitesses ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-PHYSICS_CHEMISTRY-MOTION-SPEED",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-PHYSICS_CHEMISTRY-V1-MOTION-SPEED-ASSESSMENT-03",
+        "title": "Comparer des vitesses",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 6e : démontre de façon autonome que tu sais comparer des vitesses. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Comparer des vitesses ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-6E-MOTION",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-6E-MOTION-SPEED",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-physics_chemistry-v1",
+          "template_version": "lcai-6e-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-PHYSICS_CHEMISTRY-MOTION-SPEED",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-PHYSICS_CHEMISTRY-V1-MOTION-ENERGY-PRACTICE-01",
+      "grade": "FR-6E",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-6E-MOTION",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-6E-MOTION-ENERGY",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Mouvement, énergie et signaux », réalise une tâche montrant que tu sais identifier une conversion d'énergie. Appuie-toi sur un exemple ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Identifier une conversion d'énergie ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-PHYSICS_CHEMISTRY-MOTION-ENERGY",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-PHYSICS_CHEMISTRY-V1-MOTION-ENERGY-PRACTICE-01",
+        "title": "Identifier une conversion d'énergie",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Mouvement, énergie et signaux », réalise une tâche montrant que tu sais identifier une conversion d'énergie. Appuie-toi sur un exemple ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Identifier une conversion d'énergie ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-6E-MOTION",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-6E-MOTION-ENERGY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-physics_chemistry-v1",
+          "template_version": "lcai-6e-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-PHYSICS_CHEMISTRY-MOTION-ENERGY",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-PHYSICS_CHEMISTRY-V1-MOTION-ENERGY-PRACTICE-02",
+      "grade": "FR-6E",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-6E-MOTION",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-6E-MOTION-ENERGY",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Identifier une conversion d'énergie » à une situation pertinente de niveau 6e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Identifier une conversion d'énergie ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-PHYSICS_CHEMISTRY-MOTION-ENERGY",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-PHYSICS_CHEMISTRY-V1-MOTION-ENERGY-PRACTICE-02",
+        "title": "Identifier une conversion d'énergie",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Identifier une conversion d'énergie » à une situation pertinente de niveau 6e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Identifier une conversion d'énergie ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-6E-MOTION",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-6E-MOTION-ENERGY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-physics_chemistry-v1",
+          "template_version": "lcai-6e-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-PHYSICS_CHEMISTRY-MOTION-ENERGY",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-PHYSICS_CHEMISTRY-V1-MOTION-ENERGY-ASSESSMENT-03",
+      "grade": "FR-6E",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-6E-MOTION",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-6E-MOTION-ENERGY",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 6e : démontre de façon autonome que tu sais identifier une conversion d'énergie. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Identifier une conversion d'énergie ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-PHYSICS_CHEMISTRY-MOTION-ENERGY",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-PHYSICS_CHEMISTRY-V1-MOTION-ENERGY-ASSESSMENT-03",
+        "title": "Identifier une conversion d'énergie",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 6e : démontre de façon autonome que tu sais identifier une conversion d'énergie. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Identifier une conversion d'énergie ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-6E-MOTION",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-6E-MOTION-ENERGY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-physics_chemistry-v1",
+          "template_version": "lcai-6e-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-PHYSICS_CHEMISTRY-MOTION-ENERGY",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-PHYSICS_CHEMISTRY-V1-MOTION-SIGNAL-PRACTICE-01",
+      "grade": "FR-6E",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-6E-MOTION",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-6E-MOTION-SIGNAL",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Mouvement, énergie et signaux », réalise une tâche montrant que tu sais caractériser un signal et l'information portée. Appuie-toi sur un exemple ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Caractériser un signal et l'information portée ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-PHYSICS_CHEMISTRY-MOTION-SIGNAL",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-PHYSICS_CHEMISTRY-V1-MOTION-SIGNAL-PRACTICE-01",
+        "title": "Caractériser un signal et l'information portée",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Mouvement, énergie et signaux », réalise une tâche montrant que tu sais caractériser un signal et l'information portée. Appuie-toi sur un exemple ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Caractériser un signal et l'information portée ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-6E-MOTION",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-6E-MOTION-SIGNAL",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-physics_chemistry-v1",
+          "template_version": "lcai-6e-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-PHYSICS_CHEMISTRY-MOTION-SIGNAL",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-PHYSICS_CHEMISTRY-V1-MOTION-SIGNAL-PRACTICE-02",
+      "grade": "FR-6E",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-6E-MOTION",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-6E-MOTION-SIGNAL",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Caractériser un signal et l'information portée » à une situation pertinente de niveau 6e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Caractériser un signal et l'information portée ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-PHYSICS_CHEMISTRY-MOTION-SIGNAL",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-PHYSICS_CHEMISTRY-V1-MOTION-SIGNAL-PRACTICE-02",
+        "title": "Caractériser un signal et l'information portée",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Caractériser un signal et l'information portée » à une situation pertinente de niveau 6e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Caractériser un signal et l'information portée ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-6E-MOTION",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-6E-MOTION-SIGNAL",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-physics_chemistry-v1",
+          "template_version": "lcai-6e-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-PHYSICS_CHEMISTRY-MOTION-SIGNAL",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-PHYSICS_CHEMISTRY-V1-MOTION-SIGNAL-ASSESSMENT-03",
+      "grade": "FR-6E",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-6E-MOTION",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-6E-MOTION-SIGNAL",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 6e : démontre de façon autonome que tu sais caractériser un signal et l'information portée. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Caractériser un signal et l'information portée ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-PHYSICS_CHEMISTRY-MOTION-SIGNAL",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-PHYSICS_CHEMISTRY-V1-MOTION-SIGNAL-ASSESSMENT-03",
+        "title": "Caractériser un signal et l'information portée",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 6e : démontre de façon autonome que tu sais caractériser un signal et l'information portée. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Caractériser un signal et l'information portée ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-6E-MOTION",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-6E-MOTION-SIGNAL",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-physics_chemistry-v1",
+          "template_version": "lcai-6e-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-PHYSICS_CHEMISTRY-MOTION-SIGNAL",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-PHYSICS_CHEMISTRY-V1-MOTION-MEASURE-PRACTICE-01",
+      "grade": "FR-6E",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-6E-MOTION",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-6E-MOTION-MEASURE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Mouvement, énergie et signaux », réalise une tâche montrant que tu sais exploiter une mesure de mouvement. Appuie-toi sur un exemple ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Exploiter une mesure de mouvement ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-PHYSICS_CHEMISTRY-MOTION-MEASURE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-PHYSICS_CHEMISTRY-V1-MOTION-MEASURE-PRACTICE-01",
+        "title": "Exploiter une mesure de mouvement",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Mouvement, énergie et signaux », réalise une tâche montrant que tu sais exploiter une mesure de mouvement. Appuie-toi sur un exemple ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Exploiter une mesure de mouvement ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-6E-MOTION",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-6E-MOTION-MEASURE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-physics_chemistry-v1",
+          "template_version": "lcai-6e-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-PHYSICS_CHEMISTRY-MOTION-MEASURE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-PHYSICS_CHEMISTRY-V1-MOTION-MEASURE-PRACTICE-02",
+      "grade": "FR-6E",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-6E-MOTION",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-6E-MOTION-MEASURE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Exploiter une mesure de mouvement » à une situation pertinente de niveau 6e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Exploiter une mesure de mouvement ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-PHYSICS_CHEMISTRY-MOTION-MEASURE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-PHYSICS_CHEMISTRY-V1-MOTION-MEASURE-PRACTICE-02",
+        "title": "Exploiter une mesure de mouvement",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Exploiter une mesure de mouvement » à une situation pertinente de niveau 6e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Exploiter une mesure de mouvement ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-6E-MOTION",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-6E-MOTION-MEASURE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-physics_chemistry-v1",
+          "template_version": "lcai-6e-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-PHYSICS_CHEMISTRY-MOTION-MEASURE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_physics_chemistry_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-PHYSICS_CHEMISTRY-V1-MOTION-MEASURE-ASSESSMENT-03",
+      "grade": "FR-6E",
+      "subject": "PHYSICS_CHEMISTRY",
+      "chapter": "CH-PHYSICS_CHEMISTRY-6E-MOTION",
+      "skill": "SK-ENR-PHYSICS_CHEMISTRY-6E-MOTION-MEASURE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 6e : démontre de façon autonome que tu sais exploiter une mesure de mouvement. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Exploiter une mesure de mouvement ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-PHYSICS_CHEMISTRY-MOTION-MEASURE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-physics_chemistry-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-PHYSICS_CHEMISTRY-V1-MOTION-MEASURE-ASSESSMENT-03",
+        "title": "Exploiter une mesure de mouvement",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 6e : démontre de façon autonome que tu sais exploiter une mesure de mouvement. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Exploiter une mesure de mouvement ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "PHYSICS_CHEMISTRY",
+          "chapter_code": "CH-PHYSICS_CHEMISTRY-6E-MOTION",
+          "primary_skill_code": "SK-ENR-PHYSICS_CHEMISTRY-6E-MOTION-MEASURE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-physics_chemistry-v1",
+          "template_version": "lcai-6e-physics_chemistry-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-PHYSICS_CHEMISTRY-MOTION-MEASURE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_physics_chemistry_candidates_v1.json"
+      }
+    }
+  ]
+}

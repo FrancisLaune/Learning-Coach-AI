@@ -1,0 +1,2014 @@
+{
+  "batch": "CM1-SVT-V1",
+  "purpose": "Parallel CM1 content preparation for Learning Coach AI",
+  "lifecycle_target": "Draft",
+  "automatic_approval": false,
+  "curriculum_version": "phase2-lcai-0011c",
+  "program_code": "FR-CYCLE3-CM1-2026",
+  "grade_code": "FR-CM1",
+  "subject_code": "SVT",
+  "skill_count": 8,
+  "candidate_count": 24,
+  "content_types": {
+    "practice": 16,
+    "assessment": 8
+  },
+  "difficulty_distribution": {
+    "1": 8,
+    "2": 16
+  },
+  "accepted_candidates": [
+    {
+      "code": "CM1-SVT-V1-LIVING-IDENTIFY-PRACTICE-01",
+      "grade": "FR-CM1",
+      "subject": "SVT",
+      "chapter": "CH-SVT-CM1-LIVING",
+      "skill": "SK-ENR-SVT-CM1-LIVING-IDENTIFY",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Lequel est un être vivant ?",
+      "expected_answer": "un chêne",
+      "answer_kind": "single_choice",
+      "explanation": "Un chêne naît, grandit, se nourrit et se reproduit.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-SVT-LIVING-IDENTIFY",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-SVT-V1-LIVING-IDENTIFY-PRACTICE-01",
+        "title": "Distinguer vivant et non-vivant à partir de critères",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Lequel est un être vivant ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "un chêne",
+          "options": [
+            "un caillou",
+            "une chaise",
+            "un verre",
+            "un chêne"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Un chêne naît, grandit, se nourrit et se reproduit.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-CM1-LIVING",
+          "primary_skill_code": "SK-ENR-SVT-CM1-LIVING-IDENTIFY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-svt-generation-spec-v1",
+          "template_version": "lcai-cm1-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-SVT-LIVING-IDENTIFY",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-SVT-V1-LIVING-IDENTIFY-PRACTICE-02",
+      "grade": "FR-CM1",
+      "subject": "SVT",
+      "chapter": "CH-SVT-CM1-LIVING",
+      "skill": "SK-ENR-SVT-CM1-LIVING-IDENTIFY",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Quel critère caractérise le vivant ?",
+      "expected_answer": "grandir et se développer",
+      "answer_kind": "single_choice",
+      "explanation": "Les êtres vivants se développent au cours de leur vie.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-SVT-LIVING-IDENTIFY",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-SVT-V1-LIVING-IDENTIFY-PRACTICE-02",
+        "title": "Distinguer vivant et non-vivant à partir de critères",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Quel critère caractérise le vivant ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "grandir et se développer",
+          "options": [
+            "être fabriqué en métal",
+            "avoir forcément des jambes",
+            "grandir et se développer",
+            "être toujours vert"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Les êtres vivants se développent au cours de leur vie.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-CM1-LIVING",
+          "primary_skill_code": "SK-ENR-SVT-CM1-LIVING-IDENTIFY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-svt-generation-spec-v1",
+          "template_version": "lcai-cm1-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-SVT-LIVING-IDENTIFY",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-SVT-V1-LIVING-IDENTIFY-ASSESSMENT-03",
+      "grade": "FR-CM1",
+      "subject": "SVT",
+      "chapter": "CH-SVT-CM1-LIVING",
+      "skill": "SK-ENR-SVT-CM1-LIVING-IDENTIFY",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Une graine paraît immobile mais elle est vivante car elle peut :",
+      "expected_answer": "germer et se développer",
+      "answer_kind": "single_choice",
+      "explanation": "Une graine peut reprendre son développement lorsque les conditions sont favorables.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-SVT-LIVING-IDENTIFY",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-SVT-V1-LIVING-IDENTIFY-ASSESSMENT-03",
+        "title": "Distinguer vivant et non-vivant à partir de critères",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Une graine paraît immobile mais elle est vivante car elle peut :",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "germer et se développer",
+          "options": [
+            "fonctionner sans matière",
+            "germer et se développer",
+            "devenir un caillou",
+            "fondre comme de la glace"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Une graine peut reprendre son développement lorsque les conditions sont favorables.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-CM1-LIVING",
+          "primary_skill_code": "SK-ENR-SVT-CM1-LIVING-IDENTIFY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-svt-generation-spec-v1",
+          "template_version": "lcai-cm1-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-SVT-LIVING-IDENTIFY",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-SVT-V1-LIVING-NEEDS-PRACTICE-01",
+      "grade": "FR-CM1",
+      "subject": "SVT",
+      "chapter": "CH-SVT-CM1-LIVING",
+      "skill": "SK-ENR-SVT-CM1-LIVING-NEEDS",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Une plante verte a notamment besoin de :",
+      "expected_answer": "lumière et eau",
+      "answer_kind": "single_choice",
+      "explanation": "La plante a besoin notamment d'eau, de lumière et de ressources minérales.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-SVT-LIVING-NEEDS",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-SVT-V1-LIVING-NEEDS-PRACTICE-01",
+        "title": "Relier les besoins d'un être vivant à son milieu",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Une plante verte a notamment besoin de :",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "lumière et eau",
+          "options": [
+            "plastique et peinture",
+            "sel uniquement",
+            "aucun apport",
+            "lumière et eau"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "La plante a besoin notamment d'eau, de lumière et de ressources minérales.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-CM1-LIVING",
+          "primary_skill_code": "SK-ENR-SVT-CM1-LIVING-NEEDS",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-svt-generation-spec-v1",
+          "template_version": "lcai-cm1-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-SVT-LIVING-NEEDS",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-SVT-V1-LIVING-NEEDS-PRACTICE-02",
+      "grade": "FR-CM1",
+      "subject": "SVT",
+      "chapter": "CH-SVT-CM1-LIVING",
+      "skill": "SK-ENR-SVT-CM1-LIVING-NEEDS",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Pourquoi un poisson ne peut-il pas vivre longtemps hors de l'eau ?",
+      "expected_answer": "son organisme est adapté aux conditions de son milieu aquatique",
+      "answer_kind": "single_choice",
+      "explanation": "Les besoins et adaptations des êtres vivants sont liés à leur milieu.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-SVT-LIVING-NEEDS",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-SVT-V1-LIVING-NEEDS-PRACTICE-02",
+        "title": "Relier les besoins d'un être vivant à son milieu",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Pourquoi un poisson ne peut-il pas vivre longtemps hors de l'eau ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "son organisme est adapté aux conditions de son milieu aquatique",
+          "options": [
+            "l'air est toujours solide",
+            "il ne fait pas partie du vivant",
+            "son organisme est adapté aux conditions de son milieu aquatique",
+            "il a besoin de roues"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Les besoins et adaptations des êtres vivants sont liés à leur milieu.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-CM1-LIVING",
+          "primary_skill_code": "SK-ENR-SVT-CM1-LIVING-NEEDS",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-svt-generation-spec-v1",
+          "template_version": "lcai-cm1-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-SVT-LIVING-NEEDS",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-SVT-V1-LIVING-NEEDS-ASSESSMENT-03",
+      "grade": "FR-CM1",
+      "subject": "SVT",
+      "chapter": "CH-SVT-CM1-LIVING",
+      "skill": "SK-ENR-SVT-CM1-LIVING-NEEDS",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Si une plante manque durablement d'eau, que peut-il se passer ?",
+      "expected_answer": "elle se flétrit et peut mourir",
+      "answer_kind": "single_choice",
+      "explanation": "L'eau est une ressource nécessaire au fonctionnement de la plante.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-SVT-LIVING-NEEDS",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-SVT-V1-LIVING-NEEDS-ASSESSMENT-03",
+        "title": "Relier les besoins d'un être vivant à son milieu",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Si une plante manque durablement d'eau, que peut-il se passer ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "elle se flétrit et peut mourir",
+          "options": [
+            "rien ne change jamais",
+            "elle se flétrit et peut mourir",
+            "elle devient minérale",
+            "elle produit toujours davantage"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "L'eau est une ressource nécessaire au fonctionnement de la plante.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-CM1-LIVING",
+          "primary_skill_code": "SK-ENR-SVT-CM1-LIVING-NEEDS",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-svt-generation-spec-v1",
+          "template_version": "lcai-cm1-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-SVT-LIVING-NEEDS",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-SVT-V1-LIVING-CLASSIFY-PRACTICE-01",
+      "grade": "FR-CM1",
+      "subject": "SVT",
+      "chapter": "CH-SVT-CM1-LIVING",
+      "skill": "SK-ENR-SVT-CM1-LIVING-CLASSIFY",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Pour classer des animaux scientifiquement à l'école, on utilise surtout :",
+      "expected_answer": "des attributs qu'ils possèdent",
+      "answer_kind": "single_choice",
+      "explanation": "La classification s'appuie sur des caractères observables partagés.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-SVT-LIVING-CLASSIFY",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-SVT-V1-LIVING-CLASSIFY-PRACTICE-01",
+        "title": "Classer des êtres vivants selon des attributs",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Pour classer des animaux scientifiquement à l'école, on utilise surtout :",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "des attributs qu'ils possèdent",
+          "options": [
+            "leur beauté",
+            "leur prénom",
+            "leur taille préférée",
+            "des attributs qu'ils possèdent"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "La classification s'appuie sur des caractères observables partagés.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-CM1-LIVING",
+          "primary_skill_code": "SK-ENR-SVT-CM1-LIVING-CLASSIFY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-svt-generation-spec-v1",
+          "template_version": "lcai-cm1-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-SVT-LIVING-CLASSIFY",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-SVT-V1-LIVING-CLASSIFY-PRACTICE-02",
+      "grade": "FR-CM1",
+      "subject": "SVT",
+      "chapter": "CH-SVT-CM1-LIVING",
+      "skill": "SK-ENR-SVT-CM1-LIVING-CLASSIFY",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Chat et chien peuvent être regroupés car ils possèdent tous deux :",
+      "expected_answer": "des poils",
+      "answer_kind": "single_choice",
+      "explanation": "La présence de poils est un attribut partagé par ces mammifères.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-SVT-LIVING-CLASSIFY",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-SVT-V1-LIVING-CLASSIFY-PRACTICE-02",
+        "title": "Classer des êtres vivants selon des attributs",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Chat et chien peuvent être regroupés car ils possèdent tous deux :",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "des poils",
+          "options": [
+            "six pattes",
+            "des nageoires",
+            "des poils",
+            "des plumes"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "La présence de poils est un attribut partagé par ces mammifères.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-CM1-LIVING",
+          "primary_skill_code": "SK-ENR-SVT-CM1-LIVING-CLASSIFY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-svt-generation-spec-v1",
+          "template_version": "lcai-cm1-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-SVT-LIVING-CLASSIFY",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-SVT-V1-LIVING-CLASSIFY-ASSESSMENT-03",
+      "grade": "FR-CM1",
+      "subject": "SVT",
+      "chapter": "CH-SVT-CM1-LIVING",
+      "skill": "SK-ENR-SVT-CM1-LIVING-CLASSIFY",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Quel critère est pertinent pour une classification ?",
+      "expected_answer": "présence d'une colonne vertébrale",
+      "answer_kind": "single_choice",
+      "explanation": "Un attribut anatomique observable est un critère de classification pertinent.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-SVT-LIVING-CLASSIFY",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-SVT-V1-LIVING-CLASSIFY-ASSESSMENT-03",
+        "title": "Classer des êtres vivants selon des attributs",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Quel critère est pertinent pour une classification ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "présence d'une colonne vertébrale",
+          "options": [
+            "jour où je l'ai vu",
+            "présence d'une colonne vertébrale",
+            "animal que je préfère",
+            "couleur de ma trousse"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Un attribut anatomique observable est un critère de classification pertinent.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-CM1-LIVING",
+          "primary_skill_code": "SK-ENR-SVT-CM1-LIVING-CLASSIFY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-svt-generation-spec-v1",
+          "template_version": "lcai-cm1-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-SVT-LIVING-CLASSIFY",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-SVT-V1-LIVING-OBSERVE-PRACTICE-01",
+      "grade": "FR-CM1",
+      "subject": "SVT",
+      "chapter": "CH-SVT-CM1-LIVING",
+      "skill": "SK-ENR-SVT-CM1-LIVING-OBSERVE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans un carnet d'observation, quelle information est utile ?",
+      "expected_answer": "la date et ce qui est observé",
+      "answer_kind": "single_choice",
+      "explanation": "Une observation scientifique doit être datée et décrire les faits.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-SVT-LIVING-OBSERVE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-SVT-V1-LIVING-OBSERVE-PRACTICE-01",
+        "title": "Consigner une observation du vivant",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Dans un carnet d'observation, quelle information est utile ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "la date et ce qui est observé",
+          "options": [
+            "une réponse inventée",
+            "uniquement son opinion",
+            "aucune mesure",
+            "la date et ce qui est observé"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Une observation scientifique doit être datée et décrire les faits.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-CM1-LIVING",
+          "primary_skill_code": "SK-ENR-SVT-CM1-LIVING-OBSERVE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-svt-generation-spec-v1",
+          "template_version": "lcai-cm1-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-SVT-LIVING-OBSERVE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-SVT-V1-LIVING-OBSERVE-PRACTICE-02",
+      "grade": "FR-CM1",
+      "subject": "SVT",
+      "chapter": "CH-SVT-CM1-LIVING",
+      "skill": "SK-ENR-SVT-CM1-LIVING-OBSERVE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Une plante mesure 8 cm lundi et 11 cm vendredi. Que faut-il noter ?",
+      "expected_answer": "les deux mesures avec leurs dates",
+      "answer_kind": "single_choice",
+      "explanation": "Des mesures datées permettent de suivre l'évolution.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-SVT-LIVING-OBSERVE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-SVT-V1-LIVING-OBSERVE-PRACTICE-02",
+        "title": "Consigner une observation du vivant",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Une plante mesure 8 cm lundi et 11 cm vendredi. Que faut-il noter ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "les deux mesures avec leurs dates",
+          "options": [
+            "une taille choisie au hasard",
+            "que la plante n'a pas changé",
+            "les deux mesures avec leurs dates",
+            "seulement qu'elle est jolie"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Des mesures datées permettent de suivre l'évolution.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-CM1-LIVING",
+          "primary_skill_code": "SK-ENR-SVT-CM1-LIVING-OBSERVE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-svt-generation-spec-v1",
+          "template_version": "lcai-cm1-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-SVT-LIVING-OBSERVE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-SVT-V1-LIVING-OBSERVE-ASSESSMENT-03",
+      "grade": "FR-CM1",
+      "subject": "SVT",
+      "chapter": "CH-SVT-CM1-LIVING",
+      "skill": "SK-ENR-SVT-CM1-LIVING-OBSERVE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Quelle phrase est une observation plutôt qu'une interprétation ?",
+      "expected_answer": "La feuille mesure 6 cm de long.",
+      "answer_kind": "single_choice",
+      "explanation": "Une mesure décrit un fait observable.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-SVT-LIVING-OBSERVE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-SVT-V1-LIVING-OBSERVE-ASSESSMENT-03",
+        "title": "Consigner une observation du vivant",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Quelle phrase est une observation plutôt qu'une interprétation ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "La feuille mesure 6 cm de long.",
+          "options": [
+            "La plante pense qu'il va pleuvoir.",
+            "La feuille mesure 6 cm de long.",
+            "La plante est heureuse.",
+            "La feuille préfère le soleil."
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Une mesure décrit un fait observable.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-CM1-LIVING",
+          "primary_skill_code": "SK-ENR-SVT-CM1-LIVING-OBSERVE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-svt-generation-spec-v1",
+          "template_version": "lcai-cm1-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-SVT-LIVING-OBSERVE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-SVT-V1-ECOSYSTEMS-COMPONENTS-PRACTICE-01",
+      "grade": "FR-CM1",
+      "subject": "SVT",
+      "chapter": "CH-SVT-CM1-ECOSYSTEMS",
+      "skill": "SK-ENR-SVT-CM1-ECOSYSTEMS-COMPONENTS",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans une mare, lequel est un élément vivant ?",
+      "expected_answer": "une grenouille",
+      "answer_kind": "single_choice",
+      "explanation": "La grenouille est un organisme vivant.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-SVT-ECOSYSTEMS-COMPONENTS",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-SVT-V1-ECOSYSTEMS-COMPONENTS-PRACTICE-01",
+        "title": "Identifier les composantes d'un écosystème",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Dans une mare, lequel est un élément vivant ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "une grenouille",
+          "options": [
+            "l'eau",
+            "un caillou",
+            "la lumière",
+            "une grenouille"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "La grenouille est un organisme vivant.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-CM1-ECOSYSTEMS",
+          "primary_skill_code": "SK-ENR-SVT-CM1-ECOSYSTEMS-COMPONENTS",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-svt-generation-spec-v1",
+          "template_version": "lcai-cm1-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-SVT-ECOSYSTEMS-COMPONENTS",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-SVT-V1-ECOSYSTEMS-COMPONENTS-PRACTICE-02",
+      "grade": "FR-CM1",
+      "subject": "SVT",
+      "chapter": "CH-SVT-CM1-ECOSYSTEMS",
+      "skill": "SK-ENR-SVT-CM1-ECOSYSTEMS-COMPONENTS",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Dans un écosystème, on trouve :",
+      "expected_answer": "des êtres vivants et des éléments non vivants",
+      "answer_kind": "single_choice",
+      "explanation": "Un écosystème associe un milieu et les êtres vivants qui l'occupent.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-SVT-ECOSYSTEMS-COMPONENTS",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-SVT-V1-ECOSYSTEMS-COMPONENTS-PRACTICE-02",
+        "title": "Identifier les composantes d'un écosystème",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Dans un écosystème, on trouve :",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "des êtres vivants et des éléments non vivants",
+          "options": [
+            "uniquement de l'eau",
+            "aucune interaction",
+            "des êtres vivants et des éléments non vivants",
+            "seulement des animaux"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Un écosystème associe un milieu et les êtres vivants qui l'occupent.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-CM1-ECOSYSTEMS",
+          "primary_skill_code": "SK-ENR-SVT-CM1-ECOSYSTEMS-COMPONENTS",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-svt-generation-spec-v1",
+          "template_version": "lcai-cm1-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-SVT-ECOSYSTEMS-COMPONENTS",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-SVT-V1-ECOSYSTEMS-COMPONENTS-ASSESSMENT-03",
+      "grade": "FR-CM1",
+      "subject": "SVT",
+      "chapter": "CH-SVT-CM1-ECOSYSTEMS",
+      "skill": "SK-ENR-SVT-CM1-ECOSYSTEMS-COMPONENTS",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Le sol, l'eau et la lumière sont :",
+      "expected_answer": "des composantes non vivantes du milieu",
+      "answer_kind": "single_choice",
+      "explanation": "Ce sont des facteurs physiques du milieu.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-SVT-ECOSYSTEMS-COMPONENTS",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-SVT-V1-ECOSYSTEMS-COMPONENTS-ASSESSMENT-03",
+        "title": "Identifier les composantes d'un écosystème",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Le sol, l'eau et la lumière sont :",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "des composantes non vivantes du milieu",
+          "options": [
+            "des champignons obligatoirement",
+            "des composantes non vivantes du milieu",
+            "des animaux",
+            "des plantes"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Ce sont des facteurs physiques du milieu.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-CM1-ECOSYSTEMS",
+          "primary_skill_code": "SK-ENR-SVT-CM1-ECOSYSTEMS-COMPONENTS",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-svt-generation-spec-v1",
+          "template_version": "lcai-cm1-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-SVT-ECOSYSTEMS-COMPONENTS",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-SVT-V1-ECOSYSTEMS-FOOD-PRACTICE-01",
+      "grade": "FR-CM1",
+      "subject": "SVT",
+      "chapter": "CH-SVT-CM1-ECOSYSTEMS",
+      "skill": "SK-ENR-SVT-CM1-ECOSYSTEMS-FOOD",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « herbe → lapin », que signifie la flèche dans une chaîne alimentaire scolaire ?",
+      "expected_answer": "le lapin mange l'herbe",
+      "answer_kind": "single_choice",
+      "explanation": "La relation indique ici que le lapin se nourrit d'herbe.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-SVT-ECOSYSTEMS-FOOD",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-SVT-V1-ECOSYSTEMS-FOOD-PRACTICE-01",
+        "title": "Construire une relation alimentaire simple",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Dans « herbe → lapin », que signifie la flèche dans une chaîne alimentaire scolaire ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "le lapin mange l'herbe",
+          "options": [
+            "l'herbe mange le lapin",
+            "le lapin devient une plante",
+            "ils ne sont pas liés",
+            "le lapin mange l'herbe"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "La relation indique ici que le lapin se nourrit d'herbe.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-CM1-ECOSYSTEMS",
+          "primary_skill_code": "SK-ENR-SVT-CM1-ECOSYSTEMS-FOOD",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-svt-generation-spec-v1",
+          "template_version": "lcai-cm1-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-SVT-ECOSYSTEMS-FOOD",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-SVT-V1-ECOSYSTEMS-FOOD-PRACTICE-02",
+      "grade": "FR-CM1",
+      "subject": "SVT",
+      "chapter": "CH-SVT-CM1-ECOSYSTEMS",
+      "skill": "SK-ENR-SVT-CM1-ECOSYSTEMS-FOOD",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Quelle chaîne est plausible ?",
+      "expected_answer": "herbe → sauterelle → oiseau",
+      "answer_kind": "single_choice",
+      "explanation": "Une sauterelle peut manger des végétaux et être mangée par un oiseau.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-SVT-ECOSYSTEMS-FOOD",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-SVT-V1-ECOSYSTEMS-FOOD-PRACTICE-02",
+        "title": "Construire une relation alimentaire simple",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Quelle chaîne est plausible ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "herbe → sauterelle → oiseau",
+          "options": [
+            "soleil → caillou → renard",
+            "lapin → eau → métal",
+            "herbe → sauterelle → oiseau",
+            "oiseau → pierre → herbe"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Une sauterelle peut manger des végétaux et être mangée par un oiseau.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-CM1-ECOSYSTEMS",
+          "primary_skill_code": "SK-ENR-SVT-CM1-ECOSYSTEMS-FOOD",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-svt-generation-spec-v1",
+          "template_version": "lcai-cm1-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-SVT-ECOSYSTEMS-FOOD",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-SVT-V1-ECOSYSTEMS-FOOD-ASSESSMENT-03",
+      "grade": "FR-CM1",
+      "subject": "SVT",
+      "chapter": "CH-SVT-CM1-ECOSYSTEMS",
+      "skill": "SK-ENR-SVT-CM1-ECOSYSTEMS-FOOD",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Si un animal mange principalement des végétaux, on le qualifie souvent de :",
+      "expected_answer": "herbivore",
+      "answer_kind": "single_choice",
+      "explanation": "Un herbivore se nourrit de matière végétale.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-SVT-ECOSYSTEMS-FOOD",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-SVT-V1-ECOSYSTEMS-FOOD-ASSESSMENT-03",
+        "title": "Construire une relation alimentaire simple",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Si un animal mange principalement des végétaux, on le qualifie souvent de :",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "herbivore",
+          "options": [
+            "rocheux",
+            "herbivore",
+            "minéral",
+            "producteur de métal"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Un herbivore se nourrit de matière végétale.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-CM1-ECOSYSTEMS",
+          "primary_skill_code": "SK-ENR-SVT-CM1-ECOSYSTEMS-FOOD",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-svt-generation-spec-v1",
+          "template_version": "lcai-cm1-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-SVT-ECOSYSTEMS-FOOD",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-SVT-V1-ECOSYSTEMS-INTERACTION-PRACTICE-01",
+      "grade": "FR-CM1",
+      "subject": "SVT",
+      "chapter": "CH-SVT-CM1-ECOSYSTEMS",
+      "skill": "SK-ENR-SVT-CM1-ECOSYSTEMS-INTERACTION",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Une abeille qui prélève du nectar sur une fleur peut aussi :",
+      "expected_answer": "participer à sa pollinisation",
+      "answer_kind": "single_choice",
+      "explanation": "En visitant les fleurs, l'abeille peut transporter du pollen.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-SVT-ECOSYSTEMS-INTERACTION",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-SVT-V1-ECOSYSTEMS-INTERACTION-PRACTICE-01",
+        "title": "Expliquer une interaction entre organismes",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Une abeille qui prélève du nectar sur une fleur peut aussi :",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "participer à sa pollinisation",
+          "options": [
+            "transformer la fleur en pierre",
+            "supprimer toute reproduction",
+            "faire disparaître le soleil",
+            "participer à sa pollinisation"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "En visitant les fleurs, l'abeille peut transporter du pollen.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-CM1-ECOSYSTEMS",
+          "primary_skill_code": "SK-ENR-SVT-CM1-ECOSYSTEMS-INTERACTION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-svt-generation-spec-v1",
+          "template_version": "lcai-cm1-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-SVT-ECOSYSTEMS-INTERACTION",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-SVT-V1-ECOSYSTEMS-INTERACTION-PRACTICE-02",
+      "grade": "FR-CM1",
+      "subject": "SVT",
+      "chapter": "CH-SVT-CM1-ECOSYSTEMS",
+      "skill": "SK-ENR-SVT-CM1-ECOSYSTEMS-INTERACTION",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Deux plantes proches peuvent être en compétition pour :",
+      "expected_answer": "la lumière et l'eau",
+      "answer_kind": "single_choice",
+      "explanation": "Les organismes peuvent utiliser les mêmes ressources limitées.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-SVT-ECOSYSTEMS-INTERACTION",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-SVT-V1-ECOSYSTEMS-INTERACTION-PRACTICE-02",
+        "title": "Expliquer une interaction entre organismes",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Deux plantes proches peuvent être en compétition pour :",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "la lumière et l'eau",
+          "options": [
+            "des routes",
+            "des vêtements",
+            "la lumière et l'eau",
+            "des crayons"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Les organismes peuvent utiliser les mêmes ressources limitées.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-CM1-ECOSYSTEMS",
+          "primary_skill_code": "SK-ENR-SVT-CM1-ECOSYSTEMS-INTERACTION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-svt-generation-spec-v1",
+          "template_version": "lcai-cm1-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-SVT-ECOSYSTEMS-INTERACTION",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-SVT-V1-ECOSYSTEMS-INTERACTION-ASSESSMENT-03",
+      "grade": "FR-CM1",
+      "subject": "SVT",
+      "chapter": "CH-SVT-CM1-ECOSYSTEMS",
+      "skill": "SK-ENR-SVT-CM1-ECOSYSTEMS-INTERACTION",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Un prédateur et sa proie ont une interaction :",
+      "expected_answer": "alimentaire",
+      "answer_kind": "single_choice",
+      "explanation": "La prédation est une interaction entre organismes.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-SVT-ECOSYSTEMS-INTERACTION",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-SVT-V1-ECOSYSTEMS-INTERACTION-ASSESSMENT-03",
+        "title": "Expliquer une interaction entre organismes",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Un prédateur et sa proie ont une interaction :",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "alimentaire",
+          "options": [
+            "administrative",
+            "alimentaire",
+            "sans aucun lien",
+            "uniquement géologique"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "La prédation est une interaction entre organismes.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-CM1-ECOSYSTEMS",
+          "primary_skill_code": "SK-ENR-SVT-CM1-ECOSYSTEMS-INTERACTION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-svt-generation-spec-v1",
+          "template_version": "lcai-cm1-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-SVT-ECOSYSTEMS-INTERACTION",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-SVT-V1-ECOSYSTEMS-HUMAN_IMPACT-PRACTICE-01",
+      "grade": "FR-CM1",
+      "subject": "SVT",
+      "chapter": "CH-SVT-CM1-ECOSYSTEMS",
+      "skill": "SK-ENR-SVT-CM1-ECOSYSTEMS-HUMAN_IMPACT",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Jeter des déchets dans une mare peut :",
+      "expected_answer": "dégrader le milieu et affecter les êtres vivants",
+      "answer_kind": "single_choice",
+      "explanation": "Une pollution peut modifier les conditions du milieu.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-SVT-ECOSYSTEMS-HUMAN_IMPACT",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-SVT-V1-ECOSYSTEMS-HUMAN_IMPACT-PRACTICE-01",
+        "title": "Identifier un effet d'une action humaine",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Jeter des déchets dans une mare peut :",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "dégrader le milieu et affecter les êtres vivants",
+          "options": [
+            "améliorer toujours l'eau",
+            "n'avoir aucun effet possible",
+            "créer automatiquement de nouvelles espèces",
+            "dégrader le milieu et affecter les êtres vivants"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Une pollution peut modifier les conditions du milieu.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-CM1-ECOSYSTEMS",
+          "primary_skill_code": "SK-ENR-SVT-CM1-ECOSYSTEMS-HUMAN_IMPACT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-svt-generation-spec-v1",
+          "template_version": "lcai-cm1-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-SVT-ECOSYSTEMS-HUMAN_IMPACT",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-SVT-V1-ECOSYSTEMS-HUMAN_IMPACT-PRACTICE-02",
+      "grade": "FR-CM1",
+      "subject": "SVT",
+      "chapter": "CH-SVT-CM1-ECOSYSTEMS",
+      "skill": "SK-ENR-SVT-CM1-ECOSYSTEMS-HUMAN_IMPACT",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Planter des haies dans une zone agricole peut parfois :",
+      "expected_answer": "offrir des habitats à plusieurs espèces",
+      "answer_kind": "single_choice",
+      "explanation": "Les haies peuvent fournir abri et ressources à de nombreux organismes.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-SVT-ECOSYSTEMS-HUMAN_IMPACT",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-SVT-V1-ECOSYSTEMS-HUMAN_IMPACT-PRACTICE-02",
+        "title": "Identifier un effet d'une action humaine",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Planter des haies dans une zone agricole peut parfois :",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "offrir des habitats à plusieurs espèces",
+          "options": [
+            "transformer le sol en métal",
+            "empêcher toute plante de pousser",
+            "offrir des habitats à plusieurs espèces",
+            "supprimer toute biodiversité"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Les haies peuvent fournir abri et ressources à de nombreux organismes.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-CM1-ECOSYSTEMS",
+          "primary_skill_code": "SK-ENR-SVT-CM1-ECOSYSTEMS-HUMAN_IMPACT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-svt-generation-spec-v1",
+          "template_version": "lcai-cm1-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-SVT-ECOSYSTEMS-HUMAN_IMPACT",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_svt_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-SVT-V1-ECOSYSTEMS-HUMAN_IMPACT-ASSESSMENT-03",
+      "grade": "FR-CM1",
+      "subject": "SVT",
+      "chapter": "CH-SVT-CM1-ECOSYSTEMS",
+      "skill": "SK-ENR-SVT-CM1-ECOSYSTEMS-HUMAN_IMPACT",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Quelle action aide directement à préserver un milieu naturel ?",
+      "expected_answer": "éviter d'y abandonner des déchets",
+      "answer_kind": "single_choice",
+      "explanation": "Limiter les déchets réduit une pression humaine sur le milieu.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-SVT-ECOSYSTEMS-HUMAN_IMPACT",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T10:06:05.970050+00:00",
+        "template_version": "lcai-cm1-svt-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-SVT-V1-ECOSYSTEMS-HUMAN_IMPACT-ASSESSMENT-03",
+        "title": "Identifier un effet d'une action humaine",
+        "instructions": "Choisis la réponse la plus juste.",
+        "prompt": "Quelle action aide directement à préserver un milieu naturel ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "éviter d'y abandonner des déchets",
+          "options": [
+            "verser des produits polluants",
+            "éviter d'y abandonner des déchets",
+            "arracher toutes les plantes",
+            "déranger volontairement les nids"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Limiter les déchets réduit une pression humaine sur le milieu.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "SVT",
+          "chapter_code": "CH-SVT-CM1-ECOSYSTEMS",
+          "primary_skill_code": "SK-ENR-SVT-CM1-ECOSYSTEMS-HUMAN_IMPACT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-svt-generation-spec-v1",
+          "template_version": "lcai-cm1-svt-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T10:06:05.970050+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Bonne réponse.",
+          "incorrect": "Relis la question et utilise les indices du cours ou du document."
+        },
+        "family_code": "CM1-SVT-ECOSYSTEMS-HUMAN_IMPACT",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté calibrée pour le CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_svt_candidates_v1.json"
+      }
+    }
+  ]
+}

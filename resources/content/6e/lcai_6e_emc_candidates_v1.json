@@ -1,0 +1,2014 @@
+{
+  "batch": "6E-EMC-V1",
+  "purpose": "Parallel 6e content preparation for Learning Coach AI",
+  "lifecycle_target": "Draft",
+  "automatic_approval": false,
+  "curriculum_version": "phase2-lcai-0011c",
+  "program_code": "FR-CYCLE3-6E-2026",
+  "grade_code": "FR-6E",
+  "subject_code": "EMC",
+  "skill_count": 8,
+  "candidate_count": 24,
+  "content_types": {
+    "practice": 16,
+    "assessment": 8
+  },
+  "difficulty_distribution": {
+    "1": 8,
+    "2": 16
+  },
+  "accepted_candidates": [
+    {
+      "code": "6E-EMC-V1-COLLEGE-RIGHTS-PRACTICE-01",
+      "grade": "FR-6E",
+      "subject": "EMC",
+      "chapter": "CH-EMC-6E-COLLEGE",
+      "skill": "SK-ENR-EMC-6E-COLLEGE-RIGHTS",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Le collégien et la communauté scolaire », réalise une tâche montrant que tu sais identifier les droits du collégien. Appuie-toi sur un exemple ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Identifier les droits du collégien ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-EMC-COLLEGE-RIGHTS",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-EMC-V1-COLLEGE-RIGHTS-PRACTICE-01",
+        "title": "Identifier les droits du collégien",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Le collégien et la communauté scolaire », réalise une tâche montrant que tu sais identifier les droits du collégien. Appuie-toi sur un exemple ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Identifier les droits du collégien ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-6E-COLLEGE",
+          "primary_skill_code": "SK-ENR-EMC-6E-COLLEGE-RIGHTS",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-emc-v1",
+          "template_version": "lcai-6e-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-EMC-COLLEGE-RIGHTS",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-EMC-V1-COLLEGE-RIGHTS-PRACTICE-02",
+      "grade": "FR-6E",
+      "subject": "EMC",
+      "chapter": "CH-EMC-6E-COLLEGE",
+      "skill": "SK-ENR-EMC-6E-COLLEGE-RIGHTS",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Identifier les droits du collégien » à une situation pertinente de niveau 6e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Identifier les droits du collégien ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-EMC-COLLEGE-RIGHTS",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-EMC-V1-COLLEGE-RIGHTS-PRACTICE-02",
+        "title": "Identifier les droits du collégien",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Identifier les droits du collégien » à une situation pertinente de niveau 6e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Identifier les droits du collégien ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-6E-COLLEGE",
+          "primary_skill_code": "SK-ENR-EMC-6E-COLLEGE-RIGHTS",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-emc-v1",
+          "template_version": "lcai-6e-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-EMC-COLLEGE-RIGHTS",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-EMC-V1-COLLEGE-RIGHTS-ASSESSMENT-03",
+      "grade": "FR-6E",
+      "subject": "EMC",
+      "chapter": "CH-EMC-6E-COLLEGE",
+      "skill": "SK-ENR-EMC-6E-COLLEGE-RIGHTS",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 6e : démontre de façon autonome que tu sais identifier les droits du collégien. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Identifier les droits du collégien ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-EMC-COLLEGE-RIGHTS",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-EMC-V1-COLLEGE-RIGHTS-ASSESSMENT-03",
+        "title": "Identifier les droits du collégien",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 6e : démontre de façon autonome que tu sais identifier les droits du collégien. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Identifier les droits du collégien ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-6E-COLLEGE",
+          "primary_skill_code": "SK-ENR-EMC-6E-COLLEGE-RIGHTS",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-emc-v1",
+          "template_version": "lcai-6e-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-EMC-COLLEGE-RIGHTS",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-EMC-V1-COLLEGE-DUTIES-PRACTICE-01",
+      "grade": "FR-6E",
+      "subject": "EMC",
+      "chapter": "CH-EMC-6E-COLLEGE",
+      "skill": "SK-ENR-EMC-6E-COLLEGE-DUTIES",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Le collégien et la communauté scolaire », réalise une tâche montrant que tu sais identifier ses devoirs et responsabilités. Appuie-toi sur un exemple ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Identifier ses devoirs et responsabilités ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-EMC-COLLEGE-DUTIES",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-EMC-V1-COLLEGE-DUTIES-PRACTICE-01",
+        "title": "Identifier ses devoirs et responsabilités",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Le collégien et la communauté scolaire », réalise une tâche montrant que tu sais identifier ses devoirs et responsabilités. Appuie-toi sur un exemple ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Identifier ses devoirs et responsabilités ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-6E-COLLEGE",
+          "primary_skill_code": "SK-ENR-EMC-6E-COLLEGE-DUTIES",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-emc-v1",
+          "template_version": "lcai-6e-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-EMC-COLLEGE-DUTIES",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-EMC-V1-COLLEGE-DUTIES-PRACTICE-02",
+      "grade": "FR-6E",
+      "subject": "EMC",
+      "chapter": "CH-EMC-6E-COLLEGE",
+      "skill": "SK-ENR-EMC-6E-COLLEGE-DUTIES",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Identifier ses devoirs et responsabilités » à une situation pertinente de niveau 6e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Identifier ses devoirs et responsabilités ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-EMC-COLLEGE-DUTIES",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-EMC-V1-COLLEGE-DUTIES-PRACTICE-02",
+        "title": "Identifier ses devoirs et responsabilités",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Identifier ses devoirs et responsabilités » à une situation pertinente de niveau 6e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Identifier ses devoirs et responsabilités ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-6E-COLLEGE",
+          "primary_skill_code": "SK-ENR-EMC-6E-COLLEGE-DUTIES",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-emc-v1",
+          "template_version": "lcai-6e-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-EMC-COLLEGE-DUTIES",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-EMC-V1-COLLEGE-DUTIES-ASSESSMENT-03",
+      "grade": "FR-6E",
+      "subject": "EMC",
+      "chapter": "CH-EMC-6E-COLLEGE",
+      "skill": "SK-ENR-EMC-6E-COLLEGE-DUTIES",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 6e : démontre de façon autonome que tu sais identifier ses devoirs et responsabilités. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Identifier ses devoirs et responsabilités ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-EMC-COLLEGE-DUTIES",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-EMC-V1-COLLEGE-DUTIES-ASSESSMENT-03",
+        "title": "Identifier ses devoirs et responsabilités",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 6e : démontre de façon autonome que tu sais identifier ses devoirs et responsabilités. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Identifier ses devoirs et responsabilités ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-6E-COLLEGE",
+          "primary_skill_code": "SK-ENR-EMC-6E-COLLEGE-DUTIES",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-emc-v1",
+          "template_version": "lcai-6e-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-EMC-COLLEGE-DUTIES",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-EMC-V1-COLLEGE-RULES-PRACTICE-01",
+      "grade": "FR-6E",
+      "subject": "EMC",
+      "chapter": "CH-EMC-6E-COLLEGE",
+      "skill": "SK-ENR-EMC-6E-COLLEGE-RULES",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Le collégien et la communauté scolaire », réalise une tâche montrant que tu sais appliquer le règlement à une situation. Appuie-toi sur un exemple ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Appliquer le règlement à une situation ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-EMC-COLLEGE-RULES",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-EMC-V1-COLLEGE-RULES-PRACTICE-01",
+        "title": "Appliquer le règlement à une situation",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Le collégien et la communauté scolaire », réalise une tâche montrant que tu sais appliquer le règlement à une situation. Appuie-toi sur un exemple ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Appliquer le règlement à une situation ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-6E-COLLEGE",
+          "primary_skill_code": "SK-ENR-EMC-6E-COLLEGE-RULES",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-emc-v1",
+          "template_version": "lcai-6e-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-EMC-COLLEGE-RULES",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-EMC-V1-COLLEGE-RULES-PRACTICE-02",
+      "grade": "FR-6E",
+      "subject": "EMC",
+      "chapter": "CH-EMC-6E-COLLEGE",
+      "skill": "SK-ENR-EMC-6E-COLLEGE-RULES",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Appliquer le règlement à une situation » à une situation pertinente de niveau 6e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Appliquer le règlement à une situation ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-EMC-COLLEGE-RULES",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-EMC-V1-COLLEGE-RULES-PRACTICE-02",
+        "title": "Appliquer le règlement à une situation",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Appliquer le règlement à une situation » à une situation pertinente de niveau 6e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Appliquer le règlement à une situation ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-6E-COLLEGE",
+          "primary_skill_code": "SK-ENR-EMC-6E-COLLEGE-RULES",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-emc-v1",
+          "template_version": "lcai-6e-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-EMC-COLLEGE-RULES",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-EMC-V1-COLLEGE-RULES-ASSESSMENT-03",
+      "grade": "FR-6E",
+      "subject": "EMC",
+      "chapter": "CH-EMC-6E-COLLEGE",
+      "skill": "SK-ENR-EMC-6E-COLLEGE-RULES",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 6e : démontre de façon autonome que tu sais appliquer le règlement à une situation. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Appliquer le règlement à une situation ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-EMC-COLLEGE-RULES",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-EMC-V1-COLLEGE-RULES-ASSESSMENT-03",
+        "title": "Appliquer le règlement à une situation",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 6e : démontre de façon autonome que tu sais appliquer le règlement à une situation. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Appliquer le règlement à une situation ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-6E-COLLEGE",
+          "primary_skill_code": "SK-ENR-EMC-6E-COLLEGE-RULES",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-emc-v1",
+          "template_version": "lcai-6e-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-EMC-COLLEGE-RULES",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-EMC-V1-COLLEGE-PARTICIPATION-PRACTICE-01",
+      "grade": "FR-6E",
+      "subject": "EMC",
+      "chapter": "CH-EMC-6E-COLLEGE",
+      "skill": "SK-ENR-EMC-6E-COLLEGE-PARTICIPATION",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Le collégien et la communauté scolaire », réalise une tâche montrant que tu sais expliquer les formes de participation au collège. Appuie-toi sur un exemple ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Expliquer les formes de participation au collège ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-EMC-COLLEGE-PARTICIPATION",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-EMC-V1-COLLEGE-PARTICIPATION-PRACTICE-01",
+        "title": "Expliquer les formes de participation au collège",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Le collégien et la communauté scolaire », réalise une tâche montrant que tu sais expliquer les formes de participation au collège. Appuie-toi sur un exemple ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Expliquer les formes de participation au collège ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-6E-COLLEGE",
+          "primary_skill_code": "SK-ENR-EMC-6E-COLLEGE-PARTICIPATION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-emc-v1",
+          "template_version": "lcai-6e-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-EMC-COLLEGE-PARTICIPATION",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-EMC-V1-COLLEGE-PARTICIPATION-PRACTICE-02",
+      "grade": "FR-6E",
+      "subject": "EMC",
+      "chapter": "CH-EMC-6E-COLLEGE",
+      "skill": "SK-ENR-EMC-6E-COLLEGE-PARTICIPATION",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Expliquer les formes de participation au collège » à une situation pertinente de niveau 6e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Expliquer les formes de participation au collège ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-EMC-COLLEGE-PARTICIPATION",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-EMC-V1-COLLEGE-PARTICIPATION-PRACTICE-02",
+        "title": "Expliquer les formes de participation au collège",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Expliquer les formes de participation au collège » à une situation pertinente de niveau 6e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Expliquer les formes de participation au collège ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-6E-COLLEGE",
+          "primary_skill_code": "SK-ENR-EMC-6E-COLLEGE-PARTICIPATION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-emc-v1",
+          "template_version": "lcai-6e-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-EMC-COLLEGE-PARTICIPATION",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-EMC-V1-COLLEGE-PARTICIPATION-ASSESSMENT-03",
+      "grade": "FR-6E",
+      "subject": "EMC",
+      "chapter": "CH-EMC-6E-COLLEGE",
+      "skill": "SK-ENR-EMC-6E-COLLEGE-PARTICIPATION",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 6e : démontre de façon autonome que tu sais expliquer les formes de participation au collège. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Expliquer les formes de participation au collège ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-EMC-COLLEGE-PARTICIPATION",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-EMC-V1-COLLEGE-PARTICIPATION-ASSESSMENT-03",
+        "title": "Expliquer les formes de participation au collège",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 6e : démontre de façon autonome que tu sais expliquer les formes de participation au collège. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Expliquer les formes de participation au collège ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-6E-COLLEGE",
+          "primary_skill_code": "SK-ENR-EMC-6E-COLLEGE-PARTICIPATION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-emc-v1",
+          "template_version": "lcai-6e-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-EMC-COLLEGE-PARTICIPATION",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-EMC-V1-REPUBLIC-SYMBOL-PRACTICE-01",
+      "grade": "FR-6E",
+      "subject": "EMC",
+      "chapter": "CH-EMC-6E-REPUBLIC",
+      "skill": "SK-ENR-EMC-6E-REPUBLIC-SYMBOL",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Principes et symboles de la République », réalise une tâche montrant que tu sais identifier les symboles républicains. Appuie-toi sur un exemple ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Identifier les symboles républicains ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-EMC-REPUBLIC-SYMBOL",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-EMC-V1-REPUBLIC-SYMBOL-PRACTICE-01",
+        "title": "Identifier les symboles républicains",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Principes et symboles de la République », réalise une tâche montrant que tu sais identifier les symboles républicains. Appuie-toi sur un exemple ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Identifier les symboles républicains ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-6E-REPUBLIC",
+          "primary_skill_code": "SK-ENR-EMC-6E-REPUBLIC-SYMBOL",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-emc-v1",
+          "template_version": "lcai-6e-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-EMC-REPUBLIC-SYMBOL",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-EMC-V1-REPUBLIC-SYMBOL-PRACTICE-02",
+      "grade": "FR-6E",
+      "subject": "EMC",
+      "chapter": "CH-EMC-6E-REPUBLIC",
+      "skill": "SK-ENR-EMC-6E-REPUBLIC-SYMBOL",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Identifier les symboles républicains » à une situation pertinente de niveau 6e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Identifier les symboles républicains ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-EMC-REPUBLIC-SYMBOL",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-EMC-V1-REPUBLIC-SYMBOL-PRACTICE-02",
+        "title": "Identifier les symboles républicains",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Identifier les symboles républicains » à une situation pertinente de niveau 6e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Identifier les symboles républicains ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-6E-REPUBLIC",
+          "primary_skill_code": "SK-ENR-EMC-6E-REPUBLIC-SYMBOL",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-emc-v1",
+          "template_version": "lcai-6e-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-EMC-REPUBLIC-SYMBOL",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-EMC-V1-REPUBLIC-SYMBOL-ASSESSMENT-03",
+      "grade": "FR-6E",
+      "subject": "EMC",
+      "chapter": "CH-EMC-6E-REPUBLIC",
+      "skill": "SK-ENR-EMC-6E-REPUBLIC-SYMBOL",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 6e : démontre de façon autonome que tu sais identifier les symboles républicains. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Identifier les symboles républicains ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-EMC-REPUBLIC-SYMBOL",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-EMC-V1-REPUBLIC-SYMBOL-ASSESSMENT-03",
+        "title": "Identifier les symboles républicains",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 6e : démontre de façon autonome que tu sais identifier les symboles républicains. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Identifier les symboles républicains ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-6E-REPUBLIC",
+          "primary_skill_code": "SK-ENR-EMC-6E-REPUBLIC-SYMBOL",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-emc-v1",
+          "template_version": "lcai-6e-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-EMC-REPUBLIC-SYMBOL",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-EMC-V1-REPUBLIC-PRINCIPLE-PRACTICE-01",
+      "grade": "FR-6E",
+      "subject": "EMC",
+      "chapter": "CH-EMC-6E-REPUBLIC",
+      "skill": "SK-ENR-EMC-6E-REPUBLIC-PRINCIPLE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Principes et symboles de la République », réalise une tâche montrant que tu sais expliquer un principe républicain. Appuie-toi sur un exemple ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Expliquer un principe républicain ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-EMC-REPUBLIC-PRINCIPLE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-EMC-V1-REPUBLIC-PRINCIPLE-PRACTICE-01",
+        "title": "Expliquer un principe républicain",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Principes et symboles de la République », réalise une tâche montrant que tu sais expliquer un principe républicain. Appuie-toi sur un exemple ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Expliquer un principe républicain ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-6E-REPUBLIC",
+          "primary_skill_code": "SK-ENR-EMC-6E-REPUBLIC-PRINCIPLE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-emc-v1",
+          "template_version": "lcai-6e-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-EMC-REPUBLIC-PRINCIPLE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-EMC-V1-REPUBLIC-PRINCIPLE-PRACTICE-02",
+      "grade": "FR-6E",
+      "subject": "EMC",
+      "chapter": "CH-EMC-6E-REPUBLIC",
+      "skill": "SK-ENR-EMC-6E-REPUBLIC-PRINCIPLE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Expliquer un principe républicain » à une situation pertinente de niveau 6e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Expliquer un principe républicain ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-EMC-REPUBLIC-PRINCIPLE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-EMC-V1-REPUBLIC-PRINCIPLE-PRACTICE-02",
+        "title": "Expliquer un principe républicain",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Expliquer un principe républicain » à une situation pertinente de niveau 6e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Expliquer un principe républicain ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-6E-REPUBLIC",
+          "primary_skill_code": "SK-ENR-EMC-6E-REPUBLIC-PRINCIPLE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-emc-v1",
+          "template_version": "lcai-6e-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-EMC-REPUBLIC-PRINCIPLE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-EMC-V1-REPUBLIC-PRINCIPLE-ASSESSMENT-03",
+      "grade": "FR-6E",
+      "subject": "EMC",
+      "chapter": "CH-EMC-6E-REPUBLIC",
+      "skill": "SK-ENR-EMC-6E-REPUBLIC-PRINCIPLE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 6e : démontre de façon autonome que tu sais expliquer un principe républicain. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Expliquer un principe républicain ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-EMC-REPUBLIC-PRINCIPLE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-EMC-V1-REPUBLIC-PRINCIPLE-ASSESSMENT-03",
+        "title": "Expliquer un principe républicain",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 6e : démontre de façon autonome que tu sais expliquer un principe républicain. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Expliquer un principe républicain ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-6E-REPUBLIC",
+          "primary_skill_code": "SK-ENR-EMC-6E-REPUBLIC-PRINCIPLE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-emc-v1",
+          "template_version": "lcai-6e-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-EMC-REPUBLIC-PRINCIPLE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-EMC-V1-REPUBLIC-SECULARISM-PRACTICE-01",
+      "grade": "FR-6E",
+      "subject": "EMC",
+      "chapter": "CH-EMC-6E-REPUBLIC",
+      "skill": "SK-ENR-EMC-6E-REPUBLIC-SECULARISM",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Principes et symboles de la République », réalise une tâche montrant que tu sais appliquer la laïcité à une situation. Appuie-toi sur un exemple ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Appliquer la laïcité à une situation ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-EMC-REPUBLIC-SECULARISM",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-EMC-V1-REPUBLIC-SECULARISM-PRACTICE-01",
+        "title": "Appliquer la laïcité à une situation",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Principes et symboles de la République », réalise une tâche montrant que tu sais appliquer la laïcité à une situation. Appuie-toi sur un exemple ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Appliquer la laïcité à une situation ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-6E-REPUBLIC",
+          "primary_skill_code": "SK-ENR-EMC-6E-REPUBLIC-SECULARISM",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-emc-v1",
+          "template_version": "lcai-6e-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-EMC-REPUBLIC-SECULARISM",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-EMC-V1-REPUBLIC-SECULARISM-PRACTICE-02",
+      "grade": "FR-6E",
+      "subject": "EMC",
+      "chapter": "CH-EMC-6E-REPUBLIC",
+      "skill": "SK-ENR-EMC-6E-REPUBLIC-SECULARISM",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Appliquer la laïcité à une situation » à une situation pertinente de niveau 6e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Appliquer la laïcité à une situation ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-EMC-REPUBLIC-SECULARISM",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-EMC-V1-REPUBLIC-SECULARISM-PRACTICE-02",
+        "title": "Appliquer la laïcité à une situation",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Appliquer la laïcité à une situation » à une situation pertinente de niveau 6e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Appliquer la laïcité à une situation ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-6E-REPUBLIC",
+          "primary_skill_code": "SK-ENR-EMC-6E-REPUBLIC-SECULARISM",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-emc-v1",
+          "template_version": "lcai-6e-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-EMC-REPUBLIC-SECULARISM",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-EMC-V1-REPUBLIC-SECULARISM-ASSESSMENT-03",
+      "grade": "FR-6E",
+      "subject": "EMC",
+      "chapter": "CH-EMC-6E-REPUBLIC",
+      "skill": "SK-ENR-EMC-6E-REPUBLIC-SECULARISM",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 6e : démontre de façon autonome que tu sais appliquer la laïcité à une situation. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Appliquer la laïcité à une situation ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-EMC-REPUBLIC-SECULARISM",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-EMC-V1-REPUBLIC-SECULARISM-ASSESSMENT-03",
+        "title": "Appliquer la laïcité à une situation",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 6e : démontre de façon autonome que tu sais appliquer la laïcité à une situation. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Appliquer la laïcité à une situation ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-6E-REPUBLIC",
+          "primary_skill_code": "SK-ENR-EMC-6E-REPUBLIC-SECULARISM",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-emc-v1",
+          "template_version": "lcai-6e-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-EMC-REPUBLIC-SECULARISM",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-EMC-V1-REPUBLIC-ARGUE-PRACTICE-01",
+      "grade": "FR-6E",
+      "subject": "EMC",
+      "chapter": "CH-EMC-6E-REPUBLIC",
+      "skill": "SK-ENR-EMC-6E-REPUBLIC-ARGUE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Principes et symboles de la République », réalise une tâche montrant que tu sais justifier une réponse citoyenne. Appuie-toi sur un exemple ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Justifier une réponse citoyenne ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-EMC-REPUBLIC-ARGUE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-EMC-V1-REPUBLIC-ARGUE-PRACTICE-01",
+        "title": "Justifier une réponse citoyenne",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Principes et symboles de la République », réalise une tâche montrant que tu sais justifier une réponse citoyenne. Appuie-toi sur un exemple ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Justifier une réponse citoyenne ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-6E-REPUBLIC",
+          "primary_skill_code": "SK-ENR-EMC-6E-REPUBLIC-ARGUE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-emc-v1",
+          "template_version": "lcai-6e-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-EMC-REPUBLIC-ARGUE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-EMC-V1-REPUBLIC-ARGUE-PRACTICE-02",
+      "grade": "FR-6E",
+      "subject": "EMC",
+      "chapter": "CH-EMC-6E-REPUBLIC",
+      "skill": "SK-ENR-EMC-6E-REPUBLIC-ARGUE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Justifier une réponse citoyenne » à une situation pertinente de niveau 6e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Justifier une réponse citoyenne ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-EMC-REPUBLIC-ARGUE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-EMC-V1-REPUBLIC-ARGUE-PRACTICE-02",
+        "title": "Justifier une réponse citoyenne",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Justifier une réponse citoyenne » à une situation pertinente de niveau 6e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Justifier une réponse citoyenne ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-6E-REPUBLIC",
+          "primary_skill_code": "SK-ENR-EMC-6E-REPUBLIC-ARGUE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-emc-v1",
+          "template_version": "lcai-6e-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-EMC-REPUBLIC-ARGUE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "6E-EMC-V1-REPUBLIC-ARGUE-ASSESSMENT-03",
+      "grade": "FR-6E",
+      "subject": "EMC",
+      "chapter": "CH-EMC-6E-REPUBLIC",
+      "skill": "SK-ENR-EMC-6E-REPUBLIC-ARGUE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 6e : démontre de façon autonome que tu sais justifier une réponse citoyenne. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Justifier une réponse citoyenne ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "6E-EMC-REPUBLIC-ARGUE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.6 Thinking",
+        "generated_at": "2026-07-26T11:07:27.768247+00:00",
+        "template_version": "lcai-6e-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "6E-EMC-V1-REPUBLIC-ARGUE-ASSESSMENT-03",
+        "title": "Justifier une réponse citoyenne",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 6e : démontre de façon autonome que tu sais justifier une réponse citoyenne. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Justifier une réponse citoyenne ».",
+        "target": {
+          "program_code": "FR-CYCLE3-6E-2026",
+          "grade_code": "FR-6E",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-6E-REPUBLIC",
+          "primary_skill_code": "SK-ENR-EMC-6E-REPUBLIC-ARGUE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.6 Thinking",
+          "specification_version": "lcai-6e-emc-v1",
+          "template_version": "lcai-6e-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:07:27.768247+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "6E-EMC-REPUBLIC-ARGUE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 6e.",
+          "review_required": true,
+          "source_ticket": "parallel-6E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "au moins un exemple, indice ou justification",
+            "niveau de formulation adapté à la 6e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_6e_emc_candidates_v1.json"
+      }
+    }
+  ]
+}

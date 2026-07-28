@@ -1,0 +1,2014 @@
+{
+  "batch": "CM2-EMC-V1",
+  "purpose": "Parallel CM2 content preparation for Learning Coach AI",
+  "lifecycle_target": "Draft",
+  "automatic_approval": false,
+  "curriculum_version": "phase2-lcai-0011c",
+  "program_code": "FR-CYCLE3-CM2-2026",
+  "grade_code": "FR-CM2",
+  "subject_code": "EMC",
+  "skill_count": 8,
+  "candidate_count": 24,
+  "content_types": {
+    "practice": 16,
+    "assessment": 8
+  },
+  "difficulty_distribution": {
+    "1": 8,
+    "2": 16
+  },
+  "accepted_candidates": [
+    {
+      "code": "CM2-EMC-V1-REPUBLIC-LIBERTY-PRACTICE-01",
+      "grade": "FR-CM2",
+      "subject": "EMC",
+      "chapter": "CH-EMC-CM2-REPUBLIC",
+      "skill": "SK-ENR-EMC-CM2-REPUBLIC-LIBERTY",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Valeurs et principes de la République », réalise une tâche courte montrant que tu sais expliquer une liberté fondamentale. Donne un exemple précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Expliquer une liberté fondamentale ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-EMC-REPUBLIC-LIBERTY",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-EMC-V1-REPUBLIC-LIBERTY-PRACTICE-01",
+        "title": "Expliquer une liberté fondamentale",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Valeurs et principes de la République », réalise une tâche courte montrant que tu sais expliquer une liberté fondamentale. Donne un exemple précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Expliquer une liberté fondamentale ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-CM2-REPUBLIC",
+          "primary_skill_code": "SK-ENR-EMC-CM2-REPUBLIC-LIBERTY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-emc-v1",
+          "template_version": "lcai-cm2-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-EMC-REPUBLIC-LIBERTY",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-EMC-V1-REPUBLIC-LIBERTY-PRACTICE-02",
+      "grade": "FR-CM2",
+      "subject": "EMC",
+      "chapter": "CH-EMC-CM2-REPUBLIC",
+      "skill": "SK-ENR-EMC-CM2-REPUBLIC-LIBERTY",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique avec tes mots puis applique à un exemple : « Expliquer une liberté fondamentale ».",
+      "expected_answer": "Réponse ouverte : explication correcte et exemple pertinent.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Expliquer une liberté fondamentale ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-EMC-REPUBLIC-LIBERTY",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-EMC-V1-REPUBLIC-LIBERTY-PRACTICE-02",
+        "title": "Expliquer une liberté fondamentale",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique avec tes mots puis applique à un exemple : « Expliquer une liberté fondamentale ».",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et exemple pertinent.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Expliquer une liberté fondamentale ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-CM2-REPUBLIC",
+          "primary_skill_code": "SK-ENR-EMC-CM2-REPUBLIC-LIBERTY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-emc-v1",
+          "template_version": "lcai-cm2-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-EMC-REPUBLIC-LIBERTY",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-EMC-V1-REPUBLIC-LIBERTY-ASSESSMENT-03",
+      "grade": "FR-CM2",
+      "subject": "EMC",
+      "chapter": "CH-EMC-CM2-REPUBLIC",
+      "skill": "SK-ENR-EMC-CM2-REPUBLIC-LIBERTY",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation CM2 : montre de façon autonome que tu sais expliquer une liberté fondamentale. Justifie avec un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Expliquer une liberté fondamentale ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-EMC-REPUBLIC-LIBERTY",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-EMC-V1-REPUBLIC-LIBERTY-ASSESSMENT-03",
+        "title": "Expliquer une liberté fondamentale",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation CM2 : montre de façon autonome que tu sais expliquer une liberté fondamentale. Justifie avec un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Expliquer une liberté fondamentale ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-CM2-REPUBLIC",
+          "primary_skill_code": "SK-ENR-EMC-CM2-REPUBLIC-LIBERTY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-emc-v1",
+          "template_version": "lcai-cm2-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-EMC-REPUBLIC-LIBERTY",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-EMC-V1-REPUBLIC-EQUALITY-PRACTICE-01",
+      "grade": "FR-CM2",
+      "subject": "EMC",
+      "chapter": "CH-EMC-CM2-REPUBLIC",
+      "skill": "SK-ENR-EMC-CM2-REPUBLIC-EQUALITY",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Valeurs et principes de la République », réalise une tâche courte montrant que tu sais appliquer le principe d'égalité. Donne un exemple précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Appliquer le principe d'égalité ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-EMC-REPUBLIC-EQUALITY",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-EMC-V1-REPUBLIC-EQUALITY-PRACTICE-01",
+        "title": "Appliquer le principe d'égalité",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Valeurs et principes de la République », réalise une tâche courte montrant que tu sais appliquer le principe d'égalité. Donne un exemple précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Appliquer le principe d'égalité ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-CM2-REPUBLIC",
+          "primary_skill_code": "SK-ENR-EMC-CM2-REPUBLIC-EQUALITY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-emc-v1",
+          "template_version": "lcai-cm2-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-EMC-REPUBLIC-EQUALITY",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-EMC-V1-REPUBLIC-EQUALITY-PRACTICE-02",
+      "grade": "FR-CM2",
+      "subject": "EMC",
+      "chapter": "CH-EMC-CM2-REPUBLIC",
+      "skill": "SK-ENR-EMC-CM2-REPUBLIC-EQUALITY",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique avec tes mots puis applique à un exemple : « Appliquer le principe d'égalité ».",
+      "expected_answer": "Réponse ouverte : explication correcte et exemple pertinent.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Appliquer le principe d'égalité ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-EMC-REPUBLIC-EQUALITY",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-EMC-V1-REPUBLIC-EQUALITY-PRACTICE-02",
+        "title": "Appliquer le principe d'égalité",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique avec tes mots puis applique à un exemple : « Appliquer le principe d'égalité ».",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et exemple pertinent.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Appliquer le principe d'égalité ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-CM2-REPUBLIC",
+          "primary_skill_code": "SK-ENR-EMC-CM2-REPUBLIC-EQUALITY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-emc-v1",
+          "template_version": "lcai-cm2-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-EMC-REPUBLIC-EQUALITY",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-EMC-V1-REPUBLIC-EQUALITY-ASSESSMENT-03",
+      "grade": "FR-CM2",
+      "subject": "EMC",
+      "chapter": "CH-EMC-CM2-REPUBLIC",
+      "skill": "SK-ENR-EMC-CM2-REPUBLIC-EQUALITY",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation CM2 : montre de façon autonome que tu sais appliquer le principe d'égalité. Justifie avec un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Appliquer le principe d'égalité ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-EMC-REPUBLIC-EQUALITY",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-EMC-V1-REPUBLIC-EQUALITY-ASSESSMENT-03",
+        "title": "Appliquer le principe d'égalité",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation CM2 : montre de façon autonome que tu sais appliquer le principe d'égalité. Justifie avec un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Appliquer le principe d'égalité ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-CM2-REPUBLIC",
+          "primary_skill_code": "SK-ENR-EMC-CM2-REPUBLIC-EQUALITY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-emc-v1",
+          "template_version": "lcai-cm2-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-EMC-REPUBLIC-EQUALITY",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-EMC-V1-REPUBLIC-FRATERNITY-PRACTICE-01",
+      "grade": "FR-CM2",
+      "subject": "EMC",
+      "chapter": "CH-EMC-CM2-REPUBLIC",
+      "skill": "SK-ENR-EMC-CM2-REPUBLIC-FRATERNITY",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Valeurs et principes de la République », réalise une tâche courte montrant que tu sais relier fraternité et solidarité. Donne un exemple précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Relier fraternité et solidarité ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-EMC-REPUBLIC-FRATERNITY",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-EMC-V1-REPUBLIC-FRATERNITY-PRACTICE-01",
+        "title": "Relier fraternité et solidarité",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Valeurs et principes de la République », réalise une tâche courte montrant que tu sais relier fraternité et solidarité. Donne un exemple précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Relier fraternité et solidarité ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-CM2-REPUBLIC",
+          "primary_skill_code": "SK-ENR-EMC-CM2-REPUBLIC-FRATERNITY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-emc-v1",
+          "template_version": "lcai-cm2-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-EMC-REPUBLIC-FRATERNITY",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-EMC-V1-REPUBLIC-FRATERNITY-PRACTICE-02",
+      "grade": "FR-CM2",
+      "subject": "EMC",
+      "chapter": "CH-EMC-CM2-REPUBLIC",
+      "skill": "SK-ENR-EMC-CM2-REPUBLIC-FRATERNITY",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique avec tes mots puis applique à un exemple : « Relier fraternité et solidarité ».",
+      "expected_answer": "Réponse ouverte : explication correcte et exemple pertinent.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Relier fraternité et solidarité ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-EMC-REPUBLIC-FRATERNITY",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-EMC-V1-REPUBLIC-FRATERNITY-PRACTICE-02",
+        "title": "Relier fraternité et solidarité",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique avec tes mots puis applique à un exemple : « Relier fraternité et solidarité ».",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et exemple pertinent.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Relier fraternité et solidarité ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-CM2-REPUBLIC",
+          "primary_skill_code": "SK-ENR-EMC-CM2-REPUBLIC-FRATERNITY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-emc-v1",
+          "template_version": "lcai-cm2-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-EMC-REPUBLIC-FRATERNITY",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-EMC-V1-REPUBLIC-FRATERNITY-ASSESSMENT-03",
+      "grade": "FR-CM2",
+      "subject": "EMC",
+      "chapter": "CH-EMC-CM2-REPUBLIC",
+      "skill": "SK-ENR-EMC-CM2-REPUBLIC-FRATERNITY",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation CM2 : montre de façon autonome que tu sais relier fraternité et solidarité. Justifie avec un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Relier fraternité et solidarité ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-EMC-REPUBLIC-FRATERNITY",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-EMC-V1-REPUBLIC-FRATERNITY-ASSESSMENT-03",
+        "title": "Relier fraternité et solidarité",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation CM2 : montre de façon autonome que tu sais relier fraternité et solidarité. Justifie avec un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Relier fraternité et solidarité ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-CM2-REPUBLIC",
+          "primary_skill_code": "SK-ENR-EMC-CM2-REPUBLIC-FRATERNITY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-emc-v1",
+          "template_version": "lcai-cm2-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-EMC-REPUBLIC-FRATERNITY",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-EMC-V1-REPUBLIC-SECULARISM-PRACTICE-01",
+      "grade": "FR-CM2",
+      "subject": "EMC",
+      "chapter": "CH-EMC-CM2-REPUBLIC",
+      "skill": "SK-ENR-EMC-CM2-REPUBLIC-SECULARISM",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Valeurs et principes de la République », réalise une tâche courte montrant que tu sais analyser une situation au regard de la laïcité. Donne un exemple précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Analyser une situation au regard de la laïcité ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-EMC-REPUBLIC-SECULARISM",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-EMC-V1-REPUBLIC-SECULARISM-PRACTICE-01",
+        "title": "Analyser une situation au regard de la laïcité",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Valeurs et principes de la République », réalise une tâche courte montrant que tu sais analyser une situation au regard de la laïcité. Donne un exemple précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Analyser une situation au regard de la laïcité ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-CM2-REPUBLIC",
+          "primary_skill_code": "SK-ENR-EMC-CM2-REPUBLIC-SECULARISM",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-emc-v1",
+          "template_version": "lcai-cm2-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-EMC-REPUBLIC-SECULARISM",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-EMC-V1-REPUBLIC-SECULARISM-PRACTICE-02",
+      "grade": "FR-CM2",
+      "subject": "EMC",
+      "chapter": "CH-EMC-CM2-REPUBLIC",
+      "skill": "SK-ENR-EMC-CM2-REPUBLIC-SECULARISM",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique avec tes mots puis applique à un exemple : « Analyser une situation au regard de la laïcité ».",
+      "expected_answer": "Réponse ouverte : explication correcte et exemple pertinent.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Analyser une situation au regard de la laïcité ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-EMC-REPUBLIC-SECULARISM",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-EMC-V1-REPUBLIC-SECULARISM-PRACTICE-02",
+        "title": "Analyser une situation au regard de la laïcité",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique avec tes mots puis applique à un exemple : « Analyser une situation au regard de la laïcité ».",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et exemple pertinent.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Analyser une situation au regard de la laïcité ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-CM2-REPUBLIC",
+          "primary_skill_code": "SK-ENR-EMC-CM2-REPUBLIC-SECULARISM",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-emc-v1",
+          "template_version": "lcai-cm2-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-EMC-REPUBLIC-SECULARISM",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-EMC-V1-REPUBLIC-SECULARISM-ASSESSMENT-03",
+      "grade": "FR-CM2",
+      "subject": "EMC",
+      "chapter": "CH-EMC-CM2-REPUBLIC",
+      "skill": "SK-ENR-EMC-CM2-REPUBLIC-SECULARISM",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation CM2 : montre de façon autonome que tu sais analyser une situation au regard de la laïcité. Justifie avec un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Analyser une situation au regard de la laïcité ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-EMC-REPUBLIC-SECULARISM",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-EMC-V1-REPUBLIC-SECULARISM-ASSESSMENT-03",
+        "title": "Analyser une situation au regard de la laïcité",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation CM2 : montre de façon autonome que tu sais analyser une situation au regard de la laïcité. Justifie avec un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Analyser une situation au regard de la laïcité ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-CM2-REPUBLIC",
+          "primary_skill_code": "SK-ENR-EMC-CM2-REPUBLIC-SECULARISM",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-emc-v1",
+          "template_version": "lcai-cm2-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-EMC-REPUBLIC-SECULARISM",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-EMC-V1-ENGAGEMENT-ISSUE-PRACTICE-01",
+      "grade": "FR-CM2",
+      "subject": "EMC",
+      "chapter": "CH-EMC-CM2-ENGAGEMENT",
+      "skill": "SK-ENR-EMC-CM2-ENGAGEMENT-ISSUE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Citoyenneté et engagement », réalise une tâche courte montrant que tu sais identifier l'enjeu d'une action collective. Donne un exemple précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Identifier l'enjeu d'une action collective ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-EMC-ENGAGEMENT-ISSUE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-EMC-V1-ENGAGEMENT-ISSUE-PRACTICE-01",
+        "title": "Identifier l'enjeu d'une action collective",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Citoyenneté et engagement », réalise une tâche courte montrant que tu sais identifier l'enjeu d'une action collective. Donne un exemple précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Identifier l'enjeu d'une action collective ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-CM2-ENGAGEMENT",
+          "primary_skill_code": "SK-ENR-EMC-CM2-ENGAGEMENT-ISSUE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-emc-v1",
+          "template_version": "lcai-cm2-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-EMC-ENGAGEMENT-ISSUE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-EMC-V1-ENGAGEMENT-ISSUE-PRACTICE-02",
+      "grade": "FR-CM2",
+      "subject": "EMC",
+      "chapter": "CH-EMC-CM2-ENGAGEMENT",
+      "skill": "SK-ENR-EMC-CM2-ENGAGEMENT-ISSUE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique avec tes mots puis applique à un exemple : « Identifier l'enjeu d'une action collective ».",
+      "expected_answer": "Réponse ouverte : explication correcte et exemple pertinent.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Identifier l'enjeu d'une action collective ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-EMC-ENGAGEMENT-ISSUE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-EMC-V1-ENGAGEMENT-ISSUE-PRACTICE-02",
+        "title": "Identifier l'enjeu d'une action collective",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique avec tes mots puis applique à un exemple : « Identifier l'enjeu d'une action collective ».",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et exemple pertinent.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Identifier l'enjeu d'une action collective ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-CM2-ENGAGEMENT",
+          "primary_skill_code": "SK-ENR-EMC-CM2-ENGAGEMENT-ISSUE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-emc-v1",
+          "template_version": "lcai-cm2-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-EMC-ENGAGEMENT-ISSUE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-EMC-V1-ENGAGEMENT-ISSUE-ASSESSMENT-03",
+      "grade": "FR-CM2",
+      "subject": "EMC",
+      "chapter": "CH-EMC-CM2-ENGAGEMENT",
+      "skill": "SK-ENR-EMC-CM2-ENGAGEMENT-ISSUE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation CM2 : montre de façon autonome que tu sais identifier l'enjeu d'une action collective. Justifie avec un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Identifier l'enjeu d'une action collective ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-EMC-ENGAGEMENT-ISSUE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-EMC-V1-ENGAGEMENT-ISSUE-ASSESSMENT-03",
+        "title": "Identifier l'enjeu d'une action collective",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation CM2 : montre de façon autonome que tu sais identifier l'enjeu d'une action collective. Justifie avec un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Identifier l'enjeu d'une action collective ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-CM2-ENGAGEMENT",
+          "primary_skill_code": "SK-ENR-EMC-CM2-ENGAGEMENT-ISSUE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-emc-v1",
+          "template_version": "lcai-cm2-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-EMC-ENGAGEMENT-ISSUE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-EMC-V1-ENGAGEMENT-PLAN-PRACTICE-01",
+      "grade": "FR-CM2",
+      "subject": "EMC",
+      "chapter": "CH-EMC-CM2-ENGAGEMENT",
+      "skill": "SK-ENR-EMC-CM2-ENGAGEMENT-PLAN",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Citoyenneté et engagement », réalise une tâche courte montrant que tu sais planifier une action réalisable. Donne un exemple précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Planifier une action réalisable ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-EMC-ENGAGEMENT-PLAN",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-EMC-V1-ENGAGEMENT-PLAN-PRACTICE-01",
+        "title": "Planifier une action réalisable",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Citoyenneté et engagement », réalise une tâche courte montrant que tu sais planifier une action réalisable. Donne un exemple précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Planifier une action réalisable ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-CM2-ENGAGEMENT",
+          "primary_skill_code": "SK-ENR-EMC-CM2-ENGAGEMENT-PLAN",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-emc-v1",
+          "template_version": "lcai-cm2-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-EMC-ENGAGEMENT-PLAN",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-EMC-V1-ENGAGEMENT-PLAN-PRACTICE-02",
+      "grade": "FR-CM2",
+      "subject": "EMC",
+      "chapter": "CH-EMC-CM2-ENGAGEMENT",
+      "skill": "SK-ENR-EMC-CM2-ENGAGEMENT-PLAN",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique avec tes mots puis applique à un exemple : « Planifier une action réalisable ».",
+      "expected_answer": "Réponse ouverte : explication correcte et exemple pertinent.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Planifier une action réalisable ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-EMC-ENGAGEMENT-PLAN",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-EMC-V1-ENGAGEMENT-PLAN-PRACTICE-02",
+        "title": "Planifier une action réalisable",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique avec tes mots puis applique à un exemple : « Planifier une action réalisable ».",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et exemple pertinent.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Planifier une action réalisable ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-CM2-ENGAGEMENT",
+          "primary_skill_code": "SK-ENR-EMC-CM2-ENGAGEMENT-PLAN",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-emc-v1",
+          "template_version": "lcai-cm2-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-EMC-ENGAGEMENT-PLAN",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-EMC-V1-ENGAGEMENT-PLAN-ASSESSMENT-03",
+      "grade": "FR-CM2",
+      "subject": "EMC",
+      "chapter": "CH-EMC-CM2-ENGAGEMENT",
+      "skill": "SK-ENR-EMC-CM2-ENGAGEMENT-PLAN",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation CM2 : montre de façon autonome que tu sais planifier une action réalisable. Justifie avec un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Planifier une action réalisable ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-EMC-ENGAGEMENT-PLAN",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-EMC-V1-ENGAGEMENT-PLAN-ASSESSMENT-03",
+        "title": "Planifier une action réalisable",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation CM2 : montre de façon autonome que tu sais planifier une action réalisable. Justifie avec un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Planifier une action réalisable ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-CM2-ENGAGEMENT",
+          "primary_skill_code": "SK-ENR-EMC-CM2-ENGAGEMENT-PLAN",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-emc-v1",
+          "template_version": "lcai-cm2-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-EMC-ENGAGEMENT-PLAN",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-EMC-V1-ENGAGEMENT-COOPERATE-PRACTICE-01",
+      "grade": "FR-CM2",
+      "subject": "EMC",
+      "chapter": "CH-EMC-CM2-ENGAGEMENT",
+      "skill": "SK-ENR-EMC-CM2-ENGAGEMENT-COOPERATE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Citoyenneté et engagement », réalise une tâche courte montrant que tu sais répartir rôles et responsabilités. Donne un exemple précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Répartir rôles et responsabilités ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-EMC-ENGAGEMENT-COOPERATE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-EMC-V1-ENGAGEMENT-COOPERATE-PRACTICE-01",
+        "title": "Répartir rôles et responsabilités",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Citoyenneté et engagement », réalise une tâche courte montrant que tu sais répartir rôles et responsabilités. Donne un exemple précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Répartir rôles et responsabilités ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-CM2-ENGAGEMENT",
+          "primary_skill_code": "SK-ENR-EMC-CM2-ENGAGEMENT-COOPERATE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-emc-v1",
+          "template_version": "lcai-cm2-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-EMC-ENGAGEMENT-COOPERATE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-EMC-V1-ENGAGEMENT-COOPERATE-PRACTICE-02",
+      "grade": "FR-CM2",
+      "subject": "EMC",
+      "chapter": "CH-EMC-CM2-ENGAGEMENT",
+      "skill": "SK-ENR-EMC-CM2-ENGAGEMENT-COOPERATE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique avec tes mots puis applique à un exemple : « Répartir rôles et responsabilités ».",
+      "expected_answer": "Réponse ouverte : explication correcte et exemple pertinent.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Répartir rôles et responsabilités ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-EMC-ENGAGEMENT-COOPERATE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-EMC-V1-ENGAGEMENT-COOPERATE-PRACTICE-02",
+        "title": "Répartir rôles et responsabilités",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique avec tes mots puis applique à un exemple : « Répartir rôles et responsabilités ».",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et exemple pertinent.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Répartir rôles et responsabilités ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-CM2-ENGAGEMENT",
+          "primary_skill_code": "SK-ENR-EMC-CM2-ENGAGEMENT-COOPERATE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-emc-v1",
+          "template_version": "lcai-cm2-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-EMC-ENGAGEMENT-COOPERATE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-EMC-V1-ENGAGEMENT-COOPERATE-ASSESSMENT-03",
+      "grade": "FR-CM2",
+      "subject": "EMC",
+      "chapter": "CH-EMC-CM2-ENGAGEMENT",
+      "skill": "SK-ENR-EMC-CM2-ENGAGEMENT-COOPERATE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation CM2 : montre de façon autonome que tu sais répartir rôles et responsabilités. Justifie avec un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Répartir rôles et responsabilités ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-EMC-ENGAGEMENT-COOPERATE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-EMC-V1-ENGAGEMENT-COOPERATE-ASSESSMENT-03",
+        "title": "Répartir rôles et responsabilités",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation CM2 : montre de façon autonome que tu sais répartir rôles et responsabilités. Justifie avec un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Répartir rôles et responsabilités ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-CM2-ENGAGEMENT",
+          "primary_skill_code": "SK-ENR-EMC-CM2-ENGAGEMENT-COOPERATE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-emc-v1",
+          "template_version": "lcai-cm2-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-EMC-ENGAGEMENT-COOPERATE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-EMC-V1-ENGAGEMENT-EVALUATE-PRACTICE-01",
+      "grade": "FR-CM2",
+      "subject": "EMC",
+      "chapter": "CH-EMC-CM2-ENGAGEMENT",
+      "skill": "SK-ENR-EMC-CM2-ENGAGEMENT-EVALUATE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Citoyenneté et engagement », réalise une tâche courte montrant que tu sais évaluer les effets de l'action. Donne un exemple précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Évaluer les effets de l'action ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-EMC-ENGAGEMENT-EVALUATE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-EMC-V1-ENGAGEMENT-EVALUATE-PRACTICE-01",
+        "title": "Évaluer les effets de l'action",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Citoyenneté et engagement », réalise une tâche courte montrant que tu sais évaluer les effets de l'action. Donne un exemple précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Évaluer les effets de l'action ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-CM2-ENGAGEMENT",
+          "primary_skill_code": "SK-ENR-EMC-CM2-ENGAGEMENT-EVALUATE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-emc-v1",
+          "template_version": "lcai-cm2-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-EMC-ENGAGEMENT-EVALUATE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-EMC-V1-ENGAGEMENT-EVALUATE-PRACTICE-02",
+      "grade": "FR-CM2",
+      "subject": "EMC",
+      "chapter": "CH-EMC-CM2-ENGAGEMENT",
+      "skill": "SK-ENR-EMC-CM2-ENGAGEMENT-EVALUATE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique avec tes mots puis applique à un exemple : « Évaluer les effets de l'action ».",
+      "expected_answer": "Réponse ouverte : explication correcte et exemple pertinent.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Évaluer les effets de l'action ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-EMC-ENGAGEMENT-EVALUATE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-EMC-V1-ENGAGEMENT-EVALUATE-PRACTICE-02",
+        "title": "Évaluer les effets de l'action",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique avec tes mots puis applique à un exemple : « Évaluer les effets de l'action ».",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et exemple pertinent.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Évaluer les effets de l'action ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-CM2-ENGAGEMENT",
+          "primary_skill_code": "SK-ENR-EMC-CM2-ENGAGEMENT-EVALUATE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-emc-v1",
+          "template_version": "lcai-cm2-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-EMC-ENGAGEMENT-EVALUATE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-EMC-V1-ENGAGEMENT-EVALUATE-ASSESSMENT-03",
+      "grade": "FR-CM2",
+      "subject": "EMC",
+      "chapter": "CH-EMC-CM2-ENGAGEMENT",
+      "skill": "SK-ENR-EMC-CM2-ENGAGEMENT-EVALUATE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation CM2 : montre de façon autonome que tu sais évaluer les effets de l'action. Justifie avec un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Évaluer les effets de l'action ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-EMC-ENGAGEMENT-EVALUATE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-EMC-V1-ENGAGEMENT-EVALUATE-ASSESSMENT-03",
+        "title": "Évaluer les effets de l'action",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation CM2 : montre de façon autonome que tu sais évaluer les effets de l'action. Justifie avec un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Évaluer les effets de l'action ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-CM2-ENGAGEMENT",
+          "primary_skill_code": "SK-ENR-EMC-CM2-ENGAGEMENT-EVALUATE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-emc-v1",
+          "template_version": "lcai-cm2-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-EMC-ENGAGEMENT-EVALUATE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_emc_candidates_v1.json"
+      }
+    }
+  ]
+}

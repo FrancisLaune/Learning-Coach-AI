@@ -1,0 +1,3010 @@
+{
+  "batch": "CM2-GEOGRAPHY-V1",
+  "purpose": "Parallel CM2 content preparation for Learning Coach AI",
+  "lifecycle_target": "Draft",
+  "automatic_approval": false,
+  "curriculum_version": "phase2-lcai-0011c",
+  "program_code": "FR-CYCLE3-CM2-2026",
+  "grade_code": "FR-CM2",
+  "subject_code": "GEOGRAPHY",
+  "skill_count": 12,
+  "candidate_count": 36,
+  "content_types": {
+    "practice": 24,
+    "assessment": 12
+  },
+  "difficulty_distribution": {
+    "1": 12,
+    "2": 24
+  },
+  "accepted_candidates": [
+    {
+      "code": "CM2-GEOGRAPHY-V1-MOBILITY-MOTIVE-PRACTICE-01",
+      "grade": "FR-CM2",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-CM2-MOBILITY",
+      "skill": "SK-ENR-GEOGRAPHY-CM2-MOBILITY-MOTIVE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Se déplacer », réalise une tâche courte montrant que tu sais identifier les motifs d'un déplacement. Donne un exemple précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Identifier les motifs d'un déplacement ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-GEOGRAPHY-MOBILITY-MOTIVE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-GEOGRAPHY-V1-MOBILITY-MOTIVE-PRACTICE-01",
+        "title": "Identifier les motifs d'un déplacement",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Se déplacer », réalise une tâche courte montrant que tu sais identifier les motifs d'un déplacement. Donne un exemple précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Identifier les motifs d'un déplacement ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-CM2-MOBILITY",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-CM2-MOBILITY-MOTIVE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-geography-v1",
+          "template_version": "lcai-cm2-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-GEOGRAPHY-MOBILITY-MOTIVE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-GEOGRAPHY-V1-MOBILITY-MOTIVE-PRACTICE-02",
+      "grade": "FR-CM2",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-CM2-MOBILITY",
+      "skill": "SK-ENR-GEOGRAPHY-CM2-MOBILITY-MOTIVE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique avec tes mots puis applique à un exemple : « Identifier les motifs d'un déplacement ».",
+      "expected_answer": "Réponse ouverte : explication correcte et exemple pertinent.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Identifier les motifs d'un déplacement ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-GEOGRAPHY-MOBILITY-MOTIVE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-GEOGRAPHY-V1-MOBILITY-MOTIVE-PRACTICE-02",
+        "title": "Identifier les motifs d'un déplacement",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique avec tes mots puis applique à un exemple : « Identifier les motifs d'un déplacement ».",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et exemple pertinent.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Identifier les motifs d'un déplacement ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-CM2-MOBILITY",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-CM2-MOBILITY-MOTIVE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-geography-v1",
+          "template_version": "lcai-cm2-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-GEOGRAPHY-MOBILITY-MOTIVE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-GEOGRAPHY-V1-MOBILITY-MOTIVE-ASSESSMENT-03",
+      "grade": "FR-CM2",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-CM2-MOBILITY",
+      "skill": "SK-ENR-GEOGRAPHY-CM2-MOBILITY-MOTIVE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation CM2 : montre de façon autonome que tu sais identifier les motifs d'un déplacement. Justifie avec un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Identifier les motifs d'un déplacement ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-GEOGRAPHY-MOBILITY-MOTIVE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-GEOGRAPHY-V1-MOBILITY-MOTIVE-ASSESSMENT-03",
+        "title": "Identifier les motifs d'un déplacement",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation CM2 : montre de façon autonome que tu sais identifier les motifs d'un déplacement. Justifie avec un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Identifier les motifs d'un déplacement ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-CM2-MOBILITY",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-CM2-MOBILITY-MOTIVE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-geography-v1",
+          "template_version": "lcai-cm2-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-GEOGRAPHY-MOBILITY-MOTIVE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-GEOGRAPHY-V1-MOBILITY-MODE-PRACTICE-01",
+      "grade": "FR-CM2",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-CM2-MOBILITY",
+      "skill": "SK-ENR-GEOGRAPHY-CM2-MOBILITY-MODE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Se déplacer », réalise une tâche courte montrant que tu sais comparer des modes de transport. Donne un exemple précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Comparer des modes de transport ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-GEOGRAPHY-MOBILITY-MODE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-GEOGRAPHY-V1-MOBILITY-MODE-PRACTICE-01",
+        "title": "Comparer des modes de transport",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Se déplacer », réalise une tâche courte montrant que tu sais comparer des modes de transport. Donne un exemple précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Comparer des modes de transport ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-CM2-MOBILITY",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-CM2-MOBILITY-MODE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-geography-v1",
+          "template_version": "lcai-cm2-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-GEOGRAPHY-MOBILITY-MODE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-GEOGRAPHY-V1-MOBILITY-MODE-PRACTICE-02",
+      "grade": "FR-CM2",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-CM2-MOBILITY",
+      "skill": "SK-ENR-GEOGRAPHY-CM2-MOBILITY-MODE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique avec tes mots puis applique à un exemple : « Comparer des modes de transport ».",
+      "expected_answer": "Réponse ouverte : explication correcte et exemple pertinent.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Comparer des modes de transport ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-GEOGRAPHY-MOBILITY-MODE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-GEOGRAPHY-V1-MOBILITY-MODE-PRACTICE-02",
+        "title": "Comparer des modes de transport",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique avec tes mots puis applique à un exemple : « Comparer des modes de transport ».",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et exemple pertinent.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Comparer des modes de transport ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-CM2-MOBILITY",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-CM2-MOBILITY-MODE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-geography-v1",
+          "template_version": "lcai-cm2-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-GEOGRAPHY-MOBILITY-MODE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-GEOGRAPHY-V1-MOBILITY-MODE-ASSESSMENT-03",
+      "grade": "FR-CM2",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-CM2-MOBILITY",
+      "skill": "SK-ENR-GEOGRAPHY-CM2-MOBILITY-MODE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation CM2 : montre de façon autonome que tu sais comparer des modes de transport. Justifie avec un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Comparer des modes de transport ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-GEOGRAPHY-MOBILITY-MODE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-GEOGRAPHY-V1-MOBILITY-MODE-ASSESSMENT-03",
+        "title": "Comparer des modes de transport",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation CM2 : montre de façon autonome que tu sais comparer des modes de transport. Justifie avec un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Comparer des modes de transport ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-CM2-MOBILITY",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-CM2-MOBILITY-MODE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-geography-v1",
+          "template_version": "lcai-cm2-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-GEOGRAPHY-MOBILITY-MODE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-GEOGRAPHY-V1-MOBILITY-NETWORK-PRACTICE-01",
+      "grade": "FR-CM2",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-CM2-MOBILITY",
+      "skill": "SK-ENR-GEOGRAPHY-CM2-MOBILITY-NETWORK",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Se déplacer », réalise une tâche courte montrant que tu sais lire un réseau de transport. Donne un exemple précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Lire un réseau de transport ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-GEOGRAPHY-MOBILITY-NETWORK",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-GEOGRAPHY-V1-MOBILITY-NETWORK-PRACTICE-01",
+        "title": "Lire un réseau de transport",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Se déplacer », réalise une tâche courte montrant que tu sais lire un réseau de transport. Donne un exemple précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Lire un réseau de transport ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-CM2-MOBILITY",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-CM2-MOBILITY-NETWORK",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-geography-v1",
+          "template_version": "lcai-cm2-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-GEOGRAPHY-MOBILITY-NETWORK",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-GEOGRAPHY-V1-MOBILITY-NETWORK-PRACTICE-02",
+      "grade": "FR-CM2",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-CM2-MOBILITY",
+      "skill": "SK-ENR-GEOGRAPHY-CM2-MOBILITY-NETWORK",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique avec tes mots puis applique à un exemple : « Lire un réseau de transport ».",
+      "expected_answer": "Réponse ouverte : explication correcte et exemple pertinent.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Lire un réseau de transport ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-GEOGRAPHY-MOBILITY-NETWORK",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-GEOGRAPHY-V1-MOBILITY-NETWORK-PRACTICE-02",
+        "title": "Lire un réseau de transport",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique avec tes mots puis applique à un exemple : « Lire un réseau de transport ».",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et exemple pertinent.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Lire un réseau de transport ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-CM2-MOBILITY",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-CM2-MOBILITY-NETWORK",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-geography-v1",
+          "template_version": "lcai-cm2-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-GEOGRAPHY-MOBILITY-NETWORK",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-GEOGRAPHY-V1-MOBILITY-NETWORK-ASSESSMENT-03",
+      "grade": "FR-CM2",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-CM2-MOBILITY",
+      "skill": "SK-ENR-GEOGRAPHY-CM2-MOBILITY-NETWORK",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation CM2 : montre de façon autonome que tu sais lire un réseau de transport. Justifie avec un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Lire un réseau de transport ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-GEOGRAPHY-MOBILITY-NETWORK",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-GEOGRAPHY-V1-MOBILITY-NETWORK-ASSESSMENT-03",
+        "title": "Lire un réseau de transport",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation CM2 : montre de façon autonome que tu sais lire un réseau de transport. Justifie avec un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Lire un réseau de transport ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-CM2-MOBILITY",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-CM2-MOBILITY-NETWORK",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-geography-v1",
+          "template_version": "lcai-cm2-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-GEOGRAPHY-MOBILITY-NETWORK",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-GEOGRAPHY-V1-MOBILITY-IMPACT-PRACTICE-01",
+      "grade": "FR-CM2",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-CM2-MOBILITY",
+      "skill": "SK-ENR-GEOGRAPHY-CM2-MOBILITY-IMPACT",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Se déplacer », réalise une tâche courte montrant que tu sais évaluer des effets territoriaux et environnementaux. Donne un exemple précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Évaluer des effets territoriaux et environnementaux ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-GEOGRAPHY-MOBILITY-IMPACT",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-GEOGRAPHY-V1-MOBILITY-IMPACT-PRACTICE-01",
+        "title": "Évaluer des effets territoriaux et environnementaux",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Se déplacer », réalise une tâche courte montrant que tu sais évaluer des effets territoriaux et environnementaux. Donne un exemple précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Évaluer des effets territoriaux et environnementaux ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-CM2-MOBILITY",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-CM2-MOBILITY-IMPACT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-geography-v1",
+          "template_version": "lcai-cm2-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-GEOGRAPHY-MOBILITY-IMPACT",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-GEOGRAPHY-V1-MOBILITY-IMPACT-PRACTICE-02",
+      "grade": "FR-CM2",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-CM2-MOBILITY",
+      "skill": "SK-ENR-GEOGRAPHY-CM2-MOBILITY-IMPACT",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique avec tes mots puis applique à un exemple : « Évaluer des effets territoriaux et environnementaux ».",
+      "expected_answer": "Réponse ouverte : explication correcte et exemple pertinent.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Évaluer des effets territoriaux et environnementaux ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-GEOGRAPHY-MOBILITY-IMPACT",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-GEOGRAPHY-V1-MOBILITY-IMPACT-PRACTICE-02",
+        "title": "Évaluer des effets territoriaux et environnementaux",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique avec tes mots puis applique à un exemple : « Évaluer des effets territoriaux et environnementaux ».",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et exemple pertinent.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Évaluer des effets territoriaux et environnementaux ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-CM2-MOBILITY",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-CM2-MOBILITY-IMPACT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-geography-v1",
+          "template_version": "lcai-cm2-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-GEOGRAPHY-MOBILITY-IMPACT",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-GEOGRAPHY-V1-MOBILITY-IMPACT-ASSESSMENT-03",
+      "grade": "FR-CM2",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-CM2-MOBILITY",
+      "skill": "SK-ENR-GEOGRAPHY-CM2-MOBILITY-IMPACT",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation CM2 : montre de façon autonome que tu sais évaluer des effets territoriaux et environnementaux. Justifie avec un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Évaluer des effets territoriaux et environnementaux ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-GEOGRAPHY-MOBILITY-IMPACT",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-GEOGRAPHY-V1-MOBILITY-IMPACT-ASSESSMENT-03",
+        "title": "Évaluer des effets territoriaux et environnementaux",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation CM2 : montre de façon autonome que tu sais évaluer des effets territoriaux et environnementaux. Justifie avec un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Évaluer des effets territoriaux et environnementaux ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-CM2-MOBILITY",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-CM2-MOBILITY-IMPACT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-geography-v1",
+          "template_version": "lcai-cm2-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-GEOGRAPHY-MOBILITY-IMPACT",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-GEOGRAPHY-V1-NETWORKS-INFRASTRUCTURE-PRACTICE-01",
+      "grade": "FR-CM2",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-CM2-NETWORKS",
+      "skill": "SK-ENR-GEOGRAPHY-CM2-NETWORKS-INFRASTRUCTURE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Communiquer grâce à Internet », réalise une tâche courte montrant que tu sais identifier les infrastructures matérielles d'internet. Donne un exemple précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Identifier les infrastructures matérielles d'Internet ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-GEOGRAPHY-NETWORKS-INFRASTRUCTURE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-GEOGRAPHY-V1-NETWORKS-INFRASTRUCTURE-PRACTICE-01",
+        "title": "Identifier les infrastructures matérielles d'Internet",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Communiquer grâce à Internet », réalise une tâche courte montrant que tu sais identifier les infrastructures matérielles d'internet. Donne un exemple précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Identifier les infrastructures matérielles d'Internet ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-CM2-NETWORKS",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-CM2-NETWORKS-INFRASTRUCTURE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-geography-v1",
+          "template_version": "lcai-cm2-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-GEOGRAPHY-NETWORKS-INFRASTRUCTURE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-GEOGRAPHY-V1-NETWORKS-INFRASTRUCTURE-PRACTICE-02",
+      "grade": "FR-CM2",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-CM2-NETWORKS",
+      "skill": "SK-ENR-GEOGRAPHY-CM2-NETWORKS-INFRASTRUCTURE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique avec tes mots puis applique à un exemple : « Identifier les infrastructures matérielles d'Internet ».",
+      "expected_answer": "Réponse ouverte : explication correcte et exemple pertinent.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Identifier les infrastructures matérielles d'Internet ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-GEOGRAPHY-NETWORKS-INFRASTRUCTURE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-GEOGRAPHY-V1-NETWORKS-INFRASTRUCTURE-PRACTICE-02",
+        "title": "Identifier les infrastructures matérielles d'Internet",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique avec tes mots puis applique à un exemple : « Identifier les infrastructures matérielles d'Internet ».",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et exemple pertinent.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Identifier les infrastructures matérielles d'Internet ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-CM2-NETWORKS",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-CM2-NETWORKS-INFRASTRUCTURE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-geography-v1",
+          "template_version": "lcai-cm2-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-GEOGRAPHY-NETWORKS-INFRASTRUCTURE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-GEOGRAPHY-V1-NETWORKS-INFRASTRUCTURE-ASSESSMENT-03",
+      "grade": "FR-CM2",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-CM2-NETWORKS",
+      "skill": "SK-ENR-GEOGRAPHY-CM2-NETWORKS-INFRASTRUCTURE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation CM2 : montre de façon autonome que tu sais identifier les infrastructures matérielles d'internet. Justifie avec un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Identifier les infrastructures matérielles d'Internet ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-GEOGRAPHY-NETWORKS-INFRASTRUCTURE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-GEOGRAPHY-V1-NETWORKS-INFRASTRUCTURE-ASSESSMENT-03",
+        "title": "Identifier les infrastructures matérielles d'Internet",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation CM2 : montre de façon autonome que tu sais identifier les infrastructures matérielles d'internet. Justifie avec un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Identifier les infrastructures matérielles d'Internet ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-CM2-NETWORKS",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-CM2-NETWORKS-INFRASTRUCTURE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-geography-v1",
+          "template_version": "lcai-cm2-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-GEOGRAPHY-NETWORKS-INFRASTRUCTURE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-GEOGRAPHY-V1-NETWORKS-FLOW-PRACTICE-01",
+      "grade": "FR-CM2",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-CM2-NETWORKS",
+      "skill": "SK-ENR-GEOGRAPHY-CM2-NETWORKS-FLOW",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Communiquer grâce à Internet », réalise une tâche courte montrant que tu sais décrire la circulation d'une information. Donne un exemple précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Décrire la circulation d'une information ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-GEOGRAPHY-NETWORKS-FLOW",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-GEOGRAPHY-V1-NETWORKS-FLOW-PRACTICE-01",
+        "title": "Décrire la circulation d'une information",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Communiquer grâce à Internet », réalise une tâche courte montrant que tu sais décrire la circulation d'une information. Donne un exemple précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Décrire la circulation d'une information ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-CM2-NETWORKS",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-CM2-NETWORKS-FLOW",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-geography-v1",
+          "template_version": "lcai-cm2-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-GEOGRAPHY-NETWORKS-FLOW",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-GEOGRAPHY-V1-NETWORKS-FLOW-PRACTICE-02",
+      "grade": "FR-CM2",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-CM2-NETWORKS",
+      "skill": "SK-ENR-GEOGRAPHY-CM2-NETWORKS-FLOW",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique avec tes mots puis applique à un exemple : « Décrire la circulation d'une information ».",
+      "expected_answer": "Réponse ouverte : explication correcte et exemple pertinent.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Décrire la circulation d'une information ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-GEOGRAPHY-NETWORKS-FLOW",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-GEOGRAPHY-V1-NETWORKS-FLOW-PRACTICE-02",
+        "title": "Décrire la circulation d'une information",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique avec tes mots puis applique à un exemple : « Décrire la circulation d'une information ».",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et exemple pertinent.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Décrire la circulation d'une information ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-CM2-NETWORKS",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-CM2-NETWORKS-FLOW",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-geography-v1",
+          "template_version": "lcai-cm2-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-GEOGRAPHY-NETWORKS-FLOW",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-GEOGRAPHY-V1-NETWORKS-FLOW-ASSESSMENT-03",
+      "grade": "FR-CM2",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-CM2-NETWORKS",
+      "skill": "SK-ENR-GEOGRAPHY-CM2-NETWORKS-FLOW",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation CM2 : montre de façon autonome que tu sais décrire la circulation d'une information. Justifie avec un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Décrire la circulation d'une information ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-GEOGRAPHY-NETWORKS-FLOW",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-GEOGRAPHY-V1-NETWORKS-FLOW-ASSESSMENT-03",
+        "title": "Décrire la circulation d'une information",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation CM2 : montre de façon autonome que tu sais décrire la circulation d'une information. Justifie avec un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Décrire la circulation d'une information ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-CM2-NETWORKS",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-CM2-NETWORKS-FLOW",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-geography-v1",
+          "template_version": "lcai-cm2-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-GEOGRAPHY-NETWORKS-FLOW",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-GEOGRAPHY-V1-NETWORKS-INEQUALITY-PRACTICE-01",
+      "grade": "FR-CM2",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-CM2-NETWORKS",
+      "skill": "SK-ENR-GEOGRAPHY-CM2-NETWORKS-INEQUALITY",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Communiquer grâce à Internet », réalise une tâche courte montrant que tu sais comparer l'accès au numérique. Donne un exemple précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Comparer l'accès au numérique ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-GEOGRAPHY-NETWORKS-INEQUALITY",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-GEOGRAPHY-V1-NETWORKS-INEQUALITY-PRACTICE-01",
+        "title": "Comparer l'accès au numérique",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Communiquer grâce à Internet », réalise une tâche courte montrant que tu sais comparer l'accès au numérique. Donne un exemple précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Comparer l'accès au numérique ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-CM2-NETWORKS",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-CM2-NETWORKS-INEQUALITY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-geography-v1",
+          "template_version": "lcai-cm2-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-GEOGRAPHY-NETWORKS-INEQUALITY",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-GEOGRAPHY-V1-NETWORKS-INEQUALITY-PRACTICE-02",
+      "grade": "FR-CM2",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-CM2-NETWORKS",
+      "skill": "SK-ENR-GEOGRAPHY-CM2-NETWORKS-INEQUALITY",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique avec tes mots puis applique à un exemple : « Comparer l'accès au numérique ».",
+      "expected_answer": "Réponse ouverte : explication correcte et exemple pertinent.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Comparer l'accès au numérique ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-GEOGRAPHY-NETWORKS-INEQUALITY",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-GEOGRAPHY-V1-NETWORKS-INEQUALITY-PRACTICE-02",
+        "title": "Comparer l'accès au numérique",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique avec tes mots puis applique à un exemple : « Comparer l'accès au numérique ».",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et exemple pertinent.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Comparer l'accès au numérique ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-CM2-NETWORKS",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-CM2-NETWORKS-INEQUALITY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-geography-v1",
+          "template_version": "lcai-cm2-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-GEOGRAPHY-NETWORKS-INEQUALITY",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-GEOGRAPHY-V1-NETWORKS-INEQUALITY-ASSESSMENT-03",
+      "grade": "FR-CM2",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-CM2-NETWORKS",
+      "skill": "SK-ENR-GEOGRAPHY-CM2-NETWORKS-INEQUALITY",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation CM2 : montre de façon autonome que tu sais comparer l'accès au numérique. Justifie avec un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Comparer l'accès au numérique ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-GEOGRAPHY-NETWORKS-INEQUALITY",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-GEOGRAPHY-V1-NETWORKS-INEQUALITY-ASSESSMENT-03",
+        "title": "Comparer l'accès au numérique",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation CM2 : montre de façon autonome que tu sais comparer l'accès au numérique. Justifie avec un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Comparer l'accès au numérique ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-CM2-NETWORKS",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-CM2-NETWORKS-INEQUALITY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-geography-v1",
+          "template_version": "lcai-cm2-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-GEOGRAPHY-NETWORKS-INEQUALITY",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-GEOGRAPHY-V1-NETWORKS-MAP-PRACTICE-01",
+      "grade": "FR-CM2",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-CM2-NETWORKS",
+      "skill": "SK-ENR-GEOGRAPHY-CM2-NETWORKS-MAP",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Communiquer grâce à Internet », réalise une tâche courte montrant que tu sais cartographier un réseau simple. Donne un exemple précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Cartographier un réseau simple ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-GEOGRAPHY-NETWORKS-MAP",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-GEOGRAPHY-V1-NETWORKS-MAP-PRACTICE-01",
+        "title": "Cartographier un réseau simple",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Communiquer grâce à Internet », réalise une tâche courte montrant que tu sais cartographier un réseau simple. Donne un exemple précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Cartographier un réseau simple ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-CM2-NETWORKS",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-CM2-NETWORKS-MAP",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-geography-v1",
+          "template_version": "lcai-cm2-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-GEOGRAPHY-NETWORKS-MAP",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-GEOGRAPHY-V1-NETWORKS-MAP-PRACTICE-02",
+      "grade": "FR-CM2",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-CM2-NETWORKS",
+      "skill": "SK-ENR-GEOGRAPHY-CM2-NETWORKS-MAP",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique avec tes mots puis applique à un exemple : « Cartographier un réseau simple ».",
+      "expected_answer": "Réponse ouverte : explication correcte et exemple pertinent.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Cartographier un réseau simple ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-GEOGRAPHY-NETWORKS-MAP",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-GEOGRAPHY-V1-NETWORKS-MAP-PRACTICE-02",
+        "title": "Cartographier un réseau simple",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique avec tes mots puis applique à un exemple : « Cartographier un réseau simple ».",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et exemple pertinent.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Cartographier un réseau simple ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-CM2-NETWORKS",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-CM2-NETWORKS-MAP",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-geography-v1",
+          "template_version": "lcai-cm2-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-GEOGRAPHY-NETWORKS-MAP",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-GEOGRAPHY-V1-NETWORKS-MAP-ASSESSMENT-03",
+      "grade": "FR-CM2",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-CM2-NETWORKS",
+      "skill": "SK-ENR-GEOGRAPHY-CM2-NETWORKS-MAP",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation CM2 : montre de façon autonome que tu sais cartographier un réseau simple. Justifie avec un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Cartographier un réseau simple ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-GEOGRAPHY-NETWORKS-MAP",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-GEOGRAPHY-V1-NETWORKS-MAP-ASSESSMENT-03",
+        "title": "Cartographier un réseau simple",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation CM2 : montre de façon autonome que tu sais cartographier un réseau simple. Justifie avec un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Cartographier un réseau simple ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-CM2-NETWORKS",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-CM2-NETWORKS-MAP",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-geography-v1",
+          "template_version": "lcai-cm2-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-GEOGRAPHY-NETWORKS-MAP",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-GEOGRAPHY-V1-SUSTAINABLE-NEED-PRACTICE-01",
+      "grade": "FR-CM2",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-CM2-SUSTAINABLE",
+      "skill": "SK-ENR-GEOGRAPHY-CM2-SUSTAINABLE-NEED",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Mieux habiter », réalise une tâche courte montrant que tu sais identifier un besoin d'aménagement. Donne un exemple précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Identifier un besoin d'aménagement ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-GEOGRAPHY-SUSTAINABLE-NEED",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-GEOGRAPHY-V1-SUSTAINABLE-NEED-PRACTICE-01",
+        "title": "Identifier un besoin d'aménagement",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Mieux habiter », réalise une tâche courte montrant que tu sais identifier un besoin d'aménagement. Donne un exemple précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Identifier un besoin d'aménagement ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-CM2-SUSTAINABLE",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-CM2-SUSTAINABLE-NEED",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-geography-v1",
+          "template_version": "lcai-cm2-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-GEOGRAPHY-SUSTAINABLE-NEED",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-GEOGRAPHY-V1-SUSTAINABLE-NEED-PRACTICE-02",
+      "grade": "FR-CM2",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-CM2-SUSTAINABLE",
+      "skill": "SK-ENR-GEOGRAPHY-CM2-SUSTAINABLE-NEED",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique avec tes mots puis applique à un exemple : « Identifier un besoin d'aménagement ».",
+      "expected_answer": "Réponse ouverte : explication correcte et exemple pertinent.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Identifier un besoin d'aménagement ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-GEOGRAPHY-SUSTAINABLE-NEED",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-GEOGRAPHY-V1-SUSTAINABLE-NEED-PRACTICE-02",
+        "title": "Identifier un besoin d'aménagement",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique avec tes mots puis applique à un exemple : « Identifier un besoin d'aménagement ».",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et exemple pertinent.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Identifier un besoin d'aménagement ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-CM2-SUSTAINABLE",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-CM2-SUSTAINABLE-NEED",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-geography-v1",
+          "template_version": "lcai-cm2-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-GEOGRAPHY-SUSTAINABLE-NEED",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-GEOGRAPHY-V1-SUSTAINABLE-NEED-ASSESSMENT-03",
+      "grade": "FR-CM2",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-CM2-SUSTAINABLE",
+      "skill": "SK-ENR-GEOGRAPHY-CM2-SUSTAINABLE-NEED",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation CM2 : montre de façon autonome que tu sais identifier un besoin d'aménagement. Justifie avec un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Identifier un besoin d'aménagement ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-GEOGRAPHY-SUSTAINABLE-NEED",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-GEOGRAPHY-V1-SUSTAINABLE-NEED-ASSESSMENT-03",
+        "title": "Identifier un besoin d'aménagement",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation CM2 : montre de façon autonome que tu sais identifier un besoin d'aménagement. Justifie avec un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Identifier un besoin d'aménagement ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-CM2-SUSTAINABLE",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-CM2-SUSTAINABLE-NEED",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-geography-v1",
+          "template_version": "lcai-cm2-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-GEOGRAPHY-SUSTAINABLE-NEED",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-GEOGRAPHY-V1-SUSTAINABLE-ACTOR-PRACTICE-01",
+      "grade": "FR-CM2",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-CM2-SUSTAINABLE",
+      "skill": "SK-ENR-GEOGRAPHY-CM2-SUSTAINABLE-ACTOR",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Mieux habiter », réalise une tâche courte montrant que tu sais identifier les acteurs concernés. Donne un exemple précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Identifier les acteurs concernés ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-GEOGRAPHY-SUSTAINABLE-ACTOR",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-GEOGRAPHY-V1-SUSTAINABLE-ACTOR-PRACTICE-01",
+        "title": "Identifier les acteurs concernés",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Mieux habiter », réalise une tâche courte montrant que tu sais identifier les acteurs concernés. Donne un exemple précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Identifier les acteurs concernés ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-CM2-SUSTAINABLE",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-CM2-SUSTAINABLE-ACTOR",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-geography-v1",
+          "template_version": "lcai-cm2-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-GEOGRAPHY-SUSTAINABLE-ACTOR",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-GEOGRAPHY-V1-SUSTAINABLE-ACTOR-PRACTICE-02",
+      "grade": "FR-CM2",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-CM2-SUSTAINABLE",
+      "skill": "SK-ENR-GEOGRAPHY-CM2-SUSTAINABLE-ACTOR",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique avec tes mots puis applique à un exemple : « Identifier les acteurs concernés ».",
+      "expected_answer": "Réponse ouverte : explication correcte et exemple pertinent.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Identifier les acteurs concernés ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-GEOGRAPHY-SUSTAINABLE-ACTOR",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-GEOGRAPHY-V1-SUSTAINABLE-ACTOR-PRACTICE-02",
+        "title": "Identifier les acteurs concernés",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique avec tes mots puis applique à un exemple : « Identifier les acteurs concernés ».",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et exemple pertinent.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Identifier les acteurs concernés ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-CM2-SUSTAINABLE",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-CM2-SUSTAINABLE-ACTOR",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-geography-v1",
+          "template_version": "lcai-cm2-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-GEOGRAPHY-SUSTAINABLE-ACTOR",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-GEOGRAPHY-V1-SUSTAINABLE-ACTOR-ASSESSMENT-03",
+      "grade": "FR-CM2",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-CM2-SUSTAINABLE",
+      "skill": "SK-ENR-GEOGRAPHY-CM2-SUSTAINABLE-ACTOR",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation CM2 : montre de façon autonome que tu sais identifier les acteurs concernés. Justifie avec un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Identifier les acteurs concernés ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-GEOGRAPHY-SUSTAINABLE-ACTOR",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-GEOGRAPHY-V1-SUSTAINABLE-ACTOR-ASSESSMENT-03",
+        "title": "Identifier les acteurs concernés",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation CM2 : montre de façon autonome que tu sais identifier les acteurs concernés. Justifie avec un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Identifier les acteurs concernés ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-CM2-SUSTAINABLE",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-CM2-SUSTAINABLE-ACTOR",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-geography-v1",
+          "template_version": "lcai-cm2-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-GEOGRAPHY-SUSTAINABLE-ACTOR",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-GEOGRAPHY-V1-SUSTAINABLE-SOLUTION-PRACTICE-01",
+      "grade": "FR-CM2",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-CM2-SUSTAINABLE",
+      "skill": "SK-ENR-GEOGRAPHY-CM2-SUSTAINABLE-SOLUTION",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Mieux habiter », réalise une tâche courte montrant que tu sais comparer des solutions d'aménagement. Donne un exemple précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Comparer des solutions d'aménagement ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-GEOGRAPHY-SUSTAINABLE-SOLUTION",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-GEOGRAPHY-V1-SUSTAINABLE-SOLUTION-PRACTICE-01",
+        "title": "Comparer des solutions d'aménagement",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Mieux habiter », réalise une tâche courte montrant que tu sais comparer des solutions d'aménagement. Donne un exemple précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Comparer des solutions d'aménagement ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-CM2-SUSTAINABLE",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-CM2-SUSTAINABLE-SOLUTION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-geography-v1",
+          "template_version": "lcai-cm2-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-GEOGRAPHY-SUSTAINABLE-SOLUTION",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-GEOGRAPHY-V1-SUSTAINABLE-SOLUTION-PRACTICE-02",
+      "grade": "FR-CM2",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-CM2-SUSTAINABLE",
+      "skill": "SK-ENR-GEOGRAPHY-CM2-SUSTAINABLE-SOLUTION",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique avec tes mots puis applique à un exemple : « Comparer des solutions d'aménagement ».",
+      "expected_answer": "Réponse ouverte : explication correcte et exemple pertinent.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Comparer des solutions d'aménagement ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-GEOGRAPHY-SUSTAINABLE-SOLUTION",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-GEOGRAPHY-V1-SUSTAINABLE-SOLUTION-PRACTICE-02",
+        "title": "Comparer des solutions d'aménagement",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique avec tes mots puis applique à un exemple : « Comparer des solutions d'aménagement ».",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et exemple pertinent.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Comparer des solutions d'aménagement ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-CM2-SUSTAINABLE",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-CM2-SUSTAINABLE-SOLUTION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-geography-v1",
+          "template_version": "lcai-cm2-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-GEOGRAPHY-SUSTAINABLE-SOLUTION",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-GEOGRAPHY-V1-SUSTAINABLE-SOLUTION-ASSESSMENT-03",
+      "grade": "FR-CM2",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-CM2-SUSTAINABLE",
+      "skill": "SK-ENR-GEOGRAPHY-CM2-SUSTAINABLE-SOLUTION",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation CM2 : montre de façon autonome que tu sais comparer des solutions d'aménagement. Justifie avec un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Comparer des solutions d'aménagement ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-GEOGRAPHY-SUSTAINABLE-SOLUTION",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-GEOGRAPHY-V1-SUSTAINABLE-SOLUTION-ASSESSMENT-03",
+        "title": "Comparer des solutions d'aménagement",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation CM2 : montre de façon autonome que tu sais comparer des solutions d'aménagement. Justifie avec un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Comparer des solutions d'aménagement ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-CM2-SUSTAINABLE",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-CM2-SUSTAINABLE-SOLUTION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-geography-v1",
+          "template_version": "lcai-cm2-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-GEOGRAPHY-SUSTAINABLE-SOLUTION",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-GEOGRAPHY-V1-SUSTAINABLE-SUSTAINABILITY-PRACTICE-01",
+      "grade": "FR-CM2",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-CM2-SUSTAINABLE",
+      "skill": "SK-ENR-GEOGRAPHY-CM2-SUSTAINABLE-SUSTAINABILITY",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Mieux habiter », réalise une tâche courte montrant que tu sais justifier une pratique plus durable. Donne un exemple précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Justifier une pratique plus durable ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-GEOGRAPHY-SUSTAINABLE-SUSTAINABILITY",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-GEOGRAPHY-V1-SUSTAINABLE-SUSTAINABILITY-PRACTICE-01",
+        "title": "Justifier une pratique plus durable",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Mieux habiter », réalise une tâche courte montrant que tu sais justifier une pratique plus durable. Donne un exemple précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Justifier une pratique plus durable ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-CM2-SUSTAINABLE",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-CM2-SUSTAINABLE-SUSTAINABILITY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-geography-v1",
+          "template_version": "lcai-cm2-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-GEOGRAPHY-SUSTAINABLE-SUSTAINABILITY",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-GEOGRAPHY-V1-SUSTAINABLE-SUSTAINABILITY-PRACTICE-02",
+      "grade": "FR-CM2",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-CM2-SUSTAINABLE",
+      "skill": "SK-ENR-GEOGRAPHY-CM2-SUSTAINABLE-SUSTAINABILITY",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique avec tes mots puis applique à un exemple : « Justifier une pratique plus durable ».",
+      "expected_answer": "Réponse ouverte : explication correcte et exemple pertinent.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Justifier une pratique plus durable ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-GEOGRAPHY-SUSTAINABLE-SUSTAINABILITY",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-GEOGRAPHY-V1-SUSTAINABLE-SUSTAINABILITY-PRACTICE-02",
+        "title": "Justifier une pratique plus durable",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique avec tes mots puis applique à un exemple : « Justifier une pratique plus durable ».",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et exemple pertinent.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Justifier une pratique plus durable ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-CM2-SUSTAINABLE",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-CM2-SUSTAINABLE-SUSTAINABILITY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-geography-v1",
+          "template_version": "lcai-cm2-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-GEOGRAPHY-SUSTAINABLE-SUSTAINABILITY",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_geography_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM2-GEOGRAPHY-V1-SUSTAINABLE-SUSTAINABILITY-ASSESSMENT-03",
+      "grade": "FR-CM2",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-CM2-SUSTAINABLE",
+      "skill": "SK-ENR-GEOGRAPHY-CM2-SUSTAINABLE-SUSTAINABILITY",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation CM2 : montre de façon autonome que tu sais justifier une pratique plus durable. Justifie avec un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement « Justifier une pratique plus durable ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM2-GEOGRAPHY-SUSTAINABLE-SUSTAINABILITY",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:00:13.152271+00:00",
+        "template_version": "lcai-cm2-geography-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM2-GEOGRAPHY-V1-SUSTAINABLE-SUSTAINABILITY-ASSESSMENT-03",
+        "title": "Justifier une pratique plus durable",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation CM2 : montre de façon autonome que tu sais justifier une pratique plus durable. Justifie avec un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement « Justifier une pratique plus durable ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM2-2026",
+          "grade_code": "FR-CM2",
+          "subject_code": "GEOGRAPHY",
+          "chapter_code": "CH-GEOGRAPHY-CM2-SUSTAINABLE",
+          "primary_skill_code": "SK-ENR-GEOGRAPHY-CM2-SUSTAINABLE-SUSTAINABILITY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm2-geography-v1",
+          "template_version": "lcai-cm2-geography-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:00:13.152271+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et vérifie les critères de réussite."
+        },
+        "family_code": "CM2-GEOGRAPHY-SUSTAINABLE-SUSTAINABILITY",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée CM2.",
+          "review_required": true,
+          "source_ticket": "parallel-CM2-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse liée directement à la compétence",
+            "élément précis ou exemple",
+            "formulation adaptée au CM2"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm2_geography_candidates_v1.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,253 @@
+{
+  "pipeline_version": "lcai-0012e-primary-v1",
+  "author": "lcai-0012e-primary-import",
+  "counters": {
+    "imported": 0,
+    "skipped_existing": 60,
+    "skipped_blocked": 0,
+    "skipped_invalid": 0,
+    "failed": 0
+  },
+  "trace": [
+    {
+      "code": "CM1-EMC-V1-DIGNITY-DIGNITY-PRACTICE-01",
+      "result": "SKIPPED_EXISTING"
+    },
+    {
+      "code": "CM1-EMC-V1-DIGNITY-DIGNITY-PRACTICE-02",
+      "result": "SKIPPED_EXISTING"
+    },
+    {
+      "code": "CM1-EMC-V1-DIGNITY-DIGNITY-ASSESSMENT-03",
+      "result": "SKIPPED_EXISTING"
+    },
+    {
+      "code": "CM1-EMC-V1-DIGNITY-EQUALITY-PRACTICE-01",
+      "result": "SKIPPED_EXISTING"
+    },
+    {
+      "code": "CM1-EMC-V1-DIGNITY-EQUALITY-PRACTICE-02",
+      "result": "SKIPPED_EXISTING"
+    },
+    {
+      "code": "CM1-EMC-V1-DIGNITY-EQUALITY-ASSESSMENT-03",
+      "result": "SKIPPED_EXISTING"
+    },
+    {
+      "code": "CM1-EMC-V1-DIGNITY-RESPECT-PRACTICE-01",
+      "result": "SKIPPED_EXISTING"
+    },
+    {
+      "code": "CM1-EMC-V1-DIGNITY-RESPECT-PRACTICE-02",
+      "result": "SKIPPED_EXISTING"
+    },
+    {
+      "code": "CM1-EMC-V1-DIGNITY-RESPECT-ASSESSMENT-03",
+      "result": "SKIPPED_EXISTING"
+    },
+    {
+      "code": "CM1-EMC-V1-DIGNITY-ARGUE-PRACTICE-01",
+      "result": "SKIPPED_EXISTING"
+    },
+    {
+      "code": "CM1-EMC-V1-DIGNITY-ARGUE-PRACTICE-02",
+      "result": "SKIPPED_EXISTING"
+    },
+    {
+      "code": "CM1-EMC-V1-DIGNITY-ARGUE-ASSESSMENT-03",
+      "result": "SKIPPED_EXISTING"
+    },
+    {
+      "code": "CM1-EMC-V1-COLLECTIVE-RULE-PRACTICE-01",
+      "result": "SKIPPED_EXISTING"
+    },
+    {
+      "code": "CM1-EMC-V1-COLLECTIVE-RULE-PRACTICE-02",
+      "result": "SKIPPED_EXISTING"
+    },
+    {
+      "code": "CM1-EMC-V1-COLLECTIVE-RULE-ASSESSMENT-03",
+      "result": "SKIPPED_EXISTING"
+    },
+    {
+      "code": "CM1-EMC-V1-COLLECTIVE-RIGHT_DUTY-PRACTICE-01",
+      "result": "SKIPPED_EXISTING"
+    },
+    {
+      "code": "CM1-EMC-V1-COLLECTIVE-RIGHT_DUTY-PRACTICE-02",
+      "result": "SKIPPED_EXISTING"
+    },
+    {
+      "code": "CM1-EMC-V1-COLLECTIVE-RIGHT_DUTY-ASSESSMENT-03",
+      "result": "SKIPPED_EXISTING"
+    },
+    {
+      "code": "CM1-EMC-V1-COLLECTIVE-CONSEQUENCE-PRACTICE-01",
+      "result": "SKIPPED_EXISTING"
+    },
+    {
+      "code": "CM1-EMC-V1-COLLECTIVE-CONSEQUENCE-PRACTICE-02",
+      "result": "SKIPPED_EXISTING"
+    },
+    {
+      "code": "CM1-EMC-V1-COLLECTIVE-CONSEQUENCE-ASSESSMENT-03",
+      "result": "SKIPPED_EXISTING"
+    },
+    {
+      "code": "CM1-EMC-V1-COLLECTIVE-PARTICIPATE-PRACTICE-01",
+      "result": "SKIPPED_EXISTING"
+    },
+    {
+      "code": "CM1-EMC-V1-COLLECTIVE-PARTICIPATE-PRACTICE-02",
+      "result": "SKIPPED_EXISTING"
+    },
+    {
+      "code": "CM1-EMC-V1-COLLECTIVE-PARTICIPATE-ASSESSMENT-03",
+      "result": "SKIPPED_EXISTING"
+    },
+    {
+      "code": "CM1-ENGLISH-V1-ORAL-GLOBAL-PRACTICE-01",
+      "result": "SKIPPED_EXISTING"
+    },
+    {
+      "code": "CM1-ENGLISH-V1-ORAL-GLOBAL-PRACTICE-02",
+      "result": "SKIPPED_EXISTING"
+    },
+    {
+      "code": "CM1-ENGLISH-V1-ORAL-GLOBAL-ASSESSMENT-03",
+      "result": "SKIPPED_EXISTING"
+    },
+    {
+      "code": "CM1-ENGLISH-V1-ORAL-DETAIL-PRACTICE-01",
+      "result": "SKIPPED_EXISTING"
+    },
+    {
+      "code": "CM1-ENGLISH-V1-ORAL-DETAIL-PRACTICE-02",
+      "result": "SKIPPED_EXISTING"
+    },
+    {
+      "code": "CM1-ENGLISH-V1-ORAL-DETAIL-ASSESSMENT-03",
+      "result": "SKIPPED_EXISTING"
+    },
+    {
+      "code": "CM1-ENGLISH-V1-ORAL-REPEAT-PRACTICE-01",
+      "result": "SKIPPED_EXISTING"
+    },
+    {
+      "code": "CM1-ENGLISH-V1-ORAL-REPEAT-PRACTICE-02",
+      "result": "SKIPPED_EXISTING"
+    },
+    {
+      "code": "CM1-ENGLISH-V1-ORAL-REPEAT-ASSESSMENT-03",
+      "result": "SKIPPED_EXISTING"
+    },
+    {
+      "code": "CM1-ENGLISH-V1-ORAL-INTERACT-PRACTICE-01",
+      "result": "SKIPPED_EXISTING"
+    },
+    {
+      "code": "CM1-ENGLISH-V1-ORAL-INTERACT-PRACTICE-02",
+      "result": "SKIPPED_EXISTING"
+    },
+    {
+      "code": "CM1-ENGLISH-V1-ORAL-INTERACT-ASSESSMENT-03",
+      "result": "SKIPPED_EXISTING"
+    },
+    {
+      "code": "CM1-ENGLISH-V1-WRITTEN-READ-PRACTICE-01",
+      "result": "SKIPPED_EXISTING"
+    },
+    {
+      "code": "CM1-ENGLISH-V1-WRITTEN-READ-PRACTICE-02",
+      "result": "SKIPPED_EXISTING"
+    },
+    {
+      "code": "CM1-ENGLISH-V1-WRITTEN-READ-ASSESSMENT-03",
+      "result": "SKIPPED_EXISTING"
+    },
+    {
+      "code": "CM1-ENGLISH-V1-WRITTEN-COPY-PRACTICE-01",
+      "result": "SKIPPED_EXISTING"
+    },
+    {
+      "code": "CM1-ENGLISH-V1-WRITTEN-COPY-PRACTICE-02",
+      "result": "SKIPPED_EXISTING"
+    },
+    {
+      "code": "CM1-ENGLISH-V1-WRITTEN-COPY-ASSESSMENT-03",
+      "result": "SKIPPED_EXISTING"
+    },
+    {
+      "code": "CM1-ENGLISH-V1-WRITTEN-WRITE-PRACTICE-01",
+      "result": "SKIPPED_EXISTING"
+    },
+    {
+      "code": "CM1-ENGLISH-V1-WRITTEN-WRITE-PRACTICE-02",
+      "result": "SKIPPED_EXISTING"
+    },
+    {
+      "code": "CM1-ENGLISH-V1-WRITTEN-WRITE-ASSESSMENT-03",
+      "result": "SKIPPED_EXISTING"
+    },
+    {
+      "code": "CM1-ENGLISH-V1-WRITTEN-VOCAB-PRACTICE-01",
+      "result": "SKIPPED_EXISTING"
+    },
+    {
+      "code": "CM1-ENGLISH-V1-WRITTEN-VOCAB-PRACTICE-02",
+      "result": "SKIPPED_EXISTING"
+    },
+    {
+      "code": "CM1-ENGLISH-V1-WRITTEN-VOCAB-ASSESSMENT-03",
+      "result": "SKIPPED_EXISTING"
+    },
+    {
+      "code": "CM1-FRENCH-V1-ORAL-LISTEN-PRACTICE-01",
+      "result": "SKIPPED_EXISTING"
+    },
+    {
+      "code": "CM1-FRENCH-V1-ORAL-LISTEN-PRACTICE-02",
+      "result": "SKIPPED_EXISTING"
+    },
+    {
+      "code": "CM1-FRENCH-V1-ORAL-LISTEN-ASSESSMENT-03",
+      "result": "SKIPPED_EXISTING"
+    },
+    {
+      "code": "CM1-FRENCH-V1-ORAL-REFORMULATE-PRACTICE-01",
+      "result": "SKIPPED_EXISTING"
+    },
+    {
+      "code": "CM1-FRENCH-V1-ORAL-REFORMULATE-PRACTICE-02",
+      "result": "SKIPPED_EXISTING"
+    },
+    {
+      "code": "CM1-FRENCH-V1-ORAL-REFORMULATE-ASSESSMENT-03",
+      "result": "SKIPPED_EXISTING"
+    },
+    {
+      "code": "CM1-FRENCH-V1-ORAL-PRESENT-PRACTICE-01",
+      "result": "SKIPPED_EXISTING"
+    },
+    {
+      "code": "CM1-FRENCH-V1-ORAL-PRESENT-PRACTICE-02",
+      "result": "SKIPPED_EXISTING"
+    },
+    {
+      "code": "CM1-FRENCH-V1-ORAL-PRESENT-ASSESSMENT-03",
+      "result": "SKIPPED_EXISTING"
+    },
+    {
+      "code": "CM1-FRENCH-V1-ORAL-INTERACT-PRACTICE-01",
+      "result": "SKIPPED_EXISTING"
+    },
+    {
+      "code": "CM1-FRENCH-V1-ORAL-INTERACT-PRACTICE-02",
+      "result": "SKIPPED_EXISTING"
+    },
+    {
+      "code": "CM1-FRENCH-V1-ORAL-INTERACT-ASSESSMENT-03",
+      "result": "SKIPPED_EXISTING"
+    }
+  ]
+}

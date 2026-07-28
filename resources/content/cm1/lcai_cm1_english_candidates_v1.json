@@ -1,0 +1,1995 @@
+{
+  "batch": "CM1-ENGLISH-V1",
+  "purpose": "Parallel CM1 content preparation for Learning Coach AI",
+  "lifecycle_target": "Draft",
+  "automatic_approval": false,
+  "curriculum_version": "phase2-lcai-0011c",
+  "program_code": "FR-CYCLE3-CM1-2026",
+  "grade_code": "FR-CM1",
+  "subject_code": "ENGLISH",
+  "skill_count": 8,
+  "candidate_count": 24,
+  "content_types": {
+    "practice": 16,
+    "assessment": 8
+  },
+  "difficulty_distribution": {
+    "1": 15,
+    "2": 9
+  },
+  "open_response_count": 7,
+  "oral_or_teacher_read_count": 10,
+  "accepted_candidates": [
+    {
+      "code": "CM1-ENGLISH-V1-ORAL-GLOBAL-PRACTICE-01",
+      "grade": "FR-CM1",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-CM1-ORAL",
+      "skill": "SK-ENR-ENGLISH-CM1-ORAL-GLOBAL",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Teacher reads: \"Hello! My name is Ben. I am ten. I live in London and I like football.\" What is Ben mainly talking about?",
+      "expected_answer": "He is introducing himself.",
+      "answer_kind": "single_choice",
+      "explanation": "Ben gives his name, age, city and a hobby, so he is introducing himself.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-ENGLISH-ORAL-GLOBAL",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T09:59:56.142506+00:00",
+        "template_version": "lcai-cm1-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-ENGLISH-V1-ORAL-GLOBAL-PRACTICE-01",
+        "title": "Understand a greeting",
+        "instructions": "An adult reads the message aloud once. Choose the best summary.",
+        "prompt": "Teacher reads: \"Hello! My name is Ben. I am ten. I live in London and I like football.\" What is Ben mainly talking about?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "He is introducing himself.",
+          "options": [
+            "He is ordering food.",
+            "He is introducing himself.",
+            "He is describing his school.",
+            "He is asking for directions."
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Ben gives his name, age, city and a hobby, so he is introducing himself.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-CM1-ORAL",
+          "primary_skill_code": "SK-ENR-ENGLISH-CM1-ORAL-GLOBAL",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-english-generation-spec-v1",
+          "template_version": "lcai-cm1-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:59:56.142506+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Good job! The targeted skill is correctly demonstrated.",
+          "incorrect": "Try again. Use the words and clues from the activity."
+        },
+        "family_code": "CM1-ENGLISH-ORAL-GLOBAL",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour un apprentissage initial de l'anglais en CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "teacher_read_aloud"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-ENGLISH-V1-ORAL-GLOBAL-PRACTICE-02",
+      "grade": "FR-CM1",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-CM1-ORAL",
+      "skill": "SK-ENR-ENGLISH-CM1-ORAL-GLOBAL",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Teacher reads: \"Good morning. Open your books, please. Page twelve. Listen and repeat.\" Where are the speakers?",
+      "expected_answer": "In a classroom.",
+      "answer_kind": "single_choice",
+      "explanation": "The instructions about books, a page and repeating indicate a classroom.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-ENGLISH-ORAL-GLOBAL",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T09:59:56.142506+00:00",
+        "template_version": "lcai-cm1-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-ENGLISH-V1-ORAL-GLOBAL-PRACTICE-02",
+        "title": "Understand the situation",
+        "instructions": "An adult reads the message aloud. Choose where the speakers probably are.",
+        "prompt": "Teacher reads: \"Good morning. Open your books, please. Page twelve. Listen and repeat.\" Where are the speakers?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "In a classroom.",
+          "options": [
+            "At a restaurant.",
+            "In a classroom.",
+            "At a swimming pool.",
+            "At a station."
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "The instructions about books, a page and repeating indicate a classroom.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-CM1-ORAL",
+          "primary_skill_code": "SK-ENR-ENGLISH-CM1-ORAL-GLOBAL",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-english-generation-spec-v1",
+          "template_version": "lcai-cm1-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:59:56.142506+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Good job! The targeted skill is correctly demonstrated.",
+          "incorrect": "Try again. Use the words and clues from the activity."
+        },
+        "family_code": "CM1-ENGLISH-ORAL-GLOBAL",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour un apprentissage initial de l'anglais en CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "teacher_read_aloud"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-ENGLISH-V1-ORAL-GLOBAL-ASSESSMENT-03",
+      "grade": "FR-CM1",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-CM1-ORAL",
+      "skill": "SK-ENR-ENGLISH-CM1-ORAL-GLOBAL",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Teacher reads: \"On Saturday I play basketball with my brother. On Sunday I visit my grandparents.\" What is the message mainly about?",
+      "expected_answer": "Weekend activities.",
+      "answer_kind": "single_choice",
+      "explanation": "Both sentences describe activities on Saturday and Sunday.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-ENGLISH-ORAL-GLOBAL",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T09:59:56.142506+00:00",
+        "template_version": "lcai-cm1-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-ENGLISH-V1-ORAL-GLOBAL-ASSESSMENT-03",
+        "title": "Identify the main topic",
+        "instructions": "An adult reads the message aloud twice. Choose the main topic.",
+        "prompt": "Teacher reads: \"On Saturday I play basketball with my brother. On Sunday I visit my grandparents.\" What is the message mainly about?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "Weekend activities.",
+          "options": [
+            "School subjects.",
+            "Weekend activities.",
+            "Food and drinks.",
+            "The weather."
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Both sentences describe activities on Saturday and Sunday.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-CM1-ORAL",
+          "primary_skill_code": "SK-ENR-ENGLISH-CM1-ORAL-GLOBAL",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-english-generation-spec-v1",
+          "template_version": "lcai-cm1-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:59:56.142506+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Good job! The targeted skill is correctly demonstrated.",
+          "incorrect": "Try again. Use the words and clues from the activity."
+        },
+        "family_code": "CM1-ENGLISH-ORAL-GLOBAL",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour un apprentissage initial de l'anglais en CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "teacher_read_aloud"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-ENGLISH-V1-ORAL-DETAIL-PRACTICE-01",
+      "grade": "FR-CM1",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-CM1-ORAL",
+      "skill": "SK-ENR-ENGLISH-CM1-ORAL-DETAIL",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Teacher reads: \"My sister Lucy is nine years old.\" How old is Lucy?",
+      "expected_answer": "nine",
+      "answer_kind": "exact_text",
+      "explanation": "The sentence says \"Lucy is nine years old.\"",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-ENGLISH-ORAL-DETAIL",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T09:59:56.142506+00:00",
+        "template_version": "lcai-cm1-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-ENGLISH-V1-ORAL-DETAIL-PRACTICE-01",
+        "title": "Find an age",
+        "instructions": "An adult reads the sentence aloud. Answer the question.",
+        "prompt": "Teacher reads: \"My sister Lucy is nine years old.\" How old is Lucy?",
+        "answer": {
+          "kind": "exact_text",
+          "expected": "nine",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "The sentence says \"Lucy is nine years old.\"",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-CM1-ORAL",
+          "primary_skill_code": "SK-ENR-ENGLISH-CM1-ORAL-DETAIL",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-english-generation-spec-v1",
+          "template_version": "lcai-cm1-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:59:56.142506+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Good job! The targeted skill is correctly demonstrated.",
+          "incorrect": "Try again. Use the words and clues from the activity."
+        },
+        "family_code": "CM1-ENGLISH-ORAL-DETAIL",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour un apprentissage initial de l'anglais en CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "teacher_read_aloud"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-ENGLISH-V1-ORAL-DETAIL-PRACTICE-02",
+      "grade": "FR-CM1",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-CM1-ORAL",
+      "skill": "SK-ENR-ENGLISH-CM1-ORAL-DETAIL",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Teacher reads: \"I have a red bag, but my favourite colour is blue.\" What is the speaker's favourite colour?",
+      "expected_answer": "blue",
+      "answer_kind": "single_choice",
+      "explanation": "The message explicitly says \"my favourite colour is blue\".",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-ENGLISH-ORAL-DETAIL",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T09:59:56.142506+00:00",
+        "template_version": "lcai-cm1-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-ENGLISH-V1-ORAL-DETAIL-PRACTICE-02",
+        "title": "Find a favourite colour",
+        "instructions": "An adult reads the message aloud. Choose the correct answer.",
+        "prompt": "Teacher reads: \"I have a red bag, but my favourite colour is blue.\" What is the speaker's favourite colour?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "blue",
+          "options": [
+            "red",
+            "blue",
+            "green",
+            "yellow"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "The message explicitly says \"my favourite colour is blue\".",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-CM1-ORAL",
+          "primary_skill_code": "SK-ENR-ENGLISH-CM1-ORAL-DETAIL",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-english-generation-spec-v1",
+          "template_version": "lcai-cm1-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:59:56.142506+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Good job! The targeted skill is correctly demonstrated.",
+          "incorrect": "Try again. Use the words and clues from the activity."
+        },
+        "family_code": "CM1-ENGLISH-ORAL-DETAIL",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour un apprentissage initial de l'anglais en CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "teacher_read_aloud"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-ENGLISH-V1-ORAL-DETAIL-ASSESSMENT-03",
+      "grade": "FR-CM1",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-CM1-ORAL",
+      "skill": "SK-ENR-ENGLISH-CM1-ORAL-DETAIL",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Teacher reads: \"Tom has a cat called Milo. Milo is black and white.\" Which pair is correct?",
+      "expected_answer": "Milo — black and white",
+      "answer_kind": "single_choice",
+      "explanation": "The pet is called Milo and its colours are black and white.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-ENGLISH-ORAL-DETAIL",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T09:59:56.142506+00:00",
+        "template_version": "lcai-cm1-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-ENGLISH-V1-ORAL-DETAIL-ASSESSMENT-03",
+        "title": "Find two familiar details",
+        "instructions": "An adult reads the message twice. Choose the correct pair.",
+        "prompt": "Teacher reads: \"Tom has a cat called Milo. Milo is black and white.\" Which pair is correct?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "Milo — black and white",
+          "options": [
+            "Tom — brown",
+            "Milo — black and white",
+            "Milo — blue",
+            "Tom — black and white"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "The pet is called Milo and its colours are black and white.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-CM1-ORAL",
+          "primary_skill_code": "SK-ENR-ENGLISH-CM1-ORAL-DETAIL",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-english-generation-spec-v1",
+          "template_version": "lcai-cm1-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:59:56.142506+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Good job! The targeted skill is correctly demonstrated.",
+          "incorrect": "Try again. Use the words and clues from the activity."
+        },
+        "family_code": "CM1-ENGLISH-ORAL-DETAIL",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour un apprentissage initial de l'anglais en CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "teacher_read_aloud"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-ENGLISH-V1-ORAL-REPEAT-PRACTICE-01",
+      "grade": "FR-CM1",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-CM1-ORAL",
+      "skill": "SK-ENR-ENGLISH-CM1-ORAL-REPEAT",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Model: \"Good morning!\" Repeat the expression.",
+      "expected_answer": "Oral production: \"Good morning!\" intelligibly reproduced.",
+      "answer_kind": "open_response",
+      "explanation": "The goal is intelligible reproduction of a short familiar model.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-ENGLISH-ORAL-REPEAT",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T09:59:56.142506+00:00",
+        "template_version": "lcai-cm1-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-ENGLISH-V1-ORAL-REPEAT-PRACTICE-01",
+        "title": "Repeat a greeting",
+        "instructions": "Listen to an adult model, then repeat clearly.",
+        "prompt": "Model: \"Good morning!\" Repeat the expression.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Oral production: \"Good morning!\" intelligibly reproduced.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "The goal is intelligible reproduction of a short familiar model.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-CM1-ORAL",
+          "primary_skill_code": "SK-ENR-ENGLISH-CM1-ORAL-REPEAT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-english-generation-spec-v1",
+          "template_version": "lcai-cm1-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:59:56.142506+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Good job! The targeted skill is correctly demonstrated.",
+          "incorrect": "Try again. Use the words and clues from the activity."
+        },
+        "family_code": "CM1-ENGLISH-ORAL-REPEAT",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour un apprentissage initial de l'anglais en CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "oral_imitation",
+          "success_criteria": [
+            "all words reproduced",
+            "speech intelligible",
+            "recognisable rhythm"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-ENGLISH-V1-ORAL-REPEAT-PRACTICE-02",
+      "grade": "FR-CM1",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-CM1-ORAL",
+      "skill": "SK-ENR-ENGLISH-CM1-ORAL-REPEAT",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Model: \"My name is Alice.\" Repeat the sentence.",
+      "expected_answer": "Oral production: \"My name is Alice.\" intelligibly reproduced.",
+      "answer_kind": "open_response",
+      "explanation": "The learner reproduces a short memorisable sentence.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-ENGLISH-ORAL-REPEAT",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T09:59:56.142506+00:00",
+        "template_version": "lcai-cm1-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-ENGLISH-V1-ORAL-REPEAT-PRACTICE-02",
+        "title": "Repeat a short sentence",
+        "instructions": "Listen to the model, then repeat it.",
+        "prompt": "Model: \"My name is Alice.\" Repeat the sentence.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Oral production: \"My name is Alice.\" intelligibly reproduced.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "The learner reproduces a short memorisable sentence.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-CM1-ORAL",
+          "primary_skill_code": "SK-ENR-ENGLISH-CM1-ORAL-REPEAT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-english-generation-spec-v1",
+          "template_version": "lcai-cm1-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:59:56.142506+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Good job! The targeted skill is correctly demonstrated.",
+          "incorrect": "Try again. Use the words and clues from the activity."
+        },
+        "family_code": "CM1-ENGLISH-ORAL-REPEAT",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour un apprentissage initial de l'anglais en CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "oral_imitation",
+          "success_criteria": [
+            "complete sentence",
+            "words intelligible",
+            "no meaning-changing omission"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-ENGLISH-V1-ORAL-REPEAT-ASSESSMENT-03",
+      "grade": "FR-CM1",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-CM1-ORAL",
+      "skill": "SK-ENR-ENGLISH-CM1-ORAL-REPEAT",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Model: \"How old are you?\" Repeat the question.",
+      "expected_answer": "Oral production: \"How old are you?\" intelligibly reproduced.",
+      "answer_kind": "open_response",
+      "explanation": "Assessment concerns intelligibility and reproduction of the interrogative model, not native-like accent.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-ENGLISH-ORAL-REPEAT",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T09:59:56.142506+00:00",
+        "template_version": "lcai-cm1-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-ENGLISH-V1-ORAL-REPEAT-ASSESSMENT-03",
+        "title": "Repeat a question",
+        "instructions": "Listen carefully, then repeat the question with a recognisable question intonation.",
+        "prompt": "Model: \"How old are you?\" Repeat the question.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Oral production: \"How old are you?\" intelligibly reproduced.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Assessment concerns intelligibility and reproduction of the interrogative model, not native-like accent.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-CM1-ORAL",
+          "primary_skill_code": "SK-ENR-ENGLISH-CM1-ORAL-REPEAT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-english-generation-spec-v1",
+          "template_version": "lcai-cm1-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:59:56.142506+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Good job! The targeted skill is correctly demonstrated.",
+          "incorrect": "Try again. Use the words and clues from the activity."
+        },
+        "family_code": "CM1-ENGLISH-ORAL-REPEAT",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour un apprentissage initial de l'anglais en CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "oral_imitation",
+          "success_criteria": [
+            "complete question",
+            "intelligible pronunciation",
+            "question intonation recognisable"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-ENGLISH-V1-ORAL-INTERACT-PRACTICE-01",
+      "grade": "FR-CM1",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-CM1-ORAL",
+      "skill": "SK-ENR-ENGLISH-CM1-ORAL-INTERACT",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Someone asks: \"What is your name?\" Give a complete short answer.",
+      "expected_answer": "Example: \"My name is Sam.\" / \"I'm Sam.\"",
+      "answer_kind": "open_response",
+      "explanation": "A simple personal-information exchange can be answered with a short memorised pattern.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-ENGLISH-ORAL-INTERACT",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T09:59:56.142506+00:00",
+        "template_version": "lcai-cm1-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-ENGLISH-V1-ORAL-INTERACT-PRACTICE-01",
+        "title": "Answer about your name",
+        "instructions": "Answer the simple question in English.",
+        "prompt": "Someone asks: \"What is your name?\" Give a complete short answer.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Example: \"My name is Sam.\" / \"I'm Sam.\"",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "A simple personal-information exchange can be answered with a short memorised pattern.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-CM1-ORAL",
+          "primary_skill_code": "SK-ENR-ENGLISH-CM1-ORAL-INTERACT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-english-generation-spec-v1",
+          "template_version": "lcai-cm1-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:59:56.142506+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Good job! The targeted skill is correctly demonstrated.",
+          "incorrect": "Try again. Use the words and clues from the activity."
+        },
+        "family_code": "CM1-ENGLISH-ORAL-INTERACT",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour un apprentissage initial de l'anglais en CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "oral_or_text",
+          "success_criteria": [
+            "answer gives a name",
+            "English response",
+            "meaning intelligible"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-ENGLISH-V1-ORAL-INTERACT-PRACTICE-02",
+      "grade": "FR-CM1",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-CM1-ORAL",
+      "skill": "SK-ENR-ENGLISH-CM1-ORAL-INTERACT",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Someone asks: \"How old are you?\" Which answer is appropriate?",
+      "expected_answer": "I am ten years old.",
+      "answer_kind": "single_choice",
+      "explanation": "\"How old are you?\" asks for age.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-ENGLISH-ORAL-INTERACT",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T09:59:56.142506+00:00",
+        "template_version": "lcai-cm1-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-ENGLISH-V1-ORAL-INTERACT-PRACTICE-02",
+        "title": "Answer about age",
+        "instructions": "Choose the appropriate reply.",
+        "prompt": "Someone asks: \"How old are you?\" Which answer is appropriate?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "I am ten years old.",
+          "options": [
+            "I am ten years old.",
+            "My name is Leo.",
+            "I like pizza.",
+            "It is Monday."
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "\"How old are you?\" asks for age.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-CM1-ORAL",
+          "primary_skill_code": "SK-ENR-ENGLISH-CM1-ORAL-INTERACT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-english-generation-spec-v1",
+          "template_version": "lcai-cm1-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:59:56.142506+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Good job! The targeted skill is correctly demonstrated.",
+          "incorrect": "Try again. Use the words and clues from the activity."
+        },
+        "family_code": "CM1-ENGLISH-ORAL-INTERACT",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour un apprentissage initial de l'anglais en CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-ENGLISH-V1-ORAL-INTERACT-ASSESSMENT-03",
+      "grade": "FR-CM1",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-CM1-ORAL",
+      "skill": "SK-ENR-ENGLISH-CM1-ORAL-INTERACT",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "A: \"Do you like football?\" B: ________. Choose a suitable answer.",
+      "expected_answer": "Yes, I do.",
+      "answer_kind": "single_choice",
+      "explanation": "A yes/no question with \"Do you like...?\" can be answered \"Yes, I do\" or \"No, I don't\".",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-ENGLISH-ORAL-INTERACT",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T09:59:56.142506+00:00",
+        "template_version": "lcai-cm1-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-ENGLISH-V1-ORAL-INTERACT-ASSESSMENT-03",
+        "title": "Exchange personal information",
+        "instructions": "Complete a very short exchange in English.",
+        "prompt": "A: \"Do you like football?\" B: ________. Choose a suitable answer.",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "Yes, I do.",
+          "options": [
+            "Yes, I do.",
+            "I am eleven.",
+            "It is blue.",
+            "Good night."
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "A yes/no question with \"Do you like...?\" can be answered \"Yes, I do\" or \"No, I don't\".",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-CM1-ORAL",
+          "primary_skill_code": "SK-ENR-ENGLISH-CM1-ORAL-INTERACT",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-english-generation-spec-v1",
+          "template_version": "lcai-cm1-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:59:56.142506+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Good job! The targeted skill is correctly demonstrated.",
+          "incorrect": "Try again. Use the words and clues from the activity."
+        },
+        "family_code": "CM1-ENGLISH-ORAL-INTERACT",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour un apprentissage initial de l'anglais en CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-ENGLISH-V1-WRITTEN-READ-PRACTICE-01",
+      "grade": "FR-CM1",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-CM1-WRITTEN",
+      "skill": "SK-ENR-ENGLISH-CM1-WRITTEN-READ",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "\"I have a small dog.\" What does the person have?",
+      "expected_answer": "a small dog",
+      "answer_kind": "single_choice",
+      "explanation": "The noun phrase after \"have\" is \"a small dog\".",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-ENGLISH-WRITTEN-READ",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T09:59:56.142506+00:00",
+        "template_version": "lcai-cm1-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-ENGLISH-V1-WRITTEN-READ-PRACTICE-01",
+        "title": "Read a simple sentence",
+        "instructions": "Read and choose the correct meaning.",
+        "prompt": "\"I have a small dog.\" What does the person have?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "a small dog",
+          "options": [
+            "a small dog",
+            "a big cat",
+            "a red bike",
+            "a little sister"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "The noun phrase after \"have\" is \"a small dog\".",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-CM1-WRITTEN",
+          "primary_skill_code": "SK-ENR-ENGLISH-CM1-WRITTEN-READ",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-english-generation-spec-v1",
+          "template_version": "lcai-cm1-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:59:56.142506+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Good job! The targeted skill is correctly demonstrated.",
+          "incorrect": "Try again. Use the words and clues from the activity."
+        },
+        "family_code": "CM1-ENGLISH-WRITTEN-READ",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour un apprentissage initial de l'anglais en CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-ENGLISH-V1-WRITTEN-READ-PRACTICE-02",
+      "grade": "FR-CM1",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-CM1-WRITTEN",
+      "skill": "SK-ENR-ENGLISH-CM1-WRITTEN-READ",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "\"Hi Emma! My birthday is on Friday. Come to my house at four o'clock. Tom.\" When is Tom's birthday?",
+      "expected_answer": "Friday",
+      "answer_kind": "exact_text",
+      "explanation": "The message says \"My birthday is on Friday.\"",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-ENGLISH-WRITTEN-READ",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T09:59:56.142506+00:00",
+        "template_version": "lcai-cm1-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-ENGLISH-V1-WRITTEN-READ-PRACTICE-02",
+        "title": "Read a short message",
+        "instructions": "Read the message and answer.",
+        "prompt": "\"Hi Emma! My birthday is on Friday. Come to my house at four o'clock. Tom.\" When is Tom's birthday?",
+        "answer": {
+          "kind": "exact_text",
+          "expected": "Friday",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "The message says \"My birthday is on Friday.\"",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-CM1-WRITTEN",
+          "primary_skill_code": "SK-ENR-ENGLISH-CM1-WRITTEN-READ",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-english-generation-spec-v1",
+          "template_version": "lcai-cm1-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:59:56.142506+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Good job! The targeted skill is correctly demonstrated.",
+          "incorrect": "Try again. Use the words and clues from the activity."
+        },
+        "family_code": "CM1-ENGLISH-WRITTEN-READ",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour un apprentissage initial de l'anglais en CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-ENGLISH-V1-WRITTEN-READ-ASSESSMENT-03",
+      "grade": "FR-CM1",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-CM1-WRITTEN",
+      "skill": "SK-ENR-ENGLISH-CM1-WRITTEN-READ",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "\"School trip — Tuesday — Bring a sandwich and water.\" What should pupils bring?",
+      "expected_answer": "a sandwich and water",
+      "answer_kind": "single_choice",
+      "explanation": "The notice directly lists the two things to bring.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-ENGLISH-WRITTEN-READ",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T09:59:56.142506+00:00",
+        "template_version": "lcai-cm1-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-ENGLISH-V1-WRITTEN-READ-ASSESSMENT-03",
+        "title": "Understand a familiar notice",
+        "instructions": "Read and choose the correct information.",
+        "prompt": "\"School trip — Tuesday — Bring a sandwich and water.\" What should pupils bring?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "a sandwich and water",
+          "options": [
+            "a book and a pencil",
+            "a sandwich and water",
+            "a football and a hat",
+            "a cake and milk"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "The notice directly lists the two things to bring.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-CM1-WRITTEN",
+          "primary_skill_code": "SK-ENR-ENGLISH-CM1-WRITTEN-READ",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-english-generation-spec-v1",
+          "template_version": "lcai-cm1-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:59:56.142506+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Good job! The targeted skill is correctly demonstrated.",
+          "incorrect": "Try again. Use the words and clues from the activity."
+        },
+        "family_code": "CM1-ENGLISH-WRITTEN-READ",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour un apprentissage initial de l'anglais en CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-ENGLISH-V1-WRITTEN-COPY-PRACTICE-01",
+      "grade": "FR-CM1",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-CM1-WRITTEN",
+      "skill": "SK-ENR-ENGLISH-CM1-WRITTEN-COPY",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Model: \"Good afternoon!\"",
+      "expected_answer": "Good afternoon!",
+      "answer_kind": "exact_text",
+      "explanation": "The copied sentence must preserve spelling, capitalisation and punctuation.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-ENGLISH-WRITTEN-COPY",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T09:59:56.142506+00:00",
+        "template_version": "lcai-cm1-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-ENGLISH-V1-WRITTEN-COPY-PRACTICE-01",
+        "title": "Copy a greeting",
+        "instructions": "Copy the model exactly, including the capital letter and punctuation.",
+        "prompt": "Model: \"Good afternoon!\"",
+        "answer": {
+          "kind": "exact_text",
+          "expected": "Good afternoon!",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "The copied sentence must preserve spelling, capitalisation and punctuation.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-CM1-WRITTEN",
+          "primary_skill_code": "SK-ENR-ENGLISH-CM1-WRITTEN-COPY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-english-generation-spec-v1",
+          "template_version": "lcai-cm1-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:59:56.142506+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Good job! The targeted skill is correctly demonstrated.",
+          "incorrect": "Try again. Use the words and clues from the activity."
+        },
+        "family_code": "CM1-ENGLISH-WRITTEN-COPY",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour un apprentissage initial de l'anglais en CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-ENGLISH-V1-WRITTEN-COPY-PRACTICE-02",
+      "grade": "FR-CM1",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-CM1-WRITTEN",
+      "skill": "SK-ENR-ENGLISH-CM1-WRITTEN-COPY",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Model: \"My favourite colour is green.\"",
+      "expected_answer": "My favourite colour is green.",
+      "answer_kind": "exact_text",
+      "explanation": "Accurate copying requires preserving every word and the final full stop.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-ENGLISH-WRITTEN-COPY",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T09:59:56.142506+00:00",
+        "template_version": "lcai-cm1-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-ENGLISH-V1-WRITTEN-COPY-PRACTICE-02",
+        "title": "Copy a simple sentence",
+        "instructions": "Copy the model exactly.",
+        "prompt": "Model: \"My favourite colour is green.\"",
+        "answer": {
+          "kind": "exact_text",
+          "expected": "My favourite colour is green.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Accurate copying requires preserving every word and the final full stop.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-CM1-WRITTEN",
+          "primary_skill_code": "SK-ENR-ENGLISH-CM1-WRITTEN-COPY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-english-generation-spec-v1",
+          "template_version": "lcai-cm1-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:59:56.142506+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Good job! The targeted skill is correctly demonstrated.",
+          "incorrect": "Try again. Use the words and clues from the activity."
+        },
+        "family_code": "CM1-ENGLISH-WRITTEN-COPY",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour un apprentissage initial de l'anglais en CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-ENGLISH-V1-WRITTEN-COPY-ASSESSMENT-03",
+      "grade": "FR-CM1",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-CM1-WRITTEN",
+      "skill": "SK-ENR-ENGLISH-CM1-WRITTEN-COPY",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Model: \"Where do you live?\"",
+      "expected_answer": "Where do you live?",
+      "answer_kind": "exact_text",
+      "explanation": "The expected copy preserves spelling, word order, capital letter and question mark.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-ENGLISH-WRITTEN-COPY",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T09:59:56.142506+00:00",
+        "template_version": "lcai-cm1-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-ENGLISH-V1-WRITTEN-COPY-ASSESSMENT-03",
+        "title": "Copy a short question",
+        "instructions": "Copy the model exactly, including the question mark.",
+        "prompt": "Model: \"Where do you live?\"",
+        "answer": {
+          "kind": "exact_text",
+          "expected": "Where do you live?",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "The expected copy preserves spelling, word order, capital letter and question mark.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-CM1-WRITTEN",
+          "primary_skill_code": "SK-ENR-ENGLISH-CM1-WRITTEN-COPY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-english-generation-spec-v1",
+          "template_version": "lcai-cm1-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:59:56.142506+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Good job! The targeted skill is correctly demonstrated.",
+          "incorrect": "Try again. Use the words and clues from the activity."
+        },
+        "family_code": "CM1-ENGLISH-WRITTEN-COPY",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour un apprentissage initial de l'anglais en CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-ENGLISH-V1-WRITTEN-WRITE-PRACTICE-01",
+      "grade": "FR-CM1",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-CM1-WRITTEN",
+      "skill": "SK-ENR-ENGLISH-CM1-WRITTEN-WRITE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Write your first name and one thing you like. Use these patterns if useful: “My name is …” and “I like …”.",
+      "expected_answer": "Example: \"My name is Alex. I like football.\"",
+      "answer_kind": "open_response",
+      "explanation": "The learner produces two simple sentences on a familiar personal topic.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-ENGLISH-WRITTEN-WRITE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T09:59:56.142506+00:00",
+        "template_version": "lcai-cm1-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-ENGLISH-V1-WRITTEN-WRITE-PRACTICE-01",
+        "title": "Write about yourself",
+        "instructions": "Write two short sentences in English.",
+        "prompt": "Write your first name and one thing you like. Use these patterns if useful: “My name is …” and “I like …”.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Example: \"My name is Alex. I like football.\"",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "The learner produces two simple sentences on a familiar personal topic.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-CM1-WRITTEN",
+          "primary_skill_code": "SK-ENR-ENGLISH-CM1-WRITTEN-WRITE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-english-generation-spec-v1",
+          "template_version": "lcai-cm1-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:59:56.142506+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Good job! The targeted skill is correctly demonstrated.",
+          "incorrect": "Try again. Use the words and clues from the activity."
+        },
+        "family_code": "CM1-ENGLISH-WRITTEN-WRITE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour un apprentissage initial de l'anglais en CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "two understandable sentences",
+            "name stated",
+            "one preference stated",
+            "basic English word order"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-ENGLISH-V1-WRITTEN-WRITE-PRACTICE-02",
+      "grade": "FR-CM1",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-CM1-WRITTEN",
+      "skill": "SK-ENR-ENGLISH-CM1-WRITTEN-WRITE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Imagine you have a pet. Write its type, its name and one colour. Example structure: \"I have a ... . Its name is ... . It is ... .\"",
+      "expected_answer": "Example: \"I have a cat. Its name is Max. It is black.\"",
+      "answer_kind": "open_response",
+      "explanation": "The task assesses production of a few linked familiar sentences.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-ENGLISH-WRITTEN-WRITE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T09:59:56.142506+00:00",
+        "template_version": "lcai-cm1-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-ENGLISH-V1-WRITTEN-WRITE-PRACTICE-02",
+        "title": "Write about a pet",
+        "instructions": "Write three simple sentences.",
+        "prompt": "Imagine you have a pet. Write its type, its name and one colour. Example structure: \"I have a ... . Its name is ... . It is ... .\"",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Example: \"I have a cat. Its name is Max. It is black.\"",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "The task assesses production of a few linked familiar sentences.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-CM1-WRITTEN",
+          "primary_skill_code": "SK-ENR-ENGLISH-CM1-WRITTEN-WRITE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-english-generation-spec-v1",
+          "template_version": "lcai-cm1-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:59:56.142506+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Good job! The targeted skill is correctly demonstrated.",
+          "incorrect": "Try again. Use the words and clues from the activity."
+        },
+        "family_code": "CM1-ENGLISH-WRITTEN-WRITE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour un apprentissage initial de l'anglais en CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "three relevant statements",
+            "pet identified",
+            "name given",
+            "colour given",
+            "meaning understandable"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-ENGLISH-V1-WRITTEN-WRITE-ASSESSMENT-03",
+      "grade": "FR-CM1",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-CM1-WRITTEN",
+      "skill": "SK-ENR-ENGLISH-CM1-WRITTEN-WRITE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Introduce yourself: give your name, your age and one activity you like.",
+      "expected_answer": "Example: \"My name is Mia. I am ten years old. I like swimming.\"",
+      "answer_kind": "open_response",
+      "explanation": "The mini-profile combines familiar personal information in a short written production.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-ENGLISH-WRITTEN-WRITE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T09:59:56.142506+00:00",
+        "template_version": "lcai-cm1-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-ENGLISH-V1-WRITTEN-WRITE-ASSESSMENT-03",
+        "title": "Write a mini-profile",
+        "instructions": "Write 3 or 4 simple sentences in English.",
+        "prompt": "Introduce yourself: give your name, your age and one activity you like.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Example: \"My name is Mia. I am ten years old. I like swimming.\"",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "The mini-profile combines familiar personal information in a short written production.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-CM1-WRITTEN",
+          "primary_skill_code": "SK-ENR-ENGLISH-CM1-WRITTEN-WRITE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-english-generation-spec-v1",
+          "template_version": "lcai-cm1-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:59:56.142506+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Good job! The targeted skill is correctly demonstrated.",
+          "incorrect": "Try again. Use the words and clues from the activity."
+        },
+        "family_code": "CM1-ENGLISH-WRITTEN-WRITE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour un apprentissage initial de l'anglais en CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "name",
+            "age",
+            "one liked activity",
+            "3 or 4 understandable sentences"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-ENGLISH-V1-WRITTEN-VOCAB-PRACTICE-01",
+      "grade": "FR-CM1",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-CM1-WRITTEN",
+      "skill": "SK-ENR-ENGLISH-CM1-WRITTEN-VOCAB",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Quel mot anglais signifie « crayon » ?",
+      "expected_answer": "pencil",
+      "answer_kind": "single_choice",
+      "explanation": "\"Pencil\" means « crayon ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-ENGLISH-WRITTEN-VOCAB",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T09:59:56.142506+00:00",
+        "template_version": "lcai-cm1-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-ENGLISH-V1-WRITTEN-VOCAB-PRACTICE-01",
+        "title": "School vocabulary",
+        "instructions": "Choose the English word.",
+        "prompt": "Quel mot anglais signifie « crayon » ?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "pencil",
+          "options": [
+            "pencil",
+            "window",
+            "chair",
+            "apple"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "\"Pencil\" means « crayon ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-CM1-WRITTEN",
+          "primary_skill_code": "SK-ENR-ENGLISH-CM1-WRITTEN-VOCAB",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-english-generation-spec-v1",
+          "template_version": "lcai-cm1-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:59:56.142506+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Good job! The targeted skill is correctly demonstrated.",
+          "incorrect": "Try again. Use the words and clues from the activity."
+        },
+        "family_code": "CM1-ENGLISH-WRITTEN-VOCAB",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour un apprentissage initial de l'anglais en CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-ENGLISH-V1-WRITTEN-VOCAB-PRACTICE-02",
+      "grade": "FR-CM1",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-CM1-WRITTEN",
+      "skill": "SK-ENR-ENGLISH-CM1-WRITTEN-VOCAB",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Complete: \"This is my mother and this is my ______.\" The missing word means « père ».",
+      "expected_answer": "father",
+      "answer_kind": "single_choice",
+      "explanation": "\"Father\" is the English word for « père ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-ENGLISH-WRITTEN-VOCAB",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T09:59:56.142506+00:00",
+        "template_version": "lcai-cm1-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-ENGLISH-V1-WRITTEN-VOCAB-PRACTICE-02",
+        "title": "Family vocabulary",
+        "instructions": "Choose the correct word.",
+        "prompt": "Complete: \"This is my mother and this is my ______.\" The missing word means « père ».",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "father",
+          "options": [
+            "sister",
+            "father",
+            "friend",
+            "teacher"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "\"Father\" is the English word for « père ».",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-CM1-WRITTEN",
+          "primary_skill_code": "SK-ENR-ENGLISH-CM1-WRITTEN-VOCAB",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-english-generation-spec-v1",
+          "template_version": "lcai-cm1-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:59:56.142506+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Good job! The targeted skill is correctly demonstrated.",
+          "incorrect": "Try again. Use the words and clues from the activity."
+        },
+        "family_code": "CM1-ENGLISH-WRITTEN-VOCAB",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour un apprentissage initial de l'anglais en CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_english_candidates_v1.json"
+      }
+    },
+    {
+      "code": "CM1-ENGLISH-V1-WRITTEN-VOCAB-ASSESSMENT-03",
+      "grade": "FR-CM1",
+      "subject": "ENGLISH",
+      "chapter": "CH-ENGLISH-CM1-WRITTEN",
+      "skill": "SK-ENR-ENGLISH-CM1-WRITTEN-VOCAB",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Which word is NOT a colour?",
+      "expected_answer": "Monday",
+      "answer_kind": "single_choice",
+      "explanation": "\"Red\", \"blue\" and \"green\" are colours; Monday is a day of the week.",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "CM1-ENGLISH-WRITTEN-VOCAB",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T09:59:56.142506+00:00",
+        "template_version": "lcai-cm1-english-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "CM1-ENGLISH-V1-WRITTEN-VOCAB-ASSESSMENT-03",
+        "title": "Everyday vocabulary",
+        "instructions": "Choose the word that does not belong to the same group.",
+        "prompt": "Which word is NOT a colour?",
+        "answer": {
+          "kind": "single_choice",
+          "expected": "Monday",
+          "options": [
+            "red",
+            "blue",
+            "Monday",
+            "green"
+          ],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "\"Red\", \"blue\" and \"green\" are colours; Monday is a day of the week.",
+        "target": {
+          "program_code": "FR-CYCLE3-CM1-2026",
+          "grade_code": "FR-CM1",
+          "subject_code": "ENGLISH",
+          "chapter_code": "CH-ENGLISH-CM1-WRITTEN",
+          "primary_skill_code": "SK-ENR-ENGLISH-CM1-WRITTEN-VOCAB",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-cm1-english-generation-spec-v1",
+          "template_version": "lcai-cm1-english-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T09:59:56.142506+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "Good job! The targeted skill is correctly demonstrated.",
+          "incorrect": "Try again. Use the words and clues from the activity."
+        },
+        "family_code": "CM1-ENGLISH-WRITTEN-VOCAB",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "en-GB",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour un apprentissage initial de l'anglais en CM1.",
+          "review_required": true,
+          "source_ticket": "parallel-CM1-preparation",
+          "modality": "text"
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_cm1_english_candidates_v1.json"
+      }
+    }
+  ]
+}

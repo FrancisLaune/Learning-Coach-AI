@@ -1,0 +1,2014 @@
+{
+  "batch": "5E-EMC-V1",
+  "purpose": "Parallel 5e content preparation for Learning Coach AI",
+  "lifecycle_target": "Draft",
+  "automatic_approval": false,
+  "curriculum_version": "phase2-lcai-0011c",
+  "program_code": "FR-CYCLE4-5E-2026",
+  "grade_code": "FR-5E",
+  "subject_code": "EMC",
+  "skill_count": 8,
+  "candidate_count": 24,
+  "content_types": {
+    "practice": 16,
+    "assessment": 8
+  },
+  "difficulty_distribution": {
+    "1": 8,
+    "2": 16
+  },
+  "accepted_candidates": [
+    {
+      "code": "5E-EMC-V1-EQUALITY-DISCRIMINATION-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "EMC",
+      "chapter": "CH-EMC-5E-EQUALITY",
+      "skill": "SK-ENR-EMC-5E-EQUALITY-DISCRIMINATION",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Égalité, fraternité et solidarité », réalise une tâche qui montre que tu sais identifier une discrimination. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Identifier une discrimination ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-EMC-EQUALITY-DISCRIMINATION",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-EMC-V1-EQUALITY-DISCRIMINATION-PRACTICE-01",
+        "title": "Identifier une discrimination",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Égalité, fraternité et solidarité », réalise une tâche qui montre que tu sais identifier une discrimination. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Identifier une discrimination ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-5E-EQUALITY",
+          "primary_skill_code": "SK-ENR-EMC-5E-EQUALITY-DISCRIMINATION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-emc-v1",
+          "template_version": "lcai-5e-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-EMC-EQUALITY-DISCRIMINATION",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-EMC-V1-EQUALITY-DISCRIMINATION-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "EMC",
+      "chapter": "CH-EMC-5E-EQUALITY",
+      "skill": "SK-ENR-EMC-5E-EQUALITY-DISCRIMINATION",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Identifier une discrimination » à une situation pertinente de niveau 5e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Identifier une discrimination ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-EMC-EQUALITY-DISCRIMINATION",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-EMC-V1-EQUALITY-DISCRIMINATION-PRACTICE-02",
+        "title": "Identifier une discrimination",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Identifier une discrimination » à une situation pertinente de niveau 5e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Identifier une discrimination ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-5E-EQUALITY",
+          "primary_skill_code": "SK-ENR-EMC-5E-EQUALITY-DISCRIMINATION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-emc-v1",
+          "template_version": "lcai-5e-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-EMC-EQUALITY-DISCRIMINATION",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-EMC-V1-EQUALITY-DISCRIMINATION-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "EMC",
+      "chapter": "CH-EMC-5E-EQUALITY",
+      "skill": "SK-ENR-EMC-5E-EQUALITY-DISCRIMINATION",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 5e : démontre de façon autonome que tu sais identifier une discrimination. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Identifier une discrimination ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-EMC-EQUALITY-DISCRIMINATION",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-EMC-V1-EQUALITY-DISCRIMINATION-ASSESSMENT-03",
+        "title": "Identifier une discrimination",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 5e : démontre de façon autonome que tu sais identifier une discrimination. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Identifier une discrimination ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-5E-EQUALITY",
+          "primary_skill_code": "SK-ENR-EMC-5E-EQUALITY-DISCRIMINATION",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-emc-v1",
+          "template_version": "lcai-5e-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-EMC-EQUALITY-DISCRIMINATION",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-EMC-V1-EQUALITY-EQUALITY-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "EMC",
+      "chapter": "CH-EMC-5E-EQUALITY",
+      "skill": "SK-ENR-EMC-5E-EQUALITY-EQUALITY",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Égalité, fraternité et solidarité », réalise une tâche qui montre que tu sais mobiliser le principe d'égalité. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Mobiliser le principe d'égalité ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-EMC-EQUALITY-EQUALITY",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-EMC-V1-EQUALITY-EQUALITY-PRACTICE-01",
+        "title": "Mobiliser le principe d'égalité",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Égalité, fraternité et solidarité », réalise une tâche qui montre que tu sais mobiliser le principe d'égalité. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Mobiliser le principe d'égalité ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-5E-EQUALITY",
+          "primary_skill_code": "SK-ENR-EMC-5E-EQUALITY-EQUALITY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-emc-v1",
+          "template_version": "lcai-5e-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-EMC-EQUALITY-EQUALITY",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-EMC-V1-EQUALITY-EQUALITY-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "EMC",
+      "chapter": "CH-EMC-5E-EQUALITY",
+      "skill": "SK-ENR-EMC-5E-EQUALITY-EQUALITY",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Mobiliser le principe d'égalité » à une situation pertinente de niveau 5e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Mobiliser le principe d'égalité ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-EMC-EQUALITY-EQUALITY",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-EMC-V1-EQUALITY-EQUALITY-PRACTICE-02",
+        "title": "Mobiliser le principe d'égalité",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Mobiliser le principe d'égalité » à une situation pertinente de niveau 5e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Mobiliser le principe d'égalité ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-5E-EQUALITY",
+          "primary_skill_code": "SK-ENR-EMC-5E-EQUALITY-EQUALITY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-emc-v1",
+          "template_version": "lcai-5e-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-EMC-EQUALITY-EQUALITY",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-EMC-V1-EQUALITY-EQUALITY-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "EMC",
+      "chapter": "CH-EMC-5E-EQUALITY",
+      "skill": "SK-ENR-EMC-5E-EQUALITY-EQUALITY",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 5e : démontre de façon autonome que tu sais mobiliser le principe d'égalité. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Mobiliser le principe d'égalité ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-EMC-EQUALITY-EQUALITY",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-EMC-V1-EQUALITY-EQUALITY-ASSESSMENT-03",
+        "title": "Mobiliser le principe d'égalité",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 5e : démontre de façon autonome que tu sais mobiliser le principe d'égalité. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Mobiliser le principe d'égalité ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-5E-EQUALITY",
+          "primary_skill_code": "SK-ENR-EMC-5E-EQUALITY-EQUALITY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-emc-v1",
+          "template_version": "lcai-5e-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-EMC-EQUALITY-EQUALITY",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-EMC-V1-EQUALITY-SOLIDARITY-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "EMC",
+      "chapter": "CH-EMC-5E-EQUALITY",
+      "skill": "SK-ENR-EMC-5E-EQUALITY-SOLIDARITY",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Égalité, fraternité et solidarité », réalise une tâche qui montre que tu sais relier fraternité et solidarité. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Relier fraternité et solidarité ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-EMC-EQUALITY-SOLIDARITY",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-EMC-V1-EQUALITY-SOLIDARITY-PRACTICE-01",
+        "title": "Relier fraternité et solidarité",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Égalité, fraternité et solidarité », réalise une tâche qui montre que tu sais relier fraternité et solidarité. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Relier fraternité et solidarité ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-5E-EQUALITY",
+          "primary_skill_code": "SK-ENR-EMC-5E-EQUALITY-SOLIDARITY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-emc-v1",
+          "template_version": "lcai-5e-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-EMC-EQUALITY-SOLIDARITY",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-EMC-V1-EQUALITY-SOLIDARITY-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "EMC",
+      "chapter": "CH-EMC-5E-EQUALITY",
+      "skill": "SK-ENR-EMC-5E-EQUALITY-SOLIDARITY",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Relier fraternité et solidarité » à une situation pertinente de niveau 5e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Relier fraternité et solidarité ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-EMC-EQUALITY-SOLIDARITY",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-EMC-V1-EQUALITY-SOLIDARITY-PRACTICE-02",
+        "title": "Relier fraternité et solidarité",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Relier fraternité et solidarité » à une situation pertinente de niveau 5e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Relier fraternité et solidarité ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-5E-EQUALITY",
+          "primary_skill_code": "SK-ENR-EMC-5E-EQUALITY-SOLIDARITY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-emc-v1",
+          "template_version": "lcai-5e-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-EMC-EQUALITY-SOLIDARITY",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-EMC-V1-EQUALITY-SOLIDARITY-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "EMC",
+      "chapter": "CH-EMC-5E-EQUALITY",
+      "skill": "SK-ENR-EMC-5E-EQUALITY-SOLIDARITY",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 5e : démontre de façon autonome que tu sais relier fraternité et solidarité. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Relier fraternité et solidarité ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-EMC-EQUALITY-SOLIDARITY",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-EMC-V1-EQUALITY-SOLIDARITY-ASSESSMENT-03",
+        "title": "Relier fraternité et solidarité",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 5e : démontre de façon autonome que tu sais relier fraternité et solidarité. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Relier fraternité et solidarité ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-5E-EQUALITY",
+          "primary_skill_code": "SK-ENR-EMC-5E-EQUALITY-SOLIDARITY",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-emc-v1",
+          "template_version": "lcai-5e-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-EMC-EQUALITY-SOLIDARITY",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-EMC-V1-EQUALITY-ARGUE-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "EMC",
+      "chapter": "CH-EMC-5E-EQUALITY",
+      "skill": "SK-ENR-EMC-5E-EQUALITY-ARGUE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Égalité, fraternité et solidarité », réalise une tâche qui montre que tu sais argumenter contre une discrimination. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Argumenter contre une discrimination ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-EMC-EQUALITY-ARGUE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-EMC-V1-EQUALITY-ARGUE-PRACTICE-01",
+        "title": "Argumenter contre une discrimination",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Égalité, fraternité et solidarité », réalise une tâche qui montre que tu sais argumenter contre une discrimination. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Argumenter contre une discrimination ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-5E-EQUALITY",
+          "primary_skill_code": "SK-ENR-EMC-5E-EQUALITY-ARGUE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-emc-v1",
+          "template_version": "lcai-5e-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-EMC-EQUALITY-ARGUE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-EMC-V1-EQUALITY-ARGUE-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "EMC",
+      "chapter": "CH-EMC-5E-EQUALITY",
+      "skill": "SK-ENR-EMC-5E-EQUALITY-ARGUE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Argumenter contre une discrimination » à une situation pertinente de niveau 5e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Argumenter contre une discrimination ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-EMC-EQUALITY-ARGUE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-EMC-V1-EQUALITY-ARGUE-PRACTICE-02",
+        "title": "Argumenter contre une discrimination",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Argumenter contre une discrimination » à une situation pertinente de niveau 5e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Argumenter contre une discrimination ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-5E-EQUALITY",
+          "primary_skill_code": "SK-ENR-EMC-5E-EQUALITY-ARGUE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-emc-v1",
+          "template_version": "lcai-5e-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-EMC-EQUALITY-ARGUE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-EMC-V1-EQUALITY-ARGUE-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "EMC",
+      "chapter": "CH-EMC-5E-EQUALITY",
+      "skill": "SK-ENR-EMC-5E-EQUALITY-ARGUE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 5e : démontre de façon autonome que tu sais argumenter contre une discrimination. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Argumenter contre une discrimination ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-EMC-EQUALITY-ARGUE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-EMC-V1-EQUALITY-ARGUE-ASSESSMENT-03",
+        "title": "Argumenter contre une discrimination",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 5e : démontre de façon autonome que tu sais argumenter contre une discrimination. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Argumenter contre une discrimination ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-5E-EQUALITY",
+          "primary_skill_code": "SK-ENR-EMC-5E-EQUALITY-ARGUE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-emc-v1",
+          "template_version": "lcai-5e-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-EMC-EQUALITY-ARGUE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-EMC-V1-COLLECTIVE-ACTION-ISSUE-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "EMC",
+      "chapter": "CH-EMC-5E-COLLECTIVE-ACTION",
+      "skill": "SK-ENR-EMC-5E-COLLECTIVE-ACTION-ISSUE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Engagement et action collective », réalise une tâche qui montre que tu sais identifier l'enjeu d'une action citoyenne. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Identifier l'enjeu d'une action citoyenne ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-EMC-COLLECTIVE-ACTION-ISSUE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-EMC-V1-COLLECTIVE-ACTION-ISSUE-PRACTICE-01",
+        "title": "Identifier l'enjeu d'une action citoyenne",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Engagement et action collective », réalise une tâche qui montre que tu sais identifier l'enjeu d'une action citoyenne. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Identifier l'enjeu d'une action citoyenne ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-5E-COLLECTIVE-ACTION",
+          "primary_skill_code": "SK-ENR-EMC-5E-COLLECTIVE-ACTION-ISSUE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-emc-v1",
+          "template_version": "lcai-5e-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-EMC-COLLECTIVE-ACTION-ISSUE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-EMC-V1-COLLECTIVE-ACTION-ISSUE-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "EMC",
+      "chapter": "CH-EMC-5E-COLLECTIVE-ACTION",
+      "skill": "SK-ENR-EMC-5E-COLLECTIVE-ACTION-ISSUE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Identifier l'enjeu d'une action citoyenne » à une situation pertinente de niveau 5e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Identifier l'enjeu d'une action citoyenne ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-EMC-COLLECTIVE-ACTION-ISSUE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-EMC-V1-COLLECTIVE-ACTION-ISSUE-PRACTICE-02",
+        "title": "Identifier l'enjeu d'une action citoyenne",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Identifier l'enjeu d'une action citoyenne » à une situation pertinente de niveau 5e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Identifier l'enjeu d'une action citoyenne ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-5E-COLLECTIVE-ACTION",
+          "primary_skill_code": "SK-ENR-EMC-5E-COLLECTIVE-ACTION-ISSUE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-emc-v1",
+          "template_version": "lcai-5e-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-EMC-COLLECTIVE-ACTION-ISSUE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-EMC-V1-COLLECTIVE-ACTION-ISSUE-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "EMC",
+      "chapter": "CH-EMC-5E-COLLECTIVE-ACTION",
+      "skill": "SK-ENR-EMC-5E-COLLECTIVE-ACTION-ISSUE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 5e : démontre de façon autonome que tu sais identifier l'enjeu d'une action citoyenne. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Identifier l'enjeu d'une action citoyenne ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-EMC-COLLECTIVE-ACTION-ISSUE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-EMC-V1-COLLECTIVE-ACTION-ISSUE-ASSESSMENT-03",
+        "title": "Identifier l'enjeu d'une action citoyenne",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 5e : démontre de façon autonome que tu sais identifier l'enjeu d'une action citoyenne. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Identifier l'enjeu d'une action citoyenne ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-5E-COLLECTIVE-ACTION",
+          "primary_skill_code": "SK-ENR-EMC-5E-COLLECTIVE-ACTION-ISSUE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-emc-v1",
+          "template_version": "lcai-5e-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-EMC-COLLECTIVE-ACTION-ISSUE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-EMC-V1-COLLECTIVE-ACTION-ACTORS-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "EMC",
+      "chapter": "CH-EMC-5E-COLLECTIVE-ACTION",
+      "skill": "SK-ENR-EMC-5E-COLLECTIVE-ACTION-ACTORS",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Engagement et action collective », réalise une tâche qui montre que tu sais identifier acteurs et responsabilités. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Identifier acteurs et responsabilités ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-EMC-COLLECTIVE-ACTION-ACTORS",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-EMC-V1-COLLECTIVE-ACTION-ACTORS-PRACTICE-01",
+        "title": "Identifier acteurs et responsabilités",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Engagement et action collective », réalise une tâche qui montre que tu sais identifier acteurs et responsabilités. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Identifier acteurs et responsabilités ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-5E-COLLECTIVE-ACTION",
+          "primary_skill_code": "SK-ENR-EMC-5E-COLLECTIVE-ACTION-ACTORS",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-emc-v1",
+          "template_version": "lcai-5e-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-EMC-COLLECTIVE-ACTION-ACTORS",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-EMC-V1-COLLECTIVE-ACTION-ACTORS-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "EMC",
+      "chapter": "CH-EMC-5E-COLLECTIVE-ACTION",
+      "skill": "SK-ENR-EMC-5E-COLLECTIVE-ACTION-ACTORS",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Identifier acteurs et responsabilités » à une situation pertinente de niveau 5e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Identifier acteurs et responsabilités ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-EMC-COLLECTIVE-ACTION-ACTORS",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-EMC-V1-COLLECTIVE-ACTION-ACTORS-PRACTICE-02",
+        "title": "Identifier acteurs et responsabilités",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Identifier acteurs et responsabilités » à une situation pertinente de niveau 5e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Identifier acteurs et responsabilités ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-5E-COLLECTIVE-ACTION",
+          "primary_skill_code": "SK-ENR-EMC-5E-COLLECTIVE-ACTION-ACTORS",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-emc-v1",
+          "template_version": "lcai-5e-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-EMC-COLLECTIVE-ACTION-ACTORS",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-EMC-V1-COLLECTIVE-ACTION-ACTORS-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "EMC",
+      "chapter": "CH-EMC-5E-COLLECTIVE-ACTION",
+      "skill": "SK-ENR-EMC-5E-COLLECTIVE-ACTION-ACTORS",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 5e : démontre de façon autonome que tu sais identifier acteurs et responsabilités. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Identifier acteurs et responsabilités ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-EMC-COLLECTIVE-ACTION-ACTORS",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-EMC-V1-COLLECTIVE-ACTION-ACTORS-ASSESSMENT-03",
+        "title": "Identifier acteurs et responsabilités",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 5e : démontre de façon autonome que tu sais identifier acteurs et responsabilités. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Identifier acteurs et responsabilités ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-5E-COLLECTIVE-ACTION",
+          "primary_skill_code": "SK-ENR-EMC-5E-COLLECTIVE-ACTION-ACTORS",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-emc-v1",
+          "template_version": "lcai-5e-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-EMC-COLLECTIVE-ACTION-ACTORS",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-EMC-V1-COLLECTIVE-ACTION-PLAN-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "EMC",
+      "chapter": "CH-EMC-5E-COLLECTIVE-ACTION",
+      "skill": "SK-ENR-EMC-5E-COLLECTIVE-ACTION-PLAN",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Engagement et action collective », réalise une tâche qui montre que tu sais concevoir une action collective. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Concevoir une action collective ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-EMC-COLLECTIVE-ACTION-PLAN",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-EMC-V1-COLLECTIVE-ACTION-PLAN-PRACTICE-01",
+        "title": "Concevoir une action collective",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Engagement et action collective », réalise une tâche qui montre que tu sais concevoir une action collective. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Concevoir une action collective ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-5E-COLLECTIVE-ACTION",
+          "primary_skill_code": "SK-ENR-EMC-5E-COLLECTIVE-ACTION-PLAN",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-emc-v1",
+          "template_version": "lcai-5e-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-EMC-COLLECTIVE-ACTION-PLAN",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-EMC-V1-COLLECTIVE-ACTION-PLAN-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "EMC",
+      "chapter": "CH-EMC-5E-COLLECTIVE-ACTION",
+      "skill": "SK-ENR-EMC-5E-COLLECTIVE-ACTION-PLAN",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Concevoir une action collective » à une situation pertinente de niveau 5e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Concevoir une action collective ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-EMC-COLLECTIVE-ACTION-PLAN",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-EMC-V1-COLLECTIVE-ACTION-PLAN-PRACTICE-02",
+        "title": "Concevoir une action collective",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Concevoir une action collective » à une situation pertinente de niveau 5e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Concevoir une action collective ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-5E-COLLECTIVE-ACTION",
+          "primary_skill_code": "SK-ENR-EMC-5E-COLLECTIVE-ACTION-PLAN",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-emc-v1",
+          "template_version": "lcai-5e-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-EMC-COLLECTIVE-ACTION-PLAN",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-EMC-V1-COLLECTIVE-ACTION-PLAN-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "EMC",
+      "chapter": "CH-EMC-5E-COLLECTIVE-ACTION",
+      "skill": "SK-ENR-EMC-5E-COLLECTIVE-ACTION-PLAN",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 5e : démontre de façon autonome que tu sais concevoir une action collective. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Concevoir une action collective ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-EMC-COLLECTIVE-ACTION-PLAN",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-EMC-V1-COLLECTIVE-ACTION-PLAN-ASSESSMENT-03",
+        "title": "Concevoir une action collective",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 5e : démontre de façon autonome que tu sais concevoir une action collective. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Concevoir une action collective ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-5E-COLLECTIVE-ACTION",
+          "primary_skill_code": "SK-ENR-EMC-5E-COLLECTIVE-ACTION-PLAN",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-emc-v1",
+          "template_version": "lcai-5e-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-EMC-COLLECTIVE-ACTION-PLAN",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-EMC-V1-COLLECTIVE-ACTION-EVALUATE-PRACTICE-01",
+      "grade": "FR-5E",
+      "subject": "EMC",
+      "chapter": "CH-EMC-5E-COLLECTIVE-ACTION",
+      "skill": "SK-ENR-EMC-5E-COLLECTIVE-ACTION-EVALUATE",
+      "content_type": "practice",
+      "difficulty": 1,
+      "prompt": "Dans « Engagement et action collective », réalise une tâche qui montre que tu sais évaluer les effets d'une action. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Évaluer les effets d'une action ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-EMC-COLLECTIVE-ACTION-EVALUATE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-EMC-V1-COLLECTIVE-ACTION-EVALUATE-PRACTICE-01",
+        "title": "Évaluer les effets d'une action",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Dans « Engagement et action collective », réalise une tâche qui montre que tu sais évaluer les effets d'une action. Appuie ta réponse sur un exemple, une donnée ou un indice précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Évaluer les effets d'une action ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-5E-COLLECTIVE-ACTION",
+          "primary_skill_code": "SK-ENR-EMC-5E-COLLECTIVE-ACTION-EVALUATE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 1,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-emc-v1",
+          "template_version": "lcai-5e-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-EMC-COLLECTIVE-ACTION-EVALUATE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 1, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-EMC-V1-COLLECTIVE-ACTION-EVALUATE-PRACTICE-02",
+      "grade": "FR-5E",
+      "subject": "EMC",
+      "chapter": "CH-EMC-5E-COLLECTIVE-ACTION",
+      "skill": "SK-ENR-EMC-5E-COLLECTIVE-ACTION-EVALUATE",
+      "content_type": "practice",
+      "difficulty": 2,
+      "prompt": "Explique puis applique la compétence « Évaluer les effets d'une action » à une situation pertinente de niveau 5e.",
+      "expected_answer": "Réponse ouverte : explication correcte et application pertinente.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Évaluer les effets d'une action ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-EMC-COLLECTIVE-ACTION-EVALUATE",
+      "variant_role": "practice",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-EMC-V1-COLLECTIVE-ACTION-EVALUATE-PRACTICE-02",
+        "title": "Évaluer les effets d'une action",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Explique puis applique la compétence « Évaluer les effets d'une action » à une situation pertinente de niveau 5e.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte : explication correcte et application pertinente.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Évaluer les effets d'une action ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-5E-COLLECTIVE-ACTION",
+          "primary_skill_code": "SK-ENR-EMC-5E-COLLECTIVE-ACTION-EVALUATE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "practice",
+        "pedagogical_intent": "practice",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-emc-v1",
+          "template_version": "lcai-5e-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-EMC-COLLECTIVE-ACTION-EVALUATE",
+        "variant_role": "practice",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_emc_candidates_v1.json"
+      }
+    },
+    {
+      "code": "5E-EMC-V1-COLLECTIVE-ACTION-EVALUATE-ASSESSMENT-03",
+      "grade": "FR-5E",
+      "subject": "EMC",
+      "chapter": "CH-EMC-5E-COLLECTIVE-ACTION",
+      "skill": "SK-ENR-EMC-5E-COLLECTIVE-ACTION-EVALUATE",
+      "content_type": "assessment",
+      "difficulty": 2,
+      "prompt": "Évaluation 5e : démontre de façon autonome que tu sais évaluer les effets d'une action. Justifie avec au moins un élément précis.",
+      "expected_answer": "Réponse ouverte évaluée avec critères explicites.",
+      "answer_kind": "open_response",
+      "explanation": "Cette activité cible directement la compétence « Évaluer les effets d'une action ».",
+      "hints": [],
+      "misconception_target": null,
+      "family_code": "5E-EMC-COLLECTIVE-ACTION-EVALUATE",
+      "variant_role": "assessment",
+      "provenance": {
+        "generator": "chatgpt_curated_batch",
+        "model": "GPT-5.5",
+        "generated_at": "2026-07-26T11:12:35.899564+00:00",
+        "template_version": "lcai-5e-emc-batch-v1",
+        "latency_ms": null,
+        "usage": null
+      },
+      "candidate_data": {
+        "code": "5E-EMC-V1-COLLECTIVE-ACTION-EVALUATE-ASSESSMENT-03",
+        "title": "Évaluer les effets d'une action",
+        "instructions": "Réalise la tâche demandée.",
+        "prompt": "Évaluation 5e : démontre de façon autonome que tu sais évaluer les effets d'une action. Justifie avec au moins un élément précis.",
+        "answer": {
+          "kind": "open_response",
+          "expected": "Réponse ouverte évaluée avec critères explicites.",
+          "options": [],
+          "tolerance": null,
+          "independently_computed": null
+        },
+        "explanation": "Cette activité cible directement la compétence « Évaluer les effets d'une action ».",
+        "target": {
+          "program_code": "FR-CYCLE4-5E-2026",
+          "grade_code": "FR-5E",
+          "subject_code": "EMC",
+          "chapter_code": "CH-EMC-5E-COLLECTIVE-ACTION",
+          "primary_skill_code": "SK-ENR-EMC-5E-COLLECTIVE-ACTION-EVALUATE",
+          "subskill_code": null,
+          "secondary_skill_codes": []
+        },
+        "content_type": "assessment",
+        "pedagogical_intent": "check",
+        "difficulty": 2,
+        "provenance": {
+          "generator_type": "chatgpt_curated_batch",
+          "generator_identifier": "GPT-5.5",
+          "specification_version": "lcai-5e-emc-v1",
+          "template_version": "lcai-5e-emc-batch-v1",
+          "curriculum_version": "phase2-lcai-0011c",
+          "generated_at": "2026-07-26T11:12:35.899564+00:00",
+          "latency_ms": null,
+          "usage": null
+        },
+        "hints": [],
+        "feedback": {
+          "correct": "La compétence ciblée est démontrée.",
+          "incorrect": "Reprends la consigne et les critères de réussite."
+        },
+        "family_code": "5E-EMC-COLLECTIVE-ACTION-EVALUATE",
+        "variant_role": "assessment",
+        "misconception_target": null,
+        "language_code": "fr-FR",
+        "metadata": {
+          "difficulty_justification": "Difficulté 2, calibrée pour la 5e.",
+          "review_required": true,
+          "source_ticket": "parallel-5E-preparation",
+          "modality": "text",
+          "success_criteria": [
+            "réponse directement alignée avec la compétence",
+            "élément précis, exemple ou justification",
+            "niveau de formulation adapté à la 5e"
+          ]
+        },
+        "source_ticket": "LCAI-0012E",
+        "source_file": "lcai_5e_emc_candidates_v1.json"
+      }
+    }
+  ]
+}
