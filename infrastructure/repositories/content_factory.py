@@ -272,6 +272,115 @@ class DuckDBContentFactoryRepository:
         finally:
             connection.close()
 
+    def persist_drafts_batch(
+        self,
+        candidates: list[GeneratedContentCandidate],
+        author: str,
+    ) -> list[dict[str, Any]]:
+        """Persist multiple Draft candidates in one transaction; returns exercise/version metadata."""
+        if not candidates:
+            return []
+        connection = connect_v2(self.database_path)
+        persisted: list[dict[str, Any]] = []
+        try:
+            connection.execute("BEGIN")
+            for candidate in candidates:
+                context = connection.execute(
+                    """
+                    SELECT su.id, cc.id, s.id, ss.id
+                    FROM curriculum_chapters cc
+                    JOIN subjects su ON su.id=cc.subject_id
+                    JOIN curriculum_skill_details csd ON csd.chapter_id=cc.id
+                        AND csd.grade_level_id=cc.grade_level_id
+                    JOIN skills s ON s.id=csd.skill_id
+                    LEFT JOIN subskills ss ON ss.skill_id=s.id AND ss.code=?
+                    WHERE cc.stable_code=? AND su.code=? AND s.code=?
+                    """,
+                    [
+                        candidate.target.subskill_code,
+                        candidate.target.chapter_code,
+                        candidate.target.subject_code,
+                        candidate.target.primary_skill_code,
+                    ],
+                ).fetchone()
+                if context is None:
+                    raise ValueError(f"Candidate curriculum target disappeared before persistence: {candidate.code}")
+                subject_id, chapter_id, skill_id, subskill_id = context
+                exercise_id = connection.execute(
+                    """
+                    INSERT INTO exercises(subject_id,code,title,objective,estimated_seconds,difficulty,
+                        instructions,evaluation_strategy,language_code,content_version,status)
+                    VALUES (?,?,?,?,300,?,?,?,'fr-FR',1,'draft') RETURNING id
+                    """,
+                    [
+                        subject_id,
+                        candidate.code,
+                        candidate.title,
+                        candidate.target.primary_skill_code,
+                        candidate.difficulty,
+                        candidate.instructions,
+                        json.dumps({"kind": "factory_candidate"}),
+                    ],
+                ).fetchone()[0]
+                question_id = connection.execute(
+                    """
+                    INSERT INTO questions(code,statement,answer_type,expected_answer,explanation,hints,
+                        estimated_seconds,language_code,content_version,status)
+                    VALUES (?,?,?,?,?,?,60,?,1,'draft') RETURNING id
+                    """,
+                    [
+                        f"{candidate.code}-Q1",
+                        candidate.prompt,
+                        _legacy_answer_type(candidate.answer.kind.value),
+                        json.dumps(candidate.answer.expected),
+                        candidate.explanation,
+                        json.dumps(list(candidate.hints)),
+                        candidate.language_code,
+                    ],
+                ).fetchone()[0]
+                connection.execute("INSERT INTO exercise_questions VALUES (?,?,1,1,TRUE)", [exercise_id, question_id])
+                connection.execute("INSERT INTO question_skills VALUES (?,?,1,TRUE)", [question_id, skill_id])
+                if subskill_id is not None:
+                    connection.execute(
+                        "INSERT INTO question_subskills VALUES (?,?,1,TRUE)", [question_id, subskill_id]
+                    )
+                for code in candidate.target.secondary_skill_codes:
+                    secondary = connection.execute(
+                        "SELECT id FROM skills WHERE code=? ORDER BY id LIMIT 1", [code]
+                    ).fetchone()
+                    if secondary:
+                        connection.execute(
+                            "INSERT INTO question_skills VALUES (?,?,0.25,FALSE)", [question_id, secondary[0]]
+                        )
+                payload = _candidate_payload(candidate)
+                version_id = connection.execute(
+                    """
+                    INSERT INTO content_versions(entity_type,entity_id,version_number,payload,author,status)
+                    VALUES ('exercise',?,1,?,?,'draft') RETURNING id
+                    """,
+                    [exercise_id, json.dumps(payload), author],
+                ).fetchone()[0]
+                connection.execute(
+                    "INSERT INTO content_status_events(content_version_id,previous_status,new_status,author) VALUES (?,NULL,'draft',?)",
+                    [version_id, author],
+                )
+                persisted.append(
+                    {
+                        "code": candidate.code,
+                        "content_id": int(exercise_id),
+                        "version_id": int(version_id),
+                        "status": "draft",
+                        "payload": payload,
+                    }
+                )
+            connection.execute("COMMIT")
+        except Exception:
+            connection.execute("ROLLBACK")
+            raise
+        finally:
+            connection.close()
+        return persisted
+
     def approved_coverage(self) -> tuple[CoverageRow, ...]:
         connection = connect_v2(self.database_path, read_only=True)
         try:

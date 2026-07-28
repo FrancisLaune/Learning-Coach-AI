@@ -4,6 +4,8 @@ from __future__ import annotations
 
 import streamlit as st
 
+from core.version import __version__
+
 GLOBAL_STYLES = """
 <style>
 .block-container {padding-top:1.3rem;padding-bottom:3rem;}
@@ -33,7 +35,7 @@ GLOBAL_STYLES = """
 def configure_page() -> None:
     """Apply the existing page metadata without changing the rendered UI."""
     st.set_page_config(
-        page_title="Objectif Brevet 2027 – V7.0",
+        page_title=f"Learning Coach AI {__version__}",
         page_icon="🎓",
         layout="wide",
     )

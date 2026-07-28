@@ -21,7 +21,7 @@ class DuckDBContentQualityRepository:
         grade_codes: tuple[str, ...] | None = None,
     ) -> list[dict[str, Any]]:
         grades = grade_codes or ("FR-4E", "FR-3E")
-        connection = connect_v2(self.database_path)
+        connection = connect_v2(self.database_path, read_only=True)
         try:
             rows = connection.execute(
                 """
@@ -503,7 +503,19 @@ class DuckDBContentQualityRepository:
         if ai_controlled:
             from services.content.ai_controlled_publication import assess_publication_eligibility
 
-            eligibility = assess_publication_eligibility(item)
+            publication_campaign = str(
+                item.get("publication_campaign")
+                or (ai_provenance or {}).get("campaign_id")
+                or item.get("review_campaign")
+                or item.get("campaign_id")
+                or ""
+            )
+            review_campaign = str(item.get("review_campaign") or item.get("campaign_id") or publication_campaign)
+            eligibility = assess_publication_eligibility(
+                item,
+                campaign=publication_campaign,
+                review_campaign=review_campaign,
+            )
             if not eligibility.eligible:
                 raise ValueError("; ".join(eligibility.reasons))
             pipeline_version = str((ai_provenance or {}).get("review_pipeline", pipeline_version))
@@ -848,6 +860,9 @@ class DuckDBContentQualityRepository:
             item,
             review_model=review_model,
             review_pipeline=review_pipeline,
+            publication_campaign=str(
+                item.get("publication_campaign") or item.get("review_campaign") or item.get("campaign_id") or ""
+            ),
         )
         return self.approve_for_production(
             item=item,
@@ -935,16 +950,44 @@ class DuckDBContentQualityRepository:
             connection.close()
 
     def verify_draft_source_available(self, source_version_id: int) -> bool:
+        return source_version_id in self.available_draft_source_ids({source_version_id})
+
+    def available_draft_source_ids(self, source_version_ids: set[int]) -> set[int]:
+        if not source_version_ids:
+            return set()
         connection = connect_v2(self.database_path, read_only=True)
         try:
-            row = connection.execute(
-                """
+            placeholders = ",".join("?" for _ in source_version_ids)
+            rows = connection.execute(
+                f"""
                 SELECT id FROM content_versions
-                WHERE id=? AND entity_type='exercise' AND status='draft'
+                WHERE id IN ({placeholders})
+                  AND entity_type='exercise'
+                  AND status='draft'
                 """,
-                [source_version_id],
-            ).fetchone()
-            return row is not None
+                list(source_version_ids),
+            ).fetchall()
+            return {int(row[0]) for row in rows}
+        finally:
+            connection.close()
+
+    def approved_source_version_ids(self, source_version_ids: set[int]) -> set[int]:
+        if not source_version_ids:
+            return set()
+        connection = connect_v2(self.database_path, read_only=True)
+        try:
+            placeholders = ",".join("?" for _ in source_version_ids)
+            rows = connection.execute(
+                f"""
+                SELECT CAST(json_extract_string(cv.payload,'$.publication_source_version_id') AS BIGINT)
+                FROM content_versions cv
+                WHERE cv.status='approved'
+                  AND cv.entity_type='exercise'
+                  AND CAST(json_extract_string(cv.payload,'$.publication_source_version_id') AS BIGINT) IN ({placeholders})
+                """,
+                list(source_version_ids),
+            ).fetchall()
+            return {int(row[0]) for row in rows if row[0] is not None}
         finally:
             connection.close()
 

@@ -72,14 +72,17 @@ def assess_publication_eligibility(
     required_decision: str = "AI_PREVALIDATED_HIGH",
     allow_non_blocking_warning: bool = False,
     campaign: str = DEFAULT_CAMPAIGN,
+    review_campaign: str | None = None,
 ) -> PublicationEligibility:
     reasons: list[str] = []
     decision = ai_prevalidation_decision(item)
     review = item.get("ai_pedagogical_review") or {}
+    authorized_review_campaign = review_campaign or campaign
 
     if not is_authoritative_ai_review(item):
         reasons.append("Authoritative AI review evidence is missing.")
-    if str(item.get("review_campaign", "")) != campaign:
+    item_review_campaign = str(item.get("review_campaign") or item.get("campaign_id") or "")
+    if item_review_campaign != authorized_review_campaign:
         reasons.append("Candidate is outside the authorized AI publication campaign.")
     if not item.get("hard_gates_passed"):
         reasons.append("Hard gates failed.")
@@ -134,6 +137,7 @@ def build_publication_provenance(
     *,
     review_model: str = DEFAULT_REVIEW_MODEL,
     review_pipeline: str = DEFAULT_REVIEW_PIPELINE,
+    publication_campaign: str | None = None,
 ) -> dict[str, Any]:
     review = item.get("ai_pedagogical_review") or {}
     return {
@@ -145,7 +149,11 @@ def build_publication_provenance(
         "ai_prevalidation_decision": ai_prevalidation_decision(item),
         "ai_prevalidation_confidence": review.get("confidence"),
         "grade_assessment_status": _grade_status(item),
-        "campaign_id": item.get("review_campaign"),
+        "campaign_id": publication_campaign
+        or item.get("publication_campaign")
+        or item.get("review_campaign")
+        or item.get("campaign_id"),
+        "review_campaign_id": item.get("review_campaign") or item.get("campaign_id"),
     }
 
 
@@ -203,6 +211,7 @@ def plan_controlled_publication(
     required_decision: str = "AI_PREVALIDATED_HIGH",
     allow_non_blocking_warning: bool = False,
     campaign: str = DEFAULT_CAMPAIGN,
+    review_campaign: str | None = None,
 ) -> dict[str, Any]:
     eligible_candidates: list[dict[str, Any]] = []
     blocked: list[dict[str, Any]] = []
@@ -244,6 +253,7 @@ def plan_controlled_publication(
                 required_decision=required_decision,
                 allow_non_blocking_warning=allow_non_blocking_warning,
                 campaign=campaign,
+                review_campaign=review_campaign,
             )
             slot_eligibility[str(item.get("target_slot") or item.get("content_type"))] = eligibility
             if eligibility.eligible:
@@ -253,7 +263,10 @@ def plan_controlled_publication(
                         "skill": bundle.get("skill"),
                         "slot": item.get("target_slot") or item.get("content_type"),
                         "decision": decision,
-                        "provenance": build_publication_provenance(item),
+                        "provenance": build_publication_provenance(
+                            item,
+                            publication_campaign=campaign,
+                        ),
                     }
                 )
             else:

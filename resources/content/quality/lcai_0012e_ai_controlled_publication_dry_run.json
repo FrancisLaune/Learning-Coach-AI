@@ -1,0 +1,210 @@
+{
+  "mode": "DRY_RUN",
+  "campaign": "LCAI-0012E-CM1-5E-PUBLICATION-V1",
+  "review_campaign": "LCAI-0012E-PRIMARY",
+  "required_decision": "AI_PREVALIDATED_HIGH",
+  "import_status": {
+    "import_campaign": "LCAI-0012E-PRIMARY-IMPORT-V1",
+    "mapping_records": 1293,
+    "production_draft_ids_expected": 1293,
+    "production_drafts_found": 1293,
+    "production_drafts_available": 1293,
+    "lifecycle_draft_only": true,
+    "production_gates_disabled": true,
+    "approved_versions_from_import": 0,
+    "mapping_complete": true,
+    "mapping_ambiguous_count": 0,
+    "unresolved_curriculum_excluded": 18,
+    "review_linkage": {
+      "ai_high_total": 271,
+      "ai_high_resolved_to_production_draft": 271,
+      "ai_high_unresolved": 0,
+      "teacher_reviews_resolved": 16,
+      "rejected_reviews_resolved": 662,
+      "alternate_reviews_resolved": 218,
+      "mapping_records": 1293
+    },
+    "pass": true
+  },
+  "review_status": {
+    "complete": true,
+    "expected_candidates": 731,
+    "reviewed_candidates": 949,
+    "remaining_candidates": 0,
+    "decisions": {
+      "AI_PREVALIDATED_HIGH": 271,
+      "AI_PREVALIDATED_WITH_WARNING": 0,
+      "TEACHER_REVIEW_REQUIRED": 16,
+      "FACT_CHECK_REQUIRED": 0,
+      "AI_REJECTED": 662
+    },
+    "teacher_cases": 16,
+    "fact_check_cases": 0,
+    "ai_rejected_cases": 662,
+    "warning_cases": 0,
+    "high_cases": 271,
+    "alternates_queued": 4,
+    "alternates_reviewed": 218,
+    "replacement_required": 441,
+    "unresolved_curriculum_excluded": 18,
+    "review_campaign_id": "LCAI-0012E-PRIMARY",
+    "publication_campaign_id": "LCAI-0012E-CM1-5E-PUBLICATION-V1",
+    "count_reconciliation": {
+      "initial_candidates": 731,
+      "alternate_reviews": 218,
+      "total_review_records": 949,
+      "formula_check": true,
+      "ai_prevalidated_high_all_reviews": 271,
+      "ai_prevalidated_high_main_handoff_only": 270,
+      "ai_rejected_all_reviews": 662,
+      "ai_rejected_main_handoff_only": 445,
+      "teacher_review_required_main": 16,
+      "replacement_required_generation_after_ai": 445,
+      "rejected_without_alternate": 441,
+      "rejected_exclusions_publication_summary": 445,
+      "replacement_vs_rejected_without_alternate_delta": 4,
+      "replacement_delta_explanation": "445 replacement_required counts skill slots; 441 rejected_without_alternate counts main handoff rejections without queued alternates; delta=4 matches alternates_queued.",
+      "unique_draft_candidates": 1293,
+      "review_attempts_main": 731,
+      "alternate_review_attempts": 218,
+      "pass": true
+    }
+  },
+  "count_reconciliation": {
+    "initial_candidates": 731,
+    "alternate_reviews": 218,
+    "total_review_records": 949,
+    "formula_check": true,
+    "ai_prevalidated_high_all_reviews": 271,
+    "ai_prevalidated_high_main_handoff_only": 270,
+    "ai_rejected_all_reviews": 662,
+    "ai_rejected_main_handoff_only": 445,
+    "teacher_review_required_main": 16,
+    "replacement_required_generation_after_ai": 445,
+    "rejected_without_alternate": 441,
+    "rejected_exclusions_publication_summary": 445,
+    "replacement_vs_rejected_without_alternate_delta": 4,
+    "replacement_delta_explanation": "445 replacement_required counts skill slots; 441 rejected_without_alternate counts main handoff rejections without queued alternates; delta=4 matches alternates_queued.",
+    "unique_draft_candidates": 1293,
+    "review_attempts_main": 731,
+    "alternate_review_attempts": 218,
+    "pass": true
+  },
+  "unique_final_candidates": 731,
+  "eligible_candidate_count": 270,
+  "eligible_practice": 132,
+  "eligible_assessment": 138,
+  "complete_skill_pairs": 123,
+  "practice_only_skill_slots": 9,
+  "assessment_only_skill_slots": 15,
+  "partial_skill_pairs": 24,
+  "already_published": 0,
+  "duplicates_skipped": 0,
+  "blocked_count": 0,
+  "teacher_excluded": 16,
+  "fact_check_excluded": 0,
+  "warning_excluded": 0,
+  "rejected_excluded": 445,
+  "replacement_required": 445,
+  "unresolved_curriculum_excluded": 18,
+  "unresolved_production_draft_mappings": 0,
+  "hash_mismatch_count": 0,
+  "decisions": {
+    "AI_PREVALIDATED_HIGH": 270,
+    "AI_PREVALIDATED_WITH_WARNING": 0,
+    "TEACHER_REVIEW_REQUIRED": 16,
+    "AI_REJECTED": 445,
+    "FACT_CHECK_REQUIRED": 0
+  },
+  "tier_projection": {
+    "baseline_tier1": 0,
+    "projected_tier1": 123,
+    "newly_complete_skills": 123
+  },
+  "current_coverage_by_grade": {
+    "CM1": {
+      "tier1": 0,
+      "tier2": 0,
+      "tier3": 118,
+      "total_active_skills": 118
+    },
+    "CM2": {
+      "tier1": 0,
+      "tier2": 0,
+      "tier3": 125,
+      "total_active_skills": 125
+    },
+    "6e": {
+      "tier1": 0,
+      "tier2": 0,
+      "tier3": 143,
+      "total_active_skills": 143
+    },
+    "5e": {
+      "tier1": 0,
+      "tier2": 0,
+      "tier3": 161,
+      "total_active_skills": 161
+    }
+  },
+  "projected_coverage_by_grade": {
+    "CM1": {
+      "tier1": 58,
+      "tier2": 22,
+      "tier3": 38,
+      "total_active_skills": 118
+    },
+    "CM2": {
+      "tier1": 22,
+      "tier2": 0,
+      "tier3": 103,
+      "total_active_skills": 125
+    },
+    "6e": {
+      "tier1": 22,
+      "tier2": 1,
+      "tier3": 120,
+      "total_active_skills": 143
+    },
+    "5e": {
+      "tier1": 21,
+      "tier2": 1,
+      "tier3": 139,
+      "total_active_skills": 161
+    }
+  },
+  "coverage_delta_by_grade": {
+    "CM1": {
+      "tier1": 58,
+      "tier2": 22,
+      "tier3": -80
+    },
+    "CM2": {
+      "tier1": 22,
+      "tier2": 0,
+      "tier3": -22
+    },
+    "6e": {
+      "tier1": 22,
+      "tier2": 1,
+      "tier3": -23
+    },
+    "5e": {
+      "tier1": 21,
+      "tier2": 1,
+      "tier3": -22
+    }
+  },
+  "blocked": [],
+  "production_db_modified": false,
+  "published": [],
+  "loader_meta": {
+    "combined_path": "resources\\content\\integration\\lcai_0012e_ai_review_combined.json",
+    "authoritative_audit_path": "resources\\content\\quality\\lcai_0012e_ai_pedagogical_review_authoritative.jsonl",
+    "summary_path": "resources\\content\\quality\\lcai_0012e_ai_pedagogical_review_summary.json",
+    "mapping_records": 1293,
+    "unmapped_ai_high_isolated_ids": []
+  },
+  "execution_manifest_count": 270,
+  "execution_manifest_path": "resources\\content\\quality\\lcai_0012e_ai_controlled_publication_manifest.json"
+}

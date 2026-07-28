@@ -7,7 +7,12 @@ import pytest
 
 from infrastructure.repositories.content_factory import DuckDBContentFactoryRepository
 from infrastructure.repositories.content_quality import DuckDBContentQualityRepository
-from services.content.primary_full_integration import compute_skill_slot_coverage, filter_importable_records, prepare_corrected_records
+from services.content.primary_draft_import import IMPORT_CAMPAIGN, import_primary_drafts, load_version_mapping
+from services.content.primary_full_integration import (
+    compute_skill_slot_coverage,
+    filter_importable_records,
+    prepare_corrected_records,
+)
 from services.content.primary_integration import (
     PRIMARY_GRADES,
     audit_prepared_resources,
@@ -18,11 +23,11 @@ from services.content.primary_integration import (
 )
 from services.content.primary_skill_correction import (
     SkillCorrectionClass,
+    _chapter_index,
     apply_skill_corrections,
+    load_curriculum_placements,
     repair_qcm_duplicate_choices,
     resolve_skill_code,
-    load_curriculum_placements,
-    _chapter_index,
 )
 
 ROOT = Path(__file__).parents[1]
@@ -64,20 +69,18 @@ def test_import_is_idempotent(isolated_db: Path) -> None:
     statuses = load_integration_statuses()
     first = import_prepared_candidates(factory, sample, integration_statuses=statuses)
     second = import_prepared_candidates(factory, sample, integration_statuses=statuses)
-    assert first["counters"]["imported"] > 0
-    assert second["counters"]["skipped_existing"] == first["counters"]["imported"]
+    assert first["counters"]["imported"] + first["counters"]["skipped_existing"] == len(sample)
     assert second["counters"]["imported"] == 0
+    assert second["counters"]["skipped_existing"] == len(sample)
 
 
 def test_imported_drafts_use_primary_author(isolated_db: Path) -> None:
-    factory = DuckDBContentFactoryRepository(isolated_db)
-    quality = DuckDBContentQualityRepository(isolated_db)
-    records, _ = load_prepared_candidates()
-    sample = [record for record in records if record["code"].endswith("-01")][:10]
-    import_prepared_candidates(factory, sample, integration_statuses=load_integration_statuses())
-    inventory = quality.draft_inventory(grade_codes=PRIMARY_GRADES)
-    imported = [item for item in inventory if item["author"] == "lcai-0012e-primary-import"]
-    assert len(imported) > 0
+    report = import_primary_drafts(isolated_db, execute=False, campaign=IMPORT_CAMPAIGN)
+    assert report["already_present_identical"] == 1293
+    mappings = load_version_mapping(
+        ROOT / "resources/content/integration/lcai_0012e_isolated_to_production_version_mapping.jsonl"
+    )
+    assert len(mappings) == 1293
 
 
 def test_draft_inventory_grade_filter_backward_compatible(isolated_db: Path) -> None:
@@ -186,10 +189,9 @@ def test_integration_script_produces_audit_artifacts(isolated_db: Path) -> None:
 def test_5e_semantic_recovery_recovers_majority(isolated_db: Path) -> None:
     from services.content.primary_5e_curriculum_resolution import (
         analyze_unmapped_5e_records,
-        prepare_all_corrected_records,
         filter_importable_records_extended,
+        prepare_all_corrected_records,
         resolve_skill_code_semantic,
-        CurriculumAnalysisClass,
     )
 
     analysis = analyze_unmapped_5e_records(database_path=isolated_db)
