@@ -1,0 +1,191 @@
+{
+  "calibration_version": "lcai-0012d4-ai-review-calibration-v2-grade-repair",
+  "original": {
+    "AI_PREVALIDATED": 0,
+    "TEACHER_REVIEW_REQUIRED": 183,
+    "AI_REJECTED": 1,
+    "FACT_CHECK_REQUIRED": 0
+  },
+  "calibrated": {
+    "AI_PREVALIDATED_HIGH": 0,
+    "AI_PREVALIDATED_WITH_WARNING": 168,
+    "TEACHER_REVIEW_REQUIRED": 15,
+    "FACT_CHECK_REQUIRED": 15,
+    "AI_REJECTED": 1
+  },
+  "skill_pairs": {
+    "both_practice_assessment_ai_prevalidated": 76,
+    "one_prevalidated_one_teacher": 15,
+    "both_teacher": 0,
+    "blocked_skills": 1
+  },
+  "human_specialist_workload_reduction_pct": 91.8,
+  "ai_prevalidated_total": 168,
+  "top_original_escalation_causes": {
+    "primary_reasons": {
+      "policy_threshold_rule": 168,
+      "open_response_ambiguity": 15,
+      "expected_answer_disagreement": 1
+    },
+    "all_reasons": {
+      "policy_threshold_rule": 183,
+      "low_confidence": 16,
+      "grade_appropriateness": 16,
+      "open_response_ambiguity": 15,
+      "factual_uncertainty": 15,
+      "second_opinion_disagreement": 15,
+      "expected_answer_disagreement": 1
+    },
+    "total": 184
+  },
+  "teacher_case_reasons": [
+    {
+      "version_id": "107834",
+      "subject": "GEOGRAPHY",
+      "skill_code": "SK-ENR-GEOGRAPHY-3E-GEOSCALE-GLOBAL",
+      "expected_answer_match": "PARTIALLY_CORRECT",
+      "confidence": "MEDIUM",
+      "reason": "Independent AI reviewers disagreed on an ambiguous case.",
+      "question_preview": "Situation A : Une inondation importante affecte un quartier d'une ville après des pluies très intenses.\n\nSituation B : P"
+    },
+    {
+      "version_id": "107978",
+      "subject": "HISTORY",
+      "skill_code": "SK-HISTORY-3E-FRANCE",
+      "expected_answer_match": "PARTIALLY_CORRECT",
+      "confidence": "MEDIUM",
+      "reason": "Independent AI reviewers disagreed on an ambiguous case.",
+      "question_preview": "Document de classe (synthétique) — événements importants en France\n\n- 1944 : attribution du droit de vote aux femmes (dé"
+    },
+    {
+      "version_id": "108094",
+      "subject": "HISTORY",
+      "skill_code": "SK-HISTORY-3E-WARS",
+      "expected_answer_match": "PARTIALLY_CORRECT",
+      "confidence": "MEDIUM",
+      "reason": "Independent AI reviewers disagreed on an ambiguous case.",
+      "question_preview": "Document synthétique (document de classe, matériel inventé pour l'exercice).\n\n1) La notion de « guerre totale » renvoie "
+    },
+    {
+      "version_id": "108698",
+      "subject": "GEOGRAPHY",
+      "skill_code": "SK-ENR-GEOGRAPHY-4E-MOBILITY-EFFECT",
+      "expected_answer_match": "PARTIALLY_CORRECT",
+      "confidence": "MEDIUM",
+      "reason": "Independent AI reviewers disagreed on an ambiguous case.",
+      "question_preview": "Document synthétique (classe) — données inventées pour l'exercice :\n- Village X (zone rurale) : population 10 000. Chaqu"
+    },
+    {
+      "version_id": "108818",
+      "subject": "HISTORY",
+      "skill_code": "SK-ENR-HISTORY-4E-18TH-SOURCE",
+      "expected_answer_match": "PARTIALLY_CORRECT",
+      "confidence": "MEDIUM",
+      "reason": "Independent AI reviewers disagreed on an ambiguous case.",
+      "question_preview": "Document de classe synthétique (extrait). Ce texte a été créé par l'enseignant pour l'exercice et n'est pas une citation"
+    },
+    {
+      "version_id": "108894",
+      "subject": "HISTORY",
+      "skill_code": "SK-ENR-HISTORY-4E-FRANCE-CULTURE",
+      "expected_answer_match": "PARTIALLY_CORRECT",
+      "confidence": "MEDIUM",
+      "reason": "Independent AI reviewers disagreed on an ambiguous case.",
+      "question_preview": "Documents (document de classe synthétique).\n\nDocument A — Extrait d'un journal de voyage, vers 1825 (document synthétiqu"
+    },
+    {
+      "version_id": "108430",
+      "subject": "SVT",
+      "skill_code": "SK-ENR-SVT-3E-HEALTH-VACCINATION",
+      "expected_answer_match": "AMBIGUOUS",
+      "confidence": "MEDIUM",
+      "reason": "Independent AI reviewers disagreed on an ambiguous case.",
+      "question_preview": "Dans une classe, le professeur propose quatre affirmations sur la vaccination. Laquelle explique le mieux comment un vac"
+    },
+    {
+      "version_id": "107750",
+      "subject": "GEOGRAPHY",
+      "skill_code": "SK-ENR-GEOGRAPHY-3E-DEVELOPMENT-EFFECT",
+      "expected_answer_match": "PARTIALLY_CORRECT",
+      "confidence": "MEDIUM",
+      "reason": "Independent AI reviewers disagreed on an ambiguous case.",
+      "question_preview": "Document synthétique de classe — Région « Rivière-Nord » :\n- La ville-centre concentre la plupart des emplois, des servi"
+    },
+    {
+      "version_id": "107786",
+      "subject": "GEOGRAPHY",
+      "skill_code": "SK-ENR-GEOGRAPHY-3E-EU-FRANCE",
+      "expected_answer_match": "PARTIALLY_CORRECT",
+      "confidence": "MEDIUM",
+      "reason": "Independent AI reviewers disagreed on an ambiguous case.",
+      "question_preview": "Document synthétique pour la classe (texte inventé pour l'exercice) :\n- La France est un État membre fondateur de la con"
+    },
+    {
+      "version_id": "107802",
+      "subject": "GEOGRAPHY",
+      "skill_code": "SK-ENR-GEOGRAPHY-3E-GEOSCALE-COMPARE",
+      "expected_answer_match": "PARTIALLY_CORRECT",
+      "confidence": "MEDIUM",
+      "reason": "Independent AI reviewers disagreed on an ambiguous case.",
+      "question_preview": "Document synthétique de la classe (texte inventé pour l'exercice) :\n- A (échelle locale, plan de quartier) : plan détail"
+    },
+    {
+      "version_id": "107874",
+      "subject": "GEOGRAPHY",
+      "skill_code": "SK-ENR-GEOGRAPHY-3E-TERRITORY-MOBILITY",
+      "expected_answer_match": "PARTIALLY_CORRECT",
+      "confidence": "MEDIUM",
+      "reason": "Independent AI reviewers disagreed on an ambiguous case.",
+      "question_preview": "Document synthétique (document de classe, inventé pour l'exercice) :\n- Carte schématique : flèches importantes indiquant"
+    },
+    {
+      "version_id": "107894",
+      "subject": "GEOGRAPHY",
+      "skill_code": "SK-ENR-GEOGRAPHY-3E-TERRITORY-URBAN",
+      "expected_answer_match": "PARTIALLY_CORRECT",
+      "confidence": "MEDIUM",
+      "reason": "Independent AI reviewers disagreed on an ambiguous case.",
+      "question_preview": "Document synthétique (document de classe inventé pour l'exercice)\n\nUne petite agglomération est étudiée. Voici des donné"
+    },
+    {
+      "version_id": "108702",
+      "subject": "GEOGRAPHY",
+      "skill_code": "SK-ENR-GEOGRAPHY-4E-GLOBALIZATION-MAP",
+      "expected_answer_match": "PARTIALLY_CORRECT",
+      "confidence": "MEDIUM",
+      "reason": "Independent AI reviewers disagreed on an ambiguous case.",
+      "question_preview": "Données (document synthétique, unités fictives : conteneurs/semaine)\n- Shanghai → Rotterdam : 320\n- Rotterdam → New York"
+    },
+    {
+      "version_id": "109154",
+      "subject": "SVT",
+      "skill_code": "SK-ENR-SVT-4E-EARTH-RISK",
+      "expected_answer_match": "PARTIALLY_CORRECT",
+      "confidence": "MEDIUM",
+      "reason": "Independent AI reviewers disagreed on an ambiguous case.",
+      "question_preview": "Document synthétique (classe) :\n- Un séisme de magnitude 6,5 a son épicentre à 30 km au large d’une commune côtière (alé"
+    },
+    {
+      "version_id": "109198",
+      "subject": "SVT",
+      "skill_code": "SK-ENR-SVT-4E-GENETICS-VARIATION",
+      "expected_answer_match": "PARTIALLY_CORRECT",
+      "confidence": "MEDIUM",
+      "reason": "Independent AI reviewers disagreed on an ambiguous case.",
+      "question_preview": "Document synthétique de classe — Observation :\n• Deux plants de haricot ont été semés le même jour à partir du même paqu"
+    }
+  ],
+  "gold_sample_count": 30,
+  "gold_sample_path": "resources\\content\\quality\\lcai_0012d4_ai_review_calibration_gold_sample.json",
+  "grade_assessment_status_counts": {
+    "GRADE_PEDAGOGICALLY_APPROPRIATE": 168,
+    "GRADE_FAIL": 16
+  },
+  "grade_appropriateness_root_cause": "Legacy LCAI-0012D quality audit set grade_appropriateness=false unless a manual difficulty_alignment flag existed; Wave-2 generated candidates also hardcoded false. Deterministic curriculum grade mapping is now used instead.",
+  "verdict": "CALIBRATED_AND_READY",
+  "production_baseline": {
+    "tier1": 100,
+    "tier2": 0,
+    "tier3": 272
+  }
+}

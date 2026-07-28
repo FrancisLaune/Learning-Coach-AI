@@ -1,0 +1,2508 @@
+{
+  "queue_size": 100,
+  "technically_blocked": 0,
+  "requires_pedagogical_judgement": 100,
+  "safe_for_human_review": 0,
+  "items": [
+    {
+      "version_id": 107794,
+      "grade": "FR-3E",
+      "subject": "GEOGRAPHY",
+      "skill": "SK-ENR-GEOGRAPHY-3E-EU-WORLD",
+      "content_type": "practice",
+      "quality_status": "REVIEW",
+      "quality_score": 58,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 58/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 107790,
+      "grade": "FR-3E",
+      "subject": "GEOGRAPHY",
+      "skill": "SK-ENR-GEOGRAPHY-3E-EU-WORLD",
+      "content_type": "assessment",
+      "quality_status": "REVIEW",
+      "quality_score": 58,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 58/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 107826,
+      "grade": "FR-3E",
+      "subject": "GEOGRAPHY",
+      "skill": "SK-ENR-GEOGRAPHY-3E-GEOSCALE-GLOBAL",
+      "content_type": "practice",
+      "quality_status": "REVIEW",
+      "quality_score": 58,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 58/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 107906,
+      "grade": "FR-3E",
+      "subject": "HISTORY",
+      "skill": "SK-ENR-HISTORY-3E-AFTER1945-EUROPE",
+      "content_type": "assessment",
+      "quality_status": "REVIEW",
+      "quality_score": 58,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 58/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 109262,
+      "grade": "FR-3E",
+      "subject": "HISTORY",
+      "skill": "SK-ENR-HISTORY-3E-AFTER1945-NEW_CONFLICTS",
+      "content_type": "assessment",
+      "quality_status": "REVIEW",
+      "quality_score": 58,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 58/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 109266,
+      "grade": "FR-3E",
+      "subject": "HISTORY",
+      "skill": "SK-ENR-HISTORY-3E-FRANCE-FIFTH",
+      "content_type": "practice",
+      "quality_status": "REVIEW",
+      "quality_score": 58,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 58/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 107934,
+      "grade": "FR-3E",
+      "subject": "HISTORY",
+      "skill": "SK-ENR-HISTORY-3E-FRANCE-FIFTH",
+      "content_type": "assessment",
+      "quality_status": "REVIEW",
+      "quality_score": 58,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 58/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 108006,
+      "grade": "FR-3E",
+      "subject": "HISTORY",
+      "skill": "SK-ENR-HISTORY-3E-HISTREP-LINK",
+      "content_type": "assessment",
+      "quality_status": "REVIEW",
+      "quality_score": 58,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 58/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 108014,
+      "grade": "FR-3E",
+      "subject": "HISTORY",
+      "skill": "SK-ENR-HISTORY-3E-HISTREP-ORDER",
+      "content_type": "practice",
+      "quality_status": "REVIEW",
+      "quality_score": 58,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 58/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 108010,
+      "grade": "FR-3E",
+      "subject": "HISTORY",
+      "skill": "SK-ENR-HISTORY-3E-HISTREP-ORDER",
+      "content_type": "assessment",
+      "quality_status": "REVIEW",
+      "quality_score": 58,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 58/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 108018,
+      "grade": "FR-3E",
+      "subject": "HISTORY",
+      "skill": "SK-ENR-HISTORY-3E-HISTREP-PERIODIZE",
+      "content_type": "practice",
+      "quality_status": "REVIEW",
+      "quality_score": 58,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 58/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 108026,
+      "grade": "FR-3E",
+      "subject": "HISTORY",
+      "skill": "SK-ENR-HISTORY-3E-HISTREP-PERIODIZE",
+      "content_type": "assessment",
+      "quality_status": "REVIEW",
+      "quality_score": 58,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 58/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 108042,
+      "grade": "FR-3E",
+      "subject": "HISTORY",
+      "skill": "SK-ENR-HISTORY-3E-WARS-TOTALITARIAN",
+      "content_type": "assessment",
+      "quality_status": "REVIEW",
+      "quality_score": 58,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 58/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 108058,
+      "grade": "FR-3E",
+      "subject": "HISTORY",
+      "skill": "SK-ENR-HISTORY-3E-WARS-WWI",
+      "content_type": "practice",
+      "quality_status": "REVIEW",
+      "quality_score": 58,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 58/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 108054,
+      "grade": "FR-3E",
+      "subject": "HISTORY",
+      "skill": "SK-ENR-HISTORY-3E-WARS-WWI",
+      "content_type": "assessment",
+      "quality_status": "REVIEW",
+      "quality_score": 58,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 58/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 108658,
+      "grade": "FR-4E",
+      "subject": "GEOGRAPHY",
+      "skill": "SK-ENR-GEOGRAPHY-4E-GLOBALIZATION-MARITIME",
+      "content_type": "assessment",
+      "quality_status": "REVIEW",
+      "quality_score": 58,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 58/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 108778,
+      "grade": "FR-4E",
+      "subject": "HISTORY",
+      "skill": "SK-ENR-HISTORY-4E-18TH-ENLIGHTENMENT",
+      "content_type": "assessment",
+      "quality_status": "REVIEW",
+      "quality_score": 58,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 58/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 108794,
+      "grade": "FR-4E",
+      "subject": "HISTORY",
+      "skill": "SK-ENR-HISTORY-4E-18TH-SOURCE",
+      "content_type": "assessment",
+      "quality_status": "REVIEW",
+      "quality_score": 58,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 58/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 108806,
+      "grade": "FR-4E",
+      "subject": "HISTORY",
+      "skill": "SK-ENR-HISTORY-4E-18TH-TRADE",
+      "content_type": "practice",
+      "quality_status": "REVIEW",
+      "quality_score": 58,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 58/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 108830,
+      "grade": "FR-4E",
+      "subject": "HISTORY",
+      "skill": "SK-ENR-HISTORY-4E-19TH-MIGRATION",
+      "content_type": "assessment",
+      "quality_status": "REVIEW",
+      "quality_score": 58,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 58/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 108858,
+      "grade": "FR-4E",
+      "subject": "HISTORY",
+      "skill": "SK-ENR-HISTORY-4E-FRANCE-CULTURE",
+      "content_type": "assessment",
+      "quality_status": "REVIEW",
+      "quality_score": 58,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 58/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 108886,
+      "grade": "FR-4E",
+      "subject": "HISTORY",
+      "skill": "SK-ENR-HISTORY-4E-FRANCE-REGIMES",
+      "content_type": "assessment",
+      "quality_status": "REVIEW",
+      "quality_score": 58,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 58/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 108906,
+      "grade": "FR-4E",
+      "subject": "HISTORY",
+      "skill": "SK-ENR-HISTORY-4E-FRANCE-SOCIETY",
+      "content_type": "practice",
+      "quality_status": "REVIEW",
+      "quality_score": 58,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 58/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 107726,
+      "grade": "FR-3E",
+      "subject": "GEOGRAPHY",
+      "skill": "SK-ENR-GEOGRAPHY-3E-DEVELOPMENT-CONFLICT",
+      "content_type": "practice",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 107742,
+      "grade": "FR-3E",
+      "subject": "GEOGRAPHY",
+      "skill": "SK-ENR-GEOGRAPHY-3E-DEVELOPMENT-CONFLICT",
+      "content_type": "assessment",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 107762,
+      "grade": "FR-3E",
+      "subject": "GEOGRAPHY",
+      "skill": "SK-ENR-GEOGRAPHY-3E-DEVELOPMENT-PROJECT",
+      "content_type": "practice",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 107754,
+      "grade": "FR-3E",
+      "subject": "GEOGRAPHY",
+      "skill": "SK-ENR-GEOGRAPHY-3E-DEVELOPMENT-PROJECT",
+      "content_type": "assessment",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 107834,
+      "grade": "FR-3E",
+      "subject": "GEOGRAPHY",
+      "skill": "SK-ENR-GEOGRAPHY-3E-GEOSCALE-GLOBAL",
+      "content_type": "assessment",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 107870,
+      "grade": "FR-3E",
+      "subject": "GEOGRAPHY",
+      "skill": "SK-ENR-GEOGRAPHY-3E-TERRITORY-MAP",
+      "content_type": "practice",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 107878,
+      "grade": "FR-3E",
+      "subject": "GEOGRAPHY",
+      "skill": "SK-ENR-GEOGRAPHY-3E-TERRITORY-MAP",
+      "content_type": "assessment",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 107910,
+      "grade": "FR-3E",
+      "subject": "GEOGRAPHY",
+      "skill": "SK-GEOGRAPHY-3E-TERRITORY",
+      "content_type": "practice",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 107898,
+      "grade": "FR-3E",
+      "subject": "GEOGRAPHY",
+      "skill": "SK-GEOGRAPHY-3E-TERRITORY",
+      "content_type": "assessment",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 107914,
+      "grade": "FR-3E",
+      "subject": "HISTORY",
+      "skill": "SK-ENR-HISTORY-3E-AFTER1945-COLD_WAR",
+      "content_type": "practice",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 114842,
+      "grade": "FR-3E",
+      "subject": "HISTORY",
+      "skill": "SK-ENR-HISTORY-3E-AFTER1945-COLD_WAR",
+      "content_type": "assessment",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 107922,
+      "grade": "FR-3E",
+      "subject": "HISTORY",
+      "skill": "SK-ENR-HISTORY-3E-AFTER1945-DECOLONIZATION",
+      "content_type": "practice",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 107918,
+      "grade": "FR-3E",
+      "subject": "HISTORY",
+      "skill": "SK-ENR-HISTORY-3E-AFTER1945-DECOLONIZATION",
+      "content_type": "assessment",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 107926,
+      "grade": "FR-3E",
+      "subject": "HISTORY",
+      "skill": "SK-ENR-HISTORY-3E-AFTER1945-EUROPE",
+      "content_type": "practice",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 114846,
+      "grade": "FR-3E",
+      "subject": "HISTORY",
+      "skill": "SK-ENR-HISTORY-3E-AFTER1945-NEW_CONFLICTS",
+      "content_type": "practice",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 107930,
+      "grade": "FR-3E",
+      "subject": "HISTORY",
+      "skill": "SK-ENR-HISTORY-3E-AFTER1945-SOURCE",
+      "content_type": "practice",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 107938,
+      "grade": "FR-3E",
+      "subject": "HISTORY",
+      "skill": "SK-ENR-HISTORY-3E-AFTER1945-SOURCE",
+      "content_type": "assessment",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 107958,
+      "grade": "FR-3E",
+      "subject": "HISTORY",
+      "skill": "SK-ENR-HISTORY-3E-FRANCE-LIBERATION",
+      "content_type": "practice",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 107950,
+      "grade": "FR-3E",
+      "subject": "HISTORY",
+      "skill": "SK-ENR-HISTORY-3E-FRANCE-LIBERATION",
+      "content_type": "assessment",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 107966,
+      "grade": "FR-3E",
+      "subject": "HISTORY",
+      "skill": "SK-ENR-HISTORY-3E-FRANCE-POLITICS",
+      "content_type": "practice",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 107954,
+      "grade": "FR-3E",
+      "subject": "HISTORY",
+      "skill": "SK-ENR-HISTORY-3E-FRANCE-POLITICS",
+      "content_type": "assessment",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 107982,
+      "grade": "FR-3E",
+      "subject": "HISTORY",
+      "skill": "SK-ENR-HISTORY-3E-FRANCE-SOCIETY",
+      "content_type": "practice",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 107974,
+      "grade": "FR-3E",
+      "subject": "HISTORY",
+      "skill": "SK-ENR-HISTORY-3E-FRANCE-SOCIETY",
+      "content_type": "assessment",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 108002,
+      "grade": "FR-3E",
+      "subject": "HISTORY",
+      "skill": "SK-ENR-HISTORY-3E-FRANCE-WOMEN",
+      "content_type": "practice",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 107990,
+      "grade": "FR-3E",
+      "subject": "HISTORY",
+      "skill": "SK-ENR-HISTORY-3E-FRANCE-WOMEN",
+      "content_type": "assessment",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 107994,
+      "grade": "FR-3E",
+      "subject": "HISTORY",
+      "skill": "SK-ENR-HISTORY-3E-HISTREP-DATE",
+      "content_type": "practice",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 107998,
+      "grade": "FR-3E",
+      "subject": "HISTORY",
+      "skill": "SK-ENR-HISTORY-3E-HISTREP-DATE",
+      "content_type": "assessment",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 108022,
+      "grade": "FR-3E",
+      "subject": "HISTORY",
+      "skill": "SK-ENR-HISTORY-3E-HISTREP-LINK",
+      "content_type": "practice",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 108046,
+      "grade": "FR-3E",
+      "subject": "HISTORY",
+      "skill": "SK-ENR-HISTORY-3E-WARS-GENOCIDE",
+      "content_type": "practice",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 108078,
+      "grade": "FR-3E",
+      "subject": "HISTORY",
+      "skill": "SK-ENR-HISTORY-3E-WARS-GENOCIDE",
+      "content_type": "assessment",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 108050,
+      "grade": "FR-3E",
+      "subject": "HISTORY",
+      "skill": "SK-ENR-HISTORY-3E-WARS-SOURCE",
+      "content_type": "practice",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 108038,
+      "grade": "FR-3E",
+      "subject": "HISTORY",
+      "skill": "SK-ENR-HISTORY-3E-WARS-SOURCE",
+      "content_type": "assessment",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 108062,
+      "grade": "FR-3E",
+      "subject": "HISTORY",
+      "skill": "SK-ENR-HISTORY-3E-WARS-TOTALITARIAN",
+      "content_type": "practice",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 108066,
+      "grade": "FR-3E",
+      "subject": "HISTORY",
+      "skill": "SK-ENR-HISTORY-3E-WARS-WWII",
+      "content_type": "practice",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 109254,
+      "grade": "FR-3E",
+      "subject": "HISTORY",
+      "skill": "SK-ENR-HISTORY-3E-WARS-WWII",
+      "content_type": "assessment",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 107962,
+      "grade": "FR-3E",
+      "subject": "HISTORY",
+      "skill": "SK-HISTORY-3E-AFTER1945",
+      "content_type": "practice",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 107942,
+      "grade": "FR-3E",
+      "subject": "HISTORY",
+      "skill": "SK-HISTORY-3E-AFTER1945",
+      "content_type": "assessment",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 107986,
+      "grade": "FR-3E",
+      "subject": "HISTORY",
+      "skill": "SK-HISTORY-3E-FRANCE",
+      "content_type": "practice",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 107978,
+      "grade": "FR-3E",
+      "subject": "HISTORY",
+      "skill": "SK-HISTORY-3E-FRANCE",
+      "content_type": "assessment",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 108094,
+      "grade": "FR-3E",
+      "subject": "HISTORY",
+      "skill": "SK-HISTORY-3E-WARS",
+      "content_type": "practice",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 108070,
+      "grade": "FR-3E",
+      "subject": "HISTORY",
+      "skill": "SK-HISTORY-3E-WARS",
+      "content_type": "assessment",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 108650,
+      "grade": "FR-4E",
+      "subject": "GEOGRAPHY",
+      "skill": "SK-ENR-GEOGRAPHY-4E-GLOBALIZATION-INTEGRATION",
+      "content_type": "practice",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 108654,
+      "grade": "FR-4E",
+      "subject": "GEOGRAPHY",
+      "skill": "SK-ENR-GEOGRAPHY-4E-GLOBALIZATION-INTEGRATION",
+      "content_type": "assessment",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 108694,
+      "grade": "FR-4E",
+      "subject": "GEOGRAPHY",
+      "skill": "SK-ENR-GEOGRAPHY-4E-GLOBALIZATION-MARITIME",
+      "content_type": "practice",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 108670,
+      "grade": "FR-4E",
+      "subject": "GEOGRAPHY",
+      "skill": "SK-ENR-GEOGRAPHY-4E-MOBILITY-EFFECT",
+      "content_type": "practice",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 108698,
+      "grade": "FR-4E",
+      "subject": "GEOGRAPHY",
+      "skill": "SK-ENR-GEOGRAPHY-4E-MOBILITY-EFFECT",
+      "content_type": "assessment",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 108730,
+      "grade": "FR-4E",
+      "subject": "GEOGRAPHY",
+      "skill": "SK-ENR-GEOGRAPHY-4E-URBANIZATION-INEQUALITY",
+      "content_type": "practice",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 108734,
+      "grade": "FR-4E",
+      "subject": "GEOGRAPHY",
+      "skill": "SK-ENR-GEOGRAPHY-4E-URBANIZATION-INEQUALITY",
+      "content_type": "assessment",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 108758,
+      "grade": "FR-4E",
+      "subject": "GEOGRAPHY",
+      "skill": "SK-ENR-GEOGRAPHY-4E-URBANIZATION-METROPOLIZATION",
+      "content_type": "practice",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 108750,
+      "grade": "FR-4E",
+      "subject": "GEOGRAPHY",
+      "skill": "SK-ENR-GEOGRAPHY-4E-URBANIZATION-METROPOLIZATION",
+      "content_type": "assessment",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 108762,
+      "grade": "FR-4E",
+      "subject": "HISTORY",
+      "skill": "SK-ENR-HISTORY-4E-18TH-ENLIGHTENMENT",
+      "content_type": "practice",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 108782,
+      "grade": "FR-4E",
+      "subject": "HISTORY",
+      "skill": "SK-ENR-HISTORY-4E-18TH-REVOLUTION",
+      "content_type": "practice",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 108770,
+      "grade": "FR-4E",
+      "subject": "HISTORY",
+      "skill": "SK-ENR-HISTORY-4E-18TH-REVOLUTION",
+      "content_type": "assessment",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 108818,
+      "grade": "FR-4E",
+      "subject": "HISTORY",
+      "skill": "SK-ENR-HISTORY-4E-18TH-SOURCE",
+      "content_type": "practice",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 108798,
+      "grade": "FR-4E",
+      "subject": "HISTORY",
+      "skill": "SK-ENR-HISTORY-4E-18TH-TRADE",
+      "content_type": "assessment",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 108810,
+      "grade": "FR-4E",
+      "subject": "HISTORY",
+      "skill": "SK-ENR-HISTORY-4E-19TH-COLONIZATION",
+      "content_type": "practice",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 108826,
+      "grade": "FR-4E",
+      "subject": "HISTORY",
+      "skill": "SK-ENR-HISTORY-4E-19TH-COLONIZATION",
+      "content_type": "assessment",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 104710,
+      "grade": "FR-4E",
+      "subject": "HISTORY",
+      "skill": "SK-ENR-HISTORY-4E-19TH-INDUSTRIALIZATION",
+      "content_type": "practice",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 108822,
+      "grade": "FR-4E",
+      "subject": "HISTORY",
+      "skill": "SK-ENR-HISTORY-4E-19TH-INDUSTRIALIZATION",
+      "content_type": "assessment",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 108846,
+      "grade": "FR-4E",
+      "subject": "HISTORY",
+      "skill": "SK-ENR-HISTORY-4E-19TH-MIGRATION",
+      "content_type": "practice",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 108838,
+      "grade": "FR-4E",
+      "subject": "HISTORY",
+      "skill": "SK-ENR-HISTORY-4E-19TH-SOCIETY",
+      "content_type": "practice",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 108834,
+      "grade": "FR-4E",
+      "subject": "HISTORY",
+      "skill": "SK-ENR-HISTORY-4E-19TH-SOCIETY",
+      "content_type": "assessment",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 108842,
+      "grade": "FR-4E",
+      "subject": "HISTORY",
+      "skill": "SK-ENR-HISTORY-4E-19TH-SOURCE",
+      "content_type": "practice",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 108854,
+      "grade": "FR-4E",
+      "subject": "HISTORY",
+      "skill": "SK-ENR-HISTORY-4E-19TH-SOURCE",
+      "content_type": "assessment",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 108850,
+      "grade": "FR-4E",
+      "subject": "HISTORY",
+      "skill": "SK-ENR-HISTORY-4E-FRANCE-CHRONOLOGY",
+      "content_type": "practice",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 108866,
+      "grade": "FR-4E",
+      "subject": "HISTORY",
+      "skill": "SK-ENR-HISTORY-4E-FRANCE-CHRONOLOGY",
+      "content_type": "assessment",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 108882,
+      "grade": "FR-4E",
+      "subject": "HISTORY",
+      "skill": "SK-ENR-HISTORY-4E-FRANCE-CITIZENSHIP",
+      "content_type": "practice",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 108874,
+      "grade": "FR-4E",
+      "subject": "HISTORY",
+      "skill": "SK-ENR-HISTORY-4E-FRANCE-CITIZENSHIP",
+      "content_type": "assessment",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 108894,
+      "grade": "FR-4E",
+      "subject": "HISTORY",
+      "skill": "SK-ENR-HISTORY-4E-FRANCE-CULTURE",
+      "content_type": "practice",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 108878,
+      "grade": "FR-4E",
+      "subject": "HISTORY",
+      "skill": "SK-ENR-HISTORY-4E-FRANCE-REGIMES",
+      "content_type": "practice",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 108890,
+      "grade": "FR-4E",
+      "subject": "HISTORY",
+      "skill": "SK-ENR-HISTORY-4E-FRANCE-SOCIETY",
+      "content_type": "assessment",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 108814,
+      "grade": "FR-4E",
+      "subject": "HISTORY",
+      "skill": "SK-HISTORY-4E-18TH",
+      "content_type": "practice",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 108802,
+      "grade": "FR-4E",
+      "subject": "HISTORY",
+      "skill": "SK-HISTORY-4E-18TH",
+      "content_type": "assessment",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 108870,
+      "grade": "FR-4E",
+      "subject": "HISTORY",
+      "skill": "SK-HISTORY-4E-19TH",
+      "content_type": "practice",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 108862,
+      "grade": "FR-4E",
+      "subject": "HISTORY",
+      "skill": "SK-HISTORY-4E-19TH",
+      "content_type": "assessment",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 108922,
+      "grade": "FR-4E",
+      "subject": "HISTORY",
+      "skill": "SK-HISTORY-4E-FRANCE",
+      "content_type": "practice",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 108902,
+      "grade": "FR-4E",
+      "subject": "HISTORY",
+      "skill": "SK-HISTORY-4E-FRANCE",
+      "content_type": "assessment",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    }
+  ]
+}

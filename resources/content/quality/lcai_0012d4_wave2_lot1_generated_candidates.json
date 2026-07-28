@@ -1,0 +1,119 @@
+[
+  {
+    "skill": "SK-ENR-HISTORY-3E-AFTER1945-COLD_WAR",
+    "slot": "assessment",
+    "queue_record": {
+      "content_id": 114840,
+      "version_id": 114842,
+      "author": "gpt-5-mini",
+      "code": "DRAFT-0012C-AI-ENR-HISTORY-3E-AFTER1945-COLD-WAR-ASSESSMENT-20260727123358-1",
+      "grade": "FR-3E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-3E-AFTER1945",
+      "skill": "SK-ENR-HISTORY-3E-AFTER1945-COLD_WAR",
+      "skill_name": "SK-ENR-HISTORY-3E-AFTER1945-COLD_WAR",
+      "content_type": "assessment",
+      "missing_slot": "assessment",
+      "difficulty": 2,
+      "question": "Documents synthétiques de classe — trois situations :\n\nSituation 1 — Berlin, 1948 (document synthétique de classe)\nLes autorités soviétiques ferment les accès terrestres vers les secteurs occidentaux de Berlin pour empêcher l'arrivée de marchandises. Les autorités américaines et britanniques organisent un pont aérien pour ravitailler la population et maintenir leur présence.\n\nSituation 2 — Corée, début des années 1950 (document synthétique de classe)\nUn conflit armé oppose le Nord soutenu par l'URSS et la Chine, et le Sud soutenu par les États-Unis et leurs alliés. Les grandes puissances n'entrent pas directement en guerre l'une contre l'autre mais soutiennent les belligérants locaux.\n\nSituation 3 — Caraïbes, 1962 (document synthétique de classe)\nLa découverte d'installations de missiles soviétiques à courte portée près des côtes d'un allié américain provoque une très forte tension. Les deux camps menacent des mesures sévères : blocus, demandes de retrait, et mobilisation militaire régionale.\n\nConsigne : pour chaque situation, écrivez :\n- la logique principale de la guerre froide (nommer le mécanisme),\n- une phrase justifiant le choix en vous appuyant sur un indice précis du texte.",
+      "choices": [],
+      "expected_answer": "Critères d'évaluation observables :\n- Pour chaque situation (1, 2 et 3) : nommer clairement la logique principale (par ex. « endiguement/containment », « guerre par procuration », « dissuasion / course aux armements / menace nucléaire », « défense de zones d'influence », « lutte d'influence économique/idéologique »).\n- Pour chaque situation : donner au moins 1 indice textuel précis (mot ou élément) qui justifie ce choix.\n- Pour chaque situation : formuler une justification concise (1–2 phrases) reliant l'indice à la logique choisie.\nNotation indicative : 2 points par situation (1 pt pour le bon nommage de la logique, 1 pt pour une justification correcte et reliée au texte). Total possible : 6 points.",
+      "answer_kind": "open_response",
+      "explanation": "But de la tâche : vérifier que l'élève sait repérer les mécanismes généraux de la guerre froide et les relier à des indices concrets. Voici des réponses-modeles et la façon de les corriger :\n\nModèles de réponse (exemples succincts acceptables) :\n- Situation 1 — Berlin, 1948 : logique principale = « défense des zones d'influence / endiguement (containment) ». Justification modèle : « Le blocus terrestre des secteurs occidentaux montre que l'URSS veut isoler la partie occidentale de Berlin pour empêcher l'influence et l'approvisionnement des puissances occidentales ; la réponse par un pont aérien illustre la volonté des États-Unis et du Royaume-Uni de maintenir leur présence et d'empêcher l'expansion soviétique. »\n  Indice(s) attendus : « fermeture des accès terrestres », « pont aérien », « empêcher l'arrivée de marchandises ».\n\n- Situation 2 — Corée, début années 1950 : logique principale = « guerre par procuration / conflit par alliés » (avec objectif d'endiguement et soutien idéologique). Justification modèle : « Le fait que le Nord soit soutenu par l'URSS et la Chine, et le Sud par les États-Unis, sans affrontement direct entre superpuissances, montre l'utilisation de conflits locaux pour poursuivre la rivalité idéologique et géopolitique. »\n  Indice(s) attendus : « soutenu par l'URSS et la Chine », « soutenu par les États-Unis », « les grandes puissances n'entrent pas directement en guerre ». \n\n- Situation 3 — Caraïbes, 1962 : logique principale = « dissuasion / course aux armements / menace nucléaire » (brinkmanship). Justification modèle : « La présence d'installations de missiles proches du territoire adverse et les menaces de blocus et de mobilisation montrent une confrontation fondée sur la menace nucléaire et la logique de dissuasion : chaque camp cherche à empêcher l'autre d'obtenir un avantage stratégique sans déclencher une guerre totale. »\n  Indice(s) attendus : « installations de missiles », « blocus », « mobilisation militaire », « menace de mesures sévères ». \n\nBarème proposé (à appliquer avec souplesse) :\n- 2 points : logique correctement nommée et justification qui cite un indice du texte et explique le lien.\n- 1 point : logique nommée correctement mais justification superficielle ou sans indice précis ; ou logique partiellement correcte (par ex. nommer « conflit » sans préciser le mécanisme Cold War).\n- 0 point : logique incorrecte et justification non liée au texte.\n\nPièges / idées reçues ciblées :\n- Ne pas réduire la guerre froide à une seule forme d'affrontement : il faut distinguer confrontation directe, guerres par procuration, stratégie de dissuasion et compétition d'influence économique/idéologique.\n- Une bataille locale n'implique pas automatiquement une guerre ouverte entre superpuissances : cherchez les indices de soutien indirect (armes, conseillers, aides) pour reconnaître la guerre par procuration.\n\nRemarques pour le correcteur : acceptez des formulations synonymes (par ex. « endiguement » / « containment », « guerre par procuration » / « conflit par alliés », « dissuasion » / « menace nucléaire ») si la justification montre la compréhension. Évaluez la qualité du lien entre l'indice cité et la logique choisie.",
+      "automated_checks": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "deterministic_verification": null,
+      "quality_result": "REVIEW",
+      "quality_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "candidate_score": 53,
+      "hard_gates_passed": true,
+      "missing_coverage": true,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "pipeline_version": "lcai-0012d4-wave2-v1",
+      "original_lcai_0012d_decision": "REVIEW",
+      "d4_wave1_selected": false
+    },
+    "gap_key": "FR-3E|HISTORY|CH-HISTORY-3E-AFTER1945|SK-ENR-HISTORY-3E-AFTER1945-COLD_WAR|assessment|2"
+  },
+  {
+    "skill": "SK-ENR-HISTORY-3E-AFTER1945-NEW_CONFLICTS",
+    "slot": "practice",
+    "queue_record": {
+      "content_id": 114844,
+      "version_id": 114846,
+      "author": "gpt-5-mini",
+      "code": "DRAFT-0012C-AI-ENR-HISTORY-3E-AFTER1945-NEW-CONFLICTS-PRACTICE-20260727124929-1",
+      "grade": "FR-3E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-3E-AFTER1945",
+      "skill": "SK-ENR-HISTORY-3E-AFTER1945-NEW_CONFLICTS",
+      "skill_name": "SK-ENR-HISTORY-3E-AFTER1945-NEW_CONFLICTS",
+      "content_type": "practice",
+      "missing_slot": "practice",
+      "difficulty": 2,
+      "question": "En vous appuyant sur des exemples précis post-1991, identifiez et expliquez trois recompositions majeures du monde (politique, territoriale ou sécuritaire/économique). Pour chacune : 1) donnez un titre court de la recomposition ; 2) citez un exemple situé dans le temps et l'espace (année et lieu) ; 3) rédigez 1 à 2 phrases expliquant en quoi cet exemple illustre une recomposition.",
+      "choices": [],
+      "expected_answer": "Critères observables de réussite :\n- L'élève propose exactement trois recompositions distinctes (au moins deux types différents parmi : politique, territoriale/étatique, sécuritaire, économique).\n- Pour chaque recomposition, l'élève fournit un exemple précis daté et localisé (année ou période et lieu/État ou région), postérieur à 1991.\n- Pour chaque exemple, l'élève explique en 1–2 phrases en quoi il s'agit d'une recomposition (changement d'organisation politique, modification des frontières ou de la souveraineté, nouvelle configuration des alliances ou des menaces, transformation économique globale, etc.).\n- L'explication utilise des termes historiques pertinents (par ex. « dissolution de l'URSS », « guerres en ex-Yougoslavie », « élargissement de l'OTAN », « essor économique de la Chine », « montée du terrorisme transnational ») et établit un lien clair cause/conséquence ou avant/après.\n- Réponse lisible et structurée : chaque recomposition présentée selon le format demandé.",
+      "answer_kind": "open_response",
+      "explanation": "Barème et indications pour la correction (3e, niveau attendu) :\n- 3 points — tous les critères remplis : trois recompositions distinctes, exemples datés et localisés, explications claires reliant chaque exemple à une recomposition.\n- 2 points — deux recompositions correctement traitées ou trois proposées mais une avec information insuffisante (pas de date/lieu ou explication vague).\n- 1 point — une seule recomposition correctement traitée, ou plusieurs mentions sans contextualisation.\n- 0 point — réponses hors sujet ou absence de preuve historique.\nExemples de formulations acceptables (modèles courts) :\n1) « Désintégration politique de l’URSS — 1991, URSS/Russie et nouvelles Républiques. Après 1991, la disparition de l’URSS transforme la carte politique de l’Eurasie : quinze États indépendants apparaissent, modifiant les alliances et l’équilibre Est-Ouest. »\n2) « Conflits territoriaux et ethniques dans les Balkans — ex-Yougoslavie, 1991–1995. Les guerres de Croatie et de Bosnie entraînent des changements de frontières, des nettoyages ethniques et la recomposition d’États nouveaux ou redéfinis. »\n3) « Recomposition des enjeux sécuritaires et transnationaux — montée du terrorisme international, années 1990–2000 (ex. attaque d’Al-Qaïda, 1998–2001). L’apparition d’acteurs non étatiques crée de nouvelles menaces et modifie les interventions internationales. »\nCes exemples montrent le type d’éléments attendus : date/période, lieu/État, et une explication brève montrant le changement par rapport à la période antérieure (avant 1991).",
+      "automated_checks": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "deterministic_verification": null,
+      "quality_result": "REVIEW",
+      "quality_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "candidate_score": 53,
+      "hard_gates_passed": true,
+      "missing_coverage": true,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "pipeline_version": "lcai-0012d4-wave2-v1",
+      "original_lcai_0012d_decision": "REVIEW",
+      "d4_wave1_selected": false,
+      "coverage_impact": {
+        "adds_practice": true,
+        "adds_assessment": false,
+        "completes_tier_1": false,
+        "improves_tier_2": true,
+        "no_coverage_impact": false,
+        "current": {
+          "practice_approved": false,
+          "assessment_approved": false,
+          "tier": 3
+        },
+        "potential": {
+          "practice_approved": true,
+          "assessment_approved": false,
+          "tier": 2
+        }
+      },
+      "skill_code": "SK-ENR-HISTORY-3E-AFTER1945-NEW_CONFLICTS",
+      "target_slot": "practice",
+      "missing_slot_label": "Entraînement",
+      "current_tier": 3,
+      "projected_tier": 2,
+      "alternate_count": 0,
+      "candidate_source": "generated",
+      "review_campaign": "LCAI-0012D4-WAVE2",
+      "review_queue_status": "ACTIVE",
+      "wave_band": "TIER3_CORRECTIVE",
+      "lot_number": 1
+    },
+    "gap_key": "FR-3E|HISTORY|CH-HISTORY-3E-AFTER1945|SK-ENR-HISTORY-3E-AFTER1945-NEW_CONFLICTS|practice|2",
+    "replacement_for": "blocked_multiple_choice_practice"
+  }
+]

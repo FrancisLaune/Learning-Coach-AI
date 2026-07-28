@@ -1,0 +1,84 @@
+{
+  "status": "AUTHORITATIVE_OPENAI",
+  "campaign_id": "LCAI-0012D4-WAVE2",
+  "ai_review_pipeline_version": "lcai-0012d4-ai-review-v2",
+  "assessor": {
+    "type": "openai",
+    "status": "AVAILABLE",
+    "model": "gpt-5-mini",
+    "api_key_source": "streamlit_secrets_fallback",
+    "note": "Environment OPENAI_API_KEY was invalid; Streamlit secret used instead."
+  },
+  "population": {
+    "unique_skills": 92,
+    "candidates": 184,
+    "reviewed": 184,
+    "remaining": 0
+  },
+  "decisions": {
+    "AI_PREVALIDATED": 0,
+    "TEACHER_REVIEW_REQUIRED": 183,
+    "FACT_CHECK_REQUIRED": 0,
+    "AI_REJECTED": 1
+  },
+  "skill_pairs": {
+    "both_practice_assessment_ai_prevalidated": 0,
+    "one_prevalidated_one_teacher": 0,
+    "both_teacher": 91,
+    "blocked_skills": 1
+  },
+  "workload": {
+    "human_general_review_reduction_pct": 0.0,
+    "teacher_specialist_reviews_required": 183,
+    "replacement_required": 1
+  },
+  "by_subject": {
+    "GEOGRAPHY": {
+      "TEACHER_REVIEW_REQUIRED": 59,
+      "AI_REJECTED": 1
+    },
+    "HISTORY": {
+      "TEACHER_REVIEW_REQUIRED": 78
+    },
+    "SVT": {
+      "TEACHER_REVIEW_REQUIRED": 46
+    }
+  },
+  "by_grade": {
+    "FR-3E": {
+      "TEACHER_REVIEW_REQUIRED": 100
+    },
+    "FR-4E": {
+      "TEACHER_REVIEW_REQUIRED": 83,
+      "AI_REJECTED": 1
+    }
+  },
+  "errors": [],
+  "production_baseline": {
+    "tier1": 100,
+    "tier2": 0,
+    "tier3": 272
+  },
+  "approvals_executed": 0,
+  "calibration_version": "lcai-0012d4-ai-review-calibration-v1",
+  "original_decisions": {
+    "AI_PREVALIDATED": 0,
+    "TEACHER_REVIEW_REQUIRED": 183,
+    "AI_REJECTED": 1,
+    "FACT_CHECK_REQUIRED": 0
+  },
+  "calibrated_decisions": {
+    "AI_PREVALIDATED_HIGH": 0,
+    "AI_PREVALIDATED_WITH_WARNING": 168,
+    "TEACHER_REVIEW_REQUIRED": 15,
+    "FACT_CHECK_REQUIRED": 0,
+    "AI_REJECTED": 1
+  },
+  "skill_pairs_calibrated": {
+    "both_practice_assessment_ai_prevalidated": 76,
+    "one_prevalidated_one_teacher": 15,
+    "both_teacher": 0,
+    "blocked_skills": 1
+  },
+  "human_specialist_workload_reduction_pct": 91.8
+}

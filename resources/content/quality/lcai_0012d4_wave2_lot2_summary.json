@@ -1,0 +1,26 @@
+{
+  "lot_number": 2,
+  "lot_size": 50,
+  "skills_in_lot": 50,
+  "existing_candidates_used": 100,
+  "generated_candidates_used": 0,
+  "generation_requests": 0,
+  "generation_executed": false,
+  "generation_metrics": {},
+  "human_decisions_required": 100,
+  "technically_blocked": 0,
+  "projection": {
+    "baseline_tier1": 100,
+    "lot_queue_size": 100,
+    "lot_skills_with_both_slots_ready": 50,
+    "tier1_potential_if_all_lot_approvals": 150
+  },
+  "subjects": [
+    "GEOGRAPHY",
+    "SVT"
+  ],
+  "grades": [
+    "FR-3E",
+    "FR-4E"
+  ]
+}

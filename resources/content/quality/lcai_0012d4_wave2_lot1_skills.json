@@ -1,0 +1,452 @@
+[
+  {
+    "grade": "FR-3E",
+    "subject": "HISTORY",
+    "chapter": "CH-HISTORY-3E-AFTER1945",
+    "skill": "SK-ENR-HISTORY-3E-AFTER1945-DECOLONIZATION",
+    "skill_name": "Expliquer un processus de décolonisation",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-4E",
+    "subject": "HISTORY",
+    "chapter": "CH-HISTORY-4E-19TH",
+    "skill": "SK-ENR-HISTORY-4E-19TH-SOURCE",
+    "skill_name": "Confronter des documents",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-3E",
+    "subject": "HISTORY",
+    "chapter": "CH-HISTORY-3E-FRANCE",
+    "skill": "SK-ENR-HISTORY-3E-FRANCE-LIBERATION",
+    "skill_name": "Expliquer la refondation républicaine",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-4E",
+    "subject": "HISTORY",
+    "chapter": "CH-HISTORY-4E-18TH",
+    "skill": "SK-ENR-HISTORY-4E-18TH-TRADE",
+    "skill_name": "Expliquer les échanges atlantiques",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-3E",
+    "subject": "HISTORY",
+    "chapter": "CH-HISTORY-3E-AFTER1945",
+    "skill": "SK-ENR-HISTORY-3E-AFTER1945-SOURCE",
+    "skill_name": "Interpréter une source géopolitique",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-4E",
+    "subject": "HISTORY",
+    "chapter": "CH-HISTORY-4E-FRANCE",
+    "skill": "SK-ENR-HISTORY-4E-FRANCE-REGIMES",
+    "skill_name": "Ordonner les régimes politiques",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-3E",
+    "subject": "HISTORY",
+    "chapter": "CH-HISTORY-3E-AFTER1945",
+    "skill": "SK-ENR-HISTORY-3E-AFTER1945-EUROPE",
+    "skill_name": "Construire les étapes européennes",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-4E",
+    "subject": "HISTORY",
+    "chapter": "CH-HISTORY-4E-FRANCE",
+    "skill": "SK-ENR-HISTORY-4E-FRANCE-CULTURE",
+    "skill_name": "Identifier une évolution culturelle",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-3E",
+    "subject": "HISTORY",
+    "chapter": "CH-HISTORY-3E-HISTREP",
+    "skill": "SK-ENR-HISTORY-3E-HISTREP-LINK",
+    "skill_name": "Relier un repère à sa signification historique",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-4E",
+    "subject": "HISTORY",
+    "chapter": "CH-HISTORY-4E-FRANCE",
+    "skill": "SK-ENR-HISTORY-4E-FRANCE-CHRONOLOGY",
+    "skill_name": "Construire une chronologie argumentée",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-3E",
+    "subject": "HISTORY",
+    "chapter": "CH-HISTORY-3E-FRANCE",
+    "skill": "SK-HISTORY-3E-FRANCE",
+    "skill_name": "Construire des repères politiques et sociaux depuis 1944",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-4E",
+    "subject": "HISTORY",
+    "chapter": "CH-HISTORY-4E-19TH",
+    "skill": "SK-ENR-HISTORY-4E-19TH-INDUSTRIALIZATION",
+    "skill_name": "Expliquer l'industrialisation",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-3E",
+    "subject": "HISTORY",
+    "chapter": "CH-HISTORY-3E-FRANCE",
+    "skill": "SK-ENR-HISTORY-3E-FRANCE-FIFTH",
+    "skill_name": "Caractériser la Ve République",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-4E",
+    "subject": "HISTORY",
+    "chapter": "CH-HISTORY-4E-FRANCE",
+    "skill": "SK-ENR-HISTORY-4E-FRANCE-CITIZENSHIP",
+    "skill_name": "Expliquer l'élargissement de la citoyenneté",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-3E",
+    "subject": "HISTORY",
+    "chapter": "CH-HISTORY-3E-HISTREP",
+    "skill": "SK-ENR-HISTORY-3E-HISTREP-ORDER",
+    "skill_name": "Ordonner des événements",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-4E",
+    "subject": "HISTORY",
+    "chapter": "CH-HISTORY-4E-18TH",
+    "skill": "SK-ENR-HISTORY-4E-18TH-REVOLUTION",
+    "skill_name": "Comparer les révolutions atlantiques",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-3E",
+    "subject": "HISTORY",
+    "chapter": "CH-HISTORY-3E-WARS",
+    "skill": "SK-ENR-HISTORY-3E-WARS-SOURCE",
+    "skill_name": "Confronter des sources de guerre",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-4E",
+    "subject": "HISTORY",
+    "chapter": "CH-HISTORY-4E-18TH",
+    "skill": "SK-ENR-HISTORY-4E-18TH-SOURCE",
+    "skill_name": "Interpréter une source du XVIIIe siècle",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-3E",
+    "subject": "HISTORY",
+    "chapter": "CH-HISTORY-3E-HISTREP",
+    "skill": "SK-ENR-HISTORY-3E-HISTREP-DATE",
+    "skill_name": "Associer dates et événements majeurs",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-4E",
+    "subject": "HISTORY",
+    "chapter": "CH-HISTORY-4E-19TH",
+    "skill": "SK-ENR-HISTORY-4E-19TH-MIGRATION",
+    "skill_name": "Relier industrialisation et mobilités",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-3E",
+    "subject": "HISTORY",
+    "chapter": "CH-HISTORY-3E-AFTER1945",
+    "skill": "SK-ENR-HISTORY-3E-AFTER1945-NEW_CONFLICTS",
+    "skill_name": "Identifier les recompositions après 1991",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-4E",
+    "subject": "HISTORY",
+    "chapter": "CH-HISTORY-4E-FRANCE",
+    "skill": "SK-ENR-HISTORY-4E-FRANCE-SOCIETY",
+    "skill_name": "Analyser une transformation sociale",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-3E",
+    "subject": "HISTORY",
+    "chapter": "CH-HISTORY-3E-HISTREP",
+    "skill": "SK-ENR-HISTORY-3E-HISTREP-PERIODIZE",
+    "skill_name": "Situer un événement dans une période",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-4E",
+    "subject": "HISTORY",
+    "chapter": "CH-HISTORY-4E-19TH",
+    "skill": "SK-HISTORY-4E-19TH",
+    "skill_name": "Analyser industrialisation, sociétés et colonisation",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-3E",
+    "subject": "HISTORY",
+    "chapter": "CH-HISTORY-3E-FRANCE",
+    "skill": "SK-ENR-HISTORY-3E-FRANCE-POLITICS",
+    "skill_name": "Construire des repères politiques depuis 1944",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-4E",
+    "subject": "HISTORY",
+    "chapter": "CH-HISTORY-4E-18TH",
+    "skill": "SK-HISTORY-4E-18TH",
+    "skill_name": "Expliquer les transformations politiques et économiques du XVIIIe siècle",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-3E",
+    "subject": "HISTORY",
+    "chapter": "CH-HISTORY-3E-FRANCE",
+    "skill": "SK-ENR-HISTORY-3E-FRANCE-SOCIETY",
+    "skill_name": "Analyser une transformation sociale",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-4E",
+    "subject": "HISTORY",
+    "chapter": "CH-HISTORY-4E-19TH",
+    "skill": "SK-ENR-HISTORY-4E-19TH-SOCIETY",
+    "skill_name": "Analyser les transformations sociales",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-3E",
+    "subject": "HISTORY",
+    "chapter": "CH-HISTORY-3E-WARS",
+    "skill": "SK-ENR-HISTORY-3E-WARS-WWII",
+    "skill_name": "Caractériser la Seconde Guerre mondiale",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-4E",
+    "subject": "HISTORY",
+    "chapter": "CH-HISTORY-4E-19TH",
+    "skill": "SK-ENR-HISTORY-4E-19TH-COLONIZATION",
+    "skill_name": "Caractériser la colonisation",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-3E",
+    "subject": "HISTORY",
+    "chapter": "CH-HISTORY-3E-AFTER1945",
+    "skill": "SK-ENR-HISTORY-3E-AFTER1945-COLD_WAR",
+    "skill_name": "Expliquer la logique de la guerre froide",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-4E",
+    "subject": "HISTORY",
+    "chapter": "CH-HISTORY-4E-18TH",
+    "skill": "SK-ENR-HISTORY-4E-18TH-ENLIGHTENMENT",
+    "skill_name": "Expliquer les idées des Lumières",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-3E",
+    "subject": "HISTORY",
+    "chapter": "CH-HISTORY-3E-WARS",
+    "skill": "SK-HISTORY-3E-WARS",
+    "skill_name": "Expliquer guerres mondiales, totalitarismes et génocides",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-4E",
+    "subject": "HISTORY",
+    "chapter": "CH-HISTORY-4E-FRANCE",
+    "skill": "SK-HISTORY-4E-FRANCE",
+    "skill_name": "Construire des repères politiques et sociaux de la France",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-3E",
+    "subject": "HISTORY",
+    "chapter": "CH-HISTORY-3E-AFTER1945",
+    "skill": "SK-HISTORY-3E-AFTER1945",
+    "skill_name": "Analyser décolonisation, guerre froide et construction européenne",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-3E",
+    "subject": "HISTORY",
+    "chapter": "CH-HISTORY-3E-WARS",
+    "skill": "SK-ENR-HISTORY-3E-WARS-GENOCIDE",
+    "skill_name": "Expliquer le processus génocidaire",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-3E",
+    "subject": "HISTORY",
+    "chapter": "CH-HISTORY-3E-WARS",
+    "skill": "SK-ENR-HISTORY-3E-WARS-TOTALITARIAN",
+    "skill_name": "Comparer les régimes totalitaires",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-3E",
+    "subject": "HISTORY",
+    "chapter": "CH-HISTORY-3E-WARS",
+    "skill": "SK-ENR-HISTORY-3E-WARS-WWI",
+    "skill_name": "Caractériser la Première Guerre mondiale",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-3E",
+    "subject": "HISTORY",
+    "chapter": "CH-HISTORY-3E-FRANCE",
+    "skill": "SK-ENR-HISTORY-3E-FRANCE-WOMEN",
+    "skill_name": "Expliquer l'évolution de la place des femmes",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-3E",
+    "subject": "GEOGRAPHY",
+    "chapter": "CH-GEOGRAPHY-3E-GEOSCALE",
+    "skill": "SK-ENR-GEOGRAPHY-3E-GEOSCALE-GLOBAL",
+    "skill_name": "Relier au contexte mondial",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-4E",
+    "subject": "GEOGRAPHY",
+    "chapter": "CH-GEOGRAPHY-4E-URBANIZATION",
+    "skill": "SK-ENR-GEOGRAPHY-4E-URBANIZATION-INEQUALITY",
+    "skill_name": "Analyser des inégalités urbaines",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-3E",
+    "subject": "GEOGRAPHY",
+    "chapter": "CH-GEOGRAPHY-3E-DEVELOPMENT",
+    "skill": "SK-ENR-GEOGRAPHY-3E-DEVELOPMENT-PROJECT",
+    "skill_name": "Analyser objectifs et réalisation d'un projet",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-4E",
+    "subject": "GEOGRAPHY",
+    "chapter": "CH-GEOGRAPHY-4E-GLOBALIZATION",
+    "skill": "SK-ENR-GEOGRAPHY-4E-GLOBALIZATION-INTEGRATION",
+    "skill_name": "Comparer l'intégration des territoires",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-3E",
+    "subject": "GEOGRAPHY",
+    "chapter": "CH-GEOGRAPHY-3E-TERRITORY",
+    "skill": "SK-ENR-GEOGRAPHY-3E-TERRITORY-MAP",
+    "skill_name": "Construire un croquis du territoire français",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-4E",
+    "subject": "GEOGRAPHY",
+    "chapter": "CH-GEOGRAPHY-4E-MOBILITY",
+    "skill": "SK-ENR-GEOGRAPHY-4E-MOBILITY-EFFECT",
+    "skill_name": "Analyser des effets territoriaux",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-3E",
+    "subject": "GEOGRAPHY",
+    "chapter": "CH-GEOGRAPHY-3E-TERRITORY",
+    "skill": "SK-GEOGRAPHY-3E-TERRITORY",
+    "skill_name": "Analyser espaces urbains, productifs et de faible densité",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-4E",
+    "subject": "GEOGRAPHY",
+    "chapter": "CH-GEOGRAPHY-4E-URBANIZATION",
+    "skill": "SK-ENR-GEOGRAPHY-4E-URBANIZATION-METROPOLIZATION",
+    "skill_name": "Expliquer la métropolisation",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-3E",
+    "subject": "GEOGRAPHY",
+    "chapter": "CH-GEOGRAPHY-3E-DEVELOPMENT",
+    "skill": "SK-ENR-GEOGRAPHY-3E-DEVELOPMENT-CONFLICT",
+    "skill_name": "Expliquer un débat d'aménagement",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-4E",
+    "subject": "GEOGRAPHY",
+    "chapter": "CH-GEOGRAPHY-4E-GLOBALIZATION",
+    "skill": "SK-ENR-GEOGRAPHY-4E-GLOBALIZATION-MARITIME",
+    "skill_name": "Analyser un espace maritime",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-3E",
+    "subject": "GEOGRAPHY",
+    "chapter": "CH-GEOGRAPHY-3E-EU",
+    "skill": "SK-ENR-GEOGRAPHY-3E-EU-WORLD",
+    "skill_name": "Situer l'Union européenne dans la mondialisation",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  }
+]

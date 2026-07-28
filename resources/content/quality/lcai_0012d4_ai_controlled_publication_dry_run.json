@@ -1,0 +1,1234 @@
+{
+  "mode": "EXECUTE",
+  "campaign": "LCAI-0012D4-WAVE2",
+  "required_decision": "AI_PREVALIDATED_HIGH",
+  "repair_meta": {
+    "campaign_metadata_repairs": 1,
+    "authoritative_audits": 184
+  },
+  "decisions": {
+    "AI_PREVALIDATED_HIGH": 168,
+    "AI_PREVALIDATED_WITH_WARNING": 0,
+    "TEACHER_REVIEW_REQUIRED": 15,
+    "AI_REJECTED": 1,
+    "FACT_CHECK_REQUIRED": 15
+  },
+  "eligible_candidate_count": 168,
+  "complete_skill_pairs": 76,
+  "tier_projection": {
+    "baseline_tier1": 176,
+    "projected_tier1": 252,
+    "newly_complete_skills": 76
+  },
+  "teacher_remaining": 15,
+  "teacher_excluded": 15,
+  "fact_check_excluded": 15,
+  "rejected_excluded": 1,
+  "rejected": [
+    {
+      "version_id": 108734,
+      "skill": "SK-ENR-GEOGRAPHY-4E-URBANIZATION-INEQUALITY",
+      "subject": "GEOGRAPHY",
+      "alternate_count": 0,
+      "replacement_required": true
+    }
+  ],
+  "replacement_required": [
+    {
+      "version_id": 108734,
+      "skill": "SK-ENR-GEOGRAPHY-4E-URBANIZATION-INEQUALITY",
+      "subject": "GEOGRAPHY",
+      "alternate_count": 0,
+      "replacement_required": true
+    }
+  ],
+  "blocked": [],
+  "blocked_high_candidates": [],
+  "warnings": [],
+  "execution_manifest_count": 168,
+  "production_baseline": {
+    "tier1": 176,
+    "tier2": 0,
+    "tier3": 272
+  },
+  "production_db_modified": true,
+  "published": [
+    {
+      "version_id": 107742,
+      "exercise_id": 114848,
+      "skill_code": "SK-ENR-GEOGRAPHY-3E-DEVELOPMENT-CONFLICT",
+      "published_version_id": 114850,
+      "production_enabled": true
+    },
+    {
+      "version_id": 107726,
+      "exercise_id": 114858,
+      "skill_code": "SK-ENR-GEOGRAPHY-3E-DEVELOPMENT-CONFLICT",
+      "published_version_id": 114860,
+      "production_enabled": true
+    },
+    {
+      "version_id": 107746,
+      "exercise_id": 114868,
+      "skill_code": "SK-ENR-GEOGRAPHY-3E-DEVELOPMENT-EFFECT",
+      "published_version_id": 114870,
+      "production_enabled": true
+    },
+    {
+      "version_id": 107754,
+      "exercise_id": 114878,
+      "skill_code": "SK-ENR-GEOGRAPHY-3E-DEVELOPMENT-PROJECT",
+      "published_version_id": 114880,
+      "production_enabled": true
+    },
+    {
+      "version_id": 107762,
+      "exercise_id": 114888,
+      "skill_code": "SK-ENR-GEOGRAPHY-3E-DEVELOPMENT-PROJECT",
+      "published_version_id": 114890,
+      "production_enabled": true
+    },
+    {
+      "version_id": 107782,
+      "exercise_id": 114898,
+      "skill_code": "SK-ENR-GEOGRAPHY-3E-EU-FRANCE",
+      "published_version_id": 114900,
+      "production_enabled": true
+    },
+    {
+      "version_id": 107790,
+      "exercise_id": 114908,
+      "skill_code": "SK-ENR-GEOGRAPHY-3E-EU-WORLD",
+      "published_version_id": 114910,
+      "production_enabled": true
+    },
+    {
+      "version_id": 107794,
+      "exercise_id": 114922,
+      "skill_code": "SK-ENR-GEOGRAPHY-3E-EU-WORLD",
+      "published_version_id": 114924,
+      "production_enabled": true
+    },
+    {
+      "version_id": 107822,
+      "exercise_id": 114936,
+      "skill_code": "SK-ENR-GEOGRAPHY-3E-GEOSCALE-COMPARE",
+      "published_version_id": 114938,
+      "production_enabled": true
+    },
+    {
+      "version_id": 107810,
+      "exercise_id": 114946,
+      "skill_code": "SK-ENR-GEOGRAPHY-3E-GEOSCALE-EUROPEAN",
+      "published_version_id": 114948,
+      "production_enabled": true
+    },
+    {
+      "version_id": 107814,
+      "exercise_id": 114960,
+      "skill_code": "SK-ENR-GEOGRAPHY-3E-GEOSCALE-EUROPEAN",
+      "published_version_id": 114962,
+      "production_enabled": true
+    },
+    {
+      "version_id": 107826,
+      "exercise_id": 114974,
+      "skill_code": "SK-ENR-GEOGRAPHY-3E-GEOSCALE-GLOBAL",
+      "published_version_id": 114976,
+      "production_enabled": true
+    },
+    {
+      "version_id": 107838,
+      "exercise_id": 114988,
+      "skill_code": "SK-ENR-GEOGRAPHY-3E-GEOSCALE-LOCAL",
+      "published_version_id": 114990,
+      "production_enabled": true
+    },
+    {
+      "version_id": 107850,
+      "exercise_id": 114998,
+      "skill_code": "SK-ENR-GEOGRAPHY-3E-GEOSCALE-LOCAL",
+      "published_version_id": 115000,
+      "production_enabled": true
+    },
+    {
+      "version_id": 107846,
+      "exercise_id": 115008,
+      "skill_code": "SK-ENR-GEOGRAPHY-3E-GEOSCALE-NATIONAL",
+      "published_version_id": 115010,
+      "production_enabled": true
+    },
+    {
+      "version_id": 107862,
+      "exercise_id": 115022,
+      "skill_code": "SK-ENR-GEOGRAPHY-3E-GEOSCALE-NATIONAL",
+      "published_version_id": 115024,
+      "production_enabled": true
+    },
+    {
+      "version_id": 107866,
+      "exercise_id": 115032,
+      "skill_code": "SK-ENR-GEOGRAPHY-3E-TERRITORY-LOW_DENSITY",
+      "published_version_id": 115034,
+      "production_enabled": true
+    },
+    {
+      "version_id": 107882,
+      "exercise_id": 115042,
+      "skill_code": "SK-ENR-GEOGRAPHY-3E-TERRITORY-LOW_DENSITY",
+      "published_version_id": 115044,
+      "production_enabled": true
+    },
+    {
+      "version_id": 107878,
+      "exercise_id": 115052,
+      "skill_code": "SK-ENR-GEOGRAPHY-3E-TERRITORY-MAP",
+      "published_version_id": 115054,
+      "production_enabled": true
+    },
+    {
+      "version_id": 107870,
+      "exercise_id": 115062,
+      "skill_code": "SK-ENR-GEOGRAPHY-3E-TERRITORY-MAP",
+      "published_version_id": 115064,
+      "production_enabled": true
+    },
+    {
+      "version_id": 107858,
+      "exercise_id": 115072,
+      "skill_code": "SK-ENR-GEOGRAPHY-3E-TERRITORY-MOBILITY",
+      "published_version_id": 115074,
+      "production_enabled": true
+    },
+    {
+      "version_id": 107902,
+      "exercise_id": 115082,
+      "skill_code": "SK-ENR-GEOGRAPHY-3E-TERRITORY-URBAN",
+      "published_version_id": 115084,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108630,
+      "exercise_id": 115092,
+      "skill_code": "SK-ENR-GEOGRAPHY-4E-GLOBALIZATION-FLOW",
+      "published_version_id": 115094,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108642,
+      "exercise_id": 115102,
+      "skill_code": "SK-ENR-GEOGRAPHY-4E-GLOBALIZATION-FLOW",
+      "published_version_id": 115104,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108654,
+      "exercise_id": 115112,
+      "skill_code": "SK-ENR-GEOGRAPHY-4E-GLOBALIZATION-INTEGRATION",
+      "published_version_id": 115114,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108650,
+      "exercise_id": 115122,
+      "skill_code": "SK-ENR-GEOGRAPHY-4E-GLOBALIZATION-INTEGRATION",
+      "published_version_id": 115124,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108662,
+      "exercise_id": 115132,
+      "skill_code": "SK-ENR-GEOGRAPHY-4E-GLOBALIZATION-MAP",
+      "published_version_id": 115134,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108658,
+      "exercise_id": 115142,
+      "skill_code": "SK-ENR-GEOGRAPHY-4E-GLOBALIZATION-MARITIME",
+      "published_version_id": 115144,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108694,
+      "exercise_id": 115156,
+      "skill_code": "SK-ENR-GEOGRAPHY-4E-GLOBALIZATION-MARITIME",
+      "published_version_id": 115158,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108666,
+      "exercise_id": 115166,
+      "skill_code": "SK-ENR-GEOGRAPHY-4E-MOBILITY-CAUSE",
+      "published_version_id": 115168,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108690,
+      "exercise_id": 115176,
+      "skill_code": "SK-ENR-GEOGRAPHY-4E-MOBILITY-CAUSE",
+      "published_version_id": 115178,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108670,
+      "exercise_id": 115186,
+      "skill_code": "SK-ENR-GEOGRAPHY-4E-MOBILITY-EFFECT",
+      "published_version_id": 115188,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108682,
+      "exercise_id": 115196,
+      "skill_code": "SK-ENR-GEOGRAPHY-4E-MOBILITY-MAP",
+      "published_version_id": 115198,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108674,
+      "exercise_id": 115210,
+      "skill_code": "SK-ENR-GEOGRAPHY-4E-MOBILITY-MAP",
+      "published_version_id": 115212,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108706,
+      "exercise_id": 115220,
+      "skill_code": "SK-ENR-GEOGRAPHY-4E-MOBILITY-MIGRATION",
+      "published_version_id": 115222,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108714,
+      "exercise_id": 115230,
+      "skill_code": "SK-ENR-GEOGRAPHY-4E-MOBILITY-MIGRATION",
+      "published_version_id": 115232,
+      "production_enabled": true
+    },
+    {
+      "version_id": 104718,
+      "exercise_id": 115240,
+      "skill_code": "SK-ENR-GEOGRAPHY-4E-URBANIZATION-GROWTH",
+      "published_version_id": 115242,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108738,
+      "exercise_id": 115250,
+      "skill_code": "SK-ENR-GEOGRAPHY-4E-URBANIZATION-GROWTH",
+      "published_version_id": 115252,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108730,
+      "exercise_id": 115260,
+      "skill_code": "SK-ENR-GEOGRAPHY-4E-URBANIZATION-INEQUALITY",
+      "published_version_id": 115262,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108726,
+      "exercise_id": 115270,
+      "skill_code": "SK-ENR-GEOGRAPHY-4E-URBANIZATION-LANDSCAPE",
+      "published_version_id": 115272,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108742,
+      "exercise_id": 115284,
+      "skill_code": "SK-ENR-GEOGRAPHY-4E-URBANIZATION-LANDSCAPE",
+      "published_version_id": 115286,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108750,
+      "exercise_id": 115294,
+      "skill_code": "SK-ENR-GEOGRAPHY-4E-URBANIZATION-METROPOLIZATION",
+      "published_version_id": 115296,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108758,
+      "exercise_id": 115304,
+      "skill_code": "SK-ENR-GEOGRAPHY-4E-URBANIZATION-METROPOLIZATION",
+      "published_version_id": 115306,
+      "production_enabled": true
+    },
+    {
+      "version_id": 114842,
+      "exercise_id": 115314,
+      "skill_code": "SK-ENR-HISTORY-3E-AFTER1945-COLD_WAR",
+      "published_version_id": 115316,
+      "production_enabled": true
+    },
+    {
+      "version_id": 107914,
+      "exercise_id": 115324,
+      "skill_code": "SK-ENR-HISTORY-3E-AFTER1945-COLD_WAR",
+      "published_version_id": 115326,
+      "production_enabled": true
+    },
+    {
+      "version_id": 107918,
+      "exercise_id": 115334,
+      "skill_code": "SK-ENR-HISTORY-3E-AFTER1945-DECOLONIZATION",
+      "published_version_id": 115336,
+      "production_enabled": true
+    },
+    {
+      "version_id": 107922,
+      "exercise_id": 115344,
+      "skill_code": "SK-ENR-HISTORY-3E-AFTER1945-DECOLONIZATION",
+      "published_version_id": 115346,
+      "production_enabled": true
+    },
+    {
+      "version_id": 107906,
+      "exercise_id": 115354,
+      "skill_code": "SK-ENR-HISTORY-3E-AFTER1945-EUROPE",
+      "published_version_id": 115356,
+      "production_enabled": true
+    },
+    {
+      "version_id": 107926,
+      "exercise_id": 115368,
+      "skill_code": "SK-ENR-HISTORY-3E-AFTER1945-EUROPE",
+      "published_version_id": 115370,
+      "production_enabled": true
+    },
+    {
+      "version_id": 109262,
+      "exercise_id": 115378,
+      "skill_code": "SK-ENR-HISTORY-3E-AFTER1945-NEW_CONFLICTS",
+      "published_version_id": 115380,
+      "production_enabled": true
+    },
+    {
+      "version_id": 114846,
+      "exercise_id": 115392,
+      "skill_code": "SK-ENR-HISTORY-3E-AFTER1945-NEW_CONFLICTS",
+      "published_version_id": 115394,
+      "production_enabled": true
+    },
+    {
+      "version_id": 107938,
+      "exercise_id": 115402,
+      "skill_code": "SK-ENR-HISTORY-3E-AFTER1945-SOURCE",
+      "published_version_id": 115404,
+      "production_enabled": true
+    },
+    {
+      "version_id": 107930,
+      "exercise_id": 115412,
+      "skill_code": "SK-ENR-HISTORY-3E-AFTER1945-SOURCE",
+      "published_version_id": 115414,
+      "production_enabled": true
+    },
+    {
+      "version_id": 107934,
+      "exercise_id": 115422,
+      "skill_code": "SK-ENR-HISTORY-3E-FRANCE-FIFTH",
+      "published_version_id": 115424,
+      "production_enabled": true
+    },
+    {
+      "version_id": 109266,
+      "exercise_id": 115436,
+      "skill_code": "SK-ENR-HISTORY-3E-FRANCE-FIFTH",
+      "published_version_id": 115438,
+      "production_enabled": true
+    },
+    {
+      "version_id": 107950,
+      "exercise_id": 115453,
+      "skill_code": "SK-ENR-HISTORY-3E-FRANCE-LIBERATION",
+      "published_version_id": 115455,
+      "production_enabled": true
+    },
+    {
+      "version_id": 107958,
+      "exercise_id": 115463,
+      "skill_code": "SK-ENR-HISTORY-3E-FRANCE-LIBERATION",
+      "published_version_id": 115465,
+      "production_enabled": true
+    },
+    {
+      "version_id": 107954,
+      "exercise_id": 115473,
+      "skill_code": "SK-ENR-HISTORY-3E-FRANCE-POLITICS",
+      "published_version_id": 115475,
+      "production_enabled": true
+    },
+    {
+      "version_id": 107966,
+      "exercise_id": 115483,
+      "skill_code": "SK-ENR-HISTORY-3E-FRANCE-POLITICS",
+      "published_version_id": 115485,
+      "production_enabled": true
+    },
+    {
+      "version_id": 107974,
+      "exercise_id": 115493,
+      "skill_code": "SK-ENR-HISTORY-3E-FRANCE-SOCIETY",
+      "published_version_id": 115495,
+      "production_enabled": true
+    },
+    {
+      "version_id": 107982,
+      "exercise_id": 115503,
+      "skill_code": "SK-ENR-HISTORY-3E-FRANCE-SOCIETY",
+      "published_version_id": 115505,
+      "production_enabled": true
+    },
+    {
+      "version_id": 107990,
+      "exercise_id": 115513,
+      "skill_code": "SK-ENR-HISTORY-3E-FRANCE-WOMEN",
+      "published_version_id": 115515,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108002,
+      "exercise_id": 115523,
+      "skill_code": "SK-ENR-HISTORY-3E-FRANCE-WOMEN",
+      "published_version_id": 115525,
+      "production_enabled": true
+    },
+    {
+      "version_id": 107998,
+      "exercise_id": 115533,
+      "skill_code": "SK-ENR-HISTORY-3E-HISTREP-DATE",
+      "published_version_id": 115535,
+      "production_enabled": true
+    },
+    {
+      "version_id": 107994,
+      "exercise_id": 115543,
+      "skill_code": "SK-ENR-HISTORY-3E-HISTREP-DATE",
+      "published_version_id": 115545,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108006,
+      "exercise_id": 115553,
+      "skill_code": "SK-ENR-HISTORY-3E-HISTREP-LINK",
+      "published_version_id": 115555,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108022,
+      "exercise_id": 115567,
+      "skill_code": "SK-ENR-HISTORY-3E-HISTREP-LINK",
+      "published_version_id": 115569,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108010,
+      "exercise_id": 115577,
+      "skill_code": "SK-ENR-HISTORY-3E-HISTREP-ORDER",
+      "published_version_id": 115579,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108014,
+      "exercise_id": 115591,
+      "skill_code": "SK-ENR-HISTORY-3E-HISTREP-ORDER",
+      "published_version_id": 115593,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108026,
+      "exercise_id": 115605,
+      "skill_code": "SK-ENR-HISTORY-3E-HISTREP-PERIODIZE",
+      "published_version_id": 115607,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108018,
+      "exercise_id": 115619,
+      "skill_code": "SK-ENR-HISTORY-3E-HISTREP-PERIODIZE",
+      "published_version_id": 115621,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108078,
+      "exercise_id": 115633,
+      "skill_code": "SK-ENR-HISTORY-3E-WARS-GENOCIDE",
+      "published_version_id": 115635,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108046,
+      "exercise_id": 115643,
+      "skill_code": "SK-ENR-HISTORY-3E-WARS-GENOCIDE",
+      "published_version_id": 115645,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108038,
+      "exercise_id": 115653,
+      "skill_code": "SK-ENR-HISTORY-3E-WARS-SOURCE",
+      "published_version_id": 115655,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108050,
+      "exercise_id": 115663,
+      "skill_code": "SK-ENR-HISTORY-3E-WARS-SOURCE",
+      "published_version_id": 115665,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108042,
+      "exercise_id": 115673,
+      "skill_code": "SK-ENR-HISTORY-3E-WARS-TOTALITARIAN",
+      "published_version_id": 115675,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108062,
+      "exercise_id": 115687,
+      "skill_code": "SK-ENR-HISTORY-3E-WARS-TOTALITARIAN",
+      "published_version_id": 115689,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108054,
+      "exercise_id": 115697,
+      "skill_code": "SK-ENR-HISTORY-3E-WARS-WWI",
+      "published_version_id": 115699,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108058,
+      "exercise_id": 115711,
+      "skill_code": "SK-ENR-HISTORY-3E-WARS-WWI",
+      "published_version_id": 115713,
+      "production_enabled": true
+    },
+    {
+      "version_id": 109254,
+      "exercise_id": 115725,
+      "skill_code": "SK-ENR-HISTORY-3E-WARS-WWII",
+      "published_version_id": 115727,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108066,
+      "exercise_id": 115735,
+      "skill_code": "SK-ENR-HISTORY-3E-WARS-WWII",
+      "published_version_id": 115737,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108778,
+      "exercise_id": 115745,
+      "skill_code": "SK-ENR-HISTORY-4E-18TH-ENLIGHTENMENT",
+      "published_version_id": 115747,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108762,
+      "exercise_id": 115759,
+      "skill_code": "SK-ENR-HISTORY-4E-18TH-ENLIGHTENMENT",
+      "published_version_id": 115761,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108770,
+      "exercise_id": 115769,
+      "skill_code": "SK-ENR-HISTORY-4E-18TH-REVOLUTION",
+      "published_version_id": 115771,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108782,
+      "exercise_id": 115779,
+      "skill_code": "SK-ENR-HISTORY-4E-18TH-REVOLUTION",
+      "published_version_id": 115781,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108794,
+      "exercise_id": 115789,
+      "skill_code": "SK-ENR-HISTORY-4E-18TH-SOURCE",
+      "published_version_id": 115791,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108798,
+      "exercise_id": 115803,
+      "skill_code": "SK-ENR-HISTORY-4E-18TH-TRADE",
+      "published_version_id": 115805,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108806,
+      "exercise_id": 115813,
+      "skill_code": "SK-ENR-HISTORY-4E-18TH-TRADE",
+      "published_version_id": 115815,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108826,
+      "exercise_id": 115827,
+      "skill_code": "SK-ENR-HISTORY-4E-19TH-COLONIZATION",
+      "published_version_id": 115829,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108810,
+      "exercise_id": 115837,
+      "skill_code": "SK-ENR-HISTORY-4E-19TH-COLONIZATION",
+      "published_version_id": 115839,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108822,
+      "exercise_id": 115847,
+      "skill_code": "SK-ENR-HISTORY-4E-19TH-INDUSTRIALIZATION",
+      "published_version_id": 115849,
+      "production_enabled": true
+    },
+    {
+      "version_id": 104710,
+      "exercise_id": 115857,
+      "skill_code": "SK-ENR-HISTORY-4E-19TH-INDUSTRIALIZATION",
+      "published_version_id": 115859,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108830,
+      "exercise_id": 115867,
+      "skill_code": "SK-ENR-HISTORY-4E-19TH-MIGRATION",
+      "published_version_id": 115869,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108846,
+      "exercise_id": 115881,
+      "skill_code": "SK-ENR-HISTORY-4E-19TH-MIGRATION",
+      "published_version_id": 115883,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108834,
+      "exercise_id": 115891,
+      "skill_code": "SK-ENR-HISTORY-4E-19TH-SOCIETY",
+      "published_version_id": 115893,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108838,
+      "exercise_id": 115901,
+      "skill_code": "SK-ENR-HISTORY-4E-19TH-SOCIETY",
+      "published_version_id": 115903,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108854,
+      "exercise_id": 115911,
+      "skill_code": "SK-ENR-HISTORY-4E-19TH-SOURCE",
+      "published_version_id": 115913,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108842,
+      "exercise_id": 115921,
+      "skill_code": "SK-ENR-HISTORY-4E-19TH-SOURCE",
+      "published_version_id": 115923,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108866,
+      "exercise_id": 115931,
+      "skill_code": "SK-ENR-HISTORY-4E-FRANCE-CHRONOLOGY",
+      "published_version_id": 115933,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108850,
+      "exercise_id": 115941,
+      "skill_code": "SK-ENR-HISTORY-4E-FRANCE-CHRONOLOGY",
+      "published_version_id": 115943,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108874,
+      "exercise_id": 115951,
+      "skill_code": "SK-ENR-HISTORY-4E-FRANCE-CITIZENSHIP",
+      "published_version_id": 115953,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108882,
+      "exercise_id": 115961,
+      "skill_code": "SK-ENR-HISTORY-4E-FRANCE-CITIZENSHIP",
+      "published_version_id": 115963,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108858,
+      "exercise_id": 115971,
+      "skill_code": "SK-ENR-HISTORY-4E-FRANCE-CULTURE",
+      "published_version_id": 115973,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108886,
+      "exercise_id": 115985,
+      "skill_code": "SK-ENR-HISTORY-4E-FRANCE-REGIMES",
+      "published_version_id": 115987,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108878,
+      "exercise_id": 115999,
+      "skill_code": "SK-ENR-HISTORY-4E-FRANCE-REGIMES",
+      "published_version_id": 116001,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108890,
+      "exercise_id": 116009,
+      "skill_code": "SK-ENR-HISTORY-4E-FRANCE-SOCIETY",
+      "published_version_id": 116011,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108906,
+      "exercise_id": 116019,
+      "skill_code": "SK-ENR-HISTORY-4E-FRANCE-SOCIETY",
+      "published_version_id": 116021,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108342,
+      "exercise_id": 116032,
+      "skill_code": "SK-ENR-SVT-3E-CELL-OBSERVE",
+      "published_version_id": 116034,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108322,
+      "exercise_id": 116042,
+      "skill_code": "SK-ENR-SVT-3E-CELL-OBSERVE",
+      "published_version_id": 116044,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108334,
+      "exercise_id": 116056,
+      "skill_code": "SK-ENR-SVT-3E-CELL-ORGANIZE",
+      "published_version_id": 116058,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108350,
+      "exercise_id": 116066,
+      "skill_code": "SK-ENR-SVT-3E-CELL-ORGANIZE",
+      "published_version_id": 116068,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108330,
+      "exercise_id": 116076,
+      "skill_code": "SK-ENR-SVT-3E-GENETICS-ALLELE",
+      "published_version_id": 116078,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108358,
+      "exercise_id": 116090,
+      "skill_code": "SK-ENR-SVT-3E-GENETICS-ALLELE",
+      "published_version_id": 116092,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108346,
+      "exercise_id": 116100,
+      "skill_code": "SK-ENR-SVT-3E-GENETICS-EVOLUTION",
+      "published_version_id": 116102,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108326,
+      "exercise_id": 116110,
+      "skill_code": "SK-ENR-SVT-3E-GENETICS-EVOLUTION",
+      "published_version_id": 116112,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108386,
+      "exercise_id": 116125,
+      "skill_code": "SK-ENR-SVT-3E-GENETICS-MUTATION",
+      "published_version_id": 116127,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108382,
+      "exercise_id": 116139,
+      "skill_code": "SK-ENR-SVT-3E-GENETICS-MUTATION",
+      "published_version_id": 116141,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108370,
+      "exercise_id": 116153,
+      "skill_code": "SK-ENR-SVT-3E-GENETICS-TRANSMISSION",
+      "published_version_id": 116155,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108378,
+      "exercise_id": 116168,
+      "skill_code": "SK-ENR-SVT-3E-GENETICS-TRANSMISSION",
+      "published_version_id": 116170,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108394,
+      "exercise_id": 116182,
+      "skill_code": "SK-ENR-SVT-3E-HEALTH-CHOICE",
+      "published_version_id": 116184,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108390,
+      "exercise_id": 116192,
+      "skill_code": "SK-ENR-SVT-3E-HEALTH-CHOICE",
+      "published_version_id": 116194,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108402,
+      "exercise_id": 116202,
+      "skill_code": "SK-ENR-SVT-3E-HEALTH-MICROBIOTA",
+      "published_version_id": 116204,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108410,
+      "exercise_id": 116216,
+      "skill_code": "SK-ENR-SVT-3E-HEALTH-MICROBIOTA",
+      "published_version_id": 116218,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108414,
+      "exercise_id": 116230,
+      "skill_code": "SK-ENR-SVT-3E-HEALTH-PATHOGEN",
+      "published_version_id": 116232,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108426,
+      "exercise_id": 116240,
+      "skill_code": "SK-ENR-SVT-3E-HEALTH-PATHOGEN",
+      "published_version_id": 116242,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108422,
+      "exercise_id": 116250,
+      "skill_code": "SK-ENR-SVT-3E-HEALTH-VACCINATION",
+      "published_version_id": 116252,
+      "production_enabled": true
+    },
+    {
+      "version_id": 109118,
+      "exercise_id": 116264,
+      "skill_code": "SK-ENR-SVT-4E-EARTH-MOTION",
+      "published_version_id": 116266,
+      "production_enabled": true
+    },
+    {
+      "version_id": 109106,
+      "exercise_id": 116274,
+      "skill_code": "SK-ENR-SVT-4E-EARTH-MOTION",
+      "published_version_id": 116276,
+      "production_enabled": true
+    },
+    {
+      "version_id": 109138,
+      "exercise_id": 116284,
+      "skill_code": "SK-ENR-SVT-4E-EARTH-PLATE",
+      "published_version_id": 116286,
+      "production_enabled": true
+    },
+    {
+      "version_id": 109122,
+      "exercise_id": 116294,
+      "skill_code": "SK-ENR-SVT-4E-EARTH-PLATE",
+      "published_version_id": 116296,
+      "production_enabled": true
+    },
+    {
+      "version_id": 109126,
+      "exercise_id": 116304,
+      "skill_code": "SK-ENR-SVT-4E-EARTH-RISK",
+      "published_version_id": 116306,
+      "production_enabled": true
+    },
+    {
+      "version_id": 109130,
+      "exercise_id": 116318,
+      "skill_code": "SK-ENR-SVT-4E-EARTH-VOLCANO",
+      "published_version_id": 116320,
+      "production_enabled": true
+    },
+    {
+      "version_id": 109146,
+      "exercise_id": 116328,
+      "skill_code": "SK-ENR-SVT-4E-EARTH-VOLCANO",
+      "published_version_id": 116330,
+      "production_enabled": true
+    },
+    {
+      "version_id": 109142,
+      "exercise_id": 116338,
+      "skill_code": "SK-ENR-SVT-4E-GENETICS-CHROMOSOME",
+      "published_version_id": 116340,
+      "production_enabled": true
+    },
+    {
+      "version_id": 109150,
+      "exercise_id": 116352,
+      "skill_code": "SK-ENR-SVT-4E-GENETICS-CHROMOSOME",
+      "published_version_id": 116354,
+      "production_enabled": true
+    },
+    {
+      "version_id": 109162,
+      "exercise_id": 116366,
+      "skill_code": "SK-ENR-SVT-4E-GENETICS-DATA",
+      "published_version_id": 116368,
+      "production_enabled": true
+    },
+    {
+      "version_id": 109186,
+      "exercise_id": 116380,
+      "skill_code": "SK-ENR-SVT-4E-GENETICS-DATA",
+      "published_version_id": 116382,
+      "production_enabled": true
+    },
+    {
+      "version_id": 109178,
+      "exercise_id": 116395,
+      "skill_code": "SK-ENR-SVT-4E-GENETICS-HEREDITY",
+      "published_version_id": 116397,
+      "production_enabled": true
+    },
+    {
+      "version_id": 109166,
+      "exercise_id": 116405,
+      "skill_code": "SK-ENR-SVT-4E-GENETICS-HEREDITY",
+      "published_version_id": 116407,
+      "production_enabled": true
+    },
+    {
+      "version_id": 109182,
+      "exercise_id": 116419,
+      "skill_code": "SK-ENR-SVT-4E-GENETICS-REPRODUCTION",
+      "published_version_id": 116421,
+      "production_enabled": true
+    },
+    {
+      "version_id": 109174,
+      "exercise_id": 116429,
+      "skill_code": "SK-ENR-SVT-4E-GENETICS-REPRODUCTION",
+      "published_version_id": 116431,
+      "production_enabled": true
+    },
+    {
+      "version_id": 109202,
+      "exercise_id": 116439,
+      "skill_code": "SK-ENR-SVT-4E-GENETICS-VARIATION",
+      "published_version_id": 116441,
+      "production_enabled": true
+    },
+    {
+      "version_id": 107766,
+      "exercise_id": 116449,
+      "skill_code": "SK-GEOGRAPHY-3E-DEVELOPMENT",
+      "published_version_id": 116451,
+      "production_enabled": true
+    },
+    {
+      "version_id": 107758,
+      "exercise_id": 116459,
+      "skill_code": "SK-GEOGRAPHY-3E-DEVELOPMENT",
+      "published_version_id": 116461,
+      "production_enabled": true
+    },
+    {
+      "version_id": 107898,
+      "exercise_id": 116469,
+      "skill_code": "SK-GEOGRAPHY-3E-TERRITORY",
+      "published_version_id": 116471,
+      "production_enabled": true
+    },
+    {
+      "version_id": 107910,
+      "exercise_id": 116479,
+      "skill_code": "SK-GEOGRAPHY-3E-TERRITORY",
+      "published_version_id": 116481,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108678,
+      "exercise_id": 116489,
+      "skill_code": "SK-GEOGRAPHY-4E-GLOBALIZATION",
+      "published_version_id": 116491,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108686,
+      "exercise_id": 116499,
+      "skill_code": "SK-GEOGRAPHY-4E-GLOBALIZATION",
+      "published_version_id": 116501,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108774,
+      "exercise_id": 116509,
+      "skill_code": "SK-GEOGRAPHY-4E-URBANIZATION",
+      "published_version_id": 116511,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108786,
+      "exercise_id": 116519,
+      "skill_code": "SK-GEOGRAPHY-4E-URBANIZATION",
+      "published_version_id": 116521,
+      "production_enabled": true
+    },
+    {
+      "version_id": 107942,
+      "exercise_id": 116529,
+      "skill_code": "SK-HISTORY-3E-AFTER1945",
+      "published_version_id": 116531,
+      "production_enabled": true
+    },
+    {
+      "version_id": 107962,
+      "exercise_id": 116539,
+      "skill_code": "SK-HISTORY-3E-AFTER1945",
+      "published_version_id": 116541,
+      "production_enabled": true
+    },
+    {
+      "version_id": 107986,
+      "exercise_id": 116549,
+      "skill_code": "SK-HISTORY-3E-FRANCE",
+      "published_version_id": 116551,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108070,
+      "exercise_id": 116559,
+      "skill_code": "SK-HISTORY-3E-WARS",
+      "published_version_id": 116561,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108802,
+      "exercise_id": 116569,
+      "skill_code": "SK-HISTORY-4E-18TH",
+      "published_version_id": 116571,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108814,
+      "exercise_id": 116579,
+      "skill_code": "SK-HISTORY-4E-18TH",
+      "published_version_id": 116581,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108862,
+      "exercise_id": 116589,
+      "skill_code": "SK-HISTORY-4E-19TH",
+      "published_version_id": 116591,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108870,
+      "exercise_id": 116599,
+      "skill_code": "SK-HISTORY-4E-19TH",
+      "published_version_id": 116601,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108902,
+      "exercise_id": 116609,
+      "skill_code": "SK-HISTORY-4E-FRANCE",
+      "published_version_id": 116611,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108922,
+      "exercise_id": 116619,
+      "skill_code": "SK-HISTORY-4E-FRANCE",
+      "published_version_id": 116621,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108374,
+      "exercise_id": 116629,
+      "skill_code": "SK-SVT-3E-GENETICS",
+      "published_version_id": 116631,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108406,
+      "exercise_id": 116643,
+      "skill_code": "SK-SVT-3E-GENETICS",
+      "published_version_id": 116645,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108418,
+      "exercise_id": 116658,
+      "skill_code": "SK-SVT-3E-HEALTH",
+      "published_version_id": 116660,
+      "production_enabled": true
+    },
+    {
+      "version_id": 108434,
+      "exercise_id": 116672,
+      "skill_code": "SK-SVT-3E-HEALTH",
+      "published_version_id": 116674,
+      "production_enabled": true
+    },
+    {
+      "version_id": 109170,
+      "exercise_id": 116682,
+      "skill_code": "SK-SVT-4E-EARTH",
+      "published_version_id": 116684,
+      "production_enabled": true
+    },
+    {
+      "version_id": 109158,
+      "exercise_id": 116696,
+      "skill_code": "SK-SVT-4E-EARTH",
+      "published_version_id": 116698,
+      "production_enabled": true
+    },
+    {
+      "version_id": 109194,
+      "exercise_id": 116706,
+      "skill_code": "SK-SVT-4E-GENETICS",
+      "published_version_id": 116708,
+      "production_enabled": true
+    },
+    {
+      "version_id": 109190,
+      "exercise_id": 116720,
+      "skill_code": "SK-SVT-4E-GENETICS",
+      "published_version_id": 116722,
+      "production_enabled": true
+    }
+  ],
+  "execution_manifest_path": "resources\\content\\quality\\lcai_0012d4_ai_controlled_publication_manifest.json"
+}

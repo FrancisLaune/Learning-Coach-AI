@@ -1,0 +1,435 @@
+{
+  "queue_size": 16,
+  "unique_skills": 16,
+  "duplicate_skills": 0,
+  "classifications": {
+    "SAFE_FOR_HUMAN_REVIEW": 0,
+    "REQUIRES_PEDAGOGICAL_JUDGEMENT": 16,
+    "TECHNICALLY_BLOCKED": 0
+  },
+  "score_distribution": {
+    ">=90": 0,
+    "80-89": 0,
+    "70-79": 0,
+    "60-69": 0,
+    "<60": 16
+  },
+  "quality_status_distribution": {
+    "REVIEW": 16
+  },
+  "by_grade": {
+    "FR-3E": 9,
+    "FR-4E": 7
+  },
+  "by_subject": {
+    "SVT": 3,
+    "GEOGRAPHY": 9,
+    "HISTORY": 4
+  },
+  "by_content_type": {
+    "assessment": 8,
+    "practice": 8
+  },
+  "entries": [
+    {
+      "version_id": 108430,
+      "grade": "FR-3E",
+      "subject": "SVT",
+      "skill": "SK-ENR-SVT-3E-HEALTH-VACCINATION",
+      "content_type": "assessment",
+      "quality_status": "REVIEW",
+      "quality_score": 58,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 58/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 108702,
+      "grade": "FR-4E",
+      "subject": "GEOGRAPHY",
+      "skill": "SK-ENR-GEOGRAPHY-4E-GLOBALIZATION-MAP",
+      "content_type": "practice",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 107750,
+      "grade": "FR-3E",
+      "subject": "GEOGRAPHY",
+      "skill": "SK-ENR-GEOGRAPHY-3E-DEVELOPMENT-EFFECT",
+      "content_type": "practice",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 108698,
+      "grade": "FR-4E",
+      "subject": "GEOGRAPHY",
+      "skill": "SK-ENR-GEOGRAPHY-4E-MOBILITY-EFFECT",
+      "content_type": "assessment",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 107786,
+      "grade": "FR-3E",
+      "subject": "GEOGRAPHY",
+      "skill": "SK-ENR-GEOGRAPHY-3E-EU-FRANCE",
+      "content_type": "assessment",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 108734,
+      "grade": "FR-4E",
+      "subject": "GEOGRAPHY",
+      "skill": "SK-ENR-GEOGRAPHY-4E-URBANIZATION-INEQUALITY",
+      "content_type": "assessment",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 107802,
+      "grade": "FR-3E",
+      "subject": "GEOGRAPHY",
+      "skill": "SK-ENR-GEOGRAPHY-3E-GEOSCALE-COMPARE",
+      "content_type": "assessment",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 108818,
+      "grade": "FR-4E",
+      "subject": "HISTORY",
+      "skill": "SK-ENR-HISTORY-4E-18TH-SOURCE",
+      "content_type": "practice",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 107834,
+      "grade": "FR-3E",
+      "subject": "GEOGRAPHY",
+      "skill": "SK-ENR-GEOGRAPHY-3E-GEOSCALE-GLOBAL",
+      "content_type": "assessment",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 108894,
+      "grade": "FR-4E",
+      "subject": "HISTORY",
+      "skill": "SK-ENR-HISTORY-4E-FRANCE-CULTURE",
+      "content_type": "practice",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 107874,
+      "grade": "FR-3E",
+      "subject": "GEOGRAPHY",
+      "skill": "SK-ENR-GEOGRAPHY-3E-TERRITORY-MOBILITY",
+      "content_type": "practice",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 109154,
+      "grade": "FR-4E",
+      "subject": "SVT",
+      "skill": "SK-ENR-SVT-4E-EARTH-RISK",
+      "content_type": "practice",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 107894,
+      "grade": "FR-3E",
+      "subject": "GEOGRAPHY",
+      "skill": "SK-ENR-GEOGRAPHY-3E-TERRITORY-URBAN",
+      "content_type": "assessment",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 109198,
+      "grade": "FR-4E",
+      "subject": "SVT",
+      "skill": "SK-ENR-SVT-4E-GENETICS-VARIATION",
+      "content_type": "practice",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 107978,
+      "grade": "FR-3E",
+      "subject": "HISTORY",
+      "skill": "SK-HISTORY-3E-FRANCE",
+      "content_type": "assessment",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    },
+    {
+      "version_id": 108094,
+      "grade": "FR-3E",
+      "subject": "HISTORY",
+      "skill": "SK-HISTORY-3E-WARS",
+      "content_type": "practice",
+      "quality_status": "REVIEW",
+      "quality_score": 53,
+      "hard_gates": {
+        "structural_validity": true,
+        "answer_correctness": true,
+        "skill_alignment": true,
+        "grade_appropriateness": false,
+        "executability": true,
+        "duplicate_safety": true
+      },
+      "keep_for_review_reason": [
+        "Independent pedagogical review is still required."
+      ],
+      "deterministic_verification": null,
+      "recommended_decision": "KEEP_FOR_REVIEW",
+      "score_gte_80": false,
+      "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+      "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement."
+    }
+  ]
+}

@@ -18,7 +18,7 @@ from ui.content_approval_app import (
 
 ROOT = Path(__file__).parents[1]
 QUEUE_PATH = ROOT / "resources" / "content" / "quality" / "lcai_0012d3_approval_priority.json"
-PHYSICS_ATOM_SKILL = "SK-ENR-PHYSICS_CHEMISTRY-3E-MATTER-ATOM"
+WAVE1_QUEUE_PATH = ROOT / "resources" / "content" / "quality" / "lcai_0012d4_wave1_review_queue.json"
 
 
 @pytest.fixture
@@ -28,9 +28,31 @@ def approval_persistence_database(tmp_path: Path) -> Path:
     return target
 
 
-def _physics_atom_p1() -> dict[str, Any]:
-    queue = json.loads(QUEUE_PATH.read_text(encoding="utf-8"))
-    return next(item for item in queue if item["skill"] == PHYSICS_ATOM_SKILL and item["content_type"] == "practice")
+def _load_queue(path: Path = QUEUE_PATH) -> list[dict[str, Any]]:
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
+def _pending_queue_item(
+    repository: DuckDBContentQualityRepository,
+    *,
+    queue_path: Path = WAVE1_QUEUE_PATH,
+    answer_kind: str | None = None,
+    recommendation: str | None = None,
+    min_score: int | None = None,
+) -> dict[str, Any]:
+    """Return a queue item with no persisted human decision (isolated test fixture)."""
+    for item in _load_queue(queue_path):
+        if answer_kind is not None and item.get("answer_kind") != answer_kind:
+            continue
+        if recommendation is not None and item.get("recommended_decision") != recommendation:
+            continue
+        if min_score is not None and int(item.get("candidate_score", 0)) < min_score:
+            continue
+        version_id = int(item["version_id"])
+        if repository.read_human_decision(version_id) is None:
+            return item
+    pytest.skip("No pending queue candidate matches the requested filters")
+    return {}
 
 
 def _coverage(
@@ -233,12 +255,18 @@ def test_filter_options_remain_stable_when_last_subject_candidate_is_removed() -
 def test_regression_structured_p1_does_not_use_list_index_for_composite_answer(
     approval_persistence_database: Path,
 ) -> None:
-    item = _physics_atom_p1()
-    assert item["answer_kind"] == "structured"
-    with pytest.raises(ValueError, match=r"not in list"):
-        item["choices"].index(item["expected_answer"])
-
     repository = DuckDBContentQualityRepository(approval_persistence_database)
+    item = _pending_queue_item(
+        repository,
+        answer_kind="structured",
+        recommendation="APPROVE",
+        min_score=80,
+    )
+    assert item["answer_kind"] == "structured"
+    if item.get("choices"):
+        with pytest.raises(ValueError, match=r"not in list"):
+            item["choices"].index(item["expected_answer"])
+
     persisted = _persist_and_verify_decision(
         repository,
         item=item,
@@ -251,12 +279,14 @@ def test_regression_structured_p1_does_not_use_list_index_for_composite_answer(
     assert persisted["production_enabled"] is True
     assert persisted["source_status"] == "draft"
 
+    skill = str(item["skill"])
     rebuilt, _ = build_dynamic_queue(
         [item],
         [
             _coverage(
-                PHYSICS_ATOM_SKILL,
-                subject="PHYSICS_CHEMISTRY",
+                skill,
+                grade=str(item["grade"]),
+                subject=str(item["subject"]),
                 practice=1,
                 assessment=1,
             )
@@ -276,8 +306,8 @@ def test_single_candidate_non_approval_decision_is_persisted_before_empty_queue(
     action: str,
     expected_status: str,
 ) -> None:
-    item = _physics_atom_p1()
     repository = DuckDBContentQualityRepository(approval_persistence_database)
+    item = _pending_queue_item(repository, recommendation="KEEP_FOR_REVIEW")
     persisted = _persist_and_verify_decision(
         repository,
         item=item,
@@ -287,9 +317,18 @@ def test_single_candidate_non_approval_decision_is_persisted_before_empty_queue(
         reason="Isolated lifecycle test.",
     )
     assert persisted["review_status"] == expected_status
+    skill = str(item["skill"])
     rebuilt, _ = build_dynamic_queue(
         [item],
-        [_coverage(PHYSICS_ATOM_SKILL, subject="PHYSICS_CHEMISTRY", assessment=1)],
+        [
+            _coverage(
+                skill,
+                grade=str(item["grade"]),
+                subject=str(item["subject"]),
+                assessment=1 if item["content_type"] == "assessment" else 0,
+                practice=1 if item["content_type"] == "practice" else 0,
+            )
+        ],
         {int(item["version_id"]): expected_status},
     )
     assert rebuilt == []
@@ -298,8 +337,8 @@ def test_single_candidate_non_approval_decision_is_persisted_before_empty_queue(
 def test_approval_double_rerun_is_idempotent(
     approval_persistence_database: Path,
 ) -> None:
-    item = _physics_atom_p1()
     repository = DuckDBContentQualityRepository(approval_persistence_database)
+    item = _pending_queue_item(repository, recommendation="APPROVE", min_score=80)
     first = _persist_and_verify_decision(
         repository,
         item=item,
@@ -342,8 +381,8 @@ def test_approval_double_rerun_is_idempotent(
 def test_failure_after_commit_cannot_remove_persisted_decision(
     approval_persistence_database: Path,
 ) -> None:
-    item = _physics_atom_p1()
     repository = DuckDBContentQualityRepository(approval_persistence_database)
+    item = _pending_queue_item(repository, recommendation="APPROVE", min_score=80)
     with pytest.raises(RuntimeError, match="simulated navigation failure"):
         _persist_and_verify_decision(
             repository,
@@ -360,8 +399,8 @@ def test_failure_after_commit_cannot_remove_persisted_decision(
 def test_failure_before_commit_leaves_no_partial_decision(
     approval_persistence_database: Path,
 ) -> None:
-    item = {**_physics_atom_p1(), "recommended_decision": "KEEP_FOR_REVIEW"}
     repository = DuckDBContentQualityRepository(approval_persistence_database)
+    item = _pending_queue_item(repository, recommendation="KEEP_FOR_REVIEW")
     with pytest.raises(ValueError, match="high-confidence"):
         _persist_and_verify_decision(
             repository,

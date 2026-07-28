@@ -1,0 +1,452 @@
+[
+  {
+    "grade": "FR-4E",
+    "subject": "GEOGRAPHY",
+    "chapter": "CH-GEOGRAPHY-4E-GLOBALIZATION",
+    "skill": "SK-ENR-GEOGRAPHY-4E-GLOBALIZATION-FLOW",
+    "skill_name": "Identifier des flux mondialisés",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-3E",
+    "subject": "GEOGRAPHY",
+    "chapter": "CH-GEOGRAPHY-3E-TERRITORY",
+    "skill": "SK-ENR-GEOGRAPHY-3E-TERRITORY-MOBILITY",
+    "skill_name": "Expliquer des mobilités territoriales",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-4E",
+    "subject": "GEOGRAPHY",
+    "chapter": "CH-GEOGRAPHY-4E-GLOBALIZATION",
+    "skill": "SK-GEOGRAPHY-4E-GLOBALIZATION",
+    "skill_name": "Expliquer l'intégration différenciée des territoires",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-3E",
+    "subject": "GEOGRAPHY",
+    "chapter": "CH-GEOGRAPHY-3E-TERRITORY",
+    "skill": "SK-ENR-GEOGRAPHY-3E-TERRITORY-LOW_DENSITY",
+    "skill_name": "Analyser un espace de faible densité",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-4E",
+    "subject": "GEOGRAPHY",
+    "chapter": "CH-GEOGRAPHY-4E-URBANIZATION",
+    "skill": "SK-ENR-GEOGRAPHY-4E-URBANIZATION-LANDSCAPE",
+    "skill_name": "Interpréter un paysage urbain",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-3E",
+    "subject": "GEOGRAPHY",
+    "chapter": "CH-GEOGRAPHY-3E-GEOSCALE",
+    "skill": "SK-ENR-GEOGRAPHY-3E-GEOSCALE-NATIONAL",
+    "skill_name": "Changer vers l'échelle nationale",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-4E",
+    "subject": "GEOGRAPHY",
+    "chapter": "CH-GEOGRAPHY-4E-URBANIZATION",
+    "skill": "SK-ENR-GEOGRAPHY-4E-URBANIZATION-GROWTH",
+    "skill_name": "Décrire la croissance urbaine",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-3E",
+    "subject": "GEOGRAPHY",
+    "chapter": "CH-GEOGRAPHY-3E-DEVELOPMENT",
+    "skill": "SK-GEOGRAPHY-3E-DEVELOPMENT",
+    "skill_name": "Expliquer acteurs, objectifs et effets d'un aménagement",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-4E",
+    "subject": "GEOGRAPHY",
+    "chapter": "CH-GEOGRAPHY-4E-GLOBALIZATION",
+    "skill": "SK-ENR-GEOGRAPHY-4E-GLOBALIZATION-MAP",
+    "skill_name": "Construire une représentation de réseaux",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-3E",
+    "subject": "GEOGRAPHY",
+    "chapter": "CH-GEOGRAPHY-3E-TERRITORY",
+    "skill": "SK-ENR-GEOGRAPHY-3E-TERRITORY-MAP",
+    "skill_name": "Construire un croquis du territoire français",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-4E",
+    "subject": "GEOGRAPHY",
+    "chapter": "CH-GEOGRAPHY-4E-URBANIZATION",
+    "skill": "SK-ENR-GEOGRAPHY-4E-URBANIZATION-INEQUALITY",
+    "skill_name": "Analyser des inégalités urbaines",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-3E",
+    "subject": "GEOGRAPHY",
+    "chapter": "CH-GEOGRAPHY-3E-GEOSCALE",
+    "skill": "SK-ENR-GEOGRAPHY-3E-GEOSCALE-GLOBAL",
+    "skill_name": "Relier au contexte mondial",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-4E",
+    "subject": "GEOGRAPHY",
+    "chapter": "CH-GEOGRAPHY-4E-MOBILITY",
+    "skill": "SK-ENR-GEOGRAPHY-4E-MOBILITY-CAUSE",
+    "skill_name": "Distinguer causes de mobilité",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-3E",
+    "subject": "GEOGRAPHY",
+    "chapter": "CH-GEOGRAPHY-3E-DEVELOPMENT",
+    "skill": "SK-ENR-GEOGRAPHY-3E-DEVELOPMENT-PROJECT",
+    "skill_name": "Analyser objectifs et réalisation d'un projet",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-4E",
+    "subject": "GEOGRAPHY",
+    "chapter": "CH-GEOGRAPHY-4E-MOBILITY",
+    "skill": "SK-ENR-GEOGRAPHY-4E-MOBILITY-MAP",
+    "skill_name": "Lire une carte de flux",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-3E",
+    "subject": "GEOGRAPHY",
+    "chapter": "CH-GEOGRAPHY-3E-EU",
+    "skill": "SK-ENR-GEOGRAPHY-3E-EU-FRANCE",
+    "skill_name": "Expliquer la place de la France en Europe",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-4E",
+    "subject": "GEOGRAPHY",
+    "chapter": "CH-GEOGRAPHY-4E-MOBILITY",
+    "skill": "SK-ENR-GEOGRAPHY-4E-MOBILITY-EFFECT",
+    "skill_name": "Analyser des effets territoriaux",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-3E",
+    "subject": "GEOGRAPHY",
+    "chapter": "CH-GEOGRAPHY-3E-TERRITORY",
+    "skill": "SK-GEOGRAPHY-3E-TERRITORY",
+    "skill_name": "Analyser espaces urbains, productifs et de faible densité",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-4E",
+    "subject": "GEOGRAPHY",
+    "chapter": "CH-GEOGRAPHY-4E-URBANIZATION",
+    "skill": "SK-ENR-GEOGRAPHY-4E-URBANIZATION-METROPOLIZATION",
+    "skill_name": "Expliquer la métropolisation",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-3E",
+    "subject": "GEOGRAPHY",
+    "chapter": "CH-GEOGRAPHY-3E-DEVELOPMENT",
+    "skill": "SK-ENR-GEOGRAPHY-3E-DEVELOPMENT-CONFLICT",
+    "skill_name": "Expliquer un débat d'aménagement",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-4E",
+    "subject": "GEOGRAPHY",
+    "chapter": "CH-GEOGRAPHY-4E-MOBILITY",
+    "skill": "SK-ENR-GEOGRAPHY-4E-MOBILITY-MIGRATION",
+    "skill_name": "Expliquer un flux migratoire",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-3E",
+    "subject": "GEOGRAPHY",
+    "chapter": "CH-GEOGRAPHY-3E-GEOSCALE",
+    "skill": "SK-ENR-GEOGRAPHY-3E-GEOSCALE-EUROPEAN",
+    "skill_name": "Interpréter l'échelle européenne",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-4E",
+    "subject": "GEOGRAPHY",
+    "chapter": "CH-GEOGRAPHY-4E-URBANIZATION",
+    "skill": "SK-GEOGRAPHY-4E-URBANIZATION",
+    "skill_name": "Comparer des espaces et dynamiques urbaines",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-3E",
+    "subject": "GEOGRAPHY",
+    "chapter": "CH-GEOGRAPHY-3E-GEOSCALE",
+    "skill": "SK-ENR-GEOGRAPHY-3E-GEOSCALE-LOCAL",
+    "skill_name": "Analyser un phénomène à l'échelle locale",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-3E",
+    "subject": "GEOGRAPHY",
+    "chapter": "CH-GEOGRAPHY-3E-GEOSCALE",
+    "skill": "SK-ENR-GEOGRAPHY-3E-GEOSCALE-COMPARE",
+    "skill_name": "Expliquer ce que révèle chaque changement d'échelle",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-3E",
+    "subject": "GEOGRAPHY",
+    "chapter": "CH-GEOGRAPHY-3E-TERRITORY",
+    "skill": "SK-ENR-GEOGRAPHY-3E-TERRITORY-URBAN",
+    "skill_name": "Analyser les aires urbaines",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-3E",
+    "subject": "GEOGRAPHY",
+    "chapter": "CH-GEOGRAPHY-3E-DEVELOPMENT",
+    "skill": "SK-ENR-GEOGRAPHY-3E-DEVELOPMENT-EFFECT",
+    "skill_name": "Évaluer les effets territoriaux",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-3E",
+    "subject": "SVT",
+    "chapter": "CH-SVT-3E-GENETICS",
+    "skill": "SK-ENR-SVT-3E-GENETICS-ALLELE",
+    "skill_name": "Expliquer la diversité des allèles",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-4E",
+    "subject": "SVT",
+    "chapter": "CH-SVT-4E-EARTH",
+    "skill": "SK-ENR-SVT-4E-EARTH-RISK",
+    "skill_name": "Relier aléa, vulnérabilité et prévention",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-3E",
+    "subject": "SVT",
+    "chapter": "CH-SVT-3E-CELL",
+    "skill": "SK-ENR-SVT-3E-CELL-ORGANIZE",
+    "skill_name": "Relier cellule, tissu, organe et organisme",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-4E",
+    "subject": "SVT",
+    "chapter": "CH-SVT-4E-GENETICS",
+    "skill": "SK-ENR-SVT-4E-GENETICS-VARIATION",
+    "skill_name": "Expliquer une variation individuelle",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-3E",
+    "subject": "SVT",
+    "chapter": "CH-SVT-3E-HEALTH",
+    "skill": "SK-ENR-SVT-3E-HEALTH-PATHOGEN",
+    "skill_name": "Identifier contamination et infection",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-4E",
+    "subject": "SVT",
+    "chapter": "CH-SVT-4E-EARTH",
+    "skill": "SK-ENR-SVT-4E-EARTH-VOLCANO",
+    "skill_name": "Expliquer un volcanisme",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-3E",
+    "subject": "SVT",
+    "chapter": "CH-SVT-3E-HEALTH",
+    "skill": "SK-SVT-3E-HEALTH",
+    "skill_name": "Expliquer des réponses de l'organisme et des choix de santé",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-4E",
+    "subject": "SVT",
+    "chapter": "CH-SVT-4E-EARTH",
+    "skill": "SK-ENR-SVT-4E-EARTH-MOTION",
+    "skill_name": "Relier mouvements et phénomènes géologiques",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-3E",
+    "subject": "SVT",
+    "chapter": "CH-SVT-3E-HEALTH",
+    "skill": "SK-ENR-SVT-3E-HEALTH-VACCINATION",
+    "skill_name": "Expliquer le principe de vaccination",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-4E",
+    "subject": "SVT",
+    "chapter": "CH-SVT-4E-GENETICS",
+    "skill": "SK-SVT-4E-GENETICS",
+    "skill_name": "Relier reproduction, information héréditaire et diversité",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-3E",
+    "subject": "SVT",
+    "chapter": "CH-SVT-3E-GENETICS",
+    "skill": "SK-ENR-SVT-3E-GENETICS-MUTATION",
+    "skill_name": "Relier mutation et diversité",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-4E",
+    "subject": "SVT",
+    "chapter": "CH-SVT-4E-GENETICS",
+    "skill": "SK-ENR-SVT-4E-GENETICS-HEREDITY",
+    "skill_name": "Interpréter une transmission simple",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-3E",
+    "subject": "SVT",
+    "chapter": "CH-SVT-3E-CELL",
+    "skill": "SK-ENR-SVT-3E-CELL-OBSERVE",
+    "skill_name": "Interpréter une observation cellulaire",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-4E",
+    "subject": "SVT",
+    "chapter": "CH-SVT-4E-GENETICS",
+    "skill": "SK-ENR-SVT-4E-GENETICS-CHROMOSOME",
+    "skill_name": "Relier chromosome et information héréditaire",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-3E",
+    "subject": "SVT",
+    "chapter": "CH-SVT-3E-HEALTH",
+    "skill": "SK-ENR-SVT-3E-HEALTH-MICROBIOTA",
+    "skill_name": "Relier microbiote et santé",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-4E",
+    "subject": "SVT",
+    "chapter": "CH-SVT-4E-GENETICS",
+    "skill": "SK-ENR-SVT-4E-GENETICS-REPRODUCTION",
+    "skill_name": "Distinguer reproduction sexuée et asexuée",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-3E",
+    "subject": "SVT",
+    "chapter": "CH-SVT-3E-GENETICS",
+    "skill": "SK-ENR-SVT-3E-GENETICS-TRANSMISSION",
+    "skill_name": "Interpréter une transmission génétique",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-4E",
+    "subject": "SVT",
+    "chapter": "CH-SVT-4E-EARTH",
+    "skill": "SK-SVT-4E-EARTH",
+    "skill_name": "Expliquer des phénomènes géologiques et leurs risques",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-3E",
+    "subject": "SVT",
+    "chapter": "CH-SVT-3E-HEALTH",
+    "skill": "SK-ENR-SVT-3E-HEALTH-CHOICE",
+    "skill_name": "Évaluer un comportement de santé",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-4E",
+    "subject": "SVT",
+    "chapter": "CH-SVT-4E-EARTH",
+    "skill": "SK-ENR-SVT-4E-EARTH-PLATE",
+    "skill_name": "Identifier les principales plaques",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-3E",
+    "subject": "SVT",
+    "chapter": "CH-SVT-3E-GENETICS",
+    "skill": "SK-ENR-SVT-3E-GENETICS-EVOLUTION",
+    "skill_name": "Expliquer sélection et évolution",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-4E",
+    "subject": "SVT",
+    "chapter": "CH-SVT-4E-GENETICS",
+    "skill": "SK-ENR-SVT-4E-GENETICS-DATA",
+    "skill_name": "Exploiter des données génétiques",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  },
+  {
+    "grade": "FR-3E",
+    "subject": "SVT",
+    "chapter": "CH-SVT-3E-GENETICS",
+    "skill": "SK-SVT-3E-GENETICS",
+    "skill_name": "Relier information génétique, diversité et évolution",
+    "approved_practice": 0,
+    "approved_assessment": 0
+  }
+]

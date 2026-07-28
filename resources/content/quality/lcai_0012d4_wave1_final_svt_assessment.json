@@ -1,0 +1,80 @@
+{
+  "queue_record": {
+    "content_id": 114807,
+    "version_id": 114809,
+    "author": "gpt-5-mini",
+    "code": "DRAFT-0012C-AI-ENR-SVT-4E-EARTH-EARTHQUAKE-ASSESSMENT-20260727104454-1",
+    "grade": "FR-4E",
+    "subject": "SVT",
+    "chapter": "CH-SVT-4E-EARTH",
+    "skill": "SK-ENR-SVT-4E-EARTH-EARTHQUAKE",
+    "skill_name": "SK-ENR-SVT-4E-EARTH-EARTHQUAKE",
+    "content_type": "assessment",
+    "missing_slot": "assessment",
+    "difficulty": 2,
+    "question": "Document synthétique de classe (fictif) :\nLe 14 mai, un séisme a été ressenti dans la région de Saint‑Bois. Les observations indiquent que la rupture s’est produite sur une faille située à 8 km sous la surface. Le foyer (hypocentre) est donc à 8 km de profondeur. L’épicentre, point à la surface situé au‑dessus du foyer, se trouve à 12 km au nord du centre de Saint‑Bois. Dans les quartiers proches de l’épicentre, plusieurs maisons anciennes sont fortement endommagées. À 40 km de l’épicentre, on relève seulement des chutes d’objets et peu de dégâts matériels.\n\nConsignes :\n1) Explique l’origine du séisme (mécanisme) en indiquant ce qui provoque la rupture.\n2) Explique la différence entre foyer et épicentre.\n3) Explique pourquoi les dégâts sont plus importants près de l’épicentre et pourquoi l’intensité du séisme diminue à 40 km.\n\nRappels : tu n’as pas besoin de faire de calculs numériques; utilise uniquement les informations ci‑dessous et tes connaissances de 4e.",
+    "choices": [],
+    "expected_answer": "Critères observables de réussite (l'élève doit afficher au moins ces éléments, formulés librement) :\n- Mécanisme : mention de l'accumulation de contraintes le long d'une faille et d'une rupture brutale libérant de l'énergie.\n- Définition claire du foyer (point de rupture à l'intérieur de la Terre) et de l'épicentre (point à la surface situé au‑dessus du foyer).\n- Rôle des ondes sismiques : la rupture libère des ondes qui se propagent et provoquent le mouvement du sol.\n- Explication de la distribution des dégâts : amplitude des ondes plus forte près de l'épicentre et décroissance avec la distance ; la profondeur (8 km) signifie une propagation relativement courte vers la surface, renforçant l'effet local.\n- Cohérence : les phrases relient le mécanisme (rupture) aux observations (plus de dégâts près de l'épicentre, faibles dégâts à 40 km).\n\nBarème indicatif pour évaluation formative (facultatif pour le professeur) :\n- Mécanisme correctement expliqué : 3 points\n- Distinction foyer/épicentre correcte : 2 points\n- Rôle des ondes et explication de la décroissance des effets : 3 points\n- Cohérence et usage du vocabulaire demandé : 2 points",
+    "answer_kind": "open_response",
+    "explanation": "Modèle de réponse attendu (exemple, formulation libre acceptée) :\n« Un séisme se produit parce que des forces provoquent l'accumulation de contraintes le long d'une faille. Quand la résistance des roches est dépassée, il y a une rupture brusque de la faille qui libère de l'énergie : c'est le mécanisme du séisme. Le foyer (ou hypocentre) est le point à l'intérieur de la Terre où la rupture commence (ici à 8 km de profondeur) ; l'épicentre est sa projection à la surface (au‑dessus du foyer, ici à 12 km au nord de Saint‑Bois). La rupture libère des ondes sismiques qui se propagent dans toutes les directions et font vibrer le sol. Près de l'épicentre les ondes ont une plus grande amplitude et provoquent des secousses plus violentes, d'où des dégâts importants dans les quartiers proches. À 40 km, les ondes ont perdu de l'énergie en se propageant et le sol vibre moins, ce qui explique les dégâts faibles (quelques chutes d'objets). La profondeur du foyer (8 km) influence aussi la façon dont l'énergie atteint la surface : un foyer peu profond tend à produire des effets plus marqués localement. »\n\nComment utiliser les critères :\n- Pour être jugée satisfaisante, la réponse doit citer l'accumulation de contraintes et la rupture, définir correctement foyer et épicentre, et relier la présence d'ondes et la décroissance de leur amplitude à la distance. L'utilisation explicite des termes demandés améliore la notation. \n- Réponse incomplète typique (erreur ciblée) : confondre foyer et épicentre (penser que l'épicentre est à l'intérieur de la Terre) ; ou ne pas expliquer pourquoi l'intensité diminue avec la distance. Ces points correspondent à la misconception ciblée ci‑dessous.",
+    "automated_checks": {
+      "structural_validity": true,
+      "answer_correctness": true,
+      "skill_alignment": true,
+      "grade_appropriateness": false,
+      "executability": true,
+      "duplicate_safety": true
+    },
+    "deterministic_verification": null,
+    "quality_result": "REVIEW",
+    "quality_reason": [
+      "Independent pedagogical review is still required."
+    ],
+    "candidate_score": 53,
+    "hard_gates_passed": true,
+    "missing_coverage": true,
+    "recommended_decision": "KEEP_FOR_REVIEW",
+    "pipeline_version": "lcai-0012d4-wave1-v1",
+    "original_lcai_0012d_decision": "REVIEW",
+    "d4_wave1_selected": false
+  },
+  "audit": {
+    "version_id": 114809,
+    "grade": "FR-4E",
+    "subject": "SVT",
+    "skill": "SK-ENR-SVT-4E-EARTH-EARTHQUAKE",
+    "content_type": "assessment",
+    "quality_status": "REVIEW",
+    "quality_score": 53,
+    "hard_gates": {
+      "structural_validity": true,
+      "answer_correctness": true,
+      "skill_alignment": true,
+      "grade_appropriateness": false,
+      "executability": true,
+      "duplicate_safety": true
+    },
+    "keep_for_review_reason": [
+      "Independent pedagogical review is still required."
+    ],
+    "deterministic_verification": null,
+    "recommended_decision": "KEEP_FOR_REVIEW",
+    "score_gte_80": false,
+    "classification": "REQUIRES_PEDAGOGICAL_JUDGEMENT",
+    "human_approval_safe_because": "Score qualité 53/100 (< 80). Recommandation automatique : KEEP_FOR_REVIEW. Independent pedagogical review is still required. Pertinence du niveau scolaire non confirmée automatiquement.",
+    "generation_validation": {
+      "dimensions": {
+        "curriculum_alignment": 100,
+        "answer_integrity": 100,
+        "pedagogical_completeness": 100,
+        "traceability": 100,
+        "safety": 100
+      },
+      "score": 100,
+      "eligible_for_review": true,
+      "blocking_errors": []
+    },
+    "generation_issues": [],
+    "usable_for_slot": true
+  }
+}

@@ -7,6 +7,7 @@ from pathlib import Path
 from typing import Any
 
 from infrastructure.database.v2 import connect_v2
+from services.content.d4_review import eligible_for_explicit_pedagogical_confirmation
 from services.curriculum.services import ContentApprovalService, EditorialWorkflowService
 
 
@@ -14,7 +15,12 @@ class DuckDBContentQualityRepository:
     def __init__(self, database_path: Path | None = None) -> None:
         self.database_path = database_path
 
-    def draft_inventory(self) -> list[dict[str, Any]]:
+    def draft_inventory(
+        self,
+        *,
+        grade_codes: tuple[str, ...] | None = None,
+    ) -> list[dict[str, Any]]:
+        grades = grade_codes or ("FR-4E", "FR-3E")
         connection = connect_v2(self.database_path)
         try:
             rows = connection.execute(
@@ -42,12 +48,13 @@ class DuckDBContentQualityRepository:
                 JOIN school_levels sl ON sl.id=cc.grade_level_id
                 JOIN programs p ON p.id=cc.program_id
                 WHERE json_extract_string(cv.payload,'$.curriculum_target.grade_code')
-                      IN ('FR-4E','FR-3E')
+                      IN (SELECT unnest(?))
                   AND cc.stable_code=json_extract_string(cv.payload,'$.curriculum_target.chapter_code')
                   AND su.code=json_extract_string(cv.payload,'$.curriculum_target.subject_code')
                   AND s.code=json_extract_string(cv.payload,'$.curriculum_target.primary_skill_code')
                 GROUP BY ALL ORDER BY e.code
-                """
+                """,
+                [list(grades)],
             ).fetchall()
         finally:
             connection.close()
@@ -488,10 +495,37 @@ class DuckDBContentQualityRepository:
         approver: str,
         reason: str,
         pipeline_version: str = "lcai-0012d2-quality-v1",
+        human_pedagogical_confirmation: bool = False,
+        ai_controlled: bool = False,
+        ai_provenance: dict[str, Any] | None = None,
     ) -> int:
         """Publish a reviewed Draft as a new active projection, preserving its source."""
-        if item["recommended_decision"] != "APPROVE" or int(item["candidate_score"]) < 80:
-            raise ValueError("Only high-confidence queue candidates can be approved")
+        if ai_controlled:
+            from services.content.ai_controlled_publication import assess_publication_eligibility
+
+            eligibility = assess_publication_eligibility(item)
+            if not eligibility.eligible:
+                raise ValueError("; ".join(eligibility.reasons))
+            pipeline_version = str((ai_provenance or {}).get("review_pipeline", pipeline_version))
+        else:
+            if reviewer.strip() == approver.strip():
+                raise ValueError("Reviewer and approver must be distinct")
+            high_confidence = item["recommended_decision"] == "APPROVE" and int(item["candidate_score"]) >= 80
+            if high_confidence:
+                pass
+            elif eligible_for_explicit_pedagogical_confirmation(
+                item,
+                explicit_confirmation=human_pedagogical_confirmation,
+            ):
+                pipeline_version = str(item.get("pipeline_version", "lcai-0012d4-wave1-v1"))
+            elif human_pedagogical_confirmation:
+                if str(item.get("recommended_decision")) == "REJECT":
+                    raise ValueError("Rejected candidates cannot be approved")
+                if not item.get("hard_gates_passed"):
+                    raise ValueError("Hard gates must pass before pedagogical confirmation")
+                raise ValueError("Pedagogical confirmation requires an authorized review-campaign candidate")
+            else:
+                raise ValueError("Only high-confidence queue candidates can be approved")
         source_version_id = int(item["version_id"])
         connection = connect_v2(self.database_path)
         try:
@@ -535,6 +569,9 @@ class DuckDBContentQualityRepository:
             payload["publication_source_version_id"] = source_version_id
             payload["quality_pipeline_version"] = pipeline_version
             payload["approval_reason"] = reason
+            if ai_provenance:
+                payload["approval_type"] = ai_provenance.get("approval_type")
+                payload["ai_controlled_publication"] = ai_provenance
             chapter_code = payload["curriculum_target"]["chapter_code"]
             content_type = str(item["content_type"])
             legacy_type = {
@@ -709,7 +746,7 @@ class DuckDBContentQualityRepository:
                     detailed_question_id,
                     detailed_expected,
                     source[12],
-                    "Réponse validée par revue humaine.",
+                    "Réponse validée par validation IA contrôlée." if ai_controlled else "Réponse validée par revue humaine.",
                     "[]",
                     "[]",
                     json.dumps({"points": 1}),
@@ -792,3 +829,195 @@ class DuckDBContentQualityRepository:
             raise
         finally:
             connection.close()
+
+    def approve_for_ai_controlled_publication(
+        self,
+        *,
+        item: dict[str, Any],
+        review_model: str,
+        review_pipeline: str,
+        reason: str,
+    ) -> int:
+        from services.content.ai_controlled_publication import (
+            APPROVAL_TYPE_AI_CONTROLLED,
+            REVIEW_SOURCE_AI,
+            build_publication_provenance,
+        )
+
+        provenance = build_publication_provenance(
+            item,
+            review_model=review_model,
+            review_pipeline=review_pipeline,
+        )
+        return self.approve_for_production(
+            item=item,
+            reviewer=REVIEW_SOURCE_AI,
+            approver=APPROVAL_TYPE_AI_CONTROLLED,
+            reason=reason,
+            pipeline_version=review_pipeline,
+            ai_controlled=True,
+            ai_provenance=provenance,
+        )
+
+    def revoke_ai_controlled_publication(
+        self,
+        *,
+        source_version_id: int,
+        reason: str,
+        revoked_by: str,
+    ) -> dict[str, Any]:
+        """Disable production for an AI-controlled publication without deleting history."""
+        connection = connect_v2(self.database_path)
+        try:
+            connection.execute("BEGIN")
+            row = connection.execute(
+                """
+                SELECT cv.id, cv.payload, cpg.production_enabled
+                FROM content_versions cv
+                LEFT JOIN content_production_gates cpg ON cpg.content_version_id=cv.id
+                WHERE json_extract_string(cv.payload,'$.publication_source_version_id')=?
+                  AND cv.status='approved'
+                ORDER BY cv.id DESC
+                LIMIT 1
+                """,
+                [str(source_version_id)],
+            ).fetchone()
+            if row is None:
+                connection.execute("ROLLBACK")
+                return {"status": "NOT_FOUND", "source_version_id": source_version_id}
+            published_version_id = int(row[0])
+            payload = json.loads(str(row[1]))
+            if payload.get("approval_type") != "AI_CONTROLLED_APPROVAL":
+                connection.execute("ROLLBACK")
+                raise ValueError("Only AI-controlled publications can be revoked through this path.")
+            if row[2] is False:
+                connection.execute("ROLLBACK")
+                return {
+                    "status": "ALREADY_REVOKED",
+                    "source_version_id": source_version_id,
+                    "published_version_id": published_version_id,
+                }
+            payload["revocation"] = {
+                "reason": reason,
+                "revoked_by": revoked_by,
+                "revoked_at": "now",
+            }
+            connection.execute(
+                """
+                UPDATE content_production_gates
+                SET production_enabled=FALSE, reason=?, enabled_by=?
+                WHERE content_version_id=?
+                """,
+                [reason, revoked_by, published_version_id],
+            )
+            connection.execute(
+                "UPDATE content_versions SET payload=? WHERE id=?",
+                [json.dumps(payload), published_version_id],
+            )
+            connection.execute(
+                """
+                INSERT INTO content_status_events(
+                    content_version_id,previous_status,new_status,author
+                ) VALUES (?,'approved','archived',?)
+                """,
+                [published_version_id, revoked_by],
+            )
+            connection.execute("COMMIT")
+            return {
+                "status": "REVOKED",
+                "source_version_id": source_version_id,
+                "published_version_id": published_version_id,
+            }
+        except Exception:
+            connection.execute("ROLLBACK")
+            raise
+        finally:
+            connection.close()
+
+    def verify_draft_source_available(self, source_version_id: int) -> bool:
+        connection = connect_v2(self.database_path, read_only=True)
+        try:
+            row = connection.execute(
+                """
+                SELECT id FROM content_versions
+                WHERE id=? AND entity_type='exercise' AND status='draft'
+                """,
+                [source_version_id],
+            ).fetchone()
+            return row is not None
+        finally:
+            connection.close()
+
+    def list_ai_controlled_publications(
+        self,
+        *,
+        campaign_id: str | None = None,
+    ) -> list[dict[str, Any]]:
+        connection = connect_v2(self.database_path, read_only=True)
+        try:
+            rows = connection.execute(
+                """
+                SELECT cv.id,
+                       json_extract_string(cv.payload,'$.publication_source_version_id'),
+                       json_extract_string(cv.payload,'$.approval_type'),
+                       json_extract(cv.payload,'$.ai_controlled_publication'),
+                       cpg.production_enabled
+                FROM content_versions cv
+                LEFT JOIN content_production_gates cpg ON cpg.content_version_id=cv.id
+                WHERE cv.status='approved'
+                  AND cv.entity_type='exercise'
+                  AND json_extract_string(cv.payload,'$.approval_type')='AI_CONTROLLED_APPROVAL'
+                ORDER BY cv.id
+                """
+            ).fetchall()
+        finally:
+            connection.close()
+        output: list[dict[str, Any]] = []
+        for published_version_id, source_version_id, approval_type, provenance_raw, production_enabled in rows:
+            provenance = json.loads(str(provenance_raw)) if provenance_raw else {}
+            if campaign_id is not None and str(provenance.get("campaign_id", "")) != campaign_id:
+                continue
+            output.append(
+                {
+                    "published_version_id": int(published_version_id),
+                    "source_version_id": int(source_version_id),
+                    "approval_type": str(approval_type),
+                    "production_enabled": bool(production_enabled),
+                    "provenance": provenance,
+                }
+            )
+        return output
+
+    def revoke_ai_controlled_campaign(
+        self,
+        *,
+        campaign_id: str,
+        reason: str,
+        revoked_by: str,
+        dry_run: bool = True,
+    ) -> dict[str, Any]:
+        publications = self.list_ai_controlled_publications(campaign_id=campaign_id)
+        if dry_run:
+            return {
+                "mode": "DRY_RUN",
+                "campaign_id": campaign_id,
+                "publications_found": len(publications),
+                "source_version_ids": [item["source_version_id"] for item in publications],
+            }
+        revoked: list[dict[str, Any]] = []
+        for publication in publications:
+            if not publication.get("production_enabled"):
+                revoked.append({**publication, "status": "ALREADY_REVOKED"})
+                continue
+            result = self.revoke_ai_controlled_publication(
+                source_version_id=int(publication["source_version_id"]),
+                reason=reason,
+                revoked_by=revoked_by,
+            )
+            revoked.append(result)
+        return {
+            "mode": "EXECUTE",
+            "campaign_id": campaign_id,
+            "revoked_count": sum(1 for item in revoked if item.get("status") == "REVOKED"),
+            "results": revoked,
+        }
