@@ -140,7 +140,6 @@ def login_screen() -> None:
                     st.success(message)
                 else:
                     st.error(message)
-        _render_forgot_password_panel()
     with student_tab:
         with st.form("student_login"):
             student_name = st.text_input("Identifiant ou e-mail", key="student_login_name")
@@ -157,7 +156,7 @@ def login_screen() -> None:
                 st.rerun()
             st.error("Identifiant, e-mail ou mot de passe incorrect.")
         st.caption("Le compte Élève est créé et géré depuis l'espace Parent.")
-        _render_forgot_password_panel()
+    _render_forgot_password_panel()
 
 
 def render_revision_sheet(subject: str, chapter: str) -> None:
