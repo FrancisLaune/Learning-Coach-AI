@@ -218,3 +218,39 @@ feat(LCAI-0015A): complete parent and child authentication workflows
 - `tests/test_authentication_0015a.py` — 3 role-security tests
 
 **Tests executed (pre-commit):** 38 passed (auth subset); Ruff PASS; Mypy PASS; compileall PASS; startup PASS.
+
+---
+
+## LCAI-0017 SPECIFICATION COMPATIBILITY REVIEW
+
+**Reference:** `docs/phase3/LCAI-0017_V1_Professeur_Virtuel_Specification.docx` (review only — not implemented)
+
+| Verification point | Result | Notes |
+|---|---|---|
+| Parent/Child ownership model matches implementation | **PASS** | Spec §13: Parent configures/locks; Child uses own profile; cross-family denied. Maps to `AuthRole`, `parent_owns_learner`, V2 `learner_guardian_links`. |
+| AI Teacher as application service, not authenticated user | **PASS** | Spec §13: « ne doit pas créer un second système d'utilisateurs ». Services only (`TeacherService`, `ConversationOrchestrator`, etc.). No login/password/AuthRole entry. |
+| `virtual_teacher_preferences` can reference current learner identity | **PASS** | Spec §8 uses `child_id` → implement as `learner_id BIGINT REFERENCES learners(id)` in V2. Bridge from student session via `users.learner_external_ref`. No fictional AI user FK. |
+| No authentication redesign required for LCAI-0017 | **PASS** | Spec §13 and §17.1 depend on LCAI-0015A identity/session; reuse existing session + service guards. |
+| No blocker for proposed AI Teacher architecture | **PASS** | V1 scope (static avatar, chat, TTS, preferences) fits existing Streamlit + V2 learner model. |
+
+### Minor spec ↔ codebase notes (non-blocking)
+
+1. **Naming:** Spec §8 says `child_id`; project canonical key is V2 `learners.id`. Use `learner_id` in migrations for consistency with `learner_experience_profiles`, `learner_guardian_links`.
+2. **Preference fields:** Spec §8 table lists core fields; ticket §18 adds `teacher_name`, `response_length`, `feature_enabled`. Typed `virtual_teacher_preferences` should include the full §18 set — documentation gap only.
+3. **Service naming:** Spec uses `TeacherService` / `TeacherPreferencesService` under `services/virtual_teacher/`; recommended aliases `AITeacherService` / `AITeacherPreferencesService` are equivalent — align naming in LCAI-0017, not in auth.
+4. **Guardian enforcement edge case:** Legacy learners without a V2 record skip guardian check in V1 auth (LCAI-0015A compat). Virtual Teacher requires onboarded V2 learner — LCAI-0017 should require `learner_id` resolution and reject otherwise (stricter than legacy auth paths).
+5. **UI preferences:** Spec §14.3 mentions adjustable font size « via paramètres existants si disponibles » — no generic UI preference store exists (see OPTION 3). Defer to Streamlit/theme or future UI ticket; not an auth blocker.
+
+### AI Teacher architecture confirmation
+
+The AI Teacher must **never** receive:
+- an `AuthRole` entry;
+- a `users` row or password;
+- an autonomous session owning learner data.
+
+It operates **on behalf of** authenticated actors via:
+- `AuthRole` + `st.session_state.user`;
+- `parent_owns_learner` / `require_parent_role` / `require_student_role`;
+- future `AITeacherService` / `AITeacherPreferencesService` / `AIConversationOrchestrator` / `PedagogicalGuardrails` / `TTSService`.
+
+**Verdict:** No LCAI-0015A code changes required. **READY FOR LCAI-0015A COMMIT** from an LCAI-0017 compatibility perspective.
