@@ -279,7 +279,14 @@ def _safe[T](operation: Callable[[], T]) -> T | None:
     try:
         return operation()
     except (ValueError, PermissionError, OnboardingValidationError) as exc:
-        st.error(str(exc))
+        message = str(exc)
+        if message == "Recommendation exceeds the available duration":
+            st.error(
+                "La durée planifiée de ce devoir est trop courte pour les exercices sélectionnés. "
+                "Demande à ton parent de recréer le devoir avec une durée plus longue, ou réessaie dans quelques instants."
+            )
+        else:
+            st.error(message)
     except Exception:
         LOGGER.exception("Unexpected unified experience persistence failure")
         st.error("Cette action n'est pas disponible pour le moment. Tes données existantes sont conservées.")
@@ -449,9 +456,13 @@ def _homework_form(
     availability_service = HomeworkAvailabilityService(repository)
     grade_id = repository.learner_grade_id(learner_id)
     grade_labels = {item[0]: item[2] for item in repository.grade_levels()}
-    availability = {
-        item.subject_id: item for item in availability_service.list_for_learner(learner_id)
-    }
+    try:
+        availability = {
+            item.subject_id: item for item in availability_service.list_for_learner(learner_id)
+        }
+    except Exception:
+        LOGGER.exception("Homework availability lookup failed for learner %s", learner_id)
+        availability = {}
     subjects = repository.curriculum_subjects_for_grade(grade_id)
     labels = {item[0]: item[2] for item in subjects}
     if not subjects:
@@ -995,7 +1006,7 @@ def _edit_learner(parent_ref: str, learner_id: int) -> None:
         tuple(formats),
         error_help,
         profile.diagnostic_status == "PLANNED",
-        email,
+        profile.email,
     )
     result = _safe(
         lambda: manager.update(

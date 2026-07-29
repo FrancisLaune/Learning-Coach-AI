@@ -160,7 +160,11 @@ class DuckDBUnifiedExperienceRepository:
                 ORDER BY c.sequence_order,c.title""",
                 parameters,
             ).fetchall()
-            return tuple((int(row[0]), str(row[1])) for row in rows)
+            return tuple(
+                (int(row[0]), str(row[1]))
+                for row in rows
+                if row and len(row) >= 2 and row[0] is not None and row[1] is not None
+            )
         finally:
             connection.close()
 
@@ -374,7 +378,20 @@ class DuckDBUnifiedExperienceRepository:
                 "SELECT proposal_id FROM learning_session_details d JOIN homework_assignments h ON h.session_id=d.session_id WHERE h.id=?",
                 [homework_id],
             ).fetchone()
+            contents = connection.execute(
+                """SELECT content_id,content_version_id,skill_id,subject_id,estimated_minutes,difficulty
+                FROM production_learning_catalog WHERE content_id IN
+                (SELECT unnest(CAST(selected_content AS BIGINT[])) FROM homework_assignments WHERE id=?)
+                ORDER BY content_id""",
+                [homework_id],
+            ).fetchall()
+            content_minutes = sum(int(row[4]) for row in contents if len(row) > 4)
+            available_minutes = max(item.target_duration_minutes or 30, content_minutes or 1)
             if existing:
+                connection.execute(
+                    "UPDATE personalized_session_proposals SET available_minutes=? WHERE id=?",
+                    [available_minutes, int(existing[0])],
+                )
                 return int(existing[0])
             journey = connection.execute(
                 """SELECT id FROM learner_journey_versions WHERE learner_id=?
@@ -390,20 +407,17 @@ class DuckDBUnifiedExperienceRepository:
                  available_minutes,objective_ref,strategy,confidence,result_snapshot,context_hash,correlation_id)
                 VALUES (?,?,?,'homework-v1',current_date,?,'homework','balanced_learning',1,'{}',?,?)
                 ON CONFLICT(stable_id) DO NOTHING RETURNING id""",
-                [stable, item.learner_id, int(journey[0]), item.target_duration_minutes or 30, stable, stable],
+                [stable, item.learner_id, int(journey[0]), available_minutes, stable, stable],
             ).fetchone()
             if proposal is None:
                 proposal = connection.execute(
                     "SELECT id FROM personalized_session_proposals WHERE stable_id=?", [stable]
                 ).fetchone()
+                connection.execute(
+                    "UPDATE personalized_session_proposals SET available_minutes=? WHERE stable_id=?",
+                    [available_minutes, stable],
+                )
             proposal_id = int(proposal[0])
-            contents = connection.execute(
-                """SELECT content_id,content_version_id,skill_id,subject_id,estimated_minutes,difficulty
-                FROM production_learning_catalog WHERE content_id IN
-                (SELECT unnest(CAST(selected_content AS BIGINT[])) FROM homework_assignments WHERE id=?)
-                ORDER BY content_id""",
-                [homework_id],
-            ).fetchall()
             for position, row in enumerate(contents, 1):
                 connection.execute(
                     """INSERT INTO personalized_session_items
@@ -481,7 +495,7 @@ class DuckDBUnifiedExperienceRepository:
             ).fetchall()
         finally:
             connection.close()
-        return tuple(self.get_homework(int(row[0])) for row in ids)
+        return tuple(self.get_homework(int(row[0])) for row in ids if row and len(row) >= 1 and row[0] is not None)
 
     def update_homework_status(
         self, homework_id: int, learner_id: int, current: AssignmentStatus, target: AssignmentStatus

@@ -220,8 +220,12 @@ class UnifiedOnboardingProfileService:
             raise ValueError("Le prénom est obligatoire.")
         if profile.age is not None and not 5 <= profile.age <= 30:
             raise ValueError("La date de naissance n'est pas compatible avec un profil scolaire.")
-        if profile.email is not None and ("@" not in profile.email or "." not in profile.email.rsplit("@", 1)[-1]):
-            raise ValueError("L'adresse e-mail de l'élève n'est pas valide.")
+        if profile.email is not None:
+            normalized_email = profile.email.strip()
+            if normalized_email and ("@" not in normalized_email or "." not in normalized_email.rsplit("@", 1)[-1]):
+                raise ValueError("L'adresse e-mail de l'élève n'est pas valide.")
+        else:
+            normalized_email = None
         self.repository.save_experience_profile(
             profile.learner_id,
             profile.first_name.strip(),
@@ -232,7 +236,7 @@ class UnifiedOnboardingProfileService:
             profile.preferred_formats,
             profile.error_help_preference,
             "PLANNED" if profile.take_diagnostic else "SKIPPED",
-            profile.email.strip().lower() if profile.email else None,
+            normalized_email.lower() if normalized_email else None,
         )
 
 

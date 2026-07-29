@@ -180,6 +180,24 @@ def test_birth_date_2012_is_accepted_and_age_is_derived(
     assert profile.age in {13, 14}
 
 
+def test_blank_email_is_treated_as_optional(unified_database: tuple[Path, int, int, int]) -> None:
+    path, learner_id, _, _ = unified_database
+    UnifiedOnboardingProfileService(DuckDBUnifiedExperienceRepository(path)).save(
+        OnboardingProfileInput(
+            learner_id,
+            "Alexandre",
+            None,
+            date(2012, 6, 15),
+            "2026-2027",
+            "FR-NATIONAL",
+            (),
+            "HINT_FIRST",
+            False,
+            "",
+        )
+    )
+
+
 def _complete_management_profile(path: Path, learner_id: int, subject_id: int, grade_id: int) -> None:
     connection = connect_v2(path)
     try:

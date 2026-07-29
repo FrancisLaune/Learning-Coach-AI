@@ -22,9 +22,15 @@ from ui.i18n import label, status_label
 from ui.session import logout
 
 
-def _error(error: PresentationError) -> None:
+def _error(error: PresentationError, *, actions: tuple[tuple[str, str], ...] = ()) -> None:
     st.error(error.message, icon="⚠️")
     st.info(error.recovery)
+    if actions:
+        columns = st.columns(len(actions))
+        for column, (button_label, page_key) in zip(columns, actions, strict=True):
+            if column.button(button_label, use_container_width=True, key=f"recovery_{page_key}"):
+                st.session_state["unified_student_page"] = page_key
+                st.rerun()
 
 
 def _status_label(status: str) -> str:
@@ -63,7 +69,7 @@ def _history_rows(sessions: tuple[SessionListItem, ...]) -> list[dict[str, objec
 def student_dashboard(controller: StudentExperienceController, learner_id: int) -> None:
     result = controller.dashboard(learner_id)
     if isinstance(result, PresentationError):
-        _error(result)
+        _error(result, actions=(("Retour à l'accueil", "Accueil"), ("Mes devoirs", "Devoirs")))
         return
     st.title(f"Bonjour {result.display_name}")
     st.markdown(f"### Objectif du jour : {result.objective}")
@@ -87,11 +93,24 @@ def student_dashboard(controller: StudentExperienceController, learner_id: int) 
 def session_screen(controller: StudentExperienceController, learner_id: int) -> None:
     session_id = st.session_state.get("v2_session_id")
     if not session_id:
-        st.info("Sélectionne une séance depuis le tableau de bord.")
+        st.info("Sélectionne une séance depuis l'accueil ou reprends un devoir en cours.")
+        left, right = st.columns(2)
+        if left.button("Retour à l'accueil", use_container_width=True, key="session_back_home"):
+            st.session_state["unified_student_page"] = "Accueil"
+            st.rerun()
+        if right.button("Mes devoirs", use_container_width=True, key="session_back_homework"):
+            st.session_state["unified_student_page"] = "Devoirs"
+            st.rerun()
         return
     result = controller.session(learner_id, int(session_id))
     if isinstance(result, PresentationError):
-        _error(result)
+        _error(
+            result,
+            actions=(
+                ("Retour à l'accueil", "Accueil"),
+                ("Mes devoirs", "Devoirs"),
+            ),
+        )
         return
     total = max(1, len(result.activities))
     st.title("Séance d'apprentissage")

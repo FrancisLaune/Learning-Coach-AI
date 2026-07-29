@@ -33,6 +33,10 @@ class SessionFactory:
         if proposal.absence_code or not proposal.activities:
             raise ValueError("A session requires a non-empty valid recommendation")
         content_versions = sorted({str(item.content_version_id) for item in proposal.activities})
+        planned_seconds = proposal.available_seconds
+        if proposal.objective == "homework" or proposal.stable_id.startswith("homework:"):
+            activity_seconds = sum(item.estimated_duration_seconds for item in proposal.activities)
+            planned_seconds = max(planned_seconds, activity_seconds)
         return LearningSession(
             0,
             proposal.learner_id,
@@ -40,7 +44,7 @@ class SessionFactory:
             proposal.proposal_id,
             SessionStatus.CREATED,
             now,
-            proposal.available_seconds,
+            planned_seconds,
             "learning-coach-v2",
             "curriculum-v1",
             ",".join(content_versions),
@@ -69,7 +73,8 @@ class SessionScheduler:
             if not activity.objective_compatible or not activity.prerequisites_satisfied:
                 raise ValueError("Activity objective or prerequisites are incompatible")
             elapsed += activity.estimated_duration_seconds
-            if elapsed > proposal.available_seconds:
+            is_homework = proposal.objective == "homework" or proposal.stable_id.startswith("homework:")
+            if not is_homework and elapsed > proposal.available_seconds:
                 raise ValueError("Recommendation exceeds the available duration")
             seen.add(identity)
             ordered.append(activity)
