@@ -243,6 +243,41 @@ class ContentFactoryService:
             tuple(failures),
         )
 
+    def generate_runtime_candidates(
+        self, request: ContentGenerationRequest, quantity: int | None = None
+    ) -> tuple[GeneratedContentCandidate, ...]:
+        """Validate generated candidates without persisting Approved/Draft catalogue rows."""
+        target_quantity = request.quantity if quantity is None else quantity
+        runtime_request = ContentGenerationRequest(
+            request.target,
+            request.content_type,
+            request.difficulty,
+            request.pedagogical_intent,
+            quantity=target_quantity,
+            variation_constraints=request.variation_constraints,
+            misconception_target=request.misconception_target,
+            language_code=request.language_code,
+        )
+        target_errors = self.repository.validate_target(runtime_request.target)
+        if target_errors:
+            return ()
+        candidates = self.generator.generate(runtime_request)
+        accepted: list[GeneratedContentCandidate] = []
+        known = self.repository.known_fingerprints()
+        for candidate in candidates:
+            report = self.validator.validate(
+                candidate,
+                target_errors=self.repository.validate_target(candidate.target),
+                known_fingerprints=known,
+            )
+            if not report.valid:
+                continue
+            accepted.append(candidate)
+            known[normalized_content_fingerprint(candidate.prompt)] = (candidate.family_code, candidate.variant_role)
+            if len(accepted) >= target_quantity:
+                break
+        return tuple(accepted)
+
 
 class ContentCoverageService:
     def __init__(self, repository: CoverageRepository) -> None:

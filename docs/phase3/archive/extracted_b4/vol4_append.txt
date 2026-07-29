@@ -1,0 +1,1475 @@
+[Normal] LCAI-0018B4 — Volume 4
+[Normal] Annexes techniques et Référentiel d’implémentation
+[Normal] Version 4.0
+[Normal] 1. Référentiel des termes
+[Normal] Objectif normatif. Établir le vocabulaire normatif utilisé par Cursor.
+[Normal] Faits établis. Catalogue: source persistée d’exercices approuvés. Déficit: nombre demandé moins nombre sélectionné, borné à zéro. Fallback IA: génération limitée au déficit. Exercice valide: objet conforme structurellement et pédagogiquement.
+[Normal] Hypothèses explicites. Les noms exacts et emplacements sont déterminés par le dépôt. Les exigences de cette annexe sont normatives sur le comportement, mais non prescriptives sur un renommage arbitraire des composants existants.
+[Normal] Contrôles obligatoires.
+[List Bullet] Vérifier la correspondance avec les classes et migrations existantes.
+[List Bullet] Documenter toute dérogation avant codage.
+[List Bullet] Préserver la compatibilité des interfaces publiques.
+[List Bullet] Ajouter les tests associés au même changement.
+[Normal] Scénarios de vérification.
+[List Number] Comparer le contrat au code actuel.
+[List Number] Simuler le cas nominal.
+[List Number] Simuler une violation de contrat.
+[List Number] Vérifier les effets de bord, logs et persistance.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Ne pas extrapoler au-delà du comportement décrit.
+[List Bullet] Préférer les conventions du dépôt aux modèles génériques.
+[List Bullet] Refuser toute modification destructive non couverte par migration et rollback.
+[Normal] Critères de sortie. La section est satisfaite lorsque son contrat est reflété dans le code, les tests et la documentation de livraison.
+[Normal] 2. Principes d’architecture
+[Normal] Objectif normatif. Contraindre les décisions de conception.
+[Normal] Faits établis. Réutiliser l’infrastructure IA existante; conserver HomeworkService comme orchestrateur; isoler fournisseur, validation et persistance; préférer dépendances injectées; interdire les singletons cachés.
+[Normal] Hypothèses explicites. Les noms exacts et emplacements sont déterminés par le dépôt. Les exigences de cette annexe sont normatives sur le comportement, mais non prescriptives sur un renommage arbitraire des composants existants.
+[Normal] Contrôles obligatoires.
+[List Bullet] Vérifier la correspondance avec les classes et migrations existantes.
+[List Bullet] Documenter toute dérogation avant codage.
+[List Bullet] Préserver la compatibilité des interfaces publiques.
+[List Bullet] Ajouter les tests associés au même changement.
+[Normal] Scénarios de vérification.
+[List Number] Comparer le contrat au code actuel.
+[List Number] Simuler le cas nominal.
+[List Number] Simuler une violation de contrat.
+[List Number] Vérifier les effets de bord, logs et persistance.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Ne pas extrapoler au-delà du comportement décrit.
+[List Bullet] Préférer les conventions du dépôt aux modèles génériques.
+[List Bullet] Refuser toute modification destructive non couverte par migration et rollback.
+[Normal] Critères de sortie. La section est satisfaite lorsque son contrat est reflété dans le code, les tests et la documentation de livraison.
+[Normal] 3. Carte des composants
+[Normal] Objectif normatif. Documenter les responsabilités sans imposer de nouveaux noms.
+[Normal] Faits établis. UI appelle le service applicatif; le service sélectionne le catalogue; calcule le déficit; délègue à la ContentFactory; valide; fusionne; persiste et retourne.
+[Normal] Hypothèses explicites. Les noms exacts et emplacements sont déterminés par le dépôt. Les exigences de cette annexe sont normatives sur le comportement, mais non prescriptives sur un renommage arbitraire des composants existants.
+[Normal] Contrôles obligatoires.
+[List Bullet] Vérifier la correspondance avec les classes et migrations existantes.
+[List Bullet] Documenter toute dérogation avant codage.
+[List Bullet] Préserver la compatibilité des interfaces publiques.
+[List Bullet] Ajouter les tests associés au même changement.
+[Normal] Scénarios de vérification.
+[List Number] Comparer le contrat au code actuel.
+[List Number] Simuler le cas nominal.
+[List Number] Simuler une violation de contrat.
+[List Number] Vérifier les effets de bord, logs et persistance.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Ne pas extrapoler au-delà du comportement décrit.
+[List Bullet] Préférer les conventions du dépôt aux modèles génériques.
+[List Bullet] Refuser toute modification destructive non couverte par migration et rollback.
+[Normal] Critères de sortie. La section est satisfaite lorsque son contrat est reflété dans le code, les tests et la documentation de livraison.
+[Normal] 4. Contrat de requête de devoir
+[Normal] Objectif normatif. Définir les champs attendus et invariants.
+[Normal] Faits établis. La requête doit identifier élève ou contexte autorisé, niveau, matière, chapitre/compétence, difficulté, nombre demandé et options existantes. Le nombre doit être positif et borné.
+[Normal] Hypothèses explicites. Les noms exacts et emplacements sont déterminés par le dépôt. Les exigences de cette annexe sont normatives sur le comportement, mais non prescriptives sur un renommage arbitraire des composants existants.
+[Normal] Contrôles obligatoires.
+[List Bullet] Vérifier la correspondance avec les classes et migrations existantes.
+[List Bullet] Documenter toute dérogation avant codage.
+[List Bullet] Préserver la compatibilité des interfaces publiques.
+[List Bullet] Ajouter les tests associés au même changement.
+[Normal] Scénarios de vérification.
+[List Number] Comparer le contrat au code actuel.
+[List Number] Simuler le cas nominal.
+[List Number] Simuler une violation de contrat.
+[List Number] Vérifier les effets de bord, logs et persistance.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Ne pas extrapoler au-delà du comportement décrit.
+[List Bullet] Préférer les conventions du dépôt aux modèles génériques.
+[List Bullet] Refuser toute modification destructive non couverte par migration et rollback.
+[Normal] Critères de sortie. La section est satisfaite lorsque son contrat est reflété dans le code, les tests et la documentation de livraison.
+[Normal] 5. Contrat de résultat
+[Normal] Objectif normatif. Définir le résultat observable.
+[Normal] Faits établis. Le résultat expose une liste ordonnée, la provenance, le statut de complétude et les identifiants nécessaires au suivi. Les champs historiques existants restent compatibles.
+[Normal] Hypothèses explicites. Les noms exacts et emplacements sont déterminés par le dépôt. Les exigences de cette annexe sont normatives sur le comportement, mais non prescriptives sur un renommage arbitraire des composants existants.
+[Normal] Contrôles obligatoires.
+[List Bullet] Vérifier la correspondance avec les classes et migrations existantes.
+[List Bullet] Documenter toute dérogation avant codage.
+[List Bullet] Préserver la compatibilité des interfaces publiques.
+[List Bullet] Ajouter les tests associés au même changement.
+[Normal] Scénarios de vérification.
+[List Number] Comparer le contrat au code actuel.
+[List Number] Simuler le cas nominal.
+[List Number] Simuler une violation de contrat.
+[List Number] Vérifier les effets de bord, logs et persistance.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Ne pas extrapoler au-delà du comportement décrit.
+[List Bullet] Préférer les conventions du dépôt aux modèles génériques.
+[List Bullet] Refuser toute modification destructive non couverte par migration et rollback.
+[Normal] Critères de sortie. La section est satisfaite lorsque son contrat est reflété dans le code, les tests et la documentation de livraison.
+[Normal] 6. DTO de génération IA
+[Normal] Objectif normatif. Définir un objet minimal et sérialisable.
+[Normal] Faits établis. Le DTO ne contient aucune entité ORM ni connexion. Il porte contraintes pédagogiques, nombre exact attendu, types autorisés, langue et exclusions.
+[Normal] Hypothèses explicites. Les noms exacts et emplacements sont déterminés par le dépôt. Les exigences de cette annexe sont normatives sur le comportement, mais non prescriptives sur un renommage arbitraire des composants existants.
+[Normal] Contrôles obligatoires.
+[List Bullet] Vérifier la correspondance avec les classes et migrations existantes.
+[List Bullet] Documenter toute dérogation avant codage.
+[List Bullet] Préserver la compatibilité des interfaces publiques.
+[List Bullet] Ajouter les tests associés au même changement.
+[Normal] Scénarios de vérification.
+[List Number] Comparer le contrat au code actuel.
+[List Number] Simuler le cas nominal.
+[List Number] Simuler une violation de contrat.
+[List Number] Vérifier les effets de bord, logs et persistance.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Ne pas extrapoler au-delà du comportement décrit.
+[List Bullet] Préférer les conventions du dépôt aux modèles génériques.
+[List Bullet] Refuser toute modification destructive non couverte par migration et rollback.
+[Normal] Critères de sortie. La section est satisfaite lorsque son contrat est reflété dans le code, les tests et la documentation de livraison.
+[Normal] 7. DTO d’exercice généré
+[Normal] Objectif normatif. Définir le schéma de sortie.
+[Normal] Faits établis. Champs minimaux: énoncé, type, réponse, correction, difficulté, compétence, métadonnées de provenance. Les champs optionnels doivent avoir une sémantique explicite.
+[Normal] Hypothèses explicites. Les noms exacts et emplacements sont déterminés par le dépôt. Les exigences de cette annexe sont normatives sur le comportement, mais non prescriptives sur un renommage arbitraire des composants existants.
+[Normal] Contrôles obligatoires.
+[List Bullet] Vérifier la correspondance avec les classes et migrations existantes.
+[List Bullet] Documenter toute dérogation avant codage.
+[List Bullet] Préserver la compatibilité des interfaces publiques.
+[List Bullet] Ajouter les tests associés au même changement.
+[Normal] Scénarios de vérification.
+[List Number] Comparer le contrat au code actuel.
+[List Number] Simuler le cas nominal.
+[List Number] Simuler une violation de contrat.
+[List Number] Vérifier les effets de bord, logs et persistance.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Ne pas extrapoler au-delà du comportement décrit.
+[List Bullet] Préférer les conventions du dépôt aux modèles génériques.
+[List Bullet] Refuser toute modification destructive non couverte par migration et rollback.
+[Normal] Critères de sortie. La section est satisfaite lorsque son contrat est reflété dans le code, les tests et la documentation de livraison.
+[Normal] 8. Énumérations et valeurs autorisées
+[Normal] Objectif normatif. Éviter les chaînes libres.
+[Normal] Faits établis. Les valeurs de difficulté, type, statut et provenance doivent réutiliser les référentiels du domaine.
+[Normal] Hypothèses explicites. Les noms exacts et emplacements sont déterminés par le dépôt. Les exigences de cette annexe sont normatives sur le comportement, mais non prescriptives sur un renommage arbitraire des composants existants.
+[Normal] Contrôles obligatoires.
+[List Bullet] Vérifier la correspondance avec les classes et migrations existantes.
+[List Bullet] Documenter toute dérogation avant codage.
+[List Bullet] Préserver la compatibilité des interfaces publiques.
+[List Bullet] Ajouter les tests associés au même changement.
+[Normal] Scénarios de vérification.
+[List Number] Comparer le contrat au code actuel.
+[List Number] Simuler le cas nominal.
+[List Number] Simuler une violation de contrat.
+[List Number] Vérifier les effets de bord, logs et persistance.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Ne pas extrapoler au-delà du comportement décrit.
+[List Bullet] Préférer les conventions du dépôt aux modèles génériques.
+[List Bullet] Refuser toute modification destructive non couverte par migration et rollback.
+[Normal] Critères de sortie. La section est satisfaite lorsque son contrat est reflété dans le code, les tests et la documentation de livraison.
+[Normal] 9. Invariants métier
+[Normal] Objectif normatif. Lister les propriétés toujours vraies.
+[Normal] Faits établis. Nombre final <= demandé; aucun doublon; tout exercice validé; catalogue avant IA; déficit jamais négatif; aucune modification d’un exercice catalogue.
+[Normal] Hypothèses explicites. Les noms exacts et emplacements sont déterminés par le dépôt. Les exigences de cette annexe sont normatives sur le comportement, mais non prescriptives sur un renommage arbitraire des composants existants.
+[Normal] Contrôles obligatoires.
+[List Bullet] Vérifier la correspondance avec les classes et migrations existantes.
+[List Bullet] Documenter toute dérogation avant codage.
+[List Bullet] Préserver la compatibilité des interfaces publiques.
+[List Bullet] Ajouter les tests associés au même changement.
+[Normal] Scénarios de vérification.
+[List Number] Comparer le contrat au code actuel.
+[List Number] Simuler le cas nominal.
+[List Number] Simuler une violation de contrat.
+[List Number] Vérifier les effets de bord, logs et persistance.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Ne pas extrapoler au-delà du comportement décrit.
+[List Bullet] Préférer les conventions du dépôt aux modèles génériques.
+[List Bullet] Refuser toute modification destructive non couverte par migration et rollback.
+[Normal] Critères de sortie. La section est satisfaite lorsque son contrat est reflété dans le code, les tests et la documentation de livraison.
+[Normal] 10. Préconditions HomeworkService
+[Normal] Objectif normatif. Définir les validations avant orchestration.
+[Normal] Faits établis. Requête non nulle, contexte autorisé, référentiels résolus, quantité dans les bornes, base disponible.
+[Normal] Hypothèses explicites. Les noms exacts et emplacements sont déterminés par le dépôt. Les exigences de cette annexe sont normatives sur le comportement, mais non prescriptives sur un renommage arbitraire des composants existants.
+[Normal] Contrôles obligatoires.
+[List Bullet] Vérifier la correspondance avec les classes et migrations existantes.
+[List Bullet] Documenter toute dérogation avant codage.
+[List Bullet] Préserver la compatibilité des interfaces publiques.
+[List Bullet] Ajouter les tests associés au même changement.
+[Normal] Scénarios de vérification.
+[List Number] Comparer le contrat au code actuel.
+[List Number] Simuler le cas nominal.
+[List Number] Simuler une violation de contrat.
+[List Number] Vérifier les effets de bord, logs et persistance.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Ne pas extrapoler au-delà du comportement décrit.
+[List Bullet] Préférer les conventions du dépôt aux modèles génériques.
+[List Bullet] Refuser toute modification destructive non couverte par migration et rollback.
+[Normal] Critères de sortie. La section est satisfaite lorsque son contrat est reflété dans le code, les tests et la documentation de livraison.
+[Normal] 11. Postconditions HomeworkService
+[Normal] Objectif normatif. Définir l’état après succès.
+[Normal] Faits établis. Résultat ordonné, provenance renseignée, écritures atomiques, métriques émises, aucun appel IA si déficit nul.
+[Normal] Hypothèses explicites. Les noms exacts et emplacements sont déterminés par le dépôt. Les exigences de cette annexe sont normatives sur le comportement, mais non prescriptives sur un renommage arbitraire des composants existants.
+[Normal] Contrôles obligatoires.
+[List Bullet] Vérifier la correspondance avec les classes et migrations existantes.
+[List Bullet] Documenter toute dérogation avant codage.
+[List Bullet] Préserver la compatibilité des interfaces publiques.
+[List Bullet] Ajouter les tests associés au même changement.
+[Normal] Scénarios de vérification.
+[List Number] Comparer le contrat au code actuel.
+[List Number] Simuler le cas nominal.
+[List Number] Simuler une violation de contrat.
+[List Number] Vérifier les effets de bord, logs et persistance.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Ne pas extrapoler au-delà du comportement décrit.
+[List Bullet] Préférer les conventions du dépôt aux modèles génériques.
+[List Bullet] Refuser toute modification destructive non couverte par migration et rollback.
+[Normal] Critères de sortie. La section est satisfaite lorsque son contrat est reflété dans le code, les tests et la documentation de livraison.
+[Normal] 12. Algorithme d’orchestration normatif
+[Normal] Objectif normatif. Fournir une séquence non ambiguë.
+[Normal] Faits établis. Valider requête; lire catalogue; sélectionner; calculer déficit; si zéro retourner; sinon construire contexte; générer; valider; dédupliquer; fusionner; persister; retourner.
+[Normal] Hypothèses explicites. Les noms exacts et emplacements sont déterminés par le dépôt. Les exigences de cette annexe sont normatives sur le comportement, mais non prescriptives sur un renommage arbitraire des composants existants.
+[Normal] Contrôles obligatoires.
+[List Bullet] Vérifier la correspondance avec les classes et migrations existantes.
+[List Bullet] Documenter toute dérogation avant codage.
+[List Bullet] Préserver la compatibilité des interfaces publiques.
+[List Bullet] Ajouter les tests associés au même changement.
+[Normal] Scénarios de vérification.
+[List Number] Comparer le contrat au code actuel.
+[List Number] Simuler le cas nominal.
+[List Number] Simuler une violation de contrat.
+[List Number] Vérifier les effets de bord, logs et persistance.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Ne pas extrapoler au-delà du comportement décrit.
+[List Bullet] Préférer les conventions du dépôt aux modèles génériques.
+[List Bullet] Refuser toute modification destructive non couverte par migration et rollback.
+[Normal] Critères de sortie. La section est satisfaite lorsque son contrat est reflété dans le code, les tests et la documentation de livraison.
+[Normal] 13. Règles de sélection catalogue
+[Normal] Objectif normatif. Fixer l’ordre de préférence.
+[Normal] Faits établis. Appliquer les filtres existants; préserver règles de statut Approved; respecter la difficulté et la compétence; ne pas consommer de brouillons sauf règle existante explicite.
+[Normal] Hypothèses explicites. Les noms exacts et emplacements sont déterminés par le dépôt. Les exigences de cette annexe sont normatives sur le comportement, mais non prescriptives sur un renommage arbitraire des composants existants.
+[Normal] Contrôles obligatoires.
+[List Bullet] Vérifier la correspondance avec les classes et migrations existantes.
+[List Bullet] Documenter toute dérogation avant codage.
+[List Bullet] Préserver la compatibilité des interfaces publiques.
+[List Bullet] Ajouter les tests associés au même changement.
+[Normal] Scénarios de vérification.
+[List Number] Comparer le contrat au code actuel.
+[List Number] Simuler le cas nominal.
+[List Number] Simuler une violation de contrat.
+[List Number] Vérifier les effets de bord, logs et persistance.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Ne pas extrapoler au-delà du comportement décrit.
+[List Bullet] Préférer les conventions du dépôt aux modèles génériques.
+[List Bullet] Refuser toute modification destructive non couverte par migration et rollback.
+[Normal] Critères de sortie. La section est satisfaite lorsque son contrat est reflété dans le code, les tests et la documentation de livraison.
+[Normal] 14. Règles de calcul du déficit
+[Normal] Objectif normatif. Formaliser les cas.
+[Normal] Faits établis. deficit = max(0, requested_count - len(selected_catalog)). Le déficit est calculé après la sélection définitive du catalogue et avant l’appel IA.
+[Normal] Hypothèses explicites. Les noms exacts et emplacements sont déterminés par le dépôt. Les exigences de cette annexe sont normatives sur le comportement, mais non prescriptives sur un renommage arbitraire des composants existants.
+[Normal] Contrôles obligatoires.
+[List Bullet] Vérifier la correspondance avec les classes et migrations existantes.
+[List Bullet] Documenter toute dérogation avant codage.
+[List Bullet] Préserver la compatibilité des interfaces publiques.
+[List Bullet] Ajouter les tests associés au même changement.
+[Normal] Scénarios de vérification.
+[List Number] Comparer le contrat au code actuel.
+[List Number] Simuler le cas nominal.
+[List Number] Simuler une violation de contrat.
+[List Number] Vérifier les effets de bord, logs et persistance.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Ne pas extrapoler au-delà du comportement décrit.
+[List Bullet] Préférer les conventions du dépôt aux modèles génériques.
+[List Bullet] Refuser toute modification destructive non couverte par migration et rollback.
+[Normal] Critères de sortie. La section est satisfaite lorsque son contrat est reflété dans le code, les tests et la documentation de livraison.
+[Normal] 15. Règles de génération
+[Normal] Objectif normatif. Limiter la demande au strict besoin.
+[Normal] Faits établis. Le nombre demandé au fournisseur est exactement le déficit, éventuellement avec une marge interne uniquement si le composant existant la prévoit et que la validation tranche.
+[Normal] Hypothèses explicites. Les noms exacts et emplacements sont déterminés par le dépôt. Les exigences de cette annexe sont normatives sur le comportement, mais non prescriptives sur un renommage arbitraire des composants existants.
+[Normal] Contrôles obligatoires.
+[List Bullet] Vérifier la correspondance avec les classes et migrations existantes.
+[List Bullet] Documenter toute dérogation avant codage.
+[List Bullet] Préserver la compatibilité des interfaces publiques.
+[List Bullet] Ajouter les tests associés au même changement.
+[Normal] Scénarios de vérification.
+[List Number] Comparer le contrat au code actuel.
+[List Number] Simuler le cas nominal.
+[List Number] Simuler une violation de contrat.
+[List Number] Vérifier les effets de bord, logs et persistance.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Ne pas extrapoler au-delà du comportement décrit.
+[List Bullet] Préférer les conventions du dépôt aux modèles génériques.
+[List Bullet] Refuser toute modification destructive non couverte par migration et rollback.
+[Normal] Critères de sortie. La section est satisfaite lorsque son contrat est reflété dans le code, les tests et la documentation de livraison.
+[Normal] 16. Construction du prompt
+[Normal] Objectif normatif. Définir structure et protections.
+[Normal] Faits établis. Séparer instructions système, contraintes, contexte et données non fiables. Encadrer les champs utilisateur. Exiger un JSON strict sans texte supplémentaire.
+[Normal] Hypothèses explicites. Les noms exacts et emplacements sont déterminés par le dépôt. Les exigences de cette annexe sont normatives sur le comportement, mais non prescriptives sur un renommage arbitraire des composants existants.
+[Normal] Contrôles obligatoires.
+[List Bullet] Vérifier la correspondance avec les classes et migrations existantes.
+[List Bullet] Documenter toute dérogation avant codage.
+[List Bullet] Préserver la compatibilité des interfaces publiques.
+[List Bullet] Ajouter les tests associés au même changement.
+[Normal] Scénarios de vérification.
+[List Number] Comparer le contrat au code actuel.
+[List Number] Simuler le cas nominal.
+[List Number] Simuler une violation de contrat.
+[List Number] Vérifier les effets de bord, logs et persistance.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Ne pas extrapoler au-delà du comportement décrit.
+[List Bullet] Préférer les conventions du dépôt aux modèles génériques.
+[List Bullet] Refuser toute modification destructive non couverte par migration et rollback.
+[Normal] Critères de sortie. La section est satisfaite lorsque son contrat est reflété dans le code, les tests et la documentation de livraison.
+[Normal] 17. Schéma JSON
+[Normal] Objectif normatif. Fournir la structure attendue.
+[Normal] Faits établis. Objet racine versionné, tableau exercises, chaque entrée possède les champs obligatoires typés. additionalProperties doit être refusé sauf compatibilité existante.
+[Normal] Hypothèses explicites. Les noms exacts et emplacements sont déterminés par le dépôt. Les exigences de cette annexe sont normatives sur le comportement, mais non prescriptives sur un renommage arbitraire des composants existants.
+[Normal] Contrôles obligatoires.
+[List Bullet] Vérifier la correspondance avec les classes et migrations existantes.
+[List Bullet] Documenter toute dérogation avant codage.
+[List Bullet] Préserver la compatibilité des interfaces publiques.
+[List Bullet] Ajouter les tests associés au même changement.
+[Normal] Scénarios de vérification.
+[List Number] Comparer le contrat au code actuel.
+[List Number] Simuler le cas nominal.
+[List Number] Simuler une violation de contrat.
+[List Number] Vérifier les effets de bord, logs et persistance.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Ne pas extrapoler au-delà du comportement décrit.
+[List Bullet] Préférer les conventions du dépôt aux modèles génériques.
+[List Bullet] Refuser toute modification destructive non couverte par migration et rollback.
+[Normal] Critères de sortie. La section est satisfaite lorsque son contrat est reflété dans le code, les tests et la documentation de livraison.
+[Normal] 18. Validation structurelle
+[Normal] Objectif normatif. Définir les règles machine.
+[Normal] Faits établis. Vérifier parse JSON, cardinalité, types, longueurs, valeurs enum, présence des champs et taille maximale.
+[Normal] Hypothèses explicites. Les noms exacts et emplacements sont déterminés par le dépôt. Les exigences de cette annexe sont normatives sur le comportement, mais non prescriptives sur un renommage arbitraire des composants existants.
+[Normal] Contrôles obligatoires.
+[List Bullet] Vérifier la correspondance avec les classes et migrations existantes.
+[List Bullet] Documenter toute dérogation avant codage.
+[List Bullet] Préserver la compatibilité des interfaces publiques.
+[List Bullet] Ajouter les tests associés au même changement.
+[Normal] Scénarios de vérification.
+[List Number] Comparer le contrat au code actuel.
+[List Number] Simuler le cas nominal.
+[List Number] Simuler une violation de contrat.
+[List Number] Vérifier les effets de bord, logs et persistance.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Ne pas extrapoler au-delà du comportement décrit.
+[List Bullet] Préférer les conventions du dépôt aux modèles génériques.
+[List Bullet] Refuser toute modification destructive non couverte par migration et rollback.
+[Normal] Critères de sortie. La section est satisfaite lorsque son contrat est reflété dans le code, les tests et la documentation de livraison.
+[Normal] 19. Validation sémantique
+[Normal] Objectif normatif. Définir les règles métier.
+[Normal] Faits établis. Vérifier niveau, matière, compétence, difficulté, langue, absence de contenu interdit, cohérence réponse-correction et indépendance vis-à-vis de données non fournies.
+[Normal] Hypothèses explicites. Les noms exacts et emplacements sont déterminés par le dépôt. Les exigences de cette annexe sont normatives sur le comportement, mais non prescriptives sur un renommage arbitraire des composants existants.
+[Normal] Contrôles obligatoires.
+[List Bullet] Vérifier la correspondance avec les classes et migrations existantes.
+[List Bullet] Documenter toute dérogation avant codage.
+[List Bullet] Préserver la compatibilité des interfaces publiques.
+[List Bullet] Ajouter les tests associés au même changement.
+[Normal] Scénarios de vérification.
+[List Number] Comparer le contrat au code actuel.
+[List Number] Simuler le cas nominal.
+[List Number] Simuler une violation de contrat.
+[List Number] Vérifier les effets de bord, logs et persistance.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Ne pas extrapoler au-delà du comportement décrit.
+[List Bullet] Préférer les conventions du dépôt aux modèles génériques.
+[List Bullet] Refuser toute modification destructive non couverte par migration et rollback.
+[Normal] Critères de sortie. La section est satisfaite lorsque son contrat est reflété dans le code, les tests et la documentation de livraison.
+[Normal] 20. Validation mathématique
+[Normal] Objectif normatif. Définir les contrôles calculables.
+[Normal] Faits établis. Pour types supportés, recalculer la réponse avec un moteur déterministe; rejeter toute divergence; ne pas exécuter du code fourni par l’IA.
+[Normal] Hypothèses explicites. Les noms exacts et emplacements sont déterminés par le dépôt. Les exigences de cette annexe sont normatives sur le comportement, mais non prescriptives sur un renommage arbitraire des composants existants.
+[Normal] Contrôles obligatoires.
+[List Bullet] Vérifier la correspondance avec les classes et migrations existantes.
+[List Bullet] Documenter toute dérogation avant codage.
+[List Bullet] Préserver la compatibilité des interfaces publiques.
+[List Bullet] Ajouter les tests associés au même changement.
+[Normal] Scénarios de vérification.
+[List Number] Comparer le contrat au code actuel.
+[List Number] Simuler le cas nominal.
+[List Number] Simuler une violation de contrat.
+[List Number] Vérifier les effets de bord, logs et persistance.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Ne pas extrapoler au-delà du comportement décrit.
+[List Bullet] Préférer les conventions du dépôt aux modèles génériques.
+[List Bullet] Refuser toute modification destructive non couverte par migration et rollback.
+[Normal] Critères de sortie. La section est satisfaite lorsque son contrat est reflété dans le code, les tests et la documentation de livraison.
+[Normal] 21. Déduplication
+[Normal] Objectif normatif. Définir clés et similarité.
+[Normal] Faits établis. Normaliser espaces, casse et ponctuation pour doublon exact; utiliser similarité bornée uniquement si une bibliothèque existe; comparer catalogue et IA.
+[Normal] Hypothèses explicites. Les noms exacts et emplacements sont déterminés par le dépôt. Les exigences de cette annexe sont normatives sur le comportement, mais non prescriptives sur un renommage arbitraire des composants existants.
+[Normal] Contrôles obligatoires.
+[List Bullet] Vérifier la correspondance avec les classes et migrations existantes.
+[List Bullet] Documenter toute dérogation avant codage.
+[List Bullet] Préserver la compatibilité des interfaces publiques.
+[List Bullet] Ajouter les tests associés au même changement.
+[Normal] Scénarios de vérification.
+[List Number] Comparer le contrat au code actuel.
+[List Number] Simuler le cas nominal.
+[List Number] Simuler une violation de contrat.
+[List Number] Vérifier les effets de bord, logs et persistance.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Ne pas extrapoler au-delà du comportement décrit.
+[List Bullet] Préférer les conventions du dépôt aux modèles génériques.
+[List Bullet] Refuser toute modification destructive non couverte par migration et rollback.
+[Normal] Critères de sortie. La section est satisfaite lorsque son contrat est reflété dans le code, les tests et la documentation de livraison.
+[Normal] 22. Fusion
+[Normal] Objectif normatif. Définir l’ordre et les limites.
+[Normal] Faits établis. Conserver d’abord les exercices catalogue dans leur ordre. Ajouter uniquement les exercices IA valides non dupliqués jusqu’au nombre demandé.
+[Normal] Hypothèses explicites. Les noms exacts et emplacements sont déterminés par le dépôt. Les exigences de cette annexe sont normatives sur le comportement, mais non prescriptives sur un renommage arbitraire des composants existants.
+[Normal] Contrôles obligatoires.
+[List Bullet] Vérifier la correspondance avec les classes et migrations existantes.
+[List Bullet] Documenter toute dérogation avant codage.
+[List Bullet] Préserver la compatibilité des interfaces publiques.
+[List Bullet] Ajouter les tests associés au même changement.
+[Normal] Scénarios de vérification.
+[List Number] Comparer le contrat au code actuel.
+[List Number] Simuler le cas nominal.
+[List Number] Simuler une violation de contrat.
+[List Number] Vérifier les effets de bord, logs et persistance.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Ne pas extrapoler au-delà du comportement décrit.
+[List Bullet] Préférer les conventions du dépôt aux modèles génériques.
+[List Bullet] Refuser toute modification destructive non couverte par migration et rollback.
+[Normal] Critères de sortie. La section est satisfaite lorsque son contrat est reflété dans le code, les tests et la documentation de livraison.
+[Normal] 23. Gestion de complétude
+[Normal] Objectif normatif. Définir statuts.
+[Normal] Faits établis. COMPLETE si nombre atteint; PARTIAL si inférieur mais non nul; FAILED si aucun résultat acceptable selon contrat existant. Ne jamais prétendre complet.
+[Normal] Hypothèses explicites. Les noms exacts et emplacements sont déterminés par le dépôt. Les exigences de cette annexe sont normatives sur le comportement, mais non prescriptives sur un renommage arbitraire des composants existants.
+[Normal] Contrôles obligatoires.
+[List Bullet] Vérifier la correspondance avec les classes et migrations existantes.
+[List Bullet] Documenter toute dérogation avant codage.
+[List Bullet] Préserver la compatibilité des interfaces publiques.
+[List Bullet] Ajouter les tests associés au même changement.
+[Normal] Scénarios de vérification.
+[List Number] Comparer le contrat au code actuel.
+[List Number] Simuler le cas nominal.
+[List Number] Simuler une violation de contrat.
+[List Number] Vérifier les effets de bord, logs et persistance.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Ne pas extrapoler au-delà du comportement décrit.
+[List Bullet] Préférer les conventions du dépôt aux modèles génériques.
+[List Bullet] Refuser toute modification destructive non couverte par migration et rollback.
+[Normal] Critères de sortie. La section est satisfaite lorsque son contrat est reflété dans le code, les tests et la documentation de livraison.
+[Normal] 24. Erreurs métier
+[Normal] Objectif normatif. Normaliser les catégories.
+[Normal] Faits établis. ValidationError, CatalogAccessError, GenerationUnavailable, GeneratedContentInvalid, PersistenceError ou équivalents existants. Ne pas exposer les exceptions fournisseur.
+[Normal] Hypothèses explicites. Les noms exacts et emplacements sont déterminés par le dépôt. Les exigences de cette annexe sont normatives sur le comportement, mais non prescriptives sur un renommage arbitraire des composants existants.
+[Normal] Contrôles obligatoires.
+[List Bullet] Vérifier la correspondance avec les classes et migrations existantes.
+[List Bullet] Documenter toute dérogation avant codage.
+[List Bullet] Préserver la compatibilité des interfaces publiques.
+[List Bullet] Ajouter les tests associés au même changement.
+[Normal] Scénarios de vérification.
+[List Number] Comparer le contrat au code actuel.
+[List Number] Simuler le cas nominal.
+[List Number] Simuler une violation de contrat.
+[List Number] Vérifier les effets de bord, logs et persistance.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Ne pas extrapoler au-delà du comportement décrit.
+[List Bullet] Préférer les conventions du dépôt aux modèles génériques.
+[List Bullet] Refuser toute modification destructive non couverte par migration et rollback.
+[Normal] Critères de sortie. La section est satisfaite lorsque son contrat est reflété dans le code, les tests et la documentation de livraison.
+[Normal] 25. Retry et backoff
+[Normal] Objectif normatif. Définir conditions.
+[Normal] Faits établis. Retry uniquement 429, timeout ou 5xx transitoire; pas de retry sur 4xx contractuel ou JSON systématiquement invalide; backoff borné avec jitter.
+[Normal] Hypothèses explicites. Les noms exacts et emplacements sont déterminés par le dépôt. Les exigences de cette annexe sont normatives sur le comportement, mais non prescriptives sur un renommage arbitraire des composants existants.
+[Normal] Contrôles obligatoires.
+[List Bullet] Vérifier la correspondance avec les classes et migrations existantes.
+[List Bullet] Documenter toute dérogation avant codage.
+[List Bullet] Préserver la compatibilité des interfaces publiques.
+[List Bullet] Ajouter les tests associés au même changement.
+[Normal] Scénarios de vérification.
+[List Number] Comparer le contrat au code actuel.
+[List Number] Simuler le cas nominal.
+[List Number] Simuler une violation de contrat.
+[List Number] Vérifier les effets de bord, logs et persistance.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Ne pas extrapoler au-delà du comportement décrit.
+[List Bullet] Préférer les conventions du dépôt aux modèles génériques.
+[List Bullet] Refuser toute modification destructive non couverte par migration et rollback.
+[Normal] Critères de sortie. La section est satisfaite lorsque son contrat est reflété dans le code, les tests et la documentation de livraison.
+[Normal] 26. Timeouts
+[Normal] Objectif normatif. Définir budgets.
+[Normal] Faits établis. Timeout connexion et lecture séparés si client le supporte; budget total inférieur au timeout de la requête UI; annulation propagée.
+[Normal] Hypothèses explicites. Les noms exacts et emplacements sont déterminés par le dépôt. Les exigences de cette annexe sont normatives sur le comportement, mais non prescriptives sur un renommage arbitraire des composants existants.
+[Normal] Contrôles obligatoires.
+[List Bullet] Vérifier la correspondance avec les classes et migrations existantes.
+[List Bullet] Documenter toute dérogation avant codage.
+[List Bullet] Préserver la compatibilité des interfaces publiques.
+[List Bullet] Ajouter les tests associés au même changement.
+[Normal] Scénarios de vérification.
+[List Number] Comparer le contrat au code actuel.
+[List Number] Simuler le cas nominal.
+[List Number] Simuler une violation de contrat.
+[List Number] Vérifier les effets de bord, logs et persistance.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Ne pas extrapoler au-delà du comportement décrit.
+[List Bullet] Préférer les conventions du dépôt aux modèles génériques.
+[List Bullet] Refuser toute modification destructive non couverte par migration et rollback.
+[Normal] Critères de sortie. La section est satisfaite lorsque son contrat est reflété dans le code, les tests et la documentation de livraison.
+[Normal] 27. Circuit breaker
+[Normal] Objectif normatif. Définir seuils sans surconception.
+[Normal] Faits établis. Réutiliser un mécanisme existant. Sinon documenter comme évolution distincte; ne pas ajouter une dépendance lourde uniquement pour B4.
+[Normal] Hypothèses explicites. Les noms exacts et emplacements sont déterminés par le dépôt. Les exigences de cette annexe sont normatives sur le comportement, mais non prescriptives sur un renommage arbitraire des composants existants.
+[Normal] Contrôles obligatoires.
+[List Bullet] Vérifier la correspondance avec les classes et migrations existantes.
+[List Bullet] Documenter toute dérogation avant codage.
+[List Bullet] Préserver la compatibilité des interfaces publiques.
+[List Bullet] Ajouter les tests associés au même changement.
+[Normal] Scénarios de vérification.
+[List Number] Comparer le contrat au code actuel.
+[List Number] Simuler le cas nominal.
+[List Number] Simuler une violation de contrat.
+[List Number] Vérifier les effets de bord, logs et persistance.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Ne pas extrapoler au-delà du comportement décrit.
+[List Bullet] Préférer les conventions du dépôt aux modèles génériques.
+[List Bullet] Refuser toute modification destructive non couverte par migration et rollback.
+[Normal] Critères de sortie. La section est satisfaite lorsque son contrat est reflété dans le code, les tests et la documentation de livraison.
+[Normal] 28. Feature flags
+[Normal] Objectif normatif. Définir activation et rollback.
+[Normal] Faits établis. Flag global fallback IA, éventuellement par environnement. Valeur par défaut sûre: désactivé si fournisseur non configuré.
+[Normal] Hypothèses explicites. Les noms exacts et emplacements sont déterminés par le dépôt. Les exigences de cette annexe sont normatives sur le comportement, mais non prescriptives sur un renommage arbitraire des composants existants.
+[Normal] Contrôles obligatoires.
+[List Bullet] Vérifier la correspondance avec les classes et migrations existantes.
+[List Bullet] Documenter toute dérogation avant codage.
+[List Bullet] Préserver la compatibilité des interfaces publiques.
+[List Bullet] Ajouter les tests associés au même changement.
+[Normal] Scénarios de vérification.
+[List Number] Comparer le contrat au code actuel.
+[List Number] Simuler le cas nominal.
+[List Number] Simuler une violation de contrat.
+[List Number] Vérifier les effets de bord, logs et persistance.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Ne pas extrapoler au-delà du comportement décrit.
+[List Bullet] Préférer les conventions du dépôt aux modèles génériques.
+[List Bullet] Refuser toute modification destructive non couverte par migration et rollback.
+[Normal] Critères de sortie. La section est satisfaite lorsque son contrat est reflété dans le code, les tests et la documentation de livraison.
+[Normal] 29. Configuration
+[Normal] Objectif normatif. Centraliser les paramètres.
+[Normal] Faits établis. Modèle, timeout, retries, limites, température et flag proviennent de la configuration existante; aucun magic number dispersé.
+[Normal] Hypothèses explicites. Les noms exacts et emplacements sont déterminés par le dépôt. Les exigences de cette annexe sont normatives sur le comportement, mais non prescriptives sur un renommage arbitraire des composants existants.
+[Normal] Contrôles obligatoires.
+[List Bullet] Vérifier la correspondance avec les classes et migrations existantes.
+[List Bullet] Documenter toute dérogation avant codage.
+[List Bullet] Préserver la compatibilité des interfaces publiques.
+[List Bullet] Ajouter les tests associés au même changement.
+[Normal] Scénarios de vérification.
+[List Number] Comparer le contrat au code actuel.
+[List Number] Simuler le cas nominal.
+[List Number] Simuler une violation de contrat.
+[List Number] Vérifier les effets de bord, logs et persistance.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Ne pas extrapoler au-delà du comportement décrit.
+[List Bullet] Préférer les conventions du dépôt aux modèles génériques.
+[List Bullet] Refuser toute modification destructive non couverte par migration et rollback.
+[Normal] Critères de sortie. La section est satisfaite lorsque son contrat est reflété dans le code, les tests et la documentation de livraison.
+[Normal] 30. Secrets
+[Normal] Objectif normatif. Protéger les clés.
+[Normal] Faits établis. Chargement via secrets/env; jamais dans logs, DB, fixtures, captures ou messages d’erreur.
+[Normal] Hypothèses explicites. Les noms exacts et emplacements sont déterminés par le dépôt. Les exigences de cette annexe sont normatives sur le comportement, mais non prescriptives sur un renommage arbitraire des composants existants.
+[Normal] Contrôles obligatoires.
+[List Bullet] Vérifier la correspondance avec les classes et migrations existantes.
+[List Bullet] Documenter toute dérogation avant codage.
+[List Bullet] Préserver la compatibilité des interfaces publiques.
+[List Bullet] Ajouter les tests associés au même changement.
+[Normal] Scénarios de vérification.
+[List Number] Comparer le contrat au code actuel.
+[List Number] Simuler le cas nominal.
+[List Number] Simuler une violation de contrat.
+[List Number] Vérifier les effets de bord, logs et persistance.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Ne pas extrapoler au-delà du comportement décrit.
+[List Bullet] Préférer les conventions du dépôt aux modèles génériques.
+[List Bullet] Refuser toute modification destructive non couverte par migration et rollback.
+[Normal] Critères de sortie. La section est satisfaite lorsque son contrat est reflété dans le code, les tests et la documentation de livraison.
+[Normal] 31. Persistance
+[Normal] Objectif normatif. Définir écritures.
+[Normal] Faits établis. Persist devoir, items, provenance et statut dans une transaction. Ne pas enregistrer le prompt complet s’il contient des données utilisateur.
+[Normal] Hypothèses explicites. Les noms exacts et emplacements sont déterminés par le dépôt. Les exigences de cette annexe sont normatives sur le comportement, mais non prescriptives sur un renommage arbitraire des composants existants.
+[Normal] Contrôles obligatoires.
+[List Bullet] Vérifier la correspondance avec les classes et migrations existantes.
+[List Bullet] Documenter toute dérogation avant codage.
+[List Bullet] Préserver la compatibilité des interfaces publiques.
+[List Bullet] Ajouter les tests associés au même changement.
+[Normal] Scénarios de vérification.
+[List Number] Comparer le contrat au code actuel.
+[List Number] Simuler le cas nominal.
+[List Number] Simuler une violation de contrat.
+[List Number] Vérifier les effets de bord, logs et persistance.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Ne pas extrapoler au-delà du comportement décrit.
+[List Bullet] Préférer les conventions du dépôt aux modèles génériques.
+[List Bullet] Refuser toute modification destructive non couverte par migration et rollback.
+[Normal] Critères de sortie. La section est satisfaite lorsque son contrat est reflété dans le code, les tests et la documentation de livraison.
+[Normal] 32. Schéma DuckDB
+[Normal] Objectif normatif. Définir contraintes.
+[Normal] Faits établis. Clés primaires, étrangères si supportées, NOT NULL, valeurs bornées, index utiles. Toute table nouvelle doit être justifiée par l’absence d’un modèle existant.
+[Normal] Hypothèses explicites. Les noms exacts et emplacements sont déterminés par le dépôt. Les exigences de cette annexe sont normatives sur le comportement, mais non prescriptives sur un renommage arbitraire des composants existants.
+[Normal] Contrôles obligatoires.
+[List Bullet] Vérifier la correspondance avec les classes et migrations existantes.
+[List Bullet] Documenter toute dérogation avant codage.
+[List Bullet] Préserver la compatibilité des interfaces publiques.
+[List Bullet] Ajouter les tests associés au même changement.
+[Normal] Scénarios de vérification.
+[List Number] Comparer le contrat au code actuel.
+[List Number] Simuler le cas nominal.
+[List Number] Simuler une violation de contrat.
+[List Number] Vérifier les effets de bord, logs et persistance.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Ne pas extrapoler au-delà du comportement décrit.
+[List Bullet] Préférer les conventions du dépôt aux modèles génériques.
+[List Bullet] Refuser toute modification destructive non couverte par migration et rollback.
+[Normal] Critères de sortie. La section est satisfaite lorsque son contrat est reflété dans le code, les tests et la documentation de livraison.
+[Normal] 33. Migration
+[Normal] Objectif normatif. Définir règles.
+[Normal] Faits établis. Migration idempotente selon framework du dépôt; test sur base vide et base existante; aucune perte de données; script de rollback logique si nécessaire.
+[Normal] Hypothèses explicites. Les noms exacts et emplacements sont déterminés par le dépôt. Les exigences de cette annexe sont normatives sur le comportement, mais non prescriptives sur un renommage arbitraire des composants existants.
+[Normal] Contrôles obligatoires.
+[List Bullet] Vérifier la correspondance avec les classes et migrations existantes.
+[List Bullet] Documenter toute dérogation avant codage.
+[List Bullet] Préserver la compatibilité des interfaces publiques.
+[List Bullet] Ajouter les tests associés au même changement.
+[Normal] Scénarios de vérification.
+[List Number] Comparer le contrat au code actuel.
+[List Number] Simuler le cas nominal.
+[List Number] Simuler une violation de contrat.
+[List Number] Vérifier les effets de bord, logs et persistance.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Ne pas extrapoler au-delà du comportement décrit.
+[List Bullet] Préférer les conventions du dépôt aux modèles génériques.
+[List Bullet] Refuser toute modification destructive non couverte par migration et rollback.
+[Normal] Critères de sortie. La section est satisfaite lorsque son contrat est reflété dans le code, les tests et la documentation de livraison.
+[Normal] 34. Requêtes SQL
+[Normal] Objectif normatif. Définir conventions.
+[Normal] Faits établis. Paramètres liés, colonnes explicites, transactions courtes, pas de SELECT *, vérification de cardinalité, gestion des résultats vides.
+[Normal] Hypothèses explicites. Les noms exacts et emplacements sont déterminés par le dépôt. Les exigences de cette annexe sont normatives sur le comportement, mais non prescriptives sur un renommage arbitraire des composants existants.
+[Normal] Contrôles obligatoires.
+[List Bullet] Vérifier la correspondance avec les classes et migrations existantes.
+[List Bullet] Documenter toute dérogation avant codage.
+[List Bullet] Préserver la compatibilité des interfaces publiques.
+[List Bullet] Ajouter les tests associés au même changement.
+[Normal] Scénarios de vérification.
+[List Number] Comparer le contrat au code actuel.
+[List Number] Simuler le cas nominal.
+[List Number] Simuler une violation de contrat.
+[List Number] Vérifier les effets de bord, logs et persistance.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Ne pas extrapoler au-delà du comportement décrit.
+[List Bullet] Préférer les conventions du dépôt aux modèles génériques.
+[List Bullet] Refuser toute modification destructive non couverte par migration et rollback.
+[Normal] Critères de sortie. La section est satisfaite lorsque son contrat est reflété dans le code, les tests et la documentation de livraison.
+[Normal] 35. Concurrence DuckDB
+[Normal] Objectif normatif. Définir contraintes opérationnelles.
+[Normal] Faits établis. Limiter les écritures concurrentes; utiliser la couche repository existante; ne pas partager une connexion mutable entre threads sans garantie.
+[Normal] Hypothèses explicites. Les noms exacts et emplacements sont déterminés par le dépôt. Les exigences de cette annexe sont normatives sur le comportement, mais non prescriptives sur un renommage arbitraire des composants existants.
+[Normal] Contrôles obligatoires.
+[List Bullet] Vérifier la correspondance avec les classes et migrations existantes.
+[List Bullet] Documenter toute dérogation avant codage.
+[List Bullet] Préserver la compatibilité des interfaces publiques.
+[List Bullet] Ajouter les tests associés au même changement.
+[Normal] Scénarios de vérification.
+[List Number] Comparer le contrat au code actuel.
+[List Number] Simuler le cas nominal.
+[List Number] Simuler une violation de contrat.
+[List Number] Vérifier les effets de bord, logs et persistance.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Ne pas extrapoler au-delà du comportement décrit.
+[List Bullet] Préférer les conventions du dépôt aux modèles génériques.
+[List Bullet] Refuser toute modification destructive non couverte par migration et rollback.
+[Normal] Critères de sortie. La section est satisfaite lorsque son contrat est reflété dans le code, les tests et la documentation de livraison.
+[Normal] 36. Observabilité
+[Normal] Objectif normatif. Définir événements.
+[Normal] Faits établis. Émettre request_id, homework_id, deficit, selected_catalog_count, generated_valid_count, retries, latency_ms, outcome. Exclure prompt et réponse brute par défaut.
+[Normal] Hypothèses explicites. Les noms exacts et emplacements sont déterminés par le dépôt. Les exigences de cette annexe sont normatives sur le comportement, mais non prescriptives sur un renommage arbitraire des composants existants.
+[Normal] Contrôles obligatoires.
+[List Bullet] Vérifier la correspondance avec les classes et migrations existantes.
+[List Bullet] Documenter toute dérogation avant codage.
+[List Bullet] Préserver la compatibilité des interfaces publiques.
+[List Bullet] Ajouter les tests associés au même changement.
+[Normal] Scénarios de vérification.
+[List Number] Comparer le contrat au code actuel.
+[List Number] Simuler le cas nominal.
+[List Number] Simuler une violation de contrat.
+[List Number] Vérifier les effets de bord, logs et persistance.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Ne pas extrapoler au-delà du comportement décrit.
+[List Bullet] Préférer les conventions du dépôt aux modèles génériques.
+[List Bullet] Refuser toute modification destructive non couverte par migration et rollback.
+[Normal] Critères de sortie. La section est satisfaite lorsque son contrat est reflété dans le code, les tests et la documentation de livraison.
+[Normal] 37. Métriques
+[Normal] Objectif normatif. Définir noms et dimensions.
+[Normal] Faits établis. Compteurs de demandes, fallback, invalides, timeouts; histogrammes de latence; jauges limitées. Éviter dimensions à forte cardinalité.
+[Normal] Hypothèses explicites. Les noms exacts et emplacements sont déterminés par le dépôt. Les exigences de cette annexe sont normatives sur le comportement, mais non prescriptives sur un renommage arbitraire des composants existants.
+[Normal] Contrôles obligatoires.
+[List Bullet] Vérifier la correspondance avec les classes et migrations existantes.
+[List Bullet] Documenter toute dérogation avant codage.
+[List Bullet] Préserver la compatibilité des interfaces publiques.
+[List Bullet] Ajouter les tests associés au même changement.
+[Normal] Scénarios de vérification.
+[List Number] Comparer le contrat au code actuel.
+[List Number] Simuler le cas nominal.
+[List Number] Simuler une violation de contrat.
+[List Number] Vérifier les effets de bord, logs et persistance.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Ne pas extrapoler au-delà du comportement décrit.
+[List Bullet] Préférer les conventions du dépôt aux modèles génériques.
+[List Bullet] Refuser toute modification destructive non couverte par migration et rollback.
+[Normal] Critères de sortie. La section est satisfaite lorsque son contrat est reflété dans le code, les tests et la documentation de livraison.
+[Normal] 38. Audit
+[Normal] Objectif normatif. Définir traçabilité.
+[Normal] Faits établis. Conserver provenance, modèle logique, version de schéma, version du validateur et décision. Ne pas conserver les chaînes de pensée du fournisseur.
+[Normal] Hypothèses explicites. Les noms exacts et emplacements sont déterminés par le dépôt. Les exigences de cette annexe sont normatives sur le comportement, mais non prescriptives sur un renommage arbitraire des composants existants.
+[Normal] Contrôles obligatoires.
+[List Bullet] Vérifier la correspondance avec les classes et migrations existantes.
+[List Bullet] Documenter toute dérogation avant codage.
+[List Bullet] Préserver la compatibilité des interfaces publiques.
+[List Bullet] Ajouter les tests associés au même changement.
+[Normal] Scénarios de vérification.
+[List Number] Comparer le contrat au code actuel.
+[List Number] Simuler le cas nominal.
+[List Number] Simuler une violation de contrat.
+[List Number] Vérifier les effets de bord, logs et persistance.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Ne pas extrapoler au-delà du comportement décrit.
+[List Bullet] Préférer les conventions du dépôt aux modèles génériques.
+[List Bullet] Refuser toute modification destructive non couverte par migration et rollback.
+[Normal] Critères de sortie. La section est satisfaite lorsque son contrat est reflété dans le code, les tests et la documentation de livraison.
+[Normal] 39. Sécurité applicative
+[Normal] Objectif normatif. Définir contrôles.
+[Normal] Faits établis. Contrôle d’accès avant lecture/génération, validation d’entrée, limitation de taille, absence d’évaluation dynamique, dépendances épinglées.
+[Normal] Hypothèses explicites. Les noms exacts et emplacements sont déterminés par le dépôt. Les exigences de cette annexe sont normatives sur le comportement, mais non prescriptives sur un renommage arbitraire des composants existants.
+[Normal] Contrôles obligatoires.
+[List Bullet] Vérifier la correspondance avec les classes et migrations existantes.
+[List Bullet] Documenter toute dérogation avant codage.
+[List Bullet] Préserver la compatibilité des interfaces publiques.
+[List Bullet] Ajouter les tests associés au même changement.
+[Normal] Scénarios de vérification.
+[List Number] Comparer le contrat au code actuel.
+[List Number] Simuler le cas nominal.
+[List Number] Simuler une violation de contrat.
+[List Number] Vérifier les effets de bord, logs et persistance.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Ne pas extrapoler au-delà du comportement décrit.
+[List Bullet] Préférer les conventions du dépôt aux modèles génériques.
+[List Bullet] Refuser toute modification destructive non couverte par migration et rollback.
+[Normal] Critères de sortie. La section est satisfaite lorsque son contrat est reflété dans le code, les tests et la documentation de livraison.
+[Normal] 40. Protection prompt injection
+[Normal] Objectif normatif. Définir règles.
+[Normal] Faits établis. Considérer tout texte métier comme données. Ne pas concaténer des instructions d’utilisateur dans le rôle système. Rejeter les champs dépassant les limites.
+[Normal] Hypothèses explicites. Les noms exacts et emplacements sont déterminés par le dépôt. Les exigences de cette annexe sont normatives sur le comportement, mais non prescriptives sur un renommage arbitraire des composants existants.
+[Normal] Contrôles obligatoires.
+[List Bullet] Vérifier la correspondance avec les classes et migrations existantes.
+[List Bullet] Documenter toute dérogation avant codage.
+[List Bullet] Préserver la compatibilité des interfaces publiques.
+[List Bullet] Ajouter les tests associés au même changement.
+[Normal] Scénarios de vérification.
+[List Number] Comparer le contrat au code actuel.
+[List Number] Simuler le cas nominal.
+[List Number] Simuler une violation de contrat.
+[List Number] Vérifier les effets de bord, logs et persistance.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Ne pas extrapoler au-delà du comportement décrit.
+[List Bullet] Préférer les conventions du dépôt aux modèles génériques.
+[List Bullet] Refuser toute modification destructive non couverte par migration et rollback.
+[Normal] Critères de sortie. La section est satisfaite lorsque son contrat est reflété dans le code, les tests et la documentation de livraison.
+[Normal] 41. Protection données personnelles
+[Normal] Objectif normatif. Définir minimisation.
+[Normal] Faits établis. Envoyer uniquement niveau, matière, compétence et contraintes. Utiliser un identifiant pseudonyme seulement si techniquement nécessaire.
+[Normal] Hypothèses explicites. Les noms exacts et emplacements sont déterminés par le dépôt. Les exigences de cette annexe sont normatives sur le comportement, mais non prescriptives sur un renommage arbitraire des composants existants.
+[Normal] Contrôles obligatoires.
+[List Bullet] Vérifier la correspondance avec les classes et migrations existantes.
+[List Bullet] Documenter toute dérogation avant codage.
+[List Bullet] Préserver la compatibilité des interfaces publiques.
+[List Bullet] Ajouter les tests associés au même changement.
+[Normal] Scénarios de vérification.
+[List Number] Comparer le contrat au code actuel.
+[List Number] Simuler le cas nominal.
+[List Number] Simuler une violation de contrat.
+[List Number] Vérifier les effets de bord, logs et persistance.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Ne pas extrapoler au-delà du comportement décrit.
+[List Bullet] Préférer les conventions du dépôt aux modèles génériques.
+[List Bullet] Refuser toute modification destructive non couverte par migration et rollback.
+[Normal] Critères de sortie. La section est satisfaite lorsque son contrat est reflété dans le code, les tests et la documentation de livraison.
+[Normal] 42. Performance
+[Normal] Objectif normatif. Définir budgets et mesures.
+[Normal] Faits établis. Chemin catalogue non dégradé; validation linéaire au nombre d’exercices; aucune requête N+1; cache seulement si cohérence garantie.
+[Normal] Hypothèses explicites. Les noms exacts et emplacements sont déterminés par le dépôt. Les exigences de cette annexe sont normatives sur le comportement, mais non prescriptives sur un renommage arbitraire des composants existants.
+[Normal] Contrôles obligatoires.
+[List Bullet] Vérifier la correspondance avec les classes et migrations existantes.
+[List Bullet] Documenter toute dérogation avant codage.
+[List Bullet] Préserver la compatibilité des interfaces publiques.
+[List Bullet] Ajouter les tests associés au même changement.
+[Normal] Scénarios de vérification.
+[List Number] Comparer le contrat au code actuel.
+[List Number] Simuler le cas nominal.
+[List Number] Simuler une violation de contrat.
+[List Number] Vérifier les effets de bord, logs et persistance.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Ne pas extrapoler au-delà du comportement décrit.
+[List Bullet] Préférer les conventions du dépôt aux modèles génériques.
+[List Bullet] Refuser toute modification destructive non couverte par migration et rollback.
+[Normal] Critères de sortie. La section est satisfaite lorsque son contrat est reflété dans le code, les tests et la documentation de livraison.
+[Normal] 43. Cache
+[Normal] Objectif normatif. Définir usage prudent.
+[Normal] Faits établis. Ne pas cacher des résultats personnalisés sans clé complète et TTL. Préférer cache de référentiels immuables si infrastructure existante.
+[Normal] Hypothèses explicites. Les noms exacts et emplacements sont déterminés par le dépôt. Les exigences de cette annexe sont normatives sur le comportement, mais non prescriptives sur un renommage arbitraire des composants existants.
+[Normal] Contrôles obligatoires.
+[List Bullet] Vérifier la correspondance avec les classes et migrations existantes.
+[List Bullet] Documenter toute dérogation avant codage.
+[List Bullet] Préserver la compatibilité des interfaces publiques.
+[List Bullet] Ajouter les tests associés au même changement.
+[Normal] Scénarios de vérification.
+[List Number] Comparer le contrat au code actuel.
+[List Number] Simuler le cas nominal.
+[List Number] Simuler une violation de contrat.
+[List Number] Vérifier les effets de bord, logs et persistance.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Ne pas extrapoler au-delà du comportement décrit.
+[List Bullet] Préférer les conventions du dépôt aux modèles génériques.
+[List Bullet] Refuser toute modification destructive non couverte par migration et rollback.
+[Normal] Critères de sortie. La section est satisfaite lorsque son contrat est reflété dans le code, les tests et la documentation de livraison.
+[Normal] 44. Qualité de code
+[Normal] Objectif normatif. Définir standards.
+[Normal] Faits établis. Type hints complets, fonctions courtes, erreurs explicites, docstrings sur contrats publics, aucune duplication du domaine, pas de broad except.
+[Normal] Hypothèses explicites. Les noms exacts et emplacements sont déterminés par le dépôt. Les exigences de cette annexe sont normatives sur le comportement, mais non prescriptives sur un renommage arbitraire des composants existants.
+[Normal] Contrôles obligatoires.
+[List Bullet] Vérifier la correspondance avec les classes et migrations existantes.
+[List Bullet] Documenter toute dérogation avant codage.
+[List Bullet] Préserver la compatibilité des interfaces publiques.
+[List Bullet] Ajouter les tests associés au même changement.
+[Normal] Scénarios de vérification.
+[List Number] Comparer le contrat au code actuel.
+[List Number] Simuler le cas nominal.
+[List Number] Simuler une violation de contrat.
+[List Number] Vérifier les effets de bord, logs et persistance.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Ne pas extrapoler au-delà du comportement décrit.
+[List Bullet] Préférer les conventions du dépôt aux modèles génériques.
+[List Bullet] Refuser toute modification destructive non couverte par migration et rollback.
+[Normal] Critères de sortie. La section est satisfaite lorsque son contrat est reflété dans le code, les tests et la documentation de livraison.
+[Normal] 45. Structure des fichiers
+[Normal] Objectif normatif. Guider Cursor.
+[Normal] Faits établis. Placer DTO, service, validation, repository et tests dans les modules existants correspondants. Ne pas créer un dossier B4 parallèle.
+[Normal] Hypothèses explicites. Les noms exacts et emplacements sont déterminés par le dépôt. Les exigences de cette annexe sont normatives sur le comportement, mais non prescriptives sur un renommage arbitraire des composants existants.
+[Normal] Contrôles obligatoires.
+[List Bullet] Vérifier la correspondance avec les classes et migrations existantes.
+[List Bullet] Documenter toute dérogation avant codage.
+[List Bullet] Préserver la compatibilité des interfaces publiques.
+[List Bullet] Ajouter les tests associés au même changement.
+[Normal] Scénarios de vérification.
+[List Number] Comparer le contrat au code actuel.
+[List Number] Simuler le cas nominal.
+[List Number] Simuler une violation de contrat.
+[List Number] Vérifier les effets de bord, logs et persistance.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Ne pas extrapoler au-delà du comportement décrit.
+[List Bullet] Préférer les conventions du dépôt aux modèles génériques.
+[List Bullet] Refuser toute modification destructive non couverte par migration et rollback.
+[Normal] Critères de sortie. La section est satisfaite lorsque son contrat est reflété dans le code, les tests et la documentation de livraison.
+[Normal] 46. Plan de modification fichier par fichier
+[Normal] Objectif normatif. Contraindre l’étendue.
+[Normal] Faits établis. Identifier d’abord les fichiers exacts; modifier HomeworkService, adaptateur ContentFactory, validateur, repository et tests uniquement si nécessaires.
+[Normal] Hypothèses explicites. Les noms exacts et emplacements sont déterminés par le dépôt. Les exigences de cette annexe sont normatives sur le comportement, mais non prescriptives sur un renommage arbitraire des composants existants.
+[Normal] Contrôles obligatoires.
+[List Bullet] Vérifier la correspondance avec les classes et migrations existantes.
+[List Bullet] Documenter toute dérogation avant codage.
+[List Bullet] Préserver la compatibilité des interfaces publiques.
+[List Bullet] Ajouter les tests associés au même changement.
+[Normal] Scénarios de vérification.
+[List Number] Comparer le contrat au code actuel.
+[List Number] Simuler le cas nominal.
+[List Number] Simuler une violation de contrat.
+[List Number] Vérifier les effets de bord, logs et persistance.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Ne pas extrapoler au-delà du comportement décrit.
+[List Bullet] Préférer les conventions du dépôt aux modèles génériques.
+[List Bullet] Refuser toute modification destructive non couverte par migration et rollback.
+[Normal] Critères de sortie. La section est satisfaite lorsque son contrat est reflété dans le code, les tests et la documentation de livraison.
+[Normal] 47. Tests unitaires requis
+[Normal] Objectif normatif. Lister le minimum.
+[Normal] Faits établis. Déficit zéro/positif; sélection; appel IA exact; validation; déduplication; fusion; erreurs; retry; timeout; absence de fuite de secrets.
+[Normal] Hypothèses explicites. Les noms exacts et emplacements sont déterminés par le dépôt. Les exigences de cette annexe sont normatives sur le comportement, mais non prescriptives sur un renommage arbitraire des composants existants.
+[Normal] Contrôles obligatoires.
+[List Bullet] Vérifier la correspondance avec les classes et migrations existantes.
+[List Bullet] Documenter toute dérogation avant codage.
+[List Bullet] Préserver la compatibilité des interfaces publiques.
+[List Bullet] Ajouter les tests associés au même changement.
+[Normal] Scénarios de vérification.
+[List Number] Comparer le contrat au code actuel.
+[List Number] Simuler le cas nominal.
+[List Number] Simuler une violation de contrat.
+[List Number] Vérifier les effets de bord, logs et persistance.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Ne pas extrapoler au-delà du comportement décrit.
+[List Bullet] Préférer les conventions du dépôt aux modèles génériques.
+[List Bullet] Refuser toute modification destructive non couverte par migration et rollback.
+[Normal] Critères de sortie. La section est satisfaite lorsque son contrat est reflété dans le code, les tests et la documentation de livraison.
+[Normal] 48. Tests d’intégration requis
+[Normal] Objectif normatif. Lister le minimum.
+[Normal] Faits établis. Base temporaire, transaction, migration, persistance provenance, flux complet avec fournisseur simulé.
+[Normal] Hypothèses explicites. Les noms exacts et emplacements sont déterminés par le dépôt. Les exigences de cette annexe sont normatives sur le comportement, mais non prescriptives sur un renommage arbitraire des composants existants.
+[Normal] Contrôles obligatoires.
+[List Bullet] Vérifier la correspondance avec les classes et migrations existantes.
+[List Bullet] Documenter toute dérogation avant codage.
+[List Bullet] Préserver la compatibilité des interfaces publiques.
+[List Bullet] Ajouter les tests associés au même changement.
+[Normal] Scénarios de vérification.
+[List Number] Comparer le contrat au code actuel.
+[List Number] Simuler le cas nominal.
+[List Number] Simuler une violation de contrat.
+[List Number] Vérifier les effets de bord, logs et persistance.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Ne pas extrapoler au-delà du comportement décrit.
+[List Bullet] Préférer les conventions du dépôt aux modèles génériques.
+[List Bullet] Refuser toute modification destructive non couverte par migration et rollback.
+[Normal] Critères de sortie. La section est satisfaite lorsque son contrat est reflété dans le code, les tests et la documentation de livraison.
+[Normal] 49. Tests E2E requis
+[Normal] Objectif normatif. Lister le minimum.
+[Normal] Faits établis. UI vers devoir complet, partiel et fournisseur indisponible; contrôle d’accès; affichage d’erreur stable.
+[Normal] Hypothèses explicites. Les noms exacts et emplacements sont déterminés par le dépôt. Les exigences de cette annexe sont normatives sur le comportement, mais non prescriptives sur un renommage arbitraire des composants existants.
+[Normal] Contrôles obligatoires.
+[List Bullet] Vérifier la correspondance avec les classes et migrations existantes.
+[List Bullet] Documenter toute dérogation avant codage.
+[List Bullet] Préserver la compatibilité des interfaces publiques.
+[List Bullet] Ajouter les tests associés au même changement.
+[Normal] Scénarios de vérification.
+[List Number] Comparer le contrat au code actuel.
+[List Number] Simuler le cas nominal.
+[List Number] Simuler une violation de contrat.
+[List Number] Vérifier les effets de bord, logs et persistance.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Ne pas extrapoler au-delà du comportement décrit.
+[List Bullet] Préférer les conventions du dépôt aux modèles génériques.
+[List Bullet] Refuser toute modification destructive non couverte par migration et rollback.
+[Normal] Critères de sortie. La section est satisfaite lorsque son contrat est reflété dans le code, les tests et la documentation de livraison.
+[Normal] 50. Conventions de mocks
+[Normal] Objectif normatif. Éviter les faux positifs.
+[Normal] Faits établis. Mock uniquement le fournisseur et frontières externes. Utiliser la vraie validation et le vrai repository sur base temporaire dans l’intégration.
+[Normal] Hypothèses explicites. Les noms exacts et emplacements sont déterminés par le dépôt. Les exigences de cette annexe sont normatives sur le comportement, mais non prescriptives sur un renommage arbitraire des composants existants.
+[Normal] Contrôles obligatoires.
+[List Bullet] Vérifier la correspondance avec les classes et migrations existantes.
+[List Bullet] Documenter toute dérogation avant codage.
+[List Bullet] Préserver la compatibilité des interfaces publiques.
+[List Bullet] Ajouter les tests associés au même changement.
+[Normal] Scénarios de vérification.
+[List Number] Comparer le contrat au code actuel.
+[List Number] Simuler le cas nominal.
+[List Number] Simuler une violation de contrat.
+[List Number] Vérifier les effets de bord, logs et persistance.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Ne pas extrapoler au-delà du comportement décrit.
+[List Bullet] Préférer les conventions du dépôt aux modèles génériques.
+[List Bullet] Refuser toute modification destructive non couverte par migration et rollback.
+[Normal] Critères de sortie. La section est satisfaite lorsque son contrat est reflété dans le code, les tests et la documentation de livraison.
+[Normal] 51. Checklist Cursor avant code
+[Normal] Objectif normatif. Forcer la découverte.
+[Normal] Faits établis. Lister classes existantes, signatures, modèles, migrations, tests et configuration. Produire un plan de diff avant écriture.
+[Normal] Hypothèses explicites. Les noms exacts et emplacements sont déterminés par le dépôt. Les exigences de cette annexe sont normatives sur le comportement, mais non prescriptives sur un renommage arbitraire des composants existants.
+[Normal] Contrôles obligatoires.
+[List Bullet] Vérifier la correspondance avec les classes et migrations existantes.
+[List Bullet] Documenter toute dérogation avant codage.
+[List Bullet] Préserver la compatibilité des interfaces publiques.
+[List Bullet] Ajouter les tests associés au même changement.
+[Normal] Scénarios de vérification.
+[List Number] Comparer le contrat au code actuel.
+[List Number] Simuler le cas nominal.
+[List Number] Simuler une violation de contrat.
+[List Number] Vérifier les effets de bord, logs et persistance.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Ne pas extrapoler au-delà du comportement décrit.
+[List Bullet] Préférer les conventions du dépôt aux modèles génériques.
+[List Bullet] Refuser toute modification destructive non couverte par migration et rollback.
+[Normal] Critères de sortie. La section est satisfaite lorsque son contrat est reflété dans le code, les tests et la documentation de livraison.
+[Normal] 52. Checklist Cursor pendant code
+[Normal] Objectif normatif. Limiter la dérive.
+[Normal] Faits établis. Compiler/tester après chaque lot; conserver signatures; ne pas renommer massivement; ajouter aucun framework sans décision.
+[Normal] Hypothèses explicites. Les noms exacts et emplacements sont déterminés par le dépôt. Les exigences de cette annexe sont normatives sur le comportement, mais non prescriptives sur un renommage arbitraire des composants existants.
+[Normal] Contrôles obligatoires.
+[List Bullet] Vérifier la correspondance avec les classes et migrations existantes.
+[List Bullet] Documenter toute dérogation avant codage.
+[List Bullet] Préserver la compatibilité des interfaces publiques.
+[List Bullet] Ajouter les tests associés au même changement.
+[Normal] Scénarios de vérification.
+[List Number] Comparer le contrat au code actuel.
+[List Number] Simuler le cas nominal.
+[List Number] Simuler une violation de contrat.
+[List Number] Vérifier les effets de bord, logs et persistance.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Ne pas extrapoler au-delà du comportement décrit.
+[List Bullet] Préférer les conventions du dépôt aux modèles génériques.
+[List Bullet] Refuser toute modification destructive non couverte par migration et rollback.
+[Normal] Critères de sortie. La section est satisfaite lorsque son contrat est reflété dans le code, les tests et la documentation de livraison.
+[Normal] 53. Checklist Cursor après code
+[Normal] Objectif normatif. Forcer la preuve.
+[Normal] Faits établis. Exécuter Ruff, Mypy, pytest, migrations, tests négatifs; fournir liste de fichiers, risques et commandes.
+[Normal] Hypothèses explicites. Les noms exacts et emplacements sont déterminés par le dépôt. Les exigences de cette annexe sont normatives sur le comportement, mais non prescriptives sur un renommage arbitraire des composants existants.
+[Normal] Contrôles obligatoires.
+[List Bullet] Vérifier la correspondance avec les classes et migrations existantes.
+[List Bullet] Documenter toute dérogation avant codage.
+[List Bullet] Préserver la compatibilité des interfaces publiques.
+[List Bullet] Ajouter les tests associés au même changement.
+[Normal] Scénarios de vérification.
+[List Number] Comparer le contrat au code actuel.
+[List Number] Simuler le cas nominal.
+[List Number] Simuler une violation de contrat.
+[List Number] Vérifier les effets de bord, logs et persistance.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Ne pas extrapoler au-delà du comportement décrit.
+[List Bullet] Préférer les conventions du dépôt aux modèles génériques.
+[List Bullet] Refuser toute modification destructive non couverte par migration et rollback.
+[Normal] Critères de sortie. La section est satisfaite lorsque son contrat est reflété dans le code, les tests et la documentation de livraison.
+[Normal] 54. Anti-patterns interdits
+[Normal] Objectif normatif. Rendre les erreurs explicites.
+[Normal] Faits établis. Nouveau client IA parallèle; appel réseau dans repository; prompt dans UI; swallow exception; JSON trusté; valeurs par défaut inventées; écriture hors transaction.
+[Normal] Hypothèses explicites. Les noms exacts et emplacements sont déterminés par le dépôt. Les exigences de cette annexe sont normatives sur le comportement, mais non prescriptives sur un renommage arbitraire des composants existants.
+[Normal] Contrôles obligatoires.
+[List Bullet] Vérifier la correspondance avec les classes et migrations existantes.
+[List Bullet] Documenter toute dérogation avant codage.
+[List Bullet] Préserver la compatibilité des interfaces publiques.
+[List Bullet] Ajouter les tests associés au même changement.
+[Normal] Scénarios de vérification.
+[List Number] Comparer le contrat au code actuel.
+[List Number] Simuler le cas nominal.
+[List Number] Simuler une violation de contrat.
+[List Number] Vérifier les effets de bord, logs et persistance.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Ne pas extrapoler au-delà du comportement décrit.
+[List Bullet] Préférer les conventions du dépôt aux modèles génériques.
+[List Bullet] Refuser toute modification destructive non couverte par migration et rollback.
+[Normal] Critères de sortie. La section est satisfaite lorsque son contrat est reflété dans le code, les tests et la documentation de livraison.
+[Normal] 55. Décisions et trade-offs
+[Normal] Objectif normatif. Documenter choix.
+[Normal] Faits établis. Retour partiel versus échec total; validation stricte versus taux de rejet; retry versus latence; provenance détaillée versus minimisation.
+[Normal] Hypothèses explicites. Les noms exacts et emplacements sont déterminés par le dépôt. Les exigences de cette annexe sont normatives sur le comportement, mais non prescriptives sur un renommage arbitraire des composants existants.
+[Normal] Contrôles obligatoires.
+[List Bullet] Vérifier la correspondance avec les classes et migrations existantes.
+[List Bullet] Documenter toute dérogation avant codage.
+[List Bullet] Préserver la compatibilité des interfaces publiques.
+[List Bullet] Ajouter les tests associés au même changement.
+[Normal] Scénarios de vérification.
+[List Number] Comparer le contrat au code actuel.
+[List Number] Simuler le cas nominal.
+[List Number] Simuler une violation de contrat.
+[List Number] Vérifier les effets de bord, logs et persistance.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Ne pas extrapoler au-delà du comportement décrit.
+[List Bullet] Préférer les conventions du dépôt aux modèles génériques.
+[List Bullet] Refuser toute modification destructive non couverte par migration et rollback.
+[Normal] Critères de sortie. La section est satisfaite lorsque son contrat est reflété dans le code, les tests et la documentation de livraison.
+[Normal] 56. RACI technique
+[Normal] Objectif normatif. Définir responsabilités.
+[Normal] Faits établis. Architecte valide contrats; développeur implémente; QA qualifie; sécurité audite; référent pédagogique accepte; Ops valide observabilité.
+[Normal] Hypothèses explicites. Les noms exacts et emplacements sont déterminés par le dépôt. Les exigences de cette annexe sont normatives sur le comportement, mais non prescriptives sur un renommage arbitraire des composants existants.
+[Normal] Contrôles obligatoires.
+[List Bullet] Vérifier la correspondance avec les classes et migrations existantes.
+[List Bullet] Documenter toute dérogation avant codage.
+[List Bullet] Préserver la compatibilité des interfaces publiques.
+[List Bullet] Ajouter les tests associés au même changement.
+[Normal] Scénarios de vérification.
+[List Number] Comparer le contrat au code actuel.
+[List Number] Simuler le cas nominal.
+[List Number] Simuler une violation de contrat.
+[List Number] Vérifier les effets de bord, logs et persistance.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Ne pas extrapoler au-delà du comportement décrit.
+[List Bullet] Préférer les conventions du dépôt aux modèles génériques.
+[List Bullet] Refuser toute modification destructive non couverte par migration et rollback.
+[Normal] Critères de sortie. La section est satisfaite lorsque son contrat est reflété dans le code, les tests et la documentation de livraison.
+[Normal] 57. Definition of Ready
+[Normal] Objectif normatif. Définir prérequis.
+[Normal] Faits établis. Repository inspecté, signatures confirmées, modèles identifiés, flags définis, jeux de test disponibles, décision sur résultat partiel.
+[Normal] Hypothèses explicites. Les noms exacts et emplacements sont déterminés par le dépôt. Les exigences de cette annexe sont normatives sur le comportement, mais non prescriptives sur un renommage arbitraire des composants existants.
+[Normal] Contrôles obligatoires.
+[List Bullet] Vérifier la correspondance avec les classes et migrations existantes.
+[List Bullet] Documenter toute dérogation avant codage.
+[List Bullet] Préserver la compatibilité des interfaces publiques.
+[List Bullet] Ajouter les tests associés au même changement.
+[Normal] Scénarios de vérification.
+[List Number] Comparer le contrat au code actuel.
+[List Number] Simuler le cas nominal.
+[List Number] Simuler une violation de contrat.
+[List Number] Vérifier les effets de bord, logs et persistance.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Ne pas extrapoler au-delà du comportement décrit.
+[List Bullet] Préférer les conventions du dépôt aux modèles génériques.
+[List Bullet] Refuser toute modification destructive non couverte par migration et rollback.
+[Normal] Critères de sortie. La section est satisfaite lorsque son contrat est reflété dans le code, les tests et la documentation de livraison.
+[Normal] 58. Definition of Done
+[Normal] Objectif normatif. Définir sortie.
+[Normal] Faits établis. Code, migrations, tests, rapports, logs, métriques, documentation, revue sécurité et acceptation métier sont complets.
+[Normal] Hypothèses explicites. Les noms exacts et emplacements sont déterminés par le dépôt. Les exigences de cette annexe sont normatives sur le comportement, mais non prescriptives sur un renommage arbitraire des composants existants.
+[Normal] Contrôles obligatoires.
+[List Bullet] Vérifier la correspondance avec les classes et migrations existantes.
+[List Bullet] Documenter toute dérogation avant codage.
+[List Bullet] Préserver la compatibilité des interfaces publiques.
+[List Bullet] Ajouter les tests associés au même changement.
+[Normal] Scénarios de vérification.
+[List Number] Comparer le contrat au code actuel.
+[List Number] Simuler le cas nominal.
+[List Number] Simuler une violation de contrat.
+[List Number] Vérifier les effets de bord, logs et persistance.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Ne pas extrapoler au-delà du comportement décrit.
+[List Bullet] Préférer les conventions du dépôt aux modèles génériques.
+[List Bullet] Refuser toute modification destructive non couverte par migration et rollback.
+[Normal] Critères de sortie. La section est satisfaite lorsque son contrat est reflété dans le code, les tests et la documentation de livraison.
+[Normal] 59. Registre des hypothèses
+[Normal] Objectif normatif. Rendre les inconnues visibles.
+[Normal] Faits établis. Chaque divergence du dépôt est enregistrée avec impact et décision; aucune hypothèse ne devient implicitement une exigence.
+[Normal] Hypothèses explicites. Les noms exacts et emplacements sont déterminés par le dépôt. Les exigences de cette annexe sont normatives sur le comportement, mais non prescriptives sur un renommage arbitraire des composants existants.
+[Normal] Contrôles obligatoires.
+[List Bullet] Vérifier la correspondance avec les classes et migrations existantes.
+[List Bullet] Documenter toute dérogation avant codage.
+[List Bullet] Préserver la compatibilité des interfaces publiques.
+[List Bullet] Ajouter les tests associés au même changement.
+[Normal] Scénarios de vérification.
+[List Number] Comparer le contrat au code actuel.
+[List Number] Simuler le cas nominal.
+[List Number] Simuler une violation de contrat.
+[List Number] Vérifier les effets de bord, logs et persistance.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Ne pas extrapoler au-delà du comportement décrit.
+[List Bullet] Préférer les conventions du dépôt aux modèles génériques.
+[List Bullet] Refuser toute modification destructive non couverte par migration et rollback.
+[Normal] Critères de sortie. La section est satisfaite lorsque son contrat est reflété dans le code, les tests et la documentation de livraison.
+[Normal] 60. Registre des limitations
+[Normal] Objectif normatif. Énoncer les limites.
+[Normal] Faits établis. La validation automatique ne garantit pas la qualité pédagogique universelle; la disponibilité fournisseur reste externe; DuckDB limite certains scénarios de concurrence.
+[Normal] Hypothèses explicites. Les noms exacts et emplacements sont déterminés par le dépôt. Les exigences de cette annexe sont normatives sur le comportement, mais non prescriptives sur un renommage arbitraire des composants existants.
+[Normal] Contrôles obligatoires.
+[List Bullet] Vérifier la correspondance avec les classes et migrations existantes.
+[List Bullet] Documenter toute dérogation avant codage.
+[List Bullet] Préserver la compatibilité des interfaces publiques.
+[List Bullet] Ajouter les tests associés au même changement.
+[Normal] Scénarios de vérification.
+[List Number] Comparer le contrat au code actuel.
+[List Number] Simuler le cas nominal.
+[List Number] Simuler une violation de contrat.
+[List Number] Vérifier les effets de bord, logs et persistance.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Ne pas extrapoler au-delà du comportement décrit.
+[List Bullet] Préférer les conventions du dépôt aux modèles génériques.
+[List Bullet] Refuser toute modification destructive non couverte par migration et rollback.
+[Normal] Critères de sortie. La section est satisfaite lorsque son contrat est reflété dans le code, les tests et la documentation de livraison.
+[Normal] 61. Instructions finales d’exécution
+[Normal] Objectif normatif. Donner une séquence de travail.
+[Normal] Faits établis. Découvrir, cartographier, proposer diff, implémenter petit lot, tester, intégrer, qualifier, documenter. Arrêter en cas de contradiction de contrat plutôt que d’inventer.
+[Normal] Hypothèses explicites. Les noms exacts et emplacements sont déterminés par le dépôt. Les exigences de cette annexe sont normatives sur le comportement, mais non prescriptives sur un renommage arbitraire des composants existants.
+[Normal] Contrôles obligatoires.
+[List Bullet] Vérifier la correspondance avec les classes et migrations existantes.
+[List Bullet] Documenter toute dérogation avant codage.
+[List Bullet] Préserver la compatibilité des interfaces publiques.
+[List Bullet] Ajouter les tests associés au même changement.
+[Normal] Scénarios de vérification.
+[List Number] Comparer le contrat au code actuel.
+[List Number] Simuler le cas nominal.
+[List Number] Simuler une violation de contrat.
+[List Number] Vérifier les effets de bord, logs et persistance.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Ne pas extrapoler au-delà du comportement décrit.
+[List Bullet] Préférer les conventions du dépôt aux modèles génériques.
+[List Bullet] Refuser toute modification destructive non couverte par migration et rollback.
+[Normal] Critères de sortie. La section est satisfaite lorsque son contrat est reflété dans le code, les tests et la documentation de livraison.
+--- TABLE 1 ---
+Projet || Learning Coach AI
+Référence || LCAI-0018B4
+Classification || Software Verification & Validation Specification
+Audience || Cursor / Équipe de développement / QA / Architecture / Sécurité
+Statut || Spécification normative
+Priorité || Sécurité, exactitude pédagogique, déterminisme, traçabilité
+Principe directeur || Le catalogue reste la source primaire. L’IA est un mécanisme de comblement contrôlé du déficit.
+--- TABLE 2 ---
+ID || Précondition || Action || Résultat attendu
+A-001 || Dépôt inspecté || Appliquer la règle || Comportement conforme sans architecture parallèle
+A-001-N || Entrée non conforme || Exécuter le flux || Rejet explicite et traçable
+A-001-R || Dépendance indisponible || Exécuter le flux || Dégradation conforme et sans corruption
+--- TABLE 3 ---
+ID || Précondition || Action || Résultat attendu
+A-002 || Dépôt inspecté || Appliquer la règle || Comportement conforme sans architecture parallèle
+A-002-N || Entrée non conforme || Exécuter le flux || Rejet explicite et traçable
+A-002-R || Dépendance indisponible || Exécuter le flux || Dégradation conforme et sans corruption
+--- TABLE 4 ---
+ID || Précondition || Action || Résultat attendu
+A-003 || Dépôt inspecté || Appliquer la règle || Comportement conforme sans architecture parallèle
+A-003-N || Entrée non conforme || Exécuter le flux || Rejet explicite et traçable
+A-003-R || Dépendance indisponible || Exécuter le flux || Dégradation conforme et sans corruption
+--- TABLE 5 ---
+ID || Précondition || Action || Résultat attendu
+A-004 || Dépôt inspecté || Appliquer la règle || Comportement conforme sans architecture parallèle
+A-004-N || Entrée non conforme || Exécuter le flux || Rejet explicite et traçable
+A-004-R || Dépendance indisponible || Exécuter le flux || Dégradation conforme et sans corruption
+--- TABLE 6 ---
+ID || Précondition || Action || Résultat attendu
+A-005 || Dépôt inspecté || Appliquer la règle || Comportement conforme sans architecture parallèle
+A-005-N || Entrée non conforme || Exécuter le flux || Rejet explicite et traçable
+A-005-R || Dépendance indisponible || Exécuter le flux || Dégradation conforme et sans corruption
+--- TABLE 7 ---
+ID || Précondition || Action || Résultat attendu
+A-006 || Dépôt inspecté || Appliquer la règle || Comportement conforme sans architecture parallèle
+A-006-N || Entrée non conforme || Exécuter le flux || Rejet explicite et traçable
+A-006-R || Dépendance indisponible || Exécuter le flux || Dégradation conforme et sans corruption
+--- TABLE 8 ---
+ID || Précondition || Action || Résultat attendu
+A-007 || Dépôt inspecté || Appliquer la règle || Comportement conforme sans architecture parallèle
+A-007-N || Entrée non conforme || Exécuter le flux || Rejet explicite et traçable
+A-007-R || Dépendance indisponible || Exécuter le flux || Dégradation conforme et sans corruption
+--- TABLE 9 ---
+ID || Précondition || Action || Résultat attendu
+A-008 || Dépôt inspecté || Appliquer la règle || Comportement conforme sans architecture parallèle
+A-008-N || Entrée non conforme || Exécuter le flux || Rejet explicite et traçable
+A-008-R || Dépendance indisponible || Exécuter le flux || Dégradation conforme et sans corruption
+--- TABLE 10 ---
+ID || Précondition || Action || Résultat attendu
+A-009 || Dépôt inspecté || Appliquer la règle || Comportement conforme sans architecture parallèle
+A-009-N || Entrée non conforme || Exécuter le flux || Rejet explicite et traçable
+A-009-R || Dépendance indisponible || Exécuter le flux || Dégradation conforme et sans corruption
+--- TABLE 11 ---
+ID || Précondition || Action || Résultat attendu
+A-010 || Dépôt inspecté || Appliquer la règle || Comportement conforme sans architecture parallèle
+A-010-N || Entrée non conforme || Exécuter le flux || Rejet explicite et traçable
+A-010-R || Dépendance indisponible || Exécuter le flux || Dégradation conforme et sans corruption
+--- TABLE 12 ---
+ID || Précondition || Action || Résultat attendu
+A-011 || Dépôt inspecté || Appliquer la règle || Comportement conforme sans architecture parallèle
+A-011-N || Entrée non conforme || Exécuter le flux || Rejet explicite et traçable
+A-011-R || Dépendance indisponible || Exécuter le flux || Dégradation conforme et sans corruption
+--- TABLE 13 ---
+ID || Précondition || Action || Résultat attendu
+A-012 || Dépôt inspecté || Appliquer la règle || Comportement conforme sans architecture parallèle
+A-012-N || Entrée non conforme || Exécuter le flux || Rejet explicite et traçable
+A-012-R || Dépendance indisponible || Exécuter le flux || Dégradation conforme et sans corruption
+--- TABLE 14 ---
+ID || Précondition || Action || Résultat attendu
+A-013 || Dépôt inspecté || Appliquer la règle || Comportement conforme sans architecture parallèle
+A-013-N || Entrée non conforme || Exécuter le flux || Rejet explicite et traçable
+A-013-R || Dépendance indisponible || Exécuter le flux || Dégradation conforme et sans corruption
+--- TABLE 15 ---
+ID || Précondition || Action || Résultat attendu
+A-014 || Dépôt inspecté || Appliquer la règle || Comportement conforme sans architecture parallèle
+A-014-N || Entrée non conforme || Exécuter le flux || Rejet explicite et traçable
+A-014-R || Dépendance indisponible || Exécuter le flux || Dégradation conforme et sans corruption
+--- TABLE 16 ---
+ID || Précondition || Action || Résultat attendu
+A-015 || Dépôt inspecté || Appliquer la règle || Comportement conforme sans architecture parallèle
+A-015-N || Entrée non conforme || Exécuter le flux || Rejet explicite et traçable
+A-015-R || Dépendance indisponible || Exécuter le flux || Dégradation conforme et sans corruption
+--- TABLE 17 ---
+ID || Précondition || Action || Résultat attendu
+A-016 || Dépôt inspecté || Appliquer la règle || Comportement conforme sans architecture parallèle
+A-016-N || Entrée non conforme || Exécuter le flux || Rejet explicite et traçable
+A-016-R || Dépendance indisponible || Exécuter le flux || Dégradation conforme et sans corruption
+--- TABLE 18 ---
+ID || Précondition || Action || Résultat attendu
+A-017 || Dépôt inspecté || Appliquer la règle || Comportement conforme sans architecture parallèle
+A-017-N || Entrée non conforme || Exécuter le flux || Rejet explicite et traçable
+A-017-R || Dépendance indisponible || Exécuter le flux || Dégradation conforme et sans corruption
+--- TABLE 19 ---
+ID || Précondition || Action || Résultat attendu
+A-018 || Dépôt inspecté || Appliquer la règle || Comportement conforme sans architecture parallèle
+A-018-N || Entrée non conforme || Exécuter le flux || Rejet explicite et traçable
+A-018-R || Dépendance indisponible || Exécuter le flux || Dégradation conforme et sans corruption
+--- TABLE 20 ---
+ID || Précondition || Action || Résultat attendu
+A-019 || Dépôt inspecté || Appliquer la règle || Comportement conforme sans architecture parallèle
+A-019-N || Entrée non conforme || Exécuter le flux || Rejet explicite et traçable
+A-019-R || Dépendance indisponible || Exécuter le flux || Dégradation conforme et sans corruption
+--- TABLE 21 ---
+ID || Précondition || Action || Résultat attendu
+A-020 || Dépôt inspecté || Appliquer la règle || Comportement conforme sans architecture parallèle
+A-020-N || Entrée non conforme || Exécuter le flux || Rejet explicite et traçable
+A-020-R || Dépendance indisponible || Exécuter le flux || Dégradation conforme et sans corruption
+--- TABLE 22 ---
+ID || Précondition || Action || Résultat attendu
+A-021 || Dépôt inspecté || Appliquer la règle || Comportement conforme sans architecture parallèle
+A-021-N || Entrée non conforme || Exécuter le flux || Rejet explicite et traçable
+A-021-R || Dépendance indisponible || Exécuter le flux || Dégradation conforme et sans corruption
+--- TABLE 23 ---
+ID || Précondition || Action || Résultat attendu
+A-022 || Dépôt inspecté || Appliquer la règle || Comportement conforme sans architecture parallèle
+A-022-N || Entrée non conforme || Exécuter le flux || Rejet explicite et traçable
+A-022-R || Dépendance indisponible || Exécuter le flux || Dégradation conforme et sans corruption
+--- TABLE 24 ---
+ID || Précondition || Action || Résultat attendu
+A-023 || Dépôt inspecté || Appliquer la règle || Comportement conforme sans architecture parallèle
+A-023-N || Entrée non conforme || Exécuter le flux || Rejet explicite et traçable
+A-023-R || Dépendance indisponible || Exécuter le flux || Dégradation conforme et sans corruption
+--- TABLE 25 ---
+ID || Précondition || Action || Résultat attendu
+A-024 || Dépôt inspecté || Appliquer la règle || Comportement conforme sans architecture parallèle
+A-024-N || Entrée non conforme || Exécuter le flux || Rejet explicite et traçable
+A-024-R || Dépendance indisponible || Exécuter le flux || Dégradation conforme et sans corruption
+--- TABLE 26 ---
+ID || Précondition || Action || Résultat attendu
+A-025 || Dépôt inspecté || Appliquer la règle || Comportement conforme sans architecture parallèle
+A-025-N || Entrée non conforme || Exécuter le flux || Rejet explicite et traçable
+A-025-R || Dépendance indisponible || Exécuter le flux || Dégradation conforme et sans corruption
+--- TABLE 27 ---
+ID || Précondition || Action || Résultat attendu
+A-026 || Dépôt inspecté || Appliquer la règle || Comportement conforme sans architecture parallèle
+A-026-N || Entrée non conforme || Exécuter le flux || Rejet explicite et traçable
+A-026-R || Dépendance indisponible || Exécuter le flux || Dégradation conforme et sans corruption
+--- TABLE 28 ---
+ID || Précondition || Action || Résultat attendu
+A-027 || Dépôt inspecté || Appliquer la règle || Comportement conforme sans architecture parallèle
+A-027-N || Entrée non conforme || Exécuter le flux || Rejet explicite et traçable
+A-027-R || Dépendance indisponible || Exécuter le flux || Dégradation conforme et sans corruption
+--- TABLE 29 ---
+ID || Précondition || Action || Résultat attendu
+A-028 || Dépôt inspecté || Appliquer la règle || Comportement conforme sans architecture parallèle
+A-028-N || Entrée non conforme || Exécuter le flux || Rejet explicite et traçable
+A-028-R || Dépendance indisponible || Exécuter le flux || Dégradation conforme et sans corruption
+--- TABLE 30 ---
+ID || Précondition || Action || Résultat attendu
+A-029 || Dépôt inspecté || Appliquer la règle || Comportement conforme sans architecture parallèle
+A-029-N || Entrée non conforme || Exécuter le flux || Rejet explicite et traçable
+A-029-R || Dépendance indisponible || Exécuter le flux || Dégradation conforme et sans corruption
+--- TABLE 31 ---
+ID || Précondition || Action || Résultat attendu
+A-030 || Dépôt inspecté || Appliquer la règle || Comportement conforme sans architecture parallèle
+A-030-N || Entrée non conforme || Exécuter le flux || Rejet explicite et traçable
+A-030-R || Dépendance indisponible || Exécuter le flux || Dégradation conforme et sans corruption
+--- TABLE 32 ---
+ID || Précondition || Action || Résultat attendu
+A-031 || Dépôt inspecté || Appliquer la règle || Comportement conforme sans architecture parallèle
+A-031-N || Entrée non conforme || Exécuter le flux || Rejet explicite et traçable
+A-031-R || Dépendance indisponible || Exécuter le flux || Dégradation conforme et sans corruption
+--- TABLE 33 ---
+ID || Précondition || Action || Résultat attendu
+A-032 || Dépôt inspecté || Appliquer la règle || Comportement conforme sans architecture parallèle
+A-032-N || Entrée non conforme || Exécuter le flux || Rejet explicite et traçable
+A-032-R || Dépendance indisponible || Exécuter le flux || Dégradation conforme et sans corruption
+--- TABLE 34 ---
+ID || Précondition || Action || Résultat attendu
+A-033 || Dépôt inspecté || Appliquer la règle || Comportement conforme sans architecture parallèle
+A-033-N || Entrée non conforme || Exécuter le flux || Rejet explicite et traçable
+A-033-R || Dépendance indisponible || Exécuter le flux || Dégradation conforme et sans corruption
+--- TABLE 35 ---
+ID || Précondition || Action || Résultat attendu
+A-034 || Dépôt inspecté || Appliquer la règle || Comportement conforme sans architecture parallèle
+A-034-N || Entrée non conforme || Exécuter le flux || Rejet explicite et traçable
+A-034-R || Dépendance indisponible || Exécuter le flux || Dégradation conforme et sans corruption
+--- TABLE 36 ---
+ID || Précondition || Action || Résultat attendu
+A-035 || Dépôt inspecté || Appliquer la règle || Comportement conforme sans architecture parallèle
+A-035-N || Entrée non conforme || Exécuter le flux || Rejet explicite et traçable
+A-035-R || Dépendance indisponible || Exécuter le flux || Dégradation conforme et sans corruption
+--- TABLE 37 ---
+ID || Précondition || Action || Résultat attendu
+A-036 || Dépôt inspecté || Appliquer la règle || Comportement conforme sans architecture parallèle
+A-036-N || Entrée non conforme || Exécuter le flux || Rejet explicite et traçable
+A-036-R || Dépendance indisponible || Exécuter le flux || Dégradation conforme et sans corruption
+--- TABLE 38 ---
+ID || Précondition || Action || Résultat attendu
+A-037 || Dépôt inspecté || Appliquer la règle || Comportement conforme sans architecture parallèle
+A-037-N || Entrée non conforme || Exécuter le flux || Rejet explicite et traçable
+A-037-R || Dépendance indisponible || Exécuter le flux || Dégradation conforme et sans corruption
+--- TABLE 39 ---
+ID || Précondition || Action || Résultat attendu
+A-038 || Dépôt inspecté || Appliquer la règle || Comportement conforme sans architecture parallèle
+A-038-N || Entrée non conforme || Exécuter le flux || Rejet explicite et traçable
+A-038-R || Dépendance indisponible || Exécuter le flux || Dégradation conforme et sans corruption
+--- TABLE 40 ---
+ID || Précondition || Action || Résultat attendu
+A-039 || Dépôt inspecté || Appliquer la règle || Comportement conforme sans architecture parallèle
+A-039-N || Entrée non conforme || Exécuter le flux || Rejet explicite et traçable
+A-039-R || Dépendance indisponible || Exécuter le flux || Dégradation conforme et sans corruption
+--- TABLE 41 ---
+ID || Précondition || Action || Résultat attendu
+A-040 || Dépôt inspecté || Appliquer la règle || Comportement conforme sans architecture parallèle
+A-040-N || Entrée non conforme || Exécuter le flux || Rejet explicite et traçable
+A-040-R || Dépendance indisponible || Exécuter le flux || Dégradation conforme et sans corruption
+--- TABLE 42 ---
+ID || Précondition || Action || Résultat attendu
+A-041 || Dépôt inspecté || Appliquer la règle || Comportement conforme sans architecture parallèle
+A-041-N || Entrée non conforme || Exécuter le flux || Rejet explicite et traçable
+A-041-R || Dépendance indisponible || Exécuter le flux || Dégradation conforme et sans corruption
+--- TABLE 43 ---
+ID || Précondition || Action || Résultat attendu
+A-042 || Dépôt inspecté || Appliquer la règle || Comportement conforme sans architecture parallèle
+A-042-N || Entrée non conforme || Exécuter le flux || Rejet explicite et traçable
+A-042-R || Dépendance indisponible || Exécuter le flux || Dégradation conforme et sans corruption
+--- TABLE 44 ---
+ID || Précondition || Action || Résultat attendu
+A-043 || Dépôt inspecté || Appliquer la règle || Comportement conforme sans architecture parallèle
+A-043-N || Entrée non conforme || Exécuter le flux || Rejet explicite et traçable
+A-043-R || Dépendance indisponible || Exécuter le flux || Dégradation conforme et sans corruption
+--- TABLE 45 ---
+ID || Précondition || Action || Résultat attendu
+A-044 || Dépôt inspecté || Appliquer la règle || Comportement conforme sans architecture parallèle
+A-044-N || Entrée non conforme || Exécuter le flux || Rejet explicite et traçable
+A-044-R || Dépendance indisponible || Exécuter le flux || Dégradation conforme et sans corruption
+--- TABLE 46 ---
+ID || Précondition || Action || Résultat attendu
+A-045 || Dépôt inspecté || Appliquer la règle || Comportement conforme sans architecture parallèle
+A-045-N || Entrée non conforme || Exécuter le flux || Rejet explicite et traçable
+A-045-R || Dépendance indisponible || Exécuter le flux || Dégradation conforme et sans corruption
+--- TABLE 47 ---
+ID || Précondition || Action || Résultat attendu
+A-046 || Dépôt inspecté || Appliquer la règle || Comportement conforme sans architecture parallèle
+A-046-N || Entrée non conforme || Exécuter le flux || Rejet explicite et traçable
+A-046-R || Dépendance indisponible || Exécuter le flux || Dégradation conforme et sans corruption
+--- TABLE 48 ---
+ID || Précondition || Action || Résultat attendu
+A-047 || Dépôt inspecté || Appliquer la règle || Comportement conforme sans architecture parallèle
+A-047-N || Entrée non conforme || Exécuter le flux || Rejet explicite et traçable
+A-047-R || Dépendance indisponible || Exécuter le flux || Dégradation conforme et sans corruption
+--- TABLE 49 ---
+ID || Précondition || Action || Résultat attendu
+A-048 || Dépôt inspecté || Appliquer la règle || Comportement conforme sans architecture parallèle
+A-048-N || Entrée non conforme || Exécuter le flux || Rejet explicite et traçable
+A-048-R || Dépendance indisponible || Exécuter le flux || Dégradation conforme et sans corruption
+--- TABLE 50 ---
+ID || Précondition || Action || Résultat attendu
+A-049 || Dépôt inspecté || Appliquer la règle || Comportement conforme sans architecture parallèle
+A-049-N || Entrée non conforme || Exécuter le flux || Rejet explicite et traçable
+A-049-R || Dépendance indisponible || Exécuter le flux || Dégradation conforme et sans corruption
+--- TABLE 51 ---
+ID || Précondition || Action || Résultat attendu
+A-050 || Dépôt inspecté || Appliquer la règle || Comportement conforme sans architecture parallèle
+A-050-N || Entrée non conforme || Exécuter le flux || Rejet explicite et traçable
+A-050-R || Dépendance indisponible || Exécuter le flux || Dégradation conforme et sans corruption
+--- TABLE 52 ---
+ID || Précondition || Action || Résultat attendu
+A-051 || Dépôt inspecté || Appliquer la règle || Comportement conforme sans architecture parallèle
+A-051-N || Entrée non conforme || Exécuter le flux || Rejet explicite et traçable
+A-051-R || Dépendance indisponible || Exécuter le flux || Dégradation conforme et sans corruption
+--- TABLE 53 ---
+ID || Précondition || Action || Résultat attendu
+A-052 || Dépôt inspecté || Appliquer la règle || Comportement conforme sans architecture parallèle
+A-052-N || Entrée non conforme || Exécuter le flux || Rejet explicite et traçable
+A-052-R || Dépendance indisponible || Exécuter le flux || Dégradation conforme et sans corruption
+--- TABLE 54 ---
+ID || Précondition || Action || Résultat attendu
+A-053 || Dépôt inspecté || Appliquer la règle || Comportement conforme sans architecture parallèle
+A-053-N || Entrée non conforme || Exécuter le flux || Rejet explicite et traçable
+A-053-R || Dépendance indisponible || Exécuter le flux || Dégradation conforme et sans corruption
+--- TABLE 55 ---
+ID || Précondition || Action || Résultat attendu
+A-054 || Dépôt inspecté || Appliquer la règle || Comportement conforme sans architecture parallèle
+A-054-N || Entrée non conforme || Exécuter le flux || Rejet explicite et traçable
+A-054-R || Dépendance indisponible || Exécuter le flux || Dégradation conforme et sans corruption
+--- TABLE 56 ---
+ID || Précondition || Action || Résultat attendu
+A-055 || Dépôt inspecté || Appliquer la règle || Comportement conforme sans architecture parallèle
+A-055-N || Entrée non conforme || Exécuter le flux || Rejet explicite et traçable
+A-055-R || Dépendance indisponible || Exécuter le flux || Dégradation conforme et sans corruption
+--- TABLE 57 ---
+ID || Précondition || Action || Résultat attendu
+A-056 || Dépôt inspecté || Appliquer la règle || Comportement conforme sans architecture parallèle
+A-056-N || Entrée non conforme || Exécuter le flux || Rejet explicite et traçable
+A-056-R || Dépendance indisponible || Exécuter le flux || Dégradation conforme et sans corruption
+--- TABLE 58 ---
+ID || Précondition || Action || Résultat attendu
+A-057 || Dépôt inspecté || Appliquer la règle || Comportement conforme sans architecture parallèle
+A-057-N || Entrée non conforme || Exécuter le flux || Rejet explicite et traçable
+A-057-R || Dépendance indisponible || Exécuter le flux || Dégradation conforme et sans corruption
+--- TABLE 59 ---
+ID || Précondition || Action || Résultat attendu
+A-058 || Dépôt inspecté || Appliquer la règle || Comportement conforme sans architecture parallèle
+A-058-N || Entrée non conforme || Exécuter le flux || Rejet explicite et traçable
+A-058-R || Dépendance indisponible || Exécuter le flux || Dégradation conforme et sans corruption
+--- TABLE 60 ---
+ID || Précondition || Action || Résultat attendu
+A-059 || Dépôt inspecté || Appliquer la règle || Comportement conforme sans architecture parallèle
+A-059-N || Entrée non conforme || Exécuter le flux || Rejet explicite et traçable
+A-059-R || Dépendance indisponible || Exécuter le flux || Dégradation conforme et sans corruption
+--- TABLE 61 ---
+ID || Précondition || Action || Résultat attendu
+A-060 || Dépôt inspecté || Appliquer la règle || Comportement conforme sans architecture parallèle
+A-060-N || Entrée non conforme || Exécuter le flux || Rejet explicite et traçable
+A-060-R || Dépendance indisponible || Exécuter le flux || Dégradation conforme et sans corruption
+--- TABLE 62 ---
+ID || Précondition || Action || Résultat attendu
+A-061 || Dépôt inspecté || Appliquer la règle || Comportement conforme sans architecture parallèle
+A-061-N || Entrée non conforme || Exécuter le flux || Rejet explicite et traçable
+A-061-R || Dépendance indisponible || Exécuter le flux || Dégradation conforme et sans corruption

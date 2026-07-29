@@ -128,6 +128,65 @@ class HomeworkAssignment:
 
 
 @dataclass(frozen=True, slots=True)
+class RuntimeExerciseCandidate:
+    temporary_id: str
+    title: str
+    statement: str
+    instructions: str
+    expected_answer: str
+    correction: str
+    explanation: str
+    solving_method: str
+    hints: tuple[str, ...]
+    skill_ids: tuple[int, ...]
+    sub_skill_ids: tuple[int, ...]
+    prerequisite_ids: tuple[int, ...]
+    difficulty: int
+    exercise_type: str
+    estimated_duration: int
+    common_mistakes: tuple[str, ...]
+    success_criteria: tuple[str, ...]
+    source: str
+    generator_model: str | None
+    prompt_template_version: str | None
+    content_fingerprint: str
+    validation_result: dict[str, object]
+    generated_at: datetime
+    correlation_id: str
+    publication_status: str = "RUNTIME_ONLY"
+
+
+@dataclass(frozen=True, slots=True)
+class HomeworkGenerationResult:
+    homework: HomeworkAssignment
+    requested_count: int
+    catalog_count: int
+    ai_requested_count: int
+    ai_accepted_count: int
+    final_count: int
+    degraded_mode: bool
+    degradation_reason: str | None
+    correlation_id: str
+    runtime_exercise_ids: tuple[int, ...] = ()
+
+
+@dataclass(frozen=True, slots=True)
+class LearnerPedagogicalContext:
+    learner_id: int
+    grade_code: str
+    subject_id: int
+    subject_code: str
+    chapter_ids: tuple[int, ...]
+    skill_ids: tuple[int, ...]
+    mastery_profile: str
+    target_difficulty: int
+    difficulty_band: tuple[int, int]
+    recent_content_fingerprints: tuple[str, ...]
+    recent_content_ids: tuple[int, ...]
+    correlation_id: str
+
+
+@dataclass(frozen=True, slots=True)
 class CoachAdvice:
     title: str
     summary: str

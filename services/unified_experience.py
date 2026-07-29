@@ -14,10 +14,13 @@ from domain.unified_experience.models import (
     CoachAdvice,
     HomeworkAssignment,
     HomeworkContentSelection,
+    HomeworkGenerationResult,
     HomeworkRequest,
     LearnerManagementProfile,
     ProgrammeChange,
 )
+from services.homework.ai_fallback import HomeworkAiFallbackOrchestrator
+from services.platform_runtime import FeatureFlagService, default_flags
 
 
 class UnifiedExperienceRepository(Protocol):
@@ -40,6 +43,15 @@ class UnifiedExperienceRepository(Protocol):
         self, request: HomeworkRequest, *, difficulty: int | None = None
     ) -> int: ...
     def create_homework(self, request: HomeworkRequest, content_ids: tuple[int, ...]) -> HomeworkAssignment: ...
+    def persist_homework_runtime_exercises(
+        self,
+        homework_id: int,
+        learner_id: int,
+        exercises: tuple[object, ...],
+        *,
+        start_position: int = 1,
+    ) -> tuple[int, ...]: ...
+    def is_four_e_grade(self, grade_level_id: int | None) -> bool: ...
     def create_homework_proposal(self, homework_id: int) -> int: ...
     def link_homework_session(self, homework_id: int, session_id: int) -> None: ...
     def list_homework(self, learner_id: int) -> tuple[HomeworkAssignment, ...]: ...
@@ -89,18 +101,56 @@ class MasteryAdviceItem(Protocol):
 
 
 class HomeworkService:
-    def __init__(self, repository: UnifiedExperienceRepository) -> None:
+    def __init__(
+        self,
+        repository: UnifiedExperienceRepository,
+        *,
+        feature_flags: FeatureFlagService | None = None,
+        ai_fallback: HomeworkAiFallbackOrchestrator | None = None,
+    ) -> None:
         self.repository = repository
+        self._feature_flags = feature_flags or default_flags()
+        self._ai_fallback = ai_fallback
 
     def preview_selection(self, request: HomeworkRequest) -> HomeworkContentSelection:
         detailed = self.repository.select_approved_content_detailed(request)
         return detailed
 
     def create(self, request: HomeworkRequest) -> HomeworkAssignment:
+        if self._should_use_ai_fallback(request):
+            return self.create_with_diagnostics(request).homework
         selection = self.repository.select_approved_content_detailed(request)
         if not selection.content_ids:
             raise ValueError(self._empty_selection_message(request))
         return self.repository.create_homework(request, selection.content_ids)
+
+    def create_with_diagnostics(self, request: HomeworkRequest) -> HomeworkGenerationResult:
+        if not self._should_use_ai_fallback(request):
+            selection = self.repository.select_approved_content_detailed(request)
+            if not selection.content_ids:
+                raise ValueError(self._empty_selection_message(request))
+            homework = self.repository.create_homework(request, selection.content_ids)
+            return HomeworkGenerationResult(
+                homework,
+                request.exercise_count,
+                len(selection.content_ids),
+                0,
+                0,
+                len(selection.content_ids),
+                len(selection.content_ids) < request.exercise_count,
+                "PARTIAL_CATALOG" if len(selection.content_ids) < request.exercise_count else None,
+                "",
+            )
+        if self._ai_fallback is None:
+            raise ValueError("HOMEWORK_AI_FALLBACK_NOT_CONFIGURED")
+        return self._ai_fallback.generate(request)
+
+    def _should_use_ai_fallback(self, request: HomeworkRequest) -> bool:
+        if not self._feature_flags.enabled("homework_ai_fallback_4e"):
+            return False
+        if self._ai_fallback is None:
+            return False
+        return self.repository.is_four_e_grade(request.grade_level_id)
 
     @staticmethod
     def _empty_selection_message(request: HomeworkRequest) -> str:

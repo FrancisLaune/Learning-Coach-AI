@@ -1,0 +1,499 @@
+[Normal] LCAI-0018B4
+[Normal] Software Design Specification
+[Normal] VOLUME 2 — IMPLÉMENTATION DÉTAILLÉE
+[Normal] Fallback IA dans le runtime de génération des devoirs de 4ème
+[Heading 1] 0. Mode d’emploi impératif pour Cursor
+[Normal] Ce document est prescriptif. Cursor doit exécuter les étapes dans l’ordre, produire les preuves demandées et s’arrêter lorsqu’un prérequis n’est pas démontré. Les noms de classes cités sont des responsabilités logiques. Cursor doit d’abord retrouver les symboles réels du dépôt et conserver leurs noms, signatures et conventions lorsque cela est possible.
+[List Bullet] Ne pas créer de nouvelle application, nouveau moteur adaptatif, nouveau client LLM ou nouvelle Content Factory.
+[List Bullet] Ne pas renommer ni déplacer les modules existants pour “nettoyer” l’architecture.
+[List Bullet] Ne pas effectuer de migration DuckDB sans preuve qu’un stockage additionnel est indispensable.
+[List Bullet] Ne pas modifier l’interface utilisateur au-delà des messages nécessaires au mode dégradé.
+[List Bullet] Ne pas committer ni pousser sans validation explicite de Francis.
+[List Bullet] Toute hypothèse non vérifiée dans le code doit être marquée BLOCKED et documentée.
+[Heading 2] 0.1 Livrables obligatoires de Cursor
+[List Bullet] Rapport de découverte des symboles et chemins réels.
+[List Bullet] Plan de changement fichier par fichier avant modification.
+[List Bullet] Implémentation du fallback dans le service runtime existant.
+[List Bullet] Tests unitaires, intégration et non-régression.
+[List Bullet] Rapport d’exécution des tests avec commandes et résultats.
+[List Bullet] Matrice de traçabilité exigences → code → tests.
+[List Bullet] Rapport final indiquant explicitement ce qui a été modifié et ce qui ne l’a pas été.
+[Heading 1] 1. Objectif fonctionnel exact
+[Normal] Lorsqu’un devoir demande N exercices, le runtime doit rechercher d’abord les exercices compatibles dans le catalogue approuvé. Si K exercices compatibles et non récemment utilisés sont disponibles, le déficit D est calculé par D = max(0, N − K). Le moteur IA existant n’est appelé que si D > 0 et uniquement pour produire au maximum D exercices complémentaires. Le devoir final combine les exercices du catalogue et les exercices dynamiques validés.
+[Heading 2] 1.1 Résultats non négociables
+[List Bullet] Catalogue suffisant : zéro appel IA.
+[List Bullet] Catalogue insuffisant : appel IA limité au déficit exact.
+[List Bullet] Échec IA : aucun blocage du devoir ; retour contrôlé du stock catalogue disponible.
+[List Bullet] Exercice IA invalide : rejet avant affichage.
+[List Bullet] Exercice IA dynamique : non publié automatiquement dans le catalogue Approved.
+[List Bullet] Chaque décision est traçable par un correlation_id.
+[Heading 1] 2. Phase obligatoire de découverte du dépôt
+[Normal] Avant tout changement, Cursor doit cartographier l’implémentation réelle. Cette phase empêche l’invention de chemins, de DTO ou de services incompatibles avec le projet.
+[Heading 2] 2.1 Recherches obligatoires
+[No Spacing] Rechercher dans le dépôt :
+- class HomeworkService / fonctions contenant homework, assignment, devoir
+- ContentFactoryService
+- OpenAIContentGenerator ou implémentation de ContentGenerator
+- interfaces/protocoles des générateurs
+- repositories d'exercices et de contenus
+- modèles Exercise, Question, Homework, LearnerProfile
+- pipeline de validation et statuts Draft/Review/Approved/Archived
+- configuration LLM, timeouts, retry et feature flags
+- tests existants relatifs aux devoirs et à la Content Factory
+[Heading 2] 2.2 Rapport de découverte attendu
+[Heading 2] 2.3 Gate B4-G0 — Autorisation de coder
+[List Bullet] PASS uniquement si les six responsabilités ci-dessus sont reliées à des symboles réels.
+[List Bullet] PASS uniquement si le point d’entrée runtime qui tronque actuellement le devoir est identifié.
+[List Bullet] PASS uniquement si le chemin existant de génération IA est démontré par le code.
+[List Bullet] FAIL si Cursor envisage un nouveau client OpenAI ou un nouveau service de génération.
+[List Bullet] En cas de FAIL : produire le rapport et s’arrêter.
+[Heading 1] 3. Architecture logique d’implémentation
+[No Spacing] UI / appelant existant
+    -> HomeworkService existant
+        -> Learner/Profile services existants
+        -> Exercise Catalog Repository existant
+        -> Candidate filtering + recent-use exclusion
+        -> Deficit calculation
+        -> [si deficit > 0 ET feature flag actif]
+             ContentFactoryService existant
+                 -> OpenAIContentGenerator existant
+                 -> validation pipeline existant
+        -> merge + ordering
+        -> persistence du devoir selon comportement existant
+        -> réponse existante enrichie uniquement si nécessaire
+[Heading 2] 3.1 Responsabilités strictes
+[Heading 1] 4. Contrats de données logiques
+[Normal] Cursor doit adapter ces contrats aux dataclasses/Pydantic/models déjà présents. Il ne doit créer un nouveau DTO que si aucun objet existant ne peut être étendu sans rupture.
+[Heading 2] 4.1 HomeworkGenerationRequest
+[No Spacing] HomeworkGenerationRequest
+- learner_id: identifiant interne obligatoire
+- grade_code: '4e'
+- subject_id ou subject_code
+- chapter_ids: 1..n
+- skill_ids: 1..n
+- requested_count: entier 1..50
+- target_duration_minutes: entier optionnel
+- requested_difficulty: optionnel
+- homework_mode: chapter | multi_chapter | weakness | revision | timed | advanced
+- exercise_types: liste optionnelle
+- exclude_recent_days: valeur configurée
+- request_origin: UI | scheduled_plan | parent | teacher | test
+- correlation_id: UUID
+[Heading 2] 4.2 LearnerPedagogicalContext
+[No Spacing] LearnerPedagogicalContext
+- grade_code
+- mastered_skill_ids
+- weak_skill_ids
+- prerequisite_status
+- recent_error_categories
+- recent_exercise_ids
+- recent_generated_fingerprints
+- success_rate_by_skill
+- attempts_by_skill
+- last_practice_at_by_skill
+- average_duration_by_type
+- derived_level: struggling | progressing | advanced | forgotten_notions
+- target_difficulty
+- remediation_objectives
+
+INTERDIT dans le prompt : nom, prénom, email, téléphone, adresse, date de naissance.
+[Heading 2] 4.3 CatalogCandidate
+[No Spacing] CatalogCandidate
+- exercise_id
+- status == Approved
+- grade_code == 4e
+- subject/chapter/skill compatibility
+- difficulty
+- exercise_type
+- estimated_duration
+- prerequisite_ids
+- pedagogical_objective
+- content_fingerprint
+- last_used_at_for_learner
+- historical_success_rate_for_learner
+[Heading 2] 4.4 DynamicExerciseCandidate
+[No Spacing] DynamicExerciseCandidate
+- temporary_id
+- title
+- statement
+- instructions
+- expected_answer
+- correction
+- explanation
+- solving_method
+- hints
+- skill_ids
+- sub_skill_ids
+- prerequisite_ids
+- difficulty
+- exercise_type
+- estimated_duration
+- common_mistakes
+- success_criteria
+- source = 'ai_runtime_fallback'
+- generator/model identifiers
+- prompt_template_version
+- content_fingerprint
+- validation_result
+- generated_at
+- correlation_id
+- publication_status = RuntimeOnly ou Draft selon modèle existant
+[Heading 2] 4.5 HomeworkGenerationResult
+[No Spacing] HomeworkGenerationResult
+- homework (objet existant)
+- requested_count
+- catalog_count
+- ai_requested_count
+- ai_accepted_count
+- final_count
+- degraded_mode: bool
+- degradation_reason: optionnel
+- correlation_id
+- diagnostics internes non exposés à l'élève
+[Heading 1] 5. Algorithme normatif
+[Heading 2] 5.1 Orchestration principale
+[No Spacing] def generate_homework(request):
+    validate_request(request)
+    correlation_id = request.correlation_id or new_uuid()
+
+    context = learner_context_service.build(request.learner_id, request)
+    normalized_target = normalize_target(request, context)
+
+    catalog_candidates = repository.search_approved(
+        grade='4e', subject, chapters, skills, types, difficulty_band
+    )
+    eligible = filter_compatibility(catalog_candidates, normalized_target, context)
+    eligible = exclude_recent_and_duplicates(eligible, context)
+    selected_catalog = rank_and_select(eligible, request.requested_count, context)
+
+    deficit = max(0, request.requested_count - len(selected_catalog))
+    generated_accepted = []
+
+    if deficit > 0 and feature_flag_enabled('homework_ai_fallback_4e'):
+        generated_accepted = generate_validated_deficit(
+            request, context, selected_catalog, deficit, correlation_id
+        )
+
+    final_items = merge_without_duplicates(selected_catalog, generated_accepted)
+    final_items = enforce_distribution_and_limit(final_items, request.requested_count)
+
+    result = build_homework_using_existing_persistence(final_items, request)
+    emit_trace(...)
+    return result
+[Heading 2] 5.2 Calcul du déficit
+[List Bullet] N = requested_count après validation.
+[List Bullet] K = nombre d’exercices catalogue réellement retenus après tous les filtres, pas le nombre brut trouvé.
+[List Bullet] D = max(0, N − K).
+[List Bullet] Le nombre demandé au générateur doit être D, jamais N.
+[List Bullet] Après validation IA, D2 = max(0, D − accepted_count). Une seconde tentative peut demander D2 uniquement.
+[List Bullet] Le nombre total final ne doit jamais dépasser N.
+[Heading 2] 5.3 Sélection catalogue
+[List Number] Filtrer status Approved et niveau 4e.
+[List Number] Filtrer matière, chapitre et compétence.
+[List Number] Écarter les exercices dont les prérequis sont incompatibles avec le contexte.
+[List Number] Écarter les exercices récemment utilisés pendant la fenêtre configurée, sauf pénurie totale.
+[List Number] Écarter les doublons par exercise_id et fingerprint.
+[List Number] Classer selon adéquation compétence, difficulté cible, objectif, diversité de type et ancienneté d’utilisation.
+[List Number] Sélectionner jusqu’à N sans appel IA.
+[Heading 2] 5.4 Score de classement recommandé
+[No Spacing] score =
+  40 * skill_match
++ 20 * chapter_match
++ 15 * difficulty_match
++ 10 * remediation_match
++  8 * type_diversity_bonus
++  5 * spaced_review_bonus
+- 30 * recent_use_penalty
+- 50 * prerequisite_mismatch
+
+Les coefficients peuvent être adaptés aux mécanismes existants, mais l'ordre des priorités doit rester :
+compétence > chapitre > difficulté > remédiation > diversité > répétition espacée.
+[Heading 1] 6. Construction du contexte de génération
+[Normal] Le générateur ne doit jamais recevoir une simple demande « génère D exercices ». Le ContentFactoryService doit recevoir un contexte pédagogique complet et minimalement personnel.
+[Heading 2] 6.1 Champs obligatoires
+[List Bullet] Niveau : 4e.
+[List Bullet] Matière, chapitre, compétence et sous-compétence.
+[List Bullet] Objectif pédagogique précis.
+[List Bullet] Prérequis nécessaires et état de maîtrise.
+[List Bullet] Profil dérivé de l’élève : struggling/progressing/advanced/forgotten_notions.
+[List Bullet] Difficulté cible et fourchette acceptable.
+[List Bullet] Type d’exercice et format de réponse.
+[List Bullet] Durée visée.
+[List Bullet] Erreurs ou misconceptions à traiter.
+[List Bullet] Liste des exercices/fingerprints à ne pas reproduire.
+[List Bullet] Quantité exacte manquante.
+[List Bullet] Contraintes de langue, âge et programme.
+[Heading 2] 6.2 Règles par profil
+[Heading 1] 7. Appel au pipeline IA existant
+[Heading 2] 7.1 Règle d’intégration
+[Normal] HomeworkService ne doit pas appeler OpenAIContentGenerator directement si l’architecture existante passe par ContentFactoryService. Il prépare une demande de génération conforme au contrat existant, appelle le service et récupère les objets générés avant publication.
+[Heading 2] 7.2 Paramètres de résilience
+[List Bullet] Timeout : réutiliser la configuration centrale existante ; à défaut 30 secondes maximum par batch.
+[List Bullet] Tentatives : 1 appel initial + 1 retry maximum sur déficit restant.
+[List Bullet] Backoff : réutiliser la politique existante ; à défaut délai borné sans blocage UI prolongé.
+[List Bullet] Batch : demander les D exercices en un lot si le générateur existant le supporte.
+[List Bullet] Circuit ouvert/configuration indisponible : passer immédiatement en mode dégradé.
+[List Bullet] Aucune boucle de régénération non bornée.
+[Heading 2] 7.3 Conditions d’appel autorisées
+[List Bullet] Déficit catalogue réel après filtrage.
+[List Bullet] Catalogue trop répétitif pour la fenêtre récente.
+[List Bullet] Absence d’exercice au bon niveau de difficulté.
+[List Bullet] Besoin de remédiation ciblée absent du catalogue.
+[List Bullet] Devoir combinant plusieurs compétences sans stock compatible.
+[Heading 2] 7.4 Conditions d’appel interdites
+[List Bullet] Catalogue déjà suffisant.
+[List Bullet] Simple volonté de “varier” sans déficit démontré.
+[List Bullet] Erreur de mapping matière/chapitre non résolue.
+[List Bullet] Profil élève indisponible si la demande exige explicitement une personnalisation.
+[List Bullet] Feature flag désactivé.
+[List Bullet] Environnement de test sans générateur fake/stub explicitement configuré.
+[Heading 1] 8. Validation des exercices dynamiques
+[Heading 2] 8.1 Gates obligatoires
+[Heading 2] 8.2 Validation de correction
+[List Bullet] La réponse attendue doit être déductible de l’énoncé.
+[List Bullet] La correction doit résoudre exactement la question posée.
+[List Bullet] Pour un QCM, une seule bonne réponse sauf type explicitement multi-réponses.
+[List Bullet] Les distracteurs doivent être plausibles mais faux.
+[List Bullet] Les unités, arrondis et conventions doivent être explicités.
+[List Bullet] Un exercice sans correction exploitable ne peut jamais être affiché.
+[Heading 1] 9. Détection de doublons
+[List Bullet] Doublon exact : même exercise_id ou même contenu normalisé.
+[List Bullet] Doublon structurel : même énoncé avec simples changements de nombres/noms lorsque la variation n’apporte aucune valeur.
+[List Bullet] Doublon récent : fingerprint déjà proposé à l’élève dans la fenêtre définie.
+[List Bullet] Le fingerprint doit normaliser casse, espaces, ponctuation et valeurs variables selon l’utilitaire existant.
+[List Bullet] Si aucun mécanisme n’existe, créer une fonction utilitaire locale et testée, sans nouvelle infrastructure.
+[Heading 1] 10. Fusion et composition finale
+[Heading 2] 10.1 Règles
+[List Number] Conserver tous les exercices catalogue sélectionnés sauf conflit détecté tardivement.
+[List Number] Ajouter uniquement les exercices IA validés.
+[List Number] Dédupliquer à nouveau l’ensemble fusionné.
+[List Number] Limiter strictement à requested_count.
+[List Number] Préserver une distribution pédagogique cohérente.
+[List Number] Utiliser l’ordre/mélange existant ; ne pas introduire d’aléatoire non seedé dans les tests.
+[List Number] Persister le devoir avec le mécanisme existant.
+[Heading 2] 10.2 Distribution recommandée
+[List Bullet] Commencer par un exercice accessible lorsque le profil est struggling.
+[List Bullet] Éviter plus de deux exercices consécutifs du même type si plusieurs types sont disponibles.
+[List Bullet] Placer les exercices de transfert ou avancés après les exercices de consolidation.
+[List Bullet] Pour un devoir chronométré, respecter la somme des durées estimées avec une tolérance configurable.
+[Heading 1] 11. Cycle de vie et persistance
+[Normal] La génération runtime ne vaut pas publication. Cursor doit réutiliser les statuts existants. Si le modèle impose un stockage, utiliser RuntimeOnly ou Draft selon les possibilités actuelles. Ne jamais créer directement un contenu Approved.
+[List Bullet] Le devoir peut référencer un exercice dynamique par identifiant temporaire/persisté selon l’architecture existante.
+[List Bullet] Le résultat de l’élève doit pouvoir être rattaché à la compétence et au fingerprint.
+[List Bullet] La conservation du prompt complet n’est pas obligatoire et peut contenir des risques ; privilégier métadonnées et hash.
+[List Bullet] Aucune migration DB dans B4 sauf impossibilité démontrée dans le rapport de découverte.
+[List Bullet] Si une migration est indispensable, la proposer séparément et ne pas l’exécuter sans validation.
+[Heading 1] 12. Feature flags et configuration
+[No Spacing] Configuration logique attendue (adapter au système existant) :
+HOMEWORK_AI_FALLBACK_4E_ENABLED = false par défaut hors environnement validé
+HOMEWORK_AI_FALLBACK_MAX_RETRY = 1
+HOMEWORK_AI_FALLBACK_TIMEOUT_SECONDS = 30
+HOMEWORK_RECENT_EXCLUSION_DAYS = valeur existante ou 30
+HOMEWORK_AI_MAX_GENERATED_PER_REQUEST = 10 ou plafond existant
+HOMEWORK_AI_ALLOW_DEGRADED_RESULT = true
+[List Bullet] Le flag doit pouvoir désactiver le fallback sans redéploiement si la configuration actuelle le permet.
+[List Bullet] Flag désactivé : comportement historique conservé, y compris devoir réduit si tel est le comportement existant.
+[List Bullet] Flag activé : nouveau comportement seulement pour le niveau 4e dans le périmètre B4.
+[List Bullet] Ne pas étendre automatiquement aux autres niveaux.
+[Heading 1] 13. Gestion des erreurs et modes dégradés
+[Heading 2] 13.1 Interdictions
+[List Bullet] Ne jamais exposer stack trace, prompt, clé API ou réponse brute au frontend.
+[List Bullet] Ne jamais bloquer indéfiniment la création du devoir.
+[List Bullet] Ne jamais considérer un exercice invalide comme acceptable pour atteindre N.
+[List Bullet] Ne jamais masquer silencieusement l’échec : toujours tracer le mode dégradé.
+[Heading 1] 14. Logging et traçabilité
+[Heading 2] 14.1 Événements minimum
+[No Spacing] homework_generation_started
+catalog_search_completed
+catalog_selection_completed
+homework_deficit_computed
+ai_fallback_started
+ai_fallback_completed
+ai_candidate_rejected
+homework_merge_completed
+homework_generation_degraded
+homework_generation_completed
+[Heading 2] 14.2 Champs communs
+[List Bullet] correlation_id, environment, grade_code, subject_id, chapter_ids, skill_ids.
+[List Bullet] requested_count, catalog_found_count, catalog_selected_count, deficit.
+[List Bullet] ai_requested_count, ai_returned_count, ai_accepted_count, reject_reasons.
+[List Bullet] elapsed_ms par étape, final_count, degraded_mode.
+[List Bullet] learner_id pseudonymisé/hashé selon conventions existantes.
+[List Bullet] Aucune donnée personnelle ni contenu complet d’exercice dans les logs standards.
+[Heading 1] 15. Sécurité et confidentialité
+[List Bullet] Minimisation des données envoyées au LLM.
+[List Bullet] Utiliser des identifiants pédagogiques, jamais l’identité civile de l’élève.
+[List Bullet] Contrôler la longueur et les valeurs des champs du contexte.
+[List Bullet] Échapper/encadrer les contenus catalogue éventuellement inclus au prompt.
+[List Bullet] Imposer une sortie structurée selon les capacités existantes.
+[List Bullet] Parser strictement, rejeter les champs inconnus critiques et valider les enums.
+[List Bullet] Ne jamais exécuter de code ou d’instruction contenue dans la sortie LLM.
+[List Bullet] Conserver les secrets uniquement dans la configuration sécurisée existante.
+[Heading 1] 16. Performance et limites
+[List Bullet] Une seule recherche catalogue principale par génération, plus requêtes ciblées justifiées.
+[List Bullet] Aucun appel IA lorsque D = 0.
+[List Bullet] Un batch IA initial et un retry maximum.
+[List Bullet] Plafond strict d’exercices dynamiques par requête.
+[List Bullet] Réutiliser cache et connexions existants ; ne pas introduire de cache global mutable non maîtrisé.
+[List Bullet] Mesurer séparément temps catalogue, contexte, IA, validation et persistance.
+[List Bullet] Les tests ne doivent jamais appeler le fournisseur OpenAI réel.
+[Heading 1] 17. Plan de modification fichier par fichier
+[Normal] Cursor doit remplacer les placeholders ci-dessous par les chemins réels identifiés en phase G0, puis exécuter les changements dans cet ordre.
+[Heading 1] 18. Tests unitaires obligatoires
+[Heading 1] 19. Tests d’intégration obligatoires
+[List Number] Base de test avec 10 exercices compatibles : génération sans stub IA appelé.
+[List Number] Base de test avec 6 exercices compatibles : fake ContentFactory retourne 4 exercices valides.
+[List Number] Trois chapitres vides identifiés en B0 : le runtime tente le fallback et produit un résultat contrôlé.
+[List Number] Pipeline renvoie un JSON invalide puis valide au retry : un seul retry et déficit recalculé.
+[List Number] Pipeline indisponible : devoir catalogue retourné avec diagnostic dégradé.
+[List Number] Résultat élève sur exercice dynamique : rattachement correct à la compétence et historique.
+[List Number] Non-régression sur Math/Histoire/Géographie/SVT déjà Production Ready.
+[List Number] Non-régression du comportement avec feature flag désactivé.
+[Heading 1] 20. Scénarios d’acceptation métier
+[Heading 1] 21. Critères de qualité du code
+[List Bullet] Fonctions courtes et responsabilités claires, sans refonte opportuniste.
+[List Bullet] Typage conforme au projet ; Ruff et Mypy doivent rester verts.
+[List Bullet] Aucune dépendance supplémentaire sans nécessité démontrée.
+[List Bullet] Injection des dépendances/fakes selon conventions existantes.
+[List Bullet] Pas d’appel réseau dans les tests.
+[List Bullet] Pas de valeur magique : utiliser configuration ou constantes locales documentées.
+[List Bullet] Compatibilité avec Python 3.14.5 et DuckDB du projet.
+[List Bullet] Pas de duplication de logique déjà présente dans Content Factory ou validation.
+[Heading 1] 22. Ordre d’exécution Cursor
+[List Number] Créer une branche locale dédiée sans commit automatique.
+[List Number] Exécuter la découverte G0 et produire le rapport.
+[List Number] Exécuter les tests existants avant modification et enregistrer la baseline.
+[List Number] Produire le plan fichier par fichier.
+[List Number] Implémenter le feature flag et le chemin catalogue-only inchangé.
+[List Number] Implémenter calcul du déficit et appel ContentFactory existant.
+[List Number] Implémenter validation/fusion/mode dégradé.
+[List Number] Ajouter les tests unitaires.
+[List Number] Ajouter les tests d’intégration.
+[List Number] Exécuter Ruff, Mypy, Pytest, compileall et smoke test Streamlit.
+[List Number] Produire la matrice de traçabilité et le rapport final.
+[List Number] S’arrêter sans commit/push et demander validation.
+[Heading 1] 23. Commandes de validation
+[No Spacing] # Adapter aux commandes déjà documentées dans le dépôt
+python -m compileall .
+ruff check .
+mypy .
+pytest -q
+
+# Smoke test Streamlit selon point d'entrée existant
+streamlit run app.py
+# Vérifier le endpoint de santé si déjà utilisé dans le projet.
+[Heading 1] 24. Matrice de traçabilité minimale
+[Heading 1] 25. Definition of Done B4
+[Normal] ☐ Le point d’entrée réel du HomeworkService est identifié et modifié sans refonte.
+[Normal] ☐ Le catalogue est recherché et filtré avant tout appel IA.
+[Normal] ☐ Le déficit est calculé sur le stock réellement sélectionné.
+[Normal] ☐ Le moteur existant est appelé uniquement pour le déficit.
+[Normal] ☐ Les exercices dynamiques passent tous les gates de validation.
+[Normal] ☐ Aucun exercice dynamique n’est automatiquement Approved.
+[Normal] ☐ Le mode dégradé fonctionne en cas de timeout, erreur ou rejet.
+[Normal] ☐ Le feature flag OFF conserve le comportement historique.
+[Normal] ☐ Tous les tests existants et nouveaux sont verts.
+[Normal] ☐ Ruff, Mypy et compileall sont verts.
+[Normal] ☐ La matrice de traçabilité est complète.
+[Normal] ☐ Aucun nouveau moteur IA, aucune nouvelle Content Factory, aucune refonte UI.
+[Normal] ☐ Aucun commit ni push n’a été effectué sans validation explicite.
+[Heading 1] 26. Bloc d’instructions final à copier dans Cursor
+[No Spacing] Implémente LCAI-0018B4 conformément à ce Volume 2.
+Commence impérativement par la phase de découverte G0 et renseigne les symboles et chemins réels.
+Ne crée aucun nouveau moteur IA, aucun nouveau client OpenAI, aucune nouvelle Content Factory et aucune refonte du HomeworkService.
+Le catalogue doit rester prioritaire. Calcule D=max(0,N-K) après filtrage réel et appelle le pipeline IA existant uniquement pour D.
+Valide chaque exercice généré avant affichage. Ne publie jamais automatiquement un exercice dynamique en Approved.
+Ajoute un feature flag limité à la 4e, un mode dégradé, la traçabilité et tous les tests prescrits.
+Exécute les contrôles qualité et produis un rapport complet.
+Ne committe et ne pousse rien sans validation explicite de Francis.
+[Normal] FIN DU VOLUME 2
+--- TABLE 1 ---
+Statut || PRÊT POUR IMPLÉMENTATION CURSOR
+Portée || LCAI-0018B4 uniquement
+Principe directeur || Catalogue d’abord, IA seulement sur déficit
+Architecture || Extension de l’existant, aucune refonte
+Publication || Aucune publication automatique des exercices dynamiques
+Version || 1.0 — 29 juillet 2026
+--- TABLE 2 ---
+Responsabilité logique || Symbole réel || Chemin || Signature actuelle || Décision
+Orchestrateur devoir || À renseigner || À renseigner || À renseigner || MODIFIER
+Recherche catalogue || À renseigner || À renseigner || À renseigner || RÉUTILISER
+Profil élève || À renseigner || À renseigner || À renseigner || RÉUTILISER
+Content Factory || À renseigner || À renseigner || À renseigner || RÉUTILISER
+Générateur OpenAI || À renseigner || À renseigner || À renseigner || RÉUTILISER
+Validation contenu || À renseigner || À renseigner || À renseigner || RÉUTILISER
+--- TABLE 3 ---
+Composant || Responsabilité B4 || Interdictions
+HomeworkService || Orchestrer sélection, déficit, fallback, fusion et résultat || Ne génère pas directement du texte LLM
+Repository catalogue || Retourner les exercices compatibles et approuvés || Ne modifie pas les règles pédagogiques
+ContentFactoryService || Produire les exercices manquants via le pipeline existant || Ne publie pas automatiquement
+OpenAIContentGenerator || Transformer un contexte validé en contenu structuré || Ne reçoit aucune donnée personnelle
+Validation pipeline || Valider structure, pédagogie, correction, sécurité, doublons || Ne laisse pas passer un résultat partiel invalide
+UI || Présenter le devoir et un éventuel état dégradé || Ne déclenche pas OpenAI directement
+--- TABLE 4 ---
+Profil || Difficulté || Guidage || Objectif || Interdiction
+Struggling || facile puis standard || indices progressifs || prérequis/remédiation || piège non expliqué
+Progressing || standard, variation modérée || indice optionnel || consolidation/transfert || saut brutal de difficulté
+Advanced || standard à avancé || guidage minimal || raisonnement/transfert || simple répétition mécanique
+Forgotten notions || facile de rappel puis standard || rappel ciblé || réactivation espacée || considérer la notion comme jamais vue
+--- TABLE 5 ---
+Gate || Contrôle || Échec || Action
+V1 Structure || champs obligatoires, types, enums || champ absent ou invalide || REJECT
+V2 Curriculum || niveau/matière/chapitre/compétence || hors programme ou mauvais mapping || REJECT
+V3 Pédagogie || objectif, prérequis, difficulté || incohérence majeure || REJECT
+V4 Correction || réponse et correction cohérentes || contradiction/absence || REJECT
+V5 Sécurité || contenu approprié, pas de fuite || contenu interdit || REJECT
+V6 Doublon || fingerprint catalogue/session || dupliqué ou quasi-dupliqué || REJECT
+V7 Durée/type || compatible avec devoir || hors contraintes || REJECT ou normalisation sûre
+--- TABLE 6 ---
+Incident || Comportement || Utilisateur || Log
+Timeout LLM || arrêt du retry selon limite, retour catalogue || message non technique si nécessaire || WARNING
+Erreur fournisseur || retour catalogue || devoir disponible éventuellement réduit || ERROR
+JSON invalide || validation échoue, retry déficit restant || aucun contenu invalide || WARNING
+Tous générés rejetés || retour catalogue || mode dégradé || WARNING
+Catalogue vide + IA indisponible || résultat vide contrôlé ou erreur métier existante || message clair || ERROR
+Erreur DB || conserver gestion transactionnelle existante || message générique || ERROR/EXCEPTION
+--- TABLE 7 ---
+Ordre || Fichier réel || Modification || Preuve attendue
+1 || service runtime devoir || ajouter orchestration déficit/fallback derrière flag || diff ciblé
+2 || DTO/modèle existant si nécessaire || ajouter champs non cassants || tests sérialisation
+3 || adaptateur ContentFactory existant || ajouter méthode d’usage runtime si absence démontrée || réutilisation générateur existant
+4 || validation existante || exposer validation pour candidats runtime || tests de rejet
+5 || configuration existante || ajouter flags/limites || test flag off/on
+6 || tests || unitaires + intégration + non-régression || rapport vert
+--- TABLE 8 ---
+Test || Précondition || Assertions
+catalog_sufficient_no_ai_call || N=10, K=10 || générateur jamais appelé, final=10
+catalog_surplus_no_ai_call || N=10, K=14 || générateur jamais appelé, final=10
+catalog_deficit_exact_ai_request || N=10, K=6 || appel IA quantity=4
+ai_returns_exact_deficit || D=4, 4 valides || final=10
+ai_partial_then_retry_remaining || D=4, 2 valides || retry quantity=2 seulement
+ai_invalid_candidates_rejected || candidats sans correction || non affichés
+ai_timeout_degraded || timeout || retour K et degraded=true
+feature_flag_off_preserves_legacy || flag off || aucun appel IA
+recent_exercises_excluded || historique récent || IDs exclus
+duplicate_fingerprint_removed || catalogue/IA similaires || un seul retenu
+no_personal_data_in_generation_context || profil complet || prompt/context sans PII
+final_count_never_exceeds_requested || surplus fusion || final=N
+runtime_generated_not_approved || candidat IA || statut != Approved
+correlation_id_propagated || requête avec UUID || même UUID dans traces
+--- TABLE 9 ---
+Scénario || Données || Résultat attendu
+A — Élève en difficulté || 6 catalogue + 4 IA de remédiation, indices progressifs || 10 exercices, aucun hors prérequis
+B — Élève en progression || 8 catalogue + 2 IA de consolidation || difficulté standard cohérente
+C — Élève avancé || catalogue insuffisant en transfert || IA génère uniquement le déficit avancé
+D — Notion oubliée || historique ancien et baisse de réussite || rappel puis consolidation
+E — IA indisponible || catalogue=7, N=10 || devoir 7, mode dégradé, pas d’erreur technique
+F — Catalogue suffisant || catalogue=12, N=10 || 10 catalogue, zéro coût IA
+--- TABLE 10 ---
+Exigence || Code || Test || Statut
+Catalogue prioritaire || À renseigner || À renseigner || TODO
+Déficit exact || À renseigner || À renseigner || TODO
+Réutilisation moteur existant || À renseigner || À renseigner || TODO
+Validation avant affichage || À renseigner || À renseigner || TODO
+Mode dégradé || À renseigner || À renseigner || TODO
+Pas de publication auto || À renseigner || À renseigner || TODO
+Aucune PII || À renseigner || À renseigner || TODO
+Feature flag || À renseigner || À renseigner || TODO
+Traçabilité || À renseigner || À renseigner || TODO
+Non-régression || À renseigner || À renseigner || TODO

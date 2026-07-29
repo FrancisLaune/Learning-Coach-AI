@@ -9,7 +9,7 @@
 - Matrice acceptation devoirs : `docs/phase3/LCAI-0018_HOMEWORK_ACCEPTANCE_MATRIX.md`
 - Validation pédagogique (brouillon) : `docs/phase3/LCAI-0018_PEDAGOGICAL_VALIDATION_REPORT.md`
 
-## P0 code — terminé (non commité)
+## P0 code — terminé
 
 | Composant | Changement |
 |-----------|------------|
@@ -18,6 +18,8 @@
 | `services/unified_experience.py` | Messages d'erreur actionnables, preview avant création |
 | `ui/unified_app.py` | Toutes matières curriculum visibles, badges statut, blocage si indisponible |
 | `domain/unified_experience/models.py` | `SubjectHomeworkAvailability`, `HomeworkContentSelection` |
+
+Commits : `15fff0b`, `87d6fed` (develop).
 
 ## Tests — 13/13 passent
 

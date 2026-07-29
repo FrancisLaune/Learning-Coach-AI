@@ -1,0 +1,445 @@
+﻿grade_code,subject_code,subject_label,chapter_code,chapter_title,chapter_status,skill_code,skill_title,content_type,content_family,difficulty,approved_production_count,draft_count,eligible_for_homework
+FR-4E,ENGLISH,Anglais,CH-ENGLISH-4E-COMMUNICATION,"Compréhension, expression et interaction",approved,SK-ENGLISH-4E-COMMUNICATION,Communiquer et argumenter dans des situations variées,exam_practice,assessment,2,1,0,True
+FR-4E,ENGLISH,Anglais,CH-ENGLISH-4E-COMMUNICATION,"Compréhension, expression et interaction",approved,SK-ENGLISH-4E-COMMUNICATION,Communiquer et argumenter dans des situations variées,exercise,practice,2,1,0,True
+FR-4E,ENGLISH,Anglais,CH-ENGLISH-4E-COMMUNICATION,"Compréhension, expression et interaction",approved,SK-ENR-ENGLISH-4E-COMMUNICATION-ARGUE,Exprimer et justifier une opinion,assessment,assessment,2,0,1,False
+FR-4E,ENGLISH,Anglais,CH-ENGLISH-4E-COMMUNICATION,"Compréhension, expression et interaction",approved,SK-ENR-ENGLISH-4E-COMMUNICATION-ARGUE,Exprimer et justifier une opinion,practice,practice,2,0,1,False
+FR-4E,ENGLISH,Anglais,CH-ENGLISH-4E-COMMUNICATION,"Compréhension, expression et interaction",approved,SK-ENR-ENGLISH-4E-COMMUNICATION-INTERACT,Soutenir une interaction,assessment,assessment,2,0,1,False
+FR-4E,ENGLISH,Anglais,CH-ENGLISH-4E-COMMUNICATION,"Compréhension, expression et interaction",approved,SK-ENR-ENGLISH-4E-COMMUNICATION-INTERACT,Soutenir une interaction,practice,practice,2,0,1,False
+FR-4E,ENGLISH,Anglais,CH-ENGLISH-4E-COMMUNICATION,"Compréhension, expression et interaction",approved,SK-ENR-ENGLISH-4E-COMMUNICATION-LISTEN,Comprendre un document oral varié,assessment,assessment,2,0,1,False
+FR-4E,ENGLISH,Anglais,CH-ENGLISH-4E-COMMUNICATION,"Compréhension, expression et interaction",approved,SK-ENR-ENGLISH-4E-COMMUNICATION-LISTEN,Comprendre un document oral varié,practice,practice,2,0,1,False
+FR-4E,ENGLISH,Anglais,CH-ENGLISH-4E-COMMUNICATION,"Compréhension, expression et interaction",approved,SK-ENR-ENGLISH-4E-COMMUNICATION-READ,Interpréter un document écrit,assessment,assessment,2,0,1,False
+FR-4E,ENGLISH,Anglais,CH-ENGLISH-4E-COMMUNICATION,"Compréhension, expression et interaction",approved,SK-ENR-ENGLISH-4E-COMMUNICATION-READ,Interpréter un document écrit,practice,practice,2,0,1,False
+FR-4E,ENGLISH,Anglais,CH-ENGLISH-4E-COMMUNICATION,"Compréhension, expression et interaction",approved,SK-ENR-ENGLISH-4E-COMMUNICATION-WRITE,Rédiger un texte organisé,assessment,assessment,2,0,1,False
+FR-4E,ENGLISH,Anglais,CH-ENGLISH-4E-COMMUNICATION,"Compréhension, expression et interaction",approved,SK-ENR-ENGLISH-4E-COMMUNICATION-WRITE,Rédiger un texte organisé,practice,practice,2,0,1,False
+FR-4E,ENGLISH,Anglais,CH-ENGLISH-4E-LANGUAGE,Système linguistique et médiation,approved,SK-ENGLISH-4E-LANGUAGE,Mobiliser les formes linguistiques et reformuler un message,assessment,assessment,2,0,1,False
+FR-4E,ENGLISH,Anglais,CH-ENGLISH-4E-LANGUAGE,Système linguistique et médiation,approved,SK-ENGLISH-4E-LANGUAGE,Mobiliser les formes linguistiques et reformuler un message,practice,practice,2,0,1,False
+FR-4E,ENGLISH,Anglais,CH-ENGLISH-4E-LANGUAGE,Système linguistique et médiation,approved,SK-ENR-ENGLISH-4E-LANGUAGE-GRAMMAR,Mobiliser les structures grammaticales attendues,assessment,assessment,2,0,1,False
+FR-4E,ENGLISH,Anglais,CH-ENGLISH-4E-LANGUAGE,Système linguistique et médiation,approved,SK-ENR-ENGLISH-4E-LANGUAGE-GRAMMAR,Mobiliser les structures grammaticales attendues,practice,practice,2,0,1,False
+FR-4E,ENGLISH,Anglais,CH-ENGLISH-4E-LANGUAGE,Système linguistique et médiation,approved,SK-ENR-ENGLISH-4E-LANGUAGE-MEDIATION,Reformuler un message pour autrui,assessment,assessment,2,0,1,False
+FR-4E,ENGLISH,Anglais,CH-ENGLISH-4E-LANGUAGE,Système linguistique et médiation,approved,SK-ENR-ENGLISH-4E-LANGUAGE-MEDIATION,Reformuler un message pour autrui,practice,practice,2,0,1,False
+FR-4E,ENGLISH,Anglais,CH-ENGLISH-4E-LANGUAGE,Système linguistique et médiation,approved,SK-ENR-ENGLISH-4E-LANGUAGE-PHONOLOGY,Produire une prosodie intelligible,assessment,assessment,2,0,1,False
+FR-4E,ENGLISH,Anglais,CH-ENGLISH-4E-LANGUAGE,Système linguistique et médiation,approved,SK-ENR-ENGLISH-4E-LANGUAGE-PHONOLOGY,Produire une prosodie intelligible,practice,practice,2,0,1,False
+FR-4E,ENGLISH,Anglais,CH-ENGLISH-4E-LANGUAGE,Système linguistique et médiation,approved,SK-ENR-ENGLISH-4E-LANGUAGE-TENSE,Choisir temps et aspect,assessment,assessment,2,0,1,False
+FR-4E,ENGLISH,Anglais,CH-ENGLISH-4E-LANGUAGE,Système linguistique et médiation,approved,SK-ENR-ENGLISH-4E-LANGUAGE-TENSE,Choisir temps et aspect,practice,practice,2,0,1,False
+FR-4E,ENGLISH,Anglais,CH-ENGLISH-4E-LANGUAGE,Système linguistique et médiation,approved,SK-ENR-ENGLISH-4E-LANGUAGE-VOCAB,Employer un lexique nuancé,assessment,assessment,2,0,1,False
+FR-4E,ENGLISH,Anglais,CH-ENGLISH-4E-LANGUAGE,Système linguistique et médiation,approved,SK-ENR-ENGLISH-4E-LANGUAGE-VOCAB,Employer un lexique nuancé,practice,practice,2,0,1,False
+FR-4E,EMC,EMC,CH-EMC-4E-INFORMATION,"Information, opinion et esprit critique",approved,SK-EMC-4E-INFORMATION,Évaluer une information et argumenter de manière raisonnée,exam_practice,assessment,2,1,0,True
+FR-4E,EMC,EMC,CH-EMC-4E-INFORMATION,"Information, opinion et esprit critique",approved,SK-EMC-4E-INFORMATION,Évaluer une information et argumenter de manière raisonnée,exercise,practice,2,1,0,True
+FR-4E,EMC,EMC,CH-EMC-4E-INFORMATION,"Information, opinion et esprit critique",approved,SK-ENR-EMC-4E-INFORMATION-ARGUMENT,Identifier un argument fallacieux,assessment,assessment,2,0,1,False
+FR-4E,EMC,EMC,CH-EMC-4E-INFORMATION,"Information, opinion et esprit critique",approved,SK-ENR-EMC-4E-INFORMATION-ARGUMENT,Identifier un argument fallacieux,practice,practice,2,0,1,False
+FR-4E,EMC,EMC,CH-EMC-4E-INFORMATION,"Information, opinion et esprit critique",approved,SK-ENR-EMC-4E-INFORMATION-FACT_OPINION,"Distinguer fait, opinion et croyance",assessment,assessment,2,0,1,False
+FR-4E,EMC,EMC,CH-EMC-4E-INFORMATION,"Information, opinion et esprit critique",approved,SK-ENR-EMC-4E-INFORMATION-FACT_OPINION,"Distinguer fait, opinion et croyance",practice,practice,2,0,1,False
+FR-4E,EMC,EMC,CH-EMC-4E-INFORMATION,"Information, opinion et esprit critique",approved,SK-ENR-EMC-4E-INFORMATION-IMAGE,Vérifier le contexte d'une image,assessment,assessment,2,0,1,False
+FR-4E,EMC,EMC,CH-EMC-4E-INFORMATION,"Information, opinion et esprit critique",approved,SK-ENR-EMC-4E-INFORMATION-IMAGE,Vérifier le contexte d'une image,practice,practice,2,0,1,False
+FR-4E,EMC,EMC,CH-EMC-4E-INFORMATION,"Information, opinion et esprit critique",approved,SK-ENR-EMC-4E-INFORMATION-PUBLISH,Adopter une publication responsable,assessment,assessment,2,0,1,False
+FR-4E,EMC,EMC,CH-EMC-4E-INFORMATION,"Information, opinion et esprit critique",approved,SK-ENR-EMC-4E-INFORMATION-PUBLISH,Adopter une publication responsable,practice,practice,2,0,1,False
+FR-4E,EMC,EMC,CH-EMC-4E-INFORMATION,"Information, opinion et esprit critique",approved,SK-ENR-EMC-4E-INFORMATION-SOURCE,Évaluer la fiabilité d'une source,assessment,assessment,2,0,1,False
+FR-4E,EMC,EMC,CH-EMC-4E-INFORMATION,"Information, opinion et esprit critique",approved,SK-ENR-EMC-4E-INFORMATION-SOURCE,Évaluer la fiabilité d'une source,practice,practice,2,0,1,False
+FR-4E,EMC,EMC,CH-EMC-4E-LIBERTIES,Libertés et État de droit,approved,SK-EMC-4E-LIBERTIES,"Confronter libertés, responsabilités et règles de droit",exam_practice,assessment,2,1,0,True
+FR-4E,EMC,EMC,CH-EMC-4E-LIBERTIES,Libertés et État de droit,approved,SK-EMC-4E-LIBERTIES,"Confronter libertés, responsabilités et règles de droit",exercise,practice,2,1,0,True
+FR-4E,EMC,EMC,CH-EMC-4E-LIBERTIES,Libertés et État de droit,approved,SK-ENR-EMC-4E-LIBERTIES-ARGUE,Justifier juridiquement une position,assessment,assessment,2,0,1,False
+FR-4E,EMC,EMC,CH-EMC-4E-LIBERTIES,Libertés et État de droit,approved,SK-ENR-EMC-4E-LIBERTIES-ARGUE,Justifier juridiquement une position,practice,practice,2,0,1,False
+FR-4E,EMC,EMC,CH-EMC-4E-LIBERTIES,Libertés et État de droit,approved,SK-ENR-EMC-4E-LIBERTIES-BALANCE,Arbitrer entre libertés concurrentes,assessment,assessment,2,0,1,False
+FR-4E,EMC,EMC,CH-EMC-4E-LIBERTIES,Libertés et État de droit,approved,SK-ENR-EMC-4E-LIBERTIES-BALANCE,Arbitrer entre libertés concurrentes,practice,practice,2,0,1,False
+FR-4E,EMC,EMC,CH-EMC-4E-LIBERTIES,Libertés et État de droit,approved,SK-ENR-EMC-4E-LIBERTIES-LAW,Relier une situation à l'État de droit,assessment,assessment,2,0,1,False
+FR-4E,EMC,EMC,CH-EMC-4E-LIBERTIES,Libertés et État de droit,approved,SK-ENR-EMC-4E-LIBERTIES-LAW,Relier une situation à l'État de droit,practice,practice,2,0,1,False
+FR-4E,EMC,EMC,CH-EMC-4E-LIBERTIES,Libertés et État de droit,approved,SK-ENR-EMC-4E-LIBERTIES-LIBERTY,Identifier une liberté fondamentale,assessment,assessment,2,0,1,False
+FR-4E,EMC,EMC,CH-EMC-4E-LIBERTIES,Libertés et État de droit,approved,SK-ENR-EMC-4E-LIBERTIES-LIBERTY,Identifier une liberté fondamentale,practice,practice,2,0,1,False
+FR-4E,EMC,EMC,CH-EMC-4E-LIBERTIES,Libertés et État de droit,approved,SK-ENR-EMC-4E-LIBERTIES-LIMIT,Expliquer la limite légale d'une liberté,assessment,assessment,2,0,1,False
+FR-4E,EMC,EMC,CH-EMC-4E-LIBERTIES,Libertés et État de droit,approved,SK-ENR-EMC-4E-LIBERTIES-LIMIT,Expliquer la limite légale d'une liberté,practice,practice,2,0,1,False
+FR-4E,SPANISH,Espagnol,CH-SPANISH-4E-COMMUNICATION,Communication et interaction,approved,SK-ENR-SPANISH-4E-COMMUNICATION-INTERACT,Interagir dans une situation variée,exam_practice,assessment,2,1,0,True
+FR-4E,SPANISH,Espagnol,CH-SPANISH-4E-COMMUNICATION,Communication et interaction,approved,SK-ENR-SPANISH-4E-COMMUNICATION-INTERACT,Interagir dans une situation variée,exercise,practice,2,1,0,True
+FR-4E,SPANISH,Espagnol,CH-SPANISH-4E-COMMUNICATION,Communication et interaction,approved,SK-ENR-SPANISH-4E-COMMUNICATION-LISTEN,Comprendre un message oral contextualisé,assessment,assessment,2,0,1,False
+FR-4E,SPANISH,Espagnol,CH-SPANISH-4E-COMMUNICATION,Communication et interaction,approved,SK-ENR-SPANISH-4E-COMMUNICATION-LISTEN,Comprendre un message oral contextualisé,practice,practice,2,0,1,False
+FR-4E,SPANISH,Espagnol,CH-SPANISH-4E-COMMUNICATION,Communication et interaction,approved,SK-ENR-SPANISH-4E-COMMUNICATION-READ,Comprendre un texte court,assessment,assessment,2,0,1,False
+FR-4E,SPANISH,Espagnol,CH-SPANISH-4E-COMMUNICATION,Communication et interaction,approved,SK-ENR-SPANISH-4E-COMMUNICATION-READ,Comprendre un texte court,practice,practice,2,0,1,False
+FR-4E,SPANISH,Espagnol,CH-SPANISH-4E-COMMUNICATION,Communication et interaction,approved,SK-ENR-SPANISH-4E-COMMUNICATION-SPEAK,Produire un propos continu,assessment,assessment,2,0,1,False
+FR-4E,SPANISH,Espagnol,CH-SPANISH-4E-COMMUNICATION,Communication et interaction,approved,SK-ENR-SPANISH-4E-COMMUNICATION-SPEAK,Produire un propos continu,practice,practice,2,0,1,False
+FR-4E,SPANISH,Espagnol,CH-SPANISH-4E-COMMUNICATION,Communication et interaction,approved,SK-ENR-SPANISH-4E-COMMUNICATION-WRITE,Rédiger un texte bref,assessment,assessment,2,0,1,False
+FR-4E,SPANISH,Espagnol,CH-SPANISH-4E-COMMUNICATION,Communication et interaction,approved,SK-ENR-SPANISH-4E-COMMUNICATION-WRITE,Rédiger un texte bref,practice,practice,2,0,1,False
+FR-4E,SPANISH,Espagnol,CH-SPANISH-4E-COMMUNICATION,Communication et interaction,approved,SK-SPANISH-4E-COMMUNICATION,"Comprendre, produire et interagir dans des situations variées",assessment,assessment,2,0,1,False
+FR-4E,SPANISH,Espagnol,CH-SPANISH-4E-COMMUNICATION,Communication et interaction,approved,SK-SPANISH-4E-COMMUNICATION,"Comprendre, produire et interagir dans des situations variées",practice,practice,2,0,1,False
+FR-4E,SPANISH,Espagnol,CH-SPANISH-4E-LANGUAGE,Repères linguistiques et culturels,approved,SK-ENR-SPANISH-4E-LANGUAGE-CULTURE,Interpréter un document culturel,assessment,assessment,2,0,1,False
+FR-4E,SPANISH,Espagnol,CH-SPANISH-4E-LANGUAGE,Repères linguistiques et culturels,approved,SK-ENR-SPANISH-4E-LANGUAGE-CULTURE,Interpréter un document culturel,practice,practice,2,0,1,False
+FR-4E,SPANISH,Espagnol,CH-SPANISH-4E-LANGUAGE,Repères linguistiques et culturels,approved,SK-ENR-SPANISH-4E-LANGUAGE-GRAMMAR,Utiliser les structures étudiées,assessment,assessment,2,0,1,False
+FR-4E,SPANISH,Espagnol,CH-SPANISH-4E-LANGUAGE,Repères linguistiques et culturels,approved,SK-ENR-SPANISH-4E-LANGUAGE-GRAMMAR,Utiliser les structures étudiées,practice,practice,2,0,1,False
+FR-4E,SPANISH,Espagnol,CH-SPANISH-4E-LANGUAGE,Repères linguistiques et culturels,approved,SK-ENR-SPANISH-4E-LANGUAGE-PHONOLOGY,Produire une parole intelligible,assessment,assessment,2,0,1,False
+FR-4E,SPANISH,Espagnol,CH-SPANISH-4E-LANGUAGE,Repères linguistiques et culturels,approved,SK-ENR-SPANISH-4E-LANGUAGE-PHONOLOGY,Produire une parole intelligible,practice,practice,2,0,1,False
+FR-4E,SPANISH,Espagnol,CH-SPANISH-4E-LANGUAGE,Repères linguistiques et culturels,approved,SK-ENR-SPANISH-4E-LANGUAGE-TENSE,Employer les temps attendus,assessment,assessment,2,0,1,False
+FR-4E,SPANISH,Espagnol,CH-SPANISH-4E-LANGUAGE,Repères linguistiques et culturels,approved,SK-ENR-SPANISH-4E-LANGUAGE-TENSE,Employer les temps attendus,practice,practice,2,0,1,False
+FR-4E,SPANISH,Espagnol,CH-SPANISH-4E-LANGUAGE,Repères linguistiques et culturels,approved,SK-ENR-SPANISH-4E-LANGUAGE-VOCAB,Mobiliser un lexique contextualisé,assessment,assessment,2,0,1,False
+FR-4E,SPANISH,Espagnol,CH-SPANISH-4E-LANGUAGE,Repères linguistiques et culturels,approved,SK-ENR-SPANISH-4E-LANGUAGE-VOCAB,Mobiliser un lexique contextualisé,practice,practice,2,0,1,False
+FR-4E,SPANISH,Espagnol,CH-SPANISH-4E-LANGUAGE,Repères linguistiques et culturels,approved,SK-SPANISH-4E-LANGUAGE,Mobiliser la langue pour interpréter des documents culturels,assessment,assessment,2,0,1,False
+FR-4E,SPANISH,Espagnol,CH-SPANISH-4E-LANGUAGE,Repères linguistiques et culturels,approved,SK-SPANISH-4E-LANGUAGE,Mobiliser la langue pour interpréter des documents culturels,practice,practice,2,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-COMPREHENSION,Compréhension,approved,SK-ENR-FRENCH-4E-COMPREHENSION-EXPLICIT,Prélever une information explicite,assessment,assessment,2,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-COMPREHENSION,Compréhension,approved,SK-ENR-FRENCH-4E-COMPREHENSION-EXPLICIT,Prélever une information explicite,practice,practice,1,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-COMPREHENSION,Compréhension,approved,SK-ENR-FRENCH-4E-COMPREHENSION-EXPLICIT,Prélever une information explicite,practice,practice,2,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-COMPREHENSION,Compréhension,approved,SK-ENR-FRENCH-4E-COMPREHENSION-EXPLICIT,Prélever une information explicite,practice,practice,3,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-COMPREHENSION,Compréhension,approved,SK-ENR-FRENCH-4E-COMPREHENSION-INFER,Construire une inférence,assessment,assessment,2,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-COMPREHENSION,Compréhension,approved,SK-ENR-FRENCH-4E-COMPREHENSION-INFER,Construire une inférence,practice,practice,1,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-COMPREHENSION,Compréhension,approved,SK-ENR-FRENCH-4E-COMPREHENSION-INFER,Construire une inférence,practice,practice,2,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-COMPREHENSION,Compréhension,approved,SK-ENR-FRENCH-4E-COMPREHENSION-INFER,Construire une inférence,practice,practice,3,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-COMPREHENSION,Compréhension,approved,SK-ENR-FRENCH-4E-COMPREHENSION-INTERPRET,Justifier une interprétation,assessment,assessment,2,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-COMPREHENSION,Compréhension,approved,SK-ENR-FRENCH-4E-COMPREHENSION-INTERPRET,Justifier une interprétation,practice,practice,1,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-COMPREHENSION,Compréhension,approved,SK-ENR-FRENCH-4E-COMPREHENSION-INTERPRET,Justifier une interprétation,practice,practice,2,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-COMPREHENSION,Compréhension,approved,SK-ENR-FRENCH-4E-COMPREHENSION-INTERPRET,Justifier une interprétation,practice,practice,3,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-COMPREHENSION,Compréhension,approved,SK-ENR-FRENCH-4E-COMPREHENSION-METHOD,Analyser un procédé,assessment,assessment,2,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-COMPREHENSION,Compréhension,approved,SK-ENR-FRENCH-4E-COMPREHENSION-METHOD,Analyser un procédé,practice,practice,1,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-COMPREHENSION,Compréhension,approved,SK-ENR-FRENCH-4E-COMPREHENSION-METHOD,Analyser un procédé,practice,practice,2,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-COMPREHENSION,Compréhension,approved,SK-ENR-FRENCH-4E-COMPREHENSION-METHOD,Analyser un procédé,practice,practice,3,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-COMPREHENSION,Compréhension,approved,SK-ENR-FRENCH-4E-COMPREHENSION-VIEWPOINT,Identifier un point de vue,assessment,assessment,2,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-COMPREHENSION,Compréhension,approved,SK-ENR-FRENCH-4E-COMPREHENSION-VIEWPOINT,Identifier un point de vue,practice,practice,1,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-COMPREHENSION,Compréhension,approved,SK-ENR-FRENCH-4E-COMPREHENSION-VIEWPOINT,Identifier un point de vue,practice,practice,2,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-COMPREHENSION,Compréhension,approved,SK-ENR-FRENCH-4E-COMPREHENSION-VIEWPOINT,Identifier un point de vue,practice,practice,3,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-COMPREHENSION,Compréhension,approved,SK-FRENCH-4E-COMPREHENSION,Mobiliser : Compréhension,exam_practice,assessment,2,1,0,True
+FR-4E,FRENCH,Français,CH-FRENCH-4E-COMPREHENSION,Compréhension,approved,SK-FRENCH-4E-COMPREHENSION,Mobiliser : Compréhension,exercise,practice,3,1,0,True
+FR-4E,FRENCH,Français,CH-FRENCH-4E-COMPREHENSION,Compréhension,approved,SK-FRENCH-4E-COMPREHENSION,Mobiliser : Compréhension,worked_example,other,2,1,0,True
+FR-4E,FRENCH,Français,CH-FRENCH-4E-CONJUGATION,Conjugaison,approved,SK-ENR-FRENCH-4E-CONJUGATION-CONCORDANCE,Assurer la cohérence temporelle,assessment,assessment,2,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-CONJUGATION,Conjugaison,approved,SK-ENR-FRENCH-4E-CONJUGATION-CONCORDANCE,Assurer la cohérence temporelle,practice,practice,1,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-CONJUGATION,Conjugaison,approved,SK-ENR-FRENCH-4E-CONJUGATION-CONCORDANCE,Assurer la cohérence temporelle,practice,practice,2,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-CONJUGATION,Conjugaison,approved,SK-ENR-FRENCH-4E-CONJUGATION-CONCORDANCE,Assurer la cohérence temporelle,practice,practice,3,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-CONJUGATION,Conjugaison,approved,SK-ENR-FRENCH-4E-CONJUGATION-INDICATIVE,Conjuguer les temps de l'indicatif étudiés,assessment,assessment,2,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-CONJUGATION,Conjugaison,approved,SK-ENR-FRENCH-4E-CONJUGATION-INDICATIVE,Conjuguer les temps de l'indicatif étudiés,practice,practice,1,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-CONJUGATION,Conjugaison,approved,SK-ENR-FRENCH-4E-CONJUGATION-INDICATIVE,Conjuguer les temps de l'indicatif étudiés,practice,practice,2,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-CONJUGATION,Conjugaison,approved,SK-ENR-FRENCH-4E-CONJUGATION-INDICATIVE,Conjuguer les temps de l'indicatif étudiés,practice,practice,3,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-CONJUGATION,Conjugaison,approved,SK-ENR-FRENCH-4E-CONJUGATION-REWRITE,Transformer temps et personne,assessment,assessment,2,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-CONJUGATION,Conjugaison,approved,SK-ENR-FRENCH-4E-CONJUGATION-REWRITE,Transformer temps et personne,practice,practice,1,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-CONJUGATION,Conjugaison,approved,SK-ENR-FRENCH-4E-CONJUGATION-REWRITE,Transformer temps et personne,practice,practice,2,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-CONJUGATION,Conjugaison,approved,SK-ENR-FRENCH-4E-CONJUGATION-REWRITE,Transformer temps et personne,practice,practice,3,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-CONJUGATION,Conjugaison,approved,SK-ENR-FRENCH-4E-CONJUGATION-SUBJUNCTIVE,Reconnaître et employer le subjonctif attendu,assessment,assessment,2,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-CONJUGATION,Conjugaison,approved,SK-ENR-FRENCH-4E-CONJUGATION-SUBJUNCTIVE,Reconnaître et employer le subjonctif attendu,practice,practice,1,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-CONJUGATION,Conjugaison,approved,SK-ENR-FRENCH-4E-CONJUGATION-SUBJUNCTIVE,Reconnaître et employer le subjonctif attendu,practice,practice,2,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-CONJUGATION,Conjugaison,approved,SK-ENR-FRENCH-4E-CONJUGATION-SUBJUNCTIVE,Reconnaître et employer le subjonctif attendu,practice,practice,3,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-CONJUGATION,Conjugaison,approved,SK-ENR-FRENCH-4E-CONJUGATION-TENSE_VALUE,Interpréter la valeur d'un temps,assessment,assessment,2,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-CONJUGATION,Conjugaison,approved,SK-ENR-FRENCH-4E-CONJUGATION-TENSE_VALUE,Interpréter la valeur d'un temps,practice,practice,1,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-CONJUGATION,Conjugaison,approved,SK-ENR-FRENCH-4E-CONJUGATION-TENSE_VALUE,Interpréter la valeur d'un temps,practice,practice,2,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-CONJUGATION,Conjugaison,approved,SK-ENR-FRENCH-4E-CONJUGATION-TENSE_VALUE,Interpréter la valeur d'un temps,practice,practice,3,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-CONJUGATION,Conjugaison,approved,SK-FRENCH-4E-CONJUGATION,Mobiliser : Conjugaison,exam_practice,assessment,2,1,0,True
+FR-4E,FRENCH,Français,CH-FRENCH-4E-CONJUGATION,Conjugaison,approved,SK-FRENCH-4E-CONJUGATION,Mobiliser : Conjugaison,exercise,practice,3,1,0,True
+FR-4E,FRENCH,Français,CH-FRENCH-4E-CONJUGATION,Conjugaison,approved,SK-FRENCH-4E-CONJUGATION,Mobiliser : Conjugaison,worked_example,other,2,1,0,True
+FR-4E,FRENCH,Français,CH-FRENCH-4E-GRAMMAR,Grammaire,approved,SK-ENR-FRENCH-4E-GRAMMAR-CLAUSES,Délimiter et relier les propositions,exam_practice,assessment,2,1,0,True
+FR-4E,FRENCH,Français,CH-FRENCH-4E-GRAMMAR,Grammaire,approved,SK-ENR-FRENCH-4E-GRAMMAR-CLAUSES,Délimiter et relier les propositions,exercise,practice,2,1,0,True
+FR-4E,FRENCH,Français,CH-FRENCH-4E-GRAMMAR,Grammaire,approved,SK-ENR-FRENCH-4E-GRAMMAR-CLAUSES,Délimiter et relier les propositions,exercise,practice,3,1,0,True
+FR-4E,FRENCH,Français,CH-FRENCH-4E-GRAMMAR,Grammaire,approved,SK-ENR-FRENCH-4E-GRAMMAR-FUNCTIONS,Analyser les fonctions dans la phrase complexe,assessment,assessment,2,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-GRAMMAR,Grammaire,approved,SK-ENR-FRENCH-4E-GRAMMAR-FUNCTIONS,Analyser les fonctions dans la phrase complexe,diagnostic,diagnostic,2,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-GRAMMAR,Grammaire,approved,SK-ENR-FRENCH-4E-GRAMMAR-FUNCTIONS,Analyser les fonctions dans la phrase complexe,practice,practice,1,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-GRAMMAR,Grammaire,approved,SK-ENR-FRENCH-4E-GRAMMAR-FUNCTIONS,Analyser les fonctions dans la phrase complexe,practice,practice,2,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-GRAMMAR,Grammaire,approved,SK-ENR-FRENCH-4E-GRAMMAR-FUNCTIONS,Analyser les fonctions dans la phrase complexe,practice,practice,3,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-GRAMMAR,Grammaire,approved,SK-ENR-FRENCH-4E-GRAMMAR-FUNCTIONS,Analyser les fonctions dans la phrase complexe,remediation,remediation,1,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-GRAMMAR,Grammaire,approved,SK-ENR-FRENCH-4E-GRAMMAR-FUNCTIONS,Analyser les fonctions dans la phrase complexe,revision,revision,2,0,3,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-GRAMMAR,Grammaire,approved,SK-ENR-FRENCH-4E-GRAMMAR-TRANSFORM,Transformer une phrase en conservant son sens,assessment,assessment,2,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-GRAMMAR,Grammaire,approved,SK-ENR-FRENCH-4E-GRAMMAR-TRANSFORM,Transformer une phrase en conservant son sens,practice,practice,1,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-GRAMMAR,Grammaire,approved,SK-ENR-FRENCH-4E-GRAMMAR-TRANSFORM,Transformer une phrase en conservant son sens,practice,practice,2,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-GRAMMAR,Grammaire,approved,SK-ENR-FRENCH-4E-GRAMMAR-TRANSFORM,Transformer une phrase en conservant son sens,practice,practice,3,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-GRAMMAR,Grammaire,approved,SK-FRENCH-4E-GRAMMAR,Mobiliser : Grammaire,exam_practice,assessment,2,1,0,True
+FR-4E,FRENCH,Français,CH-FRENCH-4E-GRAMMAR,Grammaire,approved,SK-FRENCH-4E-GRAMMAR,Mobiliser : Grammaire,exercise,practice,3,1,0,True
+FR-4E,FRENCH,Français,CH-FRENCH-4E-GRAMMAR,Grammaire,approved,SK-FRENCH-4E-GRAMMAR,Mobiliser : Grammaire,worked_example,other,2,1,0,True
+FR-4E,FRENCH,Français,CH-FRENCH-4E-NARRATIVE,Rédaction narrative,approved,SK-ENR-FRENCH-4E-NARRATIVE-DESCRIPTION,Intégrer description et dialogue,assessment,assessment,2,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-NARRATIVE,Rédaction narrative,approved,SK-ENR-FRENCH-4E-NARRATIVE-DESCRIPTION,Intégrer description et dialogue,practice,practice,1,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-NARRATIVE,Rédaction narrative,approved,SK-ENR-FRENCH-4E-NARRATIVE-DESCRIPTION,Intégrer description et dialogue,practice,practice,2,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-NARRATIVE,Rédaction narrative,approved,SK-ENR-FRENCH-4E-NARRATIVE-DESCRIPTION,Intégrer description et dialogue,practice,practice,3,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-NARRATIVE,Rédaction narrative,approved,SK-ENR-FRENCH-4E-NARRATIVE-PLOT,Construire une progression narrative,assessment,assessment,2,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-NARRATIVE,Rédaction narrative,approved,SK-ENR-FRENCH-4E-NARRATIVE-PLOT,Construire une progression narrative,practice,practice,1,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-NARRATIVE,Rédaction narrative,approved,SK-ENR-FRENCH-4E-NARRATIVE-PLOT,Construire une progression narrative,practice,practice,2,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-NARRATIVE,Rédaction narrative,approved,SK-ENR-FRENCH-4E-NARRATIVE-PLOT,Construire une progression narrative,practice,practice,3,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-NARRATIVE,Rédaction narrative,approved,SK-ENR-FRENCH-4E-NARRATIVE-REVISE,Réviser cohérence et style,assessment,assessment,2,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-NARRATIVE,Rédaction narrative,approved,SK-ENR-FRENCH-4E-NARRATIVE-REVISE,Réviser cohérence et style,practice,practice,1,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-NARRATIVE,Rédaction narrative,approved,SK-ENR-FRENCH-4E-NARRATIVE-REVISE,Réviser cohérence et style,practice,practice,2,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-NARRATIVE,Rédaction narrative,approved,SK-ENR-FRENCH-4E-NARRATIVE-REVISE,Réviser cohérence et style,practice,practice,3,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-NARRATIVE,Rédaction narrative,approved,SK-ENR-FRENCH-4E-NARRATIVE-TIME,Organiser la temporalité du récit,assessment,assessment,2,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-NARRATIVE,Rédaction narrative,approved,SK-ENR-FRENCH-4E-NARRATIVE-TIME,Organiser la temporalité du récit,practice,practice,1,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-NARRATIVE,Rédaction narrative,approved,SK-ENR-FRENCH-4E-NARRATIVE-TIME,Organiser la temporalité du récit,practice,practice,2,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-NARRATIVE,Rédaction narrative,approved,SK-ENR-FRENCH-4E-NARRATIVE-TIME,Organiser la temporalité du récit,practice,practice,3,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-NARRATIVE,Rédaction narrative,approved,SK-ENR-FRENCH-4E-NARRATIVE-VIEWPOINT,Choisir et maintenir un point de vue,assessment,assessment,2,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-NARRATIVE,Rédaction narrative,approved,SK-ENR-FRENCH-4E-NARRATIVE-VIEWPOINT,Choisir et maintenir un point de vue,challenge,challenge,2,0,3,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-NARRATIVE,Rédaction narrative,approved,SK-ENR-FRENCH-4E-NARRATIVE-VIEWPOINT,Choisir et maintenir un point de vue,practice,practice,1,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-NARRATIVE,Rédaction narrative,approved,SK-ENR-FRENCH-4E-NARRATIVE-VIEWPOINT,Choisir et maintenir un point de vue,practice,practice,2,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-NARRATIVE,Rédaction narrative,approved,SK-ENR-FRENCH-4E-NARRATIVE-VIEWPOINT,Choisir et maintenir un point de vue,practice,practice,3,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-NARRATIVE,Rédaction narrative,approved,SK-FRENCH-4E-NARRATIVE,Mobiliser : Rédaction narrative,exam_practice,assessment,2,1,0,True
+FR-4E,FRENCH,Français,CH-FRENCH-4E-NARRATIVE,Rédaction narrative,approved,SK-FRENCH-4E-NARRATIVE,Mobiliser : Rédaction narrative,exercise,practice,3,1,0,True
+FR-4E,FRENCH,Français,CH-FRENCH-4E-NARRATIVE,Rédaction narrative,approved,SK-FRENCH-4E-NARRATIVE,Mobiliser : Rédaction narrative,worked_example,other,2,1,0,True
+FR-4E,FRENCH,Français,CH-FRENCH-4E-SPELLING,Orthographe,approved,SK-ENR-FRENCH-4E-SPELLING-GN,Maîtriser les accords du groupe nominal,assessment,assessment,2,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-SPELLING,Orthographe,approved,SK-ENR-FRENCH-4E-SPELLING-GN,Maîtriser les accords du groupe nominal,practice,practice,1,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-SPELLING,Orthographe,approved,SK-ENR-FRENCH-4E-SPELLING-GN,Maîtriser les accords du groupe nominal,practice,practice,2,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-SPELLING,Orthographe,approved,SK-ENR-FRENCH-4E-SPELLING-GN,Maîtriser les accords du groupe nominal,practice,practice,3,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-SPELLING,Orthographe,approved,SK-ENR-FRENCH-4E-SPELLING-HOMOPHONES,Raisonner sur les homophones grammaticaux,assessment,assessment,2,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-SPELLING,Orthographe,approved,SK-ENR-FRENCH-4E-SPELLING-HOMOPHONES,Raisonner sur les homophones grammaticaux,practice,practice,1,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-SPELLING,Orthographe,approved,SK-ENR-FRENCH-4E-SPELLING-HOMOPHONES,Raisonner sur les homophones grammaticaux,practice,practice,2,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-SPELLING,Orthographe,approved,SK-ENR-FRENCH-4E-SPELLING-HOMOPHONES,Raisonner sur les homophones grammaticaux,practice,practice,3,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-SPELLING,Orthographe,approved,SK-ENR-FRENCH-4E-SPELLING-PARTICIPLE,Accorder le participe passé dans les cas étudiés,exam_practice,assessment,2,1,0,True
+FR-4E,FRENCH,Français,CH-FRENCH-4E-SPELLING,Orthographe,approved,SK-ENR-FRENCH-4E-SPELLING-PARTICIPLE,Accorder le participe passé dans les cas étudiés,exercise,practice,3,1,0,True
+FR-4E,FRENCH,Français,CH-FRENCH-4E-SPELLING,Orthographe,approved,SK-ENR-FRENCH-4E-SPELLING-REVISE,Utiliser une procédure de relecture orthographique,assessment,assessment,2,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-SPELLING,Orthographe,approved,SK-ENR-FRENCH-4E-SPELLING-REVISE,Utiliser une procédure de relecture orthographique,practice,practice,1,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-SPELLING,Orthographe,approved,SK-ENR-FRENCH-4E-SPELLING-REVISE,Utiliser une procédure de relecture orthographique,practice,practice,2,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-SPELLING,Orthographe,approved,SK-ENR-FRENCH-4E-SPELLING-REVISE,Utiliser une procédure de relecture orthographique,practice,practice,3,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-SPELLING,Orthographe,approved,SK-ENR-FRENCH-4E-SPELLING-SV,Maîtriser l'accord sujet-verbe complexe,assessment,assessment,2,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-SPELLING,Orthographe,approved,SK-ENR-FRENCH-4E-SPELLING-SV,Maîtriser l'accord sujet-verbe complexe,diagnostic,diagnostic,2,0,3,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-SPELLING,Orthographe,approved,SK-ENR-FRENCH-4E-SPELLING-SV,Maîtriser l'accord sujet-verbe complexe,practice,practice,1,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-SPELLING,Orthographe,approved,SK-ENR-FRENCH-4E-SPELLING-SV,Maîtriser l'accord sujet-verbe complexe,practice,practice,2,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-SPELLING,Orthographe,approved,SK-ENR-FRENCH-4E-SPELLING-SV,Maîtriser l'accord sujet-verbe complexe,practice,practice,3,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-SPELLING,Orthographe,approved,SK-FRENCH-4E-SPELLING,Mobiliser : Orthographe,exam_practice,assessment,2,1,0,True
+FR-4E,FRENCH,Français,CH-FRENCH-4E-SPELLING,Orthographe,approved,SK-FRENCH-4E-SPELLING,Mobiliser : Orthographe,exercise,practice,3,1,0,True
+FR-4E,FRENCH,Français,CH-FRENCH-4E-SPELLING,Orthographe,approved,SK-FRENCH-4E-SPELLING,Mobiliser : Orthographe,worked_example,other,2,1,0,True
+FR-4E,FRENCH,Français,CH-FRENCH-4E-VOCAB,Vocabulaire précis,approved,SK-ENR-FRENCH-4E-VOCAB-CONTEXT,Déduire le sens en contexte,assessment,assessment,2,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-VOCAB,Vocabulaire précis,approved,SK-ENR-FRENCH-4E-VOCAB-CONTEXT,Déduire le sens en contexte,practice,practice,1,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-VOCAB,Vocabulaire précis,approved,SK-ENR-FRENCH-4E-VOCAB-CONTEXT,Déduire le sens en contexte,practice,practice,2,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-VOCAB,Vocabulaire précis,approved,SK-ENR-FRENCH-4E-VOCAB-CONTEXT,Déduire le sens en contexte,practice,practice,3,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-VOCAB,Vocabulaire précis,approved,SK-ENR-FRENCH-4E-VOCAB-CONTEXT,Déduire le sens en contexte,remediation,remediation,2,0,3,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-VOCAB,Vocabulaire précis,approved,SK-ENR-FRENCH-4E-VOCAB-FIGURE,Interpréter une expression figurée,exam_practice,assessment,2,1,0,True
+FR-4E,FRENCH,Français,CH-FRENCH-4E-VOCAB,Vocabulaire précis,approved,SK-ENR-FRENCH-4E-VOCAB-FIGURE,Interpréter une expression figurée,exercise,practice,2,1,0,True
+FR-4E,FRENCH,Français,CH-FRENCH-4E-VOCAB,Vocabulaire précis,approved,SK-ENR-FRENCH-4E-VOCAB-FORMATION,Analyser la formation des mots,assessment,assessment,2,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-VOCAB,Vocabulaire précis,approved,SK-ENR-FRENCH-4E-VOCAB-FORMATION,Analyser la formation des mots,practice,practice,1,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-VOCAB,Vocabulaire précis,approved,SK-ENR-FRENCH-4E-VOCAB-FORMATION,Analyser la formation des mots,practice,practice,2,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-VOCAB,Vocabulaire précis,approved,SK-ENR-FRENCH-4E-VOCAB-FORMATION,Analyser la formation des mots,practice,practice,3,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-VOCAB,Vocabulaire précis,approved,SK-ENR-FRENCH-4E-VOCAB-REGISTER,Choisir un niveau de langue,assessment,assessment,2,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-VOCAB,Vocabulaire précis,approved,SK-ENR-FRENCH-4E-VOCAB-REGISTER,Choisir un niveau de langue,practice,practice,1,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-VOCAB,Vocabulaire précis,approved,SK-ENR-FRENCH-4E-VOCAB-REGISTER,Choisir un niveau de langue,practice,practice,2,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-VOCAB,Vocabulaire précis,approved,SK-ENR-FRENCH-4E-VOCAB-REGISTER,Choisir un niveau de langue,practice,practice,3,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-VOCAB,Vocabulaire précis,approved,SK-ENR-FRENCH-4E-VOCAB-REUSE,Employer un terme avec précision,assessment,assessment,2,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-VOCAB,Vocabulaire précis,approved,SK-ENR-FRENCH-4E-VOCAB-REUSE,Employer un terme avec précision,practice,practice,1,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-VOCAB,Vocabulaire précis,approved,SK-ENR-FRENCH-4E-VOCAB-REUSE,Employer un terme avec précision,practice,practice,2,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-VOCAB,Vocabulaire précis,approved,SK-ENR-FRENCH-4E-VOCAB-REUSE,Employer un terme avec précision,practice,practice,3,0,1,False
+FR-4E,FRENCH,Français,CH-FRENCH-4E-VOCAB,Vocabulaire précis,approved,SK-FRENCH-4E-VOCAB,Mobiliser : Vocabulaire précis,exam_practice,assessment,2,1,0,True
+FR-4E,FRENCH,Français,CH-FRENCH-4E-VOCAB,Vocabulaire précis,approved,SK-FRENCH-4E-VOCAB,Mobiliser : Vocabulaire précis,exercise,practice,3,1,0,True
+FR-4E,FRENCH,Français,CH-FRENCH-4E-VOCAB,Vocabulaire précis,approved,SK-FRENCH-4E-VOCAB,Mobiliser : Vocabulaire précis,worked_example,other,2,1,0,True
+FR-4E,GEOGRAPHY,Géographie,CH-GEOGRAPHY-4E-GLOBALIZATION,Des espaces transformés par la mondialisation,approved,SK-ENR-GEOGRAPHY-4E-GLOBALIZATION-ACTOR,Expliquer le rôle d'un acteur,assessment,assessment,2,0,1,False
+FR-4E,GEOGRAPHY,Géographie,CH-GEOGRAPHY-4E-GLOBALIZATION,Des espaces transformés par la mondialisation,approved,SK-ENR-GEOGRAPHY-4E-GLOBALIZATION-ACTOR,Expliquer le rôle d'un acteur,practice,practice,2,0,1,False
+FR-4E,GEOGRAPHY,Géographie,CH-GEOGRAPHY-4E-GLOBALIZATION,Des espaces transformés par la mondialisation,approved,SK-ENR-GEOGRAPHY-4E-GLOBALIZATION-FLOW,Identifier des flux mondialisés,exam_practice,assessment,2,1,0,True
+FR-4E,GEOGRAPHY,Géographie,CH-GEOGRAPHY-4E-GLOBALIZATION,Des espaces transformés par la mondialisation,approved,SK-ENR-GEOGRAPHY-4E-GLOBALIZATION-FLOW,Identifier des flux mondialisés,exercise,practice,2,1,0,True
+FR-4E,GEOGRAPHY,Géographie,CH-GEOGRAPHY-4E-GLOBALIZATION,Des espaces transformés par la mondialisation,approved,SK-ENR-GEOGRAPHY-4E-GLOBALIZATION-INTEGRATION,Comparer l'intégration des territoires,exam_practice,assessment,2,1,0,True
+FR-4E,GEOGRAPHY,Géographie,CH-GEOGRAPHY-4E-GLOBALIZATION,Des espaces transformés par la mondialisation,approved,SK-ENR-GEOGRAPHY-4E-GLOBALIZATION-INTEGRATION,Comparer l'intégration des territoires,exercise,practice,2,1,0,True
+FR-4E,GEOGRAPHY,Géographie,CH-GEOGRAPHY-4E-GLOBALIZATION,Des espaces transformés par la mondialisation,approved,SK-ENR-GEOGRAPHY-4E-GLOBALIZATION-MAP,Construire une représentation de réseaux,exam_practice,assessment,2,1,0,True
+FR-4E,GEOGRAPHY,Géographie,CH-GEOGRAPHY-4E-GLOBALIZATION,Des espaces transformés par la mondialisation,approved,SK-ENR-GEOGRAPHY-4E-GLOBALIZATION-MARITIME,Analyser un espace maritime,exam_practice,assessment,2,1,0,True
+FR-4E,GEOGRAPHY,Géographie,CH-GEOGRAPHY-4E-GLOBALIZATION,Des espaces transformés par la mondialisation,approved,SK-ENR-GEOGRAPHY-4E-GLOBALIZATION-MARITIME,Analyser un espace maritime,exercise,practice,2,1,0,True
+FR-4E,GEOGRAPHY,Géographie,CH-GEOGRAPHY-4E-GLOBALIZATION,Des espaces transformés par la mondialisation,approved,SK-GEOGRAPHY-4E-GLOBALIZATION,Expliquer l'intégration différenciée des territoires,exam_practice,assessment,2,1,0,True
+FR-4E,GEOGRAPHY,Géographie,CH-GEOGRAPHY-4E-GLOBALIZATION,Des espaces transformés par la mondialisation,approved,SK-GEOGRAPHY-4E-GLOBALIZATION,Expliquer l'intégration différenciée des territoires,exercise,practice,2,1,0,True
+FR-4E,GEOGRAPHY,Géographie,CH-GEOGRAPHY-4E-MOBILITY,Mobilités humaines transnationales,approved,SK-ENR-GEOGRAPHY-4E-MOBILITY-CAUSE,Distinguer causes de mobilité,exam_practice,assessment,2,1,0,True
+FR-4E,GEOGRAPHY,Géographie,CH-GEOGRAPHY-4E-MOBILITY,Mobilités humaines transnationales,approved,SK-ENR-GEOGRAPHY-4E-MOBILITY-CAUSE,Distinguer causes de mobilité,exercise,practice,2,1,0,True
+FR-4E,GEOGRAPHY,Géographie,CH-GEOGRAPHY-4E-MOBILITY,Mobilités humaines transnationales,approved,SK-ENR-GEOGRAPHY-4E-MOBILITY-EFFECT,Analyser des effets territoriaux,exercise,practice,2,1,0,True
+FR-4E,GEOGRAPHY,Géographie,CH-GEOGRAPHY-4E-MOBILITY,Mobilités humaines transnationales,approved,SK-ENR-GEOGRAPHY-4E-MOBILITY-MAP,Lire une carte de flux,exam_practice,assessment,2,1,0,True
+FR-4E,GEOGRAPHY,Géographie,CH-GEOGRAPHY-4E-MOBILITY,Mobilités humaines transnationales,approved,SK-ENR-GEOGRAPHY-4E-MOBILITY-MAP,Lire une carte de flux,exercise,practice,2,1,0,True
+FR-4E,GEOGRAPHY,Géographie,CH-GEOGRAPHY-4E-MOBILITY,Mobilités humaines transnationales,approved,SK-ENR-GEOGRAPHY-4E-MOBILITY-MIGRATION,Expliquer un flux migratoire,exam_practice,assessment,2,1,0,True
+FR-4E,GEOGRAPHY,Géographie,CH-GEOGRAPHY-4E-MOBILITY,Mobilités humaines transnationales,approved,SK-ENR-GEOGRAPHY-4E-MOBILITY-MIGRATION,Expliquer un flux migratoire,exercise,practice,2,1,0,True
+FR-4E,GEOGRAPHY,Géographie,CH-GEOGRAPHY-4E-MOBILITY,Mobilités humaines transnationales,approved,SK-ENR-GEOGRAPHY-4E-MOBILITY-TOURISM,Caractériser une mobilité touristique,exam_practice,assessment,2,1,0,True
+FR-4E,GEOGRAPHY,Géographie,CH-GEOGRAPHY-4E-MOBILITY,Mobilités humaines transnationales,approved,SK-ENR-GEOGRAPHY-4E-MOBILITY-TOURISM,Caractériser une mobilité touristique,exercise,practice,2,1,0,True
+FR-4E,GEOGRAPHY,Géographie,CH-GEOGRAPHY-4E-MOBILITY,Mobilités humaines transnationales,approved,SK-GEOGRAPHY-4E-MOBILITY,Analyser des flux migratoires et touristiques,assessment,assessment,2,0,1,False
+FR-4E,GEOGRAPHY,Géographie,CH-GEOGRAPHY-4E-MOBILITY,Mobilités humaines transnationales,approved,SK-GEOGRAPHY-4E-MOBILITY,Analyser des flux migratoires et touristiques,practice,practice,2,0,1,False
+FR-4E,GEOGRAPHY,Géographie,CH-GEOGRAPHY-4E-URBANIZATION,L'urbanisation du monde,approved,SK-ENR-GEOGRAPHY-4E-URBANIZATION-GROWTH,Décrire la croissance urbaine,exam_practice,assessment,2,1,0,True
+FR-4E,GEOGRAPHY,Géographie,CH-GEOGRAPHY-4E-URBANIZATION,L'urbanisation du monde,approved,SK-ENR-GEOGRAPHY-4E-URBANIZATION-GROWTH,Décrire la croissance urbaine,exercise,practice,2,1,0,True
+FR-4E,GEOGRAPHY,Géographie,CH-GEOGRAPHY-4E-URBANIZATION,L'urbanisation du monde,approved,SK-ENR-GEOGRAPHY-4E-URBANIZATION-INEQUALITY,Analyser des inégalités urbaines,exercise,practice,2,1,0,True
+FR-4E,GEOGRAPHY,Géographie,CH-GEOGRAPHY-4E-URBANIZATION,L'urbanisation du monde,approved,SK-ENR-GEOGRAPHY-4E-URBANIZATION-LANDSCAPE,Interpréter un paysage urbain,exam_practice,assessment,2,1,0,True
+FR-4E,GEOGRAPHY,Géographie,CH-GEOGRAPHY-4E-URBANIZATION,L'urbanisation du monde,approved,SK-ENR-GEOGRAPHY-4E-URBANIZATION-LANDSCAPE,Interpréter un paysage urbain,exercise,practice,2,1,0,True
+FR-4E,GEOGRAPHY,Géographie,CH-GEOGRAPHY-4E-URBANIZATION,L'urbanisation du monde,approved,SK-ENR-GEOGRAPHY-4E-URBANIZATION-MAP,Construire un croquis d'organisation,assessment,assessment,2,0,1,False
+FR-4E,GEOGRAPHY,Géographie,CH-GEOGRAPHY-4E-URBANIZATION,L'urbanisation du monde,approved,SK-ENR-GEOGRAPHY-4E-URBANIZATION-MAP,Construire un croquis d'organisation,practice,practice,2,0,1,False
+FR-4E,GEOGRAPHY,Géographie,CH-GEOGRAPHY-4E-URBANIZATION,L'urbanisation du monde,approved,SK-ENR-GEOGRAPHY-4E-URBANIZATION-METROPOLIZATION,Expliquer la métropolisation,exam_practice,assessment,2,1,0,True
+FR-4E,GEOGRAPHY,Géographie,CH-GEOGRAPHY-4E-URBANIZATION,L'urbanisation du monde,approved,SK-ENR-GEOGRAPHY-4E-URBANIZATION-METROPOLIZATION,Expliquer la métropolisation,exercise,practice,2,1,0,True
+FR-4E,GEOGRAPHY,Géographie,CH-GEOGRAPHY-4E-URBANIZATION,L'urbanisation du monde,approved,SK-GEOGRAPHY-4E-URBANIZATION,Comparer des espaces et dynamiques urbaines,exam_practice,assessment,2,1,0,True
+FR-4E,GEOGRAPHY,Géographie,CH-GEOGRAPHY-4E-URBANIZATION,L'urbanisation du monde,approved,SK-GEOGRAPHY-4E-URBANIZATION,Comparer des espaces et dynamiques urbaines,exercise,practice,2,1,0,True
+FR-4E,HISTORY,Histoire,CH-HISTORY-4E-18TH,"Le XVIIIe siècle : expansions, Lumières et révolutions",approved,SK-ENR-HISTORY-4E-18TH-ENLIGHTENMENT,Expliquer les idées des Lumières,exam_practice,assessment,2,1,0,True
+FR-4E,HISTORY,Histoire,CH-HISTORY-4E-18TH,"Le XVIIIe siècle : expansions, Lumières et révolutions",approved,SK-ENR-HISTORY-4E-18TH-ENLIGHTENMENT,Expliquer les idées des Lumières,exercise,practice,2,1,0,True
+FR-4E,HISTORY,Histoire,CH-HISTORY-4E-18TH,"Le XVIIIe siècle : expansions, Lumières et révolutions",approved,SK-ENR-HISTORY-4E-18TH-REVOLUTION,Comparer les révolutions atlantiques,exam_practice,assessment,2,1,0,True
+FR-4E,HISTORY,Histoire,CH-HISTORY-4E-18TH,"Le XVIIIe siècle : expansions, Lumières et révolutions",approved,SK-ENR-HISTORY-4E-18TH-REVOLUTION,Comparer les révolutions atlantiques,exercise,practice,2,1,0,True
+FR-4E,HISTORY,Histoire,CH-HISTORY-4E-18TH,"Le XVIIIe siècle : expansions, Lumières et révolutions",approved,SK-ENR-HISTORY-4E-18TH-SLAVERY,Caractériser traites et esclavage,exam_practice,assessment,2,1,0,True
+FR-4E,HISTORY,Histoire,CH-HISTORY-4E-18TH,"Le XVIIIe siècle : expansions, Lumières et révolutions",approved,SK-ENR-HISTORY-4E-18TH-SLAVERY,Caractériser traites et esclavage,exercise,practice,2,1,0,True
+FR-4E,HISTORY,Histoire,CH-HISTORY-4E-18TH,"Le XVIIIe siècle : expansions, Lumières et révolutions",approved,SK-ENR-HISTORY-4E-18TH-SOURCE,Interpréter une source du XVIIIe siècle,exam_practice,assessment,2,1,0,True
+FR-4E,HISTORY,Histoire,CH-HISTORY-4E-18TH,"Le XVIIIe siècle : expansions, Lumières et révolutions",approved,SK-ENR-HISTORY-4E-18TH-TRADE,Expliquer les échanges atlantiques,exam_practice,assessment,2,1,0,True
+FR-4E,HISTORY,Histoire,CH-HISTORY-4E-18TH,"Le XVIIIe siècle : expansions, Lumières et révolutions",approved,SK-ENR-HISTORY-4E-18TH-TRADE,Expliquer les échanges atlantiques,exercise,practice,2,1,0,True
+FR-4E,HISTORY,Histoire,CH-HISTORY-4E-18TH,"Le XVIIIe siècle : expansions, Lumières et révolutions",approved,SK-HISTORY-4E-18TH,Expliquer les transformations politiques et économiques du XVIIIe siècle,exam_practice,assessment,2,1,0,True
+FR-4E,HISTORY,Histoire,CH-HISTORY-4E-18TH,"Le XVIIIe siècle : expansions, Lumières et révolutions",approved,SK-HISTORY-4E-18TH,Expliquer les transformations politiques et économiques du XVIIIe siècle,exercise,practice,2,1,0,True
+FR-4E,HISTORY,Histoire,CH-HISTORY-4E-19TH,L'Europe et le monde au XIXe siècle,approved,SK-ENR-HISTORY-4E-19TH-COLONIZATION,Caractériser la colonisation,exam_practice,assessment,2,1,0,True
+FR-4E,HISTORY,Histoire,CH-HISTORY-4E-19TH,L'Europe et le monde au XIXe siècle,approved,SK-ENR-HISTORY-4E-19TH-COLONIZATION,Caractériser la colonisation,exercise,practice,2,1,0,True
+FR-4E,HISTORY,Histoire,CH-HISTORY-4E-19TH,L'Europe et le monde au XIXe siècle,approved,SK-ENR-HISTORY-4E-19TH-INDUSTRIALIZATION,Expliquer l'industrialisation,exam_practice,assessment,2,1,0,True
+FR-4E,HISTORY,Histoire,CH-HISTORY-4E-19TH,L'Europe et le monde au XIXe siècle,approved,SK-ENR-HISTORY-4E-19TH-INDUSTRIALIZATION,Expliquer l'industrialisation,exercise,practice,2,1,0,True
+FR-4E,HISTORY,Histoire,CH-HISTORY-4E-19TH,L'Europe et le monde au XIXe siècle,approved,SK-ENR-HISTORY-4E-19TH-MIGRATION,Relier industrialisation et mobilités,exam_practice,assessment,2,1,0,True
+FR-4E,HISTORY,Histoire,CH-HISTORY-4E-19TH,L'Europe et le monde au XIXe siècle,approved,SK-ENR-HISTORY-4E-19TH-MIGRATION,Relier industrialisation et mobilités,exercise,practice,2,1,0,True
+FR-4E,HISTORY,Histoire,CH-HISTORY-4E-19TH,L'Europe et le monde au XIXe siècle,approved,SK-ENR-HISTORY-4E-19TH-SOCIETY,Analyser les transformations sociales,exam_practice,assessment,2,1,0,True
+FR-4E,HISTORY,Histoire,CH-HISTORY-4E-19TH,L'Europe et le monde au XIXe siècle,approved,SK-ENR-HISTORY-4E-19TH-SOCIETY,Analyser les transformations sociales,exercise,practice,2,1,0,True
+FR-4E,HISTORY,Histoire,CH-HISTORY-4E-19TH,L'Europe et le monde au XIXe siècle,approved,SK-ENR-HISTORY-4E-19TH-SOURCE,Confronter des documents,exam_practice,assessment,2,1,0,True
+FR-4E,HISTORY,Histoire,CH-HISTORY-4E-19TH,L'Europe et le monde au XIXe siècle,approved,SK-ENR-HISTORY-4E-19TH-SOURCE,Confronter des documents,exercise,practice,2,1,0,True
+FR-4E,HISTORY,Histoire,CH-HISTORY-4E-19TH,L'Europe et le monde au XIXe siècle,approved,SK-HISTORY-4E-19TH,"Analyser industrialisation, sociétés et colonisation",exam_practice,assessment,2,1,0,True
+FR-4E,HISTORY,Histoire,CH-HISTORY-4E-19TH,L'Europe et le monde au XIXe siècle,approved,SK-HISTORY-4E-19TH,"Analyser industrialisation, sociétés et colonisation",exercise,practice,2,1,0,True
+FR-4E,HISTORY,Histoire,CH-HISTORY-4E-FRANCE,"Société, culture et politique dans la France du XIXe siècle",approved,SK-ENR-HISTORY-4E-FRANCE-CHRONOLOGY,Construire une chronologie argumentée,exam_practice,assessment,2,1,0,True
+FR-4E,HISTORY,Histoire,CH-HISTORY-4E-FRANCE,"Société, culture et politique dans la France du XIXe siècle",approved,SK-ENR-HISTORY-4E-FRANCE-CHRONOLOGY,Construire une chronologie argumentée,exercise,practice,2,1,0,True
+FR-4E,HISTORY,Histoire,CH-HISTORY-4E-FRANCE,"Société, culture et politique dans la France du XIXe siècle",approved,SK-ENR-HISTORY-4E-FRANCE-CITIZENSHIP,Expliquer l'élargissement de la citoyenneté,exam_practice,assessment,2,1,0,True
+FR-4E,HISTORY,Histoire,CH-HISTORY-4E-FRANCE,"Société, culture et politique dans la France du XIXe siècle",approved,SK-ENR-HISTORY-4E-FRANCE-CITIZENSHIP,Expliquer l'élargissement de la citoyenneté,exercise,practice,2,1,0,True
+FR-4E,HISTORY,Histoire,CH-HISTORY-4E-FRANCE,"Société, culture et politique dans la France du XIXe siècle",approved,SK-ENR-HISTORY-4E-FRANCE-CULTURE,Identifier une évolution culturelle,exam_practice,assessment,2,1,0,True
+FR-4E,HISTORY,Histoire,CH-HISTORY-4E-FRANCE,"Société, culture et politique dans la France du XIXe siècle",approved,SK-ENR-HISTORY-4E-FRANCE-REGIMES,Ordonner les régimes politiques,exam_practice,assessment,2,1,0,True
+FR-4E,HISTORY,Histoire,CH-HISTORY-4E-FRANCE,"Société, culture et politique dans la France du XIXe siècle",approved,SK-ENR-HISTORY-4E-FRANCE-REGIMES,Ordonner les régimes politiques,exercise,practice,2,1,0,True
+FR-4E,HISTORY,Histoire,CH-HISTORY-4E-FRANCE,"Société, culture et politique dans la France du XIXe siècle",approved,SK-ENR-HISTORY-4E-FRANCE-SOCIETY,Analyser une transformation sociale,exam_practice,assessment,2,1,0,True
+FR-4E,HISTORY,Histoire,CH-HISTORY-4E-FRANCE,"Société, culture et politique dans la France du XIXe siècle",approved,SK-ENR-HISTORY-4E-FRANCE-SOCIETY,Analyser une transformation sociale,exercise,practice,2,1,0,True
+FR-4E,HISTORY,Histoire,CH-HISTORY-4E-FRANCE,"Société, culture et politique dans la France du XIXe siècle",approved,SK-HISTORY-4E-FRANCE,Construire des repères politiques et sociaux de la France,exam_practice,assessment,2,1,0,True
+FR-4E,HISTORY,Histoire,CH-HISTORY-4E-FRANCE,"Société, culture et politique dans la France du XIXe siècle",approved,SK-HISTORY-4E-FRANCE,Construire des repères politiques et sociaux de la France,exercise,practice,2,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-FRACT,Fractions,approved,SK-ENR-MATHEMATICS-4E-FRACT-ADD,Additionner et soustraire des fractions,exam_practice,assessment,2,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-FRACT,Fractions,approved,SK-ENR-MATHEMATICS-4E-FRACT-ADD,Additionner et soustraire des fractions,exercise,practice,2,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-FRACT,Fractions,approved,SK-ENR-MATHEMATICS-4E-FRACT-DIVIDE,Diviser par une fraction,exam_practice,assessment,2,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-FRACT,Fractions,approved,SK-ENR-MATHEMATICS-4E-FRACT-DIVIDE,Diviser par une fraction,exercise,practice,3,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-FRACT,Fractions,approved,SK-ENR-MATHEMATICS-4E-FRACT-EQUIVALENT,Simplifier et produire des fractions égales,assessment,assessment,2,0,1,False
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-FRACT,Fractions,approved,SK-ENR-MATHEMATICS-4E-FRACT-EQUIVALENT,Simplifier et produire des fractions égales,practice,practice,1,0,1,False
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-FRACT,Fractions,approved,SK-ENR-MATHEMATICS-4E-FRACT-EQUIVALENT,Simplifier et produire des fractions égales,practice,practice,2,0,1,False
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-FRACT,Fractions,approved,SK-ENR-MATHEMATICS-4E-FRACT-EQUIVALENT,Simplifier et produire des fractions égales,practice,practice,3,0,1,False
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-FRACT,Fractions,approved,SK-ENR-MATHEMATICS-4E-FRACT-MULTIPLY,Multiplier des fractions,exam_practice,assessment,2,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-FRACT,Fractions,approved,SK-ENR-MATHEMATICS-4E-FRACT-MULTIPLY,Multiplier des fractions,exercise,practice,3,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-FRACT,Fractions,approved,SK-ENR-MATHEMATICS-4E-FRACT-PROBLEM,Résoudre un problème fractionnaire,exam_practice,assessment,2,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-FRACT,Fractions,approved,SK-ENR-MATHEMATICS-4E-FRACT-PROBLEM,Résoudre un problème fractionnaire,exercise,practice,2,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-FRACT,Fractions,approved,SK-MATHEMATICS-4E-FRACT,Mobiliser : Fractions,exam_practice,assessment,2,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-FRACT,Fractions,approved,SK-MATHEMATICS-4E-FRACT,Mobiliser : Fractions,exercise,practice,3,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-FRACT,Fractions,approved,SK-MATHEMATICS-4E-FRACT,Mobiliser : Fractions,worked_example,other,2,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-LITERAL,Calcul littéral,approved,SK-ENR-MATHEMATICS-4E-LITERAL-DISTRIBUTE,Développer avec la distributivité,assessment,assessment,2,0,1,False
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-LITERAL,Calcul littéral,approved,SK-ENR-MATHEMATICS-4E-LITERAL-DISTRIBUTE,Développer avec la distributivité,diagnostic,diagnostic,1,0,1,False
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-LITERAL,Calcul littéral,approved,SK-ENR-MATHEMATICS-4E-LITERAL-DISTRIBUTE,Développer avec la distributivité,guided_practice,practice_guided,2,0,3,False
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-LITERAL,Calcul littéral,approved,SK-ENR-MATHEMATICS-4E-LITERAL-DISTRIBUTE,Développer avec la distributivité,practice,practice,1,0,1,False
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-LITERAL,Calcul littéral,approved,SK-ENR-MATHEMATICS-4E-LITERAL-DISTRIBUTE,Développer avec la distributivité,practice,practice,2,0,1,False
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-LITERAL,Calcul littéral,approved,SK-ENR-MATHEMATICS-4E-LITERAL-DISTRIBUTE,Développer avec la distributivité,practice,practice,3,0,1,False
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-LITERAL,Calcul littéral,approved,SK-ENR-MATHEMATICS-4E-LITERAL-DISTRIBUTE,Développer avec la distributivité,remediation,remediation,1,0,1,False
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-LITERAL,Calcul littéral,approved,SK-ENR-MATHEMATICS-4E-LITERAL-FACTOR,Factoriser dans des cas simples,assessment,assessment,2,0,1,False
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-LITERAL,Calcul littéral,approved,SK-ENR-MATHEMATICS-4E-LITERAL-FACTOR,Factoriser dans des cas simples,practice,practice,1,0,1,False
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-LITERAL,Calcul littéral,approved,SK-ENR-MATHEMATICS-4E-LITERAL-FACTOR,Factoriser dans des cas simples,practice,practice,2,0,1,False
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-LITERAL,Calcul littéral,approved,SK-ENR-MATHEMATICS-4E-LITERAL-FACTOR,Factoriser dans des cas simples,practice,practice,3,0,1,False
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-LITERAL,Calcul littéral,approved,SK-ENR-MATHEMATICS-4E-LITERAL-MODEL,Traduire un problème par une expression,exam_practice,assessment,2,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-LITERAL,Calcul littéral,approved,SK-ENR-MATHEMATICS-4E-LITERAL-MODEL,Traduire un problème par une expression,exercise,practice,2,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-LITERAL,Calcul littéral,approved,SK-ENR-MATHEMATICS-4E-LITERAL-REDUCE,Réduire une expression,exam_practice,assessment,2,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-LITERAL,Calcul littéral,approved,SK-ENR-MATHEMATICS-4E-LITERAL-REDUCE,Réduire une expression,exercise,practice,1,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-LITERAL,Calcul littéral,approved,SK-ENR-MATHEMATICS-4E-LITERAL-SUBSTITUTE,Calculer une expression littérale,exam_practice,assessment,2,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-LITERAL,Calcul littéral,approved,SK-ENR-MATHEMATICS-4E-LITERAL-SUBSTITUTE,Calculer une expression littérale,exercise,practice,3,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-LITERAL,Calcul littéral,approved,SK-MATHEMATICS-4E-LITERAL,Mobiliser : Calcul littéral,exam_practice,assessment,2,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-LITERAL,Calcul littéral,approved,SK-MATHEMATICS-4E-LITERAL,Mobiliser : Calcul littéral,exercise,practice,3,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-LITERAL,Calcul littéral,approved,SK-MATHEMATICS-4E-LITERAL,Mobiliser : Calcul littéral,worked_example,other,2,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-POWERS,Puissances,approved,SK-ENR-MATHEMATICS-4E-POWERS-CALCULATE,Calculer avec des puissances entières,exam_practice,assessment,2,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-POWERS,Puissances,approved,SK-ENR-MATHEMATICS-4E-POWERS-CALCULATE,Calculer avec des puissances entières,exercise,practice,1,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-POWERS,Puissances,approved,SK-ENR-MATHEMATICS-4E-POWERS-MEANING,Interpréter une puissance,exam_practice,assessment,2,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-POWERS,Puissances,approved,SK-ENR-MATHEMATICS-4E-POWERS-MEANING,Interpréter une puissance,exercise,practice,1,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-POWERS,Puissances,approved,SK-ENR-MATHEMATICS-4E-POWERS-RULES,Appliquer les règles sur les puissances,exam_practice,assessment,2,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-POWERS,Puissances,approved,SK-ENR-MATHEMATICS-4E-POWERS-RULES,Appliquer les règles sur les puissances,exercise,practice,2,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-POWERS,Puissances,approved,SK-ENR-MATHEMATICS-4E-POWERS-SCIENTIFIC,Écrire un nombre en notation scientifique,assessment,assessment,2,0,1,False
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-POWERS,Puissances,approved,SK-ENR-MATHEMATICS-4E-POWERS-SCIENTIFIC,Écrire un nombre en notation scientifique,practice,practice,1,0,1,False
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-POWERS,Puissances,approved,SK-ENR-MATHEMATICS-4E-POWERS-SCIENTIFIC,Écrire un nombre en notation scientifique,practice,practice,2,0,1,False
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-POWERS,Puissances,approved,SK-ENR-MATHEMATICS-4E-POWERS-SCIENTIFIC,Écrire un nombre en notation scientifique,practice,practice,3,0,1,False
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-POWERS,Puissances,approved,SK-ENR-MATHEMATICS-4E-POWERS-TEN,Utiliser les puissances de dix,exam_practice,assessment,2,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-POWERS,Puissances,approved,SK-ENR-MATHEMATICS-4E-POWERS-TEN,Utiliser les puissances de dix,exercise,practice,3,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-POWERS,Puissances,approved,SK-MATHEMATICS-4E-POWERS,Mobiliser : Puissances,exam_practice,assessment,2,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-POWERS,Puissances,approved,SK-MATHEMATICS-4E-POWERS,Mobiliser : Puissances,exercise,practice,3,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-POWERS,Puissances,approved,SK-MATHEMATICS-4E-POWERS,Mobiliser : Puissances,worked_example,other,2,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-PROP,Proportionnalité,approved,SK-ENR-MATHEMATICS-4E-PROP-GRAPH,Reconnaître une représentation proportionnelle,assessment,assessment,2,0,1,False
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-PROP,Proportionnalité,approved,SK-ENR-MATHEMATICS-4E-PROP-GRAPH,Reconnaître une représentation proportionnelle,practice,practice,1,0,1,False
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-PROP,Proportionnalité,approved,SK-ENR-MATHEMATICS-4E-PROP-GRAPH,Reconnaître une représentation proportionnelle,practice,practice,2,0,1,False
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-PROP,Proportionnalité,approved,SK-ENR-MATHEMATICS-4E-PROP-GRAPH,Reconnaître une représentation proportionnelle,practice,practice,3,0,1,False
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-PROP,Proportionnalité,approved,SK-ENR-MATHEMATICS-4E-PROP-IDENTIFY,Identifier une proportionnalité,assessment,assessment,2,0,1,False
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-PROP,Proportionnalité,approved,SK-ENR-MATHEMATICS-4E-PROP-IDENTIFY,Identifier une proportionnalité,practice,practice,1,0,1,False
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-PROP,Proportionnalité,approved,SK-ENR-MATHEMATICS-4E-PROP-IDENTIFY,Identifier une proportionnalité,practice,practice,2,0,1,False
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-PROP,Proportionnalité,approved,SK-ENR-MATHEMATICS-4E-PROP-IDENTIFY,Identifier une proportionnalité,practice,practice,3,0,1,False
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-PROP,Proportionnalité,approved,SK-ENR-MATHEMATICS-4E-PROP-PERCENT,Calculer une évolution en pourcentage,exam_practice,assessment,2,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-PROP,Proportionnalité,approved,SK-ENR-MATHEMATICS-4E-PROP-PERCENT,Calculer une évolution en pourcentage,exercise,practice,3,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-PROP,Proportionnalité,approved,SK-ENR-MATHEMATICS-4E-PROP-PRODUCT,Utiliser le produit en croix avec sens,exam_practice,assessment,2,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-PROP,Proportionnalité,approved,SK-ENR-MATHEMATICS-4E-PROP-PRODUCT,Utiliser le produit en croix avec sens,exercise,practice,2,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-PROP,Proportionnalité,approved,SK-ENR-MATHEMATICS-4E-PROP-SCALE,Utiliser échelle et vitesse,exam_practice,assessment,2,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-PROP,Proportionnalité,approved,SK-ENR-MATHEMATICS-4E-PROP-SCALE,Utiliser échelle et vitesse,exercise,practice,3,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-PROP,Proportionnalité,approved,SK-MATHEMATICS-4E-PROP,Mobiliser : Proportionnalité,exam_practice,assessment,2,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-PROP,Proportionnalité,approved,SK-MATHEMATICS-4E-PROP,Mobiliser : Proportionnalité,exercise,practice,3,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-PROP,Proportionnalité,approved,SK-MATHEMATICS-4E-PROP,Mobiliser : Proportionnalité,worked_example,other,2,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-PYTH,Théorème de Pythagore,approved,SK-ENR-MATHEMATICS-4E-PYTH-CALCULATE,Calculer une longueur avec le théorème de Pythagore,exam_practice,assessment,2,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-PYTH,Théorème de Pythagore,approved,SK-ENR-MATHEMATICS-4E-PYTH-CALCULATE,Calculer une longueur avec le théorème de Pythagore,exercise,practice,2,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-PYTH,Théorème de Pythagore,approved,SK-ENR-MATHEMATICS-4E-PYTH-IDENTIFY,Identifier une configuration de Pythagore,assessment,assessment,2,0,1,False
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-PYTH,Théorème de Pythagore,approved,SK-ENR-MATHEMATICS-4E-PYTH-IDENTIFY,Identifier une configuration de Pythagore,diagnostic,diagnostic,2,0,1,False
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-PYTH,Théorème de Pythagore,approved,SK-ENR-MATHEMATICS-4E-PYTH-IDENTIFY,Identifier une configuration de Pythagore,practice,practice,1,0,1,False
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-PYTH,Théorème de Pythagore,approved,SK-ENR-MATHEMATICS-4E-PYTH-IDENTIFY,Identifier une configuration de Pythagore,practice,practice,2,0,1,False
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-PYTH,Théorème de Pythagore,approved,SK-ENR-MATHEMATICS-4E-PYTH-IDENTIFY,Identifier une configuration de Pythagore,practice,practice,3,0,1,False
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-PYTH,Théorème de Pythagore,approved,SK-ENR-MATHEMATICS-4E-PYTH-IDENTIFY,Identifier une configuration de Pythagore,remediation,remediation,1,0,1,False
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-PYTH,Théorème de Pythagore,approved,SK-ENR-MATHEMATICS-4E-PYTH-TEST,Déterminer si un triangle est rectangle,assessment,assessment,2,0,1,False
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-PYTH,Théorème de Pythagore,approved,SK-ENR-MATHEMATICS-4E-PYTH-TEST,Déterminer si un triangle est rectangle,practice,practice,1,0,1,False
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-PYTH,Théorème de Pythagore,approved,SK-ENR-MATHEMATICS-4E-PYTH-TEST,Déterminer si un triangle est rectangle,practice,practice,2,0,1,False
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-PYTH,Théorème de Pythagore,approved,SK-ENR-MATHEMATICS-4E-PYTH-TEST,Déterminer si un triangle est rectangle,practice,practice,3,0,1,False
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-PYTH,Théorème de Pythagore,approved,SK-MATHEMATICS-4E-PYTH,Mobiliser : Théorème de Pythagore,exam_practice,assessment,2,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-PYTH,Théorème de Pythagore,approved,SK-MATHEMATICS-4E-PYTH,Mobiliser : Théorème de Pythagore,exercise,practice,3,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-PYTH,Théorème de Pythagore,approved,SK-MATHEMATICS-4E-PYTH,Mobiliser : Théorème de Pythagore,worked_example,other,2,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-RELNUM,Nombres relatifs,approved,SK-ENR-MATHEMATICS-4E-RELNUM-CHAIN,Calculer une expression avec plusieurs opérations,exam_practice,assessment,2,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-RELNUM,Nombres relatifs,approved,SK-ENR-MATHEMATICS-4E-RELNUM-CHAIN,Calculer une expression avec plusieurs opérations,exercise,practice,3,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-RELNUM,Nombres relatifs,approved,SK-ENR-MATHEMATICS-4E-RELNUM-MULTIPLY,Multiplier et diviser des nombres relatifs,exam_practice,assessment,2,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-RELNUM,Nombres relatifs,approved,SK-ENR-MATHEMATICS-4E-RELNUM-MULTIPLY,Multiplier et diviser des nombres relatifs,exercise,practice,3,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-RELNUM,Nombres relatifs,approved,SK-ENR-MATHEMATICS-4E-RELNUM-PROBLEM,Résoudre un problème avec nombres relatifs,exam_practice,assessment,2,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-RELNUM,Nombres relatifs,approved,SK-ENR-MATHEMATICS-4E-RELNUM-PROBLEM,Résoudre un problème avec nombres relatifs,exercise,practice,2,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-RELNUM,Nombres relatifs,approved,SK-ENR-MATHEMATICS-4E-RELNUM-SIGN,Déterminer le signe d'un produit ou quotient,assessment,assessment,2,0,1,False
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-RELNUM,Nombres relatifs,approved,SK-ENR-MATHEMATICS-4E-RELNUM-SIGN,Déterminer le signe d'un produit ou quotient,practice,practice,1,0,1,False
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-RELNUM,Nombres relatifs,approved,SK-ENR-MATHEMATICS-4E-RELNUM-SIGN,Déterminer le signe d'un produit ou quotient,practice,practice,2,0,1,False
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-RELNUM,Nombres relatifs,approved,SK-ENR-MATHEMATICS-4E-RELNUM-SIGN,Déterminer le signe d'un produit ou quotient,practice,practice,3,0,1,False
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-RELNUM,Nombres relatifs,approved,SK-MATHEMATICS-4E-RELNUM,Mobiliser : Nombres relatifs,exam_practice,assessment,2,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-RELNUM,Nombres relatifs,approved,SK-MATHEMATICS-4E-RELNUM,Mobiliser : Nombres relatifs,exercise,practice,3,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-RELNUM,Nombres relatifs,approved,SK-MATHEMATICS-4E-RELNUM,Mobiliser : Nombres relatifs,worked_example,other,2,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-STATS,Statistiques,approved,SK-ENR-MATHEMATICS-4E-STATS-COMPARE,Comparer deux séries,exam_practice,assessment,2,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-STATS,Statistiques,approved,SK-ENR-MATHEMATICS-4E-STATS-COMPARE,Comparer deux séries,exercise,practice,3,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-STATS,Statistiques,approved,SK-ENR-MATHEMATICS-4E-STATS-FREQUENCY,Calculer une fréquence,exam_practice,assessment,2,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-STATS,Statistiques,approved,SK-ENR-MATHEMATICS-4E-STATS-FREQUENCY,Calculer une fréquence,exercise,practice,2,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-STATS,Statistiques,approved,SK-ENR-MATHEMATICS-4E-STATS-MEAN,Calculer et interpréter une moyenne,exam_practice,assessment,2,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-STATS,Statistiques,approved,SK-ENR-MATHEMATICS-4E-STATS-MEAN,Calculer et interpréter une moyenne,exercise,practice,2,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-STATS,Statistiques,approved,SK-ENR-MATHEMATICS-4E-STATS-POPULATION,"Identifier population, caractère et effectif",assessment,assessment,2,0,1,False
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-STATS,Statistiques,approved,SK-ENR-MATHEMATICS-4E-STATS-POPULATION,"Identifier population, caractère et effectif",practice,practice,1,0,1,False
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-STATS,Statistiques,approved,SK-ENR-MATHEMATICS-4E-STATS-POPULATION,"Identifier population, caractère et effectif",practice,practice,2,0,1,False
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-STATS,Statistiques,approved,SK-ENR-MATHEMATICS-4E-STATS-POPULATION,"Identifier population, caractère et effectif",practice,practice,3,0,1,False
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-STATS,Statistiques,approved,SK-ENR-MATHEMATICS-4E-STATS-REPRESENT,Lire et construire une représentation,assessment,assessment,2,0,1,False
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-STATS,Statistiques,approved,SK-ENR-MATHEMATICS-4E-STATS-REPRESENT,Lire et construire une représentation,practice,practice,1,0,1,False
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-STATS,Statistiques,approved,SK-ENR-MATHEMATICS-4E-STATS-REPRESENT,Lire et construire une représentation,practice,practice,2,0,1,False
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-STATS,Statistiques,approved,SK-ENR-MATHEMATICS-4E-STATS-REPRESENT,Lire et construire une représentation,practice,practice,3,0,1,False
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-STATS,Statistiques,approved,SK-MATHEMATICS-4E-STATS,Mobiliser : Statistiques,exam_practice,assessment,2,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-STATS,Statistiques,approved,SK-MATHEMATICS-4E-STATS,Mobiliser : Statistiques,exercise,practice,3,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-STATS,Statistiques,approved,SK-MATHEMATICS-4E-STATS,Mobiliser : Statistiques,worked_example,other,2,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-VOLUMES,Conversions et volumes,approved,SK-ENR-MATHEMATICS-4E-VOLUMES-CONVERT,Convertir des unités de volume et capacité,exam_practice,assessment,2,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-VOLUMES,Conversions et volumes,approved,SK-ENR-MATHEMATICS-4E-VOLUMES-CONVERT,Convertir des unités de volume et capacité,exercise,practice,2,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-VOLUMES,Conversions et volumes,approved,SK-ENR-MATHEMATICS-4E-VOLUMES-CYLINDER,Calculer le volume d'un cylindre,exam_practice,assessment,2,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-VOLUMES,Conversions et volumes,approved,SK-ENR-MATHEMATICS-4E-VOLUMES-CYLINDER,Calculer le volume d'un cylindre,exercise,practice,2,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-VOLUMES,Conversions et volumes,approved,SK-ENR-MATHEMATICS-4E-VOLUMES-MODEL,Décomposer un solide,exam_practice,assessment,2,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-VOLUMES,Conversions et volumes,approved,SK-ENR-MATHEMATICS-4E-VOLUMES-MODEL,Décomposer un solide,exercise,practice,3,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-VOLUMES,Conversions et volumes,approved,SK-ENR-MATHEMATICS-4E-VOLUMES-PRISM,Calculer le volume d'un prisme droit,exam_practice,assessment,2,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-VOLUMES,Conversions et volumes,approved,SK-ENR-MATHEMATICS-4E-VOLUMES-PRISM,Calculer le volume d'un prisme droit,exercise,practice,1,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-VOLUMES,Conversions et volumes,approved,SK-ENR-MATHEMATICS-4E-VOLUMES-PROBLEM,Résoudre un problème de volume,exam_practice,assessment,2,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-VOLUMES,Conversions et volumes,approved,SK-ENR-MATHEMATICS-4E-VOLUMES-PROBLEM,Résoudre un problème de volume,exercise,practice,2,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-VOLUMES,Conversions et volumes,approved,SK-MATHEMATICS-4E-VOLUMES,Mobiliser : Conversions et volumes,exam_practice,assessment,2,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-VOLUMES,Conversions et volumes,approved,SK-MATHEMATICS-4E-VOLUMES,Mobiliser : Conversions et volumes,exercise,practice,3,1,0,True
+FR-4E,MATHEMATICS,Mathématiques,CH-MATHEMATICS-4E-VOLUMES,Conversions et volumes,approved,SK-MATHEMATICS-4E-VOLUMES,Mobiliser : Conversions et volumes,worked_example,other,2,1,0,True
+FR-4E,PHYSICS_CHEMISTRY,Physique-Chimie,CH-PHYSICS_CHEMISTRY-4E-CHEMISTRY,Transformations chimiques et constitution de la matière,approved,SK-ENR-PHYSICS_CHEMISTRY-4E-CHEMISTRY-ACID_BASE,Interpréter une mesure de pH,assessment,assessment,2,0,1,False
+FR-4E,PHYSICS_CHEMISTRY,Physique-Chimie,CH-PHYSICS_CHEMISTRY-4E-CHEMISTRY,Transformations chimiques et constitution de la matière,approved,SK-ENR-PHYSICS_CHEMISTRY-4E-CHEMISTRY-ACID_BASE,Interpréter une mesure de pH,practice,practice,2,0,1,False
+FR-4E,PHYSICS_CHEMISTRY,Physique-Chimie,CH-PHYSICS_CHEMISTRY-4E-CHEMISTRY,Transformations chimiques et constitution de la matière,approved,SK-ENR-PHYSICS_CHEMISTRY-4E-CHEMISTRY-ATOM,Utiliser le modèle atomique simple,exam_practice,assessment,2,1,0,True
+FR-4E,PHYSICS_CHEMISTRY,Physique-Chimie,CH-PHYSICS_CHEMISTRY-4E-CHEMISTRY,Transformations chimiques et constitution de la matière,approved,SK-ENR-PHYSICS_CHEMISTRY-4E-CHEMISTRY-ATOM,Utiliser le modèle atomique simple,exercise,practice,2,1,0,True
+FR-4E,PHYSICS_CHEMISTRY,Physique-Chimie,CH-PHYSICS_CHEMISTRY-4E-CHEMISTRY,Transformations chimiques et constitution de la matière,approved,SK-ENR-PHYSICS_CHEMISTRY-4E-CHEMISTRY-CONSERVATION,Appliquer la conservation des atomes et de la masse,assessment,assessment,2,0,1,False
+FR-4E,PHYSICS_CHEMISTRY,Physique-Chimie,CH-PHYSICS_CHEMISTRY-4E-CHEMISTRY,Transformations chimiques et constitution de la matière,approved,SK-ENR-PHYSICS_CHEMISTRY-4E-CHEMISTRY-CONSERVATION,Appliquer la conservation des atomes et de la masse,challenge,challenge,2,0,3,False
+FR-4E,PHYSICS_CHEMISTRY,Physique-Chimie,CH-PHYSICS_CHEMISTRY-4E-CHEMISTRY,Transformations chimiques et constitution de la matière,approved,SK-ENR-PHYSICS_CHEMISTRY-4E-CHEMISTRY-CONSERVATION,Appliquer la conservation des atomes et de la masse,practice,practice,2,0,1,False
+FR-4E,PHYSICS_CHEMISTRY,Physique-Chimie,CH-PHYSICS_CHEMISTRY-4E-CHEMISTRY,Transformations chimiques et constitution de la matière,approved,SK-ENR-PHYSICS_CHEMISTRY-4E-CHEMISTRY-EQUATION,Interpréter une équation de réaction,assessment,assessment,2,0,1,False
+FR-4E,PHYSICS_CHEMISTRY,Physique-Chimie,CH-PHYSICS_CHEMISTRY-4E-CHEMISTRY,Transformations chimiques et constitution de la matière,approved,SK-ENR-PHYSICS_CHEMISTRY-4E-CHEMISTRY-EQUATION,Interpréter une équation de réaction,practice,practice,2,0,1,False
+FR-4E,PHYSICS_CHEMISTRY,Physique-Chimie,CH-PHYSICS_CHEMISTRY-4E-CHEMISTRY,Transformations chimiques et constitution de la matière,approved,SK-ENR-PHYSICS_CHEMISTRY-4E-CHEMISTRY-EXPERIMENT,Exploiter une transformation chimique,assessment,assessment,2,0,1,False
+FR-4E,PHYSICS_CHEMISTRY,Physique-Chimie,CH-PHYSICS_CHEMISTRY-4E-CHEMISTRY,Transformations chimiques et constitution de la matière,approved,SK-ENR-PHYSICS_CHEMISTRY-4E-CHEMISTRY-EXPERIMENT,Exploiter une transformation chimique,practice,practice,2,0,1,False
+FR-4E,PHYSICS_CHEMISTRY,Physique-Chimie,CH-PHYSICS_CHEMISTRY-4E-CHEMISTRY,Transformations chimiques et constitution de la matière,approved,SK-PHYSICS_CHEMISTRY-4E-CHEMISTRY,Modéliser une transformation et conserver la matière,assessment,assessment,2,0,1,False
+FR-4E,PHYSICS_CHEMISTRY,Physique-Chimie,CH-PHYSICS_CHEMISTRY-4E-CHEMISTRY,Transformations chimiques et constitution de la matière,approved,SK-PHYSICS_CHEMISTRY-4E-CHEMISTRY,Modéliser une transformation et conserver la matière,practice,practice,2,0,1,False
+FR-4E,PHYSICS_CHEMISTRY,Physique-Chimie,CH-PHYSICS_CHEMISTRY-4E-ELECTRICITY,"Électricité, énergie et signaux",approved,SK-ENR-PHYSICS_CHEMISTRY-4E-ELECTRICITY-CIRCUIT,Schématiser et analyser un circuit,assessment,assessment,2,0,1,False
+FR-4E,PHYSICS_CHEMISTRY,Physique-Chimie,CH-PHYSICS_CHEMISTRY-4E-ELECTRICITY,"Électricité, énergie et signaux",approved,SK-ENR-PHYSICS_CHEMISTRY-4E-ELECTRICITY-CIRCUIT,Schématiser et analyser un circuit,practice,practice,2,0,1,False
+FR-4E,PHYSICS_CHEMISTRY,Physique-Chimie,CH-PHYSICS_CHEMISTRY-4E-ELECTRICITY,"Électricité, énergie et signaux",approved,SK-ENR-PHYSICS_CHEMISTRY-4E-ELECTRICITY-CURRENT,Mesurer et utiliser l'intensité,assessment,assessment,2,0,1,False
+FR-4E,PHYSICS_CHEMISTRY,Physique-Chimie,CH-PHYSICS_CHEMISTRY-4E-ELECTRICITY,"Électricité, énergie et signaux",approved,SK-ENR-PHYSICS_CHEMISTRY-4E-ELECTRICITY-CURRENT,Mesurer et utiliser l'intensité,practice,practice,2,0,1,False
+FR-4E,PHYSICS_CHEMISTRY,Physique-Chimie,CH-PHYSICS_CHEMISTRY-4E-ELECTRICITY,"Électricité, énergie et signaux",approved,SK-ENR-PHYSICS_CHEMISTRY-4E-ELECTRICITY-ENERGY,"Relier puissance, énergie et durée",assessment,assessment,2,0,1,False
+FR-4E,PHYSICS_CHEMISTRY,Physique-Chimie,CH-PHYSICS_CHEMISTRY-4E-ELECTRICITY,"Électricité, énergie et signaux",approved,SK-ENR-PHYSICS_CHEMISTRY-4E-ELECTRICITY-ENERGY,"Relier puissance, énergie et durée",practice,practice,2,0,1,False
+FR-4E,PHYSICS_CHEMISTRY,Physique-Chimie,CH-PHYSICS_CHEMISTRY-4E-ELECTRICITY,"Électricité, énergie et signaux",approved,SK-ENR-PHYSICS_CHEMISTRY-4E-ELECTRICITY-LAW,Appliquer une loi de circuit,assessment,assessment,2,0,1,False
+FR-4E,PHYSICS_CHEMISTRY,Physique-Chimie,CH-PHYSICS_CHEMISTRY-4E-ELECTRICITY,"Électricité, énergie et signaux",approved,SK-ENR-PHYSICS_CHEMISTRY-4E-ELECTRICITY-LAW,Appliquer une loi de circuit,practice,practice,2,0,1,False
+FR-4E,PHYSICS_CHEMISTRY,Physique-Chimie,CH-PHYSICS_CHEMISTRY-4E-ELECTRICITY,"Électricité, énergie et signaux",approved,SK-ENR-PHYSICS_CHEMISTRY-4E-ELECTRICITY-SIGNAL,Interpréter un signal électrique,assessment,assessment,2,0,1,False
+FR-4E,PHYSICS_CHEMISTRY,Physique-Chimie,CH-PHYSICS_CHEMISTRY-4E-ELECTRICITY,"Électricité, énergie et signaux",approved,SK-ENR-PHYSICS_CHEMISTRY-4E-ELECTRICITY-SIGNAL,Interpréter un signal électrique,practice,practice,2,0,1,False
+FR-4E,PHYSICS_CHEMISTRY,Physique-Chimie,CH-PHYSICS_CHEMISTRY-4E-ELECTRICITY,"Électricité, énergie et signaux",approved,SK-ENR-PHYSICS_CHEMISTRY-4E-ELECTRICITY-VOLTAGE,Mesurer et utiliser la tension,assessment,assessment,2,0,1,False
+FR-4E,PHYSICS_CHEMISTRY,Physique-Chimie,CH-PHYSICS_CHEMISTRY-4E-ELECTRICITY,"Électricité, énergie et signaux",approved,SK-ENR-PHYSICS_CHEMISTRY-4E-ELECTRICITY-VOLTAGE,Mesurer et utiliser la tension,practice,practice,2,0,1,False
+FR-4E,PHYSICS_CHEMISTRY,Physique-Chimie,CH-PHYSICS_CHEMISTRY-4E-ELECTRICITY,"Électricité, énergie et signaux",approved,SK-PHYSICS_CHEMISTRY-4E-ELECTRICITY,Analyser un circuit et des transferts d'énergie,assessment,assessment,2,0,1,False
+FR-4E,PHYSICS_CHEMISTRY,Physique-Chimie,CH-PHYSICS_CHEMISTRY-4E-ELECTRICITY,"Électricité, énergie et signaux",approved,SK-PHYSICS_CHEMISTRY-4E-ELECTRICITY,Analyser un circuit et des transferts d'énergie,practice,practice,2,0,1,False
+FR-4E,SVT,SVT,CH-SVT-4E-EARTH,Dynamique de la Terre et risques,approved,SK-ENR-SVT-4E-EARTH-EARTHQUAKE,Expliquer un séisme,exam_practice,assessment,2,1,0,True
+FR-4E,SVT,SVT,CH-SVT-4E-EARTH,Dynamique de la Terre et risques,approved,SK-ENR-SVT-4E-EARTH-EARTHQUAKE,Expliquer un séisme,exercise,practice,2,1,0,True
+FR-4E,SVT,SVT,CH-SVT-4E-EARTH,Dynamique de la Terre et risques,approved,SK-ENR-SVT-4E-EARTH-MOTION,Relier mouvements et phénomènes géologiques,exam_practice,assessment,2,1,0,True
+FR-4E,SVT,SVT,CH-SVT-4E-EARTH,Dynamique de la Terre et risques,approved,SK-ENR-SVT-4E-EARTH-MOTION,Relier mouvements et phénomènes géologiques,exercise,practice,2,1,0,True
+FR-4E,SVT,SVT,CH-SVT-4E-EARTH,Dynamique de la Terre et risques,approved,SK-ENR-SVT-4E-EARTH-PLATE,Identifier les principales plaques,exam_practice,assessment,2,1,0,True
+FR-4E,SVT,SVT,CH-SVT-4E-EARTH,Dynamique de la Terre et risques,approved,SK-ENR-SVT-4E-EARTH-PLATE,Identifier les principales plaques,exercise,practice,2,1,0,True
+FR-4E,SVT,SVT,CH-SVT-4E-EARTH,Dynamique de la Terre et risques,approved,SK-ENR-SVT-4E-EARTH-RISK,"Relier aléa, vulnérabilité et prévention",exam_practice,assessment,2,1,0,True
+FR-4E,SVT,SVT,CH-SVT-4E-EARTH,Dynamique de la Terre et risques,approved,SK-ENR-SVT-4E-EARTH-VOLCANO,Expliquer un volcanisme,exam_practice,assessment,2,1,0,True
+FR-4E,SVT,SVT,CH-SVT-4E-EARTH,Dynamique de la Terre et risques,approved,SK-ENR-SVT-4E-EARTH-VOLCANO,Expliquer un volcanisme,exercise,practice,2,1,0,True
+FR-4E,SVT,SVT,CH-SVT-4E-EARTH,Dynamique de la Terre et risques,approved,SK-SVT-4E-EARTH,Expliquer des phénomènes géologiques et leurs risques,exam_practice,assessment,2,1,0,True
+FR-4E,SVT,SVT,CH-SVT-4E-EARTH,Dynamique de la Terre et risques,approved,SK-SVT-4E-EARTH,Expliquer des phénomènes géologiques et leurs risques,exercise,practice,2,1,0,True
+FR-4E,SVT,SVT,CH-SVT-4E-GENETICS,Transmission et diversité du vivant,approved,SK-ENR-SVT-4E-GENETICS-CHROMOSOME,Relier chromosome et information héréditaire,exam_practice,assessment,2,1,0,True
+FR-4E,SVT,SVT,CH-SVT-4E-GENETICS,Transmission et diversité du vivant,approved,SK-ENR-SVT-4E-GENETICS-CHROMOSOME,Relier chromosome et information héréditaire,exercise,practice,2,1,0,True
+FR-4E,SVT,SVT,CH-SVT-4E-GENETICS,Transmission et diversité du vivant,approved,SK-ENR-SVT-4E-GENETICS-DATA,Exploiter des données génétiques,exam_practice,assessment,2,1,0,True
+FR-4E,SVT,SVT,CH-SVT-4E-GENETICS,Transmission et diversité du vivant,approved,SK-ENR-SVT-4E-GENETICS-DATA,Exploiter des données génétiques,exercise,practice,2,1,0,True
+FR-4E,SVT,SVT,CH-SVT-4E-GENETICS,Transmission et diversité du vivant,approved,SK-ENR-SVT-4E-GENETICS-HEREDITY,Interpréter une transmission simple,exam_practice,assessment,2,1,0,True
+FR-4E,SVT,SVT,CH-SVT-4E-GENETICS,Transmission et diversité du vivant,approved,SK-ENR-SVT-4E-GENETICS-HEREDITY,Interpréter une transmission simple,exercise,practice,2,1,0,True
+FR-4E,SVT,SVT,CH-SVT-4E-GENETICS,Transmission et diversité du vivant,approved,SK-ENR-SVT-4E-GENETICS-REPRODUCTION,Distinguer reproduction sexuée et asexuée,exam_practice,assessment,2,1,0,True
+FR-4E,SVT,SVT,CH-SVT-4E-GENETICS,Transmission et diversité du vivant,approved,SK-ENR-SVT-4E-GENETICS-REPRODUCTION,Distinguer reproduction sexuée et asexuée,exercise,practice,2,1,0,True
+FR-4E,SVT,SVT,CH-SVT-4E-GENETICS,Transmission et diversité du vivant,approved,SK-ENR-SVT-4E-GENETICS-VARIATION,Expliquer une variation individuelle,exam_practice,assessment,2,1,0,True
+FR-4E,SVT,SVT,CH-SVT-4E-GENETICS,Transmission et diversité du vivant,approved,SK-SVT-4E-GENETICS,"Relier reproduction, information héréditaire et diversité",exam_practice,assessment,2,1,0,True
+FR-4E,SVT,SVT,CH-SVT-4E-GENETICS,Transmission et diversité du vivant,approved,SK-SVT-4E-GENETICS,"Relier reproduction, information héréditaire et diversité",exercise,practice,2,1,0,True

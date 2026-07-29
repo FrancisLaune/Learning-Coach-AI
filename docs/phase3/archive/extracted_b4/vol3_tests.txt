@@ -1,0 +1,1674 @@
+[Normal] LCAI-0018B4 — Volume 3
+[Normal] Validation, Qualification et Stratégie de Tests
+[Normal] Version 3.0
+[Normal] 1. Périmètre de validation
+[Normal] Objectif normatif. Fixer les frontières vérifiables de B4 et interdire l’extension fonctionnelle implicite.
+[Normal] Faits établis. B4 complète un devoir lorsque le catalogue ne couvre pas le nombre demandé; l’IA n’est pas la source primaire.
+[Normal] Hypothèses explicites. Le repository contient déjà HomeworkService, ContentFactory et le pipeline de validation; leurs signatures exactes doivent être découvertes avant modification.
+[Normal] Contrôles obligatoires.
+[List Bullet] Tracer chaque exigence vers au moins un test.
+[List Bullet] Marquer hors périmètre toute recommandation, refonte UI ou moteur adaptatif.
+[List Bullet] Rejeter toute modification non nécessaire au déficit.
+[Normal] Scénarios de vérification.
+[List Number] Créer un devoir totalement couvert par le catalogue.
+[List Number] Créer un devoir partiellement couvert.
+[List Number] Créer un devoir sans couverture.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Ne pas créer de nouveau service si une abstraction existante couvre le besoin.
+[List Bullet] Ne pas modifier les contrats publics sans justification documentée.
+[Normal] Critères de sortie. Le périmètre est accepté lorsqu’aucun scénario ne nécessite une architecture parallèle et que toutes les exigences ont un propriétaire et une preuve.
+[Normal] 2. Gouvernance des preuves
+[Normal] Objectif normatif. Définir les artefacts obligatoires permettant d’auditer une livraison.
+[Normal] Faits établis. Une assertion de réussite sans rapport de test n’est pas une preuve.
+[Normal] Hypothèses explicites. Le pipeline CI peut exporter JUnit XML, couverture, logs structurés et rapports de sécurité.
+[Normal] Contrôles obligatoires.
+[List Bullet] Conserver le rapport pytest/JUnit.
+[List Bullet] Conserver la couverture par module.
+[List Bullet] Conserver les traces des appels IA simulés.
+[List Bullet] Associer chaque défaut à un scénario.
+[Normal] Scénarios de vérification.
+[List Number] Exécuter une campagne complète sur une base propre.
+[List Number] Rejouer les scénarios après correction.
+[List Number] Comparer les rapports avant/après.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Ne jamais déclarer PASS sur la base d’une inspection visuelle seule.
+[Normal] Critères de sortie. La qualification n’est prononcée que si les preuves sont reproductibles à partir d’un commit identifié.
+[Normal] 3. Classification des exigences
+[Normal] Objectif normatif. Attribuer à chaque exigence un identifiant, une criticité et un mode de preuve.
+[Normal] Faits établis. Les erreurs de nombre, doublons, difficulté, compétence ou correction rendent le devoir pédagogiquement incorrect.
+[Normal] Hypothèses explicites. Les criticités P0/P1/P2 sont utilisées par le projet.
+[Normal] Contrôles obligatoires.
+[List Bullet] P0 pour intégrité, sécurité, données et contrat.
+[List Bullet] P1 pour exactitude fonctionnelle et résilience.
+[List Bullet] P2 pour observabilité et performance non bloquante.
+[Normal] Scénarios de vérification.
+[List Number] Classer une erreur de nombre de questions.
+[List Number] Classer un timeout IA.
+[List Number] Classer une absence de métrique.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Ne pas créer de criticité ad hoc.
+[Normal] Critères de sortie. Chaque exigence possède une criticité cohérente et un critère mesurable.
+[Normal] 4. Matrice de traçabilité
+[Normal] Objectif normatif. Garantir la couverture bidirectionnelle exigence-test-code.
+[Normal] Faits établis. Une exigence non testée peut être omise par un moteur de génération.
+[Normal] Hypothèses explicites. Les identifiants du Volume 2 sont disponibles ou doivent être repris sans renumérotation contradictoire.
+[Normal] Contrôles obligatoires.
+[List Bullet] Relier exigence, module, test et résultat.
+[List Bullet] Identifier les tests négatifs.
+[List Bullet] Documenter les dérogations.
+[Normal] Scénarios de vérification.
+[List Number] Prendre une exigence et retrouver son test.
+[List Number] Prendre un test et retrouver l’exigence.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Préserver les identifiants existants.
+[Normal] Critères de sortie. Aucune exigence P0/P1 sans test automatisé; aucune dérogation sans approbation.
+[Normal] 5. Stratégie de qualification
+[Normal] Objectif normatif. Ordonner statique, unitaire, intégration, système et acceptation.
+[Normal] Faits établis. Les défauts doivent être détectés au niveau le moins coûteux.
+[Normal] Hypothèses explicites. Le dépôt utilise Python, DuckDB et pytest.
+[Normal] Contrôles obligatoires.
+[List Bullet] Analyse statique avant tests.
+[List Bullet] Unitaires avant intégration.
+[List Bullet] Intégration avant système.
+[List Bullet] Acceptation sur configuration proche production.
+[Normal] Scénarios de vérification.
+[List Number] Introduire volontairement une erreur de type.
+[List Number] Introduire une requête SQL invalide.
+[List Number] Introduire une réponse IA invalide.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Ne pas masquer les erreurs de type par des casts globaux.
+[Normal] Critères de sortie. Chaque classe de défaut est détectée par le niveau prévu.
+[Normal] 6. Gestion des environnements
+[Normal] Objectif normatif. Éviter les résultats dépendant du poste.
+[Normal] Faits établis. Le projet est exécuté sous Windows et peut être déployé sous Linux.
+[Normal] Hypothèses explicites. Python et DuckDB doivent être épinglés par le projet.
+[Normal] Contrôles obligatoires.
+[List Bullet] Épingler versions majeures/minimales.
+[List Bullet] Utiliser une base temporaire par test.
+[List Bullet] Neutraliser réseau et horloge.
+[Normal] Scénarios de vérification.
+[List Number] Exécuter sous Windows.
+[List Number] Exécuter sous Linux CI.
+[List Number] Exécuter avec locale fr-FR.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Ne pas écrire dans la base de développement pendant les tests.
+[Normal] Critères de sortie. Résultats identiques hors chemins et timestamps.
+[Normal] 7. Gestion des données de test
+[Normal] Objectif normatif. Produire des fixtures déterministes et minimales.
+[Normal] Faits établis. Des données partagées rendent les tests interdépendants.
+[Normal] Hypothèses explicites. Des factories de test peuvent être ajoutées sans modifier le domaine.
+[Normal] Contrôles obligatoires.
+[List Bullet] Fixture isolée par test.
+[List Bullet] Identifiants stables.
+[List Bullet] Nettoyage après exécution.
+[List Bullet] Aucune donnée personnelle réelle.
+[Normal] Scénarios de vérification.
+[List Number] Exécuter un test seul.
+[List Number] Exécuter dans un ordre aléatoire.
+[List Number] Exécuter en parallèle si supporté.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Ne pas réutiliser la base de production anonymisée sans contrôle.
+[Normal] Critères de sortie. Zéro dépendance d’ordre et zéro fuite de données.
+[Normal] 8. Critères d’entrée et de sortie
+[Normal] Objectif normatif. Rendre la décision de qualification objective.
+[Normal] Faits établis. Une campagne ne doit pas commencer sur un build non reproductible.
+[Normal] Hypothèses explicites. Les seuils de couverture sont définis ici pour B4.
+[Normal] Contrôles obligatoires.
+[List Bullet] Entrée: build propre, migrations appliquées, tests existants verts.
+[List Bullet] Sortie: 100% P0/P1, 0 défaut critique, couverture ciblée >=90%.
+[List Bullet] Documenter les risques résiduels.
+[Normal] Scénarios de vérification.
+[List Number] Lancer avec migration manquante.
+[List Number] Lancer avec test existant rouge.
+[List Number] Lancer avec défaut P0 ouvert.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Ne pas abaisser les seuils pour faire passer la livraison.
+[Normal] Critères de sortie. La campagne bloque correctement les entrées invalides et ne qualifie aucun défaut P0/P1.
+[Normal] 9. Contrat HomeworkService
+[Normal] Objectif normatif. Vérifier que le service orchestre sans changer sa responsabilité.
+[Normal] Faits établis. Le service sélectionne le catalogue, calcule le déficit et sollicite la fabrique uniquement si nécessaire.
+[Normal] Hypothèses explicites. Les noms exacts des classes, méthodes et champs doivent être confirmés par inspection du dépôt. Toute divergence entre ce document et le code existant doit être consignée avant implémentation, sans inventer une nouvelle architecture.
+[Normal] Contrôles obligatoires.
+[List Bullet] Préparer un test positif, un test négatif et un test de frontière pour le comportement visé.
+[List Bullet] Vérifier les effets observables: valeur retournée, écriture en base, événement de log, métrique et appel externe.
+[List Bullet] Utiliser des doubles déterministes; interdire les appels réseau réels dans la suite standard.
+[List Bullet] Échouer explicitement en cas de donnée invalide; ne pas corriger silencieusement une sortie IA.
+[Normal] Scénarios de vérification.
+[List Number] Exécuter le scénario nominal associé à « Contrat HomeworkService » avec un catalogue cohérent.
+[List Number] Injecter une donnée invalide à la frontière la plus proche et vérifier le rejet sans état partiel.
+[List Number] Simuler une défaillance externe et vérifier la politique de fallback, de retry ou d’arrêt définie.
+[List Number] Rejouer le scénario pour vérifier l’idempotence et l’absence de doublon.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Lire les implémentations et tests existants avant toute modification.
+[List Bullet] Modifier le minimum de fichiers nécessaire.
+[List Bullet] Ne pas créer de valeur par défaut métier non spécifiée.
+[List Bullet] Ajouter les tests dans le même commit que le code.
+[Normal] Critères de sortie. PASS lorsque tous les scénarios associés sont automatisés, reproductibles, sans appel réseau et sans défaut P0/P1 ouvert.
+[Normal] 10. Calcul du déficit
+[Normal] Objectif normatif. Vérifier la formule max(0, demandé - sélectionné).
+[Normal] Faits établis. Un déficit négatif ou recalculé après filtrage de manière incohérente provoque un mauvais nombre.
+[Normal] Hypothèses explicites. Les noms exacts des classes, méthodes et champs doivent être confirmés par inspection du dépôt. Toute divergence entre ce document et le code existant doit être consignée avant implémentation, sans inventer une nouvelle architecture.
+[Normal] Contrôles obligatoires.
+[List Bullet] Préparer un test positif, un test négatif et un test de frontière pour le comportement visé.
+[List Bullet] Vérifier les effets observables: valeur retournée, écriture en base, événement de log, métrique et appel externe.
+[List Bullet] Utiliser des doubles déterministes; interdire les appels réseau réels dans la suite standard.
+[List Bullet] Échouer explicitement en cas de donnée invalide; ne pas corriger silencieusement une sortie IA.
+[Normal] Scénarios de vérification.
+[List Number] Exécuter le scénario nominal associé à « Calcul du déficit » avec un catalogue cohérent.
+[List Number] Injecter une donnée invalide à la frontière la plus proche et vérifier le rejet sans état partiel.
+[List Number] Simuler une défaillance externe et vérifier la politique de fallback, de retry ou d’arrêt définie.
+[List Number] Rejouer le scénario pour vérifier l’idempotence et l’absence de doublon.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Lire les implémentations et tests existants avant toute modification.
+[List Bullet] Modifier le minimum de fichiers nécessaire.
+[List Bullet] Ne pas créer de valeur par défaut métier non spécifiée.
+[List Bullet] Ajouter les tests dans le même commit que le code.
+[Normal] Critères de sortie. PASS lorsque tous les scénarios associés sont automatisés, reproductibles, sans appel réseau et sans défaut P0/P1 ouvert.
+[Normal] 11. Sélection catalogue
+[Normal] Objectif normatif. Vérifier que la sélection primaire respecte sujet, niveau, chapitre, compétence et difficulté.
+[Normal] Faits établis. Le catalogue doit toujours être consommé avant toute génération.
+[Normal] Hypothèses explicites. Les noms exacts des classes, méthodes et champs doivent être confirmés par inspection du dépôt. Toute divergence entre ce document et le code existant doit être consignée avant implémentation, sans inventer une nouvelle architecture.
+[Normal] Contrôles obligatoires.
+[List Bullet] Préparer un test positif, un test négatif et un test de frontière pour le comportement visé.
+[List Bullet] Vérifier les effets observables: valeur retournée, écriture en base, événement de log, métrique et appel externe.
+[List Bullet] Utiliser des doubles déterministes; interdire les appels réseau réels dans la suite standard.
+[List Bullet] Échouer explicitement en cas de donnée invalide; ne pas corriger silencieusement une sortie IA.
+[Normal] Scénarios de vérification.
+[List Number] Exécuter le scénario nominal associé à « Sélection catalogue » avec un catalogue cohérent.
+[List Number] Injecter une donnée invalide à la frontière la plus proche et vérifier le rejet sans état partiel.
+[List Number] Simuler une défaillance externe et vérifier la politique de fallback, de retry ou d’arrêt définie.
+[List Number] Rejouer le scénario pour vérifier l’idempotence et l’absence de doublon.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Lire les implémentations et tests existants avant toute modification.
+[List Bullet] Modifier le minimum de fichiers nécessaire.
+[List Bullet] Ne pas créer de valeur par défaut métier non spécifiée.
+[List Bullet] Ajouter les tests dans le même commit que le code.
+[Normal] Critères de sortie. PASS lorsque tous les scénarios associés sont automatisés, reproductibles, sans appel réseau et sans défaut P0/P1 ouvert.
+[Normal] 12. Déclenchement du fallback IA
+[Normal] Objectif normatif. Vérifier qu’aucun appel IA n’est effectué quand le déficit vaut zéro.
+[Normal] Faits établis. Le coût, la latence et le risque IA doivent être évités lorsque la couverture est suffisante.
+[Normal] Hypothèses explicites. Les noms exacts des classes, méthodes et champs doivent être confirmés par inspection du dépôt. Toute divergence entre ce document et le code existant doit être consignée avant implémentation, sans inventer une nouvelle architecture.
+[Normal] Contrôles obligatoires.
+[List Bullet] Préparer un test positif, un test négatif et un test de frontière pour le comportement visé.
+[List Bullet] Vérifier les effets observables: valeur retournée, écriture en base, événement de log, métrique et appel externe.
+[List Bullet] Utiliser des doubles déterministes; interdire les appels réseau réels dans la suite standard.
+[List Bullet] Échouer explicitement en cas de donnée invalide; ne pas corriger silencieusement une sortie IA.
+[Normal] Scénarios de vérification.
+[List Number] Exécuter le scénario nominal associé à « Déclenchement du fallback IA » avec un catalogue cohérent.
+[List Number] Injecter une donnée invalide à la frontière la plus proche et vérifier le rejet sans état partiel.
+[List Number] Simuler une défaillance externe et vérifier la politique de fallback, de retry ou d’arrêt définie.
+[List Number] Rejouer le scénario pour vérifier l’idempotence et l’absence de doublon.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Lire les implémentations et tests existants avant toute modification.
+[List Bullet] Modifier le minimum de fichiers nécessaire.
+[List Bullet] Ne pas créer de valeur par défaut métier non spécifiée.
+[List Bullet] Ajouter les tests dans le même commit que le code.
+[Normal] Critères de sortie. PASS lorsque tous les scénarios associés sont automatisés, reproductibles, sans appel réseau et sans défaut P0/P1 ouvert.
+[Normal] 13. Construction du contexte pédagogique
+[Normal] Objectif normatif. Vérifier que le contexte transmis est minimal, exact et non sensible.
+[Normal] Faits établis. Le contexte doit contenir les contraintes pédagogiques nécessaires sans données personnelles superflues.
+[Normal] Hypothèses explicites. Les noms exacts des classes, méthodes et champs doivent être confirmés par inspection du dépôt. Toute divergence entre ce document et le code existant doit être consignée avant implémentation, sans inventer une nouvelle architecture.
+[Normal] Contrôles obligatoires.
+[List Bullet] Préparer un test positif, un test négatif et un test de frontière pour le comportement visé.
+[List Bullet] Vérifier les effets observables: valeur retournée, écriture en base, événement de log, métrique et appel externe.
+[List Bullet] Utiliser des doubles déterministes; interdire les appels réseau réels dans la suite standard.
+[List Bullet] Échouer explicitement en cas de donnée invalide; ne pas corriger silencieusement une sortie IA.
+[Normal] Scénarios de vérification.
+[List Number] Exécuter le scénario nominal associé à « Construction du contexte pédagogique » avec un catalogue cohérent.
+[List Number] Injecter une donnée invalide à la frontière la plus proche et vérifier le rejet sans état partiel.
+[List Number] Simuler une défaillance externe et vérifier la politique de fallback, de retry ou d’arrêt définie.
+[List Number] Rejouer le scénario pour vérifier l’idempotence et l’absence de doublon.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Lire les implémentations et tests existants avant toute modification.
+[List Bullet] Modifier le minimum de fichiers nécessaire.
+[List Bullet] Ne pas créer de valeur par défaut métier non spécifiée.
+[List Bullet] Ajouter les tests dans le même commit que le code.
+[Normal] Critères de sortie. PASS lorsque tous les scénarios associés sont automatisés, reproductibles, sans appel réseau et sans défaut P0/P1 ouvert.
+[Normal] 14. Contrat ContentFactory
+[Normal] Objectif normatif. Vérifier les paramètres, erreurs et résultats du composant existant.
+[Normal] Faits établis. L’intégration doit réutiliser la fabrique existante et ne pas dupliquer le fournisseur IA.
+[Normal] Hypothèses explicites. Les noms exacts des classes, méthodes et champs doivent être confirmés par inspection du dépôt. Toute divergence entre ce document et le code existant doit être consignée avant implémentation, sans inventer une nouvelle architecture.
+[Normal] Contrôles obligatoires.
+[List Bullet] Préparer un test positif, un test négatif et un test de frontière pour le comportement visé.
+[List Bullet] Vérifier les effets observables: valeur retournée, écriture en base, événement de log, métrique et appel externe.
+[List Bullet] Utiliser des doubles déterministes; interdire les appels réseau réels dans la suite standard.
+[List Bullet] Échouer explicitement en cas de donnée invalide; ne pas corriger silencieusement une sortie IA.
+[Normal] Scénarios de vérification.
+[List Number] Exécuter le scénario nominal associé à « Contrat ContentFactory » avec un catalogue cohérent.
+[List Number] Injecter une donnée invalide à la frontière la plus proche et vérifier le rejet sans état partiel.
+[List Number] Simuler une défaillance externe et vérifier la politique de fallback, de retry ou d’arrêt définie.
+[List Number] Rejouer le scénario pour vérifier l’idempotence et l’absence de doublon.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Lire les implémentations et tests existants avant toute modification.
+[List Bullet] Modifier le minimum de fichiers nécessaire.
+[List Bullet] Ne pas créer de valeur par défaut métier non spécifiée.
+[List Bullet] Ajouter les tests dans le même commit que le code.
+[Normal] Critères de sortie. PASS lorsque tous les scénarios associés sont automatisés, reproductibles, sans appel réseau et sans défaut P0/P1 ouvert.
+[Normal] 15. Validation structurelle JSON
+[Normal] Objectif normatif. Rejeter toute sortie non conforme au schéma attendu.
+[Normal] Faits établis. Une sortie IA est non fiable tant qu’elle n’a pas été validée.
+[Normal] Hypothèses explicites. Les noms exacts des classes, méthodes et champs doivent être confirmés par inspection du dépôt. Toute divergence entre ce document et le code existant doit être consignée avant implémentation, sans inventer une nouvelle architecture.
+[Normal] Contrôles obligatoires.
+[List Bullet] Préparer un test positif, un test négatif et un test de frontière pour le comportement visé.
+[List Bullet] Vérifier les effets observables: valeur retournée, écriture en base, événement de log, métrique et appel externe.
+[List Bullet] Utiliser des doubles déterministes; interdire les appels réseau réels dans la suite standard.
+[List Bullet] Échouer explicitement en cas de donnée invalide; ne pas corriger silencieusement une sortie IA.
+[Normal] Scénarios de vérification.
+[List Number] Exécuter le scénario nominal associé à « Validation structurelle JSON » avec un catalogue cohérent.
+[List Number] Injecter une donnée invalide à la frontière la plus proche et vérifier le rejet sans état partiel.
+[List Number] Simuler une défaillance externe et vérifier la politique de fallback, de retry ou d’arrêt définie.
+[List Number] Rejouer le scénario pour vérifier l’idempotence et l’absence de doublon.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Lire les implémentations et tests existants avant toute modification.
+[List Bullet] Modifier le minimum de fichiers nécessaire.
+[List Bullet] Ne pas créer de valeur par défaut métier non spécifiée.
+[List Bullet] Ajouter les tests dans le même commit que le code.
+[Normal] Critères de sortie. PASS lorsque tous les scénarios associés sont automatisés, reproductibles, sans appel réseau et sans défaut P0/P1 ouvert.
+[Normal] 16. Validation sémantique
+[Normal] Objectif normatif. Vérifier compétence, niveau, difficulté, langue et type de question.
+[Normal] Faits établis. Un JSON valide peut rester pédagogiquement incorrect.
+[Normal] Hypothèses explicites. Les noms exacts des classes, méthodes et champs doivent être confirmés par inspection du dépôt. Toute divergence entre ce document et le code existant doit être consignée avant implémentation, sans inventer une nouvelle architecture.
+[Normal] Contrôles obligatoires.
+[List Bullet] Préparer un test positif, un test négatif et un test de frontière pour le comportement visé.
+[List Bullet] Vérifier les effets observables: valeur retournée, écriture en base, événement de log, métrique et appel externe.
+[List Bullet] Utiliser des doubles déterministes; interdire les appels réseau réels dans la suite standard.
+[List Bullet] Échouer explicitement en cas de donnée invalide; ne pas corriger silencieusement une sortie IA.
+[Normal] Scénarios de vérification.
+[List Number] Exécuter le scénario nominal associé à « Validation sémantique » avec un catalogue cohérent.
+[List Number] Injecter une donnée invalide à la frontière la plus proche et vérifier le rejet sans état partiel.
+[List Number] Simuler une défaillance externe et vérifier la politique de fallback, de retry ou d’arrêt définie.
+[List Number] Rejouer le scénario pour vérifier l’idempotence et l’absence de doublon.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Lire les implémentations et tests existants avant toute modification.
+[List Bullet] Modifier le minimum de fichiers nécessaire.
+[List Bullet] Ne pas créer de valeur par défaut métier non spécifiée.
+[List Bullet] Ajouter les tests dans le même commit que le code.
+[Normal] Critères de sortie. PASS lorsque tous les scénarios associés sont automatisés, reproductibles, sans appel réseau et sans défaut P0/P1 ouvert.
+[Normal] 17. Validation des réponses
+[Normal] Objectif normatif. Garantir une réponse correcte, déterministe et compatible avec le type d’exercice.
+[Normal] Faits établis. La présence d’une correction textuelle ne prouve pas l’exactitude.
+[Normal] Hypothèses explicites. Les noms exacts des classes, méthodes et champs doivent être confirmés par inspection du dépôt. Toute divergence entre ce document et le code existant doit être consignée avant implémentation, sans inventer une nouvelle architecture.
+[Normal] Contrôles obligatoires.
+[List Bullet] Préparer un test positif, un test négatif et un test de frontière pour le comportement visé.
+[List Bullet] Vérifier les effets observables: valeur retournée, écriture en base, événement de log, métrique et appel externe.
+[List Bullet] Utiliser des doubles déterministes; interdire les appels réseau réels dans la suite standard.
+[List Bullet] Échouer explicitement en cas de donnée invalide; ne pas corriger silencieusement une sortie IA.
+[Normal] Scénarios de vérification.
+[List Number] Exécuter le scénario nominal associé à « Validation des réponses » avec un catalogue cohérent.
+[List Number] Injecter une donnée invalide à la frontière la plus proche et vérifier le rejet sans état partiel.
+[List Number] Simuler une défaillance externe et vérifier la politique de fallback, de retry ou d’arrêt définie.
+[List Number] Rejouer le scénario pour vérifier l’idempotence et l’absence de doublon.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Lire les implémentations et tests existants avant toute modification.
+[List Bullet] Modifier le minimum de fichiers nécessaire.
+[List Bullet] Ne pas créer de valeur par défaut métier non spécifiée.
+[List Bullet] Ajouter les tests dans le même commit que le code.
+[Normal] Critères de sortie. PASS lorsque tous les scénarios associés sont automatisés, reproductibles, sans appel réseau et sans défaut P0/P1 ouvert.
+[Normal] 18. Détection des doublons
+[Normal] Objectif normatif. Éviter les doublons exacts et quasi-doublons entre catalogue et IA.
+[Normal] Faits établis. Les doublons diminuent la couverture réelle du devoir.
+[Normal] Hypothèses explicites. Les noms exacts des classes, méthodes et champs doivent être confirmés par inspection du dépôt. Toute divergence entre ce document et le code existant doit être consignée avant implémentation, sans inventer une nouvelle architecture.
+[Normal] Contrôles obligatoires.
+[List Bullet] Préparer un test positif, un test négatif et un test de frontière pour le comportement visé.
+[List Bullet] Vérifier les effets observables: valeur retournée, écriture en base, événement de log, métrique et appel externe.
+[List Bullet] Utiliser des doubles déterministes; interdire les appels réseau réels dans la suite standard.
+[List Bullet] Échouer explicitement en cas de donnée invalide; ne pas corriger silencieusement une sortie IA.
+[Normal] Scénarios de vérification.
+[List Number] Exécuter le scénario nominal associé à « Détection des doublons » avec un catalogue cohérent.
+[List Number] Injecter une donnée invalide à la frontière la plus proche et vérifier le rejet sans état partiel.
+[List Number] Simuler une défaillance externe et vérifier la politique de fallback, de retry ou d’arrêt définie.
+[List Number] Rejouer le scénario pour vérifier l’idempotence et l’absence de doublon.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Lire les implémentations et tests existants avant toute modification.
+[List Bullet] Modifier le minimum de fichiers nécessaire.
+[List Bullet] Ne pas créer de valeur par défaut métier non spécifiée.
+[List Bullet] Ajouter les tests dans le même commit que le code.
+[Normal] Critères de sortie. PASS lorsque tous les scénarios associés sont automatisés, reproductibles, sans appel réseau et sans défaut P0/P1 ouvert.
+[Normal] 19. Fusion catalogue-IA
+[Normal] Objectif normatif. Préserver l’ordre et l’identité des exercices catalogue.
+[Normal] Faits établis. Le fallback ne doit ni remplacer ni altérer les exercices déjà sélectionnés.
+[Normal] Hypothèses explicites. Les noms exacts des classes, méthodes et champs doivent être confirmés par inspection du dépôt. Toute divergence entre ce document et le code existant doit être consignée avant implémentation, sans inventer une nouvelle architecture.
+[Normal] Contrôles obligatoires.
+[List Bullet] Préparer un test positif, un test négatif et un test de frontière pour le comportement visé.
+[List Bullet] Vérifier les effets observables: valeur retournée, écriture en base, événement de log, métrique et appel externe.
+[List Bullet] Utiliser des doubles déterministes; interdire les appels réseau réels dans la suite standard.
+[List Bullet] Échouer explicitement en cas de donnée invalide; ne pas corriger silencieusement une sortie IA.
+[Normal] Scénarios de vérification.
+[List Number] Exécuter le scénario nominal associé à « Fusion catalogue-IA » avec un catalogue cohérent.
+[List Number] Injecter une donnée invalide à la frontière la plus proche et vérifier le rejet sans état partiel.
+[List Number] Simuler une défaillance externe et vérifier la politique de fallback, de retry ou d’arrêt définie.
+[List Number] Rejouer le scénario pour vérifier l’idempotence et l’absence de doublon.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Lire les implémentations et tests existants avant toute modification.
+[List Bullet] Modifier le minimum de fichiers nécessaire.
+[List Bullet] Ne pas créer de valeur par défaut métier non spécifiée.
+[List Bullet] Ajouter les tests dans le même commit que le code.
+[Normal] Critères de sortie. PASS lorsque tous les scénarios associés sont automatisés, reproductibles, sans appel réseau et sans défaut P0/P1 ouvert.
+[Normal] 20. Gestion d’un déficit partiellement comblé
+[Normal] Objectif normatif. Définir le comportement quand certains exercices IA seulement sont valides.
+[Normal] Faits établis. Il est préférable de retourner un résultat explicitement incomplet que d’injecter du contenu invalide.
+[Normal] Hypothèses explicites. Les noms exacts des classes, méthodes et champs doivent être confirmés par inspection du dépôt. Toute divergence entre ce document et le code existant doit être consignée avant implémentation, sans inventer une nouvelle architecture.
+[Normal] Contrôles obligatoires.
+[List Bullet] Préparer un test positif, un test négatif et un test de frontière pour le comportement visé.
+[List Bullet] Vérifier les effets observables: valeur retournée, écriture en base, événement de log, métrique et appel externe.
+[List Bullet] Utiliser des doubles déterministes; interdire les appels réseau réels dans la suite standard.
+[List Bullet] Échouer explicitement en cas de donnée invalide; ne pas corriger silencieusement une sortie IA.
+[Normal] Scénarios de vérification.
+[List Number] Exécuter le scénario nominal associé à « Gestion d’un déficit partiellement comblé » avec un catalogue cohérent.
+[List Number] Injecter une donnée invalide à la frontière la plus proche et vérifier le rejet sans état partiel.
+[List Number] Simuler une défaillance externe et vérifier la politique de fallback, de retry ou d’arrêt définie.
+[List Number] Rejouer le scénario pour vérifier l’idempotence et l’absence de doublon.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Lire les implémentations et tests existants avant toute modification.
+[List Bullet] Modifier le minimum de fichiers nécessaire.
+[List Bullet] Ne pas créer de valeur par défaut métier non spécifiée.
+[List Bullet] Ajouter les tests dans le même commit que le code.
+[Normal] Critères de sortie. PASS lorsque tous les scénarios associés sont automatisés, reproductibles, sans appel réseau et sans défaut P0/P1 ouvert.
+[Normal] 21. Politique de retry
+[Normal] Objectif normatif. Limiter les nouvelles tentatives aux erreurs récupérables.
+[Normal] Faits établis. Un retry aveugle amplifie coût et latence.
+[Normal] Hypothèses explicites. Les noms exacts des classes, méthodes et champs doivent être confirmés par inspection du dépôt. Toute divergence entre ce document et le code existant doit être consignée avant implémentation, sans inventer une nouvelle architecture.
+[Normal] Contrôles obligatoires.
+[List Bullet] Préparer un test positif, un test négatif et un test de frontière pour le comportement visé.
+[List Bullet] Vérifier les effets observables: valeur retournée, écriture en base, événement de log, métrique et appel externe.
+[List Bullet] Utiliser des doubles déterministes; interdire les appels réseau réels dans la suite standard.
+[List Bullet] Échouer explicitement en cas de donnée invalide; ne pas corriger silencieusement une sortie IA.
+[Normal] Scénarios de vérification.
+[List Number] Exécuter le scénario nominal associé à « Politique de retry » avec un catalogue cohérent.
+[List Number] Injecter une donnée invalide à la frontière la plus proche et vérifier le rejet sans état partiel.
+[List Number] Simuler une défaillance externe et vérifier la politique de fallback, de retry ou d’arrêt définie.
+[List Number] Rejouer le scénario pour vérifier l’idempotence et l’absence de doublon.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Lire les implémentations et tests existants avant toute modification.
+[List Bullet] Modifier le minimum de fichiers nécessaire.
+[List Bullet] Ne pas créer de valeur par défaut métier non spécifiée.
+[List Bullet] Ajouter les tests dans le même commit que le code.
+[Normal] Critères de sortie. PASS lorsque tous les scénarios associés sont automatisés, reproductibles, sans appel réseau et sans défaut P0/P1 ouvert.
+[Normal] 22. Timeout fournisseur IA
+[Normal] Objectif normatif. Définir un timeout borné et un retour contrôlé.
+[Normal] Faits établis. Un fournisseur externe ne doit pas bloquer la requête applicative.
+[Normal] Hypothèses explicites. Les noms exacts des classes, méthodes et champs doivent être confirmés par inspection du dépôt. Toute divergence entre ce document et le code existant doit être consignée avant implémentation, sans inventer une nouvelle architecture.
+[Normal] Contrôles obligatoires.
+[List Bullet] Préparer un test positif, un test négatif et un test de frontière pour le comportement visé.
+[List Bullet] Vérifier les effets observables: valeur retournée, écriture en base, événement de log, métrique et appel externe.
+[List Bullet] Utiliser des doubles déterministes; interdire les appels réseau réels dans la suite standard.
+[List Bullet] Échouer explicitement en cas de donnée invalide; ne pas corriger silencieusement une sortie IA.
+[Normal] Scénarios de vérification.
+[List Number] Exécuter le scénario nominal associé à « Timeout fournisseur IA » avec un catalogue cohérent.
+[List Number] Injecter une donnée invalide à la frontière la plus proche et vérifier le rejet sans état partiel.
+[List Number] Simuler une défaillance externe et vérifier la politique de fallback, de retry ou d’arrêt définie.
+[List Number] Rejouer le scénario pour vérifier l’idempotence et l’absence de doublon.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Lire les implémentations et tests existants avant toute modification.
+[List Bullet] Modifier le minimum de fichiers nécessaire.
+[List Bullet] Ne pas créer de valeur par défaut métier non spécifiée.
+[List Bullet] Ajouter les tests dans le même commit que le code.
+[Normal] Critères de sortie. PASS lorsque tous les scénarios associés sont automatisés, reproductibles, sans appel réseau et sans défaut P0/P1 ouvert.
+[Normal] 23. Circuit breaker
+[Normal] Objectif normatif. Éviter les appels répétés vers un fournisseur durablement indisponible.
+[Normal] Faits établis. La protection doit être ajoutée seulement si une abstraction existante la supporte.
+[Normal] Hypothèses explicites. Les noms exacts des classes, méthodes et champs doivent être confirmés par inspection du dépôt. Toute divergence entre ce document et le code existant doit être consignée avant implémentation, sans inventer une nouvelle architecture.
+[Normal] Contrôles obligatoires.
+[List Bullet] Préparer un test positif, un test négatif et un test de frontière pour le comportement visé.
+[List Bullet] Vérifier les effets observables: valeur retournée, écriture en base, événement de log, métrique et appel externe.
+[List Bullet] Utiliser des doubles déterministes; interdire les appels réseau réels dans la suite standard.
+[List Bullet] Échouer explicitement en cas de donnée invalide; ne pas corriger silencieusement une sortie IA.
+[Normal] Scénarios de vérification.
+[List Number] Exécuter le scénario nominal associé à « Circuit breaker » avec un catalogue cohérent.
+[List Number] Injecter une donnée invalide à la frontière la plus proche et vérifier le rejet sans état partiel.
+[List Number] Simuler une défaillance externe et vérifier la politique de fallback, de retry ou d’arrêt définie.
+[List Number] Rejouer le scénario pour vérifier l’idempotence et l’absence de doublon.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Lire les implémentations et tests existants avant toute modification.
+[List Bullet] Modifier le minimum de fichiers nécessaire.
+[List Bullet] Ne pas créer de valeur par défaut métier non spécifiée.
+[List Bullet] Ajouter les tests dans le même commit que le code.
+[Normal] Critères de sortie. PASS lorsque tous les scénarios associés sont automatisés, reproductibles, sans appel réseau et sans défaut P0/P1 ouvert.
+[Normal] 24. Idempotence
+[Normal] Objectif normatif. Garantir qu’une même requête technique ne multiplie pas les écritures.
+[Normal] Faits établis. Les retries peuvent provoquer des duplications en base.
+[Normal] Hypothèses explicites. Les noms exacts des classes, méthodes et champs doivent être confirmés par inspection du dépôt. Toute divergence entre ce document et le code existant doit être consignée avant implémentation, sans inventer une nouvelle architecture.
+[Normal] Contrôles obligatoires.
+[List Bullet] Préparer un test positif, un test négatif et un test de frontière pour le comportement visé.
+[List Bullet] Vérifier les effets observables: valeur retournée, écriture en base, événement de log, métrique et appel externe.
+[List Bullet] Utiliser des doubles déterministes; interdire les appels réseau réels dans la suite standard.
+[List Bullet] Échouer explicitement en cas de donnée invalide; ne pas corriger silencieusement une sortie IA.
+[Normal] Scénarios de vérification.
+[List Number] Exécuter le scénario nominal associé à « Idempotence » avec un catalogue cohérent.
+[List Number] Injecter une donnée invalide à la frontière la plus proche et vérifier le rejet sans état partiel.
+[List Number] Simuler une défaillance externe et vérifier la politique de fallback, de retry ou d’arrêt définie.
+[List Number] Rejouer le scénario pour vérifier l’idempotence et l’absence de doublon.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Lire les implémentations et tests existants avant toute modification.
+[List Bullet] Modifier le minimum de fichiers nécessaire.
+[List Bullet] Ne pas créer de valeur par défaut métier non spécifiée.
+[List Bullet] Ajouter les tests dans le même commit que le code.
+[Normal] Critères de sortie. PASS lorsque tous les scénarios associés sont automatisés, reproductibles, sans appel réseau et sans défaut P0/P1 ouvert.
+[Normal] 25. Transactions DuckDB
+[Normal] Objectif normatif. Vérifier atomicité des écritures associées au devoir.
+[Normal] Faits établis. Une défaillance intermédiaire ne doit pas laisser un devoir incohérent.
+[Normal] Hypothèses explicites. Les noms exacts des classes, méthodes et champs doivent être confirmés par inspection du dépôt. Toute divergence entre ce document et le code existant doit être consignée avant implémentation, sans inventer une nouvelle architecture.
+[Normal] Contrôles obligatoires.
+[List Bullet] Préparer un test positif, un test négatif et un test de frontière pour le comportement visé.
+[List Bullet] Vérifier les effets observables: valeur retournée, écriture en base, événement de log, métrique et appel externe.
+[List Bullet] Utiliser des doubles déterministes; interdire les appels réseau réels dans la suite standard.
+[List Bullet] Échouer explicitement en cas de donnée invalide; ne pas corriger silencieusement une sortie IA.
+[Normal] Scénarios de vérification.
+[List Number] Exécuter le scénario nominal associé à « Transactions DuckDB » avec un catalogue cohérent.
+[List Number] Injecter une donnée invalide à la frontière la plus proche et vérifier le rejet sans état partiel.
+[List Number] Simuler une défaillance externe et vérifier la politique de fallback, de retry ou d’arrêt définie.
+[List Number] Rejouer le scénario pour vérifier l’idempotence et l’absence de doublon.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Lire les implémentations et tests existants avant toute modification.
+[List Bullet] Modifier le minimum de fichiers nécessaire.
+[List Bullet] Ne pas créer de valeur par défaut métier non spécifiée.
+[List Bullet] Ajouter les tests dans le même commit que le code.
+[Normal] Critères de sortie. PASS lorsque tous les scénarios associés sont automatisés, reproductibles, sans appel réseau et sans défaut P0/P1 ouvert.
+[Normal] 26. Requêtes SQL
+[Normal] Objectif normatif. Vérifier paramétrage, cardinalité, contraintes et plans simples.
+[Normal] Faits établis. La concaténation SQL expose aux injections et aux erreurs de typage.
+[Normal] Hypothèses explicites. Les noms exacts des classes, méthodes et champs doivent être confirmés par inspection du dépôt. Toute divergence entre ce document et le code existant doit être consignée avant implémentation, sans inventer une nouvelle architecture.
+[Normal] Contrôles obligatoires.
+[List Bullet] Préparer un test positif, un test négatif et un test de frontière pour le comportement visé.
+[List Bullet] Vérifier les effets observables: valeur retournée, écriture en base, événement de log, métrique et appel externe.
+[List Bullet] Utiliser des doubles déterministes; interdire les appels réseau réels dans la suite standard.
+[List Bullet] Échouer explicitement en cas de donnée invalide; ne pas corriger silencieusement une sortie IA.
+[Normal] Scénarios de vérification.
+[List Number] Exécuter le scénario nominal associé à « Requêtes SQL » avec un catalogue cohérent.
+[List Number] Injecter une donnée invalide à la frontière la plus proche et vérifier le rejet sans état partiel.
+[List Number] Simuler une défaillance externe et vérifier la politique de fallback, de retry ou d’arrêt définie.
+[List Number] Rejouer le scénario pour vérifier l’idempotence et l’absence de doublon.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Lire les implémentations et tests existants avant toute modification.
+[List Bullet] Modifier le minimum de fichiers nécessaire.
+[List Bullet] Ne pas créer de valeur par défaut métier non spécifiée.
+[List Bullet] Ajouter les tests dans le même commit que le code.
+[Normal] Critères de sortie. PASS lorsque tous les scénarios associés sont automatisés, reproductibles, sans appel réseau et sans défaut P0/P1 ouvert.
+[Normal] 27. Migrations
+[Normal] Objectif normatif. Garantir montée et réexécution sans corruption.
+[Normal] Faits établis. Toute évolution de schéma doit être versionnée et testée.
+[Normal] Hypothèses explicites. Les noms exacts des classes, méthodes et champs doivent être confirmés par inspection du dépôt. Toute divergence entre ce document et le code existant doit être consignée avant implémentation, sans inventer une nouvelle architecture.
+[Normal] Contrôles obligatoires.
+[List Bullet] Préparer un test positif, un test négatif et un test de frontière pour le comportement visé.
+[List Bullet] Vérifier les effets observables: valeur retournée, écriture en base, événement de log, métrique et appel externe.
+[List Bullet] Utiliser des doubles déterministes; interdire les appels réseau réels dans la suite standard.
+[List Bullet] Échouer explicitement en cas de donnée invalide; ne pas corriger silencieusement une sortie IA.
+[Normal] Scénarios de vérification.
+[List Number] Exécuter le scénario nominal associé à « Migrations » avec un catalogue cohérent.
+[List Number] Injecter une donnée invalide à la frontière la plus proche et vérifier le rejet sans état partiel.
+[List Number] Simuler une défaillance externe et vérifier la politique de fallback, de retry ou d’arrêt définie.
+[List Number] Rejouer le scénario pour vérifier l’idempotence et l’absence de doublon.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Lire les implémentations et tests existants avant toute modification.
+[List Bullet] Modifier le minimum de fichiers nécessaire.
+[List Bullet] Ne pas créer de valeur par défaut métier non spécifiée.
+[List Bullet] Ajouter les tests dans le même commit que le code.
+[Normal] Critères de sortie. PASS lorsque tous les scénarios associés sont automatisés, reproductibles, sans appel réseau et sans défaut P0/P1 ouvert.
+[Normal] 28. Persistance de la provenance
+[Normal] Objectif normatif. Tracer catalog/AI, modèle, validation et corrélation.
+[Normal] Faits établis. La provenance est nécessaire pour audit et diagnostic.
+[Normal] Hypothèses explicites. Les noms exacts des classes, méthodes et champs doivent être confirmés par inspection du dépôt. Toute divergence entre ce document et le code existant doit être consignée avant implémentation, sans inventer une nouvelle architecture.
+[Normal] Contrôles obligatoires.
+[List Bullet] Préparer un test positif, un test négatif et un test de frontière pour le comportement visé.
+[List Bullet] Vérifier les effets observables: valeur retournée, écriture en base, événement de log, métrique et appel externe.
+[List Bullet] Utiliser des doubles déterministes; interdire les appels réseau réels dans la suite standard.
+[List Bullet] Échouer explicitement en cas de donnée invalide; ne pas corriger silencieusement une sortie IA.
+[Normal] Scénarios de vérification.
+[List Number] Exécuter le scénario nominal associé à « Persistance de la provenance » avec un catalogue cohérent.
+[List Number] Injecter une donnée invalide à la frontière la plus proche et vérifier le rejet sans état partiel.
+[List Number] Simuler une défaillance externe et vérifier la politique de fallback, de retry ou d’arrêt définie.
+[List Number] Rejouer le scénario pour vérifier l’idempotence et l’absence de doublon.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Lire les implémentations et tests existants avant toute modification.
+[List Bullet] Modifier le minimum de fichiers nécessaire.
+[List Bullet] Ne pas créer de valeur par défaut métier non spécifiée.
+[List Bullet] Ajouter les tests dans le même commit que le code.
+[Normal] Critères de sortie. PASS lorsque tous les scénarios associés sont automatisés, reproductibles, sans appel réseau et sans défaut P0/P1 ouvert.
+[Normal] 29. Journalisation structurée
+[Normal] Objectif normatif. Vérifier événements, niveaux, corrélation et absence de secrets.
+[Normal] Faits établis. Les logs doivent permettre de reconstituer le flux sans exposer de données sensibles.
+[Normal] Hypothèses explicites. Les noms exacts des classes, méthodes et champs doivent être confirmés par inspection du dépôt. Toute divergence entre ce document et le code existant doit être consignée avant implémentation, sans inventer une nouvelle architecture.
+[Normal] Contrôles obligatoires.
+[List Bullet] Préparer un test positif, un test négatif et un test de frontière pour le comportement visé.
+[List Bullet] Vérifier les effets observables: valeur retournée, écriture en base, événement de log, métrique et appel externe.
+[List Bullet] Utiliser des doubles déterministes; interdire les appels réseau réels dans la suite standard.
+[List Bullet] Échouer explicitement en cas de donnée invalide; ne pas corriger silencieusement une sortie IA.
+[Normal] Scénarios de vérification.
+[List Number] Exécuter le scénario nominal associé à « Journalisation structurée » avec un catalogue cohérent.
+[List Number] Injecter une donnée invalide à la frontière la plus proche et vérifier le rejet sans état partiel.
+[List Number] Simuler une défaillance externe et vérifier la politique de fallback, de retry ou d’arrêt définie.
+[List Number] Rejouer le scénario pour vérifier l’idempotence et l’absence de doublon.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Lire les implémentations et tests existants avant toute modification.
+[List Bullet] Modifier le minimum de fichiers nécessaire.
+[List Bullet] Ne pas créer de valeur par défaut métier non spécifiée.
+[List Bullet] Ajouter les tests dans le même commit que le code.
+[Normal] Critères de sortie. PASS lorsque tous les scénarios associés sont automatisés, reproductibles, sans appel réseau et sans défaut P0/P1 ouvert.
+[Normal] 30. Métriques
+[Normal] Objectif normatif. Mesurer taux de fallback, validation, retry, timeout et latence.
+[Normal] Faits établis. Sans métriques, les dérives de qualité restent invisibles.
+[Normal] Hypothèses explicites. Les noms exacts des classes, méthodes et champs doivent être confirmés par inspection du dépôt. Toute divergence entre ce document et le code existant doit être consignée avant implémentation, sans inventer une nouvelle architecture.
+[Normal] Contrôles obligatoires.
+[List Bullet] Préparer un test positif, un test négatif et un test de frontière pour le comportement visé.
+[List Bullet] Vérifier les effets observables: valeur retournée, écriture en base, événement de log, métrique et appel externe.
+[List Bullet] Utiliser des doubles déterministes; interdire les appels réseau réels dans la suite standard.
+[List Bullet] Échouer explicitement en cas de donnée invalide; ne pas corriger silencieusement une sortie IA.
+[Normal] Scénarios de vérification.
+[List Number] Exécuter le scénario nominal associé à « Métriques » avec un catalogue cohérent.
+[List Number] Injecter une donnée invalide à la frontière la plus proche et vérifier le rejet sans état partiel.
+[List Number] Simuler une défaillance externe et vérifier la politique de fallback, de retry ou d’arrêt définie.
+[List Number] Rejouer le scénario pour vérifier l’idempotence et l’absence de doublon.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Lire les implémentations et tests existants avant toute modification.
+[List Bullet] Modifier le minimum de fichiers nécessaire.
+[List Bullet] Ne pas créer de valeur par défaut métier non spécifiée.
+[List Bullet] Ajouter les tests dans le même commit que le code.
+[Normal] Critères de sortie. PASS lorsque tous les scénarios associés sont automatisés, reproductibles, sans appel réseau et sans défaut P0/P1 ouvert.
+[Normal] 31. Sécurité des secrets
+[Normal] Objectif normatif. Garantir qu’aucune clé IA n’est codée, loguée ou stockée en base.
+[Normal] Faits établis. Les secrets doivent provenir du mécanisme de configuration existant.
+[Normal] Hypothèses explicites. Les noms exacts des classes, méthodes et champs doivent être confirmés par inspection du dépôt. Toute divergence entre ce document et le code existant doit être consignée avant implémentation, sans inventer une nouvelle architecture.
+[Normal] Contrôles obligatoires.
+[List Bullet] Préparer un test positif, un test négatif et un test de frontière pour le comportement visé.
+[List Bullet] Vérifier les effets observables: valeur retournée, écriture en base, événement de log, métrique et appel externe.
+[List Bullet] Utiliser des doubles déterministes; interdire les appels réseau réels dans la suite standard.
+[List Bullet] Échouer explicitement en cas de donnée invalide; ne pas corriger silencieusement une sortie IA.
+[Normal] Scénarios de vérification.
+[List Number] Exécuter le scénario nominal associé à « Sécurité des secrets » avec un catalogue cohérent.
+[List Number] Injecter une donnée invalide à la frontière la plus proche et vérifier le rejet sans état partiel.
+[List Number] Simuler une défaillance externe et vérifier la politique de fallback, de retry ou d’arrêt définie.
+[List Number] Rejouer le scénario pour vérifier l’idempotence et l’absence de doublon.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Lire les implémentations et tests existants avant toute modification.
+[List Bullet] Modifier le minimum de fichiers nécessaire.
+[List Bullet] Ne pas créer de valeur par défaut métier non spécifiée.
+[List Bullet] Ajouter les tests dans le même commit que le code.
+[Normal] Critères de sortie. PASS lorsque tous les scénarios associés sont automatisés, reproductibles, sans appel réseau et sans défaut P0/P1 ouvert.
+[Normal] 32. Prompt injection
+[Normal] Objectif normatif. Neutraliser les instructions adverses provenant des champs pédagogiques.
+[Normal] Faits établis. Toute donnée utilisateur incluse dans un prompt est non fiable.
+[Normal] Hypothèses explicites. Les noms exacts des classes, méthodes et champs doivent être confirmés par inspection du dépôt. Toute divergence entre ce document et le code existant doit être consignée avant implémentation, sans inventer une nouvelle architecture.
+[Normal] Contrôles obligatoires.
+[List Bullet] Préparer un test positif, un test négatif et un test de frontière pour le comportement visé.
+[List Bullet] Vérifier les effets observables: valeur retournée, écriture en base, événement de log, métrique et appel externe.
+[List Bullet] Utiliser des doubles déterministes; interdire les appels réseau réels dans la suite standard.
+[List Bullet] Échouer explicitement en cas de donnée invalide; ne pas corriger silencieusement une sortie IA.
+[Normal] Scénarios de vérification.
+[List Number] Exécuter le scénario nominal associé à « Prompt injection » avec un catalogue cohérent.
+[List Number] Injecter une donnée invalide à la frontière la plus proche et vérifier le rejet sans état partiel.
+[List Number] Simuler une défaillance externe et vérifier la politique de fallback, de retry ou d’arrêt définie.
+[List Number] Rejouer le scénario pour vérifier l’idempotence et l’absence de doublon.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Lire les implémentations et tests existants avant toute modification.
+[List Bullet] Modifier le minimum de fichiers nécessaire.
+[List Bullet] Ne pas créer de valeur par défaut métier non spécifiée.
+[List Bullet] Ajouter les tests dans le même commit que le code.
+[Normal] Critères de sortie. PASS lorsque tous les scénarios associés sont automatisés, reproductibles, sans appel réseau et sans défaut P0/P1 ouvert.
+[Normal] 33. Minimisation des données
+[Normal] Objectif normatif. Limiter les données élève envoyées au fournisseur.
+[Normal] Faits établis. La génération d’un exercice n’exige pas l’identité de l’élève.
+[Normal] Hypothèses explicites. Les noms exacts des classes, méthodes et champs doivent être confirmés par inspection du dépôt. Toute divergence entre ce document et le code existant doit être consignée avant implémentation, sans inventer une nouvelle architecture.
+[Normal] Contrôles obligatoires.
+[List Bullet] Préparer un test positif, un test négatif et un test de frontière pour le comportement visé.
+[List Bullet] Vérifier les effets observables: valeur retournée, écriture en base, événement de log, métrique et appel externe.
+[List Bullet] Utiliser des doubles déterministes; interdire les appels réseau réels dans la suite standard.
+[List Bullet] Échouer explicitement en cas de donnée invalide; ne pas corriger silencieusement une sortie IA.
+[Normal] Scénarios de vérification.
+[List Number] Exécuter le scénario nominal associé à « Minimisation des données » avec un catalogue cohérent.
+[List Number] Injecter une donnée invalide à la frontière la plus proche et vérifier le rejet sans état partiel.
+[List Number] Simuler une défaillance externe et vérifier la politique de fallback, de retry ou d’arrêt définie.
+[List Number] Rejouer le scénario pour vérifier l’idempotence et l’absence de doublon.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Lire les implémentations et tests existants avant toute modification.
+[List Bullet] Modifier le minimum de fichiers nécessaire.
+[List Bullet] Ne pas créer de valeur par défaut métier non spécifiée.
+[List Bullet] Ajouter les tests dans le même commit que le code.
+[Normal] Critères de sortie. PASS lorsque tous les scénarios associés sont automatisés, reproductibles, sans appel réseau et sans défaut P0/P1 ouvert.
+[Normal] 34. Contrôle d’accès
+[Normal] Objectif normatif. Vérifier que seuls les rôles autorisés déclenchent ou consultent les devoirs.
+[Normal] Faits établis. Le fallback ne doit pas contourner les contrôles existants.
+[Normal] Hypothèses explicites. Les noms exacts des classes, méthodes et champs doivent être confirmés par inspection du dépôt. Toute divergence entre ce document et le code existant doit être consignée avant implémentation, sans inventer une nouvelle architecture.
+[Normal] Contrôles obligatoires.
+[List Bullet] Préparer un test positif, un test négatif et un test de frontière pour le comportement visé.
+[List Bullet] Vérifier les effets observables: valeur retournée, écriture en base, événement de log, métrique et appel externe.
+[List Bullet] Utiliser des doubles déterministes; interdire les appels réseau réels dans la suite standard.
+[List Bullet] Échouer explicitement en cas de donnée invalide; ne pas corriger silencieusement une sortie IA.
+[Normal] Scénarios de vérification.
+[List Number] Exécuter le scénario nominal associé à « Contrôle d’accès » avec un catalogue cohérent.
+[List Number] Injecter une donnée invalide à la frontière la plus proche et vérifier le rejet sans état partiel.
+[List Number] Simuler une défaillance externe et vérifier la politique de fallback, de retry ou d’arrêt définie.
+[List Number] Rejouer le scénario pour vérifier l’idempotence et l’absence de doublon.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Lire les implémentations et tests existants avant toute modification.
+[List Bullet] Modifier le minimum de fichiers nécessaire.
+[List Bullet] Ne pas créer de valeur par défaut métier non spécifiée.
+[List Bullet] Ajouter les tests dans le même commit que le code.
+[Normal] Critères de sortie. PASS lorsque tous les scénarios associés sont automatisés, reproductibles, sans appel réseau et sans défaut P0/P1 ouvert.
+[Normal] 35. Gestion des erreurs
+[Normal] Objectif normatif. Définir des erreurs métier stables sans fuite d’implémentation.
+[Normal] Faits établis. Les exceptions fournisseur ne doivent pas être exposées brutes à l’UI.
+[Normal] Hypothèses explicites. Les noms exacts des classes, méthodes et champs doivent être confirmés par inspection du dépôt. Toute divergence entre ce document et le code existant doit être consignée avant implémentation, sans inventer une nouvelle architecture.
+[Normal] Contrôles obligatoires.
+[List Bullet] Préparer un test positif, un test négatif et un test de frontière pour le comportement visé.
+[List Bullet] Vérifier les effets observables: valeur retournée, écriture en base, événement de log, métrique et appel externe.
+[List Bullet] Utiliser des doubles déterministes; interdire les appels réseau réels dans la suite standard.
+[List Bullet] Échouer explicitement en cas de donnée invalide; ne pas corriger silencieusement une sortie IA.
+[Normal] Scénarios de vérification.
+[List Number] Exécuter le scénario nominal associé à « Gestion des erreurs » avec un catalogue cohérent.
+[List Number] Injecter une donnée invalide à la frontière la plus proche et vérifier le rejet sans état partiel.
+[List Number] Simuler une défaillance externe et vérifier la politique de fallback, de retry ou d’arrêt définie.
+[List Number] Rejouer le scénario pour vérifier l’idempotence et l’absence de doublon.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Lire les implémentations et tests existants avant toute modification.
+[List Bullet] Modifier le minimum de fichiers nécessaire.
+[List Bullet] Ne pas créer de valeur par défaut métier non spécifiée.
+[List Bullet] Ajouter les tests dans le même commit que le code.
+[Normal] Critères de sortie. PASS lorsque tous les scénarios associés sont automatisés, reproductibles, sans appel réseau et sans défaut P0/P1 ouvert.
+[Normal] 36. Compatibilité ascendante
+[Normal] Objectif normatif. Préserver les appels existants de HomeworkService.
+[Normal] Faits établis. B4 ne justifie pas une rupture de signature publique.
+[Normal] Hypothèses explicites. Les noms exacts des classes, méthodes et champs doivent être confirmés par inspection du dépôt. Toute divergence entre ce document et le code existant doit être consignée avant implémentation, sans inventer une nouvelle architecture.
+[Normal] Contrôles obligatoires.
+[List Bullet] Préparer un test positif, un test négatif et un test de frontière pour le comportement visé.
+[List Bullet] Vérifier les effets observables: valeur retournée, écriture en base, événement de log, métrique et appel externe.
+[List Bullet] Utiliser des doubles déterministes; interdire les appels réseau réels dans la suite standard.
+[List Bullet] Échouer explicitement en cas de donnée invalide; ne pas corriger silencieusement une sortie IA.
+[Normal] Scénarios de vérification.
+[List Number] Exécuter le scénario nominal associé à « Compatibilité ascendante » avec un catalogue cohérent.
+[List Number] Injecter une donnée invalide à la frontière la plus proche et vérifier le rejet sans état partiel.
+[List Number] Simuler une défaillance externe et vérifier la politique de fallback, de retry ou d’arrêt définie.
+[List Number] Rejouer le scénario pour vérifier l’idempotence et l’absence de doublon.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Lire les implémentations et tests existants avant toute modification.
+[List Bullet] Modifier le minimum de fichiers nécessaire.
+[List Bullet] Ne pas créer de valeur par défaut métier non spécifiée.
+[List Bullet] Ajouter les tests dans le même commit que le code.
+[Normal] Critères de sortie. PASS lorsque tous les scénarios associés sont automatisés, reproductibles, sans appel réseau et sans défaut P0/P1 ouvert.
+[Normal] 37. Non-régression catalogue
+[Normal] Objectif normatif. Comparer les résultats lorsque la couverture est suffisante.
+[Normal] Faits établis. Le comportement historique doit rester identique lorsque l’IA n’est pas requise.
+[Normal] Hypothèses explicites. Les noms exacts des classes, méthodes et champs doivent être confirmés par inspection du dépôt. Toute divergence entre ce document et le code existant doit être consignée avant implémentation, sans inventer une nouvelle architecture.
+[Normal] Contrôles obligatoires.
+[List Bullet] Préparer un test positif, un test négatif et un test de frontière pour le comportement visé.
+[List Bullet] Vérifier les effets observables: valeur retournée, écriture en base, événement de log, métrique et appel externe.
+[List Bullet] Utiliser des doubles déterministes; interdire les appels réseau réels dans la suite standard.
+[List Bullet] Échouer explicitement en cas de donnée invalide; ne pas corriger silencieusement une sortie IA.
+[Normal] Scénarios de vérification.
+[List Number] Exécuter le scénario nominal associé à « Non-régression catalogue » avec un catalogue cohérent.
+[List Number] Injecter une donnée invalide à la frontière la plus proche et vérifier le rejet sans état partiel.
+[List Number] Simuler une défaillance externe et vérifier la politique de fallback, de retry ou d’arrêt définie.
+[List Number] Rejouer le scénario pour vérifier l’idempotence et l’absence de doublon.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Lire les implémentations et tests existants avant toute modification.
+[List Bullet] Modifier le minimum de fichiers nécessaire.
+[List Bullet] Ne pas créer de valeur par défaut métier non spécifiée.
+[List Bullet] Ajouter les tests dans le même commit que le code.
+[Normal] Critères de sortie. PASS lorsque tous les scénarios associés sont automatisés, reproductibles, sans appel réseau et sans défaut P0/P1 ouvert.
+[Normal] 38. Non-régression UI
+[Normal] Objectif normatif. Vérifier que les vues consomment les objets retournés sans adaptation cachée.
+[Normal] Faits établis. Une modification DTO peut casser Streamlit sans erreur de compilation.
+[Normal] Hypothèses explicites. Les noms exacts des classes, méthodes et champs doivent être confirmés par inspection du dépôt. Toute divergence entre ce document et le code existant doit être consignée avant implémentation, sans inventer une nouvelle architecture.
+[Normal] Contrôles obligatoires.
+[List Bullet] Préparer un test positif, un test négatif et un test de frontière pour le comportement visé.
+[List Bullet] Vérifier les effets observables: valeur retournée, écriture en base, événement de log, métrique et appel externe.
+[List Bullet] Utiliser des doubles déterministes; interdire les appels réseau réels dans la suite standard.
+[List Bullet] Échouer explicitement en cas de donnée invalide; ne pas corriger silencieusement une sortie IA.
+[Normal] Scénarios de vérification.
+[List Number] Exécuter le scénario nominal associé à « Non-régression UI » avec un catalogue cohérent.
+[List Number] Injecter une donnée invalide à la frontière la plus proche et vérifier le rejet sans état partiel.
+[List Number] Simuler une défaillance externe et vérifier la politique de fallback, de retry ou d’arrêt définie.
+[List Number] Rejouer le scénario pour vérifier l’idempotence et l’absence de doublon.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Lire les implémentations et tests existants avant toute modification.
+[List Bullet] Modifier le minimum de fichiers nécessaire.
+[List Bullet] Ne pas créer de valeur par défaut métier non spécifiée.
+[List Bullet] Ajouter les tests dans le même commit que le code.
+[Normal] Critères de sortie. PASS lorsque tous les scénarios associés sont automatisés, reproductibles, sans appel réseau et sans défaut P0/P1 ouvert.
+[Normal] 39. Performance sans IA
+[Normal] Objectif normatif. Mesurer le chemin nominal catalogue uniquement.
+[Normal] Faits établis. B4 ne doit pas dégrader le chemin le plus fréquent.
+[Normal] Hypothèses explicites. Les noms exacts des classes, méthodes et champs doivent être confirmés par inspection du dépôt. Toute divergence entre ce document et le code existant doit être consignée avant implémentation, sans inventer une nouvelle architecture.
+[Normal] Contrôles obligatoires.
+[List Bullet] Préparer un test positif, un test négatif et un test de frontière pour le comportement visé.
+[List Bullet] Vérifier les effets observables: valeur retournée, écriture en base, événement de log, métrique et appel externe.
+[List Bullet] Utiliser des doubles déterministes; interdire les appels réseau réels dans la suite standard.
+[List Bullet] Échouer explicitement en cas de donnée invalide; ne pas corriger silencieusement une sortie IA.
+[Normal] Scénarios de vérification.
+[List Number] Exécuter le scénario nominal associé à « Performance sans IA » avec un catalogue cohérent.
+[List Number] Injecter une donnée invalide à la frontière la plus proche et vérifier le rejet sans état partiel.
+[List Number] Simuler une défaillance externe et vérifier la politique de fallback, de retry ou d’arrêt définie.
+[List Number] Rejouer le scénario pour vérifier l’idempotence et l’absence de doublon.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Lire les implémentations et tests existants avant toute modification.
+[List Bullet] Modifier le minimum de fichiers nécessaire.
+[List Bullet] Ne pas créer de valeur par défaut métier non spécifiée.
+[List Bullet] Ajouter les tests dans le même commit que le code.
+[Normal] Critères de sortie. PASS lorsque tous les scénarios associés sont automatisés, reproductibles, sans appel réseau et sans défaut P0/P1 ouvert.
+[Normal] 40. Performance avec IA
+[Normal] Objectif normatif. Mesurer temps total, part fournisseur et validation.
+[Normal] Faits établis. La latence externe doit être isolée de la latence interne.
+[Normal] Hypothèses explicites. Les noms exacts des classes, méthodes et champs doivent être confirmés par inspection du dépôt. Toute divergence entre ce document et le code existant doit être consignée avant implémentation, sans inventer une nouvelle architecture.
+[Normal] Contrôles obligatoires.
+[List Bullet] Préparer un test positif, un test négatif et un test de frontière pour le comportement visé.
+[List Bullet] Vérifier les effets observables: valeur retournée, écriture en base, événement de log, métrique et appel externe.
+[List Bullet] Utiliser des doubles déterministes; interdire les appels réseau réels dans la suite standard.
+[List Bullet] Échouer explicitement en cas de donnée invalide; ne pas corriger silencieusement une sortie IA.
+[Normal] Scénarios de vérification.
+[List Number] Exécuter le scénario nominal associé à « Performance avec IA » avec un catalogue cohérent.
+[List Number] Injecter une donnée invalide à la frontière la plus proche et vérifier le rejet sans état partiel.
+[List Number] Simuler une défaillance externe et vérifier la politique de fallback, de retry ou d’arrêt définie.
+[List Number] Rejouer le scénario pour vérifier l’idempotence et l’absence de doublon.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Lire les implémentations et tests existants avant toute modification.
+[List Bullet] Modifier le minimum de fichiers nécessaire.
+[List Bullet] Ne pas créer de valeur par défaut métier non spécifiée.
+[List Bullet] Ajouter les tests dans le même commit que le code.
+[Normal] Critères de sortie. PASS lorsque tous les scénarios associés sont automatisés, reproductibles, sans appel réseau et sans défaut P0/P1 ouvert.
+[Normal] 41. Charge concurrente
+[Normal] Objectif normatif. Vérifier la stabilité sous plusieurs demandes simultanées.
+[Normal] Faits établis. DuckDB et le client IA ont des limites de concurrence.
+[Normal] Hypothèses explicites. Les noms exacts des classes, méthodes et champs doivent être confirmés par inspection du dépôt. Toute divergence entre ce document et le code existant doit être consignée avant implémentation, sans inventer une nouvelle architecture.
+[Normal] Contrôles obligatoires.
+[List Bullet] Préparer un test positif, un test négatif et un test de frontière pour le comportement visé.
+[List Bullet] Vérifier les effets observables: valeur retournée, écriture en base, événement de log, métrique et appel externe.
+[List Bullet] Utiliser des doubles déterministes; interdire les appels réseau réels dans la suite standard.
+[List Bullet] Échouer explicitement en cas de donnée invalide; ne pas corriger silencieusement une sortie IA.
+[Normal] Scénarios de vérification.
+[List Number] Exécuter le scénario nominal associé à « Charge concurrente » avec un catalogue cohérent.
+[List Number] Injecter une donnée invalide à la frontière la plus proche et vérifier le rejet sans état partiel.
+[List Number] Simuler une défaillance externe et vérifier la politique de fallback, de retry ou d’arrêt définie.
+[List Number] Rejouer le scénario pour vérifier l’idempotence et l’absence de doublon.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Lire les implémentations et tests existants avant toute modification.
+[List Bullet] Modifier le minimum de fichiers nécessaire.
+[List Bullet] Ne pas créer de valeur par défaut métier non spécifiée.
+[List Bullet] Ajouter les tests dans le même commit que le code.
+[Normal] Critères de sortie. PASS lorsque tous les scénarios associés sont automatisés, reproductibles, sans appel réseau et sans défaut P0/P1 ouvert.
+[Normal] 42. Consommation mémoire
+[Normal] Objectif normatif. Détecter accumulation d’objets, réponses ou connexions.
+[Normal] Faits établis. Les tests longs doivent rester bornés.
+[Normal] Hypothèses explicites. Les noms exacts des classes, méthodes et champs doivent être confirmés par inspection du dépôt. Toute divergence entre ce document et le code existant doit être consignée avant implémentation, sans inventer une nouvelle architecture.
+[Normal] Contrôles obligatoires.
+[List Bullet] Préparer un test positif, un test négatif et un test de frontière pour le comportement visé.
+[List Bullet] Vérifier les effets observables: valeur retournée, écriture en base, événement de log, métrique et appel externe.
+[List Bullet] Utiliser des doubles déterministes; interdire les appels réseau réels dans la suite standard.
+[List Bullet] Échouer explicitement en cas de donnée invalide; ne pas corriger silencieusement une sortie IA.
+[Normal] Scénarios de vérification.
+[List Number] Exécuter le scénario nominal associé à « Consommation mémoire » avec un catalogue cohérent.
+[List Number] Injecter une donnée invalide à la frontière la plus proche et vérifier le rejet sans état partiel.
+[List Number] Simuler une défaillance externe et vérifier la politique de fallback, de retry ou d’arrêt définie.
+[List Number] Rejouer le scénario pour vérifier l’idempotence et l’absence de doublon.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Lire les implémentations et tests existants avant toute modification.
+[List Bullet] Modifier le minimum de fichiers nécessaire.
+[List Bullet] Ne pas créer de valeur par défaut métier non spécifiée.
+[List Bullet] Ajouter les tests dans le même commit que le code.
+[Normal] Critères de sortie. PASS lorsque tous les scénarios associés sont automatisés, reproductibles, sans appel réseau et sans défaut P0/P1 ouvert.
+[Normal] 43. Résilience fournisseur
+[Normal] Objectif normatif. Tester 429, 500, réponse vide, connexion coupée et latence extrême.
+[Normal] Faits établis. Chaque classe d’erreur doit avoir une politique explicite.
+[Normal] Hypothèses explicites. Les noms exacts des classes, méthodes et champs doivent être confirmés par inspection du dépôt. Toute divergence entre ce document et le code existant doit être consignée avant implémentation, sans inventer une nouvelle architecture.
+[Normal] Contrôles obligatoires.
+[List Bullet] Préparer un test positif, un test négatif et un test de frontière pour le comportement visé.
+[List Bullet] Vérifier les effets observables: valeur retournée, écriture en base, événement de log, métrique et appel externe.
+[List Bullet] Utiliser des doubles déterministes; interdire les appels réseau réels dans la suite standard.
+[List Bullet] Échouer explicitement en cas de donnée invalide; ne pas corriger silencieusement une sortie IA.
+[Normal] Scénarios de vérification.
+[List Number] Exécuter le scénario nominal associé à « Résilience fournisseur » avec un catalogue cohérent.
+[List Number] Injecter une donnée invalide à la frontière la plus proche et vérifier le rejet sans état partiel.
+[List Number] Simuler une défaillance externe et vérifier la politique de fallback, de retry ou d’arrêt définie.
+[List Number] Rejouer le scénario pour vérifier l’idempotence et l’absence de doublon.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Lire les implémentations et tests existants avant toute modification.
+[List Bullet] Modifier le minimum de fichiers nécessaire.
+[List Bullet] Ne pas créer de valeur par défaut métier non spécifiée.
+[List Bullet] Ajouter les tests dans le même commit que le code.
+[Normal] Critères de sortie. PASS lorsque tous les scénarios associés sont automatisés, reproductibles, sans appel réseau et sans défaut P0/P1 ouvert.
+[Normal] 44. Résilience base
+[Normal] Objectif normatif. Tester verrou, fichier absent, lecture seule et corruption simulée.
+[Normal] Faits établis. Les erreurs de persistance ne doivent pas être masquées par le fallback.
+[Normal] Hypothèses explicites. Les noms exacts des classes, méthodes et champs doivent être confirmés par inspection du dépôt. Toute divergence entre ce document et le code existant doit être consignée avant implémentation, sans inventer une nouvelle architecture.
+[Normal] Contrôles obligatoires.
+[List Bullet] Préparer un test positif, un test négatif et un test de frontière pour le comportement visé.
+[List Bullet] Vérifier les effets observables: valeur retournée, écriture en base, événement de log, métrique et appel externe.
+[List Bullet] Utiliser des doubles déterministes; interdire les appels réseau réels dans la suite standard.
+[List Bullet] Échouer explicitement en cas de donnée invalide; ne pas corriger silencieusement une sortie IA.
+[Normal] Scénarios de vérification.
+[List Number] Exécuter le scénario nominal associé à « Résilience base » avec un catalogue cohérent.
+[List Number] Injecter une donnée invalide à la frontière la plus proche et vérifier le rejet sans état partiel.
+[List Number] Simuler une défaillance externe et vérifier la politique de fallback, de retry ou d’arrêt définie.
+[List Number] Rejouer le scénario pour vérifier l’idempotence et l’absence de doublon.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Lire les implémentations et tests existants avant toute modification.
+[List Bullet] Modifier le minimum de fichiers nécessaire.
+[List Bullet] Ne pas créer de valeur par défaut métier non spécifiée.
+[List Bullet] Ajouter les tests dans le même commit que le code.
+[Normal] Critères de sortie. PASS lorsque tous les scénarios associés sont automatisés, reproductibles, sans appel réseau et sans défaut P0/P1 ouvert.
+[Normal] 45. Tests de chaos contrôlés
+[Normal] Objectif normatif. Injecter des pannes aux frontières, sans altérer la production.
+[Normal] Faits établis. Le chaos est réservé aux environnements isolés.
+[Normal] Hypothèses explicites. Les noms exacts des classes, méthodes et champs doivent être confirmés par inspection du dépôt. Toute divergence entre ce document et le code existant doit être consignée avant implémentation, sans inventer une nouvelle architecture.
+[Normal] Contrôles obligatoires.
+[List Bullet] Préparer un test positif, un test négatif et un test de frontière pour le comportement visé.
+[List Bullet] Vérifier les effets observables: valeur retournée, écriture en base, événement de log, métrique et appel externe.
+[List Bullet] Utiliser des doubles déterministes; interdire les appels réseau réels dans la suite standard.
+[List Bullet] Échouer explicitement en cas de donnée invalide; ne pas corriger silencieusement une sortie IA.
+[Normal] Scénarios de vérification.
+[List Number] Exécuter le scénario nominal associé à « Tests de chaos contrôlés » avec un catalogue cohérent.
+[List Number] Injecter une donnée invalide à la frontière la plus proche et vérifier le rejet sans état partiel.
+[List Number] Simuler une défaillance externe et vérifier la politique de fallback, de retry ou d’arrêt définie.
+[List Number] Rejouer le scénario pour vérifier l’idempotence et l’absence de doublon.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Lire les implémentations et tests existants avant toute modification.
+[List Bullet] Modifier le minimum de fichiers nécessaire.
+[List Bullet] Ne pas créer de valeur par défaut métier non spécifiée.
+[List Bullet] Ajouter les tests dans le même commit que le code.
+[Normal] Critères de sortie. PASS lorsque tous les scénarios associés sont automatisés, reproductibles, sans appel réseau et sans défaut P0/P1 ouvert.
+[Normal] 46. Exactitude mathématique
+[Normal] Objectif normatif. Vérifier automatiquement les exercices calculables.
+[Normal] Faits établis. Une réponse IA plausible peut être fausse.
+[Normal] Hypothèses explicites. Les noms exacts des classes, méthodes et champs doivent être confirmés par inspection du dépôt. Toute divergence entre ce document et le code existant doit être consignée avant implémentation, sans inventer une nouvelle architecture.
+[Normal] Contrôles obligatoires.
+[List Bullet] Préparer un test positif, un test négatif et un test de frontière pour le comportement visé.
+[List Bullet] Vérifier les effets observables: valeur retournée, écriture en base, événement de log, métrique et appel externe.
+[List Bullet] Utiliser des doubles déterministes; interdire les appels réseau réels dans la suite standard.
+[List Bullet] Échouer explicitement en cas de donnée invalide; ne pas corriger silencieusement une sortie IA.
+[Normal] Scénarios de vérification.
+[List Number] Exécuter le scénario nominal associé à « Exactitude mathématique » avec un catalogue cohérent.
+[List Number] Injecter une donnée invalide à la frontière la plus proche et vérifier le rejet sans état partiel.
+[List Number] Simuler une défaillance externe et vérifier la politique de fallback, de retry ou d’arrêt définie.
+[List Number] Rejouer le scénario pour vérifier l’idempotence et l’absence de doublon.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Lire les implémentations et tests existants avant toute modification.
+[List Bullet] Modifier le minimum de fichiers nécessaire.
+[List Bullet] Ne pas créer de valeur par défaut métier non spécifiée.
+[List Bullet] Ajouter les tests dans le même commit que le code.
+[Normal] Critères de sortie. PASS lorsque tous les scénarios associés sont automatisés, reproductibles, sans appel réseau et sans défaut P0/P1 ouvert.
+[Normal] 47. Exactitude linguistique
+[Normal] Objectif normatif. Vérifier langue, orthographe minimale et consignes non ambiguës.
+[Normal] Faits établis. La correction linguistique complète peut nécessiter une revue humaine.
+[Normal] Hypothèses explicites. Les noms exacts des classes, méthodes et champs doivent être confirmés par inspection du dépôt. Toute divergence entre ce document et le code existant doit être consignée avant implémentation, sans inventer une nouvelle architecture.
+[Normal] Contrôles obligatoires.
+[List Bullet] Préparer un test positif, un test négatif et un test de frontière pour le comportement visé.
+[List Bullet] Vérifier les effets observables: valeur retournée, écriture en base, événement de log, métrique et appel externe.
+[List Bullet] Utiliser des doubles déterministes; interdire les appels réseau réels dans la suite standard.
+[List Bullet] Échouer explicitement en cas de donnée invalide; ne pas corriger silencieusement une sortie IA.
+[Normal] Scénarios de vérification.
+[List Number] Exécuter le scénario nominal associé à « Exactitude linguistique » avec un catalogue cohérent.
+[List Number] Injecter une donnée invalide à la frontière la plus proche et vérifier le rejet sans état partiel.
+[List Number] Simuler une défaillance externe et vérifier la politique de fallback, de retry ou d’arrêt définie.
+[List Number] Rejouer le scénario pour vérifier l’idempotence et l’absence de doublon.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Lire les implémentations et tests existants avant toute modification.
+[List Bullet] Modifier le minimum de fichiers nécessaire.
+[List Bullet] Ne pas créer de valeur par défaut métier non spécifiée.
+[List Bullet] Ajouter les tests dans le même commit que le code.
+[Normal] Critères de sortie. PASS lorsque tous les scénarios associés sont automatisés, reproductibles, sans appel réseau et sans défaut P0/P1 ouvert.
+[Normal] 48. Exactitude pédagogique
+[Normal] Objectif normatif. Vérifier conformité au niveau et au programme.
+[Normal] Faits établis. La conformité sémantique ne peut pas être entièrement prouvée par schéma.
+[Normal] Hypothèses explicites. Les noms exacts des classes, méthodes et champs doivent être confirmés par inspection du dépôt. Toute divergence entre ce document et le code existant doit être consignée avant implémentation, sans inventer une nouvelle architecture.
+[Normal] Contrôles obligatoires.
+[List Bullet] Préparer un test positif, un test négatif et un test de frontière pour le comportement visé.
+[List Bullet] Vérifier les effets observables: valeur retournée, écriture en base, événement de log, métrique et appel externe.
+[List Bullet] Utiliser des doubles déterministes; interdire les appels réseau réels dans la suite standard.
+[List Bullet] Échouer explicitement en cas de donnée invalide; ne pas corriger silencieusement une sortie IA.
+[Normal] Scénarios de vérification.
+[List Number] Exécuter le scénario nominal associé à « Exactitude pédagogique » avec un catalogue cohérent.
+[List Number] Injecter une donnée invalide à la frontière la plus proche et vérifier le rejet sans état partiel.
+[List Number] Simuler une défaillance externe et vérifier la politique de fallback, de retry ou d’arrêt définie.
+[List Number] Rejouer le scénario pour vérifier l’idempotence et l’absence de doublon.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Lire les implémentations et tests existants avant toute modification.
+[List Bullet] Modifier le minimum de fichiers nécessaire.
+[List Bullet] Ne pas créer de valeur par défaut métier non spécifiée.
+[List Bullet] Ajouter les tests dans le même commit que le code.
+[Normal] Critères de sortie. PASS lorsque tous les scénarios associés sont automatisés, reproductibles, sans appel réseau et sans défaut P0/P1 ouvert.
+[Normal] 49. Types d’exercices
+[Normal] Objectif normatif. Tester QCM, réponse courte, problème, vrai/faux et contenu structuré supporté.
+[Normal] Faits établis. Seuls les types réellement supportés par le domaine sont autorisés.
+[Normal] Hypothèses explicites. Les noms exacts des classes, méthodes et champs doivent être confirmés par inspection du dépôt. Toute divergence entre ce document et le code existant doit être consignée avant implémentation, sans inventer une nouvelle architecture.
+[Normal] Contrôles obligatoires.
+[List Bullet] Préparer un test positif, un test négatif et un test de frontière pour le comportement visé.
+[List Bullet] Vérifier les effets observables: valeur retournée, écriture en base, événement de log, métrique et appel externe.
+[List Bullet] Utiliser des doubles déterministes; interdire les appels réseau réels dans la suite standard.
+[List Bullet] Échouer explicitement en cas de donnée invalide; ne pas corriger silencieusement une sortie IA.
+[Normal] Scénarios de vérification.
+[List Number] Exécuter le scénario nominal associé à « Types d’exercices » avec un catalogue cohérent.
+[List Number] Injecter une donnée invalide à la frontière la plus proche et vérifier le rejet sans état partiel.
+[List Number] Simuler une défaillance externe et vérifier la politique de fallback, de retry ou d’arrêt définie.
+[List Number] Rejouer le scénario pour vérifier l’idempotence et l’absence de doublon.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Lire les implémentations et tests existants avant toute modification.
+[List Bullet] Modifier le minimum de fichiers nécessaire.
+[List Bullet] Ne pas créer de valeur par défaut métier non spécifiée.
+[List Bullet] Ajouter les tests dans le même commit que le code.
+[Normal] Critères de sortie. PASS lorsque tous les scénarios associés sont automatisés, reproductibles, sans appel réseau et sans défaut P0/P1 ouvert.
+[Normal] 50. Cas limites de quantité
+[Normal] Objectif normatif. Tester 0, 1, maximum autorisé et valeur excessive.
+[Normal] Faits établis. Les limites doivent être définies dans le contrat existant.
+[Normal] Hypothèses explicites. Les noms exacts des classes, méthodes et champs doivent être confirmés par inspection du dépôt. Toute divergence entre ce document et le code existant doit être consignée avant implémentation, sans inventer une nouvelle architecture.
+[Normal] Contrôles obligatoires.
+[List Bullet] Préparer un test positif, un test négatif et un test de frontière pour le comportement visé.
+[List Bullet] Vérifier les effets observables: valeur retournée, écriture en base, événement de log, métrique et appel externe.
+[List Bullet] Utiliser des doubles déterministes; interdire les appels réseau réels dans la suite standard.
+[List Bullet] Échouer explicitement en cas de donnée invalide; ne pas corriger silencieusement une sortie IA.
+[Normal] Scénarios de vérification.
+[List Number] Exécuter le scénario nominal associé à « Cas limites de quantité » avec un catalogue cohérent.
+[List Number] Injecter une donnée invalide à la frontière la plus proche et vérifier le rejet sans état partiel.
+[List Number] Simuler une défaillance externe et vérifier la politique de fallback, de retry ou d’arrêt définie.
+[List Number] Rejouer le scénario pour vérifier l’idempotence et l’absence de doublon.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Lire les implémentations et tests existants avant toute modification.
+[List Bullet] Modifier le minimum de fichiers nécessaire.
+[List Bullet] Ne pas créer de valeur par défaut métier non spécifiée.
+[List Bullet] Ajouter les tests dans le même commit que le code.
+[Normal] Critères de sortie. PASS lorsque tous les scénarios associés sont automatisés, reproductibles, sans appel réseau et sans défaut P0/P1 ouvert.
+[Normal] 51. Cas limites de difficulté
+[Normal] Objectif normatif. Tester bornes et valeurs inconnues.
+[Normal] Faits établis. Aucune difficulté implicite ne doit être inventée.
+[Normal] Hypothèses explicites. Les noms exacts des classes, méthodes et champs doivent être confirmés par inspection du dépôt. Toute divergence entre ce document et le code existant doit être consignée avant implémentation, sans inventer une nouvelle architecture.
+[Normal] Contrôles obligatoires.
+[List Bullet] Préparer un test positif, un test négatif et un test de frontière pour le comportement visé.
+[List Bullet] Vérifier les effets observables: valeur retournée, écriture en base, événement de log, métrique et appel externe.
+[List Bullet] Utiliser des doubles déterministes; interdire les appels réseau réels dans la suite standard.
+[List Bullet] Échouer explicitement en cas de donnée invalide; ne pas corriger silencieusement une sortie IA.
+[Normal] Scénarios de vérification.
+[List Number] Exécuter le scénario nominal associé à « Cas limites de difficulté » avec un catalogue cohérent.
+[List Number] Injecter une donnée invalide à la frontière la plus proche et vérifier le rejet sans état partiel.
+[List Number] Simuler une défaillance externe et vérifier la politique de fallback, de retry ou d’arrêt définie.
+[List Number] Rejouer le scénario pour vérifier l’idempotence et l’absence de doublon.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Lire les implémentations et tests existants avant toute modification.
+[List Bullet] Modifier le minimum de fichiers nécessaire.
+[List Bullet] Ne pas créer de valeur par défaut métier non spécifiée.
+[List Bullet] Ajouter les tests dans le même commit que le code.
+[Normal] Critères de sortie. PASS lorsque tous les scénarios associés sont automatisés, reproductibles, sans appel réseau et sans défaut P0/P1 ouvert.
+[Normal] 52. Cas limites de compétence
+[Normal] Objectif normatif. Tester compétence absente, archivée ou incompatible.
+[Normal] Faits établis. La fabrique ne doit pas contourner le référentiel.
+[Normal] Hypothèses explicites. Les noms exacts des classes, méthodes et champs doivent être confirmés par inspection du dépôt. Toute divergence entre ce document et le code existant doit être consignée avant implémentation, sans inventer une nouvelle architecture.
+[Normal] Contrôles obligatoires.
+[List Bullet] Préparer un test positif, un test négatif et un test de frontière pour le comportement visé.
+[List Bullet] Vérifier les effets observables: valeur retournée, écriture en base, événement de log, métrique et appel externe.
+[List Bullet] Utiliser des doubles déterministes; interdire les appels réseau réels dans la suite standard.
+[List Bullet] Échouer explicitement en cas de donnée invalide; ne pas corriger silencieusement une sortie IA.
+[Normal] Scénarios de vérification.
+[List Number] Exécuter le scénario nominal associé à « Cas limites de compétence » avec un catalogue cohérent.
+[List Number] Injecter une donnée invalide à la frontière la plus proche et vérifier le rejet sans état partiel.
+[List Number] Simuler une défaillance externe et vérifier la politique de fallback, de retry ou d’arrêt définie.
+[List Number] Rejouer le scénario pour vérifier l’idempotence et l’absence de doublon.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Lire les implémentations et tests existants avant toute modification.
+[List Bullet] Modifier le minimum de fichiers nécessaire.
+[List Bullet] Ne pas créer de valeur par défaut métier non spécifiée.
+[List Bullet] Ajouter les tests dans le même commit que le code.
+[Normal] Critères de sortie. PASS lorsque tous les scénarios associés sont automatisés, reproductibles, sans appel réseau et sans défaut P0/P1 ouvert.
+[Normal] 53. Cas limites de chapitre
+[Normal] Objectif normatif. Tester chapitre inexistant, vide, partiel et complet.
+[Normal] Faits établis. Les identifiants de chapitre doivent être résolus avant appel IA.
+[Normal] Hypothèses explicites. Les noms exacts des classes, méthodes et champs doivent être confirmés par inspection du dépôt. Toute divergence entre ce document et le code existant doit être consignée avant implémentation, sans inventer une nouvelle architecture.
+[Normal] Contrôles obligatoires.
+[List Bullet] Préparer un test positif, un test négatif et un test de frontière pour le comportement visé.
+[List Bullet] Vérifier les effets observables: valeur retournée, écriture en base, événement de log, métrique et appel externe.
+[List Bullet] Utiliser des doubles déterministes; interdire les appels réseau réels dans la suite standard.
+[List Bullet] Échouer explicitement en cas de donnée invalide; ne pas corriger silencieusement une sortie IA.
+[Normal] Scénarios de vérification.
+[List Number] Exécuter le scénario nominal associé à « Cas limites de chapitre » avec un catalogue cohérent.
+[List Number] Injecter une donnée invalide à la frontière la plus proche et vérifier le rejet sans état partiel.
+[List Number] Simuler une défaillance externe et vérifier la politique de fallback, de retry ou d’arrêt définie.
+[List Number] Rejouer le scénario pour vérifier l’idempotence et l’absence de doublon.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Lire les implémentations et tests existants avant toute modification.
+[List Bullet] Modifier le minimum de fichiers nécessaire.
+[List Bullet] Ne pas créer de valeur par défaut métier non spécifiée.
+[List Bullet] Ajouter les tests dans le même commit que le code.
+[Normal] Critères de sortie. PASS lorsque tous les scénarios associés sont automatisés, reproductibles, sans appel réseau et sans défaut P0/P1 ouvert.
+[Normal] 54. Cas limites d’historique
+[Normal] Objectif normatif. Tester élève sans historique et historique volumineux.
+[Normal] Faits établis. B4 ne doit pas devenir un moteur adaptatif.
+[Normal] Hypothèses explicites. Les noms exacts des classes, méthodes et champs doivent être confirmés par inspection du dépôt. Toute divergence entre ce document et le code existant doit être consignée avant implémentation, sans inventer une nouvelle architecture.
+[Normal] Contrôles obligatoires.
+[List Bullet] Préparer un test positif, un test négatif et un test de frontière pour le comportement visé.
+[List Bullet] Vérifier les effets observables: valeur retournée, écriture en base, événement de log, métrique et appel externe.
+[List Bullet] Utiliser des doubles déterministes; interdire les appels réseau réels dans la suite standard.
+[List Bullet] Échouer explicitement en cas de donnée invalide; ne pas corriger silencieusement une sortie IA.
+[Normal] Scénarios de vérification.
+[List Number] Exécuter le scénario nominal associé à « Cas limites d’historique » avec un catalogue cohérent.
+[List Number] Injecter une donnée invalide à la frontière la plus proche et vérifier le rejet sans état partiel.
+[List Number] Simuler une défaillance externe et vérifier la politique de fallback, de retry ou d’arrêt définie.
+[List Number] Rejouer le scénario pour vérifier l’idempotence et l’absence de doublon.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Lire les implémentations et tests existants avant toute modification.
+[List Bullet] Modifier le minimum de fichiers nécessaire.
+[List Bullet] Ne pas créer de valeur par défaut métier non spécifiée.
+[List Bullet] Ajouter les tests dans le même commit que le code.
+[Normal] Critères de sortie. PASS lorsque tous les scénarios associés sont automatisés, reproductibles, sans appel réseau et sans défaut P0/P1 ouvert.
+[Normal] 55. Déterminisme des tests
+[Normal] Objectif normatif. Fixer graines, horloge et mocks.
+[Normal] Faits établis. Les tests ne doivent jamais appeler un fournisseur réel par défaut.
+[Normal] Hypothèses explicites. Les noms exacts des classes, méthodes et champs doivent être confirmés par inspection du dépôt. Toute divergence entre ce document et le code existant doit être consignée avant implémentation, sans inventer une nouvelle architecture.
+[Normal] Contrôles obligatoires.
+[List Bullet] Préparer un test positif, un test négatif et un test de frontière pour le comportement visé.
+[List Bullet] Vérifier les effets observables: valeur retournée, écriture en base, événement de log, métrique et appel externe.
+[List Bullet] Utiliser des doubles déterministes; interdire les appels réseau réels dans la suite standard.
+[List Bullet] Échouer explicitement en cas de donnée invalide; ne pas corriger silencieusement une sortie IA.
+[Normal] Scénarios de vérification.
+[List Number] Exécuter le scénario nominal associé à « Déterminisme des tests » avec un catalogue cohérent.
+[List Number] Injecter une donnée invalide à la frontière la plus proche et vérifier le rejet sans état partiel.
+[List Number] Simuler une défaillance externe et vérifier la politique de fallback, de retry ou d’arrêt définie.
+[List Number] Rejouer le scénario pour vérifier l’idempotence et l’absence de doublon.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Lire les implémentations et tests existants avant toute modification.
+[List Bullet] Modifier le minimum de fichiers nécessaire.
+[List Bullet] Ne pas créer de valeur par défaut métier non spécifiée.
+[List Bullet] Ajouter les tests dans le même commit que le code.
+[Normal] Critères de sortie. PASS lorsque tous les scénarios associés sont automatisés, reproductibles, sans appel réseau et sans défaut P0/P1 ouvert.
+[Normal] 56. Mocks et doubles
+[Normal] Objectif normatif. Définir frontières à simuler et comportements autorisés.
+[Normal] Faits établis. Un mock trop large peut masquer les erreurs d’intégration.
+[Normal] Hypothèses explicites. Les noms exacts des classes, méthodes et champs doivent être confirmés par inspection du dépôt. Toute divergence entre ce document et le code existant doit être consignée avant implémentation, sans inventer une nouvelle architecture.
+[Normal] Contrôles obligatoires.
+[List Bullet] Préparer un test positif, un test négatif et un test de frontière pour le comportement visé.
+[List Bullet] Vérifier les effets observables: valeur retournée, écriture en base, événement de log, métrique et appel externe.
+[List Bullet] Utiliser des doubles déterministes; interdire les appels réseau réels dans la suite standard.
+[List Bullet] Échouer explicitement en cas de donnée invalide; ne pas corriger silencieusement une sortie IA.
+[Normal] Scénarios de vérification.
+[List Number] Exécuter le scénario nominal associé à « Mocks et doubles » avec un catalogue cohérent.
+[List Number] Injecter une donnée invalide à la frontière la plus proche et vérifier le rejet sans état partiel.
+[List Number] Simuler une défaillance externe et vérifier la politique de fallback, de retry ou d’arrêt définie.
+[List Number] Rejouer le scénario pour vérifier l’idempotence et l’absence de doublon.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Lire les implémentations et tests existants avant toute modification.
+[List Bullet] Modifier le minimum de fichiers nécessaire.
+[List Bullet] Ne pas créer de valeur par défaut métier non spécifiée.
+[List Bullet] Ajouter les tests dans le même commit que le code.
+[Normal] Critères de sortie. PASS lorsque tous les scénarios associés sont automatisés, reproductibles, sans appel réseau et sans défaut P0/P1 ouvert.
+[Normal] 57. Tests contractuels fournisseur
+[Normal] Objectif normatif. Vérifier la compatibilité du client IA avec des réponses capturées.
+[Normal] Faits établis. Les tests contractuels ne remplacent pas la validation de production.
+[Normal] Hypothèses explicites. Les noms exacts des classes, méthodes et champs doivent être confirmés par inspection du dépôt. Toute divergence entre ce document et le code existant doit être consignée avant implémentation, sans inventer une nouvelle architecture.
+[Normal] Contrôles obligatoires.
+[List Bullet] Préparer un test positif, un test négatif et un test de frontière pour le comportement visé.
+[List Bullet] Vérifier les effets observables: valeur retournée, écriture en base, événement de log, métrique et appel externe.
+[List Bullet] Utiliser des doubles déterministes; interdire les appels réseau réels dans la suite standard.
+[List Bullet] Échouer explicitement en cas de donnée invalide; ne pas corriger silencieusement une sortie IA.
+[Normal] Scénarios de vérification.
+[List Number] Exécuter le scénario nominal associé à « Tests contractuels fournisseur » avec un catalogue cohérent.
+[List Number] Injecter une donnée invalide à la frontière la plus proche et vérifier le rejet sans état partiel.
+[List Number] Simuler une défaillance externe et vérifier la politique de fallback, de retry ou d’arrêt définie.
+[List Number] Rejouer le scénario pour vérifier l’idempotence et l’absence de doublon.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Lire les implémentations et tests existants avant toute modification.
+[List Bullet] Modifier le minimum de fichiers nécessaire.
+[List Bullet] Ne pas créer de valeur par défaut métier non spécifiée.
+[List Bullet] Ajouter les tests dans le même commit que le code.
+[Normal] Critères de sortie. PASS lorsque tous les scénarios associés sont automatisés, reproductibles, sans appel réseau et sans défaut P0/P1 ouvert.
+[Normal] 58. Tests end-to-end
+[Normal] Objectif normatif. Valider le flux UI-service-base avec fournisseur simulé.
+[Normal] Faits établis. L’E2E doit couvrir au moins un scénario complet et un scénario dégradé.
+[Normal] Hypothèses explicites. Les noms exacts des classes, méthodes et champs doivent être confirmés par inspection du dépôt. Toute divergence entre ce document et le code existant doit être consignée avant implémentation, sans inventer une nouvelle architecture.
+[Normal] Contrôles obligatoires.
+[List Bullet] Préparer un test positif, un test négatif et un test de frontière pour le comportement visé.
+[List Bullet] Vérifier les effets observables: valeur retournée, écriture en base, événement de log, métrique et appel externe.
+[List Bullet] Utiliser des doubles déterministes; interdire les appels réseau réels dans la suite standard.
+[List Bullet] Échouer explicitement en cas de donnée invalide; ne pas corriger silencieusement une sortie IA.
+[Normal] Scénarios de vérification.
+[List Number] Exécuter le scénario nominal associé à « Tests end-to-end » avec un catalogue cohérent.
+[List Number] Injecter une donnée invalide à la frontière la plus proche et vérifier le rejet sans état partiel.
+[List Number] Simuler une défaillance externe et vérifier la politique de fallback, de retry ou d’arrêt définie.
+[List Number] Rejouer le scénario pour vérifier l’idempotence et l’absence de doublon.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Lire les implémentations et tests existants avant toute modification.
+[List Bullet] Modifier le minimum de fichiers nécessaire.
+[List Bullet] Ne pas créer de valeur par défaut métier non spécifiée.
+[List Bullet] Ajouter les tests dans le même commit que le code.
+[Normal] Critères de sortie. PASS lorsque tous les scénarios associés sont automatisés, reproductibles, sans appel réseau et sans défaut P0/P1 ouvert.
+[Normal] 59. Acceptation métier
+[Normal] Objectif normatif. Faire valider les scénarios par un référent pédagogique.
+[Normal] Faits établis. L’équipe technique ne peut pas certifier seule la pertinence pédagogique.
+[Normal] Hypothèses explicites. Les noms exacts des classes, méthodes et champs doivent être confirmés par inspection du dépôt. Toute divergence entre ce document et le code existant doit être consignée avant implémentation, sans inventer une nouvelle architecture.
+[Normal] Contrôles obligatoires.
+[List Bullet] Préparer un test positif, un test négatif et un test de frontière pour le comportement visé.
+[List Bullet] Vérifier les effets observables: valeur retournée, écriture en base, événement de log, métrique et appel externe.
+[List Bullet] Utiliser des doubles déterministes; interdire les appels réseau réels dans la suite standard.
+[List Bullet] Échouer explicitement en cas de donnée invalide; ne pas corriger silencieusement une sortie IA.
+[Normal] Scénarios de vérification.
+[List Number] Exécuter le scénario nominal associé à « Acceptation métier » avec un catalogue cohérent.
+[List Number] Injecter une donnée invalide à la frontière la plus proche et vérifier le rejet sans état partiel.
+[List Number] Simuler une défaillance externe et vérifier la politique de fallback, de retry ou d’arrêt définie.
+[List Number] Rejouer le scénario pour vérifier l’idempotence et l’absence de doublon.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Lire les implémentations et tests existants avant toute modification.
+[List Bullet] Modifier le minimum de fichiers nécessaire.
+[List Bullet] Ne pas créer de valeur par défaut métier non spécifiée.
+[List Bullet] Ajouter les tests dans le même commit que le code.
+[Normal] Critères de sortie. PASS lorsque tous les scénarios associés sont automatisés, reproductibles, sans appel réseau et sans défaut P0/P1 ouvert.
+[Normal] 60. Analyse statique
+[Normal] Objectif normatif. Exiger Ruff, Mypy et vérifications de sécurité configurées.
+[Normal] Faits établis. Les règles existantes du dépôt priment sur toute nouvelle configuration.
+[Normal] Hypothèses explicites. Les noms exacts des classes, méthodes et champs doivent être confirmés par inspection du dépôt. Toute divergence entre ce document et le code existant doit être consignée avant implémentation, sans inventer une nouvelle architecture.
+[Normal] Contrôles obligatoires.
+[List Bullet] Préparer un test positif, un test négatif et un test de frontière pour le comportement visé.
+[List Bullet] Vérifier les effets observables: valeur retournée, écriture en base, événement de log, métrique et appel externe.
+[List Bullet] Utiliser des doubles déterministes; interdire les appels réseau réels dans la suite standard.
+[List Bullet] Échouer explicitement en cas de donnée invalide; ne pas corriger silencieusement une sortie IA.
+[Normal] Scénarios de vérification.
+[List Number] Exécuter le scénario nominal associé à « Analyse statique » avec un catalogue cohérent.
+[List Number] Injecter une donnée invalide à la frontière la plus proche et vérifier le rejet sans état partiel.
+[List Number] Simuler une défaillance externe et vérifier la politique de fallback, de retry ou d’arrêt définie.
+[List Number] Rejouer le scénario pour vérifier l’idempotence et l’absence de doublon.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Lire les implémentations et tests existants avant toute modification.
+[List Bullet] Modifier le minimum de fichiers nécessaire.
+[List Bullet] Ne pas créer de valeur par défaut métier non spécifiée.
+[List Bullet] Ajouter les tests dans le même commit que le code.
+[Normal] Critères de sortie. PASS lorsque tous les scénarios associés sont automatisés, reproductibles, sans appel réseau et sans défaut P0/P1 ouvert.
+[Normal] 61. Couverture de code
+[Normal] Objectif normatif. Mesurer branches critiques plutôt qu’un chiffre global seul.
+[Normal] Faits établis. Une couverture élevée ne prouve pas la qualité des assertions.
+[Normal] Hypothèses explicites. Les noms exacts des classes, méthodes et champs doivent être confirmés par inspection du dépôt. Toute divergence entre ce document et le code existant doit être consignée avant implémentation, sans inventer une nouvelle architecture.
+[Normal] Contrôles obligatoires.
+[List Bullet] Préparer un test positif, un test négatif et un test de frontière pour le comportement visé.
+[List Bullet] Vérifier les effets observables: valeur retournée, écriture en base, événement de log, métrique et appel externe.
+[List Bullet] Utiliser des doubles déterministes; interdire les appels réseau réels dans la suite standard.
+[List Bullet] Échouer explicitement en cas de donnée invalide; ne pas corriger silencieusement une sortie IA.
+[Normal] Scénarios de vérification.
+[List Number] Exécuter le scénario nominal associé à « Couverture de code » avec un catalogue cohérent.
+[List Number] Injecter une donnée invalide à la frontière la plus proche et vérifier le rejet sans état partiel.
+[List Number] Simuler une défaillance externe et vérifier la politique de fallback, de retry ou d’arrêt définie.
+[List Number] Rejouer le scénario pour vérifier l’idempotence et l’absence de doublon.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Lire les implémentations et tests existants avant toute modification.
+[List Bullet] Modifier le minimum de fichiers nécessaire.
+[List Bullet] Ne pas créer de valeur par défaut métier non spécifiée.
+[List Bullet] Ajouter les tests dans le même commit que le code.
+[Normal] Critères de sortie. PASS lorsque tous les scénarios associés sont automatisés, reproductibles, sans appel réseau et sans défaut P0/P1 ouvert.
+[Normal] 62. Mutation testing ciblé
+[Normal] Objectif normatif. Vérifier que les tests détectent les inversions de conditions critiques.
+[Normal] Faits établis. Le mutation testing peut être limité aux modules B4 pour contrôler le coût.
+[Normal] Hypothèses explicites. Les noms exacts des classes, méthodes et champs doivent être confirmés par inspection du dépôt. Toute divergence entre ce document et le code existant doit être consignée avant implémentation, sans inventer une nouvelle architecture.
+[Normal] Contrôles obligatoires.
+[List Bullet] Préparer un test positif, un test négatif et un test de frontière pour le comportement visé.
+[List Bullet] Vérifier les effets observables: valeur retournée, écriture en base, événement de log, métrique et appel externe.
+[List Bullet] Utiliser des doubles déterministes; interdire les appels réseau réels dans la suite standard.
+[List Bullet] Échouer explicitement en cas de donnée invalide; ne pas corriger silencieusement une sortie IA.
+[Normal] Scénarios de vérification.
+[List Number] Exécuter le scénario nominal associé à « Mutation testing ciblé » avec un catalogue cohérent.
+[List Number] Injecter une donnée invalide à la frontière la plus proche et vérifier le rejet sans état partiel.
+[List Number] Simuler une défaillance externe et vérifier la politique de fallback, de retry ou d’arrêt définie.
+[List Number] Rejouer le scénario pour vérifier l’idempotence et l’absence de doublon.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Lire les implémentations et tests existants avant toute modification.
+[List Bullet] Modifier le minimum de fichiers nécessaire.
+[List Bullet] Ne pas créer de valeur par défaut métier non spécifiée.
+[List Bullet] Ajouter les tests dans le même commit que le code.
+[Normal] Critères de sortie. PASS lorsque tous les scénarios associés sont automatisés, reproductibles, sans appel réseau et sans défaut P0/P1 ouvert.
+[Normal] 63. Revue de code
+[Normal] Objectif normatif. Définir une checklist spécifique aux erreurs typiques des moteurs IA.
+[Normal] Faits établis. Le code généré doit être revu comme du code tiers non fiable.
+[Normal] Hypothèses explicites. Les noms exacts des classes, méthodes et champs doivent être confirmés par inspection du dépôt. Toute divergence entre ce document et le code existant doit être consignée avant implémentation, sans inventer une nouvelle architecture.
+[Normal] Contrôles obligatoires.
+[List Bullet] Préparer un test positif, un test négatif et un test de frontière pour le comportement visé.
+[List Bullet] Vérifier les effets observables: valeur retournée, écriture en base, événement de log, métrique et appel externe.
+[List Bullet] Utiliser des doubles déterministes; interdire les appels réseau réels dans la suite standard.
+[List Bullet] Échouer explicitement en cas de donnée invalide; ne pas corriger silencieusement une sortie IA.
+[Normal] Scénarios de vérification.
+[List Number] Exécuter le scénario nominal associé à « Revue de code » avec un catalogue cohérent.
+[List Number] Injecter une donnée invalide à la frontière la plus proche et vérifier le rejet sans état partiel.
+[List Number] Simuler une défaillance externe et vérifier la politique de fallback, de retry ou d’arrêt définie.
+[List Number] Rejouer le scénario pour vérifier l’idempotence et l’absence de doublon.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Lire les implémentations et tests existants avant toute modification.
+[List Bullet] Modifier le minimum de fichiers nécessaire.
+[List Bullet] Ne pas créer de valeur par défaut métier non spécifiée.
+[List Bullet] Ajouter les tests dans le même commit que le code.
+[Normal] Critères de sortie. PASS lorsque tous les scénarios associés sont automatisés, reproductibles, sans appel réseau et sans défaut P0/P1 ouvert.
+[Normal] 64. Qualification release
+[Normal] Objectif normatif. Consolider preuves, risques, versions et décision Go/No-Go.
+[Normal] Faits établis. La décision doit être indépendante du nombre de tests exécutés.
+[Normal] Hypothèses explicites. Les noms exacts des classes, méthodes et champs doivent être confirmés par inspection du dépôt. Toute divergence entre ce document et le code existant doit être consignée avant implémentation, sans inventer une nouvelle architecture.
+[Normal] Contrôles obligatoires.
+[List Bullet] Préparer un test positif, un test négatif et un test de frontière pour le comportement visé.
+[List Bullet] Vérifier les effets observables: valeur retournée, écriture en base, événement de log, métrique et appel externe.
+[List Bullet] Utiliser des doubles déterministes; interdire les appels réseau réels dans la suite standard.
+[List Bullet] Échouer explicitement en cas de donnée invalide; ne pas corriger silencieusement une sortie IA.
+[Normal] Scénarios de vérification.
+[List Number] Exécuter le scénario nominal associé à « Qualification release » avec un catalogue cohérent.
+[List Number] Injecter une donnée invalide à la frontière la plus proche et vérifier le rejet sans état partiel.
+[List Number] Simuler une défaillance externe et vérifier la politique de fallback, de retry ou d’arrêt définie.
+[List Number] Rejouer le scénario pour vérifier l’idempotence et l’absence de doublon.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Lire les implémentations et tests existants avant toute modification.
+[List Bullet] Modifier le minimum de fichiers nécessaire.
+[List Bullet] Ne pas créer de valeur par défaut métier non spécifiée.
+[List Bullet] Ajouter les tests dans le même commit que le code.
+[Normal] Critères de sortie. PASS lorsque tous les scénarios associés sont automatisés, reproductibles, sans appel réseau et sans défaut P0/P1 ouvert.
+[Normal] 65. Plan de rollback
+[Normal] Objectif normatif. Vérifier la désactivation par feature flag et le retour au catalogue seul.
+[Normal] Faits établis. Le rollback doit fonctionner sans migration destructive.
+[Normal] Hypothèses explicites. Les noms exacts des classes, méthodes et champs doivent être confirmés par inspection du dépôt. Toute divergence entre ce document et le code existant doit être consignée avant implémentation, sans inventer une nouvelle architecture.
+[Normal] Contrôles obligatoires.
+[List Bullet] Préparer un test positif, un test négatif et un test de frontière pour le comportement visé.
+[List Bullet] Vérifier les effets observables: valeur retournée, écriture en base, événement de log, métrique et appel externe.
+[List Bullet] Utiliser des doubles déterministes; interdire les appels réseau réels dans la suite standard.
+[List Bullet] Échouer explicitement en cas de donnée invalide; ne pas corriger silencieusement une sortie IA.
+[Normal] Scénarios de vérification.
+[List Number] Exécuter le scénario nominal associé à « Plan de rollback » avec un catalogue cohérent.
+[List Number] Injecter une donnée invalide à la frontière la plus proche et vérifier le rejet sans état partiel.
+[List Number] Simuler une défaillance externe et vérifier la politique de fallback, de retry ou d’arrêt définie.
+[List Number] Rejouer le scénario pour vérifier l’idempotence et l’absence de doublon.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Lire les implémentations et tests existants avant toute modification.
+[List Bullet] Modifier le minimum de fichiers nécessaire.
+[List Bullet] Ne pas créer de valeur par défaut métier non spécifiée.
+[List Bullet] Ajouter les tests dans le même commit que le code.
+[Normal] Critères de sortie. PASS lorsque tous les scénarios associés sont automatisés, reproductibles, sans appel réseau et sans défaut P0/P1 ouvert.
+[Normal] 66. Surveillance post-déploiement
+[Normal] Objectif normatif. Définir indicateurs et seuils d’alerte après activation.
+[Normal] Faits établis. La qualité IA peut dériver sans modification du code.
+[Normal] Hypothèses explicites. Les noms exacts des classes, méthodes et champs doivent être confirmés par inspection du dépôt. Toute divergence entre ce document et le code existant doit être consignée avant implémentation, sans inventer une nouvelle architecture.
+[Normal] Contrôles obligatoires.
+[List Bullet] Préparer un test positif, un test négatif et un test de frontière pour le comportement visé.
+[List Bullet] Vérifier les effets observables: valeur retournée, écriture en base, événement de log, métrique et appel externe.
+[List Bullet] Utiliser des doubles déterministes; interdire les appels réseau réels dans la suite standard.
+[List Bullet] Échouer explicitement en cas de donnée invalide; ne pas corriger silencieusement une sortie IA.
+[Normal] Scénarios de vérification.
+[List Number] Exécuter le scénario nominal associé à « Surveillance post-déploiement » avec un catalogue cohérent.
+[List Number] Injecter une donnée invalide à la frontière la plus proche et vérifier le rejet sans état partiel.
+[List Number] Simuler une défaillance externe et vérifier la politique de fallback, de retry ou d’arrêt définie.
+[List Number] Rejouer le scénario pour vérifier l’idempotence et l’absence de doublon.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Lire les implémentations et tests existants avant toute modification.
+[List Bullet] Modifier le minimum de fichiers nécessaire.
+[List Bullet] Ne pas créer de valeur par défaut métier non spécifiée.
+[List Bullet] Ajouter les tests dans le même commit que le code.
+[Normal] Critères de sortie. PASS lorsque tous les scénarios associés sont automatisés, reproductibles, sans appel réseau et sans défaut P0/P1 ouvert.
+[Normal] 67. Checklist finale Cursor
+[Normal] Objectif normatif. Fournir une séquence d’exécution non ambiguë au moteur de développement.
+[Normal] Faits établis. Les moteurs IA omettent souvent migrations, tests négatifs et compatibilité.
+[Normal] Hypothèses explicites. Les noms exacts des classes, méthodes et champs doivent être confirmés par inspection du dépôt. Toute divergence entre ce document et le code existant doit être consignée avant implémentation, sans inventer une nouvelle architecture.
+[Normal] Contrôles obligatoires.
+[List Bullet] Préparer un test positif, un test négatif et un test de frontière pour le comportement visé.
+[List Bullet] Vérifier les effets observables: valeur retournée, écriture en base, événement de log, métrique et appel externe.
+[List Bullet] Utiliser des doubles déterministes; interdire les appels réseau réels dans la suite standard.
+[List Bullet] Échouer explicitement en cas de donnée invalide; ne pas corriger silencieusement une sortie IA.
+[Normal] Scénarios de vérification.
+[List Number] Exécuter le scénario nominal associé à « Checklist finale Cursor » avec un catalogue cohérent.
+[List Number] Injecter une donnée invalide à la frontière la plus proche et vérifier le rejet sans état partiel.
+[List Number] Simuler une défaillance externe et vérifier la politique de fallback, de retry ou d’arrêt définie.
+[List Number] Rejouer le scénario pour vérifier l’idempotence et l’absence de doublon.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Lire les implémentations et tests existants avant toute modification.
+[List Bullet] Modifier le minimum de fichiers nécessaire.
+[List Bullet] Ne pas créer de valeur par défaut métier non spécifiée.
+[List Bullet] Ajouter les tests dans le même commit que le code.
+[Normal] Critères de sortie. PASS lorsque tous les scénarios associés sont automatisés, reproductibles, sans appel réseau et sans défaut P0/P1 ouvert.
+[Normal] 68. Registre des limitations
+[Normal] Objectif normatif. Documenter ce que la validation ne peut pas garantir.
+[Normal] Faits établis. Les tests ne prouvent ni absence totale de défaut ni qualité pédagogique universelle.
+[Normal] Hypothèses explicites. Les noms exacts des classes, méthodes et champs doivent être confirmés par inspection du dépôt. Toute divergence entre ce document et le code existant doit être consignée avant implémentation, sans inventer une nouvelle architecture.
+[Normal] Contrôles obligatoires.
+[List Bullet] Préparer un test positif, un test négatif et un test de frontière pour le comportement visé.
+[List Bullet] Vérifier les effets observables: valeur retournée, écriture en base, événement de log, métrique et appel externe.
+[List Bullet] Utiliser des doubles déterministes; interdire les appels réseau réels dans la suite standard.
+[List Bullet] Échouer explicitement en cas de donnée invalide; ne pas corriger silencieusement une sortie IA.
+[Normal] Scénarios de vérification.
+[List Number] Exécuter le scénario nominal associé à « Registre des limitations » avec un catalogue cohérent.
+[List Number] Injecter une donnée invalide à la frontière la plus proche et vérifier le rejet sans état partiel.
+[List Number] Simuler une défaillance externe et vérifier la politique de fallback, de retry ou d’arrêt définie.
+[List Number] Rejouer le scénario pour vérifier l’idempotence et l’absence de doublon.
+[Normal] Règles impératives pour le moteur de développement IA.
+[List Bullet] Lire les implémentations et tests existants avant toute modification.
+[List Bullet] Modifier le minimum de fichiers nécessaire.
+[List Bullet] Ne pas créer de valeur par défaut métier non spécifiée.
+[List Bullet] Ajouter les tests dans le même commit que le code.
+[Normal] Critères de sortie. PASS lorsque tous les scénarios associés sont automatisés, reproductibles, sans appel réseau et sans défaut P0/P1 ouvert.
+--- TABLE 1 ---
+Projet || Learning Coach AI
+Référence || LCAI-0018B4
+Classification || Software Verification & Validation Specification
+Audience || Cursor / Équipe de développement / QA / Architecture / Sécurité
+Statut || Spécification normative
+Priorité || Sécurité, exactitude pédagogique, déterminisme, traçabilité
+Principe directeur || Le catalogue reste la source primaire. L’IA est un mécanisme de comblement contrôlé du déficit.
+--- TABLE 2 ---
+ID || Précondition || Action || Résultat attendu
+T-001-A || État nominal || Appeler le flux B4 || Résultat complet, validé et traçable
+T-001-B || Entrée invalide || Appeler avec valeur hors contrat || Erreur métier stable; aucune écriture partielle
+T-001-C || Dépendance défaillante || Simuler timeout/erreur || Comportement dégradé conforme; logs et métriques présents
+--- TABLE 3 ---
+ID || Précondition || Action || Résultat attendu
+T-002-A || État nominal || Appeler le flux B4 || Résultat complet, validé et traçable
+T-002-B || Entrée invalide || Appeler avec valeur hors contrat || Erreur métier stable; aucune écriture partielle
+T-002-C || Dépendance défaillante || Simuler timeout/erreur || Comportement dégradé conforme; logs et métriques présents
+--- TABLE 4 ---
+ID || Précondition || Action || Résultat attendu
+T-003-A || État nominal || Appeler le flux B4 || Résultat complet, validé et traçable
+T-003-B || Entrée invalide || Appeler avec valeur hors contrat || Erreur métier stable; aucune écriture partielle
+T-003-C || Dépendance défaillante || Simuler timeout/erreur || Comportement dégradé conforme; logs et métriques présents
+--- TABLE 5 ---
+ID || Précondition || Action || Résultat attendu
+T-004-A || État nominal || Appeler le flux B4 || Résultat complet, validé et traçable
+T-004-B || Entrée invalide || Appeler avec valeur hors contrat || Erreur métier stable; aucune écriture partielle
+T-004-C || Dépendance défaillante || Simuler timeout/erreur || Comportement dégradé conforme; logs et métriques présents
+--- TABLE 6 ---
+ID || Précondition || Action || Résultat attendu
+T-005-A || État nominal || Appeler le flux B4 || Résultat complet, validé et traçable
+T-005-B || Entrée invalide || Appeler avec valeur hors contrat || Erreur métier stable; aucune écriture partielle
+T-005-C || Dépendance défaillante || Simuler timeout/erreur || Comportement dégradé conforme; logs et métriques présents
+--- TABLE 7 ---
+ID || Précondition || Action || Résultat attendu
+T-006-A || État nominal || Appeler le flux B4 || Résultat complet, validé et traçable
+T-006-B || Entrée invalide || Appeler avec valeur hors contrat || Erreur métier stable; aucune écriture partielle
+T-006-C || Dépendance défaillante || Simuler timeout/erreur || Comportement dégradé conforme; logs et métriques présents
+--- TABLE 8 ---
+ID || Précondition || Action || Résultat attendu
+T-007-A || État nominal || Appeler le flux B4 || Résultat complet, validé et traçable
+T-007-B || Entrée invalide || Appeler avec valeur hors contrat || Erreur métier stable; aucune écriture partielle
+T-007-C || Dépendance défaillante || Simuler timeout/erreur || Comportement dégradé conforme; logs et métriques présents
+--- TABLE 9 ---
+ID || Précondition || Action || Résultat attendu
+T-008-A || État nominal || Appeler le flux B4 || Résultat complet, validé et traçable
+T-008-B || Entrée invalide || Appeler avec valeur hors contrat || Erreur métier stable; aucune écriture partielle
+T-008-C || Dépendance défaillante || Simuler timeout/erreur || Comportement dégradé conforme; logs et métriques présents
+--- TABLE 10 ---
+ID || Précondition || Action || Résultat attendu
+T-009-A || État nominal || Appeler le flux B4 || Résultat complet, validé et traçable
+T-009-B || Entrée invalide || Appeler avec valeur hors contrat || Erreur métier stable; aucune écriture partielle
+T-009-C || Dépendance défaillante || Simuler timeout/erreur || Comportement dégradé conforme; logs et métriques présents
+--- TABLE 11 ---
+ID || Précondition || Action || Résultat attendu
+T-010-A || État nominal || Appeler le flux B4 || Résultat complet, validé et traçable
+T-010-B || Entrée invalide || Appeler avec valeur hors contrat || Erreur métier stable; aucune écriture partielle
+T-010-C || Dépendance défaillante || Simuler timeout/erreur || Comportement dégradé conforme; logs et métriques présents
+--- TABLE 12 ---
+ID || Précondition || Action || Résultat attendu
+T-011-A || État nominal || Appeler le flux B4 || Résultat complet, validé et traçable
+T-011-B || Entrée invalide || Appeler avec valeur hors contrat || Erreur métier stable; aucune écriture partielle
+T-011-C || Dépendance défaillante || Simuler timeout/erreur || Comportement dégradé conforme; logs et métriques présents
+--- TABLE 13 ---
+ID || Précondition || Action || Résultat attendu
+T-012-A || État nominal || Appeler le flux B4 || Résultat complet, validé et traçable
+T-012-B || Entrée invalide || Appeler avec valeur hors contrat || Erreur métier stable; aucune écriture partielle
+T-012-C || Dépendance défaillante || Simuler timeout/erreur || Comportement dégradé conforme; logs et métriques présents
+--- TABLE 14 ---
+ID || Précondition || Action || Résultat attendu
+T-013-A || État nominal || Appeler le flux B4 || Résultat complet, validé et traçable
+T-013-B || Entrée invalide || Appeler avec valeur hors contrat || Erreur métier stable; aucune écriture partielle
+T-013-C || Dépendance défaillante || Simuler timeout/erreur || Comportement dégradé conforme; logs et métriques présents
+--- TABLE 15 ---
+ID || Précondition || Action || Résultat attendu
+T-014-A || État nominal || Appeler le flux B4 || Résultat complet, validé et traçable
+T-014-B || Entrée invalide || Appeler avec valeur hors contrat || Erreur métier stable; aucune écriture partielle
+T-014-C || Dépendance défaillante || Simuler timeout/erreur || Comportement dégradé conforme; logs et métriques présents
+--- TABLE 16 ---
+ID || Précondition || Action || Résultat attendu
+T-015-A || État nominal || Appeler le flux B4 || Résultat complet, validé et traçable
+T-015-B || Entrée invalide || Appeler avec valeur hors contrat || Erreur métier stable; aucune écriture partielle
+T-015-C || Dépendance défaillante || Simuler timeout/erreur || Comportement dégradé conforme; logs et métriques présents
+--- TABLE 17 ---
+ID || Précondition || Action || Résultat attendu
+T-016-A || État nominal || Appeler le flux B4 || Résultat complet, validé et traçable
+T-016-B || Entrée invalide || Appeler avec valeur hors contrat || Erreur métier stable; aucune écriture partielle
+T-016-C || Dépendance défaillante || Simuler timeout/erreur || Comportement dégradé conforme; logs et métriques présents
+--- TABLE 18 ---
+ID || Précondition || Action || Résultat attendu
+T-017-A || État nominal || Appeler le flux B4 || Résultat complet, validé et traçable
+T-017-B || Entrée invalide || Appeler avec valeur hors contrat || Erreur métier stable; aucune écriture partielle
+T-017-C || Dépendance défaillante || Simuler timeout/erreur || Comportement dégradé conforme; logs et métriques présents
+--- TABLE 19 ---
+ID || Précondition || Action || Résultat attendu
+T-018-A || État nominal || Appeler le flux B4 || Résultat complet, validé et traçable
+T-018-B || Entrée invalide || Appeler avec valeur hors contrat || Erreur métier stable; aucune écriture partielle
+T-018-C || Dépendance défaillante || Simuler timeout/erreur || Comportement dégradé conforme; logs et métriques présents
+--- TABLE 20 ---
+ID || Précondition || Action || Résultat attendu
+T-019-A || État nominal || Appeler le flux B4 || Résultat complet, validé et traçable
+T-019-B || Entrée invalide || Appeler avec valeur hors contrat || Erreur métier stable; aucune écriture partielle
+T-019-C || Dépendance défaillante || Simuler timeout/erreur || Comportement dégradé conforme; logs et métriques présents
+--- TABLE 21 ---
+ID || Précondition || Action || Résultat attendu
+T-020-A || État nominal || Appeler le flux B4 || Résultat complet, validé et traçable
+T-020-B || Entrée invalide || Appeler avec valeur hors contrat || Erreur métier stable; aucune écriture partielle
+T-020-C || Dépendance défaillante || Simuler timeout/erreur || Comportement dégradé conforme; logs et métriques présents
+--- TABLE 22 ---
+ID || Précondition || Action || Résultat attendu
+T-021-A || État nominal || Appeler le flux B4 || Résultat complet, validé et traçable
+T-021-B || Entrée invalide || Appeler avec valeur hors contrat || Erreur métier stable; aucune écriture partielle
+T-021-C || Dépendance défaillante || Simuler timeout/erreur || Comportement dégradé conforme; logs et métriques présents
+--- TABLE 23 ---
+ID || Précondition || Action || Résultat attendu
+T-022-A || État nominal || Appeler le flux B4 || Résultat complet, validé et traçable
+T-022-B || Entrée invalide || Appeler avec valeur hors contrat || Erreur métier stable; aucune écriture partielle
+T-022-C || Dépendance défaillante || Simuler timeout/erreur || Comportement dégradé conforme; logs et métriques présents
+--- TABLE 24 ---
+ID || Précondition || Action || Résultat attendu
+T-023-A || État nominal || Appeler le flux B4 || Résultat complet, validé et traçable
+T-023-B || Entrée invalide || Appeler avec valeur hors contrat || Erreur métier stable; aucune écriture partielle
+T-023-C || Dépendance défaillante || Simuler timeout/erreur || Comportement dégradé conforme; logs et métriques présents
+--- TABLE 25 ---
+ID || Précondition || Action || Résultat attendu
+T-024-A || État nominal || Appeler le flux B4 || Résultat complet, validé et traçable
+T-024-B || Entrée invalide || Appeler avec valeur hors contrat || Erreur métier stable; aucune écriture partielle
+T-024-C || Dépendance défaillante || Simuler timeout/erreur || Comportement dégradé conforme; logs et métriques présents
+--- TABLE 26 ---
+ID || Précondition || Action || Résultat attendu
+T-025-A || État nominal || Appeler le flux B4 || Résultat complet, validé et traçable
+T-025-B || Entrée invalide || Appeler avec valeur hors contrat || Erreur métier stable; aucune écriture partielle
+T-025-C || Dépendance défaillante || Simuler timeout/erreur || Comportement dégradé conforme; logs et métriques présents
+--- TABLE 27 ---
+ID || Précondition || Action || Résultat attendu
+T-026-A || État nominal || Appeler le flux B4 || Résultat complet, validé et traçable
+T-026-B || Entrée invalide || Appeler avec valeur hors contrat || Erreur métier stable; aucune écriture partielle
+T-026-C || Dépendance défaillante || Simuler timeout/erreur || Comportement dégradé conforme; logs et métriques présents
+--- TABLE 28 ---
+ID || Précondition || Action || Résultat attendu
+T-027-A || État nominal || Appeler le flux B4 || Résultat complet, validé et traçable
+T-027-B || Entrée invalide || Appeler avec valeur hors contrat || Erreur métier stable; aucune écriture partielle
+T-027-C || Dépendance défaillante || Simuler timeout/erreur || Comportement dégradé conforme; logs et métriques présents
+--- TABLE 29 ---
+ID || Précondition || Action || Résultat attendu
+T-028-A || État nominal || Appeler le flux B4 || Résultat complet, validé et traçable
+T-028-B || Entrée invalide || Appeler avec valeur hors contrat || Erreur métier stable; aucune écriture partielle
+T-028-C || Dépendance défaillante || Simuler timeout/erreur || Comportement dégradé conforme; logs et métriques présents
+--- TABLE 30 ---
+ID || Précondition || Action || Résultat attendu
+T-029-A || État nominal || Appeler le flux B4 || Résultat complet, validé et traçable
+T-029-B || Entrée invalide || Appeler avec valeur hors contrat || Erreur métier stable; aucune écriture partielle
+T-029-C || Dépendance défaillante || Simuler timeout/erreur || Comportement dégradé conforme; logs et métriques présents
+--- TABLE 31 ---
+ID || Précondition || Action || Résultat attendu
+T-030-A || État nominal || Appeler le flux B4 || Résultat complet, validé et traçable
+T-030-B || Entrée invalide || Appeler avec valeur hors contrat || Erreur métier stable; aucune écriture partielle
+T-030-C || Dépendance défaillante || Simuler timeout/erreur || Comportement dégradé conforme; logs et métriques présents
+--- TABLE 32 ---
+ID || Précondition || Action || Résultat attendu
+T-031-A || État nominal || Appeler le flux B4 || Résultat complet, validé et traçable
+T-031-B || Entrée invalide || Appeler avec valeur hors contrat || Erreur métier stable; aucune écriture partielle
+T-031-C || Dépendance défaillante || Simuler timeout/erreur || Comportement dégradé conforme; logs et métriques présents
+--- TABLE 33 ---
+ID || Précondition || Action || Résultat attendu
+T-032-A || État nominal || Appeler le flux B4 || Résultat complet, validé et traçable
+T-032-B || Entrée invalide || Appeler avec valeur hors contrat || Erreur métier stable; aucune écriture partielle
+T-032-C || Dépendance défaillante || Simuler timeout/erreur || Comportement dégradé conforme; logs et métriques présents
+--- TABLE 34 ---
+ID || Précondition || Action || Résultat attendu
+T-033-A || État nominal || Appeler le flux B4 || Résultat complet, validé et traçable
+T-033-B || Entrée invalide || Appeler avec valeur hors contrat || Erreur métier stable; aucune écriture partielle
+T-033-C || Dépendance défaillante || Simuler timeout/erreur || Comportement dégradé conforme; logs et métriques présents
+--- TABLE 35 ---
+ID || Précondition || Action || Résultat attendu
+T-034-A || État nominal || Appeler le flux B4 || Résultat complet, validé et traçable
+T-034-B || Entrée invalide || Appeler avec valeur hors contrat || Erreur métier stable; aucune écriture partielle
+T-034-C || Dépendance défaillante || Simuler timeout/erreur || Comportement dégradé conforme; logs et métriques présents
+--- TABLE 36 ---
+ID || Précondition || Action || Résultat attendu
+T-035-A || État nominal || Appeler le flux B4 || Résultat complet, validé et traçable
+T-035-B || Entrée invalide || Appeler avec valeur hors contrat || Erreur métier stable; aucune écriture partielle
+T-035-C || Dépendance défaillante || Simuler timeout/erreur || Comportement dégradé conforme; logs et métriques présents
+--- TABLE 37 ---
+ID || Précondition || Action || Résultat attendu
+T-036-A || État nominal || Appeler le flux B4 || Résultat complet, validé et traçable
+T-036-B || Entrée invalide || Appeler avec valeur hors contrat || Erreur métier stable; aucune écriture partielle
+T-036-C || Dépendance défaillante || Simuler timeout/erreur || Comportement dégradé conforme; logs et métriques présents
+--- TABLE 38 ---
+ID || Précondition || Action || Résultat attendu
+T-037-A || État nominal || Appeler le flux B4 || Résultat complet, validé et traçable
+T-037-B || Entrée invalide || Appeler avec valeur hors contrat || Erreur métier stable; aucune écriture partielle
+T-037-C || Dépendance défaillante || Simuler timeout/erreur || Comportement dégradé conforme; logs et métriques présents
+--- TABLE 39 ---
+ID || Précondition || Action || Résultat attendu
+T-038-A || État nominal || Appeler le flux B4 || Résultat complet, validé et traçable
+T-038-B || Entrée invalide || Appeler avec valeur hors contrat || Erreur métier stable; aucune écriture partielle
+T-038-C || Dépendance défaillante || Simuler timeout/erreur || Comportement dégradé conforme; logs et métriques présents
+--- TABLE 40 ---
+ID || Précondition || Action || Résultat attendu
+T-039-A || État nominal || Appeler le flux B4 || Résultat complet, validé et traçable
+T-039-B || Entrée invalide || Appeler avec valeur hors contrat || Erreur métier stable; aucune écriture partielle
+T-039-C || Dépendance défaillante || Simuler timeout/erreur || Comportement dégradé conforme; logs et métriques présents
+--- TABLE 41 ---
+ID || Précondition || Action || Résultat attendu
+T-040-A || État nominal || Appeler le flux B4 || Résultat complet, validé et traçable
+T-040-B || Entrée invalide || Appeler avec valeur hors contrat || Erreur métier stable; aucune écriture partielle
+T-040-C || Dépendance défaillante || Simuler timeout/erreur || Comportement dégradé conforme; logs et métriques présents
+--- TABLE 42 ---
+ID || Précondition || Action || Résultat attendu
+T-041-A || État nominal || Appeler le flux B4 || Résultat complet, validé et traçable
+T-041-B || Entrée invalide || Appeler avec valeur hors contrat || Erreur métier stable; aucune écriture partielle
+T-041-C || Dépendance défaillante || Simuler timeout/erreur || Comportement dégradé conforme; logs et métriques présents
+--- TABLE 43 ---
+ID || Précondition || Action || Résultat attendu
+T-042-A || État nominal || Appeler le flux B4 || Résultat complet, validé et traçable
+T-042-B || Entrée invalide || Appeler avec valeur hors contrat || Erreur métier stable; aucune écriture partielle
+T-042-C || Dépendance défaillante || Simuler timeout/erreur || Comportement dégradé conforme; logs et métriques présents
+--- TABLE 44 ---
+ID || Précondition || Action || Résultat attendu
+T-043-A || État nominal || Appeler le flux B4 || Résultat complet, validé et traçable
+T-043-B || Entrée invalide || Appeler avec valeur hors contrat || Erreur métier stable; aucune écriture partielle
+T-043-C || Dépendance défaillante || Simuler timeout/erreur || Comportement dégradé conforme; logs et métriques présents
+--- TABLE 45 ---
+ID || Précondition || Action || Résultat attendu
+T-044-A || État nominal || Appeler le flux B4 || Résultat complet, validé et traçable
+T-044-B || Entrée invalide || Appeler avec valeur hors contrat || Erreur métier stable; aucune écriture partielle
+T-044-C || Dépendance défaillante || Simuler timeout/erreur || Comportement dégradé conforme; logs et métriques présents
+--- TABLE 46 ---
+ID || Précondition || Action || Résultat attendu
+T-045-A || État nominal || Appeler le flux B4 || Résultat complet, validé et traçable
+T-045-B || Entrée invalide || Appeler avec valeur hors contrat || Erreur métier stable; aucune écriture partielle
+T-045-C || Dépendance défaillante || Simuler timeout/erreur || Comportement dégradé conforme; logs et métriques présents
+--- TABLE 47 ---
+ID || Précondition || Action || Résultat attendu
+T-046-A || État nominal || Appeler le flux B4 || Résultat complet, validé et traçable
+T-046-B || Entrée invalide || Appeler avec valeur hors contrat || Erreur métier stable; aucune écriture partielle
+T-046-C || Dépendance défaillante || Simuler timeout/erreur || Comportement dégradé conforme; logs et métriques présents
+--- TABLE 48 ---
+ID || Précondition || Action || Résultat attendu
+T-047-A || État nominal || Appeler le flux B4 || Résultat complet, validé et traçable
+T-047-B || Entrée invalide || Appeler avec valeur hors contrat || Erreur métier stable; aucune écriture partielle
+T-047-C || Dépendance défaillante || Simuler timeout/erreur || Comportement dégradé conforme; logs et métriques présents
+--- TABLE 49 ---
+ID || Précondition || Action || Résultat attendu
+T-048-A || État nominal || Appeler le flux B4 || Résultat complet, validé et traçable
+T-048-B || Entrée invalide || Appeler avec valeur hors contrat || Erreur métier stable; aucune écriture partielle
+T-048-C || Dépendance défaillante || Simuler timeout/erreur || Comportement dégradé conforme; logs et métriques présents
+--- TABLE 50 ---
+ID || Précondition || Action || Résultat attendu
+T-049-A || État nominal || Appeler le flux B4 || Résultat complet, validé et traçable
+T-049-B || Entrée invalide || Appeler avec valeur hors contrat || Erreur métier stable; aucune écriture partielle
+T-049-C || Dépendance défaillante || Simuler timeout/erreur || Comportement dégradé conforme; logs et métriques présents
+--- TABLE 51 ---
+ID || Précondition || Action || Résultat attendu
+T-050-A || État nominal || Appeler le flux B4 || Résultat complet, validé et traçable
+T-050-B || Entrée invalide || Appeler avec valeur hors contrat || Erreur métier stable; aucune écriture partielle
+T-050-C || Dépendance défaillante || Simuler timeout/erreur || Comportement dégradé conforme; logs et métriques présents
+--- TABLE 52 ---
+ID || Précondition || Action || Résultat attendu
+T-051-A || État nominal || Appeler le flux B4 || Résultat complet, validé et traçable
+T-051-B || Entrée invalide || Appeler avec valeur hors contrat || Erreur métier stable; aucune écriture partielle
+T-051-C || Dépendance défaillante || Simuler timeout/erreur || Comportement dégradé conforme; logs et métriques présents
+--- TABLE 53 ---
+ID || Précondition || Action || Résultat attendu
+T-052-A || État nominal || Appeler le flux B4 || Résultat complet, validé et traçable
+T-052-B || Entrée invalide || Appeler avec valeur hors contrat || Erreur métier stable; aucune écriture partielle
+T-052-C || Dépendance défaillante || Simuler timeout/erreur || Comportement dégradé conforme; logs et métriques présents
+--- TABLE 54 ---
+ID || Précondition || Action || Résultat attendu
+T-053-A || État nominal || Appeler le flux B4 || Résultat complet, validé et traçable
+T-053-B || Entrée invalide || Appeler avec valeur hors contrat || Erreur métier stable; aucune écriture partielle
+T-053-C || Dépendance défaillante || Simuler timeout/erreur || Comportement dégradé conforme; logs et métriques présents
+--- TABLE 55 ---
+ID || Précondition || Action || Résultat attendu
+T-054-A || État nominal || Appeler le flux B4 || Résultat complet, validé et traçable
+T-054-B || Entrée invalide || Appeler avec valeur hors contrat || Erreur métier stable; aucune écriture partielle
+T-054-C || Dépendance défaillante || Simuler timeout/erreur || Comportement dégradé conforme; logs et métriques présents
+--- TABLE 56 ---
+ID || Précondition || Action || Résultat attendu
+T-055-A || État nominal || Appeler le flux B4 || Résultat complet, validé et traçable
+T-055-B || Entrée invalide || Appeler avec valeur hors contrat || Erreur métier stable; aucune écriture partielle
+T-055-C || Dépendance défaillante || Simuler timeout/erreur || Comportement dégradé conforme; logs et métriques présents
+--- TABLE 57 ---
+ID || Précondition || Action || Résultat attendu
+T-056-A || État nominal || Appeler le flux B4 || Résultat complet, validé et traçable
+T-056-B || Entrée invalide || Appeler avec valeur hors contrat || Erreur métier stable; aucune écriture partielle
+T-056-C || Dépendance défaillante || Simuler timeout/erreur || Comportement dégradé conforme; logs et métriques présents
+--- TABLE 58 ---
+ID || Précondition || Action || Résultat attendu
+T-057-A || État nominal || Appeler le flux B4 || Résultat complet, validé et traçable
+T-057-B || Entrée invalide || Appeler avec valeur hors contrat || Erreur métier stable; aucune écriture partielle
+T-057-C || Dépendance défaillante || Simuler timeout/erreur || Comportement dégradé conforme; logs et métriques présents
+--- TABLE 59 ---
+ID || Précondition || Action || Résultat attendu
+T-058-A || État nominal || Appeler le flux B4 || Résultat complet, validé et traçable
+T-058-B || Entrée invalide || Appeler avec valeur hors contrat || Erreur métier stable; aucune écriture partielle
+T-058-C || Dépendance défaillante || Simuler timeout/erreur || Comportement dégradé conforme; logs et métriques présents
+--- TABLE 60 ---
+ID || Précondition || Action || Résultat attendu
+T-059-A || État nominal || Appeler le flux B4 || Résultat complet, validé et traçable
+T-059-B || Entrée invalide || Appeler avec valeur hors contrat || Erreur métier stable; aucune écriture partielle
+T-059-C || Dépendance défaillante || Simuler timeout/erreur || Comportement dégradé conforme; logs et métriques présents
+--- TABLE 61 ---
+ID || Précondition || Action || Résultat attendu
+T-060-A || État nominal || Appeler le flux B4 || Résultat complet, validé et traçable
+T-060-B || Entrée invalide || Appeler avec valeur hors contrat || Erreur métier stable; aucune écriture partielle
+T-060-C || Dépendance défaillante || Simuler timeout/erreur || Comportement dégradé conforme; logs et métriques présents
+--- TABLE 62 ---
+ID || Précondition || Action || Résultat attendu
+T-061-A || État nominal || Appeler le flux B4 || Résultat complet, validé et traçable
+T-061-B || Entrée invalide || Appeler avec valeur hors contrat || Erreur métier stable; aucune écriture partielle
+T-061-C || Dépendance défaillante || Simuler timeout/erreur || Comportement dégradé conforme; logs et métriques présents
+--- TABLE 63 ---
+ID || Précondition || Action || Résultat attendu
+T-062-A || État nominal || Appeler le flux B4 || Résultat complet, validé et traçable
+T-062-B || Entrée invalide || Appeler avec valeur hors contrat || Erreur métier stable; aucune écriture partielle
+T-062-C || Dépendance défaillante || Simuler timeout/erreur || Comportement dégradé conforme; logs et métriques présents
+--- TABLE 64 ---
+ID || Précondition || Action || Résultat attendu
+T-063-A || État nominal || Appeler le flux B4 || Résultat complet, validé et traçable
+T-063-B || Entrée invalide || Appeler avec valeur hors contrat || Erreur métier stable; aucune écriture partielle
+T-063-C || Dépendance défaillante || Simuler timeout/erreur || Comportement dégradé conforme; logs et métriques présents
+--- TABLE 65 ---
+ID || Précondition || Action || Résultat attendu
+T-064-A || État nominal || Appeler le flux B4 || Résultat complet, validé et traçable
+T-064-B || Entrée invalide || Appeler avec valeur hors contrat || Erreur métier stable; aucune écriture partielle
+T-064-C || Dépendance défaillante || Simuler timeout/erreur || Comportement dégradé conforme; logs et métriques présents
+--- TABLE 66 ---
+ID || Précondition || Action || Résultat attendu
+T-065-A || État nominal || Appeler le flux B4 || Résultat complet, validé et traçable
+T-065-B || Entrée invalide || Appeler avec valeur hors contrat || Erreur métier stable; aucune écriture partielle
+T-065-C || Dépendance défaillante || Simuler timeout/erreur || Comportement dégradé conforme; logs et métriques présents
+--- TABLE 67 ---
+ID || Précondition || Action || Résultat attendu
+T-066-A || État nominal || Appeler le flux B4 || Résultat complet, validé et traçable
+T-066-B || Entrée invalide || Appeler avec valeur hors contrat || Erreur métier stable; aucune écriture partielle
+T-066-C || Dépendance défaillante || Simuler timeout/erreur || Comportement dégradé conforme; logs et métriques présents
+--- TABLE 68 ---
+ID || Précondition || Action || Résultat attendu
+T-067-A || État nominal || Appeler le flux B4 || Résultat complet, validé et traçable
+T-067-B || Entrée invalide || Appeler avec valeur hors contrat || Erreur métier stable; aucune écriture partielle
+T-067-C || Dépendance défaillante || Simuler timeout/erreur || Comportement dégradé conforme; logs et métriques présents
+--- TABLE 69 ---
+ID || Précondition || Action || Résultat attendu
+T-068-A || État nominal || Appeler le flux B4 || Résultat complet, validé et traçable
+T-068-B || Entrée invalide || Appeler avec valeur hors contrat || Erreur métier stable; aucune écriture partielle
+T-068-C || Dépendance défaillante || Simuler timeout/erreur || Comportement dégradé conforme; logs et métriques présents

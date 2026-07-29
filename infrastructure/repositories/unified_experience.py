@@ -17,6 +17,7 @@ from domain.unified_experience.models import (
     HomeworkRequest,
     LearnerManagementProfile,
     ProgrammeChange,
+    RuntimeExerciseCandidate,
 )
 from infrastructure.database.v2 import connect_v2
 
@@ -369,6 +370,75 @@ class DuckDBUnifiedExperienceRepository:
         finally:
             connection.close()
         return self.get_homework(homework_id)
+
+    def persist_homework_runtime_exercises(
+        self,
+        homework_id: int,
+        learner_id: int,
+        exercises: tuple[RuntimeExerciseCandidate, ...],
+        *,
+        start_position: int = 1,
+    ) -> tuple[int, ...]:
+        if not exercises:
+            return ()
+        connection = connect_v2(self.database_path)
+        try:
+            runtime_ids: list[int] = []
+            for offset, exercise in enumerate(exercises):
+                position = start_position + offset
+                stable_key = hashlib.sha256(
+                    f"{homework_id}:{position}:{exercise.content_fingerprint}".encode()
+                ).hexdigest()
+                row = connection.execute(
+                    """INSERT INTO homework_runtime_exercises
+                    (homework_id,learner_id,position,stable_key,source,publication_status,subject_id,
+                     skill_ids,exercise_payload,content_fingerprint,generator_model,prompt_template_version,
+                     correlation_id,validation_result)
+                    VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+                    RETURNING id""",
+                    [
+                        homework_id,
+                        learner_id,
+                        position,
+                        stable_key,
+                        exercise.source,
+                        exercise.publication_status,
+                        None,
+                        json.dumps(list(exercise.skill_ids)),
+                        json.dumps(
+                            {
+                                "title": exercise.title,
+                                "statement": exercise.statement,
+                                "instructions": exercise.instructions,
+                                "expected_answer": exercise.expected_answer,
+                                "correction": exercise.correction,
+                                "explanation": exercise.explanation,
+                                "hints": list(exercise.hints),
+                                "exercise_type": exercise.exercise_type,
+                                "estimated_duration": exercise.estimated_duration,
+                            }
+                        ),
+                        exercise.content_fingerprint,
+                        exercise.generator_model,
+                        exercise.prompt_template_version,
+                        exercise.correlation_id,
+                        json.dumps(exercise.validation_result),
+                    ],
+                ).fetchone()
+                runtime_ids.append(int(row[0]))
+            return tuple(runtime_ids)
+        finally:
+            connection.close()
+
+    def is_four_e_grade(self, grade_level_id: int | None) -> bool:
+        if grade_level_id is None:
+            return False
+        connection = connect_v2(self.database_path, read_only=True)
+        try:
+            row = connection.execute("SELECT code FROM school_levels WHERE id=?", [grade_level_id]).fetchone()
+            return row is not None and str(row[0]) == "FR-4E"
+        finally:
+            connection.close()
 
     def create_homework_proposal(self, homework_id: int) -> int:
         item = self.get_homework(homework_id)

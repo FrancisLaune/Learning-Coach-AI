@@ -1,0 +1,95 @@
+[Title] LCAI-0018B4
+Software Design Specification
+Volume 1 – Architecture & Conception
+[Heading 1] 1. Objet
+[Normal] Ce document constitue la référence d'architecture pour l'implémentation du lot LCAI‑0018B4.
+Son objectif est de permettre à Cursor d'implémenter le mécanisme de fallback IA du HomeworkService sans prendre de décision d'architecture.
+Toute décision absente de ce document est réputée interdite.
+[Heading 1] 2. Périmètre
+[List Bullet] Modification du HomeworkService uniquement.
+[List Bullet] Réutilisation obligatoire de ContentFactoryService.
+[List Bullet] Réutilisation obligatoire de OpenAIContentGenerator.
+[List Bullet] Aucune nouvelle Content Factory.
+[List Bullet] Aucun nouveau moteur IA.
+[List Bullet] Aucune régression fonctionnelle.
+[Heading 1] 3. Principes d'architecture
+[List Bullet] Le catalogue est toujours prioritaire.
+[List Bullet] Le moteur IA ne complète que le déficit.
+[List Bullet] Les exercices IA suivent exactement le même pipeline de validation.
+[List Bullet] Aucun exercice généré n'est publié automatiquement.
+[List Bullet] Toutes les opérations sont traçables.
+[List Bullet] Le système doit rester déterministe lorsque le catalogue est suffisant.
+[Heading 1] 4. Architecture cible
+[Normal] Flux imposé :
+
+UI
+ -> HomeworkService
+ -> Catalog Repository
+ -> Evaluation du stock
+ -> Si stock suffisant : retour immédiat
+ -> Sinon :
+      ContentFactoryService
+      -> OpenAIContentGenerator
+      -> Validation Pipeline
+      -> Fusion Catalogue + IA
+ -> HomeworkResponse
+[Heading 1] 5. Responsabilités
+[Heading 2] HomeworkService
+[Normal] Orchestration complète, calcul du déficit, fusion finale.
+[Heading 2] Catalog Repository
+[Normal] Recherche des exercices existants.
+[Heading 2] ContentFactoryService
+[Normal] Création des exercices manquants.
+[Heading 2] OpenAIContentGenerator
+[Normal] Génération IA uniquement sur demande.
+[Heading 2] Validation Pipeline
+[Normal] Validation pédagogique et technique.
+[Heading 2] DuckDB
+[Normal] Source de vérité des contenus et des traces.
+[Heading 1] 6. Séquence d'exécution obligatoire
+[Normal] 1. Résoudre le profil élève.
+[Normal] 2. Résoudre programme, matière, chapitre.
+[Normal] 3. Identifier les compétences.
+[Normal] 4. Rechercher les exercices.
+[Normal] 5. Supprimer les doublons récents.
+[Normal] 6. Calculer le déficit.
+[Normal] 7. Si déficit=0 arrêter.
+[Normal] 8. Sinon appeler ContentFactoryService.
+[Normal] 9. Valider les exercices générés.
+[Normal] 10. Fusionner.
+[Normal] 11. Mélanger.
+[Normal] 12. Retourner le devoir.
+[Heading 1] 7. Contraintes
+[List Bullet] Ne jamais appeler directement OpenAI depuis l'UI.
+[List Bullet] Ne jamais contourner HomeworkService.
+[List Bullet] Ne jamais écrire directement dans les contenus Approved.
+[List Bullet] Ne jamais remplacer les exercices existants par des exercices IA.
+[List Bullet] Utiliser des Feature Flags pour activer le fallback.
+[List Bullet] Tous les appels IA doivent être journalisés.
+[Heading 1] 8. Gestion des erreurs
+[List Bullet] Timeout IA : retourner le catalogue disponible.
+[List Bullet] Réponse invalide : nouvelle tentative contrôlée.
+[List Bullet] Validation échouée : rejet de l'exercice.
+[List Bullet] Déficit non comblé : livrer un devoir incomplet avec journalisation.
+[Heading 1] 9. Sécurité
+[List Bullet] Aucune donnée personnelle dans les prompts.
+[List Bullet] Validation stricte des réponses IA.
+[List Bullet] Nettoyage du JSON.
+[List Bullet] Protection contre les injections de prompt.
+[List Bullet] Journalisation complète.
+[Heading 1] 10. Performance
+[Normal] Le calcul du déficit doit être réalisé avant tout appel IA.
+Aucun appel IA ne doit être effectué lorsque le catalogue satisfait entièrement la demande.
+Les accès DuckDB doivent privilégier les index existants.
+[Heading 1] 11. Impacts
+[List Bullet] HomeworkService : modifié.
+[List Bullet] ContentFactoryService : réutilisé sans refonte.
+[List Bullet] OpenAIContentGenerator : réutilisé.
+[List Bullet] DuckDB : aucune migration structurelle imposée par B4.
+[Heading 1] 12. Definition of Done
+[Normal] ☐ Fallback IA opérationnel.
+[Normal] ☐ Aucune régression des devoirs existants.
+[Normal] ☐ Catalogue prioritaire.
+[Normal] ☐ Traçabilité complète.
+[Normal] ☐ Tests unitaires, intégration et non-régression validés.
+[Normal] ☐ Architecture conforme au présent document.
