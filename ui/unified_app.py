@@ -52,6 +52,7 @@ from services.learning_session.orchestration import LearningSessionService
 from services.onboarding import OnboardingService, OnboardingValidationError
 from services.parent_ref import parent_ref_from_user
 from services.recommendation import PersonalizedSessionService
+from services.content.homework_availability import HomeworkAvailabilityService
 from services.unified_experience import (
     DeterministicCoachService,
     HomeworkService,
@@ -445,13 +446,17 @@ def _homework_form(
 ) -> None:
     repository = _repository()
     service = HomeworkService(repository)
+    availability_service = HomeworkAvailabilityService(repository)
     grade_id = repository.learner_grade_id(learner_id)
     grade_labels = {item[0]: item[2] for item in repository.grade_levels()}
-    subjects = repository.subjects_for_grade(grade_id)
+    availability = {
+        item.subject_id: item for item in availability_service.list_for_learner(learner_id)
+    }
+    subjects = repository.curriculum_subjects_for_grade(grade_id)
     labels = {item[0]: item[2] for item in subjects}
     if not subjects:
         grade_label = grade_labels.get(grade_id, "cette classe")
-        st.info(f"Le catalogue pédagogique ne contient pas encore de contenu approuvé pour {grade_label}.")
+        st.info(f"Aucune matière configurée dans le curriculum pour {grade_label}.")
         return
     mode = st.selectbox(
         "Mode",
@@ -474,12 +479,31 @@ def _homework_form(
     subject_id = st.selectbox(
         "Matière",
         subject_options,
-        format_func=lambda item: "Sélectionner une matière" if item is None else labels[item],
+        format_func=lambda item: (
+            "Sélectionner une matière"
+            if item is None
+            else f"{labels[item]} — {availability[item].homework_status_label}"
+            if item in availability
+            else labels[item]
+        ),
         key=f"{key}_subject",
     )
     reconcile_subject_change(st.session_state, key, subject_id)
     if subject_id is None:
         st.info("Sélectionnez une matière pour afficher le contenu approuvé disponible.")
+        return
+    subject_availability = availability.get(int(subject_id))
+    if subject_availability:
+        status_messages = {
+            "available": f"**{subject_availability.homework_status_label}** — {subject_availability.eligible_count} contenu(s) éligible(s) sur {subject_availability.chapters_total} chapitre(s) du curriculum.",
+            "limited": f"**{subject_availability.homework_status_label}** — seulement {subject_availability.eligible_count} contenu(s) publié(s) ; le devoir sera limité en taille.",
+            "unavailable": f"**{subject_availability.homework_status_label}** — aucun contenu publié éligible pour cette matière.",
+        }
+        st.caption(status_messages.get(subject_availability.availability_status, ""))
+    if subject_availability and subject_availability.availability_status == "unavailable":
+        st.warning(
+            f"Aucun devoir ne peut être créé pour {labels[int(subject_id)]} tant qu'aucun contenu n'est publié."
+        )
         return
     selected_chapters: list[int] = []
     selected_skills: list[int] = []
@@ -537,6 +561,46 @@ def _homework_form(
         key=f"{key}_difficulty",
     )
     exercise_count = st.slider("Nombre d'exercices", 1, 40, 10, key=f"{key}_exercise_count")
+    preview_request = HomeworkRequest(
+        learner_id,
+        actor_type,
+        actor_ref,
+        mode,
+        int(subject_id),
+        grade_id,
+        tuple(int(item) for item in selected_chapters),
+        tuple(int(item) for item in selected_skills),
+        difficulty,
+        40,
+        None,
+        None,
+    )
+    preview_selection = HomeworkService(repository).preview_selection(preview_request)
+    available_total = len(preview_selection.content_ids)
+    difficulty_labels = {
+        DifficultyMode.EASY: "Facile",
+        DifficultyMode.MEDIUM: "Moyen",
+        DifficultyMode.HARD: "Difficile",
+        DifficultyMode.ADAPTIVE: "Adaptatif",
+    }
+    if available_total == 0:
+        st.warning(
+            f"Aucun contenu approuvé disponible pour {labels[int(subject_id)]} avec ces critères. "
+            "Choisissez une autre difficulté, un chapitre plus large ou une autre matière."
+        )
+    elif preview_selection.difficulty_relaxed:
+        st.info(
+            f"Cette matière contient {available_total} contenu(s) approuvé(s), "
+            f"mais aucun au niveau « {difficulty_labels[difficulty]} ». "
+            "Le devoir utilisera les niveaux disponibles (assouplissement automatique)."
+        )
+    elif available_total < exercise_count:
+        st.info(
+            f"Seulement {available_total} contenu(s) approuvé(s) disponible(s) "
+            f"pour {labels[int(subject_id)]}. Le devoir sera limité à ce maximum."
+        )
+    else:
+        st.caption(f"{available_total} contenu(s) approuvé(s) disponible(s) pour cette sélection.")
     target_duration = st.slider("Durée cible", 5, 120, 30, 5, key=f"{key}_duration")
     due_date = st.date_input(
         "Échéance",
@@ -558,7 +622,10 @@ def _homework_form(
         "Créer le devoir",
         type="primary",
         key=f"{key}_create",
-        disabled=mode is not AssignmentType.GLOBAL_SUBJECT and not selected_chapters,
+        disabled=(
+            (mode is not AssignmentType.GLOBAL_SUBJECT and not selected_chapters)
+            or available_total == 0
+        ),
     )
     if create:
         request = HomeworkRequest(
@@ -580,7 +647,13 @@ def _homework_form(
             lambda: service.assign_as_parent(actor_ref, request) if actor_type == "PARENT" else service.create(request)
         )
         if result:
+            selection = service.preview_selection(request)
             selected_count = len(result.selected_content_ids)
+            if selection.difficulty_relaxed:
+                st.info(
+                    "La difficulté demandée n'avait aucun contenu publié ; "
+                    "des contenus d'un niveau proche ont été utilisés."
+                )
             if selected_count < exercise_count:
                 st.warning(
                     f"Le catalogue contient actuellement {selected_count} contenu(s) compatible(s). "

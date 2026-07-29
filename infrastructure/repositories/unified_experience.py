@@ -13,6 +13,7 @@ from domain.unified_experience.models import (
     AssignmentType,
     DifficultyMode,
     HomeworkAssignment,
+    HomeworkContentSelection,
     HomeworkRequest,
     LearnerManagementProfile,
     ProgrammeChange,
@@ -100,6 +101,48 @@ class DuckDBUnifiedExperienceRepository:
         finally:
             connection.close()
 
+    def curriculum_subjects_for_grade(self, grade_level_id: int) -> tuple[tuple[int, str, str], ...]:
+        connection = connect_v2(self.database_path, read_only=True)
+        try:
+            rows = connection.execute(
+                """SELECT DISTINCT s.id,s.code,s.default_label
+                FROM curriculum_chapters cc
+                JOIN subjects s ON s.id=cc.subject_id
+                WHERE cc.grade_level_id=? AND cc.status='approved'
+                ORDER BY s.default_label""",
+                [grade_level_id],
+            ).fetchall()
+            return tuple((int(row[0]), str(row[1]), str(row[2])) for row in rows)
+        finally:
+            connection.close()
+
+    def curriculum_chapters(self, subject_id: int, grade_level_id: int) -> tuple[tuple[int, str], ...]:
+        connection = connect_v2(self.database_path, read_only=True)
+        try:
+            rows = connection.execute(
+                """SELECT cc.id,cc.title
+                FROM curriculum_chapters cc
+                WHERE cc.subject_id=? AND cc.grade_level_id=? AND cc.status='approved'
+                ORDER BY cc.sequence_order,cc.title""",
+                [subject_id, grade_level_id],
+            ).fetchall()
+            return tuple((int(row[0]), str(row[1])) for row in rows)
+        finally:
+            connection.close()
+
+    def production_count_for_subject(self, grade_level_id: int, subject_id: int) -> int:
+        connection = connect_v2(self.database_path, read_only=True)
+        try:
+            row = connection.execute(
+                """SELECT count(*) FROM production_learning_catalog alc
+                JOIN school_levels sl ON sl.code=alc.grade_code
+                WHERE sl.id=? AND alc.subject_id=?""",
+                [grade_level_id, subject_id],
+            ).fetchone()
+            return int(row[0] if row else 0)
+        finally:
+            connection.close()
+
     def chapters(self, subject_id: int, grade_level_id: int | None = None) -> tuple[tuple[int, str], ...]:
         connection = connect_v2(self.database_path, read_only=True)
         try:
@@ -151,42 +194,101 @@ class DuckDBUnifiedExperienceRepository:
         finally:
             connection.close()
 
-    def select_approved_content(self, request: HomeworkRequest) -> tuple[int, ...]:
-        connection = connect_v2(self.database_path, read_only=True)
-        try:
-            parameters: list[Any] = [request.subject_id]
-            filters = ["subject_id=?"]
-            if request.grade_level_id is not None:
-                filters.append("grade_code=(SELECT code FROM school_levels WHERE id=?)")
-                parameters.append(request.grade_level_id)
-            if request.chapter_ids:
-                filters.append(f"chapter_id IN ({','.join('?' for _ in request.chapter_ids)})")
-                parameters.extend(request.chapter_ids)
-            if request.skill_ids:
-                filters.append(f"skill_id IN ({','.join('?' for _ in request.skill_ids)})")
-                parameters.extend(request.skill_ids)
-            difficulty = self._difficulty(request)
+    def _approved_content_filters(
+        self, request: HomeworkRequest, *, difficulty: int | None | object = ...
+    ) -> tuple[list[str], list[Any]]:
+        parameters: list[Any] = [request.subject_id]
+        filters = ["subject_id=?"]
+        if request.grade_level_id is not None:
+            filters.append("grade_code=(SELECT code FROM school_levels WHERE id=?)")
+            parameters.append(request.grade_level_id)
+        if request.chapter_ids:
+            filters.append(f"chapter_id IN ({','.join('?' for _ in request.chapter_ids)})")
+            parameters.extend(request.chapter_ids)
+        if request.skill_ids:
+            filters.append(f"skill_id IN ({','.join('?' for _ in request.skill_ids)})")
+            parameters.extend(request.skill_ids)
+        if difficulty is not ...:
             if difficulty is not None:
                 filters.append("difficulty=?")
                 parameters.append(difficulty)
-            rows = connection.execute(
+        else:
+            resolved = self._difficulty(request)
+            if resolved is not None:
+                filters.append("difficulty=?")
+                parameters.append(resolved)
+        return filters, parameters
+
+    def _approved_content_rows(
+        self, request: HomeworkRequest, *, difficulty: int | None | object = ...
+    ) -> list[tuple[Any, ...]]:
+        connection = connect_v2(self.database_path, read_only=True)
+        try:
+            filters, parameters = self._approved_content_filters(request, difficulty=difficulty)
+            return connection.execute(
                 f"""SELECT content_id,chapter_id,skill_id,difficulty FROM production_learning_catalog
                 WHERE {" AND ".join(filters)}
                 ORDER BY chapter_id,skill_id,difficulty,content_id""",
                 parameters,
             ).fetchall()
-            if request.mode is AssignmentType.GLOBAL_SUBJECT:
-                rows = self._balanced(rows)
-            unique: list[int] = []
-            for row in rows:
-                content_id = int(row[0])
-                if content_id not in unique:
-                    unique.append(content_id)
-                if len(unique) == request.exercise_count:
-                    break
-            return tuple(unique)
         finally:
             connection.close()
+
+    def _finalize_content_selection(
+        self,
+        request: HomeworkRequest,
+        rows: list[tuple[Any, ...]],
+        *,
+        requested_difficulty: int | None,
+        applied_difficulty: int | None,
+        difficulty_relaxed: bool,
+    ) -> HomeworkContentSelection:
+        if request.mode is AssignmentType.GLOBAL_SUBJECT:
+            rows = self._balanced(rows)
+        unique: list[int] = []
+        for row in rows:
+            content_id = int(row[0])
+            if content_id not in unique:
+                unique.append(content_id)
+            if len(unique) == request.exercise_count:
+                break
+        return HomeworkContentSelection(
+            content_ids=tuple(unique),
+            requested_difficulty=requested_difficulty,
+            applied_difficulty=applied_difficulty,
+            difficulty_relaxed=difficulty_relaxed,
+        )
+
+    def count_eligible_content(self, request: HomeworkRequest, *, difficulty: int | None = None) -> int:
+        if difficulty is None and request.difficulty is not DifficultyMode.ADAPTIVE:
+            difficulty = self._difficulty(request)
+        rows = self._approved_content_rows(request, difficulty=difficulty)
+        if rows:
+            return len({int(row[0]) for row in rows})
+        if difficulty is not None:
+            fallback_rows = self._approved_content_rows(request, difficulty=None)
+            return len({int(row[0]) for row in fallback_rows})
+        return 0
+
+    def select_approved_content_detailed(self, request: HomeworkRequest) -> HomeworkContentSelection:
+        requested = self._difficulty(request)
+        rows = self._approved_content_rows(request, difficulty=requested)
+        applied = requested
+        relaxed = False
+        if not rows and requested is not None:
+            rows = self._approved_content_rows(request, difficulty=None)
+            applied = None
+            relaxed = bool(rows)
+        return self._finalize_content_selection(
+            request,
+            rows,
+            requested_difficulty=requested,
+            applied_difficulty=applied,
+            difficulty_relaxed=relaxed,
+        )
+
+    def select_approved_content(self, request: HomeworkRequest) -> tuple[int, ...]:
+        return self.select_approved_content_detailed(request).content_ids
 
     def _difficulty(self, request: HomeworkRequest) -> int | None:
         if request.difficulty is DifficultyMode.ADAPTIVE:

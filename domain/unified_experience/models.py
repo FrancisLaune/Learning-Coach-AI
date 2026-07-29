@@ -64,6 +64,27 @@ class LearnerManagementProfile:
 
 
 @dataclass(frozen=True, slots=True)
+class SubjectHomeworkAvailability:
+    subject_id: int
+    subject_code: str
+    subject_label: str
+    production_count: int
+    eligible_count: int
+    chapters_with_content: int
+    chapters_total: int
+    availability_status: str
+    homework_status_label: str
+
+
+@dataclass(frozen=True, slots=True)
+class HomeworkContentSelection:
+    content_ids: tuple[int, ...]
+    requested_difficulty: int | None
+    applied_difficulty: int | None
+    difficulty_relaxed: bool
+
+
+@dataclass(frozen=True, slots=True)
 class HomeworkRequest:
     learner_id: int
     assigned_by_type: str

@@ -10,8 +10,10 @@ from typing import Any, Protocol
 from domain.onboarding.models import OnboardingRequest, OnboardingResult
 from domain.unified_experience.models import (
     AssignmentStatus,
+    AssignmentType,
     CoachAdvice,
     HomeworkAssignment,
+    HomeworkContentSelection,
     HomeworkRequest,
     LearnerManagementProfile,
     ProgrammeChange,
@@ -33,6 +35,10 @@ class UnifiedExperienceRepository(Protocol):
         grade_level_id: int | None = None,
     ) -> tuple[tuple[int, str], ...]: ...
     def select_approved_content(self, request: HomeworkRequest) -> tuple[int, ...]: ...
+    def select_approved_content_detailed(self, request: HomeworkRequest) -> HomeworkContentSelection: ...
+    def count_eligible_content(
+        self, request: HomeworkRequest, *, difficulty: int | None = None
+    ) -> int: ...
     def create_homework(self, request: HomeworkRequest, content_ids: tuple[int, ...]) -> HomeworkAssignment: ...
     def create_homework_proposal(self, homework_id: int) -> int: ...
     def link_homework_session(self, homework_id: int, session_id: int) -> None: ...
@@ -86,11 +92,28 @@ class HomeworkService:
     def __init__(self, repository: UnifiedExperienceRepository) -> None:
         self.repository = repository
 
+    def preview_selection(self, request: HomeworkRequest) -> HomeworkContentSelection:
+        detailed = self.repository.select_approved_content_detailed(request)
+        return detailed
+
     def create(self, request: HomeworkRequest) -> HomeworkAssignment:
-        content_ids = self.repository.select_approved_content(request)
-        if not content_ids:
-            raise ValueError("Aucun contenu approuvé ne correspond à cette sélection.")
-        return self.repository.create_homework(request, content_ids)
+        selection = self.repository.select_approved_content_detailed(request)
+        if not selection.content_ids:
+            raise ValueError(self._empty_selection_message(request))
+        return self.repository.create_homework(request, selection.content_ids)
+
+    @staticmethod
+    def _empty_selection_message(request: HomeworkRequest) -> str:
+        subject_hint = "cette matière"
+        if request.mode is AssignmentType.GLOBAL_SUBJECT:
+            return (
+                f"Aucun contenu approuvé n'est disponible pour {subject_hint} en 4e avec les critères sélectionnés. "
+                "Choisissez une autre matière ou attendez la publication de nouveaux contenus validés."
+            )
+        return (
+            "Aucun contenu approuvé ne correspond à cette sélection de chapitres ou compétences. "
+            "Élargissez la sélection ou choisissez un devoir global."
+        )
 
     def assign_as_parent(self, parent_ref: str, request: HomeworkRequest) -> HomeworkAssignment:
         if request.assigned_by_type != "PARENT" or request.assigned_by_ref != parent_ref:
