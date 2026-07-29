@@ -41,7 +41,14 @@ class UnifiedExperienceRepository(Protocol):
         self, homework_id: int, learner_id: int, current: AssignmentStatus, target: AssignmentStatus
     ) -> HomeworkAssignment: ...
     def parent_authorized(self, parent_ref: str, learner_id: int) -> bool: ...
-    def learner_management_profile(self, learner_id: int) -> LearnerManagementProfile: ...
+    def list_linked_learners(self, parent_ref: str, *, archived: bool = False) -> tuple[tuple[int, str], ...]: ...
+    def learner_is_archived(self, learner_id: int) -> bool: ...
+    def learner_last_activity_label(self, learner_id: int) -> str | None: ...
+    def archive_learner(self, parent_ref: str, learner_id: int) -> None: ...
+    def restore_learner(self, parent_ref: str, learner_id: int) -> None: ...
+    def learner_management_profile(
+        self, learner_id: int, *, include_archived: bool = False
+    ) -> LearnerManagementProfile: ...
     def link_parent(self, parent_ref: str, learner_id: int) -> None: ...
     def reset_diagnostic(self, parent_ref: str, learner_id: int) -> None: ...
     def delete_learner(self, parent_ref: str, learner_id: int) -> None: ...
@@ -210,9 +217,31 @@ class LearnerProfileManagementService:
     def __init__(self, repository: UnifiedExperienceRepository) -> None:
         self.repository = repository
 
-    def get(self, parent_ref: str, learner_id: int) -> LearnerManagementProfile:
+    def get(self, parent_ref: str, learner_id: int, *, include_archived: bool = False) -> LearnerManagementProfile:
         self._authorize(parent_ref, learner_id)
-        return self.repository.learner_management_profile(learner_id)
+        return self.repository.learner_management_profile(learner_id, include_archived=include_archived)
+
+    def reset_diagnostic(self, parent_ref: str, learner_id: int) -> None:
+        self._authorize(parent_ref, learner_id)
+        self.repository.reset_diagnostic(parent_ref, learner_id)
+
+    def archive(self, parent_ref: str, learner_id: int) -> None:
+        self._authorize(parent_ref, learner_id)
+        if self.repository.learner_is_archived(learner_id):
+            return
+        self.repository.archive_learner(parent_ref, learner_id)
+
+    def restore(self, parent_ref: str, learner_id: int) -> None:
+        self._authorize(parent_ref, learner_id)
+        if not self.repository.learner_is_archived(learner_id):
+            return
+        self.repository.restore_learner(parent_ref, learner_id)
+
+    def list_active(self, parent_ref: str) -> tuple[tuple[int, str], ...]:
+        return self.repository.list_linked_learners(parent_ref, archived=False)
+
+    def list_archived(self, parent_ref: str) -> tuple[tuple[int, str], ...]:
+        return self.repository.list_linked_learners(parent_ref, archived=True)
 
     def create(
         self,
@@ -224,8 +253,6 @@ class LearnerProfileManagementService:
     ) -> OnboardingResult:
         if request.changed_by_role.value != "parent":
             raise ValueError("PARENT_CREATION_CONTEXT_INVALID")
-        if not profile.email:
-            raise ValueError("L'adresse e-mail de l'élève est obligatoire.")
         result = onboarding.complete(request)
         if profile.learner_id not in {0, result.learner_id}:
             raise ValueError("LEARNER_PROFILE_CONTEXT_INVALID")
@@ -269,10 +296,6 @@ class LearnerProfileManagementService:
         if confirmation.strip() != profile.first_name:
             raise ValueError("Le prénom saisi ne correspond pas.")
         self.repository.delete_learner(parent_ref, learner_id)
-
-    def reset_diagnostic(self, parent_ref: str, learner_id: int) -> None:
-        self._authorize(parent_ref, learner_id)
-        self.repository.reset_diagnostic(parent_ref, learner_id)
 
     def _authorize(self, parent_ref: str, learner_id: int) -> None:
         if not self.repository.parent_authorized(parent_ref, learner_id):

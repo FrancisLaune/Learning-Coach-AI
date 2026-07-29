@@ -126,16 +126,18 @@ class DuckDBVirtualTeacherRepository:
         params.append(learner_id)
         connection = connect_v2(self.database_path)
         try:
-            connection.execute(
-                f"UPDATE virtual_teacher_preferences SET {', '.join(updates)} WHERE learner_id=?",
+            row = connection.execute(
+                f"""UPDATE virtual_teacher_preferences SET {', '.join(updates)}
+                WHERE learner_id=?
+                RETURNING id,learner_id,teacher_profile,teacher_name,voice_id,tone,response_length,
+                help_level,audio_enabled,feature_enabled,parent_locked,created_at,updated_at""",
                 params,
-            )
+            ).fetchone()
         finally:
             connection.close()
-        saved = self.get_preferences(learner_id)
-        if saved is None:
+        if row is None:
             raise RuntimeError("VIRTUAL_TEACHER_PREFERENCES_SAVE_FAILED")
-        return saved
+        return self._preferences_from_row(row)
 
     def create_session(
         self,

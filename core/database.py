@@ -54,6 +54,12 @@ def connect() -> duckdb.DuckDBPyConnection:
     return duckdb.connect(str(DB_PATH))
 
 
+def connect_readonly() -> duckdb.DuckDBPyConnection:
+    """Prefer ``connect()`` in the Streamlit runtime: DuckDB rejects mixed RO/RW handles."""
+    DB_PATH.parent.mkdir(parents=True, exist_ok=True)
+    return duckdb.connect(str(DB_PATH))
+
+
 def pin_hash(pin: str) -> str:
     return hash_password(pin)
 
@@ -611,15 +617,19 @@ def session_user_still_valid(user: dict[str, Any]) -> bool:
 
 
 def authenticate(name: str, pin: str, expected_role: str | None = None) -> dict[str, Any] | None:
+    login = name.strip()
+    password = pin.strip()
+    if not login or not password:
+        return None
     con = connect()
     row = con.execute(
         """SELECT id,name,pin_hash,role,learner_external_ref,email,auth_epoch
         FROM users
         WHERE (lower(name)=lower(?) OR lower(email)=lower(?)) AND active""",
-        [name.strip(), name.strip()],
+        [login, login],
     ).fetchone()
     con.close()
-    if not row or not verify_password(pin, str(row[2])):
+    if not row or not verify_password(password, str(row[2])):
         return None
     if not is_known_auth_role(row[3]):
         return None
@@ -629,7 +639,7 @@ def authenticate(name: str, pin: str, expected_role: str | None = None) -> dict[
     if needs_rehash(stored_hash):
         con = connect()
         try:
-            con.execute("UPDATE users SET pin_hash=? WHERE id=?", [pin_hash(pin), row[0]])
+            con.execute("UPDATE users SET pin_hash=? WHERE id=?", [pin_hash(password), row[0]])
         finally:
             con.close()
     return {

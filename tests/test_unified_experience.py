@@ -362,6 +362,59 @@ def test_parent_can_create_and_link_learner(
     manager.delete("parent:test", result.learner_id, "Camille", True)
 
 
+def test_parent_can_create_learner_without_email(
+    unified_database: tuple[Path, int, int, int],
+) -> None:
+    path, _, subject_id, grade_id = unified_database
+    connection = connect_v2(path, read_only=True)
+    try:
+        grade = connection.execute(
+            "SELECT code,rank,label FROM school_levels WHERE id=?",
+            [grade_id],
+        ).fetchone()
+    finally:
+        connection.close()
+    onboarding_request = OnboardingRequest(
+        "parent-create:no-email",
+        LearnerProfile(
+            "parent-child:no-email",
+            "Noah",
+            CreatorRole.PARENT,
+            birth_date=date(2012, 9, 4),
+        ),
+        AcademicYear(2026, 2027),
+        GradeLevel(str(grade[0]), int(grade[1]), str(grade[2])),
+        LearnerGoalConfiguration(ObjectiveKind.LONG_TERM_MASTERY),
+        (SubjectPreference(subject_id, priority=True),),
+        StudyPreferences(30, (AvailabilitySlot(1, 30),)),
+        CreatorRole.PARENT,
+        "parent_created_learner",
+    )
+    repository = DuckDBUnifiedExperienceRepository(path)
+    manager = LearnerProfileManagementService(repository)
+    result = manager.create(
+        "parent:test",
+        onboarding_request,
+        OnboardingProfileInput(
+            0,
+            "Noah",
+            "Martin",
+            date(2012, 9, 4),
+            "2026-2027",
+            "FR-NATIONAL",
+            ("Exercices progressifs",),
+            "HINT_FIRST",
+            True,
+            None,
+        ),
+        OnboardingService(DuckDBOnboardingRepository(path)),
+        UnifiedOnboardingProfileService(repository),
+    )
+    created_profile = manager.get("parent:test", result.learner_id)
+    assert created_profile.email is None
+    manager.delete("parent:test", result.learner_id, "Noah", True)
+
+
 def test_parent_can_view_and_hard_delete_learner_without_touching_curriculum(
     unified_database: tuple[Path, int, int, int],
 ) -> None:

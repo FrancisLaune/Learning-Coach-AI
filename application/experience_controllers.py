@@ -87,11 +87,19 @@ class StudentExperienceController:
 
 
 class ParentExperienceController:
-    def __init__(self, experience: LearnerExperienceService, authorization: ParentAuthorization) -> None:
+    def __init__(
+        self,
+        experience: LearnerExperienceService,
+        authorization: ParentAuthorization,
+        learner_lister: Callable[[str], tuple[tuple[int, str], ...]] | None = None,
+    ) -> None:
         self.experience = experience
         self.authorization = authorization
+        self._learner_lister = learner_lister
 
     def learners(self, parent_ref: str) -> tuple[tuple[int, str], ...]:
+        if self._learner_lister is not None:
+            return self._learner_lister(parent_ref)
         return tuple(
             item for item in self.experience.learners() if self.authorization.parent_authorized(parent_ref, item[0])
         )

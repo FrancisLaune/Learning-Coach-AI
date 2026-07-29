@@ -9,6 +9,7 @@ from infrastructure.repositories.learning import DuckDBLearningRepository
 from infrastructure.repositories.learning_session import DuckDBLearningSessionRepository
 from infrastructure.repositories.recommendation import DuckDBRecommendationRepository
 from infrastructure.repositories.session_integration import DuckDBSessionIntegrationGateway
+from infrastructure.repositories.unified_experience import DuckDBUnifiedExperienceRepository
 from infrastructure.repositories.unified_session_execution import DuckDBUnifiedSessionExecutionRepository
 from services.learning.learning_engine_service import LearningEngineService
 from services.learning_session.experience import LearnerExperienceService
@@ -27,9 +28,11 @@ def build_student_experience_controller() -> StudentExperienceController:
 
 
 def build_parent_experience_controller() -> ParentExperienceController:
+    repository = DuckDBUnifiedExperienceRepository()
     return ParentExperienceController(
         LearnerExperienceService(DuckDBExperienceReadModel()),
         DuckDBSessionIntegrationGateway(),
+        learner_lister=lambda parent_ref: repository.list_linked_learners(parent_ref, archived=False),
     )
 
 

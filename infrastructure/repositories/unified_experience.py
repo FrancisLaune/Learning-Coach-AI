@@ -418,7 +418,91 @@ class DuckDBUnifiedExperienceRepository:
         finally:
             connection.close()
 
-    def learner_management_profile(self, learner_id: int) -> LearnerManagementProfile:
+    def list_linked_learners(self, parent_ref: str, *, archived: bool = False) -> tuple[tuple[int, str], ...]:
+        connection = connect_v2(self.database_path, read_only=True)
+        try:
+            archived_clause = "l.archived_at IS NOT NULL" if archived else "l.archived_at IS NULL"
+            rows = connection.execute(
+                f"""SELECT l.id, COALESCE(e.first_name, l.display_name)
+                FROM learners l
+                JOIN learner_guardian_links g ON g.learner_id = l.id
+                LEFT JOIN learner_experience_profiles e ON e.learner_id = l.id
+                WHERE g.guardian_external_ref=? AND g.active AND g.revoked_at IS NULL
+                AND {archived_clause}
+                ORDER BY COALESCE(e.first_name, l.display_name)""",
+                [parent_ref],
+            ).fetchall()
+            return tuple((int(row[0]), str(row[1])) for row in rows)
+        finally:
+            connection.close()
+
+    def learner_is_archived(self, learner_id: int) -> bool:
+        connection = connect_v2(self.database_path, read_only=True)
+        try:
+            row = connection.execute(
+                "SELECT archived_at IS NOT NULL FROM learners WHERE id=?",
+                [learner_id],
+            ).fetchone()
+            return bool(row and row[0])
+        finally:
+            connection.close()
+
+    def learner_last_activity_label(self, learner_id: int) -> str | None:
+        connection = connect_v2(self.database_path, read_only=True)
+        try:
+            row = connection.execute(
+                """SELECT max(ts) FROM (
+                    SELECT max(started_at) AS ts FROM learning_sessions WHERE learner_id=?
+                    UNION ALL
+                    SELECT max(updated_at) FROM homework_assignments WHERE learner_id=?
+                )""",
+                [learner_id, learner_id],
+            ).fetchone()
+            if row is None or row[0] is None:
+                return None
+            return str(row[0])
+        finally:
+            connection.close()
+
+    def archive_learner(self, parent_ref: str, learner_id: int) -> None:
+        if not self.parent_authorized(parent_ref, learner_id):
+            raise PermissionError("PARENT_ACCESS_DENIED")
+        connection = connect_v2(self.database_path)
+        try:
+            connection.execute(
+                """UPDATE learners SET archived_at=now()
+                WHERE id=? AND archived_at IS NULL AND EXISTS (
+                    SELECT 1 FROM learner_guardian_links
+                    WHERE guardian_external_ref=? AND learner_id=? AND active AND revoked_at IS NULL
+                )""",
+                [learner_id, parent_ref, learner_id],
+            )
+        finally:
+            connection.close()
+        if not self.learner_is_archived(learner_id):
+            raise PermissionError("PARENT_ACCESS_DENIED")
+
+    def restore_learner(self, parent_ref: str, learner_id: int) -> None:
+        if not self.parent_authorized(parent_ref, learner_id):
+            raise PermissionError("PARENT_ACCESS_DENIED")
+        connection = connect_v2(self.database_path)
+        try:
+            connection.execute(
+                """UPDATE learners SET archived_at=NULL
+                WHERE id=? AND archived_at IS NOT NULL AND EXISTS (
+                    SELECT 1 FROM learner_guardian_links
+                    WHERE guardian_external_ref=? AND learner_id=? AND active AND revoked_at IS NULL
+                )""",
+                [learner_id, parent_ref, learner_id],
+            )
+        finally:
+            connection.close()
+        if self.learner_is_archived(learner_id):
+            raise PermissionError("PARENT_ACCESS_DENIED")
+
+    def learner_management_profile(
+        self, learner_id: int, *, include_archived: bool = False
+    ) -> LearnerManagementProfile:
         connection = connect_v2(self.database_path, read_only=True)
         try:
             row = connection.execute(
@@ -431,8 +515,8 @@ class DuckDBUnifiedExperienceRepository:
                 JOIN learner_journey_preferences p ON p.learner_id=e.learner_id
                 JOIN pedagogical_objectives po ON po.id=p.current_objective_ref
                 JOIN learners l ON l.id=e.learner_id
-                WHERE e.learner_id=? AND l.archived_at IS NULL""",
-                [learner_id],
+                WHERE e.learner_id=? AND (? OR l.archived_at IS NULL)""",
+                [learner_id, include_archived],
             ).fetchone()
             if row is None:
                 raise KeyError(f"Unknown learner profile {learner_id}")
@@ -569,6 +653,11 @@ class DuckDBUnifiedExperienceRepository:
                 ("DELETE FROM pedagogical_objectives WHERE learner_id=?", 1),
                 ("DELETE FROM learner_profiles WHERE learner_id=?", 1),
                 ("DELETE FROM learner_functional_profiles WHERE learner_id=?", 1),
+                ("DELETE FROM virtual_teacher_messages WHERE session_id IN (SELECT id FROM virtual_teacher_sessions WHERE learner_id=?)", 1),
+                ("DELETE FROM virtual_teacher_summaries WHERE session_id IN (SELECT id FROM virtual_teacher_sessions WHERE learner_id=?)", 1),
+                ("DELETE FROM virtual_teacher_sessions WHERE learner_id=?", 1),
+                ("DELETE FROM virtual_teacher_events WHERE learner_id=?", 1),
+                ("DELETE FROM virtual_teacher_preferences WHERE learner_id=?", 1),
             )
             for statement, parameter_count in statements:
                 connection.execute("BEGIN")

@@ -106,7 +106,24 @@ def login_screen() -> None:
         unsafe_allow_html=True,
     )
     st.subheader("Connexion")
-    parent_tab, student_tab = st.tabs(["Parent", "Élève"])
+    student_tab, parent_tab = st.tabs(["Élève", "Parent"])
+    with student_tab:
+        with st.form("student_login"):
+            student_name = st.text_input("Identifiant ou e-mail", key="student_login_name")
+            student_password = st.text_input(
+                "Mot de passe",
+                type="password",
+                key="student_login_password",
+            )
+            login_student = st.form_submit_button("Se connecter", type="primary")
+        if login_student:
+            user = authenticate(student_name, student_password, "student")
+            if user:
+                st.session_state.user = user
+                st.rerun()
+            else:
+                st.error("Identifiant, e-mail ou mot de passe incorrect.")
+        st.caption("Le compte Élève est créé et géré depuis l'espace Parent.")
     with parent_tab:
         with st.form("parent_login"):
             name = st.text_input("Identifiant ou e-mail", key="parent_login_name")
@@ -117,7 +134,8 @@ def login_screen() -> None:
             if user:
                 st.session_state.user = user
                 st.rerun()
-            st.error("Identifiant, e-mail ou mot de passe incorrect.")
+            else:
+                st.error("Identifiant, e-mail ou mot de passe incorrect.")
         if is_demo_credentials_enabled():
             demo_name, demo_password = get_demo_parent_credentials()
             with st.popover("ℹ️ Compte de démonstration"):
@@ -137,25 +155,19 @@ def login_screen() -> None:
             if submitted:
                 ok, message = create_parent(first_name, last_name, email, username, password, confirmation)
                 if ok:
-                    st.success(message)
+                    user = authenticate(username, password, "parent")
+                    if user is None and email.strip():
+                        user = authenticate(email, password, "parent")
+                    if user:
+                        st.session_state.user = user
+                        st.success("Compte parent créé. Connexion en cours…")
+                        st.rerun()
+                    st.success(
+                        f"{message} Connectez-vous avec l'identifiant **{username.strip()}** "
+                        f"ou l'e-mail **{email.strip().lower()}**."
+                    )
                 else:
                     st.error(message)
-    with student_tab:
-        with st.form("student_login"):
-            student_name = st.text_input("Identifiant ou e-mail", key="student_login_name")
-            student_password = st.text_input(
-                "Mot de passe",
-                type="password",
-                key="student_login_password",
-            )
-            login_student = st.form_submit_button("Se connecter", type="primary")
-        if login_student:
-            user = authenticate(student_name, student_password, "student")
-            if user:
-                st.session_state.user = user
-                st.rerun()
-            st.error("Identifiant, e-mail ou mot de passe incorrect.")
-        st.caption("Le compte Élève est créé et géré depuis l'espace Parent.")
     _render_forgot_password_panel()
 
 

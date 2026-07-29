@@ -215,7 +215,8 @@ exports/
 *.zip
 *.tar.gz
 
-# Local database copies and temporary files (reference databases remain tracked)
+# Local database copies and temporary files
+data/*.duckdb
 *.db.backup
 *.duckdb.backup
 *.db.bak
