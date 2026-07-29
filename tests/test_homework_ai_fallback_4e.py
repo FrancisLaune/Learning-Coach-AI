@@ -26,6 +26,8 @@ from infrastructure.repositories.unified_experience import DuckDBUnifiedExperien
 from migrations.runner import apply_migrations
 from services.content.factory import CandidateValidator, ContentFactoryService
 from services.homework.ai_fallback import HomeworkAiFallbackOrchestrator
+from services.homework.curriculum_target import resolve_curriculum_target
+from services.homework.factory import build_homework_service
 from services.platform_runtime import FeatureFlagService
 from services.unified_experience import HomeworkService
 
@@ -178,3 +180,38 @@ def test_runtime_candidates_never_call_catalogue_persist(
     )
     service = HomeworkService(repository, feature_flags=flags, ai_fallback=orchestrator)
     service.create_with_diagnostics(_request(learner_id, english_id, grade_id, count=10))
+
+
+def test_resolve_curriculum_target_for_english_4e(
+    fallback_database: tuple[Path, int, int, int],
+) -> None:
+    path, learner_id, english_id, grade_id = fallback_database
+    repository = DuckDBUnifiedExperienceRepository(path)
+    target = resolve_curriculum_target(repository, _request(learner_id, english_id, grade_id))
+    assert target.subject_code == "ENGLISH"
+    assert target.grade_code == "FR-4E"
+    assert target.chapter_code
+    assert target.primary_skill_code
+
+
+def test_build_homework_service_without_flag_has_no_fallback(
+    fallback_database: tuple[Path, int, int, int],
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    path, _, _, _ = fallback_database
+    monkeypatch.delenv("HOMEWORK_AI_FALLBACK_4E_ENABLED", raising=False)
+    monkeypatch.delenv("LCAI_ENABLE_V2_UI", raising=False)
+    service = build_homework_service(DuckDBUnifiedExperienceRepository(path))
+    assert not service.supports_ai_fallback()
+
+
+def test_build_homework_service_with_flag_uses_openai_config(
+    fallback_database: tuple[Path, int, int, int],
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    path, _, _, _ = fallback_database
+    monkeypatch.setenv("LCAI_ENABLE_V2_UI", "true")
+    monkeypatch.setenv("HOMEWORK_AI_FALLBACK_4E_ENABLED", "true")
+    monkeypatch.setenv("OPENAI_API_KEY", "test-key")
+    service = build_homework_service(DuckDBUnifiedExperienceRepository(path))
+    assert service.supports_ai_fallback()

@@ -145,6 +145,9 @@ class HomeworkService:
             raise ValueError("HOMEWORK_AI_FALLBACK_NOT_CONFIGURED")
         return self._ai_fallback.generate(request)
 
+    def supports_ai_fallback(self) -> bool:
+        return self._ai_fallback is not None and self._feature_flags.enabled("homework_ai_fallback_4e")
+
     def _should_use_ai_fallback(self, request: HomeworkRequest) -> bool:
         if not self._feature_flags.enabled("homework_ai_fallback_4e"):
             return False
@@ -171,6 +174,13 @@ class HomeworkService:
         if not self.repository.parent_authorized(parent_ref, request.learner_id):
             raise PermissionError("PARENT_ACCESS_DENIED")
         return self.create(request)
+
+    def assign_as_parent_with_diagnostics(self, parent_ref: str, request: HomeworkRequest) -> HomeworkGenerationResult:
+        if request.assigned_by_type != "PARENT" or request.assigned_by_ref != parent_ref:
+            raise PermissionError("PARENT_ASSIGNMENT_CONTEXT_INVALID")
+        if not self.repository.parent_authorized(parent_ref, request.learner_id):
+            raise PermissionError("PARENT_ACCESS_DENIED")
+        return self.create_with_diagnostics(request)
 
     def list_for_learner(self, learner_id: int) -> tuple[HomeworkAssignment, ...]:
         return self.repository.list_homework(learner_id)

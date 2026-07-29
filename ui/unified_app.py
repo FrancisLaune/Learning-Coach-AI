@@ -53,6 +53,7 @@ from services.onboarding import OnboardingService, OnboardingValidationError
 from services.parent_ref import parent_ref_from_user
 from services.recommendation import PersonalizedSessionService
 from services.content.homework_availability import HomeworkAvailabilityService
+from services.homework.factory import build_homework_service
 from services.unified_experience import (
     DeterministicCoachService,
     HomeworkService,
@@ -122,6 +123,10 @@ def _family_diagnostic_service() -> FamilyDataDiagnosticService:
 
 def _repository() -> DuckDBUnifiedExperienceRepository:
     return DuckDBUnifiedExperienceRepository()
+
+
+def _homework_service() -> HomeworkService:
+    return build_homework_service(_repository())
 
 
 def _virtual_teacher_repository() -> DuckDBVirtualTeacherRepository:
@@ -452,7 +457,7 @@ def _homework_form(
     modes: tuple[AssignmentType, ...] = (AssignmentType.TARGETED, AssignmentType.GLOBAL_SUBJECT),
 ) -> None:
     repository = _repository()
-    service = HomeworkService(repository)
+    service = _homework_service()
     availability_service = HomeworkAvailabilityService(repository)
     grade_id = repository.learner_grade_id(learner_id)
     grade_labels = {item[0]: item[2] for item in repository.grade_levels()}
@@ -586,7 +591,7 @@ def _homework_form(
         None,
         None,
     )
-    preview_selection = HomeworkService(repository).preview_selection(preview_request)
+    preview_selection = _homework_service().preview_selection(preview_request)
     available_total = len(preview_selection.content_ids)
     difficulty_labels = {
         DifficultyMode.EASY: "Facile",
@@ -606,10 +611,16 @@ def _homework_form(
             "Le devoir utilisera les niveaux disponibles (assouplissement automatique)."
         )
     elif available_total < exercise_count:
-        st.info(
-            f"Seulement {available_total} contenu(s) approuvé(s) disponible(s) "
-            f"pour {labels[int(subject_id)]}. Le devoir sera limité à ce maximum."
-        )
+        if service.supports_ai_fallback():
+            st.info(
+                f"Seulement {available_total} contenu(s) approuvé(s) disponible(s). "
+                "Le complément IA pourra compléter le devoir si le fallback 4e est activé."
+            )
+        else:
+            st.info(
+                f"Seulement {available_total} contenu(s) approuvé(s) disponible(s) "
+                f"pour {labels[int(subject_id)]}. Le devoir sera limité à ce maximum."
+            )
     else:
         st.caption(f"{available_total} contenu(s) approuvé(s) disponible(s) pour cette sélection.")
     target_duration = st.slider("Durée cible", 5, 120, 30, 5, key=f"{key}_duration")
@@ -635,7 +646,7 @@ def _homework_form(
         key=f"{key}_create",
         disabled=(
             (mode is not AssignmentType.GLOBAL_SUBJECT and not selected_chapters)
-            or available_total == 0
+            or (available_total == 0 and not service.supports_ai_fallback())
         ),
     )
     if create:
@@ -654,29 +665,65 @@ def _homework_form(
             datetime.combine(due_date, time(23, 59), tzinfo=UTC),
             correction,
         )
-        result = _safe(
-            lambda: service.assign_as_parent(actor_ref, request) if actor_type == "PARENT" else service.create(request)
+        if service.supports_ai_fallback():
+            generation = _safe(
+                lambda: service.assign_as_parent_with_diagnostics(actor_ref, request)
+                if actor_type == "PARENT"
+                else service.create_with_diagnostics(request)
+            )
+            if generation:
+                _render_homework_creation_feedback(generation, exercise_count)
+        else:
+            result = _safe(
+                lambda: service.assign_as_parent(actor_ref, request) if actor_type == "PARENT" else service.create(request)
+            )
+            if result:
+                selection = service.preview_selection(request)
+                _render_homework_catalog_feedback(selection, len(result.selected_content_ids), exercise_count)
+
+
+def _render_homework_catalog_feedback(selection, selected_count: int, exercise_count: int) -> None:
+    if selection.difficulty_relaxed:
+        st.info(
+            "La difficulté demandée n'avait aucun contenu publié ; "
+            "des contenus d'un niveau proche ont été utilisés."
         )
-        if result:
-            selection = service.preview_selection(request)
-            selected_count = len(result.selected_content_ids)
-            if selection.difficulty_relaxed:
-                st.info(
-                    "La difficulté demandée n'avait aucun contenu publié ; "
-                    "des contenus d'un niveau proche ont été utilisés."
-                )
-            if selected_count < exercise_count:
-                st.warning(
-                    f"Le catalogue contient actuellement {selected_count} contenu(s) compatible(s). "
-                    f"Le devoir a été créé avec {selected_count} contenu(s) au lieu des {exercise_count} demandés."
-                )
-            else:
-                st.success(f"Devoir créé avec {selected_count} contenu(s) approuvé(s).")
+    if selected_count < exercise_count:
+        st.warning(
+            f"Le catalogue contient actuellement {selected_count} contenu(s) compatible(s). "
+            f"Le devoir a été créé avec {selected_count} contenu(s) au lieu des {exercise_count} demandés."
+        )
+    else:
+        st.success(f"Devoir créé avec {selected_count} contenu(s) approuvé(s).")
+
+
+def _render_homework_creation_feedback(generation, exercise_count: int) -> None:
+    from domain.unified_experience.models import HomeworkGenerationResult
+
+    if not isinstance(generation, HomeworkGenerationResult):
+        return
+    catalog_count = generation.catalog_count
+    runtime_count = len(generation.runtime_exercise_ids)
+    final_count = generation.final_count
+    if runtime_count:
+        st.success(
+            f"Devoir créé avec {catalog_count} contenu(s) du catalogue "
+            f"et {runtime_count} exercice(s) complété(s) dynamiquement ({final_count} au total)."
+        )
+    elif final_count >= exercise_count:
+        st.success(f"Devoir créé avec {final_count} contenu(s) approuvé(s).")
+    elif final_count > 0:
+        st.warning(
+            f"Le devoir a été créé avec {final_count} exercice(s) sur {exercise_count} demandés "
+            "(catalogue et complément IA insuffisants)."
+        )
+    if generation.degraded_mode and generation.degradation_reason:
+        st.caption(f"Mode dégradé : {generation.degradation_reason}")
 
 
 def student_homework(learner_id: int) -> None:
     st.title("Mes devoirs")
-    service = HomeworkService(_repository())
+    service = _homework_service()
     tabs = st.tabs(("À faire", "En cours", "Terminés", "Créer"))
     groups = (
         {AssignmentStatus.DRAFT, AssignmentStatus.READY},
@@ -788,7 +835,7 @@ def run_student(user: dict[str, object], learner_id: int) -> None:
         student_summary(controller, learner_id)
     elif page == "Mon planning":
         st.title("Mon planning")
-        assignments = HomeworkService(_repository()).list_for_learner(learner_id)
+        assignments = _homework_service().list_for_learner(learner_id)
         due = [
             item
             for item in assignments
@@ -1386,7 +1433,7 @@ def run_parent(user: dict[str, object]) -> None:
         st.title("Assigner un devoir")
         _homework_form(learner_id, "PARENT", parent_ref, "parent_homework_form")
         st.subheader("Devoirs de l'élève")
-        items = HomeworkService(_repository()).list_for_learner(learner_id)
+        items = _homework_service().list_for_learner(learner_id)
         st.dataframe(
             [
                 {"Matière": item.subject_label, "État": label(item.status.value), "Échéance": item.due_at}
@@ -1415,7 +1462,7 @@ def run_parent(user: dict[str, object]) -> None:
                             st.rerun()
     elif page == "Planning":
         st.title("Planning et échéances")
-        items = HomeworkService(_repository()).list_for_learner(learner_id)
+        items = _homework_service().list_for_learner(learner_id)
         st.dataframe(
             [
                 {"Matière": item.subject_label, "Échéance": item.due_at, "État": label(item.status.value)}

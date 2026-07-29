@@ -9,7 +9,6 @@ from typing import Protocol
 from domain.content.factory import (
     CanonicalContentType,
     ContentGenerationRequest,
-    CurriculumTarget,
     GeneratedContentCandidate,
     IssueSeverity,
     PedagogicalIntent,
@@ -24,6 +23,7 @@ from domain.unified_experience.models import (
 )
 from services.content.factory import ContentFactoryService
 from services.homework.config import HomeworkAiFallbackSettings
+from services.homework.curriculum_target import resolve_curriculum_target
 from services.homework.learner_context import LearnerContextService
 
 LOGGER = logging.getLogger(__name__)
@@ -200,13 +200,7 @@ class HomeworkAiFallbackOrchestrator:
         correlation_id: str,
     ) -> tuple[RuntimeExerciseCandidate, ...]:
         generation_request = ContentGenerationRequest(
-            CurriculumTarget(
-                "FR-COLLEGE-2025",
-                context.grade_code.removeprefix("FR-").lower(),
-                context.subject_code,
-                "GENERAL" if not context.chapter_ids else str(context.chapter_ids[0]),
-                "GENERAL" if not context.skill_ids else str(context.skill_ids[0]),
-            ),
+            resolve_curriculum_target(self.repository, request),
             CanonicalContentType.PRACTICE,
             context.target_difficulty,
             PedagogicalIntent.PRACTICE,

@@ -18,7 +18,11 @@ Ce répertoire regroupe l’ensemble des livrables Phase 3 : audits, rapports d�
 | LCAI-0015B | Gestion famille / élèves | [LCAI-0015B_PHASE0_AUDIT.md](LCAI-0015B_PHASE0_AUDIT.md) |
 | LCAI-0017 | Professeur virtuel V1 | [LCAI-0017_VIRTUAL_TEACHER_V1_IMPLEMENTATION_REPORT.md](LCAI-0017_VIRTUAL_TEACHER_V1_IMPLEMENTATION_REPORT.md) |
 | LCAI-0018 | Couverture devoirs 4e | [LCAI-0018_IMPLEMENTATION_REPORT.md](LCAI-0018_IMPLEMENTATION_REPORT.md) |
-| LCAI-0018B | Fallback IA adaptatif 4e | [LCAI-0018B_IMPLEMENTATION_REPORT.md](LCAI-0018B_IMPLEMENTATION_REPORT.md) |
+| LCAI-0018B | Fallback IA adaptatif 4e | [LCAI-0018B_IMPLEMENTATION_REPORT.md](LCAI-0018B_IMPLEMENTATION_REPORT.md) — [Validation B4](LCAI-0018B_B4_VALIDATION_REPORT.md) |
+
+## Documentation Master Book
+
+Volumes de référence Francis : [docs/Master/README.md](../Master/README.md)
 
 ## Exports et matrices
 
