@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from contextlib import suppress
 from datetime import UTC, datetime, timedelta
+from time import sleep
 from typing import Any
 
 import duckdb
@@ -32,6 +33,71 @@ from services.auth.roles import is_known_auth_role
 
 DB_PATH = get_database_path()
 
+LOCK_RETRY_ATTEMPTS = 6
+LOCK_RETRY_DELAY_SECONDS = 0.3
+
+_connections: dict[str, duckdb.DuckDBPyConnection] = {}
+
+
+class _LegacyConnection:
+    """Reuse one DuckDB handle per database file within a process (Windows-safe)."""
+
+    __slots__ = ("_inner",)
+
+    def __init__(self, inner: duckdb.DuckDBPyConnection) -> None:
+        self._inner = inner
+
+    def close(self) -> None:
+        return  # Shared handle; call reset_legacy_connections() for teardown.
+
+    def __getattr__(self, name: str) -> Any:
+        return getattr(self._inner, name)
+
+    def __enter__(self) -> _LegacyConnection:
+        return self
+
+    def __exit__(self, *args: object) -> None:
+        self.close()
+
+
+def reset_legacy_connections() -> None:
+    """Close all cached legacy connections (tests and maintenance scripts)."""
+    for connection in _connections.values():
+        connection.close()
+    _connections.clear()
+
+
+def _open_legacy_connection() -> duckdb.DuckDBPyConnection:
+    DB_PATH.parent.mkdir(parents=True, exist_ok=True)
+    key = str(DB_PATH.resolve())
+    cached = _connections.get(key)
+    if cached is not None:
+        return _LegacyConnection(cached)  # type: ignore[return-value]
+
+    last_error: duckdb.IOException | None = None
+    for attempt in range(LOCK_RETRY_ATTEMPTS):
+        try:
+            connection = duckdb.connect(key)
+            _connections[key] = connection
+            return _LegacyConnection(connection)  # type: ignore[return-value]
+        except duckdb.IOException as exc:
+            last_error = exc
+            if attempt >= LOCK_RETRY_ATTEMPTS - 1:
+                raise
+            sleep(LOCK_RETRY_DELAY_SECONDS * (attempt + 1))
+    if last_error is not None:
+        raise last_error
+    raise RuntimeError(f"Unable to open legacy database at {key}")
+
+
+def connect() -> duckdb.DuckDBPyConnection:
+    return _open_legacy_connection()
+
+
+def connect_readonly() -> duckdb.DuckDBPyConnection:
+    """Prefer ``connect()`` in the Streamlit runtime: DuckDB rejects mixed RO/RW handles."""
+    return _open_legacy_connection()
+
 
 def _parent_owns_learner(parent_user_id: int, learner_external_ref: str) -> bool:
     from services.auth.authorization import parent_owns_learner
@@ -47,17 +113,6 @@ def _as_utc_aware(value: datetime) -> datetime:
     if value.tzinfo is None:
         return value.replace(tzinfo=UTC)
     return value.astimezone(UTC)
-
-
-def connect() -> duckdb.DuckDBPyConnection:
-    DB_PATH.parent.mkdir(parents=True, exist_ok=True)
-    return duckdb.connect(str(DB_PATH))
-
-
-def connect_readonly() -> duckdb.DuckDBPyConnection:
-    """Prefer ``connect()`` in the Streamlit runtime: DuckDB rejects mixed RO/RW handles."""
-    DB_PATH.parent.mkdir(parents=True, exist_ok=True)
-    return duckdb.connect(str(DB_PATH))
 
 
 def pin_hash(pin: str) -> str:

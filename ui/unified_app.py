@@ -2,6 +2,13 @@
 
 from __future__ import annotations
 
+import sys
+from pathlib import Path
+
+_ROOT = Path(__file__).resolve().parents[1]
+if str(_ROOT) not in sys.path:
+    sys.path.insert(0, str(_ROOT))
+
 import logging
 from collections.abc import Callable
 from datetime import UTC, date, datetime, time
@@ -53,7 +60,6 @@ from services.onboarding import OnboardingService, OnboardingValidationError
 from services.parent_ref import parent_ref_from_user
 from services.recommendation import PersonalizedSessionService
 from services.content.homework_availability import HomeworkAvailabilityService
-from services.homework.factory import build_homework_service
 from services.unified_experience import (
     DeterministicCoachService,
     HomeworkService,
@@ -126,6 +132,8 @@ def _repository() -> DuckDBUnifiedExperienceRepository:
 
 
 def _homework_service() -> HomeworkService:
+    from services.homework.factory import build_homework_service
+
     return build_homework_service(_repository())
 
 

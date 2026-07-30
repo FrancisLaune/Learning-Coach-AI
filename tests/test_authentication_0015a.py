@@ -14,6 +14,7 @@ from services.auth.roles import AuthRole, is_known_auth_role
 
 @pytest.fixture()
 def auth_db(tmp_path: Path, monkeypatch: MonkeyPatch) -> Path:
+    legacy_database.reset_legacy_connections()
     db_path = tmp_path / "legacy-auth.duckdb"
     monkeypatch.setattr(legacy_database, "DB_PATH", db_path)
     monkeypatch.setenv("LCAI_ENABLE_DEMO_CREDENTIALS", "false")

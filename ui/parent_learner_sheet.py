@@ -9,7 +9,6 @@ import streamlit as st
 
 from application.experience_controllers import ParentExperienceController, PresentationError
 from infrastructure.database.legacy_gateway import student_account_for_learner
-from services.homework.factory import build_homework_service
 from services.unified_experience import LearnerProfileManagementService, ProgrammeChangeService
 from ui.i18n import label
 from ui.navigation import request_navigation
@@ -124,6 +123,8 @@ def render_parent_learner_sheet(
 
     with tabs[5]:
         render_homework_form()
+        from services.homework.factory import build_homework_service
+
         items = build_homework_service(repository).list_for_learner(learner_id)
         if not items:
             st.info("Aucun devoir assigné.")
@@ -137,6 +138,8 @@ def render_parent_learner_sheet(
             )
 
     with tabs[6]:
+        from services.homework.factory import build_homework_service
+
         items = build_homework_service(repository).list_for_learner(learner_id)
         if not items:
             st.info("Aucune échéance planifiée.")

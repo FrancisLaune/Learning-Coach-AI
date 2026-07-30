@@ -3,15 +3,14 @@
 from __future__ import annotations
 
 import logging
+from typing import TYPE_CHECKING
 
-from infrastructure.config.openai_settings import OpenAIConfigurationError, configure_openai_environment, load_openai_model
-from infrastructure.generators.openai_content import OpenAIContentGenerator
-from infrastructure.repositories.content_factory import DuckDBContentFactoryRepository
 from infrastructure.repositories.unified_experience import DuckDBUnifiedExperienceRepository
-from services.content.factory import CandidateValidator, ContentFactoryService
-from services.homework.ai_fallback import HomeworkAiFallbackOrchestrator
 from services.platform_runtime import FeatureFlagService, default_flags
 from services.unified_experience import HomeworkService
+
+if TYPE_CHECKING:
+    from services.homework.ai_fallback import HomeworkAiFallbackOrchestrator
 
 LOGGER = logging.getLogger(__name__)
 
@@ -28,6 +27,16 @@ def build_homework_service(
 
     if flags.enabled("homework_ai_fallback_4e"):
         try:
+            from infrastructure.config.openai_settings import (
+                OpenAIConfigurationError,
+                configure_openai_environment,
+                load_openai_model,
+            )
+            from infrastructure.generators.openai_content import OpenAIContentGenerator
+            from infrastructure.repositories.content_factory import DuckDBContentFactoryRepository
+            from services.content.factory import CandidateValidator, ContentFactoryService
+            from services.homework.ai_fallback import HomeworkAiFallbackOrchestrator
+
             configure_openai_environment()
             factory_repo = DuckDBContentFactoryRepository(repo.database_path)
             generator = OpenAIContentGenerator(
@@ -45,6 +54,12 @@ def build_homework_service(
             factory = ContentFactoryService(generator, factory_repo, CandidateValidator())
             ai_fallback = HomeworkAiFallbackOrchestrator(repo, content_factory=factory)
             LOGGER.info("Homework AI fallback enabled for 4e (OpenAI via secrets.toml or OPENAI_API_KEY)")
+        except ImportError as exc:
+            LOGGER.warning(
+                "homework_ai_fallback_4e is enabled but optional dependencies are missing (%s). "
+                "Install requirements.txt (pydantic, openai).",
+                exc,
+            )
         except OpenAIConfigurationError:
             LOGGER.warning(
                 "homework_ai_fallback_4e is enabled but OpenAI is not configured "
