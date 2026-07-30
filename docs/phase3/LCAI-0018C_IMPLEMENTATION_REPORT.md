@@ -1,9 +1,9 @@
 # LCAI-0018C — Rapport d'implémentation CM1
 
 **Ticket :** LCAI-0018C — Industrialisation complète CM1  
-**Statut :** TERMINÉ (publication AI contrôlée exécutée ; écarts résiduels documentés)  
+**Statut :** ✅ VALIDÉ (2026-07-30) — publication AI contrôlée exécutée ; écarts résiduels documentés  
 **Date :** 2026-07-30  
-**Branche :** develop (non commité)
+**Branche :** develop (`4f9d84d`)
 
 ---
 

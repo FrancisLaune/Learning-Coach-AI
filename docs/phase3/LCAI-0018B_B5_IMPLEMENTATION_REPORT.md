@@ -1,9 +1,9 @@
 # LCAI-0018B5 — Runtime Generated Homework Playability
 
-**Statut :** READY FOR REVIEW  
+**Statut :** ✅ VALIDÉ (2026-07-30)  
 **Date :** 2026-07-30  
 **Prérequis :** LCAI-0018B4 (`38197e5`)  
-**Commit / push :** NOT PERFORMED (attente validation Francis)
+**Commit :** `4f9d84d` (develop)
 
 ---
 
