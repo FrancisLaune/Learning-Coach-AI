@@ -651,6 +651,27 @@ class DuckDBUnifiedExperienceRepository:
             connection.close()
         return tuple(self.get_homework(int(row[0])) for row in ids if row and len(row) >= 1 and row[0] is not None)
 
+    def rollback_homework_creation(self, homework_id: int, learner_id: int) -> None:
+        """Remove a freshly created homework when AI completion fails (LCAI-0018B7)."""
+        connection = connect_v2(self.database_path)
+        try:
+            row = connection.execute(
+                """SELECT id, status FROM homework_assignments
+                WHERE id=? AND learner_id=?""",
+                [homework_id, learner_id],
+            ).fetchone()
+            if row is None:
+                return
+            if str(row[1]) != AssignmentStatus.READY.value:
+                raise ValueError("HOMEWORK_ROLLBACK_NOT_ALLOWED")
+            connection.execute("DELETE FROM homework_runtime_exercises WHERE homework_id=?", [homework_id])
+            connection.execute(
+                "DELETE FROM homework_assignments WHERE id=? AND learner_id=? AND status='READY'",
+                [homework_id, learner_id],
+            )
+        finally:
+            connection.close()
+
     def update_homework_status(
         self, homework_id: int, learner_id: int, current: AssignmentStatus, target: AssignmentStatus
     ) -> HomeworkAssignment:

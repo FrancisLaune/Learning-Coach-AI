@@ -1,4 +1,4 @@
-"""Generalized homework AI content completion (LCAI-0018B6)."""
+"""Generalized homework AI content completion (LCAI-0018B6 / LCAI-0018B7)."""
 
 from __future__ import annotations
 
@@ -24,6 +24,7 @@ from domain.unified_experience.models import (
 from services.content.factory import ContentFactoryService
 from services.homework.config import HomeworkAiFallbackSettings
 from services.homework.curriculum_target import resolve_curriculum_targets
+from services.homework.errors import HomeworkCompletionError
 from services.homework.learner_context import LearnerContextService
 from services.homework.runtime_persistence import is_playable_candidate, persist_playable_homework_exercise
 
@@ -39,6 +40,8 @@ class HomeworkRuntimeRepository(Protocol):
     def select_approved_content_detailed(self, request: HomeworkRequest) -> HomeworkContentSelection: ...
 
     def load_homework_runtime_results(self, homework_id: int) -> tuple[GeneratedHomeworkExerciseResult, ...]: ...
+
+    def rollback_homework_creation(self, homework_id: int, learner_id: int) -> None: ...
 
 
 def new_correlation_id() -> str:
@@ -84,14 +87,23 @@ class HomeworkContentCompletionService:
             deficit,
         )
 
+        if deficit > 0:
+            self._assert_ai_can_fill_deficit(request, deficit, correlation)
+
         accepted: tuple[GeneratedContentCandidate, ...] = ()
         ai_requested = 0
         homework = self.repository.create_homework(request, catalog_ids)
-        existing_results = self.repository.load_homework_runtime_results(homework.homework_id)
-        still_needed = max(0, deficit - len(existing_results))
-        if still_needed > 0:
-            ai_requested = self.settings.generation_cap(still_needed)
-            if self.content_factory is not None and ai_requested > 0:
+        try:
+            existing_results = self.repository.load_homework_runtime_results(homework.homework_id)
+            still_needed = max(0, deficit - len(existing_results))
+            if still_needed > 0:
+                ai_requested = still_needed if not self.settings.allow_degraded_result else self.settings.generation_cap(still_needed)
+                if ai_requested <= 0:
+                    raise HomeworkCompletionError(
+                        requested=request.exercise_count,
+                        actual=len(catalog_ids) + len(existing_results),
+                        reason="GENERATION_CAP_EXCEEDED",
+                    )
                 LOGGER.info("ai_completion_started correlation_id=%s requested=%s", correlation, ai_requested)
                 accepted = self._generate_validated(context, request, ai_requested, correlation)
                 LOGGER.info(
@@ -99,43 +111,102 @@ class HomeworkContentCompletionService:
                     correlation,
                     len(accepted),
                 )
-        elif deficit > 0 and existing_results:
-            LOGGER.info(
-                "ai_completion_reused correlation_id=%s existing=%s",
+            elif deficit > 0 and existing_results:
+                LOGGER.info(
+                    "ai_completion_reused correlation_id=%s existing=%s",
+                    correlation,
+                    len(existing_results),
+                )
+
+            if not catalog_ids and not accepted and not existing_results:
+                raise HomeworkCompletionError(
+                    requested=request.exercise_count,
+                    reason="AI_UNAVAILABLE",
+                )
+
+            generated_results: list[GeneratedHomeworkExerciseResult] = list(existing_results[:deficit])
+            runtime_ids: list[int] = [
+                int(item.generation_metadata["runtime_record_id"]) for item in generated_results
+            ]
+            parent_ref = request.assigned_by_ref if request.assigned_by_type == "PARENT" else None
+            for offset, candidate in enumerate(accepted):
+                persisted = persist_playable_homework_exercise(
+                    self.repository,
+                    candidate,
+                    homework_id=homework.homework_id,
+                    learner_id=request.learner_id,
+                    position=len(catalog_ids) + len(existing_results) + offset + 1,
+                    correlation_id=correlation,
+                    parent_ref=parent_ref,
+                )
+                generated_results.append(persisted)
+                runtime_ids.append(int(persisted.generation_metadata["runtime_record_id"]))
+
+            final_count = len(catalog_ids) + len(generated_results)
+            return self._finalize_or_rollback(
+                request,
+                homework,
                 correlation,
-                len(existing_results),
+                catalog_ids,
+                ai_requested,
+                generated_results,
+                runtime_ids,
+                final_count,
             )
+        except Exception:
+            self._rollback_quietly(homework.homework_id, request.learner_id)
+            raise
 
-        if not catalog_ids and not accepted and not existing_results:
-            raise ValueError(self._empty_message())
-
-        generated_results: list[GeneratedHomeworkExerciseResult] = list(existing_results[:deficit])
-        runtime_ids: list[int] = [
-            int(item.generation_metadata["runtime_record_id"]) for item in generated_results
-        ]
-        parent_ref = request.assigned_by_ref if request.assigned_by_type == "PARENT" else None
-        for offset, candidate in enumerate(accepted):
-            persisted = persist_playable_homework_exercise(
-                self.repository,
-                candidate,
-                homework_id=homework.homework_id,
-                learner_id=request.learner_id,
-                position=len(catalog_ids) + len(existing_results) + offset + 1,
-                correlation_id=correlation,
-                parent_ref=parent_ref,
+    def _assert_ai_can_fill_deficit(
+        self,
+        request: HomeworkRequest,
+        deficit: int,
+        correlation_id: str,
+    ) -> None:
+        if self.content_factory is None:
+            LOGGER.warning(
+                "ai_completion_unavailable correlation_id=%s reason=no_factory deficit=%s",
+                correlation_id,
+                deficit,
             )
-            generated_results.append(persisted)
-            runtime_ids.append(int(persisted.generation_metadata["runtime_record_id"]))
+            raise HomeworkCompletionError(requested=request.exercise_count, reason="AI_UNAVAILABLE")
+        if not self.settings.allow_degraded_result:
+            capped = self.settings.generation_cap(deficit)
+            if capped < deficit:
+                LOGGER.warning(
+                    "ai_completion_cap_exceeded correlation_id=%s deficit=%s cap=%s",
+                    correlation_id,
+                    deficit,
+                    self.settings.max_generated_per_request,
+                )
+                raise HomeworkCompletionError(
+                    requested=request.exercise_count,
+                    actual=len([]),
+                    reason="GENERATION_CAP_EXCEEDED",
+                )
 
-        final_count = len(catalog_ids) + len(generated_results)
+    def _finalize_or_rollback(
+        self,
+        request: HomeworkRequest,
+        homework,
+        correlation: str,
+        catalog_ids: tuple[int, ...],
+        ai_requested: int,
+        generated_results: list[GeneratedHomeworkExerciseResult],
+        runtime_ids: list[int],
+        final_count: int,
+    ) -> HomeworkGenerationResult:
         degraded = final_count < request.exercise_count
         degradation_reason = None
         if degraded:
-            degradation_reason = (
-                "INSUFFICIENT_CATALOG_AND_AI"
-                if deficit > len(generated_results)
-                else "PARTIAL_CATALOG"
-            )
+            degradation_reason = "INSUFFICIENT_CATALOG_AND_AI" if ai_requested else "PARTIAL_CATALOG"
+            if not self.settings.allow_degraded_result:
+                self._rollback_quietly(homework.homework_id, request.learner_id)
+                raise HomeworkCompletionError(
+                    requested=request.exercise_count,
+                    actual=final_count,
+                    reason="VALIDATION_EXHAUSTED",
+                )
             LOGGER.warning(
                 "homework_generation_degraded correlation_id=%s final=%s requested=%s reason=%s",
                 correlation,
@@ -163,6 +234,12 @@ class HomeworkContentCompletionService:
             tuple(runtime_ids),
             tuple(generated_results),
         )
+
+    def _rollback_quietly(self, homework_id: int, learner_id: int) -> None:
+        try:
+            self.repository.rollback_homework_creation(homework_id, learner_id)
+        except Exception:
+            LOGGER.exception("homework_rollback_failed homework_id=%s learner_id=%s", homework_id, learner_id)
 
     def _generate_validated(
         self,
@@ -215,24 +292,9 @@ class HomeworkContentCompletionService:
                 remaining = quantity - len(accepted)
                 if len(accepted) >= quantity:
                     break
-            if not candidates or remaining <= 0:
+            if remaining <= 0:
                 break
-            generation_request = ContentGenerationRequest(
-                generation_request.target,
-                generation_request.content_type,
-                generation_request.difficulty,
-                generation_request.pedagogical_intent,
-                quantity=remaining,
-                variation_constraints=generation_request.variation_constraints,
-            )
         return tuple(accepted[:quantity])
-
-    @staticmethod
-    def _empty_message() -> str:
-        return (
-            "Aucun contenu approuvé ni exercice IA validé ne correspond à cette sélection. "
-            "Élargissez la sélection ou réessayez plus tard."
-        )
 
 
 # Backward-compatible alias for LCAI-0018B.

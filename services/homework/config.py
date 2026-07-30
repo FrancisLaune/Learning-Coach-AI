@@ -51,7 +51,7 @@ class HomeworkAiFallbackSettings:
     timeout_seconds: int = 30
     recent_exclusion_days: int = 30
     max_generated_per_request: int = 10
-    allow_degraded_result: bool = True
+    allow_degraded_result: bool = False
 
     @classmethod
     def from_environment(cls) -> HomeworkAiFallbackSettings:
@@ -64,11 +64,17 @@ class HomeworkAiFallbackSettings:
             timeout_seconds=_env_int("HOMEWORK_AI_FALLBACK_TIMEOUT_SECONDS", 30),
             recent_exclusion_days=_env_int("HOMEWORK_RECENT_EXCLUSION_DAYS", 30),
             max_generated_per_request=max_per_request,
-            allow_degraded_result=_env_bool("HOMEWORK_AI_ALLOW_DEGRADED_RESULT", True),
+            allow_degraded_result=_env_bool("HOMEWORK_AI_ALLOW_DEGRADED_RESULT", False),
         )
 
     def generation_cap(self, deficit: int) -> int:
-        return max(0, min(deficit, self.max_generated_per_request))
+        if deficit <= 0:
+            return 0
+        if self.allow_degraded_result:
+            return min(deficit, self.max_generated_per_request)
+        if deficit > self.max_generated_per_request:
+            return 0
+        return deficit
 
 
 @dataclass(frozen=True, slots=True)

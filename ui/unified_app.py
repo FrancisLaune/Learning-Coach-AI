@@ -60,6 +60,7 @@ from services.onboarding import OnboardingService, OnboardingValidationError
 from services.parent_ref import parent_ref_from_user
 from services.recommendation import PersonalizedSessionService
 from services.content.homework_availability import HomeworkAvailabilityService
+from services.homework.errors import HomeworkCompletionError
 from services.unified_experience import (
     DeterministicCoachService,
     HomeworkService,
@@ -291,6 +292,8 @@ def _learner_id(user: dict[str, object]) -> int | None:
 def _safe[T](operation: Callable[[], T]) -> T | None:
     try:
         return operation()
+    except HomeworkCompletionError as exc:
+        st.error(exc.user_message)
     except (ValueError, PermissionError, OnboardingValidationError) as exc:
         message = str(exc)
         if message == "Recommendation exceeds the available duration":
@@ -518,13 +521,36 @@ def _homework_form(
         return
     subject_availability = availability.get(int(subject_id))
     if subject_availability:
+        ai_enabled = service.supports_ai_completion()
         status_messages = {
-            "available": f"**{subject_availability.homework_status_label}** — {subject_availability.eligible_count} contenu(s) éligible(s) sur {subject_availability.chapters_total} chapitre(s) du curriculum.",
-            "limited": f"**{subject_availability.homework_status_label}** — seulement {subject_availability.eligible_count} contenu(s) publié(s) ; le devoir sera limité en taille.",
-            "unavailable": f"**{subject_availability.homework_status_label}** — aucun contenu publié éligible pour cette matière.",
+            "available": (
+                f"**{subject_availability.homework_status_label}** — "
+                f"{subject_availability.eligible_count} contenu(s) éligible(s) sur "
+                f"{subject_availability.chapters_total} chapitre(s) du curriculum."
+            ),
+            "limited": (
+                f"**{subject_availability.homework_status_label}** — "
+                f"{subject_availability.eligible_count} contenu(s) du catalogue ; "
+                "le complément IA pourra compléter automatiquement le devoir."
+                if ai_enabled
+                else (
+                    f"**{subject_availability.homework_status_label}** — "
+                    f"seulement {subject_availability.eligible_count} contenu(s) publié(s) ; "
+                    "le devoir sera limité en taille."
+                )
+            ),
+            "unavailable": (
+                "Catalogue vide — le complément IA pourra générer l'ensemble des exercices demandés."
+                if ai_enabled
+                else f"**{subject_availability.homework_status_label}** — aucun contenu publié éligible pour cette matière."
+            ),
         }
         st.caption(status_messages.get(subject_availability.availability_status, ""))
-    if subject_availability and subject_availability.availability_status == "unavailable":
+    if (
+        subject_availability
+        and subject_availability.availability_status == "unavailable"
+        and not service.supports_ai_completion()
+    ):
         st.warning(
             f"Aucun devoir ne peut être créé pour {labels[int(subject_id)]} tant qu'aucun contenu n'est publié."
         )
@@ -611,10 +637,16 @@ def _homework_form(
         DifficultyMode.ADAPTIVE: "Adaptatif",
     }
     if available_total == 0:
-        st.warning(
-            f"Aucun contenu approuvé disponible pour {labels[int(subject_id)]} avec ces critères. "
-            "Choisissez une autre difficulté, un chapitre plus large ou une autre matière."
-        )
+        if service.supports_ai_completion():
+            st.info(
+                f"Aucun contenu catalogue pour {labels[int(subject_id)]} avec ces critères. "
+                f"Le complément IA générera les {exercise_count} exercice(s) demandés."
+            )
+        else:
+            st.warning(
+                f"Aucun contenu approuvé disponible pour {labels[int(subject_id)]} avec ces critères. "
+                "Choisissez une autre difficulté, un chapitre plus large ou une autre matière."
+            )
     elif preview_selection.difficulty_relaxed:
         st.info(
             f"Cette matière contient {available_total} contenu(s) approuvé(s), "
@@ -624,8 +656,8 @@ def _homework_form(
     elif available_total < exercise_count:
         if service.supports_ai_completion():
             st.info(
-                f"Seulement {available_total} contenu(s) approuvé(s) disponible(s). "
-                "Le complément IA pourra générer automatiquement les exercices manquants."
+                f"{available_total} exercice(s) du catalogue ; "
+                f"le complément IA complétera automatiquement jusqu'à {exercise_count} exercices."
             )
         else:
             st.info(
@@ -717,15 +749,17 @@ def _render_homework_creation_feedback(generation, exercise_count: int) -> None:
     if not isinstance(generation, HomeworkGenerationResult):
         return
     catalog_count = generation.catalog_count
-    runtime_count = len(generation.runtime_exercise_ids)
+    ai_count = generation.ai_accepted_count
     final_count = generation.final_count
-    if runtime_count:
-        st.success(
-            f"Devoir créé avec {catalog_count} contenu(s) du catalogue "
-            f"et {runtime_count} exercice(s) complété(s) dynamiquement ({final_count} au total)."
-        )
-    elif final_count >= exercise_count:
-        st.success(f"Devoir créé avec {final_count} contenu(s) approuvé(s).")
+    if final_count == exercise_count:
+        if ai_count:
+            st.success(f"Le devoir de {exercise_count} questions a été créé.")
+            st.caption(
+                f"{catalog_count} exercice(s) issus du catalogue · "
+                f"{ai_count} exercice(s) généré(s) par IA"
+            )
+        else:
+            st.success(f"Le devoir de {exercise_count} questions a été créé.")
     elif final_count > 0:
         st.warning(
             f"Le devoir a été créé avec {final_count} exercice(s) sur {exercise_count} demandés "
