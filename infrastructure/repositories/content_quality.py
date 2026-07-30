@@ -511,13 +511,19 @@ class DuckDBContentQualityRepository:
                 or ""
             )
             review_campaign = str(item.get("review_campaign") or item.get("campaign_id") or publication_campaign)
-            eligibility = assess_publication_eligibility(
-                item,
-                campaign=publication_campaign,
-                review_campaign=review_campaign,
-            )
-            if not eligibility.eligible:
-                raise ValueError("; ".join(eligibility.reasons))
+            if item.get("cm2_relaxed_publication"):
+                from services.content.cm2_full_publication import assess_cm2_relaxed_eligibility
+
+                eligible, reasons = assess_cm2_relaxed_eligibility(item)
+            else:
+                eligibility = assess_publication_eligibility(
+                    item,
+                    campaign=publication_campaign,
+                    review_campaign=review_campaign,
+                )
+                eligible, reasons = eligibility.eligible, eligibility.reasons
+            if not eligible:
+                raise ValueError("; ".join(reasons))
             pipeline_version = str((ai_provenance or {}).get("review_pipeline", pipeline_version))
         else:
             if reviewer.strip() == approver.strip():
@@ -571,11 +577,17 @@ class DuckDBContentQualityRepository:
             if source is None:
                 raise ValueError("Approval source is unavailable")
             author = str(source[13])
+            if item.get("cm2_relaxed_publication"):
+                from services.content.cm2_full_publication import cm2_minimum_structural_gates_passed
+
+                validated = cm2_minimum_structural_gates_passed(item)
+            else:
+                validated = bool(item["hard_gates_passed"])
             ContentApprovalService.approve(
                 author=author,
                 reviewer=reviewer,
                 approver=approver,
-                validated=bool(item["hard_gates_passed"]),
+                validated=validated,
             )
             payload = json.loads(str(source[8]))
             payload["publication_source_version_id"] = source_version_id

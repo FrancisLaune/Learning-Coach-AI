@@ -3,11 +3,11 @@
 - Niveau : **FR-CM2**
 - Base V2 : `C:\Users\Utilisateur\Documents\App_AILearning\Learning-Coach-AI\data\learning_coach_v2.duckdb`
 - Matières curriculum : **8**
-- Lignes matrice couverture : **305**
-- Combinaisons skill/type sans contenu publié : **261**
+- Lignes matrice couverture : **267**
+- Combinaisons skill/type sans contenu publié : **204**
 - Chapitres vides (ni publié ni draft) : **0**
-- Chapitres draft-only : **19**
-- Chapitres publiés : **5**
+- Chapitres draft-only : **0**
+- Chapitres publiés : **24**
 - Candidats packagés (resources) : **303**
 - Matières avec disponibilité devoirs calculée : **8**
 
@@ -15,18 +15,18 @@
 
 | Matière | Publiés | Draft DB | Chapitres prod. | Chapitres curriculum | Compétences |
 |---------|--------:|---------:|----------------:|---------------------:|------------:|
-| Anglais | 0 | 24 | 0 | 2 | 10 |
-| EMC | 0 | 24 | 0 | 2 | 10 |
-| Français | 0 | 63 | 0 | 5 | 26 |
-| Géographie | 0 | 36 | 0 | 3 | 15 |
-| Histoire | 0 | 36 | 0 | 3 | 15 |
+| Anglais | 2 | 48 | 2 | 2 | 10 |
+| EMC | 2 | 48 | 2 | 2 | 10 |
+| Français | 5 | 315 | 5 | 5 | 26 |
+| Géographie | 3 | 108 | 3 | 3 | 15 |
+| Histoire | 3 | 108 | 3 | 3 | 15 |
 | Mathématiques | 5 | 3168 | 5 | 5 | 29 |
-| Physique-Chimie | 0 | 24 | 0 | 2 | 10 |
-| SVT | 0 | 24 | 0 | 2 | 10 |
+| Physique-Chimie | 2 | 48 | 2 | 2 | 10 |
+| SVT | 2 | 48 | 2 | 2 | 10 |
 
 ## Candidats préparés (phase 2)
 
-Packs JSON dans `resources/content/CM2/` — lifecycle Draft, approbation humaine obligatoire.
+Packs JSON dans `resources/content/cm2/` — lifecycle Draft, approbation humaine obligatoire.
 
 ## Livrables C0
 
