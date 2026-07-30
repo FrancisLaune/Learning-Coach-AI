@@ -99,6 +99,7 @@ def apply_production_mapping(
     mapped["production_candidate_version_id"] = production_version_id
     mapped["version_id"] = production_version_id
     mapped["content_business_key"] = str(mapping.get("content_business_key") or business_key)
+    mapped["code"] = str(mapped.get("code") or mapped["content_business_key"] or business_key)
     mapped["source_hash"] = mapping.get("source_hash")
     mapped["production_draft_hash"] = mapping.get("target_hash")
     mapped["import_campaign"] = mapping.get("campaign")

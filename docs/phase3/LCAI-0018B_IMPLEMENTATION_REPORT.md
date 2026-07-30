@@ -1,7 +1,8 @@
 # LCAI-0018B — Rapport d'implémentation
 
-**Statut :** ✅ Validé B4 (2026-07-29)  
-**Validation :** [LCAI-0018B_B4_VALIDATION_REPORT.md](LCAI-0018B_B4_VALIDATION_REPORT.md)
+**Statut :** ✅ Validé B4 (2026-07-29) — B5 READY FOR REVIEW (2026-07-30)  
+**Validation :** [LCAI-0018B_B4_VALIDATION_REPORT.md](LCAI-0018B_B4_VALIDATION_REPORT.md)  
+**Playability B5 :** [LCAI-0018B_B5_IMPLEMENTATION_REPORT.md](LCAI-0018B_B5_IMPLEMENTATION_REPORT.md)
 
 ---
 
@@ -39,8 +40,16 @@
 
 ### Dette Phase 4
 
-1. Extension `create_homework_proposal` pour exercices runtime en séance.
+1. ~~Extension `create_homework_proposal` pour exercices runtime en séance.~~ **Clôturé B5**
 2. Enrichissement contenu catalogue P0 (EN, PC, ES) — publication humaine.
+
+## Lot B5 — jouabilité runtime (READY FOR REVIEW)
+
+- Persistance playable : `services/homework/runtime_persistence.py`
+- Migrations : `020_homework_runtime_playability.sql`, `021_homework_runtime_duckdb_fk_relax.sql`
+- Proposition devoir mixte catalogue + IA : `create_homework_proposal`
+- Tests : `tests/test_homework_ai_runtime_playability_0018b5.py`
+- Rapport : `LCAI-0018B_B5_IMPLEMENTATION_REPORT.md`
 
 ---
 

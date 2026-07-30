@@ -95,27 +95,52 @@ class DuckDBRecommendationRepository:
             ).fetchone()
             if proposal is None:
                 raise KeyError(f"Unknown recommendation {proposal_id}")
-            rows = con.execute(
-                """SELECT i.id,i.content_id,i.content_version_id,c.title,c.content_type,i.difficulty,
-                i.duration_minutes,i.position,i.skill_id,
-                cv.status='approved' AND ea.active AND e.archived_at IS NULL AS approved,
-                cv.version_number=e.content_version AS current_version,
-                list(q.id ORDER BY q.sequence_order) AS question_ids,
-                bool_and(q.is_evaluative=FALSE OR sol.id IS NOT NULL) AS has_assessment
-                FROM personalized_session_items i
-                JOIN production_learning_catalog c ON c.content_id=i.content_id
-                    AND c.content_version_id=i.content_version_id
-                JOIN exercises e ON e.id=i.content_id
-                JOIN content_versions cv ON cv.id=i.content_version_id
-                JOIN editorial_approvals ea ON ea.content_version_id=cv.id AND ea.active
-                JOIN content_questions q ON q.exercise_id=e.id
-                LEFT JOIN content_solutions sol ON sol.question_id=q.id
-                WHERE i.proposal_id=?
-                GROUP BY i.id,i.content_id,i.content_version_id,c.title,c.content_type,i.difficulty,
-                i.duration_minutes,i.position,i.skill_id,cv.status,ea.active,e.archived_at,
-                cv.version_number,e.content_version ORDER BY i.position""",
-                [proposal_id],
-            ).fetchall()
+            objective_ref = str(proposal[5])
+            stable_id = str(proposal[3])
+            is_homework = objective_ref == "homework" or stable_id.startswith("homework:")
+            if is_homework:
+                rows = con.execute(
+                    """SELECT i.id,i.content_id,i.content_version_id,e.title,lcm.content_type,i.difficulty,
+                    i.duration_minutes,i.position,i.skill_id,
+                    cv.status='approved' AND ea.active AND e.archived_at IS NULL AS approved,
+                    cv.version_number=e.content_version AS current_version,
+                    list(q.id ORDER BY q.sequence_order) AS question_ids,
+                    bool_and(q.is_evaluative=FALSE OR sol.id IS NOT NULL) AS has_assessment
+                    FROM personalized_session_items i
+                    JOIN exercises e ON e.id=i.content_id
+                    JOIN content_versions cv ON cv.id=i.content_version_id
+                    JOIN editorial_approvals ea ON ea.content_version_id=cv.id AND ea.active
+                    JOIN learning_content_metadata lcm ON lcm.exercise_id=e.id
+                    JOIN content_questions q ON q.exercise_id=e.id
+                    LEFT JOIN content_solutions sol ON sol.question_id=q.id
+                    WHERE i.proposal_id=?
+                    GROUP BY i.id,i.content_id,i.content_version_id,e.title,lcm.content_type,i.difficulty,
+                    i.duration_minutes,i.position,i.skill_id,cv.status,ea.active,e.archived_at,
+                    cv.version_number,e.content_version ORDER BY i.position""",
+                    [proposal_id],
+                ).fetchall()
+            else:
+                rows = con.execute(
+                    """SELECT i.id,i.content_id,i.content_version_id,c.title,c.content_type,i.difficulty,
+                    i.duration_minutes,i.position,i.skill_id,
+                    cv.status='approved' AND ea.active AND e.archived_at IS NULL AS approved,
+                    cv.version_number=e.content_version AS current_version,
+                    list(q.id ORDER BY q.sequence_order) AS question_ids,
+                    bool_and(q.is_evaluative=FALSE OR sol.id IS NOT NULL) AS has_assessment
+                    FROM personalized_session_items i
+                    JOIN production_learning_catalog c ON c.content_id=i.content_id
+                        AND c.content_version_id=i.content_version_id
+                    JOIN exercises e ON e.id=i.content_id
+                    JOIN content_versions cv ON cv.id=i.content_version_id
+                    JOIN editorial_approvals ea ON ea.content_version_id=cv.id AND ea.active
+                    JOIN content_questions q ON q.exercise_id=e.id
+                    LEFT JOIN content_solutions sol ON sol.question_id=q.id
+                    WHERE i.proposal_id=?
+                    GROUP BY i.id,i.content_id,i.content_version_id,c.title,c.content_type,i.difficulty,
+                    i.duration_minutes,i.position,i.skill_id,cv.status,ea.active,e.archived_at,
+                    cv.version_number,e.content_version ORDER BY i.position""",
+                    [proposal_id],
+                ).fetchall()
             activities = tuple(
                 ExecutableActivity(
                     int(row[0]),

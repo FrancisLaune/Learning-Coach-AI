@@ -157,6 +157,24 @@ class RuntimeExerciseCandidate:
 
 
 @dataclass(frozen=True, slots=True)
+class GeneratedHomeworkExerciseResult:
+    exercise_id: str
+    content_version_id: str | None
+    subject_id: str
+    chapter_id: str
+    skill_id: str
+    exercise_type: str
+    difficulty: str
+    statement: str
+    expected_answer: object
+    correction: str | None
+    source: str
+    provider: str | None
+    model: str | None
+    generation_metadata: dict[str, object]
+
+
+@dataclass(frozen=True, slots=True)
 class HomeworkGenerationResult:
     homework: HomeworkAssignment
     requested_count: int
@@ -168,6 +186,7 @@ class HomeworkGenerationResult:
     degradation_reason: str | None
     correlation_id: str
     runtime_exercise_ids: tuple[int, ...] = ()
+    generated_exercises: tuple[GeneratedHomeworkExerciseResult, ...] = ()
 
 
 @dataclass(frozen=True, slots=True)

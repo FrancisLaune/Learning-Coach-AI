@@ -665,21 +665,24 @@ def _homework_form(
             datetime.combine(due_date, time(23, 59), tzinfo=UTC),
             correction,
         )
-        if service.supports_ai_fallback():
-            generation = _safe(
-                lambda: service.assign_as_parent_with_diagnostics(actor_ref, request)
-                if actor_type == "PARENT"
-                else service.create_with_diagnostics(request)
-            )
-            if generation:
-                _render_homework_creation_feedback(generation, exercise_count)
-        else:
-            result = _safe(
-                lambda: service.assign_as_parent(actor_ref, request) if actor_type == "PARENT" else service.create(request)
-            )
-            if result:
-                selection = service.preview_selection(request)
-                _render_homework_catalog_feedback(selection, len(result.selected_content_ids), exercise_count)
+        with st.spinner("Création du devoir en cours…"):
+            if service.supports_ai_fallback():
+                generation = _safe(
+                    lambda: service.assign_as_parent_with_diagnostics(actor_ref, request)
+                    if actor_type == "PARENT"
+                    else service.create_with_diagnostics(request)
+                )
+                if generation:
+                    _render_homework_creation_feedback(generation, exercise_count)
+            else:
+                result = _safe(
+                    lambda: service.assign_as_parent(actor_ref, request)
+                    if actor_type == "PARENT"
+                    else service.create(request)
+                )
+                if result:
+                    selection = service.preview_selection(request)
+                    _render_homework_catalog_feedback(selection, len(result.selected_content_ids), exercise_count)
 
 
 def _render_homework_catalog_feedback(selection, selected_count: int, exercise_count: int) -> None:

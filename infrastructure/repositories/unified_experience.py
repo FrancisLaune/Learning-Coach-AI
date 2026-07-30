@@ -12,6 +12,7 @@ from domain.unified_experience.models import (
     AssignmentStatus,
     AssignmentType,
     DifficultyMode,
+    GeneratedHomeworkExerciseResult,
     HomeworkAssignment,
     HomeworkContentSelection,
     HomeworkRequest,
@@ -371,6 +372,47 @@ class DuckDBUnifiedExperienceRepository:
             connection.close()
         return self.get_homework(homework_id)
 
+    def load_homework_runtime_results(self, homework_id: int) -> tuple[GeneratedHomeworkExerciseResult, ...]:
+        connection = connect_v2(self.database_path, read_only=True)
+        try:
+            rows = connection.execute(
+                """SELECT hre.id,hre.content_id,hre.content_version_id,hre.subject_id,hre.chapter_id,hre.skill_id,
+                e.difficulty,q.statement,q.expected_answer,sol.pedagogical_explanation,hre.source,
+                hre.generator_model,hre.correlation_id,hre.exercise_payload
+                FROM homework_runtime_exercises hre
+                JOIN exercises e ON e.id=hre.content_id
+                JOIN content_questions q ON q.exercise_id=e.id AND q.sequence_order=1
+                LEFT JOIN content_solutions sol ON sol.question_id=q.id
+                WHERE hre.homework_id=? AND hre.content_id IS NOT NULL
+                ORDER BY hre.position""",
+                [homework_id],
+            ).fetchall()
+        finally:
+            connection.close()
+        results: list[GeneratedHomeworkExerciseResult] = []
+        for row in rows:
+            payload = json.loads(str(row[13])) if row[13] else {}
+            expected = json.loads(str(row[8])) if row[8] is not None else None
+            results.append(
+                GeneratedHomeworkExerciseResult(
+                    str(row[1]),
+                    str(row[2]) if row[2] is not None else None,
+                    str(row[3]),
+                    str(row[4]),
+                    str(row[5]),
+                    str(payload.get("exercise_type", "PRACTICE")),
+                    str(row[6]),
+                    str(row[7]),
+                    expected,
+                    None if row[9] is None else str(row[9]),
+                    str(row[10]),
+                    "ai_runtime_fallback",
+                    None if row[11] is None else str(row[11]),
+                    {"runtime_record_id": int(row[0]), "correlation_id": row[12]},
+                )
+            )
+        return tuple(results)
+
     def persist_homework_runtime_exercises(
         self,
         homework_id: int,
@@ -448,14 +490,37 @@ class DuckDBUnifiedExperienceRepository:
                 "SELECT proposal_id FROM learning_session_details d JOIN homework_assignments h ON h.session_id=d.session_id WHERE h.id=?",
                 [homework_id],
             ).fetchone()
-            contents = connection.execute(
-                """SELECT content_id,content_version_id,skill_id,subject_id,estimated_minutes,difficulty
-                FROM production_learning_catalog WHERE content_id IN
-                (SELECT unnest(CAST(selected_content AS BIGINT[])) FROM homework_assignments WHERE id=?)
-                ORDER BY content_id""",
+            selected_content = json.loads(
+                str(
+                    connection.execute(
+                        "SELECT selected_content FROM homework_assignments WHERE id=?",
+                        [homework_id],
+                    ).fetchone()[0]
+                )
+            )
+            catalog_ids = [int(content_id) for content_id in selected_content]
+            catalog_rows: list[tuple[Any, ...]] = []
+            if catalog_ids:
+                catalog_rows = connection.execute(
+                    f"""SELECT content_id,content_version_id,skill_id,subject_id,estimated_minutes,difficulty
+                    FROM production_learning_catalog WHERE content_id IN ({",".join("?" * len(catalog_ids))})
+                    """,
+                    catalog_ids,
+                ).fetchall()
+                catalog_by_id = {int(row[0]): row for row in catalog_rows}
+                catalog_rows = [catalog_by_id[catalog_id] for catalog_id in catalog_ids if catalog_id in catalog_by_id]
+
+            runtime_rows = connection.execute(
+                """SELECT hre.content_id,hre.content_version_id,hre.skill_id,hre.subject_id,
+                CAST(ceil(e.estimated_seconds / 60.0) AS INTEGER) AS estimated_minutes,e.difficulty
+                FROM homework_runtime_exercises hre
+                JOIN exercises e ON e.id=hre.content_id
+                WHERE hre.homework_id=? AND hre.content_id IS NOT NULL
+                ORDER BY hre.position""",
                 [homework_id],
             ).fetchall()
-            content_minutes = sum(int(row[4]) for row in contents if len(row) > 4)
+            merged_rows = [*catalog_rows, *runtime_rows]
+            content_minutes = sum(int(row[4]) for row in merged_rows if len(row) > 4)
             available_minutes = max(item.target_duration_minutes or 30, content_minutes or 1)
             if existing:
                 connection.execute(
@@ -488,7 +553,8 @@ class DuckDBUnifiedExperienceRepository:
                     [available_minutes, stable],
                 )
             proposal_id = int(proposal[0])
-            for position, row in enumerate(contents, 1):
+            for position, row in enumerate(merged_rows, 1):
+                content_id = int(row[0])
                 connection.execute(
                     """INSERT INTO personalized_session_items
                     (proposal_id,candidate_stable_id,content_id,content_version_id,skill_id,subject_id,
@@ -499,8 +565,8 @@ class DuckDBUnifiedExperienceRepository:
                     )""",
                     [
                         proposal_id,
-                        f"{stable}:content:{row[0]}",
-                        int(row[0]),
+                        f"{stable}:content:{content_id}",
+                        content_id,
                         int(row[1]),
                         int(row[2]),
                         int(row[3]),
@@ -508,7 +574,7 @@ class DuckDBUnifiedExperienceRepository:
                         int(row[4]),
                         int(row[5]),
                         proposal_id,
-                        int(row[0]),
+                        content_id,
                     ],
                 )
             return proposal_id

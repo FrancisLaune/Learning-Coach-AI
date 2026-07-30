@@ -19,7 +19,7 @@ class DuckDBUnifiedSessionExecutionRepository:
         connection = connect_v2(self.database_path, read_only=True)
         try:
             row = connection.execute(
-                """SELECT a.id,e.title,c.skill_id,q.id,q.instructions,q.context,q.statement,
+                """SELECT a.id,e.title,qs.skill_id,q.id,q.instructions,q.context,q.statement,
                 q.response_type,q.expected_answer,coalesce(q.tolerance,0),a.difficulty,
                 sol.pedagogical_explanation,sol.method,sol.advice,
                 coalesce(m.score,0),coalesce(ans.attempts,0),
@@ -28,12 +28,15 @@ class DuckDBUnifiedSessionExecutionRepository:
                 FROM learning_sessions ls
                 JOIN session_activities a ON a.session_id=ls.id
                 JOIN exercises e ON e.id=a.content_id
-                JOIN production_learning_catalog c ON c.content_id=a.content_id
-                    AND c.content_version_id=a.content_version_id
+                JOIN content_versions cv ON cv.id=a.content_version_id AND cv.entity_id=e.id
                 JOIN content_questions q ON q.exercise_id=a.content_id
                 JOIN content_solutions sol ON sol.question_id=q.id
+                JOIN exercise_questions eq ON eq.exercise_id=e.id
+                JOIN question_skills qs ON qs.question_id=eq.question_id AND qs.is_primary
+                LEFT JOIN production_learning_catalog c ON c.content_id=a.content_id
+                    AND c.content_version_id=a.content_version_id
                 LEFT JOIN longitudinal_mastery_current m
-                    ON m.learner_id=ls.learner_id AND m.skill_id=c.skill_id
+                    ON m.learner_id=ls.learner_id AND m.skill_id=qs.skill_id
                 LEFT JOIN (
                     SELECT activity_id,question_id,count(*) attempts
                     FROM student_answers WHERE validated GROUP BY activity_id,question_id

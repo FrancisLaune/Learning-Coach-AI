@@ -55,8 +55,33 @@ class FakeFactoryRepository:
         raise AssertionError("runtime fallback must not persist catalogue drafts")
 
 
-def _candidate(code: str, prompt: str) -> GeneratedContentCandidate:
-    target = CurriculumTarget("FR-COLLEGE-2025", "4e", "ENGLISH", "CH1", "SK1")
+@pytest.fixture
+def english_target(fallback_database: tuple[Path, int, int, int]) -> CurriculumTarget:
+    path, _, english_id, grade_id = fallback_database
+    connection = connect_v2(path)
+    try:
+        row = connection.execute(
+            """
+            SELECT p.code, sl.code, su.code, cc.stable_code, s.code
+            FROM curriculum_chapters cc
+            JOIN programs p ON p.id=cc.program_id
+            JOIN school_levels sl ON sl.id=cc.grade_level_id
+            JOIN subjects su ON su.id=cc.subject_id
+            JOIN curriculum_skill_details csd ON csd.chapter_id=cc.id AND csd.grade_level_id=cc.grade_level_id
+            JOIN skills s ON s.id=csd.skill_id
+            WHERE su.id=? AND sl.id=? AND cc.status='approved' AND csd.status='approved'
+            ORDER BY cc.sequence_order, s.code LIMIT 1
+            """,
+            [english_id, grade_id],
+        ).fetchone()
+        assert row is not None
+        return CurriculumTarget(str(row[0]), str(row[1]), str(row[2]), str(row[3]), str(row[4]))
+    finally:
+        connection.close()
+        reset_v2_connections()
+
+
+def _candidate(code: str, prompt: str, *, target: CurriculumTarget) -> GeneratedContentCandidate:
     return GeneratedContentCandidate(
         code,
         f"Title {code}",
@@ -131,12 +156,15 @@ def test_flag_off_preserves_legacy_homework_creation(
 
 def test_flag_on_persists_runtime_exercises_with_stub_generator(
     fallback_database: tuple[Path, int, int, int],
+    english_target: CurriculumTarget,
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:
     path, learner_id, english_id, grade_id = fallback_database
     repository = DuckDBUnifiedExperienceRepository(path)
     factory = ContentFactoryService(
-        FakeGenerator(*[_candidate(f"RT-{index}", f"Prompt unique {index}") for index in range(3)]),
+        FakeGenerator(
+            *[_candidate(f"RT-{index}", f"Prompt unique {index}", target=english_target) for index in range(3)]
+        ),
         FakeFactoryRepository(),
         CandidateValidator(),
     )
@@ -150,10 +178,11 @@ def test_flag_on_persists_runtime_exercises_with_stub_generator(
     service = HomeworkService(repository, feature_flags=flags, ai_fallback=orchestrator)
     result = service.create_with_diagnostics(_request(learner_id, english_id, grade_id, count=10))
     assert result.runtime_exercise_ids
+    assert result.generated_exercises
     connection = connect_v2(path)
     try:
         rows = connection.execute(
-            "SELECT publication_status, source FROM homework_runtime_exercises WHERE homework_id=?",
+            "SELECT publication_status, source, content_id FROM homework_runtime_exercises WHERE homework_id=?",
             [result.homework.homework_id],
         ).fetchall()
     finally:
@@ -162,15 +191,19 @@ def test_flag_on_persists_runtime_exercises_with_stub_generator(
     assert rows
     assert all(str(row[0]) == "RUNTIME_ONLY" for row in rows)
     assert all(str(row[1]) == "ai_runtime_fallback" for row in rows)
+    assert all(row[2] is not None for row in rows)
 
 
 def test_runtime_candidates_never_call_catalogue_persist(
     fallback_database: tuple[Path, int, int, int],
+    english_target: CurriculumTarget,
 ) -> None:
     path, learner_id, english_id, grade_id = fallback_database
     repository = DuckDBUnifiedExperienceRepository(path)
     factory_repo = FakeFactoryRepository()
-    factory = ContentFactoryService(FakeGenerator(_candidate("X1", "Unique prompt")), factory_repo, CandidateValidator())
+    factory = ContentFactoryService(
+        FakeGenerator(_candidate("X1", "Unique prompt", target=english_target)), factory_repo, CandidateValidator()
+    )
     orchestrator = HomeworkAiFallbackOrchestrator(repository, content_factory=factory)
     flags = FeatureFlagService(
         (

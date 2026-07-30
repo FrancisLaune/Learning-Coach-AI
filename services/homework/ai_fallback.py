@@ -15,16 +15,17 @@ from domain.content.factory import (
     normalized_content_fingerprint,
 )
 from domain.unified_experience.models import (
+    GeneratedHomeworkExerciseResult,
     HomeworkContentSelection,
     HomeworkGenerationResult,
     HomeworkRequest,
     LearnerPedagogicalContext,
-    RuntimeExerciseCandidate,
 )
 from services.content.factory import ContentFactoryService
 from services.homework.config import HomeworkAiFallbackSettings
 from services.homework.curriculum_target import resolve_curriculum_target
 from services.homework.learner_context import LearnerContextService
+from services.homework.runtime_persistence import is_playable_candidate, persist_playable_homework_exercise
 
 LOGGER = logging.getLogger(__name__)
 FOUR_E_GRADE_CODE = "FR-4E"
@@ -38,68 +39,11 @@ class HomeworkRuntimeRepository(Protocol):
 
     def select_approved_content_detailed(self, request: HomeworkRequest) -> HomeworkContentSelection: ...
 
-    def persist_homework_runtime_exercises(
-        self,
-        homework_id: int,
-        learner_id: int,
-        exercises: tuple[RuntimeExerciseCandidate, ...],
-        *,
-        start_position: int,
-    ) -> tuple[int, ...]: ...
+    def load_homework_runtime_results(self, homework_id: int) -> tuple[GeneratedHomeworkExerciseResult, ...]: ...
 
 
 def new_correlation_id() -> str:
     return str(uuid.uuid4())
-
-
-def candidate_from_generated(
-    generated: GeneratedContentCandidate,
-    *,
-    correlation_id: str,
-    skill_ids: tuple[int, ...],
-) -> RuntimeExerciseCandidate:
-    fingerprint = normalized_content_fingerprint(generated.prompt)
-    expected = str(generated.answer.expected)
-    return RuntimeExerciseCandidate(
-        temporary_id=generated.code,
-        title=generated.title,
-        statement=generated.prompt,
-        instructions=generated.instructions,
-        expected_answer=expected,
-        correction=expected,
-        explanation=generated.explanation,
-        solving_method=generated.metadata.get("solving_method", ""),
-        hints=generated.hints,
-        skill_ids=skill_ids,
-        sub_skill_ids=(),
-        prerequisite_ids=(),
-        difficulty=generated.difficulty,
-        exercise_type=generated.content_type.value,
-        estimated_duration=int(generated.metadata.get("estimated_duration", 5)),
-        common_mistakes=tuple(generated.metadata.get("common_mistakes", ()) or ()),
-        success_criteria=tuple(generated.metadata.get("success_criteria", ("Réponse correcte",)) or ("Réponse correcte",)),
-        source="ai_runtime_fallback",
-        generator_model=generated.provenance.generator_identifier,
-        prompt_template_version=generated.provenance.template_version,
-        content_fingerprint=fingerprint,
-        validation_result={"valid": True, "issues": []},
-        generated_at=generated.provenance.generated_at,
-        correlation_id=correlation_id,
-    )
-
-
-def runtime_payload(candidate: RuntimeExerciseCandidate) -> dict[str, object]:
-    return {
-        "title": candidate.title,
-        "statement": candidate.statement,
-        "instructions": candidate.instructions,
-        "expected_answer": candidate.expected_answer,
-        "correction": candidate.correction,
-        "explanation": candidate.explanation,
-        "hints": list(candidate.hints),
-        "exercise_type": candidate.exercise_type,
-        "estimated_duration": candidate.estimated_duration,
-    }
 
 
 class HomeworkAiFallbackOrchestrator:
@@ -134,10 +78,13 @@ class HomeworkAiFallbackOrchestrator:
             deficit,
         )
 
-        accepted: tuple[RuntimeExerciseCandidate, ...] = ()
+        accepted: tuple[GeneratedContentCandidate, ...] = ()
         ai_requested = 0
-        if deficit > 0:
-            ai_requested = self.settings.generation_cap(deficit)
+        homework = self.repository.create_homework(request, catalog_ids)
+        existing_results = self.repository.load_homework_runtime_results(homework.homework_id)
+        still_needed = max(0, deficit - len(existing_results))
+        if still_needed > 0:
+            ai_requested = self.settings.generation_cap(still_needed)
             if self.content_factory is not None and ai_requested > 0:
                 LOGGER.info("ai_fallback_started correlation_id=%s requested=%s", correlation, ai_requested)
                 accepted = self._generate_validated(context, request, ai_requested, correlation)
@@ -146,25 +93,43 @@ class HomeworkAiFallbackOrchestrator:
                     correlation,
                     len(accepted),
                 )
-
-        if not catalog_ids and not accepted:
-            raise ValueError(self._empty_message())
-
-        homework = self.repository.create_homework(request, catalog_ids)
-        runtime_ids: tuple[int, ...] = ()
-        if accepted:
-            runtime_ids = self.repository.persist_homework_runtime_exercises(
-                homework.homework_id,
-                request.learner_id,
-                accepted,
-                start_position=len(catalog_ids) + 1,
+        elif deficit > 0 and existing_results:
+            LOGGER.info(
+                "ai_fallback_reused correlation_id=%s existing=%s",
+                correlation,
+                len(existing_results),
             )
 
-        final_count = len(catalog_ids) + len(accepted)
+        if not catalog_ids and not accepted and not existing_results:
+            raise ValueError(self._empty_message())
+
+        generated_results: list[GeneratedHomeworkExerciseResult] = list(existing_results[:deficit])
+        runtime_ids: list[int] = [
+            int(item.generation_metadata["runtime_record_id"]) for item in generated_results
+        ]
+        parent_ref = request.assigned_by_ref if request.assigned_by_type == "PARENT" else None
+        for offset, candidate in enumerate(accepted):
+            persisted = persist_playable_homework_exercise(
+                self.repository,
+                candidate,
+                homework_id=homework.homework_id,
+                learner_id=request.learner_id,
+                position=len(catalog_ids) + len(existing_results) + offset + 1,
+                correlation_id=correlation,
+                parent_ref=parent_ref,
+            )
+            generated_results.append(persisted)
+            runtime_ids.append(int(persisted.generation_metadata["runtime_record_id"]))
+
+        final_count = len(catalog_ids) + len(generated_results)
         degraded = final_count < request.exercise_count
         degradation_reason = None
         if degraded:
-            degradation_reason = "INSUFFICIENT_CATALOG_AND_AI" if deficit > len(accepted) else "PARTIAL_CATALOG"
+            degradation_reason = (
+                "INSUFFICIENT_CATALOG_AND_AI"
+                if deficit > len(generated_results)
+                else "PARTIAL_CATALOG"
+            )
             LOGGER.warning(
                 "homework_generation_degraded correlation_id=%s final=%s requested=%s reason=%s",
                 correlation,
@@ -184,12 +149,13 @@ class HomeworkAiFallbackOrchestrator:
             request.exercise_count,
             len(catalog_ids),
             ai_requested,
-            len(accepted),
+            len(generated_results),
             final_count,
             degraded,
             degradation_reason,
             correlation,
-            runtime_ids,
+            tuple(runtime_ids),
+            tuple(generated_results),
         )
 
     def _generate_validated(
@@ -198,7 +164,7 @@ class HomeworkAiFallbackOrchestrator:
         request: HomeworkRequest,
         quantity: int,
         correlation_id: str,
-    ) -> tuple[RuntimeExerciseCandidate, ...]:
+    ) -> tuple[GeneratedContentCandidate, ...]:
         generation_request = ContentGenerationRequest(
             resolve_curriculum_target(self.repository, request),
             CanonicalContentType.PRACTICE,
@@ -208,7 +174,7 @@ class HomeworkAiFallbackOrchestrator:
             variation_constraints=tuple(context.recent_content_fingerprints),
         )
         known = set(context.recent_content_fingerprints)
-        accepted: list[RuntimeExerciseCandidate] = []
+        accepted: list[GeneratedContentCandidate] = []
         remaining = quantity
         attempts = 0
         while remaining > 0 and attempts <= self.settings.max_retry:
@@ -218,6 +184,9 @@ class HomeworkAiFallbackOrchestrator:
                 fingerprint = normalized_content_fingerprint(generated.prompt)
                 if fingerprint in known:
                     LOGGER.info("ai_candidate_rejected correlation_id=%s reason=duplicate", correlation_id)
+                    continue
+                if not is_playable_candidate(generated):
+                    LOGGER.info("ai_candidate_rejected correlation_id=%s reason=not_playable", correlation_id)
                     continue
                 report = self.content_factory.validator.validate(
                     generated,
@@ -231,18 +200,12 @@ class HomeworkAiFallbackOrchestrator:
                         [issue.code for issue in report.issues if issue.severity is IssueSeverity.ERROR],
                     )
                     continue
-                accepted.append(
-                    candidate_from_generated(
-                        generated,
-                        correlation_id=correlation_id,
-                        skill_ids=context.skill_ids,
-                    )
-                )
+                accepted.append(generated)
                 known.add(fingerprint)
                 remaining = quantity - len(accepted)
                 if len(accepted) >= quantity:
                     break
-            if not candidates:
+            if not candidates or remaining <= 0:
                 break
             generation_request = ContentGenerationRequest(
                 generation_request.target,
