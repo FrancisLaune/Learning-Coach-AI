@@ -9,7 +9,6 @@ from typing import Any
 
 from domain.pedagogical_intelligence.models import (
     DiagnosticRun,
-    DiagnosticRunStatus,
     MasterySummaryItem,
     PlannerHighlight,
     ReadinessPathCode,
@@ -53,7 +52,7 @@ class DuckDBPedagogicalIntelligenceRepository:
         try:
             row = connection.execute(
                 """
-                SELECT source_grade_code, target_grade_code, score, coverage, confidence, details
+                SELECT target_grade_code, score, coverage, confidence, details
                 FROM transition_readiness_current
                 WHERE learner_id=? AND target_grade_code=?
                 """,
@@ -61,13 +60,25 @@ class DuckDBPedagogicalIntelligenceRepository:
             ).fetchone()
             if row is None:
                 return None
-            details = json.loads(str(row[5])) if row[5] else {}
+            details = json.loads(str(row[4])) if row[4] else {}
+            source_grade = details.get("source_grade_code") or details.get("current_grade_code")
+            if not source_grade:
+                source_row = connection.execute(
+                    """
+                    SELECT sl.code FROM learner_journeys j
+                    JOIN school_levels sl ON sl.id=j.current_school_level_id
+                    WHERE j.learner_id=?
+                    LIMIT 1
+                    """,
+                    [learner_id],
+                ).fetchone()
+                source_grade = str(source_row[0]) if source_row else str(row[0])
             return {
-                "source_grade_code": str(row[0]),
-                "target_grade_code": str(row[1]),
-                "score": float(row[2]) * 100 if float(row[2]) <= 1 else float(row[2]),
-                "coverage": float(row[3]),
-                "confidence": float(row[4]),
+                "source_grade_code": str(source_grade),
+                "target_grade_code": str(row[0]),
+                "score": float(row[1]) * 100 if float(row[1]) <= 1 else float(row[1]),
+                "coverage": float(row[2]),
+                "confidence": float(row[3]),
                 "acquired_skill_ids": tuple(details.get("acquired_skills") or details.get("acquired_skill_ids") or ()),
                 "fragile_skill_ids": tuple(details.get("fragile_skills") or details.get("fragile_skill_ids") or ()),
                 "blocking_skill_ids": tuple(details.get("blocking_skills") or details.get("blocking_skill_ids") or ()),
@@ -120,13 +131,13 @@ class DuckDBPedagogicalIntelligenceRepository:
                 return tuple(int(row[0]) for row in rows)
             rows = connection.execute(
                 """
-                SELECT DISTINCT cs.skill_id
+                SELECT DISTINCT csd.skill_id
                 FROM curriculum_chapters cc
                 JOIN school_levels sl ON sl.id=cc.grade_level_id
-                JOIN chapter_skill_dependencies csd ON csd.chapter_id=cc.id
-                JOIN skills cs ON cs.id=csd.skill_id
-                WHERE sl.code=? AND cc.status='approved'
-                ORDER BY cs.id
+                JOIN curriculum_skill_details csd
+                    ON csd.chapter_id=cc.id AND csd.grade_level_id=cc.grade_level_id
+                WHERE sl.code=? AND cc.status='approved' AND csd.status='approved'
+                ORDER BY csd.skill_id
                 LIMIT ?
                 """,
                 [grade_code, limit],

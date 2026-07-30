@@ -722,7 +722,10 @@ class DuckDBUnifiedExperienceRepository:
         try:
             row = connection.execute(
                 """SELECT max(ts) FROM (
-                    SELECT max(started_at) AS ts FROM learning_sessions WHERE learner_id=?
+                    SELECT max(coalesce(d.start_time, d.creation_time)) AS ts
+                    FROM learning_session_details d
+                    JOIN learning_sessions ls ON ls.id=d.session_id
+                    WHERE ls.learner_id=?
                     UNION ALL
                     SELECT max(updated_at) FROM homework_assignments WHERE learner_id=?
                 )""",

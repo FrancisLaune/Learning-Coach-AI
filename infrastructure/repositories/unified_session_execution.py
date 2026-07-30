@@ -30,7 +30,7 @@ class DuckDBUnifiedSessionExecutionRepository:
                 JOIN exercises e ON e.id=a.content_id
                 JOIN content_versions cv ON cv.id=a.content_version_id AND cv.entity_id=e.id
                 JOIN content_questions q ON q.exercise_id=a.content_id
-                JOIN content_solutions sol ON sol.question_id=q.id
+                LEFT JOIN content_solutions sol ON sol.question_id=q.id
                 JOIN exercise_questions eq ON eq.exercise_id=e.id
                 JOIN question_skills qs ON qs.question_id=eq.question_id AND qs.is_primary
                 LEFT JOIN production_learning_catalog c ON c.content_id=a.content_id
@@ -78,9 +78,9 @@ class DuckDBUnifiedSessionExecutionRepository:
                 question,
                 json.loads(str(row[8])),
                 float(row[9]),
-                str(row[11]),
-                str(row[12]),
-                str(row[13]),
+                str(row[11] or "Consulte la correction après ta réponse."),
+                str(row[12] or ""),
+                str(row[13] or ""),
                 float(row[14]),
                 int(row[15]),
             )
@@ -196,7 +196,7 @@ class DuckDBUnifiedSessionExecutionRepository:
             ).fetchone()
             total_questions = int(
                 connection.execute(
-                    """SELECT count(*) FROM session_activities a
+                    """SELECT count(DISTINCT q.id) FROM session_activities a
                     JOIN content_questions q ON q.exercise_id=a.content_id WHERE a.session_id=?""",
                     [session_id],
                 ).fetchone()[0]
