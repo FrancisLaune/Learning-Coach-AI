@@ -1,16 +1,16 @@
 # LCAI-0000A — Inventaire global validation curriculums
 
-Dernière exécution : 2026-07-30T09:19:48+00:00
+Dernière exécution : 2026-07-30T09:49:52+00:00
 
 ## Validation technique LCAI-0000A par ticket
 
 | Ticket | Validation technique |
 |--------|---------------------|
-| LCAI-0018 | NOK |
-| LCAI-0018C | NOK |
+| LCAI-0018 | OK |
+| LCAI-0018C | OK |
 | LCAI-0018D | OK |
 | LCAI-0018E | OK |
-| LCAI-0018F | NOK |
+| LCAI-0018F | OK |
 | LCAI-0018G | OK |
 | LCAI-0018H | OK |
 
@@ -20,14 +20,14 @@ Dernière exécution : 2026-07-30T09:19:48+00:00
 
 | Matière | Ch. prod. | Ch. curriculum | Lignes prod. | Draft | État | Action |
 |---------|----------:|---------------:|-------------:|------:|------|--------|
-| Anglais | 0 | 2 | 0 | 120 | 📦 Sans publication | Publication / revue pédagogique requise |
-| EMC | 2 | 2 | 70 | 120 | ❌ Tech NOK | Relancer LCAI-0000A (NOK) — échec technique ticket |
-| Français | 5 | 5 | 131 | 330 | ❌ Tech NOK | Relancer LCAI-0000A (NOK) — échec technique ticket |
-| Géographie | 3 | 3 | 120 | 180 | ❌ Tech NOK | Relancer LCAI-0000A (NOK) — échec technique ticket |
-| Histoire | 3 | 3 | 115 | 180 | ❌ Tech NOK | Relancer LCAI-0000A (NOK) — échec technique ticket |
-| Mathématiques | 5 | 5 | 109 | 234 | ❌ Tech NOK | Relancer LCAI-0000A (NOK) — échec technique ticket |
-| Physique-Chimie | 2 | 2 | 75 | 120 | ❌ Tech NOK | Relancer LCAI-0000A (NOK) — échec technique ticket |
-| SVT | 2 | 2 | 70 | 120 | ❌ Tech NOK | Relancer LCAI-0000A (NOK) — échec technique ticket |
+| Anglais | 0 | 2 | 0 | 120 | 📦 Sans publication | Ticket OK techniquement ; matière sans contenu publié — publication requise |
+| EMC | 2 | 2 | 70 | 120 | ✅ Tech OK — UX humaine | Validation fonctionnelle UX (devoirs) — technique OK |
+| Français | 5 | 5 | 131 | 330 | ✅ Tech OK — UX humaine | Validation fonctionnelle UX (devoirs) — technique OK |
+| Géographie | 3 | 3 | 120 | 180 | ✅ Tech OK — UX humaine | Validation fonctionnelle UX (devoirs) — technique OK |
+| Histoire | 3 | 3 | 115 | 180 | ✅ Tech OK — UX humaine | Validation fonctionnelle UX (devoirs) — technique OK |
+| Mathématiques | 5 | 5 | 109 | 234 | ✅ Tech OK — UX humaine | Validation fonctionnelle UX (devoirs) — technique OK |
+| Physique-Chimie | 2 | 2 | 75 | 120 | ✅ Tech OK — UX humaine | Validation fonctionnelle UX (devoirs) — technique OK |
+| SVT | 2 | 2 | 70 | 120 | ✅ Tech OK — UX humaine | Validation fonctionnelle UX (devoirs) — technique OK |
 
 ### CM2 (`FR-CM2`) — LCAI-0018D
 
@@ -46,29 +46,29 @@ Dernière exécution : 2026-07-30T09:19:48+00:00
 
 | Matière | Ch. prod. | Ch. curriculum | Lignes prod. | Draft | État | Action |
 |---------|----------:|---------------:|-------------:|------:|------|--------|
-| Anglais | 0 | 3 | 0 | 210 | 📦 Sans publication | Publication / revue pédagogique requise |
-| EMC | 0 | 2 | 0 | 120 | 📦 Sans publication | Publication / revue pédagogique requise |
-| Espagnol | 0 | 3 | 0 | 195 | 📦 Sans publication | Publication / revue pédagogique requise |
-| Français | 0 | 5 | 0 | 414 | 📦 Sans publication | Publication / revue pédagogique requise |
-| Géographie | 0 | 3 | 0 | 180 | 📦 Sans publication | Publication / revue pédagogique requise |
-| Histoire | 0 | 3 | 0 | 162 | 📦 Sans publication | Publication / revue pédagogique requise |
-| Mathématiques | 5 | 5 | 279 | 486 | ❌ Tech NOK | Relancer LCAI-0000A (NOK) — échec technique ticket |
-| Physique-Chimie | 0 | 2 | 0 | 174 | 📦 Sans publication | Publication / revue pédagogique requise |
-| SVT | 0 | 2 | 0 | 144 | 📦 Sans publication | Publication / revue pédagogique requise |
+| Anglais | 0 | 3 | 0 | 210 | 📦 Sans publication | Ticket OK techniquement ; matière sans contenu publié — publication requise |
+| EMC | 0 | 2 | 0 | 120 | 📦 Sans publication | Ticket OK techniquement ; matière sans contenu publié — publication requise |
+| Espagnol | 0 | 3 | 0 | 195 | 📦 Sans publication | Ticket OK techniquement ; matière sans contenu publié — publication requise |
+| Français | 0 | 5 | 0 | 414 | 📦 Sans publication | Ticket OK techniquement ; matière sans contenu publié — publication requise |
+| Géographie | 0 | 3 | 0 | 180 | 📦 Sans publication | Ticket OK techniquement ; matière sans contenu publié — publication requise |
+| Histoire | 0 | 3 | 0 | 162 | 📦 Sans publication | Ticket OK techniquement ; matière sans contenu publié — publication requise |
+| Mathématiques | 5 | 5 | 279 | 486 | ✅ Tech OK — UX humaine | Validation fonctionnelle UX (devoirs) — technique OK |
+| Physique-Chimie | 0 | 2 | 0 | 174 | 📦 Sans publication | Ticket OK techniquement ; matière sans contenu publié — publication requise |
+| SVT | 0 | 2 | 0 | 144 | 📦 Sans publication | Ticket OK techniquement ; matière sans contenu publié — publication requise |
 
 ### Quatrième (`FR-4E`) — LCAI-0018
 
 | Matière | Ch. prod. | Ch. curriculum | Lignes prod. | Draft | État | Action |
 |---------|----------:|---------------:|-------------:|------:|------|--------|
-| Anglais | 1 | 2 | 12 | 144 | ❌ Tech NOK | Relancer LCAI-0000A (NOK) — échec technique ticket |
-| EMC | 2 | 2 | 24 | 144 | ❌ Tech NOK | Relancer LCAI-0000A (NOK) — échec technique ticket |
-| Espagnol | 1 | 2 | 12 | 144 | ❌ Tech NOK | Relancer LCAI-0000A (NOK) — échec technique ticket |
-| Français | 6 | 6 | 138 | 900 | ❌ Tech NOK | Relancer LCAI-0000A (NOK) — échec technique ticket |
-| Géographie | 3 | 3 | 162 | 228 | ❌ Tech NOK | Relancer LCAI-0000A (NOK) — échec technique ticket |
-| Histoire | 3 | 3 | 204 | 228 | ❌ Tech NOK | Relancer LCAI-0000A (NOK) — échec technique ticket |
-| Mathématiques | 8 | 8 | 437 | 1187 | ❌ Tech NOK | Relancer LCAI-0000A (NOK) — échec technique ticket |
-| Physique-Chimie | 1 | 2 | 12 | 188 | ❌ Tech NOK | Relancer LCAI-0000A (NOK) — échec technique ticket |
-| SVT | 2 | 2 | 132 | 162 | ❌ Tech NOK | Relancer LCAI-0000A (NOK) — échec technique ticket |
+| Anglais | 1 | 2 | 12 | 144 | ✅ Tech OK — UX humaine | Validation fonctionnelle UX (devoirs) — technique OK |
+| EMC | 2 | 2 | 24 | 144 | ✅ Tech OK — UX humaine | Validation fonctionnelle UX (devoirs) — technique OK |
+| Espagnol | 1 | 2 | 12 | 144 | ✅ Tech OK — UX humaine | Validation fonctionnelle UX (devoirs) — technique OK |
+| Français | 6 | 6 | 138 | 900 | ✅ Tech OK — UX humaine | Validation fonctionnelle UX (devoirs) — technique OK |
+| Géographie | 3 | 3 | 162 | 228 | ✅ Tech OK — UX humaine | Validation fonctionnelle UX (devoirs) — technique OK |
+| Histoire | 3 | 3 | 204 | 228 | ✅ Tech OK — UX humaine | Validation fonctionnelle UX (devoirs) — technique OK |
+| Mathématiques | 8 | 8 | 437 | 1187 | ✅ Tech OK — UX humaine | Validation fonctionnelle UX (devoirs) — technique OK |
+| Physique-Chimie | 1 | 2 | 12 | 188 | ✅ Tech OK — UX humaine | Validation fonctionnelle UX (devoirs) — technique OK |
+| SVT | 2 | 2 | 132 | 162 | ✅ Tech OK — UX humaine | Validation fonctionnelle UX (devoirs) — technique OK |
 
 ### Sixième (`FR-6E`) — LCAI-0018E
 

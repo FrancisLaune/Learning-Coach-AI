@@ -14,8 +14,13 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 import duckdb
 
 from core.config import get_v2_database_path
+from infrastructure.database.v2 import reset_v2_connections
 from infrastructure.repositories.unified_experience import DuckDBUnifiedExperienceRepository
-from scripts.lcai_0000a_global_curriculum_inventory import TICKET_BY_GRADE, collect_inventory
+from scripts.lcai_0000a_global_curriculum_inventory import (
+    TICKET_BY_GRADE,
+    apply_0000a_status,
+    collect_inventory,
+)
 from services.content.homework_availability import HomeworkAvailabilityService
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -84,9 +89,10 @@ def _publication_summary(ticket: str) -> tuple[bool, int]:
     return count > 0, count
 
 
-def _homework_summary(connection: duckdb.DuckDBPyConnection, grade_code: str) -> tuple[int, int, int]:
+def _homework_summary(grade_id: int | None) -> tuple[int, int, int]:
+    if grade_id is None:
+        return 0, 0, 0
     try:
-        grade_id = int(connection.execute("SELECT id FROM school_levels WHERE code=?", [grade_code]).fetchone()[0])
         repository = DuckDBUnifiedExperienceRepository(get_v2_database_path())
         availability = HomeworkAvailabilityService(repository).list_for_grade(grade_id)
         available = sum(1 for item in availability if item.availability_status == "available")
@@ -95,6 +101,8 @@ def _homework_summary(connection: duckdb.DuckDBPyConnection, grade_code: str) ->
         return available, limited, unavailable
     except Exception:
         return 0, 0, 0
+    finally:
+        reset_v2_connections()
 
 
 def build_grade_certifications(
@@ -108,8 +116,14 @@ def build_grade_certifications(
         by_grade.setdefault(row.grade_code, []).append(row)
 
     connection = duckdb.connect(str(get_v2_database_path()), read_only=True)
+    grade_ids: dict[str, int] = {}
     certifications: list[GradeCertification] = []
     try:
+        for grade_code in CERTIFICATION_GRADES:
+            row = connection.execute("SELECT id FROM school_levels WHERE code=?", [grade_code]).fetchone()
+            if row:
+                grade_ids[grade_code] = int(row[0])
+
         for grade_code in CERTIFICATION_GRADES:
             rows = by_grade.get(grade_code, [])
             if not rows:
@@ -123,7 +137,6 @@ def build_grade_certifications(
             chapters_cur = sum(r.chapters_curriculum for r in rows)
             subjects_with_pub = sum(1 for r in rows if r.chapters_published > 0)
             pub_executed, pub_count = _publication_summary(ticket) if ticket_status == "IMPLEMENTED" else (False, 0)
-            hw_avail, hw_lim, hw_unavail = _homework_summary(connection, grade_code)
 
             if ticket_status == "PENDING":
                 cert_status = "NON_CERTIFIE"
@@ -162,9 +175,9 @@ def build_grade_certifications(
                     subjects_with_published_chapters=subjects_with_pub,
                     chapters_published=chapters_pub,
                     chapters_curriculum=chapters_cur,
-                    homework_subjects_available=hw_avail,
-                    homework_subjects_limited=hw_lim,
-                    homework_subjects_unavailable=hw_unavail,
+                    homework_subjects_available=0,
+                    homework_subjects_limited=0,
+                    homework_subjects_unavailable=0,
                     publication_executed=pub_executed,
                     published_count=pub_count,
                     certification_status=cert_status,
@@ -173,6 +186,13 @@ def build_grade_certifications(
             )
     finally:
         connection.close()
+        reset_v2_connections()
+
+    for cert in certifications:
+        hw_avail, hw_lim, hw_unavail = _homework_summary(grade_ids.get(cert.grade_code))
+        cert.homework_subjects_available = hw_avail
+        cert.homework_subjects_limited = hw_lim
+        cert.homework_subjects_unavailable = hw_unavail
 
     return certifications
 
@@ -187,6 +207,17 @@ def write_certification_report(
     subjects_with_prod = len(
         [r for r in inventory_rows if r.grade_code in CERTIFICATION_GRADES and r.chapters_published > 0]
     )
+    total_chapters_cur = sum(c.chapters_curriculum for c in certifications)
+    total_chapters_pub = sum(c.chapters_published for c in certifications)
+    coverage_pct = round(100 * total_chapters_pub / total_chapters_cur, 1) if total_chapters_cur else 0.0
+
+    state_labels = {
+        "TECH_OK_UX_HUMAINE": "✅ Tech OK — UX humaine",
+        "CONTENU_A_PUBLIER": "📦 Sans publication",
+        "TECH_NOK": "❌ Tech NOK",
+        "PRET_VALIDATION_0000A": "🔄 Prêt 0000A",
+        "PARTIEL": "⚠️ Partiel",
+    }
 
     lines = [
         "# LCAI-0018H — Rapport de certification globale",
@@ -203,6 +234,7 @@ def write_certification_report(
         f"- Niveaux certifiés (partiel ou référence) : **{certified_partial}**",
         f"- Combinaisons niveau/matière : **{total_subjects}**",
         f"- Matières avec chapitres publiés : **{subjects_with_prod}**",
+        f"- Chapitres publiés / curriculum : **{total_chapters_pub} / {total_chapters_cur}** ({coverage_pct} %)",
         "",
         "## Validation technique LCAI-0000A",
         "",
@@ -227,6 +259,28 @@ def write_certification_report(
             f"| {cert.grade_label} | {cert.ticket} | {cert.technical_validation_0000a} | {mat} | {ch} | {hw} | "
             f"{cert.certification_status} |"
         )
+
+    lines.extend(["", "## Chargement matières par classe", ""])
+    by_grade: dict[str, list] = {}
+    for row in inventory_rows:
+        if row.grade_code in CERTIFICATION_GRADES:
+            by_grade.setdefault(row.grade_code, []).append(row)
+
+    for cert in certifications:
+        rows = by_grade.get(cert.grade_code, [])
+        if not rows:
+            continue
+        lines.append(f"### {cert.grade_label} (`{cert.grade_code}`) — {cert.ticket}")
+        lines.append("")
+        lines.append("| Matière | Ch. prod. | Ch. curriculum | Lignes prod. | Draft | État |")
+        lines.append("|---------|----------:|---------------:|-------------:|------:|------|")
+        for row in rows:
+            state = state_labels.get(row.validation_state, row.validation_state)
+            lines.append(
+                f"| {row.subject_label} | {row.chapters_published} | {row.chapters_curriculum} | "
+                f"{row.published_content_rows} | {row.draft_content_rows} | {state} |"
+            )
+        lines.append("")
 
     lines.extend(["", "## Écarts résiduels par niveau", ""])
     for cert in certifications:
@@ -287,9 +341,10 @@ def main() -> None:
 
     connection = duckdb.connect(str(get_v2_database_path()), read_only=True)
     try:
-        inventory = collect_inventory(connection)
+        inventory = apply_0000a_status(collect_inventory(connection), validation_0000a)
     finally:
         connection.close()
+        reset_v2_connections()
 
     certifications = build_grade_certifications(inventory, validation_0000a)
     write_certification_report(certifications, inventory, validation_0000a)
