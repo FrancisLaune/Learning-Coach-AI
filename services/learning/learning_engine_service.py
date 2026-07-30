@@ -63,7 +63,7 @@ class LearningEngineService:
         if self.repository.is_processed(attempt.stable_id):
             logger.info("learning_attempt_already_processed", extra={"attempt_id": attempt.stable_id})
             cached = self.repository.get_cached_result(attempt.stable_id)
-            return cached
+            return replace(cached, already_processed=True)
         journey = self.repository.load_journey(attempt.learner_id)
         previous = self.repository.load_mastery(attempt.learner_id, attempt.skill_id) or MasteryState(
             attempt.learner_id, attempt.skill_id, origin_grade_code=journey.current_grade.code

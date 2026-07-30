@@ -7,6 +7,8 @@ from dataclasses import asdict
 from pathlib import Path
 from typing import Any
 
+from domain.learning.models import LearningEngineResult
+
 from domain.learning.enums import LearningPhase, MasteryLevel, Trend
 from domain.learning.events import LearningEvent
 from domain.learning.models import (
@@ -22,6 +24,7 @@ from domain.learning.models import (
     TransitionReadiness,
 )
 from infrastructure.database.v2 import connect_v2
+from services.learning.result_snapshot import restore_learning_engine_result
 
 
 class DuckDBLearningRepository:
@@ -40,8 +43,19 @@ class DuckDBLearningRepository:
         finally:
             connection.close()
 
-    def get_cached_result(self, stable_attempt_id: str) -> Any:
-        raise RuntimeError(f"Attempt {stable_attempt_id} was already processed by another engine instance")
+    def get_cached_result(self, stable_attempt_id: str) -> LearningEngineResult:
+        connection = connect_v2(self.database_path, read_only=True)
+        try:
+            row = connection.execute(
+                "SELECT result_snapshot FROM learning_attempt_inputs WHERE stable_id=?",
+                [stable_attempt_id],
+            ).fetchone()
+        finally:
+            connection.close()
+        if row is None:
+            raise KeyError(f"Unknown learning attempt {stable_attempt_id}")
+        payload = json.loads(str(row[0]))
+        return restore_learning_engine_result(payload)
 
     def load_mastery(self, learner_id: int, skill_id: int) -> MasteryState | None:
         connection = connect_v2(self.database_path, read_only=True)

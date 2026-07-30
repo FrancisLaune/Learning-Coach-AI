@@ -273,3 +273,17 @@ def test_duckdb_repository_full_cycle_and_longitudinal_history(learning_database
         assert event_count >= 4
     finally:
         connection.close()
+
+
+def test_duckdb_repository_returns_cached_result_from_new_service_instance(learning_database: Path) -> None:
+    learner_id = LearnerRepositoryV2(learning_database).create("Cached attempt test")
+    repository = DuckDBLearningRepository(learning_database)
+    repository.set_journey(learner_id, 1, 12, 2026, LearningPhase.TRANSITION_PREPARATION, 1, "BREVET")
+    first_service = LearningEngineService(repository)
+    payload = attempt(stable_id="db-attempt-retry", learner_id=learner_id, skill_id=10001)
+    first = first_service.process(payload)
+    second_service = LearningEngineService(DuckDBLearningRepository(learning_database))
+    second = second_service.process(payload)
+    assert second.already_processed
+    assert second.mastery.current.score == first.mastery.current.score
+    assert second.mastery.current.observations == first.mastery.current.observations
