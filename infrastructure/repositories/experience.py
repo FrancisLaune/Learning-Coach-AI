@@ -81,8 +81,8 @@ class DuckDBExperienceReadModel:
         connection = connect_v2(self.database_path, read_only=True)
         try:
             rows = connection.execute(
-                """SELECT a.id,c.title,a.activity_type,a.status,a.score,a.estimated_duration_seconds
-                FROM session_activities a JOIN content_items c ON c.id=a.content_id
+                """SELECT a.id,e.title,a.activity_type,a.status,a.score,a.estimated_duration_seconds
+                FROM session_activities a JOIN exercises e ON e.id=a.content_id
                 WHERE a.session_id=? AND a.archived_at IS NULL ORDER BY a.activity_order""",
                 [session_id],
             ).fetchall()
