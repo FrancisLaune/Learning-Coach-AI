@@ -482,6 +482,24 @@ class DuckDBUnifiedExperienceRepository:
         finally:
             connection.close()
 
+    def grade_code(self, grade_level_id: int | None) -> str | None:
+        if grade_level_id is None:
+            return None
+        connection = connect_v2(self.database_path, read_only=True)
+        try:
+            row = connection.execute("SELECT code FROM school_levels WHERE id=?", [grade_level_id]).fetchone()
+            return None if row is None else str(row[0])
+        finally:
+            connection.close()
+
+    def subject_code(self, subject_id: int) -> str | None:
+        connection = connect_v2(self.database_path, read_only=True)
+        try:
+            row = connection.execute("SELECT code FROM subjects WHERE id=?", [subject_id]).fetchone()
+            return None if row is None else str(row[0])
+        finally:
+            connection.close()
+
     def create_homework_proposal(self, homework_id: int) -> int:
         item = self.get_homework(homework_id)
         connection = connect_v2(self.database_path)

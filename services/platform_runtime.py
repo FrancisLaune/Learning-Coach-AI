@@ -528,6 +528,12 @@ def default_flags() -> FeatureFlagService:
                 ("v2.enabled",),
                 environment_name="HOMEWORK_AI_FALLBACK_4E_ENABLED",
             ),
+            FeatureFlagDefinition(
+                "homework_ai_completion",
+                False,
+                ("v2.enabled",),
+                environment_name="HOMEWORK_AI_COMPLETION_ENABLED",
+            ),
         )
     )
 

@@ -630,7 +630,7 @@ def test_coach_advice_is_grounded_and_requires_trend() -> None:
 def test_unified_navigation_is_complete_and_legacy_is_opt_in() -> None:
     source = (Path(__file__).parents[1] / "ui" / "unified_app.py").read_text(encoding="utf-8")
     for label in (
-        "Accueil",
+        "Tableau de bord",
         "Ma séance IA",
         "Devoirs",
         "Révision",

@@ -19,6 +19,7 @@ from application.experience_factory import (
 )
 from services.learning_session.experience import SessionListItem, StudentDashboard
 from ui.i18n import label, status_label
+from ui.navigation import request_navigation
 from ui.session import logout
 
 
@@ -29,7 +30,7 @@ def _error(error: PresentationError, *, actions: tuple[tuple[str, str], ...] = (
         columns = st.columns(len(actions))
         for column, (button_label, page_key) in zip(columns, actions, strict=True):
             if column.button(button_label, use_container_width=True, key=f"recovery_{page_key}"):
-                st.session_state["unified_student_page"] = page_key
+                request_navigation(st.session_state, "student", page_key)
                 st.rerun()
 
 
@@ -69,7 +70,7 @@ def _history_rows(sessions: tuple[SessionListItem, ...]) -> list[dict[str, objec
 def student_dashboard(controller: StudentExperienceController, learner_id: int) -> None:
     result = controller.dashboard(learner_id)
     if isinstance(result, PresentationError):
-        _error(result, actions=(("Retour à l'accueil", "Accueil"), ("Mes devoirs", "Devoirs")))
+        _error(result, actions=(("Retour au tableau de bord", "Tableau de bord"), ("Mes devoirs", "Devoirs")))
         return
     st.title(f"Bonjour {result.display_name}")
     st.markdown(f"### Objectif du jour : {result.objective}")
@@ -106,16 +107,28 @@ def student_dashboard(controller: StudentExperienceController, learner_id: int) 
         )
 
 
-def session_screen(controller: StudentExperienceController, learner_id: int) -> None:
+def session_screen(
+    controller: StudentExperienceController,
+    learner_id: int,
+    *,
+    user: dict[str, object] | None = None,
+) -> None:
+    from ui.student_guidance import (
+        load_session_result_explanation,
+        render_homework_during_guidance,
+        render_homework_result_explanation,
+    )
+
+    actor = user or {"id": learner_id, "name": "Élève", "role": "STUDENT", "resolved_learner_id": learner_id}
     session_id = st.session_state.get("v2_session_id")
     if not session_id:
         st.info("Sélectionne une séance depuis l'accueil ou reprends un devoir en cours.")
         left, right = st.columns(2)
         if left.button("Retour à l'accueil", use_container_width=True, key="session_back_home"):
-            st.session_state["unified_student_page"] = "Accueil"
+            request_navigation(st.session_state, "student", "Tableau de bord")
             st.rerun()
         if right.button("Mes devoirs", use_container_width=True, key="session_back_homework"):
-            st.session_state["unified_student_page"] = "Devoirs"
+            request_navigation(st.session_state, "student", "Devoirs")
             st.rerun()
         return
     result = controller.session(learner_id, int(session_id))
@@ -123,7 +136,7 @@ def session_screen(controller: StudentExperienceController, learner_id: int) -> 
         _error(
             result,
             actions=(
-                ("Retour à l'accueil", "Accueil"),
+                ("Retour au tableau de bord", "Tableau de bord"),
                 ("Mes devoirs", "Devoirs"),
             ),
         )
@@ -196,6 +209,13 @@ def session_screen(controller: StudentExperienceController, learner_id: int) -> 
                             st.session_state[f"shown_hint_{hint_id}"] = text
                         if shown := st.session_state.get(f"shown_hint_{hint_id}"):
                             st.info(shown)
+            render_homework_during_guidance(
+                actor,
+                learner_id,
+                result.session.session_id,
+                question.activity_id,
+                key_prefix=f"session_{result.session.session_id}_{question.question_id}",
+            )
             started_key = f"question_started_{question.session_id}_{question.question_id}"
             st.session_state.setdefault(started_key, time.monotonic())
             if st.button("Valider ma réponse", type="primary", disabled=not str(answer).strip()):
@@ -229,6 +249,10 @@ def session_screen(controller: StudentExperienceController, learner_id: int) -> 
         _error(error)
     elif action_taken:
         st.rerun()
+    if result.session.status == "COMPLETED":
+        explanation = load_session_result_explanation(actor, learner_id, result.session.session_id)
+        if explanation:
+            render_homework_result_explanation(explanation)
 
 
 def student_history(controller: StudentExperienceController, learner_id: int) -> None:

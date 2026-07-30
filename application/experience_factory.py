@@ -68,6 +68,23 @@ def build_parent_experience_controller() -> ParentExperienceController:
     )
 
 
+def build_student_guidance_service() -> "StudentGuidanceService":
+    from services.homework.factory import build_homework_service
+    from services.pedagogical_intelligence.dashboard_service import PedagogicalDashboardService
+    from services.student_guidance.service import StudentGuidanceService
+    from infrastructure.repositories.learning_intelligence import DuckDBLearningEvidenceRepository
+    from infrastructure.repositories.pedagogical_intelligence import DuckDBPedagogicalIntelligenceRepository
+    from services.learning_intelligence import LearningIntelligenceService
+
+    repository = DuckDBPedagogicalIntelligenceRepository()
+    intelligence = LearningIntelligenceService(DuckDBLearningEvidenceRepository())
+    return StudentGuidanceService(
+        experience=LearnerExperienceService(DuckDBExperienceReadModel()),
+        homework=build_homework_service(),
+        pi_dashboard=PedagogicalDashboardService(repository, intelligence),
+    )
+
+
 def build_unified_session_execution_service() -> UnifiedSessionExecutionService:
     from services.pedagogical_intelligence.session_notifier import CompositePedagogicalNotifier
 

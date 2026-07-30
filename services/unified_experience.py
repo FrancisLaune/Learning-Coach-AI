@@ -20,6 +20,8 @@ from domain.unified_experience.models import (
     ProgrammeChange,
 )
 from services.homework.ai_fallback import HomeworkAiFallbackOrchestrator
+from services.homework.config import HomeworkAiCompletionSettings
+from services.homework.eligibility import completion_flags_enabled, is_homework_ai_completion_eligible
 from services.platform_runtime import FeatureFlagService, default_flags
 
 
@@ -52,6 +54,10 @@ class UnifiedExperienceRepository(Protocol):
         start_position: int = 1,
     ) -> tuple[int, ...]: ...
     def is_four_e_grade(self, grade_level_id: int | None) -> bool: ...
+
+    def grade_code(self, grade_level_id: int | None) -> str | None: ...
+
+    def subject_code(self, subject_id: int) -> str | None: ...
     def create_homework_proposal(self, homework_id: int) -> int: ...
     def link_homework_session(self, homework_id: int, session_id: int) -> None: ...
     def list_homework(self, learner_id: int) -> tuple[HomeworkAssignment, ...]: ...
@@ -145,22 +151,27 @@ class HomeworkService:
             raise ValueError("HOMEWORK_AI_FALLBACK_NOT_CONFIGURED")
         return self._ai_fallback.generate(request)
 
+    def supports_ai_completion(self) -> bool:
+        return self._ai_fallback is not None and completion_flags_enabled(self._feature_flags)
+
     def supports_ai_fallback(self) -> bool:
-        return self._ai_fallback is not None and self._feature_flags.enabled("homework_ai_fallback_4e")
+        return self.supports_ai_completion()
 
     def _should_use_ai_fallback(self, request: HomeworkRequest) -> bool:
-        if not self._feature_flags.enabled("homework_ai_fallback_4e"):
-            return False
-        if self._ai_fallback is None:
-            return False
-        return self.repository.is_four_e_grade(request.grade_level_id)
+        return is_homework_ai_completion_eligible(
+            request,
+            self.repository,
+            flags=self._feature_flags,
+            settings=HomeworkAiCompletionSettings.from_environment(),
+            orchestrator_configured=self._ai_fallback is not None,
+        )
 
     @staticmethod
     def _empty_selection_message(request: HomeworkRequest) -> str:
         subject_hint = "cette matière"
         if request.mode is AssignmentType.GLOBAL_SUBJECT:
             return (
-                f"Aucun contenu approuvé n'est disponible pour {subject_hint} en 4e avec les critères sélectionnés. "
+                f"Aucun contenu approuvé n'est disponible pour {subject_hint} avec les critères sélectionnés. "
                 "Choisissez une autre matière ou attendez la publication de nouveaux contenus validés."
             )
         return (
