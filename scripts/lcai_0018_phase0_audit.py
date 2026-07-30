@@ -1,10 +1,10 @@
 """LCAI-0018 Phase 0 audit: full 4e coverage across all configured subjects."""
+
 from __future__ import annotations
 
 import csv
 import json
 import sys
-from collections import defaultdict
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
@@ -349,7 +349,7 @@ def write_all_subjects_audit(
             f"{diagnose_subject(item)} |"
         )
 
-    zero_rows = sum(1 for row in matrix_rows if int(row["approved_count"]) == 0)
+    zero_rows = sum(1 for row in matrix_rows if int(str(row["approved_count"])) == 0)
     lines.extend(
         [
             "",

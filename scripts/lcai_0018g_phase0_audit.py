@@ -1,4 +1,4 @@
-"""LCAI-0018C Phase C0 — CM1 curriculum coverage and candidate baseline audit."""
+"""LCAI-0018G Phase C0 — 3e curriculum coverage and candidate baseline audit."""
 
 from __future__ import annotations
 
@@ -20,8 +20,8 @@ from services.content.homework_availability import HomeworkAvailabilityService
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs" / "phase3"
 EXPORTS = DOCS / "exports"
-CM1_RESOURCES = ROOT / "resources" / "content" / "cm1"
-GRADE = "FR-CM1"
+THREE_RESOURCES = ROOT / "resources" / "content" / "3e"
+GRADE = "FR-3E"
 
 SUBJECT_LABELS = {
     "ENGLISH": "Anglais",
@@ -32,6 +32,7 @@ SUBJECT_LABELS = {
     "HISTORY": "Histoire",
     "SVT": "SVT",
     "EMC": "EMC",
+    "SPANISH": "Espagnol",
 }
 
 
@@ -216,7 +217,7 @@ def curriculum_subject_summary(connection: duckdb.DuckDBPyConnection) -> list[di
 
 def load_candidate_packs() -> list[dict[str, object]]:
     inventory: list[dict[str, object]] = []
-    for path in sorted(CM1_RESOURCES.glob("lcai_cm1_*_candidates_v1.json")):
+    for path in sorted(THREE_RESOURCES.glob("lcai_3e_*_candidates_v1.json")):
         payload = json.loads(path.read_text(encoding="utf-8"))
         subject = str(payload.get("subject_code", ""))
         for candidate in payload.get("accepted_candidates", []):
@@ -296,7 +297,7 @@ def write_baseline(
     zero_published_rows = sum(1 for row in matrix_rows if int(str(row["approved_count"])) == 0)
 
     lines = [
-        "# LCAI-0018C — Phase C0 : baseline CM1",
+        "# LCAI-0018G — Phase C0 : baseline 3e",
         "",
         f"- Niveau : **{GRADE}**",
         f"- Base V2 : `{get_v2_database_path()}`",
@@ -331,24 +332,24 @@ def write_baseline(
             "",
             "## Candidats préparés (phase 2)",
             "",
-            "Packs JSON dans `resources/content/cm1/` — lifecycle Draft, approbation humaine obligatoire.",
+            "Packs JSON dans `resources/content/3e/` — lifecycle Draft, approbation humaine obligatoire.",
             "",
             "## Livrables C0",
             "",
-            "- `docs/phase3/exports/LCAI-0018C_CM1_COVERAGE_MATRIX.csv`",
-            "- `docs/phase3/exports/LCAI-0018C_CM1_GAP_BY_CHAPTER.csv`",
-            "- `docs/phase3/exports/LCAI-0018C_CM1_CANDIDATE_INVENTORY.csv`",
-            "- `docs/phase3/LCAI-0018C_GAP_ANALYSIS.md`",
+            "- `docs/phase3/exports/LCAI-0018G_3E_COVERAGE_MATRIX.csv`",
+            "- `docs/phase3/exports/LCAI-0018G_3E_GAP_BY_CHAPTER.csv`",
+            "- `docs/phase3/exports/LCAI-0018G_3E_CANDIDATE_INVENTORY.csv`",
+            "- `docs/phase3/LCAI-0018G_GAP_ANALYSIS.md`",
             "",
             "## Prochaine étape (C1)",
             "",
-            "1. Importer / valider les candidats CM1 via Content Factory et quality gates existants.",
+            "1. Importer / valider les candidats 3e via Content Factory et quality gates existants.",
             "2. Revue pédagogique humaine distincte de l'approbation.",
             "3. Publication production — recalcul coverage — validation moteurs.",
             "",
         ]
     )
-    (DOCS / "LCAI-0018C_PHASE0_BASELINE.md").write_text("\n".join(lines), encoding="utf-8")
+    (DOCS / "LCAI-0018G_PHASE0_BASELINE.md").write_text("\n".join(lines), encoding="utf-8")
 
 
 def write_gap_analysis(gaps: list[dict[str, object]], candidate_inventory: list[dict[str, object]]) -> None:
@@ -357,9 +358,9 @@ def write_gap_analysis(gaps: list[dict[str, object]], candidate_inventory: list[
         candidates_by_subject[str(item["subject_code"])] += 1
 
     lines = [
-        "# LCAI-0018C — Analyse des écarts CM1 (Gap Analysis C0)",
+        "# LCAI-0018G — Analyse des écarts 3e (Gap Analysis C0)",
         "",
-        f"- Chapitres curriculum CM1 : **{len(gaps)}**",
+        f"- Chapitres curriculum 3e : **{len(gaps)}**",
         f"- Chapitres sans contenu publié : **{sum(1 for g in gaps if g['approved_total'] == 0)}**",
         f"- Chapitres entièrement vides : **{sum(1 for g in gaps if g['publication_status'] == 'empty')}**",
         "",
@@ -377,7 +378,7 @@ def write_gap_analysis(gaps: list[dict[str, object]], candidate_inventory: list[
             f"statut={row['publication_status']}, priorité={row['priority']}"
         )
     lines.append("")
-    (DOCS / "LCAI-0018C_GAP_ANALYSIS.md").write_text("\n".join(lines), encoding="utf-8")
+    (DOCS / "LCAI-0018G_GAP_ANALYSIS.md").write_text("\n".join(lines), encoding="utf-8")
 
 
 def main() -> None:
@@ -396,36 +397,40 @@ def main() -> None:
     gaps = export_gap_by_chapter(matrix_rows)
 
     if matrix_rows:
-        with (EXPORTS / "LCAI-0018C_CM1_COVERAGE_MATRIX.csv").open("w", encoding="utf-8-sig", newline="") as handle:
+        with (EXPORTS / "LCAI-0018G_3E_COVERAGE_MATRIX.csv").open("w", encoding="utf-8-sig", newline="") as handle:
             writer = csv.DictWriter(handle, fieldnames=list(matrix_rows[0].keys()))
             writer.writeheader()
             writer.writerows(matrix_rows)
 
     if gaps:
-        with (EXPORTS / "LCAI-0018C_CM1_GAP_BY_CHAPTER.csv").open("w", encoding="utf-8-sig", newline="") as handle:
+        with (EXPORTS / "LCAI-0018G_3E_GAP_BY_CHAPTER.csv").open("w", encoding="utf-8-sig", newline="") as handle:
             writer = csv.DictWriter(handle, fieldnames=list(gaps[0].keys()))
             writer.writeheader()
             writer.writerows(gaps)
 
     if candidate_inventory:
-        with (EXPORTS / "LCAI-0018C_CM1_CANDIDATE_INVENTORY.csv").open("w", encoding="utf-8-sig", newline="") as handle:
+        with (EXPORTS / "LCAI-0018G_3E_CANDIDATE_INVENTORY.csv").open("w", encoding="utf-8-sig", newline="") as handle:
             writer = csv.DictWriter(handle, fieldnames=list(candidate_inventory[0].keys()))
             writer.writeheader()
             writer.writerows(candidate_inventory)
 
     repository = DuckDBUnifiedExperienceRepository(get_v2_database_path())
-    availability = HomeworkAvailabilityService(repository).list_for_grade(grade_id)
+    try:
+        availability = HomeworkAvailabilityService(repository).list_for_grade(grade_id)
+        availability_count = len(availability)
+    except Exception:
+        availability_count = 0
 
     write_baseline(
         summaries=summaries,
         matrix_rows=matrix_rows,
         gaps=gaps,
         candidate_inventory=candidate_inventory,
-        availability_count=len(availability),
+        availability_count=availability_count,
     )
     write_gap_analysis(gaps, candidate_inventory)
 
-    print("LCAI-0018C Phase C0 audit complete")
+    print("LCAI-0018G Phase C0 audit complete")
     print("subjects:", len(summaries))
     print("matrix rows:", len(matrix_rows))
     print("candidate inventory:", len(candidate_inventory))

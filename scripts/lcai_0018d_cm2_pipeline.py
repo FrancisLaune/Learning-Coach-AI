@@ -1,4 +1,4 @@
-"""LCAI-0018C — CM1 industrialization pipeline (verify, publish, audit)."""
+"""LCAI-0018D — CM2 industrialization pipeline (verify, publish, audit)."""
 
 from __future__ import annotations
 
@@ -33,13 +33,13 @@ from services.content.primary_controlled_publication import (
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_DATABASE = ROOT / "data" / "learning_coach_v2.duckdb"
-GRADE = "FR-CM1"
+GRADE = "FR-CM2"
 REPORT_DIR = ROOT / "docs" / "phase3" / "exports"
-CM1_MANIFEST_PATH = REPORT_DIR / "lcai_0018c_cm1_publication_manifest.json"
-CM1_REPORT_PATH = REPORT_DIR / "lcai_0018c_cm1_publication_report.json"
+CM2_MANIFEST_PATH = REPORT_DIR / "lcai_0018d_cm2_publication_manifest.json"
+CM2_REPORT_PATH = REPORT_DIR / "lcai_0018d_cm2_publication_report.json"
 
 
-def _validate_cm1_execution_safety(
+def _validate_cm2_execution_safety(
     repository: DuckDBContentQualityRepository,
     *,
     bundles: list[dict[str, Any]],
@@ -84,11 +84,11 @@ def _validate_cm1_execution_safety(
                     review_campaign=PRIMARY_REVIEW_CAMPAIGN,
                 )
                 if eligibility.eligible:
-                    errors.append(f"eligible CM1 version {version_id} missing from manifest")
+                    errors.append(f"eligible CM2 version {version_id} missing from manifest")
     return errors
 
 
-def run_cm1_publication(
+def run_cm2_publication(
     *,
     execute: bool,
     confirmed: bool,
@@ -125,17 +125,17 @@ def run_cm1_publication(
     report["scope"] = GRADE
     report["loader_meta"] = loader_meta
     report["execution_manifest_count_full"] = len(full_manifest)
-    report["execution_manifest_count_cm1"] = len(manifest)
-    report["execution_manifest_path"] = str(CM1_MANIFEST_PATH)
+    report["execution_manifest_count_cm2"] = len(manifest)
+    report["execution_manifest_path"] = str(CM2_MANIFEST_PATH)
     report["review_pipeline"] = AI_REVIEW_PIPELINE_VERSION
 
     REPORT_DIR.mkdir(parents=True, exist_ok=True)
-    CM1_MANIFEST_PATH.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    CM2_MANIFEST_PATH.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
     if not execute:
         report["production_db_modified"] = False
         report["published"] = []
-        CM1_REPORT_PATH.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        CM2_REPORT_PATH.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         print(json.dumps(report, ensure_ascii=True, indent=2))
         return report
 
@@ -143,27 +143,27 @@ def run_cm1_publication(
         raise SystemExit(f"Real execution requires {CONFIRMATION_FLAG}")
 
     repository = DuckDBContentQualityRepository(database_path)
-    safety_errors = _validate_cm1_execution_safety(
+    safety_errors = _validate_cm2_execution_safety(
         repository,
         bundles=preparation["bundles"],
         manifest=manifest,
         grade=GRADE,
     )
     if safety_errors:
-        raise RuntimeError("CM1 execution blocked: " + "; ".join(safety_errors[:8]))
+        raise RuntimeError("CM2 execution blocked: " + "; ".join(safety_errors[:8]))
 
     published = _execute_publication(repository, manifest=manifest, bundles=preparation["bundles"])
     report["production_db_modified"] = bool(published)
     report["published"] = published
     report["published_count"] = len(published)
-    CM1_REPORT_PATH.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    CM2_REPORT_PATH.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(report, ensure_ascii=True, indent=2))
     return report
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="LCAI-0018C CM1 controlled publication pipeline.")
-    parser.add_argument("--execute", action="store_true", help="Perform real CM1 publication writes.")
+    parser = argparse.ArgumentParser(description="LCAI-0018D CM2 controlled publication pipeline.")
+    parser.add_argument("--execute", action="store_true", help="Perform real CM2 publication writes.")
     parser.add_argument(
         CONFIRMATION_FLAG,
         action="store_true",
@@ -172,7 +172,7 @@ def main() -> None:
     )
     parser.add_argument("--database", default=str(DEFAULT_DATABASE))
     args = parser.parse_args()
-    run_cm1_publication(
+    run_cm2_publication(
         execute=args.execute,
         confirmed=args.confirm_publication,
         database_path=Path(args.database),

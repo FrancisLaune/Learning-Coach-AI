@@ -199,9 +199,7 @@ def test_only_approved_active_content_is_eligible(homework_database: tuple[Path,
     connection = connect_v2(path)
     try:
         for content_id in selected:
-            row = connection.execute(
-                "SELECT status FROM exercises WHERE id=?", [content_id]
-            ).fetchone()
+            row = connection.execute("SELECT status FROM exercises WHERE id=?", [content_id]).fetchone()
             assert row and row[0] == "active"
     finally:
         connection.close()

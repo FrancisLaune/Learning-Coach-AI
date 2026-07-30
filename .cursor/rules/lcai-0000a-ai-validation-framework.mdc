@@ -1,0 +1,47 @@
+---
+description: LCAI-0000A — auto-revue et validation technique IA avant revue humaine
+alwaysApply: true
+---
+
+# LCAI-0000A — AI-Driven Validation Framework
+
+Cursor est responsable de la **validation technique complète** de chaque implémentation.
+
+## Cycle obligatoire par ticket
+
+Analyse → Implémentation → Auto-revue IA → Corrections → Re-revue → Validation technique IA → Commit → Push → **Validation fonctionnelle humaine uniquement**
+
+## Avant toute demande de revue utilisateur
+
+Exécuter et corriger automatiquement jusqu'à conformité :
+
+1. **Architecture** — couches, patterns, pas de duplication inutile
+2. **Base de données** — migrations/index/intégrité si le ticket touche la DB
+3. **Code** — `ruff check`, `ruff format --check`, `mypy`, `python -m compileall`
+4. **Tests** — pytest du périmètre ticket + régressions connues
+5. **Sécurité** — auth, isolation données, pas de secrets commités
+6. **Documentation** — rapport ticket, fichiers modifiés listés, cohérence spec/code
+7. **Démarrage** — smoke test si le ticket touche le runtime
+
+Script projet : `python scripts/lcai_0000a_technical_validation.py --ticket <ID>`
+
+## Rapport de fin de ticket (obligatoire)
+
+Inclure : État général (OK/NOK), résultats par contrôle, corrections auto, régressions, **limites restantes** (blocages métier/UX uniquement).
+
+## Escalade humaine — uniquement si
+
+- décision métier ou produit requise ;
+- ambiguïté de spec non résolvable ;
+- dépendance externe bloquante ;
+- limitation technique documentée insurmontable.
+
+Ne **pas** demander à l'utilisateur de vérifier architecture, migrations, auth, qualité code ou tests.
+
+## Validation humaine attendue
+
+Lancer l'app, parcourir les écrans concernés, valider UX/comportement métier.
+
+## Curriculums LCAI-0018
+
+Pour CM1/CM2/6e/5e : audit C0 → publication contrôlée → re-audit → tests homework → rapport d'implémentation → validation technique IA (0000A) → validation fonctionnelle humaine.

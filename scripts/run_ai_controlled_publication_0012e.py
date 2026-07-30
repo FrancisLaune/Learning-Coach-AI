@@ -48,11 +48,12 @@ def _find_item(bundles: list[dict[str, Any]], version_id: int) -> dict[str, Any]
     for bundle in bundles:
         for slot in ("practice", "assessment"):
             item = bundle.get(slot)
-            if item is None:
-                continue
-            if int(item["version_id"]) == version_id:
+            if item is not None and int(item["version_id"]) == version_id:
                 return item
-            if int(item.get("isolated_version_id") or -1) == version_id:
+    for bundle in bundles:
+        for slot in ("practice", "assessment"):
+            item = bundle.get(slot)
+            if item is not None and int(item.get("isolated_version_id") or -1) == version_id:
                 return item
     return None
 

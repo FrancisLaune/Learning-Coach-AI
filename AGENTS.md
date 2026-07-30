@@ -50,3 +50,14 @@ Never perform a large-bang refactor when a progressive migration is possible.
 
 \- Clearly identify any unresolved risk or incomplete migration.
 
+\## LCAI-0000A — AI validation (obligatoire)
+
+Avant toute demande de revue utilisateur, exécuter la validation technique IA :
+
+\- Script : `python scripts/lcai_0000a_technical_validation.py --ticket <ID>`
+\- Curriculums : `python scripts/lcai_0000a_technical_validation.py --curriculum-all`
+\- Doc : `docs/phase3/LCAI-0000A_AI_VALIDATION_FRAMEWORK.md`
+\- Règle Cursor : `.cursor/rules/lcai-0000a-ai-validation-framework.mdc`
+
+L'utilisateur valide **uniquement** le comportement fonctionnel et l'UX, pas le code ni les tests.
+
