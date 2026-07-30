@@ -15,7 +15,39 @@ from services.learning.learning_engine_service import LearningEngineService
 from services.learning_session.experience import LearnerExperienceService
 from services.learning_session.orchestration import ActivityRunner, LearningSessionService
 from services.learning_session.submission import SubmissionService
-from services.unified_session_execution import DecisionRefreshNotifier, UnifiedSessionExecutionService
+from services.unified_session_execution import UnifiedSessionExecutionService
+
+
+def build_pedagogical_intelligence_controller() -> "PedagogicalIntelligenceController":
+    from application.pedagogical_intelligence_controllers import PedagogicalIntelligenceController
+    from infrastructure.repositories.learning_intelligence import DuckDBLearningEvidenceRepository
+    from infrastructure.repositories.pedagogical_intelligence import DuckDBPedagogicalIntelligenceRepository
+    from infrastructure.repositories.session_integration import DuckDBSessionIntegrationGateway
+    from services.learning.learning_engine_service import LearningEngineService
+    from services.learning_intelligence import LearningIntelligenceService
+    from services.pedagogical_intelligence.adaptive_diagnostic_service import AdaptiveDiagnosticService
+    from services.pedagogical_intelligence.dashboard_service import PedagogicalDashboardService
+    from services.pedagogical_intelligence.platform_service import PedagogicalIntelligenceService
+    from services.pedagogical_intelligence.post_session_refresh import PostSessionPedagogicalRefreshService
+
+    repository = DuckDBPedagogicalIntelligenceRepository()
+    learning_engine = LearningEngineService(DuckDBLearningRepository())
+    diagnostic = AdaptiveDiagnosticService(repository, learning_engine)
+    intelligence = LearningIntelligenceService(DuckDBLearningEvidenceRepository())
+    dashboard = PedagogicalDashboardService(repository, intelligence)
+    refresh = PostSessionPedagogicalRefreshService(repository, dashboard)
+    service = PedagogicalIntelligenceService(repository, diagnostic, dashboard, refresh)
+    return PedagogicalIntelligenceController(service, DuckDBSessionIntegrationGateway())
+
+
+def build_pedagogical_refresh_callback():
+    controller = build_pedagogical_intelligence_controller()
+    service = controller.service
+
+    def _refresh(*, learner_id: int, session_id: int, correlation_id: str | None = None) -> None:
+        service.refresh_after_session(learner_id=learner_id, session_id=session_id, correlation_id=correlation_id)
+
+    return _refresh
 
 
 def build_student_experience_controller() -> StudentExperienceController:
@@ -37,12 +69,15 @@ def build_parent_experience_controller() -> ParentExperienceController:
 
 
 def build_unified_session_execution_service() -> UnifiedSessionExecutionService:
+    from services.pedagogical_intelligence.session_notifier import CompositePedagogicalNotifier
+
     sessions = DuckDBLearningSessionRepository()
     execution = DuckDBUnifiedSessionExecutionRepository()
     session_service = LearningSessionService(DuckDBRecommendationRepository(), sessions, sessions)
+    pi_refresh = build_pedagogical_refresh_callback()
     submission = SubmissionService(
         sessions,
         LearningEngineService(DuckDBLearningRepository()),
-        DecisionRefreshNotifier(execution.enqueue_refresh),
+        CompositePedagogicalNotifier(execution.enqueue_refresh, pi_refresh),
     )
     return UnifiedSessionExecutionService(execution, submission, session_service, ActivityRunner(sessions))

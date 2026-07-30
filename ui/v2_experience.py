@@ -88,6 +88,22 @@ def student_dashboard(controller: StudentExperienceController, learner_id: int) 
     if result.next_revision:
         st.caption(f"Prochaine révision : {result.next_revision.strftime('%d/%m/%Y')}")
     _mastery(result)
+    from application.experience_factory import build_pedagogical_intelligence_controller
+    from ui.pedagogical_intelligence import render_pedagogical_intelligence_dashboard
+
+    pi_controller = build_pedagogical_intelligence_controller()
+    pi_overview = pi_controller.student_overview(learner_id)
+    if isinstance(pi_overview, PresentationError):
+        st.warning(pi_overview.message)
+    else:
+        st.divider()
+        render_pedagogical_intelligence_dashboard(
+            pi_controller,
+            pi_overview,
+            learner_id,
+            key_prefix=f"student_pi_{learner_id}",
+            show_diagnostic=True,
+        )
 
 
 def session_screen(controller: StudentExperienceController, learner_id: int) -> None:

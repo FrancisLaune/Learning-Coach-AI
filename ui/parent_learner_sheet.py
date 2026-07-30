@@ -92,6 +92,21 @@ def render_parent_learner_sheet(
         st.write(f"**Classe actuelle :** {grade_labels.get(profile.current_grade_id, 'Classe inconnue')}")
         st.write(f"**Classe cible :** {target_grade}")
         st.write(f"**Statut diagnostic :** {profile.diagnostic_status}")
+        from application.experience_factory import build_pedagogical_intelligence_controller
+        from ui.pedagogical_intelligence import render_pedagogical_intelligence_dashboard
+
+        pi_controller = build_pedagogical_intelligence_controller()
+        pi_overview = pi_controller.parent_overview(parent_ref, learner_id)
+        if isinstance(pi_overview, PresentationError):
+            st.warning(pi_overview.message)
+        else:
+            render_pedagogical_intelligence_dashboard(
+                pi_controller,
+                pi_overview,
+                learner_id,
+                key_prefix=f"sheet_pi_{learner_id}",
+                parent_ref=parent_ref,
+            )
         if st.button("Réinitialiser le diagnostic", key=f"sheet_reset_diag_{learner_id}") and safe(
             lambda: profile_manager.reset_diagnostic(parent_ref, learner_id)
         ) is not None:

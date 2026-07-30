@@ -17,7 +17,17 @@ from services.recommendation.models import (
 )
 
 TRANSITION_MARKERS = {"transition_ready", "introductory", "prerequisite_bridge", "next_grade_preparation"}
-GRADE_SEQUENCE = {"FR-5E": -1, "FR-4E": 0, "FR-3E": 1, "FR-2NDE": 2, "FR-1ERE": 3, "FR-TERM": 4}
+GRADE_SEQUENCE = {
+    "FR-CM1": -3,
+    "FR-CM2": -2,
+    "FR-6E": -1,
+    "FR-5E": 0,
+    "FR-4E": 1,
+    "FR-3E": 2,
+    "FR-2NDE": 3,
+    "FR-1ERE": 4,
+    "FR-TERM": 5,
+}
 
 
 class ContentCandidateService:
