@@ -1,6 +1,6 @@
 # LCAI-0018H — Rapport de certification globale
 
-**Date :** 2026-07-30T09:17:04+00:00
+**Date :** 2026-07-30T09:19:47+00:00
 **Périmètre :** CM1, CM2, 6e, 5e, 4e, 3e
 
 ## Verdict global
@@ -22,7 +22,7 @@
 | LCAI-0018E | OK |
 | LCAI-0018F | OK |
 | LCAI-0018G | OK |
-| LCAI-0018H | NOK |
+| LCAI-0018H | OK |
 
 ## Certification par niveau
 

@@ -1061,6 +1061,30 @@
   ],
   "targets": [
     {
+      "skill": "SK-ENR-SVT-3E-HEALTH-VACCINATION",
+      "skill_name": "Expliquer le principe de vaccination",
+      "grade": "FR-3E",
+      "subject": "SVT",
+      "chapter": "CH-SVT-3E-HEALTH",
+      "wave_band": "TIER2_COMPLETION",
+      "selected_slot": "assessment",
+      "complement_slot": "practice",
+      "candidate_count": 1,
+      "active_version_id": 108430
+    },
+    {
+      "skill": "SK-ENR-SVT-4E-GENETICS-VARIATION",
+      "skill_name": "Expliquer une variation individuelle",
+      "grade": "FR-4E",
+      "subject": "SVT",
+      "chapter": "CH-SVT-4E-GENETICS",
+      "wave_band": "TIER2_COMPLETION",
+      "selected_slot": "practice",
+      "complement_slot": "assessment",
+      "candidate_count": 1,
+      "active_version_id": 109198
+    },
+    {
       "skill": "SK-ENR-SVT-4E-EARTH-RISK",
       "skill_name": "Relier aléa, vulnérabilité et prévention",
       "grade": "FR-4E",
@@ -1071,6 +1095,18 @@
       "complement_slot": "assessment",
       "candidate_count": 1,
       "active_version_id": 109154
+    },
+    {
+      "skill": "SK-ENR-HISTORY-4E-18TH-SOURCE",
+      "skill_name": "Interpréter une source du XVIIIe siècle",
+      "grade": "FR-4E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-4E-18TH",
+      "wave_band": "TIER2_COMPLETION",
+      "selected_slot": "practice",
+      "complement_slot": "assessment",
+      "candidate_count": 1,
+      "active_version_id": 108818
     },
     {
       "skill": "SK-ENR-GEOGRAPHY-3E-GEOSCALE-GLOBAL",
@@ -1097,42 +1133,6 @@
       "active_version_id": 108734
     },
     {
-      "skill": "SK-ENR-SVT-3E-HEALTH-VACCINATION",
-      "skill_name": "Expliquer le principe de vaccination",
-      "grade": "FR-3E",
-      "subject": "SVT",
-      "chapter": "CH-SVT-3E-HEALTH",
-      "wave_band": "TIER2_COMPLETION",
-      "selected_slot": "assessment",
-      "complement_slot": "practice",
-      "candidate_count": 1,
-      "active_version_id": 108430
-    },
-    {
-      "skill": "SK-ENR-HISTORY-4E-18TH-SOURCE",
-      "skill_name": "Interpréter une source du XVIIIe siècle",
-      "grade": "FR-4E",
-      "subject": "HISTORY",
-      "chapter": "CH-HISTORY-4E-18TH",
-      "wave_band": "TIER2_COMPLETION",
-      "selected_slot": "practice",
-      "complement_slot": "assessment",
-      "candidate_count": 1,
-      "active_version_id": 108818
-    },
-    {
-      "skill": "SK-ENR-SVT-4E-GENETICS-VARIATION",
-      "skill_name": "Expliquer une variation individuelle",
-      "grade": "FR-4E",
-      "subject": "SVT",
-      "chapter": "CH-SVT-4E-GENETICS",
-      "wave_band": "TIER2_COMPLETION",
-      "selected_slot": "practice",
-      "complement_slot": "assessment",
-      "candidate_count": 1,
-      "active_version_id": 109198
-    },
-    {
       "skill": "SK-ENR-GEOGRAPHY-3E-TERRITORY-MOBILITY",
       "skill_name": "Expliquer des mobilités territoriales",
       "grade": "FR-3E",
@@ -1143,6 +1143,54 @@
       "complement_slot": "assessment",
       "candidate_count": 1,
       "active_version_id": 107874
+    },
+    {
+      "skill": "SK-ENR-GEOGRAPHY-3E-TERRITORY-URBAN",
+      "skill_name": "Analyser les aires urbaines",
+      "grade": "FR-3E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-3E-TERRITORY",
+      "wave_band": "TIER2_COMPLETION",
+      "selected_slot": "assessment",
+      "complement_slot": "practice",
+      "candidate_count": 1,
+      "active_version_id": 107894
+    },
+    {
+      "skill": "SK-ENR-GEOGRAPHY-3E-GEOSCALE-COMPARE",
+      "skill_name": "Expliquer ce que révèle chaque changement d'échelle",
+      "grade": "FR-3E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-3E-GEOSCALE",
+      "wave_band": "TIER2_COMPLETION",
+      "selected_slot": "assessment",
+      "complement_slot": "practice",
+      "candidate_count": 1,
+      "active_version_id": 107802
+    },
+    {
+      "skill": "SK-ENR-GEOGRAPHY-3E-DEVELOPMENT-EFFECT",
+      "skill_name": "Évaluer les effets territoriaux",
+      "grade": "FR-3E",
+      "subject": "GEOGRAPHY",
+      "chapter": "CH-GEOGRAPHY-3E-DEVELOPMENT",
+      "wave_band": "TIER2_COMPLETION",
+      "selected_slot": "practice",
+      "complement_slot": "assessment",
+      "candidate_count": 1,
+      "active_version_id": 107750
+    },
+    {
+      "skill": "SK-HISTORY-3E-WARS",
+      "skill_name": "Expliquer guerres mondiales, totalitarismes et génocides",
+      "grade": "FR-3E",
+      "subject": "HISTORY",
+      "chapter": "CH-HISTORY-3E-WARS",
+      "wave_band": "TIER2_COMPLETION",
+      "selected_slot": "practice",
+      "complement_slot": "assessment",
+      "candidate_count": 1,
+      "active_version_id": 108094
     },
     {
       "skill": "SK-ENR-HISTORY-4E-FRANCE-CULTURE",
@@ -1203,54 +1251,6 @@
       "complement_slot": "assessment",
       "candidate_count": 1,
       "active_version_id": 108702
-    },
-    {
-      "skill": "SK-ENR-GEOGRAPHY-3E-GEOSCALE-COMPARE",
-      "skill_name": "Expliquer ce que révèle chaque changement d'échelle",
-      "grade": "FR-3E",
-      "subject": "GEOGRAPHY",
-      "chapter": "CH-GEOGRAPHY-3E-GEOSCALE",
-      "wave_band": "TIER2_COMPLETION",
-      "selected_slot": "assessment",
-      "complement_slot": "practice",
-      "candidate_count": 1,
-      "active_version_id": 107802
-    },
-    {
-      "skill": "SK-ENR-GEOGRAPHY-3E-DEVELOPMENT-EFFECT",
-      "skill_name": "Évaluer les effets territoriaux",
-      "grade": "FR-3E",
-      "subject": "GEOGRAPHY",
-      "chapter": "CH-GEOGRAPHY-3E-DEVELOPMENT",
-      "wave_band": "TIER2_COMPLETION",
-      "selected_slot": "practice",
-      "complement_slot": "assessment",
-      "candidate_count": 1,
-      "active_version_id": 107750
-    },
-    {
-      "skill": "SK-ENR-GEOGRAPHY-3E-TERRITORY-URBAN",
-      "skill_name": "Analyser les aires urbaines",
-      "grade": "FR-3E",
-      "subject": "GEOGRAPHY",
-      "chapter": "CH-GEOGRAPHY-3E-TERRITORY",
-      "wave_band": "TIER2_COMPLETION",
-      "selected_slot": "assessment",
-      "complement_slot": "practice",
-      "candidate_count": 1,
-      "active_version_id": 107894
-    },
-    {
-      "skill": "SK-HISTORY-3E-WARS",
-      "skill_name": "Expliquer guerres mondiales, totalitarismes et génocides",
-      "grade": "FR-3E",
-      "subject": "HISTORY",
-      "chapter": "CH-HISTORY-3E-WARS",
-      "wave_band": "TIER2_COMPLETION",
-      "selected_slot": "practice",
-      "complement_slot": "assessment",
-      "candidate_count": 1,
-      "active_version_id": 108094
     }
   ],
   "g2_complement_plan": [],
