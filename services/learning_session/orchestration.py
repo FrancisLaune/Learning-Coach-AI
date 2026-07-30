@@ -207,10 +207,22 @@ class LearningSessionService:
         return self._required(session_id)
 
     def pause_session(self, session_id: int, now: datetime) -> LearningSession:
+        session = self._required(session_id)
+        if session.status is SessionStatus.PAUSED:
+            return session
+        if session.status is not SessionStatus.RUNNING:
+            raise ValueError(
+                f"La séance ne peut pas être mise en pause depuis le statut {session.status.value}."
+            )
         self.repository.transition(session_id, SessionStatus.RUNNING, SessionStatus.PAUSED, now)
         return self._required(session_id)
 
     def resume_session(self, session_id: int, now: datetime) -> LearningSession:
+        session = self._required(session_id)
+        if session.status is SessionStatus.RUNNING:
+            return session
+        if session.status is not SessionStatus.PAUSED:
+            raise ValueError(f"La séance ne peut pas être reprise depuis le statut {session.status.value}.")
         self.repository.transition(session_id, SessionStatus.PAUSED, SessionStatus.RUNNING, now)
         return self._required(session_id)
 

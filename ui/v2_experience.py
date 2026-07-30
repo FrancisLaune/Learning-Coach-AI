@@ -236,18 +236,24 @@ def session_screen(
     actions = st.columns(3)
     error = None
     action_taken = False
+    success_message = None
     if result.session.status == "READY" and actions[0].button("Commencer", type="primary"):
         action_taken = True
         error = controller.start(result.session.session_id, datetime.now(UTC))
+        success_message = "Séance démarrée."
     elif result.session.status == "RUNNING" and actions[1].button("Mettre en pause"):
         action_taken = True
-        error = controller.pause(result.session.session_id, datetime.now(UTC))
+        error = controller.pause_for_learner(learner_id, result.session.session_id, datetime.now(UTC))
+        success_message = "Séance mise en pause. Tu pourras la reprendre depuis ton tableau de bord ou tes devoirs."
     elif result.session.status == "PAUSED" and actions[0].button("Reprendre", type="primary"):
         action_taken = True
-        error = controller.resume(result.session.session_id, datetime.now(UTC))
+        error = controller.resume_for_learner(learner_id, result.session.session_id, datetime.now(UTC))
+        success_message = "Séance reprise."
     if error:
         _error(error)
     elif action_taken:
+        if success_message:
+            st.success(success_message)
         st.rerun()
     if result.session.status == "COMPLETED":
         explanation = load_session_result_explanation(actor, learner_id, result.session.session_id)

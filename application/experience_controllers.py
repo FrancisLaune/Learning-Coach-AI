@@ -15,6 +15,7 @@ from services.learning_session.experience import (
     StudentDashboard,
 )
 from services.learning_session.orchestration import LearningSessionService
+from services.unified_experience import HomeworkSessionService
 
 T = TypeVar("T")
 
@@ -34,9 +35,11 @@ class StudentExperienceController:
         self,
         experience: LearnerExperienceService,
         sessions: LearningSessionService | None = None,
+        homework_sessions: HomeworkSessionService | None = None,
     ) -> None:
         self.experience = experience
         self.sessions = sessions
+        self.homework_sessions = homework_sessions
 
     def dashboard(self, learner_id: int) -> StudentDashboard | PresentationError:
         return self._safe(lambda: self.experience.dashboard(learner_id))
@@ -59,6 +62,22 @@ class StudentExperienceController:
     def resume(self, session_id: int, now: datetime) -> PresentationError | None:
         return self._action("reprendre", lambda: self._sessions().resume_session(session_id, now))
 
+    def pause_for_learner(self, learner_id: int, session_id: int, now: datetime) -> PresentationError | None:
+        if self.homework_sessions is not None:
+            return self._action(
+                "mettre en pause",
+                lambda: self.homework_sessions.pause_for_learner_session(learner_id, session_id, now),
+            )
+        return self.pause(session_id, now)
+
+    def resume_for_learner(self, learner_id: int, session_id: int, now: datetime) -> PresentationError | None:
+        if self.homework_sessions is not None:
+            return self._action(
+                "reprendre",
+                lambda: self.homework_sessions.resume_for_learner_session(learner_id, session_id, now),
+            )
+        return self.resume(session_id, now)
+
     def _sessions(self) -> LearningSessionService:
         if self.sessions is None:
             raise RuntimeError("Le contrôle des séances est indisponible.")
@@ -79,11 +98,46 @@ class StudentExperienceController:
         try:
             operation()
             return None
-        except Exception:
+        except Exception as exc:
+            return StudentExperienceController._presentation_error_from_exception(exc, label)
+
+    @staticmethod
+    def _presentation_error_from_exception(exc: Exception, label: str) -> PresentationError:
+        if isinstance(exc, RuntimeError) and "contrôle des séances est indisponible" in str(exc):
             return PresentationError(
-                f"Impossible de {label} cette séance.",
-                "La séance a été conservée. Actualise la page puis réessaie.",
+                "Le contrôle de séance n'est pas disponible.",
+                "Réouvre l'application ou contacte un adulte référent si le problème continue.",
             )
+        if isinstance(exc, PermissionError):
+            return PresentationError(
+                "Cette séance ne t'est pas accessible.",
+                "Retourne au tableau de bord et sélectionne la séance ou le devoir en cours.",
+            )
+        message = str(exc)
+        if "Cannot open file" in message or "used by another process" in message:
+            return PresentationError(
+                "L'application n'arrive pas à accéder à tes données pour le moment.",
+                "Ta progression est déjà enregistrée. Attends quelques secondes, puis réessaie sans actualiser la page.",
+            )
+        if "Expected RUNNING" in message or "mise en pause depuis le statut" in message:
+            return PresentationError(
+                "Cette séance n'est pas en cours d'exécution.",
+                "Utilise « Reprendre » si tu es en pause, ou retourne au tableau de bord pour relancer le devoir.",
+            )
+        if "Expected PAUSED" in message or "reprise depuis le statut" in message:
+            return PresentationError(
+                "Cette séance n'est pas en pause.",
+                "Continue l'activité en cours ou retourne au tableau de bord.",
+            )
+        if "modifié dans une autre session" in message:
+            return PresentationError(
+                "Le devoir a été mis à jour depuis un autre écran.",
+                "Retourne à la liste des devoirs pour reprendre au bon endroit.",
+            )
+        return PresentationError(
+            f"Impossible de {label} cette séance.",
+            "Ta progression est enregistrée. Réessaie dans quelques instants ou reviens au tableau de bord.",
+        )
 
 
 class ParentExperienceController:

@@ -15,7 +15,17 @@ from services.learning.learning_engine_service import LearningEngineService
 from services.learning_session.experience import LearnerExperienceService
 from services.learning_session.orchestration import ActivityRunner, LearningSessionService
 from services.learning_session.submission import SubmissionService
+from services.unified_experience import HomeworkSessionService
 from services.unified_session_execution import UnifiedSessionExecutionService
+
+
+def _learning_session_service() -> LearningSessionService:
+    repository = DuckDBLearningSessionRepository()
+    return LearningSessionService(DuckDBRecommendationRepository(), repository, repository)
+
+
+def build_homework_session_service() -> HomeworkSessionService:
+    return HomeworkSessionService(DuckDBUnifiedExperienceRepository(), _learning_session_service())
 
 
 def build_pedagogical_intelligence_controller() -> "PedagogicalIntelligenceController":
@@ -53,10 +63,11 @@ def build_pedagogical_refresh_callback():
 def build_student_experience_controller() -> StudentExperienceController:
     read_model = DuckDBExperienceReadModel()
     sessions = None
+    homework_sessions = None
     if is_v2_ui_enabled():
-        repository = DuckDBLearningSessionRepository()
-        sessions = LearningSessionService(DuckDBRecommendationRepository(), repository, repository)
-    return StudentExperienceController(LearnerExperienceService(read_model), sessions)
+        sessions = _learning_session_service()
+        homework_sessions = HomeworkSessionService(DuckDBUnifiedExperienceRepository(), sessions)
+    return StudentExperienceController(LearnerExperienceService(read_model), sessions, homework_sessions)
 
 
 def build_parent_experience_controller() -> ParentExperienceController:
@@ -90,7 +101,7 @@ def build_unified_session_execution_service() -> UnifiedSessionExecutionService:
 
     sessions = DuckDBLearningSessionRepository()
     execution = DuckDBUnifiedSessionExecutionRepository()
-    session_service = LearningSessionService(DuckDBRecommendationRepository(), sessions, sessions)
+    session_service = _learning_session_service()
     pi_refresh = build_pedagogical_refresh_callback()
     submission = SubmissionService(
         sessions,

@@ -516,6 +516,32 @@ def test_homework_pause_resume_and_invalid_transition(unified_database: tuple[Pa
         service.start(learner_id, created.homework_id)
 
 
+def test_homework_session_pause_syncs_learning_session(unified_database: tuple[Path, int, int, int]) -> None:
+    path, learner_id, subject_id, grade_id = unified_database
+    unified = DuckDBUnifiedExperienceRepository(path)
+    homework = HomeworkService(unified).create(request(learner_id, subject_id, grade_id))
+    session_repository = DuckDBLearningSessionRepository(path)
+    session_service = LearningSessionService(
+        DuckDBRecommendationRepository(path), session_repository, session_repository
+    )
+    homework_sessions = HomeworkSessionService(unified, session_service)
+    opened = homework_sessions.open_for_learner(learner_id, homework.homework_id, datetime.now(UTC))
+    assert opened.session_id is not None
+    session_id = int(opened.session_id)
+    homework_sessions.pause_for_learner_session(learner_id, session_id, datetime.now(UTC))
+    session = session_repository.get(session_id)
+    assert session is not None
+    assert session.status is SessionStatus.PAUSED
+    paused_homework = unified.get_homework(homework.homework_id)
+    assert paused_homework.status is AssignmentStatus.PAUSED
+    homework_sessions.resume_for_learner_session(learner_id, session_id, datetime.now(UTC))
+    session = session_repository.get(session_id)
+    assert session is not None
+    assert session.status is SessionStatus.RUNNING
+    resumed_homework = unified.get_homework(homework.homework_id)
+    assert resumed_homework.status is AssignmentStatus.IN_PROGRESS
+
+
 def test_homework_materializes_and_executes_deterministic_session(
     unified_database: tuple[Path, int, int, int],
 ) -> None:

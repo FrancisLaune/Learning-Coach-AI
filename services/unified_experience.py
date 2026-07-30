@@ -8,6 +8,7 @@ from datetime import date, datetime
 from typing import Any, Protocol
 
 from domain.onboarding.models import OnboardingRequest, OnboardingResult
+from domain.learning_session.models import SessionStatus
 from domain.unified_experience.models import (
     AssignmentStatus,
     AssignmentType,
@@ -22,6 +23,7 @@ from domain.unified_experience.models import (
 from services.homework.ai_fallback import HomeworkAiFallbackOrchestrator
 from services.homework.config import HomeworkAiCompletionSettings
 from services.homework.eligibility import completion_flags_enabled, is_homework_ai_completion_eligible
+from services.learning_session.orchestration import LearningSessionService
 from services.platform_runtime import FeatureFlagService, default_flags
 
 
@@ -232,9 +234,43 @@ class SessionCreator(Protocol):
 
 
 class HomeworkSessionService:
-    def __init__(self, repository: UnifiedExperienceRepository, sessions: SessionCreator) -> None:
+    def __init__(self, repository: UnifiedExperienceRepository, sessions: LearningSessionService) -> None:
         self.repository = repository
         self.sessions = sessions
+
+    def _homework_for_session(self, learner_id: int, session_id: int) -> HomeworkAssignment | None:
+        return next(
+            (
+                candidate
+                for candidate in self.repository.list_homework(learner_id)
+                if candidate.session_id is not None and int(candidate.session_id) == int(session_id)
+            ),
+            None,
+        )
+
+    def pause_for_learner_session(self, learner_id: int, session_id: int, now: datetime) -> None:
+        session = self.sessions.repository.get(session_id)
+        if session is None or session.learner_id != learner_id:
+            raise PermissionError("SESSION_ACCESS_DENIED")
+        if session.status is SessionStatus.READY:
+            self.sessions.ensure_running(session_id, now)
+        self.sessions.pause_session(session_id, now)
+        homework = self._homework_for_session(learner_id, session_id)
+        if homework is not None and homework.status is AssignmentStatus.IN_PROGRESS:
+            self.repository.update_homework_status(
+                homework.homework_id, learner_id, homework.status, AssignmentStatus.PAUSED
+            )
+
+    def resume_for_learner_session(self, learner_id: int, session_id: int, now: datetime) -> None:
+        session = self.sessions.repository.get(session_id)
+        if session is None or session.learner_id != learner_id:
+            raise PermissionError("SESSION_ACCESS_DENIED")
+        self.sessions.ensure_running(session_id, now)
+        homework = self._homework_for_session(learner_id, session_id)
+        if homework is not None and homework.status is AssignmentStatus.PAUSED:
+            self.repository.update_homework_status(
+                homework.homework_id, learner_id, homework.status, AssignmentStatus.IN_PROGRESS
+            )
 
     def materialize(self, learner_id: int, homework_id: int, now: datetime) -> HomeworkAssignment:
         item = next(
