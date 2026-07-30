@@ -77,6 +77,15 @@ def test_preferences_created_with_defaults(virtual_teacher_db: tuple[Path, int, 
     assert prefs.teacher_profile == "TEACHER_FEMALE_01"
 
 
+def test_ensure_preferences_is_idempotent(virtual_teacher_db: tuple[Path, int, str]) -> None:
+    path, learner_id, _ = virtual_teacher_db
+    repository = DuckDBVirtualTeacherRepository(path)
+    first = repository.ensure_preferences(learner_id)
+    second = repository.ensure_preferences(learner_id)
+    assert first.id == second.id
+    assert first.learner_id == learner_id
+
+
 def test_parent_enables_feature_and_student_can_use(virtual_teacher_db: tuple[Path, int, str]) -> None:
     path, learner_id, _ = virtual_teacher_db
     teacher, preferences, _ = _stack(path)

@@ -17,6 +17,7 @@ from domain.onboarding.models import (
     SubjectPreference,
 )
 from domain.unified_experience.models import AssignmentStatus, AssignmentType, DifficultyMode, HomeworkRequest
+from domain.learning_session.models import SessionStatus
 from infrastructure.database.v2 import connect_v2
 from infrastructure.repositories.curriculum import DuckDBCurriculumRepository
 from infrastructure.repositories.learning import DuckDBLearningRepository
@@ -529,7 +530,13 @@ def test_homework_materializes_and_executes_deterministic_session(
         learner_id, homework.homework_id, datetime.now(UTC)
     )
     assert materialized.session_id is not None
-    session_service.start_session(materialized.session_id, datetime.now(UTC))
+    opened = HomeworkSessionService(unified, session_service).open_for_learner(
+        learner_id, homework.homework_id, datetime.now(UTC)
+    )
+    assert opened.session_id == materialized.session_id
+    started = session_repository.get(materialized.session_id)
+    assert started is not None
+    assert started.status is SessionStatus.RUNNING
 
     execution_repository = DuckDBUnifiedSessionExecutionRepository(path)
     submission = SubmissionService(
@@ -554,6 +561,15 @@ def test_homework_materializes_and_executes_deterministic_session(
     )
     assert result.correct
     assert result.mastery_after >= result.mastery_before
+    next_material = execution_repository.current_question(learner_id, materialized.session_id)
+    if next_material is not None:
+        execution.submit(
+            learner_id,
+            materialized.session_id,
+            next_material.expected_answer,
+            datetime.now(UTC),
+            1000,
+        )
     connection = connect_v2(path, read_only=True)
     try:
         assert connection.execute(

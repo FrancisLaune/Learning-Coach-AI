@@ -5,6 +5,8 @@ from __future__ import annotations
 import json
 from dataclasses import replace
 from datetime import datetime
+from decimal import Decimal
+from fractions import Fraction
 from pathlib import Path
 from typing import Any
 
@@ -22,12 +24,21 @@ from domain.learning_session.models import (
     StudentAnswer,
 )
 from infrastructure.database.v2 import connect_v2
+from services.learning_session.assessment import format_decimal_fr
 
 
-def _json_datetime(value: object) -> str:
+def _json_default(value: object) -> str:
     if isinstance(value, datetime):
         return value.isoformat()
+    if isinstance(value, Decimal):
+        return format_decimal_fr(value)
+    if isinstance(value, Fraction):
+        return str(value)
     raise TypeError(f"Object of type {type(value).__name__} is not JSON serializable")
+
+
+def _dumps_json(value: object) -> str:
+    return json.dumps(value, default=_json_default)
 
 
 class DuckDBLearningSessionRepository:
@@ -254,8 +265,8 @@ class DuckDBLearningSessionRepository:
                 answer.question_id,
                 answer.attempt_number,
                 answer.answer_type.value,
-                json.dumps(answer.raw_answer),
-                json.dumps(answer.normalized_answer),
+                _dumps_json(answer.raw_answer),
+                _dumps_json(answer.normalized_answer),
                 answer.submission_time,
                 answer.time_spent_ms,
                 answer.draft,
@@ -304,7 +315,7 @@ class DuckDBLearningSessionRepository:
                     assessment.hint_penalty,
                     assessment.time_penalty,
                     assessment.assessment_method.value,
-                    json.dumps(assessment.feedback_generated),
+                    _dumps_json(assessment.feedback_generated),
                     assessment.assessment_engine_version,
                 ],
             ).fetchone()
@@ -328,7 +339,7 @@ class DuckDBLearningSessionRepository:
                     int(question[0]),
                     answer.attempt_number,
                     answer.submission_time,
-                    json.dumps(answer.normalized_answer),
+                    _dumps_json(answer.normalized_answer),
                     assessment.correct,
                     assessment.score / 100,
                     attempt.duration_ms,
@@ -363,7 +374,7 @@ class DuckDBLearningSessionRepository:
                     record_id,
                     attempt.mastery_before,
                     attempt.mastery_after,
-                    json.dumps(mastery_payload, default=_json_datetime),
+                    _dumps_json(mastery_payload),
                     str(mastery_payload.get("learning_engine_version", "unknown")),
                 ],
             )
@@ -403,7 +414,7 @@ class DuckDBLearningSessionRepository:
                     event.session_id,
                     event.event_type,
                     event.timestamp,
-                    json.dumps(event.payload),
+                    _dumps_json(event.payload),
                     event.correlation_id,
                     key,
                 ],
@@ -485,8 +496,8 @@ class DuckDBLearningSessionRepository:
                     """UPDATE student_answers SET raw_answer=?,normalized_answer=?,submission_time=?,
                     time_spent_ms=?,draft=TRUE,validated=FALSE WHERE id=?""",
                     [
-                        json.dumps(answer.raw_answer),
-                        json.dumps(answer.normalized_answer),
+                        _dumps_json(answer.raw_answer),
+                        _dumps_json(answer.normalized_answer),
                         answer.submission_time,
                         answer.time_spent_ms,
                         answer_id,
@@ -521,7 +532,7 @@ class DuckDBLearningSessionRepository:
                     event.session_id,
                     event.event_type,
                     event.timestamp,
-                    json.dumps(event.payload),
+                    _dumps_json(event.payload),
                     event.correlation_id,
                     key,
                 ],
@@ -547,8 +558,8 @@ class DuckDBLearningSessionRepository:
                     summary.average_time_ms,
                     summary.total_score,
                     summary.mastery_gain,
-                    json.dumps(summary.strengths),
-                    json.dumps(summary.weaknesses),
+                    _dumps_json(summary.strengths),
+                    _dumps_json(summary.weaknesses),
                     summary.recommended_next_session,
                 ],
             ).fetchone()

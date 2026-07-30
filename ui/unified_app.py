@@ -801,18 +801,21 @@ def student_homework(learner_id: int, user: dict[str, object]) -> None:
                     if item.status is AssignmentStatus.READY and st.button(
                         "Commencer", key=f"hw_start_{item.homework_id}"
                     ):
-                        materialized = _safe(
-                            partial(_homework_sessions().materialize, learner_id, item.homework_id, datetime.now(UTC))
+                        opened = _safe(
+                            partial(_homework_sessions().open_for_learner, learner_id, item.homework_id, datetime.now(UTC))
                         )
-                        if materialized and materialized.session_id:
-                            st.session_state.v2_session_id = materialized.session_id
+                        if opened and opened.session_id:
+                            st.session_state.v2_session_id = opened.session_id
                             request_navigation(st.session_state, "student", "Ma séance IA")
                             st.rerun()
                     if item.status is AssignmentStatus.IN_PROGRESS and st.button(
                         "Reprendre la séance", key=f"hw_resume_session_{item.homework_id}"
                     ):
-                        if item.session_id:
-                            st.session_state.v2_session_id = item.session_id
+                        opened = _safe(
+                            partial(_homework_sessions().open_for_learner, learner_id, item.homework_id, datetime.now(UTC))
+                        )
+                        if opened and opened.session_id:
+                            st.session_state.v2_session_id = opened.session_id
                             request_navigation(st.session_state, "student", "Ma séance IA")
                             st.rerun()
                     if item.status is AssignmentStatus.IN_PROGRESS and st.button(

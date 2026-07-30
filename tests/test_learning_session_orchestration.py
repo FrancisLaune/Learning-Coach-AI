@@ -19,7 +19,11 @@ from domain.learning_session.models import (
     SessionStatus,
     StudentAnswer,
 )
-from services.learning_session.assessment import AnswerValidationError, DeterministicAssessmentEngine
+from services.learning_session.assessment import (
+    AnswerValidationError,
+    DeterministicAssessmentEngine,
+    format_decimal_fr,
+)
 from services.learning_session.models import (
     ActivityExecutionState,
     ActivityExecutionStatus,
@@ -130,6 +134,7 @@ def test_assessment_is_repeatable_and_applies_declared_penalties() -> None:
     with pytest.raises(AnswerValidationError):
         engine.assess(replace(request, raw_answer="not-a-list"))
     assert engine.normalize(AnswerType.DECIMAL, "1,5") == Decimal("1.5")
+    assert format_decimal_fr(engine.normalize(AnswerType.DECIMAL, "1,5")) == "1,5"
     assert engine.normalize(AnswerType.FRACTION, "2/4") == Fraction(1, 2)
 
 

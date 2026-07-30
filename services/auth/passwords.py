@@ -9,6 +9,15 @@ import secrets
 PBKDF2_ALGORITHM = "pbkdf2_sha256"
 PBKDF2_ITERATIONS = 390_000
 SALT_BYTES = 16
+MIN_PASSWORD_LENGTH = 4
+
+
+def password_length_error() -> str:
+    return f"Le mot de passe doit contenir au moins {MIN_PASSWORD_LENGTH} caractères."
+
+
+def is_password_too_short(password: str) -> bool:
+    return len(password.strip()) < MIN_PASSWORD_LENGTH
 
 
 def _legacy_sha256(password: str) -> str:

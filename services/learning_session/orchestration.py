@@ -214,6 +214,14 @@ class LearningSessionService:
         self.repository.transition(session_id, SessionStatus.PAUSED, SessionStatus.RUNNING, now)
         return self._required(session_id)
 
+    def ensure_running(self, session_id: int, now: datetime) -> LearningSession:
+        session = self._required(session_id)
+        if session.status is SessionStatus.READY:
+            return self.start_session(session_id, now)
+        if session.status is SessionStatus.PAUSED:
+            return self.resume_session(session_id, now)
+        return session
+
     def cancel_session(self, session_id: int, now: datetime) -> LearningSession:
         current = self._required(session_id)
         self.repository.transition(session_id, current.status, SessionStatus.ABANDONED, now)

@@ -144,9 +144,9 @@ def test_wizard_step2_requires_matching_password_of_min_length() -> None:
         "student_password_confirmation": "13091309",
     }
     assert _validate_step(2, data, {1: "6e"}, {1: "Maths"}, objectives) is None
-    short = {**data, "student_password": "1234567", "student_password_confirmation": "1234567"}
+    short = {**data, "student_password": "123", "student_password_confirmation": "123"}
     assert _validate_step(2, short, {1: "6e"}, {1: "Maths"}, objectives) == (
-        "Le mot de passe doit contenir au moins huit caractères."
+        "Le mot de passe doit contenir au moins 4 caractères."
     )
     mismatch = {**data, "student_password_confirmation": "13091308"}
     assert _validate_step(2, mismatch, {1: "6e"}, {1: "Maths"}, objectives) == (

@@ -28,7 +28,14 @@ from services.auth.password_reset import (
     hash_reset_token,
     neutral_recovery_message,
 )
-from services.auth.passwords import hash_password, needs_rehash, verify_password
+from services.auth.passwords import (
+    MIN_PASSWORD_LENGTH,
+    hash_password,
+    is_password_too_short,
+    needs_rehash,
+    password_length_error,
+    verify_password,
+)
 from services.auth.roles import is_known_auth_role
 
 DB_PATH = get_database_path()
@@ -257,8 +264,8 @@ def create_user(name: str, pin: str) -> tuple[bool, str]:
     name = name.strip()
     if len(name) < 2:
         return False, "Le prénom doit contenir au moins deux caractères."
-    if len(pin) < 4:
-        return False, "Le code PIN doit contenir au moins quatre caractères."
+    if len(pin) < MIN_PASSWORD_LENGTH:
+        return False, f"Le code PIN doit contenir au moins {MIN_PASSWORD_LENGTH} caractères."
     con = connect()
     try:
         con.execute(
@@ -290,8 +297,8 @@ def create_parent(
         return False, "L'adresse e-mail n'est pas valide."
     if len(username) < 3:
         return False, "L'identifiant doit contenir au moins trois caractères."
-    if len(password) < 8:
-        return False, "Le mot de passe doit contenir au moins huit caractères."
+    if is_password_too_short(password):
+        return False, password_length_error()
     if password != password_confirmation:
         return False, "La confirmation du mot de passe ne correspond pas."
     con = connect()
@@ -327,8 +334,8 @@ def create_student_account(
         return False, "L'adresse e-mail de l'élève n'est pas valide."
     if len(username) < 3:
         return False, "L'identifiant élève doit contenir au moins trois caractères."
-    if len(password) < 8:
-        return False, "Le mot de passe doit contenir au moins huit caractères."
+    if is_password_too_short(password):
+        return False, password_length_error()
     if password != password_confirmation:
         return False, "La confirmation du mot de passe ne correspond pas."
     con = connect()
@@ -400,8 +407,8 @@ def reset_student_password(
     password: str,
     password_confirmation: str,
 ) -> tuple[bool, str]:
-    if len(password) < 8:
-        return False, "Le mot de passe doit contenir au moins huit caractères."
+    if is_password_too_short(password):
+        return False, password_length_error()
     if password != password_confirmation:
         return False, "La confirmation du mot de passe ne correspond pas."
     con = connect()
@@ -609,8 +616,8 @@ def request_child_password_recovery(parent_email: str, child_username: str) -> s
 
 
 def complete_password_reset(token: str, password: str, password_confirmation: str) -> tuple[bool, str]:
-    if len(password) < 8:
-        return False, "Le mot de passe doit contenir au moins huit caractères."
+    if is_password_too_short(password):
+        return False, password_length_error()
     if password != password_confirmation:
         return False, "La confirmation du mot de passe ne correspond pas."
     resolved = _resolve_reset_token(token)

@@ -29,6 +29,17 @@ def _decimal(value: Any) -> Decimal:
         raise AnswerValidationError("Invalid numeric answer") from exc
 
 
+def format_decimal_fr(value: Decimal) -> str:
+    """Render a decimal with the French comma separator."""
+    return str(value).replace(".", ",")
+
+
+def serialize_normalized_answer(answer_type: AnswerType, value: Any) -> Any:
+    if answer_type is AnswerType.DECIMAL and isinstance(value, Decimal):
+        return format_decimal_fr(value)
+    return value
+
+
 def _fraction(value: Any) -> Fraction:
     try:
         text = _text(value, lowercase=False).replace(" ", "")

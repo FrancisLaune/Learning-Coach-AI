@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 from application.experience_controllers import ParentExperienceController, StudentExperienceController
-from core.config import is_v2_session_execution_enabled
+from core.config import is_v2_ui_enabled
 from infrastructure.repositories.experience import DuckDBExperienceReadModel
 from infrastructure.repositories.learning import DuckDBLearningRepository
 from infrastructure.repositories.learning_session import DuckDBLearningSessionRepository
@@ -53,7 +53,7 @@ def build_pedagogical_refresh_callback():
 def build_student_experience_controller() -> StudentExperienceController:
     read_model = DuckDBExperienceReadModel()
     sessions = None
-    if is_v2_session_execution_enabled():
+    if is_v2_ui_enabled():
         repository = DuckDBLearningSessionRepository()
         sessions = LearningSessionService(DuckDBRecommendationRepository(), repository, repository)
     return StudentExperienceController(LearnerExperienceService(read_model), sessions)

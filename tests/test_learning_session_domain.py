@@ -2,6 +2,8 @@ from __future__ import annotations
 
 from dataclasses import replace
 from datetime import UTC, date, datetime, time
+from decimal import Decimal
+from fractions import Fraction
 from pathlib import Path
 
 import pytest
@@ -205,6 +207,49 @@ def test_assessment_attempt_mastery_transaction_and_idempotence(
         assert con.execute("SELECT count(*) FROM session_attempt_records").fetchone() == (1,)
         assert con.execute("SELECT count(*) FROM session_mastery_updates").fetchone() == (1,)
         assert con.execute("SELECT count(*) FROM attempts").fetchone() == (1,)
+    finally:
+        con.close()
+
+
+def test_save_cycle_serializes_decimal_and_fraction_answers(
+    execution_database: tuple[Path, int, int, int, int, int, int],
+) -> None:
+    repository, _, activity, question_id = _persisted_context(execution_database)
+    for attempt_number, (answer_type, raw, normalized, key) in enumerate(
+        (
+            (AnswerType.DECIMAL, "1,5", "1,5", "decimal-cycle"),
+            (AnswerType.FRACTION, "3/4", Fraction(3, 4), "fraction-cycle"),
+        ),
+        start=1,
+    ):
+        answer = StudentAnswer(
+            0,
+            activity.activity_id,
+            question_id,
+            attempt_number,
+            answer_type,
+            raw,
+            normalized,
+            NOW,
+            1200,
+            False,
+            True,
+            key,
+        )
+        assessment = Assessment(
+            0, 0, True, 100, 0, 0, 0, AssessmentMethod.EXACT_MATCH, {"reason": "exact"}, "assessment-v1"
+        )
+        attempt = Attempt(0, execution_database[1], activity.activity_id, 0, 0, True, 0.2, 0.3, 1200, 0)
+        saved = repository.save_cycle(answer, assessment, attempt, {"learning_engine_version": "learning-v1"})
+        assert saved.attempt_id > 0
+    con = connect_v2(execution_database[0], read_only=True)
+    try:
+        assert con.execute(
+            "SELECT normalized_answer FROM student_answers WHERE idempotency_key='decimal-cycle'"
+        ).fetchone() == ('"1,5"',)
+        assert con.execute(
+            "SELECT normalized_answer FROM student_answers WHERE idempotency_key='fraction-cycle'"
+        ).fetchone() == ('"3/4"',)
     finally:
         con.close()
 

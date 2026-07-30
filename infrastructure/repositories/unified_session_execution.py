@@ -134,14 +134,15 @@ class DuckDBUnifiedSessionExecutionRepository:
             connection.execute(
                 """INSERT INTO decision_refresh_queue
                 (session_id,learner_id,status,correlation_id)
-                SELECT ?,?,'PENDING',? WHERE NOT EXISTS (
-                    SELECT 1 FROM decision_refresh_queue WHERE session_id=? AND correlation_id=?
-                )""",
+                VALUES (?,?, 'PENDING', ?)
+                ON CONFLICT(session_id) DO UPDATE SET
+                    learner_id=excluded.learner_id,
+                    status='PENDING',
+                    correlation_id=excluded.correlation_id,
+                    updated_at=now()""",
                 [
                     session_id,
                     result.mastery.current.learner_id,
-                    result.attempt_id,
-                    session_id,
                     result.attempt_id,
                 ],
             )

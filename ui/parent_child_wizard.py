@@ -27,6 +27,7 @@ from infrastructure.database.legacy_gateway import (
 )
 from infrastructure.repositories.onboarding import DuckDBOnboardingRepository
 from services.academic_year import academic_year_options, default_academic_year, parse_academic_year
+from services.auth.passwords import is_password_too_short, password_length_error
 from services.onboarding import OnboardingService
 from services.unified_experience import (
     LearnerProfileManagementService,
@@ -412,8 +413,8 @@ def _validate_step(
         confirmation = str(data.get("student_password_confirmation", ""))
         if not password:
             return "Le mot de passe est obligatoire."
-        if len(password) < 8:
-            return "Le mot de passe doit contenir au moins huit caractères."
+        if is_password_too_short(password):
+            return password_length_error()
         if password != confirmation:
             return "La confirmation du mot de passe ne correspond pas."
         email = str(data.get("email") or "").strip().lower()

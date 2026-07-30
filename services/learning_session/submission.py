@@ -8,7 +8,7 @@ from typing import Any, Protocol
 from domain.learning.models import LearnerAttempt, LearningEngineResult
 from domain.learning_session.models import Assessment, Attempt, StudentAnswer
 from domain.learning_session.repositories import AssessmentRepository
-from services.learning_session.assessment import DeterministicAssessmentEngine
+from services.learning_session.assessment import DeterministicAssessmentEngine, serialize_normalized_answer
 from services.learning_session.models import AssessmentRequest, AssessmentResult, SubmissionContext
 
 
@@ -48,7 +48,7 @@ class SubmissionService:
             context.attempt_number,
             request.answer_type,
             request.raw_answer,
-            result.normalized_answer,
+            serialize_normalized_answer(request.answer_type, result.normalized_answer),
             context.occurred_at,
             context.elapsed_ms,
             False,

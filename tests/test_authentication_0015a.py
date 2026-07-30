@@ -134,7 +134,7 @@ def test_student_login_rejects_parent_role(auth_db: Path) -> None:
 
 
 def test_weak_password_and_duplicate_email_rejected(auth_db: Path) -> None:
-    assert not legacy_database.create_parent("A", "B", "bad", "user1", "short", "short")[0]
+    assert not legacy_database.create_parent("A", "B", "bad", "user1", "abc", "abc")[0]
     assert legacy_database.create_parent(
         "Marie",
         "Martin",

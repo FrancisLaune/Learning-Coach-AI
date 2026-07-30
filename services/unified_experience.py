@@ -257,6 +257,13 @@ class HomeworkSessionService:
             candidate for candidate in self.repository.list_homework(learner_id) if candidate.homework_id == homework_id
         )
 
+    def open_for_learner(self, learner_id: int, homework_id: int, now: datetime) -> HomeworkAssignment:
+        item = self.materialize(learner_id, homework_id, now)
+        if item.session_id is None:
+            raise ValueError("HOMEWORK_SESSION_NOT_MATERIALIZED")
+        self.sessions.ensure_running(int(item.session_id), now)
+        return item
+
 
 @dataclass(frozen=True, slots=True)
 class OnboardingProfileInput:

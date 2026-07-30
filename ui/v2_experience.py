@@ -82,7 +82,7 @@ def student_dashboard(controller: StudentExperienceController, learner_id: int) 
         label = "Continuer la séance" if session.status in {"RUNNING", "PAUSED"} else "Commencer la séance"
         if st.button(label, type="primary", use_container_width=True):
             st.session_state.v2_session_id = session.session_id
-            st.session_state.v2_student_page = "Séance"
+            request_navigation(st.session_state, "student", "Ma séance IA")
             st.rerun()
     else:
         st.info("Aucune séance n'est actuellement planifiée.")

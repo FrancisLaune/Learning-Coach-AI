@@ -62,9 +62,6 @@ class DuckDBVirtualTeacherRepository:
         return self._preferences_from_row(row)
 
     def ensure_preferences(self, learner_id: int) -> VirtualTeacherPreferences:
-        existing = self.get_preferences(learner_id)
-        if existing is not None:
-            return existing
         connection = connect_v2(self.database_path)
         try:
             row = connection.execute(
@@ -72,6 +69,8 @@ class DuckDBVirtualTeacherRepository:
                 (learner_id,teacher_profile,teacher_name,voice_id,tone,response_length,help_level,
                  audio_enabled,feature_enabled,parent_locked)
                 VALUES (?,?,?,?,?,?,?,?,?,?)
+                ON CONFLICT(learner_id) DO UPDATE SET
+                    updated_at=virtual_teacher_preferences.updated_at
                 RETURNING id,learner_id,teacher_profile,teacher_name,voice_id,tone,response_length,
                 help_level,audio_enabled,feature_enabled,parent_locked,created_at,updated_at""",
                 [
@@ -89,6 +88,11 @@ class DuckDBVirtualTeacherRepository:
             ).fetchone()
         finally:
             connection.close()
+        if row is None:
+            existing = self.get_preferences(learner_id)
+            if existing is None:
+                raise RuntimeError(f"Virtual teacher preferences missing for learner {learner_id}")
+            return existing
         return self._preferences_from_row(row)
 
     def save_preferences(
