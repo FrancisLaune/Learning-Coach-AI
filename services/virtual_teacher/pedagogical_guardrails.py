@@ -1,4 +1,4 @@
-"""Pedagogical guardrails for Virtual Teacher requests and responses."""
+"""Pedagogical guardrails for Virtual Teacher — delegates minors safety to school filter."""
 
 from __future__ import annotations
 
@@ -6,51 +6,30 @@ import re
 
 from domain.virtual_teacher.enums import GuardrailAction, ResponseType
 from domain.virtual_teacher.models import AITeacherResponse
+from services.school_safety import SafetyAction, SafetyCategory, SafetyChannel, SchoolSafetyFilter
 
-_BLOCKED_PATTERNS = (
-    r"\bmot de passe\b",
-    r"\bpassword\b",
-    r"\bsexe\b",
-    r"\bnude\b",
-    r"\bnu\b",
-    r"\bpoignard\b",
-    r"\barme\b",
-    r"\btue\b",
-)
-_DISTRESS_PATTERNS = (
-    r"\bje veux mourir\b",
-    r"\bsuicide\b",
-    r"\bme faire du mal\b",
-    r"\bj['']ai peur chez moi\b",
-)
 _CHEATING_PATTERNS = (
     r"\bdonne(?:-|\s)?moi la r[eé]ponse\b",
     r"\br[eé]ponse finale\b",
     r"\bfini(?:s|-)?(?:\s|-)?le(?:\s|-)?devoir\b",
 )
-_INJECTION_PATTERNS = (
-    r"\bignore(?:z|r)?\s+(?:les\s+)?(?:instructions|consignes)\b",
-    r"\bsystem prompt\b",
-    r"\bprompt syst[eè]me\b",
-    r"\bcontourn(?:e|er)\s+(?:les\s+)?r[eè]gles\b",
-    r"\bjoue(?:z|-)?\s+(?:un\s+)?autre r[oô]le\b",
-)
 
 
 class PedagogicalGuardrails:
+    def __init__(self, safety: SchoolSafetyFilter | None = None) -> None:
+        self.safety = safety or SchoolSafetyFilter()
+
     def classify_request(self, message: str, *, from_exercise: bool) -> tuple[str, GuardrailAction]:
-        lowered = message.strip().lower()
-        if not lowered:
+        verdict = self.safety.classify(message, channel=SafetyChannel.USER)
+        if verdict.category is SafetyCategory.EMPTY:
             return "EMPTY_MESSAGE", GuardrailAction.BLOCK
-        for pattern in _DISTRESS_PATTERNS:
-            if re.search(pattern, lowered):
-                return "DISTRESS", GuardrailAction.BLOCK
-        for pattern in _BLOCKED_PATTERNS:
-            if re.search(pattern, lowered):
-                return "UNSAFE_CONTENT", GuardrailAction.BLOCK
-        for pattern in _INJECTION_PATTERNS:
-            if re.search(pattern, lowered):
-                return "PROMPT_INJECTION", GuardrailAction.BLOCK
+        if verdict.category is SafetyCategory.DISTRESS:
+            return "DISTRESS", GuardrailAction.BLOCK
+        if verdict.category is SafetyCategory.UNSAFE_CONTENT:
+            return "UNSAFE_CONTENT", GuardrailAction.BLOCK
+        if verdict.category is SafetyCategory.PROMPT_INJECTION:
+            return "PROMPT_INJECTION", GuardrailAction.BLOCK
+        lowered = message.strip().lower()
         for pattern in _CHEATING_PATTERNS:
             if re.search(pattern, lowered):
                 return "DIRECT_ANSWER_REQUEST", GuardrailAction.REWRITE
@@ -77,13 +56,18 @@ class PedagogicalGuardrails:
             )
         return user_message
 
-    def validate_response(self, response: AITeacherResponse, *, from_exercise: bool) -> tuple[GuardrailAction, AITeacherResponse]:
-        lowered = response.message.lower()
-        for pattern in _BLOCKED_PATTERNS:
-            if re.search(pattern, lowered):
-                return GuardrailAction.BLOCK, self._safety_response()
-        if from_exercise and response.response_type == ResponseType.EXPLANATION.value and re.search(
-            r"\br[eé]ponse(?:\s|:|=)\s*[-+]?\d", lowered
+    def validate_response(
+        self, response: AITeacherResponse, *, from_exercise: bool
+    ) -> tuple[GuardrailAction, AITeacherResponse]:
+        filtered = self.safety.filter_text(response.message, channel=SafetyChannel.ASSISTANT)
+        if filtered.action is SafetyAction.BLOCK:
+            if filtered.category is SafetyCategory.DISTRESS:
+                return GuardrailAction.BLOCK, self.safety_response_for_distress()
+            return GuardrailAction.BLOCK, self._safety_response(filtered.text)
+        if (
+            from_exercise
+            and response.response_type == ResponseType.EXPLANATION.value
+            and re.search(r"\br[eé]ponse(?:\s|:|=)\s*[-+]?\d", response.message.lower())
         ):
             rewritten = AITeacherResponse(
                 message=(
@@ -99,13 +83,9 @@ class PedagogicalGuardrails:
             return GuardrailAction.REWRITE, rewritten
         return GuardrailAction.ALLOW, response
 
-    @staticmethod
-    def _safety_response() -> AITeacherResponse:
+    def _safety_response(self, message: str | None = None) -> AITeacherResponse:
         return AITeacherResponse(
-            message=(
-                "Je ne peux pas répondre à ce type de demande. "
-                "Parle-en à un adulte de confiance si tu te sens en difficulté."
-            ),
+            message=message or self.safety.safe_message(SafetyCategory.UNSAFE_CONTENT),
             response_type=ResponseType.SAFETY.value,
             suggested_actions=("Revenir à ma leçon",),
             confidence=1.0,
@@ -114,11 +94,7 @@ class PedagogicalGuardrails:
 
     def safety_response_for_distress(self) -> AITeacherResponse:
         return AITeacherResponse(
-            message=(
-                "Je suis vraiment désolé que tu te sentes ainsi. "
-                "Ce n'est pas quelque chose que tu dois garder pour toi : parle-en tout de suite "
-                "à un adulte de confiance, à tes parents ou à un enseignant."
-            ),
+            message=self.safety.safe_message(SafetyCategory.DISTRESS),
             response_type=ResponseType.SAFETY.value,
             suggested_actions=("Parler à un adulte",),
             confidence=1.0,

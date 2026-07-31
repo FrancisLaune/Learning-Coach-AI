@@ -34,6 +34,18 @@
 |----------|-------------|
 | [LCAI-0022D_LOT4_IMPLEMENTATION_REPORT.md](LCAI-0022D_LOT4_IMPLEMENTATION_REPORT.md) | Invariants IA + journal `ai_decision_log` |
 
+## Lot 5 (terminé)
+
+| Document | Description |
+|----------|-------------|
+| [LCAI-0022E_LOT5_IMPLEMENTATION_REPORT.md](LCAI-0022E_LOT5_IMPLEMENTATION_REPORT.md) | Filtre scolaire central (sécurité mineurs) |
+
+## Lot 6 (terminé)
+
+| Document | Description |
+|----------|-------------|
+| [LCAI-0023_LOT6_IMPLEMENTATION_REPORT.md](LCAI-0023_LOT6_IMPLEMENTATION_REPORT.md) | Mode vocal scolaire sécurisé (STT → filtre → TTS) |
+
 ## Backlog proposé (à formaliser en tickets)
 
 | Lot | Intitulé | Statut |
@@ -43,8 +55,8 @@
 | 2 | Bandeau Professeur IA + modes (IA / Compagnon / Manuel) | Fait |
 | 3 | Cycle Accueil → Diagnostic → Devoir → Séance → Synthèse | Fait |
 | 4 | Invariants IA + journal de décisions | Fait |
-| 5 | Sécurité mineurs renforcée (filtre scolaire central) | Planifié |
-| 6 | Mode vocal scolaire sécurisé (STT → filtre → TTS) | Planifié Phase B |
+| 5 | Sécurité mineurs renforcée (filtre scolaire central) | Fait |
+| 6 | Mode vocal scolaire sécurisé (STT → filtre → TTS) | Fait |
 
 ## Règles Phase 4
 

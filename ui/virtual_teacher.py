@@ -8,18 +8,21 @@ import streamlit as st
 
 from domain.virtual_teacher.models import ConversationRequest, PedagogicalContext, PreferencesPatch
 from infrastructure.repositories.virtual_teacher import DuckDBVirtualTeacherRepository
+from services.professor_ai.banner import BannerPresenceState
 from services.virtual_teacher.ai_conversation_orchestrator import AIConversationOrchestrator
 from services.virtual_teacher.ai_teacher_preferences_service import AITeacherPreferencesService
 from services.virtual_teacher.ai_teacher_service import AITeacherService
 from services.virtual_teacher.authorization import VirtualTeacherAccessError
 from services.virtual_teacher.llm_service import build_llm_service
+from services.virtual_teacher.openai_tts import build_tts_service
 from services.virtual_teacher.pedagogical_guardrails import PedagogicalGuardrails
-from services.virtual_teacher.tts_service import ConsoleTTSService
+from services.virtual_teacher.stt_service import build_stt_service
+from services.virtual_teacher.voice_pipeline import PRESENCE_STATE_KEY, SchoolVoicePipeline
 
 
 def build_virtual_teacher_stack(
     repository_factory: Callable[[], DuckDBVirtualTeacherRepository],
-) -> tuple[AITeacherService, AITeacherPreferencesService]:
+) -> tuple[AITeacherService, AITeacherPreferencesService, SchoolVoicePipeline]:
     repository = repository_factory()
     preferences = AITeacherPreferencesService(repository)
     orchestrator = AIConversationOrchestrator(
@@ -30,9 +33,10 @@ def build_virtual_teacher_stack(
         repository=repository,
         preferences_service=preferences,
         orchestrator=orchestrator,
-        tts=ConsoleTTSService(),
+        tts=build_tts_service(),
     )
-    return teacher, preferences
+    pipeline = SchoolVoicePipeline(teacher=teacher, stt=build_stt_service())
+    return teacher, preferences, pipeline
 
 
 def render_student_virtual_teacher(
@@ -43,6 +47,7 @@ def render_student_virtual_teacher(
     preferences_service: AITeacherPreferencesService,
     learner_display_name: str,
     grade_label: str | None,
+    voice_pipeline: SchoolVoicePipeline | None = None,
 ) -> None:
     st.title("Mon professeur virtuel")
     try:
@@ -130,6 +135,7 @@ def render_student_virtual_teacher(
                     and st.button("Écouter", key=f"listen_{message.id}")
                 ):
                     try:
+                        st.session_state[PRESENCE_STATE_KEY] = BannerPresenceState.SPEAKING.value
                         audio = teacher_service.synthesize_audio(
                             user=user,
                             learner_id=learner_id,
@@ -139,9 +145,9 @@ def render_student_virtual_teacher(
                             text=message.content,
                             voice_id=preferences.voice_id,
                         )
-                        st.audio(audio.content)
-                    except VirtualTeacherAccessError:
-                        st.warning("Lecture audio momentanément indisponible.")
+                        _play_audio(audio)
+                    except VirtualTeacherAccessError as exc:
+                        st.warning(_friendly_error(str(exc)))
 
         quick_actions = st.columns(3)
         quick_message = None
@@ -151,6 +157,62 @@ def render_student_virtual_teacher(
             quick_message = "Donne-moi un indice."
         if quick_actions[2].button("Montre un exemple"):
             quick_message = "Montre-moi un exemple."
+
+        if preferences.audio_enabled and voice_pipeline is not None:
+            if st.session_state.pop("professor_ai_voice_focus", None):
+                st.info("Mode vocal : enregistre ta question ci-dessous.")
+            st.subheader("Mode vocal scolaire")
+            st.caption("Enregistre une question : transcription → filtre scolaire → réponse → lecture.")
+            recorded = None
+            if hasattr(st, "audio_input"):
+                recorded = st.audio_input("Enregistre ta question", key=f"vt_audio_input_{learner_id}")
+            uploaded = st.file_uploader(
+                "Ou envoie un fichier audio",
+                type=("wav", "mp3", "webm", "m4a", "ogg"),
+                key=f"vt_audio_upload_{learner_id}",
+            )
+            audio_file = recorded or uploaded
+            if audio_file is not None and st.button("Envoyer ma question vocale", key=f"vt_voice_send_{learner_id}"):
+                st.session_state[PRESENCE_STATE_KEY] = BannerPresenceState.LISTENING.value
+                payload = audio_file.getvalue() if hasattr(audio_file, "getvalue") else bytes(audio_file.read())
+                mime = getattr(audio_file, "type", None) or "audio/wav"
+                context = PedagogicalContext(
+                    learner_id=learner_id,
+                    learner_display_name=learner_display_name,
+                    grade_label=grade_label,
+                )
+                request = ConversationRequest(
+                    learner_id=learner_id,
+                    actor_type="STUDENT",
+                    actor_ref=str(user["id"]),
+                    session_id=int(st.session_state[session_key]),
+                    user_message="",
+                    context=context,
+                    quick_action="voice",
+                )
+                try:
+                    st.session_state[PRESENCE_STATE_KEY] = BannerPresenceState.THINKING.value
+                    turn = voice_pipeline.process_turn(
+                        user=user,
+                        request=request,
+                        student_learner_id=learner_id,
+                        audio=payload,
+                        mime_type=str(mime),
+                        voice_id=preferences.voice_id,
+                        audio_enabled=preferences.audio_enabled,
+                    )
+                    st.session_state[PRESENCE_STATE_KEY] = turn.presence.value
+                    st.info(f"Transcription : {turn.transcript}")
+                    if turn.blocked:
+                        st.warning(turn.safety_message or "Question filtrée pour ta sécurité.")
+                    if turn.audio is not None:
+                        _play_audio(turn.audio)
+                    st.rerun()
+                except VirtualTeacherAccessError as exc:
+                    st.session_state[PRESENCE_STATE_KEY] = BannerPresenceState.IDLE.value
+                    st.error(_friendly_error(str(exc)))
+        elif not preferences.audio_enabled:
+            st.caption("Le mode vocal est désactivé. Demande à un parent d'autoriser la lecture audio.")
 
         user_message = st.chat_input("Pose ta question scolaire")
         prompt = quick_message or user_message
@@ -170,14 +232,26 @@ def render_student_virtual_teacher(
                 quick_action=quick_message,
             )
             try:
+                st.session_state[PRESENCE_STATE_KEY] = BannerPresenceState.THINKING.value
                 teacher_service.answer(
                     user=user,
                     request=request,
                     student_learner_id=learner_id,
                 )
+                st.session_state[PRESENCE_STATE_KEY] = BannerPresenceState.SPEAKING.value
                 st.rerun()
             except VirtualTeacherAccessError as exc:
+                st.session_state[PRESENCE_STATE_KEY] = BannerPresenceState.IDLE.value
                 st.error(_friendly_error(str(exc)))
+
+
+def _play_audio(audio) -> None:
+    mime = getattr(audio, "mime_type", "audio/wav") or "audio/wav"
+    if str(mime).startswith("audio/"):
+        st.audio(audio.content, format=str(mime))
+    else:
+        st.caption("Synthèse vocale (mode console) disponible — configure OPENAI_API_KEY pour une vraie voix.")
+        st.code(audio.content.decode("utf-8", errors="ignore")[:500])
 
 
 def render_parent_virtual_teacher_settings(
@@ -208,7 +282,9 @@ def render_parent_virtual_teacher_settings(
             index=0 if preferences.teacher_profile == "TEACHER_FEMALE_01" else 1,
         )
         teacher_name = st.selectbox("Prénom affiché", ["Emma", "Léa", "Lucas", "Hugo"], index=0)
-        voice_id = st.selectbox("Voix", ["warm_female", "warm_male"], index=0 if preferences.voice_id == "warm_female" else 1)
+        voice_id = st.selectbox(
+            "Voix", ["warm_female", "warm_male"], index=0 if preferences.voice_id == "warm_female" else 1
+        )
         tone = st.selectbox("Ton", ["calm", "encouraging", "academic"])
         response_length = st.selectbox("Longueur des réponses", ["short", "normal", "detailed"])
         help_level = st.slider("Niveau d'aide", 1, 3, preferences.help_level)
@@ -306,5 +382,8 @@ def _friendly_error(code: str) -> str:
         "EMPTY_MESSAGE": "Écris une question avant d'envoyer.",
         "TTS_UNAVAILABLE": "Lecture audio momentanément indisponible.",
         "AUDIO_DISABLED": "La lecture audio est désactivée.",
+        "SAFETY_BLOCKED": "Ce message ne peut pas être lu à voix haute.",
+        "STT_UNAVAILABLE": "La reconnaissance vocale est momentanément indisponible.",
+        "STT_EMPTY": "Je n'ai pas compris l'audio. Réessaie ou écris ta question.",
     }
     return mapping.get(code, "Action non disponible pour le moment.")

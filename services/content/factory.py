@@ -20,6 +20,7 @@ from domain.content.factory import (
     QualityAssessment,
     normalized_content_fingerprint,
 )
+from services.school_safety import SafetyAction, SafetyCategory, SafetyChannel, SchoolSafetyFilter
 
 
 class ContentFactoryRepository(Protocol):
@@ -49,6 +50,9 @@ class CandidateValidator:
 
     _unsafe = re.compile(r"<\s*script|javascript:|(?:^|\s)(?:DROP|DELETE)\s+TABLE", re.IGNORECASE)
 
+    def __init__(self, school_safety: SchoolSafetyFilter | None = None) -> None:
+        self._school_safety = school_safety or SchoolSafetyFilter()
+
     def validate(
         self,
         candidate: GeneratedContentCandidate,
@@ -73,9 +77,19 @@ class CandidateValidator:
         if candidate.answer.expected in (None, "", [], {}) and candidate.answer.kind is not AnswerKind.OPEN_RESPONSE:
             issues.append(self._issue("answer", "missing_answer", "A deterministic expected answer is required"))
         self._validate_answer(candidate, issues)
-        body = " ".join((candidate.instructions, candidate.prompt, candidate.explanation))
+        body = " ".join((candidate.instructions, candidate.prompt, candidate.explanation, *candidate.hints))
         if self._unsafe.search(body):
             issues.append(self._issue("safety", "unsafe_content", "Executable or destructive content is forbidden"))
+        if body.strip():
+            verdict = self._school_safety.classify(body, channel=SafetyChannel.CONTENT)
+            if verdict.action is SafetyAction.BLOCK and verdict.category is not SafetyCategory.EMPTY:
+                issues.append(
+                    self._issue(
+                        "safety",
+                        "school_safety_blocked",
+                        f"School safety blocked content ({verdict.category.value})",
+                    )
+                )
         if candidate.content_type is CanonicalContentType.ASSESSMENT and candidate.hints:
             issues.append(
                 self._issue("pedagogy", "assessment_has_hints", "Assessment hints require review", warning=True)

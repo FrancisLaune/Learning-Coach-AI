@@ -16,6 +16,7 @@ from services.professor_ai.banner import (
 from services.professor_ai.models import ProfessorOperatingMode, SessionPlan
 from services.virtual_teacher.ai_teacher_preferences_service import AITeacherPreferencesService
 from services.virtual_teacher.authorization import VirtualTeacherAccessError
+from services.virtual_teacher.voice_pipeline import PRESENCE_STATE_KEY
 from ui.navigation import request_navigation
 from ui.professor_ai_guided_cycle import apply_guided_cycle_cta, build_cycle_snapshot
 
@@ -24,6 +25,8 @@ _MODE_OPTIONS = (
     ProfessorOperatingMode.COMPANION,
     ProfessorOperatingMode.MANUAL,
 )
+
+_VOICE_FOCUS_KEY = "professor_ai_voice_focus"
 
 
 def render_professor_ai_banner(
@@ -34,6 +37,10 @@ def render_professor_ai_banner(
     presence: BannerPresenceState = BannerPresenceState.IDLE,
 ) -> None:
     """Render the fixed top banner on student screens."""
+    stored_presence = st.session_state.get(PRESENCE_STATE_KEY)
+    if stored_presence in {item.value for item in BannerPresenceState}:
+        presence = BannerPresenceState(str(stored_presence))
+
     repository = DuckDBVirtualTeacherRepository()
     preferences_service = preferences_service or AITeacherPreferencesService(repository)
     try:
@@ -61,9 +68,11 @@ def render_professor_ai_banner(
         message = plan.welcome.greeting
         primary_action = plan.welcome.primary_action or primary_action
         secondary = plan.welcome.secondary_actions
-        presence = BannerPresenceState.SPEAKING if message else presence
+        if presence is BannerPresenceState.IDLE and message:
+            presence = BannerPresenceState.SPEAKING
     except Exception:
-        presence = BannerPresenceState.IDLE
+        if presence is BannerPresenceState.IDLE:
+            presence = BannerPresenceState.IDLE
 
     cycle = build_cycle_snapshot(plan, st.session_state) if plan is not None else None
     if cycle is not None:
@@ -91,7 +100,7 @@ def render_professor_ai_banner(
         if banner.primary_action:
             st.caption(f"Priorité : {banner.primary_action}")
 
-        action_cols = st.columns(4)
+        action_cols = st.columns(5)
         cta_label = (cycle.cta_label if cycle is not None else banner.primary_action) or "Continuer"
         if action_cols[0].button(cta_label, key=f"banner_cta_{learner_id}", type="primary", use_container_width=True):
             if cycle is not None:
@@ -106,6 +115,11 @@ def render_professor_ai_banner(
             request_navigation(st.session_state, "student", "Ma séance IA")
             st.rerun()
         if action_cols[3].button("Discuter", key=f"banner_chat_{learner_id}", use_container_width=True):
+            request_navigation(st.session_state, "student", "Mon professeur IA")
+            st.rerun()
+        if action_cols[4].button("Parler", key=f"banner_voice_{learner_id}", use_container_width=True):
+            st.session_state[_VOICE_FOCUS_KEY] = True
+            st.session_state[PRESENCE_STATE_KEY] = BannerPresenceState.LISTENING.value
             request_navigation(st.session_state, "student", "Mon professeur IA")
             st.rerun()
 

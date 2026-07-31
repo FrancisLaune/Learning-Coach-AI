@@ -142,7 +142,7 @@ def _virtual_teacher_repository() -> DuckDBVirtualTeacherRepository:
     return DuckDBVirtualTeacherRepository()
 
 
-def _virtual_teacher_services() -> tuple[AITeacherService, AITeacherPreferencesService]:
+def _virtual_teacher_services():
     return build_virtual_teacher_stack(_virtual_teacher_repository)
 
 
@@ -208,7 +208,7 @@ def _save_child_virtual_teacher_preferences(
     vt_repository.ensure_preferences(learner_id)
     if not data.get("vt_feature_enabled"):
         return
-    _, preferences_service = _virtual_teacher_services()
+    _, preferences_service, _ = _virtual_teacher_services()
     preferences_service.save_for_parent(
         user=user,
         parent_ref=parent_ref,
@@ -908,7 +908,7 @@ def run_student(user: dict[str, object], learner_id: int) -> None:
     elif page == "Ma séance IA":
         session_screen(controller, learner_id, user=user)
     elif page == "Mon professeur IA":
-        teacher_service, preferences_service = _virtual_teacher_services()
+        teacher_service, preferences_service, voice_pipeline = _virtual_teacher_services()
         profile = _safe(lambda: _repository().learner_management_profile(learner_id))
         grade_label = None
         if profile is not None:
@@ -921,6 +921,7 @@ def run_student(user: dict[str, object], learner_id: int) -> None:
             preferences_service=preferences_service,
             learner_display_name=profile.first_name if profile else str(user["name"]),
             grade_label=grade_label,
+            voice_pipeline=voice_pipeline,
         )
     elif page == "Devoirs":
         student_homework(learner_id, user)
@@ -966,7 +967,7 @@ def _view_learner(user: dict[str, object], parent_ref: str, learner_id: int) -> 
     repository = _repository()
     manager = LearnerProfileManagementService(repository)
     controller = build_parent_experience_controller()
-    _, preferences_service = _virtual_teacher_services()
+    _, preferences_service, _ = _virtual_teacher_services()
     render_parent_learner_sheet(
         user=user,
         parent_ref=parent_ref,
@@ -1002,7 +1003,7 @@ def _ai_profile_learner(user: dict[str, object], parent_ref: str, learner_id: in
     if profile is None:
         return
     _render_child_management_back()
-    _, preferences_service = _virtual_teacher_services()
+    _, preferences_service, _ = _virtual_teacher_services()
     render_parent_virtual_teacher_settings(
         user=user,
         parent_ref=parent_ref,

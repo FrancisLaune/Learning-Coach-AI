@@ -244,8 +244,13 @@ class AITeacherService:
         )
         if not preferences.audio_enabled:
             raise VirtualTeacherAccessError("AUDIO_DISABLED")
+        from services.school_safety import SafetyAction, SafetyChannel, get_school_safety_filter
+
+        filtered = get_school_safety_filter().filter_text(text, channel=SafetyChannel.ASSISTANT)
+        if filtered.action is SafetyAction.BLOCK:
+            raise VirtualTeacherAccessError("SAFETY_BLOCKED")
         try:
-            result = self.tts.synthesize(text=text, voice_id=voice_id)
+            result = self.tts.synthesize(text=filtered.text, voice_id=voice_id)
         except Exception as exc:
             raise VirtualTeacherAccessError("TTS_UNAVAILABLE") from exc
         self.repository.record_event(
