@@ -213,6 +213,21 @@ def render_parent_virtual_teacher_settings(
         response_length = st.selectbox("Longueur des réponses", ["short", "normal", "detailed"])
         help_level = st.slider("Niveau d'aide", 1, 3, preferences.help_level)
         audio_enabled = st.checkbox("Autoriser la lecture audio", value=preferences.audio_enabled)
+        mode_labels = {
+            "PROFESSOR": "Professeur IA (guide le parcours)",
+            "COMPANION": "Compagnon (aide sans modifier le planning)",
+            "MANUAL": "Manuel (l'élève choisit)",
+        }
+        current_mode = preferences.operating_mode if preferences.operating_mode in mode_labels else "MANUAL"
+        if feature_enabled and current_mode == "MANUAL":
+            current_mode = "PROFESSOR"
+        operating_mode = st.selectbox(
+            "Mode d'accompagnement",
+            list(mode_labels),
+            index=list(mode_labels).index(current_mode),
+            format_func=mode_labels.__getitem__,
+            help="Le mode Compagnon ne peut pas créer ni modifier un devoir.",
+        )
         submitted = st.form_submit_button("Enregistrer")
         if submitted:
             patch = PreferencesPatch(
@@ -225,6 +240,7 @@ def render_parent_virtual_teacher_settings(
                 response_length=response_length,
                 help_level=help_level,
                 audio_enabled=audio_enabled,
+                operating_mode=operating_mode if feature_enabled else "MANUAL",
                 fields={
                     "feature_enabled",
                     "parent_locked",
@@ -235,6 +251,7 @@ def render_parent_virtual_teacher_settings(
                     "response_length",
                     "help_level",
                     "audio_enabled",
+                    "operating_mode",
                 },
             )
             try:

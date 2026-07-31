@@ -11,4 +11,4 @@ Documentation de référence produit et technique (volumes Francis).
 | 4 — Architecture IA, professeur, LLM, RAG | `LEARNING_COACH_AI_MASTER_BOOK_VOLUME_4_ARCHITECTURE_IA_PROFESSEUR_LLM_RAG_PROMPTS_ANALYTICS.docx` |
 | 5 — Déploiement, DevOps, sécurité, roadmap | `LEARNING_COACH_AI_MASTER_BOOK_VOLUME_5_DEPLOIEMENT_DEVOPS_SECURITE_EXPLOITATION_GOUVERNANCE_ROADMAP.docx` |
 
-Ces documents complètent les livrables Phase 3 dans `docs/phase3/`.
+Ces documents complètent les livrables Phase 3 dans `docs/phase3/` et le cadrage Phase 4 IA-First dans `docs/phase4/`.

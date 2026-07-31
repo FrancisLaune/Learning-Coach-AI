@@ -14,10 +14,10 @@
 | Anglais | Couverture limitée | 2 | 2 | 1 | 2 | Contenu insuffisant pour un devoir standard |
 | EMC | Couverture limitée | 4 | 4 | 2 | 2 | Contenu insuffisant pour un devoir standard |
 | Espagnol | Couverture limitée | 2 | 2 | 1 | 2 | Contenu insuffisant pour un devoir standard |
-| Français | Couverture limitée | 25 | 8 | 6 | 6 | Contenu insuffisant pour un devoir standard |
+| Français | Disponible | 25 | 25 | 6 | 6 | OK |
 | Géographie | Disponible | 27 | 27 | 3 | 3 | OK |
 | Histoire | Disponible | 34 | 34 | 3 | 3 | OK |
-| Mathématiques | Disponible | 76 | 18 | 8 | 8 | OK |
+| Mathématiques | Disponible | 76 | 40 | 8 | 8 | OK |
 | Physique-Chimie | Couverture limitée | 2 | 2 | 1 | 2 | Contenu insuffisant pour un devoir standard |
 | SVT | Disponible | 22 | 22 | 2 | 2 | OK |
 

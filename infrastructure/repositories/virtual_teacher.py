@@ -51,7 +51,7 @@ class DuckDBVirtualTeacherRepository:
         try:
             row = connection.execute(
                 """SELECT id,learner_id,teacher_profile,teacher_name,voice_id,tone,response_length,
-                help_level,audio_enabled,feature_enabled,parent_locked,created_at,updated_at
+                help_level,audio_enabled,feature_enabled,parent_locked,created_at,updated_at,operating_mode
                 FROM virtual_teacher_preferences WHERE learner_id=?""",
                 [learner_id],
             ).fetchone()
@@ -67,12 +67,12 @@ class DuckDBVirtualTeacherRepository:
             row = connection.execute(
                 """INSERT INTO virtual_teacher_preferences
                 (learner_id,teacher_profile,teacher_name,voice_id,tone,response_length,help_level,
-                 audio_enabled,feature_enabled,parent_locked)
-                VALUES (?,?,?,?,?,?,?,?,?,?)
+                 audio_enabled,feature_enabled,parent_locked,operating_mode)
+                VALUES (?,?,?,?,?,?,?,?,?,?,?)
                 ON CONFLICT(learner_id) DO UPDATE SET
                     updated_at=virtual_teacher_preferences.updated_at
                 RETURNING id,learner_id,teacher_profile,teacher_name,voice_id,tone,response_length,
-                help_level,audio_enabled,feature_enabled,parent_locked,created_at,updated_at""",
+                help_level,audio_enabled,feature_enabled,parent_locked,created_at,updated_at,operating_mode""",
                 [
                     learner_id,
                     "TEACHER_FEMALE_01",
@@ -84,6 +84,7 @@ class DuckDBVirtualTeacherRepository:
                     True,
                     False,
                     False,
+                    "MANUAL",
                 ],
             ).fetchone()
         finally:
@@ -108,6 +109,7 @@ class DuckDBVirtualTeacherRepository:
         audio_enabled: bool | None = None,
         feature_enabled: bool | None = None,
         parent_locked: bool | None = None,
+        operating_mode: str | None = None,
     ) -> VirtualTeacherPreferences:
         self.ensure_preferences(learner_id)
         updates: list[str] = ["updated_at=now()"]
@@ -122,6 +124,7 @@ class DuckDBVirtualTeacherRepository:
             "audio_enabled": audio_enabled,
             "feature_enabled": feature_enabled,
             "parent_locked": parent_locked,
+            "operating_mode": operating_mode,
         }
         for column, value in mapping.items():
             if value is not None:
@@ -134,7 +137,7 @@ class DuckDBVirtualTeacherRepository:
                 f"""UPDATE virtual_teacher_preferences SET {', '.join(updates)}
                 WHERE learner_id=?
                 RETURNING id,learner_id,teacher_profile,teacher_name,voice_id,tone,response_length,
-                help_level,audio_enabled,feature_enabled,parent_locked,created_at,updated_at""",
+                help_level,audio_enabled,feature_enabled,parent_locked,created_at,updated_at,operating_mode""",
                 params,
             ).fetchone()
         finally:
@@ -326,6 +329,9 @@ class DuckDBVirtualTeacherRepository:
 
     @staticmethod
     def _preferences_from_row(row: tuple[Any, ...]) -> VirtualTeacherPreferences:
+        operating_mode = "MANUAL"
+        if len(row) > 13 and row[13] is not None:
+            operating_mode = str(row[13])
         return VirtualTeacherPreferences(
             id=int(row[0]),
             learner_id=int(row[1]),
@@ -340,6 +346,7 @@ class DuckDBVirtualTeacherRepository:
             parent_locked=bool(row[10]),
             created_at=_parse_ts(row[11]),
             updated_at=_parse_ts(row[12]),
+            operating_mode=operating_mode,
         )
 
     @staticmethod

@@ -776,6 +776,11 @@ def student_homework(learner_id: int, user: dict[str, object]) -> None:
     )
 
     st.title("Mes devoirs")
+    from services.professor_ai.guided_cycle import FOCUS_HOMEWORK_KEY
+
+    focus_homework_id = st.session_state.pop(FOCUS_HOMEWORK_KEY, None)
+    if focus_homework_id is not None:
+        st.info(f"Le Professeur IA te propose de te concentrer sur le devoir n°{int(focus_homework_id)}.")
     service = _homework_service()
     tabs = st.tabs(("À faire", "En cours", "Terminés", "Créer"))
     groups = (
@@ -805,6 +810,9 @@ def student_homework(learner_id: int, user: dict[str, object]) -> None:
                         )
                         if opened and opened.session_id:
                             st.session_state.v2_session_id = opened.session_id
+                            from ui.professor_ai_guided_cycle import remember_session_status
+
+                            remember_session_status(st.session_state, int(opened.session_id), "RUNNING")
                             request_navigation(st.session_state, "student", "Ma séance IA")
                             st.rerun()
                     if item.status is AssignmentStatus.IN_PROGRESS and st.button(
@@ -815,6 +823,9 @@ def student_homework(learner_id: int, user: dict[str, object]) -> None:
                         )
                         if opened and opened.session_id:
                             st.session_state.v2_session_id = opened.session_id
+                            from ui.professor_ai_guided_cycle import remember_session_status
+
+                            remember_session_status(st.session_state, int(opened.session_id), "RUNNING")
                             request_navigation(st.session_state, "student", "Ma séance IA")
                             st.rerun()
                     if item.status is AssignmentStatus.IN_PROGRESS and st.button(
@@ -879,6 +890,11 @@ def run_student(user: dict[str, object], learner_id: int) -> None:
         st.success(f"Élève : {user['name']}")
         page = st.radio("Navigation", pages, key="unified_student_page")
         st.button("Déconnexion", on_click=logout)
+    from ui.professor_ai_banner import render_professor_ai_banner
+
+    actor = dict(user)
+    actor["resolved_learner_id"] = learner_id
+    render_professor_ai_banner(user=actor, learner_id=learner_id)
     dashboard = controller.dashboard(learner_id)
     if page == "Tableau de bord":
         from ui.student_guidance import load_student_dashboard_snapshot, render_mastery_bands, render_professor_ia_card

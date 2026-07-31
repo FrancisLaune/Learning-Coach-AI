@@ -5,9 +5,9 @@
 | Anglais | Couverture limitée | 2 | 2 | Oui | PASS |
 | EMC | Couverture limitée | 4 | 4 | Oui | PASS |
 | Espagnol | Couverture limitée | 2 | 2 | Oui | PASS |
-| Français | Couverture limitée | 8 | 8 | Non | PASS |
+| Français | Disponible | 25 | 10 | Oui | PASS |
 | Géographie | Disponible | 27 | 10 | Oui | PASS |
 | Histoire | Disponible | 34 | 10 | Oui | PASS |
-| Mathématiques | Disponible | 18 | 10 | Non | PASS |
+| Mathématiques | Disponible | 40 | 10 | Oui | PASS |
 | Physique-Chimie | Couverture limitée | 2 | 2 | Oui | PASS |
 | SVT | Disponible | 22 | 10 | Oui | PASS |

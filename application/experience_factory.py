@@ -96,6 +96,43 @@ def build_student_guidance_service() -> "StudentGuidanceService":
     )
 
 
+def build_professor_ai_orchestrator() -> "ProfessorAIOrchestrator":
+    from infrastructure.repositories.learning import DuckDBLearningRepository
+    from infrastructure.repositories.learning_intelligence import DuckDBLearningEvidenceRepository
+    from infrastructure.repositories.pedagogical_intelligence import DuckDBPedagogicalIntelligenceRepository
+    from infrastructure.repositories.professor_ai_decision_log import DuckDBProfessorAIDecisionLogRepository
+    from infrastructure.repositories.virtual_teacher import DuckDBVirtualTeacherRepository
+    from services.homework.factory import build_homework_service
+    from services.learning.learning_engine_service import LearningEngineService
+    from services.learning_intelligence import LearningIntelligenceService
+    from services.pedagogical_intelligence.adaptive_diagnostic_service import AdaptiveDiagnosticService
+    from services.pedagogical_intelligence.dashboard_service import PedagogicalDashboardService
+    from services.pedagogical_intelligence.platform_service import PedagogicalIntelligenceService
+    from services.pedagogical_intelligence.post_session_refresh import PostSessionPedagogicalRefreshService
+    from services.professor_ai.decision_log import ProfessorAIDecisionLogService
+    from services.professor_ai.orchestrator import ProfessorAIOrchestrator
+
+    guidance = build_student_guidance_service()
+    homework = build_homework_service()
+    homework_sessions = build_homework_session_service()
+    pi_repository = DuckDBPedagogicalIntelligenceRepository()
+    learning_engine = LearningEngineService(DuckDBLearningRepository())
+    diagnostic = AdaptiveDiagnosticService(pi_repository, learning_engine)
+    intelligence = LearningIntelligenceService(DuckDBLearningEvidenceRepository())
+    dashboard = PedagogicalDashboardService(pi_repository, intelligence)
+    refresh = PostSessionPedagogicalRefreshService(pi_repository, dashboard)
+    pedagogical = PedagogicalIntelligenceService(pi_repository, diagnostic, dashboard, refresh)
+    decision_log = ProfessorAIDecisionLogService(DuckDBProfessorAIDecisionLogRepository())
+    return ProfessorAIOrchestrator(
+        guidance=guidance,
+        pedagogical=pedagogical,
+        homework=homework,
+        homework_sessions=homework_sessions,
+        preferences=DuckDBVirtualTeacherRepository(),
+        decision_log=decision_log,
+    )
+
+
 def build_unified_session_execution_service() -> UnifiedSessionExecutionService:
     from services.pedagogical_intelligence.session_notifier import CompositePedagogicalNotifier
 

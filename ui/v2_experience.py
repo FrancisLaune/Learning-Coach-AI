@@ -82,6 +82,9 @@ def student_dashboard(controller: StudentExperienceController, learner_id: int) 
         label = "Continuer la séance" if session.status in {"RUNNING", "PAUSED"} else "Commencer la séance"
         if st.button(label, type="primary", use_container_width=True):
             st.session_state.v2_session_id = session.session_id
+            from ui.professor_ai_guided_cycle import remember_session_status
+
+            remember_session_status(st.session_state, int(session.session_id), session.status)
             request_navigation(st.session_state, "student", "Ma séance IA")
             st.rerun()
     else:
@@ -90,8 +93,11 @@ def student_dashboard(controller: StudentExperienceController, learner_id: int) 
         st.caption(f"Prochaine révision : {result.next_revision.strftime('%d/%m/%Y')}")
     _mastery(result)
     from application.experience_factory import build_pedagogical_intelligence_controller
+    from services.professor_ai.guided_cycle import FOCUS_DIAGNOSTIC_KEY
     from ui.pedagogical_intelligence import render_pedagogical_intelligence_dashboard
 
+    if st.session_state.pop(FOCUS_DIAGNOSTIC_KEY, None):
+        st.info("Le Professeur IA te propose de démarrer ou poursuivre le diagnostic adaptatif ci-dessous.")
     pi_controller = build_pedagogical_intelligence_controller()
     pi_overview = pi_controller.student_overview(learner_id)
     if isinstance(pi_overview, PresentationError):
@@ -141,6 +147,9 @@ def session_screen(
             ),
         )
         return
+    from ui.professor_ai_guided_cycle import mark_cycle_synthesis_closed, remember_session_status
+
+    remember_session_status(st.session_state, int(session_id), result.session.status)
     total = max(1, len(result.activities))
     st.title("Séance d'apprentissage")
     left, middle, right = st.columns(3)
@@ -256,9 +265,30 @@ def session_screen(
             st.success(success_message)
         st.rerun()
     if result.session.status == "COMPLETED":
+        closed_key = f"professor_ai_cycle_closed_{result.session.session_id}"
+        if not st.session_state.get(closed_key):
+            try:
+                from application.experience_factory import build_professor_ai_orchestrator
+
+                build_professor_ai_orchestrator().close_session_cycle(
+                    actor,
+                    learner_id,
+                    int(result.session.session_id),
+                )
+                mark_cycle_synthesis_closed(st.session_state, int(result.session.session_id))
+            except Exception:
+                mark_cycle_synthesis_closed(st.session_state, int(result.session.session_id))
         explanation = load_session_result_explanation(actor, learner_id, result.session.session_id)
         if explanation:
             render_homework_result_explanation(explanation)
+        st.success("Synthèse du cycle prête. Tu peux revenir à l'accueil ou ouvrir un nouveau devoir.")
+        home_cols = st.columns(2)
+        if home_cols[0].button("Retour à l'accueil", key=f"cycle_home_{result.session.session_id}"):
+            request_navigation(st.session_state, "student", "Tableau de bord")
+            st.rerun()
+        if home_cols[1].button("Mes devoirs", key=f"cycle_hw_{result.session.session_id}"):
+            request_navigation(st.session_state, "student", "Devoirs")
+            st.rerun()
 
 
 def student_history(controller: StudentExperienceController, learner_id: int) -> None:

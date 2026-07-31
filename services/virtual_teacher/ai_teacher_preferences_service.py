@@ -35,6 +35,7 @@ class VirtualTeacherRepositoryProtocol(Protocol):
         audio_enabled: bool | None = None,
         feature_enabled: bool | None = None,
         parent_locked: bool | None = None,
+        operating_mode: str | None = None,
     ) -> VirtualTeacherPreferences: ...
 
     def delete_conversation_history(self, learner_id: int) -> None: ...
@@ -142,6 +143,7 @@ class AITeacherPreferencesService:
             help_level=2,
             audio_enabled=True,
             parent_locked=False,
+            operating_mode="MANUAL",
         )
 
     def delete_history(self, *, user: dict, parent_ref: str, learner_id: int) -> None:
@@ -169,6 +171,11 @@ class AITeacherPreferencesService:
         }
         if student_mode and any(key in _PARENT_ONLY_FIELDS for key in fields):
             raise VirtualTeacherAccessError("PARENT_ONLY_FIELD")
+        if "operating_mode" in fields:
+            mode = str(fields["operating_mode"]).strip().upper()
+            if mode not in {"PROFESSOR", "COMPANION", "MANUAL"}:
+                raise VirtualTeacherAccessError("INVALID_OPERATING_MODE")
+            fields["operating_mode"] = mode
         return self.repository.save_preferences(learner_id, **fields)
 
 

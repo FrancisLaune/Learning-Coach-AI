@@ -19,6 +19,7 @@ class VirtualTeacherPreferences:
     parent_locked: bool
     created_at: datetime
     updated_at: datetime
+    operating_mode: str = "MANUAL"
 
 
 @dataclass(frozen=True, slots=True)
@@ -88,6 +89,7 @@ class PreferencesUpdate:
     audio_enabled: bool | None = None
     feature_enabled: bool | None = None
     parent_locked: bool | None = None
+    operating_mode: str | None = None
 
 
 @dataclass(frozen=True, slots=True)
@@ -122,4 +124,5 @@ class PreferencesPatch:
     audio_enabled: bool | None = None
     feature_enabled: bool | None = None
     parent_locked: bool | None = None
+    operating_mode: str | None = None
     fields: set[str] = field(default_factory=set)
