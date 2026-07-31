@@ -153,11 +153,12 @@ def test_configuration_types_precedence_ranges_namespace_and_secret_redaction(mo
         ConfigurationService(definitions, {"plugins.demo.port": 999})
 
 
-def test_feature_dependencies_and_ai_are_disabled_by_default(monkeypatch: pytest.MonkeyPatch) -> None:
+def test_feature_dependencies_and_ai_tutor_defaults(monkeypatch: pytest.MonkeyPatch) -> None:
     monkeypatch.delenv("LCAI_ENABLE_V2_UI", raising=False)
+    monkeypatch.delenv("LCAI_AI_TUTOR_ENABLED", raising=False)
     flags = default_flags()
     assert not flags.enabled("v2.enabled")
-    assert not flags.enabled("ai_tutor.enabled")
+    assert flags.enabled("ai_tutor.enabled")
     inconsistent = FeatureFlagService(
         (
             FeatureFlagDefinition("parent", False),

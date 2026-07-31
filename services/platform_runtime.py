@@ -521,7 +521,11 @@ def default_flags() -> FeatureFlagService:
                 environment_name="LCAI_EMAIL_NOTIFICATIONS_ENABLED",
             ),
             FeatureFlagDefinition("api.enabled", False, ("v2.enabled",), environment_name="LCAI_API_ENABLED"),
-            FeatureFlagDefinition("ai_tutor.enabled", False, ("v2.enabled",), environment_name="LCAI_AI_TUTOR_ENABLED"),
+            FeatureFlagDefinition(
+                "ai_tutor.enabled",
+                True,
+                environment_name="LCAI_AI_TUTOR_ENABLED",
+            ),
             FeatureFlagDefinition(
                 "homework_ai_fallback_4e",
                 False,

@@ -252,6 +252,9 @@ class AITeacherService:
         try:
             result = self.tts.synthesize(text=filtered.text, voice_id=voice_id)
         except Exception as exc:
+            message = str(exc).casefold()
+            if "invalid_api_key" in message or "incorrect api key" in message or "401" in message:
+                raise VirtualTeacherAccessError("OPENAI_KEY_INVALID") from exc
             raise VirtualTeacherAccessError("TTS_UNAVAILABLE") from exc
         self.repository.record_event(
             learner_id=learner_id,

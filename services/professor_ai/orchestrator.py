@@ -9,7 +9,7 @@ from __future__ import annotations
 from datetime import UTC, datetime
 from typing import Any, Protocol
 
-from application.dto.student_guidance import AIAvailabilityMode, StudentDashboardSnapshot
+from application.dto.student_guidance import StudentDashboardSnapshot
 from domain.unified_experience.models import HomeworkGenerationResult, HomeworkRequest
 from services.professor_ai.decision_log import new_correlation_id
 from services.professor_ai.models import (
@@ -404,10 +404,9 @@ class ProfessorAIOrchestrator:
         )
 
     def _professor_allowed(self, learner_id: int) -> bool:
-        availability = self._availability(learner_id=learner_id)
-        if availability.mode is AIAvailabilityMode.INACTIVE:
-            return False
+        """Mode Professeur/Compagnon = préférence élève, pas le flag plateforme OpenAI."""
         if self.preferences is not None:
             prefs = self.preferences.ensure_preferences(learner_id)
             return bool(getattr(prefs, "feature_enabled", False))
+        availability = self._availability(learner_id=learner_id)
         return bool(availability.learner_feature_enabled)

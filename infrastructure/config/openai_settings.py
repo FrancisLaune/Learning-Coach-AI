@@ -29,11 +29,20 @@ def _secret_api_key(*, secrets_path: Path | None = None) -> str | None:
 
 
 def load_openai_api_key(*, secrets_path: Path | None = None) -> str | None:
-    """Resolve API key: OPENAI_API_KEY env, then `.streamlit/secrets.toml`."""
-    env_key = os.getenv("OPENAI_API_KEY", "").strip()
-    if env_key:
-        return env_key
-    return _secret_api_key(secrets_path=secrets_path)
+    """Resolve API key for OpenAI clients.
+
+    Preference:
+    1. `.streamlit/secrets.toml` when present
+    2. otherwise ``OPENAI_API_KEY`` from the environment
+
+    When both exist and differ, secrets win so a stale Windows/user env key
+    cannot silently break TTS/STT while Streamlit secrets remain valid.
+    """
+    env_key = os.getenv("OPENAI_API_KEY", "").strip() or None
+    secret_key = _secret_api_key(secrets_path=secrets_path)
+    if secret_key:
+        return secret_key
+    return env_key
 
 
 def load_openai_model(*, secrets_path: Path | None = None) -> str | None:
@@ -50,12 +59,12 @@ def configure_openai_environment(*, secrets_path: Path | None = None) -> dict[st
     """Ensure process env contains a resolved OpenAI key and return metadata."""
     env_key = os.getenv("OPENAI_API_KEY", "").strip()
     secret_key = _secret_api_key(secrets_path=secrets_path)
-    if env_key:
-        key = env_key
-        source = "environment"
-    elif secret_key:
+    if secret_key:
         key = secret_key
         source = "streamlit_secrets"
+    elif env_key:
+        key = env_key
+        source = "environment"
     else:
         raise OpenAIConfigurationError(
             "OpenAI API key not found. Set OPENAI_API_KEY or configure `.streamlit/secrets.toml`."

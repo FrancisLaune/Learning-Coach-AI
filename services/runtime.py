@@ -22,7 +22,17 @@ def prepare_runtime() -> None:
             return
         configure_logging()
         init_db()
-        apply_migrations()
+        try:
+            apply_migrations()
+        except Exception as exc:
+            message = str(exc)
+            if "already open" in message.casefold() or "utilisé par un autre processus" in message.casefold():
+                raise RuntimeError(
+                    "La base DuckDB est verrouillée (souvent par git.exe / git-lfs). "
+                    "Ferme les processus Git qui touchent data/learning_coach_v2.duckdb, "
+                    "puis redémarre Streamlit."
+                ) from exc
+            raise
         _runtime_initialized = True
 
 

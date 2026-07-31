@@ -60,14 +60,17 @@ class OpenAILLMService:
 
     def generate(self, *, system_prompt: str, messages: tuple[LLMMessage, ...]) -> AITeacherResponse:
         try:
+            import urllib.error
             import urllib.request
 
-            payload = {
+            payload: dict[str, object] = {
                 "model": self.model,
                 "messages": [{"role": "system", "content": system_prompt}]
                 + [{"role": item.role, "content": item.content} for item in messages],
-                "temperature": 0.4,
             }
+            # gpt-5* rejects non-default temperature; older chat models accept 0.4.
+            if not str(self.model).startswith("gpt-5"):
+                payload["temperature"] = 0.4
             request = urllib.request.Request(
                 "https://api.openai.com/v1/chat/completions",
                 data=json.dumps(payload).encode("utf-8"),
@@ -77,10 +80,23 @@ class OpenAILLMService:
                 },
                 method="POST",
             )
-            with urllib.request.urlopen(request, timeout=30) as response:
-                body = json.loads(response.read().decode("utf-8"))
+            try:
+                with urllib.request.urlopen(request, timeout=30) as response:
+                    body = json.loads(response.read().decode("utf-8"))
+            except urllib.error.HTTPError as exc:
+                detail = exc.read().decode("utf-8", errors="ignore")
+                if exc.code in {401, 403} or "invalid_api_key" in detail.casefold():
+                    raise RuntimeError("OPENAI_KEY_INVALID") from exc
+                raise RuntimeError(detail or str(exc)) from exc
             text = body["choices"][0]["message"]["content"].strip()
-        except Exception:
+        except RuntimeError as exc:
+            if "OPENAI_KEY_INVALID" in str(exc):
+                raise
+            return DeterministicLLMService().generate(system_prompt=system_prompt, messages=messages)
+        except Exception as exc:
+            detail = str(exc).casefold()
+            if "401" in detail or "invalid_api_key" in detail or "incorrect api key" in detail:
+                raise RuntimeError("OPENAI_KEY_INVALID") from exc
             return DeterministicLLMService().generate(system_prompt=system_prompt, messages=messages)
         return _response_from_text(text)
 

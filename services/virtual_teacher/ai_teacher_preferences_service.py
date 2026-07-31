@@ -176,6 +176,11 @@ class AITeacherPreferencesService:
             if mode not in {"PROFESSOR", "COMPANION", "MANUAL"}:
                 raise VirtualTeacherAccessError("INVALID_OPERATING_MODE")
             fields["operating_mode"] = mode
+        if fields.get("feature_enabled") is True:
+            current = self.repository.ensure_preferences(learner_id)
+            chosen = fields.get("operating_mode") or current.operating_mode or "MANUAL"
+            if str(chosen).upper() == "MANUAL":
+                fields["operating_mode"] = "PROFESSOR"
         return self.repository.save_preferences(learner_id, **fields)
 
 

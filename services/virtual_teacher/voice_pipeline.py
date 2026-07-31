@@ -55,6 +55,9 @@ class SchoolVoicePipeline:
         try:
             transcript = self.stt.transcribe(audio, mime_type=mime_type, language="fr").strip()
         except Exception as exc:
+            message = str(exc).casefold()
+            if "invalid_api_key" in message or "incorrect api key" in message or "401" in message:
+                raise VirtualTeacherAccessError("OPENAI_KEY_INVALID") from exc
             raise VirtualTeacherAccessError("STT_UNAVAILABLE") from exc
         if not transcript:
             raise VirtualTeacherAccessError("STT_EMPTY")
@@ -139,5 +142,7 @@ class SchoolVoicePipeline:
                 text=text,
                 voice_id=voice_id,
             )
-        except VirtualTeacherAccessError:
+        except VirtualTeacherAccessError as exc:
+            if str(exc) in {"OPENAI_KEY_INVALID", "AUDIO_DISABLED", "SAFETY_BLOCKED"}:
+                raise
             return None

@@ -117,6 +117,10 @@ def render_student_virtual_teacher(
 
     with right:
         st.subheader("Conversation")
+        last_audio = st.session_state.pop(f"vt_last_audio_{learner_id}", None)
+        if last_audio is not None:
+            st.caption("Réponse audio")
+            _play_audio(last_audio)
         messages = teacher_service.list_session_messages(
             user=user,
             session_id=int(st.session_state[session_key]),
@@ -145,7 +149,8 @@ def render_student_virtual_teacher(
                             text=message.content,
                             voice_id=preferences.voice_id,
                         )
-                        _play_audio(audio)
+                        st.session_state[f"vt_last_audio_{learner_id}"] = audio
+                        st.rerun()
                     except VirtualTeacherAccessError as exc:
                         st.warning(_friendly_error(str(exc)))
 
@@ -158,7 +163,12 @@ def render_student_virtual_teacher(
         if quick_actions[2].button("Montre un exemple"):
             quick_message = "Montre-moi un exemple."
 
-        if preferences.audio_enabled and voice_pipeline is not None:
+        if not preferences.audio_enabled:
+            st.warning(
+                "La lecture audio et le mode vocal sont désactivés. "
+                "Un parent doit cocher « Autoriser la lecture audio » dans les réglages du professeur virtuel."
+            )
+        elif voice_pipeline is not None:
             if st.session_state.pop("professor_ai_voice_focus", None):
                 st.info("Mode vocal : enregistre ta question ci-dessous.")
             st.subheader("Mode vocal scolaire")
@@ -202,17 +212,29 @@ def render_student_virtual_teacher(
                         audio_enabled=preferences.audio_enabled,
                     )
                     st.session_state[PRESENCE_STATE_KEY] = turn.presence.value
-                    st.info(f"Transcription : {turn.transcript}")
+                    st.session_state[f"vt_last_transcript_{learner_id}"] = turn.transcript
                     if turn.blocked:
-                        st.warning(turn.safety_message or "Question filtrée pour ta sécurité.")
+                        st.session_state[f"vt_last_voice_warning_{learner_id}"] = (
+                            turn.safety_message or "Question filtrée pour ta sécurité."
+                        )
                     if turn.audio is not None:
-                        _play_audio(turn.audio)
+                        st.session_state[f"vt_last_audio_{learner_id}"] = turn.audio
+                    elif preferences.audio_enabled:
+                        st.session_state[f"vt_last_voice_warning_{learner_id}"] = (
+                            "La réponse texte est disponible, mais la synthèse vocale a échoué. "
+                            "Vérifie la clé OpenAI ou utilise le bouton Écouter."
+                        )
                     st.rerun()
                 except VirtualTeacherAccessError as exc:
                     st.session_state[PRESENCE_STATE_KEY] = BannerPresenceState.IDLE.value
                     st.error(_friendly_error(str(exc)))
-        elif not preferences.audio_enabled:
-            st.caption("Le mode vocal est désactivé. Demande à un parent d'autoriser la lecture audio.")
+
+        transcript = st.session_state.pop(f"vt_last_transcript_{learner_id}", None)
+        if transcript:
+            st.info(f"Transcription : {transcript}")
+        voice_warning = st.session_state.pop(f"vt_last_voice_warning_{learner_id}", None)
+        if voice_warning:
+            st.warning(voice_warning)
 
         user_message = st.chat_input("Pose ta question scolaire")
         prompt = quick_message or user_message
@@ -233,12 +255,25 @@ def render_student_virtual_teacher(
             )
             try:
                 st.session_state[PRESENCE_STATE_KEY] = BannerPresenceState.THINKING.value
-                teacher_service.answer(
+                _, response = teacher_service.answer(
                     user=user,
                     request=request,
                     student_learner_id=learner_id,
                 )
                 st.session_state[PRESENCE_STATE_KEY] = BannerPresenceState.SPEAKING.value
+                if preferences.audio_enabled and response.audio_allowed:
+                    try:
+                        st.session_state[f"vt_last_audio_{learner_id}"] = teacher_service.synthesize_audio(
+                            user=user,
+                            learner_id=learner_id,
+                            student_learner_id=learner_id,
+                            actor_type="STUDENT",
+                            actor_ref=str(user["id"]),
+                            text=response.message,
+                            voice_id=preferences.voice_id,
+                        )
+                    except VirtualTeacherAccessError as exc:
+                        st.session_state[f"vt_last_voice_warning_{learner_id}"] = _friendly_error(str(exc))
                 st.rerun()
             except VirtualTeacherAccessError as exc:
                 st.session_state[PRESENCE_STATE_KEY] = BannerPresenceState.IDLE.value
@@ -248,9 +283,9 @@ def render_student_virtual_teacher(
 def _play_audio(audio) -> None:
     mime = getattr(audio, "mime_type", "audio/wav") or "audio/wav"
     if str(mime).startswith("audio/"):
-        st.audio(audio.content, format=str(mime))
+        st.audio(audio.content, format=str(mime), autoplay=True)
     else:
-        st.caption("Synthèse vocale (mode console) disponible — configure OPENAI_API_KEY pour une vraie voix.")
+        st.caption("Synthèse vocale (mode console) — une vraie voix nécessite une clé OpenAI valide.")
         st.code(audio.content.decode("utf-8", errors="ignore")[:500])
 
 
@@ -287,7 +322,13 @@ def render_parent_virtual_teacher_settings(
         )
         tone = st.selectbox("Ton", ["calm", "encouraging", "academic"])
         response_length = st.selectbox("Longueur des réponses", ["short", "normal", "detailed"])
-        help_level = st.slider("Niveau d'aide", 1, 3, preferences.help_level)
+        help_level = st.slider(
+            "Niveau d'aide (1 = peu d'aide, 3 = plus d'indices)",
+            1,
+            3,
+            preferences.help_level,
+            help="Ce n'est pas le niveau scolaire (6e/5e…). Choisis 1, 2 ou 3.",
+        )
         audio_enabled = st.checkbox("Autoriser la lecture audio", value=preferences.audio_enabled)
         mode_labels = {
             "PROFESSOR": "Professeur IA (guide le parcours)",
@@ -385,5 +426,9 @@ def _friendly_error(code: str) -> str:
         "SAFETY_BLOCKED": "Ce message ne peut pas être lu à voix haute.",
         "STT_UNAVAILABLE": "La reconnaissance vocale est momentanément indisponible.",
         "STT_EMPTY": "Je n'ai pas compris l'audio. Réessaie ou écris ta question.",
+        "OPENAI_KEY_INVALID": (
+            "La clé OpenAI est invalide ou expirée. "
+            "Vérifie `.streamlit/secrets.toml` ([openai] api_key) puis redémarre l'application."
+        ),
     }
     return mapping.get(code, "Action non disponible pour le moment.")

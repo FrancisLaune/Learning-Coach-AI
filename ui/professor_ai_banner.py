@@ -19,6 +19,7 @@ from services.virtual_teacher.authorization import VirtualTeacherAccessError
 from services.virtual_teacher.voice_pipeline import PRESENCE_STATE_KEY
 from ui.navigation import request_navigation
 from ui.professor_ai_guided_cycle import apply_guided_cycle_cta, build_cycle_snapshot
+from ui.virtual_teacher import _friendly_error, _play_audio, build_virtual_teacher_stack
 
 _MODE_OPTIONS = (
     ProfessorOperatingMode.PROFESSOR,
@@ -27,6 +28,10 @@ _MODE_OPTIONS = (
 )
 
 _VOICE_FOCUS_KEY = "professor_ai_voice_focus"
+_BANNER_TTS_TEXT_KEY = "banner_tts_text"
+_BANNER_TTS_AUDIO_KEY = "banner_tts_audio"
+_BANNER_TTS_ERROR_KEY = "banner_tts_error"
+_BANNER_TTS_MAX_CHARS = 1200
 
 
 def render_professor_ai_banner(
@@ -99,6 +104,13 @@ def render_professor_ai_banner(
             st.caption(cycle.progress_caption)
         if banner.primary_action:
             st.caption(f"Priorité : {banner.primary_action}")
+        _render_banner_audio(
+            user=user,
+            learner_id=learner_id,
+            preferences=preferences,
+            message=banner.message,
+            presence=banner.presence,
+        )
 
         action_cols = st.columns(5)
         cta_label = (cycle.cta_label if cycle is not None else banner.primary_action) or "Continuer"
@@ -125,17 +137,16 @@ def render_professor_ai_banner(
 
         if banner.mode_editable:
             labels = {mode: mode_label(mode) for mode in _MODE_OPTIONS}
+            display_mode = stored_mode if stored_mode in _MODE_OPTIONS else ProfessorOperatingMode.MANUAL
             selected = st.radio(
                 "Mode d'accompagnement",
                 _MODE_OPTIONS,
-                index=_MODE_OPTIONS.index(
-                    resolved_mode if resolved_mode in _MODE_OPTIONS else ProfessorOperatingMode.MANUAL
-                ),
+                index=_MODE_OPTIONS.index(display_mode),
                 format_func=labels.__getitem__,
                 horizontal=True,
                 key=f"banner_mode_{learner_id}",
             )
-            if selected is not resolved_mode:
+            if selected is not stored_mode:
                 try:
                     preferences_service.save_for_student(
                         user=user,
@@ -150,3 +161,60 @@ def render_professor_ai_banner(
             st.info("Le Professeur IA peut être activé par un parent depuis la fiche élève.")
         else:
             st.caption("Le mode est verrouillé par le parent.")
+
+
+def _render_banner_audio(
+    *,
+    user: dict[str, object],
+    learner_id: int,
+    preferences,
+    message: str,
+    presence: BannerPresenceState,
+) -> None:
+    """Synthesize and play the banner welcome once when audio is enabled."""
+    if not preferences.audio_enabled or not preferences.feature_enabled:
+        return
+    if presence not in {BannerPresenceState.SPEAKING, BannerPresenceState.IDLE}:
+        return
+    text = (message or "").strip()
+    if not text:
+        return
+
+    text_key = f"{_BANNER_TTS_TEXT_KEY}_{learner_id}"
+    audio_key = f"{_BANNER_TTS_AUDIO_KEY}_{learner_id}"
+    error_key = f"{_BANNER_TTS_ERROR_KEY}_{learner_id}"
+    spoken = text if len(text) <= _BANNER_TTS_MAX_CHARS else f"{text[:_BANNER_TTS_MAX_CHARS].rstrip()}…"
+
+    force = bool(st.session_state.pop(f"banner_tts_force_{learner_id}", False))
+    if force or st.session_state.get(text_key) != spoken:
+        try:
+            teacher_service, _, _ = build_virtual_teacher_stack(DuckDBVirtualTeacherRepository)
+            audio = teacher_service.synthesize_audio(
+                user=user,
+                learner_id=learner_id,
+                student_learner_id=int(user.get("resolved_learner_id", learner_id)),
+                actor_type="STUDENT",
+                actor_ref=str(user["id"]),
+                text=spoken,
+                voice_id=preferences.voice_id,
+            )
+            st.session_state[audio_key] = audio
+            st.session_state[text_key] = spoken
+            st.session_state.pop(error_key, None)
+            st.session_state[PRESENCE_STATE_KEY] = BannerPresenceState.SPEAKING.value
+        except VirtualTeacherAccessError as exc:
+            st.session_state[text_key] = spoken
+            st.session_state.pop(audio_key, None)
+            st.session_state[error_key] = str(exc)
+
+    error = st.session_state.get(error_key)
+    if error:
+        st.warning(_friendly_error(str(error)))
+    audio = st.session_state.get(audio_key)
+    if audio is not None:
+        st.caption("Message audio")
+        _play_audio(audio)
+    cols = st.columns([1, 3])
+    if cols[0].button("Écouter", key=f"banner_listen_{learner_id}", use_container_width=True):
+        st.session_state[f"banner_tts_force_{learner_id}"] = True
+        st.rerun()
