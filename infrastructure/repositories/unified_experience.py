@@ -21,6 +21,7 @@ from domain.unified_experience.models import (
     RuntimeExerciseCandidate,
 )
 from infrastructure.database.v2 import connect_v2
+from services.homework.exercise_selection import HomeworkExerciseSelectionService
 
 
 class DuckDBUnifiedExperienceRepository:
@@ -200,9 +201,7 @@ class DuckDBUnifiedExperienceRepository:
         finally:
             connection.close()
 
-    def _approved_content_filters(
-        self, request: HomeworkRequest, *, difficulty: int | None | object = ...
-    ) -> tuple[list[str], list[Any]]:
+    def _approved_content_filters(self, request: HomeworkRequest) -> tuple[list[str], list[Any]]:
         parameters: list[Any] = [request.subject_id]
         filters = ["subject_id=?"]
         if request.grade_level_id is not None:
@@ -214,23 +213,12 @@ class DuckDBUnifiedExperienceRepository:
         if request.skill_ids:
             filters.append(f"skill_id IN ({','.join('?' for _ in request.skill_ids)})")
             parameters.extend(request.skill_ids)
-        if difficulty is not ...:
-            if difficulty is not None:
-                filters.append("difficulty=?")
-                parameters.append(difficulty)
-        else:
-            resolved = self._difficulty(request)
-            if resolved is not None:
-                filters.append("difficulty=?")
-                parameters.append(resolved)
         return filters, parameters
 
-    def _approved_content_rows(
-        self, request: HomeworkRequest, *, difficulty: int | None | object = ...
-    ) -> list[tuple[Any, ...]]:
+    def _approved_content_rows(self, request: HomeworkRequest) -> list[tuple[Any, ...]]:
         connection = connect_v2(self.database_path, read_only=True)
         try:
-            filters, parameters = self._approved_content_filters(request, difficulty=difficulty)
+            filters, parameters = self._approved_content_filters(request)
             return connection.execute(
                 f"""SELECT content_id,chapter_id,skill_id,difficulty FROM production_learning_catalog
                 WHERE {" AND ".join(filters)}
@@ -249,8 +237,6 @@ class DuckDBUnifiedExperienceRepository:
         applied_difficulty: int | None,
         difficulty_relaxed: bool,
     ) -> HomeworkContentSelection:
-        if request.mode is AssignmentType.GLOBAL_SUBJECT:
-            rows = self._balanced(rows)
         unique: list[int] = []
         for row in rows:
             content_id = int(row[0])
@@ -266,30 +252,25 @@ class DuckDBUnifiedExperienceRepository:
         )
 
     def count_eligible_content(self, request: HomeworkRequest, *, difficulty: int | None = None) -> int:
-        if difficulty is None and request.difficulty is not DifficultyMode.ADAPTIVE:
-            difficulty = self._difficulty(request)
-        rows = self._approved_content_rows(request, difficulty=difficulty)
-        if rows:
-            return len({int(row[0]) for row in rows})
-        if difficulty is not None:
-            fallback_rows = self._approved_content_rows(request, difficulty=None)
-            return len({int(row[0]) for row in fallback_rows})
-        return 0
+        del difficulty
+        rows = self._approved_content_rows(request)
+        return len({int(row[0]) for row in rows})
 
     def select_approved_content_detailed(self, request: HomeworkRequest) -> HomeworkContentSelection:
         requested = self._difficulty(request)
-        rows = self._approved_content_rows(request, difficulty=requested)
-        applied = requested
-        relaxed = False
-        if not rows and requested is not None:
-            rows = self._approved_content_rows(request, difficulty=None)
-            applied = None
-            relaxed = bool(rows)
+        rows = self._approved_content_rows(request)
+        selector = HomeworkExerciseSelectionService()
+        prepared = selector.prepare_catalog_rows(rows, request=request, target_difficulty=requested)
+        relaxed = selector.selection_uses_mixed_difficulties(
+            prepared,
+            target_difficulty=requested,
+            exercise_count=request.exercise_count,
+        )
         return self._finalize_content_selection(
             request,
-            rows,
+            prepared,
             requested_difficulty=requested,
-            applied_difficulty=applied,
+            applied_difficulty=requested,
             difficulty_relaxed=relaxed,
         )
 
@@ -314,18 +295,6 @@ class DuckDBUnifiedExperienceRepository:
             DifficultyMode.MEDIUM: 3,
             DifficultyMode.HARD: 4,
         }.get(request.difficulty)
-
-    @staticmethod
-    def _balanced(rows: list[tuple[Any, ...]]) -> list[tuple[Any, ...]]:
-        groups: dict[int, list[tuple[Any, ...]]] = {}
-        for row in rows:
-            groups.setdefault(int(row[1]), []).append(row)
-        balanced: list[tuple[Any, ...]] = []
-        while any(groups.values()):
-            for chapter_id in sorted(groups):
-                if groups[chapter_id]:
-                    balanced.append(groups[chapter_id].pop(0))
-        return balanced
 
     def create_homework(self, request: HomeworkRequest, content_ids: tuple[int, ...]) -> HomeworkAssignment:
         payload = {

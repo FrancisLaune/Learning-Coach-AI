@@ -645,13 +645,12 @@ def _homework_form(
         else:
             st.warning(
                 f"Aucun contenu approuvé disponible pour {labels[int(subject_id)]} avec ces critères. "
-                "Choisissez une autre difficulté, un chapitre plus large ou une autre matière."
+                "Élargissez le chapitre ou choisissez une autre matière."
             )
     elif preview_selection.difficulty_relaxed:
         st.info(
-            f"Cette matière contient {available_total} contenu(s) approuvé(s), "
-            f"mais aucun au niveau « {difficulty_labels[difficulty]} ». "
-            "Le devoir utilisera les niveaux disponibles (assouplissement automatique)."
+            f"Cette matière contient {available_total} contenu(s) approuvé(s). "
+            "Le devoir combinera plusieurs niveaux de difficulté adaptés à ton profil."
         )
     elif available_total < exercise_count:
         if service.supports_ai_completion():
