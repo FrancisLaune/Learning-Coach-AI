@@ -108,7 +108,7 @@ def test_scenario_1_to_3_tableau_de_bord_always_in_nav(env: dict[str, str], monk
         monkeypatch.setenv(key, value)
     source = (ROOT / "ui" / "unified_app.py").read_text(encoding="utf-8")
     assert "Tableau de bord" in source
-    nav_block = source.split('pages = (')[1].split(")")[0]
+    nav_block = source.split("_STUDENT_PAGES = (")[1].split(")")[0]
     assert "Tableau de bord" in nav_block
 
 
@@ -122,8 +122,7 @@ def test_scenario_5_no_menu_removed_by_ai_flag() -> None:
     source = (ROOT / "ui" / "unified_app.py").read_text(encoding="utf-8")
     expected = (
         "Tableau de bord",
-        "Ma séance IA",
-        "Mon professeur IA",
+        "Ma séance",
         "Devoirs",
         "Révision",
         "Mes progrès",
@@ -131,9 +130,10 @@ def test_scenario_5_no_menu_removed_by_ai_flag() -> None:
         "Mon planning",
         "Profil",
     )
-    nav_block = source.split('pages = (')[1].split(")")[0]
+    nav_block = source.split("_STUDENT_PAGES = (")[1].split(")")[0]
     for label in expected:
         assert label in nav_block
+    assert "Mon professeur IA" not in nav_block
 
 
 # --- Connexion (6-10) ---

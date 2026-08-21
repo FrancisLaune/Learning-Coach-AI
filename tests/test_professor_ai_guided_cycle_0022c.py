@@ -102,7 +102,7 @@ def test_resolve_prioritizes_active_session() -> None:
     plan = _plan(diagnostic_status="OFFERED", homework_todo=(_hw(3),))
     snap = resolve_guided_cycle(plan, active_session_id=42, active_session_status="RUNNING")
     assert snap.step is GuidedCycleStep.SEANCE
-    assert snap.page == "Ma séance IA"
+    assert snap.page == "Ma séance"
     assert snap.session_id == 42
 
 

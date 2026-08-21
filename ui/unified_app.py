@@ -16,6 +16,7 @@ from functools import partial
 
 import streamlit as st
 
+from application.experience_controllers import PresentationError
 from application.experience_factory import (
     build_parent_experience_controller,
     build_student_experience_controller,
@@ -70,8 +71,6 @@ from services.unified_experience import (
     ProgrammeChangeService,
     UnifiedOnboardingProfileService,
 )
-from services.virtual_teacher.ai_teacher_preferences_service import AITeacherPreferencesService
-from services.virtual_teacher.ai_teacher_service import AITeacherService
 from ui.curriculum_state import clear_curriculum_selection, reconcile_skills, reconcile_subject_change
 from ui.i18n import label
 from ui.navigation import apply_navigation_request, request_navigation
@@ -81,14 +80,12 @@ from ui.session import logout
 from ui.v2_experience import (
     parent_dashboard,
     session_screen,
-    student_dashboard,
     student_history,
     student_summary,
 )
 from ui.virtual_teacher import (
     build_virtual_teacher_stack,
     render_parent_virtual_teacher_settings,
-    render_student_virtual_teacher,
 )
 
 LoginRenderer = Callable[[], None]
@@ -602,16 +599,10 @@ def _homework_form(
         if not selected_chapters and not selected_skills:
             st.info("Sélectionnez au moins un chapitre ou une compétence pour prévisualiser et créer le devoir.")
             return
-    difficulty = st.selectbox(
-        "Difficulté",
-        tuple(DifficultyMode),
-        format_func={
-            DifficultyMode.EASY: "Facile",
-            DifficultyMode.MEDIUM: "Moyen",
-            DifficultyMode.HARD: "Difficile",
-            DifficultyMode.ADAPTIVE: "Adaptatif",
-        }.get,
-        key=f"{key}_difficulty",
+    difficulty = DifficultyMode.ADAPTIVE
+    st.caption(
+        "Les exercices sont adaptés automatiquement selon tes résultats "
+        "(renforcement après les échecs, montée progressive après les réussites)."
     )
     exercise_count = st.slider("Nombre d'exercices", 1, 40, 10, key=f"{key}_exercise_count")
     preview_request = HomeworkRequest(
@@ -630,12 +621,6 @@ def _homework_form(
     )
     preview_selection = _homework_service().preview_selection(preview_request)
     available_total = len(preview_selection.content_ids)
-    difficulty_labels = {
-        DifficultyMode.EASY: "Facile",
-        DifficultyMode.MEDIUM: "Moyen",
-        DifficultyMode.HARD: "Difficile",
-        DifficultyMode.ADAPTIVE: "Adaptatif",
-    }
     if available_total == 0:
         if service.supports_ai_completion():
             st.info(
@@ -730,8 +715,8 @@ def _homework_form(
 def _render_homework_catalog_feedback(selection, selected_count: int, exercise_count: int) -> None:
     if selection.difficulty_relaxed:
         st.info(
-            "La difficulté demandée n'avait aucun contenu publié ; "
-            "des contenus d'un niveau proche ont été utilisés."
+            "Le devoir mélange plusieurs niveaux d'exercices adaptés à ton profil "
+            "(renforcement et progression)."
         )
     if selected_count < exercise_count:
         st.warning(
@@ -813,7 +798,7 @@ def student_homework(learner_id: int, user: dict[str, object]) -> None:
                             from ui.professor_ai_guided_cycle import remember_session_status
 
                             remember_session_status(st.session_state, int(opened.session_id), "RUNNING")
-                            request_navigation(st.session_state, "student", "Ma séance IA")
+                            request_navigation(st.session_state, "student", "Ma séance")
                             st.rerun()
                     if item.status is AssignmentStatus.IN_PROGRESS and st.button(
                         "Reprendre la séance", key=f"hw_resume_session_{item.homework_id}"
@@ -826,7 +811,7 @@ def student_homework(learner_id: int, user: dict[str, object]) -> None:
                             from ui.professor_ai_guided_cycle import remember_session_status
 
                             remember_session_status(st.session_state, int(opened.session_id), "RUNNING")
-                            request_navigation(st.session_state, "student", "Ma séance IA")
+                            request_navigation(st.session_state, "student", "Ma séance")
                             st.rerun()
                     if item.status is AssignmentStatus.IN_PROGRESS and st.button(
                         "Mettre en pause", key=f"hw_pause_{item.homework_id}"
@@ -868,67 +853,84 @@ def revision(learner_id: int, user: dict[str, object]) -> None:
 
 
 def coach_view(dashboard: StudentDashboard) -> None:
-    st.title("Mon Coach d'apprentissage")
+    st.subheader("Tes conseils", anchor=False)
     advice = DeterministicCoachService().advice(dashboard.mastery)
     if not advice:
         st.info("Il faut davantage d'activités évaluées pour produire un conseil fondé.")
+        return
     for item in advice:
         with st.container(border=True):
-            st.subheader(item.title)
+            st.markdown(f"**{item.title}**")
             st.write(item.summary)
             st.caption(f"Pourquoi : {', '.join(item.reason_codes)}")
             st.write(f"Bénéfice attendu : {item.expected_benefit}")
 
 
+_STUDENT_PAGES = (
+    "Tableau de bord",
+    "Ma séance",
+    "Devoirs",
+    "Révision",
+    "Mes progrès",
+    "Mes résultats",
+    "Mon planning",
+    "Profil",
+)
+
+_STUDENT_PAGE_ALIASES = {
+    "Accueil": "Tableau de bord",
+    "Ma séance IA": "Ma séance",
+    "Mon professeur IA": "Tableau de bord",
+}
+
+
 def run_student(user: dict[str, object], learner_id: int) -> None:
     controller = build_student_experience_controller()
-    pages = ("Tableau de bord", "Ma séance IA", "Mon professeur IA", "Devoirs", "Révision", "Mes progrès", "Mes résultats", "Mon planning", "Profil")
-    if st.session_state.get("unified_student_page") == "Accueil":
-        st.session_state["unified_student_page"] = "Tableau de bord"
+    pages = _STUDENT_PAGES
+    current = st.session_state.get("unified_student_page")
+    if current in _STUDENT_PAGE_ALIASES:
+        st.session_state["unified_student_page"] = _STUDENT_PAGE_ALIASES[str(current)]
     apply_navigation_request(st.session_state, "student", "unified_student_page", pages)
     with st.sidebar:
         st.success(f"Élève : {user['name']}")
         page = st.radio("Navigation", pages, key="unified_student_page")
-        st.button("Déconnexion", on_click=logout)
-    from ui.professor_ai_banner import render_professor_ai_banner
+        from ui.chatgpt_voice import render_chatgpt_voice_sidebar
 
-    actor = dict(user)
-    actor["resolved_learner_id"] = learner_id
-    render_professor_ai_banner(user=actor, learner_id=learner_id)
+        render_chatgpt_voice_sidebar()
+        st.button("Déconnexion", on_click=logout)
     dashboard = controller.dashboard(learner_id)
     if page == "Tableau de bord":
-        from ui.student_guidance import load_student_dashboard_snapshot, render_mastery_bands, render_professor_ia_card
+        from ui.student_guidance import load_student_dashboard_snapshot, render_mastery_bands, render_student_home
 
         snapshot = load_student_dashboard_snapshot(user, learner_id)
-        render_professor_ia_card(snapshot)
-        student_dashboard(controller, learner_id)
+        home_dashboard = dashboard if isinstance(dashboard, StudentDashboard) else None
+        render_student_home(snapshot=snapshot, dashboard=home_dashboard)
         render_mastery_bands(snapshot)
         if isinstance(dashboard, StudentDashboard):
             coach_view(dashboard)
-    elif page == "Ma séance IA":
+            from application.experience_factory import build_pedagogical_intelligence_controller
+            from ui.pedagogical_intelligence import render_pedagogical_intelligence_dashboard
+
+            pi_controller = build_pedagogical_intelligence_controller()
+            pi_overview = pi_controller.student_overview(learner_id)
+            if not isinstance(pi_overview, PresentationError):
+                st.divider()
+                render_pedagogical_intelligence_dashboard(
+                    pi_controller,
+                    pi_overview,
+                    learner_id,
+                    key_prefix=f"student_pi_{learner_id}",
+                    show_diagnostic=True,
+                )
+    elif page == "Ma séance":
         session_screen(controller, learner_id, user=user)
-    elif page == "Mon professeur IA":
-        teacher_service, preferences_service, voice_pipeline = _virtual_teacher_services()
-        profile = _safe(lambda: _repository().learner_management_profile(learner_id))
-        grade_label = None
-        if profile is not None:
-            grades = {item[0]: item[2] for item in _repository().grade_levels()}
-            grade_label = grades.get(profile.current_grade_id)
-        render_student_virtual_teacher(
-            user=user,
-            learner_id=learner_id,
-            teacher_service=teacher_service,
-            preferences_service=preferences_service,
-            learner_display_name=profile.first_name if profile else str(user["name"]),
-            grade_label=grade_label,
-            voice_pipeline=voice_pipeline,
-        )
     elif page == "Devoirs":
         student_homework(learner_id, user)
     elif page == "Révision":
         revision(learner_id, user)
     elif page == "Mes progrès":
         if isinstance(dashboard, StudentDashboard):
+            st.title("Mes progrès")
             coach_view(dashboard)
     elif page == "Mes résultats":
         student_history(controller, learner_id)

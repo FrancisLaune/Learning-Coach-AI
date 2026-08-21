@@ -23,10 +23,20 @@ def _text(value: Any, *, lowercase: bool = True) -> str:
 
 
 def _decimal(value: Any) -> Decimal:
+    text = re.sub(r"\s+", "", _text(value, lowercase=False))
+    if not text:
+        raise AnswerValidationError("Réponse numérique manquante. Exemples acceptés : 3,5 ou 3.5")
     try:
-        return Decimal(_text(value, lowercase=False).replace(",", "."))
-    except InvalidOperation as exc:
-        raise AnswerValidationError("Invalid numeric answer") from exc
+        return Decimal(text.replace(",", "."))
+    except InvalidOperation:
+        pass
+    try:
+        fraction = Fraction(text.replace(",", "."))
+        return Decimal(fraction.numerator) / Decimal(fraction.denominator)
+    except (ValueError, ZeroDivisionError, InvalidOperation) as exc:
+        raise AnswerValidationError(
+            "Réponse numérique invalide. Exemples acceptés : 3,5 ou 3.5"
+        ) from exc
 
 
 def format_decimal_fr(value: Decimal) -> str:
@@ -42,10 +52,14 @@ def serialize_normalized_answer(answer_type: AnswerType, value: Any) -> Any:
 
 def _fraction(value: Any) -> Fraction:
     try:
-        text = _text(value, lowercase=False).replace(" ", "")
+        text = re.sub(r"\s+", "", _text(value, lowercase=False))
+        if not text:
+            raise AnswerValidationError("Fraction manquante. Exemple accepté : 1/2")
         return Fraction(text.replace(",", "."))
+    except AnswerValidationError:
+        raise
     except (ValueError, ZeroDivisionError) as exc:
-        raise AnswerValidationError("Invalid fraction answer") from exc
+        raise AnswerValidationError("Fraction invalide. Exemple accepté : 1/2") from exc
 
 
 def _boolean(value: Any) -> bool:
@@ -72,6 +86,30 @@ def _formula(value: Any) -> str:
     if balance:
         raise AnswerValidationError("Invalid formula parentheses")
     return text
+
+
+def _as_decimal(value: Any) -> Decimal | None:
+    if isinstance(value, Decimal):
+        return value
+    if isinstance(value, Fraction):
+        return Decimal(value.numerator) / Decimal(value.denominator)
+    if isinstance(value, (int, float)):
+        return Decimal(str(value))
+    try:
+        return _decimal(value)
+    except AnswerValidationError:
+        return None
+
+
+def _numeric_equivalent(actual: Any, expected: Any, tolerance: float) -> bool:
+    left = _as_decimal(actual)
+    right = _as_decimal(expected)
+    if left is None or right is None:
+        return False
+    limit = Decimal(str(tolerance if tolerance else 0))
+    if limit == 0:
+        limit = Decimal("0.000000001")
+    return abs(left - right) <= limit
 
 
 class DeterministicAssessmentEngine:
@@ -141,14 +179,30 @@ class DeterministicAssessmentEngine:
         if method in {
             AssessmentMethod.EXACT_MATCH,
             AssessmentMethod.BOOLEAN,
-            AssessmentMethod.FRACTION_SIMPLIFICATION,
             AssessmentMethod.FORMULA,
         }:
-            return 100.0 if actual == expected else 0.0
+            if actual == expected:
+                return 100.0
+            if method is AssessmentMethod.EXACT_MATCH and _numeric_equivalent(
+                actual, expected, request.tolerance
+            ):
+                return 100.0
+            return 0.0
+        if method is AssessmentMethod.FRACTION_SIMPLIFICATION:
+            if actual == expected:
+                return 100.0
+            if _numeric_equivalent(actual, expected, max(request.tolerance, 1e-9)):
+                return 100.0
+            return 0.0
         if method is AssessmentMethod.NUMERIC_EQUALITY:
-            return 100.0 if Decimal(actual) == Decimal(expected) else 0.0
+            return 100.0 if Decimal(str(actual)) == Decimal(str(expected)) else 0.0
         if method is AssessmentMethod.NUMERIC_TOLERANCE:
-            return 100.0 if abs(Decimal(actual) - Decimal(expected)) <= Decimal(str(request.tolerance)) else 0.0
+            tolerance = Decimal(str(request.tolerance if request.tolerance else 0))
+            return (
+                100.0
+                if abs(Decimal(str(actual)) - Decimal(str(expected))) <= tolerance
+                else 0.0
+            )
         if method is AssessmentMethod.MCQ:
             selected = set(actual if isinstance(actual, tuple) else (actual,))
             correct = set(request.correct_options or (str(expected),))

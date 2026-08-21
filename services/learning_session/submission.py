@@ -6,7 +6,7 @@ from dataclasses import asdict
 from typing import Any, Protocol
 
 from domain.learning.models import LearnerAttempt, LearningEngineResult
-from domain.learning_session.models import Assessment, Attempt, StudentAnswer
+from domain.learning_session.models import AnswerType, Assessment, AssessmentMethod, Attempt, StudentAnswer
 from domain.learning_session.repositories import AssessmentRepository
 from services.learning_session.assessment import DeterministicAssessmentEngine, serialize_normalized_answer
 from services.learning_session.models import AssessmentRequest, AssessmentResult, SubmissionContext
@@ -98,3 +98,55 @@ class SubmissionService:
         saved = self.repository.save_cycle(answer, assessment, attempt, payload)
         self.notifier.notify_mastery_updated(learning_result)
         return saved, result, learning_result
+
+    def record_skip(
+        self,
+        context: SubmissionContext,
+        *,
+        current_mastery: float,
+        feedback: dict[str, Any] | None = None,
+    ) -> Attempt:
+        """Persist a skipped question without changing mastery."""
+        answer = StudentAnswer(
+            0,
+            context.activity_id,
+            context.question_id,
+            context.attempt_number,
+            AnswerType.TEXT,
+            "[passée]",
+            "[passée]",
+            context.occurred_at,
+            context.elapsed_ms,
+            False,
+            True,
+            context.idempotency_key,
+        )
+        assessment = Assessment(
+            0,
+            0,
+            False,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            AssessmentMethod.EXACT_MATCH,
+            dict(feedback or {}),
+            "skip-v1",
+        )
+        attempt = Attempt(
+            0,
+            context.learner_id,
+            context.activity_id,
+            0,
+            0,
+            False,
+            current_mastery,
+            current_mastery,
+            context.elapsed_ms,
+            len(()),
+        )
+        payload: dict[str, Any] = {
+            "skipped": True,
+            "learning_engine_version": "skip-v1",
+        }
+        return self.repository.save_cycle(answer, assessment, attempt, payload)

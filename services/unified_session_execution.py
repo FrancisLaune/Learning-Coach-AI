@@ -46,6 +46,7 @@ class QuestionAssessmentView:
     mastery_before: float
     mastery_after: float
     session_completed: bool
+    skipped: bool = False
 
 
 @dataclass(frozen=True, slots=True)
@@ -173,6 +174,70 @@ class UnifiedSessionExecutionService:
             saved.mastery_before,
             saved.mastery_after,
             session_completed,
+            skipped=False,
+        )
+
+    def skip(
+        self,
+        learner_id: int,
+        session_id: int,
+        occurred_at: datetime,
+        elapsed_ms: int,
+    ) -> QuestionAssessmentView:
+        """Advance past the current question without counting a success."""
+        session = self.sessions.repository.get(session_id)
+        if session is None or session.learner_id != learner_id:
+            raise PermissionError("SESSION_ACCESS_DENIED")
+        if session.status is not SessionStatus.RUNNING:
+            raise ValueError("La séance doit être démarrée avant de passer une question.")
+        material = self.repository.current_question(learner_id, session_id)
+        if material is None:
+            raise ValueError("Aucune question active.")
+        activity = next(
+            item
+            for item in self.sessions.repository.list_activities(session_id)
+            if item.activity_id == material.question.activity_id
+        )
+        if activity.status is ActivityStatus.NOT_STARTED:
+            self.runner.start(session, activity.activity_id)
+        idempotency_key = (
+            f"ui-skip:{session_id}:{material.question.activity_id}:{material.question.question_id}:"
+            f"{material.previous_attempts + 1}"
+        )
+        saved = self.submission.record_skip(
+            SubmissionContext(
+                learner_id,
+                material.question.skill_id,
+                material.question.activity_id,
+                material.question.question_id,
+                material.previous_attempts + 1,
+                occurred_at,
+                elapsed_ms,
+                idempotency_key,
+            ),
+            current_mastery=material.current_mastery,
+            feedback={
+                "question_id": material.question.question_id,
+                "skipped": True,
+            },
+        )
+        answered, total = self.repository.activity_question_count(material.question.activity_id)
+        if answered >= total:
+            current = self.sessions.repository.get(session_id)
+            assert current is not None
+            self.runner.complete(current, material.question.activity_id, 0.0, 0.0)
+        session_completed = self._complete_if_finished(session_id, occurred_at)
+        explanation = material.solution_explanation or "Question passée — tu pourras y revenir plus tard en révision."
+        return QuestionAssessmentView(
+            False,
+            0.0,
+            explanation,
+            material.solution_method or "PASSÉE",
+            material.solution_advice or "Tu as choisi de passer. Continue sans te bloquer.",
+            saved.mastery_before,
+            saved.mastery_after,
+            session_completed,
+            skipped=True,
         )
 
     def use_hint(self, learner_id: int, session_id: int, hint_id: int, at: datetime) -> str:

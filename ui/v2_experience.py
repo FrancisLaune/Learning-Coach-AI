@@ -85,7 +85,7 @@ def student_dashboard(controller: StudentExperienceController, learner_id: int) 
             from ui.professor_ai_guided_cycle import remember_session_status
 
             remember_session_status(st.session_state, int(session.session_id), session.status)
-            request_navigation(st.session_state, "student", "Ma séance IA")
+            request_navigation(st.session_state, "student", "Ma séance")
             st.rerun()
     else:
         st.info("Aucune séance n'est actuellement planifiée.")
@@ -93,11 +93,8 @@ def student_dashboard(controller: StudentExperienceController, learner_id: int) 
         st.caption(f"Prochaine révision : {result.next_revision.strftime('%d/%m/%Y')}")
     _mastery(result)
     from application.experience_factory import build_pedagogical_intelligence_controller
-    from services.professor_ai.guided_cycle import FOCUS_DIAGNOSTIC_KEY
     from ui.pedagogical_intelligence import render_pedagogical_intelligence_dashboard
 
-    if st.session_state.pop(FOCUS_DIAGNOSTIC_KEY, None):
-        st.info("Le Professeur IA te propose de démarrer ou poursuivre le diagnostic adaptatif ci-dessous.")
     pi_controller = build_pedagogical_intelligence_controller()
     pi_overview = pi_controller.student_overview(learner_id)
     if isinstance(pi_overview, PresentationError):
@@ -171,7 +168,9 @@ def session_screen(
         feedback_key = f"session_feedback_{result.session.session_id}"
         feedback = st.session_state.get(feedback_key)
         if feedback:
-            if feedback.correct:
+            if getattr(feedback, "skipped", False):
+                st.warning("Question passée — elle ne compte pas comme une réussite.")
+            elif feedback.correct:
                 st.success(f"Bonne réponse — {feedback.score:.0f} %")
             else:
                 st.error(f"Réponse à consolider — {feedback.score:.0f} %")
@@ -180,7 +179,7 @@ def session_screen(
             if feedback.advice:
                 st.info(feedback.advice)
             st.caption(f"Maîtrise : {feedback.mastery_before * 100:.0f} % → {feedback.mastery_after * 100:.0f} %")
-            if st.button("Activité suivante", type="primary"):
+            if st.button("Question suivante", type="primary"):
                 del st.session_state[feedback_key]
                 st.rerun()
         elif question:
@@ -224,16 +223,33 @@ def session_screen(
                 result.session.session_id,
                 question.activity_id,
                 key_prefix=f"session_{result.session.session_id}_{question.question_id}",
+                statement=question.statement,
+                hint_text=question.hints[0][1] if question.hints else None,
+                notion_reminder=question.instructions or None,
+                method_outline=None,
             )
             started_key = f"question_started_{question.session_id}_{question.question_id}"
             st.session_state.setdefault(started_key, time.monotonic())
-            if st.button("Valider ma réponse", type="primary", disabled=not str(answer).strip()):
+            action_cols = st.columns(2)
+            if action_cols[0].button("Valider ma réponse", type="primary", disabled=not str(answer).strip()):
                 elapsed = int((time.monotonic() - float(st.session_state[started_key])) * 1000)
                 try:
                     st.session_state[feedback_key] = execution.submit(
                         learner_id,
                         result.session.session_id,
                         answer,
+                        datetime.now(UTC),
+                        elapsed,
+                    )
+                    st.rerun()
+                except ValueError as exc:
+                    st.error(str(exc))
+            if action_cols[1].button("Passer", use_container_width=True, help="Passe cette question sans bloquer le devoir."):
+                elapsed = int((time.monotonic() - float(st.session_state[started_key])) * 1000)
+                try:
+                    st.session_state[feedback_key] = execution.skip(
+                        learner_id,
+                        result.session.session_id,
                         datetime.now(UTC),
                         elapsed,
                     )

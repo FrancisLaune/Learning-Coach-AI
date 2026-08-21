@@ -13,8 +13,8 @@ from application.dto.student_guidance import (
 )
 
 DEGRADED_NOTICE = (
-    "Le Professeur IA est temporairement indisponible. "
-    "Les analyses et recommandations de base restent accessibles."
+    "L'aide enrichie est temporairement indisponible. "
+    "Les conseils de base restent accessibles."
 )
 
 
@@ -73,21 +73,61 @@ def homework_before(context_subject: str, exercise_count: int, minutes: int | No
     )
 
 
-def homework_during(help_level: int) -> HomeworkGuidanceResponse:
-    messages = {
-        1: "Relis la consigne et souligne les mots importants.",
-        2: "Rappelle-toi la notion vue en cours sur ce chapitre.",
-        3: "Cherche un indice : quelle opération ou quelle règle s'applique ici ?",
-        4: "Commence par la première étape, sans viser la réponse finale.",
-        5: "Voici une démarche analogue : identifie les données, choisis la méthode, vérifie l'unité.",
-        6: "Solution guidée : avance étape par étape et vérifie chaque résultat intermédiaire.",
-        7: "Consulte la correction uniquement si la politique du devoir l'autorise.",
-    }
+def homework_during(
+    help_level: int,
+    *,
+    statement: str | None = None,
+    hint_text: str | None = None,
+    notion_reminder: str | None = None,
+    method_outline: str | None = None,
+) -> HomeworkGuidanceResponse:
+    """Progressive useful aids: indice → notion → démarche (no full solution before level 6)."""
     level = max(1, min(7, int(help_level)))
+    excerpt = " ".join((statement or "").split())
+    if len(excerpt) > 120:
+        excerpt = excerpt[:117].rstrip() + "…"
+
+    if level == 1:
+        message = (
+            "Indice utile : repère dans la consigne ce que l'on te demande exactement "
+            "(calculer, simplifier, justifier…)."
+        )
+        if excerpt:
+            message += f" Consigne : « {excerpt} »."
+    elif level == 2:
+        message = hint_text or (
+            "Indice utile : isole les données numériques et les unités, puis reformule la question en une phrase courte."
+        )
+    elif level == 3:
+        message = notion_reminder or (
+            "Rappel de notion : quelle règle ou définition du chapitre s'applique ici ? "
+            "Écris-la avant de calculer."
+        )
+    elif level == 4:
+        message = method_outline or (
+            "Démarche : (1) note les données, (2) choisis la méthode, (3) calcule une étape, "
+            "(4) vérifie l'ordre de grandeur."
+        )
+    elif level == 5:
+        message = (
+            "Piste guidée : avance une seule étape maintenant, sans viser la réponse finale. "
+            "Si tu bloques, passe à l'aide suivante."
+        )
+    elif level == 6:
+        message = (
+            "Solution guidée (sans spoiler complet) : décompose le problème en sous-questions "
+            "et valide chaque résultat intermédiaire."
+        )
+    else:
+        message = (
+            "Corrigé expliqué : tu peux consulter la correction après avoir tenté une réponse, "
+            "ou si la politique du devoir l'autorise."
+        )
+
     return HomeworkGuidanceResponse(
         source=GuidanceSource.DETERMINISTIC,
         phase="DURING",
-        message=messages[level],
+        message=message,
         help_level=level,
         suggested_actions=("Indice suivant", "Retour au devoir"),
     )

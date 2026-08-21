@@ -64,20 +64,25 @@ def render_professor_ai_banner(
         requested=stored_mode if preferences.feature_enabled else ProfessorOperatingMode.MANUAL,
     )
 
-    message = "Je suis prêt à t'accompagner dans ta séance."
+    message = "Mode manuel : choisis librement devoirs, séance ou révision."
     primary_action = "Continuer"
     secondary: tuple[str, ...] = ()
     plan: SessionPlan | None = None
-    try:
-        plan = orchestrator.plan_session(user, learner_id, mode=resolved_mode)
-        message = plan.welcome.greeting
-        primary_action = plan.welcome.primary_action or primary_action
-        secondary = plan.welcome.secondary_actions
-        if presence is BannerPresenceState.IDLE and message:
-            presence = BannerPresenceState.SPEAKING
-    except Exception:
-        if presence is BannerPresenceState.IDLE:
-            presence = BannerPresenceState.IDLE
+    ai_modes = {ProfessorOperatingMode.PROFESSOR, ProfessorOperatingMode.COMPANION}
+    if resolved_mode in ai_modes:
+        try:
+            plan = orchestrator.plan_session(user, learner_id, mode=resolved_mode)
+            message = plan.welcome.greeting
+            primary_action = plan.welcome.primary_action or primary_action
+            secondary = plan.welcome.secondary_actions
+            if presence is BannerPresenceState.IDLE and message:
+                presence = BannerPresenceState.SPEAKING
+        except Exception:
+            if presence is BannerPresenceState.IDLE:
+                presence = BannerPresenceState.IDLE
+    else:
+        presence = BannerPresenceState.IDLE
+        resolved_mode = ProfessorOperatingMode.MANUAL
 
     cycle = build_cycle_snapshot(plan, st.session_state) if plan is not None else None
     if cycle is not None:
@@ -104,13 +109,14 @@ def render_professor_ai_banner(
             st.caption(cycle.progress_caption)
         if banner.primary_action:
             st.caption(f"Priorité : {banner.primary_action}")
-        _render_banner_audio(
-            user=user,
-            learner_id=learner_id,
-            preferences=preferences,
-            message=banner.message,
-            presence=banner.presence,
-        )
+        if resolved_mode in ai_modes:
+            _render_banner_audio(
+                user=user,
+                learner_id=learner_id,
+                preferences=preferences,
+                message=banner.message,
+                presence=banner.presence,
+            )
 
         action_cols = st.columns(5)
         cta_label = (cycle.cta_label if cycle is not None else banner.primary_action) or "Continuer"
@@ -124,15 +130,15 @@ def render_professor_ai_banner(
             request_navigation(st.session_state, "student", "Devoirs")
             st.rerun()
         if action_cols[2].button("Séance", key=f"banner_session_{learner_id}", use_container_width=True):
-            request_navigation(st.session_state, "student", "Ma séance IA")
+            request_navigation(st.session_state, "student", "Ma séance")
             st.rerun()
         if action_cols[3].button("Discuter", key=f"banner_chat_{learner_id}", use_container_width=True):
-            request_navigation(st.session_state, "student", "Mon professeur IA")
+            request_navigation(st.session_state, "student", "Tableau de bord")
             st.rerun()
         if action_cols[4].button("Parler", key=f"banner_voice_{learner_id}", use_container_width=True):
             st.session_state[_VOICE_FOCUS_KEY] = True
             st.session_state[PRESENCE_STATE_KEY] = BannerPresenceState.LISTENING.value
-            request_navigation(st.session_state, "student", "Mon professeur IA")
+            request_navigation(st.session_state, "student", "Tableau de bord")
             st.rerun()
 
         if banner.mode_editable:

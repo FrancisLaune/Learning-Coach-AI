@@ -31,6 +31,7 @@ from services.pedagogical_intelligence.dashboard_service import PedagogicalDashb
 from services.pedagogical_intelligence.recommendation_service import PedagogicalRecommendationService
 from services.student_guidance.availability import resolve_ai_availability
 from services.student_guidance.deterministic import (
+    DEGRADED_NOTICE,
     build_ai_welcome,
     build_deterministic_welcome,
     explain_result,
@@ -142,15 +143,30 @@ class StudentGuidanceService:
         session_id: int,
         exercise_id: int,
         help_level: int,
+        *,
+        statement: str | None = None,
+        hint_text: str | None = None,
+        notion_reminder: str | None = None,
+        method_outline: str | None = None,
     ) -> HomeworkGuidanceResponse:
         availability = self._authorize_student(actor, learner_id)
         _ = session_id, exercise_id
-        response = homework_during(help_level)
+        response = homework_during(
+            help_level,
+            statement=statement,
+            hint_text=hint_text,
+            notion_reminder=notion_reminder,
+            method_outline=method_outline,
+        )
         if availability.mode is AIAvailabilityMode.ACTIVE:
             try:
                 ai = self._generate_short_guidance(
                     learner_id=learner_id,
-                    user_message=f"L'élève demande de l'aide niveau {help_level} sur un exercice en cours.",
+                    user_message=(
+                        f"Aide progressive niveau {help_level} sur l'exercice. "
+                        f"Consigne: {(statement or '')[:200]}. "
+                        "Donne un conseil utile sans donner la réponse finale."
+                    ),
                     subject_label="devoir",
                 )
                 return HomeworkGuidanceResponse(
@@ -163,14 +179,13 @@ class StudentGuidanceService:
             except Exception:
                 pass
         degraded = availability.mode is AIAvailabilityMode.UNAVAILABLE
-        fallback = homework_during(help_level)
         return HomeworkGuidanceResponse(
             source=GuidanceSource.DETERMINISTIC,
-            phase=fallback.phase,
-            message=fallback.message,
-            help_level=fallback.help_level,
-            suggested_actions=fallback.suggested_actions,
-            degraded_notice=fallback.degraded_notice if degraded else "",
+            phase=response.phase,
+            message=response.message,
+            help_level=response.help_level,
+            suggested_actions=response.suggested_actions,
+            degraded_notice=DEGRADED_NOTICE if degraded else "",
         )
 
     def explain_homework_result(
@@ -296,6 +311,8 @@ class StudentGuidanceService:
             trend=str(item.trend),
             band=band,
             band_label=band_label(band),
+            subject_label=str(getattr(item, "subject_label", "") or ""),
+            chapter_label=str(getattr(item, "chapter_label", "") or ""),
         )
 
     @staticmethod
@@ -333,8 +350,10 @@ class StudentGuidanceService:
                 continue
             priorities.append(
                 RevisionPriority(
-                    subject_label="Compétence",
-                    skill_label=item.label,
+                    subject_label=item.subject_label or "Compétence",
+                    skill_label=item.label
+                    if not item.chapter_label
+                    else f"{item.chapter_label} — {item.label}",
                     reason=f"Maîtrise {item.score:.0f} % — {item.band_label}",
                     priority=2 if item.band is MasteryBand.TO_REVISE else 3,
                     estimated_minutes=15,

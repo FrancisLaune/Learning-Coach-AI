@@ -1,4 +1,4 @@
-"""Non-blocking homework exercise ranking and panachage (LCAI-0021)."""
+"""Non-blocking homework exercise ranking and panachage (LCAI-0021 / LCAI-0030-C)."""
 
 from __future__ import annotations
 
@@ -16,6 +16,53 @@ class HomeworkSelectionStrategy:
     current_level_share: float = 0.40
     stretch_share: float = 0.20
     revision_share: float = 0.10
+
+
+@dataclass(frozen=True, slots=True)
+class LearnerOutcomeSignals:
+    """Recent mastery signals used to adapt exercise mix (LCAI-0030-C)."""
+
+    avg_score: float | None = None
+    success_streak: int = 0
+    failure_streak: int = 0
+    avg_last_difficulty: float | None = None
+
+
+def strategy_from_outcomes(signals: LearnerOutcomeSignals | None) -> HomeworkSelectionStrategy:
+    """More consolidation after failures; more stretch after successes."""
+    if signals is None:
+        return HomeworkSelectionStrategy()
+    score = signals.avg_score
+    if signals.failure_streak >= 2 or (score is not None and score < 0.45):
+        return HomeworkSelectionStrategy(
+            consolidation_share=0.50,
+            current_level_share=0.35,
+            stretch_share=0.05,
+            revision_share=0.10,
+        )
+    if signals.success_streak >= 3 or (score is not None and score >= 0.75):
+        return HomeworkSelectionStrategy(
+            consolidation_share=0.15,
+            current_level_share=0.35,
+            stretch_share=0.40,
+            revision_share=0.10,
+        )
+    return HomeworkSelectionStrategy()
+
+
+def target_difficulty_from_outcomes(signals: LearnerOutcomeSignals | None, *, default: int = 3) -> int:
+    """Raise/lower target difficulty from streaks and recent mastery."""
+    base = default
+    if signals is not None and signals.avg_last_difficulty is not None:
+        base = max(1, min(5, round(float(signals.avg_last_difficulty))))
+    if signals is None:
+        return base
+    recommended = base
+    if signals.failure_streak >= 2 or (signals.avg_score is not None and signals.avg_score < 0.45):
+        recommended -= 1
+    elif signals.success_streak >= 3 and (signals.avg_score is None or signals.avg_score >= 0.70):
+        recommended += 1
+    return max(1, min(5, recommended))
 
 
 def difficulty_fit_score(row_difficulty: int, target: int | None) -> float:
@@ -141,15 +188,17 @@ class HomeworkExerciseSelectionService:
         request: HomeworkRequest,
         target_difficulty: int | None,
         strategy: HomeworkSelectionStrategy | None = None,
+        outcome_signals: LearnerOutcomeSignals | None = None,
     ) -> list[CatalogRow]:
         if not rows:
             return []
+        resolved_strategy = strategy or strategy_from_outcomes(outcome_signals)
         pool_size = max(request.exercise_count * 3, request.exercise_count)
         prepared = panachage_select(
             rows,
             target=target_difficulty,
             exercise_count=pool_size,
-            strategy=strategy,
+            strategy=resolved_strategy,
         )
         if request.mode is AssignmentType.GLOBAL_SUBJECT:
             prepared = balance_by_chapter(prepared)

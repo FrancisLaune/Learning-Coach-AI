@@ -36,6 +36,8 @@ def build_homework_service(
             from infrastructure.repositories.content_factory import DuckDBContentFactoryRepository
             from services.content.factory import CandidateValidator, ContentFactoryService
             from services.homework.completion import HomeworkContentCompletionService
+            from services.homework.config import HomeworkAiFallbackSettings
+            from services.homework.learner_context import LearnerContextService
 
             configure_openai_environment()
             factory_repo = DuckDBContentFactoryRepository(repo.database_path)
@@ -52,7 +54,16 @@ def build_homework_service(
                 },
             )
             factory = ContentFactoryService(generator, factory_repo, CandidateValidator())
-            ai_fallback = HomeworkContentCompletionService(repo, content_factory=factory)
+            settings = HomeworkAiFallbackSettings.from_environment()
+            ai_fallback = HomeworkContentCompletionService(
+                repo,
+                content_factory=factory,
+                learner_context=LearnerContextService(
+                    repo,
+                    recent_exclusion_days=settings.recent_exclusion_days,
+                ),
+                settings=settings,
+            )
             LOGGER.info("Homework AI completion enabled (OpenAI via secrets.toml or OPENAI_API_KEY)")
         except ImportError as exc:
             LOGGER.warning(

@@ -21,6 +21,8 @@ class MasteryView:
     score: float
     level: str
     trend: str
+    subject_label: str = ""
+    chapter_label: str = ""
 
 
 @dataclass(frozen=True, slots=True)

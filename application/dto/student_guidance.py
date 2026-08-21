@@ -65,6 +65,8 @@ class MasterySnapshotItem:
     trend: str
     band: MasteryBand
     band_label: str
+    subject_label: str = ""
+    chapter_label: str = ""
 
 
 @dataclass(frozen=True, slots=True)

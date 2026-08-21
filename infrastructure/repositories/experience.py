@@ -38,13 +38,31 @@ class DuckDBExperienceReadModel:
         connection = connect_v2(self.database_path, read_only=True)
         try:
             rows = connection.execute(
-                """SELECT m.skill_id,s.default_label,m.score,m.level,m.trend
-                FROM longitudinal_mastery_current m JOIN skills s ON s.id=m.skill_id
-                WHERE m.learner_id=? ORDER BY m.score,s.default_label""",
+                """SELECT m.skill_id, s.default_label, m.score, m.level, m.trend,
+                          coalesce(sub_ch.default_label, sub_dom.default_label, ''),
+                          coalesce(cc.title, '')
+                FROM longitudinal_mastery_current m
+                JOIN skills s ON s.id = m.skill_id
+                LEFT JOIN curriculum_skill_details csd ON csd.skill_id = s.id
+                LEFT JOIN curriculum_chapters cc ON cc.id = csd.chapter_id
+                LEFT JOIN subjects sub_ch ON sub_ch.id = cc.subject_id
+                LEFT JOIN domains dom ON dom.id = s.domain_id
+                LEFT JOIN subjects sub_dom ON sub_dom.id = dom.subject_id
+                WHERE m.learner_id=?
+                ORDER BY m.score, s.default_label""",
                 [learner_id],
             ).fetchall()
             return tuple(
-                MasteryView(int(row[0]), str(row[1]), float(row[2]) * 100, str(row[3]), str(row[4])) for row in rows
+                MasteryView(
+                    int(row[0]),
+                    str(row[1]),
+                    float(row[2]) * 100,
+                    str(row[3]),
+                    str(row[4]),
+                    str(row[5] or ""),
+                    str(row[6] or ""),
+                )
+                for row in rows
             )
         finally:
             connection.close()

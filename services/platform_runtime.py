@@ -523,7 +523,7 @@ def default_flags() -> FeatureFlagService:
             FeatureFlagDefinition("api.enabled", False, ("v2.enabled",), environment_name="LCAI_API_ENABLED"),
             FeatureFlagDefinition(
                 "ai_tutor.enabled",
-                True,
+                False,
                 environment_name="LCAI_AI_TUTOR_ENABLED",
             ),
             FeatureFlagDefinition(

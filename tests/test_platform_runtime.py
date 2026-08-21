@@ -158,7 +158,7 @@ def test_feature_dependencies_and_ai_tutor_defaults(monkeypatch: pytest.MonkeyPa
     monkeypatch.delenv("LCAI_AI_TUTOR_ENABLED", raising=False)
     flags = default_flags()
     assert not flags.enabled("v2.enabled")
-    assert flags.enabled("ai_tutor.enabled")
+    assert not flags.enabled("ai_tutor.enabled")
     inconsistent = FeatureFlagService(
         (
             FeatureFlagDefinition("parent", False),

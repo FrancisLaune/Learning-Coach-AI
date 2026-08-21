@@ -21,7 +21,13 @@ from domain.unified_experience.models import (
     RuntimeExerciseCandidate,
 )
 from infrastructure.database.v2 import connect_v2
-from services.homework.exercise_selection import HomeworkExerciseSelectionService
+from services.homework.anti_repetition import exclude_recent_content_ids, prioritize_brevet_content
+from services.homework.exercise_selection import (
+    HomeworkExerciseSelectionService,
+    LearnerOutcomeSignals,
+    target_difficulty_from_outcomes,
+)
+from services.homework.learner_context import LearnerContextService
 
 
 class DuckDBUnifiedExperienceRepository:
@@ -220,13 +226,76 @@ class DuckDBUnifiedExperienceRepository:
         try:
             filters, parameters = self._approved_content_filters(request)
             return connection.execute(
-                f"""SELECT content_id,chapter_id,skill_id,difficulty FROM production_learning_catalog
+                f"""SELECT content_id,chapter_id,skill_id,difficulty,content_type
+                FROM production_learning_catalog
                 WHERE {" AND ".join(filters)}
                 ORDER BY chapter_id,skill_id,difficulty,content_id""",
                 parameters,
             ).fetchall()
         finally:
             connection.close()
+
+    def _grade_code(self, grade_level_id: int | None) -> str | None:
+        if grade_level_id is None:
+            return None
+        connection = connect_v2(self.database_path, read_only=True)
+        try:
+            row = connection.execute(
+                "SELECT code FROM school_levels WHERE id=?",
+                [grade_level_id],
+            ).fetchone()
+            return None if row is None else str(row[0])
+        finally:
+            connection.close()
+
+    def _exam_skill_ids_for_grade(self, grade_code: str | None) -> set[int]:
+        if (grade_code or "").upper() not in {"FR-3E", "3E"}:
+            return set()
+        connection = connect_v2(self.database_path, read_only=True)
+        try:
+            exists = connection.execute(
+                """SELECT COUNT(*) FROM information_schema.tables
+                WHERE table_schema='main' AND table_name='exam_skill_references'"""
+            ).fetchone()
+            if not exists or int(exists[0]) == 0:
+                return set()
+            rows = connection.execute("SELECT DISTINCT skill_id FROM exam_skill_references").fetchall()
+            return {int(row[0]) for row in rows}
+        finally:
+            connection.close()
+
+    def select_approved_content_detailed(self, request: HomeworkRequest) -> HomeworkContentSelection:
+        signals = self._outcome_signals(request)
+        requested = self._difficulty(request, signals=signals)
+        rows = self._approved_content_rows(request)
+        grade_code = self._grade_code(request.grade_level_id)
+        if request.learner_id > 0:
+            context = LearnerContextService(self).build(request, "catalog-anti-repeat")
+            rows = exclude_recent_content_ids(rows, context.recent_content_ids)
+        rows = prioritize_brevet_content(
+            rows,
+            grade_code=grade_code,
+            exam_skill_ids=self._exam_skill_ids_for_grade(grade_code),
+        )
+        selector = HomeworkExerciseSelectionService()
+        prepared = selector.prepare_catalog_rows(
+            rows,
+            request=request,
+            target_difficulty=requested,
+            outcome_signals=signals,
+        )
+        relaxed = selector.selection_uses_mixed_difficulties(
+            prepared,
+            target_difficulty=requested,
+            exercise_count=request.exercise_count,
+        )
+        return self._finalize_content_selection(
+            request,
+            prepared,
+            requested_difficulty=requested,
+            applied_difficulty=requested,
+            difficulty_relaxed=relaxed,
+        )
 
     def _finalize_content_selection(
         self,
@@ -256,40 +325,39 @@ class DuckDBUnifiedExperienceRepository:
         rows = self._approved_content_rows(request)
         return len({int(row[0]) for row in rows})
 
-    def select_approved_content_detailed(self, request: HomeworkRequest) -> HomeworkContentSelection:
-        requested = self._difficulty(request)
-        rows = self._approved_content_rows(request)
-        selector = HomeworkExerciseSelectionService()
-        prepared = selector.prepare_catalog_rows(rows, request=request, target_difficulty=requested)
-        relaxed = selector.selection_uses_mixed_difficulties(
-            prepared,
-            target_difficulty=requested,
-            exercise_count=request.exercise_count,
-        )
-        return self._finalize_content_selection(
-            request,
-            prepared,
-            requested_difficulty=requested,
-            applied_difficulty=requested,
-            difficulty_relaxed=relaxed,
-        )
-
     def select_approved_content(self, request: HomeworkRequest) -> tuple[int, ...]:
         return self.select_approved_content_detailed(request).content_ids
 
-    def _difficulty(self, request: HomeworkRequest) -> int | None:
+    def _outcome_signals(self, request: HomeworkRequest) -> LearnerOutcomeSignals:
+        connection = connect_v2(self.database_path, read_only=True)
+        try:
+            row = connection.execute(
+                """SELECT avg(m.score), max(m.success_streak), max(m.failure_streak), avg(m.last_difficulty)
+                FROM longitudinal_mastery_current m
+                JOIN skills sk ON sk.id=m.skill_id
+                JOIN domains d ON d.id=sk.domain_id
+                WHERE m.learner_id=? AND d.subject_id=?""",
+                [request.learner_id, request.subject_id],
+            ).fetchone()
+            if row is None or all(item is None for item in row):
+                return LearnerOutcomeSignals()
+            return LearnerOutcomeSignals(
+                avg_score=None if row[0] is None else float(row[0]),
+                success_streak=int(row[1] or 0),
+                failure_streak=int(row[2] or 0),
+                avg_last_difficulty=None if row[3] is None else float(row[3]),
+            )
+        finally:
+            connection.close()
+
+    def _difficulty(
+        self,
+        request: HomeworkRequest,
+        *,
+        signals: LearnerOutcomeSignals | None = None,
+    ) -> int | None:
         if request.difficulty is DifficultyMode.ADAPTIVE:
-            connection = connect_v2(self.database_path, read_only=True)
-            try:
-                row = connection.execute(
-                    """SELECT avg(m.last_difficulty) FROM longitudinal_mastery_current m
-                    JOIN skills sk ON sk.id=m.skill_id JOIN domains d ON d.id=sk.domain_id
-                    WHERE m.learner_id=? AND d.subject_id=?""",
-                    [request.learner_id, request.subject_id],
-                ).fetchone()
-                return 3 if not row or row[0] is None else max(1, min(5, round(float(row[0]))))
-            finally:
-                connection.close()
+            return target_difficulty_from_outcomes(signals or self._outcome_signals(request), default=3)
         return {
             DifficultyMode.EASY: 2,
             DifficultyMode.MEDIUM: 3,
@@ -916,8 +984,14 @@ class DuckDBUnifiedExperienceRepository:
                 ("DELETE FROM pedagogical_objectives WHERE learner_id=?", 1),
                 ("DELETE FROM learner_profiles WHERE learner_id=?", 1),
                 ("DELETE FROM learner_functional_profiles WHERE learner_id=?", 1),
-                ("DELETE FROM virtual_teacher_messages WHERE session_id IN (SELECT id FROM virtual_teacher_sessions WHERE learner_id=?)", 1),
-                ("DELETE FROM virtual_teacher_summaries WHERE session_id IN (SELECT id FROM virtual_teacher_sessions WHERE learner_id=?)", 1),
+                (
+                    "DELETE FROM virtual_teacher_messages WHERE session_id IN (SELECT id FROM virtual_teacher_sessions WHERE learner_id=?)",
+                    1,
+                ),
+                (
+                    "DELETE FROM virtual_teacher_summaries WHERE session_id IN (SELECT id FROM virtual_teacher_sessions WHERE learner_id=?)",
+                    1,
+                ),
                 ("DELETE FROM virtual_teacher_sessions WHERE learner_id=?", 1),
                 ("DELETE FROM virtual_teacher_events WHERE learner_id=?", 1),
                 ("DELETE FROM virtual_teacher_preferences WHERE learner_id=?", 1),

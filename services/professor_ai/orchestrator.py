@@ -404,9 +404,13 @@ class ProfessorAIOrchestrator:
         )
 
     def _professor_allowed(self, learner_id: int) -> bool:
-        """Mode Professeur/Compagnon = préférence élève, pas le flag plateforme OpenAI."""
+        """Professeur/Compagnon only when platform AI is on and learner feature is enabled."""
+        from application.dto.student_guidance import AIAvailabilityMode
+
+        availability = self._availability(learner_id=learner_id)
+        if availability.mode is AIAvailabilityMode.INACTIVE:
+            return False
         if self.preferences is not None:
             prefs = self.preferences.ensure_preferences(learner_id)
             return bool(getattr(prefs, "feature_enabled", False))
-        availability = self._availability(learner_id=learner_id)
         return bool(availability.learner_feature_enabled)
