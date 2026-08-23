@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from collections.abc import Sequence
 from dataclasses import dataclass
-from datetime import date, datetime
+from datetime import UTC, date, datetime
 from typing import Any, Protocol
 
 from domain.onboarding.models import OnboardingRequest, OnboardingResult
@@ -13,6 +13,7 @@ from domain.unified_experience.models import (
     AssignmentStatus,
     AssignmentType,
     CoachAdvice,
+    DifficultyMode,
     HomeworkAssignment,
     HomeworkContentSelection,
     HomeworkGenerationResult,
@@ -214,6 +215,54 @@ class HomeworkService:
         return self.repository.update_homework_status(
             homework_id, learner_id, item.status, AssignmentStatus.IN_PROGRESS
         )
+
+    def cancel(self, learner_id: int, homework_id: int) -> HomeworkAssignment:
+        """Soft-delete: mark homework as CANCELLED (student or parent request)."""
+        item = self._owned(learner_id, homework_id)
+        if item.status is AssignmentStatus.CANCELLED:
+            return item
+        if item.status is AssignmentStatus.COMPLETED:
+            raise ValueError("Un devoir terminé ne peut pas être supprimé.")
+        return self.repository.update_homework_status(
+            homework_id, learner_id, item.status, AssignmentStatus.CANCELLED
+        )
+
+    def evaluation_progress(self, learner_id: int) -> tuple[tuple[HomeworkAssignment, float | None], ...]:
+        """Completed evaluations with overall score (None if summary missing)."""
+        items = [
+            item
+            for item in self.list_for_learner(learner_id)
+            if item.is_evaluation and item.status is AssignmentStatus.COMPLETED
+        ]
+        return tuple((item, self.repository.homework_overall_score(item.homework_id)) for item in items)
+
+    def retake_evaluation(self, learner_id: int, homework_id: int) -> HomeworkAssignment:
+        """Create a new evaluation attempt from a previous (usually incomplete) evaluation."""
+        from domain.unified_experience.models import CORRECTION_POLICY_EVALUATION, HomeworkRequest
+
+        previous = self._owned(learner_id, homework_id)
+        if not previous.is_evaluation:
+            raise ValueError("Ce devoir n'est pas une évaluation.")
+        if previous.subject_id is None:
+            raise ValueError("Évaluation sans matière — reprise impossible.")
+        grade_id = self.repository.learner_grade_id(learner_id)
+        stamp = datetime.now(UTC).isoformat()
+        request = HomeworkRequest(
+            learner_id,
+            "STUDENT",
+            f"learner:{learner_id}:eval-retake:{homework_id}:{stamp}",
+            AssignmentType.GLOBAL_SUBJECT,
+            int(previous.subject_id),
+            grade_id,
+            (),
+            (),
+            DifficultyMode.ADAPTIVE,
+            int(previous.exercise_count),
+            previous.target_duration_minutes,
+            None,
+            CORRECTION_POLICY_EVALUATION,
+        )
+        return self.create(request)
 
     def _owned(self, learner_id: int, homework_id: int) -> HomeworkAssignment:
         item = next(

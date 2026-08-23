@@ -375,6 +375,7 @@ class DuckDBUnifiedExperienceRepository:
             "difficulty": request.difficulty.value,
             "count": request.exercise_count,
             "due": request.due_at.isoformat() if request.due_at else None,
+            "correction_policy": request.correction_policy,
         }
         stable_key = hashlib.sha256(json.dumps(payload, sort_keys=True).encode()).hexdigest()
         connection = connect_v2(self.database_path)
@@ -653,7 +654,7 @@ class DuckDBUnifiedExperienceRepository:
             row = connection.execute(
                 """SELECT h.id,h.learner_id,h.mode,h.status,h.subject_id,coalesce(s.default_label,'Toutes'),
                 h.difficulty_mode,h.requested_exercise_count,h.target_duration_minutes,h.due_at,
-                h.selected_content,h.session_id,h.assigned_by_type,h.created_at
+                h.selected_content,h.session_id,h.assigned_by_type,h.created_at,h.correction_policy
                 FROM homework_assignments h LEFT JOIN subjects s ON s.id=h.subject_id WHERE h.id=?""",
                 [homework_id],
             ).fetchone()
@@ -674,6 +675,7 @@ class DuckDBUnifiedExperienceRepository:
                 None if row[11] is None else int(row[11]),
                 str(row[12]),
                 row[13],
+                str(row[14]) if row[14] is not None else "AFTER_SUBMISSION",
             )
         finally:
             connection.close()
@@ -687,6 +689,17 @@ class DuckDBUnifiedExperienceRepository:
         finally:
             connection.close()
         return tuple(self.get_homework(int(row[0])) for row in ids if row and len(row) >= 1 and row[0] is not None)
+
+    def homework_overall_score(self, homework_id: int) -> float | None:
+        connection = connect_v2(self.database_path, read_only=True)
+        try:
+            row = connection.execute(
+                "SELECT overall_score FROM homework_result_summaries WHERE homework_id=?",
+                [homework_id],
+            ).fetchone()
+            return None if row is None else float(row[0])
+        finally:
+            connection.close()
 
     def rollback_homework_creation(self, homework_id: int, learner_id: int) -> None:
         """Remove a freshly created homework when AI completion fails (LCAI-0018B7)."""
@@ -714,7 +727,11 @@ class DuckDBUnifiedExperienceRepository:
     ) -> HomeworkAssignment:
         allowed = {
             AssignmentStatus.READY: {AssignmentStatus.IN_PROGRESS, AssignmentStatus.CANCELLED},
-            AssignmentStatus.IN_PROGRESS: {AssignmentStatus.PAUSED, AssignmentStatus.COMPLETED},
+            AssignmentStatus.IN_PROGRESS: {
+                AssignmentStatus.PAUSED,
+                AssignmentStatus.COMPLETED,
+                AssignmentStatus.CANCELLED,
+            },
             AssignmentStatus.PAUSED: {AssignmentStatus.IN_PROGRESS, AssignmentStatus.CANCELLED},
         }
         if target not in allowed.get(current, set()):

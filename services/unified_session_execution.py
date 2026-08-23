@@ -275,5 +275,6 @@ class UnifiedSessionExecutionService:
             "MULTIPLE_CHOICE": (AnswerType.MCQ_MULTI, AssessmentMethod.MCQ),
             "TEXT": (AnswerType.TEXT, AssessmentMethod.EXACT_MATCH),
             "SHORT_TEXT": (AnswerType.SHORT_TEXT, AssessmentMethod.EXACT_MATCH),
+            "LONG_TEXT": (AnswerType.LONG_TEXT, AssessmentMethod.EXACT_MATCH),
         }
         return mapping.get(normalized, (AnswerType.TEXT, AssessmentMethod.EXACT_MATCH))

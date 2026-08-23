@@ -9,6 +9,7 @@ from typing import Any, Protocol
 from application.dto.student_guidance import (
     AIAvailability,
     AIAvailabilityMode,
+    EvaluationProgressItem,
     GuidanceSource,
     HomeworkGuidanceContext,
     HomeworkGuidanceResponse,
@@ -282,9 +283,10 @@ class StudentGuidanceService:
         recent = tuple(
             item for item in summaries if item.status == AssignmentStatus.COMPLETED.value
         )[:3]
-        priorities = self._revision_priorities(mastery, todo)
+        priorities = self._revision_priorities(mastery, todo, homework_items)
         recent_score = dashboard.metrics[0].value if dashboard.metrics else None
         success_metric = next((metric.value for metric in dashboard.metrics if "réussite" in metric.label.lower()), None)
+        evaluation_progress = self._evaluation_progress(homework_items)
         return StudentHomeContext(
             learner_id=learner_id,
             display_name=dashboard.display_name,
@@ -299,6 +301,7 @@ class StudentGuidanceService:
             success_rate=success_metric,
             objective=dashboard.objective,
             next_revision=dashboard.next_revision,
+            evaluation_progress=evaluation_progress,
         )
 
     def _mastery_item(self, item: MasteryView) -> MasterySnapshotItem:
@@ -324,25 +327,66 @@ class StudentGuidanceService:
             due_at=item.due_at,
             exercise_count=int(item.exercise_count),
             target_duration_minutes=item.target_duration_minutes,
+            is_evaluation=bool(getattr(item, "is_evaluation", False)),
         )
+
+    def _evaluation_progress(self, homework_items: tuple[Any, ...]) -> tuple[EvaluationProgressItem, ...]:
+        progress: list[EvaluationProgressItem] = []
+        for item in homework_items:
+            if not getattr(item, "is_evaluation", False):
+                continue
+            if item.status is not AssignmentStatus.COMPLETED:
+                continue
+            score = self.homework.repository.homework_overall_score(int(item.homework_id))
+            progress.append(
+                EvaluationProgressItem(
+                    homework_id=int(item.homework_id),
+                    subject_label=str(item.subject_label),
+                    exercise_count=int(item.exercise_count),
+                    overall_score=score,
+                    needs_retake=score is None or float(score) < 100.0,
+                )
+            )
+        return tuple(progress[:8])
 
     def _revision_priorities(
         self,
         mastery: tuple[MasterySnapshotItem, ...],
         todo: tuple[HomeworkSummaryItem, ...],
+        homework_items: tuple[Any, ...] = (),
     ) -> tuple[RevisionPriority, ...]:
         priorities: list[RevisionPriority] = []
-        if todo:
-            hw = todo[0]
+        for hw in todo:
+            kind = "Évaluation" if hw.is_evaluation else "Devoir"
             priorities.append(
                 RevisionPriority(
                     subject_label=hw.subject_label,
-                    skill_label=f"Devoir {hw.subject_label}",
-                    reason="Devoir planifié ou en cours",
+                    skill_label=f"{kind} {hw.subject_label}",
+                    reason="Planifié ou en cours",
                     priority=1,
                     estimated_minutes=hw.target_duration_minutes or 20,
-                    action_label="Ouvrir le devoir",
+                    action_label=f"Ouvrir {'l’évaluation' if hw.is_evaluation else 'le devoir'}",
                     homework_id=hw.homework_id,
+                )
+            )
+        for item in homework_items:
+            if not getattr(item, "is_evaluation", False):
+                continue
+            if item.status is not AssignmentStatus.COMPLETED:
+                continue
+            score = self.homework.repository.homework_overall_score(int(item.homework_id))
+            if score is not None and float(score) >= 100.0:
+                continue
+            score_label = "—" if score is None else f"{float(score):.0f} %"
+            priorities.append(
+                RevisionPriority(
+                    subject_label=str(item.subject_label),
+                    skill_label=f"Évaluation à refaire — {item.subject_label}",
+                    reason=f"Score {score_label} — pas encore à 100 %",
+                    priority=2,
+                    estimated_minutes=item.target_duration_minutes or 25,
+                    action_label="Refaire l’évaluation",
+                    homework_id=int(item.homework_id),
                 )
             )
         for item in mastery:
@@ -355,14 +399,14 @@ class StudentGuidanceService:
                     if not item.chapter_label
                     else f"{item.chapter_label} — {item.label}",
                     reason=f"Maîtrise {item.score:.0f} % — {item.band_label}",
-                    priority=2 if item.band is MasteryBand.TO_REVISE else 3,
+                    priority=3 if item.band is MasteryBand.TO_REVISE else 4,
                     estimated_minutes=15,
                     action_label="Lancer une révision",
                     skill_id=item.skill_id,
                 )
             )
         priorities.sort(key=lambda row: row.priority)
-        return tuple(priorities[:5])
+        return tuple(priorities[:8])
 
     def _welcome_for_context(self, context: StudentHomeContext, availability: AIAvailability) -> WelcomeGuidance:
         if availability.mode is AIAvailabilityMode.ACTIVE:

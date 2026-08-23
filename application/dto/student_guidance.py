@@ -54,6 +54,7 @@ class HomeworkSummaryItem:
     due_at: datetime | None
     exercise_count: int
     target_duration_minutes: int | None
+    is_evaluation: bool = False
 
 
 @dataclass(frozen=True, slots=True)
@@ -82,6 +83,15 @@ class RevisionPriority:
 
 
 @dataclass(frozen=True, slots=True)
+class EvaluationProgressItem:
+    homework_id: int
+    subject_label: str
+    exercise_count: int
+    overall_score: float | None
+    needs_retake: bool
+
+
+@dataclass(frozen=True, slots=True)
 class StudentHomeContext:
     learner_id: int
     display_name: str
@@ -96,6 +106,7 @@ class StudentHomeContext:
     success_rate: str | None
     objective: str
     next_revision: datetime | None
+    evaluation_progress: tuple[EvaluationProgressItem, ...] = ()
 
 
 @dataclass(frozen=True, slots=True)

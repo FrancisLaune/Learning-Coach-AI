@@ -463,7 +463,11 @@ def _homework_form(
     actor_ref: str,
     key: str,
     modes: tuple[AssignmentType, ...] = (AssignmentType.TARGETED, AssignmentType.GLOBAL_SUBJECT),
+    *,
+    as_evaluation: bool = False,
 ) -> None:
+    from domain.unified_experience.models import CORRECTION_POLICY_EVALUATION, EVALUATION_QUESTION_PRESETS
+
     repository = _repository()
     service = _homework_service()
     availability_service = HomeworkAvailabilityService(repository)
@@ -482,16 +486,23 @@ def _homework_form(
         grade_label = grade_labels.get(grade_id, "cette classe")
         st.info(f"Aucune matière configurée dans le curriculum pour {grade_label}.")
         return
-    mode = st.selectbox(
-        "Mode",
-        modes,
-        format_func={
-            AssignmentType.TARGETED: "Devoir ciblé",
-            AssignmentType.GLOBAL_SUBJECT: "Devoir global",
-            AssignmentType.FREE_REVISION: "Révision libre",
-        }.get,
-        key=f"{key}_mode",
-    )
+    if as_evaluation:
+        mode = AssignmentType.GLOBAL_SUBJECT
+        st.info(
+            "Évaluation par matière : mix de difficultés adapté à tes résultats. "
+            "Si tu n'obtiens pas 100 %, tu pourras la refaire et suivre ta progression."
+        )
+    else:
+        mode = st.selectbox(
+            "Mode",
+            modes,
+            format_func={
+                AssignmentType.TARGETED: "Devoir ciblé",
+                AssignmentType.GLOBAL_SUBJECT: "Devoir global",
+                AssignmentType.FREE_REVISION: "Révision libre",
+            }.get,
+            key=f"{key}_mode",
+        )
     st.selectbox(
         "Classe",
         (grade_id,),
@@ -554,7 +565,7 @@ def _homework_form(
         return
     selected_chapters: list[int] = []
     selected_skills: list[int] = []
-    if mode is AssignmentType.GLOBAL_SUBJECT:
+    if mode is AssignmentType.GLOBAL_SUBJECT or as_evaluation:
         clear_curriculum_selection(st.session_state, key)
         available_chapters = repository.chapters(int(subject_id), grade_id)
         if not available_chapters:
@@ -563,7 +574,10 @@ def _homework_form(
                 f"{labels[int(subject_id)]} dans cette classe."
             )
             return
-        st.caption(f"Le devoir sera équilibré automatiquement sur {len(available_chapters)} chapitre(s) approuvé(s).")
+        st.caption(
+            f"{'L’évaluation' if as_evaluation else 'Le devoir'} sera équilibré(e) automatiquement "
+            f"sur {len(available_chapters)} chapitre(s) approuvé(s)."
+        )
     else:
         chapters = repository.chapters(int(subject_id), grade_id)
         chapter_labels = dict(chapters)
@@ -604,7 +618,13 @@ def _homework_form(
         "Les exercices sont adaptés automatiquement selon tes résultats "
         "(renforcement après les échecs, montée progressive après les réussites)."
     )
-    exercise_count = st.slider("Nombre d'exercices", 1, 40, 10, key=f"{key}_exercise_count")
+    exercise_count = st.radio(
+        "Nombre de questions",
+        EVALUATION_QUESTION_PRESETS,
+        index=0,
+        horizontal=True,
+        key=f"{key}_exercise_count",
+    )
     preview_request = HomeworkRequest(
         learner_id,
         actor_type,
@@ -618,6 +638,7 @@ def _homework_form(
         40,
         None,
         None,
+        CORRECTION_POLICY_EVALUATION if as_evaluation else "AFTER_SUBMISSION",
     )
     preview_selection = _homework_service().preview_selection(preview_request)
     available_total = len(preview_selection.content_ids)
@@ -650,25 +671,37 @@ def _homework_form(
             )
     else:
         st.caption(f"{available_total} contenu(s) approuvé(s) disponible(s) pour cette sélection.")
-    target_duration = st.slider("Durée cible", 5, 120, 30, 5, key=f"{key}_duration")
+    target_duration = st.slider(
+        "Durée cible",
+        5,
+        120,
+        45 if as_evaluation else 30,
+        5,
+        key=f"{key}_duration",
+    )
     due_date = st.date_input(
         "Échéance",
         value=date.today(),
         format="DD/MM/YYYY",
         key=f"{key}_due_date",
     )
-    correction = st.selectbox(
-        "Correction",
-        ("IMMEDIATE", "AFTER_EACH_EXERCISE", "AFTER_SUBMISSION"),
-        format_func={
-            "IMMEDIATE": "Immédiate",
-            "AFTER_EACH_EXERCISE": "Après chaque exercice",
-            "AFTER_SUBMISSION": "À la fin",
-        }.get,
-        key=f"{key}_correction",
-    )
+    if as_evaluation:
+        correction = "AFTER_SUBMISSION"
+        st.caption("Correction à la fin de l'évaluation.")
+    else:
+        correction = st.selectbox(
+            "Correction",
+            ("IMMEDIATE", "AFTER_EACH_EXERCISE", "AFTER_SUBMISSION"),
+            format_func={
+                "IMMEDIATE": "Immédiate",
+                "AFTER_EACH_EXERCISE": "Après chaque exercice",
+                "AFTER_SUBMISSION": "À la fin",
+            }.get,
+            key=f"{key}_correction",
+        )
+    create_label = "Créer l'évaluation" if as_evaluation else "Créer le devoir"
     create = st.button(
-        "Créer le devoir",
+        create_label,
         type="primary",
         key=f"{key}_create",
         disabled=(
@@ -687,12 +720,12 @@ def _homework_form(
             tuple(int(item) for item in selected_chapters),
             tuple(int(item) for item in selected_skills),
             difficulty,
-            exercise_count,
+            int(exercise_count),
             target_duration,
             datetime.combine(due_date, time(23, 59), tzinfo=UTC),
-            correction,
+            CORRECTION_POLICY_EVALUATION if as_evaluation else correction,
         )
-        with st.spinner("Création du devoir en cours…"):
+        with st.spinner("Création en cours…"):
             if service.supports_ai_completion():
                 generation = _safe(
                     lambda: service.assign_as_parent_with_diagnostics(actor_ref, request)
@@ -700,7 +733,7 @@ def _homework_form(
                     else service.create_with_diagnostics(request)
                 )
                 if generation:
-                    _render_homework_creation_feedback(generation, exercise_count)
+                    _render_homework_creation_feedback(generation, int(exercise_count))
             else:
                 result = _safe(
                     lambda: service.assign_as_parent(actor_ref, request)
@@ -709,7 +742,7 @@ def _homework_form(
                 )
                 if result:
                     selection = service.preview_selection(request)
-                    _render_homework_catalog_feedback(selection, len(result.selected_content_ids), exercise_count)
+                    _render_homework_catalog_feedback(selection, len(result.selected_content_ids), int(exercise_count))
 
 
 def _render_homework_catalog_feedback(selection, selected_count: int, exercise_count: int) -> None:
@@ -754,6 +787,12 @@ def _render_homework_creation_feedback(generation, exercise_count: int) -> None:
 
 
 def student_homework(learner_id: int, user: dict[str, object]) -> None:
+    from ui.homework_actions import (
+        can_delete,
+        kind_label,
+        open_homework_session,
+        render_delete_homework_button,
+    )
     from ui.student_guidance import (
         load_homework_result_explanation,
         render_homework_before_guidance,
@@ -763,71 +802,117 @@ def student_homework(learner_id: int, user: dict[str, object]) -> None:
     st.title("Mes devoirs")
     from services.professor_ai.guided_cycle import FOCUS_HOMEWORK_KEY
 
-    focus_homework_id = st.session_state.pop(FOCUS_HOMEWORK_KEY, None)
+    focus_homework_id = st.session_state.get(FOCUS_HOMEWORK_KEY)
     if focus_homework_id is not None:
-        st.info(f"Le Professeur IA te propose de te concentrer sur le devoir n°{int(focus_homework_id)}.")
+        st.info(f"Focus sur le devoir / l'évaluation n°{int(focus_homework_id)}.")
+        st.session_state.pop(FOCUS_HOMEWORK_KEY, None)
     service = _homework_service()
-    tabs = st.tabs(("À faire", "En cours", "Terminés", "Créer"))
+    tabs = st.tabs(("En cours", "À faire", "Terminés", "Créer un devoir", "Évaluation"))
     groups = (
-        {AssignmentStatus.DRAFT, AssignmentStatus.READY},
         {AssignmentStatus.IN_PROGRESS, AssignmentStatus.PAUSED},
+        {AssignmentStatus.DRAFT, AssignmentStatus.READY},
         {AssignmentStatus.COMPLETED, AssignmentStatus.EXPIRED},
     )
-    assignments = service.list_for_learner(learner_id)
+    assignments = [item for item in service.list_for_learner(learner_id) if item.status is not AssignmentStatus.CANCELLED]
     for tab, statuses in zip(tabs[:3], groups, strict=True):
         with tab:
             selected = [item for item in assignments if item.status in statuses]
+            if focus_homework_id is not None:
+                focused = [item for item in selected if item.homework_id == int(focus_homework_id)]
+                if focused:
+                    selected = focused + [item for item in selected if item.homework_id != int(focus_homework_id)]
             if not selected:
-                st.info("Aucun devoir dans cette catégorie.")
+                st.info("Aucun élément dans cette catégorie.")
             for item in selected:
                 with st.container(border=True):
+                    kind = "📝 Évaluation" if item.is_evaluation else "📘 Devoir"
                     st.write(
-                        f"**{item.subject_label}** · {item.exercise_count} exercice(s) · {label(item.difficulty.value)}"
+                        f"**{kind} — {item.subject_label}** · {item.exercise_count} question(s) · "
+                        f"{label(item.difficulty.value)}"
                     )
                     st.caption(f"État : {label(item.status.value)}")
                     if item.status in {AssignmentStatus.READY, AssignmentStatus.IN_PROGRESS, AssignmentStatus.PAUSED}:
                         render_homework_before_guidance(user, learner_id, item.homework_id)
-                    if item.status is AssignmentStatus.READY and st.button(
-                        "Commencer", key=f"hw_start_{item.homework_id}"
-                    ):
-                        opened = _safe(
-                            partial(_homework_sessions().open_for_learner, learner_id, item.homework_id, datetime.now(UTC))
-                        )
-                        if opened and opened.session_id:
-                            st.session_state.v2_session_id = opened.session_id
-                            from ui.professor_ai_guided_cycle import remember_session_status
-
-                            remember_session_status(st.session_state, int(opened.session_id), "RUNNING")
-                            request_navigation(st.session_state, "student", "Ma séance")
+                    action_row = st.columns(3)
+                    if item.status is AssignmentStatus.READY:
+                        if action_row[0].button(
+                            "▶️ Commencer",
+                            key=f"hw_start_{item.homework_id}",
+                            type="primary",
+                            use_container_width=True,
+                        ):
+                            if open_homework_session(
+                                learner_id=learner_id,
+                                homework_id=item.homework_id,
+                                open_for_learner=_homework_sessions().open_for_learner,
+                            ):
+                                st.rerun()
+                    if item.status is AssignmentStatus.IN_PROGRESS:
+                        if action_row[0].button(
+                            "▶️ Reprendre la séance",
+                            key=f"hw_resume_session_{item.homework_id}",
+                            type="primary",
+                            use_container_width=True,
+                        ):
+                            if open_homework_session(
+                                learner_id=learner_id,
+                                homework_id=item.homework_id,
+                                open_for_learner=_homework_sessions().open_for_learner,
+                            ):
+                                st.rerun()
+                        if action_row[1].button(
+                            "⏸️ Pause",
+                            key=f"hw_pause_{item.homework_id}",
+                            use_container_width=True,
+                        ):
+                            _safe(partial(service.pause, learner_id, item.homework_id))
                             st.rerun()
-                    if item.status is AssignmentStatus.IN_PROGRESS and st.button(
-                        "Reprendre la séance", key=f"hw_resume_session_{item.homework_id}"
-                    ):
-                        opened = _safe(
-                            partial(_homework_sessions().open_for_learner, learner_id, item.homework_id, datetime.now(UTC))
-                        )
-                        if opened and opened.session_id:
-                            st.session_state.v2_session_id = opened.session_id
-                            from ui.professor_ai_guided_cycle import remember_session_status
-
-                            remember_session_status(st.session_state, int(opened.session_id), "RUNNING")
-                            request_navigation(st.session_state, "student", "Ma séance")
+                    if item.status is AssignmentStatus.PAUSED:
+                        if action_row[0].button(
+                            "▶️ Reprendre",
+                            key=f"hw_resume_{item.homework_id}",
+                            type="primary",
+                            use_container_width=True,
+                        ):
+                            _safe(partial(service.resume, learner_id, item.homework_id))
                             st.rerun()
-                    if item.status is AssignmentStatus.IN_PROGRESS and st.button(
-                        "Mettre en pause", key=f"hw_pause_{item.homework_id}"
-                    ):
-                        _safe(partial(service.pause, learner_id, item.homework_id))
-                        st.rerun()
-                    if item.status is AssignmentStatus.PAUSED and st.button(
-                        "Reprendre", key=f"hw_resume_{item.homework_id}"
-                    ):
-                        _safe(partial(service.resume, learner_id, item.homework_id))
-                        st.rerun()
+                    if can_delete(item):
+                        with action_row[2]:
+                            render_delete_homework_button(
+                                homework_id=item.homework_id,
+                                key_prefix="devoirs",
+                                label_kind=kind_label(item),
+                                on_confirm=lambda hid=item.homework_id: service.cancel(learner_id, hid),
+                            )
                     if item.status is AssignmentStatus.COMPLETED:
                         explanation = load_homework_result_explanation(user, learner_id, item.homework_id)
                         render_homework_result_explanation(explanation)
+                        if item.is_evaluation:
+                            score = service.repository.homework_overall_score(item.homework_id)
+                            if score is None or float(score) < 100.0:
+                                if st.button(
+                                    "🔁 Refaire cette évaluation",
+                                    key=f"hw_retake_{item.homework_id}",
+                                    type="primary",
+                                    use_container_width=True,
+                                ):
+                                    retake = _safe(partial(service.retake_evaluation, learner_id, item.homework_id))
+                                    if retake and open_homework_session(
+                                        learner_id=learner_id,
+                                        homework_id=retake.homework_id,
+                                        open_for_learner=_homework_sessions().open_for_learner,
+                                    ):
+                                        st.rerun()
     with tabs[3]:
         _homework_form(learner_id, "STUDENT", f"learner:{learner_id}", "student_homework_form")
+    with tabs[4]:
+        _homework_form(
+            learner_id,
+            "STUDENT",
+            f"learner:{learner_id}",
+            "student_evaluation_form",
+            as_evaluation=True,
+        )
 
 
 def revision(learner_id: int, user: dict[str, object]) -> None:

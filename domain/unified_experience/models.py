@@ -125,6 +125,16 @@ class HomeworkAssignment:
     session_id: int | None
     assigned_by_type: str
     created_at: datetime
+    correction_policy: str = "AFTER_SUBMISSION"
+
+    @property
+    def is_evaluation(self) -> bool:
+        return self.correction_policy.strip().upper() == "EVALUATION"
+
+
+# Marker stored in homework_assignments.correction_policy (no schema change).
+CORRECTION_POLICY_EVALUATION = "EVALUATION"
+EVALUATION_QUESTION_PRESETS: tuple[int, ...] = (10, 20, 30, 40)
 
 
 @dataclass(frozen=True, slots=True)

@@ -190,6 +190,29 @@ def session_screen(
             if question.context:
                 st.info(question.context)
             st.markdown(f"### {question.statement}")
+            from services.learning_session.answer_input import (
+                SCIENTIFIC_NOTATION_GUIDE,
+                needs_scientific_notation_guide,
+                prefers_multiline_answer,
+            )
+
+            if needs_scientific_notation_guide(
+                statement=question.statement,
+                instructions=question.instructions or "",
+                context=question.context or "",
+            ):
+                st.info(SCIENTIFIC_NOTATION_GUIDE)
+            render_homework_during_guidance(
+                actor,
+                learner_id,
+                result.session.session_id,
+                question.activity_id,
+                key_prefix=f"session_{result.session.session_id}_{question.question_id}",
+                statement=question.statement,
+                hint_text=question.hints[0][1] if question.hints else None,
+                notion_reminder=question.instructions or None,
+                method_outline=None,
+            )
             answer_key = f"answer_{question.session_id}_{question.question_id}"
             if question.options:
                 option_codes = [item[0] for item in question.options]
@@ -207,27 +230,24 @@ def session_screen(
                         format_func=dict(question.options).__getitem__,
                         key=answer_key,
                     )
+            elif prefers_multiline_answer(
+                question.response_type,
+                statement=question.statement,
+                instructions=question.instructions or "",
+            ):
+                st.caption("Tu peux répondre sur plusieurs lignes.")
+                answer = st.text_area("Ta réponse", key=answer_key, height=160)
             else:
+                st.caption("Saisis ta réponse au clavier (une ligne).")
                 answer = st.text_input("Ta réponse", key=answer_key)
             if question.hints:
-                with st.expander("Besoin d'un indice ?"):
+                with st.expander("Besoin d'un indice ?", expanded=False):
                     for hint_id, _, penalty in question.hints:
                         if st.button(f"Afficher l'indice ({penalty:g} point de pénalité)", key=f"hint_{hint_id}"):
                             text = execution.use_hint(learner_id, result.session.session_id, hint_id, datetime.now(UTC))
                             st.session_state[f"shown_hint_{hint_id}"] = text
                         if shown := st.session_state.get(f"shown_hint_{hint_id}"):
                             st.info(shown)
-            render_homework_during_guidance(
-                actor,
-                learner_id,
-                result.session.session_id,
-                question.activity_id,
-                key_prefix=f"session_{result.session.session_id}_{question.question_id}",
-                statement=question.statement,
-                hint_text=question.hints[0][1] if question.hints else None,
-                notion_reminder=question.instructions or None,
-                method_outline=None,
-            )
             started_key = f"question_started_{question.session_id}_{question.question_id}"
             st.session_state.setdefault(started_key, time.monotonic())
             action_cols = st.columns(2)
