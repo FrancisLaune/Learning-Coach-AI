@@ -226,7 +226,7 @@ class DuckDBUnifiedExperienceRepository:
         try:
             filters, parameters = self._approved_content_filters(request)
             return connection.execute(
-                f"""SELECT content_id,chapter_id,skill_id,difficulty,content_type
+                f"""SELECT content_id,chapter_id,skill_id,difficulty,content_type,estimated_minutes
                 FROM production_learning_catalog
                 WHERE {" AND ".join(filters)}
                 ORDER BY chapter_id,skill_id,difficulty,content_id""",
@@ -267,16 +267,7 @@ class DuckDBUnifiedExperienceRepository:
     def select_approved_content_detailed(self, request: HomeworkRequest) -> HomeworkContentSelection:
         signals = self._outcome_signals(request)
         requested = self._difficulty(request, signals=signals)
-        rows = self._approved_content_rows(request)
-        grade_code = self._grade_code(request.grade_level_id)
-        if request.learner_id > 0:
-            context = LearnerContextService(self).build(request, "catalog-anti-repeat")
-            rows = exclude_recent_content_ids(rows, context.recent_content_ids)
-        rows = prioritize_brevet_content(
-            rows,
-            grade_code=grade_code,
-            exam_skill_ids=self._exam_skill_ids_for_grade(grade_code),
-        )
+        rows = self.list_catalog_rows_for_selection(request)
         selector = HomeworkExerciseSelectionService()
         prepared = selector.prepare_catalog_rows(
             rows,
@@ -295,6 +286,18 @@ class DuckDBUnifiedExperienceRepository:
             requested_difficulty=requested,
             applied_difficulty=requested,
             difficulty_relaxed=relaxed,
+        )
+
+    def list_catalog_rows_for_selection(self, request: HomeworkRequest) -> list[tuple[Any, ...]]:
+        rows = self._approved_content_rows(request)
+        grade_code = self._grade_code(request.grade_level_id)
+        if request.learner_id > 0:
+            context = LearnerContextService(self).build(request, "catalog-anti-repeat")
+            rows = exclude_recent_content_ids(rows, context.recent_content_ids)
+        return prioritize_brevet_content(
+            rows,
+            grade_code=grade_code,
+            exam_skill_ids=self._exam_skill_ids_for_grade(grade_code),
         )
 
     def _finalize_content_selection(
@@ -376,6 +379,7 @@ class DuckDBUnifiedExperienceRepository:
             "count": request.exercise_count,
             "due": request.due_at.isoformat() if request.due_at else None,
             "correction_policy": request.correction_policy,
+            "assignment_kind": request.assignment_kind,
         }
         stable_key = hashlib.sha256(json.dumps(payload, sort_keys=True).encode()).hexdigest()
         connection = connect_v2(self.database_path)
@@ -401,7 +405,13 @@ class DuckDBUnifiedExperienceRepository:
                         request.target_duration_minutes,
                         request.due_at,
                         request.correction_policy,
-                        json.dumps({"chapter_ids": request.chapter_ids, "skill_ids": request.skill_ids}),
+                        json.dumps(
+                            {
+                                "chapter_ids": request.chapter_ids,
+                                "skill_ids": request.skill_ids,
+                                "assignment_kind": request.assignment_kind,
+                            }
+                        ),
                         json.dumps(content_ids),
                     ],
                 ).fetchone()
@@ -654,12 +664,18 @@ class DuckDBUnifiedExperienceRepository:
             row = connection.execute(
                 """SELECT h.id,h.learner_id,h.mode,h.status,h.subject_id,coalesce(s.default_label,'Toutes'),
                 h.difficulty_mode,h.requested_exercise_count,h.target_duration_minutes,h.due_at,
-                h.selected_content,h.session_id,h.assigned_by_type,h.created_at,h.correction_policy
+                h.selected_content,h.session_id,h.assigned_by_type,h.created_at,h.correction_policy,
+                h.selection_filters,h.assigned_by_ref
                 FROM homework_assignments h LEFT JOIN subjects s ON s.id=h.subject_id WHERE h.id=?""",
                 [homework_id],
             ).fetchone()
             if row is None:
                 raise KeyError(f"Unknown homework {homework_id}")
+            filters = json.loads(str(row[15])) if row[15] is not None else {}
+            kind = str(filters.get("assignment_kind") or "HOMEWORK")
+            assigned_by_ref = str(row[16] or "")
+            if kind == "HOMEWORK" and ("eval-retake" in assigned_by_ref or assigned_by_ref.endswith(":evaluation")):
+                kind = "EVALUATION"
             return HomeworkAssignment(
                 int(row[0]),
                 int(row[1]),
@@ -676,6 +692,7 @@ class DuckDBUnifiedExperienceRepository:
                 str(row[12]),
                 row[13],
                 str(row[14]) if row[14] is not None else "AFTER_SUBMISSION",
+                kind,
             )
         finally:
             connection.close()

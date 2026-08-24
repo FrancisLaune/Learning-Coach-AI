@@ -64,6 +64,12 @@ def render_student_home(
             score = "—" if item.overall_score is None else f"{item.overall_score:.0f} %"
             with st.container(border=True):
                 st.markdown(f"**{item.subject_label}** — {item.exercise_count} questions · score {score}")
+                if item.overall_score is not None:
+                    from services.homework.evaluation_sizing import score_percent_to_out_of_20
+
+                    on_20 = score_percent_to_out_of_20(item.overall_score)
+                    if on_20 is not None:
+                        st.caption(f"Note ramenée sur 20 : **{on_20:g}/20**")
                 if item.needs_retake:
                     st.caption("Pas encore à 100 % — tu peux refaire cette évaluation.")
                     if st.button(

@@ -466,7 +466,12 @@ def _homework_form(
     *,
     as_evaluation: bool = False,
 ) -> None:
-    from domain.unified_experience.models import CORRECTION_POLICY_EVALUATION, EVALUATION_QUESTION_PRESETS
+    from domain.unified_experience.models import (
+        ASSIGNMENT_KIND_EVALUATION,
+        ASSIGNMENT_KIND_HOMEWORK,
+        HOMEWORK_QUESTION_PRESETS,
+    )
+    from services.homework.evaluation_sizing import EVALUATION_MAX_MINUTES
 
     repository = _repository()
     service = _homework_service()
@@ -618,87 +623,107 @@ def _homework_form(
         "Les exercices sont adaptés automatiquement selon tes résultats "
         "(renforcement après les échecs, montée progressive après les réussites)."
     )
-    exercise_count = st.radio(
-        "Nombre de questions",
-        EVALUATION_QUESTION_PRESETS,
-        index=0,
-        horizontal=True,
-        key=f"{key}_exercise_count",
-    )
-    preview_request = HomeworkRequest(
-        learner_id,
-        actor_type,
-        actor_ref,
-        mode,
-        int(subject_id),
-        grade_id,
-        tuple(int(item) for item in selected_chapters),
-        tuple(int(item) for item in selected_skills),
-        difficulty,
-        40,
-        None,
-        None,
-        CORRECTION_POLICY_EVALUATION if as_evaluation else "AFTER_SUBMISSION",
-    )
-    preview_selection = _homework_service().preview_selection(preview_request)
-    available_total = len(preview_selection.content_ids)
-    if available_total == 0:
-        if service.supports_ai_completion():
-            st.info(
-                f"Aucun contenu catalogue pour {labels[int(subject_id)]} avec ces critères. "
-                f"Le complément IA générera les {exercise_count} exercice(s) demandés."
-            )
-        else:
-            st.warning(
-                f"Aucun contenu approuvé disponible pour {labels[int(subject_id)]} avec ces critères. "
-                "Élargissez le chapitre ou choisissez une autre matière."
-            )
-    elif preview_selection.difficulty_relaxed:
-        st.info(
-            f"Cette matière contient {available_total} contenu(s) approuvé(s). "
-            "Le devoir combinera plusieurs niveaux de difficulté adaptés à ton profil."
-        )
-    elif available_total < exercise_count:
-        if service.supports_ai_completion():
-            st.info(
-                f"{available_total} exercice(s) du catalogue ; "
-                f"le complément IA complétera automatiquement jusqu'à {exercise_count} exercices."
-            )
-        else:
-            st.info(
-                f"Seulement {available_total} contenu(s) approuvé(s) disponible(s) "
-                f"pour {labels[int(subject_id)]}. Le devoir sera limité à ce maximum."
-            )
-    else:
-        st.caption(f"{available_total} contenu(s) approuvé(s) disponible(s) pour cette sélection.")
-    target_duration = st.slider(
-        "Durée cible",
-        5,
-        120,
-        45 if as_evaluation else 30,
-        5,
-        key=f"{key}_duration",
-    )
-    due_date = st.date_input(
-        "Échéance",
-        value=date.today(),
-        format="DD/MM/YYYY",
-        key=f"{key}_due_date",
-    )
     if as_evaluation:
-        correction = "AFTER_SUBMISSION"
-        st.caption("Correction à la fin de l'évaluation.")
-    else:
-        correction = st.selectbox(
-            "Correction",
-            ("IMMEDIATE", "AFTER_EACH_EXERCISE", "AFTER_SUBMISSION"),
-            format_func={
-                "IMMEDIATE": "Immédiate",
-                "AFTER_EACH_EXERCISE": "Après chaque exercice",
-                "AFTER_SUBMISSION": "À la fin",
-            }.get,
-            key=f"{key}_correction",
+        preview_request = HomeworkRequest(
+            learner_id,
+            actor_type,
+            actor_ref,
+            mode,
+            int(subject_id),
+            grade_id,
+            (),
+            (),
+            difficulty,
+            40,
+            45,
+            None,
+            "AFTER_SUBMISSION",
+            ASSIGNMENT_KIND_EVALUATION,
         )
+        evaluation_plan = service.plan_subject_evaluation(preview_request)
+        exercise_count = max(1, evaluation_plan.exercise_count) if evaluation_plan.exercise_count else 10
+        target_duration = evaluation_plan.estimated_minutes or EVALUATION_MAX_MINUTES
+        available_total = len(evaluation_plan.content_ids)
+        if evaluation_plan.exercise_count <= 0:
+            if service.supports_ai_completion():
+                st.info(
+                    "Catalogue insuffisant : l'évaluation pourra être complétée par IA "
+                    f"dans la limite de {EVALUATION_MAX_MINUTES} min."
+                )
+                available_total = 0
+            else:
+                st.warning("Aucun contenu disponible pour construire une évaluation sur cette matière.")
+                return
+        else:
+            st.success(
+                f"Proposition automatique : **{evaluation_plan.exercise_count} questions** · "
+                f"durée estimée **{evaluation_plan.estimated_minutes} min** "
+                f"(plafond {EVALUATION_MAX_MINUTES} min) · note sur **{evaluation_plan.score_out_of}** "
+                f"({evaluation_plan.points_per_question:g} pt / question)."
+            )
+        st.caption("Correction à la fin de l'évaluation. Pas d'échéance à saisir.")
+        correction = "AFTER_SUBMISSION"
+        due_at = None
+    else:
+        exercise_count = st.radio(
+            "Nombre de questions",
+            HOMEWORK_QUESTION_PRESETS,
+            index=0,
+            horizontal=True,
+            key=f"{key}_exercise_count",
+        )
+        preview_request = HomeworkRequest(
+            learner_id,
+            actor_type,
+            actor_ref,
+            mode,
+            int(subject_id),
+            grade_id,
+            tuple(int(item) for item in selected_chapters),
+            tuple(int(item) for item in selected_skills),
+            difficulty,
+            40,
+            None,
+            None,
+            "AFTER_SUBMISSION",
+            ASSIGNMENT_KIND_HOMEWORK,
+        )
+        preview_selection = _homework_service().preview_selection(preview_request)
+        available_total = len(preview_selection.content_ids)
+        if available_total == 0:
+            if service.supports_ai_completion():
+                st.info(
+                    f"Aucun contenu catalogue pour {labels[int(subject_id)]} avec ces critères. "
+                    f"Le complément IA générera les {exercise_count} exercice(s) demandés."
+                )
+            else:
+                st.warning(
+                    f"Aucun contenu approuvé disponible pour {labels[int(subject_id)]} avec ces critères. "
+                    "Élargissez le chapitre ou choisissez une autre matière."
+                )
+        elif preview_selection.difficulty_relaxed:
+            st.info(
+                f"Cette matière contient {available_total} contenu(s) approuvé(s). "
+                "Le devoir combinera plusieurs niveaux de difficulté adaptés à ton profil."
+            )
+        elif available_total < exercise_count:
+            if service.supports_ai_completion():
+                st.info(
+                    f"{available_total} exercice(s) du catalogue ; "
+                    f"le complément IA complétera automatiquement jusqu'à {exercise_count} exercices."
+                )
+            else:
+                st.info(
+                    f"Seulement {available_total} contenu(s) approuvé(s) disponible(s) "
+                    f"pour {labels[int(subject_id)]}. Le devoir sera limité à ce maximum."
+                )
+        else:
+            st.caption(f"{available_total} contenu(s) approuvé(s) disponible(s) pour cette sélection.")
+        target_duration = None
+        due_at = None
+        correction = "AFTER_SUBMISSION"
+        st.caption("Correction à la fin du devoir (par défaut).")
+
     create_label = "Créer l'évaluation" if as_evaluation else "Créer le devoir"
     create = st.button(
         create_label,
@@ -722,11 +747,12 @@ def _homework_form(
             difficulty,
             int(exercise_count),
             target_duration,
-            datetime.combine(due_date, time(23, 59), tzinfo=UTC),
-            CORRECTION_POLICY_EVALUATION if as_evaluation else correction,
+            due_at,
+            correction,
+            ASSIGNMENT_KIND_EVALUATION if as_evaluation else ASSIGNMENT_KIND_HOMEWORK,
         )
         with st.spinner("Création en cours…"):
-            if service.supports_ai_completion():
+            if service.supports_ai_completion() and not as_evaluation:
                 generation = _safe(
                     lambda: service.assign_as_parent_with_diagnostics(actor_ref, request)
                     if actor_type == "PARENT"
@@ -741,8 +767,17 @@ def _homework_form(
                     else service.create(request)
                 )
                 if result:
-                    selection = service.preview_selection(request)
-                    _render_homework_catalog_feedback(selection, len(result.selected_content_ids), int(exercise_count))
+                    if as_evaluation:
+                        st.success(
+                            f"Évaluation créée : {result.exercise_count} questions · "
+                            f"durée estimée {result.target_duration_minutes or '—'} min · note sur 20."
+                        )
+                    else:
+                        selection = service.preview_selection(request)
+                        _render_homework_catalog_feedback(
+                            selection, len(result.selected_content_ids), int(exercise_count)
+                        )
+
 
 
 def _render_homework_catalog_feedback(selection, selected_count: int, exercise_count: int) -> None:
@@ -889,6 +924,11 @@ def student_homework(learner_id: int, user: dict[str, object]) -> None:
                         render_homework_result_explanation(explanation)
                         if item.is_evaluation:
                             score = service.repository.homework_overall_score(item.homework_id)
+                            if score is not None:
+                                from services.homework.evaluation_sizing import score_percent_to_out_of_20
+
+                                on_20 = score_percent_to_out_of_20(score)
+                                st.caption(f"Note : {on_20:g}/20" if on_20 is not None else "")
                             if score is None or float(score) < 100.0:
                                 if st.button(
                                     "🔁 Refaire cette évaluation",

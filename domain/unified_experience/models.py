@@ -99,14 +99,21 @@ class HomeworkRequest:
     target_duration_minutes: int | None
     due_at: datetime | None
     correction_policy: str = "AFTER_SUBMISSION"
+    assignment_kind: str = "HOMEWORK"
 
     def __post_init__(self) -> None:
         if not 1 <= self.exercise_count <= 100:
             raise ValueError("Le nombre d'exercices doit être compris entre 1 et 100.")
         if self.target_duration_minutes is not None and not 5 <= self.target_duration_minutes <= 240:
             raise ValueError("La durée doit être comprise entre 5 et 240 minutes.")
+        if self.correction_policy not in {"IMMEDIATE", "AFTER_EACH_EXERCISE", "AFTER_SUBMISSION"}:
+            raise ValueError("Politique de correction invalide.")
         if self.mode is AssignmentType.TARGETED and not (self.chapter_ids or self.skill_ids):
             raise ValueError("Un devoir ciblé nécessite au moins un chapitre ou une compétence.")
+
+    @property
+    def is_evaluation(self) -> bool:
+        return self.assignment_kind.strip().upper() == ASSIGNMENT_KIND_EVALUATION
 
 
 @dataclass(frozen=True, slots=True)
@@ -126,15 +133,16 @@ class HomeworkAssignment:
     assigned_by_type: str
     created_at: datetime
     correction_policy: str = "AFTER_SUBMISSION"
+    assignment_kind: str = "HOMEWORK"
 
     @property
     def is_evaluation(self) -> bool:
-        return self.correction_policy.strip().upper() == "EVALUATION"
+        return self.assignment_kind.strip().upper() == ASSIGNMENT_KIND_EVALUATION
 
 
-# Marker stored in homework_assignments.correction_policy (no schema change).
-CORRECTION_POLICY_EVALUATION = "EVALUATION"
-EVALUATION_QUESTION_PRESETS: tuple[int, ...] = (10, 20, 30, 40)
+ASSIGNMENT_KIND_EVALUATION = "EVALUATION"
+ASSIGNMENT_KIND_HOMEWORK = "HOMEWORK"
+HOMEWORK_QUESTION_PRESETS: tuple[int, ...] = (10, 20, 30, 40)
 
 
 @dataclass(frozen=True, slots=True)

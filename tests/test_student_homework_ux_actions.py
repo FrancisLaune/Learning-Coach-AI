@@ -5,12 +5,17 @@ from __future__ import annotations
 from datetime import UTC, datetime
 
 from domain.unified_experience.models import (
-    CORRECTION_POLICY_EVALUATION,
-    EVALUATION_QUESTION_PRESETS,
+    ASSIGNMENT_KIND_EVALUATION,
+    HOMEWORK_QUESTION_PRESETS,
     AssignmentStatus,
     AssignmentType,
     DifficultyMode,
     HomeworkAssignment,
+    HomeworkRequest,
+)
+from services.homework.evaluation_sizing import (
+    plan_evaluation_from_catalog_rows,
+    score_percent_to_out_of_20,
 )
 from services.learning_session.answer_input import (
     needs_scientific_notation_guide,
@@ -18,9 +23,8 @@ from services.learning_session.answer_input import (
 )
 
 
-def test_evaluation_presets_and_marker() -> None:
-    assert EVALUATION_QUESTION_PRESETS == (10, 20, 30, 40)
-    assert CORRECTION_POLICY_EVALUATION == "EVALUATION"
+def test_evaluation_kind_and_homework_presets() -> None:
+    assert HOMEWORK_QUESTION_PRESETS == (10, 20, 30, 40)
     item = HomeworkAssignment(
         1,
         2,
@@ -36,9 +40,43 @@ def test_evaluation_presets_and_marker() -> None:
         None,
         "STUDENT",
         datetime.now(tz=UTC),
-        CORRECTION_POLICY_EVALUATION,
+        "AFTER_SUBMISSION",
+        ASSIGNMENT_KIND_EVALUATION,
     )
     assert item.is_evaluation is True
+    request = HomeworkRequest(
+        1,
+        "STUDENT",
+        "learner:1",
+        AssignmentType.GLOBAL_SUBJECT,
+        3,
+        4,
+        (),
+        (),
+        DifficultyMode.ADAPTIVE,
+        10,
+        45,
+        None,
+        "AFTER_SUBMISSION",
+        ASSIGNMENT_KIND_EVALUATION,
+    )
+    assert request.is_evaluation is True
+    assert request.correction_policy == "AFTER_SUBMISSION"
+
+
+def test_plan_evaluation_respects_45_minute_budget() -> None:
+    rows = [(i, 1, 1, 2 + (i % 3), "exercise", 5) for i in range(1, 30)]
+    plan = plan_evaluation_from_catalog_rows(rows, max_minutes=45)
+    assert 5 <= plan.exercise_count <= 40
+    assert plan.estimated_minutes <= 45
+    assert plan.score_out_of == 20
+    assert abs(plan.points_per_question * plan.exercise_count - 20) < 0.2
+
+
+def test_score_percent_to_out_of_20() -> None:
+    assert score_percent_to_out_of_20(100) == 20.0
+    assert score_percent_to_out_of_20(50) == 10.0
+    assert score_percent_to_out_of_20(None) is None
 
 
 def test_prefers_multiline_for_long_text_and_keywords() -> None:
