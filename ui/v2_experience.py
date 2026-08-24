@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import subprocess
 import time
 from datetime import UTC, datetime
 
@@ -36,6 +37,35 @@ def _error(error: PresentationError, *, actions: tuple[tuple[str, str], ...] = (
 
 def _status_label(status: str) -> str:
     return status_label(status, feminine=True)
+
+
+def _inject_session_button_styles() -> None:
+    if st.session_state.get("_session_btn3d_css_loaded"):
+        return
+    st.session_state["_session_btn3d_css_loaded"] = True
+    st.markdown(
+        """
+<style>
+.btn3d [data-testid="stButton"] > button {
+  border: 1px solid #1e3a8a !important;
+  border-radius: 12px !important;
+  background: linear-gradient(180deg, #60a5fa 0%, #2563eb 100%) !important;
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  box-shadow: 0 4px 0 #1e40af, 0 8px 18px rgba(37,99,235,.25) !important;
+  transition: transform .08s ease, box-shadow .08s ease, filter .08s ease !important;
+}
+.btn3d [data-testid="stButton"] > button:hover {
+  filter: brightness(1.05) !important;
+}
+.btn3d [data-testid="stButton"] > button:active {
+  transform: translateY(2px) !important;
+  box-shadow: 0 2px 0 #1e40af, 0 5px 12px rgba(37,99,235,.25) !important;
+}
+</style>
+        """,
+        unsafe_allow_html=True,
+    )
 
 
 def _metric_cards(dashboard: StudentDashboard) -> None:
@@ -153,36 +183,31 @@ def session_screen(
     left.metric("Activités terminées", f"{result.completed_activities}/{len(result.activities)}")
     middle.metric("Temps écoulé", f"{result.elapsed_seconds // 60} min")
     right.metric("Temps restant", f"{result.remaining_seconds // 60} min")
-    st.progress(
-        result.completed_activities / total, text=f"Progression de la séance — {_status_label(result.session.status)}"
-    )
-    for position, activity in enumerate(result.activities, 1):
-        with st.container(border=True):
-            st.markdown(f"#### Activité {position} — {activity.title}")
-            st.write(f"Type : {label(activity.activity_type)} · État : {_status_label(activity.status)}")
-            if activity.status == "COMPLETED":
-                st.write(f"Score : {activity.score:.0f} %")
+    prog_col, calc_col = st.columns([5, 1])
+    with prog_col:
+        st.progress(
+            result.completed_activities / total,
+            text=f"Progression de la séance — {_status_label(result.session.status)}",
+        )
+    with calc_col:
+        if st.button("🧮 Calculatrice", help="Ouvre la calculatrice Windows", key="open_calculator", use_container_width=True):
+            try:
+                subprocess.Popen(["calc.exe"])
+            except FileNotFoundError:
+                st.warning("Calculatrice introuvable sur ce système.")
     if result.session.status == "RUNNING":
         execution = build_unified_session_execution_service()
         question = execution.current(learner_id, result.session.session_id)
         feedback_key = f"session_feedback_{result.session.session_id}"
-        feedback = st.session_state.get(feedback_key)
+        feedback = st.session_state.pop(feedback_key, None)
         if feedback:
             if getattr(feedback, "skipped", False):
-                st.warning("Question passée — elle ne compte pas comme une réussite.")
+                st.toast("Question passée ⏭️", icon="⏭️")
             elif feedback.correct:
-                st.success(f"Bonne réponse — {feedback.score:.0f} %")
+                st.toast(f"Bonne réponse ✅ — {feedback.score:.0f} %", icon="✅")
             else:
-                st.error(f"Réponse à consolider — {feedback.score:.0f} %")
-            st.write(f"**Méthode :** {feedback.method}")
-            st.write(feedback.explanation)
-            if feedback.advice:
-                st.info(feedback.advice)
-            st.caption(f"Maîtrise : {feedback.mastery_before * 100:.0f} % → {feedback.mastery_after * 100:.0f} %")
-            if st.button("Question suivante", type="primary"):
-                del st.session_state[feedback_key]
-                st.rerun()
-        elif question:
+                st.toast(f"À consolider ❌ — {feedback.score:.0f} %", icon="❌")
+        if question:
             st.divider()
             st.caption(f"Question {question.position}/{question.total} · {question.activity_title}")
             if question.instructions:
@@ -251,33 +276,60 @@ def session_screen(
             started_key = f"question_started_{question.session_id}_{question.question_id}"
             st.session_state.setdefault(started_key, time.monotonic())
             action_cols = st.columns(2)
-            if action_cols[0].button("Valider ma réponse", type="primary", disabled=not str(answer).strip()):
-                elapsed = int((time.monotonic() - float(st.session_state[started_key])) * 1000)
-                try:
-                    st.session_state[feedback_key] = execution.submit(
-                        learner_id,
-                        result.session.session_id,
-                        answer,
-                        datetime.now(UTC),
-                        elapsed,
-                    )
-                    st.rerun()
-                except ValueError as exc:
-                    st.error(str(exc))
-            if action_cols[1].button("Passer", use_container_width=True, help="Passe cette question sans bloquer le devoir."):
-                elapsed = int((time.monotonic() - float(st.session_state[started_key])) * 1000)
-                try:
-                    st.session_state[feedback_key] = execution.skip(
-                        learner_id,
-                        result.session.session_id,
-                        datetime.now(UTC),
-                        elapsed,
-                    )
-                    st.rerun()
-                except ValueError as exc:
-                    st.error(str(exc))
+            _inject_session_button_styles()
+            with action_cols[0]:
+                st.markdown("<div class='btn3d'>", unsafe_allow_html=True)
+                submit_pressed = st.button(
+                    "✅ Valider ma réponse",
+                    key=f"session_submit_{question.session_id}_{question.question_id}",
+                    use_container_width=True,
+                    disabled=not str(answer).strip(),
+                )
+                st.markdown("</div>", unsafe_allow_html=True)
+                if submit_pressed:
+                    elapsed = int((time.monotonic() - float(st.session_state[started_key])) * 1000)
+                    try:
+                        st.session_state[feedback_key] = execution.submit(
+                            learner_id,
+                            result.session.session_id,
+                            answer,
+                            datetime.now(UTC),
+                            elapsed,
+                        )
+                        st.rerun()
+                    except ValueError as exc:
+                        st.error(str(exc))
+            with action_cols[1]:
+                st.markdown("<div class='btn3d'>", unsafe_allow_html=True)
+                skip_pressed = st.button(
+                    "⏭️ Passer",
+                    key=f"session_skip_{question.session_id}_{question.question_id}",
+                    use_container_width=True,
+                    help="Passe cette question sans bloquer le devoir.",
+                )
+                st.markdown("</div>", unsafe_allow_html=True)
+                if skip_pressed:
+                    elapsed = int((time.monotonic() - float(st.session_state[started_key])) * 1000)
+                    try:
+                        st.session_state[feedback_key] = execution.skip(
+                            learner_id,
+                            result.session.session_id,
+                            datetime.now(UTC),
+                            elapsed,
+                        )
+                        st.rerun()
+                    except ValueError as exc:
+                        st.error(str(exc))
         else:
             st.info("Toutes les questions disponibles ont été traitées.")
+    st.divider()
+    st.subheader("Activités de la séance", anchor=False)
+    for position, activity in enumerate(result.activities, 1):
+        with st.container(border=True):
+            st.markdown(f"#### Activité {position} — {activity.title}")
+            st.write(f"Type : {label(activity.activity_type)} · État : {_status_label(activity.status)}")
+            if activity.status == "COMPLETED":
+                st.write(f"Score : {activity.score:.0f} %")
     actions = st.columns(3)
     error = None
     action_taken = False
