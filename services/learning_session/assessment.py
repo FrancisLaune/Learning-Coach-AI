@@ -112,6 +112,82 @@ def _numeric_equivalent(actual: Any, expected: Any, tolerance: float) -> bool:
     return abs(left - right) <= limit
 
 
+_UNIT_SUFFIX = re.compile(
+    r"(?ix)\s*(?:cm|mm|m|km|g|kg|mg|l|ml|cl|€|\$|%|°|deg(?:rés?)?|euros?)\s*$"
+)
+_NUMBER_TOKEN = re.compile(
+    r"(?<![A-Za-z0-9_])([+-]?(?:\d+(?:[.,]\d+)?|\d+[.,]\d+))(?![A-Za-z0-9_])"
+)
+
+
+def _strip_units(value: Any) -> str:
+    return _UNIT_SUFFIX.sub("", _text(value, lowercase=False)).strip()
+
+
+def _extract_numbers(value: Any) -> tuple[Decimal, ...]:
+    text = _text(value, lowercase=False)
+    found: list[Decimal] = []
+    for match in _NUMBER_TOKEN.finditer(text):
+        parsed = _as_decimal(match.group(1))
+        if parsed is not None:
+            found.append(parsed)
+    return tuple(found)
+
+
+def _algebra_term_set(value: Any) -> frozenset[str] | None:
+    """Canonical additive terms for simple expressions like ``2x+7`` / ``7+2x``."""
+    raw = _text(value, lowercase=False).casefold()
+    raw = raw.replace("×", "*").replace("·", "*").replace(" ", "")
+    if not raw or not re.fullmatch(r"[0-9a-z+\-*/^().]+", raw):
+        return None
+    if not re.search(r"[a-z]", raw):
+        return None
+    raw = re.sub(r"(\d)\*([a-z])", r"\1\2", raw)
+    raw = re.sub(r"([a-z])\*(\d)", r"\2\1", raw)
+    raw = raw.replace("-", "+-")
+    parts = [part for part in raw.split("+") if part]
+    if not parts:
+        return None
+    normalized: list[str] = []
+    for part in parts:
+        term = part
+        match = re.fullmatch(r"([+-]?)(\d+)([a-z](?:\^\d+)?)?", term)
+        if match:
+            sign, coef, var = match.groups()
+            prefix = "-" if sign == "-" else ""
+            term = f"{prefix}{coef}{var}" if var else f"{prefix}{coef}"
+        normalized.append(term)
+    return frozenset(normalized)
+
+
+def _flexible_text_equivalent(actual: Any, expected: Any, tolerance: float) -> bool:
+    """Accept pedagogically equivalent short answers beyond strict string equality."""
+    if _numeric_equivalent(actual, expected, tolerance):
+        return True
+    actual_core = _strip_units(actual)
+    expected_core = _strip_units(expected)
+    if actual_core and expected_core and _text(actual_core) == _text(expected_core):
+        return True
+    if actual_core and expected_core and _numeric_equivalent(actual_core, expected_core, tolerance):
+        return True
+    expected_numbers = _extract_numbers(expected)
+    actual_numbers = _extract_numbers(actual)
+    if len(expected_numbers) == 1 and actual_numbers:
+        target = expected_numbers[0]
+        limit = Decimal(str(tolerance if tolerance else 0)) or Decimal("0.000000001")
+        if any(abs(item - target) <= limit for item in actual_numbers):
+            # Avoid matching a bare digit that is only part of a longer unrelated number set
+            # when expected is a single quantity (with optional unit).
+            expected_text = _text(expected_core or expected)
+            if re.fullmatch(r"[+-]?(?:\d+(?:[.,]\d+)?|\d+[.,]\d+)", expected_text) or _UNIT_SUFFIX.search(
+                _text(expected, lowercase=False)
+            ):
+                return True
+    left_terms = _algebra_term_set(actual)
+    right_terms = _algebra_term_set(expected)
+    return left_terms is not None and right_terms is not None and left_terms == right_terms
+
+
 class DeterministicAssessmentEngine:
     version = "deterministic-assessment-v1"
 
@@ -183,7 +259,11 @@ class DeterministicAssessmentEngine:
         }:
             if actual == expected:
                 return 100.0
-            if method is AssessmentMethod.EXACT_MATCH and _numeric_equivalent(
+            if method is AssessmentMethod.EXACT_MATCH and _flexible_text_equivalent(
+                actual, expected, request.tolerance
+            ):
+                return 100.0
+            if method is AssessmentMethod.FORMULA and _flexible_text_equivalent(
                 actual, expected, request.tolerance
             ):
                 return 100.0

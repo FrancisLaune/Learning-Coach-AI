@@ -378,6 +378,13 @@ def session_screen(
         explanation = load_session_result_explanation(actor, learner_id, result.session.session_id)
         if explanation:
             render_homework_result_explanation(explanation)
+        from ui.student_guidance import render_answer_corrections
+
+        render_answer_corrections(
+            learner_id,
+            int(result.session.session_id),
+            key_prefix=f"session_corr_{result.session.session_id}",
+        )
         st.success("Synthèse du cycle prête. Tu peux revenir à l'accueil ou ouvrir un nouveau devoir.")
         home_cols = st.columns(2)
         if home_cols[0].button("Retour à l'accueil", key=f"cycle_home_{result.session.session_id}"):

@@ -44,6 +44,33 @@ def test_text_answers_accept_numeric_equivalence() -> None:
     assert result.correct is True
 
 
+@pytest.mark.parametrize(
+    ("actual", "expected"),
+    [
+        ("10", "10 cm"),
+        ("10 cm", "10"),
+        ("12,50", "12,50 €"),
+        ("Cinq cahiers coûtent 12,50 €", "12,50 €"),
+        ("7+2x", "2x + 7"),
+        ("2x+7", "7 + 2x"),
+        ("2^5", "2^5"),
+    ],
+)
+def test_short_text_accepts_equivalent_math_answers(actual: str, expected: str) -> None:
+    result = DeterministicAssessmentEngine().assess(
+        AssessmentRequest(AnswerType.SHORT_TEXT, actual, expected, AssessmentMethod.EXACT_MATCH)
+    )
+    assert result.correct is True
+    assert result.raw_score == 100
+
+
+def test_short_text_still_rejects_wrong_math_answers() -> None:
+    result = DeterministicAssessmentEngine().assess(
+        AssessmentRequest(AnswerType.SHORT_TEXT, "9", "10 cm", AssessmentMethod.EXACT_MATCH)
+    )
+    assert result.correct is False
+
+
 def test_fraction_accepts_equivalent_decimal() -> None:
     result = DeterministicAssessmentEngine().assess(
         AssessmentRequest(

@@ -50,6 +50,19 @@ class QuestionAssessmentView:
 
 
 @dataclass(frozen=True, slots=True)
+class AnswerCorrectionItem:
+    question_id: int
+    position: int
+    statement: str
+    student_answer: str
+    expected_answer: str
+    correct: bool
+    score: float
+    explanation: str
+    method: str
+
+
+@dataclass(frozen=True, slots=True)
 class QuestionMaterial:
     question: ExecutableQuestion
     expected_answer: Any
@@ -67,6 +80,7 @@ class SessionExecutionRepository(Protocol):
     def activity_question_count(self, activity_id: int) -> tuple[int, int]: ...
     def record_hint(self, activity_id: int, hint_id: int, hint_number: int, penalty: float, at: datetime) -> None: ...
     def complete_homework(self, session_id: int) -> None: ...
+    def list_corrections(self, learner_id: int, session_id: int) -> tuple[AnswerCorrectionItem, ...]: ...
 
 
 class DecisionRefreshNotifier:
@@ -250,6 +264,12 @@ class UnifiedSessionExecutionService:
         position = next(index for index, item in enumerate(material.question.hints, 1) if item[0] == hint_id)
         self.repository.record_hint(material.question.activity_id, hint_id, position, hint[2], at)
         return hint[1]
+
+    def corrections(self, learner_id: int, session_id: int) -> tuple[AnswerCorrectionItem, ...]:
+        session = self.sessions.repository.get(session_id)
+        if session is None or session.learner_id != learner_id:
+            raise PermissionError("SESSION_ACCESS_DENIED")
+        return self.repository.list_corrections(learner_id, session_id)
 
     def _complete_if_finished(self, session_id: int, at: datetime) -> bool:
         activities = self.sessions.repository.list_activities(session_id)

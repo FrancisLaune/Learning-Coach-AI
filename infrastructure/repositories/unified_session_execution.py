@@ -8,7 +8,7 @@ from pathlib import Path
 
 from domain.learning.models import LearningEngineResult
 from infrastructure.database.v2 import connect_v2
-from services.unified_session_execution import ExecutableQuestion, QuestionMaterial
+from services.unified_session_execution import AnswerCorrectionItem, ExecutableQuestion, QuestionMaterial
 
 
 class DuckDBUnifiedSessionExecutionRepository:
@@ -225,5 +225,61 @@ class DuckDBUnifiedSessionExecutionRepository:
                     max(-100.0, min(100.0, float(row[4]))),
                 ],
             )
+        finally:
+            connection.close()
+
+    def list_corrections(self, learner_id: int, session_id: int) -> tuple[AnswerCorrectionItem, ...]:
+        connection = connect_v2(self.database_path, read_only=True)
+        try:
+            owned = connection.execute(
+                "SELECT 1 FROM learning_sessions WHERE id=? AND learner_id=?",
+                [session_id, learner_id],
+            ).fetchone()
+            if owned is None:
+                return ()
+            rows = connection.execute(
+                """
+                SELECT sa.question_id, cq.statement, sa.raw_answer, cq.expected_answer,
+                       aa.correct, aa.score, coalesce(sol.pedagogical_explanation, ''),
+                       coalesce(sol.method, aa.assessment_method),
+                       row_number() OVER (ORDER BY a.activity_order, cq.sequence_order, sa.id)
+                FROM session_attempt_records sar
+                JOIN session_activities a ON a.id=sar.activity_id
+                JOIN student_answers sa ON sa.id=sar.answer_id
+                JOIN answer_assessments aa ON aa.id=sar.assessment_id
+                JOIN content_questions cq ON cq.id=sa.question_id
+                LEFT JOIN content_solutions sol ON sol.question_id=cq.id
+                WHERE a.session_id=?
+                ORDER BY a.activity_order, cq.sequence_order, sa.id
+                """,
+                [session_id],
+            ).fetchall()
+            items: list[AnswerCorrectionItem] = []
+            for row in rows:
+                expected: object = row[3]
+                try:
+                    expected = json.loads(str(expected))
+                except Exception:
+                    expected = str(expected)
+                raw: object = row[2]
+                try:
+                    if raw is not None and str(raw).startswith(('"', "[", "{")):
+                        raw = json.loads(str(raw))
+                except Exception:
+                    pass
+                items.append(
+                    AnswerCorrectionItem(
+                        int(row[0]),
+                        int(row[8]),
+                        str(row[1] or ""),
+                        "" if raw is None else str(raw),
+                        "" if expected is None else str(expected),
+                        bool(row[4]),
+                        float(row[5] or 0),
+                        str(row[6] or ""),
+                        str(row[7] or ""),
+                    )
+                )
+            return tuple(items)
         finally:
             connection.close()

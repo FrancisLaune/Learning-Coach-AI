@@ -885,6 +885,7 @@ def student_homework(learner_id: int, user: dict[str, object]) -> None:
     )
     from ui.student_guidance import (
         load_homework_result_explanation,
+        render_answer_corrections,
         render_homework_before_guidance,
         render_homework_result_explanation,
     )
@@ -977,6 +978,12 @@ def student_homework(learner_id: int, user: dict[str, object]) -> None:
                     if item.status is AssignmentStatus.COMPLETED:
                         explanation = load_homework_result_explanation(user, learner_id, item.homework_id)
                         render_homework_result_explanation(explanation)
+                        if item.session_id is not None:
+                            render_answer_corrections(
+                                learner_id,
+                                int(item.session_id),
+                                key_prefix=f"hw_corr_{item.homework_id}",
+                            )
                         if item.is_evaluation:
                             score = service.repository.homework_overall_score(item.homework_id)
                             if score is not None:

@@ -303,6 +303,37 @@ def render_homework_result_explanation(context: ResultExplanationContext) -> Non
         st.caption(context.deterministic_recommendation)
 
 
+def render_answer_corrections(
+    learner_id: int,
+    session_id: int,
+    *,
+    key_prefix: str = "corrections",
+) -> None:
+    """Show per-question corrections for a completed homework/evaluation session."""
+    from application.experience_factory import build_unified_session_execution_service
+
+    try:
+        items = build_unified_session_execution_service().corrections(learner_id, int(session_id))
+    except Exception as exc:
+        st.warning(f"Corrections indisponibles : {exc}")
+        return
+    if not items:
+        st.info("Aucune réponse enregistrée à corriger pour cette séance.")
+        return
+    with st.expander("Voir les corrections détaillées", expanded=False):
+        for item in items:
+            badge = "✅" if item.correct else "❌"
+            with st.container(border=True):
+                st.markdown(f"{badge} **Question {item.position}** — {item.score:.0f} %")
+                st.write(item.statement)
+                st.caption(f"Ta réponse : {item.student_answer or '—'}")
+                st.caption(f"Réponse attendue : {item.expected_answer or '—'}")
+                if item.explanation:
+                    st.info(item.explanation)
+                if item.method:
+                    st.caption(f"Méthode : {item.method}")
+
+
 def load_revision_guidance(user: dict[str, object], learner_id: int) -> RevisionGuidanceContext:
     service = build_student_guidance_service()
     return service.recommend_revision(_student_actor(user, learner_id), learner_id)
