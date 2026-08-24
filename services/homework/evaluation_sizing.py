@@ -13,6 +13,16 @@ _MIN_QUESTIONS = 5
 _MAX_QUESTIONS = 40
 
 
+def target_evaluation_question_count(
+    *,
+    max_minutes: int = EVALUATION_MAX_MINUTES,
+    seconds_per_question: int = _DEFAULT_SECONDS_PER_QUESTION,
+) -> int:
+    """Desired question count for a full evaluation when AI can complete the catalog."""
+    raw = max(1, int(max_minutes)) * 60 // max(30, int(seconds_per_question))
+    return max(_MIN_QUESTIONS, min(_MAX_QUESTIONS, raw))
+
+
 @dataclass(frozen=True, slots=True)
 class EvaluationPlan:
     exercise_count: int

@@ -574,15 +574,33 @@ def _homework_form(
         clear_curriculum_selection(st.session_state, key)
         available_chapters = repository.chapters(int(subject_id), grade_id)
         if not available_chapters:
-            st.info(
-                f"Le catalogue pédagogique ne contient pas encore de contenu approuvé pour "
-                f"{labels[int(subject_id)]} dans cette classe."
+            if service.supports_ai_completion() and repository.has_curriculum_targets(int(subject_id), grade_id):
+                st.info(
+                    f"Peu ou pas de contenus publiés pour {labels[int(subject_id)]}. "
+                    "Le complément IA générera les exercices et solutions manquants à partir du curriculum."
+                )
+            elif service.supports_ai_completion():
+                st.warning(
+                    f"Aucun chapitre curriculum approuvé pour {labels[int(subject_id)]} dans cette classe. "
+                    "Le complément IA ne peut pas encore cibler cette matière."
+                )
+                return
+            else:
+                st.info(
+                    f"Le catalogue pédagogique ne contient pas encore de contenu approuvé pour "
+                    f"{labels[int(subject_id)]} dans cette classe."
+                )
+                return
+        else:
+            st.caption(
+                f"{'L’évaluation' if as_evaluation else 'Le devoir'} sera équilibré(e) automatiquement "
+                f"sur {len(available_chapters)} chapitre(s) approuvé(s)"
+                + (
+                    " ; l'IA complétera si le catalogue est insuffisant."
+                    if service.supports_ai_completion()
+                    else "."
+                )
             )
-            return
-        st.caption(
-            f"{'L’évaluation' if as_evaluation else 'Le devoir'} sera équilibré(e) automatiquement "
-            f"sur {len(available_chapters)} chapitre(s) approuvé(s)."
-        )
     else:
         chapters = repository.chapters(int(subject_id), grade_id)
         chapter_labels = dict(chapters)
@@ -610,6 +628,13 @@ def _homework_form(
             key=f"{key}_skills",
         )
         if not chapters:
+            if service.supports_ai_completion() and repository.has_curriculum_targets(int(subject_id), grade_id):
+                st.info(
+                    "Catalogue publié vide pour cette matière — "
+                    "passe en devoir global ou active une sélection curriculum via le complément IA "
+                    "(onglet Devoir / Évaluation en mode matière)."
+                )
+                return
             st.info(
                 f"Le catalogue pédagogique ne contient pas encore de chapitre approuvé pour "
                 f"{labels[int(subject_id)]} dans cette classe."
@@ -624,6 +649,8 @@ def _homework_form(
         "(renforcement après les échecs, montée progressive après les réussites)."
     )
     if as_evaluation:
+        from services.homework.evaluation_sizing import target_evaluation_question_count
+
         preview_request = HomeworkRequest(
             learner_id,
             actor_type,
@@ -641,20 +668,32 @@ def _homework_form(
             ASSIGNMENT_KIND_EVALUATION,
         )
         evaluation_plan = service.plan_subject_evaluation(preview_request)
-        exercise_count = max(1, evaluation_plan.exercise_count) if evaluation_plan.exercise_count else 10
-        target_duration = evaluation_plan.estimated_minutes or EVALUATION_MAX_MINUTES
-        available_total = len(evaluation_plan.content_ids)
+        ai_on = service.supports_ai_completion()
+        target_count = target_evaluation_question_count(max_minutes=EVALUATION_MAX_MINUTES)
         if evaluation_plan.exercise_count <= 0:
-            if service.supports_ai_completion():
-                st.info(
-                    "Catalogue insuffisant : l'évaluation pourra être complétée par IA "
-                    f"dans la limite de {EVALUATION_MAX_MINUTES} min."
-                )
+            if ai_on:
+                exercise_count = target_count
                 available_total = 0
+                target_duration = EVALUATION_MAX_MINUTES
+                st.info(
+                    f"Catalogue insuffisant : l'IA générera environ **{exercise_count} questions** "
+                    f"(plafond {EVALUATION_MAX_MINUTES} min) avec solutions, note sur 20."
+                )
             else:
                 st.warning("Aucun contenu disponible pour construire une évaluation sur cette matière.")
                 return
+        elif evaluation_plan.exercise_count < target_count and ai_on:
+            exercise_count = target_count
+            available_total = len(evaluation_plan.content_ids)
+            target_duration = EVALUATION_MAX_MINUTES
+            st.info(
+                f"{available_total} exercice(s) catalogue ; l'IA complétera jusqu'à "
+                f"**{exercise_count} questions** (~{EVALUATION_MAX_MINUTES} min), note sur 20."
+            )
         else:
+            exercise_count = max(1, evaluation_plan.exercise_count)
+            target_duration = evaluation_plan.estimated_minutes or EVALUATION_MAX_MINUTES
+            available_total = len(evaluation_plan.content_ids)
             st.success(
                 f"Proposition automatique : **{evaluation_plan.exercise_count} questions** · "
                 f"durée estimée **{evaluation_plan.estimated_minutes} min** "
@@ -730,7 +769,7 @@ def _homework_form(
         type="primary",
         key=f"{key}_create",
         disabled=(
-            (mode is not AssignmentType.GLOBAL_SUBJECT and not selected_chapters and not selected_skills)
+            (mode is not AssignmentType.GLOBAL_SUBJECT and not as_evaluation and not selected_chapters and not selected_skills)
             or (available_total == 0 and not service.supports_ai_completion())
         ),
     )
@@ -751,15 +790,15 @@ def _homework_form(
             correction,
             ASSIGNMENT_KIND_EVALUATION if as_evaluation else ASSIGNMENT_KIND_HOMEWORK,
         )
-        with st.spinner("Création en cours…"):
-            if service.supports_ai_completion() and not as_evaluation:
+        with st.spinner("Création en cours… le complément IA peut prendre quelques secondes."):
+            if service.supports_ai_completion():
                 generation = _safe(
                     lambda: service.assign_as_parent_with_diagnostics(actor_ref, request)
                     if actor_type == "PARENT"
                     else service.create_with_diagnostics(request)
                 )
                 if generation:
-                    _render_homework_creation_feedback(generation, int(exercise_count))
+                    _render_homework_creation_feedback(generation, int(exercise_count), as_evaluation=as_evaluation)
             else:
                 result = _safe(
                     lambda: service.assign_as_parent(actor_ref, request)
@@ -795,7 +834,12 @@ def _render_homework_catalog_feedback(selection, selected_count: int, exercise_c
         st.success(f"Devoir créé avec {selected_count} contenu(s) approuvé(s).")
 
 
-def _render_homework_creation_feedback(generation, exercise_count: int) -> None:
+def _render_homework_creation_feedback(
+    generation,
+    exercise_count: int,
+    *,
+    as_evaluation: bool = False,
+) -> None:
     from domain.unified_experience.models import HomeworkGenerationResult
 
     if not isinstance(generation, HomeworkGenerationResult):
@@ -803,22 +847,33 @@ def _render_homework_creation_feedback(generation, exercise_count: int) -> None:
     catalog_count = generation.catalog_count
     ai_count = generation.ai_accepted_count
     final_count = generation.final_count
-    if final_count == exercise_count:
+    label = "évaluation" if as_evaluation else "devoir"
+    if final_count == exercise_count or (as_evaluation and final_count > 0 and not generation.degraded_mode):
         if ai_count:
-            st.success(f"Le devoir de {exercise_count} questions a été créé.")
+            st.success(
+                f"L'{label} de {final_count} questions a été créée."
+                if as_evaluation
+                else f"Le devoir de {final_count} questions a été créé."
+            )
             st.caption(
                 f"{catalog_count} exercice(s) issus du catalogue · "
-                f"{ai_count} exercice(s) généré(s) par IA"
+                f"{ai_count} exercice(s) généré(s) par IA (énoncés + solutions stockés)."
             )
         else:
-            st.success(f"Le devoir de {exercise_count} questions a été créé.")
+            st.success(
+                f"L'{label} de {final_count} questions a été créée."
+                if as_evaluation
+                else f"Le devoir de {final_count} questions a été créé."
+            )
     elif final_count > 0:
         st.warning(
-            f"Le devoir a été créé avec {final_count} exercice(s) sur {exercise_count} demandés "
-            "(catalogue et complément IA insuffisants)."
+            f"{'L’évaluation' if as_evaluation else 'Le devoir'} a été créé(e) avec {final_count} "
+            f"exercice(s) sur {exercise_count} demandés (catalogue et complément IA insuffisants)."
         )
     if generation.degraded_mode and generation.degradation_reason:
         st.caption(f"Mode dégradé : {generation.degradation_reason}")
+    if as_evaluation and final_count > 0:
+        st.caption("Note ramenée sur 20 à la fin de l'évaluation.")
 
 
 def student_homework(learner_id: int, user: dict[str, object]) -> None:

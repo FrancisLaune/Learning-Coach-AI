@@ -50,13 +50,13 @@ class HomeworkAiFallbackSettings:
     max_retry: int = 1
     timeout_seconds: int = 30
     recent_exclusion_days: int = 30
-    max_generated_per_request: int = 10
+    max_generated_per_request: int = 40
     allow_degraded_result: bool = False
 
     @classmethod
     def from_environment(cls) -> HomeworkAiFallbackSettings:
         max_per_homework = _env_int("HOMEWORK_AI_MAX_GENERATED_PER_HOMEWORK", 0)
-        max_per_request = _env_int("HOMEWORK_AI_MAX_GENERATED_PER_REQUEST", 10)
+        max_per_request = _env_int("HOMEWORK_AI_MAX_GENERATED_PER_REQUEST", 40)
         if max_per_homework > 0:
             max_per_request = max_per_homework
         return cls(

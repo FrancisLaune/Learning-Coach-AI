@@ -548,6 +548,27 @@ class DuckDBUnifiedExperienceRepository:
         finally:
             connection.close()
 
+    def has_curriculum_targets(self, subject_id: int, grade_level_id: int | None) -> bool:
+        """True when approved curriculum chapters/skills exist (AI generation can target them)."""
+        if grade_level_id is None:
+            return False
+        connection = connect_v2(self.database_path, read_only=True)
+        try:
+            row = connection.execute(
+                """
+                SELECT 1
+                FROM curriculum_chapters cc
+                JOIN curriculum_skill_details csd
+                    ON csd.chapter_id=cc.id AND csd.grade_level_id=cc.grade_level_id AND csd.status='approved'
+                WHERE cc.subject_id=? AND cc.grade_level_id=? AND cc.status='approved'
+                LIMIT 1
+                """,
+                [subject_id, grade_level_id],
+            ).fetchone()
+            return row is not None
+        finally:
+            connection.close()
+
     def create_homework_proposal(self, homework_id: int) -> int:
         item = self.get_homework(homework_id)
         connection = connect_v2(self.database_path)

@@ -7,8 +7,8 @@ from dataclasses import dataclass
 from datetime import UTC, date, datetime
 from typing import Any, Protocol
 
-from domain.onboarding.models import OnboardingRequest, OnboardingResult
 from domain.learning_session.models import SessionStatus
+from domain.onboarding.models import OnboardingRequest, OnboardingResult
 from domain.unified_experience.models import (
     AssignmentStatus,
     AssignmentType,
@@ -128,7 +128,7 @@ class HomeworkService:
 
     def create(self, request: HomeworkRequest) -> HomeworkAssignment:
         if request.is_evaluation:
-            return self._create_evaluation(request)
+            return self.create_with_diagnostics(request).homework
         if self._should_use_ai_fallback(request):
             return self.create_with_diagnostics(request).homework
         selection = self.repository.select_approved_content_detailed(request)
@@ -138,18 +138,7 @@ class HomeworkService:
 
     def create_with_diagnostics(self, request: HomeworkRequest) -> HomeworkGenerationResult:
         if request.is_evaluation:
-            homework = self._create_evaluation(request)
-            return HomeworkGenerationResult(
-                homework,
-                request.exercise_count,
-                len(homework.selected_content_ids),
-                0,
-                0,
-                len(homework.selected_content_ids),
-                len(homework.selected_content_ids) < request.exercise_count,
-                "PARTIAL_CATALOG" if len(homework.selected_content_ids) < request.exercise_count else None,
-                "",
-            )
+            return self._create_evaluation_with_diagnostics(request)
         if not self._should_use_ai_fallback(request):
             selection = self.repository.select_approved_content_detailed(request)
             if not selection.content_ids:
@@ -170,28 +159,38 @@ class HomeworkService:
             raise ValueError("HOMEWORK_AI_FALLBACK_NOT_CONFIGURED")
         return self._ai_fallback.generate(request)
 
-    def _create_evaluation(self, request: HomeworkRequest) -> HomeworkAssignment:
+    def _create_evaluation_with_diagnostics(self, request: HomeworkRequest) -> HomeworkGenerationResult:
         from dataclasses import replace
 
         from domain.unified_experience.models import ASSIGNMENT_KIND_EVALUATION
-        from services.homework.evaluation_sizing import plan_evaluation_from_catalog_rows
+        from services.homework.evaluation_sizing import (
+            EVALUATION_MAX_MINUTES,
+            plan_evaluation_from_catalog_rows,
+            target_evaluation_question_count,
+        )
 
         rows = self.repository.list_catalog_rows_for_selection(request)
         plan = plan_evaluation_from_catalog_rows(rows)
+        ai_eligible = self._should_use_ai_fallback(request)
+        target_count = target_evaluation_question_count(max_minutes=EVALUATION_MAX_MINUTES)
+
+        if ai_eligible and self._ai_fallback is not None:
+            # Never stop at a thin catalog: aim for a full evaluation budget, AI fills the deficit.
+            desired = target_count if plan.exercise_count < target_count else plan.exercise_count
+            sized = replace(
+                request,
+                exercise_count=desired,
+                target_duration_minutes=EVALUATION_MAX_MINUTES,
+                due_at=None,
+                correction_policy="AFTER_SUBMISSION",
+                assignment_kind=ASSIGNMENT_KIND_EVALUATION,
+            )
+            return self._ai_fallback.generate(sized)
+
         if plan.exercise_count <= 0 or not plan.content_ids:
-            if self._ai_fallback is not None and self._should_use_ai_fallback(request):
-                sized = replace(
-                    request,
-                    exercise_count=max(5, min(20, request.exercise_count or 10)),
-                    target_duration_minutes=45,
-                    due_at=None,
-                    correction_policy="AFTER_SUBMISSION",
-                    assignment_kind=ASSIGNMENT_KIND_EVALUATION,
-                )
-                return self._ai_fallback.generate(sized).homework
             raise ValueError(
                 "Aucun contenu approuvé n'est disponible pour construire cette évaluation. "
-                "Choisissez une autre matière ou attendez la publication de nouveaux contenus."
+                "Choisissez une autre matière ou activez le complément IA."
             )
         sized = replace(
             request,
@@ -201,7 +200,18 @@ class HomeworkService:
             correction_policy="AFTER_SUBMISSION",
             assignment_kind=ASSIGNMENT_KIND_EVALUATION,
         )
-        return self.repository.create_homework(sized, plan.content_ids)
+        homework = self.repository.create_homework(sized, plan.content_ids)
+        return HomeworkGenerationResult(
+            homework,
+            sized.exercise_count,
+            len(plan.content_ids),
+            0,
+            0,
+            len(plan.content_ids),
+            False,
+            None,
+            "",
+        )
 
     def supports_ai_completion(self) -> bool:
         return self._ai_fallback is not None and completion_flags_enabled(self._feature_flags)
