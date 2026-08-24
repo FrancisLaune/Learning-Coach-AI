@@ -1054,11 +1054,39 @@ def run_student(user: dict[str, object], learner_id: int) -> None:
     elif page == "Révision":
         revision(learner_id, user)
     elif page == "Mes progrès":
+        from ui.student_guidance import (
+            load_student_dashboard_snapshot,
+            render_evaluation_progress,
+            render_mastery_bands,
+        )
+
+        progress_snapshot = load_student_dashboard_snapshot(user, learner_id)
+        st.title("Mes progrès")
+        render_evaluation_progress(
+            progress_snapshot,
+            key_prefix=f"progress_eval_{learner_id}",
+            title="Évaluations et notes",
+        )
+        render_mastery_bands(progress_snapshot)
         if isinstance(dashboard, StudentDashboard):
-            st.title("Mes progrès")
             coach_view(dashboard)
     elif page == "Mes résultats":
-        student_history(controller, learner_id)
+        from ui.student_guidance import load_student_dashboard_snapshot, render_evaluation_progress
+
+        results_snapshot = load_student_dashboard_snapshot(user, learner_id)
+        st.title("Mes résultats")
+        render_evaluation_progress(
+            results_snapshot,
+            key_prefix=f"results_eval_{learner_id}",
+            title="Résultats des évaluations",
+        )
+        st.divider()
+        student_history(
+            controller,
+            learner_id,
+            homework_items=_homework_service().list_for_learner(learner_id),
+            show_title=False,
+        )
         student_summary(controller, learner_id)
     elif page == "Mon planning":
         st.title("Mon planning")

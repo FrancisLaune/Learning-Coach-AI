@@ -31,6 +31,59 @@ def load_student_dashboard_snapshot(user: dict[str, object], learner_id: int) ->
     return service.build_dashboard_snapshot(_student_actor(user, learner_id), learner_id)
 
 
+def render_evaluation_progress(
+    snapshot: StudentDashboardSnapshot,
+    *,
+    key_prefix: str = "eval_progress",
+    title: str = "Mes évaluations",
+    allow_retake: bool = True,
+) -> None:
+    """Affiche les évaluations terminées avec score % et note /20."""
+    from ui.homework_actions import focus_homework_on_devoirs, open_homework_session
+
+    items = snapshot.context.evaluation_progress
+    if not items:
+        st.info("Aucune évaluation terminée pour le moment.")
+        return
+    st.subheader(title, anchor=False)
+    for item in items:
+        score = "—" if item.overall_score is None else f"{item.overall_score:.0f} %"
+        with st.container(border=True):
+            st.markdown(f"**{item.subject_label}** — {item.exercise_count} questions · score {score}")
+            if item.overall_score is not None:
+                from services.homework.evaluation_sizing import score_percent_to_out_of_20
+
+                on_20 = score_percent_to_out_of_20(item.overall_score)
+                if on_20 is not None:
+                    st.caption(f"Note ramenée sur 20 : **{on_20:g}/20**")
+            if allow_retake and item.needs_retake:
+                st.caption("Pas encore à 100 % — tu peux refaire cette évaluation.")
+                if st.button(
+                    "🔁 Refaire cette évaluation",
+                    key=f"{key_prefix}_retake_{item.homework_id}",
+                    type="primary",
+                    use_container_width=True,
+                ):
+                    from application.experience_factory import build_homework_session_service
+                    from services.homework.factory import build_homework_service
+
+                    try:
+                        retake = build_homework_service().retake_evaluation(
+                            snapshot.context.learner_id, int(item.homework_id)
+                        )
+                        opened = open_homework_session(
+                            learner_id=snapshot.context.learner_id,
+                            homework_id=int(retake.homework_id),
+                            open_for_learner=build_homework_session_service().open_for_learner,
+                        )
+                        if not opened:
+                            focus_homework_on_devoirs(int(retake.homework_id))
+                    except Exception as exc:
+                        st.error(str(exc))
+                    else:
+                        st.rerun()
+
+
 def render_student_home(
     *,
     snapshot: StudentDashboardSnapshot,
@@ -59,43 +112,7 @@ def render_student_home(
             cols[1].metric("Réussite", context.success_rate)
 
     if context.evaluation_progress:
-        st.subheader("Mes évaluations", anchor=False)
-        for item in context.evaluation_progress:
-            score = "—" if item.overall_score is None else f"{item.overall_score:.0f} %"
-            with st.container(border=True):
-                st.markdown(f"**{item.subject_label}** — {item.exercise_count} questions · score {score}")
-                if item.overall_score is not None:
-                    from services.homework.evaluation_sizing import score_percent_to_out_of_20
-
-                    on_20 = score_percent_to_out_of_20(item.overall_score)
-                    if on_20 is not None:
-                        st.caption(f"Note ramenée sur 20 : **{on_20:g}/20**")
-                if item.needs_retake:
-                    st.caption("Pas encore à 100 % — tu peux refaire cette évaluation.")
-                    if st.button(
-                        "🔁 Refaire cette évaluation",
-                        key=f"home_eval_retake_{item.homework_id}",
-                        type="primary",
-                        use_container_width=True,
-                    ):
-                        from application.experience_factory import build_homework_session_service
-                        from services.homework.factory import build_homework_service
-
-                        try:
-                            retake = build_homework_service().retake_evaluation(
-                                context.learner_id, int(item.homework_id)
-                            )
-                            opened = open_homework_session(
-                                learner_id=context.learner_id,
-                                homework_id=int(retake.homework_id),
-                                open_for_learner=build_homework_session_service().open_for_learner,
-                            )
-                            if not opened:
-                                focus_homework_on_devoirs(int(retake.homework_id))
-                        except Exception as exc:
-                            st.error(str(exc))
-                        else:
-                            st.rerun()
+        render_evaluation_progress(snapshot, key_prefix=f"home_eval_{context.learner_id}")
 
     st.subheader("À travailler", anchor=False)
     overdue = context.homework_overdue

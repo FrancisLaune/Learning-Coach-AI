@@ -84,17 +84,26 @@ def _mastery(dashboard: StudentDashboard) -> None:
         st.progress(min(100, max(0, int(item.score))), text=f"Tendance : {label(item.trend)}")
 
 
-def _history_rows(sessions: tuple[SessionListItem, ...]) -> list[dict[str, object]]:
-    return [
-        {
-            "Date": item.created_at.strftime("%d/%m/%Y %H:%M"),
-            "Durée": f"{item.duration_seconds // 60} min",
-            "Score": f"{item.score:.0f} %",
-            "Progression": f"{item.mastery_gain:+.1f}",
-            "Achèvement": f"{item.completion_rate:.0f} %",
-        }
-        for item in sessions
-    ]
+def _history_rows(
+    sessions: tuple[SessionListItem, ...],
+    *,
+    session_kinds: dict[int, str] | None = None,
+) -> list[dict[str, object]]:
+    kinds = session_kinds or {}
+    rows: list[dict[str, object]] = []
+    for item in sessions:
+        kind = kinds.get(int(item.session_id), "Séance")
+        rows.append(
+            {
+                "Type": kind,
+                "Date": item.created_at.strftime("%d/%m/%Y %H:%M"),
+                "Durée": f"{item.duration_seconds // 60} min",
+                "Score": f"{item.score:.0f} %",
+                "Progression": f"{item.mastery_gain:+.1f}",
+                "Achèvement": f"{item.completion_rate:.0f} %",
+            }
+        )
+    return rows
 
 
 def student_dashboard(controller: StudentExperienceController, learner_id: int) -> None:
@@ -379,16 +388,33 @@ def session_screen(
             st.rerun()
 
 
-def student_history(controller: StudentExperienceController, learner_id: int) -> None:
+def student_history(
+    controller: StudentExperienceController,
+    learner_id: int,
+    *,
+    homework_items: tuple[object, ...] | None = None,
+    show_title: bool = True,
+) -> None:
     result = controller.history(learner_id)
-    st.title("Historique des séances")
+    if show_title:
+        st.title("Historique des séances")
+    else:
+        st.subheader("Historique des séances", anchor=False)
     if isinstance(result, PresentationError):
         _error(result)
         return
     if not result:
         st.info("Aucune séance terminée pour le moment.")
         return
-    st.dataframe(_history_rows(result), use_container_width=True, hide_index=True)
+    session_kinds: dict[int, str] = {}
+    if homework_items:
+        for item in homework_items:
+            session_id = getattr(item, "session_id", None)
+            if session_id is None:
+                continue
+            is_evaluation = bool(getattr(item, "is_evaluation", False))
+            session_kinds[int(session_id)] = "Évaluation" if is_evaluation else "Devoir"
+    st.dataframe(_history_rows(result, session_kinds=session_kinds), use_container_width=True, hide_index=True)
 
 
 def student_summary(controller: StudentExperienceController, learner_id: int) -> None:

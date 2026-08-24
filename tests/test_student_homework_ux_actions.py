@@ -88,3 +88,21 @@ def test_prefers_multiline_for_long_text_and_keywords() -> None:
 def test_scientific_notation_guide_detection() -> None:
     assert needs_scientific_notation_guide(statement="Écris en notation scientifique") is True
     assert needs_scientific_notation_guide(statement="Calcule 3 + 4") is False
+
+
+def test_history_rows_label_evaluation_sessions() -> None:
+    from services.learning_session.experience import SessionListItem
+    from ui.v2_experience import _history_rows
+
+    session = SessionListItem(
+        42,
+        "COMPLETED",
+        datetime.now(tz=UTC),
+        600,
+        80.0,
+        1.5,
+        100.0,
+    )
+    rows = _history_rows((session,), session_kinds={42: "Évaluation"})
+    assert rows[0]["Type"] == "Évaluation"
+    assert rows[0]["Score"] == "80 %"
