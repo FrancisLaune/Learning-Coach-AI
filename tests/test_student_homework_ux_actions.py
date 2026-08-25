@@ -64,13 +64,19 @@ def test_evaluation_kind_and_homework_presets() -> None:
     assert request.correction_policy == "AFTER_SUBMISSION"
 
 
-def test_plan_evaluation_respects_45_minute_budget() -> None:
+def test_plan_evaluation_aims_for_at_least_10_questions() -> None:
     rows = [(i, 1, 1, 2 + (i % 3), "exercise", 5) for i in range(1, 30)]
     plan = plan_evaluation_from_catalog_rows(rows, max_minutes=45)
-    assert 5 <= plan.exercise_count <= 40
-    assert plan.estimated_minutes <= 45
+    assert plan.exercise_count == 10
     assert plan.score_out_of == 20
     assert abs(plan.points_per_question * plan.exercise_count - 20) < 0.2
+
+
+def test_plan_evaluation_keeps_thin_catalog_without_time_cap() -> None:
+    rows = [(i, 1, 1, 2, "exercise", 5) for i in range(1, 6)]
+    plan = plan_evaluation_from_catalog_rows(rows, max_minutes=1)
+    assert plan.exercise_count == 5
+    assert plan.estimated_minutes >= 1
 
 
 def test_score_percent_to_out_of_20() -> None:

@@ -471,7 +471,7 @@ def _homework_form(
         ASSIGNMENT_KIND_HOMEWORK,
         HOMEWORK_QUESTION_PRESETS,
     )
-    from services.homework.evaluation_sizing import EVALUATION_MAX_MINUTES
+    from services.homework.evaluation_sizing import EVALUATION_DEFAULT_QUESTIONS, EVALUATION_MIN_QUESTIONS
 
     repository = _repository()
     service = _homework_service()
@@ -661,23 +661,23 @@ def _homework_form(
             (),
             (),
             difficulty,
-            40,
-            45,
+            EVALUATION_DEFAULT_QUESTIONS,
+            None,
             None,
             "AFTER_SUBMISSION",
             ASSIGNMENT_KIND_EVALUATION,
         )
         evaluation_plan = service.plan_subject_evaluation(preview_request)
         ai_on = service.supports_ai_completion()
-        target_count = target_evaluation_question_count(max_minutes=EVALUATION_MAX_MINUTES)
+        target_count = target_evaluation_question_count(preferred=EVALUATION_DEFAULT_QUESTIONS)
         if evaluation_plan.exercise_count <= 0:
             if ai_on:
                 exercise_count = target_count
                 available_total = 0
-                target_duration = EVALUATION_MAX_MINUTES
+                target_duration = None
                 st.info(
-                    f"Catalogue insuffisant : l'IA générera environ **{exercise_count} questions** "
-                    f"(plafond {EVALUATION_MAX_MINUTES} min) avec solutions, note sur 20."
+                    f"Catalogue insuffisant : l'IA générera **au moins {EVALUATION_MIN_QUESTIONS} questions** "
+                    f"(cible {exercise_count}) avec solutions, note sur 20. Tu pourras mettre en pause à tout moment."
                 )
             else:
                 st.warning("Aucun contenu disponible pour construire une évaluation sur cette matière.")
@@ -685,20 +685,25 @@ def _homework_form(
         elif evaluation_plan.exercise_count < target_count and ai_on:
             exercise_count = target_count
             available_total = len(evaluation_plan.content_ids)
-            target_duration = EVALUATION_MAX_MINUTES
+            target_duration = None
             st.info(
                 f"{available_total} exercice(s) catalogue ; l'IA complétera jusqu'à "
-                f"**{exercise_count} questions** (~{EVALUATION_MAX_MINUTES} min), note sur 20."
+                f"**au moins {exercise_count} questions** (minimum {EVALUATION_MIN_QUESTIONS}), note sur 20. "
+                "Tu pourras mettre en pause à tout moment."
             )
         else:
-            exercise_count = max(1, evaluation_plan.exercise_count)
-            target_duration = evaluation_plan.estimated_minutes or EVALUATION_MAX_MINUTES
+            exercise_count = (
+                max(target_count, evaluation_plan.exercise_count)
+                if ai_on
+                else max(1, evaluation_plan.exercise_count)
+            )
+            target_duration = None
             available_total = len(evaluation_plan.content_ids)
             st.success(
-                f"Proposition automatique : **{evaluation_plan.exercise_count} questions** · "
-                f"durée estimée **{evaluation_plan.estimated_minutes} min** "
-                f"(plafond {EVALUATION_MAX_MINUTES} min) · note sur **{evaluation_plan.score_out_of}** "
-                f"({evaluation_plan.points_per_question:g} pt / question)."
+                f"Proposition : **{exercise_count} questions** (minimum {EVALUATION_MIN_QUESTIONS}) · "
+                f"note sur **{evaluation_plan.score_out_of}** "
+                f"({evaluation_plan.points_per_question:g} pt / question). "
+                "Pas de limite de temps stricte — tu peux mettre en pause."
             )
         st.caption("Correction à la fin de l'évaluation. Pas d'échéance à saisir.")
         correction = "AFTER_SUBMISSION"
@@ -808,8 +813,8 @@ def _homework_form(
                 if result:
                     if as_evaluation:
                         st.success(
-                            f"Évaluation créée : {result.exercise_count} questions · "
-                            f"durée estimée {result.target_duration_minutes or '—'} min · note sur 20."
+                            f"Évaluation créée : {result.exercise_count} questions · note sur 20 "
+                            "(tu peux mettre en pause à tout moment)."
                         )
                     else:
                         selection = service.preview_selection(request)
@@ -968,7 +973,16 @@ def student_homework(learner_id: int, user: dict[str, object]) -> None:
                             _safe(partial(service.resume, learner_id, item.homework_id))
                             st.rerun()
                     if can_delete(item):
-                        with action_row[2]:
+                        pending_key = f"devoirs_del_pending_{item.homework_id}"
+                        if not st.session_state.get(pending_key):
+                            if action_row[2].button(
+                                f"🗑️ Supprimer ce {kind_label(item)}",
+                                key=f"devoirs_del_{item.homework_id}",
+                                use_container_width=True,
+                            ):
+                                st.session_state[pending_key] = True
+                                st.rerun()
+                        else:
                             render_delete_homework_button(
                                 homework_id=item.homework_id,
                                 key_prefix="devoirs",

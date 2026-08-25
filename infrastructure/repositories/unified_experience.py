@@ -608,7 +608,14 @@ class DuckDBUnifiedExperienceRepository:
             ).fetchall()
             merged_rows = [*catalog_rows, *runtime_rows]
             content_minutes = sum(int(row[4]) for row in merged_rows if len(row) > 4)
-            available_minutes = max(item.target_duration_minutes or 30, content_minutes or 1)
+            # No hard time cap for homework/evals: budget must cover all items so the
+            # learner can pause and resume without "duration exceeded" errors.
+            fallback_minutes = max(30, int(item.exercise_count or 0) * 3)
+            available_minutes = max(
+                item.target_duration_minutes or 0,
+                content_minutes or 0,
+                fallback_minutes,
+            )
             if existing:
                 connection.execute(
                     "UPDATE personalized_session_proposals SET available_minutes=? WHERE id=?",
@@ -697,11 +704,14 @@ class DuckDBUnifiedExperienceRepository:
             assigned_by_ref = str(row[16] or "")
             if kind == "HOMEWORK" and ("eval-retake" in assigned_by_ref or assigned_by_ref.endswith(":evaluation")):
                 kind = "EVALUATION"
+            status = AssignmentStatus(row[3])
+            if bool(filters.get("cancelled")):
+                status = AssignmentStatus.CANCELLED
             return HomeworkAssignment(
                 int(row[0]),
                 int(row[1]),
                 AssignmentType(row[2]),
-                AssignmentStatus(row[3]),
+                status,
                 None if row[4] is None else int(row[4]),
                 str(row[5]),
                 DifficultyMode(row[6]),
@@ -774,6 +784,10 @@ class DuckDBUnifiedExperienceRepository:
         }
         if target not in allowed.get(current, set()):
             raise ValueError(f"Invalid homework transition: {current.value} -> {target.value}")
+        if target is AssignmentStatus.CANCELLED:
+            # Soft-cancel via selection_filters: updating status/session_id can native-crash
+            # DuckDB 1.5.x on some Windows rows (process exits with no Python traceback).
+            return self.mark_homework_cancelled(homework_id, learner_id, current=current)
         connection = connect_v2(self.database_path)
         try:
             changed = connection.execute(
@@ -785,6 +799,42 @@ class DuckDBUnifiedExperienceRepository:
             ).fetchone()
             if changed is None:
                 raise ValueError("Le devoir a été modifié dans une autre session.")
+        finally:
+            connection.close()
+        return self.get_homework(homework_id)
+
+    def mark_homework_cancelled(
+        self,
+        homework_id: int,
+        learner_id: int,
+        *,
+        current: AssignmentStatus | None = None,
+    ) -> HomeworkAssignment:
+        """Mark homework cancelled without mutating the status column (DuckDB-safe on Windows)."""
+        connection = connect_v2(self.database_path)
+        try:
+            row = connection.execute(
+                """SELECT status, selection_filters FROM homework_assignments
+                WHERE id=? AND learner_id=?""",
+                [homework_id, learner_id],
+            ).fetchone()
+            if row is None:
+                raise ValueError("Devoir introuvable.")
+            status = AssignmentStatus(str(row[0]))
+            filters = json.loads(str(row[1])) if row[1] is not None else {}
+            if bool(filters.get("cancelled")):
+                return self.get_homework(homework_id)
+            if current is not None and status is not current:
+                raise ValueError("Le devoir a été modifié dans une autre session.")
+            if status is AssignmentStatus.COMPLETED:
+                raise ValueError("Un devoir terminé ne peut pas être supprimé.")
+            filters["cancelled"] = True
+            connection.execute(
+                """UPDATE homework_assignments
+                SET selection_filters=?, updated_at=now()
+                WHERE id=? AND learner_id=?""",
+                [json.dumps(filters, ensure_ascii=False), homework_id, learner_id],
+            )
         finally:
             connection.close()
         return self.get_homework(homework_id)

@@ -4,15 +4,17 @@ from __future__ import annotations
 
 from services.homework.config import HomeworkAiFallbackSettings
 from services.homework.evaluation_sizing import (
-    EVALUATION_MAX_MINUTES,
+    EVALUATION_DEFAULT_QUESTIONS,
+    EVALUATION_MIN_QUESTIONS,
     target_evaluation_question_count,
 )
 
 
-def test_target_evaluation_question_count_fits_45_minutes() -> None:
-    count = target_evaluation_question_count(max_minutes=EVALUATION_MAX_MINUTES)
-    assert 5 <= count <= 40
-    assert count == 22  # 45*60 / 120
+def test_target_evaluation_question_count_is_at_least_10() -> None:
+    count = target_evaluation_question_count(preferred=EVALUATION_DEFAULT_QUESTIONS, max_minutes=1)
+    assert count == EVALUATION_MIN_QUESTIONS
+    assert target_evaluation_question_count(preferred=5) == EVALUATION_MIN_QUESTIONS
+    assert target_evaluation_question_count(preferred=25) == 25
 
 
 def test_ai_generation_cap_allows_homework_presets() -> None:
@@ -22,7 +24,7 @@ def test_ai_generation_cap_allows_homework_presets() -> None:
     assert settings.generation_cap(41) == 0
 
 
-def test_evaluation_ai_sizing_desires_full_budget_when_catalog_thin() -> None:
+def test_evaluation_ai_sizing_desires_min_10_when_catalog_thin() -> None:
     from unittest.mock import MagicMock
 
     from domain.unified_experience.models import (
@@ -87,7 +89,7 @@ def test_evaluation_ai_sizing_desires_full_budget_when_catalog_thin() -> None:
     )
     service = HomeworkService(repo, feature_flags=flags, ai_fallback=_Fallback())
     result = service.create_with_diagnostics(request)
-    assert captured["request"].exercise_count == target_evaluation_question_count()
-    assert captured["request"].target_duration_minutes == EVALUATION_MAX_MINUTES
+    assert captured["request"].exercise_count == EVALUATION_MIN_QUESTIONS
+    assert captured["request"].target_duration_minutes is None
     assert captured["request"].is_evaluation is True
     assert result.ai_accepted_count == captured["request"].exercise_count - 2

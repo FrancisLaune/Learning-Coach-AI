@@ -164,7 +164,7 @@ class HomeworkService:
 
         from domain.unified_experience.models import ASSIGNMENT_KIND_EVALUATION
         from services.homework.evaluation_sizing import (
-            EVALUATION_MAX_MINUTES,
+            EVALUATION_DEFAULT_QUESTIONS,
             plan_evaluation_from_catalog_rows,
             target_evaluation_question_count,
         )
@@ -172,15 +172,15 @@ class HomeworkService:
         rows = self.repository.list_catalog_rows_for_selection(request)
         plan = plan_evaluation_from_catalog_rows(rows)
         ai_eligible = self._should_use_ai_fallback(request)
-        target_count = target_evaluation_question_count(max_minutes=EVALUATION_MAX_MINUTES)
+        target_count = target_evaluation_question_count(preferred=EVALUATION_DEFAULT_QUESTIONS)
 
         if ai_eligible and self._ai_fallback is not None:
-            # Never stop at a thin catalog: aim for a full evaluation budget, AI fills the deficit.
-            desired = target_count if plan.exercise_count < target_count else plan.exercise_count
+            # Never stop below the evaluation minimum: AI fills the deficit.
+            desired = max(target_count, plan.exercise_count)
             sized = replace(
                 request,
                 exercise_count=desired,
-                target_duration_minutes=EVALUATION_MAX_MINUTES,
+                target_duration_minutes=None,
                 due_at=None,
                 correction_policy="AFTER_SUBMISSION",
                 assignment_kind=ASSIGNMENT_KIND_EVALUATION,
@@ -192,10 +192,11 @@ class HomeworkService:
                 "Aucun contenu approuvé n'est disponible pour construire cette évaluation. "
                 "Choisissez une autre matière ou activez le complément IA."
             )
+        # Catalog-only: use the mixed selection (may be < 10 if the catalog is thin).
         sized = replace(
             request,
             exercise_count=plan.exercise_count,
-            target_duration_minutes=plan.estimated_minutes,
+            target_duration_minutes=None,
             due_at=None,
             correction_policy="AFTER_SUBMISSION",
             assignment_kind=ASSIGNMENT_KIND_EVALUATION,
@@ -322,6 +323,14 @@ class HomeworkService:
         stamp = datetime.now(UTC).isoformat()
         kind = ASSIGNMENT_KIND_EVALUATION if as_evaluation else ASSIGNMENT_KIND_HOMEWORK
         prefix = "eval-retake" if as_evaluation else "hw-retake"
+        if as_evaluation:
+            from services.homework.evaluation_sizing import EVALUATION_MIN_QUESTIONS
+
+            exercise_count = max(EVALUATION_MIN_QUESTIONS, int(previous.exercise_count))
+            duration = None
+        else:
+            exercise_count = max(1, int(previous.exercise_count))
+            duration = previous.target_duration_minutes
         request = HomeworkRequest(
             learner_id,
             "STUDENT",
@@ -332,8 +341,8 @@ class HomeworkService:
             (),
             (),
             DifficultyMode.ADAPTIVE,
-            max(1, int(previous.exercise_count)),
-            previous.target_duration_minutes or (45 if as_evaluation else 30),
+            exercise_count,
+            duration,
             None,
             "AFTER_SUBMISSION",
             kind,
