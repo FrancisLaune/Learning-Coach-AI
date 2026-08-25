@@ -94,6 +94,17 @@ def _formula_help_from_statement(statement: str | None) -> str | None:
         return "Formule utile : périmètre d'un cercle P = 2 × π × r (ou π × diamètre)."
     if "pythagore" in text or ("triangle rectangle" in text and ("hypoténuse" in text or "côté" in text)):
         return "Formule utile (Pythagore) : a² + b² = c², avec c l'hypoténuse."
+    if "puissance" in text or "exposant" in text:
+        return (
+            "Rappel : une puissance s'écrit base^exposant. "
+            "La base est le nombre multiplié ; l'exposant est le nombre de facteurs. "
+            "Au clavier, écris par exemple `2^5` (pas 2⁵)."
+        )
+    if "convertir" in text or "conversion" in text or ("litre" in text and "centilitre" in text):
+        return (
+            "Rappel conversions de volumes : 1 L = 100 cL = 1000 mL. "
+            "Pour passer des litres aux centilitres, multiplie par 100."
+        )
     if "moyenne" in text:
         return "Formule utile : moyenne = somme des valeurs / nombre de valeurs."
     if "pourcentage" in text or "%" in text:

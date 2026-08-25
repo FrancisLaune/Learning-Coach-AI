@@ -95,6 +95,21 @@ def test_scientific_notation_guide_detection() -> None:
     assert "plusieurs lignes" in guide.casefold() or "décimal" in guide.casefold() or "virgule" in guide.casefold()
 
 
+def test_power_notation_guide_for_power_questions() -> None:
+    from services.learning_session.answer_input import (
+        POWER_NOTATION_GUIDE,
+        needs_power_notation_guide,
+        notation_guide_for_response_type,
+    )
+
+    statement = "Écrire 2 × 2 × 2 × 2 × 2 sous forme d’une puissance."
+    assert needs_power_notation_guide(statement=statement) is True
+    guide = notation_guide_for_response_type("SHORT_TEXT", statement=statement)
+    assert guide == POWER_NOTATION_GUIDE
+    assert "2^5" in guide
+    assert "^" in guide
+
+
 def test_history_rows_label_evaluation_sessions() -> None:
     from services.learning_session.experience import SessionListItem
     from ui.v2_experience import _history_rows

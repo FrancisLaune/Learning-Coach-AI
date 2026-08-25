@@ -2,52 +2,24 @@
 
 from __future__ import annotations
 
-_ALWAYS_MULTILINE = frozenset(
-    {
-        "LONG_TEXT",
-        "LONGTEXT",
-        "MULTI_LINE",
-        "MULTILINE",
-        "ESSAY",
-        "PARAGRAPH",
-        "OPEN_QUESTION",
-        "TEXT",
-        "SHORT_TEXT",
-        "SHORTTEXT",
-        "STRING",
-        "FREE_TEXT",
-        "FREETEXT",
-        "INTEGER",
-        "NUMBER",
-        "DECIMAL",
-        "FRACTION",
-        "FORMULA",
-    }
-)
-_MULTILINE_KEYWORDS = (
-    "plusieurs lignes",
-    "ligne 1",
-    "ligne 2",
-    "explique",
-    "rédige",
-    "rédiger",
-    "justifie",
-    "justifier",
-    "développe",
-    "développer",
-    "montre que",
-    "prouve",
-    "étape par étape",
-    "étapes",
-)
 _SCIENTIFIC_KEYWORDS = (
     "notation scientifique",
     "puissance de 10",
     "×10",
     "x10^",
     "10^",
-    "exposant",
     "scientifique",
+)
+
+_POWER_KEYWORDS = (
+    "sous forme d'une puissance",
+    "sous forme de puissance",
+    "forme d'une puissance",
+    "forme de puissance",
+    "écrire sous forme de puissance",
+    "ecrire sous forme de puissance",
+    "puissance",
+    "exposant",
 )
 
 SCIENTIFIC_NOTATION_GUIDE = (
@@ -56,11 +28,18 @@ SCIENTIFIC_NOTATION_GUIDE = (
     "(ex. `2.5 × 10^3` ou `2.5e3`)."
 )
 
+POWER_NOTATION_GUIDE = (
+    "Notation attendue : une puissance s'écrit `base^exposant` au clavier "
+    "(ex. `2^5` pour 2 × 2 × 2 × 2 × 2). "
+    "N'utilise pas les exposants typographiques (², ⁵) : écris `^` puis l'exposant."
+)
+
 _DEFAULT_NOTATION_GUIDE = (
     "Tu peux écrire ta réponse sur plusieurs lignes. "
     "Indique clairement le résultat final (nombre, expression ou phrase). "
     "Les décimales s'écrivent avec une virgule ou un point (ex. `3,5` ou `3.5`). "
-    "Les unités sont acceptées (ex. `10 cm`, `12,50 €`)."
+    "Les unités sont acceptées (ex. `10 cm`, `12,50 €`). "
+    "Pour une puissance, écris `base^exposant` (ex. `2^5`)."
 )
 
 
@@ -71,9 +50,25 @@ def prefers_multiline_answer(response_type: str, statement: str = "", instructio
     return normalized not in {"MCQ_SINGLE", "MCQ_MULTI", "SINGLE_CHOICE", "MULTIPLE_CHOICE", "BOOLEAN"}
 
 
+def _normalize_text(value: str) -> str:
+    return (
+        value.casefold()
+        .replace("’", "'")
+        .replace("`", "'")
+        .replace("´", "'")
+    )
+
+
 def needs_scientific_notation_guide(statement: str = "", instructions: str = "", context: str = "") -> bool:
-    blob = f"{statement} {instructions} {context}".casefold()
+    blob = _normalize_text(f"{statement} {instructions} {context}")
     return any(token in blob for token in _SCIENTIFIC_KEYWORDS)
+
+
+def needs_power_notation_guide(statement: str = "", instructions: str = "", context: str = "") -> bool:
+    blob = _normalize_text(f"{statement} {instructions} {context}")
+    if "notation scientifique" in blob or "puissance de 10" in blob:
+        return False
+    return any(token in blob for token in _POWER_KEYWORDS)
 
 
 def notation_guide_for_response_type(
@@ -87,6 +82,8 @@ def notation_guide_for_response_type(
     normalized = (response_type or "").strip().upper().replace("-", "_").replace(" ", "_")
     if needs_scientific_notation_guide(statement, instructions, context):
         return SCIENTIFIC_NOTATION_GUIDE
+    if needs_power_notation_guide(statement, instructions, context):
+        return POWER_NOTATION_GUIDE
     if normalized in {"INTEGER", "NUMBER", "DECIMAL"}:
         return (
             "Notation attendue : un nombre. Tu peux utiliser la virgule ou le point "
@@ -97,7 +94,7 @@ def notation_guide_for_response_type(
     if normalized == "FORMULA":
         return (
             "Notation attendue : une expression mathématique en texte "
-            "(ex. `2x+7`, `a^2`, `V=a^3`). Évite les exposants typographiques."
+            "(ex. `2x+7`, `2^5`, `V=a^3`). Pour une puissance, utilise `^` (ex. `2^5`)."
         )
     if normalized in {"MCQ_SINGLE", "SINGLE_CHOICE", "MCQ_MULTI", "MULTIPLE_CHOICE", "BOOLEAN"}:
         return "Choisis la ou les réponses proposées."

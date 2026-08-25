@@ -159,35 +159,48 @@ class StudentGuidanceService:
             notion_reminder=notion_reminder,
             method_outline=method_outline,
         )
-        if availability.mode is AIAvailabilityMode.ACTIVE:
+        # Prefer IA whenever the provider is configured (exercise help is pedagogical).
+        if availability.provider_configured:
             try:
+                from services.learning_session.answer_input import notation_guide_for_response_type
+
+                notation = notation_guide_for_response_type(
+                    "SHORT_TEXT",
+                    statement=statement or "",
+                    instructions=notion_reminder or "",
+                )
                 ai = self._generate_short_guidance(
                     learner_id=learner_id,
                     user_message=(
-                        "Donne UNE aide unique, détaillée et explicite pour cet exercice scolaire. "
-                        "Si c'est un calcul (ex. volume d'un cube), donne la formule et explique comment l'utiliser. "
-                        "N'écris pas la réponse numérique finale. "
-                        f"Consigne: {(statement or '')[:300]}."
+                        "Tu es un professeur de collège. Donne UNE aide unique, détaillée et explicite "
+                        "pour cet exercice. Inclus la formule ou la règle utile et comment l'appliquer. "
+                        "Indique clairement la notation attendue au clavier. "
+                        "N'écris PAS la réponse finale (ni le nombre, ni la puissance complète si c'est "
+                        "exactement ce qu'il faut trouver). "
+                        f"Consigne: {(statement or '')[:400]}. "
+                        f"Notation à rappeler à l'élève: {notation}"
                     ),
                     subject_label="devoir",
                 )
-                return HomeworkGuidanceResponse(
-                    source=GuidanceSource.AI,
-                    phase="DURING",
-                    message=ai,
-                    help_level=1,
-                    suggested_actions=response.suggested_actions,
-                )
+                if ai and ai.strip():
+                    return HomeworkGuidanceResponse(
+                        source=GuidanceSource.AI,
+                        phase="DURING",
+                        message=ai.strip(),
+                        help_level=1,
+                        suggested_actions=response.suggested_actions,
+                    )
             except Exception:
                 pass
-        degraded = availability.mode is AIAvailabilityMode.UNAVAILABLE
+        degraded = availability.mode is not AIAvailabilityMode.ACTIVE
+        notice = availability.reason or (DEGRADED_NOTICE if degraded else "")
         return HomeworkGuidanceResponse(
             source=GuidanceSource.DETERMINISTIC,
             phase=response.phase,
             message=response.message,
             help_level=1,
             suggested_actions=response.suggested_actions,
-            degraded_notice=DEGRADED_NOTICE if degraded else "",
+            degraded_notice=notice,
         )
 
     def explain_homework_result(

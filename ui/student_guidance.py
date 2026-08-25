@@ -267,29 +267,45 @@ def render_homework_during_guidance(
     notion_reminder: str | None = None,
     method_outline: str | None = None,
 ) -> None:
+    """Single Oui/Non help control; generates one explicit AI (or fallback) tip."""
     service = build_student_guidance_service()
+    cache_key = f"{key_prefix}_hw_guidance"
     with st.container(border=True):
         st.markdown("### 🆘 Aide")
-        st.caption("Une seule aide détaillée : formule / méthode + explication claire.")
-        if st.button("Afficher l'aide détaillée", key=f"{key_prefix}_ask_professor", use_container_width=True):
-            response = service.guide_current_exercise(
-                _student_actor(user, learner_id),
-                learner_id,
-                session_id,
-                activity_id,
-                1,
-                statement=statement,
-                hint_text=hint_text,
-                notion_reminder=notion_reminder,
-                method_outline=method_outline,
-            )
-            st.session_state[f"{key_prefix}_hw_guidance"] = response
-        cached = st.session_state.get(f"{key_prefix}_hw_guidance")
+        st.caption("Choisis Oui pour obtenir une aide unique, détaillée et explicite (formule / méthode).")
+        want_help = st.radio(
+            "Aide",
+            options=("Non", "Oui"),
+            index=0,
+            horizontal=True,
+            key=f"{key_prefix}_help_on_off",
+        )
+        if want_help == "Non":
+            st.session_state.pop(cache_key, None)
+            return
+        if cache_key not in st.session_state:
+            with st.spinner("Génération de l'aide…"):
+                response = service.guide_current_exercise(
+                    _student_actor(user, learner_id),
+                    learner_id,
+                    session_id,
+                    activity_id,
+                    1,
+                    statement=statement,
+                    hint_text=hint_text,
+                    notion_reminder=notion_reminder,
+                    method_outline=method_outline,
+                )
+                st.session_state[cache_key] = response
+        cached = st.session_state.get(cache_key)
         if isinstance(cached, HomeworkGuidanceResponse):
             source = "IA" if cached.source is GuidanceSource.AI else "standard"
             st.info(f"Aide {source} : {cached.message}")
             if cached.degraded_notice:
                 st.caption(cached.degraded_notice)
+            if st.button("Régénérer l'aide", key=f"{key_prefix}_regen_help", use_container_width=True):
+                st.session_state.pop(cache_key, None)
+                st.rerun()
 
 
 def render_homework_result_explanation(context: ResultExplanationContext) -> None:
