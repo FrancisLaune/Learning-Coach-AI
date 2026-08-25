@@ -295,20 +295,37 @@ class HomeworkService:
         return tuple((item, self.repository.homework_overall_score(item.homework_id)) for item in items)
 
     def retake_evaluation(self, learner_id: int, homework_id: int) -> HomeworkAssignment:
-        """Create a new evaluation attempt from a previous (usually incomplete) evaluation."""
-        from domain.unified_experience.models import ASSIGNMENT_KIND_EVALUATION, HomeworkRequest
+        """Create a new evaluation attempt from a previous evaluation."""
+        return self.retake_assignment(learner_id, homework_id, force_evaluation=True)
+
+    def retake_assignment(
+        self,
+        learner_id: int,
+        homework_id: int,
+        *,
+        force_evaluation: bool = False,
+    ) -> HomeworkAssignment:
+        """Create a new homework/evaluation attempt from a previous assignment."""
+        from domain.unified_experience.models import (
+            ASSIGNMENT_KIND_EVALUATION,
+            ASSIGNMENT_KIND_HOMEWORK,
+            HomeworkRequest,
+        )
 
         previous = self._owned(learner_id, homework_id)
-        if not previous.is_evaluation:
+        as_evaluation = force_evaluation or previous.is_evaluation
+        if force_evaluation and not previous.is_evaluation:
             raise ValueError("Ce devoir n'est pas une évaluation.")
         if previous.subject_id is None:
-            raise ValueError("Évaluation sans matière — reprise impossible.")
+            raise ValueError("Devoir sans matière — reprise impossible.")
         grade_id = self.repository.learner_grade_id(learner_id)
         stamp = datetime.now(UTC).isoformat()
+        kind = ASSIGNMENT_KIND_EVALUATION if as_evaluation else ASSIGNMENT_KIND_HOMEWORK
+        prefix = "eval-retake" if as_evaluation else "hw-retake"
         request = HomeworkRequest(
             learner_id,
             "STUDENT",
-            f"learner:{learner_id}:eval-retake:{homework_id}:{stamp}",
+            f"learner:{learner_id}:{prefix}:{homework_id}:{stamp}",
             AssignmentType.GLOBAL_SUBJECT,
             int(previous.subject_id),
             grade_id,
@@ -316,10 +333,10 @@ class HomeworkService:
             (),
             DifficultyMode.ADAPTIVE,
             max(1, int(previous.exercise_count)),
-            previous.target_duration_minutes or 45,
+            previous.target_duration_minutes or (45 if as_evaluation else 30),
             None,
             "AFTER_SUBMISSION",
-            ASSIGNMENT_KIND_EVALUATION,
+            kind,
         )
         return self.create(request)
 

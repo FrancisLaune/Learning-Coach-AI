@@ -31,6 +31,17 @@ def load_student_dashboard_snapshot(user: dict[str, object], learner_id: int) ->
     return service.build_dashboard_snapshot(_student_actor(user, learner_id), learner_id)
 
 
+_STATUS_LABELS_FR = {
+    "DRAFT": "Brouillon",
+    "READY": "À faire",
+    "IN_PROGRESS": "En cours",
+    "PAUSED": "En pause",
+    "COMPLETED": "Terminé",
+    "EXPIRED": "Expiré",
+    "CANCELLED": "Annulé",
+}
+
+
 def render_evaluation_progress(
     snapshot: StudentDashboardSnapshot,
     *,
@@ -62,14 +73,13 @@ def render_evaluation_progress(
                     snapshot.context.learner_id,
                     int(item.session_id),
                     key_prefix=f"{key_prefix}_corr_{item.homework_id}",
-                    expanded=True,
+                    expanded=False,
                 )
             if allow_retake and item.needs_retake:
                 st.caption("Pas encore à 100 % — tu peux refaire cette évaluation.")
                 if st.button(
-                    "🔁 Refaire cette évaluation",
+                    "🔁 Relancer cette évaluation",
                     key=f"{key_prefix}_retake_{item.homework_id}",
-                    type="primary",
                     use_container_width=True,
                 ):
                     from application.experience_factory import build_homework_session_service
@@ -92,111 +102,118 @@ def render_evaluation_progress(
                         st.rerun()
 
 
+def _render_home_assignment_card(
+    *,
+    learner_id: int,
+    card,
+    key_prefix: str,
+) -> None:
+    from application.experience_factory import build_homework_session_service
+    from services.homework.factory import build_homework_service
+    from ui.homework_actions import focus_homework_on_devoirs, open_homework_session, render_delete_homework_button
+
+    kind = "Évaluation" if card.is_evaluation else "Devoir"
+    status_label = _STATUS_LABELS_FR.get(card.status, card.status)
+    if card.score_out_of_20 is not None:
+        note = f"{card.score_out_of_20:g}/20"
+    elif card.score_percent is not None:
+        note = f"{card.score_percent:.0f} %"
+    else:
+        note = "—"
+    with st.container(border=True):
+        st.markdown(f"**{kind}** · {card.exercise_count} question(s) · {status_label} · note **{note}**")
+        action_cols = st.columns(3)
+        if card.can_open:
+            open_label = "▶️ Reprendre" if card.status in {"IN_PROGRESS", "PAUSED"} else "▶️ Commencer"
+            if action_cols[0].button(open_label, key=f"{key_prefix}_open_{card.homework_id}", use_container_width=True):
+                if card.status == "PAUSED":
+                    try:
+                        build_homework_service().resume(learner_id, int(card.homework_id))
+                    except Exception as exc:
+                        st.error(str(exc))
+                        st.stop()
+                opened = open_homework_session(
+                    learner_id=learner_id,
+                    homework_id=int(card.homework_id),
+                    open_for_learner=build_homework_session_service().open_for_learner,
+                )
+                if not opened:
+                    focus_homework_on_devoirs(int(card.homework_id))
+                st.rerun()
+        if card.can_view_corrections and card.session_id is not None:
+            with st.expander("Voir la correction (erreurs et solutions)", expanded=False):
+                render_answer_corrections(
+                    learner_id,
+                    int(card.session_id),
+                    key_prefix=f"{key_prefix}_corr_{card.homework_id}",
+                    expanded=True,
+                )
+        if card.can_retake:
+            if action_cols[1].button(
+                "🔁 Relancer",
+                key=f"{key_prefix}_retake_{card.homework_id}",
+                use_container_width=True,
+            ):
+                try:
+                    retake = build_homework_service().retake_assignment(learner_id, int(card.homework_id))
+                    opened = open_homework_session(
+                        learner_id=learner_id,
+                        homework_id=int(retake.homework_id),
+                        open_for_learner=build_homework_session_service().open_for_learner,
+                    )
+                    if not opened:
+                        focus_homework_on_devoirs(int(retake.homework_id))
+                except Exception as exc:
+                    st.error(str(exc))
+                else:
+                    st.rerun()
+        if card.can_delete:
+            with action_cols[2]:
+                render_delete_homework_button(
+                    homework_id=int(card.homework_id),
+                    key_prefix=key_prefix,
+                    label_kind="évaluation" if card.is_evaluation else "devoir",
+                    on_confirm=lambda hid=int(card.homework_id): build_homework_service().cancel(learner_id, hid),
+                )
+
+
 def render_student_home(
     *,
     snapshot: StudentDashboardSnapshot,
     dashboard: StudentDashboard | None = None,
 ) -> None:
-    """Accueil élève : évolution + priorités matières/chapitres (sans Professeur IA)."""
-    from ui.homework_actions import focus_homework_on_devoirs, open_homework_session, render_delete_homework_button
-
+    """Accueil élève : moyenne générale, détail par matière, devoirs/évaluations dépliables."""
     context = snapshot.context
     st.title(f"Bonjour {context.display_name}")
     if context.objective:
         st.markdown(f"### Objectif : {context.objective}")
 
-    metrics = dashboard.metrics if dashboard is not None else ()
-    if metrics:
-        st.subheader("Mon évolution", anchor=False)
-        columns = st.columns(min(5, len(metrics)))
-        for column, metric in zip(columns, metrics, strict=True):
-            column.metric(metric.label, metric.value, help=metric.help_text or None)
-    elif context.success_rate or context.recent_score:
-        st.subheader("Mon évolution", anchor=False)
-        cols = st.columns(2)
-        if context.recent_score:
-            cols[0].metric("Indicateur récent", context.recent_score)
-        if context.success_rate:
-            cols[1].metric("Réussite", context.success_rate)
+    st.subheader("Moyenne générale", anchor=False)
+    if context.overall_average_out_of_20 is not None:
+        st.metric("Moyenne générale", f"{context.overall_average_out_of_20:g}/20")
+    else:
+        st.info("Aucune note encore — termine un devoir ou une évaluation pour afficher ta moyenne.")
 
-    if context.evaluation_progress:
-        render_evaluation_progress(
-            snapshot,
-            key_prefix=f"home_eval_{context.learner_id}",
-            show_corrections=False,
-        )
-
-    st.subheader("À travailler", anchor=False)
-    overdue = context.homework_overdue
-    priorities = snapshot.recommendations or context.revision_priorities
-    if overdue:
-        st.warning(f"{len(overdue)} devoir(s) en retard.")
-        for item in overdue[:5]:
-            cols = st.columns([3, 1])
-            kind = "Évaluation" if item.is_evaluation else "Devoir"
-            cols[0].write(f"**{item.subject_label}** — {kind} · échéance dépassée")
-            if cols[1].button("📂 Ouvrir", key=f"home_overdue_{item.homework_id}", use_container_width=True):
-                focus_homework_on_devoirs(item.homework_id)
-                st.rerun()
-    if priorities:
-        for item in priorities[:8]:
-            with st.container(border=True):
-                st.markdown(f"**{item.subject_label}** — {item.skill_label}")
-                st.caption(item.reason)
-                st.caption(f"Durée estimée : ~{item.estimated_minutes} min")
-                action_cols = st.columns(2 if item.homework_id else 1)
-                primary_label = f"▶️ {item.action_label}"
-                if action_cols[0].button(
-                    primary_label,
-                    key=f"home_act_{item.homework_id or item.skill_id}_{item.action_label}",
-                    type="primary",
-                    use_container_width=True,
-                ):
-                    if item.homework_id:
-                        from application.experience_factory import build_homework_session_service
-                        from services.homework.factory import build_homework_service
-
-                        homework_service = build_homework_service()
-                        target_id = int(item.homework_id)
-                        if "refaire" in item.action_label.casefold():
-                            try:
-                                retake = homework_service.retake_evaluation(context.learner_id, target_id)
-                                target_id = int(retake.homework_id)
-                            except Exception as exc:
-                                st.error(str(exc))
-                                st.stop()
-                        sessions = build_homework_session_service()
-                        try:
-                            opened = open_homework_session(
-                                learner_id=context.learner_id,
-                                homework_id=target_id,
-                                open_for_learner=sessions.open_for_learner,
-                            )
-                        except Exception:
-                            opened = False
-                        if not opened:
-                            focus_homework_on_devoirs(target_id)
-                        st.rerun()
-                    else:
-                        request_navigation(st.session_state, "student", "Révision")
-                        st.rerun()
-                if item.homework_id and len(action_cols) > 1:
-                    from services.homework.factory import build_homework_service
-
-                    with action_cols[1]:
-                        render_delete_homework_button(
-                            homework_id=int(item.homework_id),
-                            key_prefix=f"home_{context.learner_id}",
-                            label_kind="évaluation" if "évaluation" in item.action_label.casefold() else "devoir",
-                            on_confirm=lambda hid=int(item.homework_id): build_homework_service().cancel(
-                                context.learner_id, hid
-                            ),
-                        )
-    elif not overdue:
-        st.info("Continue tes devoirs ou une révision pour affiner tes priorités.")
+    st.subheader("Détail par matière", anchor=False)
+    boards = context.subject_boards
+    if not boards:
+        st.info("Aucun devoir ni évaluation pour le moment. Crée-en un depuis « Mes devoirs ».")
+    for board in boards:
+        avg = "—" if board.average_out_of_20 is None else f"{board.average_out_of_20:g}/20"
+        with st.expander(
+            f"{board.subject_label} — moyenne {avg} · {board.assignment_count} devoir(s)/évaluation(s)",
+            expanded=True,
+        ):
+            for card in board.assignments:
+                safe_subject = "".join(ch if ch.isalnum() else "_" for ch in board.subject_label)
+                _render_home_assignment_card(
+                    learner_id=context.learner_id,
+                    card=card,
+                    key_prefix=f"home_{context.learner_id}_{safe_subject}",
+                )
 
     actions = st.columns(3)
-    if actions[0].button("Mes devoirs", key=f"home_hw_{context.learner_id}", use_container_width=True, type="primary"):
+    if actions[0].button("Mes devoirs", key=f"home_hw_{context.learner_id}", use_container_width=True):
         request_navigation(st.session_state, "student", "Devoirs")
         st.rerun()
     if actions[1].button("Ma séance", key=f"home_session_{context.learner_id}", use_container_width=True):

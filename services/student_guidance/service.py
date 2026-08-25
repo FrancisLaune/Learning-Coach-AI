@@ -11,6 +11,7 @@ from application.dto.student_guidance import (
     AIAvailabilityMode,
     EvaluationProgressItem,
     GuidanceSource,
+    HomeAssignmentCard,
     HomeworkGuidanceContext,
     HomeworkGuidanceResponse,
     HomeworkSummaryItem,
@@ -21,6 +22,7 @@ from application.dto.student_guidance import (
     RevisionPriority,
     StudentDashboardSnapshot,
     StudentHomeContext,
+    SubjectHomeBoard,
     WelcomeGuidance,
 )
 from domain.unified_experience.models import AssignmentStatus
@@ -301,6 +303,7 @@ class StudentGuidanceService:
         recent_score = dashboard.metrics[0].value if dashboard.metrics else None
         success_metric = next((metric.value for metric in dashboard.metrics if "réussite" in metric.label.lower()), None)
         evaluation_progress = self._evaluation_progress(homework_items)
+        subject_boards, overall_average = self._subject_boards(homework_items)
         return StudentHomeContext(
             learner_id=learner_id,
             display_name=dashboard.display_name,
@@ -316,6 +319,8 @@ class StudentGuidanceService:
             objective=dashboard.objective,
             next_revision=dashboard.next_revision,
             evaluation_progress=evaluation_progress,
+            overall_average_out_of_20=overall_average,
+            subject_boards=subject_boards,
         )
 
     def _mastery_item(self, item: MasteryView) -> MasterySnapshotItem:
@@ -364,6 +369,71 @@ class StudentGuidanceService:
             )
         return tuple(progress[:8])
 
+    def _subject_boards(
+        self, homework_items: tuple[Any, ...]
+    ) -> tuple[tuple[SubjectHomeBoard, ...], float | None]:
+        from services.homework.evaluation_sizing import score_percent_to_out_of_20
+
+        by_subject: dict[str, list[HomeAssignmentCard]] = defaultdict(list)
+        scored_out_of_20: list[float] = []
+        for item in homework_items:
+            status = item.status
+            status_value = status.value if hasattr(status, "value") else str(status)
+            if status is AssignmentStatus.CANCELLED or status_value == AssignmentStatus.CANCELLED.value:
+                continue
+            completed = status is AssignmentStatus.COMPLETED or status_value == AssignmentStatus.COMPLETED.value
+            score = self.homework.repository.homework_overall_score(int(item.homework_id)) if completed else None
+            on_20 = score_percent_to_out_of_20(score) if score is not None else None
+            if on_20 is not None:
+                scored_out_of_20.append(float(on_20))
+            can_delete = status_value in {
+                AssignmentStatus.DRAFT.value,
+                AssignmentStatus.READY.value,
+                AssignmentStatus.IN_PROGRESS.value,
+                AssignmentStatus.PAUSED.value,
+            }
+            can_open = status_value in {
+                AssignmentStatus.READY.value,
+                AssignmentStatus.IN_PROGRESS.value,
+                AssignmentStatus.PAUSED.value,
+            }
+            card = HomeAssignmentCard(
+                homework_id=int(item.homework_id),
+                subject_label=str(item.subject_label),
+                status=status_value,
+                is_evaluation=bool(getattr(item, "is_evaluation", False)),
+                exercise_count=int(item.exercise_count),
+                session_id=None if item.session_id is None else int(item.session_id),
+                score_percent=None if score is None else float(score),
+                score_out_of_20=on_20,
+                can_delete=can_delete,
+                can_open=can_open,
+                can_retake=completed,
+                can_view_corrections=completed and item.session_id is not None,
+            )
+            by_subject[str(item.subject_label)].append(card)
+
+        boards: list[SubjectHomeBoard] = []
+        for subject, cards in sorted(by_subject.items(), key=lambda pair: pair[0].casefold()):
+            subject_scores = [card.score_out_of_20 for card in cards if card.score_out_of_20 is not None]
+            average = round(sum(subject_scores) / len(subject_scores), 1) if subject_scores else None
+            ordered = tuple(
+                sorted(
+                    cards,
+                    key=lambda card: (0 if card.can_open else 1, 0 if card.is_evaluation else 1, -card.homework_id),
+                )
+            )
+            boards.append(
+                SubjectHomeBoard(
+                    subject_label=subject,
+                    average_out_of_20=average,
+                    assignment_count=len(ordered),
+                    assignments=ordered,
+                )
+            )
+        overall = round(sum(scored_out_of_20) / len(scored_out_of_20), 1) if scored_out_of_20 else None
+        return tuple(boards), overall
+
     def _revision_priorities(
         self,
         mastery: tuple[MasterySnapshotItem, ...],
@@ -382,26 +452,6 @@ class StudentGuidanceService:
                     estimated_minutes=hw.target_duration_minutes or 20,
                     action_label=f"Ouvrir {'l’évaluation' if hw.is_evaluation else 'le devoir'}",
                     homework_id=hw.homework_id,
-                )
-            )
-        for item in homework_items:
-            if not getattr(item, "is_evaluation", False):
-                continue
-            if item.status is not AssignmentStatus.COMPLETED:
-                continue
-            score = self.homework.repository.homework_overall_score(int(item.homework_id))
-            if score is not None and float(score) >= 100.0:
-                continue
-            score_label = "—" if score is None else f"{float(score):.0f} %"
-            priorities.append(
-                RevisionPriority(
-                    subject_label=str(item.subject_label),
-                    skill_label=f"Évaluation à refaire — {item.subject_label}",
-                    reason=f"Score {score_label} — pas encore à 100 %",
-                    priority=2,
-                    estimated_minutes=item.target_duration_minutes or 25,
-                    action_label="Refaire l’évaluation",
-                    homework_id=int(item.homework_id),
                 )
             )
         for item in mastery:

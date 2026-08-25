@@ -994,9 +994,8 @@ def student_homework(learner_id: int, user: dict[str, object]) -> None:
                                 st.caption(f"Note : {on_20:g}/20" if on_20 is not None else "")
                             if score is None or float(score) < 100.0:
                                 if st.button(
-                                    "🔁 Refaire cette évaluation",
+                                    "🔁 Relancer cette évaluation",
                                     key=f"hw_retake_{item.homework_id}",
-                                    type="primary",
                                     use_container_width=True,
                                 ):
                                     retake = _safe(partial(service.retake_evaluation, learner_id, item.homework_id))

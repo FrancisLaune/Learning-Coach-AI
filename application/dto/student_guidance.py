@@ -93,6 +93,30 @@ class EvaluationProgressItem:
 
 
 @dataclass(frozen=True, slots=True)
+class HomeAssignmentCard:
+    homework_id: int
+    subject_label: str
+    status: str
+    is_evaluation: bool
+    exercise_count: int
+    session_id: int | None
+    score_percent: float | None
+    score_out_of_20: float | None
+    can_delete: bool
+    can_open: bool
+    can_retake: bool
+    can_view_corrections: bool
+
+
+@dataclass(frozen=True, slots=True)
+class SubjectHomeBoard:
+    subject_label: str
+    average_out_of_20: float | None
+    assignment_count: int
+    assignments: tuple[HomeAssignmentCard, ...]
+
+
+@dataclass(frozen=True, slots=True)
 class StudentHomeContext:
     learner_id: int
     display_name: str
@@ -108,6 +132,8 @@ class StudentHomeContext:
     objective: str
     next_revision: datetime | None
     evaluation_progress: tuple[EvaluationProgressItem, ...] = ()
+    overall_average_out_of_20: float | None = None
+    subject_boards: tuple[SubjectHomeBoard, ...] = ()
 
 
 @dataclass(frozen=True, slots=True)
