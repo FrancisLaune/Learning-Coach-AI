@@ -50,16 +50,16 @@ def test_panachage_uses_reinforcement_mix_on_failures() -> None:
     assert buckets.count("CONSOLIDATION") >= buckets.count("STRETCH")
 
 
-def test_useful_aid_mentions_statement_and_avoids_full_solution_early() -> None:
-    response = homework_during(1, statement="Simplifier la fraction 6/8")
-    assert "6/8" in response.message or "Simplifier" in response.message
-    assert "réponse finale" not in response.message.lower() or response.help_level >= 5
+def test_useful_aid_is_explicit_and_single_level() -> None:
+    response = homework_during(1, statement="Calcule le volume d'un cube d'arête 3 cm")
+    assert "V = a³" in response.message or "a × a × a" in response.message
+    assert response.help_level == 1
     for level in (1, 2, 3, 4, 5):
         msg = homework_during(level, hint_text="Soustrais le même nombre au numérateur et au dénominateur.").message
         assert msg
         assert "solution complète" not in msg.lower()
 
 
-def test_aid_level_two_prefers_provided_hint() -> None:
+def test_aid_includes_provided_hint() -> None:
     response = homework_during(2, hint_text="Divise numérateur et dénominateur par 2.")
     assert "Divise numérateur" in response.message

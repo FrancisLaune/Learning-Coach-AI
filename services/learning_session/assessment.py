@@ -160,9 +160,31 @@ def _algebra_term_set(value: Any) -> frozenset[str] | None:
     return frozenset(normalized)
 
 
+def _contains_expected_answer(actual: Any, expected: Any) -> bool:
+    """True when the student answer contains the expected value (multi-line friendly)."""
+    actual_text = _text(actual)
+    expected_text = _text(_strip_units(expected))
+    if not actual_text or not expected_text:
+        return False
+    if expected_text in actual_text:
+        if len(expected_text) <= 2:
+            return bool(re.search(rf"(?<![0-9a-z]){re.escape(expected_text)}(?![0-9a-z])", actual_text))
+        return True
+    compact_actual = re.sub(r"\s+", "", actual_text)
+    compact_expected = re.sub(r"\s+", "", expected_text)
+    if compact_expected and compact_expected in compact_actual and len(compact_expected) > 2:
+        return True
+    # Compare without punctuation differences around operators.
+    soft_actual = re.sub(r"[^\w,+.\-^×*/=€%°]", "", actual_text)
+    soft_expected = re.sub(r"[^\w,+.\-^×*/=€%°]", "", expected_text)
+    return bool(soft_expected) and soft_expected in soft_actual and len(soft_expected) > 2
+
+
 def _flexible_text_equivalent(actual: Any, expected: Any, tolerance: float) -> bool:
     """Accept pedagogically equivalent short answers beyond strict string equality."""
     if _numeric_equivalent(actual, expected, tolerance):
+        return True
+    if _contains_expected_answer(actual, expected):
         return True
     actual_core = _strip_units(actual)
     expected_core = _strip_units(expected)
@@ -176,8 +198,6 @@ def _flexible_text_equivalent(actual: Any, expected: Any, tolerance: float) -> b
         target = expected_numbers[0]
         limit = Decimal(str(tolerance if tolerance else 0)) or Decimal("0.000000001")
         if any(abs(item - target) <= limit for item in actual_numbers):
-            # Avoid matching a bare digit that is only part of a longer unrelated number set
-            # when expected is a single quantity (with optional unit).
             expected_text = _text(expected_core or expected)
             if re.fullmatch(r"[+-]?(?:\d+(?:[.,]\d+)?|\d+[.,]\d+)", expected_text) or _UNIT_SUFFIX.search(
                 _text(expected, lowercase=False)

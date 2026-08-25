@@ -164,9 +164,10 @@ class StudentGuidanceService:
                 ai = self._generate_short_guidance(
                     learner_id=learner_id,
                     user_message=(
-                        f"Aide progressive niveau {help_level} sur l'exercice. "
-                        f"Consigne: {(statement or '')[:200]}. "
-                        "Donne un conseil utile sans donner la réponse finale."
+                        "Donne UNE aide unique, détaillée et explicite pour cet exercice scolaire. "
+                        "Si c'est un calcul (ex. volume d'un cube), donne la formule et explique comment l'utiliser. "
+                        "N'écris pas la réponse numérique finale. "
+                        f"Consigne: {(statement or '')[:300]}."
                     ),
                     subject_label="devoir",
                 )
@@ -174,7 +175,7 @@ class StudentGuidanceService:
                     source=GuidanceSource.AI,
                     phase="DURING",
                     message=ai,
-                    help_level=help_level,
+                    help_level=1,
                     suggested_actions=response.suggested_actions,
                 )
             except Exception:
@@ -184,7 +185,7 @@ class StudentGuidanceService:
             source=GuidanceSource.DETERMINISTIC,
             phase=response.phase,
             message=response.message,
-            help_level=response.help_level,
+            help_level=1,
             suggested_actions=response.suggested_actions,
             degraded_notice=DEGRADED_NOTICE if degraded else "",
         )
@@ -345,6 +346,7 @@ class StudentGuidanceService:
                     exercise_count=int(item.exercise_count),
                     overall_score=score,
                     needs_retake=score is None or float(score) < 100.0,
+                    session_id=None if item.session_id is None else int(item.session_id),
                 )
             )
         return tuple(progress[:8])

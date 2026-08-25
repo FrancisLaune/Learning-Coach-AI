@@ -39,35 +39,6 @@ def _status_label(status: str) -> str:
     return status_label(status, feminine=True)
 
 
-def _inject_session_button_styles() -> None:
-    if st.session_state.get("_session_btn3d_css_loaded"):
-        return
-    st.session_state["_session_btn3d_css_loaded"] = True
-    st.markdown(
-        """
-<style>
-.btn3d [data-testid="stButton"] > button {
-  border: 1px solid #1e3a8a !important;
-  border-radius: 12px !important;
-  background: linear-gradient(180deg, #60a5fa 0%, #2563eb 100%) !important;
-  color: #ffffff !important;
-  font-weight: 700 !important;
-  box-shadow: 0 4px 0 #1e40af, 0 8px 18px rgba(37,99,235,.25) !important;
-  transition: transform .08s ease, box-shadow .08s ease, filter .08s ease !important;
-}
-.btn3d [data-testid="stButton"] > button:hover {
-  filter: brightness(1.05) !important;
-}
-.btn3d [data-testid="stButton"] > button:active {
-  transform: translateY(2px) !important;
-  box-shadow: 0 2px 0 #1e40af, 0 5px 12px rgba(37,99,235,.25) !important;
-}
-</style>
-        """,
-        unsafe_allow_html=True,
-    )
-
-
 def _metric_cards(dashboard: StudentDashboard) -> None:
     columns = st.columns(min(5, len(dashboard.metrics)))
     for column, metric in zip(columns, dashboard.metrics, strict=True):
@@ -206,7 +177,8 @@ def session_screen(
                 st.warning("Calculatrice introuvable sur ce système.")
     if result.session.status == "RUNNING":
         execution = build_unified_session_execution_service()
-        question = execution.current(learner_id, result.session.session_id)
+        material = execution.current_material(learner_id, result.session.session_id)
+        question = None if material is None else material.question
         feedback_key = f"session_feedback_{result.session.session_id}"
         feedback = st.session_state.pop(feedback_key, None)
         if feedback:
@@ -225,17 +197,19 @@ def session_screen(
                 st.info(question.context)
             st.markdown(f"### {question.statement}")
             from services.learning_session.answer_input import (
-                SCIENTIFIC_NOTATION_GUIDE,
-                needs_scientific_notation_guide,
+                notation_guide_for_response_type,
                 prefers_multiline_answer,
             )
 
-            if needs_scientific_notation_guide(
-                statement=question.statement,
-                instructions=question.instructions or "",
-                context=question.context or "",
-            ):
-                st.info(SCIENTIFIC_NOTATION_GUIDE)
+            st.info(
+                notation_guide_for_response_type(
+                    question.response_type,
+                    statement=question.statement,
+                    instructions=question.instructions or "",
+                    context=question.context or "",
+                )
+            )
+            hint_parts = [text for _, text, _ in question.hints if text]
             render_homework_during_guidance(
                 actor,
                 learner_id,
@@ -243,7 +217,7 @@ def session_screen(
                 question.activity_id,
                 key_prefix=f"session_{result.session.session_id}_{question.question_id}",
                 statement=question.statement,
-                hint_text=question.hints[0][1] if question.hints else None,
+                hint_text=" ".join(hint_parts) if hint_parts else None,
                 notion_reminder=question.instructions or None,
                 method_outline=None,
             )
@@ -269,32 +243,20 @@ def session_screen(
                 statement=question.statement,
                 instructions=question.instructions or "",
             ):
-                st.caption("Tu peux répondre sur plusieurs lignes.")
+                st.caption("Tu peux répondre sur plusieurs lignes. La réponse est acceptée si elle contient le résultat attendu.")
                 answer = st.text_area("Ta réponse", key=answer_key, height=160)
             else:
-                st.caption("Saisis ta réponse au clavier (une ligne).")
                 answer = st.text_input("Ta réponse", key=answer_key)
-            if question.hints:
-                with st.expander("Besoin d'un indice ?", expanded=False):
-                    for hint_id, _, penalty in question.hints:
-                        if st.button(f"Afficher l'indice ({penalty:g} point de pénalité)", key=f"hint_{hint_id}"):
-                            text = execution.use_hint(learner_id, result.session.session_id, hint_id, datetime.now(UTC))
-                            st.session_state[f"shown_hint_{hint_id}"] = text
-                        if shown := st.session_state.get(f"shown_hint_{hint_id}"):
-                            st.info(shown)
             started_key = f"question_started_{question.session_id}_{question.question_id}"
             st.session_state.setdefault(started_key, time.monotonic())
             action_cols = st.columns(2)
-            _inject_session_button_styles()
             with action_cols[0]:
-                st.markdown("<div class='btn3d'>", unsafe_allow_html=True)
                 submit_pressed = st.button(
                     "✅ Valider ma réponse",
                     key=f"session_submit_{question.session_id}_{question.question_id}",
                     use_container_width=True,
                     disabled=not str(answer).strip(),
                 )
-                st.markdown("</div>", unsafe_allow_html=True)
                 if submit_pressed:
                     elapsed = int((time.monotonic() - float(st.session_state[started_key])) * 1000)
                     try:
@@ -309,14 +271,12 @@ def session_screen(
                     except ValueError as exc:
                         st.error(str(exc))
             with action_cols[1]:
-                st.markdown("<div class='btn3d'>", unsafe_allow_html=True)
                 skip_pressed = st.button(
                     "⏭️ Passer",
                     key=f"session_skip_{question.session_id}_{question.question_id}",
                     use_container_width=True,
                     help="Passe cette question sans bloquer le devoir.",
                 )
-                st.markdown("</div>", unsafe_allow_html=True)
                 if skip_pressed:
                     elapsed = int((time.monotonic() - float(st.session_state[started_key])) * 1000)
                     try:
@@ -384,6 +344,7 @@ def session_screen(
             learner_id,
             int(result.session.session_id),
             key_prefix=f"session_corr_{result.session.session_id}",
+            expanded=True,
         )
         st.success("Synthèse du cycle prête. Tu peux revenir à l'accueil ou ouvrir un nouveau devoir.")
         home_cols = st.columns(2)
@@ -422,6 +383,21 @@ def student_history(
             is_evaluation = bool(getattr(item, "is_evaluation", False))
             session_kinds[int(session_id)] = "Évaluation" if is_evaluation else "Devoir"
     st.dataframe(_history_rows(result, session_kinds=session_kinds), use_container_width=True, hide_index=True)
+    from ui.student_guidance import render_answer_corrections
+
+    st.subheader("Corrections des séances", anchor=False)
+    for item in result:
+        kind = session_kinds.get(int(item.session_id), "Séance")
+        with st.expander(
+            f"{kind} du {item.created_at.strftime('%d/%m/%Y %H:%M')} — score {item.score:.0f} %",
+            expanded=False,
+        ):
+            render_answer_corrections(
+                learner_id,
+                int(item.session_id),
+                key_prefix=f"hist_corr_{item.session_id}",
+                expanded=True,
+            )
 
 
 def student_summary(controller: StudentExperienceController, learner_id: int) -> None:

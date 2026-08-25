@@ -37,6 +37,7 @@ def render_evaluation_progress(
     key_prefix: str = "eval_progress",
     title: str = "Mes évaluations",
     allow_retake: bool = True,
+    show_corrections: bool = True,
 ) -> None:
     """Affiche les évaluations terminées avec score % et note /20."""
     from ui.homework_actions import focus_homework_on_devoirs, open_homework_session
@@ -56,6 +57,13 @@ def render_evaluation_progress(
                 on_20 = score_percent_to_out_of_20(item.overall_score)
                 if on_20 is not None:
                     st.caption(f"Note ramenée sur 20 : **{on_20:g}/20**")
+            if show_corrections and item.session_id is not None:
+                render_answer_corrections(
+                    snapshot.context.learner_id,
+                    int(item.session_id),
+                    key_prefix=f"{key_prefix}_corr_{item.homework_id}",
+                    expanded=True,
+                )
             if allow_retake and item.needs_retake:
                 st.caption("Pas encore à 100 % — tu peux refaire cette évaluation.")
                 if st.button(
@@ -112,7 +120,11 @@ def render_student_home(
             cols[1].metric("Réussite", context.success_rate)
 
     if context.evaluation_progress:
-        render_evaluation_progress(snapshot, key_prefix=f"home_eval_{context.learner_id}")
+        render_evaluation_progress(
+            snapshot,
+            key_prefix=f"home_eval_{context.learner_id}",
+            show_corrections=False,
+        )
 
     st.subheader("À travailler", anchor=False)
     overdue = context.homework_overdue
@@ -256,28 +268,16 @@ def render_homework_during_guidance(
     method_outline: str | None = None,
 ) -> None:
     service = build_student_guidance_service()
-    with st.expander("🆘 Demander une aide", expanded=True):
-        st.caption("Aides progressives : indice → notion → démarche (sans spoiler immédiat).")
-        help_level = st.radio(
-            "Type d'aide",
-            options=(1, 2, 3, 4, 5),
-            format_func={
-                1: "1 — Repérer la demande",
-                2: "2 — Indice utile",
-                3: "3 — Rappel de notion",
-                4: "4 — Démarche étape par étape",
-                5: "5 — Piste guidée (sans réponse finale)",
-            }.get,
-            horizontal=False,
-            key=f"{key_prefix}_help_level",
-        )
-        if st.button("Obtenir un conseil", key=f"{key_prefix}_ask_professor"):
+    with st.container(border=True):
+        st.markdown("### 🆘 Aide")
+        st.caption("Une seule aide détaillée : formule / méthode + explication claire.")
+        if st.button("Afficher l'aide détaillée", key=f"{key_prefix}_ask_professor", use_container_width=True):
             response = service.guide_current_exercise(
                 _student_actor(user, learner_id),
                 learner_id,
                 session_id,
                 activity_id,
-                int(help_level),
+                1,
                 statement=statement,
                 hint_text=hint_text,
                 notion_reminder=notion_reminder,
@@ -308,6 +308,7 @@ def render_answer_corrections(
     session_id: int,
     *,
     key_prefix: str = "corrections",
+    expanded: bool = True,
 ) -> None:
     """Show per-question corrections for a completed homework/evaluation session."""
     from application.experience_factory import build_unified_session_execution_service
@@ -320,18 +321,27 @@ def render_answer_corrections(
     if not items:
         st.info("Aucune réponse enregistrée à corriger pour cette séance.")
         return
-    with st.expander("Voir les corrections détaillées", expanded=False):
-        for item in items:
-            badge = "✅" if item.correct else "❌"
-            with st.container(border=True):
-                st.markdown(f"{badge} **Question {item.position}** — {item.score:.0f} %")
-                st.write(item.statement)
-                st.caption(f"Ta réponse : {item.student_answer or '—'}")
-                st.caption(f"Réponse attendue : {item.expected_answer or '—'}")
-                if item.explanation:
-                    st.info(item.explanation)
-                if item.method:
-                    st.caption(f"Méthode : {item.method}")
+    correct_count = sum(1 for item in items if item.correct)
+    st.subheader("Correction détaillée", anchor=False)
+    st.caption(f"{correct_count}/{len(items)} réponse(s) correcte(s).")
+    show = st.toggle(
+        "Afficher toutes les réponses et corrections",
+        value=expanded,
+        key=f"{key_prefix}_show_{session_id}",
+    )
+    if not show:
+        return
+    for item in items:
+        badge = "✅ Correcte" if item.correct else "❌ Incorrecte"
+        with st.container(border=True):
+            st.markdown(f"**Question {item.position}** — {badge} · {item.score:.0f} %")
+            st.write(item.statement)
+            st.markdown(f"**Ta réponse :** {item.student_answer or '—'}")
+            st.markdown(f"**Bonne réponse :** {item.expected_answer or '—'}")
+            if item.explanation:
+                st.info(item.explanation)
+            if item.method:
+                st.caption(f"Méthode : {item.method}")
 
 
 def load_revision_guidance(user: dict[str, object], learner_id: int) -> RevisionGuidanceContext:

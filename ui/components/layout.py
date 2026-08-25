@@ -20,6 +20,32 @@ GLOBAL_STYLES = """
 }
 .small {color:#64748b;font-size:.9rem}
 *:focus-visible {outline:3px solid #1d4ed8;outline-offset:3px;}
+/* Action buttons — 3D light blue, readable dark text */
+div[data-testid="stButton"] > button,
+div[data-testid="stFormSubmitButton"] > button {
+  border: 1px solid #7dd3fc !important;
+  border-radius: 12px !important;
+  background: linear-gradient(180deg, #e0f2fe 0%, #7dd3fc 55%, #38bdf8 100%) !important;
+  color: #0c4a6e !important;
+  font-weight: 700 !important;
+  box-shadow: 0 4px 0 #0284c7, 0 8px 16px rgba(14,165,233,.22) !important;
+  transition: transform .08s ease, box-shadow .08s ease, filter .08s ease !important;
+}
+div[data-testid="stButton"] > button:hover,
+div[data-testid="stFormSubmitButton"] > button:hover {
+  filter: brightness(1.04) !important;
+  color: #082f49 !important;
+}
+div[data-testid="stButton"] > button:active,
+div[data-testid="stFormSubmitButton"] > button:active {
+  transform: translateY(2px) !important;
+  box-shadow: 0 2px 0 #0284c7, 0 4px 10px rgba(14,165,233,.2) !important;
+}
+div[data-testid="stButton"] > button p,
+div[data-testid="stFormSubmitButton"] > button p {
+  color: #0c4a6e !important;
+  font-weight: 700 !important;
+}
 @media (max-width: 900px) {
   .block-container {padding-left:1rem;padding-right:1rem;}
   [data-testid="stHorizontalBlock"] {flex-wrap:wrap;}

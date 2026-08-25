@@ -204,10 +204,11 @@ def test_scenario_11_homework_before_guidance() -> None:
 
 
 @pytest.mark.parametrize("level", [1, 2, 3, 4, 5])
-def test_scenario_12_13_progressive_hint_without_solution(level: int) -> None:
-    response = homework_during(level)
+def test_scenario_12_13_single_explicit_help_without_solution(level: int) -> None:
+    response = homework_during(level, statement="Calcule le volume d'un cube")
     assert response.message
-    assert "solution" not in response.message.lower() or level >= 6
+    assert response.help_level == 1
+    assert "solution complète" not in response.message.lower()
 
 
 def test_scenario_14_homework_result_explained() -> None:

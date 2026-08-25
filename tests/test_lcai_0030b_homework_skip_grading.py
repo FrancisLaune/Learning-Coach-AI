@@ -64,6 +64,19 @@ def test_short_text_accepts_equivalent_math_answers(actual: str, expected: str) 
     assert result.raw_score == 100
 
 
+def test_short_text_accepts_answer_contained_in_multiline() -> None:
+    result = DeterministicAssessmentEngine().assess(
+        AssessmentRequest(
+            AnswerType.SHORT_TEXT,
+            "Le volume du cube est 27 cm³.\nV = a³ = 3×3×3 = 27",
+            "27",
+            AssessmentMethod.EXACT_MATCH,
+        )
+    )
+    assert result.correct is True
+    assert result.raw_score == 100
+
+
 def test_short_text_still_rejects_wrong_math_answers() -> None:
     result = DeterministicAssessmentEngine().assess(
         AssessmentRequest(AnswerType.SHORT_TEXT, "9", "10 cm", AssessmentMethod.EXACT_MATCH)

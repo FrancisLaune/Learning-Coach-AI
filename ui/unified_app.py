@@ -983,6 +983,7 @@ def student_homework(learner_id: int, user: dict[str, object]) -> None:
                                 learner_id,
                                 int(item.session_id),
                                 key_prefix=f"hw_corr_{item.homework_id}",
+                                expanded=True,
                             )
                         if item.is_evaluation:
                             score = service.repository.homework_overall_score(item.homework_id)

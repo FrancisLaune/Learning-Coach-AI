@@ -81,13 +81,18 @@ def test_score_percent_to_out_of_20() -> None:
 
 def test_prefers_multiline_for_long_text_and_keywords() -> None:
     assert prefers_multiline_answer("LONG_TEXT") is True
-    assert prefers_multiline_answer("SHORT_TEXT", statement="Calcule 2+2") is False
+    assert prefers_multiline_answer("SHORT_TEXT", statement="Calcule 2+2") is True
     assert prefers_multiline_answer("TEXT", statement="Explique ta démarche étape par étape") is True
+    assert prefers_multiline_answer("MCQ_SINGLE") is False
 
 
 def test_scientific_notation_guide_detection() -> None:
+    from services.learning_session.answer_input import notation_guide_for_response_type
+
     assert needs_scientific_notation_guide(statement="Écris en notation scientifique") is True
     assert needs_scientific_notation_guide(statement="Calcule 3 + 4") is False
+    guide = notation_guide_for_response_type("SHORT_TEXT", statement="Calcule le volume")
+    assert "plusieurs lignes" in guide.casefold() or "décimal" in guide.casefold() or "virgule" in guide.casefold()
 
 
 def test_history_rows_label_evaluation_sessions() -> None:

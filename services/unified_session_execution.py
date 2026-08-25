@@ -105,14 +105,14 @@ class UnifiedSessionExecutionService:
         self.runner = runner
 
     def current(self, learner_id: int, session_id: int) -> ExecutableQuestion | None:
+        material = self.current_material(learner_id, session_id)
+        return None if material is None else material.question
+
+    def current_material(self, learner_id: int, session_id: int) -> QuestionMaterial | None:
         session = self.sessions.repository.get(session_id)
         if session is None or session.learner_id != learner_id:
             raise PermissionError("SESSION_ACCESS_DENIED")
-        return (
-            None
-            if (material := self.repository.current_question(learner_id, session_id)) is None
-            else material.question
-        )
+        return self.repository.current_question(learner_id, session_id)
 
     def submit(
         self,

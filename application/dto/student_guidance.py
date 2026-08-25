@@ -89,6 +89,7 @@ class EvaluationProgressItem:
     exercise_count: int
     overall_score: float | None
     needs_retake: bool
+    session_id: int | None = None
 
 
 @dataclass(frozen=True, slots=True)

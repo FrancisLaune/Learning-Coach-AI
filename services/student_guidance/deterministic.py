@@ -73,63 +73,73 @@ def homework_before(context_subject: str, exercise_count: int, minutes: int | No
     )
 
 
+def _formula_help_from_statement(statement: str | None) -> str | None:
+    text = (statement or "").casefold()
+    if not text:
+        return None
+    if "volume" in text and "cube" in text:
+        return (
+            "Formule utile : volume d'un cube V = a³ "
+            "(a = longueur d'une arête). Multiplie a × a × a, puis précise l'unité (ex. cm³)."
+        )
+    if "volume" in text and ("pavé" in text or "parallélépipède" in text):
+        return "Formule utile : volume d'un pavé V = L × l × h. Multiplie longueur, largeur et hauteur."
+    if "aire" in text and "carré" in text:
+        return "Formule utile : aire d'un carré A = a² (a = côté)."
+    if "aire" in text and "rectangle" in text:
+        return "Formule utile : aire d'un rectangle A = L × l."
+    if "aire" in text and "triangle" in text:
+        return "Formule utile : aire d'un triangle A = (base × hauteur) / 2."
+    if "périmètre" in text and "cercle" in text:
+        return "Formule utile : périmètre d'un cercle P = 2 × π × r (ou π × diamètre)."
+    if "pythagore" in text or ("triangle rectangle" in text and ("hypoténuse" in text or "côté" in text)):
+        return "Formule utile (Pythagore) : a² + b² = c², avec c l'hypoténuse."
+    if "moyenne" in text:
+        return "Formule utile : moyenne = somme des valeurs / nombre de valeurs."
+    if "pourcentage" in text or "%" in text:
+        return "Méthode utile : pourcentage = (partie / total) × 100."
+    if "équation" in text or "résoudre" in text:
+        return "Méthode utile : isole l'inconnue en faisant la même opération de chaque côté de l'égalité."
+    return None
+
+
 def homework_during(
-    help_level: int,
+    help_level: int = 1,
     *,
     statement: str | None = None,
     hint_text: str | None = None,
     notion_reminder: str | None = None,
     method_outline: str | None = None,
 ) -> HomeworkGuidanceResponse:
-    """Progressive useful aids: indice → notion → démarche (no full solution before level 6)."""
-    level = max(1, min(7, int(help_level)))
-    excerpt = " ".join((statement or "").split())
-    if len(excerpt) > 120:
-        excerpt = excerpt[:117].rstrip() + "…"
-
-    if level == 1:
-        message = (
-            "Indice utile : repère dans la consigne ce que l'on te demande exactement "
-            "(calculer, simplifier, justifier…)."
+    """Single explicit help: formula/method + clear explanation (no progressive levels)."""
+    del help_level
+    parts: list[str] = []
+    formula = _formula_help_from_statement(statement)
+    if formula:
+        parts.append(formula)
+    if hint_text and hint_text.strip():
+        parts.append(f"Aide détaillée : {hint_text.strip()}")
+    if notion_reminder and notion_reminder.strip():
+        parts.append(f"Rappel de notion : {notion_reminder.strip()}")
+    if method_outline and method_outline.strip():
+        parts.append(f"Démarche : {method_outline.strip()}")
+    if not parts:
+        excerpt = " ".join((statement or "").split())
+        if len(excerpt) > 160:
+            excerpt = excerpt[:157].rstrip() + "…"
+        parts.append(
+            "Aide détaillée : repère ce que l'on te demande, note les données utiles, "
+            "applique la règle du chapitre, puis écris clairement le résultat final."
         )
         if excerpt:
-            message += f" Consigne : « {excerpt} »."
-    elif level == 2:
-        message = hint_text or (
-            "Indice utile : isole les données numériques et les unités, puis reformule la question en une phrase courte."
-        )
-    elif level == 3:
-        message = notion_reminder or (
-            "Rappel de notion : quelle règle ou définition du chapitre s'applique ici ? "
-            "Écris-la avant de calculer."
-        )
-    elif level == 4:
-        message = method_outline or (
-            "Démarche : (1) note les données, (2) choisis la méthode, (3) calcule une étape, "
-            "(4) vérifie l'ordre de grandeur."
-        )
-    elif level == 5:
-        message = (
-            "Piste guidée : avance une seule étape maintenant, sans viser la réponse finale. "
-            "Si tu bloques, passe à l'aide suivante."
-        )
-    elif level == 6:
-        message = (
-            "Solution guidée (sans spoiler complet) : décompose le problème en sous-questions "
-            "et valide chaque résultat intermédiaire."
-        )
-    else:
-        message = (
-            "Corrigé expliqué : tu peux consulter la correction après avoir tenté une réponse, "
-            "ou si la politique du devoir l'autorise."
-        )
-
+            parts.append(f"Consigne : « {excerpt} ».")
+    message = " ".join(parts)
     return HomeworkGuidanceResponse(
         source=GuidanceSource.DETERMINISTIC,
         phase="DURING",
         message=message,
-        help_level=level,
-        suggested_actions=("Indice suivant", "Retour au devoir"),
+        help_level=1,
+        suggested_actions=("Relire la consigne", "Retour au devoir"),
     )
 
 
