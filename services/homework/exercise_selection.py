@@ -111,13 +111,22 @@ def _bucket_targets(exercise_count: int, strategy: HomeworkSelectionStrategy) ->
     return raw
 
 
+def _family_id(row: CatalogRow) -> Any | None:
+    return row[6] if len(row) > 6 else None
+
+
 def panachage_select(
     rows: list[CatalogRow],
     *,
     target: int | None,
     exercise_count: int,
     strategy: HomeworkSelectionStrategy | None = None,
+    max_per_family: int = 1,
 ) -> list[CatalogRow]:
+    """Select mixed difficulties without using difficulty as a hard SQL filter.
+
+    LCAI-0034: optionally cap variants from the same exercise family (default 1).
+    """
     if not rows or exercise_count <= 0:
         return []
     strategy = strategy or HomeworkSelectionStrategy()
@@ -132,16 +141,28 @@ def panachage_select(
 
     selected: list[CatalogRow] = []
     seen: set[int] = set()
+    family_counts: dict[Any, int] = {}
+
+    def family_ok(row: CatalogRow) -> bool:
+        if max_per_family <= 0:
+            return True
+        fam = _family_id(row)
+        if fam is None:
+            return True
+        return family_counts.get(fam, 0) < max_per_family
 
     def take(bucket: str, limit: int) -> None:
         for row in buckets[bucket]:
             if limit <= 0 or len(selected) >= exercise_count:
                 return
             content_id = int(row[0])
-            if content_id in seen:
+            if content_id in seen or not family_ok(row):
                 continue
             selected.append(row)
             seen.add(content_id)
+            fam = _family_id(row)
+            if fam is not None:
+                family_counts[fam] = family_counts.get(fam, 0) + 1
             limit -= 1
 
     for bucket, limit in _bucket_targets(exercise_count, strategy).items():
@@ -151,9 +172,12 @@ def panachage_select(
         if len(selected) >= exercise_count:
             break
         content_id = int(row[0])
-        if content_id not in seen:
+        if content_id not in seen and family_ok(row):
             selected.append(row)
             seen.add(content_id)
+            fam = _family_id(row)
+            if fam is not None:
+                family_counts[fam] = family_counts.get(fam, 0) + 1
     return selected
 
 
@@ -199,6 +223,7 @@ class HomeworkExerciseSelectionService:
             target=target_difficulty,
             exercise_count=pool_size,
             strategy=resolved_strategy,
+            max_per_family=int(getattr(request, "max_per_family", 1) or 1),
         )
         if request.mode is AssignmentType.GLOBAL_SUBJECT:
             prepared = balance_by_chapter(prepared)

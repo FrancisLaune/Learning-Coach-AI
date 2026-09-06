@@ -1,0 +1,25 @@
+{
+  "ticket": "LCAI-0035",
+  "parser_version": "lcai-0035-pdf-v1",
+  "official_question_count": 1098,
+  "official_questions_linked": 1049,
+  "documents_registered": 97,
+  "documents_parsed": 97,
+  "archives_total": 148,
+  "ARCHIVE_DERIVED_WITHOUT_PARENT": 0,
+  "empty_official_statements": 0,
+  "official_by_year": {
+    "-1": 123,
+    "2018": 22,
+    "2019": 27,
+    "2020": 58,
+    "2021": 24,
+    "2022": 69,
+    "2023": 232,
+    "2024": 270,
+    "2025": 212,
+    "2026": 61
+  },
+  "pass_official_gt_3": true,
+  "pass_orphan_invariant": true
+}

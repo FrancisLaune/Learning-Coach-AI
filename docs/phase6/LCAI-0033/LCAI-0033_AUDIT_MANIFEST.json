@@ -1,0 +1,257 @@
+{
+  "ticket": "LCAI-0033",
+  "commit": "77c0539b1452e3c9e008a94d0c933f3f4587667f",
+  "branch": "develop",
+  "generated_at": "2026-09-06T16:58:41Z",
+  "runtime_db_ob": {
+    "source": "data/objectif_brevet_2027.duckdb",
+    "copy": "artifacts/LCAI-0033/objectif_brevet_2027_AUDIT_COPY.duckdb",
+    "source_sha256": "1d68e49907ac30ddf6a9e18429297c961d90f2ca9857bbdab77d75b45b05fd20",
+    "copy_sha256": "1d68e49907ac30ddf6a9e18429297c961d90f2ca9857bbdab77d75b45b05fd20",
+    "source_size": 29110272,
+    "copy_size": 29110272,
+    "sha_match": true
+  },
+  "runtime_db_v2": {
+    "source": "data/learning_coach_v2.duckdb",
+    "copy": "artifacts/LCAI-0033/learning_coach_v2_AUDIT_COPY.duckdb",
+    "source_sha256": "e2b9826fab629c4094d27b8cf4168a6a88a361bfc183df5d832e4cc5f731724d",
+    "copy_sha256": "e2b9826fab629c4094d27b8cf4168a6a88a361bfc183df5d832e4cc5f731724d",
+    "source_size": 241184768,
+    "copy_size": 241184768,
+    "sha_match": true
+  },
+  "warnings": [
+    "LCAI-0032 already applied before this audit (ticket text assumed pre-0032).",
+    "ARCHIVE_DERIVED labels without content_derivations parent links.",
+    "Éduscol archives mostly DISCOVERED (PDF not mass-parsed).",
+    "QCM structural issues counted: 0"
+  ],
+  "indicators": {
+    "Exercices/contenus totaux": 1981,
+    "Contenus jouables": 1981,
+    "Matières DNB couvertes": 9,
+    "Compétences 3e totales": 78,
+    "Compétences sans exercice": 0,
+    "Compétences avec >=20 exercices": 78,
+    "Compétences avec >=40 exercices": 13,
+    "Annales officielles enregistrées": 64,
+    "Questions officielles": 3,
+    "Exercices dérivés d'annales": 492,
+    "Exercices IA": 0,
+    "Provenance inconnue": 0,
+    "Doublons exacts": 0,
+    "Quasi-doublons": 361,
+    "Contenus non jouables": 0,
+    "Supports manquants": 0,
+    "Références Éduscol traçables": 64
+  },
+  "histogram": {
+    "global": {
+      "20-29": 51,
+      "40+": 13,
+      "30-39": 14
+    },
+    "by_subject": {
+      "EMC": {
+        "20-29": 6
+      },
+      "FRENCH": {
+        "40+": 3,
+        "20-29": 5,
+        "30-39": 3
+      },
+      "GEOGRAPHY": {
+        "20-29": 9
+      },
+      "HISTORY": {
+        "20-29": 7,
+        "40+": 3
+      },
+      "MATHEMATICS": {
+        "20-29": 4,
+        "30-39": 4,
+        "40+": 7
+      },
+      "ORAL": {
+        "30-39": 1
+      },
+      "PHYSICS_CHEMISTRY": {
+        "20-29": 7,
+        "30-39": 3
+      },
+      "SVT": {
+        "30-39": 3,
+        "20-29": 7
+      },
+      "TECHNOLOGY": {
+        "20-29": 6
+      }
+    }
+  },
+  "source_sha_before": {
+    "ob": "1d68e49907ac30ddf6a9e18429297c961d90f2ca9857bbdab77d75b45b05fd20",
+    "v2": "e2b9826fab629c4094d27b8cf4168a6a88a361bfc183df5d832e4cc5f731724d"
+  },
+  "source_sha_after": {
+    "ob": "1d68e49907ac30ddf6a9e18429297c961d90f2ca9857bbdab77d75b45b05fd20",
+    "v2": "e2b9826fab629c4094d27b8cf4168a6a88a361bfc183df5d832e4cc5f731724d"
+  },
+  "sources_unmodified": true,
+  "artefacts": [
+    {
+      "path": "artifacts/LCAI-0033/exports/LCAI-0033_BREVET_DERIVATION_AUDIT.csv",
+      "size": 207409,
+      "sha256": "a71defd3f037b846326885f515b6a235c03a3d2f6ea74bc3d940b3d0673f1fc7",
+      "purpose": "LCAI-0033_BREVET_DERIVATION_AUDIT.csv"
+    },
+    {
+      "path": "artifacts/LCAI-0033/exports/LCAI-0033_CODE_CONTENT_AUDIT.csv",
+      "size": 3321,
+      "sha256": "03b77d8d96d3c3634c148ffffc64e0644b3c0f7934e53123994384c5ab10f471",
+      "purpose": "LCAI-0033_CODE_CONTENT_AUDIT.csv"
+    },
+    {
+      "path": "artifacts/LCAI-0033/exports/LCAI-0033_COLUMN_INVENTORY.csv",
+      "size": 121265,
+      "sha256": "2baa4284675b85a78ad38f0134743c4f1de981c6354d13d1a72269fc4f12653c",
+      "purpose": "LCAI-0033_COLUMN_INVENTORY.csv"
+    },
+    {
+      "path": "artifacts/LCAI-0033/exports/LCAI-0033_CONTENT_BY_SKILL.csv",
+      "size": 11047,
+      "sha256": "b6ed0867f1f7e1b71cdbd67fceddf461ba14771bdba0859dcf1380fbf17ce094",
+      "purpose": "LCAI-0033_CONTENT_BY_SKILL.csv"
+    },
+    {
+      "path": "artifacts/LCAI-0033/exports/LCAI-0033_CONTENT_BY_SUBJECT.csv",
+      "size": 508,
+      "sha256": "3ba4e6da71a0bff569e67db55170095dade9a010147c622a3b4ab089aeb0d680",
+      "purpose": "LCAI-0033_CONTENT_BY_SUBJECT.csv"
+    },
+    {
+      "path": "artifacts/LCAI-0033/exports/LCAI-0033_CONTENT_SAMPLE.json",
+      "size": 56692,
+      "sha256": "e36c14246a5f244029201f1b2676107554f49473d27998c45467ca890472749f",
+      "purpose": "LCAI-0033_CONTENT_SAMPLE.json"
+    },
+    {
+      "path": "artifacts/LCAI-0033/exports/LCAI-0033_CONTEXT.json",
+      "size": 1735,
+      "sha256": "5cb90273ee110680a43666a6207a4de1ed7706c5dbf46a2127933802ff7a0f0b",
+      "purpose": "LCAI-0033_CONTEXT.json"
+    },
+    {
+      "path": "artifacts/LCAI-0033/exports/LCAI-0033_DATA_SOURCE_INVENTORY.csv",
+      "size": 36933,
+      "sha256": "644ac0dc38c525e898317d65947091353ed508bb168685a9b5fab9ce7997c807",
+      "purpose": "LCAI-0033_DATA_SOURCE_INVENTORY.csv"
+    },
+    {
+      "path": "artifacts/LCAI-0033/exports/LCAI-0033_DATABASE_SCHEMA.md",
+      "size": 11727,
+      "sha256": "5eee0a3951eeb0525f1076db8a29c9db97883a66a7096c83d5e4058027465bf9",
+      "purpose": "LCAI-0033_DATABASE_SCHEMA.md"
+    },
+    {
+      "path": "artifacts/LCAI-0033/exports/LCAI-0033_DATABASE_STATE.md",
+      "size": 5253,
+      "sha256": "8731c1f317c9590bff8529e8f0fadbf02a3ee52a287e066c84a13d49a8186122",
+      "purpose": "LCAI-0033_DATABASE_STATE.md"
+    },
+    {
+      "path": "artifacts/LCAI-0033/exports/LCAI-0033_DIFFICULTY_AUDIT.md",
+      "size": 616,
+      "sha256": "95d569968a220cca4415a3519a412eb891324e01d61ed67ef336cbcdbb6ccba4",
+      "purpose": "LCAI-0033_DIFFICULTY_AUDIT.md"
+    },
+    {
+      "path": "artifacts/LCAI-0033/exports/LCAI-0033_DNB_ARCHIVE_COVERAGE.csv",
+      "size": 9971,
+      "sha256": "439490da2b4bfaa4ae9ac22b62534cb2e47ce5fdac4628e683748816f1a1b90f",
+      "purpose": "LCAI-0033_DNB_ARCHIVE_COVERAGE.csv"
+    },
+    {
+      "path": "artifacts/LCAI-0033/exports/LCAI-0033_EDUSCOL_SOURCE_AUDIT.md",
+      "size": 1630,
+      "sha256": "90871fb3ff7fdafac18b386547cf44e5f68130feec008d8bec42adf0ca391ffe",
+      "purpose": "LCAI-0033_EDUSCOL_SOURCE_AUDIT.md"
+    },
+    {
+      "path": "artifacts/LCAI-0033/exports/LCAI-0033_EXACT_DUPLICATES.csv",
+      "size": 40,
+      "sha256": "46a41669dbab0841b14ecc68abd9eadbd519b25e0d80d0a7b973924be399dd61",
+      "purpose": "LCAI-0033_EXACT_DUPLICATES.csv"
+    },
+    {
+      "path": "artifacts/LCAI-0033/exports/LCAI-0033_EXERCISE_CATALOG.csv",
+      "size": 948968,
+      "sha256": "e79fa5b876a9b392d9105e94a8f9769635a8c407221cf8bfb9010290744a2577",
+      "purpose": "LCAI-0033_EXERCISE_CATALOG.csv"
+    },
+    {
+      "path": "artifacts/LCAI-0033/exports/LCAI-0033_HISTOGRAM.json",
+      "size": 629,
+      "sha256": "c1c585c05e9fc0974b5413c7c26131d8d65f3bedc9b778c512d41a2103346c7d",
+      "purpose": "LCAI-0033_HISTOGRAM.json"
+    },
+    {
+      "path": "artifacts/LCAI-0033/exports/LCAI-0033_HOMEWORK_CAPACITY.csv",
+      "size": 12673,
+      "sha256": "22c2df6e1bab679e12bbf4ecd4904cf277d8fb2e691fab065dad83d7452212a9",
+      "purpose": "LCAI-0033_HOMEWORK_CAPACITY.csv"
+    },
+    {
+      "path": "artifacts/LCAI-0033/exports/LCAI-0033_NEAR_DUPLICATES.csv",
+      "size": 34153,
+      "sha256": "2b585016044aaf2bb867e6873a4bd77f7a9414d428ead5bfafc1b24d6fd35c99",
+      "purpose": "LCAI-0033_NEAR_DUPLICATES.csv"
+    },
+    {
+      "path": "artifacts/LCAI-0033/exports/LCAI-0033_SCHEMA_DUMP.sql",
+      "size": 109346,
+      "sha256": "799dd72e0cfa70a9bc47a50505ec7afa66bf9bc135030fb204306c6730828849",
+      "purpose": "LCAI-0033_SCHEMA_DUMP.sql"
+    },
+    {
+      "path": "artifacts/LCAI-0033/exports/LCAI-0033_TABLE_INVENTORY.csv",
+      "size": 9719,
+      "sha256": "5d2ddd020fba0ebbfae565436bdb1b976d7fca26d91221e96734b5ff4d48556e",
+      "purpose": "LCAI-0033_TABLE_INVENTORY.csv"
+    },
+    {
+      "path": "artifacts/LCAI-0033/exports/LCAI-0033_UNPLAYABLE_CONTENT.csv",
+      "size": 85,
+      "sha256": "24642a3ad0dba2db3c38f0304ec40e65f362508b3e4c40effbca669467236b6d",
+      "purpose": "LCAI-0033_UNPLAYABLE_CONTENT.csv"
+    },
+    {
+      "path": "artifacts/LCAI-0033/learning_coach_v2_AUDIT_COPY.duckdb",
+      "size": 241184768,
+      "sha256": "e2b9826fab629c4094d27b8cf4168a6a88a361bfc183df5d832e4cc5f731724d",
+      "purpose": "learning_coach_v2_AUDIT_COPY.duckdb"
+    },
+    {
+      "path": "artifacts/LCAI-0033/objectif_brevet_2027_AUDIT_ANONYMIZED.duckdb",
+      "size": 29110272,
+      "sha256": "5da12fe50c6a8ac44ac96d8a605da590d7a46c67b661ea31bbc3e1610c3c9fa1",
+      "purpose": "objectif_brevet_2027_AUDIT_ANONYMIZED.duckdb"
+    },
+    {
+      "path": "artifacts/LCAI-0033/objectif_brevet_2027_AUDIT_COPY.duckdb",
+      "size": 29110272,
+      "sha256": "1d68e49907ac30ddf6a9e18429297c961d90f2ca9857bbdab77d75b45b05fd20",
+      "purpose": "objectif_brevet_2027_AUDIT_COPY.duckdb"
+    },
+    {
+      "path": "artifacts/LCAI-0033/exports/LCAI-0033_AUDIT_MANIFEST.json",
+      "size": 9165,
+      "sha256": "152d501d1870169d6d7ca413e97319b6a26508fe806fd834e5b29206660a6de9",
+      "purpose": "manifest"
+    }
+  ],
+  "verdict": "READY FOR EXTERNAL REVIEW",
+  "cursor_verdict": "READY FOR REVIEW",
+  "package_zip": "artifacts/LCAI-0033/LCAI-0033_AUDIT_PACKAGE.zip",
+  "package_sha256": "86b352f47cd2d7c009df75c8ffa43f0f3b75db016fc48f6dcb3549e597869729"
+}

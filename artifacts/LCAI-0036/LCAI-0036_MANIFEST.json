@@ -1,0 +1,127 @@
+{
+  "ticket": "LCAI-0036",
+  "generated_at": "2026-09-06T18:15:25.013217+00:00",
+  "validator_version": "lcai-0036-validator-v1",
+  "ruleset_version": "lcai-0036-ruleset-v1",
+  "curriculum_version": "FR_3E_DNB_2027_V1",
+  "database_sha256": "9355da28a4a1911c2109f985dfa2024930ecf29d29f264d4d17c34b83ab87d03",
+  "files": [
+    {
+      "path": "LCAI-0036_IMPLEMENTATION_REPORT.md",
+      "size": 2485,
+      "sha256": "96144b14ac6fdb693a51f40820514abebe4c31d2d72e97a4fe68a0500f6988eb",
+      "purpose": "LCAI-0036_IMPLEMENTATION_REPORT.md"
+    },
+    {
+      "path": "LCAI-0036_PEDAGOGICAL_VALIDATION_REPORT.md",
+      "size": 1859,
+      "sha256": "6f6f3731806254b8a4f35f75b59e0d9f34c8450acab7b8259a976d4b6e953ed5",
+      "purpose": "LCAI-0036_PEDAGOGICAL_VALIDATION_REPORT.md"
+    },
+    {
+      "path": "LCAI-0036_OFFICIAL_QUESTION_VALIDATION.csv",
+      "size": 214847,
+      "sha256": "d04ecd4936ce88e53dc29786ea6239a8f2a013441247e476f47095554d1403a6",
+      "purpose": "LCAI-0036_OFFICIAL_QUESTION_VALIDATION.csv"
+    },
+    {
+      "path": "LCAI-0036_CERTIFIED_COVERAGE_BY_SKILL.csv",
+      "size": 8088,
+      "sha256": "336e6933949a7a321be2df1622e1644ae8772d425773d0d6f65b5b4024605445",
+      "purpose": "LCAI-0036_CERTIFIED_COVERAGE_BY_SKILL.csv"
+    },
+    {
+      "path": "LCAI-0036_CERTIFIED_COVERAGE_BY_SUBJECT.csv",
+      "size": 301,
+      "sha256": "1d354875cf54927c06b66adcfdc7e2097a7b84f5c027209155153f176b5b0fd1",
+      "purpose": "LCAI-0036_CERTIFIED_COVERAGE_BY_SUBJECT.csv"
+    },
+    {
+      "path": "LCAI-0036_CERTIFIED_COVERAGE_BY_YEAR.csv",
+      "size": 254,
+      "sha256": "f479e7a7fc5f09265f3f13a7b5e28411b282138a4ef2450cb86a0d539e55a5d2",
+      "purpose": "LCAI-0036_CERTIFIED_COVERAGE_BY_YEAR.csv"
+    },
+    {
+      "path": "LCAI-0036_CORRECTION_COVERAGE.csv",
+      "size": 1086,
+      "sha256": "456ff84195194de8d5d8b7210b35b5c25c20616350d632c15d4ff2edd5bf25ee",
+      "purpose": "LCAI-0036_CORRECTION_COVERAGE.csv"
+    },
+    {
+      "path": "LCAI-0036_ASSET_QUALITY.csv",
+      "size": 208,
+      "sha256": "8a8387a18644743b0813f2a1172d5d4d3cc5765646d71e4d63c19634030a79f7",
+      "purpose": "LCAI-0036_ASSET_QUALITY.csv"
+    },
+    {
+      "path": "LCAI-0036_FORMAT_MATRIX.csv",
+      "size": 835,
+      "sha256": "4e469f71809a9fa19f96005e44239ec4cbca1bbd41f8faa7bea98fe807ea7727",
+      "purpose": "LCAI-0036_FORMAT_MATRIX.csv"
+    },
+    {
+      "path": "LCAI-0036_CERTIFIED_GAPS.csv",
+      "size": 7693,
+      "sha256": "f7ff9f3dcf6c3b7e1f4dc18f18c1dd681d1ecd4fca405180eae9edb927dc0fd7",
+      "purpose": "LCAI-0036_CERTIFIED_GAPS.csv"
+    },
+    {
+      "path": "LCAI-0036_REVIEW_QUEUE.csv",
+      "size": 126679,
+      "sha256": "ab0d3bb984343f89f5cdb6e88469906c26af65295eaf3671d6b363b2dd9fd83b",
+      "purpose": "LCAI-0036_REVIEW_QUEUE.csv"
+    },
+    {
+      "path": "LCAI-0036_UNDERREPRESENTED_SUBJECTS.md",
+      "size": 685,
+      "sha256": "b5c809bd9b2bc1b8e46613c883cc2eeec4304de3b34a6b8988fc6552ab684d27",
+      "purpose": "LCAI-0036_UNDERREPRESENTED_SUBJECTS.md"
+    },
+    {
+      "path": "LCAI-0036_CORRECTION_REPORT.md",
+      "size": 307,
+      "sha256": "ab446bdf3f8ad09ee68f5b9e3d30a3b73ad3c6db88fff1c91615d4caa7e8d48e",
+      "purpose": "LCAI-0036_CORRECTION_REPORT.md"
+    },
+    {
+      "path": "LCAI-0036_VALIDATION_SAMPLE.json",
+      "size": 34381,
+      "sha256": "9d17f563693686f2d8d4b78560c189ebc3e30e59518b6bb308080c500734ef2f",
+      "purpose": "LCAI-0036_VALIDATION_SAMPLE.json"
+    },
+    {
+      "path": "LCAI-0036_SCHEMA_CHANGES.md",
+      "size": 372,
+      "sha256": "5b822b181700c26a4e06d4dee37c5e20c5347b07a98d1fc7fdabd426f29a2f6e",
+      "purpose": "LCAI-0036_SCHEMA_CHANGES.md"
+    },
+    {
+      "path": "LCAI-0036_TEST_REPORT.md",
+      "size": 87,
+      "sha256": "79df2e6ffb0c5a3c9d444e72cb5c5b0e31b40fa4e8b429465c9d3cd7504f3a6a",
+      "purpose": "LCAI-0036_TEST_REPORT.md"
+    },
+    {
+      "path": "LCAI-0036_NON_REGRESSION_REPORT.md",
+      "size": 208,
+      "sha256": "6c31996afaf1783f62bb582cdd83c7a5e91663159b4e9e6e57fa7dae11c441b5",
+      "purpose": "LCAI-0036_NON_REGRESSION_REPORT.md"
+    }
+  ],
+  "verdicts": {
+    "OFFICIAL QUESTION AUDIT": "PASS",
+    "SEGMENTATION VALIDATION": "PARTIAL",
+    "SUBJECT CLASSIFICATION": "PARTIAL",
+    "SKILL MAPPING VALIDATION": "PARTIAL",
+    "DNB 2027 COMPATIBILITY": "PARTIAL",
+    "ASSET QUALITY": "PARTIAL",
+    "OFFICIAL CORRECTION COVERAGE": "PARTIAL",
+    "PEDAGOGICAL RELIABILITY": "PASS",
+    "CERTIFIED COVERAGE": "PARTIAL",
+    "ARCHIVE TRACEABILITY": "PASS",
+    "CANONICAL REPOSITORY": "PASS",
+    "NON-REGRESSION": "PASS",
+    "REVIEW PACKAGE": "PASS"
+  }
+}

@@ -27,8 +27,15 @@ class SkillCoverage:
 
 def measure_coverage(store: BrevetContentStore | None = None) -> tuple[SkillCoverage, ...]:
     store = store or BrevetContentStore()
-    rows = store.fetchall("SELECT * FROM v_content_coverage ORDER BY subject, chapter, skill")
-    # View column order matches CREATE VIEW
+    rows = store.fetchall(
+        """
+        SELECT subject, chapter, skill, brevet_importance, total_validated,
+               official_archive_count, archive_derived_count, ai_generated_count,
+               curated_count, unique_formats, coverage_status
+        FROM v_content_coverage
+        ORDER BY subject, chapter, skill
+        """
+    )
     result: list[SkillCoverage] = []
     for row in rows:
         result.append(
@@ -43,7 +50,7 @@ def measure_coverage(store: BrevetContentStore | None = None) -> tuple[SkillCove
                 ai_generated_count=int(row[7] or 0),
                 curated_count=int(row[8] or 0),
                 unique_formats=int(row[9] or 0),
-                coverage_status=str(row[12]),
+                coverage_status=str(row[10]),
             )
         )
     return tuple(result)

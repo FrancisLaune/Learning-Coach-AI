@@ -306,8 +306,11 @@ class DuckDBUnifiedExperienceRepository:
         )
 
     def list_catalog_rows_for_selection(self, request: HomeworkRequest) -> list[tuple[Any, ...]]:
-        rows = self._approved_content_rows(request)
         grade_code = self._grade_code(request.grade_level_id)
+        if (grade_code or "").upper() in {"FR-3E", "3E"}:
+            rows = self._ob_catalog_rows_for_3e(request)
+        else:
+            rows = self._approved_content_rows(request)
         if request.learner_id > 0:
             context = LearnerContextService(self).build(request, "catalog-anti-repeat")
             rows = exclude_recent_content_ids(rows, context.recent_content_ids)
@@ -316,6 +319,30 @@ class DuckDBUnifiedExperienceRepository:
             grade_code=grade_code,
             exam_skill_ids=self._exam_skill_ids_for_grade(grade_code),
         )
+
+    def _ob_catalog_rows_for_3e(self, request: HomeworkRequest) -> list[tuple[Any, ...]]:
+        """Canonical 3e/DNB catalog from objectif_brevet (LCAI-0034)."""
+        from services.brevet_referential.repository import PedagogicalContentRepository
+
+        subject_code = self._subject_code(request.subject_id)
+        repo = PedagogicalContentRepository()
+        try:
+            return repo.catalog_rows_for_selection(
+                subject_code=subject_code,
+                limit=max(500, request.exercise_count * 20),
+                max_per_family=int(getattr(request, "max_per_family", 1) or 1),
+            )
+        finally:
+            repo.store.close()
+
+    def _subject_code(self, subject_id: int) -> str | None:
+        connection = connect_v2(self.database_path, read_only=True)
+        try:
+            row = connection.execute("SELECT code FROM subjects WHERE id=?", [subject_id]).fetchone()
+            return None if row is None else str(row[0])
+        finally:
+            connection.close()
+
 
     def _finalize_content_selection(
         self,

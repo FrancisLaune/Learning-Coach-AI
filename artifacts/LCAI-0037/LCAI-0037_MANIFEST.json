@@ -1,0 +1,95 @@
+{
+  "ticket": "LCAI-0037",
+  "generated_at": "2026-09-06T19:10:27.475567+00:00",
+  "validator_version": "lcai-0037-auto-cert-v1",
+  "curriculum_version": "FR_3E_DNB_2027_V1",
+  "files": [
+    {
+      "path": "LCAI-0037_IMPLEMENTATION_REPORT.md",
+      "size": 1594,
+      "sha256": "259b1c3941aba9d08fba63e248cb227625a79274a58503fc78bdc36d5e749ce8",
+      "purpose": "LCAI-0037_IMPLEMENTATION_REPORT.md"
+    },
+    {
+      "path": "LCAI-0037_FINAL_CERTIFICATION_REPORT.md",
+      "size": 1397,
+      "sha256": "ce09c782250281ae4ffe37810c9222eb1979747818d6ce6b0c7cc1f7831ff4a7",
+      "purpose": "LCAI-0037_FINAL_CERTIFICATION_REPORT.md"
+    },
+    {
+      "path": "LCAI-0037_FINAL_COVERAGE_BY_SKILL.csv",
+      "size": 5082,
+      "sha256": "d03959b9e5db9afb64bcf2ad61a738deb50c33f6a059a973c1f891dc29a9eea0",
+      "purpose": "LCAI-0037_FINAL_COVERAGE_BY_SKILL.csv"
+    },
+    {
+      "path": "LCAI-0037_FINAL_COVERAGE_BY_SUBJECT.csv",
+      "size": 212,
+      "sha256": "cce74fc827aa746ca38521847a8997c863fde01a76659c2649639f35cdef7a88",
+      "purpose": "LCAI-0037_FINAL_COVERAGE_BY_SUBJECT.csv"
+    },
+    {
+      "path": "LCAI-0037_FINAL_COVERAGE_BY_YEAR.csv",
+      "size": 263,
+      "sha256": "4ca46c526292e1d64d5f0219290115285263d6802a9628f88b27aa8b353b3d27",
+      "purpose": "LCAI-0037_FINAL_COVERAGE_BY_YEAR.csv"
+    },
+    {
+      "path": "LCAI-0037_CORRECTION_COVERAGE.csv",
+      "size": 136,
+      "sha256": "d1eb187b3634aa60de6a0bbbb0bbf28cfacf8bec63dd79010a88e40ea51f5571",
+      "purpose": "LCAI-0037_CORRECTION_COVERAGE.csv"
+    },
+    {
+      "path": "LCAI-0037_DNB_2027_FINAL_COMPATIBILITY.csv",
+      "size": 107272,
+      "sha256": "4e357bc524c6b53576f54f34cdfe3d39e53e30e4cf3d3642443653ffe14a01ec",
+      "purpose": "LCAI-0037_DNB_2027_FINAL_COMPATIBILITY.csv"
+    },
+    {
+      "path": "LCAI-0037_STATUS_TRANSITIONS.csv",
+      "size": 62606,
+      "sha256": "26ac1dbdd8dea41f4212ab712380afe221c2bf042124490f88ba279a493246dc",
+      "purpose": "LCAI-0037_STATUS_TRANSITIONS.csv"
+    },
+    {
+      "path": "LCAI-0037_REJECTED_OR_UNPLAYABLE.csv",
+      "size": 269,
+      "sha256": "ccfafde32c73ecca5cd6ea4f439252ca612f597d335bda59303280fb89a9d533",
+      "purpose": "LCAI-0037_REJECTED_OR_UNPLAYABLE.csv"
+    },
+    {
+      "path": "LCAI-0037_TEST_REPORT.md",
+      "size": 60,
+      "sha256": "97acfb34414bd8d3064cb8db58dc1969551d35d045040e3e01cac618246ac5f6",
+      "purpose": "LCAI-0037_TEST_REPORT.md"
+    },
+    {
+      "path": "LCAI-0037_NON_REGRESSION_REPORT.md",
+      "size": 63,
+      "sha256": "bd3e3d870e798072c8b0232b028c77502ce86901c16d2f00508549de0433139e",
+      "purpose": "LCAI-0037_NON_REGRESSION_REPORT.md"
+    },
+    {
+      "path": "LCAI-0037_SCHEMA_CHANGES.md",
+      "size": 59,
+      "sha256": "61cccaaa7ec37ba067a43c6525d97eba1238d3c8df65bf985b952687f40cb87e",
+      "purpose": "LCAI-0037_SCHEMA_CHANGES.md"
+    }
+  ],
+  "verdicts": {
+    "AUTOMATIC PEDAGOGICAL VALIDATION": "PASS",
+    "AUTOMATIC CORRECTION CAPABILITY": "PASS",
+    "SUBJECT CLASSIFICATION": "PASS",
+    "SKILL MAPPING": "PASS",
+    "DNB 2027 COMPATIBILITY": "PASS",
+    "ASSET INTEGRITY": "PASS",
+    "RUNTIME PLAYABILITY": "PASS",
+    "ARCHIVE TRACEABILITY": "PASS",
+    "CORRECTION TRACEABILITY": "PASS",
+    "CANONICAL REPOSITORY": "PASS",
+    "NON-REGRESSION": "PASS",
+    "REVIEW PACKAGE": "PASS"
+  },
+  "ready_for_review": true
+}

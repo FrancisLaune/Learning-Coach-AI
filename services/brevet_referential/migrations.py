@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import contextlib
 import hashlib
 import re
 from pathlib import Path
@@ -45,18 +46,21 @@ def apply_brevet_content_migrations(db_path: Path | None = None) -> list[str]:
                 if applied[version] != checksum:
                     raise RuntimeError(f"Checksum mismatch for migration {version}_{name}")
                 continue
-            con.execute("BEGIN")
-            try:
-                con.execute(sql)
-                con.execute(
-                    "INSERT INTO bref_schema_migrations(version, name, checksum) VALUES (?, ?, ?)",
-                    [version, name, checksum],
-                )
-                con.execute("COMMIT")
-            except Exception:
-                con.execute("ROLLBACK")
-                raise
+            statements: list[str] = []
+            for raw in sql.split(";"):
+                lines = [ln for ln in raw.splitlines() if ln.strip() and not ln.strip().startswith("--")]
+                statement = "\n".join(lines).strip()
+                if statement:
+                    statements.append(statement)
+            for statement in statements:
+                con.execute(statement)
+            con.execute(
+                "INSERT INTO bref_schema_migrations(version, name, checksum) VALUES (?, ?, ?)",
+                [version, name, checksum],
+            )
             done.append(sql_path.name)
+            with contextlib.suppress(Exception):
+                con.execute("CHECKPOINT")
         return done
     finally:
         con.close()

@@ -1,0 +1,4 @@
+question_id,status,exception_code,reason,subject
+1979,REJECTED,CORRUPTED_SOURCE,Placeholder non pédagogique,MATHEMATICS
+1980,REJECTED,CORRUPTED_SOURCE,Placeholder non pédagogique,MATHEMATICS
+1981,REJECTED,CORRUPTED_SOURCE,Placeholder non pédagogique,MATHEMATICS

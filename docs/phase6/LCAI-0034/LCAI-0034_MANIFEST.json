@@ -1,0 +1,107 @@
+{
+  "generated_at": "2026-09-06T17:24:05Z",
+  "migrations_applied": [],
+  "before": {
+    "content_items": 1987,
+    "playable": 1987,
+    "skills": 78,
+    "archives": 64,
+    "official_questions_linked": 3,
+    "archive_questions_total": 3,
+    "ARCHIVE_DERIVED": 6,
+    "ARCHIVE_DERIVED_WITHOUT_PARENT": 0,
+    "BREVET_STYLE": 492,
+    "OFFICIAL_ARCHIVE": 3,
+    "families": 827,
+    "derivations": 6,
+    "legacy_mappings": 3202,
+    "source_types": {
+      "ARCHIVE_DERIVED": 6,
+      "OFFICIAL_ARCHIVE": 3,
+      "BREVET_STYLE": 492,
+      "LEGACY_BANK": 1464,
+      "CURATED": 22
+    }
+  },
+  "after": {
+    "content_items": 1987,
+    "playable": 1987,
+    "skills": 78,
+    "archives": 64,
+    "official_questions_linked": 3,
+    "archive_questions_total": 3,
+    "ARCHIVE_DERIVED": 6,
+    "ARCHIVE_DERIVED_WITHOUT_PARENT": 0,
+    "BREVET_STYLE": 492,
+    "OFFICIAL_ARCHIVE": 3,
+    "families": 827,
+    "derivations": 6,
+    "legacy_mappings": 3202,
+    "source_types": {
+      "ARCHIVE_DERIVED": 6,
+      "OFFICIAL_ARCHIVE": 3,
+      "LEGACY_BANK": 1464,
+      "BREVET_STYLE": 492,
+      "CURATED": 22
+    }
+  },
+  "eduscol": {
+    "manifest_entries": 64,
+    "archives_enriched": 32,
+    "unique_exam_identities": 64,
+    "null_source_provider_rows": 0,
+    "note": "Parent-table UPDATEs skipped due to DuckDB FK update limitations; provider defaults to EDUSCOL."
+  },
+  "reclass": {
+    "without_parent_before": 0,
+    "reclassified": 0,
+    "without_parent_after": 0,
+    "archive_derived_remaining": 6,
+    "target_source": "BREVET_STYLE",
+    "mechanism": "content_source_overrides"
+  },
+  "derived": {
+    "officials_used": 3,
+    "derivatives_created_or_linked": 0
+  },
+  "families": {
+    "groups_seen": 827,
+    "families_created": 0,
+    "classification": {
+      "SINGLETON": 463,
+      "TRUE_DUPLICATE": 361,
+      "SAME_SKILL_DIFFERENT_REASONING": 3
+    },
+    "multi_member_groups": 364,
+    "links": 1987,
+    "singleton_links": 0
+  },
+  "legacy": {
+    "audited": 3202,
+    "OB_EQUIVALENT": 0,
+    "OB_DUPLICATE": 0,
+    "MIGRATE_TO_OB": 0,
+    "V2_ONLY": 3202,
+    "OUT_OF_SCOPE_3E": 0
+  },
+  "sample_derived_chain": {
+    "exercice_id": 1982,
+    "source_type": "ARCHIVE_DERIVED",
+    "parent_question_id": 1,
+    "parent_archive_id": 41,
+    "year": 2024,
+    "session": "normale",
+    "zone": "metropole",
+    "source_provider": "EDUSCOL",
+    "eduscol_url": "https://eduscol.education.fr/cid133202/diplome-national-du-brevet.html",
+    "skill_code": "NOMBRES_RELATIFS_SKILL",
+    "curriculum_2027_compatible": "REVIEW"
+  },
+  "source_sha_before": {
+    "ob": "38cf52ed646bc38477eff4247ea8cbe9f98493397093ad321c1002e4d700b95d",
+    "v2": "e2b9826fab629c4094d27b8cf4168a6a88a361bfc183df5d832e4cc5f731724d"
+  },
+  "v2_unchanged": true,
+  "package": "C:\\Users\\Utilisateur\\Documents\\App_AILearning\\Learning-Coach-AI\\artifacts\\LCAI-0034\\LCAI-0034_REVIEW_PACKAGE.zip",
+  "package_sha256": "dda98c6020dd972641455c061472770a9b2002dc16a47a73c31a4490c0247358"
+}

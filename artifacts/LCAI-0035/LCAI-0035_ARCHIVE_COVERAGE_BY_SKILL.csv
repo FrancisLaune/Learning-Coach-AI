@@ -1,0 +1,79 @@
+subject,chapter,skill_code,skill_name,brevet_importance,official_question_count,compatible_2027_count,years_present,unique_formats
+FRENCH,Compréhension,COMPREHENSION_SKILL,Compréhension,CRITICAL,337,0,6,3
+FRENCH,Accords,ACCORDS_SKILL,Accords,CRITICAL,164,0,7,3
+FRENCH,Expression écrite,EXPRESSION_ECRITE_SKILL,Expression écrite,CRITICAL,150,0,5,3
+MATHEMATICS,Aires et volumes,AIRES_ET_VOLUMES_SKILL,Aires et volumes,MEDIUM,111,0,7,3
+FRENCH,Vocabulaire,VOCABULAIRE_SKILL,Vocabulaire,MEDIUM,99,0,7,3
+MATHEMATICS,Calcul littéral,CALCUL_LITTERAL_SKILL,Calcul littéral,HIGH,74,0,6,3
+HISTORY,Première Guerre mondiale,PREMIERE_GUERRE_MONDIALE_SKILL,Première Guerre mondiale,MEDIUM,62,0,6,2
+MATHEMATICS,Fonctions,FONCTIONS_SKILL,Fonctions,CRITICAL,46,0,6,3
+FRENCH,Fonctions grammaticales,FONCTIONS_GRAMMATICALES_SKILL,Fonctions grammaticales,MEDIUM,38,0,4,3
+HISTORY,Guerre froide,GUERRE_FROIDE_SKILL,Guerre froide,CRITICAL,36,0,5,2
+HISTORY,Seconde Guerre mondiale,SECONDE_GUERRE_MONDIALE_SKILL,Seconde Guerre mondiale,CRITICAL,26,0,5,2
+MATHEMATICS,Probabilités,PROBABILITES_SKILL,Probabilités,HIGH,24,0,5,3
+HISTORY,Construction européenne,CONSTRUCTION_EUROPEENNE_SKILL,Construction européenne,MEDIUM,13,0,2,1
+PHYSICS_CHEMISTRY,Énergie,ENERGIE_SKILL,Énergie,HIGH,11,0,5,2
+PHYSICS_CHEMISTRY,Son,SON_SKILL,Son,MEDIUM,11,0,6,2
+FRENCH,Orthographe,ORTHOGRAPHE_SKILL,Orthographe,HIGH,8,0,3,2
+MATHEMATICS,Équations,EQUATIONS_SKILL,Équations,CRITICAL,8,0,3,3
+MATHEMATICS,Nombres relatifs,NOMBRES_RELATIFS_SKILL,Nombres relatifs,MEDIUM,8,0,5,3
+MATHEMATICS,Statistiques,STATISTIQUES_SKILL,Statistiques,HIGH,6,0,1,2
+MATHEMATICS,Algorithmique,ALGORITHMIQUE_SKILL,Algorithmique,MEDIUM,5,0,3,2
+MATHEMATICS,Proportionnalité,PROPORTIONNALITE_SKILL,Proportionnalité,CRITICAL,5,0,3,1
+PHYSICS_CHEMISTRY,Électricité,ELECTRICITE_SKILL,Électricité,HIGH,5,0,4,2
+MATHEMATICS,Puissances,PUISSANCES_SKILL,Puissances,MEDIUM,4,0,1,1
+PHYSICS_CHEMISTRY,Masse volumique,MASSE_VOLUMIQUE_SKILL,Masse volumique,MEDIUM,3,0,2,2
+FRENCH,Figures de style,FIGURES_DE_STYLE_SKILL,Figures de style,MEDIUM,2,0,1,1
+MATHEMATICS,Pourcentages,POURCENTAGES_SKILL,Pourcentages,HIGH,2,0,2,1
+PHYSICS_CHEMISTRY,Forces,FORCES_SKILL,Forces,HIGH,2,0,2,1
+PHYSICS_CHEMISTRY,Mouvement et vitesse,MOUVEMENT_ET_VITESSE_SKILL,Mouvement et vitesse,MEDIUM,2,0,1,1
+PHYSICS_CHEMISTRY,Atomes et molécules,ATOMES_ET_MOLECULES_SKILL,Atomes et molécules,MEDIUM,1,0,1,1
+PHYSICS_CHEMISTRY,Lumière,LUMIERE_SKILL,Lumière,MEDIUM,1,0,1,1
+EMC,Citoyenneté,CITOYENNETE_SKILL,Citoyenneté,MEDIUM,0,0,0,0
+EMC,Justice,JUSTICE_SKILL,Justice,MEDIUM,0,0,0,0
+EMC,Laïcité,LAICITE_SKILL,Laïcité,MEDIUM,0,0,0,0
+EMC,Libertés et droits,LIBERTES_ET_DROITS_SKILL,Libertés et droits,MEDIUM,0,0,0,0
+EMC,Médias et esprit critique,MEDIAS_ET_ESPRIT_CRITIQUE_SKILL,Médias et esprit critique,MEDIUM,0,0,0,0
+EMC,Valeurs de la République,VALEURS_DE_LA_REPUBLIQUE_SKILL,Valeurs de la République,MEDIUM,0,0,0,0
+FRENCH,Classes grammaticales,CLASSES_GRAMMATICALES_SKILL,Classes grammaticales,MEDIUM,0,0,0,0
+FRENCH,Conjugaison,CONJUGAISON_SKILL,Conjugaison,HIGH,0,0,0,0
+FRENCH,Homophones grammaticaux,HOMOPHONES_GRAMMATICAUX_SKILL,Homophones grammaticaux,HIGH,0,0,0,0
+FRENCH,Phrases complexes,PHRASES_COMPLEXES_SKILL,Phrases complexes,MEDIUM,0,0,0,0
+GEOGRAPHY,Développement durable,DEVELOPPEMENT_DURABLE_SKILL,Développement durable,MEDIUM,0,0,0,0
+GEOGRAPHY,Espaces productifs,ESPACES_PRODUCTIFS_SKILL,Espaces productifs,MEDIUM,0,0,0,0
+GEOGRAPHY,France et territoires,FRANCE_ET_TERRITOIRES_SKILL,France et territoires,MEDIUM,0,0,0,0
+GEOGRAPHY,Inégalités mondiales,INEGALITES_MONDIALES_SKILL,Inégalités mondiales,MEDIUM,0,0,0,0
+GEOGRAPHY,Mobilités humaines,MOBILITES_HUMAINES_SKILL,Mobilités humaines,MEDIUM,0,0,0,0
+GEOGRAPHY,Mondialisation,MONDIALISATION_SKILL,Mondialisation,MEDIUM,0,0,0,0
+GEOGRAPHY,Risques naturels,RISQUES_NATURELS_SKILL,Risques naturels,MEDIUM,0,0,0,0
+GEOGRAPHY,Union européenne,UNION_EUROPEENNE_SKILL,Union européenne,MEDIUM,0,0,0,0
+GEOGRAPHY,Urbanisation,URBANISATION_SKILL,Urbanisation,MEDIUM,0,0,0,0
+HISTORY,Colonisation,COLONISATION_SKILL,Colonisation,MEDIUM,0,0,0,0
+HISTORY,Empire napoléonien,EMPIRE_NAPOLEONIEN_SKILL,Empire napoléonien,MEDIUM,0,0,0,0
+HISTORY,Industrialisation,INDUSTRIALISATION_SKILL,Industrialisation,MEDIUM,0,0,0,0
+HISTORY,Révolution française,REVOLUTION_FRANCAISE_SKILL,Révolution française,CRITICAL,0,0,0,0
+HISTORY,Société au XIXe siècle,SOCIETE_AU_XIXE_SIECLE_SKILL,Société au XIXe siècle,MEDIUM,0,0,0,0
+HISTORY,Totalitarismes,TOTALITARISMES_SKILL,Totalitarismes,MEDIUM,0,0,0,0
+MATHEMATICS,Conversions,CONVERSIONS_SKILL,Conversions,MEDIUM,0,0,0,0
+MATHEMATICS,Fractions,FRACTIONS_SKILL,Fractions,CRITICAL,0,0,0,0
+MATHEMATICS,Pythagore,PYTHAGORE_SKILL,Pythagore,CRITICAL,0,0,0,0
+MATHEMATICS,Thalès,THALES_SKILL,Thalès,CRITICAL,0,0,0,0
+ORAL,Projet oral,ORAL_DEFENSE,Soutenance orale,HIGH,0,0,0,0
+PHYSICS_CHEMISTRY,Acides et bases,ACIDES_ET_BASES_SKILL,Acides et bases,MEDIUM,0,0,0,0
+PHYSICS_CHEMISTRY,Réactions chimiques,REACTIONS_CHIMIQUES_SKILL,Réactions chimiques,MEDIUM,0,0,0,0
+SVT,ADN et génétique,ADN_ET_GENETIQUE_SKILL,ADN et génétique,HIGH,0,0,0,0
+SVT,Cellule,CELLULE_SKILL,Cellule,MEDIUM,0,0,0,0
+SVT,Climat,CLIMAT_SKILL,Climat,MEDIUM,0,0,0,0
+SVT,Écosystèmes,ECOSYSTEMES_SKILL,Écosystèmes,MEDIUM,0,0,0,0
+SVT,Évolution,EVOLUTION_SKILL,Évolution,HIGH,0,0,0,0
+SVT,Géologie,GEOLOGIE_SKILL,Géologie,MEDIUM,0,0,0,0
+SVT,Immunité,IMMUNITE_SKILL,Immunité,HIGH,0,0,0,0
+SVT,Nutrition et digestion,NUTRITION_ET_DIGESTION_SKILL,Nutrition et digestion,MEDIUM,0,0,0,0
+SVT,Reproduction,REPRODUCTION_SKILL,Reproduction,MEDIUM,0,0,0,0
+SVT,Respiration et circulation,RESPIRATION_ET_CIRCULATION_SKILL,Respiration et circulation,MEDIUM,0,0,0,0
+TECHNOLOGY,Chaîne d'énergie,CHAINE_D_ENERGIE_SKILL,Chaîne d'énergie,MEDIUM,0,0,0,0
+TECHNOLOGY,Chaîne d'information,CHAINE_D_INFORMATION_SKILL,Chaîne d'information,MEDIUM,0,0,0,0
+TECHNOLOGY,Développement durable,DEVELOPPEMENT_DURABLE_SKILL,Développement durable,MEDIUM,0,0,0,0
+TECHNOLOGY,Objets techniques,OBJETS_TECHNIQUES_SKILL,Objets techniques,MEDIUM,0,0,0,0
+TECHNOLOGY,Programmation,PROGRAMMATION_SKILL,Programmation,MEDIUM,0,0,0,0
+TECHNOLOGY,Réseaux,RESEAUX_SKILL,Réseaux,MEDIUM,0,0,0,0
