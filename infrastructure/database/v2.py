@@ -42,12 +42,21 @@ def reset_v2_connections() -> None:
 
 def connect_v2(database_path: Path | None = None, *, read_only: bool = False) -> duckdb.DuckDBPyConnection:
     """Open the V2 database selected explicitly or through central configuration."""
+    from core.duckdb_wal import is_wal_replay_failure, quarantine_empty_wal, quarantine_wal
+
     del read_only  # DuckDB rejects mixed RO/RW handles on Windows; use one mode everywhere.
     target = (database_path or get_v2_database_path()).resolve()
     key = str(target)
     connection = _connections.get(key)
     if connection is None:
         target.parent.mkdir(parents=True, exist_ok=True)
-        connection = duckdb.connect(key)
+        quarantine_empty_wal(target)
+        try:
+            connection = duckdb.connect(key)
+        except Exception as exc:
+            if not is_wal_replay_failure(exc):
+                raise
+            quarantine_wal(target)
+            connection = duckdb.connect(key)
         _connections[key] = connection
     return _V2Connection(connection)  # type: ignore[return-value]

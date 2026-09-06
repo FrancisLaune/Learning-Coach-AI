@@ -22,8 +22,103 @@ def _text(value: Any, *, lowercase: bool = True) -> str:
     return normalized.casefold() if lowercase else normalized
 
 
+_UNIT_SUFFIX = re.compile(
+    r"(?ix)\s*(?:cm|mm|m|km|g|kg|mg|l|ml|cl|€|\$|%|°|deg(?:rés?)?|euros?)\s*$"
+)
+_NUMBER_TOKEN = re.compile(
+    r"(?<![A-Za-z0-9_])([+-]?(?:\d+(?:[.,]\d+)?|\d+[.,]\d+))(?![A-Za-z0-9_])"
+)
+_CONCLUSION_MARKERS = (
+    "donc",
+    "ainsi",
+    "finalement",
+    "au total",
+    "on obtient",
+    "on trouve",
+    "résultat",
+    "resultat",
+    "réponse",
+    "reponse",
+    "conclusion",
+)
+_CONCLUSION_LINE = re.compile(
+    r"(?im)^\s*(?:donc|ainsi|finalement|au\s+total|on\s+obtient|on\s+trouve|"
+    r"résultat|resultat|réponse|reponse|conclusion)\s*[:.]?\s*(.+?)\s*$"
+)
+_EQUALS_CONCLUSION = re.compile(
+    r"(?im)^\s*(?:[a-z]\s*)?=\s*([^\n=]+?)\s*$"
+)
+
+
+def _looks_like_worked_solution(value: Any) -> bool:
+    text = str(value or "")
+    if len(text) < 24:
+        return False
+    lowered = text.casefold()
+    if any(marker in lowered for marker in _CONCLUSION_MARKERS):
+        return True
+    if "\n" in text or "dévelop" in lowered or "etape" in lowered or "étape" in lowered:
+        return True
+    return len(re.findall(r"=", text)) >= 2
+
+
+def extract_concluding_value(value: Any) -> str | None:
+    """Extract the final result from a worked multi-line solution when possible."""
+    raw = unicodedata.normalize("NFKC", str(value or "")).replace("\r\n", "\n").replace("\r", "\n")
+    if not raw.strip():
+        return None
+    lines = [line.strip() for line in raw.split("\n") if line.strip()]
+    candidates: list[str] = []
+    for line in lines:
+        match = _CONCLUSION_LINE.match(line)
+        if match:
+            candidates.append(match.group(1).strip())
+        match = _EQUALS_CONCLUSION.match(line)
+        if match:
+            candidates.append(match.group(1).strip())
+    # Prefer "A = 4" style conclusions near the end.
+    for line in reversed(lines):
+        lowered = line.casefold()
+        if any(marker in lowered for marker in _CONCLUSION_MARKERS) and "=" in line:
+            right = line.split("=")[-1].strip()
+            if right:
+                candidates.append(right)
+                break
+        if re.fullmatch(r"[a-z]\s*=\s*.+", lowered):
+            candidates.append(line.split("=", 1)[1].strip())
+            break
+    if not candidates and lines:
+        last = lines[-1]
+        if "=" in last:
+            candidates.append(last.split("=")[-1].strip())
+        else:
+            candidates.append(last)
+    for candidate in reversed(candidates):
+        cleaned = _UNIT_SUFFIX.sub("", candidate).strip().strip(" .;")
+        cleaned = re.sub(r"^(?:a|b|c|d|e|f|x|y|z)\s*=\s*", "", cleaned, flags=re.IGNORECASE)
+        cleaned = cleaned.strip()
+        if cleaned:
+            return cleaned
+    return None
+
+
+def _coerce_numeric_text(value: Any) -> str:
+    """For long worked answers, prefer the concluding value before strict parsing."""
+    text = str(value or "").strip()
+    if not text:
+        return text
+    compact = re.sub(r"\s+", "", text)
+    if re.fullmatch(r"[+-]?(?:\d+(?:[.,]\d+)?|\d+[.,]\d+|\d+/\d+)", compact):
+        return text
+    if _looks_like_worked_solution(text) or any(ch.isalpha() for ch in text) or "\n" in text:
+        extracted = extract_concluding_value(text)
+        if extracted:
+            return extracted
+    return text
+
+
 def _decimal(value: Any) -> Decimal:
-    text = re.sub(r"\s+", "", _text(value, lowercase=False))
+    text = re.sub(r"\s+", "", _text(_coerce_numeric_text(value), lowercase=False))
     if not text:
         raise AnswerValidationError("Réponse numérique manquante. Exemples acceptés : 3,5 ou 3.5")
     try:
@@ -52,7 +147,7 @@ def serialize_normalized_answer(answer_type: AnswerType, value: Any) -> Any:
 
 def _fraction(value: Any) -> Fraction:
     try:
-        text = re.sub(r"\s+", "", _text(value, lowercase=False))
+        text = re.sub(r"\s+", "", _text(_coerce_numeric_text(value), lowercase=False))
         if not text:
             raise AnswerValidationError("Fraction manquante. Exemple accepté : 1/2")
         return Fraction(text.replace(",", "."))
@@ -74,7 +169,13 @@ def _boolean(value: Any) -> bool:
 
 
 def _formula(value: Any) -> str:
-    text = _text(value, lowercase=False).replace(" ", "").replace("×", "*").replace("÷", "/")
+    candidate = _coerce_numeric_text(value) if _looks_like_worked_solution(value) else value
+    text = _text(candidate, lowercase=False).replace(" ", "").replace("×", "*").replace("÷", "/")
+    if not text or not re.fullmatch(r"[A-Za-z0-9_+\-*/^().=]+", text):
+        # Fallback: concluding expression without spaces.
+        extracted = extract_concluding_value(value)
+        if extracted:
+            text = _text(extracted, lowercase=False).replace(" ", "").replace("×", "*").replace("÷", "/")
     if not text or not re.fullmatch(r"[A-Za-z0-9_+\-*/^().=]+", text):
         raise AnswerValidationError("Invalid formula syntax")
     balance = 0
@@ -110,14 +211,6 @@ def _numeric_equivalent(actual: Any, expected: Any, tolerance: float) -> bool:
     if limit == 0:
         limit = Decimal("0.000000001")
     return abs(left - right) <= limit
-
-
-_UNIT_SUFFIX = re.compile(
-    r"(?ix)\s*(?:cm|mm|m|km|g|kg|mg|l|ml|cl|€|\$|%|°|deg(?:rés?)?|euros?)\s*$"
-)
-_NUMBER_TOKEN = re.compile(
-    r"(?<![A-Za-z0-9_])([+-]?(?:\d+(?:[.,]\d+)?|\d+[.,]\d+))(?![A-Za-z0-9_])"
-)
 
 
 def _strip_units(value: Any) -> str:
@@ -182,6 +275,13 @@ def _contains_expected_answer(actual: Any, expected: Any) -> bool:
 
 def _flexible_text_equivalent(actual: Any, expected: Any, tolerance: float) -> bool:
     """Accept pedagogically equivalent short answers beyond strict string equality."""
+    concluding = extract_concluding_value(actual)
+    if concluding and (
+        _numeric_equivalent(concluding, expected, tolerance)
+        or _text(concluding) == _text(_strip_units(expected))
+        or _contains_expected_answer(concluding, expected)
+    ):
+        return True
     if _numeric_equivalent(actual, expected, tolerance):
         return True
     if _contains_expected_answer(actual, expected):
@@ -193,17 +293,23 @@ def _flexible_text_equivalent(actual: Any, expected: Any, tolerance: float) -> b
     if actual_core and expected_core and _numeric_equivalent(actual_core, expected_core, tolerance):
         return True
     expected_numbers = _extract_numbers(expected)
-    actual_numbers = _extract_numbers(actual)
-    if len(expected_numbers) == 1 and actual_numbers:
+    if len(expected_numbers) == 1:
         target = expected_numbers[0]
         limit = Decimal(str(tolerance if tolerance else 0)) or Decimal("0.000000001")
-        if any(abs(item - target) <= limit for item in actual_numbers):
-            expected_text = _text(expected_core or expected)
-            if re.fullmatch(r"[+-]?(?:\d+(?:[.,]\d+)?|\d+[.,]\d+)", expected_text) or _UNIT_SUFFIX.search(
-                _text(expected, lowercase=False)
-            ):
+        expected_text = _text(expected_core or expected)
+        allow_numeric_probe = bool(
+            re.fullmatch(r"[+-]?(?:\d+(?:[.,]\d+)?|\d+[.,]\d+)", expected_text)
+            or _UNIT_SUFFIX.search(_text(expected, lowercase=False))
+        )
+        if allow_numeric_probe:
+            conclusion_numbers = _extract_numbers(concluding) if concluding else ()
+            if conclusion_numbers and abs(conclusion_numbers[-1] - target) <= limit:
                 return True
-    left_terms = _algebra_term_set(actual)
+            actual_numbers = _extract_numbers(actual)
+            if actual_numbers and abs(actual_numbers[-1] - target) <= limit:
+                return True
+    probe = concluding if concluding else actual
+    left_terms = _algebra_term_set(probe)
     right_terms = _algebra_term_set(expected)
     return left_terms is not None and right_terms is not None and left_terms == right_terms
 

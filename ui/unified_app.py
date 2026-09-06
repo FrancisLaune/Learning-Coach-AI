@@ -179,12 +179,11 @@ def _virtual_teacher_status_label(learner_id: int) -> str:
 
 def _child_creation_objectives() -> dict[str, ObjectiveKind]:
     return {
-        "Préparer la classe suivante": ObjectiveKind.PREPARATION_NEXT_GRADE,
-        "Révision globale": ObjectiveKind.REVISION,
+        "Préparer un examen": ObjectiveKind.PREPARATION_BREVET,
         "Suivre les cours pendant l'année": ObjectiveKind.LONG_TERM_MASTERY,
         "Consolider les faiblesses": ObjectiveKind.CONSOLIDATION,
+        "Révision globale": ObjectiveKind.REVISION,
         "Préparer un contrôle": ObjectiveKind.HOMEWORK,
-        "Préparer un examen": ObjectiveKind.PREPARATION_BREVET,
         "Rattrapage / remédiation": ObjectiveKind.CATCH_UP,
         "Approfondissement": ObjectiveKind.LONG_TERM_MASTERY,
     }
@@ -308,10 +307,19 @@ def _safe[T](operation: Callable[[], T]) -> T | None:
 
 def onboarding(user: dict[str, object]) -> None:
     repository = _repository()
-    st.title("Construisons ton parcours")
-    st.caption("Ces informations permettent au moteur déterministe d'adapter les séances et le planning.")
+    st.title("Objectif Brevet 2027")
+    st.caption(
+        "Parcours 3e — réussite annuelle et préparation au DNB. "
+        "Les niveaux antérieurs restent disponibles uniquement en remédiation interne."
+    )
     grades = repository.grade_levels()
     subjects = repository.reference_subjects()
+    from services.dnb import filter_brevet_prep_subjects
+
+    # Onboarding: matières préparation Brevet (+ oral) ; langues hors parcours terminal.
+    brevet_subjects = filter_brevet_prep_subjects(subjects)
+    if brevet_subjects:
+        subjects = brevet_subjects
     grade_labels = {item[0]: item[2] for item in grades}
     subject_labels = {item[0]: item[2] for item in subjects}
     if not grades or not subjects:
@@ -331,12 +339,9 @@ def onboarding(user: dict[str, object]) -> None:
             format="DD/MM/YYYY",
         )
         current_id = st.selectbox("Classe actuelle", list(grade_labels), format_func=grade_labels.__getitem__)
-        target_options: list[int | None] = [None, *grade_labels]
-        target_id = st.selectbox(
-            "Classe cible, si nécessaire",
-            target_options,
-            format_func=lambda item: "Aucune" if item is None else grade_labels[item],
-        )
+        # Produit 3e : pas de sélecteur multi-niveaux pour la classe cible.
+        target_id = current_id
+        st.caption("Classe cible : 3e (préparation DNB 2027).")
         year_options = academic_year_options(date.today())
         school_year = st.selectbox(
             "Année scolaire",
@@ -346,12 +351,11 @@ def onboarding(user: dict[str, object]) -> None:
         objective_label = st.selectbox(
             "Objectif principal",
             (
-                "Préparer la classe suivante",
-                "Révision globale",
+                "Préparer un examen",
                 "Suivre les cours pendant l'année",
                 "Consolider mes faiblesses",
+                "Révision globale",
                 "Préparer un contrôle",
-                "Préparer un examen",
                 "Rattrapage / remédiation",
                 "Approfondissement",
             ),
@@ -395,12 +399,11 @@ def onboarding(user: dict[str, object]) -> None:
     if not submitted:
         return
     objectives = {
-        "Préparer la classe suivante": ObjectiveKind.PREPARATION_NEXT_GRADE,
-        "Révision globale": ObjectiveKind.REVISION,
+        "Préparer un examen": ObjectiveKind.PREPARATION_BREVET,
         "Suivre les cours pendant l'année": ObjectiveKind.LONG_TERM_MASTERY,
         "Consolider mes faiblesses": ObjectiveKind.CONSOLIDATION,
+        "Révision globale": ObjectiveKind.REVISION,
         "Préparer un contrôle": ObjectiveKind.HOMEWORK,
-        "Préparer un examen": ObjectiveKind.PREPARATION_BREVET,
         "Rattrapage / remédiation": ObjectiveKind.CATCH_UP,
         "Approfondissement": ObjectiveKind.LONG_TERM_MASTERY,
     }
@@ -486,10 +489,16 @@ def _homework_form(
         LOGGER.exception("Homework availability lookup failed for learner %s", learner_id)
         availability = {}
     subjects = repository.curriculum_subjects_for_grade(grade_id)
+    from services.dnb import filter_brevet_prep_subjects
+
+    subjects = filter_brevet_prep_subjects(subjects)
     labels = {item[0]: item[2] for item in subjects}
     if not subjects:
         grade_label = grade_labels.get(grade_id, "cette classe")
-        st.info(f"Aucune matière configurée dans le curriculum pour {grade_label}.")
+        st.info(
+            f"Aucune matière de préparation Brevet configurée pour {grade_label}. "
+            "Les langues restent suivies en contrôle continu, hors parcours terminal."
+        )
         return
     if as_evaluation:
         mode = AssignmentType.GLOBAL_SUBJECT
@@ -1037,7 +1046,7 @@ def revision(learner_id: int, user: dict[str, object]) -> None:
     st.title("Révision libre")
     guidance = load_revision_guidance(user, learner_id)
     with st.container(border=True):
-        st.subheader("Recommandation du Professeur IA", anchor=False)
+        st.subheader("Recommandation du Coach Brevet", anchor=False)
         st.write(guidance.message)
         if guidance.degraded_notice:
             st.caption(guidance.degraded_notice)
@@ -1068,20 +1077,30 @@ def coach_view(dashboard: StudentDashboard) -> None:
 
 
 _STUDENT_PAGES = (
-    "Tableau de bord",
-    "Ma séance",
-    "Devoirs",
-    "Révision",
-    "Mes progrès",
+    "Accueil",
+    "Mon programme",
+    "Réviser",
+    "S'entraîner",
+    "Devoir personnalisé",
+    "Sujets Brevet",
+    "Brevets blancs",
+    "Oral",
     "Mes résultats",
-    "Mon planning",
-    "Profil",
+    "Coach Brevet",
 )
 
 _STUDENT_PAGE_ALIASES = {
-    "Accueil": "Tableau de bord",
-    "Ma séance IA": "Ma séance",
-    "Mon professeur IA": "Tableau de bord",
+    "Tableau de bord": "Accueil",
+    "Accueil": "Accueil",
+    "Ma séance": "S'entraîner",
+    "Ma séance IA": "S'entraîner",
+    "Devoirs": "Devoir personnalisé",
+    "Révision": "Réviser",
+    "Mes progrès": "Mon programme",
+    "Mon planning": "Mon programme",
+    "Profil": "Accueil",
+    "Mon professeur IA": "Coach Brevet",
+    "Professeur IA": "Coach Brevet",
 }
 
 
@@ -1092,67 +1111,67 @@ def run_student(user: dict[str, object], learner_id: int) -> None:
     if current in _STUDENT_PAGE_ALIASES:
         st.session_state["unified_student_page"] = _STUDENT_PAGE_ALIASES[str(current)]
     apply_navigation_request(st.session_state, "student", "unified_student_page", pages)
+    from ui.student_guidance import load_student_dashboard_snapshot
+
+    coach_snapshot = load_student_dashboard_snapshot(user, learner_id)
     with st.sidebar:
         st.success(f"Élève : {user['name']}")
         page = st.radio("Navigation", pages, key="unified_student_page")
         from ui.chatgpt_voice import render_chatgpt_voice_sidebar
 
-        render_chatgpt_voice_sidebar()
+        render_chatgpt_voice_sidebar(snapshot=coach_snapshot)
         st.button("Déconnexion", on_click=logout)
     dashboard = controller.dashboard(learner_id)
-    if page == "Tableau de bord":
-        from ui.student_guidance import load_student_dashboard_snapshot, render_mastery_bands, render_student_home
+    if page == "Accueil":
+        from ui.dnb_student_home import render_brevet_student_home
 
-        snapshot = load_student_dashboard_snapshot(user, learner_id)
         home_dashboard = dashboard if isinstance(dashboard, StudentDashboard) else None
-        render_student_home(snapshot=snapshot, dashboard=home_dashboard)
-        render_mastery_bands(snapshot)
+        render_brevet_student_home(snapshot=coach_snapshot, dashboard=home_dashboard)
+    elif page == "Mon programme":
+        from application.experience_factory import build_pedagogical_intelligence_controller
+        from ui.pedagogical_intelligence import render_pedagogical_intelligence_dashboard
+        from ui.student_guidance import render_mastery_bands
+
+        st.title("Mon programme")
+        st.caption("Préparation DNB 2027 — diagnostic et plan")
+        render_mastery_bands(coach_snapshot)
         if isinstance(dashboard, StudentDashboard):
             coach_view(dashboard)
-            from application.experience_factory import build_pedagogical_intelligence_controller
-            from ui.pedagogical_intelligence import render_pedagogical_intelligence_dashboard
-
-            pi_controller = build_pedagogical_intelligence_controller()
-            pi_overview = pi_controller.student_overview(learner_id)
-            if not isinstance(pi_overview, PresentationError):
-                st.divider()
-                render_pedagogical_intelligence_dashboard(
-                    pi_controller,
-                    pi_overview,
-                    learner_id,
-                    key_prefix=f"student_pi_{learner_id}",
-                    show_diagnostic=True,
-                )
-    elif page == "Ma séance":
+        pi_controller = build_pedagogical_intelligence_controller()
+        pi_overview = pi_controller.student_overview(learner_id)
+        if not isinstance(pi_overview, PresentationError):
+            st.divider()
+            render_pedagogical_intelligence_dashboard(
+                pi_controller,
+                pi_overview,
+                learner_id,
+                key_prefix=f"student_pi_{learner_id}",
+                show_diagnostic=True,
+            )
+    elif page == "S'entraîner":
         session_screen(controller, learner_id, user=user)
-    elif page == "Devoirs":
+    elif page == "Devoir personnalisé":
         student_homework(learner_id, user)
-    elif page == "Révision":
+    elif page == "Réviser":
         revision(learner_id, user)
-    elif page == "Mes progrès":
-        from ui.student_guidance import (
-            load_student_dashboard_snapshot,
-            render_evaluation_progress,
-            render_mastery_bands,
-        )
+    elif page == "Sujets Brevet":
+        from ui.dnb_exam_pages import render_sujets_brevet_page
 
-        progress_snapshot = load_student_dashboard_snapshot(user, learner_id)
-        st.title("Mes progrès")
-        render_evaluation_progress(
-            progress_snapshot,
-            key_prefix=f"progress_eval_{learner_id}",
-            title="Évaluations et notes",
-        )
-        render_mastery_bands(progress_snapshot)
-        if isinstance(dashboard, StudentDashboard):
-            coach_view(dashboard)
+        render_sujets_brevet_page(learner_id=learner_id)
+    elif page == "Brevets blancs":
+        from ui.dnb_exam_pages import render_brevet_blancs_page
+
+        render_brevet_blancs_page(learner_id=learner_id)
+    elif page == "Oral":
+        from ui.dnb_exam_pages import render_oral_page
+
+        render_oral_page(learner_id=learner_id)
     elif page == "Mes résultats":
-        from ui.student_guidance import load_student_dashboard_snapshot, render_evaluation_progress
+        from ui.student_guidance import render_evaluation_progress
 
-        results_snapshot = load_student_dashboard_snapshot(user, learner_id)
         st.title("Mes résultats")
         render_evaluation_progress(
-            results_snapshot,
+            coach_snapshot,
             key_prefix=f"results_eval_{learner_id}",
             title="Résultats des évaluations",
         )
@@ -1164,28 +1183,21 @@ def run_student(user: dict[str, object], learner_id: int) -> None:
             show_title=False,
         )
         student_summary(controller, learner_id)
-    elif page == "Mon planning":
-        st.title("Mon planning")
-        assignments = _homework_service().list_for_learner(learner_id)
-        due = [
-            item
-            for item in assignments
-            if item.due_at and item.status not in {AssignmentStatus.COMPLETED, AssignmentStatus.CANCELLED}
-        ]
-        if due:
-            st.dataframe(
-                [
-                    {"Matière": item.subject_label, "Échéance": item.due_at, "État": label(item.status.value)}
-                    for item in due
-                ],
-                hide_index=True,
-            )
-        else:
-            st.info("Aucune échéance de devoir.")
+    elif page == "Coach Brevet":
+        from ui.chatgpt_voice import render_chatgpt_voice_access
+
+        st.title("Coach Brevet")
+        st.write(coach_snapshot.welcome.greeting)
+        if coach_snapshot.welcome.primary_action:
+            st.info(f"Action prioritaire : {coach_snapshot.welcome.primary_action}")
+        render_chatgpt_voice_access(
+            snapshot=coach_snapshot,
+            expanded=True,
+            key_prefix=f"coach_page_{learner_id}",
+        )
     else:
-        st.title("Mon profil")
-        st.write(f"Identifiant apprenant : {learner_id}")
-        st.write(f"Objectif : {dashboard.objective if isinstance(dashboard, StudentDashboard) else 'Indisponible'}")
+        st.title("Objectif Brevet")
+        st.info("Choisis une page dans la navigation.")
 
 
 def _render_child_management_back() -> None:
@@ -1256,10 +1268,10 @@ def _edit_learner(parent_ref: str, learner_id: int) -> None:
     subjects = repository.reference_subjects()
     subject_labels = {item[0]: item[2] for item in subjects}
     objective_labels = {
-        ObjectiveKind.PREPARATION_NEXT_GRADE: "Préparer la classe suivante",
-        ObjectiveKind.REVISION: "Révision globale",
+        ObjectiveKind.PREPARATION_BREVET: "Préparer un examen",
         ObjectiveKind.LONG_TERM_MASTERY: "Suivre les cours pendant l'année",
         ObjectiveKind.CONSOLIDATION: "Consolider les faiblesses",
+        ObjectiveKind.REVISION: "Révision globale",
         ObjectiveKind.HOMEWORK: "Préparer un contrôle",
         ObjectiveKind.CATCH_UP: "Rattrapage / remédiation",
     }
@@ -1293,13 +1305,9 @@ def _edit_learner(parent_ref: str, learner_id: int) -> None:
             index=list(grade_labels).index(profile.current_grade_id),
             format_func=grade_labels.__getitem__,
         )
-        target_choices: list[int | None] = [None, *grade_labels]
-        target_grade = st.selectbox(
-            "Classe cible",
-            target_choices,
-            index=target_choices.index(profile.target_grade_id),
-            format_func=lambda item: "Aucune" if item is None else grade_labels[item],
-        )
+        # Produit 3e : pas de parcours multi-niveaux — cible = classe actuelle.
+        target_grade = current_grade
+        st.caption("Classe cible : alignée sur la 3e (Objectif Brevet 2027).")
         year_options = academic_year_options(date.today())
         if profile.school_year not in year_options:
             year_options = (*year_options, profile.school_year)
@@ -1711,19 +1719,15 @@ def run_parent(user: dict[str, object]) -> None:
             "Réessayez dans quelques instants ou contactez le support si le problème persiste."
         )
         learners = ()
-    pages = (
-        "Mes enfants",
-        "Tableau de bord",
-        "Progression",
-        "Devoirs",
-        "Recommandations",
-        "Programme",
-        "Planning",
-        "Profil élève",
-    )
+    from ui.dnb_navigation import PARENT_PAGE_ALIASES, PARENT_PAGES
+
+    pages = PARENT_PAGES
+    current = st.session_state.get("parent_page")
+    if current in PARENT_PAGE_ALIASES:
+        st.session_state["parent_page"] = PARENT_PAGE_ALIASES[str(current)]
     apply_navigation_request(st.session_state, "parent", "parent_page", pages)
     with st.sidebar:
-        st.success("Espace parent")
+        st.success("Espace parent — Objectif Brevet")
         page = st.radio(
             "Navigation",
             pages,
@@ -1758,12 +1762,68 @@ def run_parent(user: dict[str, object]) -> None:
             format_func=labels.__getitem__,
         )
     )
-    if page in {"Tableau de bord", "Progression", "Recommandations"}:
+    st.session_state["parent_selected_learner"] = learner_id
+
+    from application.experience_factory import build_student_guidance_service
+    from ui.dnb_parent_dashboard import (
+        render_parent_alerts,
+        render_parent_brevet_overview,
+        render_parent_brevet_prep,
+        render_parent_continuous_assessment,
+    )
+
+    guidance = build_student_guidance_service()
+    try:
+        home = guidance.build_home_context(learner_id)
+    except Exception:
+        home = None
+
+    display_name = labels.get(learner_id, f"Élève {learner_id}")
+    fragile = (
+        tuple(f"{item.subject_label}: {item.label}" for item in home.fragile_skills[:5]) if home else ()
+    )
+    strong = (
+        tuple(f"{item.subject_label}: {item.label}" for item in home.strong_skills[:5]) if home else ()
+    )
+    homework_todo = len(home.homework_todo) if home else 0
+    homework_overdue = len(home.homework_overdue) if home else 0
+    mastery_rows = home.mastery if home else ()
+
+    if page == "Vue générale":
+        result = controller.dashboard(parent_ref, learner_id)
+        recent = 0
+        minutes = None
+        if not isinstance(result, PresentationError):
+            display_name = result.display_name
+            recent = len(getattr(result, "recent_sessions", ()) or ())
+            minutes = getattr(result, "recommended_duration_minutes", None)
+        render_parent_brevet_overview(
+            display_name=display_name,
+            learner_id=learner_id,
+            mastery_rows=mastery_rows,
+            fragile_labels=fragile,
+            strong_labels=strong,
+            homework_todo=homework_todo,
+            homework_overdue=homework_overdue,
+            recent_sessions=recent,
+            recommended_minutes=minutes,
+        )
+        if not isinstance(result, PresentationError):
+            st.divider()
+            st.subheader("Indicateurs de suivi", anchor=False)
+            from ui.v2_experience import _mastery, _metric_cards
+
+            _metric_cards(result)
+            _mastery(result)
+    elif page == "Progression":
+        st.title(f"Progression — {display_name}")
         parent_dashboard(controller, parent_ref, learner_id)
-    elif page == "Devoirs":
-        st.title("Assigner un devoir")
-        _homework_form(learner_id, "PARENT", parent_ref, "parent_homework_form")
-        st.subheader("Devoirs de l'élève")
+        if mastery_rows:
+            st.subheader("Détail maîtrise", anchor=False)
+            for item in mastery_rows[:20]:
+                st.write(f"• {item.subject_label}: {item.label} — {item.score:.0f} %")
+    elif page == "Résultats":
+        st.title(f"Résultats — {display_name}")
         items = _homework_service().list_for_learner(learner_id)
         st.dataframe(
             [
@@ -1772,8 +1832,25 @@ def run_parent(user: dict[str, object]) -> None:
             ],
             hide_index=True,
         )
-    elif page == "Programme":
-        st.title("Propositions de programme")
+        history = controller.history(parent_ref, learner_id)
+        if isinstance(history, PresentationError):
+            st.caption(getattr(history, "message", str(history)))
+        elif history:
+            st.subheader("Historique de séances", anchor=False)
+            st.dataframe(
+                [
+                    {
+                        "Date": getattr(row, "ended_at", getattr(row, "started_at", "")),
+                        "Score": getattr(row, "score", "—"),
+                    }
+                    for row in history[:30]
+                ],
+                hide_index=True,
+            )
+    elif page == "Préparation Brevet":
+        render_parent_brevet_prep(display_name=display_name)
+        st.divider()
+        st.subheader("Propositions de programme", anchor=False)
         changes = _safe(lambda: ProgrammeChangeService(_repository()).list_for_parent(parent_ref, learner_id)) or ()
         if not changes:
             st.info("Aucune modification majeure en attente.")
@@ -1791,19 +1868,28 @@ def run_parent(user: dict[str, object]) -> None:
                             service = ProgrammeChangeService(_repository())
                             _safe(partial(service.decide, parent_ref, change.proposal_id, decision))
                             st.rerun()
-    elif page == "Planning":
-        st.title("Planning et échéances")
+    elif page == "Contrôle continu":
+        render_parent_continuous_assessment(display_name=display_name)
+    elif page == "Alertes & recommandations":
+        render_parent_alerts(
+            display_name=display_name,
+            homework_overdue=homework_overdue,
+            fragile_labels=fragile,
+        )
+    elif page == "Devoirs":
+        st.title("Assigner un devoir")
+        _homework_form(learner_id, "PARENT", parent_ref, "parent_homework_form")
+        st.subheader("Devoirs de l'élève")
         items = _homework_service().list_for_learner(learner_id)
         st.dataframe(
             [
-                {"Matière": item.subject_label, "Échéance": item.due_at, "État": label(item.status.value)}
+                {"Matière": item.subject_label, "État": label(item.status.value), "Échéance": item.due_at}
                 for item in items
             ],
             hide_index=True,
         )
-    elif page == "Profil élève":
-        st.title(labels[learner_id])
-        parent_dashboard(controller, parent_ref, learner_id)
+    else:
+        st.info("Choisis une page dans la navigation parent.")
 
 
 def run_unified_app(login_renderer: LoginRenderer) -> None:

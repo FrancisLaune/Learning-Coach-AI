@@ -57,6 +57,8 @@ class MemoryPIRepository:
 def test_readiness_paths_for_supported_grades() -> None:
     assert path_for_source_grade("FR-CM1") is not None
     assert path_for_source_grade("FR-4E") is not None
+    assert path_for_source_grade("FR-3E") is not None
+    assert path_for_source_grade("FR-3E").code == "FR_3E_DNB_BASELINE"
     assert path_for_source_grade("FR-CM2") is None
 
 

@@ -66,7 +66,7 @@ def render_parent_learner_sheet(
         else:
             st.warning("Compte élève non configuré")
         if st.button("Ouvrir le tableau de bord", key=f"sheet_dashboard_{learner_id}"):
-            request_navigation(st.session_state, "parent", "Tableau de bord", learner_id)
+            request_navigation(st.session_state, "parent", "Vue générale", learner_id)
             st.rerun()
 
     with tabs[1]:

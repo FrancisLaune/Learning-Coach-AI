@@ -38,11 +38,11 @@ _STEP_LABELS = {
 }
 
 _PAGE_BY_STEP = {
-    GuidedCycleStep.ACCUEIL: "Tableau de bord",
-    GuidedCycleStep.DIAGNOSTIC: "Tableau de bord",
-    GuidedCycleStep.DEVOIR: "Devoirs",
-    GuidedCycleStep.SEANCE: "Ma séance",
-    GuidedCycleStep.SYNTHESE: "Ma séance",
+    GuidedCycleStep.ACCUEIL: "Accueil",
+    GuidedCycleStep.DIAGNOSTIC: "Accueil",
+    GuidedCycleStep.DEVOIR: "Devoir personnalisé",
+    GuidedCycleStep.SEANCE: "S'entraîner",
+    GuidedCycleStep.SYNTHESE: "S'entraîner",
 }
 
 _CTA_BY_STEP = {

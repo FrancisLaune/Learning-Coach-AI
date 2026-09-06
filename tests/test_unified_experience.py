@@ -672,15 +672,17 @@ def test_coach_advice_is_grounded_and_requires_trend() -> None:
 def test_unified_navigation_is_complete_and_legacy_is_opt_in() -> None:
     source = (Path(__file__).parents[1] / "ui" / "unified_app.py").read_text(encoding="utf-8")
     for label in (
-        "Tableau de bord",
-        "Ma séance",
-        "Devoirs",
-        "Révision",
-        "Mes progrès",
+        "Accueil",
+        "S'entraîner",
+        "Devoir personnalisé",
+        "Réviser",
+        "Mon programme",
         "Mes résultats",
-        "Mon planning",
-        "Profil",
-        "Programme",
+        "Sujets Brevet",
+        "Brevets blancs",
+        "Oral",
+        "Coach Brevet",
+        "Préparation Brevet",
     ):
         assert label in source
     assert "Mon professeur IA" not in source.split("_STUDENT_PAGES = (")[1].split(")")[0]

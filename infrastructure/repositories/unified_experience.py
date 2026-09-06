@@ -67,9 +67,27 @@ class DuckDBUnifiedExperienceRepository:
         finally:
             connection.close()
 
-    def grade_levels(self) -> tuple[tuple[int, str, str], ...]:
+    def grade_levels(self, *, product_facing: bool = True) -> tuple[tuple[int, str, str], ...]:
+        """Return school levels for selectors.
+
+        By default (LCAI-0031) only FR-3e is product-facing. Pass
+        ``product_facing=False`` for admin/audit/remediation tooling.
+        Prefers ``school_levels.product_role`` when migration 027 is applied.
+        """
         connection = connect_v2(self.database_path, read_only=True)
         try:
+            if product_facing:
+                rows = connection.execute(
+                    """SELECT sl.id,sl.code,sl.label FROM school_levels sl
+                    WHERE sl.archived_at IS NULL
+                    AND sl.code IN ('FR-CM1','FR-CM2','FR-6E','FR-5E','FR-4E','FR-3E')
+                    AND (
+                        sl.product_role = 'terminal'
+                        OR (sl.product_role IS NULL AND sl.code = 'FR-3E')
+                    )
+                    ORDER BY sl.rank DESC"""
+                ).fetchall()
+                return tuple((int(row[0]), str(row[1]), str(row[2])) for row in rows)
             rows = connection.execute(
                 """SELECT sl.id,sl.code,sl.label FROM school_levels sl
                 WHERE sl.archived_at IS NULL
@@ -79,7 +97,6 @@ class DuckDBUnifiedExperienceRepository:
             return tuple((int(row[0]), str(row[1]), str(row[2])) for row in rows)
         finally:
             connection.close()
-
     def learner_grade_id(self, learner_id: int) -> int:
         connection = connect_v2(self.database_path, read_only=True)
         try:

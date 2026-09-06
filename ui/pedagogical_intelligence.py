@@ -46,7 +46,11 @@ def invalidate_dashboard_cache() -> None:
 
 
 def render_dashboard_dto(dto: PedagogicalDashboardDTO, *, parent: bool = False) -> None:
-    st.subheader("Préparation au changement de niveau", anchor=False)
+    path_code = getattr(dto.overview.active_path, "code", "") if dto.overview.active_path else ""
+    if path_code == "FR_3E_DNB_BASELINE":
+        st.subheader("Préparation au DNB 2027", anchor=False)
+    else:
+        st.subheader("Préparation au changement de niveau", anchor=False)
     columns = st.columns(4)
     columns[0].metric("Score global", f"{dto.readiness_score * 100:.0f} %")
     columns[1].metric("Couverture", f"{dto.coverage_score * 100:.0f} %")

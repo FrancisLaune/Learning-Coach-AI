@@ -107,28 +107,36 @@ def test_scenario_1_to_3_tableau_de_bord_always_in_nav(env: dict[str, str], monk
     for key, value in env.items():
         monkeypatch.setenv(key, value)
     source = (ROOT / "ui" / "unified_app.py").read_text(encoding="utf-8")
-    assert "Tableau de bord" in source
+    assert "Accueil" in source
     nav_block = source.split("_STUDENT_PAGES = (")[1].split(")")[0]
-    assert "Tableau de bord" in nav_block
+    assert "Accueil" in nav_block
+    assert "Sujets Brevet" in nav_block
 
 
 def test_scenario_4_return_to_tableau_de_bord_from_homework() -> None:
     source = (ROOT / "ui" / "v2_experience.py").read_text(encoding="utf-8")
     assert 'request_navigation(st.session_state, "student", "Tableau de bord")' in source
     assert 'request_navigation(st.session_state, "student", "Devoirs")' in source
+    # Aliases map legacy labels to §33 Accueil / Devoir personnalisé
+    from ui.dnb_navigation import resolve_student_page
+
+    assert resolve_student_page("Tableau de bord") == "Accueil"
+    assert resolve_student_page("Devoirs") == "Devoir personnalisé"
 
 
 def test_scenario_5_no_menu_removed_by_ai_flag() -> None:
     source = (ROOT / "ui" / "unified_app.py").read_text(encoding="utf-8")
     expected = (
-        "Tableau de bord",
-        "Ma séance",
-        "Devoirs",
-        "Révision",
-        "Mes progrès",
+        "Accueil",
+        "Mon programme",
+        "Réviser",
+        "S'entraîner",
+        "Devoir personnalisé",
+        "Sujets Brevet",
+        "Brevets blancs",
+        "Oral",
         "Mes résultats",
-        "Mon planning",
-        "Profil",
+        "Coach Brevet",
     )
     nav_block = source.split("_STUDENT_PAGES = (")[1].split(")")[0]
     for label in expected:
@@ -290,7 +298,9 @@ def test_scenario_25_revision_with_ai(monkeypatch: pytest.MonkeyPatch) -> None:
     orchestrator = MagicMock()
     from domain.virtual_teacher.models import AITeacherResponse
 
-    orchestrator.generate_answer.return_value = AITeacherResponse(message="Révise les fractions", response_type="EXPLANATION")
+    orchestrator.generate_answer.return_value = AITeacherResponse(
+        message="Révise les fractions", response_type="EXPLANATION"
+    )
     experience = MagicMock()
     experience.dashboard.return_value = _dashboard(
         mastery=(MasteryView(1, "Fractions", 40, "FRAGILE", "DECLINING"),),
@@ -373,10 +383,15 @@ def test_scenario_34_missing_provider_key(monkeypatch: pytest.MonkeyPatch) -> No
 
 
 def test_scenario_35_36_parent_student_isolation_and_learner_scoping() -> None:
-    service = _service()
+    experience = MagicMock()
+    experience.dashboard.return_value = _dashboard()
+    homework = MagicMock()
+    homework.list_for_learner.return_value = ()
+    service = _service(experience=experience, homework=homework)
     parent = {"role": AuthRole.PARENT.value, "resolved_learner_id": None}
     snapshot = service.build_home_guidance(parent, 7)
     assert snapshot.context.learner_id == 7
+    assert "Coach Brevet" in snapshot.welcome.greeting or snapshot.welcome.greeting
 
 
 def test_scenario_37_no_secrets_in_guidance_module() -> None:
@@ -391,6 +406,120 @@ def test_scenario_38_no_direct_llm_in_ui() -> None:
     assert "generate_answer" not in ui_source
     assert "build_llm_service" not in ui_source
     assert "build_student_guidance_service" in ui_source
+    assert "continue_exercise_help" in ui_source
+    assert "Envoyer au Coach Brevet" in ui_source
+
+
+def test_guide_current_exercise_sends_exercise_to_ai(monkeypatch: pytest.MonkeyPatch) -> None:
+    _active_ai(monkeypatch)
+    from domain.virtual_teacher.models import AITeacherResponse
+
+    orchestrator = MagicMock()
+    orchestrator.generate_answer.return_value = AITeacherResponse(
+        message="Utilise la formule V = a³.",
+        response_type="HINT",
+    )
+    experience = MagicMock()
+    experience.dashboard.return_value = _dashboard()
+    homework = MagicMock()
+    homework.list_for_learner.return_value = ()
+    vt = MagicMock()
+    from domain.virtual_teacher.models import VirtualTeacherPreferences
+
+    vt.ensure_preferences.return_value = VirtualTeacherPreferences(
+        id=1,
+        learner_id=7,
+        teacher_profile="default",
+        teacher_name=None,
+        voice_id="alloy",
+        tone="encouraging",
+        response_length="normal",
+        help_level=2,
+        audio_enabled=False,
+        feature_enabled=True,
+        parent_locked=False,
+        created_at=datetime.now(UTC),
+        updated_at=datetime.now(UTC),
+    )
+    service = _service(experience=experience, homework=homework, orchestrator=orchestrator, vt_repository=vt)
+    response = service.guide_current_exercise(
+        _student_actor(7),
+        7,
+        1,
+        1,
+        1,
+        statement="Calcule le volume d'un cube d'arête 3 cm",
+        notion_reminder="Géométrie — volumes",
+    )
+    assert response.source is GuidanceSource.AI
+    assert "formule" in response.message.casefold() or "V" in response.message
+    call_kwargs = orchestrator.generate_answer.call_args.kwargs
+    user_message = call_kwargs["request"].user_message
+    assert "Calcule le volume" in user_message
+    assert "aide" in user_message.casefold() or "Coach Brevet" in user_message
+    session_summary = call_kwargs["request"].context.session_summary or ""
+    assert "Coach Brevet" in session_summary or "Readiness" in session_summary
+
+
+def test_continue_exercise_help_uses_history(monkeypatch: pytest.MonkeyPatch) -> None:
+    _active_ai(monkeypatch)
+    from domain.virtual_teacher.models import AITeacherResponse, VirtualTeacherPreferences
+
+    orchestrator = MagicMock()
+    orchestrator.generate_answer.return_value = AITeacherResponse(
+        message="Reprends l'étape du cube de l'arête.",
+        response_type="HINT",
+    )
+    experience = MagicMock()
+    experience.dashboard.return_value = _dashboard()
+    homework = MagicMock()
+    homework.list_for_learner.return_value = ()
+    vt = MagicMock()
+    vt.ensure_preferences.return_value = VirtualTeacherPreferences(
+        id=1,
+        learner_id=7,
+        teacher_profile="default",
+        teacher_name=None,
+        voice_id="alloy",
+        tone="encouraging",
+        response_length="normal",
+        help_level=2,
+        audio_enabled=False,
+        feature_enabled=True,
+        parent_locked=False,
+        created_at=datetime.now(UTC),
+        updated_at=datetime.now(UTC),
+    )
+    service = _service(experience=experience, homework=homework, orchestrator=orchestrator, vt_repository=vt)
+    history = (
+        ("assistant", "Commence par identifier l'arête."),
+        ("user", "Je ne comprends pas"),
+    )
+    response = service.continue_exercise_help(
+        _student_actor(7),
+        7,
+        follow_up="Que faire ensuite ?",
+        history=history,
+        statement="Calcule le volume d'un cube d'arête 3 cm",
+    )
+    assert response.source is GuidanceSource.AI
+    call_kwargs = orchestrator.generate_answer.call_args.kwargs
+    assert call_kwargs["history"] == history
+    assert "Que faire ensuite" in call_kwargs["request"].user_message
+    assert call_kwargs["preferences"].teacher_name == "Coach Brevet"
+
+
+def test_continue_exercise_help_rejects_empty_follow_up(monkeypatch: pytest.MonkeyPatch) -> None:
+    _active_ai(monkeypatch)
+    service = _service()
+    with pytest.raises(ValueError, match="question"):
+        service.continue_exercise_help(
+            _student_actor(7),
+            7,
+            follow_up="   ",
+            history=(),
+            statement="2+2",
+        )
 
 
 # --- Régression (39-43) ---

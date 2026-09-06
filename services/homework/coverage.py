@@ -58,7 +58,7 @@ class HomeworkCoverageService:
 
     def matrix(self, *, exercise_count: int = 10) -> tuple[SubjectCoverageCell, ...]:
         cells: list[SubjectCoverageCell] = []
-        grade_map = {code: grade_id for grade_id, code, _label in self.repository.grade_levels()}
+        grade_map = {code: grade_id for grade_id, code, _label in self.repository.grade_levels(product_facing=False)}
         ai_on = completion_flags_enabled(self.feature_flags)
         for grade_code in CERTIFICATION_GRADES:
             grade_id = grade_map.get(grade_code)

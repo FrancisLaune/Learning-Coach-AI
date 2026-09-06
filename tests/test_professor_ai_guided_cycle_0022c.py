@@ -102,7 +102,7 @@ def test_resolve_prioritizes_active_session() -> None:
     plan = _plan(diagnostic_status="OFFERED", homework_todo=(_hw(3),))
     snap = resolve_guided_cycle(plan, active_session_id=42, active_session_status="RUNNING")
     assert snap.step is GuidedCycleStep.SEANCE
-    assert snap.page == "Ma séance"
+    assert snap.page == "S'entraîner"
     assert snap.session_id == 42
 
 
@@ -123,7 +123,7 @@ def test_resolve_diagnostic_then_devoir() -> None:
     diag = resolve_guided_cycle(_plan(diagnostic_status="OFFERED"))
     assert diag.step is GuidedCycleStep.DIAGNOSTIC
     assert diag.focus_diagnostic is True
-    assert diag.page == "Tableau de bord"
+    assert diag.page == "Accueil"
 
     devoir = resolve_guided_cycle(_plan(homework_todo=(_hw(15, "Français"),)))
     assert devoir.step is GuidedCycleStep.DEVOIR
@@ -151,7 +151,7 @@ def test_apply_guided_cycle_cta_sets_navigation_and_focus() -> None:
     state: dict = {}
     snap = resolve_guided_cycle(_plan(diagnostic_status="OFFERED"))
     apply_guided_cycle_cta(state, snap)
-    assert state[NAVIGATION_REQUEST_KEY]["page"] == "Tableau de bord"
+    assert state[NAVIGATION_REQUEST_KEY]["page"] == "Accueil"
     assert state["professor_ai_focus_diagnostic"] is True
     assert state["professor_ai_cycle_step"] == GuidedCycleStep.DIAGNOSTIC.value
 

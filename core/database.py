@@ -75,13 +75,17 @@ def reset_legacy_connections() -> None:
 
 
 def _open_legacy_connection() -> duckdb.DuckDBPyConnection:
+    from core.duckdb_wal import is_wal_replay_failure, quarantine_empty_wal, quarantine_wal
+
     DB_PATH.parent.mkdir(parents=True, exist_ok=True)
     key = str(DB_PATH.resolve())
     cached = _connections.get(key)
     if cached is not None:
         return _LegacyConnection(cached)  # type: ignore[return-value]
 
-    last_error: duckdb.IOException | None = None
+    quarantine_empty_wal(DB_PATH)
+    last_error: BaseException | None = None
+    wal_retried = False
     for attempt in range(LOCK_RETRY_ATTEMPTS):
         try:
             connection = duckdb.connect(key)
@@ -92,6 +96,13 @@ def _open_legacy_connection() -> duckdb.DuckDBPyConnection:
             if attempt >= LOCK_RETRY_ATTEMPTS - 1:
                 raise
             sleep(LOCK_RETRY_DELAY_SECONDS * (attempt + 1))
+        except Exception as exc:
+            last_error = exc
+            if not wal_retried and is_wal_replay_failure(exc):
+                quarantine_wal(DB_PATH)
+                wal_retried = True
+                continue
+            raise
     if last_error is not None:
         raise last_error
     raise RuntimeError(f"Unable to open legacy database at {key}")

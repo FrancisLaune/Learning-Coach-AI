@@ -6,7 +6,7 @@ from dataclasses import dataclass
 from datetime import datetime
 from typing import Literal
 
-ReadinessPathCode = Literal["CM1_TO_CM2", "FR_4E_TO_3E"]
+ReadinessPathCode = Literal["CM1_TO_CM2", "FR_4E_TO_3E", "FR_3E_DNB_BASELINE"]
 ReadinessBand = Literal["READY", "ALMOST_READY", "NOT_READY"]
 DiagnosticRunStatus = Literal["IN_PROGRESS", "COMPLETED", "ABANDONED"]
 

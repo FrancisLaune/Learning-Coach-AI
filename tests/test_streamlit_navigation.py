@@ -11,29 +11,29 @@ def test_parent_navigation_is_deferred_until_next_render() -> None:
     assert state["parent_page"] == "Mes enfants"
     assert state[NAVIGATION_REQUEST_KEY] == {
         "scope": "parent",
-        "page": "Tableau de bord",
+        "page": "Vue générale",
         "learner_id": 42,
     }
     apply_navigation_request(
         state,
         "parent",
         "parent_page",
-        ("Mes enfants", "Tableau de bord"),
+        ("Mes enfants", "Vue générale"),
     )
-    assert state["parent_page"] == "Tableau de bord"
+    assert state["parent_page"] == "Vue générale"
     assert state["parent_selected_learner"] == 42
     assert NAVIGATION_REQUEST_KEY not in state
 
 
 def test_repeated_navigation_requests_do_not_leak_or_cross_roles() -> None:
     state: dict[str, object] = {"unified_student_page": "Accueil"}
-    pages = ("Accueil", "Ma séance IA")
+    pages = ("Accueil", "S'entraîner")
 
     request_navigation(state, "student", "Ma séance IA")
     apply_navigation_request(state, "parent", "parent_page", ("Mes enfants",))
     assert state["unified_student_page"] == "Accueil"
     apply_navigation_request(state, "student", "unified_student_page", pages)
-    assert state["unified_student_page"] == "Ma séance IA"
+    assert state["unified_student_page"] == "S'entraîner"
 
     request_navigation(state, "student", "Accueil")
     apply_navigation_request(state, "student", "unified_student_page", pages)

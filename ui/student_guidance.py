@@ -5,8 +5,6 @@ from __future__ import annotations
 import streamlit as st
 
 from application.dto.student_guidance import (
-    GuidanceSource,
-    HomeworkGuidanceResponse,
     ResultExplanationContext,
     RevisionGuidanceContext,
     StudentDashboardSnapshot,
@@ -122,24 +120,61 @@ def _render_home_assignment_card(
         note = "—"
     with st.container(border=True):
         st.markdown(f"**{kind}** · {card.exercise_count} question(s) · {status_label} · note **{note}**")
-        action_cols = st.columns(3)
+        labels: list[str] = []
+        handlers: list[object] = []
         if card.can_open:
-            open_label = "▶️ Reprendre" if card.status in {"IN_PROGRESS", "PAUSED"} else "▶️ Commencer"
-            if action_cols[0].button(open_label, key=f"{key_prefix}_open_{card.homework_id}", use_container_width=True):
-                if card.status == "PAUSED":
-                    try:
-                        build_homework_service().resume(learner_id, int(card.homework_id))
-                    except Exception as exc:
-                        st.error(str(exc))
-                        st.stop()
-                opened = open_homework_session(
-                    learner_id=learner_id,
-                    homework_id=int(card.homework_id),
-                    open_for_learner=build_homework_session_service().open_for_learner,
-                )
-                if not opened:
-                    focus_homework_on_devoirs(int(card.homework_id))
-                st.rerun()
+            labels.append("▶️ Reprendre" if card.status in {"IN_PROGRESS", "PAUSED"} else "▶️ Commencer")
+            handlers.append("open")
+        if card.can_retake:
+            labels.append("🔁 Relancer")
+            handlers.append("retake")
+        if card.can_delete and not st.session_state.get(f"{key_prefix}_del_pending_{card.homework_id}"):
+            labels.append("🗑️ Supprimer cette évaluation" if card.is_evaluation else "🗑️ Supprimer ce devoir")
+            handlers.append("delete")
+        if labels:
+            cols = st.columns(len(labels))
+            for column, label, handler in zip(cols, labels, handlers, strict=True):
+                if column.button(label, key=f"{key_prefix}_{handler}_{card.homework_id}", use_container_width=True):
+                    if handler == "open":
+                        try:
+                            if card.status == "PAUSED":
+                                build_homework_service().resume(learner_id, int(card.homework_id))
+                            opened = open_homework_session(
+                                learner_id=learner_id,
+                                homework_id=int(card.homework_id),
+                                open_for_learner=build_homework_session_service().open_for_learner,
+                            )
+                            if not opened:
+                                focus_homework_on_devoirs(int(card.homework_id))
+                        except Exception as exc:
+                            st.error(str(exc))
+                        else:
+                            st.rerun()
+                    elif handler == "retake":
+                        try:
+                            retake = build_homework_service().retake_assignment(learner_id, int(card.homework_id))
+                            opened = open_homework_session(
+                                learner_id=learner_id,
+                                homework_id=int(retake.homework_id),
+                                open_for_learner=build_homework_session_service().open_for_learner,
+                            )
+                            if not opened:
+                                focus_homework_on_devoirs(int(retake.homework_id))
+                        except Exception as exc:
+                            st.error(str(exc))
+                        else:
+                            st.rerun()
+                    elif handler == "delete":
+                        st.session_state[f"{key_prefix}_del_pending_{card.homework_id}"] = True
+                        st.rerun()
+        if card.can_delete and st.session_state.get(f"{key_prefix}_del_pending_{card.homework_id}"):
+            # Full-width confirmation outside action columns (avoids nested columns crash).
+            render_delete_homework_button(
+                homework_id=int(card.homework_id),
+                key_prefix=key_prefix,
+                label_kind="évaluation" if card.is_evaluation else "devoir",
+                on_confirm=lambda hid=int(card.homework_id): build_homework_service().cancel(learner_id, hid),
+            )
         if card.can_view_corrections and card.session_id is not None:
             with st.expander("Voir la correction (erreurs et solutions)", expanded=False):
                 render_answer_corrections(
@@ -148,33 +183,6 @@ def _render_home_assignment_card(
                     key_prefix=f"{key_prefix}_corr_{card.homework_id}",
                     expanded=True,
                 )
-        if card.can_retake:
-            if action_cols[1].button(
-                "🔁 Relancer",
-                key=f"{key_prefix}_retake_{card.homework_id}",
-                use_container_width=True,
-            ):
-                try:
-                    retake = build_homework_service().retake_assignment(learner_id, int(card.homework_id))
-                    opened = open_homework_session(
-                        learner_id=learner_id,
-                        homework_id=int(retake.homework_id),
-                        open_for_learner=build_homework_session_service().open_for_learner,
-                    )
-                    if not opened:
-                        focus_homework_on_devoirs(int(retake.homework_id))
-                except Exception as exc:
-                    st.error(str(exc))
-                else:
-                    st.rerun()
-        if card.can_delete:
-            with action_cols[2]:
-                render_delete_homework_button(
-                    homework_id=int(card.homework_id),
-                    key_prefix=key_prefix,
-                    label_kind="évaluation" if card.is_evaluation else "devoir",
-                    on_confirm=lambda hid=int(card.homework_id): build_homework_service().cancel(learner_id, hid),
-                )
 
 
 def render_student_home(
@@ -182,63 +190,10 @@ def render_student_home(
     snapshot: StudentDashboardSnapshot,
     dashboard: StudentDashboard | None = None,
 ) -> None:
-    """Accueil élève : moyenne générale, détail par matière, devoirs/évaluations dépliables."""
-    context = snapshot.context
-    st.title(f"Bonjour {context.display_name}")
-    if context.objective:
-        st.markdown(f"### Objectif : {context.objective}")
+    """Accueil élève Objectif Brevet (§29) — délègue au dashboard DNB."""
+    from ui.dnb_student_home import render_brevet_student_home
 
-    st.subheader("Moyenne générale", anchor=False)
-    if context.overall_average_out_of_20 is not None:
-        st.metric("Moyenne générale", f"{context.overall_average_out_of_20:g}/20")
-    else:
-        st.info("Aucune note encore — termine un devoir ou une évaluation pour afficher ta moyenne.")
-
-    st.subheader("Détail par matière", anchor=False)
-    boards = context.subject_boards
-    if not boards:
-        st.info("Aucun devoir ni évaluation pour le moment. Crée-en un depuis « Mes devoirs ».")
-    for board in boards:
-        avg = "—" if board.average_out_of_20 is None else f"{board.average_out_of_20:g}/20"
-        with st.expander(
-            f"{board.subject_label} — moyenne {avg} · {board.assignment_count} devoir(s)/évaluation(s)",
-            expanded=True,
-        ):
-            for card in board.assignments:
-                safe_subject = "".join(ch if ch.isalnum() else "_" for ch in board.subject_label)
-                _render_home_assignment_card(
-                    learner_id=context.learner_id,
-                    card=card,
-                    key_prefix=f"home_{context.learner_id}_{safe_subject}",
-                )
-
-    actions = st.columns(3)
-    if actions[0].button("Mes devoirs", key=f"home_hw_{context.learner_id}", use_container_width=True):
-        request_navigation(st.session_state, "student", "Devoirs")
-        st.rerun()
-    if actions[1].button("Ma séance", key=f"home_session_{context.learner_id}", use_container_width=True):
-        request_navigation(st.session_state, "student", "Ma séance")
-        st.rerun()
-    if actions[2].button("Révision", key=f"home_revision_{context.learner_id}", use_container_width=True):
-        request_navigation(st.session_state, "student", "Révision")
-        st.rerun()
-
-    from ui.chatgpt_voice import render_chatgpt_voice_access
-
-    render_chatgpt_voice_access(
-        snapshot=snapshot,
-        expanded=False,
-        key_prefix=f"home_chatgpt_{context.learner_id}",
-    )
-
-    if dashboard is not None and dashboard.current_session is not None:
-        session = dashboard.current_session
-        st.caption(
-            f"Séance en cours ou planifiée — durée conseillée : {dashboard.recommended_duration_minutes} min "
-            f"(état : {session.status})."
-        )
-    if context.next_revision:
-        st.caption(f"Prochaine révision suggérée : {context.next_revision.strftime('%d/%m/%Y')}")
+    render_brevet_student_home(snapshot=snapshot, dashboard=dashboard)
 
 
 def render_professor_ia_card(snapshot: StudentDashboardSnapshot) -> None:
@@ -284,12 +239,15 @@ def render_homework_during_guidance(
     notion_reminder: str | None = None,
     method_outline: str | None = None,
 ) -> None:
-    """Single Oui/Non help control; generates one explicit AI (or fallback) tip."""
+    """Oui/Non help: Coach Brevet tip for the exercise, then chat follow-ups."""
     service = build_student_guidance_service()
-    cache_key = f"{key_prefix}_hw_guidance"
+    chat_key = f"{key_prefix}_help_chat"
     with st.container(border=True):
-        st.markdown("### 🆘 Aide")
-        st.caption("Choisis Oui pour obtenir une aide unique, détaillée et explicite (formule / méthode).")
+        st.markdown("### Aide — Coach Brevet")
+        st.caption(
+            "Choisis Oui pour envoyer l'exercice au Coach Brevet (contexte DNB complet). "
+            "Tu pourras ensuite poser des questions si ce n'est pas suffisant."
+        )
         want_help = st.radio(
             "Aide",
             options=("Non", "Oui"),
@@ -298,10 +256,12 @@ def render_homework_during_guidance(
             key=f"{key_prefix}_help_on_off",
         )
         if want_help == "Non":
-            st.session_state.pop(cache_key, None)
+            st.session_state.pop(chat_key, None)
             return
-        if cache_key not in st.session_state:
-            with st.spinner("Génération de l'aide…"):
+
+        chat: list[dict[str, str]] = list(st.session_state.get(chat_key) or [])
+        if not chat:
+            with st.spinner("Envoi de l'exercice au Coach Brevet…"):
                 response = service.guide_current_exercise(
                     _student_actor(user, learner_id),
                     learner_id,
@@ -313,16 +273,75 @@ def render_homework_during_guidance(
                     notion_reminder=notion_reminder,
                     method_outline=method_outline,
                 )
-                st.session_state[cache_key] = response
-        cached = st.session_state.get(cache_key)
-        if isinstance(cached, HomeworkGuidanceResponse):
-            source = "IA" if cached.source is GuidanceSource.AI else "standard"
-            st.info(f"Aide {source} : {cached.message}")
-            if cached.degraded_notice:
-                st.caption(cached.degraded_notice)
-            if st.button("Régénérer l'aide", key=f"{key_prefix}_regen_help", use_container_width=True):
-                st.session_state.pop(cache_key, None)
-                st.rerun()
+                chat = [{"role": "assistant", "content": response.message}]
+                if response.degraded_notice:
+                    chat[0]["notice"] = response.degraded_notice
+                st.session_state[chat_key] = chat
+
+        for message in chat:
+            role = message.get("role", "assistant")
+            label = "Toi" if role == "user" else "Coach Brevet"
+            st.markdown(f"**{label} :**")
+            if role == "assistant":
+                st.info(message.get("content", ""))
+            else:
+                st.write(message.get("content", ""))
+            notice = message.get("notice")
+            if notice:
+                st.caption(notice)
+
+        follow_key = f"{key_prefix}_help_followup"
+        follow_up = st.text_area(
+            "Ta question au Coach Brevet (si l'aide ne suffit pas)",
+            key=follow_key,
+            height=90,
+            placeholder="Ex. : Je ne comprends pas la première étape…",
+        )
+        cols = st.columns(2)
+        with cols[0]:
+            send = st.button(
+                "Envoyer au Coach Brevet",
+                key=f"{key_prefix}_help_send",
+                use_container_width=True,
+                type="primary",
+                disabled=not str(follow_up or "").strip(),
+            )
+        with cols[1]:
+            regen = st.button(
+                "Nouvelle aide",
+                key=f"{key_prefix}_regen_help",
+                use_container_width=True,
+            )
+        if regen:
+            st.session_state.pop(chat_key, None)
+            st.session_state.pop(follow_key, None)
+            st.rerun()
+        if send:
+            question = str(follow_up or "").strip()
+            history = tuple(
+                (item["role"], item["content"]) for item in chat if item.get("role") in {"user", "assistant"}
+            )
+            with st.spinner("Réponse du Coach Brevet…"):
+                try:
+                    reply = service.continue_exercise_help(
+                        _student_actor(user, learner_id),
+                        learner_id,
+                        follow_up=question,
+                        history=history,
+                        statement=statement,
+                        notion_reminder=notion_reminder,
+                    )
+                except ValueError as exc:
+                    st.warning(str(exc))
+                    return
+            chat.append({"role": "user", "content": question})
+            assistant_msg: dict[str, str] = {"role": "assistant", "content": reply.message}
+            if reply.degraded_notice:
+                assistant_msg["notice"] = reply.degraded_notice
+            chat.append(assistant_msg)
+            st.session_state[chat_key] = chat
+            st.session_state.pop(follow_key, None)
+            st.rerun()
 
 
 def render_homework_result_explanation(context: ResultExplanationContext) -> None:

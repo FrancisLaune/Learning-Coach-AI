@@ -170,6 +170,7 @@ class UnifiedSessionExecutionService:
                 previous_attempts=material.previous_attempts,
                 feedback={"question_id": material.question.question_id},
             ),
+            statement=material.question.statement,
         )
         answered, total = self.repository.activity_question_count(material.question.activity_id)
         if answered >= total:

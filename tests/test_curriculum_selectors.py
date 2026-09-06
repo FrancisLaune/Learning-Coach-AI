@@ -48,7 +48,7 @@ def test_removed_chapter_removes_incompatible_skills() -> None:
 def test_grade_filters_subjects_and_prevents_cross_subject_chapters(
     catalog_repository: DuckDBUnifiedExperienceRepository,
 ) -> None:
-    grades = {code: grade_id for grade_id, code, _ in catalog_repository.grade_levels()}
+    grades = {code: grade_id for grade_id, code, _ in catalog_repository.grade_levels(product_facing=False)}
     subjects_4e = catalog_repository.subjects_for_grade(grades["FR-4E"])
     labels_4e = {label: subject_id for subject_id, _, label in subjects_4e}
     assert set(labels_4e) == {"Français", "Mathématiques"}
@@ -65,7 +65,7 @@ def test_grade_filters_subjects_and_prevents_cross_subject_chapters(
 def test_skills_are_union_of_selected_chapters(
     catalog_repository: DuckDBUnifiedExperienceRepository,
 ) -> None:
-    grades = {code: grade_id for grade_id, code, _ in catalog_repository.grade_levels()}
+    grades = {code: grade_id for grade_id, code, _ in catalog_repository.grade_levels(product_facing=False)}
     subjects = {label: subject_id for subject_id, _, label in catalog_repository.subjects_for_grade(grades["FR-4E"])}
     chapters = catalog_repository.chapters(subjects["Mathématiques"], grades["FR-4E"])
     first_two = tuple(chapter_id for chapter_id, _ in chapters[:2])
@@ -77,7 +77,7 @@ def test_skills_are_union_of_selected_chapters(
 def test_targeted_and_global_selection_are_filtered_balanced_and_unique(
     catalog_repository: DuckDBUnifiedExperienceRepository,
 ) -> None:
-    grades = {code: grade_id for grade_id, code, _ in catalog_repository.grade_levels()}
+    grades = {code: grade_id for grade_id, code, _ in catalog_repository.grade_levels(product_facing=False)}
     subjects = {label: subject_id for subject_id, _, label in catalog_repository.subjects_for_grade(grades["FR-4E"])}
     subject_id = subjects["Mathématiques"]
     chapters = catalog_repository.chapters(subject_id, grades["FR-4E"])

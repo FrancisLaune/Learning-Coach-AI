@@ -1,9 +1,11 @@
-"""Unified student guidance façade for LCAI-0020."""
+"""Unified student guidance façade for LCAI-0020 / LCAI-0031 Coach Brevet."""
 
 from __future__ import annotations
 
 from collections import defaultdict
+from dataclasses import replace
 from datetime import UTC, datetime
+from pathlib import Path
 from typing import Any, Protocol
 
 from application.dto.student_guidance import (
@@ -29,6 +31,8 @@ from domain.unified_experience.models import AssignmentStatus
 from domain.virtual_teacher.models import ConversationRequest, PedagogicalContext
 from infrastructure.repositories.virtual_teacher import DuckDBVirtualTeacherRepository
 from services.auth.roles import AuthRole, normalize_auth_role
+from services.dnb.coach import COACH_NAME, coach_context_from_home, build_coach_system_briefing
+from services.dnb.coach_decisions import decide_next_work, format_decision_for_student
 from services.learning_session.experience import LearnerExperienceService, MasteryView, StudentDashboard
 from services.pedagogical_intelligence.dashboard_service import PedagogicalDashboardService
 from services.pedagogical_intelligence.recommendation_service import PedagogicalRecommendationService
@@ -46,6 +50,8 @@ from services.student_guidance.mastery_bands import band_label, classify_mastery
 from services.unified_experience import DeterministicCoachService, HomeworkService
 from services.virtual_teacher.ai_conversation_orchestrator import AIConversationOrchestrator
 from services.virtual_teacher.llm_service import build_llm_service
+
+BREVET_COACH_PROMPT_PATH = Path(__file__).resolve().parents[2] / "prompts" / "brevet_coach_system.md"
 
 
 class HomeworkOwnership(Protocol):
@@ -69,7 +75,10 @@ class StudentGuidanceService:
         self.homework = homework
         self.pi_dashboard = pi_dashboard
         self.vt_repository = vt_repository or DuckDBVirtualTeacherRepository()
-        self.orchestrator = orchestrator or AIConversationOrchestrator(llm=build_llm_service())
+        self.orchestrator = orchestrator or AIConversationOrchestrator(
+            llm=build_llm_service(),
+            prompt_path=BREVET_COACH_PROMPT_PATH,
+        )
         self.coach = coach or DeterministicCoachService()
         self.recommendations = PedagogicalRecommendationService()
 
@@ -106,9 +115,8 @@ class StudentGuidanceService:
                 score_summary=f"Séance terminée — score {summary.session.score:.0f} %.",
                 strengths=summary.strengths or ("Participation enregistrée",),
                 weaknesses=summary.weaknesses or ("Points à consolider",),
-                deterministic_recommendation=summary.recommendation or (
-                    coach_items[0].expected_benefit if coach_items else "Revoir les activités difficiles."
-                ),
+                deterministic_recommendation=summary.recommendation
+                or (coach_items[0].expected_benefit if coach_items else "Revoir les activités difficiles."),
             )
         return self.explain_homework_result(actor, learner_id, homework_id)
 
@@ -136,7 +144,9 @@ class StudentGuidanceService:
             estimated_minutes=item.target_duration_minutes,
             exercise_count=int(item.exercise_count),
             status=str(item.status.value),
-            advice_before=homework_before(str(item.subject_label), int(item.exercise_count), item.target_duration_minutes),
+            advice_before=homework_before(
+                str(item.subject_label), int(item.exercise_count), item.target_duration_minutes
+            ),
         )
 
     def guide_current_exercise(
@@ -161,7 +171,7 @@ class StudentGuidanceService:
             notion_reminder=notion_reminder,
             method_outline=method_outline,
         )
-        # Prefer IA whenever the provider is configured (exercise help is pedagogical).
+        # Prefer IA whenever the provider is configured (unique Coach Brevet pack).
         if availability.provider_configured:
             try:
                 from services.learning_session.answer_input import notation_guide_for_response_type
@@ -171,18 +181,31 @@ class StudentGuidanceService:
                     statement=statement or "",
                     instructions=notion_reminder or "",
                 )
+                try:
+                    home = self.build_home_context(learner_id)
+                except Exception:
+                    home = None
+                subject = "exercice"
+                display = "Élève"
+                if home is not None:
+                    display = home.display_name
+                    if home.revision_priorities:
+                        subject = home.revision_priorities[0].subject_label
                 ai = self._generate_short_guidance(
                     learner_id=learner_id,
-                    user_message=(
-                        "Tu es un professeur de collège. Donne UNE aide unique, détaillée et explicite "
-                        "pour cet exercice. Inclus la formule ou la règle utile et comment l'appliquer. "
-                        "Indique clairement la notation attendue au clavier. "
-                        "N'écris PAS la réponse finale (ni le nombre, ni la puissance complète si c'est "
-                        "exactement ce qu'il faut trouver). "
-                        f"Consigne: {(statement or '')[:400]}. "
-                        f"Notation à rappeler à l'élève: {notation}"
+                    user_message=_exercise_help_prompt(
+                        statement=statement,
+                        hint_text=hint_text,
+                        notion_reminder=notion_reminder,
+                        method_outline=method_outline,
+                        notation=notation,
                     ),
-                    subject_label="devoir",
+                    subject_label=subject,
+                    display_name=display,
+                    home=home,
+                    exercise_statement=statement,
+                    notion_reminder=notion_reminder,
+                    hint_text=hint_text,
                 )
                 if ai and ai.strip():
                     return HomeworkGuidanceResponse(
@@ -205,6 +228,70 @@ class StudentGuidanceService:
             degraded_notice=notice,
         )
 
+    def continue_exercise_help(
+        self,
+        actor: dict[str, Any],
+        learner_id: int,
+        *,
+        follow_up: str,
+        history: tuple[tuple[str, str], ...],
+        statement: str | None = None,
+        notion_reminder: str | None = None,
+    ) -> HomeworkGuidanceResponse:
+        """Follow-up turn in the in-session help chat (same exercise)."""
+        availability = self._authorize_student(actor, learner_id)
+        question = (follow_up or "").strip()
+        if not question:
+            raise ValueError("Écris ta question pour continuer l'aide.")
+        fallback = homework_during(
+            1,
+            statement=statement,
+            notion_reminder=notion_reminder,
+        )
+        if availability.provider_configured:
+            try:
+                try:
+                    home = self.build_home_context(learner_id)
+                except Exception:
+                    home = None
+                ai = self._generate_short_guidance(
+                    learner_id=learner_id,
+                    user_message=_exercise_followup_prompt(
+                        statement=statement,
+                        notion_reminder=notion_reminder,
+                        follow_up=question,
+                    ),
+                    subject_label="exercice",
+                    display_name=home.display_name if home is not None else "Élève",
+                    history=history,
+                    home=home,
+                    exercise_statement=statement,
+                    notion_reminder=notion_reminder,
+                    student_question=question,
+                )
+                if ai and ai.strip():
+                    return HomeworkGuidanceResponse(
+                        source=GuidanceSource.AI,
+                        phase="DURING",
+                        message=ai.strip(),
+                        help_level=1,
+                        suggested_actions=fallback.suggested_actions,
+                    )
+            except Exception:
+                pass
+        degraded = availability.mode is not AIAvailabilityMode.ACTIVE
+        notice = availability.reason or (DEGRADED_NOTICE if degraded else "")
+        return HomeworkGuidanceResponse(
+            source=GuidanceSource.DETERMINISTIC,
+            phase=fallback.phase,
+            message=(
+                f"{fallback.message} Si tu veux préciser : indique l'étape qui te bloque dans « {question[:120]} »."
+            ),
+            help_level=1,
+            suggested_actions=fallback.suggested_actions,
+            degraded_notice=notice,
+        )
+
     def explain_homework_result(
         self,
         actor: dict[str, Any],
@@ -215,9 +302,15 @@ class StudentGuidanceService:
         item = self.homework._owned(learner_id, homework_id)
         dashboard = self.experience.dashboard(learner_id)
         coach_items = self.coach.advice(dashboard.mastery)
-        strengths = tuple(item.title for item in coach_items if "Progression" in item.title or "solide" in item.title.lower())[:3]
+        strengths = tuple(
+            item.title for item in coach_items if "Progression" in item.title or "solide" in item.title.lower()
+        )[:3]
         weaknesses = tuple(item.title for item in coach_items if "Priorité" in item.title)[:3]
-        recommendation = coach_items[0].expected_benefit if coach_items else "Revoir les exercices difficiles avec une séance courte."
+        recommendation = (
+            coach_items[0].expected_benefit
+            if coach_items
+            else "Revoir les exercices difficiles avec une séance courte."
+        )
         context = ResultExplanationContext(
             homework_id=int(item.homework_id),
             subject_label=str(item.subject_label),
@@ -228,10 +321,13 @@ class StudentGuidanceService:
         )
         if availability.mode is AIAvailabilityMode.ACTIVE:
             try:
+                home = self.build_home_context(learner_id)
                 narrative = self._generate_short_guidance(
                     learner_id=learner_id,
                     user_message=explain_result(context),
                     subject_label=str(item.subject_label),
+                    display_name=home.display_name,
+                    home=home,
                 )
                 context = ResultExplanationContext(
                     homework_id=context.homework_id,
@@ -248,24 +344,79 @@ class StudentGuidanceService:
     def recommend_revision(self, actor: dict[str, Any], learner_id: int) -> RevisionGuidanceContext:
         availability = self._authorize_student(actor, learner_id)
         context = self.build_home_context(learner_id)
-        priority = context.revision_priorities[0] if context.revision_priorities else RevisionPriority(
-            subject_label="Général",
-            skill_label="Première activité",
-            reason="Aucune donnée suffisante — lance un diagnostic court.",
-            priority=1,
-            estimated_minutes=10,
-            action_label="Ouvrir une révision",
+        priority = (
+            context.revision_priorities[0]
+            if context.revision_priorities
+            else RevisionPriority(
+                subject_label="Général",
+                skill_label="Première activité",
+                reason="Aucune donnée suffisante — lance un diagnostic court.",
+                priority=1,
+                estimated_minutes=10,
+                action_label="Ouvrir une révision",
+            )
         )
         message = (
             f"Je te propose de travailler {priority.skill_label} en {priority.subject_label}. "
             f"Raison : {priority.reason}. Durée estimée : {priority.estimated_minutes} min."
         )
+        coach = coach_context_from_home(
+            display_name=context.display_name,
+            objective=context.objective,
+            fragile=context.fragile_skills,
+            strong=context.strong_skills,
+            mastery=context.mastery,
+            revision_priorities=context.revision_priorities,
+            recent_score=context.recent_score,
+            success_rate=context.success_rate,
+            subject_label=priority.subject_label,
+            chapter_label=priority.skill_label,
+        )
+        decision = decide_next_work(coach)
+        message = f"{format_decision_for_student(decision)} {message}"
+        # LCAI-0031: enrich with Brevet prioritizer when mastery rows exist.
+        try:
+            from services import dnb as dnb_service
+
+            mastery_rows = [
+                {
+                    "skill_id": int(item.skill_id),
+                    "label": str(item.label),
+                    "mastery_score": float(item.score),
+                    "subject_code": str(getattr(item, "subject_label", "") or ""),
+                }
+                for item in context.mastery[:12]
+            ]
+            if mastery_rows:
+                ranked = dnb_service.priorities_from_mastery_rows(mastery_rows, limit=1)
+                if ranked:
+                    top = ranked[0]
+                    plan = dnb_service.study_plan(ranked, weekly_minutes=150)
+                    message = (
+                        f"{top.reason} Prochaine session : {top.label} "
+                        f"(~{plan.focuses[0].suggested_minutes if plan.focuses else priority.estimated_minutes} min). "
+                        f"{plan.mock_exam_hint}"
+                    )
+                    priority = RevisionPriority(
+                        subject_label=priority.subject_label,
+                        skill_label=top.label,
+                        reason=top.reason,
+                        priority=1,
+                        estimated_minutes=plan.focuses[0].suggested_minutes if plan.focuses else priority.estimated_minutes,
+                        action_label="Travailler la priorité Brevet",
+                        homework_id=priority.homework_id,
+                        skill_id=top.skill_id,
+                    )
+        except Exception:
+            pass
         if availability.mode is AIAvailabilityMode.ACTIVE:
             try:
                 message = self._generate_short_guidance(
                     learner_id=learner_id,
-                    user_message=f"Propose une révision : {message}",
+                    user_message=f"Propose une révision ({COACH_NAME}) : {message}",
                     subject_label=priority.subject_label,
+                    display_name=context.display_name,
+                    home=context,
                 )
                 return revision_guidance(priority, source=GuidanceSource.AI, message=message, degraded=False)
             except Exception:
@@ -294,14 +445,15 @@ class StudentGuidanceService:
         todo = tuple(
             item
             for item in summaries
-            if item.status in {AssignmentStatus.READY.value, AssignmentStatus.IN_PROGRESS.value, AssignmentStatus.PAUSED.value}
+            if item.status
+            in {AssignmentStatus.READY.value, AssignmentStatus.IN_PROGRESS.value, AssignmentStatus.PAUSED.value}
         )
-        recent = tuple(
-            item for item in summaries if item.status == AssignmentStatus.COMPLETED.value
-        )[:3]
+        recent = tuple(item for item in summaries if item.status == AssignmentStatus.COMPLETED.value)[:3]
         priorities = self._revision_priorities(mastery, todo, homework_items)
         recent_score = dashboard.metrics[0].value if dashboard.metrics else None
-        success_metric = next((metric.value for metric in dashboard.metrics if "réussite" in metric.label.lower()), None)
+        success_metric = next(
+            (metric.value for metric in dashboard.metrics if "réussite" in metric.label.lower()), None
+        )
         evaluation_progress = self._evaluation_progress(homework_items)
         subject_boards, overall_average = self._subject_boards(homework_items)
         return StudentHomeContext(
@@ -369,9 +521,7 @@ class StudentGuidanceService:
             )
         return tuple(progress[:8])
 
-    def _subject_boards(
-        self, homework_items: tuple[Any, ...]
-    ) -> tuple[tuple[SubjectHomeBoard, ...], float | None]:
+    def _subject_boards(self, homework_items: tuple[Any, ...]) -> tuple[tuple[SubjectHomeBoard, ...], float | None]:
         from services.homework.evaluation_sizing import score_percent_to_out_of_20
 
         by_subject: dict[str, list[HomeAssignmentCard]] = defaultdict(list)
@@ -460,9 +610,7 @@ class StudentGuidanceService:
             priorities.append(
                 RevisionPriority(
                     subject_label=item.subject_label or "Compétence",
-                    skill_label=item.label
-                    if not item.chapter_label
-                    else f"{item.chapter_label} — {item.label}",
+                    skill_label=item.label if not item.chapter_label else f"{item.chapter_label} — {item.label}",
                     reason=f"Maîtrise {item.score:.0f} % — {item.band_label}",
                     priority=3 if item.band is MasteryBand.TO_REVISE else 4,
                     estimated_minutes=15,
@@ -474,25 +622,49 @@ class StudentGuidanceService:
         return tuple(priorities[:8])
 
     def _welcome_for_context(self, context: StudentHomeContext, availability: AIAvailability) -> WelcomeGuidance:
+        coach = coach_context_from_home(
+            display_name=context.display_name,
+            objective=context.objective,
+            fragile=context.fragile_skills,
+            strong=context.strong_skills,
+            mastery=context.mastery,
+            revision_priorities=context.revision_priorities,
+            recent_score=context.recent_score,
+            success_rate=context.success_rate,
+        )
+        decision = decide_next_work(coach)
         if availability.mode is AIAvailabilityMode.ACTIVE:
             try:
                 facts = (
                     f"Élève {context.display_name}. Objectif: {context.objective}. "
                     f"Devoirs à faire: {len(context.homework_todo)}. "
                     f"Devoirs en retard: {len(context.homework_overdue)}. "
-                    f"Compétence fragile: {context.fragile_skills[0].label if context.fragile_skills else 'aucune'}."
+                    f"Compétence fragile: {context.fragile_skills[0].label if context.fragile_skills else 'aucune'}. "
+                    f"Décision Coach: {format_decision_for_student(decision)}"
                 )
                 message = self._generate_short_guidance(
                     learner_id=context.learner_id,
-                    user_message=f"Accueil élève. Faits: {facts}. Propose une priorité et deux actions courtes en français.",
+                    user_message=(
+                        f"Accueil {COACH_NAME}. Faits: {facts}. "
+                        "Propose une priorité et deux actions courtes en français."
+                    ),
                     subject_label="accueil",
                     display_name=context.display_name,
+                    home=context,
                 )
                 return build_ai_welcome(context, message)
             except Exception:
                 pass
         degraded = availability.mode is AIAvailabilityMode.UNAVAILABLE
-        return build_deterministic_welcome(context, degraded=degraded)
+        welcome = build_deterministic_welcome(context, degraded=degraded)
+        return WelcomeGuidance(
+            source=welcome.source,
+            greeting=f"{format_decision_for_student(decision)} {welcome.greeting}".strip(),
+            primary_action=welcome.primary_action,
+            secondary_actions=welcome.secondary_actions,
+            mission_label=welcome.mission_label or COACH_NAME,
+            degraded_notice=welcome.degraded_notice,
+        )
 
     def _generate_short_guidance(
         self,
@@ -501,13 +673,59 @@ class StudentGuidanceService:
         user_message: str,
         subject_label: str,
         display_name: str = "Élève",
+        history: tuple[tuple[str, str], ...] = (),
+        home: StudentHomeContext | None = None,
+        exercise_statement: str | None = None,
+        notion_reminder: str | None = None,
+        hint_text: str | None = None,
+        student_question: str | None = None,
     ) -> str:
-        preferences = self.vt_repository.ensure_preferences(learner_id)
+        raw_prefs = self.vt_repository.ensure_preferences(learner_id)
+        try:
+            preferences = replace(raw_prefs, teacher_name=COACH_NAME)
+        except (TypeError, ValueError):
+            preferences = raw_prefs
+        home_ctx = home
+        if home_ctx is None:
+            try:
+                home_ctx = self.build_home_context(learner_id)
+            except Exception:
+                home_ctx = None
+        if home_ctx is not None:
+            coach = coach_context_from_home(
+                display_name=display_name or home_ctx.display_name,
+                objective=home_ctx.objective,
+                fragile=home_ctx.fragile_skills,
+                strong=home_ctx.strong_skills,
+                mastery=home_ctx.mastery,
+                revision_priorities=home_ctx.revision_priorities,
+                recent_score=home_ctx.recent_score,
+                success_rate=home_ctx.success_rate,
+                subject_label=subject_label,
+                exercise_statement=exercise_statement or "",
+                notion_reminder=notion_reminder or "",
+                hint_text=hint_text or "",
+                student_question=student_question or "",
+            )
+        else:
+            coach = coach_context_from_home(
+                display_name=display_name,
+                subject_label=subject_label,
+                exercise_statement=exercise_statement or "",
+                notion_reminder=notion_reminder or "",
+                hint_text=hint_text or "",
+                student_question=student_question or "",
+            )
+        briefing = build_coach_system_briefing(coach)
+        decision = decide_next_work(coach)
         context = PedagogicalContext(
             learner_id=learner_id,
             learner_display_name=display_name,
-            grade_label=None,
+            grade_label=coach.grade_label,
             subject_label=subject_label,
+            skill_label=coach.chapter_label or None,
+            # Keep exercise_statement empty for guardrails; full text is in the briefing.
+            session_summary=f"{briefing}\n\nDécision: {format_decision_for_student(decision)}",
         )
         request = ConversationRequest(
             learner_id=learner_id,
@@ -517,7 +735,11 @@ class StudentGuidanceService:
             user_message=user_message,
             context=context,
         )
-        response = self.orchestrator.generate_answer(request=request, preferences=preferences, history=())
+        response = self.orchestrator.generate_answer(
+            request=request,
+            preferences=preferences,
+            history=history,
+        )
         return str(response.message)
 
     def _snapshot(
@@ -536,3 +758,48 @@ class StudentGuidanceService:
             mastery_by_band={key: tuple(values) for key, values in grouped.items()},
             recommendations=context.revision_priorities,
         )
+
+
+def _exercise_help_prompt(
+    *,
+    statement: str | None,
+    hint_text: str | None,
+    notion_reminder: str | None,
+    method_outline: str | None,
+    notation: str,
+) -> str:
+    parts = [
+        f"Tu es {COACH_NAME} (seul professeur IA). L'élève a demandé de l'aide pour résoudre "
+        "cet exercice. Envoie une aide claire et utile pour démarrer la résolution : méthode, "
+        "formules ou règles, et premières étapes. N'écris PAS la réponse finale complète "
+        "(ni le résultat numérique exact si c'est précisément ce qu'il faut trouver). "
+        "Rappelle la notation au clavier si utile. Utilise le briefing pédagogique fourni.",
+        f"Exercice :\n{(statement or 'Non fourni').strip()[:1200]}",
+    ]
+    if notion_reminder and notion_reminder.strip():
+        parts.append(f"Consignes / rappel de notion :\n{notion_reminder.strip()[:500]}")
+    if hint_text and hint_text.strip():
+        parts.append(f"Indice catalogue (à reformuler, ne pas recopier tel quel) :\n{hint_text.strip()[:400]}")
+    if method_outline and method_outline.strip():
+        parts.append(f"Piste de méthode :\n{method_outline.strip()[:400]}")
+    if notation and notation.strip():
+        parts.append(f"Notation à rappeler à l'élève : {notation.strip()[:300]}")
+    return "\n\n".join(parts)
+
+
+def _exercise_followup_prompt(
+    *,
+    statement: str | None,
+    notion_reminder: str | None,
+    follow_up: str,
+) -> str:
+    parts = [
+        "L'élève pose une question complémentaire sur le même exercice. "
+        "Réponds de façon claire et pédagogique, en t'appuyant sur l'historique. "
+        "N'écris PAS la réponse finale complète.",
+        f"Exercice rappelé :\n{(statement or 'Non fourni').strip()[:800]}",
+    ]
+    if notion_reminder and notion_reminder.strip():
+        parts.append(f"Consignes :\n{notion_reminder.strip()[:400]}")
+    parts.append(f"Question de l'élève :\n{follow_up.strip()[:800]}")
+    return "\n\n".join(parts)

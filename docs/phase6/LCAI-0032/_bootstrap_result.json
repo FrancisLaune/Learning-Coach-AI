@@ -1,0 +1,33 @@
+{
+  "db_path": "C:\\Users\\Utilisateur\\Documents\\App_AILearning\\Learning-Coach-AI\\data\\objectif_brevet_2027.duckdb",
+  "migrations_applied": [],
+  "curriculum": {
+    "domains": 0,
+    "chapters": 0,
+    "skills": 0
+  },
+  "sqlite_migration": {
+    "imported": 34,
+    "skipped": 7
+  },
+  "exam_questions_migration": {
+    "imported": 45,
+    "skipped": 0
+  },
+  "manifest_path": "C:\\Users\\Utilisateur\\Documents\\App_AILearning\\Learning-Coach-AI\\data\\dnb_archive_manifest.json",
+  "archives": {
+    "registered": 0,
+    "duplicates": 64,
+    "total_entries": 64
+  },
+  "materialize": {
+    "created": 5,
+    "archive_derived_marked": 1
+  },
+  "content_items": 1953,
+  "coverage_skills": 78,
+  "coverage_by_status": {
+    "COMPLETE": 66,
+    "STRONG": 12
+  }
+}

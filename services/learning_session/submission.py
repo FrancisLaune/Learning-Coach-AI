@@ -29,18 +29,25 @@ class SubmissionService:
         learning: LearningProcessor,
         notifier: DecisionNotifier,
         assessment: DeterministicAssessmentEngine | None = None,
+        *,
+        ai_validator: Any | None = None,
     ) -> None:
         self.repository = repository
         self.learning = learning
         self.notifier = notifier
         self.assessment = assessment or DeterministicAssessmentEngine()
+        self.ai_validator = ai_validator
 
     def submit(
         self,
         context: SubmissionContext,
         request: AssessmentRequest,
+        *,
+        statement: str = "",
     ) -> tuple[Attempt, AssessmentResult, LearningEngineResult]:
         result = self.assessment.assess(request)
+        if not result.correct:
+            result = self._maybe_accept_via_ai(request, result, statement=statement)
         answer = StudentAnswer(
             0,
             context.activity_id,
@@ -98,6 +105,42 @@ class SubmissionService:
         saved = self.repository.save_cycle(answer, assessment, attempt, payload)
         self.notifier.notify_mastery_updated(learning_result)
         return saved, result, learning_result
+
+    def _maybe_accept_via_ai(
+        self,
+        request: AssessmentRequest,
+        result: AssessmentResult,
+        *,
+        statement: str = "",
+    ) -> AssessmentResult:
+        validator = self.ai_validator
+        if validator is None:
+            from services.learning_session.ai_answer_validation import ai_accepts_worked_answer
+
+            validator = ai_accepts_worked_answer
+        try:
+            accepted = validator(request, statement=statement)
+        except TypeError:
+            accepted = validator(request)
+        except Exception:
+            return result
+        if accepted is not True:
+            return result
+        feedback = dict(result.feedback or {})
+        feedback["ai_validation"] = "accepted_worked_answer"
+        return AssessmentResult(
+            result.normalized_answer,
+            100.0,
+            100.0,
+            True,
+            result.hint_penalty,
+            result.time_bonus,
+            result.manual_penalty,
+            result.mastery_delta if result.mastery_delta > 0 else 0.05,
+            result.method,
+            feedback,
+            tuple(result.reasons) + ("ai_validation:accepted_worked_answer",),
+        )
 
     def record_skip(
         self,

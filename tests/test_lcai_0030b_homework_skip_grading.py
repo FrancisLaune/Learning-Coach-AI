@@ -77,6 +77,70 @@ def test_short_text_accepts_answer_contained_in_multiline() -> None:
     assert result.raw_score == 100
 
 
+def test_worked_algebra_solution_accepted_for_integer_expected() -> None:
+    worked = """
+On part de :
+A = (1/2)(4x - 6) + 3(x + 2) - (5x - 1)
+1. Développer chaque partie
+(1/2)(4x-6)=2x-3
+3(x+2)=3x+6
+-(5x-1)=-5x+1
+Donc :
+A=2x-3+3x+6-5x+1
+2. Regrouper les termes en x
+2x+3x-5x=0
+3. Regrouper les nombres
+-3+6+1=4
+Donc :
+A=4
+"""
+    result = DeterministicAssessmentEngine().assess(
+        AssessmentRequest(
+            AnswerType.INTEGER,
+            worked,
+            4,
+            AssessmentMethod.NUMERIC_EQUALITY,
+        )
+    )
+    assert result.correct is True
+    assert result.normalized_answer == 4
+
+
+def test_worked_solution_accepted_as_short_text() -> None:
+    worked = "Développement puis réduction.\nDonc :\nA=4"
+    result = DeterministicAssessmentEngine().assess(
+        AssessmentRequest(
+            AnswerType.SHORT_TEXT,
+            worked,
+            "4",
+            AssessmentMethod.EXACT_MATCH,
+        )
+    )
+    assert result.correct is True
+
+
+def test_ai_validation_can_accept_when_deterministic_fails() -> None:
+    from services.learning_session.submission import SubmissionService
+
+    service = SubmissionService(
+        repository=None,  # type: ignore[arg-type]
+        learning=None,  # type: ignore[arg-type]
+        notifier=None,  # type: ignore[arg-type]
+        ai_validator=lambda request, statement="": True,
+    )
+    rejected = DeterministicAssessmentEngine().assess(
+        AssessmentRequest(AnswerType.SHORT_TEXT, "ma demarche longue aboutit a 4", "999", AssessmentMethod.EXACT_MATCH)
+    )
+    assert rejected.correct is False
+    accepted = service._maybe_accept_via_ai(
+        AssessmentRequest(AnswerType.SHORT_TEXT, "ma demarche longue aboutit a 4", "999", AssessmentMethod.EXACT_MATCH),
+        rejected,
+        statement="Réduis A",
+    )
+    assert accepted.correct is True
+    assert accepted.feedback.get("ai_validation") == "accepted_worked_answer"
+
+
 def test_short_text_still_rejects_wrong_math_answers() -> None:
     result = DeterministicAssessmentEngine().assess(
         AssessmentRequest(AnswerType.SHORT_TEXT, "9", "10 cm", AssessmentMethod.EXACT_MATCH)

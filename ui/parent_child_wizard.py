@@ -303,12 +303,9 @@ def _render_step_pedagogy(
     error_help_labels: dict[str, str],
 ) -> None:
     st.markdown("#### Étape 3 — Parcours pédagogique")
-    target_choices: list[int | None] = [None, *grade_labels]
-    data["target_grade"] = st.selectbox(
-        "Classe cible",
-        target_choices,
-        format_func=lambda item: "Aucune" if item is None else grade_labels[item],
-    )
+    # Produit 3e : cible = classe actuelle (pas de multi-niveaux).
+    data["target_grade"] = data.get("current_grade")
+    st.caption("Classe cible : 3e — Objectif Brevet 2027 (pas de changement de niveau).")
     objective_keys = tuple(objectives)
     data["objective_label"] = st.selectbox("Objectif pédagogique", objective_keys, index=2)
     data["selected_subjects"] = st.multiselect(

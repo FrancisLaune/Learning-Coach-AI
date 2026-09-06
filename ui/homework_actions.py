@@ -40,6 +40,10 @@ def focus_homework_on_devoirs(homework_id: int) -> None:
     request_navigation(st.session_state, "student", "Devoirs")
 
 
+def _delete_article(label_kind: str) -> str:
+    return "cette" if label_kind.casefold().startswith("évalu") else "ce"
+
+
 def render_delete_homework_button(
     *,
     homework_id: int,
@@ -47,11 +51,12 @@ def render_delete_homework_button(
     on_confirm: Callable[[], None],
     label_kind: str = "devoir",
 ) -> None:
-    """Two-step deletion: (1) Supprimer (2) confirmation."""
+    """Two-step deletion: (1) Supprimer (2) confirmation — no nested columns."""
     pending_key = f"{key_prefix}_del_pending_{homework_id}"
+    article = _delete_article(label_kind)
     if not st.session_state.get(pending_key):
         if st.button(
-            f"🗑️ Supprimer ce {label_kind}",
+            f"🗑️ Supprimer {article} {label_kind}",
             key=f"{key_prefix}_del_{homework_id}",
             use_container_width=True,
         ):
@@ -59,18 +64,23 @@ def render_delete_homework_button(
             st.rerun()
         return
 
-    st.warning(f"Êtes-vous certain de vouloir supprimer ce {label_kind} ? Cette action est définitive.")
-    confirm, cancel = st.columns(2)
-    if confirm.button(
+    st.warning(
+        f"Êtes-vous certain de vouloir supprimer {article} {label_kind} ? Cette action est définitive."
+    )
+    # Avoid nested st.columns (Streamlit crashes when this widget is already inside a column).
+    if st.button(
         "Oui, je confirme la suppression",
-        type="primary",
         key=f"{key_prefix}_del_yes_{homework_id}",
         use_container_width=True,
     ):
         st.session_state.pop(pending_key, None)
-        on_confirm()
+        try:
+            on_confirm()
+        except Exception as exc:
+            st.error(f"Suppression impossible : {exc}")
+            return
         st.rerun()
-    if cancel.button(
+    if st.button(
         "Non, annuler",
         key=f"{key_prefix}_del_no_{homework_id}",
         use_container_width=True,

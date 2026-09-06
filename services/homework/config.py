@@ -28,8 +28,11 @@ def _env_int(name: str, default: int) -> int:
 
 
 def _parse_grade_codes(raw: str | None) -> frozenset[str]:
+    # LCAI-0031: product default is 3e only; expand via HOMEWORK_AI_COMPLETION_GRADES if needed.
     if raw is None or not raw.strip():
-        return frozenset(_GRADE_ALIASES.values())
+        from domain.dnb.config import PRIMARY_USER_GRADE_CODE
+
+        return frozenset({PRIMARY_USER_GRADE_CODE})
     codes: set[str] = set()
     for item in raw.split(","):
         token = item.strip().upper()
@@ -96,4 +99,3 @@ class HomeworkAiCompletionSettings:
         if self.allowed_subjects is None:
             return subject_code is not None
         return subject_code is not None and subject_code.upper() in self.allowed_subjects
-
