@@ -1,0 +1,563 @@
+subject,domain,chapter,skill,subskill,exercise_count,coverage_status
+FRENCH,Lecture et compréhension,Compréhension de textes,Repérer des informations explicites,Localiser une information,30,PARTIAL
+FRENCH,Lecture et compréhension,Compréhension de textes,Repérer des informations explicites,Sélectionner l'essentiel,30,PARTIAL
+FRENCH,Lecture et compréhension,Compréhension de textes,Repérer des informations explicites,S'appuyer sur le texte,30,PARTIAL
+FRENCH,Lecture et compréhension,Compréhension de textes,Inférer des informations implicites,Déduire un sens,30,PARTIAL
+FRENCH,Lecture et compréhension,Compréhension de textes,Inférer des informations implicites,Croiser des indices,30,PARTIAL
+FRENCH,Lecture et compréhension,Compréhension de textes,Comprendre le sens global,Identifier le thème,30,PARTIAL
+FRENCH,Lecture et compréhension,Compréhension de textes,Comprendre le sens global,Saisir l'enjeu du texte,30,PARTIAL
+FRENCH,Lecture et compréhension,Compréhension de textes,Comprendre le sens global,Résumer,30,PARTIAL
+FRENCH,Lecture et compréhension,Interprétation et analyse,Procédés d'écriture,Figures de style,50,COMPLETE
+FRENCH,Lecture et compréhension,Interprétation et analyse,Procédés d'écriture,Registres,50,COMPLETE
+FRENCH,Lecture et compréhension,Interprétation et analyse,Procédés d'écriture,Choix lexicaux,50,COMPLETE
+FRENCH,Lecture et compréhension,Interprétation et analyse,Point de vue et intentions,Narrateur / locuteur,30,PARTIAL
+FRENCH,Lecture et compréhension,Interprétation et analyse,Point de vue et intentions,Effets sur le lecteur,30,PARTIAL
+FRENCH,Lecture et compréhension,Interprétation et analyse,Point de vue et intentions,Justifier une interprétation,30,PARTIAL
+FRENCH,"Langue (grammaire, conjugaison, orthographe, vocabulaire)",Grammaire et syntaxe,Classes grammaticales,Nature des mots,60,PARTIAL
+FRENCH,"Langue (grammaire, conjugaison, orthographe, vocabulaire)",Grammaire et syntaxe,Classes grammaticales,Déterminants / pronoms,60,PARTIAL
+FRENCH,"Langue (grammaire, conjugaison, orthographe, vocabulaire)",Grammaire et syntaxe,Classes grammaticales,Adverbes / prépositions / conjonctions,60,PARTIAL
+FRENCH,"Langue (grammaire, conjugaison, orthographe, vocabulaire)",Grammaire et syntaxe,Fonctions dans la phrase,Sujet,30,PARTIAL
+FRENCH,"Langue (grammaire, conjugaison, orthographe, vocabulaire)",Grammaire et syntaxe,Fonctions dans la phrase,COD / COI,30,PARTIAL
+FRENCH,"Langue (grammaire, conjugaison, orthographe, vocabulaire)",Grammaire et syntaxe,Fonctions dans la phrase,Compléments circonstanciels,30,PARTIAL
+FRENCH,"Langue (grammaire, conjugaison, orthographe, vocabulaire)",Grammaire et syntaxe,Phrase simple et complexe,Propositions,30,PARTIAL
+FRENCH,"Langue (grammaire, conjugaison, orthographe, vocabulaire)",Grammaire et syntaxe,Phrase simple et complexe,Subordination / coordination,30,PARTIAL
+FRENCH,"Langue (grammaire, conjugaison, orthographe, vocabulaire)",Grammaire et syntaxe,Phrase simple et complexe,Ponctuation,30,PARTIAL
+FRENCH,"Langue (grammaire, conjugaison, orthographe, vocabulaire)",Conjugaison,Temps et modes,"Indicatif (présent, passé, futur)",40,COMPLETE
+FRENCH,"Langue (grammaire, conjugaison, orthographe, vocabulaire)",Conjugaison,Temps et modes,Conditionnel,40,COMPLETE
+FRENCH,"Langue (grammaire, conjugaison, orthographe, vocabulaire)",Conjugaison,Temps et modes,Subjonctif courant,40,COMPLETE
+FRENCH,"Langue (grammaire, conjugaison, orthographe, vocabulaire)",Conjugaison,Accords du verbe,Personne et nombre,30,PARTIAL
+FRENCH,"Langue (grammaire, conjugaison, orthographe, vocabulaire)",Conjugaison,Accords du verbe,Groupes verbaux,30,PARTIAL
+FRENCH,"Langue (grammaire, conjugaison, orthographe, vocabulaire)",Conjugaison,Accords du verbe,Temps composés,30,PARTIAL
+FRENCH,"Langue (grammaire, conjugaison, orthographe, vocabulaire)",Orthographe et accords,Orthographe lexicale,Mots courants et homophones,100,PARTIAL
+FRENCH,"Langue (grammaire, conjugaison, orthographe, vocabulaire)",Orthographe et accords,Orthographe lexicale,Règles d'usage,100,PARTIAL
+FRENCH,"Langue (grammaire, conjugaison, orthographe, vocabulaire)",Orthographe et accords,Accords dans le groupe nominal,Déterminant / nom / adjectif,30,PARTIAL
+FRENCH,"Langue (grammaire, conjugaison, orthographe, vocabulaire)",Orthographe et accords,Accords dans le groupe nominal,Participe passé,30,PARTIAL
+FRENCH,"Langue (grammaire, conjugaison, orthographe, vocabulaire)",Orthographe et accords,Accord sujet-verbe,Sujet simple,30,PARTIAL
+FRENCH,"Langue (grammaire, conjugaison, orthographe, vocabulaire)",Orthographe et accords,Accord sujet-verbe,Sujet inversé / éloigné,30,PARTIAL
+FRENCH,"Langue (grammaire, conjugaison, orthographe, vocabulaire)",Vocabulaire,Sens des mots,Sens en contexte,30,COMPLETE
+FRENCH,"Langue (grammaire, conjugaison, orthographe, vocabulaire)",Vocabulaire,Sens des mots,Polysémie,30,COMPLETE
+FRENCH,"Langue (grammaire, conjugaison, orthographe, vocabulaire)",Vocabulaire,Sens des mots,Nuances et synonymes,30,COMPLETE
+FRENCH,"Langue (grammaire, conjugaison, orthographe, vocabulaire)",Vocabulaire,Formation des mots,Préfixes / suffixes,30,COMPLETE
+FRENCH,"Langue (grammaire, conjugaison, orthographe, vocabulaire)",Vocabulaire,Formation des mots,Familles de mots,30,COMPLETE
+FRENCH,Écriture,Réécriture,Transformer un texte,Changer personne / temps,40,COMPLETE
+FRENCH,Écriture,Réécriture,Transformer un texte,Expansion / réduction,40,COMPLETE
+FRENCH,Écriture,Réécriture,Transformer un texte,Changer de registre,40,COMPLETE
+FRENCH,Écriture,Réécriture,Maintenir la cohérence,Réaccorder,40,COMPLETE
+FRENCH,Écriture,Réécriture,Maintenir la cohérence,Préserver le sens,40,COMPLETE
+FRENCH,Écriture,Dictée,Orthographe en situation,Orthographe lexicale,40,COMPLETE
+FRENCH,Écriture,Dictée,Orthographe en situation,Orthographe grammaticale,40,COMPLETE
+FRENCH,Écriture,Dictée,Stratégies de relecture,Contrôler les verbes,40,COMPLETE
+FRENCH,Écriture,Dictée,Stratégies de relecture,Contrôler les accords du GN,40,COMPLETE
+FRENCH,Écriture,Expression écrite,Organiser un écrit,Générer des idées,30,PARTIAL
+FRENCH,Écriture,Expression écrite,Organiser un écrit,Planifier,30,PARTIAL
+FRENCH,Écriture,Expression écrite,Organiser un écrit,Paragraphes,30,PARTIAL
+FRENCH,Écriture,Expression écrite,Qualité de l'expression,Précision lexicale,30,PARTIAL
+FRENCH,Écriture,Expression écrite,Qualité de l'expression,Variété syntaxique,30,PARTIAL
+FRENCH,Écriture,Expression écrite,Qualité de l'expression,Correction linguistique,30,PARTIAL
+FRENCH,Écriture,Expression écrite,Genres d'écrits,Narratif,30,PARTIAL
+FRENCH,Écriture,Expression écrite,Genres d'écrits,Descriptif,30,PARTIAL
+FRENCH,Écriture,Expression écrite,Genres d'écrits,Explicatif,30,PARTIAL
+FRENCH,Écriture,Argumentation,Construire une thèse,Prendre position,30,PARTIAL
+FRENCH,Écriture,Argumentation,Construire une thèse,Sélectionner des arguments,30,PARTIAL
+FRENCH,Écriture,Argumentation,Construire une thèse,Illustrer par des exemples,30,PARTIAL
+FRENCH,Écriture,Argumentation,Structurer un paragraphe argumentatif,Connecteurs,30,PARTIAL
+FRENCH,Écriture,Argumentation,Structurer un paragraphe argumentatif,Progression,30,PARTIAL
+FRENCH,Écriture,Argumentation,Structurer un paragraphe argumentatif,Conclure,30,PARTIAL
+FRENCH,Formats d'épreuve DNB,Compréhension et compétences linguistiques (DNB),Questions de compréhension,Répondre à partir du texte,50,COMPLETE
+FRENCH,Formats d'épreuve DNB,Compréhension et compétences linguistiques (DNB),Questions de compréhension,Justifier brièvement,50,COMPLETE
+FRENCH,Formats d'épreuve DNB,Compréhension et compétences linguistiques (DNB),Compétences linguistiques,Questions de grammaire,30,PARTIAL
+FRENCH,Formats d'épreuve DNB,Compréhension et compétences linguistiques (DNB),Compétences linguistiques,Exercice de réécriture,30,PARTIAL
+FRENCH,Formats d'épreuve DNB,Compréhension et compétences linguistiques (DNB),Compétences linguistiques,Dictée,30,PARTIAL
+FRENCH,Formats d'épreuve DNB,Rédaction DNB,Traiter le sujet,Comprendre la consigne,50,COMPLETE
+FRENCH,Formats d'épreuve DNB,Rédaction DNB,Traiter le sujet,Sujet d'imagination / réflexion,50,COMPLETE
+FRENCH,Formats d'épreuve DNB,Rédaction DNB,Produire un texte abouti,Respecter la longueur attendue,30,PARTIAL
+FRENCH,Formats d'épreuve DNB,Rédaction DNB,Produire un texte abouti,Se relire,30,PARTIAL
+FRENCH,Formats d'épreuve DNB,Rédaction DNB,Produire un texte abouti,Critères d'évaluation,30,PARTIAL
+MATHEMATICS,Nombres et calculs,Nombres relatifs et rationnels,Comparer et ordonner,Repérer sur une droite graduée,48,GOOD
+MATHEMATICS,Nombres et calculs,Nombres relatifs et rationnels,Comparer et ordonner,Comparer relatifs et rationnels,48,GOOD
+MATHEMATICS,Nombres et calculs,Nombres relatifs et rationnels,Comparer et ordonner,Situer dans un intervalle,48,GOOD
+MATHEMATICS,Nombres et calculs,Nombres relatifs et rationnels,Opérations sur les relatifs,Addition et soustraction,12,PARTIAL
+MATHEMATICS,Nombres et calculs,Nombres relatifs et rationnels,Opérations sur les relatifs,Multiplication et division,12,PARTIAL
+MATHEMATICS,Nombres et calculs,Nombres relatifs et rationnels,Opérations sur les relatifs,Priorités opératoires,12,PARTIAL
+MATHEMATICS,Nombres et calculs,Nombres relatifs et rationnels,Représenter les rationnels,Fraction et écriture décimale,12,PARTIAL
+MATHEMATICS,Nombres et calculs,Nombres relatifs et rationnels,Représenter les rationnels,Écritures mixtes,12,PARTIAL
+MATHEMATICS,Nombres et calculs,Fractions,Simplifier et rendre irréductible,Utiliser le PGCD,40,PARTIAL
+MATHEMATICS,Nombres et calculs,Fractions,Simplifier et rendre irréductible,Fractions égales,40,PARTIAL
+MATHEMATICS,Nombres et calculs,Fractions,Simplifier et rendre irréductible,Forme irréductible,40,PARTIAL
+MATHEMATICS,Nombres et calculs,Fractions,Calculer avec des fractions,Addition et soustraction,40,COMPLETE
+MATHEMATICS,Nombres et calculs,Fractions,Calculer avec des fractions,Multiplication,40,COMPLETE
+MATHEMATICS,Nombres et calculs,Fractions,Calculer avec des fractions,Division,40,COMPLETE
+MATHEMATICS,Nombres et calculs,Fractions,Résoudre des problèmes de fractions,Partie d'une quantité,40,COMPLETE
+MATHEMATICS,Nombres et calculs,Fractions,Résoudre des problèmes de fractions,Problèmes contextualisés,40,COMPLETE
+MATHEMATICS,Nombres et calculs,Puissances et notation scientifique,Propriétés des puissances,Produit de puissances,32,PARTIAL
+MATHEMATICS,Nombres et calculs,Puissances et notation scientifique,Propriétés des puissances,Quotient de puissances,32,PARTIAL
+MATHEMATICS,Nombres et calculs,Puissances et notation scientifique,Propriétés des puissances,Exposants négatifs,32,PARTIAL
+MATHEMATICS,Nombres et calculs,Puissances et notation scientifique,Puissances de 10,Écriture décimale,12,PARTIAL
+MATHEMATICS,Nombres et calculs,Puissances et notation scientifique,Puissances de 10,Calculs avec 10^n,12,PARTIAL
+MATHEMATICS,Nombres et calculs,Puissances et notation scientifique,Notation scientifique,Passer en notation scientifique,12,PARTIAL
+MATHEMATICS,Nombres et calculs,Puissances et notation scientifique,Notation scientifique,Comparer des grandeurs,12,PARTIAL
+MATHEMATICS,Nombres et calculs,Puissances et notation scientifique,Notation scientifique,Calculer en notation scientifique,12,PARTIAL
+MATHEMATICS,Nombres et calculs,Arithmétique,Divisibilité,Critères de divisibilité,12,PARTIAL
+MATHEMATICS,Nombres et calculs,Arithmétique,Divisibilité,Multiples et diviseurs,12,PARTIAL
+MATHEMATICS,Nombres et calculs,Arithmétique,PGCD et applications,Algorithme d'Euclide,12,PARTIAL
+MATHEMATICS,Nombres et calculs,Arithmétique,PGCD et applications,Simplification de fractions,12,PARTIAL
+MATHEMATICS,Nombres et calculs,Arithmétique,Nombres premiers,Reconnaître un nombre premier,12,PARTIAL
+MATHEMATICS,Nombres et calculs,Arithmétique,Nombres premiers,Décomposition en facteurs premiers,12,PARTIAL
+MATHEMATICS,Nombres et calculs,Calcul littéral,Écrire et interpréter une expression,Traduire une situation,50,COMPLETE
+MATHEMATICS,Nombres et calculs,Calcul littéral,Écrire et interpréter une expression,Substituer une valeur,50,COMPLETE
+MATHEMATICS,Nombres et calculs,Calcul littéral,Écrire et interpréter une expression,Tester une égalité,50,COMPLETE
+MATHEMATICS,Nombres et calculs,Calcul littéral,Manipuler des expressions,Sommes algébriques,50,COMPLETE
+MATHEMATICS,Nombres et calculs,Calcul littéral,Manipuler des expressions,Produits,50,COMPLETE
+MATHEMATICS,Nombres et calculs,Calcul littéral,Manipuler des expressions,Parenthèses,50,COMPLETE
+MATHEMATICS,Nombres et calculs,"Développement, réduction et factorisation",Développer,k(a+b),42,PARTIAL
+MATHEMATICS,Nombres et calculs,"Développement, réduction et factorisation",Développer,(a+b)(c+d),42,PARTIAL
+MATHEMATICS,Nombres et calculs,"Développement, réduction et factorisation",Développer,Identités remarquables (sens direct),42,PARTIAL
+MATHEMATICS,Nombres et calculs,"Développement, réduction et factorisation",Réduire,Regrouper les termes semblables,12,PARTIAL
+MATHEMATICS,Nombres et calculs,"Développement, réduction et factorisation",Réduire,Ordonner une expression,12,PARTIAL
+MATHEMATICS,Nombres et calculs,"Développement, réduction et factorisation",Factoriser,Facteur commun,12,PARTIAL
+MATHEMATICS,Nombres et calculs,"Développement, réduction et factorisation",Factoriser,Identités remarquables (sens inverse),12,PARTIAL
+MATHEMATICS,Nombres et calculs,Équations,Équations du premier degré,Résoudre ax+b=c,50,COMPLETE
+MATHEMATICS,Nombres et calculs,Équations,Équations du premier degré,Transformer une équation,50,COMPLETE
+MATHEMATICS,Nombres et calculs,Équations,Équations du premier degré,Vérifier une solution,50,COMPLETE
+MATHEMATICS,Nombres et calculs,Équations,Équations produit nul,Mettre sous forme produit,50,COMPLETE
+MATHEMATICS,Nombres et calculs,Équations,Équations produit nul,Trouver les racines,50,COMPLETE
+MATHEMATICS,Nombres et calculs,Équations,Mettre en équation un problème,Choisir l'inconnue,50,COMPLETE
+MATHEMATICS,Nombres et calculs,Équations,Mettre en équation un problème,Résoudre et interpréter,50,COMPLETE
+MATHEMATICS,Nombres et calculs,Équations,Mettre en équation un problème,Contrôler la pertinence,50,COMPLETE
+MATHEMATICS,Nombres et calculs,Problèmes numériques,Choisir une stratégie,Estimer un ordre de grandeur,12,PARTIAL
+MATHEMATICS,Nombres et calculs,Problèmes numériques,Choisir une stratégie,Décomposer le problème,12,PARTIAL
+MATHEMATICS,Nombres et calculs,Problèmes numériques,Mener un calcul justifié,Enchaîner les étapes,12,PARTIAL
+MATHEMATICS,Nombres et calculs,Problèmes numériques,Mener un calcul justifié,Gérer les unités,12,PARTIAL
+MATHEMATICS,Nombres et calculs,Problèmes numériques,Mener un calcul justifié,Présenter le résultat,12,PARTIAL
+MATHEMATICS,"Organisation et gestion de données, fonctions",Proportionnalité,Reconnaître une situation de proportionnalité,Tableau de proportionnalité,40,PARTIAL
+MATHEMATICS,"Organisation et gestion de données, fonctions",Proportionnalité,Reconnaître une situation de proportionnalité,Représentation graphique,40,PARTIAL
+MATHEMATICS,"Organisation et gestion de données, fonctions",Proportionnalité,Calculer dans une situation proportionnelle,Coefficient de proportionnalité,40,COMPLETE
+MATHEMATICS,"Organisation et gestion de données, fonctions",Proportionnalité,Calculer dans une situation proportionnelle,Produit en croix,40,COMPLETE
+MATHEMATICS,"Organisation et gestion de données, fonctions",Proportionnalité,Calculer dans une situation proportionnelle,Échelles,40,COMPLETE
+MATHEMATICS,"Organisation et gestion de données, fonctions",Pourcentages,Calculer un pourcentage,Pourcentage d'une quantité,40,COMPLETE
+MATHEMATICS,"Organisation et gestion de données, fonctions",Pourcentages,Calculer un pourcentage,Trouver un taux,40,COMPLETE
+MATHEMATICS,"Organisation et gestion de données, fonctions",Pourcentages,Évolutions en pourcentage,Augmentation,40,COMPLETE
+MATHEMATICS,"Organisation et gestion de données, fonctions",Pourcentages,Évolutions en pourcentage,Diminution,40,COMPLETE
+MATHEMATICS,"Organisation et gestion de données, fonctions",Pourcentages,Évolutions en pourcentage,Évolutions successives,40,COMPLETE
+MATHEMATICS,"Organisation et gestion de données, fonctions",Statistiques,Organiser des données,Tableaux,40,COMPLETE
+MATHEMATICS,"Organisation et gestion de données, fonctions",Statistiques,Organiser des données,Diagrammes,40,COMPLETE
+MATHEMATICS,"Organisation et gestion de données, fonctions",Statistiques,Organiser des données,Fréquences,40,COMPLETE
+MATHEMATICS,"Organisation et gestion de données, fonctions",Statistiques,Indicateurs statistiques,Moyenne,40,COMPLETE
+MATHEMATICS,"Organisation et gestion de données, fonctions",Statistiques,Indicateurs statistiques,Médiane,40,COMPLETE
+MATHEMATICS,"Organisation et gestion de données, fonctions",Statistiques,Indicateurs statistiques,Étendue,40,COMPLETE
+MATHEMATICS,"Organisation et gestion de données, fonctions",Statistiques,Interpréter des données,Lire un graphique,40,COMPLETE
+MATHEMATICS,"Organisation et gestion de données, fonctions",Statistiques,Interpréter des données,Tirer une conclusion,40,COMPLETE
+MATHEMATICS,"Organisation et gestion de données, fonctions",Probabilités,Vocabulaire des probabilités,Issues et événements,40,COMPLETE
+MATHEMATICS,"Organisation et gestion de données, fonctions",Probabilités,Vocabulaire des probabilités,Situations équiprobables,40,COMPLETE
+MATHEMATICS,"Organisation et gestion de données, fonctions",Probabilités,Calculer une probabilité,Probabilité simple,40,COMPLETE
+MATHEMATICS,"Organisation et gestion de données, fonctions",Probabilités,Calculer une probabilité,Événement contraire,40,COMPLETE
+MATHEMATICS,"Organisation et gestion de données, fonctions",Probabilités,Calculer une probabilité,Arbres / tableaux,40,COMPLETE
+MATHEMATICS,"Organisation et gestion de données, fonctions",Fonctions — image et antécédent,Notion de fonction,Définir une fonction,12,PARTIAL
+MATHEMATICS,"Organisation et gestion de données, fonctions",Fonctions — image et antécédent,Notion de fonction,Notation f(x),12,PARTIAL
+MATHEMATICS,"Organisation et gestion de données, fonctions",Fonctions — image et antécédent,Notion de fonction,Tableau de valeurs,12,PARTIAL
+MATHEMATICS,"Organisation et gestion de données, fonctions",Fonctions — image et antécédent,Image et antécédent,Calculer une image,12,PARTIAL
+MATHEMATICS,"Organisation et gestion de données, fonctions",Fonctions — image et antécédent,Image et antécédent,Déterminer un antécédent,12,PARTIAL
+MATHEMATICS,"Organisation et gestion de données, fonctions",Fonctions — image et antécédent,Image et antécédent,Lire sur un graphique,12,PARTIAL
+MATHEMATICS,"Organisation et gestion de données, fonctions",Fonctions — image et antécédent,Représentation graphique,Tracer une courbe,12,PARTIAL
+MATHEMATICS,"Organisation et gestion de données, fonctions",Fonctions — image et antécédent,Représentation graphique,Interpréter graphiquement,12,PARTIAL
+MATHEMATICS,"Organisation et gestion de données, fonctions",Fonctions linéaires et affines,Fonctions linéaires,y = ax,50,COMPLETE
+MATHEMATICS,"Organisation et gestion de données, fonctions",Fonctions linéaires et affines,Fonctions linéaires,Coefficient directeur,50,COMPLETE
+MATHEMATICS,"Organisation et gestion de données, fonctions",Fonctions linéaires et affines,Fonctions linéaires,Lien avec la proportionnalité,50,COMPLETE
+MATHEMATICS,"Organisation et gestion de données, fonctions",Fonctions linéaires et affines,Fonctions affines,y = ax+b,12,PARTIAL
+MATHEMATICS,"Organisation et gestion de données, fonctions",Fonctions linéaires et affines,Fonctions affines,Ordonnée à l'origine,12,PARTIAL
+MATHEMATICS,"Organisation et gestion de données, fonctions",Fonctions linéaires et affines,Fonctions affines,Tracer la droite,12,PARTIAL
+MATHEMATICS,"Organisation et gestion de données, fonctions",Fonctions linéaires et affines,Déterminer une fonction affine,À partir de deux points,12,PARTIAL
+MATHEMATICS,"Organisation et gestion de données, fonctions",Fonctions linéaires et affines,Déterminer une fonction affine,À partir d'un graphique,12,PARTIAL
+MATHEMATICS,"Organisation et gestion de données, fonctions",Fonctions linéaires et affines,Déterminer une fonction affine,Modéliser une situation,12,PARTIAL
+MATHEMATICS,Grandeurs et mesures,Conversions d'unités,"Longueurs, aires, volumes",Unités de longueur,30,COMPLETE
+MATHEMATICS,Grandeurs et mesures,Conversions d'unités,"Longueurs, aires, volumes",Unités d'aire,30,COMPLETE
+MATHEMATICS,Grandeurs et mesures,Conversions d'unités,"Longueurs, aires, volumes",Unités de volume / capacité,30,COMPLETE
+MATHEMATICS,Grandeurs et mesures,Conversions d'unités,Autres grandeurs,Masses,12,PARTIAL
+MATHEMATICS,Grandeurs et mesures,Conversions d'unités,Autres grandeurs,Durées,12,PARTIAL
+MATHEMATICS,Grandeurs et mesures,Conversions d'unités,Autres grandeurs,Vitesses,12,PARTIAL
+MATHEMATICS,Grandeurs et mesures,Aires et volumes,Calculer des aires,Figures planes usuelles,40,COMPLETE
+MATHEMATICS,Grandeurs et mesures,Aires et volumes,Calculer des aires,Figures composées,40,COMPLETE
+MATHEMATICS,Grandeurs et mesures,Aires et volumes,Calculer des aires,Problèmes d'aires,40,COMPLETE
+MATHEMATICS,Grandeurs et mesures,Aires et volumes,Calculer des volumes,Prisme / pavé / cylindre,40,COMPLETE
+MATHEMATICS,Grandeurs et mesures,Aires et volumes,Calculer des volumes,Pyramide / cône,40,COMPLETE
+MATHEMATICS,Grandeurs et mesures,Aires et volumes,Calculer des volumes,Sphère,40,COMPLETE
+MATHEMATICS,Grandeurs et mesures,Agrandissement et réduction,Facteur d'échelle,Effet sur les longueurs,12,PARTIAL
+MATHEMATICS,Grandeurs et mesures,Agrandissement et réduction,Facteur d'échelle,Effet sur les aires,12,PARTIAL
+MATHEMATICS,Grandeurs et mesures,Agrandissement et réduction,Facteur d'échelle,Effet sur les volumes,12,PARTIAL
+MATHEMATICS,Grandeurs et mesures,Agrandissement et réduction,Problèmes d'échelle,Plans et maquettes,12,PARTIAL
+MATHEMATICS,Grandeurs et mesures,Agrandissement et réduction,Problèmes d'échelle,Figures semblables,12,PARTIAL
+MATHEMATICS,Espace et géométrie,Repérage,Repérage dans le plan,Coordonnées cartésiennes,12,PARTIAL
+MATHEMATICS,Espace et géométrie,Repérage,Repérage dans le plan,Milieu d'un segment,12,PARTIAL
+MATHEMATICS,Espace et géométrie,Repérage,Repérage dans le plan,Distance entre deux points,12,PARTIAL
+MATHEMATICS,Espace et géométrie,Repérage,Repérage dans l'espace,Coordonnées dans l'espace,12,PARTIAL
+MATHEMATICS,Espace et géométrie,Repérage,Repérage dans l'espace,Lire un solide repéré,12,PARTIAL
+MATHEMATICS,Espace et géométrie,Théorème de Pythagore et réciproque,Théorème de Pythagore,Identifier l'hypoténuse,50,COMPLETE
+MATHEMATICS,Espace et géométrie,Théorème de Pythagore et réciproque,Théorème de Pythagore,Calculer une longueur,50,COMPLETE
+MATHEMATICS,Espace et géométrie,Théorème de Pythagore et réciproque,Théorème de Pythagore,Problèmes d'application,50,COMPLETE
+MATHEMATICS,Espace et géométrie,Théorème de Pythagore et réciproque,Réciproque de Pythagore,Tester si un triangle est rectangle,12,PARTIAL
+MATHEMATICS,Espace et géométrie,Théorème de Pythagore et réciproque,Réciproque de Pythagore,Rédiger une justification,12,PARTIAL
+MATHEMATICS,Espace et géométrie,Théorème de Pythagore et réciproque,Raisonnement géométrique,Schématiser,12,PARTIAL
+MATHEMATICS,Espace et géométrie,Théorème de Pythagore et réciproque,Raisonnement géométrique,Rédiger une démonstration courte,12,PARTIAL
+MATHEMATICS,Espace et géométrie,Théorème de Thalès et réciproque,Théorème de Thalès,Reconnaître une configuration,50,COMPLETE
+MATHEMATICS,Espace et géométrie,Théorème de Thalès et réciproque,Théorème de Thalès,Écrire les rapports,50,COMPLETE
+MATHEMATICS,Espace et géométrie,Théorème de Thalès et réciproque,Théorème de Thalès,Calculer une longueur,50,COMPLETE
+MATHEMATICS,Espace et géométrie,Théorème de Thalès et réciproque,Réciproque de Thalès,Prouver le parallélisme,12,PARTIAL
+MATHEMATICS,Espace et géométrie,Théorème de Thalès et réciproque,Réciproque de Thalès,Rédiger la justification,12,PARTIAL
+MATHEMATICS,Espace et géométrie,Trigonométrie dans le triangle rectangle,Cosinus,Définition cos = adj/hyp,12,PARTIAL
+MATHEMATICS,Espace et géométrie,Trigonométrie dans le triangle rectangle,Cosinus,Calculer un cosinus,12,PARTIAL
+MATHEMATICS,Espace et géométrie,Trigonométrie dans le triangle rectangle,Cosinus,Déterminer un angle,12,PARTIAL
+MATHEMATICS,Espace et géométrie,Trigonométrie dans le triangle rectangle,Sinus,Définition sin = opp/hyp,12,PARTIAL
+MATHEMATICS,Espace et géométrie,Trigonométrie dans le triangle rectangle,Sinus,Calculer un sinus,12,PARTIAL
+MATHEMATICS,Espace et géométrie,Trigonométrie dans le triangle rectangle,Sinus,Calculer une longueur,12,PARTIAL
+MATHEMATICS,Espace et géométrie,Trigonométrie dans le triangle rectangle,Tangente,Définition tan = opp/adj,12,PARTIAL
+MATHEMATICS,Espace et géométrie,Trigonométrie dans le triangle rectangle,Tangente,Calculer une tangente,12,PARTIAL
+MATHEMATICS,Espace et géométrie,Trigonométrie dans le triangle rectangle,Tangente,Problèmes de trigonométrie,12,PARTIAL
+MATHEMATICS,Espace et géométrie,Trigonométrie dans le triangle rectangle,Choisir le bon rapport,Identifier côtés depuis un angle,12,PARTIAL
+MATHEMATICS,Espace et géométrie,Trigonométrie dans le triangle rectangle,Choisir le bon rapport,"Choisir cos, sin ou tan",12,PARTIAL
+MATHEMATICS,Espace et géométrie,Transformations du plan,Isométries,Translation,12,PARTIAL
+MATHEMATICS,Espace et géométrie,Transformations du plan,Isométries,Rotation,12,PARTIAL
+MATHEMATICS,Espace et géométrie,Transformations du plan,Isométries,Symétries,12,PARTIAL
+MATHEMATICS,Espace et géométrie,Transformations du plan,Propriétés conservées,Conservation des longueurs,12,PARTIAL
+MATHEMATICS,Espace et géométrie,Transformations du plan,Propriétés conservées,Conservation des angles,12,PARTIAL
+MATHEMATICS,Espace et géométrie,Transformations du plan,Propriétés conservées,Construire l'image d'une figure,12,PARTIAL
+MATHEMATICS,Espace et géométrie,Homothétie,Définition et rapport,Centre et rapport k,12,PARTIAL
+MATHEMATICS,Espace et géométrie,Homothétie,Définition et rapport,Agrandissement / réduction,12,PARTIAL
+MATHEMATICS,Espace et géométrie,Homothétie,Construire et calculer,Image d'un point / d'une figure,12,PARTIAL
+MATHEMATICS,Espace et géométrie,Homothétie,Construire et calculer,Effet sur les longueurs,12,PARTIAL
+MATHEMATICS,Espace et géométrie,Homothétie,Construire et calculer,Lien avec Thalès / agrandissement,12,PARTIAL
+MATHEMATICS,Espace et géométrie,Géométrie plane,Triangles,Types de triangles,12,PARTIAL
+MATHEMATICS,Espace et géométrie,Géométrie plane,Triangles,Inégalité triangulaire,12,PARTIAL
+MATHEMATICS,Espace et géométrie,Géométrie plane,Triangles,Somme des angles,12,PARTIAL
+MATHEMATICS,Espace et géométrie,Géométrie plane,Cercle et polygones,Propriétés du cercle,12,PARTIAL
+MATHEMATICS,Espace et géométrie,Géométrie plane,Cercle et polygones,Polygones réguliers,12,PARTIAL
+MATHEMATICS,Espace et géométrie,Géométrie plane,Constructions et justifications,Construire à la règle et au compas,12,PARTIAL
+MATHEMATICS,Espace et géométrie,Géométrie plane,Constructions et justifications,Justifier une propriété,12,PARTIAL
+MATHEMATICS,Espace et géométrie,Géométrie dans l'espace et solides,Solides usuels,Pavé / cube,12,PARTIAL
+MATHEMATICS,Espace et géométrie,Géométrie dans l'espace et solides,Solides usuels,Cylindre / cône / sphère,12,PARTIAL
+MATHEMATICS,Espace et géométrie,Géométrie dans l'espace et solides,Solides usuels,Pyramide / prisme,12,PARTIAL
+MATHEMATICS,Espace et géométrie,Géométrie dans l'espace et solides,Représentations,Perspective cavalière,12,PARTIAL
+MATHEMATICS,Espace et géométrie,Géométrie dans l'espace et solides,Représentations,Patrons,12,PARTIAL
+MATHEMATICS,Espace et géométrie,Géométrie dans l'espace et solides,Représentations,Sections planes,12,PARTIAL
+MATHEMATICS,Algorithmique et programmation,"Variables, conditions et boucles",Variables et affectations,Déclarer / affecter,32,PARTIAL
+MATHEMATICS,Algorithmique et programmation,"Variables, conditions et boucles",Variables et affectations,Types simples,32,PARTIAL
+MATHEMATICS,Algorithmique et programmation,"Variables, conditions et boucles",Variables et affectations,Expressions,32,PARTIAL
+MATHEMATICS,Algorithmique et programmation,"Variables, conditions et boucles",Conditions,Si … alors … sinon,12,PARTIAL
+MATHEMATICS,Algorithmique et programmation,"Variables, conditions et boucles",Conditions,Conditions booléennes,12,PARTIAL
+MATHEMATICS,Algorithmique et programmation,"Variables, conditions et boucles",Boucles,Boucle bornée,12,PARTIAL
+MATHEMATICS,Algorithmique et programmation,"Variables, conditions et boucles",Boucles,Boucle non bornée,12,PARTIAL
+MATHEMATICS,Algorithmique et programmation,"Variables, conditions et boucles",Boucles,Faire tourner un algorithme à la main,12,PARTIAL
+MATHEMATICS,Algorithmique et programmation,Scratch et programmation par blocs,Scripts et événements,Événements,12,PARTIAL
+MATHEMATICS,Algorithmique et programmation,Scratch et programmation par blocs,Scripts et événements,Séquences d'instructions,12,PARTIAL
+MATHEMATICS,Algorithmique et programmation,Scratch et programmation par blocs,Contrôle et interactions,Répéter,12,PARTIAL
+MATHEMATICS,Algorithmique et programmation,Scratch et programmation par blocs,Contrôle et interactions,Conditions en blocs,12,PARTIAL
+MATHEMATICS,Algorithmique et programmation,Scratch et programmation par blocs,Contrôle et interactions,Variables en blocs,12,PARTIAL
+MATHEMATICS,Compétences transversales mathématiques,Compétences transversales,Automatismes,Calculs fluides,12,PARTIAL
+MATHEMATICS,Compétences transversales mathématiques,Compétences transversales,Automatismes,Procédures de base,12,PARTIAL
+MATHEMATICS,Compétences transversales mathématiques,Compétences transversales,Automatismes,Formules usuelles,12,PARTIAL
+MATHEMATICS,Compétences transversales mathématiques,Compétences transversales,Automatismes,Rapidité et exactitude,12,PARTIAL
+MATHEMATICS,Compétences transversales mathématiques,Compétences transversales,Résolution de problèmes,Comprendre l'énoncé,12,PARTIAL
+MATHEMATICS,Compétences transversales mathématiques,Compétences transversales,Résolution de problèmes,Choisir une stratégie,12,PARTIAL
+MATHEMATICS,Compétences transversales mathématiques,Compétences transversales,Résolution de problèmes,Mener la résolution,12,PARTIAL
+MATHEMATICS,Compétences transversales mathématiques,Compétences transversales,Résolution de problèmes,Contrôler et conclure,12,PARTIAL
+MATHEMATICS,Compétences transversales mathématiques,Compétences transversales,Raisonnement,Déduire,12,PARTIAL
+MATHEMATICS,Compétences transversales mathématiques,Compétences transversales,Raisonnement,Conjecturer,12,PARTIAL
+MATHEMATICS,Compétences transversales mathématiques,Compétences transversales,Raisonnement,Contre-exemple,12,PARTIAL
+MATHEMATICS,Compétences transversales mathématiques,Compétences transversales,Démonstration,Hypothèses / conclusion,12,PARTIAL
+MATHEMATICS,Compétences transversales mathématiques,Compétences transversales,Démonstration,Enchaîner des arguments,12,PARTIAL
+MATHEMATICS,Compétences transversales mathématiques,Compétences transversales,Démonstration,Rédiger une preuve,12,PARTIAL
+MATHEMATICS,Compétences transversales mathématiques,Compétences transversales,Calcul mental,Opérations courantes,12,PARTIAL
+MATHEMATICS,Compétences transversales mathématiques,Compétences transversales,Calcul mental,Ordres de grandeur,12,PARTIAL
+MATHEMATICS,Compétences transversales mathématiques,Compétences transversales,Calcul mental,Pourcentages mentaux,12,PARTIAL
+MATHEMATICS,Compétences transversales mathématiques,Compétences transversales,Outils numériques,Calculatrice,12,PARTIAL
+MATHEMATICS,Compétences transversales mathématiques,Compétences transversales,Outils numériques,Tableur,12,PARTIAL
+MATHEMATICS,Compétences transversales mathématiques,Compétences transversales,Outils numériques,Logiciel de géométrie,12,PARTIAL
+MATHEMATICS,Compétences transversales mathématiques,Compétences transversales,Outils numériques,Environnement de programmation,12,PARTIAL
+HISTORY,"L'Europe, un théâtre majeur des guerres totales (1914-1945)",La Première Guerre mondiale : l'expérience combattante et l'expérience des civils,Expérience combattante,Guerre de tranchées,59,PARTIAL
+HISTORY,"L'Europe, un théâtre majeur des guerres totales (1914-1945)",La Première Guerre mondiale : l'expérience combattante et l'expérience des civils,Expérience combattante,Violence de masse,59,PARTIAL
+HISTORY,"L'Europe, un théâtre majeur des guerres totales (1914-1945)",La Première Guerre mondiale : l'expérience combattante et l'expérience des civils,Expérience combattante,Témoignages combattants,59,PARTIAL
+HISTORY,"L'Europe, un théâtre majeur des guerres totales (1914-1945)",La Première Guerre mondiale : l'expérience combattante et l'expérience des civils,Expérience des civils,Front intérieur,15,PARTIAL
+HISTORY,"L'Europe, un théâtre majeur des guerres totales (1914-1945)",La Première Guerre mondiale : l'expérience combattante et l'expérience des civils,Expérience des civils,Rôle des femmes,15,PARTIAL
+HISTORY,"L'Europe, un théâtre majeur des guerres totales (1914-1945)",La Première Guerre mondiale : l'expérience combattante et l'expérience des civils,Expérience des civils,Opinion et propagande,15,PARTIAL
+HISTORY,"L'Europe, un théâtre majeur des guerres totales (1914-1945)",La Première Guerre mondiale : l'expérience combattante et l'expérience des civils,Sorties de guerre,Armistice et traités,15,PARTIAL
+HISTORY,"L'Europe, un théâtre majeur des guerres totales (1914-1945)",La Première Guerre mondiale : l'expérience combattante et l'expérience des civils,Sorties de guerre,Bilans humains et politiques,15,PARTIAL
+HISTORY,"L'Europe, un théâtre majeur des guerres totales (1914-1945)",Démocraties et totalitarismes dans l'Europe de l'entre-deux-guerres,Régimes totalitaires,Stalinisme,35,PARTIAL
+HISTORY,"L'Europe, un théâtre majeur des guerres totales (1914-1945)",Démocraties et totalitarismes dans l'Europe de l'entre-deux-guerres,Régimes totalitaires,Fascisme italien,35,PARTIAL
+HISTORY,"L'Europe, un théâtre majeur des guerres totales (1914-1945)",Démocraties et totalitarismes dans l'Europe de l'entre-deux-guerres,Régimes totalitaires,Nazisme,35,PARTIAL
+HISTORY,"L'Europe, un théâtre majeur des guerres totales (1914-1945)",Démocraties et totalitarismes dans l'Europe de l'entre-deux-guerres,Pratiques totalitaires,Propagande,15,PARTIAL
+HISTORY,"L'Europe, un théâtre majeur des guerres totales (1914-1945)",Démocraties et totalitarismes dans l'Europe de l'entre-deux-guerres,Pratiques totalitaires,Répression et terreur,15,PARTIAL
+HISTORY,"L'Europe, un théâtre majeur des guerres totales (1914-1945)",Démocraties et totalitarismes dans l'Europe de l'entre-deux-guerres,Pratiques totalitaires,Culte du chef,15,PARTIAL
+HISTORY,"L'Europe, un théâtre majeur des guerres totales (1914-1945)",Démocraties et totalitarismes dans l'Europe de l'entre-deux-guerres,Démocraties face à la crise,Crise de 1929,15,PARTIAL
+HISTORY,"L'Europe, un théâtre majeur des guerres totales (1914-1945)",Démocraties et totalitarismes dans l'Europe de l'entre-deux-guerres,Démocraties face à la crise,Réponses démocratiques (ex. Front populaire),15,PARTIAL
+HISTORY,"L'Europe, un théâtre majeur des guerres totales (1914-1945)","La Seconde Guerre mondiale, une guerre d'anéantissement",Guerre mondiale et anéantissement,Fronts et coalitions,50,COMPLETE
+HISTORY,"L'Europe, un théâtre majeur des guerres totales (1914-1945)","La Seconde Guerre mondiale, une guerre d'anéantissement",Guerre mondiale et anéantissement,Crimes de masse,50,COMPLETE
+HISTORY,"L'Europe, un théâtre majeur des guerres totales (1914-1945)","La Seconde Guerre mondiale, une guerre d'anéantissement",Guerre mondiale et anéantissement,Bombardements / guerre totale,50,COMPLETE
+HISTORY,"L'Europe, un théâtre majeur des guerres totales (1914-1945)","La Seconde Guerre mondiale, une guerre d'anéantissement",Génocide des Juifs et des Tsiganes,Antisémitisme nazi,15,PARTIAL
+HISTORY,"L'Europe, un théâtre majeur des guerres totales (1914-1945)","La Seconde Guerre mondiale, une guerre d'anéantissement",Génocide des Juifs et des Tsiganes,Camps et extermination,15,PARTIAL
+HISTORY,"L'Europe, un théâtre majeur des guerres totales (1914-1945)","La Seconde Guerre mondiale, une guerre d'anéantissement",Génocide des Juifs et des Tsiganes,Mémoires,15,PARTIAL
+HISTORY,"L'Europe, un théâtre majeur des guerres totales (1914-1945)","La France défaite et occupée ; régime de Vichy, Collaboration, Résistance",Défaite et occupation,Défaite de 1940,50,COMPLETE
+HISTORY,"L'Europe, un théâtre majeur des guerres totales (1914-1945)","La France défaite et occupée ; régime de Vichy, Collaboration, Résistance",Défaite et occupation,Occupation,50,COMPLETE
+HISTORY,"L'Europe, un théâtre majeur des guerres totales (1914-1945)","La France défaite et occupée ; régime de Vichy, Collaboration, Résistance",Défaite et occupation,Zones et quotidien,50,COMPLETE
+HISTORY,"L'Europe, un théâtre majeur des guerres totales (1914-1945)","La France défaite et occupée ; régime de Vichy, Collaboration, Résistance",Vichy et Collaboration,État français,15,PARTIAL
+HISTORY,"L'Europe, un théâtre majeur des guerres totales (1914-1945)","La France défaite et occupée ; régime de Vichy, Collaboration, Résistance",Vichy et Collaboration,Collaboration,15,PARTIAL
+HISTORY,"L'Europe, un théâtre majeur des guerres totales (1914-1945)","La France défaite et occupée ; régime de Vichy, Collaboration, Résistance",Vichy et Collaboration,Politique antisémite,15,PARTIAL
+HISTORY,"L'Europe, un théâtre majeur des guerres totales (1914-1945)","La France défaite et occupée ; régime de Vichy, Collaboration, Résistance",Résistances,Résistance intérieure,15,PARTIAL
+HISTORY,"L'Europe, un théâtre majeur des guerres totales (1914-1945)","La France défaite et occupée ; régime de Vichy, Collaboration, Résistance",Résistances,France libre,15,PARTIAL
+HISTORY,"L'Europe, un théâtre majeur des guerres totales (1914-1945)","La France défaite et occupée ; régime de Vichy, Collaboration, Résistance",Résistances,Actes de résistance,15,PARTIAL
+HISTORY,Le monde depuis 1945,Indépendances et construction de nouveaux États,Processus de décolonisation,Asie,35,PARTIAL
+HISTORY,Le monde depuis 1945,Indépendances et construction de nouveaux États,Processus de décolonisation,Afrique,35,PARTIAL
+HISTORY,Le monde depuis 1945,Indépendances et construction de nouveaux États,Processus de décolonisation,Acteurs et formes (négociée / conflictuelle),35,PARTIAL
+HISTORY,Le monde depuis 1945,Indépendances et construction de nouveaux États,Nouveaux États,Enjeux politiques et économiques,15,PARTIAL
+HISTORY,Le monde depuis 1945,Indépendances et construction de nouveaux États,Nouveaux États,Non-alignement / Tiers monde,15,PARTIAL
+HISTORY,Le monde depuis 1945,Un monde bipolaire au temps de la Guerre froide,Blocs Est / Ouest,Origines,15,PARTIAL
+HISTORY,Le monde depuis 1945,Un monde bipolaire au temps de la Guerre froide,Blocs Est / Ouest,Alliances,15,PARTIAL
+HISTORY,Le monde depuis 1945,Un monde bipolaire au temps de la Guerre froide,Blocs Est / Ouest,Affrontement idéologique,15,PARTIAL
+HISTORY,Le monde depuis 1945,Un monde bipolaire au temps de la Guerre froide,Crises et conflits,Berlin,15,PARTIAL
+HISTORY,Le monde depuis 1945,Un monde bipolaire au temps de la Guerre froide,Crises et conflits,Cuba,15,PARTIAL
+HISTORY,Le monde depuis 1945,Un monde bipolaire au temps de la Guerre froide,Crises et conflits,Guerres proxy,15,PARTIAL
+HISTORY,Le monde depuis 1945,Un monde bipolaire au temps de la Guerre froide,Fin de la Guerre froide,1989,15,PARTIAL
+HISTORY,Le monde depuis 1945,Un monde bipolaire au temps de la Guerre froide,Fin de la Guerre froide,Dislocation de l'URSS,15,PARTIAL
+HISTORY,Le monde depuis 1945,Affirmation et mise en œuvre du projet européen,Origines du projet européen,Après 1945,35,PARTIAL
+HISTORY,Le monde depuis 1945,Affirmation et mise en œuvre du projet européen,Origines du projet européen,Pères fondateurs / traités,35,PARTIAL
+HISTORY,Le monde depuis 1945,Affirmation et mise en œuvre du projet européen,Approfondissement et élargissements,CEE / marché commun,15,PARTIAL
+HISTORY,Le monde depuis 1945,Affirmation et mise en œuvre du projet européen,Approfondissement et élargissements,Union européenne,15,PARTIAL
+HISTORY,Le monde depuis 1945,Affirmation et mise en œuvre du projet européen,Approfondissement et élargissements,Enjeux contemporains,15,PARTIAL
+HISTORY,Le monde depuis 1945,Enjeux et conflits dans le monde après 1989,Nouvel ordre mondial,Fin du bipolarisme,40,PARTIAL
+HISTORY,Le monde depuis 1945,Enjeux et conflits dans le monde après 1989,Nouvel ordre mondial,Nouvelles puissances,40,PARTIAL
+HISTORY,Le monde depuis 1945,Enjeux et conflits dans le monde après 1989,Conflits et terrorisme,Conflits régionaux,15,PARTIAL
+HISTORY,Le monde depuis 1945,Enjeux et conflits dans le monde après 1989,Conflits et terrorisme,Terrorisme international,15,PARTIAL
+HISTORY,Le monde depuis 1945,Enjeux et conflits dans le monde après 1989,Conflits et terrorisme,Multilatéralisme / ONU,15,PARTIAL
+HISTORY,Françaises et Français dans une République repensée,"Refonder la République, redéfinir la démocratie (1944-1947)",Libération et refondation,GPRF,40,COMPLETE
+HISTORY,Françaises et Français dans une République repensée,"Refonder la République, redéfinir la démocratie (1944-1947)",Libération et refondation,Droits (vote des femmes),40,COMPLETE
+HISTORY,Françaises et Français dans une République repensée,"Refonder la République, redéfinir la démocratie (1944-1947)",Libération et refondation,Épuration,40,COMPLETE
+HISTORY,Françaises et Français dans une République repensée,"Refonder la République, redéfinir la démocratie (1944-1947)",IVe République,Constitution de 1946,40,COMPLETE
+HISTORY,Françaises et Français dans une République repensée,"Refonder la République, redéfinir la démocratie (1944-1947)",IVe République,Réformes sociales,40,COMPLETE
+HISTORY,Françaises et Français dans une République repensée,La Ve République,Institutions de la Ve République,Constitution de 1958,50,COMPLETE
+HISTORY,Françaises et Français dans une République repensée,La Ve République,Institutions de la Ve République,Rôle du président,50,COMPLETE
+HISTORY,Françaises et Français dans une République repensée,La Ve République,Institutions de la Ve République,Équilibres des pouvoirs,50,COMPLETE
+HISTORY,Françaises et Français dans une République repensée,La Ve République,Évolutions politiques,Alternances,50,COMPLETE
+HISTORY,Françaises et Français dans une République repensée,La Ve République,Évolutions politiques,Réformes majeures,50,COMPLETE
+HISTORY,Françaises et Français dans une République repensée,La Ve République,Évolutions politiques,Société et politique,50,COMPLETE
+HISTORY,Françaises et Français dans une République repensée,Femmes et hommes dans la société des années 1950 aux années 1980,Transformations sociales,Travail et modes de vie,40,COMPLETE
+HISTORY,Françaises et Français dans une République repensée,Femmes et hommes dans la société des années 1950 aux années 1980,Transformations sociales,Société de consommation,40,COMPLETE
+HISTORY,Françaises et Français dans une République repensée,Femmes et hommes dans la société des années 1950 aux années 1980,Transformations sociales,Jeunesse et culture,40,COMPLETE
+HISTORY,Françaises et Français dans une République repensée,Femmes et hommes dans la société des années 1950 aux années 1980,Place des femmes,Droits des femmes,40,COMPLETE
+HISTORY,Françaises et Français dans une République repensée,Femmes et hommes dans la société des années 1950 aux années 1980,Place des femmes,Inégalités et conquêtes,40,COMPLETE
+HISTORY,Françaises et Français dans une République repensée,Femmes et hommes dans la société des années 1950 aux années 1980,Immigration et société française,Migrations,40,COMPLETE
+HISTORY,Françaises et Français dans une République repensée,Femmes et hommes dans la société des années 1950 aux années 1980,Immigration et société française,Intégration / débats,40,COMPLETE
+GEOGRAPHY,Dynamiques territoriales de la France contemporaine,Urbanisation et attractivité des territoires,Métropolisation,Aires urbaines,40,PARTIAL
+GEOGRAPHY,Dynamiques territoriales de la France contemporaine,Urbanisation et attractivité des territoires,Métropolisation,Hiérarchie urbaine,40,PARTIAL
+GEOGRAPHY,Dynamiques territoriales de la France contemporaine,Urbanisation et attractivité des territoires,Métropolisation,Fonctions métropolitaines,40,PARTIAL
+GEOGRAPHY,Dynamiques territoriales de la France contemporaine,Urbanisation et attractivité des territoires,Mobilités et espaces de vie,Navettes,12,PARTIAL
+GEOGRAPHY,Dynamiques territoriales de la France contemporaine,Urbanisation et attractivité des territoires,Mobilités et espaces de vie,Périurbanisation,12,PARTIAL
+GEOGRAPHY,Dynamiques territoriales de la France contemporaine,Les espaces productifs et leurs évolutions,Espaces agricoles,Systèmes agricoles,32,PARTIAL
+GEOGRAPHY,Dynamiques territoriales de la France contemporaine,Les espaces productifs et leurs évolutions,Espaces agricoles,Mutations,32,PARTIAL
+GEOGRAPHY,Dynamiques territoriales de la France contemporaine,Les espaces productifs et leurs évolutions,Espaces industriels et de services,Zones industrialo-portuaires,12,PARTIAL
+GEOGRAPHY,Dynamiques territoriales de la France contemporaine,Les espaces productifs et leurs évolutions,Espaces industriels et de services,Tertiarisation,12,PARTIAL
+GEOGRAPHY,Dynamiques territoriales de la France contemporaine,Les espaces productifs et leurs évolutions,Espaces industriels et de services,Innovation / technopoles,12,PARTIAL
+GEOGRAPHY,Dynamiques territoriales de la France contemporaine,Inégalités et fractures territoriales,Contrastes du territoire français,Densités,32,PARTIAL
+GEOGRAPHY,Dynamiques territoriales de la France contemporaine,Inégalités et fractures territoriales,Contrastes du territoire français,Attractivité / déclin,32,PARTIAL
+GEOGRAPHY,Dynamiques territoriales de la France contemporaine,Inégalités et fractures territoriales,Contrastes du territoire français,Outre-mer,32,PARTIAL
+GEOGRAPHY,Dynamiques territoriales de la France contemporaine,Inégalités et fractures territoriales,Acteurs et politiques,Rôle de l'État,12,PARTIAL
+GEOGRAPHY,Dynamiques territoriales de la France contemporaine,Inégalités et fractures territoriales,Acteurs et politiques,Collectivités,12,PARTIAL
+GEOGRAPHY,Pourquoi et comment aménager le territoire ?,Aménagement du territoire,Enjeux d'aménagement,Équilibres territoriaux,12,PARTIAL
+GEOGRAPHY,Pourquoi et comment aménager le territoire ?,Aménagement du territoire,Enjeux d'aménagement,Accessibilité,12,PARTIAL
+GEOGRAPHY,Pourquoi et comment aménager le territoire ?,Aménagement du territoire,Enjeux d'aménagement,Développement durable,12,PARTIAL
+GEOGRAPHY,Pourquoi et comment aménager le territoire ?,Aménagement du territoire,Acteurs de l'aménagement,Acteurs publics,12,PARTIAL
+GEOGRAPHY,Pourquoi et comment aménager le territoire ?,Aménagement du territoire,Acteurs de l'aménagement,Acteurs privés,12,PARTIAL
+GEOGRAPHY,Pourquoi et comment aménager le territoire ?,Aménagement du territoire,Acteurs de l'aménagement,Concertation,12,PARTIAL
+GEOGRAPHY,Pourquoi et comment aménager le territoire ?,Risques et transitions,Risques et vulnérabilités,Risques naturels,40,PARTIAL
+GEOGRAPHY,Pourquoi et comment aménager le territoire ?,Risques et transitions,Risques et vulnérabilités,Risques technologiques,40,PARTIAL
+GEOGRAPHY,Pourquoi et comment aménager le territoire ?,Risques et transitions,Risques et vulnérabilités,Prévention,40,PARTIAL
+GEOGRAPHY,Pourquoi et comment aménager le territoire ?,Risques et transitions,Transitions énergétiques et écologiques,Énergie,12,PARTIAL
+GEOGRAPHY,Pourquoi et comment aménager le territoire ?,Risques et transitions,Transitions énergétiques et écologiques,Climat,12,PARTIAL
+GEOGRAPHY,La France et l'Union européenne,La France dans l'Union européenne,Territoire européen,États membres,32,PARTIAL
+GEOGRAPHY,La France et l'Union européenne,La France dans l'Union européenne,Territoire européen,Frontières,32,PARTIAL
+GEOGRAPHY,La France et l'Union européenne,La France dans l'Union européenne,Territoire européen,Dorsale européenne,32,PARTIAL
+GEOGRAPHY,La France et l'Union européenne,La France dans l'Union européenne,Politiques européennes,Cohésion territoriale,12,PARTIAL
+GEOGRAPHY,La France et l'Union européenne,La France dans l'Union européenne,Politiques européennes,Politiques communes (ex. PAC),12,PARTIAL
+GEOGRAPHY,La France et l'Union européenne,La France dans l'Union européenne,Politiques européennes,Place de la France,12,PARTIAL
+GEOGRAPHY,La France et l'Union européenne,"La France, une influence mondiale",Rayonnement,Francophonie,40,PARTIAL
+GEOGRAPHY,La France et l'Union européenne,"La France, une influence mondiale",Rayonnement,Culture / diplomatie,40,PARTIAL
+GEOGRAPHY,La France et l'Union européenne,"La France, une influence mondiale",Présence stratégique,Outre-mer,12,PARTIAL
+GEOGRAPHY,La France et l'Union européenne,"La France, une influence mondiale",Présence stratégique,Engagements internationaux,12,PARTIAL
+EMC,"Valeurs, principes et exercice de la citoyenneté",Valeurs et principes de la République,"Liberté, égalité, fraternité",Liberté,36,PARTIAL
+EMC,"Valeurs, principes et exercice de la citoyenneté",Valeurs et principes de la République,"Liberté, égalité, fraternité",Égalité,36,PARTIAL
+EMC,"Valeurs, principes et exercice de la citoyenneté",Valeurs et principes de la République,"Liberté, égalité, fraternité",Fraternité,36,PARTIAL
+EMC,"Valeurs, principes et exercice de la citoyenneté",Valeurs et principes de la République,Principes républicains,Souveraineté,15,PARTIAL
+EMC,"Valeurs, principes et exercice de la citoyenneté",Valeurs et principes de la République,Principes républicains,Indivisibilité,15,PARTIAL
+EMC,"Valeurs, principes et exercice de la citoyenneté",Laïcité,Principe de laïcité,Construction historique,35,PARTIAL
+EMC,"Valeurs, principes et exercice de la citoyenneté",Laïcité,Principe de laïcité,Loi de 1905,35,PARTIAL
+EMC,"Valeurs, principes et exercice de la citoyenneté",Laïcité,Principe de laïcité,Laïcité à l'école,35,PARTIAL
+EMC,"Valeurs, principes et exercice de la citoyenneté",Laïcité,Laïcité en pratique,Études de cas,15,PARTIAL
+EMC,"Valeurs, principes et exercice de la citoyenneté",Laïcité,Laïcité en pratique,Liberté de conscience,15,PARTIAL
+EMC,"Valeurs, principes et exercice de la citoyenneté",Citoyenneté,Statut de citoyen,Droits,15,PARTIAL
+EMC,"Valeurs, principes et exercice de la citoyenneté",Citoyenneté,Statut de citoyen,Devoirs,15,PARTIAL
+EMC,"Valeurs, principes et exercice de la citoyenneté",Citoyenneté,Statut de citoyen,Nationalité,15,PARTIAL
+EMC,"Valeurs, principes et exercice de la citoyenneté",Citoyenneté,Exercice de la citoyenneté,Vote,15,PARTIAL
+EMC,"Valeurs, principes et exercice de la citoyenneté",Citoyenneté,Exercice de la citoyenneté,Participation,15,PARTIAL
+EMC,"Valeurs, principes et exercice de la citoyenneté",Institutions démocratiques,Organisation des pouvoirs,Exécutif,35,PARTIAL
+EMC,"Valeurs, principes et exercice de la citoyenneté",Institutions démocratiques,Organisation des pouvoirs,Législatif,35,PARTIAL
+EMC,"Valeurs, principes et exercice de la citoyenneté",Institutions démocratiques,Organisation des pouvoirs,Judiciaire,35,PARTIAL
+EMC,"Valeurs, principes et exercice de la citoyenneté",Institutions démocratiques,Institutions locales et européennes,Collectivités,15,PARTIAL
+EMC,"Valeurs, principes et exercice de la citoyenneté",Institutions démocratiques,Institutions locales et européennes,Institutions européennes,15,PARTIAL
+EMC,"Valeurs, principes et exercice de la citoyenneté",Droits et libertés,Droits fondamentaux,Déclarations des droits,35,PARTIAL
+EMC,"Valeurs, principes et exercice de la citoyenneté",Droits et libertés,Droits fondamentaux,Libertés individuelles,35,PARTIAL
+EMC,"Valeurs, principes et exercice de la citoyenneté",Droits et libertés,Droits fondamentaux,Droits sociaux,35,PARTIAL
+EMC,"Valeurs, principes et exercice de la citoyenneté",Droits et libertés,Garanties et limites,Garanties juridictionnelles,15,PARTIAL
+EMC,"Valeurs, principes et exercice de la citoyenneté",Droits et libertés,Garanties et limites,Abus et sanctions,15,PARTIAL
+EMC,"Valeurs, principes et exercice de la citoyenneté",Démocratie et débat,Principes démocratiques,Pluralisme,35,PARTIAL
+EMC,"Valeurs, principes et exercice de la citoyenneté",Démocratie et débat,Principes démocratiques,Majorité / minorités,35,PARTIAL
+EMC,"Valeurs, principes et exercice de la citoyenneté",Démocratie et débat,Principes démocratiques,État de droit,35,PARTIAL
+EMC,"Valeurs, principes et exercice de la citoyenneté",Démocratie et débat,Débattre et argumenter,Écoute,15,PARTIAL
+EMC,"Valeurs, principes et exercice de la citoyenneté",Démocratie et débat,Débattre et argumenter,Argumentation civique,15,PARTIAL
+EMC,"Valeurs, principes et exercice de la citoyenneté",Engagement,Formes d'engagement,Associatif,40,COMPLETE
+EMC,"Valeurs, principes et exercice de la citoyenneté",Engagement,Formes d'engagement,Syndical / politique,40,COMPLETE
+EMC,"Valeurs, principes et exercice de la citoyenneté",Engagement,Formes d'engagement,Solidarité,40,COMPLETE
+EMC,"Valeurs, principes et exercice de la citoyenneté",Engagement,Engagement des jeunes,Au collège / lycée,40,COMPLETE
+EMC,"Valeurs, principes et exercice de la citoyenneté",Engagement,Engagement des jeunes,Projets citoyens,40,COMPLETE
+EMC,"Valeurs, principes et exercice de la citoyenneté",Défense et sécurité nationale,Enjeux de défense,Sécurité collective,40,COMPLETE
+EMC,"Valeurs, principes et exercice de la citoyenneté",Défense et sécurité nationale,Enjeux de défense,Armées,40,COMPLETE
+EMC,"Valeurs, principes et exercice de la citoyenneté",Défense et sécurité nationale,Enjeux de défense,Alliances,40,COMPLETE
+EMC,"Valeurs, principes et exercice de la citoyenneté",Défense et sécurité nationale,Citoyen et défense,Parcours / JDC,40,COMPLETE
+EMC,"Valeurs, principes et exercice de la citoyenneté",Défense et sécurité nationale,Citoyen et défense,Devoir de défense,40,COMPLETE
+EMC,"Valeurs, principes et exercice de la citoyenneté","Médias, information et esprit critique",S'informer,Sources,36,PARTIAL
+EMC,"Valeurs, principes et exercice de la citoyenneté","Médias, information et esprit critique",S'informer,Fiabilité,36,PARTIAL
+EMC,"Valeurs, principes et exercice de la citoyenneté","Médias, information et esprit critique",S'informer,Désinformation,36,PARTIAL
+EMC,"Valeurs, principes et exercice de la citoyenneté","Médias, information et esprit critique",Esprit critique,Analyser un message,15,PARTIAL
+EMC,"Valeurs, principes et exercice de la citoyenneté","Médias, information et esprit critique",Esprit critique,Usage citoyen des médias,15,PARTIAL
+PHYSICS_CHEMISTRY,Organisation et transformations de la matière,Atomes et molécules,Modèle de l'atome,Constituants,32,PARTIAL
+PHYSICS_CHEMISTRY,Organisation et transformations de la matière,Atomes et molécules,Modèle de l'atome,Éléments chimiques,32,PARTIAL
+PHYSICS_CHEMISTRY,Organisation et transformations de la matière,Atomes et molécules,Modèle de l'atome,Tableau périodique,32,PARTIAL
+PHYSICS_CHEMISTRY,Organisation et transformations de la matière,Atomes et molécules,Molécules et formules,Formules chimiques,12,PARTIAL
+PHYSICS_CHEMISTRY,Organisation et transformations de la matière,Atomes et molécules,Molécules et formules,Modèles moléculaires,12,PARTIAL
+PHYSICS_CHEMISTRY,Organisation et transformations de la matière,Réactions chimiques,Décrire une transformation,Réactifs / produits,50,COMPLETE
+PHYSICS_CHEMISTRY,Organisation et transformations de la matière,Réactions chimiques,Décrire une transformation,Équation de réaction,50,COMPLETE
+PHYSICS_CHEMISTRY,Organisation et transformations de la matière,Réactions chimiques,Décrire une transformation,Conservation de la masse,50,COMPLETE
+PHYSICS_CHEMISTRY,Organisation et transformations de la matière,Réactions chimiques,Acides et bases,pH,12,PARTIAL
+PHYSICS_CHEMISTRY,Organisation et transformations de la matière,Réactions chimiques,Acides et bases,Indicateurs,12,PARTIAL
+PHYSICS_CHEMISTRY,Organisation et transformations de la matière,Réactions chimiques,Acides et bases,Neutralisation,12,PARTIAL
+PHYSICS_CHEMISTRY,Organisation et transformations de la matière,Masse volumique et identification,Mesurer et calculer,Définition ρ = m/V,30,COMPLETE
+PHYSICS_CHEMISTRY,Organisation et transformations de la matière,Masse volumique et identification,Mesurer et calculer,Calculs,30,COMPLETE
+PHYSICS_CHEMISTRY,Organisation et transformations de la matière,Masse volumique et identification,Mesurer et calculer,Identifier une espèce,30,COMPLETE
+PHYSICS_CHEMISTRY,Organisation et transformations de la matière,Masse volumique et identification,Unités et conversions,"g/cm³, kg/m³",12,PARTIAL
+PHYSICS_CHEMISTRY,Organisation et transformations de la matière,Masse volumique et identification,Unités et conversions,Protocole expérimental,12,PARTIAL
+PHYSICS_CHEMISTRY,Mouvements et interactions,Mouvement et vitesse,Décrire un mouvement,Référentiel,32,PARTIAL
+PHYSICS_CHEMISTRY,Mouvements et interactions,Mouvement et vitesse,Décrire un mouvement,Trajectoire,32,PARTIAL
+PHYSICS_CHEMISTRY,Mouvements et interactions,Mouvement et vitesse,Décrire un mouvement,Rectiligne / circulaire,32,PARTIAL
+PHYSICS_CHEMISTRY,Mouvements et interactions,Mouvement et vitesse,Vitesse,v = d/t,12,PARTIAL
+PHYSICS_CHEMISTRY,Mouvements et interactions,Mouvement et vitesse,Vitesse,"Graphiques d(t), v(t)",12,PARTIAL
+PHYSICS_CHEMISTRY,Mouvements et interactions,Mouvement et vitesse,Vitesse,Conversions km/h ↔ m/s,12,PARTIAL
+PHYSICS_CHEMISTRY,Mouvements et interactions,Forces et interactions,Identifier des forces,Poids,40,COMPLETE
+PHYSICS_CHEMISTRY,Mouvements et interactions,Forces et interactions,Identifier des forces,Actions de contact,40,COMPLETE
+PHYSICS_CHEMISTRY,Mouvements et interactions,Forces et interactions,Identifier des forces,Actions à distance,40,COMPLETE
+PHYSICS_CHEMISTRY,Mouvements et interactions,Forces et interactions,Effets des forces,Équilibre,12,PARTIAL
+PHYSICS_CHEMISTRY,Mouvements et interactions,Forces et interactions,Effets des forces,Modification du mouvement,12,PARTIAL
+PHYSICS_CHEMISTRY,Mouvements et interactions,Forces et interactions,Effets des forces,Diagrammes de forces,12,PARTIAL
+PHYSICS_CHEMISTRY,L'énergie,Formes et conversions d'énergie,Formes d'énergie,Cinétique,44,PARTIAL
+PHYSICS_CHEMISTRY,L'énergie,Formes et conversions d'énergie,Formes d'énergie,Potentielle,44,PARTIAL
+PHYSICS_CHEMISTRY,L'énergie,Formes et conversions d'énergie,Formes d'énergie,Chimique / thermique,44,PARTIAL
+PHYSICS_CHEMISTRY,L'énergie,Formes et conversions d'énergie,Chaînes énergétiques,Transferts,12,PARTIAL
+PHYSICS_CHEMISTRY,L'énergie,Formes et conversions d'énergie,Chaînes énergétiques,Conversions,12,PARTIAL
+PHYSICS_CHEMISTRY,L'énergie,Formes et conversions d'énergie,Chaînes énergétiques,Rendement,12,PARTIAL
+PHYSICS_CHEMISTRY,L'énergie,Électricité et circuits,Circuits électriques,Série,40,COMPLETE
+PHYSICS_CHEMISTRY,L'énergie,Électricité et circuits,Circuits électriques,Dérivation,40,COMPLETE
+PHYSICS_CHEMISTRY,L'énergie,Électricité et circuits,Circuits électriques,Sécurité,40,COMPLETE
+PHYSICS_CHEMISTRY,L'énergie,Électricité et circuits,Grandeurs électriques,Tension,12,PARTIAL
+PHYSICS_CHEMISTRY,L'énergie,Électricité et circuits,Grandeurs électriques,Intensité,12,PARTIAL
+PHYSICS_CHEMISTRY,L'énergie,Électricité et circuits,Grandeurs électriques,Puissance / énergie électrique,12,PARTIAL
+PHYSICS_CHEMISTRY,Des signaux pour observer et communiquer,Lumière et signaux lumineux,Propagation de la lumière,Propagation rectiligne,32,PARTIAL
+PHYSICS_CHEMISTRY,Des signaux pour observer et communiquer,Lumière et signaux lumineux,Propagation de la lumière,Vitesse de la lumière,32,PARTIAL
+PHYSICS_CHEMISTRY,Des signaux pour observer et communiquer,Lumière et signaux lumineux,Propagation de la lumière,Ombres,32,PARTIAL
+PHYSICS_CHEMISTRY,Des signaux pour observer et communiquer,Lumière et signaux lumineux,Lentilles et images,Lentilles convergentes,12,PARTIAL
+PHYSICS_CHEMISTRY,Des signaux pour observer et communiquer,Lumière et signaux lumineux,Lentilles et images,Formation d'images,12,PARTIAL
+PHYSICS_CHEMISTRY,Des signaux pour observer et communiquer,Son et signaux sonores,Propagation du son,Milieu matériel,30,COMPLETE
+PHYSICS_CHEMISTRY,Des signaux pour observer et communiquer,Son et signaux sonores,Propagation du son,Vitesse du son,30,COMPLETE
+PHYSICS_CHEMISTRY,Des signaux pour observer et communiquer,Son et signaux sonores,Caractéristiques d'un son,Fréquence / hauteur,12,PARTIAL
+PHYSICS_CHEMISTRY,Des signaux pour observer et communiquer,Son et signaux sonores,Caractéristiques d'un son,Amplitude / intensité,12,PARTIAL
+PHYSICS_CHEMISTRY,Des signaux pour observer et communiquer,Son et signaux sonores,Caractéristiques d'un son,Signal et communication,12,PARTIAL
+SVT,"La planète Terre, l'environnement et l'action humaine",Dynamique de la Terre,Structure de la Terre,Enveloppes,32,PARTIAL
+SVT,"La planète Terre, l'environnement et l'action humaine",Dynamique de la Terre,Structure de la Terre,Tectonique des plaques,32,PARTIAL
+SVT,"La planète Terre, l'environnement et l'action humaine",Dynamique de la Terre,Structure de la Terre,Séismes / volcans,32,PARTIAL
+SVT,"La planète Terre, l'environnement et l'action humaine",Dynamique de la Terre,Risques géologiques,Prévention,12,PARTIAL
+SVT,"La planète Terre, l'environnement et l'action humaine",Dynamique de la Terre,Risques géologiques,Enjeux de société,12,PARTIAL
+SVT,"La planète Terre, l'environnement et l'action humaine",Écosystèmes et environnement,Relations au sein d'un écosystème,Biotique / abiotique,32,PARTIAL
+SVT,"La planète Terre, l'environnement et l'action humaine",Écosystèmes et environnement,Relations au sein d'un écosystème,Chaînes alimentaires,32,PARTIAL
+SVT,"La planète Terre, l'environnement et l'action humaine",Écosystèmes et environnement,Relations au sein d'un écosystème,Biodiversité,32,PARTIAL
+SVT,"La planète Terre, l'environnement et l'action humaine",Écosystèmes et environnement,Action humaine,Impacts,12,PARTIAL
+SVT,"La planète Terre, l'environnement et l'action humaine",Écosystèmes et environnement,Action humaine,Gestion durable,12,PARTIAL
+SVT,"La planète Terre, l'environnement et l'action humaine",Climat et changements globaux,Effet de serre et climat,Gaz à effet de serre,32,PARTIAL
+SVT,"La planète Terre, l'environnement et l'action humaine",Climat et changements globaux,Effet de serre et climat,Évolution du climat,32,PARTIAL
+SVT,"La planète Terre, l'environnement et l'action humaine",Climat et changements globaux,Enjeux environnementaux,Conséquences,12,PARTIAL
+SVT,"La planète Terre, l'environnement et l'action humaine",Climat et changements globaux,Enjeux environnementaux,Atténuation / adaptation,12,PARTIAL
+SVT,Le vivant et son évolution,Organisation cellulaire,Cellule et organisme,Organites,30,COMPLETE
+SVT,Le vivant et son évolution,Organisation cellulaire,Cellule et organisme,Unicellulaire / pluricellulaire,30,COMPLETE
+SVT,Le vivant et son évolution,Organisation cellulaire,Micro-organismes,Diversité microbienne,12,PARTIAL
+SVT,Le vivant et son évolution,Organisation cellulaire,Micro-organismes,Utilisations / risques,12,PARTIAL
+SVT,Le vivant et son évolution,ADN et génétique,ADN support de l'information,Structure de l'ADN,42,PARTIAL
+SVT,Le vivant et son évolution,ADN et génétique,ADN support de l'information,Chromosomes,42,PARTIAL
+SVT,Le vivant et son évolution,ADN et génétique,ADN support de l'information,Gènes,42,PARTIAL
+SVT,Le vivant et son évolution,ADN et génétique,Hérédité,Transmission,12,PARTIAL
+SVT,Le vivant et son évolution,ADN et génétique,Hérédité,Mutations,12,PARTIAL
+SVT,Le vivant et son évolution,ADN et génétique,Hérédité,Diversité génétique,12,PARTIAL
+SVT,Le vivant et son évolution,Évolution des espèces,Mécanismes évolutifs,Variation,40,COMPLETE
+SVT,Le vivant et son évolution,Évolution des espèces,Mécanismes évolutifs,Sélection naturelle,40,COMPLETE
+SVT,Le vivant et son évolution,Évolution des espèces,Mécanismes évolutifs,Spéciation,40,COMPLETE
+SVT,Le vivant et son évolution,Évolution des espèces,Arguments de l'évolution,Fossiles,12,PARTIAL
+SVT,Le vivant et son évolution,Évolution des espèces,Arguments de l'évolution,Parenté,12,PARTIAL
+SVT,Le vivant et son évolution,Reproduction,Reproduction sexuée,Gamètes,30,COMPLETE
+SVT,Le vivant et son évolution,Reproduction,Reproduction sexuée,Fécondation,30,COMPLETE
+SVT,Le vivant et son évolution,Reproduction,Développement,Développement embryonnaire,12,PARTIAL
+SVT,Le vivant et son évolution,Reproduction,Développement,Puberté,12,PARTIAL
+SVT,Le corps humain et la santé,Nutrition et digestion,Aliments et besoins,Groupes d'aliments,32,PARTIAL
+SVT,Le corps humain et la santé,Nutrition et digestion,Aliments et besoins,Besoins énergétiques,32,PARTIAL
+SVT,Le corps humain et la santé,Nutrition et digestion,Aliments et besoins,Équilibre alimentaire,32,PARTIAL
+SVT,Le corps humain et la santé,Nutrition et digestion,Digestion,Tube digestif,12,PARTIAL
+SVT,Le corps humain et la santé,Nutrition et digestion,Digestion,Absorption,12,PARTIAL
+SVT,Le corps humain et la santé,Respiration et circulation,Respiration,Échanges pulmonaires,32,PARTIAL
+SVT,Le corps humain et la santé,Respiration et circulation,Respiration,Respiration cellulaire,32,PARTIAL
+SVT,Le corps humain et la santé,Respiration et circulation,Circulation,Cœur,12,PARTIAL
+SVT,Le corps humain et la santé,Respiration et circulation,Circulation,Sang / vaisseaux,12,PARTIAL
+SVT,Le corps humain et la santé,Respiration et circulation,Circulation,Effort et santé,12,PARTIAL
+SVT,Le corps humain et la santé,Immunité et santé,Défenses de l'organisme,Immunité innée,45,PARTIAL
+SVT,Le corps humain et la santé,Immunité et santé,Défenses de l'organisme,Immunité adaptative,45,PARTIAL
+SVT,Le corps humain et la santé,Immunité et santé,Défenses de l'organisme,Anticorps,45,PARTIAL
+SVT,Le corps humain et la santé,Immunité et santé,Prévention et traitements,Vaccination,12,PARTIAL
+SVT,Le corps humain et la santé,Immunité et santé,Prévention et traitements,Antibiotiques,12,PARTIAL
+SVT,Le corps humain et la santé,Immunité et santé,Prévention et traitements,Gestes de prévention,12,PARTIAL
+TECHNOLOGY,"Design, innovation et créativité / Objets et systèmes techniques",Objets et systèmes techniques,Analyser un objet technique,Besoin / fonction d'usage,12,PARTIAL
+TECHNOLOGY,"Design, innovation et créativité / Objets et systèmes techniques",Objets et systèmes techniques,Analyser un objet technique,Structure / matériaux,12,PARTIAL
+TECHNOLOGY,"Design, innovation et créativité / Objets et systèmes techniques",Objets et systèmes techniques,Analyser un objet technique,Cycle de vie,12,PARTIAL
+TECHNOLOGY,"Design, innovation et créativité / Objets et systèmes techniques",Objets et systèmes techniques,Évolution des objets,Innovation,12,PARTIAL
+TECHNOLOGY,"Design, innovation et créativité / Objets et systèmes techniques",Objets et systèmes techniques,Évolution des objets,Comparaison de solutions,12,PARTIAL
+TECHNOLOGY,"Design, innovation et créativité / Objets et systèmes techniques",Chaîne d'information,Acquérir et traiter,Capteurs,32,PARTIAL
+TECHNOLOGY,"Design, innovation et créativité / Objets et systèmes techniques",Chaîne d'information,Acquérir et traiter,Traitement,32,PARTIAL
+TECHNOLOGY,"Design, innovation et créativité / Objets et systèmes techniques",Chaîne d'information,Acquérir et traiter,Communiquer,32,PARTIAL
+TECHNOLOGY,"Design, innovation et créativité / Objets et systèmes techniques",Chaîne d'information,Commander,Actionneurs,12,PARTIAL
+TECHNOLOGY,"Design, innovation et créativité / Objets et systèmes techniques",Chaîne d'information,Commander,Asservissement simple,12,PARTIAL
+TECHNOLOGY,"Design, innovation et créativité / Objets et systèmes techniques",Chaîne d'énergie,Flux d'énergie,Stocker,34,PARTIAL
+TECHNOLOGY,"Design, innovation et créativité / Objets et systèmes techniques",Chaîne d'énergie,Flux d'énergie,Transporter,34,PARTIAL
+TECHNOLOGY,"Design, innovation et créativité / Objets et systèmes techniques",Chaîne d'énergie,Flux d'énergie,Convertir,34,PARTIAL
+TECHNOLOGY,"Design, innovation et créativité / Objets et systèmes techniques",Chaîne d'énergie,Bilans énergétiques,Pertes,12,PARTIAL
+TECHNOLOGY,"Design, innovation et créativité / Objets et systèmes techniques",Chaîne d'énergie,Bilans énergétiques,Rendement,12,PARTIAL
+TECHNOLOGY,"Design, innovation et créativité / Objets et systèmes techniques",Conception et modélisation,Démarche de conception,Cahier des charges,34,PARTIAL
+TECHNOLOGY,"Design, innovation et créativité / Objets et systèmes techniques",Conception et modélisation,Démarche de conception,Idéation / choix,34,PARTIAL
+TECHNOLOGY,"Design, innovation et créativité / Objets et systèmes techniques",Conception et modélisation,Démarche de conception,Prototype,34,PARTIAL
+TECHNOLOGY,"Design, innovation et créativité / Objets et systèmes techniques",Conception et modélisation,Modélisation,Représentation / CAO,12,PARTIAL
+TECHNOLOGY,"Design, innovation et créativité / Objets et systèmes techniques",Conception et modélisation,Modélisation,Simulation,12,PARTIAL
+TECHNOLOGY,"Design, innovation et créativité / Objets et systèmes techniques","Informatique, algorithmique et programmation",Algorithmique,Séquences,32,PARTIAL
+TECHNOLOGY,"Design, innovation et créativité / Objets et systèmes techniques","Informatique, algorithmique et programmation",Algorithmique,Conditions,32,PARTIAL
+TECHNOLOGY,"Design, innovation et créativité / Objets et systèmes techniques","Informatique, algorithmique et programmation",Algorithmique,Boucles,32,PARTIAL
+TECHNOLOGY,"Design, innovation et créativité / Objets et systèmes techniques","Informatique, algorithmique et programmation",Programmer,Blocs / scripts,12,PARTIAL
+TECHNOLOGY,"Design, innovation et créativité / Objets et systèmes techniques","Informatique, algorithmique et programmation",Programmer,Variables,12,PARTIAL
+TECHNOLOGY,"Design, innovation et créativité / Objets et systèmes techniques","Informatique, algorithmique et programmation",Programmer,Tester / déboguer,12,PARTIAL
+TECHNOLOGY,"Design, innovation et créativité / Objets et systèmes techniques",Réseaux et données,Architecture des réseaux,Réseau local,32,PARTIAL
+TECHNOLOGY,"Design, innovation et créativité / Objets et systèmes techniques",Réseaux et données,Architecture des réseaux,Internet,32,PARTIAL
+TECHNOLOGY,"Design, innovation et créativité / Objets et systèmes techniques",Réseaux et données,Architecture des réseaux,Protocoles simples,32,PARTIAL
+TECHNOLOGY,"Design, innovation et créativité / Objets et systèmes techniques",Réseaux et données,Données et sécurité,Stockage,12,PARTIAL
+TECHNOLOGY,"Design, innovation et créativité / Objets et systèmes techniques",Réseaux et données,Données et sécurité,Vie privée,12,PARTIAL
+TECHNOLOGY,"Design, innovation et créativité / Objets et systèmes techniques",Réseaux et données,Données et sécurité,Cybersécurité de base,12,PARTIAL
+TECHNOLOGY,"Design, innovation et créativité / Objets et systèmes techniques",Impacts et développement durable,Impacts des objets techniques,Environnement,32,PARTIAL
+TECHNOLOGY,"Design, innovation et créativité / Objets et systèmes techniques",Impacts et développement durable,Impacts des objets techniques,Société,32,PARTIAL
+TECHNOLOGY,"Design, innovation et créativité / Objets et systèmes techniques",Impacts et développement durable,Impacts des objets techniques,Économie,32,PARTIAL
+TECHNOLOGY,"Design, innovation et créativité / Objets et systèmes techniques",Impacts et développement durable,Choix responsables,Analyse de cycle de vie,12,PARTIAL
+TECHNOLOGY,"Design, innovation et créativité / Objets et systèmes techniques",Impacts et développement durable,Choix responsables,Réparabilité / réemploi,12,PARTIAL

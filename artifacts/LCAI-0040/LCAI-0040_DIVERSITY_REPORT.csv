@@ -1,0 +1,214 @@
+skill,subject,exercise_count,family_count,reasoning_signature_count,context_count,difficulty_span,coverage_status
+Repérer des informations explicites,FRENCH,50,12,12,12,3,COMPLETE
+Inférer des informations implicites,FRENCH,50,12,12,12,3,COMPLETE
+Comprendre le sens global,FRENCH,50,12,12,12,3,COMPLETE
+Procédés d'écriture,FRENCH,50,13,13,13,3,COMPLETE
+Point de vue et intentions,FRENCH,50,12,12,12,3,COMPLETE
+Classes grammaticales,FRENCH,66,7,7,7,4,COMPLETE
+Fonctions dans la phrase,FRENCH,40,12,12,12,3,COMPLETE
+Phrase simple et complexe,FRENCH,40,12,12,12,3,COMPLETE
+Temps et modes,FRENCH,40,9,9,9,4,COMPLETE
+Accords du verbe,FRENCH,40,12,12,12,3,COMPLETE
+Orthographe lexicale,FRENCH,106,8,8,8,3,COMPLETE
+Accords dans le groupe nominal,FRENCH,40,12,12,12,3,COMPLETE
+Accord sujet-verbe,FRENCH,40,12,12,12,3,COMPLETE
+Sens des mots,FRENCH,30,11,11,11,3,COMPLETE
+Formation des mots,FRENCH,30,12,12,12,3,COMPLETE
+Transformer un texte,FRENCH,40,12,12,12,3,COMPLETE
+Maintenir la cohérence,FRENCH,40,12,12,12,3,COMPLETE
+Orthographe en situation,FRENCH,40,12,12,12,3,COMPLETE
+Stratégies de relecture,FRENCH,40,12,12,12,3,COMPLETE
+Organiser un écrit,FRENCH,50,12,12,12,3,COMPLETE
+Qualité de l'expression,FRENCH,50,12,12,12,3,COMPLETE
+Genres d'écrits,FRENCH,50,12,12,12,3,COMPLETE
+Construire une thèse,FRENCH,50,12,12,12,3,COMPLETE
+Structurer un paragraphe argumentatif,FRENCH,50,12,12,12,3,COMPLETE
+Questions de compréhension,FRENCH,50,10,10,10,3,COMPLETE
+Compétences linguistiques,FRENCH,50,12,12,12,3,COMPLETE
+Traiter le sujet,FRENCH,50,11,11,11,3,COMPLETE
+Produire un texte abouti,FRENCH,50,12,12,12,3,COMPLETE
+Comparer et ordonner,MATHEMATICS,51,6,6,6,5,COMPLETE
+Opérations sur les relatifs,MATHEMATICS,40,12,12,12,3,COMPLETE
+Représenter les rationnels,MATHEMATICS,40,12,12,12,3,COMPLETE
+Simplifier et rendre irréductible,MATHEMATICS,46,8,8,8,4,COMPLETE
+Calculer avec des fractions,MATHEMATICS,40,12,12,12,3,COMPLETE
+Résoudre des problèmes de fractions,MATHEMATICS,40,12,12,12,3,COMPLETE
+Propriétés des puissances,MATHEMATICS,40,13,13,13,4,COMPLETE
+Puissances de 10,MATHEMATICS,40,12,12,12,3,COMPLETE
+Notation scientifique,MATHEMATICS,40,12,12,12,3,COMPLETE
+Divisibilité,MATHEMATICS,30,12,12,12,3,COMPLETE
+PGCD et applications,MATHEMATICS,30,12,12,12,3,COMPLETE
+Nombres premiers,MATHEMATICS,30,12,12,12,3,COMPLETE
+Écrire et interpréter une expression,MATHEMATICS,50,12,12,12,3,COMPLETE
+Manipuler des expressions,MATHEMATICS,50,12,12,12,3,COMPLETE
+Développer,MATHEMATICS,50,13,13,13,5,COMPLETE
+Réduire,MATHEMATICS,50,12,12,12,3,COMPLETE
+Factoriser,MATHEMATICS,50,12,12,12,3,COMPLETE
+Équations du premier degré,MATHEMATICS,50,11,11,11,4,COMPLETE
+Équations produit nul,MATHEMATICS,50,12,12,12,3,COMPLETE
+Mettre en équation un problème,MATHEMATICS,50,12,12,12,3,COMPLETE
+Choisir une stratégie,MATHEMATICS,40,12,12,12,3,COMPLETE
+Mener un calcul justifié,MATHEMATICS,40,12,12,12,3,COMPLETE
+Reconnaître une situation de proportionnalité,MATHEMATICS,46,8,8,8,4,COMPLETE
+Calculer dans une situation proportionnelle,MATHEMATICS,40,12,12,12,3,COMPLETE
+Calculer un pourcentage,MATHEMATICS,40,12,12,12,4,COMPLETE
+Évolutions en pourcentage,MATHEMATICS,40,12,12,12,3,COMPLETE
+Organiser des données,MATHEMATICS,40,10,10,10,3,COMPLETE
+Indicateurs statistiques,MATHEMATICS,40,12,12,12,3,COMPLETE
+Interpréter des données,MATHEMATICS,40,12,12,12,3,COMPLETE
+Vocabulaire des probabilités,MATHEMATICS,40,10,10,10,3,COMPLETE
+Calculer une probabilité,MATHEMATICS,40,12,12,12,3,COMPLETE
+Notion de fonction,MATHEMATICS,50,12,12,12,3,COMPLETE
+Image et antécédent,MATHEMATICS,50,12,12,12,3,COMPLETE
+Représentation graphique,MATHEMATICS,50,12,12,12,3,COMPLETE
+Fonctions linéaires,MATHEMATICS,50,10,10,10,3,COMPLETE
+Fonctions affines,MATHEMATICS,50,12,12,12,3,COMPLETE
+Déterminer une fonction affine,MATHEMATICS,50,12,12,12,3,COMPLETE
+"Longueurs, aires, volumes",MATHEMATICS,30,11,11,11,4,COMPLETE
+Autres grandeurs,MATHEMATICS,30,12,12,12,3,COMPLETE
+Calculer des aires,MATHEMATICS,40,13,13,13,4,COMPLETE
+Calculer des volumes,MATHEMATICS,40,12,12,12,3,COMPLETE
+Facteur d'échelle,MATHEMATICS,40,12,12,12,3,COMPLETE
+Problèmes d'échelle,MATHEMATICS,40,12,12,12,3,COMPLETE
+Repérage dans le plan,MATHEMATICS,30,12,12,12,3,COMPLETE
+Repérage dans l'espace,MATHEMATICS,30,12,12,12,3,COMPLETE
+Théorème de Pythagore,MATHEMATICS,50,10,10,10,3,COMPLETE
+Réciproque de Pythagore,MATHEMATICS,50,12,12,12,3,COMPLETE
+Raisonnement géométrique,MATHEMATICS,50,12,12,12,3,COMPLETE
+Théorème de Thalès,MATHEMATICS,50,11,11,11,3,COMPLETE
+Réciproque de Thalès,MATHEMATICS,50,12,12,12,3,COMPLETE
+Cosinus,MATHEMATICS,50,12,12,12,3,COMPLETE
+Sinus,MATHEMATICS,50,12,12,12,3,COMPLETE
+Tangente,MATHEMATICS,50,12,12,12,3,COMPLETE
+Choisir le bon rapport,MATHEMATICS,50,12,12,12,3,COMPLETE
+Isométries,MATHEMATICS,40,12,12,12,3,COMPLETE
+Propriétés conservées,MATHEMATICS,40,12,12,12,3,COMPLETE
+Définition et rapport,MATHEMATICS,40,12,12,12,3,COMPLETE
+Construire et calculer,MATHEMATICS,40,12,12,12,3,COMPLETE
+Triangles,MATHEMATICS,40,12,12,12,3,COMPLETE
+Cercle et polygones,MATHEMATICS,40,12,12,12,3,COMPLETE
+Constructions et justifications,MATHEMATICS,40,12,12,12,3,COMPLETE
+Solides usuels,MATHEMATICS,40,12,12,12,3,COMPLETE
+Représentations,MATHEMATICS,40,12,12,12,3,COMPLETE
+Variables et affectations,MATHEMATICS,40,12,12,12,3,COMPLETE
+Conditions,MATHEMATICS,40,12,12,12,3,COMPLETE
+Boucles,MATHEMATICS,40,12,12,12,3,COMPLETE
+Scripts et événements,MATHEMATICS,30,12,12,12,3,COMPLETE
+Contrôle et interactions,MATHEMATICS,30,12,12,12,3,COMPLETE
+Automatismes,MATHEMATICS,40,12,12,12,3,COMPLETE
+Résolution de problèmes,MATHEMATICS,40,12,12,12,3,COMPLETE
+Raisonnement,MATHEMATICS,40,12,12,12,3,COMPLETE
+Démonstration,MATHEMATICS,40,12,12,12,3,COMPLETE
+Calcul mental,MATHEMATICS,40,12,12,12,3,COMPLETE
+Outils numériques,MATHEMATICS,40,12,12,12,3,COMPLETE
+Expérience combattante,HISTORY,64,6,6,6,4,COMPLETE
+Expérience des civils,HISTORY,40,12,12,12,3,COMPLETE
+Sorties de guerre,HISTORY,40,12,12,12,3,COMPLETE
+Régimes totalitaires,HISTORY,50,13,13,13,3,COMPLETE
+Pratiques totalitaires,HISTORY,50,12,12,12,3,COMPLETE
+Démocraties face à la crise,HISTORY,50,12,12,12,3,COMPLETE
+Guerre mondiale et anéantissement,HISTORY,50,9,9,9,3,COMPLETE
+Génocide des Juifs et des Tsiganes,HISTORY,50,12,12,12,3,COMPLETE
+Défaite et occupation,HISTORY,50,10,10,10,4,COMPLETE
+Vichy et Collaboration,HISTORY,50,12,12,12,3,COMPLETE
+Résistances,HISTORY,50,12,12,12,3,COMPLETE
+Processus de décolonisation,HISTORY,40,13,13,13,3,COMPLETE
+Nouveaux États,HISTORY,40,12,12,12,3,COMPLETE
+Blocs Est / Ouest,HISTORY,50,12,12,12,3,COMPLETE
+Crises et conflits,HISTORY,50,12,12,12,3,COMPLETE
+Fin de la Guerre froide,HISTORY,50,12,12,12,3,COMPLETE
+Origines du projet européen,HISTORY,40,13,13,13,3,COMPLETE
+Approfondissement et élargissements,HISTORY,40,12,12,12,3,COMPLETE
+Nouvel ordre mondial,HISTORY,48,9,9,9,3,COMPLETE
+Conflits et terrorisme,HISTORY,40,12,12,12,3,COMPLETE
+Libération et refondation,HISTORY,40,12,12,12,3,COMPLETE
+IVe République,HISTORY,40,12,12,12,3,COMPLETE
+Institutions de la Ve République,HISTORY,50,12,12,12,3,COMPLETE
+Évolutions politiques,HISTORY,50,12,12,12,3,COMPLETE
+Transformations sociales,HISTORY,40,12,12,12,3,COMPLETE
+Place des femmes,HISTORY,40,12,12,12,3,COMPLETE
+Immigration et société française,HISTORY,40,12,12,12,3,COMPLETE
+Métropolisation,GEOGRAPHY,45,6,6,6,4,COMPLETE
+Mobilités et espaces de vie,GEOGRAPHY,40,12,12,12,3,COMPLETE
+Espaces agricoles,GEOGRAPHY,40,13,13,13,3,COMPLETE
+Espaces industriels et de services,GEOGRAPHY,40,12,12,12,3,COMPLETE
+Contrastes du territoire français,GEOGRAPHY,40,13,13,13,3,COMPLETE
+Acteurs et politiques,GEOGRAPHY,40,12,12,12,3,COMPLETE
+Enjeux d'aménagement,GEOGRAPHY,50,12,12,12,3,COMPLETE
+Acteurs de l'aménagement,GEOGRAPHY,50,12,12,12,3,COMPLETE
+Risques et vulnérabilités,GEOGRAPHY,45,6,6,6,3,COMPLETE
+Transitions énergétiques et écologiques,GEOGRAPHY,40,12,12,12,3,COMPLETE
+Territoire européen,GEOGRAPHY,50,13,13,13,3,COMPLETE
+Politiques européennes,GEOGRAPHY,50,12,12,12,3,COMPLETE
+Rayonnement,GEOGRAPHY,45,6,6,6,4,COMPLETE
+Présence stratégique,GEOGRAPHY,40,12,12,12,3,COMPLETE
+"Liberté, égalité, fraternité",EMC,50,13,13,13,3,COMPLETE
+Principes républicains,EMC,50,12,12,12,3,COMPLETE
+Principe de laïcité,EMC,50,13,13,13,3,COMPLETE
+Laïcité en pratique,EMC,50,12,12,12,3,COMPLETE
+Statut de citoyen,EMC,50,12,12,12,3,COMPLETE
+Exercice de la citoyenneté,EMC,50,12,12,12,3,COMPLETE
+Organisation des pouvoirs,EMC,40,13,13,13,3,COMPLETE
+Institutions locales et européennes,EMC,40,12,12,12,3,COMPLETE
+Droits fondamentaux,EMC,40,13,13,13,3,COMPLETE
+Garanties et limites,EMC,40,12,12,12,3,COMPLETE
+Principes démocratiques,EMC,40,13,13,13,3,COMPLETE
+Débattre et argumenter,EMC,40,12,12,12,3,COMPLETE
+Formes d'engagement,EMC,40,12,12,12,3,COMPLETE
+Engagement des jeunes,EMC,40,12,12,12,3,COMPLETE
+Enjeux de défense,EMC,40,12,12,12,3,COMPLETE
+Citoyen et défense,EMC,40,12,12,12,3,COMPLETE
+S'informer,EMC,40,13,13,13,3,COMPLETE
+Esprit critique,EMC,40,12,12,12,3,COMPLETE
+Modèle de l'atome,PHYSICS_CHEMISTRY,40,13,13,13,3,COMPLETE
+Molécules et formules,PHYSICS_CHEMISTRY,40,12,12,12,3,COMPLETE
+Décrire une transformation,PHYSICS_CHEMISTRY,50,11,11,11,3,COMPLETE
+Acides et bases,PHYSICS_CHEMISTRY,50,12,12,12,3,COMPLETE
+Mesurer et calculer,PHYSICS_CHEMISTRY,30,11,11,11,3,COMPLETE
+Unités et conversions,PHYSICS_CHEMISTRY,30,12,12,12,3,COMPLETE
+Décrire un mouvement,PHYSICS_CHEMISTRY,40,13,13,13,3,COMPLETE
+Vitesse,PHYSICS_CHEMISTRY,40,12,12,12,3,COMPLETE
+Identifier des forces,PHYSICS_CHEMISTRY,40,11,11,11,3,COMPLETE
+Effets des forces,PHYSICS_CHEMISTRY,40,12,12,12,3,COMPLETE
+Formes d'énergie,PHYSICS_CHEMISTRY,50,13,13,13,3,COMPLETE
+Chaînes énergétiques,PHYSICS_CHEMISTRY,50,12,12,12,3,COMPLETE
+Circuits électriques,PHYSICS_CHEMISTRY,40,11,11,11,3,COMPLETE
+Grandeurs électriques,PHYSICS_CHEMISTRY,40,12,12,12,3,COMPLETE
+Propagation de la lumière,PHYSICS_CHEMISTRY,40,13,13,13,3,COMPLETE
+Lentilles et images,PHYSICS_CHEMISTRY,40,12,12,12,3,COMPLETE
+Propagation du son,PHYSICS_CHEMISTRY,30,11,11,11,3,COMPLETE
+Caractéristiques d'un son,PHYSICS_CHEMISTRY,30,12,12,12,3,COMPLETE
+Structure de la Terre,SVT,40,13,13,13,3,COMPLETE
+Risques géologiques,SVT,40,12,12,12,3,COMPLETE
+Relations au sein d'un écosystème,SVT,40,13,13,13,3,COMPLETE
+Action humaine,SVT,40,12,12,12,3,COMPLETE
+Effet de serre et climat,SVT,40,13,13,13,3,COMPLETE
+Enjeux environnementaux,SVT,40,12,12,12,3,COMPLETE
+Cellule et organisme,SVT,30,11,11,11,3,COMPLETE
+Micro-organismes,SVT,30,12,12,12,3,COMPLETE
+ADN support de l'information,SVT,50,13,13,13,3,COMPLETE
+Hérédité,SVT,50,12,12,12,3,COMPLETE
+Mécanismes évolutifs,SVT,40,11,11,11,3,COMPLETE
+Arguments de l'évolution,SVT,40,12,12,12,3,COMPLETE
+Reproduction sexuée,SVT,30,11,11,11,3,COMPLETE
+Développement,SVT,30,12,12,12,3,COMPLETE
+Aliments et besoins,SVT,40,13,13,13,3,COMPLETE
+Digestion,SVT,40,12,12,12,3,COMPLETE
+Respiration,SVT,40,13,13,13,3,COMPLETE
+Circulation,SVT,40,12,12,12,3,COMPLETE
+Défenses de l'organisme,SVT,50,13,13,13,3,COMPLETE
+Prévention et traitements,SVT,50,12,12,12,3,COMPLETE
+Analyser un objet technique,TECHNOLOGY,40,12,12,12,3,COMPLETE
+Évolution des objets,TECHNOLOGY,40,12,12,12,3,COMPLETE
+Acquérir et traiter,TECHNOLOGY,40,13,13,13,3,COMPLETE
+Commander,TECHNOLOGY,40,12,12,12,3,COMPLETE
+Flux d'énergie,TECHNOLOGY,40,13,13,13,3,COMPLETE
+Bilans énergétiques,TECHNOLOGY,40,12,12,12,3,COMPLETE
+Démarche de conception,TECHNOLOGY,40,13,13,13,3,COMPLETE
+Modélisation,TECHNOLOGY,40,12,12,12,3,COMPLETE
+Algorithmique,TECHNOLOGY,50,13,13,13,3,COMPLETE
+Programmer,TECHNOLOGY,50,12,12,12,3,COMPLETE
+Architecture des réseaux,TECHNOLOGY,40,13,13,13,3,COMPLETE
+Données et sécurité,TECHNOLOGY,40,12,12,12,3,COMPLETE
+Impacts des objets techniques,TECHNOLOGY,40,13,13,13,3,COMPLETE
+Choix responsables,TECHNOLOGY,40,12,12,12,3,COMPLETE

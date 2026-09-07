@@ -1,0 +1,32 @@
+# LCAI-0039 — HISTORY report
+
+- domains defined: 3
+- verdict: PARTIAL
+
+- L'Europe, un théâtre majeur des guerres totales (1914-1945) / La Première Guerre mondiale : l'expérience combattante et l'expérience des civils / Expérience combattante: PARTIAL (n=59, families=1, official=0)
+- L'Europe, un théâtre majeur des guerres totales (1914-1945) / La Première Guerre mondiale : l'expérience combattante et l'expérience des civils / Expérience des civils: PARTIAL (n=15, families=12, official=0)
+- L'Europe, un théâtre majeur des guerres totales (1914-1945) / La Première Guerre mondiale : l'expérience combattante et l'expérience des civils / Sorties de guerre: PARTIAL (n=15, families=12, official=0)
+- L'Europe, un théâtre majeur des guerres totales (1914-1945) / Démocraties et totalitarismes dans l'Europe de l'entre-deux-guerres / Régimes totalitaires: PARTIAL (n=35, families=13, official=0)
+- L'Europe, un théâtre majeur des guerres totales (1914-1945) / Démocraties et totalitarismes dans l'Europe de l'entre-deux-guerres / Pratiques totalitaires: PARTIAL (n=15, families=12, official=0)
+- L'Europe, un théâtre majeur des guerres totales (1914-1945) / Démocraties et totalitarismes dans l'Europe de l'entre-deux-guerres / Démocraties face à la crise: PARTIAL (n=15, families=12, official=0)
+- L'Europe, un théâtre majeur des guerres totales (1914-1945) / La Seconde Guerre mondiale, une guerre d'anéantissement / Guerre mondiale et anéantissement: COMPLETE (n=50, families=9, official=0)
+- L'Europe, un théâtre majeur des guerres totales (1914-1945) / La Seconde Guerre mondiale, une guerre d'anéantissement / Génocide des Juifs et des Tsiganes: PARTIAL (n=15, families=12, official=0)
+- L'Europe, un théâtre majeur des guerres totales (1914-1945) / La France défaite et occupée ; régime de Vichy, Collaboration, Résistance / Défaite et occupation: COMPLETE (n=50, families=10, official=0)
+- L'Europe, un théâtre majeur des guerres totales (1914-1945) / La France défaite et occupée ; régime de Vichy, Collaboration, Résistance / Vichy et Collaboration: PARTIAL (n=15, families=12, official=0)
+- L'Europe, un théâtre majeur des guerres totales (1914-1945) / La France défaite et occupée ; régime de Vichy, Collaboration, Résistance / Résistances: PARTIAL (n=15, families=12, official=0)
+- Le monde depuis 1945 / Indépendances et construction de nouveaux États / Processus de décolonisation: PARTIAL (n=35, families=13, official=0)
+- Le monde depuis 1945 / Indépendances et construction de nouveaux États / Nouveaux États: PARTIAL (n=15, families=12, official=0)
+- Le monde depuis 1945 / Un monde bipolaire au temps de la Guerre froide / Blocs Est / Ouest: PARTIAL (n=15, families=12, official=0)
+- Le monde depuis 1945 / Un monde bipolaire au temps de la Guerre froide / Crises et conflits: PARTIAL (n=15, families=12, official=0)
+- Le monde depuis 1945 / Un monde bipolaire au temps de la Guerre froide / Fin de la Guerre froide: PARTIAL (n=15, families=12, official=0)
+- Le monde depuis 1945 / Affirmation et mise en œuvre du projet européen / Origines du projet européen: PARTIAL (n=35, families=13, official=0)
+- Le monde depuis 1945 / Affirmation et mise en œuvre du projet européen / Approfondissement et élargissements: PARTIAL (n=15, families=12, official=0)
+- Le monde depuis 1945 / Enjeux et conflits dans le monde après 1989 / Nouvel ordre mondial: PARTIAL (n=40, families=1, official=0)
+- Le monde depuis 1945 / Enjeux et conflits dans le monde après 1989 / Conflits et terrorisme: PARTIAL (n=15, families=12, official=0)
+- Françaises et Français dans une République repensée / Refonder la République, redéfinir la démocratie (1944-1947) / Libération et refondation: COMPLETE (n=40, families=12, official=0)
+- Françaises et Français dans une République repensée / Refonder la République, redéfinir la démocratie (1944-1947) / IVe République: COMPLETE (n=40, families=12, official=0)
+- Françaises et Français dans une République repensée / La Ve République / Institutions de la Ve République: COMPLETE (n=50, families=12, official=0)
+- Françaises et Français dans une République repensée / La Ve République / Évolutions politiques: COMPLETE (n=50, families=12, official=0)
+- Françaises et Français dans une République repensée / Femmes et hommes dans la société des années 1950 aux années 1980 / Transformations sociales: COMPLETE (n=40, families=12, official=0)
+- Françaises et Français dans une République repensée / Femmes et hommes dans la société des années 1950 aux années 1980 / Place des femmes: COMPLETE (n=40, families=12, official=0)
+- Françaises et Français dans une République repensée / Femmes et hommes dans la société des années 1950 aux années 1980 / Immigration et société française: COMPLETE (n=40, families=12, official=0)

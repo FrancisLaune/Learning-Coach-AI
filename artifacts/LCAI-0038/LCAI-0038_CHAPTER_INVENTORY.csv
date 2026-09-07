@@ -1,0 +1,79 @@
+subject,domain,chapter_code,chapter_name,active,skill_count,subskill_count,content_count,official_question_count,coverage_status
+EMC,EMC — programme 3e,VALEURS_DE_LA_REPUBLIQUE,Valeurs de la République,True,1,0,21,0,NO_OFFICIAL_ARCHIVE
+EMC,EMC — programme 3e,CITOYENNETE,Citoyenneté,True,1,0,20,0,NO_OFFICIAL_ARCHIVE
+EMC,EMC — programme 3e,LAICITE,Laïcité,True,1,0,20,0,NO_OFFICIAL_ARCHIVE
+EMC,EMC — programme 3e,LIBERTES_ET_DROITS,Libertés et droits,True,1,0,20,0,NO_OFFICIAL_ARCHIVE
+EMC,EMC — programme 3e,JUSTICE,Justice,True,1,0,20,0,NO_OFFICIAL_ARCHIVE
+EMC,EMC — programme 3e,MEDIAS_ET_ESPRIT_CRITIQUE,Médias et esprit critique,True,1,0,21,0,NO_OFFICIAL_ARCHIVE
+FRENCH,Français — programme 3e,CLASSES_GRAMMATICALES,Classes grammaticales,True,1,0,28,8,COVERED
+FRENCH,Français — programme 3e,FONCTIONS_GRAMMATICALES,Fonctions grammaticales,True,1,0,58,38,COVERED
+FRENCH,Français — programme 3e,CONJUGAISON,Conjugaison,True,1,0,33,0,NO_OFFICIAL_ARCHIVE
+FRENCH,Français — programme 3e,ACCORDS,Accords,True,1,0,204,164,COVERED
+FRENCH,Français — programme 3e,HOMOPHONES_GRAMMATICAUX,Homophones grammaticaux,True,1,0,30,0,NO_OFFICIAL_ARCHIVE
+FRENCH,Français — programme 3e,ORTHOGRAPHE,Orthographe,True,1,0,38,8,COVERED
+FRENCH,Français — programme 3e,VOCABULAIRE,Vocabulaire,True,1,0,119,99,COVERED
+FRENCH,Français — programme 3e,PHRASES_COMPLEXES,Phrases complexes,True,1,0,20,0,NO_OFFICIAL_ARCHIVE
+FRENCH,Français — programme 3e,FIGURES_DE_STYLE,Figures de style,True,1,0,22,2,COVERED
+FRENCH,Français — programme 3e,COMPREHENSION,Compréhension,True,1,0,377,337,COVERED
+FRENCH,Français — programme 3e,EXPRESSION_ECRITE,Expression écrite,True,1,0,190,150,COVERED
+GEOGRAPHY,Géographie — programme 3e,URBANISATION,Urbanisation,True,1,0,20,0,NO_OFFICIAL_ARCHIVE
+GEOGRAPHY,Géographie — programme 3e,MONDIALISATION,Mondialisation,True,1,0,20,0,NO_OFFICIAL_ARCHIVE
+GEOGRAPHY,Géographie — programme 3e,MOBILITES_HUMAINES,Mobilités humaines,True,1,0,20,0,NO_OFFICIAL_ARCHIVE
+GEOGRAPHY,Géographie — programme 3e,ESPACES_PRODUCTIFS,Espaces productifs,True,1,0,20,0,NO_OFFICIAL_ARCHIVE
+GEOGRAPHY,Géographie — programme 3e,DEVELOPPEMENT_DURABLE,Développement durable,True,1,0,20,0,NO_OFFICIAL_ARCHIVE
+GEOGRAPHY,Géographie — programme 3e,RISQUES_NATURELS,Risques naturels,True,1,0,20,0,NO_OFFICIAL_ARCHIVE
+GEOGRAPHY,Géographie — programme 3e,FRANCE_ET_TERRITOIRES,France et territoires,True,1,0,20,0,NO_OFFICIAL_ARCHIVE
+GEOGRAPHY,Géographie — programme 3e,UNION_EUROPEENNE,Union européenne,True,1,0,20,0,NO_OFFICIAL_ARCHIVE
+GEOGRAPHY,Géographie — programme 3e,INEGALITES_MONDIALES,Inégalités mondiales,True,1,0,20,0,NO_OFFICIAL_ARCHIVE
+HISTORY,Histoire — programme 3e,REVOLUTION_FRANCAISE,Révolution française,True,1,0,178,138,COVERED
+HISTORY,Histoire — programme 3e,EMPIRE_NAPOLEONIEN,Empire napoléonien,True,1,0,20,0,NO_OFFICIAL_ARCHIVE
+HISTORY,Histoire — programme 3e,INDUSTRIALISATION,Industrialisation,True,1,0,20,0,NO_OFFICIAL_ARCHIVE
+HISTORY,Histoire — programme 3e,SOCIETE_AU_XIXE_SIECLE,Société au XIXe siècle,True,1,0,30,10,COVERED
+HISTORY,Histoire — programme 3e,COLONISATION,Colonisation,True,1,0,20,0,NO_OFFICIAL_ARCHIVE
+HISTORY,Histoire — programme 3e,PREMIERE_GUERRE_MONDIALE,Première Guerre mondiale,True,1,0,84,62,COVERED
+HISTORY,Histoire — programme 3e,TOTALITARISMES,Totalitarismes,True,1,0,20,0,NO_OFFICIAL_ARCHIVE
+HISTORY,Histoire — programme 3e,SECONDE_GUERRE_MONDIALE,Seconde Guerre mondiale,True,1,0,66,26,COVERED
+HISTORY,Histoire — programme 3e,GUERRE_FROIDE,Guerre froide,True,1,0,76,36,COVERED
+HISTORY,Histoire — programme 3e,CONSTRUCTION_EUROPEENNE,Construction européenne,True,1,0,57,37,COVERED
+MATHEMATICS,Mathématiques — programme 3e,NOMBRES_RELATIFS,Nombres relatifs,True,1,0,222,174,COVERED
+MATHEMATICS,Mathématiques — programme 3e,FRACTIONS,Fractions,True,1,0,40,0,NO_OFFICIAL_ARCHIVE
+MATHEMATICS,Mathématiques — programme 3e,PUISSANCES,Puissances,True,1,0,24,4,COVERED
+MATHEMATICS,Mathématiques — programme 3e,CALCUL_LITTERAL,Calcul littéral,True,1,0,104,74,COVERED
+MATHEMATICS,Mathématiques — programme 3e,EQUATIONS,Équations,True,1,0,48,8,COVERED
+MATHEMATICS,Mathématiques — programme 3e,PROPORTIONNALITE,Proportionnalité,True,1,0,45,5,COVERED
+MATHEMATICS,Mathématiques — programme 3e,POURCENTAGES,Pourcentages,True,1,0,32,2,COVERED
+MATHEMATICS,Mathématiques — programme 3e,CONVERSIONS,Conversions,True,1,0,20,0,NO_OFFICIAL_ARCHIVE
+MATHEMATICS,Mathématiques — programme 3e,PYTHAGORE,Pythagore,True,1,0,40,0,NO_OFFICIAL_ARCHIVE
+MATHEMATICS,Mathématiques — programme 3e,THALES,Thalès,True,1,0,40,0,NO_OFFICIAL_ARCHIVE
+MATHEMATICS,Mathématiques — programme 3e,AIRES_ET_VOLUMES,Aires et volumes,True,1,0,131,111,COVERED
+MATHEMATICS,Mathématiques — programme 3e,STATISTIQUES,Statistiques,True,1,0,36,6,COVERED
+MATHEMATICS,Mathématiques — programme 3e,PROBABILITES,Probabilités,True,1,0,54,24,COVERED
+MATHEMATICS,Mathématiques — programme 3e,FONCTIONS,Fonctions,True,1,0,86,46,COVERED
+MATHEMATICS,Mathématiques — programme 3e,ALGORITHMIQUE,Algorithmique,True,1,0,25,5,COVERED
+ORAL,Oral du DNB,ORAL_PROJECT,Projet oral,True,1,0,30,0,NO_OFFICIAL_ARCHIVE
+PHYSICS_CHEMISTRY,Physique-Chimie — programme 3e,MOUVEMENT_ET_VITESSE,Mouvement et vitesse,True,1,0,25,5,COVERED
+PHYSICS_CHEMISTRY,Physique-Chimie — programme 3e,FORCES,Forces,True,1,0,32,2,COVERED
+PHYSICS_CHEMISTRY,Physique-Chimie — programme 3e,ENERGIE,Énergie,True,1,0,43,11,COVERED
+PHYSICS_CHEMISTRY,Physique-Chimie — programme 3e,ELECTRICITE,Électricité,True,1,0,35,5,COVERED
+PHYSICS_CHEMISTRY,Physique-Chimie — programme 3e,LUMIERE,Lumière,True,1,0,21,1,COVERED
+PHYSICS_CHEMISTRY,Physique-Chimie — programme 3e,SON,Son,True,1,0,31,11,COVERED
+PHYSICS_CHEMISTRY,Physique-Chimie — programme 3e,ATOMES_ET_MOLECULES,Atomes et molécules,True,1,0,21,1,COVERED
+PHYSICS_CHEMISTRY,Physique-Chimie — programme 3e,REACTIONS_CHIMIQUES,Réactions chimiques,True,1,0,20,0,NO_OFFICIAL_ARCHIVE
+PHYSICS_CHEMISTRY,Physique-Chimie — programme 3e,MASSE_VOLUMIQUE,Masse volumique,True,1,0,23,3,COVERED
+PHYSICS_CHEMISTRY,Physique-Chimie — programme 3e,ACIDES_ET_BASES,Acides et bases,True,1,0,20,0,NO_OFFICIAL_ARCHIVE
+SVT,SVT — programme 3e,CELLULE,Cellule,True,1,0,20,0,NO_OFFICIAL_ARCHIVE
+SVT,SVT — programme 3e,ADN_ET_GENETIQUE,ADN et génétique,True,1,0,30,0,NO_OFFICIAL_ARCHIVE
+SVT,SVT — programme 3e,REPRODUCTION,Reproduction,True,1,0,20,0,NO_OFFICIAL_ARCHIVE
+SVT,SVT — programme 3e,EVOLUTION,Évolution,True,1,0,30,0,NO_OFFICIAL_ARCHIVE
+SVT,SVT — programme 3e,IMMUNITE,Immunité,True,1,0,33,0,NO_OFFICIAL_ARCHIVE
+SVT,SVT — programme 3e,NUTRITION_ET_DIGESTION,Nutrition et digestion,True,1,0,20,0,NO_OFFICIAL_ARCHIVE
+SVT,SVT — programme 3e,RESPIRATION_ET_CIRCULATION,Respiration et circulation,True,1,0,20,0,NO_OFFICIAL_ARCHIVE
+SVT,SVT — programme 3e,ECOSYSTEMES,Écosystèmes,True,1,0,20,0,NO_OFFICIAL_ARCHIVE
+SVT,SVT — programme 3e,CLIMAT,Climat,True,1,0,20,0,NO_OFFICIAL_ARCHIVE
+SVT,SVT — programme 3e,GEOLOGIE,Géologie,True,1,0,20,0,NO_OFFICIAL_ARCHIVE
+TECHNOLOGY,Technologie — programme 3e,OBJETS_TECHNIQUES,Objets techniques,True,1,0,22,0,NO_OFFICIAL_ARCHIVE
+TECHNOLOGY,Technologie — programme 3e,CHAINE_D_ENERGIE,Chaîne d'énergie,True,1,0,22,0,NO_OFFICIAL_ARCHIVE
+TECHNOLOGY,Technologie — programme 3e,CHAINE_D_INFORMATION,Chaîne d'information,True,1,0,20,0,NO_OFFICIAL_ARCHIVE
+TECHNOLOGY,Technologie — programme 3e,PROGRAMMATION,Programmation,True,1,0,20,0,NO_OFFICIAL_ARCHIVE
+TECHNOLOGY,Technologie — programme 3e,RESEAUX,Réseaux,True,1,0,20,0,NO_OFFICIAL_ARCHIVE
+TECHNOLOGY,Technologie — programme 3e,DEVELOPPEMENT_DURABLE,Développement durable,True,1,0,20,0,NO_OFFICIAL_ARCHIVE

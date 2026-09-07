@@ -1,0 +1,112 @@
+subject,domain,expected_chapter_or_skill,current_match,gap_type,severity,evidence,recommended_action
+MATHEMATICS,Mathématiques — programme 3e,Nombres et calculs,,MISSING_CHAPTER,P0,Aucun chapitre sémantiquement équivalent trouvé,ADD_CHAPTER_IN_LCAI_0039
+MATHEMATICS,Mathématiques — programme 3e,Arithmétique,,MISSING_CHAPTER,P0,Aucun chapitre sémantiquement équivalent trouvé,ADD_CHAPTER_IN_LCAI_0039
+MATHEMATICS,Mathématiques — programme 3e,Géométrie plane,,MISSING_CHAPTER,P0,Aucun chapitre sémantiquement équivalent trouvé,ADD_CHAPTER_IN_LCAI_0039
+MATHEMATICS,Mathématiques — programme 3e,Triangles,,MISSING_CHAPTER,P0,Aucun chapitre sémantiquement équivalent trouvé,ADD_CHAPTER_IN_LCAI_0039
+MATHEMATICS,Mathématiques — programme 3e,Théorème de Pythagore,Pythagore,NO_OFFICIAL_ARCHIVE_COVERAGE,P2,official_question_count=0,MAP_OR_INGEST_OFFICIAL
+MATHEMATICS,Mathématiques — programme 3e,Théorème de Thalès,Thalès,NO_OFFICIAL_ARCHIVE_COVERAGE,P2,official_question_count=0,MAP_OR_INGEST_OFFICIAL
+MATHEMATICS,Mathématiques — programme 3e,Trigonométrie,,MISSING_CHAPTER,P0,Aucun chapitre sémantiquement équivalent trouvé,ADD_CHAPTER_IN_LCAI_0039
+MATHEMATICS,Mathématiques — programme 3e,Transformations,,MISSING_CHAPTER,P0,Aucun chapitre sémantiquement équivalent trouvé,ADD_CHAPTER_IN_LCAI_0039
+MATHEMATICS,Mathématiques — programme 3e,Homothétie,,MISSING_CHAPTER,P0,Aucun chapitre sémantiquement équivalent trouvé,ADD_CHAPTER_IN_LCAI_0039
+MATHEMATICS,Mathématiques — programme 3e,Géométrie dans l’espace,,MISSING_CHAPTER,P0,Aucun chapitre sémantiquement équivalent trouvé,ADD_CHAPTER_IN_LCAI_0039
+MATHEMATICS,Mathématiques — programme 3e,Repérage,,MISSING_CHAPTER,P0,Aucun chapitre sémantiquement équivalent trouvé,ADD_CHAPTER_IN_LCAI_0039
+MATHEMATICS,Mathématiques — programme 3e,Programmation,,MISSING_CHAPTER,P2,Élément de contrôle transversal — peut être format plutôt que chapitre,REVIEW_AS_FORMAT_OR_CHAPTER
+MATHEMATICS,Mathématiques — programme 3e,Scratch / blocs,,MISSING_CHAPTER,P2,Élément de contrôle transversal — peut être format plutôt que chapitre,REVIEW_AS_FORMAT_OR_CHAPTER
+MATHEMATICS,Mathématiques — programme 3e,Tableur,,MISSING_CHAPTER,P0,Aucun chapitre sémantiquement équivalent trouvé,ADD_CHAPTER_IN_LCAI_0039
+MATHEMATICS,Mathématiques — programme 3e,Grandeurs et mesures,,MISSING_CHAPTER,P0,Aucun chapitre sémantiquement équivalent trouvé,ADD_CHAPTER_IN_LCAI_0039
+MATHEMATICS,Mathématiques — programme 3e,Problèmes,,MISSING_CHAPTER,P2,Élément de contrôle transversal — peut être format plutôt que chapitre,REVIEW_AS_FORMAT_OR_CHAPTER
+MATHEMATICS,Mathématiques — programme 3e,Raisonnement et démonstration,,MISSING_CHAPTER,P2,Élément de contrôle transversal — peut être format plutôt que chapitre,REVIEW_AS_FORMAT_OR_CHAPTER
+MATHEMATICS,Mathématiques — programme 3e,Automatismes,,MISSING_CHAPTER,P2,Élément de contrôle transversal — peut être format plutôt que chapitre,REVIEW_AS_FORMAT_OR_CHAPTER
+FRENCH,Français — programme 3e,Interprétation,,MISSING_CHAPTER,P1,Aucun chapitre sémantiquement équivalent trouvé,ADD_CHAPTER_IN_LCAI_0039
+FRENCH,Français — programme 3e,Grammaire,,MISSING_CHAPTER,P1,Aucun chapitre sémantiquement équivalent trouvé,ADD_CHAPTER_IN_LCAI_0039
+FRENCH,Français — programme 3e,Conjugaison,Conjugaison,NO_OFFICIAL_ARCHIVE_COVERAGE,P2,official_question_count=0,MAP_OR_INGEST_OFFICIAL
+FRENCH,Français — programme 3e,Réécriture,,MISSING_CHAPTER,P1,Aucun chapitre sémantiquement équivalent trouvé,ADD_CHAPTER_IN_LCAI_0039
+FRENCH,Français — programme 3e,Dictée,,MISSING_CHAPTER,P1,Aucun chapitre sémantiquement équivalent trouvé,ADD_CHAPTER_IN_LCAI_0039
+FRENCH,Français — programme 3e,Rédaction,,MISSING_CHAPTER,P1,Aucun chapitre sémantiquement équivalent trouvé,ADD_CHAPTER_IN_LCAI_0039
+HISTORY,Histoire — programme 3e,République,,MISSING_CHAPTER,P1,Aucun chapitre sémantiquement équivalent trouvé,ADD_CHAPTER_IN_LCAI_0039
+HISTORY,Histoire — programme 3e,Colonisation,Colonisation,NO_OFFICIAL_ARCHIVE_COVERAGE,P2,official_question_count=0,MAP_OR_INGEST_OFFICIAL
+HISTORY,Histoire — programme 3e,Décolonisation,Colonisation,NO_OFFICIAL_ARCHIVE_COVERAGE,P2,official_question_count=0,MAP_OR_INGEST_OFFICIAL
+GEOGRAPHY,Géographie — programme 3e,Territoires,France et territoires,NO_OFFICIAL_ARCHIVE_COVERAGE,P2,official_question_count=0,MAP_OR_INGEST_OFFICIAL
+GEOGRAPHY,Géographie — programme 3e,Aménagement,,MISSING_CHAPTER,P1,Aucun chapitre sémantiquement équivalent trouvé,ADD_CHAPTER_IN_LCAI_0039
+GEOGRAPHY,Géographie — programme 3e,Développement durable,Développement durable,NO_OFFICIAL_ARCHIVE_COVERAGE,P2,official_question_count=0,MAP_OR_INGEST_OFFICIAL
+GEOGRAPHY,Géographie — programme 3e,Mobilités,Mobilités humaines,NO_OFFICIAL_ARCHIVE_COVERAGE,P2,official_question_count=0,MAP_OR_INGEST_OFFICIAL
+GEOGRAPHY,Géographie — programme 3e,France,France et territoires,NO_OFFICIAL_ARCHIVE_COVERAGE,P2,official_question_count=0,MAP_OR_INGEST_OFFICIAL
+GEOGRAPHY,Géographie — programme 3e,Union européenne,Union européenne,NO_OFFICIAL_ARCHIVE_COVERAGE,P2,official_question_count=0,MAP_OR_INGEST_OFFICIAL
+GEOGRAPHY,Géographie — programme 3e,Mondialisation,Mondialisation,NO_OFFICIAL_ARCHIVE_COVERAGE,P2,official_question_count=0,MAP_OR_INGEST_OFFICIAL
+EMC,EMC — programme 3e,Citoyenneté,Citoyenneté,NO_OFFICIAL_ARCHIVE_COVERAGE,P2,official_question_count=0,MAP_OR_INGEST_OFFICIAL
+EMC,EMC — programme 3e,Institutions,,MISSING_CHAPTER,P1,Aucun chapitre sémantiquement équivalent trouvé,ADD_CHAPTER_IN_LCAI_0039
+EMC,EMC — programme 3e,Valeurs de la République,Valeurs de la République,NO_OFFICIAL_ARCHIVE_COVERAGE,P2,official_question_count=0,MAP_OR_INGEST_OFFICIAL
+EMC,EMC — programme 3e,Défense,,MISSING_CHAPTER,P1,Aucun chapitre sémantiquement équivalent trouvé,ADD_CHAPTER_IN_LCAI_0039
+EMC,EMC — programme 3e,Engagement,,MISSING_CHAPTER,P1,Aucun chapitre sémantiquement équivalent trouvé,ADD_CHAPTER_IN_LCAI_0039
+PHYSICS_CHEMISTRY,Physique-Chimie — programme 3e,Chimie,,MISSING_CHAPTER,P1,Aucun chapitre sémantiquement équivalent trouvé,ADD_CHAPTER_IN_LCAI_0039
+PHYSICS_CHEMISTRY,Physique-Chimie — programme 3e,Optique,,MISSING_CHAPTER,P1,Aucun chapitre sémantiquement équivalent trouvé,ADD_CHAPTER_IN_LCAI_0039
+SVT,SVT — programme 3e,ADN et génétique,ADN et génétique,NO_OFFICIAL_ARCHIVE_COVERAGE,P2,official_question_count=0,MAP_OR_INGEST_OFFICIAL
+SVT,SVT — programme 3e,Immunité,Immunité,NO_OFFICIAL_ARCHIVE_COVERAGE,P2,official_question_count=0,MAP_OR_INGEST_OFFICIAL
+SVT,SVT — programme 3e,Évolution,Évolution,NO_OFFICIAL_ARCHIVE_COVERAGE,P2,official_question_count=0,MAP_OR_INGEST_OFFICIAL
+SVT,SVT — programme 3e,Planète Terre,,MISSING_CHAPTER,P1,Aucun chapitre sémantiquement équivalent trouvé,ADD_CHAPTER_IN_LCAI_0039
+SVT,SVT — programme 3e,Corps humain,,MISSING_CHAPTER,P1,Aucun chapitre sémantiquement équivalent trouvé,ADD_CHAPTER_IN_LCAI_0039
+TECHNOLOGY,Technologie — programme 3e,Objets techniques,Objets techniques,NO_OFFICIAL_ARCHIVE_COVERAGE,P2,official_question_count=0,MAP_OR_INGEST_OFFICIAL
+TECHNOLOGY,Technologie — programme 3e,Énergie,Chaîne d'énergie,NO_OFFICIAL_ARCHIVE_COVERAGE,P2,official_question_count=0,MAP_OR_INGEST_OFFICIAL
+TECHNOLOGY,Technologie — programme 3e,Informatique,,MISSING_CHAPTER,P1,Aucun chapitre sémantiquement équivalent trouvé,ADD_CHAPTER_IN_LCAI_0039
+TECHNOLOGY,Technologie — programme 3e,Algorithmique,,MISSING_CHAPTER,P1,Aucun chapitre sémantiquement équivalent trouvé,ADD_CHAPTER_IN_LCAI_0039
+TECHNOLOGY,Technologie — programme 3e,Design,,MISSING_CHAPTER,P1,Aucun chapitre sémantiquement équivalent trouvé,ADD_CHAPTER_IN_LCAI_0039
+FRENCH,(unique),Domaines pédagogiques structurés,1 domaine(s),NAMING_INCONSISTENCY,P2,Un seul domaine agrège tous les chapitres,SPLIT_DOMAINS_IN_LCAI_0039
+FRENCH,,Sous-compétences,0 subskills,MISSING_SUBSKILL,P3,Aucune sous-compétence en base,OPTIONAL_SUBSKILL_MODEL
+MATHEMATICS,(unique),Domaines pédagogiques structurés,1 domaine(s),NAMING_INCONSISTENCY,P2,Un seul domaine agrège tous les chapitres,SPLIT_DOMAINS_IN_LCAI_0039
+MATHEMATICS,,Sous-compétences,0 subskills,MISSING_SUBSKILL,P3,Aucune sous-compétence en base,OPTIONAL_SUBSKILL_MODEL
+HISTORY,(unique),Domaines pédagogiques structurés,1 domaine(s),NAMING_INCONSISTENCY,P2,Un seul domaine agrège tous les chapitres,SPLIT_DOMAINS_IN_LCAI_0039
+HISTORY,,Sous-compétences,0 subskills,MISSING_SUBSKILL,P3,Aucune sous-compétence en base,OPTIONAL_SUBSKILL_MODEL
+GEOGRAPHY,(unique),Domaines pédagogiques structurés,1 domaine(s),NAMING_INCONSISTENCY,P2,Un seul domaine agrège tous les chapitres,SPLIT_DOMAINS_IN_LCAI_0039
+GEOGRAPHY,,Sous-compétences,0 subskills,MISSING_SUBSKILL,P3,Aucune sous-compétence en base,OPTIONAL_SUBSKILL_MODEL
+EMC,(unique),Domaines pédagogiques structurés,1 domaine(s),NAMING_INCONSISTENCY,P2,Un seul domaine agrège tous les chapitres,SPLIT_DOMAINS_IN_LCAI_0039
+EMC,,Sous-compétences,0 subskills,MISSING_SUBSKILL,P3,Aucune sous-compétence en base,OPTIONAL_SUBSKILL_MODEL
+PHYSICS_CHEMISTRY,(unique),Domaines pédagogiques structurés,1 domaine(s),NAMING_INCONSISTENCY,P2,Un seul domaine agrège tous les chapitres,SPLIT_DOMAINS_IN_LCAI_0039
+PHYSICS_CHEMISTRY,,Sous-compétences,0 subskills,MISSING_SUBSKILL,P3,Aucune sous-compétence en base,OPTIONAL_SUBSKILL_MODEL
+SVT,(unique),Domaines pédagogiques structurés,1 domaine(s),NAMING_INCONSISTENCY,P2,Un seul domaine agrège tous les chapitres,SPLIT_DOMAINS_IN_LCAI_0039
+SVT,,Sous-compétences,0 subskills,MISSING_SUBSKILL,P3,Aucune sous-compétence en base,OPTIONAL_SUBSKILL_MODEL
+TECHNOLOGY,(unique),Domaines pédagogiques structurés,1 domaine(s),NAMING_INCONSISTENCY,P2,Un seul domaine agrège tous les chapitres,SPLIT_DOMAINS_IN_LCAI_0039
+TECHNOLOGY,,Sous-compétences,0 subskills,MISSING_SUBSKILL,P3,Aucune sous-compétence en base,OPTIONAL_SUBSKILL_MODEL
+FRENCH,Français — programme 3e,Conjugaison,Conjugaison,NO_OFFICIAL_ARCHIVE_COVERAGE,P2,skill_id=18 without OFFICIAL_ARCHIVE content,MAP_OFFICIAL_QUESTIONS
+FRENCH,Français — programme 3e,Homophones grammaticaux,Homophones grammaticaux,NO_OFFICIAL_ARCHIVE_COVERAGE,P2,skill_id=20 without OFFICIAL_ARCHIVE content,MAP_OFFICIAL_QUESTIONS
+FRENCH,Français — programme 3e,Phrases complexes,Phrases complexes,NO_OFFICIAL_ARCHIVE_COVERAGE,P2,skill_id=23 without OFFICIAL_ARCHIVE content,MAP_OFFICIAL_QUESTIONS
+MATHEMATICS,Mathématiques — programme 3e,Fractions,Fractions,NO_OFFICIAL_ARCHIVE_COVERAGE,P2,skill_id=2 without OFFICIAL_ARCHIVE content,MAP_OFFICIAL_QUESTIONS
+MATHEMATICS,Mathématiques — programme 3e,Conversions,Conversions,NO_OFFICIAL_ARCHIVE_COVERAGE,P2,skill_id=8 without OFFICIAL_ARCHIVE content,MAP_OFFICIAL_QUESTIONS
+MATHEMATICS,Mathématiques — programme 3e,Pythagore,Pythagore,NO_OFFICIAL_ARCHIVE_COVERAGE,P2,skill_id=9 without OFFICIAL_ARCHIVE content,MAP_OFFICIAL_QUESTIONS
+MATHEMATICS,Mathématiques — programme 3e,Thalès,Thalès,NO_OFFICIAL_ARCHIVE_COVERAGE,P2,skill_id=10 without OFFICIAL_ARCHIVE content,MAP_OFFICIAL_QUESTIONS
+HISTORY,Histoire — programme 3e,Empire napoléonien,Empire napoléonien,NO_OFFICIAL_ARCHIVE_COVERAGE,P2,skill_id=28 without OFFICIAL_ARCHIVE content,MAP_OFFICIAL_QUESTIONS
+HISTORY,Histoire — programme 3e,Industrialisation,Industrialisation,NO_OFFICIAL_ARCHIVE_COVERAGE,P2,skill_id=29 without OFFICIAL_ARCHIVE content,MAP_OFFICIAL_QUESTIONS
+HISTORY,Histoire — programme 3e,Colonisation,Colonisation,NO_OFFICIAL_ARCHIVE_COVERAGE,P2,skill_id=31 without OFFICIAL_ARCHIVE content,MAP_OFFICIAL_QUESTIONS
+HISTORY,Histoire — programme 3e,Totalitarismes,Totalitarismes,NO_OFFICIAL_ARCHIVE_COVERAGE,P2,skill_id=33 without OFFICIAL_ARCHIVE content,MAP_OFFICIAL_QUESTIONS
+GEOGRAPHY,Géographie — programme 3e,Urbanisation,Urbanisation,NO_OFFICIAL_ARCHIVE_COVERAGE,P2,skill_id=37 without OFFICIAL_ARCHIVE content,MAP_OFFICIAL_QUESTIONS
+GEOGRAPHY,Géographie — programme 3e,Mondialisation,Mondialisation,NO_OFFICIAL_ARCHIVE_COVERAGE,P2,skill_id=38 without OFFICIAL_ARCHIVE content,MAP_OFFICIAL_QUESTIONS
+GEOGRAPHY,Géographie — programme 3e,Mobilités humaines,Mobilités humaines,NO_OFFICIAL_ARCHIVE_COVERAGE,P2,skill_id=39 without OFFICIAL_ARCHIVE content,MAP_OFFICIAL_QUESTIONS
+GEOGRAPHY,Géographie — programme 3e,Espaces productifs,Espaces productifs,NO_OFFICIAL_ARCHIVE_COVERAGE,P2,skill_id=40 without OFFICIAL_ARCHIVE content,MAP_OFFICIAL_QUESTIONS
+GEOGRAPHY,Géographie — programme 3e,Développement durable,Développement durable,NO_OFFICIAL_ARCHIVE_COVERAGE,P2,skill_id=41 without OFFICIAL_ARCHIVE content,MAP_OFFICIAL_QUESTIONS
+GEOGRAPHY,Géographie — programme 3e,Risques naturels,Risques naturels,NO_OFFICIAL_ARCHIVE_COVERAGE,P2,skill_id=42 without OFFICIAL_ARCHIVE content,MAP_OFFICIAL_QUESTIONS
+GEOGRAPHY,Géographie — programme 3e,France et territoires,France et territoires,NO_OFFICIAL_ARCHIVE_COVERAGE,P2,skill_id=43 without OFFICIAL_ARCHIVE content,MAP_OFFICIAL_QUESTIONS
+GEOGRAPHY,Géographie — programme 3e,Union européenne,Union européenne,NO_OFFICIAL_ARCHIVE_COVERAGE,P2,skill_id=44 without OFFICIAL_ARCHIVE content,MAP_OFFICIAL_QUESTIONS
+GEOGRAPHY,Géographie — programme 3e,Inégalités mondiales,Inégalités mondiales,NO_OFFICIAL_ARCHIVE_COVERAGE,P2,skill_id=45 without OFFICIAL_ARCHIVE content,MAP_OFFICIAL_QUESTIONS
+EMC,EMC — programme 3e,Valeurs de la République,Valeurs de la République,NO_OFFICIAL_ARCHIVE_COVERAGE,P2,skill_id=46 without OFFICIAL_ARCHIVE content,MAP_OFFICIAL_QUESTIONS
+EMC,EMC — programme 3e,Citoyenneté,Citoyenneté,NO_OFFICIAL_ARCHIVE_COVERAGE,P2,skill_id=47 without OFFICIAL_ARCHIVE content,MAP_OFFICIAL_QUESTIONS
+EMC,EMC — programme 3e,Laïcité,Laïcité,NO_OFFICIAL_ARCHIVE_COVERAGE,P2,skill_id=48 without OFFICIAL_ARCHIVE content,MAP_OFFICIAL_QUESTIONS
+EMC,EMC — programme 3e,Libertés et droits,Libertés et droits,NO_OFFICIAL_ARCHIVE_COVERAGE,P2,skill_id=49 without OFFICIAL_ARCHIVE content,MAP_OFFICIAL_QUESTIONS
+EMC,EMC — programme 3e,Justice,Justice,NO_OFFICIAL_ARCHIVE_COVERAGE,P2,skill_id=50 without OFFICIAL_ARCHIVE content,MAP_OFFICIAL_QUESTIONS
+EMC,EMC — programme 3e,Médias et esprit critique,Médias et esprit critique,NO_OFFICIAL_ARCHIVE_COVERAGE,P2,skill_id=51 without OFFICIAL_ARCHIVE content,MAP_OFFICIAL_QUESTIONS
+PHYSICS_CHEMISTRY,Physique-Chimie — programme 3e,Réactions chimiques,Réactions chimiques,NO_OFFICIAL_ARCHIVE_COVERAGE,P2,skill_id=59 without OFFICIAL_ARCHIVE content,MAP_OFFICIAL_QUESTIONS
+PHYSICS_CHEMISTRY,Physique-Chimie — programme 3e,Acides et bases,Acides et bases,NO_OFFICIAL_ARCHIVE_COVERAGE,P2,skill_id=61 without OFFICIAL_ARCHIVE content,MAP_OFFICIAL_QUESTIONS
+SVT,SVT — programme 3e,Cellule,Cellule,NO_OFFICIAL_ARCHIVE_COVERAGE,P2,skill_id=62 without OFFICIAL_ARCHIVE content,MAP_OFFICIAL_QUESTIONS
+SVT,SVT — programme 3e,ADN et génétique,ADN et génétique,NO_OFFICIAL_ARCHIVE_COVERAGE,P2,skill_id=63 without OFFICIAL_ARCHIVE content,MAP_OFFICIAL_QUESTIONS
+SVT,SVT — programme 3e,Reproduction,Reproduction,NO_OFFICIAL_ARCHIVE_COVERAGE,P2,skill_id=64 without OFFICIAL_ARCHIVE content,MAP_OFFICIAL_QUESTIONS
+SVT,SVT — programme 3e,Évolution,Évolution,NO_OFFICIAL_ARCHIVE_COVERAGE,P2,skill_id=65 without OFFICIAL_ARCHIVE content,MAP_OFFICIAL_QUESTIONS
+SVT,SVT — programme 3e,Immunité,Immunité,NO_OFFICIAL_ARCHIVE_COVERAGE,P2,skill_id=66 without OFFICIAL_ARCHIVE content,MAP_OFFICIAL_QUESTIONS
+SVT,SVT — programme 3e,Nutrition et digestion,Nutrition et digestion,NO_OFFICIAL_ARCHIVE_COVERAGE,P2,skill_id=67 without OFFICIAL_ARCHIVE content,MAP_OFFICIAL_QUESTIONS
+SVT,SVT — programme 3e,Respiration et circulation,Respiration et circulation,NO_OFFICIAL_ARCHIVE_COVERAGE,P2,skill_id=68 without OFFICIAL_ARCHIVE content,MAP_OFFICIAL_QUESTIONS
+SVT,SVT — programme 3e,Écosystèmes,Écosystèmes,NO_OFFICIAL_ARCHIVE_COVERAGE,P2,skill_id=69 without OFFICIAL_ARCHIVE content,MAP_OFFICIAL_QUESTIONS
+SVT,SVT — programme 3e,Climat,Climat,NO_OFFICIAL_ARCHIVE_COVERAGE,P2,skill_id=70 without OFFICIAL_ARCHIVE content,MAP_OFFICIAL_QUESTIONS
+SVT,SVT — programme 3e,Géologie,Géologie,NO_OFFICIAL_ARCHIVE_COVERAGE,P2,skill_id=71 without OFFICIAL_ARCHIVE content,MAP_OFFICIAL_QUESTIONS
+TECHNOLOGY,Technologie — programme 3e,Objets techniques,Objets techniques,NO_OFFICIAL_ARCHIVE_COVERAGE,P2,skill_id=72 without OFFICIAL_ARCHIVE content,MAP_OFFICIAL_QUESTIONS
+TECHNOLOGY,Technologie — programme 3e,Chaîne d'énergie,Chaîne d'énergie,NO_OFFICIAL_ARCHIVE_COVERAGE,P2,skill_id=73 without OFFICIAL_ARCHIVE content,MAP_OFFICIAL_QUESTIONS
+TECHNOLOGY,Technologie — programme 3e,Chaîne d'information,Chaîne d'information,NO_OFFICIAL_ARCHIVE_COVERAGE,P2,skill_id=74 without OFFICIAL_ARCHIVE content,MAP_OFFICIAL_QUESTIONS
+TECHNOLOGY,Technologie — programme 3e,Programmation,Programmation,NO_OFFICIAL_ARCHIVE_COVERAGE,P2,skill_id=75 without OFFICIAL_ARCHIVE content,MAP_OFFICIAL_QUESTIONS
+TECHNOLOGY,Technologie — programme 3e,Réseaux,Réseaux,NO_OFFICIAL_ARCHIVE_COVERAGE,P2,skill_id=76 without OFFICIAL_ARCHIVE content,MAP_OFFICIAL_QUESTIONS
+TECHNOLOGY,Technologie — programme 3e,Développement durable,Développement durable,NO_OFFICIAL_ARCHIVE_COVERAGE,P2,skill_id=77 without OFFICIAL_ARCHIVE content,MAP_OFFICIAL_QUESTIONS

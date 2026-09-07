@@ -1,0 +1,19 @@
+subject,chapter,skill,importance,status_before,exercise_count_before,family_count_before,official_count_before,reused_count,remapped_count,generated_count,rejected_generated_count,exercise_count_after,family_count_after,official_count_after,status_after
+FRENCH,Compréhension de textes,Repérer des informations explicites,CRITICAL,PARTIAL,50,12,30,50,0,0,0,50,12,30,COMPLETE
+FRENCH,Interprétation et analyse,Procédés d'écriture,CRITICAL,PARTIAL,50,13,2,50,0,0,0,50,13,2,COMPLETE
+FRENCH,Interprétation et analyse,Point de vue et intentions,CRITICAL,PARTIAL,50,12,4,50,0,0,0,50,12,4,COMPLETE
+FRENCH,Vocabulaire,Sens des mots,MEDIUM,PARTIAL,30,11,99,30,0,0,0,30,11,99,COMPLETE
+FRENCH,Vocabulaire,Formation des mots,MEDIUM,PARTIAL,30,12,6,30,0,0,0,30,12,6,COMPLETE
+MATHEMATICS,Puissances et notation scientifique,Propriétés des puissances,HIGH,PARTIAL,40,13,4,40,0,0,0,40,13,4,COMPLETE
+MATHEMATICS,Aires et volumes,Calculer des aires,HIGH,PARTIAL,40,13,111,40,0,0,0,40,13,111,COMPLETE
+MATHEMATICS,"Variables, conditions et boucles",Variables et affectations,HIGH,PARTIAL,40,12,5,40,0,0,0,40,12,5,COMPLETE
+HISTORY,Démocraties et totalitarismes dans l'Europe de l'entre-deux-guerres,Régimes totalitaires,CRITICAL,PARTIAL,50,13,10,50,0,0,0,50,13,10,COMPLETE
+HISTORY,Démocraties et totalitarismes dans l'Europe de l'entre-deux-guerres,Démocraties face à la crise,CRITICAL,PARTIAL,50,12,4,50,0,0,0,50,12,4,COMPLETE
+HISTORY,"La Seconde Guerre mondiale, une guerre d'anéantissement",Génocide des Juifs et des Tsiganes,CRITICAL,PARTIAL,50,12,14,50,0,0,0,50,12,14,COMPLETE
+HISTORY,Un monde bipolaire au temps de la Guerre froide,Blocs Est / Ouest,CRITICAL,PARTIAL,50,12,3,50,0,0,0,50,12,3,COMPLETE
+HISTORY,Femmes et hommes dans la société des années 1950 aux années 1980,Transformations sociales,HIGH,PARTIAL,40,12,31,40,0,0,0,40,12,31,COMPLETE
+HISTORY,Femmes et hommes dans la société des années 1950 aux années 1980,Place des femmes,HIGH,PARTIAL,40,12,11,40,0,0,0,40,12,11,COMPLETE
+PHYSICS_CHEMISTRY,Atomes et molécules,Modèle de l'atome,HIGH,PARTIAL,40,13,1,40,0,0,0,40,13,1,COMPLETE
+PHYSICS_CHEMISTRY,Masse volumique et identification,Mesurer et calculer,MEDIUM,PARTIAL,30,11,3,30,0,0,0,30,11,3,COMPLETE
+PHYSICS_CHEMISTRY,Mouvement et vitesse,Décrire un mouvement,HIGH,PARTIAL,40,13,5,40,0,0,0,40,13,5,COMPLETE
+PHYSICS_CHEMISTRY,Lumière et signaux lumineux,Propagation de la lumière,HIGH,PARTIAL,40,13,1,40,0,0,0,40,13,1,COMPLETE

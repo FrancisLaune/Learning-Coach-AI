@@ -1,0 +1,113 @@
+{
+  "ticket": "LCAI-0038",
+  "generated_at": "2026-09-07T09:36:19.260925+00:00",
+  "auditor_version": "lcai-0038-curriculum-audit-v1",
+  "database_sha256": "f97e849deec364aed120961f22ef07e3398a159a7e74080b076a720c27fe95d9",
+  "stats": {
+    "subjects": 11,
+    "domains": 9,
+    "chapters": 78,
+    "skills": 78,
+    "subskills": 0,
+    "gaps": 111,
+    "orphans": 0,
+    "duplicates": 3
+  },
+  "verdicts": {
+    "CURRICULUM EXTRACTION": "PASS",
+    "TREE INTEGRITY": "PARTIAL",
+    "MATHEMATICS CURRICULUM TREE": "INCOMPLETE",
+    "FRENCH CURRICULUM TREE": "PARTIAL",
+    "HISTORY CURRICULUM TREE": "PARTIAL",
+    "GEOGRAPHY CURRICULUM TREE": "PARTIAL",
+    "EMC CURRICULUM TREE": "PARTIAL",
+    "PHYSICS_CHEMISTRY CURRICULUM TREE": "PARTIAL",
+    "SVT CURRICULUM TREE": "PARTIAL",
+    "TECHNOLOGY CURRICULUM TREE": "PARTIAL",
+    "ORPHAN DETECTION": "PASS",
+    "DUPLICATE DETECTION": "PASS",
+    "TARGET COMPARISON": "PASS",
+    "READ-ONLY NON-REGRESSION": "PASS",
+    "REVIEW PACKAGE": "PASS"
+  },
+  "files": [
+    {
+      "path": "LCAI-0038_IMPLEMENTATION_REPORT.md",
+      "size": 868,
+      "sha256": "f8be3c2f67e900690d3e641734165f37f3af8ddd6ecc9abe3c31a707d108182d",
+      "purpose": "LCAI-0038_IMPLEMENTATION_REPORT.md"
+    },
+    {
+      "path": "LCAI-0038_PRE_AUDIT_STATE.md",
+      "size": 1589,
+      "sha256": "3a3cba7bed4029e709788881176d0657afb7b22521cb12d378c0314aa853dc46",
+      "purpose": "LCAI-0038_PRE_AUDIT_STATE.md"
+    },
+    {
+      "path": "LCAI-0038_CURRICULUM_TREE.md",
+      "size": 6968,
+      "sha256": "afd064ff1f1276c1e46712bcec4d920fb04b0bc0659acfd5e53da2150d0583a9",
+      "purpose": "LCAI-0038_CURRICULUM_TREE.md"
+    },
+    {
+      "path": "LCAI-0038_MATHEMATICS_TREE.md",
+      "size": 5816,
+      "sha256": "f8abf95c782b4233e785e604ddf2a3830a3d5a7cf5f49472fe35a5d9f17fd317",
+      "purpose": "LCAI-0038_MATHEMATICS_TREE.md"
+    },
+    {
+      "path": "LCAI-0038_CURRICULUM_TREE.csv",
+      "size": 7406,
+      "sha256": "73078bfd59a7fd6e4886a974ebd1aafba2ffd5682f48e5861094676d35a40d85",
+      "purpose": "LCAI-0038_CURRICULUM_TREE.csv"
+    },
+    {
+      "path": "LCAI-0038_CHAPTER_INVENTORY.csv",
+      "size": 7851,
+      "sha256": "4b5005a00fb6e8bc314a69e0cdece0778f2e7afeb09831a5592883a9c2e59baa",
+      "purpose": "LCAI-0038_CHAPTER_INVENTORY.csv"
+    },
+    {
+      "path": "LCAI-0038_CURRICULUM_GAPS.csv",
+      "size": 17484,
+      "sha256": "0db03654932325d99529bb24e6c7803e286adccb8799b288bb30b14cc87cae4d",
+      "purpose": "LCAI-0038_CURRICULUM_GAPS.csv"
+    },
+    {
+      "path": "LCAI-0038_ORPHAN_NODES.csv",
+      "size": 30,
+      "sha256": "9e2dee3f04c6b181c9d00717f95806d013bfc96a397284542326701f1cc7bfad",
+      "purpose": "LCAI-0038_ORPHAN_NODES.csv"
+    },
+    {
+      "path": "LCAI-0038_DUPLICATE_AND_OVERLAP_REPORT.md",
+      "size": 367,
+      "sha256": "6dcaec94feb9ba8f07a26e9ac7af81c74013a4339bac2495f59a7be1abfcdaff",
+      "purpose": "LCAI-0038_DUPLICATE_AND_OVERLAP_REPORT.md"
+    },
+    {
+      "path": "LCAI-0038_CURRICULUM_COVERAGE_REPORT.md",
+      "size": 885,
+      "sha256": "9bf0698a0633da53aee6a5afb0917a8755bf0be8147792e8fd6252db9a5c20b7",
+      "purpose": "LCAI-0038_CURRICULUM_COVERAGE_REPORT.md"
+    },
+    {
+      "path": "LCAI-0038_TARGET_COMPARISON.md",
+      "size": 3740,
+      "sha256": "4327058cc2b323a77a4173d086ad23ceca90124850343bc7af862f6fe445343c",
+      "purpose": "LCAI-0038_TARGET_COMPARISON.md"
+    },
+    {
+      "path": "LCAI-0038_TEST_REPORT.md",
+      "size": 730,
+      "sha256": "ae873eaa6f6f920b83a2e3ea38fa0195c2c2891cf521e0f1af47e7f78a5ca98c",
+      "purpose": "LCAI-0038_TEST_REPORT.md"
+    },
+    {
+      "path": "LCAI-0038_NON_REGRESSION_REPORT.md",
+      "size": 131,
+      "sha256": "b658aef49f469f0f901f507988bdf49ad71f8262048cb22d1b2d8abe9fc27276",
+      "purpose": "LCAI-0038_NON_REGRESSION_REPORT.md"
+    }
+  ]
+}

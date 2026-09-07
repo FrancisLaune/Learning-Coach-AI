@@ -1,0 +1,33 @@
+# LCAI-0039 — FRENCH report
+
+- domains defined: 4
+- verdict: PARTIAL
+
+- Lecture et compréhension / Compréhension de textes / Repérer des informations explicites: PARTIAL (n=30, families=12, official=0)
+- Lecture et compréhension / Compréhension de textes / Inférer des informations implicites: PARTIAL (n=30, families=12, official=0)
+- Lecture et compréhension / Compréhension de textes / Comprendre le sens global: PARTIAL (n=30, families=12, official=0)
+- Lecture et compréhension / Interprétation et analyse / Procédés d'écriture: COMPLETE (n=50, families=13, official=0)
+- Lecture et compréhension / Interprétation et analyse / Point de vue et intentions: PARTIAL (n=30, families=12, official=0)
+- Langue (grammaire, conjugaison, orthographe, vocabulaire) / Grammaire et syntaxe / Classes grammaticales: PARTIAL (n=60, families=1, official=0)
+- Langue (grammaire, conjugaison, orthographe, vocabulaire) / Grammaire et syntaxe / Fonctions dans la phrase: PARTIAL (n=30, families=12, official=0)
+- Langue (grammaire, conjugaison, orthographe, vocabulaire) / Grammaire et syntaxe / Phrase simple et complexe: PARTIAL (n=30, families=12, official=0)
+- Langue (grammaire, conjugaison, orthographe, vocabulaire) / Conjugaison / Temps et modes: COMPLETE (n=40, families=9, official=0)
+- Langue (grammaire, conjugaison, orthographe, vocabulaire) / Conjugaison / Accords du verbe: PARTIAL (n=30, families=12, official=0)
+- Langue (grammaire, conjugaison, orthographe, vocabulaire) / Orthographe et accords / Orthographe lexicale: PARTIAL (n=100, families=2, official=0)
+- Langue (grammaire, conjugaison, orthographe, vocabulaire) / Orthographe et accords / Accords dans le groupe nominal: PARTIAL (n=30, families=12, official=0)
+- Langue (grammaire, conjugaison, orthographe, vocabulaire) / Orthographe et accords / Accord sujet-verbe: PARTIAL (n=30, families=12, official=0)
+- Langue (grammaire, conjugaison, orthographe, vocabulaire) / Vocabulaire / Sens des mots: COMPLETE (n=30, families=11, official=0)
+- Langue (grammaire, conjugaison, orthographe, vocabulaire) / Vocabulaire / Formation des mots: COMPLETE (n=30, families=12, official=0)
+- Écriture / Réécriture / Transformer un texte: COMPLETE (n=40, families=12, official=0)
+- Écriture / Réécriture / Maintenir la cohérence: COMPLETE (n=40, families=12, official=0)
+- Écriture / Dictée / Orthographe en situation: COMPLETE (n=40, families=12, official=0)
+- Écriture / Dictée / Stratégies de relecture: COMPLETE (n=40, families=12, official=0)
+- Écriture / Expression écrite / Organiser un écrit: PARTIAL (n=30, families=12, official=0)
+- Écriture / Expression écrite / Qualité de l'expression: PARTIAL (n=30, families=12, official=0)
+- Écriture / Expression écrite / Genres d'écrits: PARTIAL (n=30, families=12, official=0)
+- Écriture / Argumentation / Construire une thèse: PARTIAL (n=30, families=12, official=0)
+- Écriture / Argumentation / Structurer un paragraphe argumentatif: PARTIAL (n=30, families=12, official=0)
+- Formats d'épreuve DNB / Compréhension et compétences linguistiques (DNB) / Questions de compréhension: COMPLETE (n=50, families=10, official=0)
+- Formats d'épreuve DNB / Compréhension et compétences linguistiques (DNB) / Compétences linguistiques: PARTIAL (n=30, families=12, official=0)
+- Formats d'épreuve DNB / Rédaction DNB / Traiter le sujet: COMPLETE (n=50, families=11, official=0)
+- Formats d'épreuve DNB / Rédaction DNB / Produire un texte abouti: PARTIAL (n=30, families=12, official=0)

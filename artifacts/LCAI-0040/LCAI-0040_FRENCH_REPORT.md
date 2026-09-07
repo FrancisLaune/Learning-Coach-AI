@@ -1,0 +1,34 @@
+# LCAI-0040 — FRENCH
+
+- verdict: COMPLETE
+- skills: 28
+- COMPLETE: 28
+
+- Compréhension de textes / Repérer des informations explicites: COMPLETE (n=50, families=12, official=30)
+- Compréhension de textes / Inférer des informations implicites: COMPLETE (n=50, families=12, official=0)
+- Compréhension de textes / Comprendre le sens global: COMPLETE (n=50, families=12, official=0)
+- Interprétation et analyse / Procédés d'écriture: COMPLETE (n=50, families=13, official=2)
+- Interprétation et analyse / Point de vue et intentions: COMPLETE (n=50, families=12, official=4)
+- Grammaire et syntaxe / Classes grammaticales: COMPLETE (n=66, families=7, official=46)
+- Grammaire et syntaxe / Fonctions dans la phrase: COMPLETE (n=40, families=12, official=0)
+- Grammaire et syntaxe / Phrase simple et complexe: COMPLETE (n=40, families=12, official=0)
+- Conjugaison / Temps et modes: COMPLETE (n=40, families=9, official=0)
+- Conjugaison / Accords du verbe: COMPLETE (n=40, families=12, official=0)
+- Orthographe et accords / Orthographe lexicale: COMPLETE (n=106, families=8, official=165)
+- Orthographe et accords / Accords dans le groupe nominal: COMPLETE (n=40, families=12, official=0)
+- Orthographe et accords / Accord sujet-verbe: COMPLETE (n=40, families=12, official=0)
+- Vocabulaire / Sens des mots: COMPLETE (n=30, families=11, official=99)
+- Vocabulaire / Formation des mots: COMPLETE (n=30, families=12, official=6)
+- Réécriture / Transformer un texte: COMPLETE (n=40, families=12, official=0)
+- Réécriture / Maintenir la cohérence: COMPLETE (n=40, families=12, official=0)
+- Dictée / Orthographe en situation: COMPLETE (n=40, families=12, official=0)
+- Dictée / Stratégies de relecture: COMPLETE (n=40, families=12, official=0)
+- Expression écrite / Organiser un écrit: COMPLETE (n=50, families=12, official=0)
+- Expression écrite / Qualité de l'expression: COMPLETE (n=50, families=12, official=0)
+- Expression écrite / Genres d'écrits: COMPLETE (n=50, families=12, official=0)
+- Argumentation / Construire une thèse: COMPLETE (n=50, families=12, official=0)
+- Argumentation / Structurer un paragraphe argumentatif: COMPLETE (n=50, families=12, official=0)
+- Compréhension et compétences linguistiques (DNB) / Questions de compréhension: COMPLETE (n=50, families=10, official=348)
+- Compréhension et compétences linguistiques (DNB) / Compétences linguistiques: COMPLETE (n=50, families=12, official=0)
+- Rédaction DNB / Traiter le sujet: COMPLETE (n=50, families=11, official=150)
+- Rédaction DNB / Produire un texte abouti: COMPLETE (n=50, families=12, official=0)

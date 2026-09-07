@@ -1,0 +1,161 @@
+subject,domain,chapter,skill,coverage_status,exercise_count,reason,severity,blocking,recommended_action
+FRENCH,Lecture et compréhension,Compréhension de textes,Repérer des informations explicites,PARTIAL,30,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+FRENCH,Lecture et compréhension,Compréhension de textes,Inférer des informations implicites,PARTIAL,30,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+FRENCH,Lecture et compréhension,Compréhension de textes,Comprendre le sens global,PARTIAL,30,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+FRENCH,Lecture et compréhension,Interprétation et analyse,Point de vue et intentions,PARTIAL,30,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+FRENCH,"Langue (grammaire, conjugaison, orthographe, vocabulaire)",Grammaire et syntaxe,Classes grammaticales,PARTIAL,60,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+FRENCH,"Langue (grammaire, conjugaison, orthographe, vocabulaire)",Grammaire et syntaxe,Fonctions dans la phrase,PARTIAL,30,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+FRENCH,"Langue (grammaire, conjugaison, orthographe, vocabulaire)",Grammaire et syntaxe,Phrase simple et complexe,PARTIAL,30,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+FRENCH,"Langue (grammaire, conjugaison, orthographe, vocabulaire)",Conjugaison,Accords du verbe,PARTIAL,30,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+FRENCH,"Langue (grammaire, conjugaison, orthographe, vocabulaire)",Orthographe et accords,Orthographe lexicale,PARTIAL,100,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+FRENCH,"Langue (grammaire, conjugaison, orthographe, vocabulaire)",Orthographe et accords,Accords dans le groupe nominal,PARTIAL,30,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+FRENCH,"Langue (grammaire, conjugaison, orthographe, vocabulaire)",Orthographe et accords,Accord sujet-verbe,PARTIAL,30,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+FRENCH,Écriture,Expression écrite,Organiser un écrit,PARTIAL,30,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+FRENCH,Écriture,Expression écrite,Qualité de l'expression,PARTIAL,30,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+FRENCH,Écriture,Expression écrite,Genres d'écrits,PARTIAL,30,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+FRENCH,Écriture,Argumentation,Construire une thèse,PARTIAL,30,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+FRENCH,Écriture,Argumentation,Structurer un paragraphe argumentatif,PARTIAL,30,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+FRENCH,Formats d'épreuve DNB,Compréhension et compétences linguistiques (DNB),Compétences linguistiques,PARTIAL,30,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+FRENCH,Formats d'épreuve DNB,Rédaction DNB,Produire un texte abouti,PARTIAL,30,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+MATHEMATICS,Nombres et calculs,Nombres relatifs et rationnels,Opérations sur les relatifs,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+MATHEMATICS,Nombres et calculs,Nombres relatifs et rationnels,Représenter les rationnels,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+MATHEMATICS,Nombres et calculs,Fractions,Simplifier et rendre irréductible,PARTIAL,40,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+MATHEMATICS,Nombres et calculs,Puissances et notation scientifique,Propriétés des puissances,PARTIAL,32,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+MATHEMATICS,Nombres et calculs,Puissances et notation scientifique,Puissances de 10,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+MATHEMATICS,Nombres et calculs,Puissances et notation scientifique,Notation scientifique,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+MATHEMATICS,Nombres et calculs,Arithmétique,Divisibilité,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+MATHEMATICS,Nombres et calculs,Arithmétique,PGCD et applications,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+MATHEMATICS,Nombres et calculs,Arithmétique,Nombres premiers,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+MATHEMATICS,Nombres et calculs,"Développement, réduction et factorisation",Développer,PARTIAL,42,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+MATHEMATICS,Nombres et calculs,"Développement, réduction et factorisation",Réduire,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+MATHEMATICS,Nombres et calculs,"Développement, réduction et factorisation",Factoriser,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+MATHEMATICS,Nombres et calculs,Problèmes numériques,Choisir une stratégie,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+MATHEMATICS,Nombres et calculs,Problèmes numériques,Mener un calcul justifié,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+MATHEMATICS,"Organisation et gestion de données, fonctions",Proportionnalité,Reconnaître une situation de proportionnalité,PARTIAL,40,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+MATHEMATICS,"Organisation et gestion de données, fonctions",Fonctions — image et antécédent,Notion de fonction,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+MATHEMATICS,"Organisation et gestion de données, fonctions",Fonctions — image et antécédent,Image et antécédent,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+MATHEMATICS,"Organisation et gestion de données, fonctions",Fonctions — image et antécédent,Représentation graphique,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+MATHEMATICS,"Organisation et gestion de données, fonctions",Fonctions linéaires et affines,Fonctions affines,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+MATHEMATICS,"Organisation et gestion de données, fonctions",Fonctions linéaires et affines,Déterminer une fonction affine,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+MATHEMATICS,Grandeurs et mesures,Conversions d'unités,Autres grandeurs,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+MATHEMATICS,Grandeurs et mesures,Agrandissement et réduction,Facteur d'échelle,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+MATHEMATICS,Grandeurs et mesures,Agrandissement et réduction,Problèmes d'échelle,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+MATHEMATICS,Espace et géométrie,Repérage,Repérage dans le plan,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+MATHEMATICS,Espace et géométrie,Repérage,Repérage dans l'espace,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+MATHEMATICS,Espace et géométrie,Théorème de Pythagore et réciproque,Réciproque de Pythagore,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+MATHEMATICS,Espace et géométrie,Théorème de Pythagore et réciproque,Raisonnement géométrique,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+MATHEMATICS,Espace et géométrie,Théorème de Thalès et réciproque,Réciproque de Thalès,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+MATHEMATICS,Espace et géométrie,Trigonométrie dans le triangle rectangle,Cosinus,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+MATHEMATICS,Espace et géométrie,Trigonométrie dans le triangle rectangle,Sinus,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+MATHEMATICS,Espace et géométrie,Trigonométrie dans le triangle rectangle,Tangente,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+MATHEMATICS,Espace et géométrie,Trigonométrie dans le triangle rectangle,Choisir le bon rapport,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+MATHEMATICS,Espace et géométrie,Transformations du plan,Isométries,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+MATHEMATICS,Espace et géométrie,Transformations du plan,Propriétés conservées,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+MATHEMATICS,Espace et géométrie,Homothétie,Définition et rapport,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+MATHEMATICS,Espace et géométrie,Homothétie,Construire et calculer,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+MATHEMATICS,Espace et géométrie,Géométrie plane,Triangles,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+MATHEMATICS,Espace et géométrie,Géométrie plane,Cercle et polygones,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+MATHEMATICS,Espace et géométrie,Géométrie plane,Constructions et justifications,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+MATHEMATICS,Espace et géométrie,Géométrie dans l'espace et solides,Solides usuels,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+MATHEMATICS,Espace et géométrie,Géométrie dans l'espace et solides,Représentations,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+MATHEMATICS,Algorithmique et programmation,"Variables, conditions et boucles",Variables et affectations,PARTIAL,32,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+MATHEMATICS,Algorithmique et programmation,"Variables, conditions et boucles",Conditions,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+MATHEMATICS,Algorithmique et programmation,"Variables, conditions et boucles",Boucles,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+MATHEMATICS,Algorithmique et programmation,Scratch et programmation par blocs,Scripts et événements,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+MATHEMATICS,Algorithmique et programmation,Scratch et programmation par blocs,Contrôle et interactions,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+MATHEMATICS,Compétences transversales mathématiques,Compétences transversales,Automatismes,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+MATHEMATICS,Compétences transversales mathématiques,Compétences transversales,Résolution de problèmes,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+MATHEMATICS,Compétences transversales mathématiques,Compétences transversales,Raisonnement,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+MATHEMATICS,Compétences transversales mathématiques,Compétences transversales,Démonstration,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+MATHEMATICS,Compétences transversales mathématiques,Compétences transversales,Calcul mental,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+MATHEMATICS,Compétences transversales mathématiques,Compétences transversales,Outils numériques,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+HISTORY,"L'Europe, un théâtre majeur des guerres totales (1914-1945)",La Première Guerre mondiale : l'expérience combattante et l'expérience des civils,Expérience combattante,PARTIAL,59,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+HISTORY,"L'Europe, un théâtre majeur des guerres totales (1914-1945)",La Première Guerre mondiale : l'expérience combattante et l'expérience des civils,Expérience des civils,PARTIAL,15,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+HISTORY,"L'Europe, un théâtre majeur des guerres totales (1914-1945)",La Première Guerre mondiale : l'expérience combattante et l'expérience des civils,Sorties de guerre,PARTIAL,15,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+HISTORY,"L'Europe, un théâtre majeur des guerres totales (1914-1945)",Démocraties et totalitarismes dans l'Europe de l'entre-deux-guerres,Régimes totalitaires,PARTIAL,35,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+HISTORY,"L'Europe, un théâtre majeur des guerres totales (1914-1945)",Démocraties et totalitarismes dans l'Europe de l'entre-deux-guerres,Pratiques totalitaires,PARTIAL,15,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+HISTORY,"L'Europe, un théâtre majeur des guerres totales (1914-1945)",Démocraties et totalitarismes dans l'Europe de l'entre-deux-guerres,Démocraties face à la crise,PARTIAL,15,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+HISTORY,"L'Europe, un théâtre majeur des guerres totales (1914-1945)","La Seconde Guerre mondiale, une guerre d'anéantissement",Génocide des Juifs et des Tsiganes,PARTIAL,15,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+HISTORY,"L'Europe, un théâtre majeur des guerres totales (1914-1945)","La France défaite et occupée ; régime de Vichy, Collaboration, Résistance",Vichy et Collaboration,PARTIAL,15,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+HISTORY,"L'Europe, un théâtre majeur des guerres totales (1914-1945)","La France défaite et occupée ; régime de Vichy, Collaboration, Résistance",Résistances,PARTIAL,15,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+HISTORY,Le monde depuis 1945,Indépendances et construction de nouveaux États,Processus de décolonisation,PARTIAL,35,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+HISTORY,Le monde depuis 1945,Indépendances et construction de nouveaux États,Nouveaux États,PARTIAL,15,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+HISTORY,Le monde depuis 1945,Un monde bipolaire au temps de la Guerre froide,Blocs Est / Ouest,PARTIAL,15,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+HISTORY,Le monde depuis 1945,Un monde bipolaire au temps de la Guerre froide,Crises et conflits,PARTIAL,15,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+HISTORY,Le monde depuis 1945,Un monde bipolaire au temps de la Guerre froide,Fin de la Guerre froide,PARTIAL,15,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+HISTORY,Le monde depuis 1945,Affirmation et mise en œuvre du projet européen,Origines du projet européen,PARTIAL,35,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+HISTORY,Le monde depuis 1945,Affirmation et mise en œuvre du projet européen,Approfondissement et élargissements,PARTIAL,15,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+HISTORY,Le monde depuis 1945,Enjeux et conflits dans le monde après 1989,Nouvel ordre mondial,PARTIAL,40,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+HISTORY,Le monde depuis 1945,Enjeux et conflits dans le monde après 1989,Conflits et terrorisme,PARTIAL,15,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+GEOGRAPHY,Dynamiques territoriales de la France contemporaine,Urbanisation et attractivité des territoires,Métropolisation,PARTIAL,40,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+GEOGRAPHY,Dynamiques territoriales de la France contemporaine,Urbanisation et attractivité des territoires,Mobilités et espaces de vie,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+GEOGRAPHY,Dynamiques territoriales de la France contemporaine,Les espaces productifs et leurs évolutions,Espaces agricoles,PARTIAL,32,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+GEOGRAPHY,Dynamiques territoriales de la France contemporaine,Les espaces productifs et leurs évolutions,Espaces industriels et de services,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+GEOGRAPHY,Dynamiques territoriales de la France contemporaine,Inégalités et fractures territoriales,Contrastes du territoire français,PARTIAL,32,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+GEOGRAPHY,Dynamiques territoriales de la France contemporaine,Inégalités et fractures territoriales,Acteurs et politiques,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+GEOGRAPHY,Pourquoi et comment aménager le territoire ?,Aménagement du territoire,Enjeux d'aménagement,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+GEOGRAPHY,Pourquoi et comment aménager le territoire ?,Aménagement du territoire,Acteurs de l'aménagement,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+GEOGRAPHY,Pourquoi et comment aménager le territoire ?,Risques et transitions,Risques et vulnérabilités,PARTIAL,40,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+GEOGRAPHY,Pourquoi et comment aménager le territoire ?,Risques et transitions,Transitions énergétiques et écologiques,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+GEOGRAPHY,La France et l'Union européenne,La France dans l'Union européenne,Territoire européen,PARTIAL,32,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+GEOGRAPHY,La France et l'Union européenne,La France dans l'Union européenne,Politiques européennes,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+GEOGRAPHY,La France et l'Union européenne,"La France, une influence mondiale",Rayonnement,PARTIAL,40,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+GEOGRAPHY,La France et l'Union européenne,"La France, une influence mondiale",Présence stratégique,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+EMC,"Valeurs, principes et exercice de la citoyenneté",Valeurs et principes de la République,"Liberté, égalité, fraternité",PARTIAL,36,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+EMC,"Valeurs, principes et exercice de la citoyenneté",Valeurs et principes de la République,Principes républicains,PARTIAL,15,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+EMC,"Valeurs, principes et exercice de la citoyenneté",Laïcité,Principe de laïcité,PARTIAL,35,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+EMC,"Valeurs, principes et exercice de la citoyenneté",Laïcité,Laïcité en pratique,PARTIAL,15,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+EMC,"Valeurs, principes et exercice de la citoyenneté",Citoyenneté,Statut de citoyen,PARTIAL,15,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+EMC,"Valeurs, principes et exercice de la citoyenneté",Citoyenneté,Exercice de la citoyenneté,PARTIAL,15,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+EMC,"Valeurs, principes et exercice de la citoyenneté",Institutions démocratiques,Organisation des pouvoirs,PARTIAL,35,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+EMC,"Valeurs, principes et exercice de la citoyenneté",Institutions démocratiques,Institutions locales et européennes,PARTIAL,15,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+EMC,"Valeurs, principes et exercice de la citoyenneté",Droits et libertés,Droits fondamentaux,PARTIAL,35,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+EMC,"Valeurs, principes et exercice de la citoyenneté",Droits et libertés,Garanties et limites,PARTIAL,15,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+EMC,"Valeurs, principes et exercice de la citoyenneté",Démocratie et débat,Principes démocratiques,PARTIAL,35,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+EMC,"Valeurs, principes et exercice de la citoyenneté",Démocratie et débat,Débattre et argumenter,PARTIAL,15,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+EMC,"Valeurs, principes et exercice de la citoyenneté","Médias, information et esprit critique",S'informer,PARTIAL,36,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+EMC,"Valeurs, principes et exercice de la citoyenneté","Médias, information et esprit critique",Esprit critique,PARTIAL,15,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+PHYSICS_CHEMISTRY,Organisation et transformations de la matière,Atomes et molécules,Modèle de l'atome,PARTIAL,32,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+PHYSICS_CHEMISTRY,Organisation et transformations de la matière,Atomes et molécules,Molécules et formules,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+PHYSICS_CHEMISTRY,Organisation et transformations de la matière,Réactions chimiques,Acides et bases,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+PHYSICS_CHEMISTRY,Organisation et transformations de la matière,Masse volumique et identification,Unités et conversions,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+PHYSICS_CHEMISTRY,Mouvements et interactions,Mouvement et vitesse,Décrire un mouvement,PARTIAL,32,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+PHYSICS_CHEMISTRY,Mouvements et interactions,Mouvement et vitesse,Vitesse,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+PHYSICS_CHEMISTRY,Mouvements et interactions,Forces et interactions,Effets des forces,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+PHYSICS_CHEMISTRY,L'énergie,Formes et conversions d'énergie,Formes d'énergie,PARTIAL,44,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+PHYSICS_CHEMISTRY,L'énergie,Formes et conversions d'énergie,Chaînes énergétiques,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+PHYSICS_CHEMISTRY,L'énergie,Électricité et circuits,Grandeurs électriques,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+PHYSICS_CHEMISTRY,Des signaux pour observer et communiquer,Lumière et signaux lumineux,Propagation de la lumière,PARTIAL,32,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+PHYSICS_CHEMISTRY,Des signaux pour observer et communiquer,Lumière et signaux lumineux,Lentilles et images,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+PHYSICS_CHEMISTRY,Des signaux pour observer et communiquer,Son et signaux sonores,Caractéristiques d'un son,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+SVT,"La planète Terre, l'environnement et l'action humaine",Dynamique de la Terre,Structure de la Terre,PARTIAL,32,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+SVT,"La planète Terre, l'environnement et l'action humaine",Dynamique de la Terre,Risques géologiques,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+SVT,"La planète Terre, l'environnement et l'action humaine",Écosystèmes et environnement,Relations au sein d'un écosystème,PARTIAL,32,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+SVT,"La planète Terre, l'environnement et l'action humaine",Écosystèmes et environnement,Action humaine,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+SVT,"La planète Terre, l'environnement et l'action humaine",Climat et changements globaux,Effet de serre et climat,PARTIAL,32,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+SVT,"La planète Terre, l'environnement et l'action humaine",Climat et changements globaux,Enjeux environnementaux,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+SVT,Le vivant et son évolution,Organisation cellulaire,Micro-organismes,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+SVT,Le vivant et son évolution,ADN et génétique,ADN support de l'information,PARTIAL,42,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+SVT,Le vivant et son évolution,ADN et génétique,Hérédité,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+SVT,Le vivant et son évolution,Évolution des espèces,Arguments de l'évolution,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+SVT,Le vivant et son évolution,Reproduction,Développement,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+SVT,Le corps humain et la santé,Nutrition et digestion,Aliments et besoins,PARTIAL,32,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+SVT,Le corps humain et la santé,Nutrition et digestion,Digestion,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+SVT,Le corps humain et la santé,Respiration et circulation,Respiration,PARTIAL,32,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+SVT,Le corps humain et la santé,Respiration et circulation,Circulation,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+SVT,Le corps humain et la santé,Immunité et santé,Défenses de l'organisme,PARTIAL,45,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+SVT,Le corps humain et la santé,Immunité et santé,Prévention et traitements,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+TECHNOLOGY,"Design, innovation et créativité / Objets et systèmes techniques",Objets et systèmes techniques,Analyser un objet technique,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+TECHNOLOGY,"Design, innovation et créativité / Objets et systèmes techniques",Objets et systèmes techniques,Évolution des objets,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+TECHNOLOGY,"Design, innovation et créativité / Objets et systèmes techniques",Chaîne d'information,Acquérir et traiter,PARTIAL,32,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+TECHNOLOGY,"Design, innovation et créativité / Objets et systèmes techniques",Chaîne d'information,Commander,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+TECHNOLOGY,"Design, innovation et créativité / Objets et systèmes techniques",Chaîne d'énergie,Flux d'énergie,PARTIAL,34,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+TECHNOLOGY,"Design, innovation et créativité / Objets et systèmes techniques",Chaîne d'énergie,Bilans énergétiques,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+TECHNOLOGY,"Design, innovation et créativité / Objets et systèmes techniques",Conception et modélisation,Démarche de conception,PARTIAL,34,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+TECHNOLOGY,"Design, innovation et créativité / Objets et systèmes techniques",Conception et modélisation,Modélisation,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+TECHNOLOGY,"Design, innovation et créativité / Objets et systèmes techniques","Informatique, algorithmique et programmation",Algorithmique,PARTIAL,32,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+TECHNOLOGY,"Design, innovation et créativité / Objets et systèmes techniques","Informatique, algorithmique et programmation",Programmer,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+TECHNOLOGY,"Design, innovation et créativité / Objets et systèmes techniques",Réseaux et données,Architecture des réseaux,PARTIAL,32,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+TECHNOLOGY,"Design, innovation et créativité / Objets et systèmes techniques",Réseaux et données,Données et sécurité,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+TECHNOLOGY,"Design, innovation et créativité / Objets et systèmes techniques",Impacts et développement durable,Impacts des objets techniques,PARTIAL,32,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION
+TECHNOLOGY,"Design, innovation et créativité / Objets et systèmes techniques",Impacts et développement durable,Choix responsables,PARTIAL,12,deficit_after_remap_and_generation,P1,False,CONTINUE_FACTORY_OR_MANUAL_CURATION

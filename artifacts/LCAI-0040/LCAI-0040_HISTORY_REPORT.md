@@ -1,0 +1,33 @@
+# LCAI-0040 — HISTORY
+
+- verdict: COMPLETE
+- skills: 27
+- COMPLETE: 27
+
+- La Première Guerre mondiale : l'expérience combattante et l'expérience des civils / Expérience combattante: COMPLETE (n=64, families=6, official=69)
+- La Première Guerre mondiale : l'expérience combattante et l'expérience des civils / Expérience des civils: COMPLETE (n=40, families=12, official=0)
+- La Première Guerre mondiale : l'expérience combattante et l'expérience des civils / Sorties de guerre: COMPLETE (n=40, families=12, official=0)
+- Démocraties et totalitarismes dans l'Europe de l'entre-deux-guerres / Régimes totalitaires: COMPLETE (n=50, families=13, official=10)
+- Démocraties et totalitarismes dans l'Europe de l'entre-deux-guerres / Pratiques totalitaires: COMPLETE (n=50, families=12, official=0)
+- Démocraties et totalitarismes dans l'Europe de l'entre-deux-guerres / Démocraties face à la crise: COMPLETE (n=50, families=12, official=4)
+- La Seconde Guerre mondiale, une guerre d'anéantissement / Guerre mondiale et anéantissement: COMPLETE (n=50, families=9, official=1)
+- La Seconde Guerre mondiale, une guerre d'anéantissement / Génocide des Juifs et des Tsiganes: COMPLETE (n=50, families=12, official=14)
+- La France défaite et occupée ; régime de Vichy, Collaboration, Résistance / Défaite et occupation: COMPLETE (n=50, families=10, official=26)
+- La France défaite et occupée ; régime de Vichy, Collaboration, Résistance / Vichy et Collaboration: COMPLETE (n=50, families=12, official=0)
+- La France défaite et occupée ; régime de Vichy, Collaboration, Résistance / Résistances: COMPLETE (n=50, families=12, official=0)
+- Indépendances et construction de nouveaux États / Processus de décolonisation: COMPLETE (n=40, families=13, official=0)
+- Indépendances et construction de nouveaux États / Nouveaux États: COMPLETE (n=40, families=12, official=0)
+- Un monde bipolaire au temps de la Guerre froide / Blocs Est / Ouest: COMPLETE (n=50, families=12, official=3)
+- Un monde bipolaire au temps de la Guerre froide / Crises et conflits: COMPLETE (n=50, families=12, official=0)
+- Un monde bipolaire au temps de la Guerre froide / Fin de la Guerre froide: COMPLETE (n=50, families=12, official=0)
+- Affirmation et mise en œuvre du projet européen / Origines du projet européen: COMPLETE (n=40, families=13, official=24)
+- Affirmation et mise en œuvre du projet européen / Approfondissement et élargissements: COMPLETE (n=40, families=12, official=0)
+- Enjeux et conflits dans le monde après 1989 / Nouvel ordre mondial: COMPLETE (n=48, families=9, official=40)
+- Enjeux et conflits dans le monde après 1989 / Conflits et terrorisme: COMPLETE (n=40, families=12, official=0)
+- Refonder la République, redéfinir la démocratie (1944-1947) / Libération et refondation: COMPLETE (n=40, families=12, official=0)
+- Refonder la République, redéfinir la démocratie (1944-1947) / IVe République: COMPLETE (n=40, families=12, official=0)
+- La Ve République / Institutions de la Ve République: COMPLETE (n=50, families=12, official=0)
+- La Ve République / Évolutions politiques: COMPLETE (n=50, families=12, official=0)
+- Femmes et hommes dans la société des années 1950 aux années 1980 / Transformations sociales: COMPLETE (n=40, families=12, official=31)
+- Femmes et hommes dans la société des années 1950 aux années 1980 / Place des femmes: COMPLETE (n=40, families=12, official=11)
+- Femmes et hommes dans la société des années 1950 aux années 1980 / Immigration et société française: COMPLETE (n=40, families=12, official=25)

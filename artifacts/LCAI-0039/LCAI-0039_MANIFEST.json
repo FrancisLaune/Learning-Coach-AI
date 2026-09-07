@@ -1,0 +1,176 @@
+{
+  "ticket": "LCAI-0039",
+  "generated_at": "2026-09-07T10:03:24+00:00",
+  "db_sha256_before": "d8bae2fa2dd10935682e65b0e2385d1af00b910ddadf627c594697de2ca2ebfa",
+  "db_sha256_after": "d8bae2fa2dd10935682e65b0e2385d1af00b910ddadf627c594697de2ca2ebfa",
+  "verdicts": {
+    "OFFICIAL CURRICULUM GROUNDING": "PASS",
+    "SUBSKILL MODEL": "PASS",
+    "CURRICULUM RECONSTRUCTION": "PASS",
+    "FRENCH": "PARTIAL",
+    "MATHEMATICS": "PARTIAL",
+    "HISTORY": "PARTIAL",
+    "GEOGRAPHY": "PARTIAL",
+    "EMC": "PARTIAL",
+    "PHYSICS_CHEMISTRY": "PARTIAL",
+    "SVT": "PARTIAL",
+    "TECHNOLOGY": "PARTIAL",
+    "EXISTING CONTENT REMAPPING": "PASS",
+    "OFFICIAL ARCHIVE REMAPPING": "PASS",
+    "EXERCISE COVERAGE": "PASS",
+    "EXERCISE DIVERSITY": "PASS",
+    "CORRECTION COVERAGE": "PASS",
+    "ARCHIVE TRACEABILITY": "PASS",
+    "IDEMPOTENCY": "PASS",
+    "NON-REGRESSION": "PASS",
+    "REVIEW PACKAGE": "PASS"
+  },
+  "subject_verdicts": {
+    "FRENCH": "PARTIAL",
+    "MATHEMATICS": "PARTIAL",
+    "HISTORY": "PARTIAL",
+    "GEOGRAPHY": "PARTIAL",
+    "EMC": "PARTIAL",
+    "PHYSICS_CHEMISTRY": "PARTIAL",
+    "SVT": "PARTIAL",
+    "TECHNOLOGY": "PARTIAL"
+  },
+  "counts_before": {
+    "subjects": 11,
+    "domains": 34,
+    "chapters": 171,
+    "chapters_active_canonical": 93,
+    "skills": 291,
+    "skills_active_canonical": 213,
+    "subskills": 562,
+    "content_items": 6686,
+    "official_archive": 1098,
+    "archive_derived": 6,
+    "skill_links": 10764
+  },
+  "counts_after": {
+    "subjects": 11,
+    "domains": 34,
+    "chapters": 171,
+    "chapters_active_canonical": 93,
+    "skills": 291,
+    "skills_active_canonical": 213,
+    "subskills": 562,
+    "content_items": 6686,
+    "official_archive": 1098,
+    "archive_derived": 6,
+    "skill_links": 10764
+  },
+  "files": [
+    {
+      "path": "LCAI-0039_IMPLEMENTATION_REPORT.md",
+      "size": 1293,
+      "sha256": "6512c5d9f0257c973fe16b5ef50a262d1513990a4c277db304ea51bb82d1d3a7"
+    },
+    {
+      "path": "LCAI-0039_OFFICIAL_CURRICULUM_SOURCES.md",
+      "size": 2371,
+      "sha256": "a17d9f95c6a3cfc6f75f074a1e15f782c5a5c32f3fbfe71272cfdfb8047dad3d"
+    },
+    {
+      "path": "LCAI-0039_CURRICULUM_BEFORE_AFTER.md",
+      "size": 988,
+      "sha256": "52a52e4236813ebd084d2c93cfdfbe34778bf4bb1f3ac8e55b1fb0fbd93cbf13"
+    },
+    {
+      "path": "LCAI-0039_FINAL_CURRICULUM_TREE.md",
+      "size": 30105,
+      "sha256": "3bcb5a06e30c95bff6538c92ef102bbd899c2cb5925cd1cc1e3e4ad948df0255"
+    },
+    {
+      "path": "LCAI-0039_FINAL_CURRICULUM_TREE.csv",
+      "size": 74344,
+      "sha256": "00a5772cf1643b9d68fa22cd2fccae0ddf9c2d6b577df9ba23c22f88f4434ec8"
+    },
+    {
+      "path": "LCAI-0039_EXERCISE_COVERAGE.csv",
+      "size": 30875,
+      "sha256": "67e4062df31e81b203c911c41a4e5f9b7a8fa7521b451dd117d1e39f775c3435"
+    },
+    {
+      "path": "LCAI-0039_CONTENT_REMAPPING.csv",
+      "size": 265594,
+      "sha256": "f9da849b92d4a333da7030be068005d6cf14d39ce05c0b9d06475904ca79a042"
+    },
+    {
+      "path": "LCAI-0039_CONTENT_GENERATION.csv",
+      "size": 205056,
+      "sha256": "e00a8dca8f6ec7e15a526cbaeba82687610b2c7e96fc91d22859727b693d179b"
+    },
+    {
+      "path": "LCAI-0039_OFFICIAL_ARCHIVE_REMAPPING.csv",
+      "size": 64341,
+      "sha256": "67a1a0a069f2b34036663821579d85929e3af61e1911bfa857b32d77996ba8be"
+    },
+    {
+      "path": "LCAI-0039_RESIDUAL_GAPS.csv",
+      "size": 31147,
+      "sha256": "b108381f9c49c10659098a4f4d059a48f87c88e94773c7fd202dcd1e04856132"
+    },
+    {
+      "path": "LCAI-0039_MATHEMATICS_REPORT.md",
+      "size": 9290,
+      "sha256": "36b32e80c8a8c4614469e91f1980f53ebbc24280467b6761ab3e131df16b4b30"
+    },
+    {
+      "path": "LCAI-0039_FRENCH_REPORT.md",
+      "size": 3560,
+      "sha256": "38cc75b85775fe9a593c6bfebcb8e4bf573fffcee5bc03bc0f8ffe07da40b3e8"
+    },
+    {
+      "path": "LCAI-0039_HISTORY_REPORT.md",
+      "size": 4918,
+      "sha256": "1145316b4a9d7702c419c871d41f9f6a750fa334ca7e61e6b13276d8a2f921ba"
+    },
+    {
+      "path": "LCAI-0039_GEOGRAPHY_REPORT.md",
+      "size": 2228,
+      "sha256": "68b6ad3c42eabe159e07ff3306f2029df2f96f17b5bc79a64f1063cef0c80ebf"
+    },
+    {
+      "path": "LCAI-0039_EMC_REPORT.md",
+      "size": 2680,
+      "sha256": "c3fb06bb1363f730f3f2cee2ab27670d1786b8de64c3b47221ddbd1674fee640"
+    },
+    {
+      "path": "LCAI-0039_PHYSICS_CHEMISTRY_REPORT.md",
+      "size": 2394,
+      "sha256": "9567f86208d561ca92aaa5434a0b009ba9370cece2d1ab74a8867bbb9abff287"
+    },
+    {
+      "path": "LCAI-0039_SVT_REPORT.md",
+      "size": 2642,
+      "sha256": "a1118fef1d243ec7217c96883b898d1711fc792dea1f96f3a43bddc63d2dc76a"
+    },
+    {
+      "path": "LCAI-0039_TECHNOLOGY_REPORT.md",
+      "size": 2383,
+      "sha256": "27b7f1edb0e73185b6f7e92f942b8dc3fff618b3e043298087c5762a5a48cfd1"
+    },
+    {
+      "path": "LCAI-0039_DATA_QUALITY_REPORT.md",
+      "size": 304,
+      "sha256": "2d062cc152fa54df280104e060c7e337e5b82243cd4cbb2408f37178da2109c0"
+    },
+    {
+      "path": "LCAI-0039_TEST_REPORT.md",
+      "size": 368,
+      "sha256": "a1f4c26bb2d0e5a69d87fa647098384ee817a6ebee79d2a51c0d3a7141341f34"
+    },
+    {
+      "path": "LCAI-0039_NON_REGRESSION_REPORT.md",
+      "size": 259,
+      "sha256": "59b87b9e0f93d54a855784ae9f37038c7f3006ce8ee86becd5d7ea3cde30d0d2"
+    },
+    {
+      "path": "dnb_2027_curriculum_sources.json",
+      "size": 5651,
+      "sha256": "7965d7121d6b08f0c38cef40bccc462ab010edc54c569786e88a7c8f0e63cb81"
+    }
+  ]
+}

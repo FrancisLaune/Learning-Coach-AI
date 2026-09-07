@@ -1,0 +1,563 @@
+subject,chapter,skill,subskill,trainability,direct_count,embedded_count,coverage_status
+EMC,Citoyenneté,Exercice de la citoyenneté,Participation,AUTONOMOUS,8,8,COMPLETE
+EMC,Citoyenneté,Exercice de la citoyenneté,Vote,AUTONOMOUS,8,8,COMPLETE
+EMC,Citoyenneté,Statut de citoyen,Devoirs,AUTONOMOUS,8,8,COMPLETE
+EMC,Citoyenneté,Statut de citoyen,Droits,AUTONOMOUS,8,8,COMPLETE
+EMC,Citoyenneté,Statut de citoyen,Nationalité,AUTONOMOUS,8,8,COMPLETE
+EMC,Droits et libertés,Droits fondamentaux,Droits sociaux,AUTONOMOUS,8,8,COMPLETE
+EMC,Droits et libertés,Droits fondamentaux,Déclarations des droits,AUTONOMOUS,8,8,COMPLETE
+EMC,Droits et libertés,Droits fondamentaux,Libertés individuelles,AUTONOMOUS,8,8,COMPLETE
+EMC,Droits et libertés,Garanties et limites,Abus et sanctions,AUTONOMOUS,8,8,COMPLETE
+EMC,Droits et libertés,Garanties et limites,Garanties juridictionnelles,AUTONOMOUS,8,8,COMPLETE
+EMC,Défense et sécurité nationale,Citoyen et défense,Devoir de défense,AUTONOMOUS,8,8,COMPLETE
+EMC,Défense et sécurité nationale,Citoyen et défense,Parcours / JDC,AUTONOMOUS,8,8,COMPLETE
+EMC,Défense et sécurité nationale,Enjeux de défense,Alliances,AUTONOMOUS,8,8,COMPLETE
+EMC,Défense et sécurité nationale,Enjeux de défense,Armées,AUTONOMOUS,8,8,COMPLETE
+EMC,Défense et sécurité nationale,Enjeux de défense,Sécurité collective,AUTONOMOUS,8,8,COMPLETE
+EMC,Démocratie et débat,Débattre et argumenter,Argumentation civique,AUTONOMOUS,8,8,COMPLETE
+EMC,Démocratie et débat,Débattre et argumenter,Écoute,AUTONOMOUS,8,8,COMPLETE
+EMC,Démocratie et débat,Principes démocratiques,Majorité / minorités,AUTONOMOUS,8,8,COMPLETE
+EMC,Démocratie et débat,Principes démocratiques,Pluralisme,AUTONOMOUS,8,8,COMPLETE
+EMC,Démocratie et débat,Principes démocratiques,État de droit,AUTONOMOUS,8,8,COMPLETE
+EMC,Engagement,Engagement des jeunes,Au collège / lycée,AUTONOMOUS,8,8,COMPLETE
+EMC,Engagement,Engagement des jeunes,Projets citoyens,AUTONOMOUS,8,8,COMPLETE
+EMC,Engagement,Formes d'engagement,Associatif,AUTONOMOUS,8,8,COMPLETE
+EMC,Engagement,Formes d'engagement,Solidarité,AUTONOMOUS,8,8,COMPLETE
+EMC,Engagement,Formes d'engagement,Syndical / politique,AUTONOMOUS,8,8,COMPLETE
+EMC,Institutions démocratiques,Institutions locales et européennes,Collectivités,AUTONOMOUS,8,8,COMPLETE
+EMC,Institutions démocratiques,Institutions locales et européennes,Institutions européennes,AUTONOMOUS,8,8,COMPLETE
+EMC,Institutions démocratiques,Organisation des pouvoirs,Exécutif,AUTONOMOUS,8,8,COMPLETE
+EMC,Institutions démocratiques,Organisation des pouvoirs,Judiciaire,AUTONOMOUS,8,8,COMPLETE
+EMC,Institutions démocratiques,Organisation des pouvoirs,Législatif,AUTONOMOUS,8,8,COMPLETE
+EMC,Laïcité,Laïcité en pratique,Liberté de conscience,AUTONOMOUS,8,8,COMPLETE
+EMC,Laïcité,Laïcité en pratique,Études de cas,AUTONOMOUS,8,8,COMPLETE
+EMC,Laïcité,Principe de laïcité,Construction historique,AUTONOMOUS,8,8,COMPLETE
+EMC,Laïcité,Principe de laïcité,Laïcité à l'école,AUTONOMOUS,8,8,COMPLETE
+EMC,Laïcité,Principe de laïcité,Loi de 1905,AUTONOMOUS,8,8,COMPLETE
+EMC,"Médias, information et esprit critique",Esprit critique,Analyser un message,AUTONOMOUS,8,8,COMPLETE
+EMC,"Médias, information et esprit critique",Esprit critique,Usage citoyen des médias,AUTONOMOUS,8,8,COMPLETE
+EMC,"Médias, information et esprit critique",S'informer,Désinformation,AUTONOMOUS,8,8,COMPLETE
+EMC,"Médias, information et esprit critique",S'informer,Fiabilité,AUTONOMOUS,8,8,COMPLETE
+EMC,"Médias, information et esprit critique",S'informer,Sources,AUTONOMOUS,8,8,COMPLETE
+EMC,Valeurs et principes de la République,"Liberté, égalité, fraternité",Fraternité,AUTONOMOUS,8,8,COMPLETE
+EMC,Valeurs et principes de la République,"Liberté, égalité, fraternité",Liberté,AUTONOMOUS,8,8,COMPLETE
+EMC,Valeurs et principes de la République,"Liberté, égalité, fraternité",Égalité,AUTONOMOUS,8,8,COMPLETE
+EMC,Valeurs et principes de la République,Principes républicains,Indivisibilité,AUTONOMOUS,8,8,COMPLETE
+EMC,Valeurs et principes de la République,Principes républicains,Souveraineté,AUTONOMOUS,8,8,COMPLETE
+FRENCH,Argumentation,Construire une thèse,Illustrer par des exemples,AUTONOMOUS,8,8,COMPLETE
+FRENCH,Argumentation,Construire une thèse,Prendre position,AUTONOMOUS,8,8,COMPLETE
+FRENCH,Argumentation,Construire une thèse,Sélectionner des arguments,AUTONOMOUS,8,8,COMPLETE
+FRENCH,Argumentation,Structurer un paragraphe argumentatif,Conclure,AUTONOMOUS,8,8,COMPLETE
+FRENCH,Argumentation,Structurer un paragraphe argumentatif,Connecteurs,AUTONOMOUS,8,8,COMPLETE
+FRENCH,Argumentation,Structurer un paragraphe argumentatif,Progression,AUTONOMOUS,8,8,COMPLETE
+FRENCH,Compréhension de textes,Comprendre le sens global,Identifier le thème,AUTONOMOUS,8,8,COMPLETE
+FRENCH,Compréhension de textes,Comprendre le sens global,Résumer,AUTONOMOUS,8,8,COMPLETE
+FRENCH,Compréhension de textes,Comprendre le sens global,Saisir l'enjeu du texte,AUTONOMOUS,8,8,COMPLETE
+FRENCH,Compréhension de textes,Inférer des informations implicites,Croiser des indices,AUTONOMOUS,8,8,COMPLETE
+FRENCH,Compréhension de textes,Inférer des informations implicites,Déduire un sens,AUTONOMOUS,8,8,COMPLETE
+FRENCH,Compréhension de textes,Repérer des informations explicites,Localiser une information,AUTONOMOUS,16,16,COMPLETE
+FRENCH,Compréhension de textes,Repérer des informations explicites,S'appuyer sur le texte,AUTONOMOUS,16,16,COMPLETE
+FRENCH,Compréhension de textes,Repérer des informations explicites,Sélectionner l'essentiel,AUTONOMOUS,16,16,COMPLETE
+FRENCH,Compréhension et compétences linguistiques (DNB),Compétences linguistiques,Dictée,AUTONOMOUS,8,8,COMPLETE
+FRENCH,Compréhension et compétences linguistiques (DNB),Compétences linguistiques,Exercice de réécriture,AUTONOMOUS,8,8,COMPLETE
+FRENCH,Compréhension et compétences linguistiques (DNB),Compétences linguistiques,Questions de grammaire,AUTONOMOUS,8,8,COMPLETE
+FRENCH,Compréhension et compétences linguistiques (DNB),Questions de compréhension,Justifier brièvement,AUTONOMOUS,8,8,COMPLETE
+FRENCH,Compréhension et compétences linguistiques (DNB),Questions de compréhension,Répondre à partir du texte,AUTONOMOUS,8,8,COMPLETE
+FRENCH,Conjugaison,Accords du verbe,Groupes verbaux,AUTONOMOUS,8,8,COMPLETE
+FRENCH,Conjugaison,Accords du verbe,Personne et nombre,AUTONOMOUS,8,8,COMPLETE
+FRENCH,Conjugaison,Accords du verbe,Temps composés,AUTONOMOUS,8,8,COMPLETE
+FRENCH,Conjugaison,Temps et modes,Conditionnel,AUTONOMOUS,8,8,COMPLETE
+FRENCH,Conjugaison,Temps et modes,"Indicatif (présent, passé, futur)",AUTONOMOUS,8,8,COMPLETE
+FRENCH,Conjugaison,Temps et modes,Subjonctif courant,AUTONOMOUS,8,8,COMPLETE
+FRENCH,Dictée,Orthographe en situation,Orthographe grammaticale,AUTONOMOUS,8,8,COMPLETE
+FRENCH,Dictée,Orthographe en situation,Orthographe lexicale,AUTONOMOUS,8,8,COMPLETE
+FRENCH,Dictée,Stratégies de relecture,Contrôler les accords du GN,AUTONOMOUS,8,8,COMPLETE
+FRENCH,Dictée,Stratégies de relecture,Contrôler les verbes,AUTONOMOUS,8,8,COMPLETE
+FRENCH,Expression écrite,Genres d'écrits,Descriptif,AUTONOMOUS,8,8,COMPLETE
+FRENCH,Expression écrite,Genres d'écrits,Explicatif,AUTONOMOUS,8,8,COMPLETE
+FRENCH,Expression écrite,Genres d'écrits,Narratif,AUTONOMOUS,8,8,COMPLETE
+FRENCH,Expression écrite,Organiser un écrit,Générer des idées,AUTONOMOUS,8,8,COMPLETE
+FRENCH,Expression écrite,Organiser un écrit,Paragraphes,AUTONOMOUS,8,8,COMPLETE
+FRENCH,Expression écrite,Organiser un écrit,Planifier,AUTONOMOUS,8,8,COMPLETE
+FRENCH,Expression écrite,Qualité de l'expression,Correction linguistique,AUTONOMOUS,8,8,COMPLETE
+FRENCH,Expression écrite,Qualité de l'expression,Précision lexicale,AUTONOMOUS,8,8,COMPLETE
+FRENCH,Expression écrite,Qualité de l'expression,Variété syntaxique,AUTONOMOUS,8,8,COMPLETE
+FRENCH,Grammaire et syntaxe,Classes grammaticales,Adverbes / prépositions / conjonctions,AUTONOMOUS,8,8,COMPLETE
+FRENCH,Grammaire et syntaxe,Classes grammaticales,Déterminants / pronoms,AUTONOMOUS,8,8,COMPLETE
+FRENCH,Grammaire et syntaxe,Classes grammaticales,Nature des mots,AUTONOMOUS,8,8,COMPLETE
+FRENCH,Grammaire et syntaxe,Fonctions dans la phrase,COD / COI,AUTONOMOUS,8,8,COMPLETE
+FRENCH,Grammaire et syntaxe,Fonctions dans la phrase,Compléments circonstanciels,AUTONOMOUS,8,8,COMPLETE
+FRENCH,Grammaire et syntaxe,Fonctions dans la phrase,Sujet,AUTONOMOUS,8,8,COMPLETE
+FRENCH,Grammaire et syntaxe,Phrase simple et complexe,Ponctuation,AUTONOMOUS,8,8,COMPLETE
+FRENCH,Grammaire et syntaxe,Phrase simple et complexe,Propositions,AUTONOMOUS,8,8,COMPLETE
+FRENCH,Grammaire et syntaxe,Phrase simple et complexe,Subordination / coordination,AUTONOMOUS,8,8,COMPLETE
+FRENCH,Interprétation et analyse,Point de vue et intentions,Effets sur le lecteur,AUTONOMOUS,8,8,COMPLETE
+FRENCH,Interprétation et analyse,Point de vue et intentions,Justifier une interprétation,AUTONOMOUS,8,8,COMPLETE
+FRENCH,Interprétation et analyse,Point de vue et intentions,Narrateur / locuteur,AUTONOMOUS,12,12,COMPLETE
+FRENCH,Interprétation et analyse,Procédés d'écriture,Choix lexicaux,AUTONOMOUS,10,10,COMPLETE
+FRENCH,Interprétation et analyse,Procédés d'écriture,Figures de style,AUTONOMOUS,8,8,COMPLETE
+FRENCH,Interprétation et analyse,Procédés d'écriture,Registres,AUTONOMOUS,8,8,COMPLETE
+FRENCH,Orthographe et accords,Accord sujet-verbe,Sujet inversé / éloigné,AUTONOMOUS,8,8,COMPLETE
+FRENCH,Orthographe et accords,Accord sujet-verbe,Sujet simple,AUTONOMOUS,8,8,COMPLETE
+FRENCH,Orthographe et accords,Accords dans le groupe nominal,Déterminant / nom / adjectif,AUTONOMOUS,8,8,COMPLETE
+FRENCH,Orthographe et accords,Accords dans le groupe nominal,Participe passé,AUTONOMOUS,8,8,COMPLETE
+FRENCH,Orthographe et accords,Orthographe lexicale,Mots courants et homophones,AUTONOMOUS,8,8,COMPLETE
+FRENCH,Orthographe et accords,Orthographe lexicale,Règles d'usage,AUTONOMOUS,8,8,COMPLETE
+FRENCH,Rédaction DNB,Produire un texte abouti,Critères d'évaluation,AUTONOMOUS,8,8,COMPLETE
+FRENCH,Rédaction DNB,Produire un texte abouti,Respecter la longueur attendue,AUTONOMOUS,8,8,COMPLETE
+FRENCH,Rédaction DNB,Produire un texte abouti,Se relire,AUTONOMOUS,8,8,COMPLETE
+FRENCH,Rédaction DNB,Traiter le sujet,Comprendre la consigne,AUTONOMOUS,8,8,COMPLETE
+FRENCH,Rédaction DNB,Traiter le sujet,Sujet d'imagination / réflexion,AUTONOMOUS,8,8,COMPLETE
+FRENCH,Réécriture,Maintenir la cohérence,Préserver le sens,AUTONOMOUS,8,8,COMPLETE
+FRENCH,Réécriture,Maintenir la cohérence,Réaccorder,AUTONOMOUS,8,8,COMPLETE
+FRENCH,Réécriture,Transformer un texte,Changer de registre,AUTONOMOUS,8,8,COMPLETE
+FRENCH,Réécriture,Transformer un texte,Changer personne / temps,AUTONOMOUS,8,8,COMPLETE
+FRENCH,Réécriture,Transformer un texte,Expansion / réduction,AUTONOMOUS,8,8,COMPLETE
+FRENCH,Vocabulaire,Formation des mots,Familles de mots,AUTONOMOUS,8,8,COMPLETE
+FRENCH,Vocabulaire,Formation des mots,Préfixes / suffixes,AUTONOMOUS,14,14,COMPLETE
+FRENCH,Vocabulaire,Sens des mots,Nuances et synonymes,AUTONOMOUS,12,12,COMPLETE
+FRENCH,Vocabulaire,Sens des mots,Polysémie,AUTONOMOUS,8,8,COMPLETE
+FRENCH,Vocabulaire,Sens des mots,Sens en contexte,AUTONOMOUS,8,8,COMPLETE
+GEOGRAPHY,Aménagement du territoire,Acteurs de l'aménagement,Acteurs privés,AUTONOMOUS,8,8,COMPLETE
+GEOGRAPHY,Aménagement du territoire,Acteurs de l'aménagement,Acteurs publics,AUTONOMOUS,8,8,COMPLETE
+GEOGRAPHY,Aménagement du territoire,Acteurs de l'aménagement,Concertation,AUTONOMOUS,8,8,COMPLETE
+GEOGRAPHY,Aménagement du territoire,Enjeux d'aménagement,Accessibilité,AUTONOMOUS,8,8,COMPLETE
+GEOGRAPHY,Aménagement du territoire,Enjeux d'aménagement,Développement durable,AUTONOMOUS,8,8,COMPLETE
+GEOGRAPHY,Aménagement du territoire,Enjeux d'aménagement,Équilibres territoriaux,AUTONOMOUS,8,8,COMPLETE
+GEOGRAPHY,Inégalités et fractures territoriales,Acteurs et politiques,Collectivités,AUTONOMOUS,8,8,COMPLETE
+GEOGRAPHY,Inégalités et fractures territoriales,Acteurs et politiques,Rôle de l'État,AUTONOMOUS,8,8,COMPLETE
+GEOGRAPHY,Inégalités et fractures territoriales,Contrastes du territoire français,Attractivité / déclin,AUTONOMOUS,8,8,COMPLETE
+GEOGRAPHY,Inégalités et fractures territoriales,Contrastes du territoire français,Densités,AUTONOMOUS,8,8,COMPLETE
+GEOGRAPHY,Inégalités et fractures territoriales,Contrastes du territoire français,Outre-mer,AUTONOMOUS,8,8,COMPLETE
+GEOGRAPHY,La France dans l'Union européenne,Politiques européennes,Cohésion territoriale,AUTONOMOUS,8,8,COMPLETE
+GEOGRAPHY,La France dans l'Union européenne,Politiques européennes,Place de la France,AUTONOMOUS,8,8,COMPLETE
+GEOGRAPHY,La France dans l'Union européenne,Politiques européennes,Politiques communes (ex. PAC),AUTONOMOUS,8,8,COMPLETE
+GEOGRAPHY,La France dans l'Union européenne,Territoire européen,Dorsale européenne,AUTONOMOUS,8,8,COMPLETE
+GEOGRAPHY,La France dans l'Union européenne,Territoire européen,Frontières,AUTONOMOUS,8,8,COMPLETE
+GEOGRAPHY,La France dans l'Union européenne,Territoire européen,États membres,AUTONOMOUS,8,8,COMPLETE
+GEOGRAPHY,"La France, une influence mondiale",Présence stratégique,Engagements internationaux,AUTONOMOUS,8,8,COMPLETE
+GEOGRAPHY,"La France, une influence mondiale",Présence stratégique,Outre-mer,AUTONOMOUS,8,8,COMPLETE
+GEOGRAPHY,"La France, une influence mondiale",Rayonnement,Culture / diplomatie,AUTONOMOUS,8,8,COMPLETE
+GEOGRAPHY,"La France, une influence mondiale",Rayonnement,Francophonie,AUTONOMOUS,8,8,COMPLETE
+GEOGRAPHY,Les espaces productifs et leurs évolutions,Espaces agricoles,Mutations,AUTONOMOUS,8,8,COMPLETE
+GEOGRAPHY,Les espaces productifs et leurs évolutions,Espaces agricoles,Systèmes agricoles,AUTONOMOUS,8,8,COMPLETE
+GEOGRAPHY,Les espaces productifs et leurs évolutions,Espaces industriels et de services,Innovation / technopoles,AUTONOMOUS,8,8,COMPLETE
+GEOGRAPHY,Les espaces productifs et leurs évolutions,Espaces industriels et de services,Tertiarisation,AUTONOMOUS,8,8,COMPLETE
+GEOGRAPHY,Les espaces productifs et leurs évolutions,Espaces industriels et de services,Zones industrialo-portuaires,AUTONOMOUS,8,8,COMPLETE
+GEOGRAPHY,Risques et transitions,Risques et vulnérabilités,Prévention,AUTONOMOUS,8,8,COMPLETE
+GEOGRAPHY,Risques et transitions,Risques et vulnérabilités,Risques naturels,AUTONOMOUS,8,8,COMPLETE
+GEOGRAPHY,Risques et transitions,Risques et vulnérabilités,Risques technologiques,AUTONOMOUS,8,8,COMPLETE
+GEOGRAPHY,Risques et transitions,Transitions énergétiques et écologiques,Climat,AUTONOMOUS,8,8,COMPLETE
+GEOGRAPHY,Risques et transitions,Transitions énergétiques et écologiques,Énergie,AUTONOMOUS,8,8,COMPLETE
+GEOGRAPHY,Urbanisation et attractivité des territoires,Mobilités et espaces de vie,Navettes,AUTONOMOUS,8,8,COMPLETE
+GEOGRAPHY,Urbanisation et attractivité des territoires,Mobilités et espaces de vie,Périurbanisation,AUTONOMOUS,8,8,COMPLETE
+GEOGRAPHY,Urbanisation et attractivité des territoires,Métropolisation,Aires urbaines,AUTONOMOUS,8,8,COMPLETE
+GEOGRAPHY,Urbanisation et attractivité des territoires,Métropolisation,Fonctions métropolitaines,AUTONOMOUS,8,8,COMPLETE
+GEOGRAPHY,Urbanisation et attractivité des territoires,Métropolisation,Hiérarchie urbaine,AUTONOMOUS,8,8,COMPLETE
+HISTORY,Affirmation et mise en œuvre du projet européen,Approfondissement et élargissements,CEE / marché commun,AUTONOMOUS,8,8,COMPLETE
+HISTORY,Affirmation et mise en œuvre du projet européen,Approfondissement et élargissements,Enjeux contemporains,AUTONOMOUS,8,8,COMPLETE
+HISTORY,Affirmation et mise en œuvre du projet européen,Approfondissement et élargissements,Union européenne,AUTONOMOUS,8,8,COMPLETE
+HISTORY,Affirmation et mise en œuvre du projet européen,Origines du projet européen,Après 1945,AUTONOMOUS,8,8,COMPLETE
+HISTORY,Affirmation et mise en œuvre du projet européen,Origines du projet européen,Pères fondateurs / traités,AUTONOMOUS,8,8,COMPLETE
+HISTORY,Démocraties et totalitarismes dans l'Europe de l'entre-deux-guerres,Démocraties face à la crise,Crise de 1929,AUTONOMOUS,12,12,COMPLETE
+HISTORY,Démocraties et totalitarismes dans l'Europe de l'entre-deux-guerres,Démocraties face à la crise,Réponses démocratiques (ex. Front populaire),AUTONOMOUS,8,8,COMPLETE
+HISTORY,Démocraties et totalitarismes dans l'Europe de l'entre-deux-guerres,Pratiques totalitaires,Culte du chef,AUTONOMOUS,8,8,COMPLETE
+HISTORY,Démocraties et totalitarismes dans l'Europe de l'entre-deux-guerres,Pratiques totalitaires,Propagande,AUTONOMOUS,8,8,COMPLETE
+HISTORY,Démocraties et totalitarismes dans l'Europe de l'entre-deux-guerres,Pratiques totalitaires,Répression et terreur,AUTONOMOUS,8,8,COMPLETE
+HISTORY,Démocraties et totalitarismes dans l'Europe de l'entre-deux-guerres,Régimes totalitaires,Fascisme italien,AUTONOMOUS,8,8,COMPLETE
+HISTORY,Démocraties et totalitarismes dans l'Europe de l'entre-deux-guerres,Régimes totalitaires,Nazisme,AUTONOMOUS,12,12,COMPLETE
+HISTORY,Démocraties et totalitarismes dans l'Europe de l'entre-deux-guerres,Régimes totalitaires,Stalinisme,AUTONOMOUS,8,8,COMPLETE
+HISTORY,Enjeux et conflits dans le monde après 1989,Conflits et terrorisme,Conflits régionaux,AUTONOMOUS,8,8,COMPLETE
+HISTORY,Enjeux et conflits dans le monde après 1989,Conflits et terrorisme,Multilatéralisme / ONU,AUTONOMOUS,8,8,COMPLETE
+HISTORY,Enjeux et conflits dans le monde après 1989,Conflits et terrorisme,Terrorisme international,AUTONOMOUS,8,8,COMPLETE
+HISTORY,Enjeux et conflits dans le monde après 1989,Nouvel ordre mondial,Fin du bipolarisme,AUTONOMOUS,8,8,COMPLETE
+HISTORY,Enjeux et conflits dans le monde après 1989,Nouvel ordre mondial,Nouvelles puissances,AUTONOMOUS,8,8,COMPLETE
+HISTORY,Femmes et hommes dans la société des années 1950 aux années 1980,Immigration et société française,Intégration / débats,AUTONOMOUS,8,8,COMPLETE
+HISTORY,Femmes et hommes dans la société des années 1950 aux années 1980,Immigration et société française,Migrations,AUTONOMOUS,8,8,COMPLETE
+HISTORY,Femmes et hommes dans la société des années 1950 aux années 1980,Place des femmes,Droits des femmes,AUTONOMOUS,16,16,COMPLETE
+HISTORY,Femmes et hommes dans la société des années 1950 aux années 1980,Place des femmes,Inégalités et conquêtes,AUTONOMOUS,11,11,COMPLETE
+HISTORY,Femmes et hommes dans la société des années 1950 aux années 1980,Transformations sociales,Jeunesse et culture,AUTONOMOUS,16,16,COMPLETE
+HISTORY,Femmes et hommes dans la société des années 1950 aux années 1980,Transformations sociales,Société de consommation,AUTONOMOUS,16,16,COMPLETE
+HISTORY,Femmes et hommes dans la société des années 1950 aux années 1980,Transformations sociales,Travail et modes de vie,AUTONOMOUS,16,16,COMPLETE
+HISTORY,Indépendances et construction de nouveaux États,Nouveaux États,Enjeux politiques et économiques,AUTONOMOUS,8,8,COMPLETE
+HISTORY,Indépendances et construction de nouveaux États,Nouveaux États,Non-alignement / Tiers monde,AUTONOMOUS,8,8,COMPLETE
+HISTORY,Indépendances et construction de nouveaux États,Processus de décolonisation,Acteurs et formes (négociée / conflictuelle),AUTONOMOUS,8,8,COMPLETE
+HISTORY,Indépendances et construction de nouveaux États,Processus de décolonisation,Afrique,AUTONOMOUS,8,8,COMPLETE
+HISTORY,Indépendances et construction de nouveaux États,Processus de décolonisation,Asie,AUTONOMOUS,8,8,COMPLETE
+HISTORY,"La France défaite et occupée ; régime de Vichy, Collaboration, Résistance",Défaite et occupation,Défaite de 1940,AUTONOMOUS,8,8,COMPLETE
+HISTORY,"La France défaite et occupée ; régime de Vichy, Collaboration, Résistance",Défaite et occupation,Occupation,AUTONOMOUS,8,8,COMPLETE
+HISTORY,"La France défaite et occupée ; régime de Vichy, Collaboration, Résistance",Défaite et occupation,Zones et quotidien,AUTONOMOUS,8,8,COMPLETE
+HISTORY,"La France défaite et occupée ; régime de Vichy, Collaboration, Résistance",Résistances,Actes de résistance,AUTONOMOUS,8,8,COMPLETE
+HISTORY,"La France défaite et occupée ; régime de Vichy, Collaboration, Résistance",Résistances,France libre,AUTONOMOUS,8,8,COMPLETE
+HISTORY,"La France défaite et occupée ; régime de Vichy, Collaboration, Résistance",Résistances,Résistance intérieure,AUTONOMOUS,8,8,COMPLETE
+HISTORY,"La France défaite et occupée ; régime de Vichy, Collaboration, Résistance",Vichy et Collaboration,Collaboration,AUTONOMOUS,8,8,COMPLETE
+HISTORY,"La France défaite et occupée ; régime de Vichy, Collaboration, Résistance",Vichy et Collaboration,Politique antisémite,AUTONOMOUS,8,8,COMPLETE
+HISTORY,"La France défaite et occupée ; régime de Vichy, Collaboration, Résistance",Vichy et Collaboration,État français,AUTONOMOUS,8,8,COMPLETE
+HISTORY,La Première Guerre mondiale : l'expérience combattante et l'expérience des civils,Expérience combattante,Guerre de tranchées,AUTONOMOUS,8,8,COMPLETE
+HISTORY,La Première Guerre mondiale : l'expérience combattante et l'expérience des civils,Expérience combattante,Témoignages combattants,AUTONOMOUS,8,8,COMPLETE
+HISTORY,La Première Guerre mondiale : l'expérience combattante et l'expérience des civils,Expérience combattante,Violence de masse,AUTONOMOUS,8,8,COMPLETE
+HISTORY,La Première Guerre mondiale : l'expérience combattante et l'expérience des civils,Expérience des civils,Front intérieur,AUTONOMOUS,8,8,COMPLETE
+HISTORY,La Première Guerre mondiale : l'expérience combattante et l'expérience des civils,Expérience des civils,Opinion et propagande,AUTONOMOUS,8,8,COMPLETE
+HISTORY,La Première Guerre mondiale : l'expérience combattante et l'expérience des civils,Expérience des civils,Rôle des femmes,AUTONOMOUS,8,8,COMPLETE
+HISTORY,La Première Guerre mondiale : l'expérience combattante et l'expérience des civils,Sorties de guerre,Armistice et traités,AUTONOMOUS,8,8,COMPLETE
+HISTORY,La Première Guerre mondiale : l'expérience combattante et l'expérience des civils,Sorties de guerre,Bilans humains et politiques,AUTONOMOUS,8,8,COMPLETE
+HISTORY,"La Seconde Guerre mondiale, une guerre d'anéantissement",Guerre mondiale et anéantissement,Bombardements / guerre totale,AUTONOMOUS,8,8,COMPLETE
+HISTORY,"La Seconde Guerre mondiale, une guerre d'anéantissement",Guerre mondiale et anéantissement,Crimes de masse,AUTONOMOUS,8,8,COMPLETE
+HISTORY,"La Seconde Guerre mondiale, une guerre d'anéantissement",Guerre mondiale et anéantissement,Fronts et coalitions,AUTONOMOUS,8,8,COMPLETE
+HISTORY,"La Seconde Guerre mondiale, une guerre d'anéantissement",Génocide des Juifs et des Tsiganes,Antisémitisme nazi,AUTONOMOUS,16,16,COMPLETE
+HISTORY,"La Seconde Guerre mondiale, une guerre d'anéantissement",Génocide des Juifs et des Tsiganes,Camps et extermination,AUTONOMOUS,14,14,COMPLETE
+HISTORY,"La Seconde Guerre mondiale, une guerre d'anéantissement",Génocide des Juifs et des Tsiganes,Mémoires,AUTONOMOUS,8,8,COMPLETE
+HISTORY,La Ve République,Institutions de la Ve République,Constitution de 1958,AUTONOMOUS,8,8,COMPLETE
+HISTORY,La Ve République,Institutions de la Ve République,Rôle du président,AUTONOMOUS,8,8,COMPLETE
+HISTORY,La Ve République,Institutions de la Ve République,Équilibres des pouvoirs,AUTONOMOUS,8,8,COMPLETE
+HISTORY,La Ve République,Évolutions politiques,Alternances,AUTONOMOUS,8,8,COMPLETE
+HISTORY,La Ve République,Évolutions politiques,Réformes majeures,AUTONOMOUS,8,8,COMPLETE
+HISTORY,La Ve République,Évolutions politiques,Société et politique,AUTONOMOUS,8,8,COMPLETE
+HISTORY,"Refonder la République, redéfinir la démocratie (1944-1947)",IVe République,Constitution de 1946,AUTONOMOUS,8,8,COMPLETE
+HISTORY,"Refonder la République, redéfinir la démocratie (1944-1947)",IVe République,Réformes sociales,AUTONOMOUS,8,8,COMPLETE
+HISTORY,"Refonder la République, redéfinir la démocratie (1944-1947)",Libération et refondation,Droits (vote des femmes),AUTONOMOUS,8,8,COMPLETE
+HISTORY,"Refonder la République, redéfinir la démocratie (1944-1947)",Libération et refondation,GPRF,AUTONOMOUS,8,8,COMPLETE
+HISTORY,"Refonder la République, redéfinir la démocratie (1944-1947)",Libération et refondation,Épuration,AUTONOMOUS,8,8,COMPLETE
+HISTORY,Un monde bipolaire au temps de la Guerre froide,Blocs Est / Ouest,Affrontement idéologique,AUTONOMOUS,8,8,COMPLETE
+HISTORY,Un monde bipolaire au temps de la Guerre froide,Blocs Est / Ouest,Alliances,AUTONOMOUS,8,8,COMPLETE
+HISTORY,Un monde bipolaire au temps de la Guerre froide,Blocs Est / Ouest,Origines,AUTONOMOUS,11,11,COMPLETE
+HISTORY,Un monde bipolaire au temps de la Guerre froide,Crises et conflits,Berlin,AUTONOMOUS,8,8,COMPLETE
+HISTORY,Un monde bipolaire au temps de la Guerre froide,Crises et conflits,Cuba,AUTONOMOUS,8,8,COMPLETE
+HISTORY,Un monde bipolaire au temps de la Guerre froide,Crises et conflits,Guerres proxy,AUTONOMOUS,8,8,COMPLETE
+HISTORY,Un monde bipolaire au temps de la Guerre froide,Fin de la Guerre froide,1989,AUTONOMOUS,8,8,COMPLETE
+HISTORY,Un monde bipolaire au temps de la Guerre froide,Fin de la Guerre froide,Dislocation de l'URSS,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Agrandissement et réduction,Facteur d'échelle,Effet sur les aires,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Agrandissement et réduction,Facteur d'échelle,Effet sur les longueurs,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Agrandissement et réduction,Facteur d'échelle,Effet sur les volumes,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Agrandissement et réduction,Problèmes d'échelle,Figures semblables,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Agrandissement et réduction,Problèmes d'échelle,Plans et maquettes,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Aires et volumes,Calculer des aires,Figures composées,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Aires et volumes,Calculer des aires,Figures planes usuelles,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Aires et volumes,Calculer des aires,Problèmes d'aires,AUTONOMOUS,12,12,COMPLETE
+MATHEMATICS,Aires et volumes,Calculer des volumes,Prisme / pavé / cylindre,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Aires et volumes,Calculer des volumes,Pyramide / cône,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Aires et volumes,Calculer des volumes,Sphère,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Arithmétique,Divisibilité,Critères de divisibilité,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Arithmétique,Divisibilité,Multiples et diviseurs,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Arithmétique,Nombres premiers,Décomposition en facteurs premiers,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Arithmétique,Nombres premiers,Reconnaître un nombre premier,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Arithmétique,PGCD et applications,Algorithme d'Euclide,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Arithmétique,PGCD et applications,Simplification de fractions,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Calcul littéral,Manipuler des expressions,Parenthèses,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Calcul littéral,Manipuler des expressions,Produits,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Calcul littéral,Manipuler des expressions,Sommes algébriques,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Calcul littéral,Écrire et interpréter une expression,Substituer une valeur,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Calcul littéral,Écrire et interpréter une expression,Tester une égalité,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Calcul littéral,Écrire et interpréter une expression,Traduire une situation,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Compétences transversales,Automatismes,Calculs fluides,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Compétences transversales,Automatismes,Formules usuelles,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Compétences transversales,Automatismes,Procédures de base,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Compétences transversales,Automatismes,Rapidité et exactitude,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Compétences transversales,Calcul mental,Opérations courantes,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Compétences transversales,Calcul mental,Ordres de grandeur,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Compétences transversales,Calcul mental,Pourcentages mentaux,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Compétences transversales,Démonstration,Enchaîner des arguments,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Compétences transversales,Démonstration,Hypothèses / conclusion,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Compétences transversales,Démonstration,Rédiger une preuve,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Compétences transversales,Outils numériques,Calculatrice,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Compétences transversales,Outils numériques,Environnement de programmation,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Compétences transversales,Outils numériques,Logiciel de géométrie,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Compétences transversales,Outils numériques,Tableur,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Compétences transversales,Raisonnement,Conjecturer,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Compétences transversales,Raisonnement,Contre-exemple,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Compétences transversales,Raisonnement,Déduire,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Compétences transversales,Résolution de problèmes,Choisir une stratégie,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Compétences transversales,Résolution de problèmes,Comprendre l'énoncé,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Compétences transversales,Résolution de problèmes,Contrôler et conclure,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Compétences transversales,Résolution de problèmes,Mener la résolution,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Conversions d'unités,Autres grandeurs,Durées,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Conversions d'unités,Autres grandeurs,Masses,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Conversions d'unités,Autres grandeurs,Vitesses,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Conversions d'unités,"Longueurs, aires, volumes",Unités d'aire,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Conversions d'unités,"Longueurs, aires, volumes",Unités de longueur,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Conversions d'unités,"Longueurs, aires, volumes",Unités de volume / capacité,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,"Développement, réduction et factorisation",Développer,(a+b)(c+d),AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,"Développement, réduction et factorisation",Développer,Identités remarquables (sens direct),AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,"Développement, réduction et factorisation",Développer,k(a+b),AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,"Développement, réduction et factorisation",Factoriser,Facteur commun,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,"Développement, réduction et factorisation",Factoriser,Identités remarquables (sens inverse),AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,"Développement, réduction et factorisation",Réduire,Ordonner une expression,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,"Développement, réduction et factorisation",Réduire,Regrouper les termes semblables,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Fonctions linéaires et affines,Déterminer une fonction affine,Modéliser une situation,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Fonctions linéaires et affines,Déterminer une fonction affine,À partir d'un graphique,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Fonctions linéaires et affines,Déterminer une fonction affine,À partir de deux points,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Fonctions linéaires et affines,Fonctions affines,Ordonnée à l'origine,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Fonctions linéaires et affines,Fonctions affines,Tracer la droite,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Fonctions linéaires et affines,Fonctions affines,y = ax+b,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Fonctions linéaires et affines,Fonctions linéaires,Coefficient directeur,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Fonctions linéaires et affines,Fonctions linéaires,Lien avec la proportionnalité,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Fonctions linéaires et affines,Fonctions linéaires,y = ax,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Fonctions — image et antécédent,Image et antécédent,Calculer une image,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Fonctions — image et antécédent,Image et antécédent,Déterminer un antécédent,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Fonctions — image et antécédent,Image et antécédent,Lire sur un graphique,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Fonctions — image et antécédent,Notion de fonction,Définir une fonction,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Fonctions — image et antécédent,Notion de fonction,Notation f(x),AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Fonctions — image et antécédent,Notion de fonction,Tableau de valeurs,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Fonctions — image et antécédent,Représentation graphique,Interpréter graphiquement,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Fonctions — image et antécédent,Représentation graphique,Tracer une courbe,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Fractions,Calculer avec des fractions,Addition et soustraction,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Fractions,Calculer avec des fractions,Division,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Fractions,Calculer avec des fractions,Multiplication,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Fractions,Résoudre des problèmes de fractions,Partie d'une quantité,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Fractions,Résoudre des problèmes de fractions,Problèmes contextualisés,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Fractions,Simplifier et rendre irréductible,Forme irréductible,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Fractions,Simplifier et rendre irréductible,Fractions égales,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Fractions,Simplifier et rendre irréductible,Utiliser le PGCD,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Géométrie dans l'espace et solides,Représentations,Patrons,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Géométrie dans l'espace et solides,Représentations,Perspective cavalière,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Géométrie dans l'espace et solides,Représentations,Sections planes,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Géométrie dans l'espace et solides,Solides usuels,Cylindre / cône / sphère,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Géométrie dans l'espace et solides,Solides usuels,Pavé / cube,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Géométrie dans l'espace et solides,Solides usuels,Pyramide / prisme,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Géométrie plane,Cercle et polygones,Polygones réguliers,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Géométrie plane,Cercle et polygones,Propriétés du cercle,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Géométrie plane,Constructions et justifications,Construire à la règle et au compas,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Géométrie plane,Constructions et justifications,Justifier une propriété,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Géométrie plane,Triangles,Inégalité triangulaire,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Géométrie plane,Triangles,Somme des angles,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Géométrie plane,Triangles,Types de triangles,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Homothétie,Construire et calculer,Effet sur les longueurs,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Homothétie,Construire et calculer,Image d'un point / d'une figure,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Homothétie,Construire et calculer,Lien avec Thalès / agrandissement,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Homothétie,Définition et rapport,Agrandissement / réduction,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Homothétie,Définition et rapport,Centre et rapport k,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Nombres relatifs et rationnels,Comparer et ordonner,Comparer relatifs et rationnels,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Nombres relatifs et rationnels,Comparer et ordonner,Repérer sur une droite graduée,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Nombres relatifs et rationnels,Comparer et ordonner,Situer dans un intervalle,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Nombres relatifs et rationnels,Opérations sur les relatifs,Addition et soustraction,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Nombres relatifs et rationnels,Opérations sur les relatifs,Multiplication et division,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Nombres relatifs et rationnels,Opérations sur les relatifs,Priorités opératoires,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Nombres relatifs et rationnels,Représenter les rationnels,Fraction et écriture décimale,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Nombres relatifs et rationnels,Représenter les rationnels,Écritures mixtes,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Pourcentages,Calculer un pourcentage,Pourcentage d'une quantité,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Pourcentages,Calculer un pourcentage,Trouver un taux,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Pourcentages,Évolutions en pourcentage,Augmentation,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Pourcentages,Évolutions en pourcentage,Diminution,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Pourcentages,Évolutions en pourcentage,Évolutions successives,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Probabilités,Calculer une probabilité,Arbres / tableaux,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Probabilités,Calculer une probabilité,Probabilité simple,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Probabilités,Calculer une probabilité,Événement contraire,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Probabilités,Vocabulaire des probabilités,Issues et événements,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Probabilités,Vocabulaire des probabilités,Situations équiprobables,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Problèmes numériques,Choisir une stratégie,Décomposer le problème,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Problèmes numériques,Choisir une stratégie,Estimer un ordre de grandeur,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Problèmes numériques,Mener un calcul justifié,Enchaîner les étapes,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Problèmes numériques,Mener un calcul justifié,Gérer les unités,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Problèmes numériques,Mener un calcul justifié,Présenter le résultat,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Proportionnalité,Calculer dans une situation proportionnelle,Coefficient de proportionnalité,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Proportionnalité,Calculer dans une situation proportionnelle,Produit en croix,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Proportionnalité,Calculer dans une situation proportionnelle,Échelles,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Proportionnalité,Reconnaître une situation de proportionnalité,Représentation graphique,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Proportionnalité,Reconnaître une situation de proportionnalité,Tableau de proportionnalité,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Puissances et notation scientifique,Notation scientifique,Calculer en notation scientifique,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Puissances et notation scientifique,Notation scientifique,Comparer des grandeurs,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Puissances et notation scientifique,Notation scientifique,Passer en notation scientifique,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Puissances et notation scientifique,Propriétés des puissances,Exposants négatifs,AUTONOMOUS,12,12,COMPLETE
+MATHEMATICS,Puissances et notation scientifique,Propriétés des puissances,Produit de puissances,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Puissances et notation scientifique,Propriétés des puissances,Quotient de puissances,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Puissances et notation scientifique,Puissances de 10,Calculs avec 10^n,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Puissances et notation scientifique,Puissances de 10,Écriture décimale,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Repérage,Repérage dans l'espace,Coordonnées dans l'espace,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Repérage,Repérage dans l'espace,Lire un solide repéré,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Repérage,Repérage dans le plan,Coordonnées cartésiennes,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Repérage,Repérage dans le plan,Distance entre deux points,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Repérage,Repérage dans le plan,Milieu d'un segment,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Scratch et programmation par blocs,Contrôle et interactions,Conditions en blocs,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Scratch et programmation par blocs,Contrôle et interactions,Répéter,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Scratch et programmation par blocs,Contrôle et interactions,Variables en blocs,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Scratch et programmation par blocs,Scripts et événements,Séquences d'instructions,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Scratch et programmation par blocs,Scripts et événements,Événements,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Statistiques,Indicateurs statistiques,Moyenne,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Statistiques,Indicateurs statistiques,Médiane,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Statistiques,Indicateurs statistiques,Étendue,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Statistiques,Interpréter des données,Lire un graphique,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Statistiques,Interpréter des données,Tirer une conclusion,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Statistiques,Organiser des données,Diagrammes,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Statistiques,Organiser des données,Fréquences,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Statistiques,Organiser des données,Tableaux,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Théorème de Pythagore et réciproque,Raisonnement géométrique,Rédiger une démonstration courte,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Théorème de Pythagore et réciproque,Raisonnement géométrique,Schématiser,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Théorème de Pythagore et réciproque,Réciproque de Pythagore,Rédiger une justification,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Théorème de Pythagore et réciproque,Réciproque de Pythagore,Tester si un triangle est rectangle,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Théorème de Pythagore et réciproque,Théorème de Pythagore,Calculer une longueur,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Théorème de Pythagore et réciproque,Théorème de Pythagore,Identifier l'hypoténuse,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Théorème de Pythagore et réciproque,Théorème de Pythagore,Problèmes d'application,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Théorème de Thalès et réciproque,Réciproque de Thalès,Prouver le parallélisme,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Théorème de Thalès et réciproque,Réciproque de Thalès,Rédiger la justification,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Théorème de Thalès et réciproque,Théorème de Thalès,Calculer une longueur,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Théorème de Thalès et réciproque,Théorème de Thalès,Reconnaître une configuration,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Théorème de Thalès et réciproque,Théorème de Thalès,Écrire les rapports,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Transformations du plan,Isométries,Rotation,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Transformations du plan,Isométries,Symétries,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Transformations du plan,Isométries,Translation,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Transformations du plan,Propriétés conservées,Conservation des angles,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Transformations du plan,Propriétés conservées,Conservation des longueurs,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Transformations du plan,Propriétés conservées,Construire l'image d'une figure,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Trigonométrie dans le triangle rectangle,Choisir le bon rapport,"Choisir cos, sin ou tan",AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Trigonométrie dans le triangle rectangle,Choisir le bon rapport,Identifier côtés depuis un angle,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Trigonométrie dans le triangle rectangle,Cosinus,Calculer un cosinus,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Trigonométrie dans le triangle rectangle,Cosinus,Définition cos = adj/hyp,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Trigonométrie dans le triangle rectangle,Cosinus,Déterminer un angle,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Trigonométrie dans le triangle rectangle,Sinus,Calculer un sinus,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Trigonométrie dans le triangle rectangle,Sinus,Calculer une longueur,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Trigonométrie dans le triangle rectangle,Sinus,Définition sin = opp/hyp,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Trigonométrie dans le triangle rectangle,Tangente,Calculer une tangente,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Trigonométrie dans le triangle rectangle,Tangente,Définition tan = opp/adj,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Trigonométrie dans le triangle rectangle,Tangente,Problèmes de trigonométrie,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,"Variables, conditions et boucles",Boucles,Boucle bornée,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,"Variables, conditions et boucles",Boucles,Boucle non bornée,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,"Variables, conditions et boucles",Boucles,Faire tourner un algorithme à la main,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,"Variables, conditions et boucles",Conditions,Conditions booléennes,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,"Variables, conditions et boucles",Conditions,Si … alors … sinon,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,"Variables, conditions et boucles",Variables et affectations,Déclarer / affecter,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,"Variables, conditions et boucles",Variables et affectations,Expressions,AUTONOMOUS,12,12,COMPLETE
+MATHEMATICS,"Variables, conditions et boucles",Variables et affectations,Types simples,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Équations,Mettre en équation un problème,Choisir l'inconnue,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Équations,Mettre en équation un problème,Contrôler la pertinence,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Équations,Mettre en équation un problème,Résoudre et interpréter,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Équations,Équations du premier degré,Résoudre ax+b=c,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Équations,Équations du premier degré,Transformer une équation,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Équations,Équations du premier degré,Vérifier une solution,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Équations,Équations produit nul,Mettre sous forme produit,AUTONOMOUS,8,8,COMPLETE
+MATHEMATICS,Équations,Équations produit nul,Trouver les racines,AUTONOMOUS,8,8,COMPLETE
+PHYSICS_CHEMISTRY,Atomes et molécules,Modèle de l'atome,Constituants,AUTONOMOUS,8,8,COMPLETE
+PHYSICS_CHEMISTRY,Atomes et molécules,Modèle de l'atome,Tableau périodique,AUTONOMOUS,9,9,COMPLETE
+PHYSICS_CHEMISTRY,Atomes et molécules,Modèle de l'atome,Éléments chimiques,AUTONOMOUS,8,8,COMPLETE
+PHYSICS_CHEMISTRY,Atomes et molécules,Molécules et formules,Formules chimiques,AUTONOMOUS,8,8,COMPLETE
+PHYSICS_CHEMISTRY,Atomes et molécules,Molécules et formules,Modèles moléculaires,AUTONOMOUS,8,8,COMPLETE
+PHYSICS_CHEMISTRY,Forces et interactions,Effets des forces,Diagrammes de forces,AUTONOMOUS,8,8,COMPLETE
+PHYSICS_CHEMISTRY,Forces et interactions,Effets des forces,Modification du mouvement,AUTONOMOUS,8,8,COMPLETE
+PHYSICS_CHEMISTRY,Forces et interactions,Effets des forces,Équilibre,AUTONOMOUS,8,8,COMPLETE
+PHYSICS_CHEMISTRY,Forces et interactions,Identifier des forces,Actions de contact,AUTONOMOUS,8,8,COMPLETE
+PHYSICS_CHEMISTRY,Forces et interactions,Identifier des forces,Actions à distance,AUTONOMOUS,8,8,COMPLETE
+PHYSICS_CHEMISTRY,Forces et interactions,Identifier des forces,Poids,AUTONOMOUS,8,8,COMPLETE
+PHYSICS_CHEMISTRY,Formes et conversions d'énergie,Chaînes énergétiques,Conversions,AUTONOMOUS,8,8,COMPLETE
+PHYSICS_CHEMISTRY,Formes et conversions d'énergie,Chaînes énergétiques,Rendement,AUTONOMOUS,8,8,COMPLETE
+PHYSICS_CHEMISTRY,Formes et conversions d'énergie,Chaînes énergétiques,Transferts,AUTONOMOUS,8,8,COMPLETE
+PHYSICS_CHEMISTRY,Formes et conversions d'énergie,Formes d'énergie,Chimique / thermique,AUTONOMOUS,8,8,COMPLETE
+PHYSICS_CHEMISTRY,Formes et conversions d'énergie,Formes d'énergie,Cinétique,AUTONOMOUS,8,8,COMPLETE
+PHYSICS_CHEMISTRY,Formes et conversions d'énergie,Formes d'énergie,Potentielle,AUTONOMOUS,8,8,COMPLETE
+PHYSICS_CHEMISTRY,Lumière et signaux lumineux,Lentilles et images,Formation d'images,AUTONOMOUS,8,8,COMPLETE
+PHYSICS_CHEMISTRY,Lumière et signaux lumineux,Lentilles et images,Lentilles convergentes,AUTONOMOUS,8,8,COMPLETE
+PHYSICS_CHEMISTRY,Lumière et signaux lumineux,Propagation de la lumière,Ombres,AUTONOMOUS,9,9,COMPLETE
+PHYSICS_CHEMISTRY,Lumière et signaux lumineux,Propagation de la lumière,Propagation rectiligne,AUTONOMOUS,8,8,COMPLETE
+PHYSICS_CHEMISTRY,Lumière et signaux lumineux,Propagation de la lumière,Vitesse de la lumière,AUTONOMOUS,8,8,COMPLETE
+PHYSICS_CHEMISTRY,Masse volumique et identification,Mesurer et calculer,Calculs,AUTONOMOUS,8,8,COMPLETE
+PHYSICS_CHEMISTRY,Masse volumique et identification,Mesurer et calculer,Définition ρ = m/V,AUTONOMOUS,8,8,COMPLETE
+PHYSICS_CHEMISTRY,Masse volumique et identification,Mesurer et calculer,Identifier une espèce,AUTONOMOUS,11,11,COMPLETE
+PHYSICS_CHEMISTRY,Masse volumique et identification,Unités et conversions,Protocole expérimental,AUTONOMOUS,8,8,COMPLETE
+PHYSICS_CHEMISTRY,Masse volumique et identification,Unités et conversions,"g/cm³, kg/m³",AUTONOMOUS,8,8,COMPLETE
+PHYSICS_CHEMISTRY,Mouvement et vitesse,Décrire un mouvement,Rectiligne / circulaire,AUTONOMOUS,12,12,COMPLETE
+PHYSICS_CHEMISTRY,Mouvement et vitesse,Décrire un mouvement,Référentiel,AUTONOMOUS,8,8,COMPLETE
+PHYSICS_CHEMISTRY,Mouvement et vitesse,Décrire un mouvement,Trajectoire,AUTONOMOUS,8,8,COMPLETE
+PHYSICS_CHEMISTRY,Mouvement et vitesse,Vitesse,Conversions km/h ↔ m/s,AUTONOMOUS,8,8,COMPLETE
+PHYSICS_CHEMISTRY,Mouvement et vitesse,Vitesse,"Graphiques d(t), v(t)",AUTONOMOUS,8,8,COMPLETE
+PHYSICS_CHEMISTRY,Mouvement et vitesse,Vitesse,v = d/t,AUTONOMOUS,8,8,COMPLETE
+PHYSICS_CHEMISTRY,Réactions chimiques,Acides et bases,Indicateurs,AUTONOMOUS,8,8,COMPLETE
+PHYSICS_CHEMISTRY,Réactions chimiques,Acides et bases,Neutralisation,AUTONOMOUS,8,8,COMPLETE
+PHYSICS_CHEMISTRY,Réactions chimiques,Acides et bases,pH,AUTONOMOUS,8,8,COMPLETE
+PHYSICS_CHEMISTRY,Réactions chimiques,Décrire une transformation,Conservation de la masse,AUTONOMOUS,8,8,COMPLETE
+PHYSICS_CHEMISTRY,Réactions chimiques,Décrire une transformation,Réactifs / produits,AUTONOMOUS,8,8,COMPLETE
+PHYSICS_CHEMISTRY,Réactions chimiques,Décrire une transformation,Équation de réaction,AUTONOMOUS,8,8,COMPLETE
+PHYSICS_CHEMISTRY,Son et signaux sonores,Caractéristiques d'un son,Amplitude / intensité,AUTONOMOUS,8,8,COMPLETE
+PHYSICS_CHEMISTRY,Son et signaux sonores,Caractéristiques d'un son,Fréquence / hauteur,AUTONOMOUS,8,8,COMPLETE
+PHYSICS_CHEMISTRY,Son et signaux sonores,Caractéristiques d'un son,Signal et communication,AUTONOMOUS,8,8,COMPLETE
+PHYSICS_CHEMISTRY,Son et signaux sonores,Propagation du son,Milieu matériel,AUTONOMOUS,8,8,COMPLETE
+PHYSICS_CHEMISTRY,Son et signaux sonores,Propagation du son,Vitesse du son,AUTONOMOUS,8,8,COMPLETE
+PHYSICS_CHEMISTRY,Électricité et circuits,Circuits électriques,Dérivation,AUTONOMOUS,8,8,COMPLETE
+PHYSICS_CHEMISTRY,Électricité et circuits,Circuits électriques,Sécurité,AUTONOMOUS,8,8,COMPLETE
+PHYSICS_CHEMISTRY,Électricité et circuits,Circuits électriques,Série,AUTONOMOUS,8,8,COMPLETE
+PHYSICS_CHEMISTRY,Électricité et circuits,Grandeurs électriques,Intensité,AUTONOMOUS,8,8,COMPLETE
+PHYSICS_CHEMISTRY,Électricité et circuits,Grandeurs électriques,Puissance / énergie électrique,AUTONOMOUS,8,8,COMPLETE
+PHYSICS_CHEMISTRY,Électricité et circuits,Grandeurs électriques,Tension,AUTONOMOUS,8,8,COMPLETE
+SVT,ADN et génétique,ADN support de l'information,Chromosomes,AUTONOMOUS,8,8,COMPLETE
+SVT,ADN et génétique,ADN support de l'information,Gènes,AUTONOMOUS,8,8,COMPLETE
+SVT,ADN et génétique,ADN support de l'information,Structure de l'ADN,AUTONOMOUS,8,8,COMPLETE
+SVT,ADN et génétique,Hérédité,Diversité génétique,AUTONOMOUS,8,8,COMPLETE
+SVT,ADN et génétique,Hérédité,Mutations,AUTONOMOUS,8,8,COMPLETE
+SVT,ADN et génétique,Hérédité,Transmission,AUTONOMOUS,8,8,COMPLETE
+SVT,Climat et changements globaux,Effet de serre et climat,Gaz à effet de serre,AUTONOMOUS,8,8,COMPLETE
+SVT,Climat et changements globaux,Effet de serre et climat,Évolution du climat,AUTONOMOUS,8,8,COMPLETE
+SVT,Climat et changements globaux,Enjeux environnementaux,Atténuation / adaptation,AUTONOMOUS,8,8,COMPLETE
+SVT,Climat et changements globaux,Enjeux environnementaux,Conséquences,AUTONOMOUS,8,8,COMPLETE
+SVT,Dynamique de la Terre,Risques géologiques,Enjeux de société,AUTONOMOUS,8,8,COMPLETE
+SVT,Dynamique de la Terre,Risques géologiques,Prévention,AUTONOMOUS,8,8,COMPLETE
+SVT,Dynamique de la Terre,Structure de la Terre,Enveloppes,AUTONOMOUS,8,8,COMPLETE
+SVT,Dynamique de la Terre,Structure de la Terre,Séismes / volcans,AUTONOMOUS,8,8,COMPLETE
+SVT,Dynamique de la Terre,Structure de la Terre,Tectonique des plaques,AUTONOMOUS,8,8,COMPLETE
+SVT,Immunité et santé,Défenses de l'organisme,Anticorps,AUTONOMOUS,8,8,COMPLETE
+SVT,Immunité et santé,Défenses de l'organisme,Immunité adaptative,AUTONOMOUS,8,8,COMPLETE
+SVT,Immunité et santé,Défenses de l'organisme,Immunité innée,AUTONOMOUS,8,8,COMPLETE
+SVT,Immunité et santé,Prévention et traitements,Antibiotiques,AUTONOMOUS,8,8,COMPLETE
+SVT,Immunité et santé,Prévention et traitements,Gestes de prévention,AUTONOMOUS,8,8,COMPLETE
+SVT,Immunité et santé,Prévention et traitements,Vaccination,AUTONOMOUS,8,8,COMPLETE
+SVT,Nutrition et digestion,Aliments et besoins,Besoins énergétiques,AUTONOMOUS,8,8,COMPLETE
+SVT,Nutrition et digestion,Aliments et besoins,Groupes d'aliments,AUTONOMOUS,8,8,COMPLETE
+SVT,Nutrition et digestion,Aliments et besoins,Équilibre alimentaire,AUTONOMOUS,8,8,COMPLETE
+SVT,Nutrition et digestion,Digestion,Absorption,AUTONOMOUS,8,8,COMPLETE
+SVT,Nutrition et digestion,Digestion,Tube digestif,AUTONOMOUS,8,8,COMPLETE
+SVT,Organisation cellulaire,Cellule et organisme,Organites,AUTONOMOUS,8,8,COMPLETE
+SVT,Organisation cellulaire,Cellule et organisme,Unicellulaire / pluricellulaire,AUTONOMOUS,8,8,COMPLETE
+SVT,Organisation cellulaire,Micro-organismes,Diversité microbienne,AUTONOMOUS,8,8,COMPLETE
+SVT,Organisation cellulaire,Micro-organismes,Utilisations / risques,AUTONOMOUS,8,8,COMPLETE
+SVT,Reproduction,Développement,Développement embryonnaire,AUTONOMOUS,8,8,COMPLETE
+SVT,Reproduction,Développement,Puberté,AUTONOMOUS,8,8,COMPLETE
+SVT,Reproduction,Reproduction sexuée,Fécondation,AUTONOMOUS,8,8,COMPLETE
+SVT,Reproduction,Reproduction sexuée,Gamètes,AUTONOMOUS,8,8,COMPLETE
+SVT,Respiration et circulation,Circulation,Cœur,AUTONOMOUS,8,8,COMPLETE
+SVT,Respiration et circulation,Circulation,Effort et santé,AUTONOMOUS,8,8,COMPLETE
+SVT,Respiration et circulation,Circulation,Sang / vaisseaux,AUTONOMOUS,8,8,COMPLETE
+SVT,Respiration et circulation,Respiration,Respiration cellulaire,AUTONOMOUS,8,8,COMPLETE
+SVT,Respiration et circulation,Respiration,Échanges pulmonaires,AUTONOMOUS,8,8,COMPLETE
+SVT,Écosystèmes et environnement,Action humaine,Gestion durable,AUTONOMOUS,8,8,COMPLETE
+SVT,Écosystèmes et environnement,Action humaine,Impacts,AUTONOMOUS,8,8,COMPLETE
+SVT,Écosystèmes et environnement,Relations au sein d'un écosystème,Biodiversité,AUTONOMOUS,8,8,COMPLETE
+SVT,Écosystèmes et environnement,Relations au sein d'un écosystème,Biotique / abiotique,AUTONOMOUS,8,8,COMPLETE
+SVT,Écosystèmes et environnement,Relations au sein d'un écosystème,Chaînes alimentaires,AUTONOMOUS,8,8,COMPLETE
+SVT,Évolution des espèces,Arguments de l'évolution,Fossiles,AUTONOMOUS,8,8,COMPLETE
+SVT,Évolution des espèces,Arguments de l'évolution,Parenté,AUTONOMOUS,8,8,COMPLETE
+SVT,Évolution des espèces,Mécanismes évolutifs,Spéciation,AUTONOMOUS,8,8,COMPLETE
+SVT,Évolution des espèces,Mécanismes évolutifs,Sélection naturelle,AUTONOMOUS,8,8,COMPLETE
+SVT,Évolution des espèces,Mécanismes évolutifs,Variation,AUTONOMOUS,8,8,COMPLETE
+TECHNOLOGY,Chaîne d'information,Acquérir et traiter,Capteurs,AUTONOMOUS,8,8,COMPLETE
+TECHNOLOGY,Chaîne d'information,Acquérir et traiter,Communiquer,AUTONOMOUS,8,8,COMPLETE
+TECHNOLOGY,Chaîne d'information,Acquérir et traiter,Traitement,AUTONOMOUS,8,8,COMPLETE
+TECHNOLOGY,Chaîne d'information,Commander,Actionneurs,AUTONOMOUS,8,8,COMPLETE
+TECHNOLOGY,Chaîne d'information,Commander,Asservissement simple,AUTONOMOUS,8,8,COMPLETE
+TECHNOLOGY,Chaîne d'énergie,Bilans énergétiques,Pertes,AUTONOMOUS,8,8,COMPLETE
+TECHNOLOGY,Chaîne d'énergie,Bilans énergétiques,Rendement,AUTONOMOUS,8,8,COMPLETE
+TECHNOLOGY,Chaîne d'énergie,Flux d'énergie,Convertir,AUTONOMOUS,8,8,COMPLETE
+TECHNOLOGY,Chaîne d'énergie,Flux d'énergie,Stocker,AUTONOMOUS,8,8,COMPLETE
+TECHNOLOGY,Chaîne d'énergie,Flux d'énergie,Transporter,AUTONOMOUS,8,8,COMPLETE
+TECHNOLOGY,Conception et modélisation,Démarche de conception,Cahier des charges,AUTONOMOUS,8,8,COMPLETE
+TECHNOLOGY,Conception et modélisation,Démarche de conception,Idéation / choix,AUTONOMOUS,8,8,COMPLETE
+TECHNOLOGY,Conception et modélisation,Démarche de conception,Prototype,AUTONOMOUS,8,8,COMPLETE
+TECHNOLOGY,Conception et modélisation,Modélisation,Représentation / CAO,AUTONOMOUS,8,8,COMPLETE
+TECHNOLOGY,Conception et modélisation,Modélisation,Simulation,AUTONOMOUS,8,8,COMPLETE
+TECHNOLOGY,Impacts et développement durable,Choix responsables,Analyse de cycle de vie,AUTONOMOUS,8,8,COMPLETE
+TECHNOLOGY,Impacts et développement durable,Choix responsables,Réparabilité / réemploi,AUTONOMOUS,8,8,COMPLETE
+TECHNOLOGY,Impacts et développement durable,Impacts des objets techniques,Environnement,AUTONOMOUS,8,8,COMPLETE
+TECHNOLOGY,Impacts et développement durable,Impacts des objets techniques,Société,AUTONOMOUS,8,8,COMPLETE
+TECHNOLOGY,Impacts et développement durable,Impacts des objets techniques,Économie,AUTONOMOUS,8,8,COMPLETE
+TECHNOLOGY,"Informatique, algorithmique et programmation",Algorithmique,Boucles,AUTONOMOUS,8,8,COMPLETE
+TECHNOLOGY,"Informatique, algorithmique et programmation",Algorithmique,Conditions,AUTONOMOUS,8,8,COMPLETE
+TECHNOLOGY,"Informatique, algorithmique et programmation",Algorithmique,Séquences,AUTONOMOUS,8,8,COMPLETE
+TECHNOLOGY,"Informatique, algorithmique et programmation",Programmer,Blocs / scripts,AUTONOMOUS,8,8,COMPLETE
+TECHNOLOGY,"Informatique, algorithmique et programmation",Programmer,Tester / déboguer,AUTONOMOUS,8,8,COMPLETE
+TECHNOLOGY,"Informatique, algorithmique et programmation",Programmer,Variables,AUTONOMOUS,8,8,COMPLETE
+TECHNOLOGY,Objets et systèmes techniques,Analyser un objet technique,Besoin / fonction d'usage,AUTONOMOUS,8,8,COMPLETE
+TECHNOLOGY,Objets et systèmes techniques,Analyser un objet technique,Cycle de vie,AUTONOMOUS,8,8,COMPLETE
+TECHNOLOGY,Objets et systèmes techniques,Analyser un objet technique,Structure / matériaux,AUTONOMOUS,8,8,COMPLETE
+TECHNOLOGY,Objets et systèmes techniques,Évolution des objets,Comparaison de solutions,AUTONOMOUS,8,8,COMPLETE
+TECHNOLOGY,Objets et systèmes techniques,Évolution des objets,Innovation,AUTONOMOUS,8,8,COMPLETE
+TECHNOLOGY,Réseaux et données,Architecture des réseaux,Internet,AUTONOMOUS,8,8,COMPLETE
+TECHNOLOGY,Réseaux et données,Architecture des réseaux,Protocoles simples,AUTONOMOUS,8,8,COMPLETE
+TECHNOLOGY,Réseaux et données,Architecture des réseaux,Réseau local,AUTONOMOUS,8,8,COMPLETE
+TECHNOLOGY,Réseaux et données,Données et sécurité,Cybersécurité de base,AUTONOMOUS,8,8,COMPLETE
+TECHNOLOGY,Réseaux et données,Données et sécurité,Stockage,AUTONOMOUS,8,8,COMPLETE
+TECHNOLOGY,Réseaux et données,Données et sécurité,Vie privée,AUTONOMOUS,8,8,COMPLETE

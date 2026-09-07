@@ -1,0 +1,214 @@
+subject,domain,chapter,skill,subskill,importance,exercise_count,family_count,official_count,archive_derived_count,brevet_style_count,ai_generated_count,consolidation_count,current_level_count,stretch_count,brevet_count,correction_coverage,asset_completeness,coverage_status
+FRENCH,Lecture et compréhension,Compréhension de textes,Repérer des informations explicites,,CRITICAL,30,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+FRENCH,Lecture et compréhension,Compréhension de textes,Inférer des informations implicites,,CRITICAL,30,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+FRENCH,Lecture et compréhension,Compréhension de textes,Comprendre le sens global,,CRITICAL,30,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+FRENCH,Lecture et compréhension,Interprétation et analyse,Procédés d'écriture,,CRITICAL,50,13,0,5,0,0,,,,,1.0,1.0,COMPLETE
+FRENCH,Lecture et compréhension,Interprétation et analyse,Point de vue et intentions,,CRITICAL,30,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+FRENCH,"Langue (grammaire, conjugaison, orthographe, vocabulaire)",Grammaire et syntaxe,Classes grammaticales,,HIGH,60,1,0,15,0,0,,,,,1.0,1.0,PARTIAL
+FRENCH,"Langue (grammaire, conjugaison, orthographe, vocabulaire)",Grammaire et syntaxe,Fonctions dans la phrase,,HIGH,30,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+FRENCH,"Langue (grammaire, conjugaison, orthographe, vocabulaire)",Grammaire et syntaxe,Phrase simple et complexe,,HIGH,30,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+FRENCH,"Langue (grammaire, conjugaison, orthographe, vocabulaire)",Conjugaison,Temps et modes,,HIGH,40,9,0,8,0,0,,,,,1.0,1.0,COMPLETE
+FRENCH,"Langue (grammaire, conjugaison, orthographe, vocabulaire)",Conjugaison,Accords du verbe,,HIGH,30,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+FRENCH,"Langue (grammaire, conjugaison, orthographe, vocabulaire)",Orthographe et accords,Orthographe lexicale,,HIGH,100,2,0,26,0,0,,,,,1.0,1.0,PARTIAL
+FRENCH,"Langue (grammaire, conjugaison, orthographe, vocabulaire)",Orthographe et accords,Accords dans le groupe nominal,,HIGH,30,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+FRENCH,"Langue (grammaire, conjugaison, orthographe, vocabulaire)",Orthographe et accords,Accord sujet-verbe,,HIGH,30,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+FRENCH,"Langue (grammaire, conjugaison, orthographe, vocabulaire)",Vocabulaire,Sens des mots,,MEDIUM,30,11,0,5,0,0,,,,,1.0,1.0,COMPLETE
+FRENCH,"Langue (grammaire, conjugaison, orthographe, vocabulaire)",Vocabulaire,Formation des mots,,MEDIUM,30,12,0,0,0,0,,,,,1.0,1.0,COMPLETE
+FRENCH,Écriture,Réécriture,Transformer un texte,,HIGH,40,12,0,0,0,40,,,,,1.0,1.0,COMPLETE
+FRENCH,Écriture,Réécriture,Maintenir la cohérence,,HIGH,40,12,0,0,0,40,,,,,1.0,1.0,COMPLETE
+FRENCH,Écriture,Dictée,Orthographe en situation,,HIGH,40,12,0,0,0,40,,,,,1.0,1.0,COMPLETE
+FRENCH,Écriture,Dictée,Stratégies de relecture,,HIGH,40,12,0,0,0,40,,,,,1.0,1.0,COMPLETE
+FRENCH,Écriture,Expression écrite,Organiser un écrit,,CRITICAL,30,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+FRENCH,Écriture,Expression écrite,Qualité de l'expression,,CRITICAL,30,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+FRENCH,Écriture,Expression écrite,Genres d'écrits,,CRITICAL,30,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+FRENCH,Écriture,Argumentation,Construire une thèse,,CRITICAL,30,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+FRENCH,Écriture,Argumentation,Structurer un paragraphe argumentatif,,CRITICAL,30,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+FRENCH,Formats d'épreuve DNB,Compréhension et compétences linguistiques (DNB),Questions de compréhension,,CRITICAL,50,10,0,10,0,0,,,,,1.0,1.0,COMPLETE
+FRENCH,Formats d'épreuve DNB,Compréhension et compétences linguistiques (DNB),Compétences linguistiques,,CRITICAL,30,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+FRENCH,Formats d'épreuve DNB,Rédaction DNB,Traiter le sujet,,CRITICAL,50,11,0,10,0,0,,,,,1.0,1.0,COMPLETE
+FRENCH,Formats d'épreuve DNB,Rédaction DNB,Produire un texte abouti,,CRITICAL,30,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+MATHEMATICS,Nombres et calculs,Nombres relatifs et rationnels,Comparer et ordonner,,HIGH,48,3,0,11,0,0,,,,,0.875,1.0,GOOD
+MATHEMATICS,Nombres et calculs,Nombres relatifs et rationnels,Opérations sur les relatifs,,HIGH,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+MATHEMATICS,Nombres et calculs,Nombres relatifs et rationnels,Représenter les rationnels,,HIGH,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+MATHEMATICS,Nombres et calculs,Fractions,Simplifier et rendre irréductible,,HIGH,40,2,0,10,0,0,,,,,1.0,1.0,PARTIAL
+MATHEMATICS,Nombres et calculs,Fractions,Calculer avec des fractions,,HIGH,40,12,0,0,0,0,,,,,1.0,1.0,COMPLETE
+MATHEMATICS,Nombres et calculs,Fractions,Résoudre des problèmes de fractions,,HIGH,40,12,0,0,0,0,,,,,1.0,1.0,COMPLETE
+MATHEMATICS,Nombres et calculs,Puissances et notation scientifique,Propriétés des puissances,,HIGH,32,13,0,5,0,0,,,,,1.0,1.0,PARTIAL
+MATHEMATICS,Nombres et calculs,Puissances et notation scientifique,Puissances de 10,,HIGH,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+MATHEMATICS,Nombres et calculs,Puissances et notation scientifique,Notation scientifique,,HIGH,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+MATHEMATICS,Nombres et calculs,Arithmétique,Divisibilité,,MEDIUM,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+MATHEMATICS,Nombres et calculs,Arithmétique,PGCD et applications,,MEDIUM,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+MATHEMATICS,Nombres et calculs,Arithmétique,Nombres premiers,,MEDIUM,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+MATHEMATICS,Nombres et calculs,Calcul littéral,Écrire et interpréter une expression,,CRITICAL,50,12,0,0,0,0,,,,,1.0,1.0,COMPLETE
+MATHEMATICS,Nombres et calculs,Calcul littéral,Manipuler des expressions,,CRITICAL,50,12,0,0,0,0,,,,,1.0,1.0,COMPLETE
+MATHEMATICS,Nombres et calculs,"Développement, réduction et factorisation",Développer,,CRITICAL,42,13,0,8,0,0,,,,,1.0,1.0,PARTIAL
+MATHEMATICS,Nombres et calculs,"Développement, réduction et factorisation",Réduire,,CRITICAL,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+MATHEMATICS,Nombres et calculs,"Développement, réduction et factorisation",Factoriser,,CRITICAL,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+MATHEMATICS,Nombres et calculs,Équations,Équations du premier degré,,CRITICAL,50,11,0,10,0,0,,,,,1.0,1.0,COMPLETE
+MATHEMATICS,Nombres et calculs,Équations,Équations produit nul,,CRITICAL,50,12,0,0,0,0,,,,,1.0,1.0,COMPLETE
+MATHEMATICS,Nombres et calculs,Équations,Mettre en équation un problème,,CRITICAL,50,12,0,0,0,0,,,,,1.0,1.0,COMPLETE
+MATHEMATICS,Nombres et calculs,Problèmes numériques,Choisir une stratégie,,HIGH,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+MATHEMATICS,Nombres et calculs,Problèmes numériques,Mener un calcul justifié,,HIGH,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+MATHEMATICS,"Organisation et gestion de données, fonctions",Proportionnalité,Reconnaître une situation de proportionnalité,,HIGH,40,2,0,10,0,0,,,,,1.0,1.0,PARTIAL
+MATHEMATICS,"Organisation et gestion de données, fonctions",Proportionnalité,Calculer dans une situation proportionnelle,,HIGH,40,12,0,0,0,0,,,,,1.0,1.0,COMPLETE
+MATHEMATICS,"Organisation et gestion de données, fonctions",Pourcentages,Calculer un pourcentage,,HIGH,40,12,0,8,0,0,,,,,1.0,1.0,COMPLETE
+MATHEMATICS,"Organisation et gestion de données, fonctions",Pourcentages,Évolutions en pourcentage,,HIGH,40,12,0,0,0,0,,,,,1.0,1.0,COMPLETE
+MATHEMATICS,"Organisation et gestion de données, fonctions",Statistiques,Organiser des données,,HIGH,40,10,0,8,0,0,,,,,1.0,1.0,COMPLETE
+MATHEMATICS,"Organisation et gestion de données, fonctions",Statistiques,Indicateurs statistiques,,HIGH,40,12,0,0,0,0,,,,,1.0,1.0,COMPLETE
+MATHEMATICS,"Organisation et gestion de données, fonctions",Statistiques,Interpréter des données,,HIGH,40,12,0,0,0,0,,,,,1.0,1.0,COMPLETE
+MATHEMATICS,"Organisation et gestion de données, fonctions",Probabilités,Vocabulaire des probabilités,,HIGH,40,10,0,8,0,0,,,,,1.0,1.0,COMPLETE
+MATHEMATICS,"Organisation et gestion de données, fonctions",Probabilités,Calculer une probabilité,,HIGH,40,12,0,0,0,0,,,,,1.0,1.0,COMPLETE
+MATHEMATICS,"Organisation et gestion de données, fonctions",Fonctions — image et antécédent,Notion de fonction,,CRITICAL,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+MATHEMATICS,"Organisation et gestion de données, fonctions",Fonctions — image et antécédent,Image et antécédent,,CRITICAL,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+MATHEMATICS,"Organisation et gestion de données, fonctions",Fonctions — image et antécédent,Représentation graphique,,CRITICAL,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+MATHEMATICS,"Organisation et gestion de données, fonctions",Fonctions linéaires et affines,Fonctions linéaires,,CRITICAL,50,10,0,10,0,0,,,,,1.0,1.0,COMPLETE
+MATHEMATICS,"Organisation et gestion de données, fonctions",Fonctions linéaires et affines,Fonctions affines,,CRITICAL,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+MATHEMATICS,"Organisation et gestion de données, fonctions",Fonctions linéaires et affines,Déterminer une fonction affine,,CRITICAL,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+MATHEMATICS,Grandeurs et mesures,Conversions d'unités,"Longueurs, aires, volumes",,MEDIUM,30,11,0,5,0,0,,,,,1.0,1.0,COMPLETE
+MATHEMATICS,Grandeurs et mesures,Conversions d'unités,Autres grandeurs,,MEDIUM,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+MATHEMATICS,Grandeurs et mesures,Aires et volumes,Calculer des aires,,HIGH,40,13,0,5,0,0,,,,,1.0,1.0,COMPLETE
+MATHEMATICS,Grandeurs et mesures,Aires et volumes,Calculer des volumes,,HIGH,40,12,0,0,0,0,,,,,1.0,1.0,COMPLETE
+MATHEMATICS,Grandeurs et mesures,Agrandissement et réduction,Facteur d'échelle,,HIGH,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+MATHEMATICS,Grandeurs et mesures,Agrandissement et réduction,Problèmes d'échelle,,HIGH,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+MATHEMATICS,Espace et géométrie,Repérage,Repérage dans le plan,,MEDIUM,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+MATHEMATICS,Espace et géométrie,Repérage,Repérage dans l'espace,,MEDIUM,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+MATHEMATICS,Espace et géométrie,Théorème de Pythagore et réciproque,Théorème de Pythagore,,CRITICAL,50,10,0,10,0,0,,,,,1.0,1.0,COMPLETE
+MATHEMATICS,Espace et géométrie,Théorème de Pythagore et réciproque,Réciproque de Pythagore,,CRITICAL,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+MATHEMATICS,Espace et géométrie,Théorème de Pythagore et réciproque,Raisonnement géométrique,,CRITICAL,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+MATHEMATICS,Espace et géométrie,Théorème de Thalès et réciproque,Théorème de Thalès,,CRITICAL,50,11,0,10,0,0,,,,,1.0,1.0,COMPLETE
+MATHEMATICS,Espace et géométrie,Théorème de Thalès et réciproque,Réciproque de Thalès,,CRITICAL,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+MATHEMATICS,Espace et géométrie,Trigonométrie dans le triangle rectangle,Cosinus,,CRITICAL,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+MATHEMATICS,Espace et géométrie,Trigonométrie dans le triangle rectangle,Sinus,,CRITICAL,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+MATHEMATICS,Espace et géométrie,Trigonométrie dans le triangle rectangle,Tangente,,CRITICAL,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+MATHEMATICS,Espace et géométrie,Trigonométrie dans le triangle rectangle,Choisir le bon rapport,,CRITICAL,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+MATHEMATICS,Espace et géométrie,Transformations du plan,Isométries,,HIGH,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+MATHEMATICS,Espace et géométrie,Transformations du plan,Propriétés conservées,,HIGH,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+MATHEMATICS,Espace et géométrie,Homothétie,Définition et rapport,,HIGH,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+MATHEMATICS,Espace et géométrie,Homothétie,Construire et calculer,,HIGH,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+MATHEMATICS,Espace et géométrie,Géométrie plane,Triangles,,HIGH,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+MATHEMATICS,Espace et géométrie,Géométrie plane,Cercle et polygones,,HIGH,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+MATHEMATICS,Espace et géométrie,Géométrie plane,Constructions et justifications,,HIGH,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+MATHEMATICS,Espace et géométrie,Géométrie dans l'espace et solides,Solides usuels,,HIGH,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+MATHEMATICS,Espace et géométrie,Géométrie dans l'espace et solides,Représentations,,HIGH,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+MATHEMATICS,Algorithmique et programmation,"Variables, conditions et boucles",Variables et affectations,,HIGH,32,12,0,5,0,0,,,,,1.0,1.0,PARTIAL
+MATHEMATICS,Algorithmique et programmation,"Variables, conditions et boucles",Conditions,,HIGH,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+MATHEMATICS,Algorithmique et programmation,"Variables, conditions et boucles",Boucles,,HIGH,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+MATHEMATICS,Algorithmique et programmation,Scratch et programmation par blocs,Scripts et événements,,MEDIUM,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+MATHEMATICS,Algorithmique et programmation,Scratch et programmation par blocs,Contrôle et interactions,,MEDIUM,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+MATHEMATICS,Compétences transversales mathématiques,Compétences transversales,Automatismes,,HIGH,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+MATHEMATICS,Compétences transversales mathématiques,Compétences transversales,Résolution de problèmes,,HIGH,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+MATHEMATICS,Compétences transversales mathématiques,Compétences transversales,Raisonnement,,HIGH,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+MATHEMATICS,Compétences transversales mathématiques,Compétences transversales,Démonstration,,HIGH,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+MATHEMATICS,Compétences transversales mathématiques,Compétences transversales,Calcul mental,,HIGH,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+MATHEMATICS,Compétences transversales mathématiques,Compétences transversales,Outils numériques,,HIGH,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+HISTORY,"L'Europe, un théâtre majeur des guerres totales (1914-1945)",La Première Guerre mondiale : l'expérience combattante et l'expérience des civils,Expérience combattante,,HIGH,59,1,0,10,0,0,,,,,1.0,1.0,PARTIAL
+HISTORY,"L'Europe, un théâtre majeur des guerres totales (1914-1945)",La Première Guerre mondiale : l'expérience combattante et l'expérience des civils,Expérience des civils,,HIGH,15,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+HISTORY,"L'Europe, un théâtre majeur des guerres totales (1914-1945)",La Première Guerre mondiale : l'expérience combattante et l'expérience des civils,Sorties de guerre,,HIGH,15,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+HISTORY,"L'Europe, un théâtre majeur des guerres totales (1914-1945)",Démocraties et totalitarismes dans l'Europe de l'entre-deux-guerres,Régimes totalitaires,,CRITICAL,35,13,0,5,0,0,,,,,1.0,1.0,PARTIAL
+HISTORY,"L'Europe, un théâtre majeur des guerres totales (1914-1945)",Démocraties et totalitarismes dans l'Europe de l'entre-deux-guerres,Pratiques totalitaires,,CRITICAL,15,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+HISTORY,"L'Europe, un théâtre majeur des guerres totales (1914-1945)",Démocraties et totalitarismes dans l'Europe de l'entre-deux-guerres,Démocraties face à la crise,,CRITICAL,15,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+HISTORY,"L'Europe, un théâtre majeur des guerres totales (1914-1945)","La Seconde Guerre mondiale, une guerre d'anéantissement",Guerre mondiale et anéantissement,,CRITICAL,50,9,0,20,0,0,,,,,1.0,1.0,COMPLETE
+HISTORY,"L'Europe, un théâtre majeur des guerres totales (1914-1945)","La Seconde Guerre mondiale, une guerre d'anéantissement",Génocide des Juifs et des Tsiganes,,CRITICAL,15,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+HISTORY,"L'Europe, un théâtre majeur des guerres totales (1914-1945)","La France défaite et occupée ; régime de Vichy, Collaboration, Résistance",Défaite et occupation,,CRITICAL,50,10,0,10,0,0,,,,,1.0,1.0,COMPLETE
+HISTORY,"L'Europe, un théâtre majeur des guerres totales (1914-1945)","La France défaite et occupée ; régime de Vichy, Collaboration, Résistance",Vichy et Collaboration,,CRITICAL,15,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+HISTORY,"L'Europe, un théâtre majeur des guerres totales (1914-1945)","La France défaite et occupée ; régime de Vichy, Collaboration, Résistance",Résistances,,CRITICAL,15,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+HISTORY,Le monde depuis 1945,Indépendances et construction de nouveaux États,Processus de décolonisation,,HIGH,35,13,0,5,0,0,,,,,1.0,1.0,PARTIAL
+HISTORY,Le monde depuis 1945,Indépendances et construction de nouveaux États,Nouveaux États,,HIGH,15,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+HISTORY,Le monde depuis 1945,Un monde bipolaire au temps de la Guerre froide,Blocs Est / Ouest,,CRITICAL,15,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+HISTORY,Le monde depuis 1945,Un monde bipolaire au temps de la Guerre froide,Crises et conflits,,CRITICAL,15,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+HISTORY,Le monde depuis 1945,Un monde bipolaire au temps de la Guerre froide,Fin de la Guerre froide,,CRITICAL,15,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+HISTORY,Le monde depuis 1945,Affirmation et mise en œuvre du projet européen,Origines du projet européen,,HIGH,35,13,0,5,0,0,,,,,1.0,1.0,PARTIAL
+HISTORY,Le monde depuis 1945,Affirmation et mise en œuvre du projet européen,Approfondissement et élargissements,,HIGH,15,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+HISTORY,Le monde depuis 1945,Enjeux et conflits dans le monde après 1989,Nouvel ordre mondial,,HIGH,40,1,0,10,0,0,,,,,1.0,1.0,PARTIAL
+HISTORY,Le monde depuis 1945,Enjeux et conflits dans le monde après 1989,Conflits et terrorisme,,HIGH,15,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+HISTORY,Françaises et Français dans une République repensée,"Refonder la République, redéfinir la démocratie (1944-1947)",Libération et refondation,,HIGH,40,12,0,0,0,40,,,,,1.0,1.0,COMPLETE
+HISTORY,Françaises et Français dans une République repensée,"Refonder la République, redéfinir la démocratie (1944-1947)",IVe République,,HIGH,40,12,0,0,0,40,,,,,1.0,1.0,COMPLETE
+HISTORY,Françaises et Français dans une République repensée,La Ve République,Institutions de la Ve République,,CRITICAL,50,12,0,0,0,50,,,,,1.0,1.0,COMPLETE
+HISTORY,Françaises et Français dans une République repensée,La Ve République,Évolutions politiques,,CRITICAL,50,12,0,0,0,50,,,,,1.0,1.0,COMPLETE
+HISTORY,Françaises et Français dans une République repensée,Femmes et hommes dans la société des années 1950 aux années 1980,Transformations sociales,,HIGH,40,12,0,0,0,40,,,,,1.0,1.0,COMPLETE
+HISTORY,Françaises et Français dans une République repensée,Femmes et hommes dans la société des années 1950 aux années 1980,Place des femmes,,HIGH,40,12,0,0,0,40,,,,,1.0,1.0,COMPLETE
+HISTORY,Françaises et Français dans une République repensée,Femmes et hommes dans la société des années 1950 aux années 1980,Immigration et société française,,HIGH,40,12,0,0,0,18,,,,,1.0,1.0,COMPLETE
+GEOGRAPHY,Dynamiques territoriales de la France contemporaine,Urbanisation et attractivité des territoires,Métropolisation,,HIGH,40,1,0,10,0,0,,,,,1.0,1.0,PARTIAL
+GEOGRAPHY,Dynamiques territoriales de la France contemporaine,Urbanisation et attractivité des territoires,Mobilités et espaces de vie,,HIGH,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+GEOGRAPHY,Dynamiques territoriales de la France contemporaine,Les espaces productifs et leurs évolutions,Espaces agricoles,,HIGH,32,13,0,5,0,0,,,,,1.0,1.0,PARTIAL
+GEOGRAPHY,Dynamiques territoriales de la France contemporaine,Les espaces productifs et leurs évolutions,Espaces industriels et de services,,HIGH,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+GEOGRAPHY,Dynamiques territoriales de la France contemporaine,Inégalités et fractures territoriales,Contrastes du territoire français,,HIGH,32,13,0,5,0,0,,,,,1.0,1.0,PARTIAL
+GEOGRAPHY,Dynamiques territoriales de la France contemporaine,Inégalités et fractures territoriales,Acteurs et politiques,,HIGH,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+GEOGRAPHY,Pourquoi et comment aménager le territoire ?,Aménagement du territoire,Enjeux d'aménagement,,CRITICAL,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+GEOGRAPHY,Pourquoi et comment aménager le territoire ?,Aménagement du territoire,Acteurs de l'aménagement,,CRITICAL,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+GEOGRAPHY,Pourquoi et comment aménager le territoire ?,Risques et transitions,Risques et vulnérabilités,,HIGH,40,1,0,10,0,0,,,,,1.0,1.0,PARTIAL
+GEOGRAPHY,Pourquoi et comment aménager le territoire ?,Risques et transitions,Transitions énergétiques et écologiques,,HIGH,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+GEOGRAPHY,La France et l'Union européenne,La France dans l'Union européenne,Territoire européen,,CRITICAL,32,13,0,5,0,0,,,,,1.0,1.0,PARTIAL
+GEOGRAPHY,La France et l'Union européenne,La France dans l'Union européenne,Politiques européennes,,CRITICAL,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+GEOGRAPHY,La France et l'Union européenne,"La France, une influence mondiale",Rayonnement,,HIGH,40,1,0,10,0,0,,,,,1.0,1.0,PARTIAL
+GEOGRAPHY,La France et l'Union européenne,"La France, une influence mondiale",Présence stratégique,,HIGH,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+EMC,"Valeurs, principes et exercice de la citoyenneté",Valeurs et principes de la République,"Liberté, égalité, fraternité",,CRITICAL,36,13,0,5,0,0,,,,,1.0,1.0,PARTIAL
+EMC,"Valeurs, principes et exercice de la citoyenneté",Valeurs et principes de la République,Principes républicains,,CRITICAL,15,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+EMC,"Valeurs, principes et exercice de la citoyenneté",Laïcité,Principe de laïcité,,CRITICAL,35,13,0,5,0,0,,,,,1.0,1.0,PARTIAL
+EMC,"Valeurs, principes et exercice de la citoyenneté",Laïcité,Laïcité en pratique,,CRITICAL,15,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+EMC,"Valeurs, principes et exercice de la citoyenneté",Citoyenneté,Statut de citoyen,,CRITICAL,15,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+EMC,"Valeurs, principes et exercice de la citoyenneté",Citoyenneté,Exercice de la citoyenneté,,CRITICAL,15,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+EMC,"Valeurs, principes et exercice de la citoyenneté",Institutions démocratiques,Organisation des pouvoirs,,HIGH,35,13,0,5,0,0,,,,,1.0,1.0,PARTIAL
+EMC,"Valeurs, principes et exercice de la citoyenneté",Institutions démocratiques,Institutions locales et européennes,,HIGH,15,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+EMC,"Valeurs, principes et exercice de la citoyenneté",Droits et libertés,Droits fondamentaux,,HIGH,35,13,0,5,0,0,,,,,1.0,1.0,PARTIAL
+EMC,"Valeurs, principes et exercice de la citoyenneté",Droits et libertés,Garanties et limites,,HIGH,15,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+EMC,"Valeurs, principes et exercice de la citoyenneté",Démocratie et débat,Principes démocratiques,,HIGH,35,13,0,5,0,0,,,,,1.0,1.0,PARTIAL
+EMC,"Valeurs, principes et exercice de la citoyenneté",Démocratie et débat,Débattre et argumenter,,HIGH,15,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+EMC,"Valeurs, principes et exercice de la citoyenneté",Engagement,Formes d'engagement,,HIGH,40,12,0,0,0,40,,,,,1.0,1.0,COMPLETE
+EMC,"Valeurs, principes et exercice de la citoyenneté",Engagement,Engagement des jeunes,,HIGH,40,12,0,0,0,40,,,,,1.0,1.0,COMPLETE
+EMC,"Valeurs, principes et exercice de la citoyenneté",Défense et sécurité nationale,Enjeux de défense,,HIGH,40,12,0,0,0,40,,,,,1.0,1.0,COMPLETE
+EMC,"Valeurs, principes et exercice de la citoyenneté",Défense et sécurité nationale,Citoyen et défense,,HIGH,40,12,0,0,0,40,,,,,1.0,1.0,COMPLETE
+EMC,"Valeurs, principes et exercice de la citoyenneté","Médias, information et esprit critique",S'informer,,HIGH,36,13,0,5,0,0,,,,,1.0,1.0,PARTIAL
+EMC,"Valeurs, principes et exercice de la citoyenneté","Médias, information et esprit critique",Esprit critique,,HIGH,15,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+PHYSICS_CHEMISTRY,Organisation et transformations de la matière,Atomes et molécules,Modèle de l'atome,,HIGH,32,13,0,5,0,0,,,,,1.0,1.0,PARTIAL
+PHYSICS_CHEMISTRY,Organisation et transformations de la matière,Atomes et molécules,Molécules et formules,,HIGH,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+PHYSICS_CHEMISTRY,Organisation et transformations de la matière,Réactions chimiques,Décrire une transformation,,CRITICAL,50,11,0,10,0,0,,,,,1.0,1.0,COMPLETE
+PHYSICS_CHEMISTRY,Organisation et transformations de la matière,Réactions chimiques,Acides et bases,,CRITICAL,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+PHYSICS_CHEMISTRY,Organisation et transformations de la matière,Masse volumique et identification,Mesurer et calculer,,MEDIUM,30,11,0,5,0,0,,,,,1.0,1.0,COMPLETE
+PHYSICS_CHEMISTRY,Organisation et transformations de la matière,Masse volumique et identification,Unités et conversions,,MEDIUM,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+PHYSICS_CHEMISTRY,Mouvements et interactions,Mouvement et vitesse,Décrire un mouvement,,HIGH,32,13,0,5,0,0,,,,,1.0,1.0,PARTIAL
+PHYSICS_CHEMISTRY,Mouvements et interactions,Mouvement et vitesse,Vitesse,,HIGH,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+PHYSICS_CHEMISTRY,Mouvements et interactions,Forces et interactions,Identifier des forces,,HIGH,40,11,0,8,0,0,,,,,1.0,1.0,COMPLETE
+PHYSICS_CHEMISTRY,Mouvements et interactions,Forces et interactions,Effets des forces,,HIGH,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+PHYSICS_CHEMISTRY,L'énergie,Formes et conversions d'énergie,Formes d'énergie,,CRITICAL,44,13,0,8,0,0,,,,,1.0,1.0,PARTIAL
+PHYSICS_CHEMISTRY,L'énergie,Formes et conversions d'énergie,Chaînes énergétiques,,CRITICAL,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+PHYSICS_CHEMISTRY,L'énergie,Électricité et circuits,Circuits électriques,,HIGH,40,11,0,8,0,0,,,,,1.0,1.0,COMPLETE
+PHYSICS_CHEMISTRY,L'énergie,Électricité et circuits,Grandeurs électriques,,HIGH,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+PHYSICS_CHEMISTRY,Des signaux pour observer et communiquer,Lumière et signaux lumineux,Propagation de la lumière,,HIGH,32,13,0,5,0,0,,,,,1.0,1.0,PARTIAL
+PHYSICS_CHEMISTRY,Des signaux pour observer et communiquer,Lumière et signaux lumineux,Lentilles et images,,HIGH,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+PHYSICS_CHEMISTRY,Des signaux pour observer et communiquer,Son et signaux sonores,Propagation du son,,MEDIUM,30,11,0,5,0,0,,,,,1.0,1.0,COMPLETE
+PHYSICS_CHEMISTRY,Des signaux pour observer et communiquer,Son et signaux sonores,Caractéristiques d'un son,,MEDIUM,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+SVT,"La planète Terre, l'environnement et l'action humaine",Dynamique de la Terre,Structure de la Terre,,HIGH,32,13,0,5,0,0,,,,,1.0,1.0,PARTIAL
+SVT,"La planète Terre, l'environnement et l'action humaine",Dynamique de la Terre,Risques géologiques,,HIGH,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+SVT,"La planète Terre, l'environnement et l'action humaine",Écosystèmes et environnement,Relations au sein d'un écosystème,,HIGH,32,13,0,5,0,0,,,,,1.0,1.0,PARTIAL
+SVT,"La planète Terre, l'environnement et l'action humaine",Écosystèmes et environnement,Action humaine,,HIGH,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+SVT,"La planète Terre, l'environnement et l'action humaine",Climat et changements globaux,Effet de serre et climat,,HIGH,32,13,0,5,0,0,,,,,1.0,1.0,PARTIAL
+SVT,"La planète Terre, l'environnement et l'action humaine",Climat et changements globaux,Enjeux environnementaux,,HIGH,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+SVT,Le vivant et son évolution,Organisation cellulaire,Cellule et organisme,,MEDIUM,30,11,0,5,0,0,,,,,1.0,1.0,COMPLETE
+SVT,Le vivant et son évolution,Organisation cellulaire,Micro-organismes,,MEDIUM,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+SVT,Le vivant et son évolution,ADN et génétique,ADN support de l'information,,CRITICAL,42,13,0,8,0,0,,,,,1.0,1.0,PARTIAL
+SVT,Le vivant et son évolution,ADN et génétique,Hérédité,,CRITICAL,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+SVT,Le vivant et son évolution,Évolution des espèces,Mécanismes évolutifs,,HIGH,40,11,0,8,0,0,,,,,1.0,1.0,COMPLETE
+SVT,Le vivant et son évolution,Évolution des espèces,Arguments de l'évolution,,HIGH,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+SVT,Le vivant et son évolution,Reproduction,Reproduction sexuée,,MEDIUM,30,11,0,5,0,0,,,,,1.0,1.0,COMPLETE
+SVT,Le vivant et son évolution,Reproduction,Développement,,MEDIUM,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+SVT,Le corps humain et la santé,Nutrition et digestion,Aliments et besoins,,HIGH,32,13,0,5,0,0,,,,,1.0,1.0,PARTIAL
+SVT,Le corps humain et la santé,Nutrition et digestion,Digestion,,HIGH,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+SVT,Le corps humain et la santé,Respiration et circulation,Respiration,,HIGH,32,13,0,5,0,0,,,,,1.0,1.0,PARTIAL
+SVT,Le corps humain et la santé,Respiration et circulation,Circulation,,HIGH,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+SVT,Le corps humain et la santé,Immunité et santé,Défenses de l'organisme,,CRITICAL,45,13,0,8,0,0,,,,,1.0,1.0,PARTIAL
+SVT,Le corps humain et la santé,Immunité et santé,Prévention et traitements,,CRITICAL,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+TECHNOLOGY,"Design, innovation et créativité / Objets et systèmes techniques",Objets et systèmes techniques,Analyser un objet technique,,HIGH,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+TECHNOLOGY,"Design, innovation et créativité / Objets et systèmes techniques",Objets et systèmes techniques,Évolution des objets,,HIGH,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+TECHNOLOGY,"Design, innovation et créativité / Objets et systèmes techniques",Chaîne d'information,Acquérir et traiter,,HIGH,32,13,0,5,0,0,,,,,1.0,1.0,PARTIAL
+TECHNOLOGY,"Design, innovation et créativité / Objets et systèmes techniques",Chaîne d'information,Commander,,HIGH,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+TECHNOLOGY,"Design, innovation et créativité / Objets et systèmes techniques",Chaîne d'énergie,Flux d'énergie,,HIGH,34,13,0,5,0,0,,,,,1.0,1.0,PARTIAL
+TECHNOLOGY,"Design, innovation et créativité / Objets et systèmes techniques",Chaîne d'énergie,Bilans énergétiques,,HIGH,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+TECHNOLOGY,"Design, innovation et créativité / Objets et systèmes techniques",Conception et modélisation,Démarche de conception,,HIGH,34,13,0,5,0,0,,,,,1.0,1.0,PARTIAL
+TECHNOLOGY,"Design, innovation et créativité / Objets et systèmes techniques",Conception et modélisation,Modélisation,,HIGH,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+TECHNOLOGY,"Design, innovation et créativité / Objets et systèmes techniques","Informatique, algorithmique et programmation",Algorithmique,,CRITICAL,32,13,0,5,0,0,,,,,1.0,1.0,PARTIAL
+TECHNOLOGY,"Design, innovation et créativité / Objets et systèmes techniques","Informatique, algorithmique et programmation",Programmer,,CRITICAL,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+TECHNOLOGY,"Design, innovation et créativité / Objets et systèmes techniques",Réseaux et données,Architecture des réseaux,,HIGH,32,13,0,5,0,0,,,,,1.0,1.0,PARTIAL
+TECHNOLOGY,"Design, innovation et créativité / Objets et systèmes techniques",Réseaux et données,Données et sécurité,,HIGH,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL
+TECHNOLOGY,"Design, innovation et créativité / Objets et systèmes techniques",Impacts et développement durable,Impacts des objets techniques,,HIGH,32,13,0,5,0,0,,,,,1.0,1.0,PARTIAL
+TECHNOLOGY,"Design, innovation et créativité / Objets et systèmes techniques",Impacts et développement durable,Choix responsables,,HIGH,12,12,0,0,0,0,,,,,1.0,1.0,PARTIAL

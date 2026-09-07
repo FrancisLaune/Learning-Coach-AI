@@ -1,0 +1,910 @@
+# LCAI-0039 — Final curriculum tree
+
+## FRENCH
+- **Lecture et compréhension**
+  - Compréhension de textes
+    - Repérer des informations explicites [PARTIAL] (n=30)
+      - Localiser une information
+      - Sélectionner l'essentiel
+      - S'appuyer sur le texte
+    - Inférer des informations implicites [PARTIAL] (n=30)
+      - Déduire un sens
+      - Croiser des indices
+    - Comprendre le sens global [PARTIAL] (n=30)
+      - Identifier le thème
+      - Saisir l'enjeu du texte
+      - Résumer
+  - Interprétation et analyse
+    - Procédés d'écriture [COMPLETE] (n=50)
+      - Figures de style
+      - Registres
+      - Choix lexicaux
+    - Point de vue et intentions [PARTIAL] (n=30)
+      - Narrateur / locuteur
+      - Effets sur le lecteur
+      - Justifier une interprétation
+- **Langue (grammaire, conjugaison, orthographe, vocabulaire)**
+  - Grammaire et syntaxe
+    - Classes grammaticales [PARTIAL] (n=60)
+      - Nature des mots
+      - Déterminants / pronoms
+      - Adverbes / prépositions / conjonctions
+    - Fonctions dans la phrase [PARTIAL] (n=30)
+      - Sujet
+      - COD / COI
+      - Compléments circonstanciels
+    - Phrase simple et complexe [PARTIAL] (n=30)
+      - Propositions
+      - Subordination / coordination
+      - Ponctuation
+  - Conjugaison
+    - Temps et modes [COMPLETE] (n=40)
+      - Indicatif (présent, passé, futur)
+      - Conditionnel
+      - Subjonctif courant
+    - Accords du verbe [PARTIAL] (n=30)
+      - Personne et nombre
+      - Groupes verbaux
+      - Temps composés
+  - Orthographe et accords
+    - Orthographe lexicale [PARTIAL] (n=100)
+      - Mots courants et homophones
+      - Règles d'usage
+    - Accords dans le groupe nominal [PARTIAL] (n=30)
+      - Déterminant / nom / adjectif
+      - Participe passé
+    - Accord sujet-verbe [PARTIAL] (n=30)
+      - Sujet simple
+      - Sujet inversé / éloigné
+  - Vocabulaire
+    - Sens des mots [COMPLETE] (n=30)
+      - Sens en contexte
+      - Polysémie
+      - Nuances et synonymes
+    - Formation des mots [COMPLETE] (n=30)
+      - Préfixes / suffixes
+      - Familles de mots
+- **Écriture**
+  - Réécriture
+    - Transformer un texte [COMPLETE] (n=40)
+      - Changer personne / temps
+      - Expansion / réduction
+      - Changer de registre
+    - Maintenir la cohérence [COMPLETE] (n=40)
+      - Réaccorder
+      - Préserver le sens
+  - Dictée
+    - Orthographe en situation [COMPLETE] (n=40)
+      - Orthographe lexicale
+      - Orthographe grammaticale
+    - Stratégies de relecture [COMPLETE] (n=40)
+      - Contrôler les verbes
+      - Contrôler les accords du GN
+  - Expression écrite
+    - Organiser un écrit [PARTIAL] (n=30)
+      - Générer des idées
+      - Planifier
+      - Paragraphes
+    - Qualité de l'expression [PARTIAL] (n=30)
+      - Précision lexicale
+      - Variété syntaxique
+      - Correction linguistique
+    - Genres d'écrits [PARTIAL] (n=30)
+      - Narratif
+      - Descriptif
+      - Explicatif
+  - Argumentation
+    - Construire une thèse [PARTIAL] (n=30)
+      - Prendre position
+      - Sélectionner des arguments
+      - Illustrer par des exemples
+    - Structurer un paragraphe argumentatif [PARTIAL] (n=30)
+      - Connecteurs
+      - Progression
+      - Conclure
+- **Formats d'épreuve DNB**
+  - Compréhension et compétences linguistiques (DNB)
+    - Questions de compréhension [COMPLETE] (n=50)
+      - Répondre à partir du texte
+      - Justifier brièvement
+    - Compétences linguistiques [PARTIAL] (n=30)
+      - Questions de grammaire
+      - Exercice de réécriture
+      - Dictée
+  - Rédaction DNB
+    - Traiter le sujet [COMPLETE] (n=50)
+      - Comprendre la consigne
+      - Sujet d'imagination / réflexion
+    - Produire un texte abouti [PARTIAL] (n=30)
+      - Respecter la longueur attendue
+      - Se relire
+      - Critères d'évaluation
+
+## MATHEMATICS
+- **Nombres et calculs**
+  - Nombres relatifs et rationnels
+    - Comparer et ordonner [GOOD] (n=48)
+      - Repérer sur une droite graduée
+      - Comparer relatifs et rationnels
+      - Situer dans un intervalle
+    - Opérations sur les relatifs [PARTIAL] (n=12)
+      - Addition et soustraction
+      - Multiplication et division
+      - Priorités opératoires
+    - Représenter les rationnels [PARTIAL] (n=12)
+      - Fraction et écriture décimale
+      - Écritures mixtes
+  - Fractions
+    - Simplifier et rendre irréductible [PARTIAL] (n=40)
+      - Utiliser le PGCD
+      - Fractions égales
+      - Forme irréductible
+    - Calculer avec des fractions [COMPLETE] (n=40)
+      - Addition et soustraction
+      - Multiplication
+      - Division
+    - Résoudre des problèmes de fractions [COMPLETE] (n=40)
+      - Partie d'une quantité
+      - Problèmes contextualisés
+  - Puissances et notation scientifique
+    - Propriétés des puissances [PARTIAL] (n=32)
+      - Produit de puissances
+      - Quotient de puissances
+      - Exposants négatifs
+    - Puissances de 10 [PARTIAL] (n=12)
+      - Écriture décimale
+      - Calculs avec 10^n
+    - Notation scientifique [PARTIAL] (n=12)
+      - Passer en notation scientifique
+      - Comparer des grandeurs
+      - Calculer en notation scientifique
+  - Arithmétique
+    - Divisibilité [PARTIAL] (n=12)
+      - Critères de divisibilité
+      - Multiples et diviseurs
+    - PGCD et applications [PARTIAL] (n=12)
+      - Algorithme d'Euclide
+      - Simplification de fractions
+    - Nombres premiers [PARTIAL] (n=12)
+      - Reconnaître un nombre premier
+      - Décomposition en facteurs premiers
+  - Calcul littéral
+    - Écrire et interpréter une expression [COMPLETE] (n=50)
+      - Traduire une situation
+      - Substituer une valeur
+      - Tester une égalité
+    - Manipuler des expressions [COMPLETE] (n=50)
+      - Sommes algébriques
+      - Produits
+      - Parenthèses
+  - Développement, réduction et factorisation
+    - Développer [PARTIAL] (n=42)
+      - k(a+b)
+      - (a+b)(c+d)
+      - Identités remarquables (sens direct)
+    - Réduire [PARTIAL] (n=12)
+      - Regrouper les termes semblables
+      - Ordonner une expression
+    - Factoriser [PARTIAL] (n=12)
+      - Facteur commun
+      - Identités remarquables (sens inverse)
+  - Équations
+    - Équations du premier degré [COMPLETE] (n=50)
+      - Résoudre ax+b=c
+      - Transformer une équation
+      - Vérifier une solution
+    - Équations produit nul [COMPLETE] (n=50)
+      - Mettre sous forme produit
+      - Trouver les racines
+    - Mettre en équation un problème [COMPLETE] (n=50)
+      - Choisir l'inconnue
+      - Résoudre et interpréter
+      - Contrôler la pertinence
+  - Problèmes numériques
+    - Choisir une stratégie [PARTIAL] (n=12)
+      - Estimer un ordre de grandeur
+      - Décomposer le problème
+    - Mener un calcul justifié [PARTIAL] (n=12)
+      - Enchaîner les étapes
+      - Gérer les unités
+      - Présenter le résultat
+- **Organisation et gestion de données, fonctions**
+  - Proportionnalité
+    - Reconnaître une situation de proportionnalité [PARTIAL] (n=40)
+      - Tableau de proportionnalité
+      - Représentation graphique
+    - Calculer dans une situation proportionnelle [COMPLETE] (n=40)
+      - Coefficient de proportionnalité
+      - Produit en croix
+      - Échelles
+  - Pourcentages
+    - Calculer un pourcentage [COMPLETE] (n=40)
+      - Pourcentage d'une quantité
+      - Trouver un taux
+    - Évolutions en pourcentage [COMPLETE] (n=40)
+      - Augmentation
+      - Diminution
+      - Évolutions successives
+  - Statistiques
+    - Organiser des données [COMPLETE] (n=40)
+      - Tableaux
+      - Diagrammes
+      - Fréquences
+    - Indicateurs statistiques [COMPLETE] (n=40)
+      - Moyenne
+      - Médiane
+      - Étendue
+    - Interpréter des données [COMPLETE] (n=40)
+      - Lire un graphique
+      - Tirer une conclusion
+  - Probabilités
+    - Vocabulaire des probabilités [COMPLETE] (n=40)
+      - Issues et événements
+      - Situations équiprobables
+    - Calculer une probabilité [COMPLETE] (n=40)
+      - Probabilité simple
+      - Événement contraire
+      - Arbres / tableaux
+  - Fonctions — image et antécédent
+    - Notion de fonction [PARTIAL] (n=12)
+      - Définir une fonction
+      - Notation f(x)
+      - Tableau de valeurs
+    - Image et antécédent [PARTIAL] (n=12)
+      - Calculer une image
+      - Déterminer un antécédent
+      - Lire sur un graphique
+    - Représentation graphique [PARTIAL] (n=12)
+      - Tracer une courbe
+      - Interpréter graphiquement
+  - Fonctions linéaires et affines
+    - Fonctions linéaires [COMPLETE] (n=50)
+      - y = ax
+      - Coefficient directeur
+      - Lien avec la proportionnalité
+    - Fonctions affines [PARTIAL] (n=12)
+      - y = ax+b
+      - Ordonnée à l'origine
+      - Tracer la droite
+    - Déterminer une fonction affine [PARTIAL] (n=12)
+      - À partir de deux points
+      - À partir d'un graphique
+      - Modéliser une situation
+- **Grandeurs et mesures**
+  - Conversions d'unités
+    - Longueurs, aires, volumes [COMPLETE] (n=30)
+      - Unités de longueur
+      - Unités d'aire
+      - Unités de volume / capacité
+    - Autres grandeurs [PARTIAL] (n=12)
+      - Masses
+      - Durées
+      - Vitesses
+  - Aires et volumes
+    - Calculer des aires [COMPLETE] (n=40)
+      - Figures planes usuelles
+      - Figures composées
+      - Problèmes d'aires
+    - Calculer des volumes [COMPLETE] (n=40)
+      - Prisme / pavé / cylindre
+      - Pyramide / cône
+      - Sphère
+  - Agrandissement et réduction
+    - Facteur d'échelle [PARTIAL] (n=12)
+      - Effet sur les longueurs
+      - Effet sur les aires
+      - Effet sur les volumes
+    - Problèmes d'échelle [PARTIAL] (n=12)
+      - Plans et maquettes
+      - Figures semblables
+- **Espace et géométrie**
+  - Repérage
+    - Repérage dans le plan [PARTIAL] (n=12)
+      - Coordonnées cartésiennes
+      - Milieu d'un segment
+      - Distance entre deux points
+    - Repérage dans l'espace [PARTIAL] (n=12)
+      - Coordonnées dans l'espace
+      - Lire un solide repéré
+  - Théorème de Pythagore et réciproque
+    - Théorème de Pythagore [COMPLETE] (n=50)
+      - Identifier l'hypoténuse
+      - Calculer une longueur
+      - Problèmes d'application
+    - Réciproque de Pythagore [PARTIAL] (n=12)
+      - Tester si un triangle est rectangle
+      - Rédiger une justification
+    - Raisonnement géométrique [PARTIAL] (n=12)
+      - Schématiser
+      - Rédiger une démonstration courte
+  - Théorème de Thalès et réciproque
+    - Théorème de Thalès [COMPLETE] (n=50)
+      - Reconnaître une configuration
+      - Écrire les rapports
+      - Calculer une longueur
+    - Réciproque de Thalès [PARTIAL] (n=12)
+      - Prouver le parallélisme
+      - Rédiger la justification
+  - Trigonométrie dans le triangle rectangle
+    - Cosinus [PARTIAL] (n=12)
+      - Définition cos = adj/hyp
+      - Calculer un cosinus
+      - Déterminer un angle
+    - Sinus [PARTIAL] (n=12)
+      - Définition sin = opp/hyp
+      - Calculer un sinus
+      - Calculer une longueur
+    - Tangente [PARTIAL] (n=12)
+      - Définition tan = opp/adj
+      - Calculer une tangente
+      - Problèmes de trigonométrie
+    - Choisir le bon rapport [PARTIAL] (n=12)
+      - Identifier côtés depuis un angle
+      - Choisir cos, sin ou tan
+  - Transformations du plan
+    - Isométries [PARTIAL] (n=12)
+      - Translation
+      - Rotation
+      - Symétries
+    - Propriétés conservées [PARTIAL] (n=12)
+      - Conservation des longueurs
+      - Conservation des angles
+      - Construire l'image d'une figure
+  - Homothétie
+    - Définition et rapport [PARTIAL] (n=12)
+      - Centre et rapport k
+      - Agrandissement / réduction
+    - Construire et calculer [PARTIAL] (n=12)
+      - Image d'un point / d'une figure
+      - Effet sur les longueurs
+      - Lien avec Thalès / agrandissement
+  - Géométrie plane
+    - Triangles [PARTIAL] (n=12)
+      - Types de triangles
+      - Inégalité triangulaire
+      - Somme des angles
+    - Cercle et polygones [PARTIAL] (n=12)
+      - Propriétés du cercle
+      - Polygones réguliers
+    - Constructions et justifications [PARTIAL] (n=12)
+      - Construire à la règle et au compas
+      - Justifier une propriété
+  - Géométrie dans l'espace et solides
+    - Solides usuels [PARTIAL] (n=12)
+      - Pavé / cube
+      - Cylindre / cône / sphère
+      - Pyramide / prisme
+    - Représentations [PARTIAL] (n=12)
+      - Perspective cavalière
+      - Patrons
+      - Sections planes
+- **Algorithmique et programmation**
+  - Variables, conditions et boucles
+    - Variables et affectations [PARTIAL] (n=32)
+      - Déclarer / affecter
+      - Types simples
+      - Expressions
+    - Conditions [PARTIAL] (n=12)
+      - Si … alors … sinon
+      - Conditions booléennes
+    - Boucles [PARTIAL] (n=12)
+      - Boucle bornée
+      - Boucle non bornée
+      - Faire tourner un algorithme à la main
+  - Scratch et programmation par blocs
+    - Scripts et événements [PARTIAL] (n=12)
+      - Événements
+      - Séquences d'instructions
+    - Contrôle et interactions [PARTIAL] (n=12)
+      - Répéter
+      - Conditions en blocs
+      - Variables en blocs
+- **Compétences transversales mathématiques**
+  - Compétences transversales
+    - Automatismes [PARTIAL] (n=12)
+      - Calculs fluides
+      - Procédures de base
+      - Formules usuelles
+      - Rapidité et exactitude
+    - Résolution de problèmes [PARTIAL] (n=12)
+      - Comprendre l'énoncé
+      - Choisir une stratégie
+      - Mener la résolution
+      - Contrôler et conclure
+    - Raisonnement [PARTIAL] (n=12)
+      - Déduire
+      - Conjecturer
+      - Contre-exemple
+    - Démonstration [PARTIAL] (n=12)
+      - Hypothèses / conclusion
+      - Enchaîner des arguments
+      - Rédiger une preuve
+    - Calcul mental [PARTIAL] (n=12)
+      - Opérations courantes
+      - Ordres de grandeur
+      - Pourcentages mentaux
+    - Outils numériques [PARTIAL] (n=12)
+      - Calculatrice
+      - Tableur
+      - Logiciel de géométrie
+      - Environnement de programmation
+
+## HISTORY
+- **L'Europe, un théâtre majeur des guerres totales (1914-1945)**
+  - La Première Guerre mondiale : l'expérience combattante et l'expérience des civils
+    - Expérience combattante [PARTIAL] (n=59)
+      - Guerre de tranchées
+      - Violence de masse
+      - Témoignages combattants
+    - Expérience des civils [PARTIAL] (n=15)
+      - Front intérieur
+      - Rôle des femmes
+      - Opinion et propagande
+    - Sorties de guerre [PARTIAL] (n=15)
+      - Armistice et traités
+      - Bilans humains et politiques
+  - Démocraties et totalitarismes dans l'Europe de l'entre-deux-guerres
+    - Régimes totalitaires [PARTIAL] (n=35)
+      - Stalinisme
+      - Fascisme italien
+      - Nazisme
+    - Pratiques totalitaires [PARTIAL] (n=15)
+      - Propagande
+      - Répression et terreur
+      - Culte du chef
+    - Démocraties face à la crise [PARTIAL] (n=15)
+      - Crise de 1929
+      - Réponses démocratiques (ex. Front populaire)
+  - La Seconde Guerre mondiale, une guerre d'anéantissement
+    - Guerre mondiale et anéantissement [COMPLETE] (n=50)
+      - Fronts et coalitions
+      - Crimes de masse
+      - Bombardements / guerre totale
+    - Génocide des Juifs et des Tsiganes [PARTIAL] (n=15)
+      - Antisémitisme nazi
+      - Camps et extermination
+      - Mémoires
+  - La France défaite et occupée ; régime de Vichy, Collaboration, Résistance
+    - Défaite et occupation [COMPLETE] (n=50)
+      - Défaite de 1940
+      - Occupation
+      - Zones et quotidien
+    - Vichy et Collaboration [PARTIAL] (n=15)
+      - État français
+      - Collaboration
+      - Politique antisémite
+    - Résistances [PARTIAL] (n=15)
+      - Résistance intérieure
+      - France libre
+      - Actes de résistance
+- **Le monde depuis 1945**
+  - Indépendances et construction de nouveaux États
+    - Processus de décolonisation [PARTIAL] (n=35)
+      - Asie
+      - Afrique
+      - Acteurs et formes (négociée / conflictuelle)
+    - Nouveaux États [PARTIAL] (n=15)
+      - Enjeux politiques et économiques
+      - Non-alignement / Tiers monde
+  - Un monde bipolaire au temps de la Guerre froide
+    - Blocs Est / Ouest [PARTIAL] (n=15)
+      - Origines
+      - Alliances
+      - Affrontement idéologique
+    - Crises et conflits [PARTIAL] (n=15)
+      - Berlin
+      - Cuba
+      - Guerres proxy
+    - Fin de la Guerre froide [PARTIAL] (n=15)
+      - 1989
+      - Dislocation de l'URSS
+  - Affirmation et mise en œuvre du projet européen
+    - Origines du projet européen [PARTIAL] (n=35)
+      - Après 1945
+      - Pères fondateurs / traités
+    - Approfondissement et élargissements [PARTIAL] (n=15)
+      - CEE / marché commun
+      - Union européenne
+      - Enjeux contemporains
+  - Enjeux et conflits dans le monde après 1989
+    - Nouvel ordre mondial [PARTIAL] (n=40)
+      - Fin du bipolarisme
+      - Nouvelles puissances
+    - Conflits et terrorisme [PARTIAL] (n=15)
+      - Conflits régionaux
+      - Terrorisme international
+      - Multilatéralisme / ONU
+- **Françaises et Français dans une République repensée**
+  - Refonder la République, redéfinir la démocratie (1944-1947)
+    - Libération et refondation [COMPLETE] (n=40)
+      - GPRF
+      - Droits (vote des femmes)
+      - Épuration
+    - IVe République [COMPLETE] (n=40)
+      - Constitution de 1946
+      - Réformes sociales
+  - La Ve République
+    - Institutions de la Ve République [COMPLETE] (n=50)
+      - Constitution de 1958
+      - Rôle du président
+      - Équilibres des pouvoirs
+    - Évolutions politiques [COMPLETE] (n=50)
+      - Alternances
+      - Réformes majeures
+      - Société et politique
+  - Femmes et hommes dans la société des années 1950 aux années 1980
+    - Transformations sociales [COMPLETE] (n=40)
+      - Travail et modes de vie
+      - Société de consommation
+      - Jeunesse et culture
+    - Place des femmes [COMPLETE] (n=40)
+      - Droits des femmes
+      - Inégalités et conquêtes
+    - Immigration et société française [COMPLETE] (n=40)
+      - Migrations
+      - Intégration / débats
+
+## GEOGRAPHY
+- **Dynamiques territoriales de la France contemporaine**
+  - Urbanisation et attractivité des territoires
+    - Métropolisation [PARTIAL] (n=40)
+      - Aires urbaines
+      - Hiérarchie urbaine
+      - Fonctions métropolitaines
+    - Mobilités et espaces de vie [PARTIAL] (n=12)
+      - Navettes
+      - Périurbanisation
+  - Les espaces productifs et leurs évolutions
+    - Espaces agricoles [PARTIAL] (n=32)
+      - Systèmes agricoles
+      - Mutations
+    - Espaces industriels et de services [PARTIAL] (n=12)
+      - Zones industrialo-portuaires
+      - Tertiarisation
+      - Innovation / technopoles
+  - Inégalités et fractures territoriales
+    - Contrastes du territoire français [PARTIAL] (n=32)
+      - Densités
+      - Attractivité / déclin
+      - Outre-mer
+    - Acteurs et politiques [PARTIAL] (n=12)
+      - Rôle de l'État
+      - Collectivités
+- **Pourquoi et comment aménager le territoire ?**
+  - Aménagement du territoire
+    - Enjeux d'aménagement [PARTIAL] (n=12)
+      - Équilibres territoriaux
+      - Accessibilité
+      - Développement durable
+    - Acteurs de l'aménagement [PARTIAL] (n=12)
+      - Acteurs publics
+      - Acteurs privés
+      - Concertation
+  - Risques et transitions
+    - Risques et vulnérabilités [PARTIAL] (n=40)
+      - Risques naturels
+      - Risques technologiques
+      - Prévention
+    - Transitions énergétiques et écologiques [PARTIAL] (n=12)
+      - Énergie
+      - Climat
+- **La France et l'Union européenne**
+  - La France dans l'Union européenne
+    - Territoire européen [PARTIAL] (n=32)
+      - États membres
+      - Frontières
+      - Dorsale européenne
+    - Politiques européennes [PARTIAL] (n=12)
+      - Cohésion territoriale
+      - Politiques communes (ex. PAC)
+      - Place de la France
+  - La France, une influence mondiale
+    - Rayonnement [PARTIAL] (n=40)
+      - Francophonie
+      - Culture / diplomatie
+    - Présence stratégique [PARTIAL] (n=12)
+      - Outre-mer
+      - Engagements internationaux
+
+## EMC
+- **Valeurs, principes et exercice de la citoyenneté**
+  - Valeurs et principes de la République
+    - Liberté, égalité, fraternité [PARTIAL] (n=36)
+      - Liberté
+      - Égalité
+      - Fraternité
+    - Principes républicains [PARTIAL] (n=15)
+      - Souveraineté
+      - Indivisibilité
+  - Laïcité
+    - Principe de laïcité [PARTIAL] (n=35)
+      - Construction historique
+      - Loi de 1905
+      - Laïcité à l'école
+    - Laïcité en pratique [PARTIAL] (n=15)
+      - Études de cas
+      - Liberté de conscience
+  - Citoyenneté
+    - Statut de citoyen [PARTIAL] (n=15)
+      - Droits
+      - Devoirs
+      - Nationalité
+    - Exercice de la citoyenneté [PARTIAL] (n=15)
+      - Vote
+      - Participation
+  - Institutions démocratiques
+    - Organisation des pouvoirs [PARTIAL] (n=35)
+      - Exécutif
+      - Législatif
+      - Judiciaire
+    - Institutions locales et européennes [PARTIAL] (n=15)
+      - Collectivités
+      - Institutions européennes
+  - Droits et libertés
+    - Droits fondamentaux [PARTIAL] (n=35)
+      - Déclarations des droits
+      - Libertés individuelles
+      - Droits sociaux
+    - Garanties et limites [PARTIAL] (n=15)
+      - Garanties juridictionnelles
+      - Abus et sanctions
+  - Démocratie et débat
+    - Principes démocratiques [PARTIAL] (n=35)
+      - Pluralisme
+      - Majorité / minorités
+      - État de droit
+    - Débattre et argumenter [PARTIAL] (n=15)
+      - Écoute
+      - Argumentation civique
+  - Engagement
+    - Formes d'engagement [COMPLETE] (n=40)
+      - Associatif
+      - Syndical / politique
+      - Solidarité
+    - Engagement des jeunes [COMPLETE] (n=40)
+      - Au collège / lycée
+      - Projets citoyens
+  - Défense et sécurité nationale
+    - Enjeux de défense [COMPLETE] (n=40)
+      - Sécurité collective
+      - Armées
+      - Alliances
+    - Citoyen et défense [COMPLETE] (n=40)
+      - Parcours / JDC
+      - Devoir de défense
+  - Médias, information et esprit critique
+    - S'informer [PARTIAL] (n=36)
+      - Sources
+      - Fiabilité
+      - Désinformation
+    - Esprit critique [PARTIAL] (n=15)
+      - Analyser un message
+      - Usage citoyen des médias
+
+## PHYSICS_CHEMISTRY
+- **Organisation et transformations de la matière**
+  - Atomes et molécules
+    - Modèle de l'atome [PARTIAL] (n=32)
+      - Constituants
+      - Éléments chimiques
+      - Tableau périodique
+    - Molécules et formules [PARTIAL] (n=12)
+      - Formules chimiques
+      - Modèles moléculaires
+  - Réactions chimiques
+    - Décrire une transformation [COMPLETE] (n=50)
+      - Réactifs / produits
+      - Équation de réaction
+      - Conservation de la masse
+    - Acides et bases [PARTIAL] (n=12)
+      - pH
+      - Indicateurs
+      - Neutralisation
+  - Masse volumique et identification
+    - Mesurer et calculer [COMPLETE] (n=30)
+      - Définition ρ = m/V
+      - Calculs
+      - Identifier une espèce
+    - Unités et conversions [PARTIAL] (n=12)
+      - g/cm³, kg/m³
+      - Protocole expérimental
+- **Mouvements et interactions**
+  - Mouvement et vitesse
+    - Décrire un mouvement [PARTIAL] (n=32)
+      - Référentiel
+      - Trajectoire
+      - Rectiligne / circulaire
+    - Vitesse [PARTIAL] (n=12)
+      - v = d/t
+      - Graphiques d(t), v(t)
+      - Conversions km/h ↔ m/s
+  - Forces et interactions
+    - Identifier des forces [COMPLETE] (n=40)
+      - Poids
+      - Actions de contact
+      - Actions à distance
+    - Effets des forces [PARTIAL] (n=12)
+      - Équilibre
+      - Modification du mouvement
+      - Diagrammes de forces
+- **L'énergie**
+  - Formes et conversions d'énergie
+    - Formes d'énergie [PARTIAL] (n=44)
+      - Cinétique
+      - Potentielle
+      - Chimique / thermique
+    - Chaînes énergétiques [PARTIAL] (n=12)
+      - Transferts
+      - Conversions
+      - Rendement
+  - Électricité et circuits
+    - Circuits électriques [COMPLETE] (n=40)
+      - Série
+      - Dérivation
+      - Sécurité
+    - Grandeurs électriques [PARTIAL] (n=12)
+      - Tension
+      - Intensité
+      - Puissance / énergie électrique
+- **Des signaux pour observer et communiquer**
+  - Lumière et signaux lumineux
+    - Propagation de la lumière [PARTIAL] (n=32)
+      - Propagation rectiligne
+      - Vitesse de la lumière
+      - Ombres
+    - Lentilles et images [PARTIAL] (n=12)
+      - Lentilles convergentes
+      - Formation d'images
+  - Son et signaux sonores
+    - Propagation du son [COMPLETE] (n=30)
+      - Milieu matériel
+      - Vitesse du son
+    - Caractéristiques d'un son [PARTIAL] (n=12)
+      - Fréquence / hauteur
+      - Amplitude / intensité
+      - Signal et communication
+
+## SVT
+- **La planète Terre, l'environnement et l'action humaine**
+  - Dynamique de la Terre
+    - Structure de la Terre [PARTIAL] (n=32)
+      - Enveloppes
+      - Tectonique des plaques
+      - Séismes / volcans
+    - Risques géologiques [PARTIAL] (n=12)
+      - Prévention
+      - Enjeux de société
+  - Écosystèmes et environnement
+    - Relations au sein d'un écosystème [PARTIAL] (n=32)
+      - Biotique / abiotique
+      - Chaînes alimentaires
+      - Biodiversité
+    - Action humaine [PARTIAL] (n=12)
+      - Impacts
+      - Gestion durable
+  - Climat et changements globaux
+    - Effet de serre et climat [PARTIAL] (n=32)
+      - Gaz à effet de serre
+      - Évolution du climat
+    - Enjeux environnementaux [PARTIAL] (n=12)
+      - Conséquences
+      - Atténuation / adaptation
+- **Le vivant et son évolution**
+  - Organisation cellulaire
+    - Cellule et organisme [COMPLETE] (n=30)
+      - Organites
+      - Unicellulaire / pluricellulaire
+    - Micro-organismes [PARTIAL] (n=12)
+      - Diversité microbienne
+      - Utilisations / risques
+  - ADN et génétique
+    - ADN support de l'information [PARTIAL] (n=42)
+      - Structure de l'ADN
+      - Chromosomes
+      - Gènes
+    - Hérédité [PARTIAL] (n=12)
+      - Transmission
+      - Mutations
+      - Diversité génétique
+  - Évolution des espèces
+    - Mécanismes évolutifs [COMPLETE] (n=40)
+      - Variation
+      - Sélection naturelle
+      - Spéciation
+    - Arguments de l'évolution [PARTIAL] (n=12)
+      - Fossiles
+      - Parenté
+  - Reproduction
+    - Reproduction sexuée [COMPLETE] (n=30)
+      - Gamètes
+      - Fécondation
+    - Développement [PARTIAL] (n=12)
+      - Développement embryonnaire
+      - Puberté
+- **Le corps humain et la santé**
+  - Nutrition et digestion
+    - Aliments et besoins [PARTIAL] (n=32)
+      - Groupes d'aliments
+      - Besoins énergétiques
+      - Équilibre alimentaire
+    - Digestion [PARTIAL] (n=12)
+      - Tube digestif
+      - Absorption
+  - Respiration et circulation
+    - Respiration [PARTIAL] (n=32)
+      - Échanges pulmonaires
+      - Respiration cellulaire
+    - Circulation [PARTIAL] (n=12)
+      - Cœur
+      - Sang / vaisseaux
+      - Effort et santé
+  - Immunité et santé
+    - Défenses de l'organisme [PARTIAL] (n=45)
+      - Immunité innée
+      - Immunité adaptative
+      - Anticorps
+    - Prévention et traitements [PARTIAL] (n=12)
+      - Vaccination
+      - Antibiotiques
+      - Gestes de prévention
+
+## TECHNOLOGY
+- **Design, innovation et créativité / Objets et systèmes techniques**
+  - Objets et systèmes techniques
+    - Analyser un objet technique [PARTIAL] (n=12)
+      - Besoin / fonction d'usage
+      - Structure / matériaux
+      - Cycle de vie
+    - Évolution des objets [PARTIAL] (n=12)
+      - Innovation
+      - Comparaison de solutions
+  - Chaîne d'information
+    - Acquérir et traiter [PARTIAL] (n=32)
+      - Capteurs
+      - Traitement
+      - Communiquer
+    - Commander [PARTIAL] (n=12)
+      - Actionneurs
+      - Asservissement simple
+  - Chaîne d'énergie
+    - Flux d'énergie [PARTIAL] (n=34)
+      - Stocker
+      - Transporter
+      - Convertir
+    - Bilans énergétiques [PARTIAL] (n=12)
+      - Pertes
+      - Rendement
+  - Conception et modélisation
+    - Démarche de conception [PARTIAL] (n=34)
+      - Cahier des charges
+      - Idéation / choix
+      - Prototype
+    - Modélisation [PARTIAL] (n=12)
+      - Représentation / CAO
+      - Simulation
+  - Informatique, algorithmique et programmation
+    - Algorithmique [PARTIAL] (n=32)
+      - Séquences
+      - Conditions
+      - Boucles
+    - Programmer [PARTIAL] (n=12)
+      - Blocs / scripts
+      - Variables
+      - Tester / déboguer
+  - Réseaux et données
+    - Architecture des réseaux [PARTIAL] (n=32)
+      - Réseau local
+      - Internet
+      - Protocoles simples
+    - Données et sécurité [PARTIAL] (n=12)
+      - Stockage
+      - Vie privée
+      - Cybersécurité de base
+  - Impacts et développement durable
+    - Impacts des objets techniques [PARTIAL] (n=32)
+      - Environnement
+      - Société
+      - Économie
+    - Choix responsables [PARTIAL] (n=12)
+      - Analyse de cycle de vie
+      - Réparabilité / réemploi

@@ -1,0 +1,117 @@
+{
+  "ticket": "LCAI-0039",
+  "exam_session": "DNB-2027",
+  "school_year": "2026-2027",
+  "school_level": "FR-3E",
+  "notes": [
+    "Les programmes Français/Mathématiques BO 2026 (arrêté 18/02/2026) n'entrent en vigueur en 3e qu'à la rentrée 2028-2029.",
+    "Pour la 3e 2026-2027 / DNB 2027, le texte Maths/Français applicable reste le programme cycle 4 BO du 30 juillet 2020.",
+    "EMC : le programme BO du 13 juin 2024 s'applique en 3e à partir de la rentrée 2026-2027.",
+    "La checklist LCAI-0038 n'est pas une source réglementaire."
+  ],
+  "sources": [
+    {
+      "source_id": "MATH_CYCLE4_BO_2020",
+      "subject_codes": ["MATHEMATICS"],
+      "title": "Programme d'enseignement du cycle des approfondissements (cycle 4) — Mathématiques",
+      "authority": "MEN",
+      "bo": "BOEN n°31 du 30 juillet 2020",
+      "legal_instrument": "Arrêté du 17 juillet 2020",
+      "url": "https://www.education.gouv.fr/bo/20/Hebdo31/MENE2018714A.htm",
+      "pdf_url": "https://cache.media.education.gouv.fr/file/31/88/5/ensel712_annexe3_1312885.pdf",
+      "applicable_from": "2020-09-01",
+      "applicable_to_grade_3e_until": "2028-08-31",
+      "status_for_dnb_2027": "APPLICABLE",
+      "eduscol_url": "https://eduscol.education.gouv.fr/5736/ressources-d-accompagnement-du-programme-de-mathematiques-au-cycle-4"
+    },
+    {
+      "source_id": "MATH_CYCLE4_BO_2026_NOT_YET_3E",
+      "subject_codes": ["MATHEMATICS"],
+      "title": "Programme de mathématiques pour le cycle 4 (nouveau)",
+      "authority": "MEN",
+      "bo": "BOEN n°10 du 5 mars 2026",
+      "legal_instrument": "Arrêté du 18 février 2026",
+      "url": "https://www.education.gouv.fr/bo/2026/Hebdo10/MENE2602912A",
+      "applicable_from_3e": "2028-09-01",
+      "status_for_dnb_2027": "NOT_APPLICABLE_YET",
+      "note": "En vigueur en 5e dès 2026-2027, en 4e 2027-2028, en 3e seulement 2028-2029."
+    },
+    {
+      "source_id": "FRENCH_CYCLE4_BO_2020",
+      "subject_codes": ["FRENCH"],
+      "title": "Programme d'enseignement du cycle des approfondissements (cycle 4) — Français",
+      "authority": "MEN",
+      "bo": "BOEN n°31 du 30 juillet 2020",
+      "legal_instrument": "Arrêté du 17 juillet 2020",
+      "url": "https://www.education.gouv.fr/bo/20/Hebdo31/MENE2018714A.htm",
+      "applicable_from": "2020-09-01",
+      "applicable_to_grade_3e_until": "2028-08-31",
+      "status_for_dnb_2027": "APPLICABLE"
+    },
+    {
+      "source_id": "FRENCH_CYCLE4_BO_2026_NOT_YET_3E",
+      "subject_codes": ["FRENCH"],
+      "title": "Programme de français pour le cycle 4 (nouveau)",
+      "authority": "MEN",
+      "bo": "BOEN n°10 du 5 mars 2026",
+      "legal_instrument": "Arrêté du 18 février 2026",
+      "url": "https://www.education.gouv.fr/bo/2026/Hebdo10/MENE2602912A",
+      "applicable_from_3e": "2028-09-01",
+      "status_for_dnb_2027": "NOT_APPLICABLE_YET"
+    },
+    {
+      "source_id": "HG_EMC_CYCLE4_BO_2020",
+      "subject_codes": ["HISTORY", "GEOGRAPHY"],
+      "title": "Programme d'enseignement du cycle des approfondissements (cycle 4) — Histoire-Géographie",
+      "authority": "MEN",
+      "bo": "BOEN n°31 du 30 juillet 2020",
+      "legal_instrument": "Arrêté du 17 juillet 2020",
+      "url": "https://www.education.gouv.fr/bo/20/Hebdo31/MENE2018714A.htm",
+      "status_for_dnb_2027": "APPLICABLE",
+      "grade_3e_history_themes": [
+        "L'Europe, un théâtre majeur des guerres totales (1914-1945)",
+        "Le monde depuis 1945",
+        "Françaises et Français dans une République repensée"
+      ],
+      "grade_3e_geography_themes": [
+        "Dynamiques territoriales de la France contemporaine",
+        "Pourquoi et comment aménager le territoire ?",
+        "La France et l'Union européenne"
+      ]
+    },
+    {
+      "source_id": "EMC_BO_2024_APPLICABLE_3E_2026",
+      "subject_codes": ["EMC"],
+      "title": "Programme d'enseignement moral et civique",
+      "authority": "MEN",
+      "bo": "BOEN n°24 du 13 juin 2024",
+      "url": "https://www.education.gouv.fr/bo/2024/Hebdo24",
+      "pdf_url": "https://www.education.gouv.fr/sites/default/files/ensel934_annexe_ok.pdf",
+      "applicable_from_3e": "2026-09-01",
+      "status_for_dnb_2027": "APPLICABLE",
+      "note": "Le nouveau programme EMC s'applique en 3e à la rentrée 2026-2027."
+    },
+    {
+      "source_id": "PC_SVT_TECH_CYCLE4_BO_2020",
+      "subject_codes": ["PHYSICS_CHEMISTRY", "SVT", "TECHNOLOGY"],
+      "title": "Programme d'enseignement du cycle des approfondissements (cycle 4) — Sciences et Technologie",
+      "authority": "MEN",
+      "bo": "BOEN n°31 du 30 juillet 2020",
+      "legal_instrument": "Arrêté du 17 juillet 2020",
+      "url": "https://www.education.gouv.fr/bo/20/Hebdo31/MENE2018714A.htm",
+      "status_for_dnb_2027": "APPLICABLE",
+      "technology_note": "Tenir compte des ajustements applicables en 3e à partir de 2026-2027 ; domaines officiels cycle 4 conservés comme ancrage."
+    },
+    {
+      "source_id": "DNB_EXAM_FRAMEWORK",
+      "subject_codes": ["FRENCH", "MATHEMATICS", "HISTORY", "GEOGRAPHY", "EMC", "PHYSICS_CHEMISTRY", "SVT", "TECHNOLOGY", "ORAL"],
+      "title": "Cadre des épreuves du DNB",
+      "authority": "MEN",
+      "url": "https://www.education.gouv.fr/diplome-national-du-brevet-dnb",
+      "status_for_dnb_2027": "APPLICABLE",
+      "note": "ENGLISH/SPANISH restent hors épreuves écrites terminales (contrôle continu)."
+    }
+  ],
+  "frozen_at": "2026-09-07T00:00:00Z",
+  "auditor_version": "lcai-0039-sources-v1"
+}

@@ -1,0 +1,81 @@
+subject,domain,chapter,skill,subskill,subject_id,domain_id,chapter_id,skill_id,subskill_id,active,content_count,official_question_count
+FRENCH,Français — programme 3e,Classes grammaticales,Classes grammaticales,,1,2,16,16,,True,28,8
+FRENCH,Français — programme 3e,Fonctions grammaticales,Fonctions grammaticales,,1,2,17,17,,True,58,38
+FRENCH,Français — programme 3e,Conjugaison,Conjugaison,,1,2,18,18,,True,33,0
+FRENCH,Français — programme 3e,Accords,Accords,,1,2,19,19,,True,204,164
+FRENCH,Français — programme 3e,Homophones grammaticaux,Homophones grammaticaux,,1,2,20,20,,True,30,0
+FRENCH,Français — programme 3e,Orthographe,Orthographe,,1,2,21,21,,True,38,8
+FRENCH,Français — programme 3e,Vocabulaire,Vocabulaire,,1,2,22,22,,True,119,99
+FRENCH,Français — programme 3e,Phrases complexes,Phrases complexes,,1,2,23,23,,True,20,0
+FRENCH,Français — programme 3e,Figures de style,Figures de style,,1,2,24,24,,True,22,2
+FRENCH,Français — programme 3e,Compréhension,Compréhension,,1,2,25,25,,True,377,337
+FRENCH,Français — programme 3e,Expression écrite,Expression écrite,,1,2,26,26,,True,190,150
+MATHEMATICS,Mathématiques — programme 3e,Nombres relatifs,Nombres relatifs,,2,1,1,1,,True,222,174
+MATHEMATICS,Mathématiques — programme 3e,Fractions,Fractions,,2,1,2,2,,True,40,0
+MATHEMATICS,Mathématiques — programme 3e,Puissances,Puissances,,2,1,3,3,,True,24,4
+MATHEMATICS,Mathématiques — programme 3e,Calcul littéral,Calcul littéral,,2,1,4,4,,True,104,74
+MATHEMATICS,Mathématiques — programme 3e,Équations,Équations,,2,1,5,5,,True,48,8
+MATHEMATICS,Mathématiques — programme 3e,Proportionnalité,Proportionnalité,,2,1,6,6,,True,45,5
+MATHEMATICS,Mathématiques — programme 3e,Pourcentages,Pourcentages,,2,1,7,7,,True,32,2
+MATHEMATICS,Mathématiques — programme 3e,Conversions,Conversions,,2,1,8,8,,True,20,0
+MATHEMATICS,Mathématiques — programme 3e,Pythagore,Pythagore,,2,1,9,9,,True,40,0
+MATHEMATICS,Mathématiques — programme 3e,Thalès,Thalès,,2,1,10,10,,True,40,0
+MATHEMATICS,Mathématiques — programme 3e,Aires et volumes,Aires et volumes,,2,1,11,11,,True,131,111
+MATHEMATICS,Mathématiques — programme 3e,Statistiques,Statistiques,,2,1,12,12,,True,36,6
+MATHEMATICS,Mathématiques — programme 3e,Probabilités,Probabilités,,2,1,13,13,,True,54,24
+MATHEMATICS,Mathématiques — programme 3e,Fonctions,Fonctions,,2,1,14,14,,True,86,46
+MATHEMATICS,Mathématiques — programme 3e,Algorithmique,Algorithmique,,2,1,15,15,,True,25,5
+HISTORY,Histoire — programme 3e,Révolution française,Révolution française,,3,3,27,27,,True,178,138
+HISTORY,Histoire — programme 3e,Empire napoléonien,Empire napoléonien,,3,3,28,28,,True,20,0
+HISTORY,Histoire — programme 3e,Industrialisation,Industrialisation,,3,3,29,29,,True,20,0
+HISTORY,Histoire — programme 3e,Société au XIXe siècle,Société au XIXe siècle,,3,3,30,30,,True,30,10
+HISTORY,Histoire — programme 3e,Colonisation,Colonisation,,3,3,31,31,,True,20,0
+HISTORY,Histoire — programme 3e,Première Guerre mondiale,Première Guerre mondiale,,3,3,32,32,,True,84,62
+HISTORY,Histoire — programme 3e,Totalitarismes,Totalitarismes,,3,3,33,33,,True,20,0
+HISTORY,Histoire — programme 3e,Seconde Guerre mondiale,Seconde Guerre mondiale,,3,3,34,34,,True,66,26
+HISTORY,Histoire — programme 3e,Guerre froide,Guerre froide,,3,3,35,35,,True,76,36
+HISTORY,Histoire — programme 3e,Construction européenne,Construction européenne,,3,3,36,36,,True,57,37
+GEOGRAPHY,Géographie — programme 3e,Urbanisation,Urbanisation,,4,4,37,37,,True,20,0
+GEOGRAPHY,Géographie — programme 3e,Mondialisation,Mondialisation,,4,4,38,38,,True,20,0
+GEOGRAPHY,Géographie — programme 3e,Mobilités humaines,Mobilités humaines,,4,4,39,39,,True,20,0
+GEOGRAPHY,Géographie — programme 3e,Espaces productifs,Espaces productifs,,4,4,40,40,,True,20,0
+GEOGRAPHY,Géographie — programme 3e,Développement durable,Développement durable,,4,4,41,41,,True,20,0
+GEOGRAPHY,Géographie — programme 3e,Risques naturels,Risques naturels,,4,4,42,42,,True,20,0
+GEOGRAPHY,Géographie — programme 3e,France et territoires,France et territoires,,4,4,43,43,,True,20,0
+GEOGRAPHY,Géographie — programme 3e,Union européenne,Union européenne,,4,4,44,44,,True,20,0
+GEOGRAPHY,Géographie — programme 3e,Inégalités mondiales,Inégalités mondiales,,4,4,45,45,,True,20,0
+EMC,EMC — programme 3e,Valeurs de la République,Valeurs de la République,,5,5,46,46,,True,21,0
+EMC,EMC — programme 3e,Citoyenneté,Citoyenneté,,5,5,47,47,,True,20,0
+EMC,EMC — programme 3e,Laïcité,Laïcité,,5,5,48,48,,True,20,0
+EMC,EMC — programme 3e,Libertés et droits,Libertés et droits,,5,5,49,49,,True,20,0
+EMC,EMC — programme 3e,Justice,Justice,,5,5,50,50,,True,20,0
+EMC,EMC — programme 3e,Médias et esprit critique,Médias et esprit critique,,5,5,51,51,,True,21,0
+PHYSICS_CHEMISTRY,Physique-Chimie — programme 3e,Mouvement et vitesse,Mouvement et vitesse,,6,6,52,52,,True,25,5
+PHYSICS_CHEMISTRY,Physique-Chimie — programme 3e,Forces,Forces,,6,6,53,53,,True,32,2
+PHYSICS_CHEMISTRY,Physique-Chimie — programme 3e,Énergie,Énergie,,6,6,54,54,,True,43,11
+PHYSICS_CHEMISTRY,Physique-Chimie — programme 3e,Électricité,Électricité,,6,6,55,55,,True,35,5
+PHYSICS_CHEMISTRY,Physique-Chimie — programme 3e,Lumière,Lumière,,6,6,56,56,,True,21,1
+PHYSICS_CHEMISTRY,Physique-Chimie — programme 3e,Son,Son,,6,6,57,57,,True,31,11
+PHYSICS_CHEMISTRY,Physique-Chimie — programme 3e,Atomes et molécules,Atomes et molécules,,6,6,58,58,,True,21,1
+PHYSICS_CHEMISTRY,Physique-Chimie — programme 3e,Réactions chimiques,Réactions chimiques,,6,6,59,59,,True,20,0
+PHYSICS_CHEMISTRY,Physique-Chimie — programme 3e,Masse volumique,Masse volumique,,6,6,60,60,,True,23,3
+PHYSICS_CHEMISTRY,Physique-Chimie — programme 3e,Acides et bases,Acides et bases,,6,6,61,61,,True,20,0
+SVT,SVT — programme 3e,Cellule,Cellule,,7,7,62,62,,True,20,0
+SVT,SVT — programme 3e,ADN et génétique,ADN et génétique,,7,7,63,63,,True,30,0
+SVT,SVT — programme 3e,Reproduction,Reproduction,,7,7,64,64,,True,20,0
+SVT,SVT — programme 3e,Évolution,Évolution,,7,7,65,65,,True,30,0
+SVT,SVT — programme 3e,Immunité,Immunité,,7,7,66,66,,True,33,0
+SVT,SVT — programme 3e,Nutrition et digestion,Nutrition et digestion,,7,7,67,67,,True,20,0
+SVT,SVT — programme 3e,Respiration et circulation,Respiration et circulation,,7,7,68,68,,True,20,0
+SVT,SVT — programme 3e,Écosystèmes,Écosystèmes,,7,7,69,69,,True,20,0
+SVT,SVT — programme 3e,Climat,Climat,,7,7,70,70,,True,20,0
+SVT,SVT — programme 3e,Géologie,Géologie,,7,7,71,71,,True,20,0
+TECHNOLOGY,Technologie — programme 3e,Objets techniques,Objets techniques,,8,8,72,72,,True,22,0
+TECHNOLOGY,Technologie — programme 3e,Chaîne d'énergie,Chaîne d'énergie,,8,8,73,73,,True,22,0
+TECHNOLOGY,Technologie — programme 3e,Chaîne d'information,Chaîne d'information,,8,8,74,74,,True,20,0
+TECHNOLOGY,Technologie — programme 3e,Programmation,Programmation,,8,8,75,75,,True,20,0
+TECHNOLOGY,Technologie — programme 3e,Réseaux,Réseaux,,8,8,76,76,,True,20,0
+TECHNOLOGY,Technologie — programme 3e,Développement durable,Développement durable,,8,8,77,77,,True,20,0
+ORAL,Oral du DNB,Projet oral,Soutenance orale,,9,9,78,78,,True,30,0
+ENGLISH,,,,,10,,,,,True,0,0
+SPANISH,,,,,11,,,,,True,0,0

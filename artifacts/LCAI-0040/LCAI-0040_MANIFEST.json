@@ -1,0 +1,144 @@
+{
+  "ticket": "LCAI-0040",
+  "generated_at": "2026-09-07T17:38:07+00:00",
+  "db_sha256_before": "6c249d8398b4b7f0bc6ba0edc288a5ae530ff07fba7a542c07c0a8c8609c7bf3",
+  "db_sha256_after": "6c249d8398b4b7f0bc6ba0edc288a5ae530ff07fba7a542c07c0a8c8609c7bf3",
+  "verdicts": {
+    "FRENCH": "COMPLETE",
+    "MATHEMATICS": "COMPLETE",
+    "HISTORY": "COMPLETE",
+    "GEOGRAPHY": "COMPLETE",
+    "EMC": "COMPLETE",
+    "PHYSICS_CHEMISTRY": "COMPLETE",
+    "SVT": "COMPLETE",
+    "TECHNOLOGY": "COMPLETE",
+    "EXERCISE COVERAGE": "PASS",
+    "EXERCISE DIVERSITY": "PASS",
+    "CORRECTION COVERAGE": "PASS",
+    "SUBSKILL COVERAGE": "PASS",
+    "OFFICIAL COUNT ANOMALY": "RESOLVED",
+    "OFFICIAL ARCHIVE REMAPPING": "PASS",
+    "ARCHIVE TRACEABILITY": "PASS",
+    "NON-REGRESSION": "PASS",
+    "IDEMPOTENCY": "PASS",
+    "REVIEW PACKAGE": "PASS",
+    "ASSET COMPLETENESS": "PASS"
+  },
+  "subject_verdicts": {
+    "FRENCH": "COMPLETE",
+    "MATHEMATICS": "COMPLETE",
+    "HISTORY": "COMPLETE",
+    "GEOGRAPHY": "COMPLETE",
+    "EMC": "COMPLETE",
+    "PHYSICS_CHEMISTRY": "COMPLETE",
+    "SVT": "COMPLETE",
+    "TECHNOLOGY": "COMPLETE"
+  },
+  "files": [
+    {
+      "path": "LCAI-0040_IMPLEMENTATION_REPORT.md",
+      "size": 732,
+      "sha256": "f3dfc5a7e6f605d17843d0cde3852a813cf113ee30fbb7c14a9e45bbb87775ac"
+    },
+    {
+      "path": "LCAI-0040_PRE_IMPLEMENTATION_STATE.md",
+      "size": 802,
+      "sha256": "cb7cbb901d42385aaf4c4063d5a655fd56b3ee69f737888b421c5cb7ab8cc563"
+    },
+    {
+      "path": "LCAI-0040_BEFORE_AFTER.md",
+      "size": 405,
+      "sha256": "edd01c27e1a887168f17e5078f1fb0148c57b856296c46f7b4cb01aa19aad2d9"
+    },
+    {
+      "path": "LCAI-0040_CLOSURE_PROGRESS.csv",
+      "size": 2468,
+      "sha256": "eaa22cc4267346a23a8a61d9d2e58b20dd3088c3c0cebe72e322f922b469845c"
+    },
+    {
+      "path": "LCAI-0040_EXERCISE_COVERAGE.csv",
+      "size": 32602,
+      "sha256": "134a865eaa4cc625a35258fff1e7329e06417ada16bbb2391a29e5fa4cda21b8"
+    },
+    {
+      "path": "LCAI-0040_RESIDUAL_GAPS.csv",
+      "size": 131,
+      "sha256": "cd09dd39e1ac4c300170fa2acb089c208fc8ff32a77f64d74f830100fbd09ce6"
+    },
+    {
+      "path": "LCAI-0040_SUBSKILL_COVERAGE.csv",
+      "size": 59946,
+      "sha256": "9cd480bf7b6a31f4a5f58fa9df2a60dc52ec137c86f106c998c0798f8891811c"
+    },
+    {
+      "path": "LCAI-0040_OFFICIAL_ARCHIVE_MAPPING.csv",
+      "size": 193814,
+      "sha256": "ac35a3e716b0c70a92c0d4d8ea59d5e05e26f60c37c683edbdfea045dfb2898b"
+    },
+    {
+      "path": "LCAI-0040_OFFICIAL_ARCHIVE_MAPPING_REPORT.md",
+      "size": 276,
+      "sha256": "5671a64f26c358cf68e1fefec8823081378810a8ea96ca7f4a65526d38dc8506"
+    },
+    {
+      "path": "LCAI-0040_DIVERSITY_REPORT.csv",
+      "size": 12088,
+      "sha256": "9e6ca96147b26cf32842f52cbb4ecadaf6bedf97b98c5d3b77206ede31fefa87"
+    },
+    {
+      "path": "LCAI-0040_MATHEMATICS_REPORT.md",
+      "size": 7111,
+      "sha256": "7858ef3985ebaea1f04e00d10a785c64377985d81d838946e49ba01ef07e3d07"
+    },
+    {
+      "path": "LCAI-0040_FRENCH_REPORT.md",
+      "size": 2641,
+      "sha256": "2b893abd273022030081780e383ad5ae6579076e29767bd90da6e027623f42f0"
+    },
+    {
+      "path": "LCAI-0040_HISTORY_REPORT.md",
+      "size": 3630,
+      "sha256": "8a884fba773caf23c29052ed8ca02a82bd2f476d32663f2552de138fbc3a85df"
+    },
+    {
+      "path": "LCAI-0040_GEOGRAPHY_REPORT.md",
+      "size": 1588,
+      "sha256": "614a1542865f5d017e2c8362ac32f13dff98ff2f5f9e93af6ce564c59d047c3c"
+    },
+    {
+      "path": "LCAI-0040_EMC_REPORT.md",
+      "size": 1760,
+      "sha256": "1dac1f37b9a759afac54633cd175cab11f3dacf60cf4a9095844b4a80f36fcd8"
+    },
+    {
+      "path": "LCAI-0040_PHYSICS_CHEMISTRY_REPORT.md",
+      "size": 1777,
+      "sha256": "1f11421736cc6d9d9ad666a5695e000b78840f51dda7d361f7a6145357cfab33"
+    },
+    {
+      "path": "LCAI-0040_SVT_REPORT.md",
+      "size": 1893,
+      "sha256": "8cb94466b42a6a9cdeec4435d2c75f468f5a6254712b79dddabfaa85de9aea17"
+    },
+    {
+      "path": "LCAI-0040_TECHNOLOGY_REPORT.md",
+      "size": 1419,
+      "sha256": "e9a02c9cd86b3779958cd977edc381e1eb144670a0935c2bf69cdb92e080f4c8"
+    },
+    {
+      "path": "LCAI-0040_DATA_QUALITY_REPORT.md",
+      "size": 77,
+      "sha256": "efd6a41f1825881016c0f37a75309d2f0b27fccf84ac2bb2641888142e5cb935"
+    },
+    {
+      "path": "LCAI-0040_TEST_REPORT.md",
+      "size": 80,
+      "sha256": "780852cd247240e86ed8c69e22688b19533c1973463de992b8224bdf2dcea053"
+    },
+    {
+      "path": "LCAI-0040_NON_REGRESSION_REPORT.md",
+      "size": 224,
+      "sha256": "d15349e9d5ba875565eb7ec712d3b5a7fd491156a5664966dba98c873c39c677"
+    }
+  ]
+}
